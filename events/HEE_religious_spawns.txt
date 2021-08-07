@@ -1,0 +1,45 @@
+﻿namespace = HEE_religious_spawns
+
+
+HEE_religious_spawns.1 = { #Spawning Nusayrism
+	type = empty
+	hidden = yes
+	
+	trigger = {		
+		
+	}
+
+	immediate = {
+		commanding_army.location = { save_scope_as = current_location }
+
+		every_knight = {
+			limit = {
+				is_at_same_location = root
+			}
+			save_scope_as = KnightDisaster
+		}
+	}
+
+	option = { 
+		name = HEE_religious_spawns.1.a
+		
+		random = {
+			chance = 50
+			scope:KnightDisaster = {
+				death = {
+					death_reason = death_lost_at_sea
+				}
+			}
+		}
+	}
+
+	option = {
+		name = HEE_religious_spawns.1.b
+
+		scope:KnightDisaster = {
+			death = {
+				death_reason = death_lost_at_sea
+			}
+		}
+	}
+}

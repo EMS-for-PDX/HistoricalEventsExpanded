@@ -774,41 +774,35 @@ seljuk_war_target_evaluation_and_declaration_effect = {
 			}
 		}
 		
-		if = {
-			limit = {
-				highest_held_title_tier = tier_empire
-				NOT = {
-					has_primary_title = title:e_byzantium
+		else = {
+			if = {
+				limit = {
+					highest_held_title_tier = tier_empire
+					NOT = {
+						has_primary_title = title:e_byzantium
+					}
 				}
-			}
-
-			scope:seljuk_emperor = {
-				random_realm_province = {
-					county = {
-						random_neighboring_county = {
-							limit = {
-								any_in_de_jure_hierarchy = {
-									tier = tier_kingdom
-									exists = holder
-									holder = {
-										top_liege = scope:next_invasion_target
-									}
-								}
+				#debug_log = "SELJUK: scoped random neighboring kingdom"
+				scope:seljuk_emperor.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+								exists = holder
 							}
-							random_in_de_jure_hierarchy = {
-								limit = { 
-									tier = tier_kingdom
-									holder = {
-										top_liege = scope:next_invasion_target
-									}
-									NOT = { holder = scope:seljuk_emperor }
-									NOT = { holder.top_liege = scope:seljuk_emperor }
-
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_kingdom
+								holder = {
+									top_liege = scope:next_invasion_target
 								}
-								save_temporary_scope_as = next_invasion_title_target
-								debug_log = "SELJUK: scoped random neighboring kingdom"
+								NOT = { holder = scope:seljuk_emperor }
+								NOT = { holder.top_liege = scope:seljuk_emperor } 
 							}
-						}	
+							save_temporary_scope_as = next_invasion_title_target
+							debug_log = "SELJUK: scoped random neighboring kingdom"
+						}
 					}
 				}
 			}

@@ -169,7 +169,7 @@
 
   seljuk_invasion_war:0 "Turkic Invasion"
   SELJUK_INVASION_CB_NAME:1 "Turkic Invasion"
-  SELJUK_INVASION_WAR_NAME:2 "Turkic Invasion of [TITLE.GetBaseName]"
+  SELJUK_INVASION_WAR_NAME:2 "Turkic Invasion of the [TITLE.GetDeJureLiege.GetName]"
   SELJUK_INVASION_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
   seljuk_invasion_war_victory_desc_attacker:0 "You seize all titles within [defender.GetShortUINamePossessive] realm belonging [de_jure|E] to the target title, and all occupied counties outside it."
   seljuk_invasion_war_victory_desc:0 "[attacker.GetShortUIName|U] seizes all titles within [defender.GetShortUINamePossessive] realm belonging [de_jure|E] to the target title, and all occupied counties outside it."

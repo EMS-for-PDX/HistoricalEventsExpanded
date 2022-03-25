@@ -1,0 +1,48 @@
+﻿### Seljuk Conquest Regions
+
+special_seljuk_empire_start_region = {
+	duchies = {
+		d_merv d_nasa d_herat d_nishapur d_gurgan d_ghur
+	}
+}
+special_seljuk_empire_cb_extent = {
+	duchies = {
+		d_opsikion d_ephese d_thracesia d_optimatoi d_bucellaria d_cilicia d_cibyrrhaeot d_anatolia d_cappadocia d_charsianon d_paphlagonia d_armeniac d_sebasteia d_chaldia d_mesopotamia d_vaspurakan d_greater_armenia d_tao-klarjeti d_abkhazia d_georgia d_isfahan	d_kirman d_yazd d_rayy d_hamadan d_fars d_hormuz d_khuzestan d_kermanshah d_nishapur d_merv d_ghur d_herat d_balkh d_nasa d_kohestan d_daylam d_tabaristan d_gurgan d_azerbaijan d_shirvan d_makran d_jabal_kufs d_sistan d_kabul d_zabulistan d_samarra d_wasit d_kufa d_basra	d_baghdad d_diyarrabia d_diyarmudar d_diyarbakr d_euphrates d_kurdistan
+	}
+}
+
+special_seljuk_empire_borderlands = {
+	duchies = {
+		d_diyarrabia d_diyarmudar d_euphrates d_daylam d_tabaristan d_gurgan d_azerbaijan d_samarra d_kurdistan d_wasit d_kufa d_basra d_baghdad d_isfahan d_kirman d_yazd d_rayy d_hamadan d_fars d_hormuz d_khuzestan d_kermanshah 
+	}
+}
+
+# Custom Rum. This was where the Sultanate of Rum was established
+custom_rum = {
+	duchies = {
+		# Syria
+		d_antioch
+		# Lebanon, just in case
+		d_lebanon
+		# Anatolia
+		d_cilicia d_anatolia d_cappadocia d_charsianon d_armeniac d_bucellaria d_thracesia d_cibyrrhaeot d_ephese d_sebasteia d_paphlagonia
+	
+	}
+	
+	counties = {
+		# Trebizond remained in Byzantine hands, so I'm not adding all of d_chaldia
+		c_satala c_colonea c_cerasus
+		# Same with d_opsikion
+		c_phrygia c_prusa c_mysia 
+		# And a bit of Syria since Byzantines often conquer this
+		c_shayzar
+	}
+}
+
+custom_pechenegs = {
+	counties = {
+		c_dnipro c_cetatea_alba c_chilia c_tigheci c_iasi c_barlad
+		c_kherson c_lapusna c_stoenesti c_galati
+		c_cherkassy c_odessa c_ladyzyn c_uman c_soroca c_orhei
+	} 
+}

@@ -1,0 +1,525 @@
+namespace = HEE_seljuk_invasion 
+
+### Spawn Seljuk
+HEE_seljuk_invasion.0001 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning the Seljuks before 1066 start date"
+		debug_log_date = yes
+		spawn_seljuk_character_effect = yes
+	}
+}
+
+HEE_seljuk_invasion.00112 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		global_var:clhagangholder = {
+			get_title = title:c_lhagang
+			
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			becomes_independent = {
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		global_var:SeljukChaghri = {
+			create_title_and_vassal_change = {
+				type = granted #or whatever
+				save_scope_as = change
+			}
+			change_liege = {
+				liege = global_var:SeljukTughril
+				change = scope:change
+			}
+			resolve_title_and_vassal_change = scope:change
+
+			send_interface_toast = {	
+				title = HEE_BecameBrothersVassal.notification
+				left_icon = root
+				right_icon = global_var:SeljukTughril
+			}
+		}
+	}
+}
+
+### Spawn Empire 
+HEE_seljuk_invasion.0011 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning the Seljuks Empire before 1066 start date"
+		debug_log_date = yes
+		spawn_seljuk_empire_character_effect = yes
+	}
+}
+
+HEE_seljuk_invasion.00111 = {
+	type = empty
+	hidden = yes
+
+	immediate = {
+		global_var:SeljukChaghri = {
+			every_held_title = {
+				limit = { 
+					tier >= tier_barony 
+				}
+				add_to_variable_list = {
+					name = stealingfrombrother
+					target = prev
+				}
+			}
+		}
+		title:c_lhagang.holder = {
+			set_global_variable = {
+				name = clhagangholder
+				value = title:c_lhagang.holder
+			}
+		}
+
+		global_var:SeljukTughril = {
+			get_title = title:c_lhagang
+			create_title_and_vassal_change = {
+				type = revoked
+				save_scope_as = change
+			}
+			
+			every_in_list = {
+				list = stealingfrombrother
+				change_title_holder = {
+					holder = PREV
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+	}
+}
+
+# Event for handling new army spawning on succession(not used right now)
+HEE_seljuk_invasion.0100 = {
+	hidden = yes
+	immediate = {
+		spawn_seljuk_troops_effect = yes
+	}
+}
+
+# Spawned Seljuks
+HEE_seljuk_invasion.1002 = {
+	type = character_event
+	title = HEE_seljuk_invasion.1002.t
+	desc = HEE_seljuk_invasion.1002.desc
+	theme = war
+	override_background = {
+		reference = wilderness_steppe
+	}
+	left_portrait = scope:seljuk
+	option = {
+		name = HEE_seljuk_invasion.1002.a
+	}
+}
+
+
+
+# The Seljuks demands subjugation
+HEE_seljuk_invasion.5001 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.5001.opening
+	desc = HEE_seljuk_invasion.5001.desc
+	sender = {
+		character = scope:seljuk_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { is_at_war_with = scope:seljuk_emperor }
+		NOT = { root = scope:seljuk_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	option = { # Submit
+		name = HEE_seljuk_invasion.5001.a
+		custom_tooltip = HEE_seljuk_invasion.5001.a.tt
+		hidden_effect = {
+			scope:seljuk_emperor = {
+				trigger_event = HEE_seljuk_invasion.2002
+			}
+		}
+		ai_chance = {
+			base = 100
+			# More likely for Altaic group to join the big 'un
+			# modifier = {
+			# 	add = 200
+			# 	culture_group = culture_group:mongolic_group
+			# }
+			# More likely if you're just a count
+			modifier = {
+				add = 300
+				highest_held_title_tier = tier_county
+			}
+			# More likely if you're a duke
+			modifier = {
+				add = 100
+				highest_held_title_tier = tier_duchy
+			}
+			# Unlikely if you're Arrogant
+			modifier = {
+				factor = 0.2
+				has_trait = arrogant
+			}
+			# Unlikely if you're brave
+			modifier = {
+				factor = 0.2
+				has_trait = brave
+			}
+			# Likely if you're a Craven
+			modifier = {
+				factor = 1.2
+				has_trait = craven
+			}
+			# Lower chance if you're decently large
+			modifier = {
+				factor = 0.5
+				realm_size >= 35 # Poland-sized
+			}
+			# No chance of accepting if you're large
+			modifier = {
+				factor = 0
+				realm_size >= 55 # Hungary-sized
+			}
+		}
+	}
+
+	option = { # Resist
+		name = HEE_seljuk_invasion.5001.b
+		custom_tooltip = HEE_seljuk_invasion.2001.b.tt
+		add_internal_flag = dangerous
+		hidden_effect = {
+			scope:seljuk_emperor = {
+				trigger_event = {
+					id = HEE_seljuk_invasion.2003
+					days = 10
+				}
+			}
+		}		
+		ai_chance = {
+			base = 300
+		}
+	}
+}
+
+# Subjugation accepted
+HEE_seljuk_invasion.2002 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2002.opening
+	desc = HEE_seljuk_invasion.2002.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		scope:demand_recipient = {
+			change_liege = {
+				liege = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone accepted Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # Wise choice
+		name = HEE_seljuk_invasion.2002.a
+	}
+}
+
+# Subjugation refused
+HEE_seljuk_invasion.2003 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2003.opening
+	desc = HEE_seljuk_invasion.2003.desc
+	sender = {
+		character = scope:demand_recipient
+		animation = personality_bold
+	}
+
+	immediate = {
+		hidden_effect = {
+			scope:demand_recipient.primary_title = {
+				save_scope_as = target_title
+			}
+		}
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone refused Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # War it is
+		name = HEE_seljuk_invasion.2003.a
+		if = {
+			limit = {
+				exists = scope:target_title.kingdom
+			}
+			start_war = {
+				cb = seljuk_invasion_war
+				target = scope:target_title.holder
+				target_title = scope:target_title.kingdom
+			}
+		}
+		else = {
+			debug_log = "Failed to find a target empire for a Seljuk invasion!"
+			debug_log_scopes = yes
+
+			start_war = {
+				cb = seljuk_invasion_war
+				target = scope:target_title.holder
+				target_title = scope:target_title.holder.capital_province.kingdom
+			}
+		}
+	}
+}
+
+# The Khan demands subjugation - Empire
+HEE_seljuk_invasion.2111 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2001.opening
+	desc = HEE_seljuk_invasion.2101.desc
+	sender = {
+		character = scope:seljuk_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { root = scope:seljuk_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	# Outrageous!
+	option = {
+		name = HEE_seljuk_invasion.2111.b
+		custom_tooltip = HEE_seljuk_invasion.2111.b.tt
+		hidden_effect = {
+			scope:seljuk_emperor = {
+				trigger_event = HEE_seljuk_invasion.2112
+			}
+		}
+	}
+}
+
+# Subjugation refused
+HEE_seljuk_invasion.2112 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2003.opening
+	desc = HEE_seljuk_invasion.2112.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone refused Seljuk subjugation - Broke alliance"
+		debug_log_scopes = yes
+	}
+
+	option = { # Our alliance is over
+		name = HEE_seljuk_invasion.2112.a
+		break_alliance = scope:demand_recipient
+	}
+}
+
+HEE_seljuk_invasion.2101 = { #king
+	type = letter_event
+	opening = HEE_seljuk_invasion.2001.opening
+	desc = HEE_seljuk_invasion.2101.desc
+	sender = {
+		character = scope:seljuk_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { root = scope:seljuk_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	option = { # Submit
+		name = HEE_seljuk_invasion.2101.a
+		custom_tooltip = HEE_seljuk_invasion.2001.a.tt
+		hidden_effect = {
+			scope:seljuk_emperor = {
+				trigger_event = HEE_seljuk_invasion.2102
+			}
+		}
+		ai_chance = {
+			base = 100
+			# More likely for Altaic group to join the big 'un
+			# modifier = {
+			# 	add = 300
+			# 	culture_group = culture_group:mongolic_group
+			# }
+			# More likely if you're just a count
+			modifier = {
+				add = 1000
+				highest_held_title_tier = tier_county
+			}
+			# More likely if you're a duke
+			modifier = {
+				add = 400
+				highest_held_title_tier = tier_duchy
+			}
+			# Unlikely if you're Arrogant
+			modifier = {
+				factor = 0.2
+				has_trait = arrogant
+			}
+			# Unlikely if you're brave
+			modifier = {
+				factor = 0.2
+				has_trait = brave
+			}
+			# Likely if you're a Craven
+			modifier = {
+				factor = 2
+				has_trait = craven
+			}
+			# Lower chance if you're decently large
+			modifier = {
+				factor = 0.5
+				realm_size >= 35 # Poland-sized
+			}
+			# No chance of accepting if you're large
+			modifier = {
+				factor = 0
+				realm_size >= 55 # Hungary-sized
+			}
+		}
+	}
+
+	option = {
+		name = HEE_seljuk_invasion.2101.b
+		add_internal_flag = dangerous
+		custom_tooltip = HEE_seljuk_invasion.2101.b.tt
+		hidden_effect = {
+			scope:seljuk_emperor = {
+				trigger_event = HEE_seljuk_invasion.2103
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# Subjugation accepted
+HEE_seljuk_invasion.2102 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2002.opening
+	desc = HEE_seljuk_invasion.2002.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		scope:demand_recipient = {
+			change_liege = {
+				liege = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone accepted Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # Wise choice
+		name = HEE_seljuk_invasion.2002.a
+	}
+}
+
+# Subjugation refused
+HEE_seljuk_invasion.2103 = {
+	type = letter_event
+	opening = HEE_seljuk_invasion.2003.opening
+	desc = HEE_seljuk_invasion.2003.desc
+	sender = {
+		character = scope:demand_recipient
+		animation = personality_bold
+	}
+
+	immediate = {
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+		break_alliance = scope:demand_recipient
+
+		debug_log = "Someone refused Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	# War it is
+	option = {
+		name = HEE_seljuk_invasion.2103.a
+		start_war = {
+			cb = seljuk_invasion_war
+			target = scope:target_title.holder
+			target_title = scope:target_title.empire
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# Just you wait...
+	option = {
+		name = HEE_seljuk_invasion.2103.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}

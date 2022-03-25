@@ -1,0 +1,497 @@
+﻿namespace = HEE_fairhair
+
+
+HEE_fairhair.1 = { #Set-up event
+	type = letter_event
+	opening = {
+		desc = feast.1501.opening
+	}
+	desc = feast.1503.desc
+	sender = scope:sender
+
+	trigger = {
+		can_join_activities = yes
+		is_adult = yes
+		is_busy_in_events = no
+		is_in_an_activity = no
+		#is_at_war = no
+		is_imprisoned = no
+		is_healthy = yes
+		NOR = {
+			exists = var:booked_for_a_party
+			exists = var:engaged_in_single_combat
+		}
+		NOT = { exists = var:is_handling_feast_invitation }
+	}
+
+	on_trigger_fail = { #Trigger invitation again if it was blocked because the character was handling another invitation
+		if = {
+			limit = {
+				is_available_for_activity_trigger = yes
+				exists = var:is_handling_feast_invitation
+			}
+			trigger_event = {
+				id = HEE_fairhair.1
+				days = 1
+			}
+		}
+		debug_log = "Failed to invite Fairhair to fesat"
+	}
+
+	immediate = {
+		scope:activity.activity_owner = {
+			save_scope_as = sender
+		}
+		scope:activity.activity_province = {
+			barony = {
+				save_scope_as = barony
+			}
+		}
+		set_variable = {
+			name = is_handling_feast_invitation
+			value = scope:sender
+			days = 20
+		}
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_1_fired
+				days = 30
+			}
+		}
+
+		debug_log = "invited Fairhair to fesat"
+	}
+
+	option = {
+		name = feast.1503.a
+		play_music_cue = mx_cue_banquet
+		scope:activity = {
+			accept_invitation_for_character = prev
+		}
+		set_variable = {
+			name = booked_for_a_party
+			value = scope:sender
+			days = 20
+		}
+		debug_log = "Fairhair said yes"
+		character:144000 = {
+			add_character_flag = {
+				days = 30
+				flag = HEE_fairhair_1_Fairhair_said_yes
+			}
+		}
+		stress_impact = {
+			comfort_eater = minor_stress_loss
+			drunkard = minor_stress_loss
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = feast.1503.b
+		scope:activity = {
+			decline_invitation_for_character = prev
+		}
+		debug_log = "Fairhair said no"
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_1_Fairhair_said_no	
+				days = 30
+			}
+		}
+		stress_impact = {
+			inappetetic = minor_stress_loss
+			reclusive = minor_stress_loss
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	after = {
+		remove_variable = is_handling_feast_invitation
+	}
+}
+
+HEE_fairhair.2 = { #Let your daughter wander the party, 
+	type = character_event
+	title = HEE_fairhair.2.t
+	desc = HEE_fairhair.2.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:gyda
+		animation = personality_compassionate
+	}
+
+	immediate = {
+		scope:activity = {
+			 activity_owner = {
+				random_child = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = gyda
+				}
+				save_scope_as = fatherboi	 
+			}
+		}
+		hidden_effect = {
+			scope:gyda = {
+				add_trait = beauty_good_3 
+			}
+		}
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_2_fired
+				days = 30
+			}
+		} 
+	}
+
+	option = { 
+		name = HEE_fairhair.2.a
+		trigger = {
+			character:144000 = {
+				is_alive = yes
+				is_landed = yes
+				NOT = {
+					has_character_modifier = harald_tanglehairs_vow_modifier
+				}
+			}
+		}
+
+		character:144000 = {
+			trigger_event = {
+				id = HEE_fairhair.3
+				days = 3
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.2.b
+
+		scope:gyda = {
+			add_opinion = {
+				modifier = angry_opinion
+				target = scope:fatherboi
+				opinion = {
+					value = -50
+				}
+			}
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_fairhair.3 = { #sees her for the first time
+	type = character_event
+	title = HEE_fairhair.3.t
+	desc = HEE_fairhair.3.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:gyda
+		animation = personality_compassionate
+	}
+
+	immediate = {
+		scope:activity = {
+			 activity_owner = {
+				random_child = {
+					limit = {
+						is_male = no
+					}
+					save_scope_as = gyda
+				}
+				save_scope_as = fatherboi	 
+			}
+		}
+		location = {
+			save_scope_as = location
+		}
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_3_fired
+				days = 30
+			}
+		} 
+	}
+
+	option = { 
+		name = HEE_fairhair.3.a
+		character:144000 = {
+			trigger_event = {
+				id = HEE_fairhair.4
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.3.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_fairhair.4 = { #takes the vows
+	type = character_event
+	title = HEE_fairhair.4.t
+	desc = HEE_fairhair.4.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:gyda
+		animation = personality_compassionate
+	}
+
+	immediate = {
+		scope:activity = {
+			activity_owner = {
+			   random_child = {
+				   limit = {
+					   is_male = no
+					   age >= 16
+				   }
+					save_scope_as = gyda
+				}
+				save_scope_as = fatherboi	 
+			}
+		}
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_4_fired
+				days = 30
+			}
+		}
+		location = {
+			save_scope_as = location
+		}	
+	}
+
+	option = { 
+		name = HEE_fairhair.4.a
+		add_character_modifier = {
+			modifier = harald_tanglehairs_vow_modifier
+		}
+		give_nickname = nick_tanglehair
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.4.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_fairhair.5 = { #Father finds out
+	type = character_event
+	title = HEE_fairhair.5.t
+	desc = HEE_fairhair.5.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:sender
+		animation = personality_compassionate
+	}
+
+	immediate = {
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_5_fired
+				days = 30
+			}
+		}
+	}
+
+	option = { 
+		name = HEE_fairhair.5.a
+	
+		character:144000 = {
+			trigger_event = {
+				id = HEE_fairhair.6
+				days = { 20 40 }
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.5.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_fairhair.6 = { #Back-down?
+	type = character_event
+	title = HEE_fairhair.6.t
+	desc = HEE_fairhair.6.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = title:c_hordalandi.holder
+		animation = personality_vengeful
+	}
+
+	immediate = {
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_6_fired
+				days = 30
+			}
+		}
+	}
+
+	option = { 
+		name = HEE_fairhair.6.a
+		custom_tooltip = fairhairbackdownno
+
+		character:144000 = {
+			add_pressed_claim = title:k_norway
+			add_pressed_claim = title:d_trandalog
+			add_pressed_claim = title:d_vestlandi
+			add_pressed_claim = title:d_agder
+			add_pressed_claim = title:c_hordalandi
+
+			start_war = {
+				casus_belli = fairhairconquest
+				target = title:c_hordalandi.holder
+				target_title = title:c_hordalandi
+				claimant = character:144000
+			}
+
+			spawn_army = {
+				men_at_arms = {
+					type = huscarl
+					stacks = {
+						value = 20
+					}
+				}
+				inheritable = yes
+				location = capital_province
+				name = scandi_adventurer_event_troops
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.6.b
+		custom_tooltip = fairhairbackdownyes
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_fairhair.7 = { #Gyda
+	type = character_event
+	title = HEE_fairhair.7.t
+	desc = HEE_fairhair.7.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	right_portrait = {
+		character = scope:sender
+		animation = personality_compassionate
+	}
+
+	
+	trigger = {
+		character:166044 = {
+			is_alive = yes
+			is_married = no
+		}
+	}
+	immediate = {
+		primary_spouse = {
+			save_scope_as = spouse
+		}
+		if = {
+			limit = {
+				character:166044 = {
+					is_alive = yes
+					is_married = no
+				}
+			}
+			character:166044 = {
+				save_scope_as = gyda
+			}
+		}
+		character:144000 = {
+			add_character_flag = {
+				flag = HEE_fairhair_7_fired
+				days = 30
+			}
+		} 
+	}
+
+	option = { 
+		name = HEE_fairhair.7.a
+		divorce_effect = {
+			DIVORCER = root
+			DIVORCEE = scope:spouse
+		}
+		marry = scope:gyda
+		ai_chance = {
+			base = 30
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.7.b
+		
+		make_concubine = scope:gyda
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = HEE_fairhair.7.c
+	
+		add_piety = 100
+		ai_chance = {
+			base = 20
+		}
+	}
+}

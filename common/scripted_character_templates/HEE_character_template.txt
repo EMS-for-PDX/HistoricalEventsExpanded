@@ -1,18 +1,40 @@
-﻿
-# monk_character = {
-# 	age = { 20 50 }
-# 	gender = male
-# 	random_traits_list = {
-# 		count = 1
-# 		education_learning_1 = {}
-# 		education_learning_2 = {}
-# 		education_learning_3 = {}
-# 		education_learning_4 = {}
-# 	}
-# 	trait = devoted
-# 	random_traits = yes
-# 	learning = {
-# 		min_template_high_skill
-# 		max_template_high_skill
-# 	}
-# }
+﻿#spawning Seljuk
+HEE_seljuk_template = {
+	age = 22
+	gender = male
+	dynasty_house = house:house_seljuk
+	martial = 9
+	diplomacy = 5
+	intrigue = 3
+	stewardship = 1
+	learning = 5
+	faith = faith:ashari
+	culture = culture:turkish
+	trait = ambitious	
+	trait = education_martial_4
+	trait = wrathful
+	trait = callous
+	trait = arrogant
+	trait = zealous
+	trait = ambitious
+	random_traits = no
+}
+
+HEE_ghaznavid_template = {
+	age = 35
+	gender = male
+	dynasty_house = house:house_ghaznavid
+	martial = 14
+	diplomacy = 5
+	intrigue = 2
+	stewardship = 1
+	learning = 3
+	faith = faith:ashari
+	culture = culture:turkish
+	trait = ambitious	
+	trait = education_martial_4
+	trait = callous
+	trait = arrogant
+	trait = zealous
+	random_traits = no
+}

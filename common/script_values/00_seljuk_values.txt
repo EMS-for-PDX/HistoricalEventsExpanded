@@ -1,0 +1,182 @@
+﻿# Chance of seljuks appearing per year between 965 and 1000
+seljuk_appearance_base_chance = 1
+
+seljuk_soldier_female_chance = {
+	if = {
+		limit = {
+			NOT = { dummy_female = { can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:seljuk } } }
+			dummy_male = { can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:seljuk } }
+		}
+		add =  0
+	}
+	else_if = {
+		limit = {
+			dummy_female = { can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:seljuk } }
+			NOT = { dummy_male = { can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = scope:seljuk } } }
+		}
+		add =  100
+	}
+	else = {
+	 	add = 50
+	}
+}
+
+seljuk_invasion_target_character_weight = {
+	value = 0.001
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				title_province = {
+					geographical_region = special_seljuk_empire_start_region
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_khorasan
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_persia
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_daylam
+				}
+			}
+			add = 5000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_transoxiana
+				}
+			}
+			add = 1000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_makran
+				}
+			}
+			add = 900
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_kabulistan
+				}
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_mesopotamia
+				}
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_jazira
+				}
+			}
+			add = 50
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = ghw_region_arabia
+				}
+			}
+			add = 0.01
+		}
+
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_middle_east_jerusalem
+				}
+			}
+			add = 0.01
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = ghw_region_holy_land
+				}
+			}
+			add = 0.01
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_asia_minor
+				}
+			}
+			add = 0.01
+		}
+	}
+}
+
+# Chance of ghaznavids appearing per year between 965 and 1000
+ghaznavids_appearance_base_chance = 1
+
+ghaznavids_invasion_target_character_weight = {
+	value = 0.001
+	every_sub_realm_county = {
+		if = {
+			limit = {
+				title_province = {
+					geographical_region = world_kabulistan
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_khorasan
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_persia
+				}
+			}
+			add = 10000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_makran
+				}
+			}
+			add = 5000
+		}
+		else_if = {
+			limit = {
+				title_province = {
+					geographical_region = world_transoxiana
+				}
+			}
+			add = -1000
+		}
+	}
+}

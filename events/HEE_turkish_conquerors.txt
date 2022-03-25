@@ -1,0 +1,324 @@
+﻿namespace = HEE_turkic_conquerors
+
+
+#1-199 = Pre-Pechenegs
+#200-299 = Pechenegs
+
+# HEE_turkic_conquerors.1 = { #Kimiks Unite
+# 	type = character_event
+# 	title = HEE_turkic_conquerors.1.t
+# 	desc = HEE_turkic_conquerors.1.desc
+# 	theme = faith
+
+# 	immediate = {
+# 		title:c_aqtobe.holder = {
+# 			save_scope_as = aqtobe
+# 		}
+# 		title:c_pecheneg.holder = {
+# 			save_scope_as = pecheneg
+# 		}
+# 	}
+
+# 	option = { 
+# 		name = HEE_turkic_conquerors.1.a
+
+# 		scope:aqtobe = {
+# 			create_title_and_vassal_change = {
+# 				type = conquest
+# 				save_scope_as = event1lands
+# 				add_claim_on_loss = no
+# 			}
+			
+# 			title:k_pechenegs = {
+# 				change_title_holder = {
+# 					holder = scope:aqtobe
+# 					change = scope:event1lands
+# 				}
+# 			}
+# 			resolve_title_and_vassal_change = scope:event1lands
+# 		}
+
+# 		scope:pecheneg = {
+# 			trigger_event = {
+# 				id = HEE_turkic_conquerors.101
+# 				days = { 5 10 }
+# 			}
+# 		}
+
+# 	}
+# }
+
+
+
+
+HEE_turkic_conquerors.200 = { #Pechenegs Unite
+	type = character_event
+	title = HEE_turkic_conquerors.200.t
+	desc = HEE_turkic_conquerors.200.desc
+	theme = faith
+
+	immediate = {
+		title:c_aqtobe.holder = {
+			save_scope_as = aqtobe
+		}
+		title:c_pecheneg.holder = {
+			save_scope_as = pecheneg
+		}
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.200.a
+
+		scope:aqtobe = {
+			create_title_and_vassal_change = {
+				type = conquest
+				save_scope_as = event1lands
+				add_claim_on_loss = no
+			}
+			
+			title:k_pechenegs = {
+				change_title_holder = {
+					holder = scope:aqtobe
+					change = scope:event1lands
+				}
+			}
+			resolve_title_and_vassal_change = scope:event1lands
+		}
+
+		scope:pecheneg = {
+			trigger_event = {
+				id = HEE_turkic_conquerors.201
+				days = { 5 10 }
+			}
+		}
+
+	}
+}
+
+HEE_turkic_conquerors.201 = { #Pechenegs Unite, Asking Second Tribe
+	type = character_event
+	title = HEE_turkic_conquerors.201.t
+	desc = HEE_turkic_conquerors.201.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	immediate = {
+		title:c_aqtobe.holder = {
+			save_scope_as = aqtobe
+		}
+		title:c_pecheneg.holder = {
+			save_scope_as = pecheneg
+		}
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.201.a
+
+		scope:aqtobe = {
+			create_title_and_vassal_change = {
+				type = swear_fealty
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+			scope:pecheneg = {
+				change_liege = {
+					liege = scope:aqtobe
+					change = scope:title_change
+				}
+			}
+			resolve_title_and_vassal_change = scope:title_change
+		}
+
+		title:e_caspian-pontic_steppe.holder = {
+			trigger_event = {
+				id = HEE_turkic_conquerors.202
+				days = { 5 10 }
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = { 
+		name = HEE_turkic_conquerors.201.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_turkic_conquerors.202 = { #Pechenegs Unite, Khazar event
+	type = character_event
+	title = HEE_turkic_conquerors.202.t
+	desc = HEE_turkic_conquerors.202.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.102.a
+
+		scope:aqtobe = {
+			trigger_event = {
+				id = HEE_turkic_conquerors.203
+				days = { 5 10 }
+			}
+		}
+	}
+}
+
+HEE_turkic_conquerors.203 = {
+	type = character_event
+	title = HEE_turkic_conquerors.203.t
+	desc = HEE_turkic_conquerors.203.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	immediate = {
+		save_scope_as = ruler
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.2.a
+		
+		add_prestige = 500
+		scope:ruler = {
+			start_war = {
+				casus_belli = pechenegs_migration_cb
+				target = title:e_caspian-pontic_steppe.holder
+				target_title = title:d_khazaria
+				target_title = title:d_ciscaucasia
+				target_title = title:d_alania
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_turkic_conquerors.203.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_turkic_conquerors.204 = {
+	type = character_event
+	title = HEE_turkic_conquerors.204.t
+	desc = HEE_turkic_conquerors.204.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	immediate = {
+		save_scope_as = ruler
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.204.a
+		
+		add_prestige = 500
+		scope:ruler = {
+			start_war = {
+				casus_belli = pechenegs_migration_cb
+				target = title:e_caspian-pontic_steppe.holder
+				target_title = title:c_tana
+				target_title = title:c_oleshye
+				target_title = title:c_khortytsia
+				target_title = title:c_kalos_limen
+				target_title = title:c_perekop
+			}
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_turkic_conquerors.2.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_turkic_conquerors.205 = {
+	type = character_event
+	title = HEE_turkic_conquerors.205.t
+	desc = HEE_turkic_conquerors.205.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	immediate = {
+		save_scope_as = ruler
+	}
+
+	option = { 
+		name = HEE_turkic_conquerors.205.a
+		
+		add_prestige = 500
+
+		every_ruler = {
+			limit = {
+				any_sub_realm_county = {
+					title_province = { geographical_region = custom_pechenegs }
+				}
+			}
+			if = { limit = { NOT = { is_in_list = top_liege_targets } }
+				add_to_temporary_list = top_liege_targets
+			}
+		}
+
+		every_in_list = {
+			list = top_liege_targets
+			save_temporary_scope_as = new_war_target
+			random_sub_realm_county = {
+				limit = {
+					title_province = { geographical_region = custom_pechenegs }
+				}
+				save_scope_as = war_target_title
+			}
+			# Declare the war
+			scope:ruler = {
+				start_war = {
+					cb = pechenegsecondwar
+					target = scope:new_war_target.top_liege
+					target_title = scope:war_target_title
+				}
+			}
+		}
+		
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_turkic_conquerors.2.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

@@ -1,0 +1,244 @@
+﻿story_seljuk_invasion = {
+	# by Uber
+	
+	on_setup = {
+		# story_owner = { # Start conquest of all of seljuks
+		# 	start_wars_for_seljukia_effect = yes
+		# }
+	}
+
+	on_end = {
+		debug_log = "seljuk story ended on:"
+		debug_log_date = yes
+		set_global_variable = {
+			name = seljuk_story_has_ended
+			value = yes
+		}
+	}
+
+	on_owner_death = {	
+		story_owner = {
+			if = {
+				limit = {
+					any_child = { # if the Khan has a reasonable heir...
+						is_primary_heir_of = scope:story.story_owner
+					}
+				}
+				random_child = {
+					limit = {
+						is_primary_heir_of = scope:story.story_owner		
+					}
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}
+			}
+			if = {
+				limit = { exists = scope:new_story_owner }
+				make_story_owner = scope:new_story_owner
+				scope:new_story_owner = {
+					add_trait = turkish_conqueror
+				}
+				debug_log = "Successfully replaced the Seljuk Khan"
+				debug_log_date = yes
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	#Start a new war if none is ongoing
+	effect_group = {
+		days = { 30 60 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				realm_size <= 160
+				any_held_title = {
+					this = global_var:SeljukEmpireTitle
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					seljuk_war_target_evaluation_and_declaration_effect = yes
+				}
+				debug_log = "The story started a new war for the seljuks"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+				
+			}
+		}
+	}
+
+	# Story handling in case of succession weirdness
+	effect_group = {
+		days = 180
+
+		trigger = {
+			story_owner = {
+				NOT = {
+					any_held_title = {
+						this = global_var:SeljukEmpireTitle
+					}
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { exists = global_var:SeljukEmpireTitle }
+			effect = {
+				if = {
+					limit = {
+						global_var:SeljukEmpireTitle.holder = {
+							culture = culture:turkish
+						}
+					}
+					make_story_owner = global_var:SeljukEmpireTitle.holder
+				}
+				else = {
+					end_story = yes
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { NOT = { exists = global_var:SeljukEmpireTitle } }
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+}
+
+story_ghaznavid_invasion = {
+	# by Uber
+	
+	on_setup = {
+		# story_owner = { # Start conquest of all of seljuks
+		# 	start_wars_for_seljukia_effect = yes
+		# }
+	}
+
+	on_end = {
+		debug_log = "ghaznavid story ended on:"
+		debug_log_date = yes
+		set_global_variable = {
+			name = ghaznavid_story_has_ended
+			value = yes
+		}
+	}
+
+	on_owner_death = {	
+		story_owner = {
+			if = {
+				limit = {
+					any_child = { # if the Khan has a reasonable heir...
+						is_primary_heir_of = scope:story.story_owner
+					}
+				}
+				random_child = {
+					limit = {
+						is_primary_heir_of = scope:story.story_owner		
+					}
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}
+			}
+			if = {
+				limit = { exists = scope:new_story_owner }
+				make_story_owner = scope:new_story_owner
+				scope:new_story_owner = {
+					add_trait = turkish_conqueror
+				}
+				debug_log = "Successfully replaced the Seljuk Khan"
+				debug_log_date = yes
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	#Start a new war if none is ongoing
+	effect_group = {
+		days = { 100 200 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				realm_size <= 160
+				any_held_title = {
+					this = global_var:GhaznavidEmpireTitle
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					ghaznavid_war_target_evaluation_and_declaration_effect = yes
+				}
+				debug_log = "The story started a new war for the seljuks"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Story handling in case of succession weirdness
+	effect_group = {
+		days = 180
+
+		trigger = {
+			story_owner = {
+				NOT = {
+					any_held_title = {
+						this = global_var:GhaznavidEmpireTitle
+					}
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { exists = global_var:GhaznavidEmpireTitle }
+			effect = {
+				if = {
+					limit = {
+						global_var:GhaznavidEmpireTitle.holder = {
+							culture = culture:turkish
+						}
+					}
+					make_story_owner = global_var:GhaznavidEmpireTitle.holder
+				}
+				else = {
+					end_story = yes
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { NOT = { exists = global_var:GhaznavidEmpireTitle } }
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+}

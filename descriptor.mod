@@ -1,8 +1,8 @@
-version="1.4.2"
+version="1.5.0.1"
 tags={
 	"Historical"
 	"Events"
 	"Decisions"
 }
-name="HistoricalEventsExpanded"
-supported_version="1.4.4"
+name="HistoricalEventsExpandedDeveloper"
+supported_version="1.5.0.1"

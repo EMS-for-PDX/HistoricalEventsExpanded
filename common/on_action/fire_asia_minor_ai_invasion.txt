@@ -1,0 +1,38 @@
+﻿# Fire AI invasion of Asia Minor in 1080
+yearly_global_pulse = {
+	on_actions = {
+		trigger_invasion
+	}
+}
+
+trigger_invasion = {
+	effect = {
+		if = {
+			limit = {
+				# date is 1080
+				current_date >= 1079.12.31
+				# game started in 1066
+				game_start_date >= 1066.1.1
+				# is ai
+				title:e_persia.holder = {
+					is_ai = yes
+				}
+				# won armenia war
+				is_target_in_global_variable_list = {
+					name = seljuk_invasion_progress
+					target = flag:flag_won_armenia
+				}
+				# hasn't already declared war for Asia Minor
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = seljuk_invasion_progress
+						target = flag:flag_invaded_asia_minor
+					}
+				}
+			}
+			title:e_persia.holder = {
+				trigger_event = seljuk_invasion_events_dynamic.1000
+			}
+		}
+	}
+}

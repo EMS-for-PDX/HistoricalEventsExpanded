@@ -1,0 +1,15 @@
+﻿house_sabbah = {
+	name = "dynn_F_Sabbah"
+	prefix = "dynnp_i"
+	dynasty = 101728
+}
+
+house_seljuk = {
+	name = "dynn_Seljuk"
+	dynasty = 613
+}
+
+house_ghaznavid = {
+	name = "Ghaznavid"
+	dynasty = 790
+}

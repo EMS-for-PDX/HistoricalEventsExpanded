@@ -1,0 +1,12 @@
+﻿Historical_Religious_Heresies = {
+	default = Religious_Heresies_On
+	Religious_Heresies_On = {}
+	Religious_Heresies_Off = {}
+}
+
+turkic_invasions  = {
+	default = turkic_invasions_historical
+	turkic_invasions_historical = {}
+	turkic_invasions_random = {}
+	turkic_invasions_off = {}
+}

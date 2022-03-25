@@ -1,0 +1,168 @@
+﻿namespace = seljuk_invasion_history_replace
+
+# Winning first initial war with Seljuks
+seljuk_invasion_history_replace.0001 = {
+	hidden = yes
+	
+	immediate = {
+		debug_log = "Seljuk Invasion History Replace"
+		#"Alexios" #Alexios I Komnenos
+		if = {
+			limit = {
+				character:1742 = {
+					is_alive = yes
+				}
+			}
+			character:1742 = {
+				add_martial_skill = 5
+				add_diplomacy_skill = 3
+				add_stewardship_skill = 3
+				add_prowess_skill = 13
+				add_trait = zealous
+				add_trait = ambitious
+				add_trait = intellect_good_1
+				set_age = 9
+			}
+		}
+
+		#Alp_Arslan"
+		if = {
+			limit = {
+				character:3040 = {
+					is_alive = yes
+				}
+			}
+			character:3040 = {
+				set_designated_heir = character:3042
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2000
+					location = province:4859
+					origin = 4333
+					use_supply = no
+				}
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2000
+					location = province:4859
+					origin = 4333
+				}
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2000
+					location = province:4859
+					origin = 4333
+				}
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2000
+					location = province:4859
+					origin = 4333
+				}
+			}
+			title:e_persia = {
+				set_global_variable = {
+					name = SeljukEmpireTitle
+					value = title:e_persia
+				}
+			}
+		}
+
+		# Buffed Malik Shah, since he was both Alp Arslan's historic successor
+		# and his feats during his lifetime were indeed quite mighty
+		if = {
+			limit = {
+				character:3042 = {
+					is_alive = yes
+				}
+			}
+			character:3042 = {
+				add_martial_skill = 1
+				add_diplomacy_skill = 2
+				add_intrigue_skill = 3
+				add_stewardship_skill = 3
+				add_learning_skill = 15
+				add_trait = content
+				add_trait = humble
+				add_trait = temperate
+				add_trait = pensive
+				add_trait = education_martial_4
+			}
+		}
+
+		# Suleiman ibn Qutulmish, founder of the Sultanate of Rum. Already in the game, buffed him
+		if = {
+			limit = {
+				character:3046 = {
+					is_alive = yes
+				}
+			}
+			character:3046 = {
+				get_title = title:c_marash
+				add_martial_skill = 6
+				add_diplomacy_skill = 4
+				add_intrigue_skill = 3
+				add_stewardship_skill = -3
+				add_learning_skill = 15
+				add_prowess_skill = 13
+				add_trait = content
+				add_trait = humble
+				add_trait = temperate
+				add_trait = pensive
+				add_trait = education_martial_4
+
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 1200
+					location = province:4893
+					origin = province:4893
+				}
+
+				set_global_variable = {
+					name = SuleimanSeljuk
+					value = character:3046
+				}
+			}
+		}
+		# Son of Suleyman ibn Qutulmish.
+		if = {
+			limit = {
+				character:41701 = {
+					is_alive = yes
+				}
+			}
+			character:41701 = {
+				give_title = title:c_marash
+				add_martial_skill = 5
+				add_diplomacy_skill = 2
+				add_intrigue_skill = 4
+				add_stewardship_skill = 2
+		
+				add_trait = arrogant
+				add_trait = deceitful
+				add_trait = brave
+				add_trait = cynical
+				add_trait = rowdy
+				add_trait = education_martial_4
+			}
+		}
+		culture:turkish = {
+			add_innovation = innovation_crop_rotation
+			add_innovation = innovation_gavelkind
+			add_innovation = innovation_city_planning
+			add_innovation = innovation_currency_01
+			add_innovation = innovation_motte
+			add_innovation = innovation_bannus
+			add_innovation = innovation_mustering_grounds
+			add_innovation = innovation_ledger
+			join_era = culture_era_early_medieval
+
+			add_innovation = innovation_burhs
+			add_innovation = innovation_horseshoes
+			add_innovation = innovation_mangonel
+			#
+			add_innovation = innovation_hereditary_rule
+			add_innovation = innovation_baliffs
+		}
+	}
+}

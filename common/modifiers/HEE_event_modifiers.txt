@@ -4,11 +4,11 @@
 # 
 #################################################
 
-
-
-
-VIET_RP_ball_clothes_opulent = {
-	icon = family_positive
-	monthly_dynasty_prestige = 0.1
-	monthly_prestige = 0.4
+the_turkic_conqueror_modifier = {
+	icon = horse_positive
+	dread_baseline_add = 20
+	dread_decay_mult = -0.2
+	hostile_scheme_resistance_add = 10
+	enemy_hostile_scheme_success_chance_add = -10
+	vassal_limit = 25
 }

@@ -1,0 +1,126 @@
+﻿l_english:
+  
+  #HEE_religious_spawns.1
+  HEE_religious_spawns.1.t:0 "The Death of [muslimfaith.GetAdjective] Imam [hasan11th.GetFirstNameNicknamed]"
+  HEE_religious_spawns.1.desc:0 "[hasan11th.GetFirstName], the alleged Eleventh Shia Imam by divine command and by the decrees of the previous Imams, has passed away. While leading a life in precautionary dissimulation, in fear of persecution from the [caliphate.GetName], Imam [hasan11th.GetFirstName] was known to be endowed with divine knowledge and would critize muslim rulers who appropriated the wealth of their nations or those who extorted people under their rule; who also lead a life of critic towards the [caliphate.GetName] who [hasan11th.GetFirstName] proclaimed ruled with the hand of terror. \n\nWith his death comes the large question of succession, for which many groups throughout the middle east believed for if [hasan11th.GetFirstName], had a son, The son would grow to be the famed Mahdi, an eschatological redeemer of Islam and the one who will arrive with Isa to bring peace and justice to the world. Without such, many are questioning the future."
+  HEE_religious_spawns.1.a:0 "Things are changing...."
+  HEE_religious_spawns.1.b:0 "Ismali, son of Jafar, was the last Iman and Mahdi!"
+
+  HEE_religious_spawns.2.t:0 "Imam [hasan11th.GetFirstNameNicknamed]'s Son"
+  HEE_religious_spawns.2.desc: "\"A Son has been found!\nImam [Muhammad12th.GetFirstNameNicknamed], the Twelfth Imam has been discovered!\nThe rightly guided one!\nThe Mahdi!\" People call on the streets outside your quarters, for they say that a new Imam of [muslimfaith.GetName] is among us, and that his birth had been kept hidden as to keep him safe from the [caliphate.GetName]. When you finally workout the words in your head to ask his whereabouts, you are simply told the Imam Mahdi has taken to hiding, and that only 4 deputies, assigned previously from Imam [hasan11th.GetFirstNameNicknamed] can communicate with the boy....."
+  HEE_religious_spawns.2.a:0 "Uh, oh?..."
+  HEE_religious_spawns.2.b:0 "The Prophesied Mahdi!"
+ 
+  HEE_religious_spawns.4.t:0 "A New Center of [faith.GetName], [salamiya.GetNameNoTier]."
+  HEE_religious_spawns.4.desc:0 "In recent years, the city of [salamiya.GetName] has grown further as a center of [faith.GetAdjective] belief and theology, although still an [faith.GetAdjective] secret, it has even become a headquaters to which [faith.GetAdjective] missionaries leave to spread the word of the faith.\n\nA rider from [salamiya.GetName] approaches your court today, asking for a donation to be used to grow the minority faith of the [faith.GetAdjective] within [salamiya.GetName] into a larger majority of the city, doing such could greatly boost the spread of [faith.GetName] elsewhere."
+  HEE_religious_spawns.4.a:0 "Let me assist them anyhow i can!"
+  HEE_religious_spawns.4.b:0 "..Sorry I cannot.."
+
+  HEE_hassassin.5.t:0 "Birth of the Assassins"
+  HEE_hassassin.5.d:0 "Word is spreading that a [HassassinTheAsssassin.GetFaith.GetAdjective] missionary, [HassassinTheAsssassin.GetFirstName] [HassassinTheAsssassin.GetDynasty.GetName], has founded a religious order known as the '[primary_title.GetName]' somewhere in western Persia. Using trickery and guile, this mysterious cult of trained killers has seized control of the mountain fortress of [alamut.GetNameNoTier] and converted it into their headquarters. Already a string of violent murders can be traced back to Hassan's devoted and fearless disciples..."
+  HEE_hassassin.5.a:0 "I should be careful..."
+
+  dynn_F_Sabbah:0 "Sabbah"
+  dynnp_iSabbah:0 "-i Sabbah"
+  
+  HEE_fairhair.2.t:0 "A feast and your daughter."
+  HEE_fairhair.2.desc:0 "As the party starts into motion, my guests move to sit around the table or to gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my Daughter [gyda.GetName], to stay put in her room for the night, and this food is looking mighty good.."
+  HEE_fairhair.2.a:0 "Perhaps my guests wouldn't mind."
+  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe?"
+
+  HEE_fairhair.3.t:0 "Valhalla on Earth?"
+  HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of the music and song hits the ear as loud as it can, the heat of the fireplace brings immense heat; and the main table's seats are with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I come to see out of the corner of my eye, one of the most beautiful sights I'd ever laid my eyes upon, it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that doesn't take long to become trapped within the mind, this woman will become mine, I crave it.. but maybe I should approach her to begin with..."
+  HEE_fairhair.3.a:0 "Approach Her"
+  HEE_fairhair.3.b:0 "Leave her alone"
+
+  HEE_fairhair.4.t:0 "Is that a challenge?"
+  HEE_fairhair.4.desc:0 "As I move towards her, I go to introduce myself, yet she quickly shuts me down before I could let a word out,  although that should have been the end of the discussion; but her voice was also a thing of wonder and I needed more. \n\nI go to follow her as she walks away, and yet she turns facing me once more, \n"You warriors are, all the same, you could conquer and unite this entire realm, and I'd still think twice about talking once more with you...." \n\nAs she walks away, I ponder, was that a quest? A Challenge? Is that what I would need to achieve to get her? To unite the lands around us.....Perhaps?"
+  HEE_fairhair.4.a:0 "I'll do it, and to prove my commitment, I won't cut nor brush my hair until it's done"
+  HEE_fairhair.4.b:0 "Seems like a lot of work for someone, plenty of fish in the sea right?"
+
+  # HEE_fairhair.5.t:0
+  # HEE_fairhair.5.desc:0
+  # HEE_fairhair.5.a:0
+  # HEE_fairhair.5.b:0
+
+  # HEE_fairhair.6.t:0
+  # HEE_fairhair.6.desc:0
+  # HEE_fairhair.6.a:0
+  # HEE_fairhair.6.b:0
+
+  # HEE_fairhair.7.t:0
+  # HEE_fairhair.7.desc:0
+  # HEE_fairhair.7.a:0
+  # HEE_fairhair.7.b:0
+
+  # HEE_fairhair.8.t:0
+  # HEE_fairhair.8.desc:0
+  # HEE_fairhair.8.a:0
+  # HEE_fairhair.8.b:0
+  fairhairconquest:0 "Halard "Tanglehair"'s Unification of Norway"
+  fairhair_conquest_cb:0 "Norwegian War of Unification"
+  fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
+  fairhair_CONQUEST_WAR_NAME:0 "Halard Tanglehair's Unification of Norway"
+  fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+
+  pechenegsecondwar:0 "Pecheneg Migration"
+  pechenegs_conquest_cb:0 "Pecheneg Migration"
+  pechenegs_CONQUEST_CB_NAME:1 "Pecheneg Migration"
+  pechenegs_CONQUEST_WAR_NAME:0 "Pecheneg Migration"
+  pechenegs_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+
+
+  # HEE_hassassin.6.d: "1. [replacethis.GetName]\n2. [replacethis.GetFirstName] [replacethis.GetDynasty.GetName]\n3. [replacethis.GetFirstNameBase]\n4. [replacethis.GetFirstNameNicknamed]\n5. [replacethis.GetFirstNameNicknamedNoTooltip]\n6. [replacethis.GetFirstNameNicknamedNoTooltipRegnal]\n7. [replacethis.GetFirstNameNicknamedOrMe]\n8. [replacethis.GetFirstNameNicknamedOrMeNoTooltip]\n9. [replacethis.GetFirstNameNicknamedOrMeRegnal]\n10. [replacethis.GetFirstNameNicknamedPossessive]\n11. [replacethis.GetFirstNameNicknamedPossessiveNoTooltip]\n12.[replacethis.GetFirstNameNicknamedPossessiveNoTooltipRegnal]\n13. [replacethis.GetFirstNameNicknamedPossessiveOrMy]\n14. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltip]\n15. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltipRegnal]\n16. [replacethis.GetFirstNameNicknamedPossessiveOrMyRegnal]\n17. [replacethis.GetFirstNameNicknamedPossessiveRegnal]\n18. [replacethis.GetFirstNameNicknamedRegnal]\n19. [replacethis.GetFirstNameNoTooltip]\n20. [replacethis.GetFirstNameNoTooltipRegnal]\n21. [replacethis.GetFirstNameOrMe]\n22. [replacethis.GetFirstNameOrMeNoTooltip]\n23. [replacethis.GetFirstNameOrMeNoTooltipRegnal]\n24. [replacethis.GetFirstNameOrMeRegnal]\n25. [replacethis.GetFirstNamePossessive]\n26. [replacethis.GetFirstNamePossessiveNoTooltip]\n27. [replacethis.GetFirstNamePossessiveNoTooltipRegnal]\n28. [replacethis.GetFirstNamePossessiveOrMy]\n29. [replacethis.GetFirstNamePossessiveOrMyNoTooltip]\n30. [replacethis.GetFirstNamePossessiveOrMyNoTooltipRegnal]\n31. [replacethis.GetFirstNamePossessiveOrMyRegnal]\n32. [replacethis.GetFirstNamePossessiveRegnal]\n33. [replacethis.GetFirstNameRegnal]\n34. [replacethis.GetFullName]\n35. [replacethis.GetFullNameNicknamed]\n36. [replacethis.GetFullNameNicknamedNoTooltip]\n37. [replacethis.GetFullNameNicknamedNoTooltipRegnal]\n38. [replacethis.GetFullNameNicknamedOrMe]\n39. [replacethis.GetFullNameNicknamedOrMeNoTooltip]\n40. [replacethis.GetFullNameNicknamedOrMeNoTooltipRegnal]\n41. [replacethis.GetFullNameNicknamedOrMeRegnal]\n42. [replacethis.GetFullNameNicknamedPossessive]\n43. [replacethis.GetFullNameNicknamedPossessiveNoTooltip]\n44. [replacethis.GetFullNameNicknamedPossessiveNoTooltipRegnal]\n45. [replacethis.GetFullNameNicknamedPossessiveOrMy]\n46. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltip]\n47. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltipRegnal]\n48. [replacethis.GetFullNameNicknamedPossessiveOrMyRegnal]\n49. [replacethis.GetFullNameNicknamedPossessiveRegnal]\n50. [replacethis.GetFullNameNicknamedRegnal]\n51. [replacethis.GetFullNameNoTooltip]\n52. [replacethis.GetFullNameNoTooltipRegnal]\n53. [replacethis.GetFullNameOrMe]\n54. [replacethis.GetFullNameOrMeNoTooltip]\n55. [replacethis.GetFullNameOrMeNoTooltipRegnal]\n56. [replacethis.GetFullNameOrMeRegnal]\n57. [replacethis.GetFullNamePossessive]\n58. [replacethis.GetFullNamePossessiveNoTooltip]\n59. [replacethis.GetFullNamePossessiveNoTooltipRegnal]\n61. [replacethis.GetFullNamePossessiveOrMy]\n62. [replacethis.GetFullNamePossessiveOrMyNoTooltip]\n63. [replacethis.GetFullNamePossessiveOrMyNoTooltipRegnal]\n64. [replacethis.GetFullNamePossessiveOrMyRegnal]\n65. [replacethis.GetFullNamePossessiveRegnal]\n66. [replacethis.GetFullNameRegnal]\n"
+  
+
+
+
+
+#other loc
+ holy_order_county_government:0 "Holy Order"
+ holy_order_county_government_desc:0 "The holy warriors of the orders have dedicated their life to fighting infidels and serving their faith. They may hold castles given to them by pious landholders. The order leader is chosen within the order ranks."
+ holy_order_county_government_adjective:0 "Holy Order"
+ holy_order_county_government_realm:0 "Holy Order"
+ holy_order_county_succession_law:0 "Holy Order"
+
+ baron_county_holy_order_male:0 "Sergeant"
+ baron_county_holy_order_female:0 "Sergeant"
+ barony_county_holy_order:0 "Chapter"
+ count_county_holy_order_male:0 "Master"
+ count_county_holy_order_female:0 "Mistress"
+ county_county_holy_order:0 "Host"
+ duke_county_holy_order_male:0 "Grandmaster"
+ duke_county_holy_order_female:0 "Grandmistress"
+ duchy_county_holy_order:0 "Order"
+ king_county_holy_order_male:0 "Grandmaster"
+ king_county_holy_order_female:0 "Grandmistress"
+ kingdom_county_holy_order:0 "Sacred Order"
+ emperor_county_holy_order_male:0 "Grand Master"
+ emperor_county_holy_order_female:0 "Grand Mistress"
+ empire_county_holy_order:0 "Most Sacred Order"
+
+#  baron_holy_order_male:0 "Sergeant"
+#  baron_holy_order_female:0 "Sergeant"
+#  barony_holy_order:0 "Chapter"
+#  count_holy_order_male:0 "Master"
+#  count_holy_order_female:0 "Mistress"
+#  county_holy_order:0 "Host"
+#  duke_holy_order_male:0 "Grandmaster"
+#  duke_holy_order_female:0 "Grandmistress"
+#  duchy_holy_order:0 "Order"
+#  king_holy_order_male:0 "Grandmaster"
+#  king_holy_order_female:0 "Grandmistress"
+#  kingdom_holy_order:0 "Sacred Order"
+#  emperor_holy_order_male:0 "Grand Master"
+#  emperor_holy_order_female:0 "Grand Mistress"
+#  empire_holy_order:0 "Most Sacred Order"
+
+
+ TwelverShiaCalphiate: "Imamiyyah Imamate"
+ 
+  #Imamism (Twelver)
+ imami:0 "عَشَرِيَّة‎"
+ imami_adj:0 "Imamiyyah"
+ imami_adherent:0 "Imamiyyah"
+ imami_adherent_plural:0 "Imamiyyah"
+ imami_desc:0 "Imamiyyah, commonly known as the Twelvers, believe that Twelve Imams were prophesied to lead the Ummah, and that the twelth Imam, Imam Zaman, is waiting to return to lead Muslims into the Day of Judgement."

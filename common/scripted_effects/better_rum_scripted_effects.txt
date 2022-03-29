@@ -1214,12 +1214,12 @@ suleymanwarfinish = {
 	
 			cancel_truce_both_ways = title:e_byzantium.holder
 
-			# character:3046 = {
-			# 	trigger_event = {
-			# 		id = seljuk_invasion_events_dynamic.10012
-			# 		days = 20
-			# 	}
-			# }
+			character:3046 = {
+				trigger_event = {
+					id = seljuk_invasion_events_dynamic.1012
+					days = 20
+				}
+			}
 		}
 	}
 	else = {

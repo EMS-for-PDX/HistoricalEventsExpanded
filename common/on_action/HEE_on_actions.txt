@@ -237,31 +237,37 @@ HEE_pechenegs = {
 	}
 }
 
-HEE_pechenegs_first_war = {
-	trigger = {
-		exists = global_var:pecheneg_won_first_war
-	}
-	effect = {
-		title:k_pechenegs.holder = {
-			trigger_event = {
-				id = HEE_turkic_conquerors.204
-				days = { 5475 7305}
-			}
-		}
-	}
-}
+# HEE_pechenegs_first_war = {
+# 	trigger = {
+# 		exists = global_var:pecheneg_won_first_war
+# 		NOT = { exists = global_var:pecheneg_won_first_war_on_action }
+# 	}
+# 	effect = {
+# 		title:k_pechenegs.holder = {
+# 			trigger_event = {
+# 				id = HEE_turkic_conquerors.204
+# 				days = { 5475 7305}
+# 			}
+# 		}
+# 		set_global_variable = pecheneg_won_first_war_on_action
+# 	}
+# }
 
-HEE_pechenegs_second_war = {
-	trigger = {
-		exists = global_var:pecheneg_won_second_war
-	}
-	title:k_pechenegs.holder = {
-		trigger_event = {
-			id = HEE_turkic_conquerors.205
-			days = { 500 1000 }
-		}
-	}
-}
+# HEE_pechenegs_second_war = {
+# 	trigger = {
+# 		exists = global_var:pecheneg_won_second_war
+# 		NOT = { exists = global_var:pecheneg_won_second_war_on_action }
+# 	}
+# 	effect = {
+# 		title:k_pechenegs.holder = {
+# 			trigger_event = {
+# 				id = HEE_turkic_conquerors.205
+# 				days = { 500 1000 }
+# 			}
+# 		}
+# 		set_global_variable = pecheneg_won_first_war_on_action
+# 	}
+# }
 
 HEE_seljuk_invasion_history = {
 	trigger = {

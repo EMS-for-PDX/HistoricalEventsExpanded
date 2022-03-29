@@ -102,6 +102,18 @@ HEE_seljuk_invasion.00111 = {
 			}
 			resolve_title_and_vassal_change = scope:change
 		}
+		every_ruler = { #Fluff for players
+			limit = {
+				OR = {
+					NOT  = {
+						this = global_var:SeljukTughril
+						this = global_var:SeljukChaghri
+					}
+					is_within_diplo_range = { CHARACTER = scope:SeljukTughril }
+				}
+			}
+			trigger_event = HEE_seljuk_invasion.1002 #Differentiate depending on faith (compared to scope:attacker)
+		}
 	}
 }
 
@@ -122,7 +134,15 @@ HEE_seljuk_invasion.1002 = {
 	override_background = {
 		reference = wilderness_steppe
 	}
-	left_portrait = scope:seljuk
+	left_portrait = {
+		character = global_var:SeljukTughril
+		animation = celebrate_sword
+	}
+	immediate = {
+		global_var:SeljukTughril = {
+			save_scope_as = seljukemperor
+		}
+	}
 	option = {
 		name = HEE_seljuk_invasion.1002.a
 	}

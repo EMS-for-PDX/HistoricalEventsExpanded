@@ -92,6 +92,11 @@ HEE_turkic_conquerors.200 = { #Pechenegs Unite
 			}
 		}
 
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_200_fired
+			#days = 30
+		}
+
 	}
 }
 
@@ -138,6 +143,11 @@ HEE_turkic_conquerors.201 = { #Pechenegs Unite, Asking Second Tribe
 				days = { 5 10 }
 			}
 		}
+
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_201_fired
+			#days = 30
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -170,6 +180,11 @@ HEE_turkic_conquerors.202 = { #Pechenegs Unite, Khazar event
 				days = { 5 10 }
 			}
 		}
+
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_202_fired
+			#days = 30
+		}
 	}
 }
 
@@ -190,8 +205,9 @@ HEE_turkic_conquerors.203 = {
 	option = { 
 		name = HEE_turkic_conquerors.2.a
 		
-		add_prestige = 500
+		add_prestige = 1000
 		scope:ruler = {
+			create_story = story_pechenegs_invasion
 			start_war = {
 				casus_belli = pechenegs_migration_cb
 				target = title:e_caspian-pontic_steppe.holder
@@ -199,6 +215,11 @@ HEE_turkic_conquerors.203 = {
 				target_title = title:d_ciscaucasia
 				target_title = title:d_alania
 			}
+		}
+
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_203_fired
+			#days = 30
 		}
 
 		ai_chance = {
@@ -215,6 +236,18 @@ HEE_turkic_conquerors.203 = {
 	}
 }
 
+HEE_turkic_conquerors.2041 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		title:k_pechenegs.holder = {
+			remove_character_flag = HEE_pechenegs_pending_invasion_1
+			trigger_event = HEE_turkic_conquerors.204
+		}
+	}
+}
+
 HEE_turkic_conquerors.204 = {
 	type = character_event
 	title = HEE_turkic_conquerors.204.t
@@ -227,6 +260,8 @@ HEE_turkic_conquerors.204 = {
 
 	immediate = {
 		save_scope_as = ruler
+
+		set_global_variable = HEE_turkic_conquerors_204_fired
 	}
 
 	option = { 
@@ -245,6 +280,11 @@ HEE_turkic_conquerors.204 = {
 			}
 		}
 
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_204_fired
+			#days = 30
+		}
+
 		ai_chance = {
 			base = 100
 		}
@@ -255,6 +295,18 @@ HEE_turkic_conquerors.204 = {
 
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+
+HEE_turkic_conquerors.2051 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		title:k_pechenegs.holder = {
+			trigger_event = HEE_turkic_conquerors.205
+			remove_character_flag = HEE_pechenegs_pending_invasion_2
 		}
 	}
 }
@@ -271,6 +323,8 @@ HEE_turkic_conquerors.205 = {
 
 	immediate = {
 		save_scope_as = ruler
+
+		set_global_variable = HEE_turkic_conquerors_205_fired
 	}
 
 	option = { 
@@ -308,6 +362,10 @@ HEE_turkic_conquerors.205 = {
 			}
 		}
 		
+		add_character_flag = {
+			flag = HEE_turkic_conquerors_205_fired
+			#days = 30
+		}
 
 		ai_chance = {
 			base = 100

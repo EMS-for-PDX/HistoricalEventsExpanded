@@ -126,7 +126,7 @@ seljuk_invasion_events_dynamic.0002 = {
 		# 	# }
 		# }
 		trigger_event = {
-			id = seljuk_invasion_events_dynamic.10011
+			id = seljuk_invasion_events_dynamic.1011
 			days = 10
 		}
 	}
@@ -142,9 +142,9 @@ seljuk_invasion_events_dynamic.0002 = {
 }
 
 # Byzantine Emperor gets this event when Seljuks win first war
-seljuk_invasion_events_dynamic.10011 = {
-	title = seljuk_invasion_events_dynamic.10011.title
-	desc = seljuk_invasion_events_dynamic.10011.desc
+seljuk_invasion_events_dynamic.1011 = {
+	title = seljuk_invasion_events_dynamic.1011.title
+	desc = seljuk_invasion_events_dynamic.1011.desc
 	hidden = yes
 	
 	immediate = {
@@ -155,9 +155,9 @@ seljuk_invasion_events_dynamic.10011 = {
 }
 
 # # Byzantine Emperor gets this event when Seljuks win first war
-seljuk_invasion_events_dynamic.10012 = {
-	title = seljuk_invasion_events_dynamic.10012.title
-	desc = seljuk_invasion_events_dynamic.10012.desc
+seljuk_invasion_events_dynamic.1012 = {
+	title = seljuk_invasion_events_dynamic.1012.title
+	desc = seljuk_invasion_events_dynamic.1012.desc
 	hidden = yes
 	
 	trigger = {

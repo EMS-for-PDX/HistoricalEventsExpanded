@@ -39,7 +39,7 @@ seljuk_invasion_history_replace.0001 = {
 					levies = 2000
 					location = province:4859
 					origin = 4333
-					use_supply = no
+					uses_supply = no
 				}
 				spawn_army = {
 					name = event_troop_default_name
@@ -132,7 +132,7 @@ seljuk_invasion_history_replace.0001 = {
 				}
 			}
 			character:41701 = {
-				give_title = title:c_marash
+				get_title = title:c_marash
 				add_martial_skill = 5
 				add_diplomacy_skill = 2
 				add_intrigue_skill = 4

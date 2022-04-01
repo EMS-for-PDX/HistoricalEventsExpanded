@@ -1,3 +1,9 @@
-﻿can_have_holy_order_county_succession_law_trigger = {
-	has_government = holy_order_county_government
-}
+﻿# can_have_holy_order_county_succession_law_trigger = {
+# 	has_government = holy_order_county_government
+# }
+
+# is_character_at_sea_trigger = {
+#     location = {
+#         is_sea_province = yes
+#     }
+# }

@@ -160,11 +160,11 @@
   invade_armenia_decision_confirm:0 "And down the Romans should fall!"
   invade_armenia_decision_desc:0 "The Byzantines stand close, strong, and rich; Byzantine Armenia is near, and weakly defended, We should push to take these lands from them!"
   invade_armenia_decision_tooltip:0 "You will start a war for Armenia"
-  invade_armenia_decision_effect_tooltip:0 "A War for Armenia will begun.
+  invade_armenia_decision_effect_tooltip:0 "A War for Armenia will begun."
 
   #Seljuk Invasion
   HEE_seljuk_invasion.1002.t:0 "Rise of the Seljuks"
-  HEE_seljuk_invasion.1002.desc:0 "Though long in the memory of the Turks after its demise, the heady days of the Gök Türk Empire ended in year 741 of the Christian Era.  This state had been a confederation, and, upon its disintegration, the constituent tribes separated.  Amongst this shipwreck of nomads were the so-called Oghuz, whence sprung the family of Seljuk.the leading tribe of the Oghuz confederation was the Qïnïq tribe, within which the Seljuks were a leading family.  Their origin is shrouded in the clouds of fable and the fog of romance.The progenitor of the Seljuk family was one Temür-Yaligh, but it was his son who was the eponymous ancestor of the Seljuks.  Father and son served the chief of the Oghuz, who quickly grew jealous of Seljuk’s power and influence.  Seljuk fled to Jand, where he converted to Islam, adopting the creed and manner of the Ghâzî, the warrior for the faith."
+  HEE_seljuk_invasion.1002.desc:0 "There is word flowing down the trade-routes of strange developments in the steppe. A number of years ago, in the realm of the pagan Oghuz Turks, a war leader from among their ranks called Seljuk embraced the religion of Islam. Subsequently proclaiming that a Muslim will not pay tribute to non-believers, Seljuk instead waged a successful war for the tribal leadership. \n\nThe sincerity of his conversion is unclear, but the significance stands: this fiery conversion of a steppe warlord to the ways of the Muslims is somewhat unusual. \nNow Seljuk's grandsons, Chaghri and Tughril, are said to be expanding Oghuz hegemony across all Khorasan at a vigorous pace."
   HEE_seljuk_invasion.1002.a:0 "I doubt [seljukemperor.GetSheHe]'ll get very far."
 
   seljuk_invasion_war:0 "Turkic Invasion"
@@ -225,6 +225,7 @@
   Seljuk_Kingdom:0 "Seljuk Kingdom"
   HEE_BecameBrothersVassal.notification:0 "Your Brother, [global_var:SeljukTughril.GetFirstNameNicknamed] Founded The Seljuk Empire, You have become his vassal."
   Ghaznavid_Empire:0 "Ghaznavids"
+  Ghaznavid: "Ghaznavid"
 
   HEE_ghaznavids.2001.opening:0 "My destined servant,"
   HEE_ghaznavids.2001.desc:0 "As the ruler of the universe, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with an axeman's blade against your neck."

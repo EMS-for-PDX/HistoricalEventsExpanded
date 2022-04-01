@@ -1,10 +1,10 @@
-﻿house_sabbah = {
-	name = "dynn_F_Sabbah"
-	prefix = "dynnp_i"
-	dynasty = 101728
-}
+﻿# house_sabbah = {
+# 	name = "dynn_F_Sabbah"
+# 	prefix = "dynnp_i"
+# 	dynasty = 101728
+# }
 
-house_seljuk = {
+house_mod_seljuk = {
 	name = "dynn_Seljuk"
 	dynasty = 613
 }

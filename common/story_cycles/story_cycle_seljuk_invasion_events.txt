@@ -31,16 +31,16 @@
 					save_scope_as = new_story_owner # pass chain to appropriate target
 				}
 			}
-			if = {
-				limit = { exists = scope:new_story_owner }
-				make_story_owner = scope:new_story_owner
-				scope:new_story_owner = {
-					add_trait = turkish_conqueror
-				}
-				debug_log = "Successfully replaced the Seljuk Khan"
-				debug_log_date = yes
-				debug_log_scopes = yes
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+			scope:new_story_owner = {
+				add_trait = turkish_conqueror
 			}
+			debug_log = "Successfully replaced the Seljuk Khan"
+			debug_log_date = yes
+			debug_log_scopes = yes
 		}
 	}
 
@@ -71,6 +71,53 @@
 					seljuk_war_target_evaluation_and_declaration_effect = yes
 				}
 				debug_log = "The story started a new war for the seljuks"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+				
+			}
+		}
+	}
+
+	effect_group = {
+		days = { 40 70 }
+
+		trigger = {
+			exists = global_var:GhaznavidEmpireTitle.holder
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				realm_size <= 160
+				any_held_title = {
+					this = global_var:SeljukEmpireTitle
+				}
+			}
+			OR = {
+				global_var:GhaznavidEmpireTitle.holder = {
+					has_title = title:k_transoxiana
+				}
+				title:k_transoxiana.top_liege = global_var:GhaznavidEmpireTitle.holder
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					start_war = {
+						cb = seljuk_invasion_war
+						target = global_var:GhaznavidEmpireTitle.holder
+						target_title = title:k_transoxiana
+					}
+				}
+				debug_log = "The story started a new war for the seljuks - for global_var:GhaznavidEmpireTitle.holder"
 				debug_log_date = yes
 				story_owner = {
 					save_scope_as = owner
@@ -154,16 +201,16 @@ story_ghaznavid_invasion = {
 					save_scope_as = new_story_owner # pass chain to appropriate target
 				}
 			}
-			if = {
-				limit = { exists = scope:new_story_owner }
-				make_story_owner = scope:new_story_owner
-				scope:new_story_owner = {
-					add_trait = turkish_conqueror
-				}
-				debug_log = "Successfully replaced the Seljuk Khan"
-				debug_log_date = yes
-				debug_log_scopes = yes
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+			scope:new_story_owner = {
+				add_trait = turkish_conqueror
 			}
+			debug_log = "Successfully replaced the Seljuk Khan"
+			debug_log_date = yes
+			debug_log_scopes = yes
 		}
 	}
 
@@ -276,13 +323,13 @@ story_pechenegs_invasion = {
 					save_scope_as = new_story_owner # pass chain to appropriate target
 				}
 			}
-			if = {
-				limit = { exists = scope:new_story_owner }
-				make_story_owner = scope:new_story_owner
-				debug_log = "Successfully replaced the Pechenegs Khan"
-				debug_log_date = yes
-				debug_log_scopes = yes
-			}
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+			debug_log = "Successfully replaced the Pechenegs Khan"
+			debug_log_date = yes
+			debug_log_scopes = yes
 		}
 	}
 

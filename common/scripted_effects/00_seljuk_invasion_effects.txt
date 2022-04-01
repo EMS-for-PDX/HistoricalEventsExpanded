@@ -184,6 +184,15 @@ spawn_seljuk_character_effect = {
 			name = seljukfounder
 			value = scope:seljuk
 		}
+
+		dynasty = {
+			set_dynasty_name = "Seljuk"
+			set_coa = house_mod_seljuk
+		}
+		house = {
+			set_house_name = "Seljuk"
+			set_coa = house_mod_seljuk
+		}
 	}
 }
 
@@ -363,6 +372,50 @@ spawn_seljuk_troops_effect = {
 			stacks = 10
 		}
 		levies = 1000
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = onager
+			stacks = 10
+		}
+		men_at_arms = {
+			type = onager
+			stacks = 10
+		}
+		location = capital_province
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = light_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = onager
+			stacks = 10
+		}
+		men_at_arms = {
+			type = onager
+			stacks = 10
+		}
 		location = capital_province
 	}
 	spawn_army = {

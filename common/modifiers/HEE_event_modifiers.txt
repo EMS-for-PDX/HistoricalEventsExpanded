@@ -12,3 +12,23 @@ the_turkic_conqueror_modifier = {
 	enemy_hostile_scheme_success_chance_add = -10
 	vassal_limit = 25
 }
+
+
+# testing_water = {
+# 	stacking = yes
+# 	icon = martial_negative
+# 	days = 1
+# 	vassal_levy_contribution_add = -5
+# 	theocracy_government_levy_contribution_add = -5
+# 	republic_government_levy_contribution_add = -5
+# 	levy_size = -5
+# 	days = 1
+# 	supply_limit = -1
+# 	supply_capacity_mult = -3
+# 	levy_reinforcement_rate = -2
+# 	hostile_county_attrition = 5
+# 	# lait_attrition_mult	= 5
+# 	# attrition_add = 2
+# 	supply_duration = -200
+# 	#army_siege_value_mult = 1000 #This is an InstaSiege!
+# }

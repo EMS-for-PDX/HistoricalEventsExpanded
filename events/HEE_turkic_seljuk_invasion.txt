@@ -60,6 +60,39 @@ HEE_seljuk_invasion.0011 = {
 		debug_log = "Spawning the Seljuks Empire before 1066 start date"
 		debug_log_date = yes
 		spawn_seljuk_empire_character_effect = yes
+
+		every_ruler = { #Fluff for players
+			limit = {
+				NOT  = {
+					this = global_var:SeljukTughril
+				}
+				
+				AND  = {
+					global_var:SeljukTughril = {
+						is_ruler = yes
+						has_title = global_var:SeljukEmpireTitle
+					}
+					in_diplomatic_range = global_var:SeljukTughril 
+				}
+			}
+			trigger_event = HEE_seljuk_invasion.1002 #Differentiate depending on faith (compared to scope:attacker)
+		}
+
+		every_ruler = { #Fluff for players
+			limit = {
+				NOT  = {
+					this = global_var:SeljukChaghri
+				}
+				AND  = {
+					global_var:SeljukChaghri = {
+						is_ruler = yes
+						has_title = global_var:SeljukEmpireTitle
+					}
+					in_diplomatic_range = global_var:SeljukChaghri 
+				}
+			}
+			trigger_event = HEE_seljuk_invasion.1003 #Differentiate depending on faith (compared to scope:attacker)
+		}
 	}
 }
 
@@ -102,30 +135,19 @@ HEE_seljuk_invasion.00111 = {
 			}
 			resolve_title_and_vassal_change = scope:change
 		}
-		every_ruler = { #Fluff for players
-			limit = {
-				OR = {
-					NOT  = {
-						this = global_var:SeljukTughril
-						this = global_var:SeljukChaghri
-					}
-					is_within_diplo_range = { CHARACTER = scope:SeljukTughril }
-				}
-			}
-			trigger_event = HEE_seljuk_invasion.1002 #Differentiate depending on faith (compared to scope:attacker)
-		}
 	}
 }
 
 # Event for handling new army spawning on succession(not used right now)
 HEE_seljuk_invasion.0100 = {
 	hidden = yes
+	orphan = yes
 	immediate = {
 		spawn_seljuk_troops_effect = yes
 	}
 }
 
-# Spawned Seljuks
+# Spawned Seljuks for Tughril
 HEE_seljuk_invasion.1002 = {
 	type = character_event
 	title = HEE_seljuk_invasion.1002.t
@@ -147,6 +169,29 @@ HEE_seljuk_invasion.1002 = {
 		name = HEE_seljuk_invasion.1002.a
 	}
 }
+# Spawned Seljuks for Chaghri
+HEE_seljuk_invasion.1003 = {
+	type = character_event
+	title = HEE_seljuk_invasion.1002.t
+	desc = HEE_seljuk_invasion.1002.desc
+	theme = war
+	override_background = {
+		reference = wilderness_steppe
+	}
+	left_portrait = {
+		character = global_var:SeljukChaghri
+		animation = celebrate_sword
+	}
+	immediate = {
+		global_var:SeljukChaghri = {
+			save_scope_as = seljukemperor
+		}
+	}
+	option = {
+		name = HEE_seljuk_invasion.1002.a
+	}
+}
+
 
 
 

@@ -1,6 +1,7 @@
 ﻿namespace = autoerrorfixer
 autoerrorfixer.1 = {
     hidden = yes
+	orphan = yes
     immediate = {
 		fix_variable_error = {ERROR = seljuk_story_has_ended}
 		fix_variable_error = {ERROR = old_khan}
@@ -30,5 +31,32 @@ autoerrorfixer.1 = {
 		fix_variable_error = {ERROR = seljuk_empire_has_spawned}
 		fix_variable_error = {ERROR = free_seljuk_cb}
 		fix_variable_error = {ERROR = HEE_fairhair_2_fired}
+		fix_variable_error = {ERROR = pechenegs_story_has_ended}
+		fix_variable_error = {ERROR = HEE_pechenegs_pending_invasion}
+		fix_variable_error = {ERROR = HEE_turkic_conquerors_202_fired}
+		fix_variable_error = {ERROR = stealingfrombrother}
+		fix_variable_error = {ERROR = HEE_fairhair_2_fired}
+		fix_variable_error = {ERROR = HEE_fairhair_5_fired}
+		fix_variable_error = {ERROR = free_ghaznavid_cb}
+		fix_variable_error = {ERROR = HEE_fairhair_7_fired}
+		fix_variable_error = {ERROR = ghaznaviddynasty}
+		fix_variable_error = {ERROR = seljuk_story_has_ended}
+		fix_variable_error = {ERROR = formedrum}
+		fix_variable_error = {ERROR = HEE_fairhair_feast_on_action_fired}
+		fix_variable_error = {ERROR = HEE_fairhair_3_fired}
+		fix_variable_error = {ERROR = HEE_fairhair_1_fired}
+		fix_variable_error = {ERROR = HEE_fairhair_4_fired}
+		fix_variable_error = {ERROR = HEE_turkic_conquerors_203_fired}
+		fix_variable_error = {ERROR = seljuk_empire_has_spawned}
+		fix_variable_error = {ERROR = HEE_fairhair_1_Fairhair_said_no}
+		fix_variable_error = {ERROR = HEE_turkic_conquerors_201_fired}
+		fix_variable_error = {ERROR = HEE_turkic_conquerors_200_fired}
+		fix_variable_error = {ERROR = ghaznavid_story_has_ended}
+		fix_variable_error = {ERROR = HEE_fairhair_6_fired}
+		fix_variable_error = {ERROR = SeljukAlp_Arslan}
+		fix_variable_error = {ERROR = wasbyzantinevassal}
+		fix_variable_error = {ERROR = HEE_fairhair_1_Fairhair_said_yes}
+		fix_variable_error = {ERROR = SeljukTughril}
+		fix_variable_error = {ERROR = free_seljuk_cb}
 	}
 }

@@ -1,73 +1,73 @@
-﻿#Invade Armenia yaboi
-invade_armenia_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+﻿# #Invade Armenia yaboi
+# invade_armenia_decision = {
+# 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
 
-	desc = invade_armenia_decision_desc
-	selection_tooltip = invade_armenia_decision_tooltip
-	major = yes
+# 	desc = invade_armenia_decision_desc
+# 	selection_tooltip = invade_armenia_decision_tooltip
+# 	major = yes
 
-	ai_check_interval = 30
+# 	ai_check_interval = 30
 
-	is_shown = {
-		exists = global_var:SeljukEmpireTitle
-		has_title = global_var:SeljukEmpireTitle 
-	}
+# 	is_shown = {
+# 		exists = global_var:SeljukEmpireTitle
+# 		has_title = global_var:SeljukEmpireTitle 
+# 	}
 
-	is_valid = {
-		exists = global_var:SeljukEmpireTitle
-		has_title = global_var:SeljukEmpireTitle
-		is_at_war = no
-		completely_controls_region = special_seljuk_empire_borderlands
-		exists = title:e_byzantium.holder
-		title:e_byzantium.holder = {
-			completely_controls = title:d_greater_armenia
-			completely_controls = title:d_vaspurakan
-			completely_controls = title:d_mesopotamia
-			completely_controls_region = ghw_region_anatolia
-		}
-	}
+# 	is_valid = {
+# 		exists = global_var:SeljukEmpireTitle
+# 		has_title = global_var:SeljukEmpireTitle
+# 		is_at_war = no
+# 		completely_controls_region = special_seljuk_empire_borderlands
+# 		exists = title:e_byzantium.holder
+# 		title:e_byzantium.holder = {
+# 			completely_controls = title:d_greater_armenia
+# 			completely_controls = title:d_vaspurakan
+# 			completely_controls = title:d_mesopotamia
+# 			completely_controls_region = ghw_region_anatolia
+# 		}
+# 	}
 	
-	is_valid_showing_failures_only = {
-		is_capable_adult = yes
-		is_imprisoned = no
-		is_at_war = no
-	}
+# 	is_valid_showing_failures_only = {
+# 		is_capable_adult = yes
+# 		is_imprisoned = no
+# 		is_at_war = no
+# 	}
 
-	effect = {
-		custom_tooltip = invade_armenia_decision_effect_tooltip
+# 	effect = {
+# 		custom_tooltip = invade_armenia_decision_effect_tooltip
 		
-		global_var:SeljukEmpireTitle.holder = {
-			add_pressed_claim = title:d_greater_armenia
-			add_pressed_claim = title:d_vaspurakan
-			add_pressed_claim = title:d_mesopotamia
-			add_pressed_claim = title:c_bakriya
-			add_pressed_claim = title:c_mayyafariqin
-			add_pressed_claim = title:c_tall_basma
-			add_pressed_claim = title:c_apahunik
-			add_pressed_claim = title:c_vaspurakan
+# 		global_var:SeljukEmpireTitle.holder = {
+# 			add_pressed_claim = title:d_greater_armenia
+# 			add_pressed_claim = title:d_vaspurakan
+# 			add_pressed_claim = title:d_mesopotamia
+# 			add_pressed_claim = title:c_bakriya
+# 			add_pressed_claim = title:c_mayyafariqin
+# 			add_pressed_claim = title:c_tall_basma
+# 			add_pressed_claim = title:c_apahunik
+# 			add_pressed_claim = title:c_vaspurakan
 
-			start_war = {
-				casus_belli = seljuk_armenia_cb_dynamic
-				target = title:e_byzantium.holder
-				claimant = global_var:SeljukEmpireTitle.holder
+# 			start_war = {
+# 				casus_belli = seljuk_armenia_cb_dynamic
+# 				target = title:e_byzantium.holder
+# 				claimant = global_var:SeljukEmpireTitle.holder
 
-				target_title = title:d_greater_armenia
-				target_title = title:d_vaspurakan
-				target_title = title:d_mesopotamia
-				target_title = title:c_bakriya
-				target_title = title:c_mayyafariqin
-				target_title = title:c_tall_basma
-				target_title = title:c_apahunik
-				target_title = title:c_vaspurakan
-			}
-		}
-	}
+# 				target_title = title:d_greater_armenia
+# 				target_title = title:d_vaspurakan
+# 				target_title = title:d_mesopotamia
+# 				target_title = title:c_bakriya
+# 				target_title = title:c_mayyafariqin
+# 				target_title = title:c_tall_basma
+# 				target_title = title:c_apahunik
+# 				target_title = title:c_vaspurakan
+# 			}
+# 		}
+# 	}
 	
-	ai_potential = {
-		always = yes
-	}
+# 	ai_potential = {
+# 		always = yes
+# 	}
 
-	ai_will_do = {
-		base = 100
-	}
-}
+# 	ai_will_do = {
+# 		base = 100
+# 	}
+# }

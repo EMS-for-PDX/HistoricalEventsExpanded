@@ -667,9 +667,9 @@
 	attacker_allies_inherit = yes
 	defender_allies_inherit = yes
 	
-	war_name = NOMADIC_MIGRATION_WAR_NAME
-	war_name_base = NOMADIC_MIGRATION_WAR_NAME_BASE
-	cb_name = NOMADIC_MIGRATION_CB_NAME
+	war_name = pechenegs_CONQUEST_WAR_NAME
+	war_name_base = pechenegs_CONQUEST_WAR_NAME_BASE
+	cb_name = pechenegs_CONQUEST_CB_NAME
 	
 	interface_priority = 100
 

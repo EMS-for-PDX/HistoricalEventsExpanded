@@ -1,5 +1,4 @@
 ﻿turkish_conqueror = {
-	index = 982
 	fame = yes
 
 	diplomacy = 2

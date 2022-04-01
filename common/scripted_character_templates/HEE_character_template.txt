@@ -2,7 +2,7 @@
 HEE_seljuk_template = {
 	age = 22
 	gender = male
-	dynasty_house = house:house_seljuk
+	dynasty_house = house:house_mod_seljuk
 	martial = 9
 	diplomacy = 5
 	intrigue = 3

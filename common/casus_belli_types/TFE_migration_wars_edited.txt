@@ -233,6 +233,7 @@
 					stacks = 10
 				}
 				location = scope:attacker.capital_province
+				inheritable = no
 				uses_supply = no
 			}
 			#And one army to hold.
@@ -243,6 +244,7 @@
 					type = horse_archers
 					stacks = 5
 				}
+				inheritable = no
 				location = scope:attacker.capital_province
 				uses_supply = no
 			}
@@ -253,6 +255,7 @@
 					type = horse_archers
 					stacks = 5
 				}
+				inheritable = no
 				location = scope:attacker.capital_province
 				uses_supply = no
 			}

@@ -362,7 +362,7 @@ story_pechenegs_invasion = {
 					trigger_event = {
 						id = HEE_turkic_conquerors.2041
 						#days = { 5475 7305}
-						days = { 500 1000 } #for testing
+						days = { 2000 6000 } #for testing
 					}
 				}
 			}
@@ -382,7 +382,7 @@ story_pechenegs_invasion = {
 					add_character_flag = HEE_pechenegs_pending_invasion_2
 					trigger_event = {
 						id = HEE_turkic_conquerors.2051
-						days = { 500 1000 }
+						days = { 1000 4000 }
 					}
 				}
 			}

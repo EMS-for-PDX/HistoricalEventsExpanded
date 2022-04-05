@@ -46,3 +46,9 @@ custom_pechenegs = {
 		c_cherkassy c_odessa c_ladyzyn c_uman c_soroca c_orhei
 	} 
 }
+
+custom_pecheneg_wallachia = {
+	duchies = {
+		d_oltenia d_muntenia d_transylvanian_alps d_moldova d_bugeac d_bukovina
+	}
+}

@@ -362,6 +362,23 @@ HEE_turkic_conquerors.205 = {
 			}
 		}
 		
+		every_duchy = {
+			limit = {
+				title_capital_county = {
+					title_province = { geographical_region = custom_pecheneg_wallachia }
+				}
+			}
+			add_to_temporary_list = claim_titles
+		}
+
+		every_in_list = {
+			list = claim_titles
+
+			root = {
+				add_pressed_claim = prev
+			}
+		}
+
 		add_character_flag = {
 			flag = HEE_turkic_conquerors_205_fired
 			#days = 30

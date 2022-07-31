@@ -1,4 +1,4 @@
-seljuk_invasion_war = {
+﻿seljuk_invasion_war = {
 	group = invasion
 
 	combine_into_one = yes

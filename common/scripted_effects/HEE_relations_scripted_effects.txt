@@ -14,6 +14,7 @@
 	# Relations
 	character:34014 = {
 		#set_relation_rival = scope:al_muwaffak
+		remove_short_term_gold = 1500
 	}
 
 

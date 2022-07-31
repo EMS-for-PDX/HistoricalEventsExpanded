@@ -1,4 +1,4 @@
-namespace = HEE_seljuk_invasion 
+﻿namespace = HEE_seljuk_invasion 
 
 ### Spawn Seljuk
 HEE_seljuk_invasion.0001 = {

@@ -48,8 +48,8 @@
   # HEE_fairhair.6.a:0
   # HEE_fairhair.6.b:0
 
-  fairhairbackdownno:
-  fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
+  #fairhairbackdownno:
+  #fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
 
   # HEE_fairhair.7.t:0
   # HEE_fairhair.7.desc:0
@@ -64,7 +64,7 @@
   fairhairconquest:0 "Harald "Tanglehair"'s Unification of Norway"
   fairhair_conquest_cb:0 "Norwegian War of Unification"
   fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
-  fairhair_CONQUEST_WAR_NAME:0 "Harald "Tanglehair"'s Unification of Norway"
+  fairhair_CONQUEST_WAR_NAME:0 "Harald Tanglehair's Unification of Norway"
   fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
 
   pechenegsecondwar:0 "Pecheneg Migration"

@@ -82,42 +82,43 @@ norwegian_coalition_effect = {
 		}
 	}
 	
-	
-	title:c_telemark.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
-	}
-	title:c_nedenes.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
-	}
-	title:c_agdeside.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
-	}
-	title:c_rogalandi.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
-	}
-	title:c_hordalandi.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
-	}
-	title:c_sogn.holder = { 
-		change_liege = {
-			liege = character:144000
-			change = scope:change
-		}	
+	hidden_effect = {
+		title:c_telemark.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
+		title:c_nedenes.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
+		title:c_agdeside.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
+		title:c_rogalandi.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
+		title:c_hordalandi.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
+		title:c_sogn.holder = { 
+			change_liege = {
+				liege = character:144000
+				change = scope:change
+			}	
+		}
 	}
 }
 

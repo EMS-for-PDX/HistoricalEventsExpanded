@@ -382,11 +382,13 @@ HEE_fairhair.6 = { #Back-down?
 		custom_tooltip = fairhairbackdownno
 
 		character:144000 = {
-			add_pressed_claim = title:k_norway
-			add_pressed_claim = title:d_trandalog
-			add_pressed_claim = title:d_vestlandi
-			add_pressed_claim = title:d_agder
-			add_pressed_claim = title:c_hordalandi
+			hidden_effect = {
+				add_pressed_claim = title:k_norway
+				add_pressed_claim = title:d_trandalog
+				add_pressed_claim = title:d_vestlandi
+				add_pressed_claim = title:d_agder
+				add_pressed_claim = title:c_hordalandi
+			}
 
 			start_war = {
 				casus_belli = fairhairconquest

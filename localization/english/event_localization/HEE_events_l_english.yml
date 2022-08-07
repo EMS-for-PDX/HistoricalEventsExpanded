@@ -24,9 +24,9 @@
   dynnp_iSabbah:0 "-i Sabbah"
   
   HEE_fairhair.2.t:0 "A feast and your daughter."
-  HEE_fairhair.2.desc:0 "As the party starts into motion, my guests move to sit around the table or to gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my Daughter [gyda.GetName], to stay put in her room for the night, and this food is looking mighty good.."
+  HEE_fairhair.2.desc:0 "As the feast starts into motion, my guests move to sit around the table or gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my daughter, [gyda.GetName], to stay put in her room for the night. However I can clearly see her mingling with the guests and partaking in the festivities.\n\nI wonder if it would not be better for my daughter to retire for the night, after all, she is but a young girl surronded by increasingly drunken men. Then again, it does seem she is enjoying herself and the atmosphere..."
   HEE_fairhair.2.a:0 "Perhaps my guests wouldn't mind."
-  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe?"
+  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe."
 
   HEE_fairhair.3.t:0 "Valhalla on Earth?"
   HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of music and song assaults the ear with their intensity, the heat of the fireplace brings comforting warmth, and the main table's seats are filled with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
@@ -38,23 +38,24 @@
   HEE_fairhair.4.a:0 "I'll do it, and to prove my commitment, I won't cut nor brush my hair until it's done"
   HEE_fairhair.4.b:0 "Seems like a lot of work for someone, plenty of fish in the sea right?"
 
-  # HEE_fairhair.5.t:0
-  # HEE_fairhair.5.desc:0
-  # HEE_fairhair.5.a:0
-  # HEE_fairhair.5.b:0
+  HEE_fairhair.5.t:0 "The Lustful Rogue"
+  HEE_fairhair.5.desc:0 ""
+  HEE_fairhair.5.a:0 "This can not stand!"
+  HEE_fairhair.5.b:0 "Im sure nothing bad will happen..."
 
-  # HEE_fairhair.6.t:0
-  # HEE_fairhair.6.desc:0
-  # HEE_fairhair.6.a:0
-  # HEE_fairhair.6.b:0
+  HEE_fairhair.6.t:0 "Point of No Return"
+  HEE_fairhair.6.desc:0 "News has come in from the south land that the people of Hordaland and Rogaland, Agder and Thelemark, are gathering, and bringing together ships and weapons, as well as a great body of men. It seems the lords of Southern Norway have heard of my pledge to become their king, and have banded together to stop my quest in its path.\n\n[king_eirikr.GetName] has sent a messanger who declares that as long as I forfeit my ambitions towards the throne of Norway and his daughter all will be forgiven, but should I persist in my quest I will be crushed by the mighty army he has gathered.\n\nThe time is now to decide if my love for [gyda.GetName], or desire to be king, merits the coming battle..."
+  HEE_fairhair.6.a:0 "I shall not back down!"
+  HEE_fairhair.6.b:0 "This challenge is too great..."
 
-  #fairhairbackdownno:
-  #fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
+  fairhairbackdownno: ""
+  fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
 
-  # HEE_fairhair.7.t:0
-  # HEE_fairhair.7.desc:0
-  # HEE_fairhair.7.a:0
-  # HEE_fairhair.7.b:0
+  HEE_fairhair.7.t:0 "The Promise Fulfilled"
+  HEE_fairhair.7.desc:0 "At long last I stand as King of Norway. Having fulfilled my vow, my hair has been combed and cut for which I am now known by the name "Fairhair". But how could I forget Gyda, for whose sake I had made my vow. I have sent for her, and she, as she had promised, has come to marry the King of all Norway."
+  HEE_fairhair.7.a:0 "She shall become my Queen!"
+  HEE_fairhair.7.b:0 "She shall be my woman"
+  HEE_fairhair.7.c:0 "My affection has faded"
 
   # HEE_fairhair.8.t:0
   # HEE_fairhair.8.desc:0

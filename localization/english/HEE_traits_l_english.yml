@@ -1,0 +1,6 @@
+﻿ l_english:
+ 
+  #Special Traits HEE
+
+  trait_unwed:0 "Unwed"
+  trait_unwed_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] remains unmarried."

@@ -5,5 +5,5 @@ tags={
 	"Decisions"
 }
 name="HistoricalEventsExpandedDeveloper"
-supported_version="1.5.1.1"
+supported_version="1.6.1.2"
 remote_file_id="2675374763"

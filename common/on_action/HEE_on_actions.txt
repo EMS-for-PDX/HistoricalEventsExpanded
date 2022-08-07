@@ -23,8 +23,8 @@ on_game_start_after_lobby = {
 	on_actions = {
 		#HEE_spawning_twelver_hof
 		HEE_seljuk_invasion_history
-		HEE_fairhair
 		HEE_pechenegs
+		#HEE_fairhair
 	}
 }
 
@@ -150,69 +150,69 @@ HEE_fairhair_feast = {
 }
 
 
-HEE_fairhair = {
-	trigger = {
-		game_start_date = 867.1.1
-	}
-	effect = {
-		if = {
-			limit = {
-				character:166329 = {
-					is_alive = yes
-				}
-			}
-			create_title_and_vassal_change = {
-				type = conquest
-				save_scope_as = event1lands
-				add_claim_on_loss = no
-			}
+# HEE_fairhair = {
+	# trigger = {
+		# game_start_date = 867.1.1
+	# }
+	# effect = {
+		# #if = { Unneeded due to PDX assigning him the proper land in base game
+			# #limit = {
+				# #character:166329 = {
+					# #is_alive = yes
+				# #}
+			# #}
+			# #create_title_and_vassal_change = {
+				# #type = conquest
+				# #save_scope_as = event1lands
+				# #add_claim_on_loss = no
+			# #}
 			
-			title:c_hordalandi = {
-				change_title_holder = {
-					holder = character:166329
-					change = scope:event1lands
-				}
-			}
-			resolve_title_and_vassal_change = scope:event1lands
-		}
-		if = {
-			limit = {
-				character:144000 = {
-					is_alive = yes
-					has_character_modifier = harald_tanglehairs_vow_modifier
-				}
-			}
-			character:144000 = {
-				remove_nickname = yes
-				remove_character_modifier = harald_tanglehairs_vow_modifier
-			}
-		}
-		if = {
-			limit = {
-				character:144000 = {
-					is_ai = yes
-					NOT = { has_character_flag = prevented_from_raiding }
-				}
-			}
-			character:144000 = {
-				add_character_flag = {
-					flag = prevented_from_raiding
-					days = 400
-				}
-			}
-		}
-		if = {
-			limit = {
-				character:166044 = {
-					is_alive = yes
-				}
-			}
-			character:166044 = {
-				set_age = 15
-			}
-		}
-	}
-}
+			# #title:c_hordalandi = {
+				# #change_title_holder = {
+					# #holder = character:166329
+					# #change = scope:event1lands
+				# #}
+			# #}
+			# #resolve_title_and_vassal_change = scope:event1lands
+		# #}
+		# if = {
+			# limit = {
+				# character:144000 = {
+					# is_alive = yes
+					# has_character_modifier = harald_tanglehairs_vow_modifier
+				# }
+			# }
+			# character:144000 = {
+				# remove_nickname = yes
+				# remove_character_modifier = harald_tanglehairs_vow_modifier
+			# }
+		# }
+		# if = {
+			# limit = {
+				# character:144000 = {
+					# is_ai = yes
+					# NOT = { has_character_flag = prevented_from_raiding }
+				# }
+			# }
+			# character:144000 = {
+				# add_character_flag = {
+					# flag = prevented_from_raiding
+					# days = 400
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# character:166044 = {
+					# is_alive = yes
+				# }
+			# }
+			# character:166044 = {
+				# set_age = 15
+			# }
+		# }
+	# }
+# }
 
 HEE_pechenegs = {
 	trigger = {

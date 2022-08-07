@@ -263,7 +263,7 @@ HEE_fairhair.4 = { #takes the vows
 	}
 	right_portrait = {
 		character = scope:gyda
-		animation = personality_compassionate
+		animation = personality_callous
 	}
 
 	immediate = {
@@ -415,6 +415,12 @@ HEE_fairhair.6 = { #Back-down?
 	option = {
 		name = HEE_fairhair.6.b
 		custom_tooltip = fairhairbackdownyes
+		
+		character:144000 = {
+			remove_nickname = yes
+			remove_character_modifier = harald_tanglehairs_vow_modifier
+		}
+		
 		ai_chance = {
 			base = 0
 		}

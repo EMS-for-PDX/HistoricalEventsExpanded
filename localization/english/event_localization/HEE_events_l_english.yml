@@ -29,12 +29,12 @@
   HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe?"
 
   HEE_fairhair.3.t:0 "Valhalla on Earth?"
-  HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of the music and song hits the ear as loud as it can, the heat of the fireplace brings immense heat; and the main table's seats are with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I come to see out of the corner of my eye, one of the most beautiful sights I'd ever laid my eyes upon, it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that doesn't take long to become trapped within the mind, this woman will become mine, I crave it.. but maybe I should approach her to begin with..."
+  HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of music and song assaults the ear with their intensity, the heat of the fireplace brings comforting warmth, and the main table's seats are filled with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
   HEE_fairhair.3.a:0 "Approach Her"
   HEE_fairhair.3.b:0 "Leave her alone"
 
   HEE_fairhair.4.t:0 "Is that a challenge?"
-  HEE_fairhair.4.desc:0 "As I move towards her, I go to introduce myself, yet she quickly shuts me down before I could let a word out,  although that should have been the end of the discussion; but her voice was also a thing of wonder and I needed more. \n\nI go to follow her as she walks away, and yet she turns facing me once more, \n"You warriors are, all the same, you could conquer and unite this entire realm, and I'd still think twice about talking once more with you...." \n\nAs she walks away, I ponder, was that a quest? A Challenge? Is that what I would need to achieve to get her? To unite the lands around us.....Perhaps?"
+  HEE_fairhair.4.desc:0 "As I approach her, I go to introduce myself. However she quickly shuts me down before I can utter a single word. Although that should have been the end of the discussion; her voice was also a thing of wonder and I yearned to hear more. \n\nWhen I go to follow her as she walks away, [gyda.GetName] turns to face me once more; \n"You warriors are all the same! You could conquer and be king over all of Norway, and I'd still think twice about talking once more with you...." \n\nAs she walks away, I ponder, was that a challenge? A Quest? Is that what I would need to achieve to make her mine? To unify all of Norway is no small task, but perhaps it is worth it for a woman like her...."
   HEE_fairhair.4.a:0 "I'll do it, and to prove my commitment, I won't cut nor brush my hair until it's done"
   HEE_fairhair.4.b:0 "Seems like a lot of work for someone, plenty of fish in the sea right?"
 
@@ -48,6 +48,9 @@
   # HEE_fairhair.6.a:0
   # HEE_fairhair.6.b:0
 
+  fairhairbackdownno:
+  fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
+
   # HEE_fairhair.7.t:0
   # HEE_fairhair.7.desc:0
   # HEE_fairhair.7.a:0
@@ -57,10 +60,11 @@
   # HEE_fairhair.8.desc:0
   # HEE_fairhair.8.a:0
   # HEE_fairhair.8.b:0
-  fairhairconquest:0 "Halard "Tanglehair"'s Unification of Norway"
+  
+  fairhairconquest:0 "Harald "Tanglehair"'s Unification of Norway"
   fairhair_conquest_cb:0 "Norwegian War of Unification"
   fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
-  fairhair_CONQUEST_WAR_NAME:0 "Halard Tanglehair's Unification of Norway"
+  fairhair_CONQUEST_WAR_NAME:0 "Harald "Tanglehair"'s Unification of Norway"
   fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
 
   pechenegsecondwar:0 "Pecheneg Migration"

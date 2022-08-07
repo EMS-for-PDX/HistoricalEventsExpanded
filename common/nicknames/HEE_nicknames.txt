@@ -3,3 +3,5 @@
 #############################################
 
 # Historical Event Expanded
+nick_the_rich = {}
+nick_the_mighty = {}

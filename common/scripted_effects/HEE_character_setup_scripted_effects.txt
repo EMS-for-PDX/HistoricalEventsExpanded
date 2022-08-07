@@ -1,0 +1,323 @@
+﻿
+
+
+# Karling Collapse
+hee_karling_867_effect = {	
+
+	# Scopes #
+	character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+	character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+	character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+	character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+	character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+	character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+	
+	character:71901 = { save_scope_as = berengar } # https://en.wikipedia.org/wiki/Berengar_I_of_Italy
+	character:167889 = { save_scope_as = bertila } # https://en.wikipedia.org/wiki/Bertila_of_Spoleto
+	character:71903 = { save_scope_as = guy } # https://en.wikipedia.org/wiki/Guy_III_of_Spoleto
+	#character: Create the missing daughter of Adelchis of Benevento - future wife of Guy? = { save_scope_as = ageltrude } # https://en.wikipedia.org/wiki/Ageltrude
+	
+	character:144998 = { save_scope_as = lothaire } # https://en.wikipedia.org/wiki/Lothair_II
+	character:168314 = { save_scope_as = waldrada } # https://en.wikipedia.org/wiki/Waldrada_of_Lotharingia
+	character:6877 = { save_scope_as = teutberga } # https://en.wikipedia.org/wiki/Teutberga
+	character:7853 = { save_scope_as = pope_nicholas } # https://en.wikipedia.org/wiki/Pope_Nicholas_I
+	character:7852 = { save_scope_as = pope_hadrian } # https://en.wikipedia.org/wiki/Pope_Adrian_II
+	
+	character:90102 = { save_scope_as = hugh } # https://en.wikipedia.org/wiki/Hugh,_Duke_of_Alsace
+	character:7920 = { save_scope_as = bertha } # https://en.wikipedia.org/wiki/Bertha,_daughter_of_Lothair_II
+	character:163174 = { save_scope_as = irmgard } # Ermengarde (d. 90?)
+	character:168315 = { save_scope_as = gisela } # Gisela (c. 865–908), who in 883 married Godfrey, the Viking leader ruling in Frisia, who was murdered in 885
+	character:168336 = { save_scope_as = godfrid } # https://en.wikipedia.org/wiki/Godfrid,_Duke_of_Frisia
+	
+	character:90107 = { save_scope_as = ludwig_the_german } # https://en.wikipedia.org/wiki/Louis_the_German
+	character:7987 = { save_scope_as = hemma } # https://en.wikipedia.org/wiki/Hemma
+	character:42018 = { save_scope_as = karlmann } # https://en.wikipedia.org/wiki/Carloman_of_Bavaria
+	character:42019 = { save_scope_as = ludwig_the_younger } # https://en.wikipedia.org/wiki/Louis_the_Younger
+	character:90105 = { save_scope_as = karl_the_fat } # https://en.wikipedia.org/wiki/Charles_the_Fat
+	character:7945 = { save_scope_as = arnulf } # https://en.wikipedia.org/wiki/Arnulf_of_Carinthia
+	
+	character:7908 = { save_scope_as = otto } # https://en.wikipedia.org/wiki/Otto_I,_Duke_of_Saxony
+	character:144957 = { save_scope_as = bruno } # https://en.wikipedia.org/wiki/Bruno,_Duke_of_Saxony
+	character:7912 = { save_scope_as = hedwig } # https://en.wikipedia.org/wiki/Hedwig_of_Babenberg
+	character:7954 = { save_scope_as = liutgard } # https://en.wikipedia.org/wiki/Liutgard_of_Saxony_(died_885)
+
+	character:90104 = { save_scope_as = charles_the_bald } # https://en.wikipedia.org/wiki/Charles_the_Bald
+	character:90123 = { save_scope_as = louis_the_stammerer } # https://en.wikipedia.org/wiki/Louis_the_Stammerer
+	character:91385 = { save_scope_as = ansgarde_of_burgundy } # https://en.wikipedia.org/wiki/Ansgarde_of_Burgundy (Remarry her to Louis - their annulment did not happen until 874-875)
+	character:90154 = { save_scope_as = louis_iii } # https://en.wikipedia.org/wiki/Louis_III_of_France
+	character:90155 = { save_scope_as = carloman_ii } # https://en.wikipedia.org/wiki/Carloman_II
+	character:168091 = { save_scope_as = adelaide_of_paris } # https://en.wikipedia.org/wiki/Adelaide_of_Paris
+	character:42021 = { save_scope_as = carloman } # https://en.wikipedia.org/wiki/Carloman,_son_of_Charles_the_Bald
+	character:90110 = { save_scope_as = judith } # https://en.wikipedia.org/wiki/Judith_of_Flanders
+	character:163175 = { save_scope_as = ermentrud } # Ermentrud (854–877), a nun, Abbess of Hasnon
+	character:163176 = { save_scope_as = hildegarde } # Hildegarde (born 856, died young)
+	character:163177 = { save_scope_as = gisela_ii } # Gisela (857–874)
+	character:163178 = { save_scope_as = rotrude } # Rotrude (852–912), a nun, Abbess of Saint-Radegunde
+	# character: Create the missing daughter of Charles the Bald? = { save_scope_as = godehilde } # Godehilde (864–907)
+	# character: Create the two missing daughters of Louis the Stammerer? = { save_scope_as =  } # Princess Hildegarde (born in 864) & Princess Gisela (865–884)
+	
+	character:6448 = { save_scope_as = odo_of_france } # https://en.wikipedia.org/wiki/Odo_of_France
+	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
+	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
+
+	# Relations #
+	
+	# Lotharingia
+	character:6877 = { # teutberga
+		set_relation_friend = scope:pope_nicholas
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_diplomacy_2
+		add_trait = honest
+		add_trait = zealous
+		add_trait = stubborn
+	}
+	
+	character:168314 = { # waldrada
+		HEE_remove_personality_traits_effect = yes
+		add_trait = gregarious
+		add_trait = cynical
+		add_trait = patient
+		add_trait = unwed
+	}
+	
+	character:90102 = { # Hugh
+		HEE_remove_personality_traits_effect = yes
+		add_trait = ambitious
+		add_trait = callous
+		add_trait = cynical
+		get_title = title:c_colmar
+		get_title = title:d_alsace
+	}
+
+
+
+
+
+
+	# Italy
+	character:163094 = { # Sawdan
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = brave
+		add_trait = just
+		add_trait = deceitful
+		add_trait = diligent
+		add_trait = organizer
+	}
+
+	character:163071 = { # Adelchis of Benevento
+		HEE_remove_personality_traits_effect = yes
+		add_trait = craven
+		add_trait = paranoid
+		add_trait = cynical
+	}
+
+
+
+	# East Francia
+	character:42019 = { # Ludwig the Younger
+		marry = scope:liutgard
+	}
+
+
+	# West Francia 
+	character:163175 = { # Ermentrud (854–877), 
+		add_trait = devoted # A nun, Abbess of Hasnon
+	}
+
+	character:163178 = { # Rotrude (852–912), 
+		add_trait = devoted # A nun, Abbess of Saint-Radegunde
+	}
+	
+	character:42021 = { # Carloman, son of Charles the Bald
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_learning_3
+		add_trait = arbitrary
+		add_trait = ambitious
+		add_trait = stubborn
+		add_trait = devoted # Carloman was tonsured as a child
+	}
+
+	character:90123 = { # Louis the Stammerer
+		add_trait = weak
+		marry = scope:ansgarde_of_burgundy
+	}
+	
+	character:91385 = { # Ansgarde of Burgundy
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_diplomacy_2
+		add_trait = trusting
+		add_trait = ambitious
+		add_trait = patient
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Byzantines 
+hee_byzantine_bulgaria_867_effect = {	
+
+	# Scopes
+	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
+	character:70382 = { save_scope_as = boris } # https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria
+	character:70383 = { save_scope_as = vladimir_rasate } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
+	
+	# Relations
+	character:1700 = {
+		set_age = 55
+	}
+
+
+}
+
+
+
+
+
+
+
+# Anarchy at Samarra
+hee_samarra_relations_867_effect = {	
+
+	# Scopes
+	character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
+	character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+	character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+	character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+	character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+	
+	character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+	character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+	character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+	
+	# Relations
+	character:34014 = {
+		#set_relation_rival = scope:al_muwaffak
+		remove_short_term_gold = 1500
+	}
+
+
+}
+
+hee_fairhair_867_effect = {
+
+	# Scopes #
+	character:144000 = { save_scope_as = haraldr_fairhair } # https://en.wikipedia.org/wiki/Harald_Fairhair
+	character:6862 = { save_scope_as = ragnhild_the_mighty } # https://en.wikipedia.org/wiki/Ragnhild_the_Mighty
+	
+	character:6866 = { save_scope_as = jute_king_eirikr } # https://en.wikipedia.org/wiki/Ragnhild_the_Mighty
+	
+	character:166044 = { save_scope_as = gyda } # https://en.wikipedia.org/wiki/Gyda_Eiriksdatter
+	character:166329 = { save_scope_as = king_eirikr } # https://en.wikipedia.org/wiki/Eirik_of_Hordaland
+	
+	character:161301 = { save_scope_as = eystein } # https://en.wikipedia.org/wiki/Eystein_Glumra
+	character:161302 = { save_scope_as = rognvald_eysteinsson } # https://en.wikipedia.org/wiki/Rognvald_Eysteinsson
+	character:161303 = { save_scope_as = sigurd_eysteinsson } # https://en.wikipedia.org/wiki/Sigurd_Eysteinsson
+
+	character:186011 = { save_scope_as = kjotve_the_rich } # https://en.wikipedia.org/wiki/Kjotve_the_Rich
+	character:186012 = { save_scope_as = thorir_haklang } # Thorir Haklang was a berserker who fell during the Battle of Hafrsfjord.
+
+	character:144000 = { # Harald Fairhair
+		if = {
+			limit = {
+				is_alive = yes
+				has_character_modifier = harald_tanglehairs_vow_modifier
+			}
+			remove_nickname = yes
+			remove_character_modifier = harald_tanglehairs_vow_modifier
+			}
+		if = {
+			limit = {
+				is_ai = yes
+				NOT = { has_character_flag = prevented_from_raiding }
+			}
+			add_character_flag = {
+				flag = prevented_from_raiding
+				days = 400
+			}
+		}
+	}
+	
+	character:6862 = { # Ragnhild the Mighty
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = brave
+		add_trait = zealous
+		add_trait = calm
+		add_trait = strong
+		give_nickname = nick_the_mighty
+		set_father = scope:jute_king_eirikr
+		set_house = scope:jute_king_eirikr.house
+	}
+		
+	character:166044 = { # Gyda Eiriksdatter
+		set_age = 15
+		HEE_remove_personality_traits_effect = yes
+		add_trait = arrogant
+		add_trait = ambitious
+		add_trait = stubborn
+		add_trait = unwed
+	}
+	
+	character:161302 = { # Rognvald Eysteinsson
+		set_relation_friend = scope:haraldr_fairhair
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = brave
+		add_trait = wrathful
+		add_trait = diligent
+	}
+	
+	character:186011 = { # Kjotve the Rich
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_stewardship_4
+		add_trait = avaricious
+		add_trait = greedy
+		add_trait = arrogant
+		add_trait = gluttonous
+		add_trait = callous
+		add_gold = 500
+		give_nickname = nick_the_rich
+	}
+	
+	character:186012 = { # Thorir Haklang, son of Kjotve the Rich
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_2
+		add_trait = brave
+		add_trait = sadistic
+		add_trait = vengeful
+		add_trait = berserker
+	}
+	
+	
+}

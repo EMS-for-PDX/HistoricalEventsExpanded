@@ -1,0 +1,138 @@
+﻿# characterhistoryfixes = {
+# 	name = "Johan"
+# 	religion = "ashari"
+# 	culture = "akan"
+
+# 	737.1.1 = {
+# 		birth = yes
+# 	}
+# 	# 740.1.1 = {
+# 	# 	effect = {
+# 	# 		character:188637 = {
+# 	# 			set_character_faith_history = "ashari"
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 785.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163153 = {
+# 	# 			set_character_faith_history = faith:ashari
+# 	# 		}
+# 	# 		character:188638 = {
+# 	# 			set_character_faith_history = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 788.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163155 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 790.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163154 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 792.1.1 = {
+# 	# 	effect = {
+# 	# 		character:188639 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 812.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163156 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 821.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163157 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	# 830.1.1 = {
+# 	# 	effect = {
+# 	# 		character:163099 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 		character:163156 = {
+# 	# 			set_character_faith = faith:ashari
+# 	# 		}
+# 	# 	}
+# 	# }
+# 	867.1.1 = {
+# 		death = yes
+# 	}
+# }
+
+
+188637 = {
+	religion = "ashari"
+	738.1.2 = {
+		religion = "ashari"
+	}
+}
+
+163153 = {
+	religion = "ashari"
+	785.1.2 = {
+		religion = "ashari"
+	}
+}
+
+188638 = {
+	religion = "ashari"
+	786.1.2 = {
+		religion = "ashari"
+	}
+}
+
+163155 = {
+	religion = "ashari"
+	788.1.2 = {
+		religion = "ashari"
+	}
+}
+
+163154 = {
+	religion = "ashari"
+	790.1.2 = {
+		religion = "ashari"
+	}
+}
+
+188639 = {
+	religion = "ashari"
+	792.1.2 = {
+		religion = "ashari"
+	}
+}
+
+163156 = {
+	religion = "ashari"
+	812.1.1 = {
+		religion = "ashari"
+	}
+}
+
+163157 = {
+	religion = "ashari"
+	821.1.1 = {
+		religion = "ashari"
+	}
+}
+
+163099 = {
+	religion = "ashari"
+	830.1.1 = {
+		religion = "ashari"
+	}
+}

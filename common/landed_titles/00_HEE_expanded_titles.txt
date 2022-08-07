@@ -1,0 +1,6 @@
+﻿d_test_empire = {
+	color = { 113 88 101 }
+	color2 = { 255 255 255 }
+	definite_form = yes
+	capital = c_turnovo
+}

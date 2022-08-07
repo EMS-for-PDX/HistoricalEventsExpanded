@@ -15,20 +15,19 @@ the_turkic_conqueror_modifier = {
 
 
 # testing_water = {
-# 	stacking = yes
+# 	#stacking = yes
 # 	icon = martial_negative
-# 	days = 1
-# 	vassal_levy_contribution_add = -5
-# 	theocracy_government_levy_contribution_add = -5
-# 	republic_government_levy_contribution_add = -5
-# 	levy_size = -5
-# 	days = 1
-# 	supply_limit = -1
-# 	supply_capacity_mult = -3
-# 	levy_reinforcement_rate = -2
-# 	hostile_county_attrition = 5
-# 	# lait_attrition_mult	= 5
-# 	# attrition_add = 2
-# 	supply_duration = -200
-# 	#army_siege_value_mult = 1000 #This is an InstaSiege!
+# 	# vassal_levy_contribution_add = -50
+# 	# theocracy_government_levy_contribution_add = -50
+# 	# republic_government_levy_contribution_add = -50
+# 	# levy_size = -100
+# 	# supply_limit = -100
+# 	# supply_capacity_mult = -300
+# 	# levy_reinforcement_rate = -300
+# 	# hostile_county_attrition = 300
+# 	# # attrition_add = 2
+# 	# supply_duration = -200
+# 	# naval_movement_speed_mult = -0.8
+# 	#supply_capacity_add = -100
+# 	army_siege_value_mult = 1000 #This is an InstaSiege!
 # }

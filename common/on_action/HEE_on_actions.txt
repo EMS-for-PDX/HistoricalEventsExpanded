@@ -25,8 +25,44 @@ on_game_start_after_lobby = {
 		HEE_seljuk_invasion_history
 		HEE_fairhair
 		HEE_pechenegs
+		#HEE_religious_fixes
 	}
 }
+
+# HEE_religious_fixes = {
+# 	effect = {
+# 		character:188637 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163153 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:188638 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163155 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163154 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:188639 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163156 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163157 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163099 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 		character:163156 = {
+# 			set_character_faith = faith:ashari
+# 		}
+# 	}
+# }
 
 on_title_gain = {
 	on_actions = {

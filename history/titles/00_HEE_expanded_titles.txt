@@ -1,0 +1,84 @@
+# d_test_empire = {
+# 	740.1.1 = {
+# 		holder = 188637
+# 		effect = {
+# 			character:188637 = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	785.1.1 = {
+# 		holder = 163153
+# 		effect = {
+# 			character:163153 = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	786.1.1 = {
+# 		holder = 188638 
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	788.1.1 = {
+# 		holder = 163155
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	790.1.1 = {
+# 		holder = 163154 
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}		
+# 		}
+# 	}
+	
+# 	792.1.1 = {
+# 		holder = 188639
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+
+# 	812.1.1 = {
+# 		holder = 163156
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	821.1.1 = {
+# 		holder = 163157
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	830.1.1 = {
+# 		holder = 163099
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# 	830.1.1 = {
+# 		holder = 163156
+# 		effect = {
+# 			holder = {
+# 				set_character_faith_with_conversion = faith:ashari
+# 			}
+# 		}
+# 	}
+# }

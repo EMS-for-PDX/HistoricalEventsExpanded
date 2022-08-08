@@ -369,6 +369,8 @@ HEE_fairhair.6 = { #Back-down?
 	}
 
 	immediate = {
+		character:166044 = { save_scope_as = gyda }
+		character:166329 = { save_scope_as = king_eirikr }
 		character:144000 = {
 			add_character_flag = {
 				flag = HEE_fairhair_6_fired

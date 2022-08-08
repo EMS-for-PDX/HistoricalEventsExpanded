@@ -119,8 +119,33 @@ hee_karling_867_effect = {
 	# East Francia
 	character:42019 = { # Ludwig the Younger
 		marry = scope:liutgard
+		
 	}
 
+	# Truces to represent the Divisio regni 
+	scope:ludwig_the_german = {
+		add_truce_both_ways = {
+			character = scope:karlmann
+			days = 10950
+			name = divisio_regni_desc
+		}
+	}
+
+	scope:ludwig_the_german = {
+		add_truce_both_ways = {
+			character = scope:ludwig_the_younger
+			days = 10950
+			name = divisio_regni_desc
+		}
+	}
+	
+	scope:ludwig_the_german = {
+		add_truce_both_ways = {
+			character = scope:karl_the_fat
+			days = 10950
+			name = divisio_regni_desc
+		}
+	}
 
 	# West Francia 
 	character:163175 = { # Ermentrud (854–877), 
@@ -212,8 +237,19 @@ hee_samarra_relations_867_effect = {
 	character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
 	
 	character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+	character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
 	character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
 	character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+	
+	title:d_kermanshah = { save_scope_as = d_kermanshah }
+	title:c_kermanshah = { save_scope_as = c_kermanshah }
+	title:c_masabadhan = { save_scope_as = c_masabadhan }
+	title:c_saimara = { save_scope_as = c_saimara }
+	
+	title:d_hamadan = { save_scope_as = d_hamadan }
+	title:c_hamadan = { save_scope_as = c_hamadan }
+	title:c_dinawar = { save_scope_as = c_dinawar }
+	title:c_nihawand = { save_scope_as = c_nihawand }
 	
 	# Relations
 	character:34014 = {
@@ -221,7 +257,7 @@ hee_samarra_relations_867_effect = {
 		remove_short_term_gold = 1500
 	}
 	
-	character:34015 = {
+	character:34015 = { # Al-Muhtadi
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_learning_3
@@ -231,12 +267,24 @@ hee_samarra_relations_867_effect = {
 		add_trait = humble
 	}	
 	
-	character:34017 = {
+	character:34017 = { # Al-Muwaffaq
 		set_relation_friend = scope:musa_bughoglu
 		set_relation_friend = scope:wasif_al_turki
 		create_alliance = scope:musa_bughoglu
+		scope:musa_bughoglu = {
+			add_opinion = {
+				target = character:34017
+					modifier = perk_negotiated_alliance_opinion
+			}
+		}
 		create_alliance = scope:wasif_al_turki
-		
+		scope:wasif_al_turki = {
+			add_opinion = {
+				target = character:34017
+					modifier = perk_negotiated_alliance_opinion
+			}
+		}
+
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_martial_4
@@ -246,7 +294,7 @@ hee_samarra_relations_867_effect = {
 		add_trait = ambitious
 	}	
 	
-	character:34018 = {
+	character:34018 = { # Al-Mu'tadid
 		HEE_remove_personality_traits_effect = yes
 		add_trait = rowdy
 		add_trait = greedy
@@ -256,7 +304,7 @@ hee_samarra_relations_867_effect = {
 		add_trait = diligent
 	}		
 	
-	character:163131 = {
+	character:163131 = { # Bugha al-Sharabi
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_martial_2
@@ -264,9 +312,10 @@ hee_samarra_relations_867_effect = {
 		add_trait = ambitious
 		add_trait = deceitful
 		add_trait = schemer
+		
 	}	
 	
-	character:163132 = {
+	character:163132 = { # Musa ibn Bugha al-Kabir
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_martial_3
@@ -274,9 +323,14 @@ hee_samarra_relations_867_effect = {
 		add_trait = brave
 		add_trait = ambitious
 		add_trait = schemer
+		
+		get_title = title:c_karbala
+		get_title = title:c_anbar
+		
+		spawn_turkic_troops_effect = yes
 	}		
 
-	character:turkish000007 = {
+	character:turkish000007 = { # Wasif al-Turki
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_martial_3
@@ -284,13 +338,27 @@ hee_samarra_relations_867_effect = {
 		add_trait = ambitious
 		add_trait = callous
 		add_trait = schemer
+		
+		get_title = title:c_kirkuk
+		get_title = title:c_shahrazur
+		
+		add_pressed_claim = scope:d_kermanshah
+		add_pressed_claim = scope:c_kermanshah
+		add_pressed_claim = scope:c_masabadhan
+		add_pressed_claim = scope:c_saimara
+		add_pressed_claim = scope:d_hamadan
+		add_pressed_claim = scope:c_hamadan
+		add_pressed_claim = scope:c_dinawar
+		add_pressed_claim = scope:c_nihawand
+		
+		spawn_turkic_troops_effect = yes
 	}		
 	
 	
 	# Simply here to stop the Abbasid caliph from making Shahrazur his capital
-	character:159169 = {
-		get_title = title:c_shahrazur
-	}
+	# character:159169 = {
+		# get_title = title:c_shahrazur
+	# }
 
 
 }

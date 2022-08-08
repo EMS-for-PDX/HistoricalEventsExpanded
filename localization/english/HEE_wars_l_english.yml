@@ -37,3 +37,14 @@
  nomadic_invasion_war_victory_desc: "Seizes all titles within [defender.GetShortUINamePossessive] realm in the dejure lands of the target title. All lands outside of this will be abandoned."
 
  msg_seljuk_invasion_war_invalidated_message: "The war ended inconclusively because the [casus_belli|E] is longer valid\nNobody gains or loses anything"
+ 
+ 
+ 
+ 
+ 
+ divisio_regni_desc: "\nPeace has been forged between King Ludwig and his sons through the Divisio regni - the division of the King's land among his sons with Carloman recieving Bavaria, Ludwig the Younger recieving Saxony with Franconia and Thuringia, and Karl recieving Swabia with Raetia."
+ 
+ 
+ 
+ # Event Troops
+ turkic_event_troops: "Turkic Troops"

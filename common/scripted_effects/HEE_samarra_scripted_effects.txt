@@ -1,0 +1,30 @@
+﻿
+
+
+spawn_turkic_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = turkic_event_troops
+		levies = {
+			value = 1400
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}

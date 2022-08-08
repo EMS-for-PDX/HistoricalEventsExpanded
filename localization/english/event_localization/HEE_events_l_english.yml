@@ -1,87 +1,142 @@
 ﻿l_english:
-  
-  #HEE_religious_spawns.1
-  HEE_religious_spawns.1.t:0 "The Death of [muslimfaith.GetAdjective] Imam [hasan11th.GetFirstNameNicknamed]"
-  HEE_religious_spawns.1.desc:0 "[hasan11th.GetFirstName], the alleged Eleventh Shia Imam by divine command and by the decrees of the previous Imams, has passed away. While leading a life in precautionary dissimulation, in fear of persecution from the [caliphate.GetName], Imam [hasan11th.GetFirstName] was known to be endowed with divine knowledge and would critize muslim rulers who appropriated the wealth of their nations or those who extorted people under their rule; who also lead a life of critic towards the [caliphate.GetName] who [hasan11th.GetFirstName] proclaimed ruled with the hand of terror. \n\nWith his death comes the large question of succession, for which many groups throughout the middle east believed for if [hasan11th.GetFirstName], had a son, The son would grow to be the famed Mahdi, an eschatological redeemer of Islam and the one who will arrive with Isa to bring peace and justice to the world. Without such, many are questioning the future."
-  HEE_religious_spawns.1.a:0 "Things are changing...."
-  HEE_religious_spawns.1.b:0 "Ismali, son of Jafar, was the last Iman and Mahdi!"
 
-  HEE_religious_spawns.2.t:0 "Imam [hasan11th.GetFirstNameNicknamed]'s Son"
-  HEE_religious_spawns.2.desc: "\"A Son has been found!\nImam [Muhammad12th.GetFirstNameNicknamed], the Twelfth Imam has been discovered!\nThe rightly guided one!\nThe Mahdi!\" People call on the streets outside your quarters, for they say that a new Imam of [muslimfaith.GetName] is among us, and that his birth had been kept hidden as to keep him safe from the [caliphate.GetName]. When you finally workout the words in your head to ask his whereabouts, you are simply told the Imam Mahdi has taken to hiding, and that only 4 deputies, assigned previously from Imam [hasan11th.GetFirstNameNicknamed] can communicate with the boy....."
-  HEE_religious_spawns.2.a:0 "Uh, oh?..."
-  HEE_religious_spawns.2.b:0 "The Prophesied Mahdi!"
- 
-  HEE_religious_spawns.4.t:0 "A New Center of [faith.GetName], [salamiya.GetNameNoTier]."
-  HEE_religious_spawns.4.desc:0 "In recent years, the city of [salamiya.GetName] has grown further as a center of [faith.GetAdjective] belief and theology, although still an [faith.GetAdjective] secret, it has even become a headquaters to which [faith.GetAdjective] missionaries leave to spread the word of the faith.\n\nA rider from [salamiya.GetName] approaches your court today, asking for a donation to be used to grow the minority faith of the [faith.GetAdjective] within [salamiya.GetName] into a larger majority of the city, doing such could greatly boost the spread of [faith.GetName] elsewhere."
-  HEE_religious_spawns.4.a:0 "Let me assist them anyhow i can!"
-  HEE_religious_spawns.4.b:0 "..Sorry I cannot.."
+ #HEE_religious_spawns.1
+ HEE_religious_spawns.1.t:0 "The Death of [muslimfaith.GetAdjective] Imam [hasan11th.GetFirstNameNicknamed]"
+ HEE_religious_spawns.1.desc:0 "[hasan11th.GetFirstName], the alleged Eleventh Shia Imam by divine command and by the decrees of the previous Imams, has passed away. While leading a life in precautionary dissimulation, in fear of persecution from the [caliphate.GetName], Imam [hasan11th.GetFirstName] was known to be endowed with divine knowledge and would critize muslim rulers who appropriated the wealth of their nations or those who extorted people under their rule; who also lead a life of critic towards the [caliphate.GetName] who [hasan11th.GetFirstName] proclaimed ruled with the hand of terror. \n\nWith his death comes the large question of succession, for which many groups throughout the middle east believed for if [hasan11th.GetFirstName], had a son, The son would grow to be the famed Mahdi, an eschatological redeemer of Islam and the one who will arrive with Isa to bring peace and justice to the world. Without such, many are questioning the future."
+ HEE_religious_spawns.1.a:0 "Things are changing...."
+ HEE_religious_spawns.1.b:0 "Ismali, son of Jafar, was the last Iman and Mahdi!"
 
-  HEE_hassassin.5.t:0 "Birth of the Assassins"
-  HEE_hassassin.5.d:0 "Word is spreading that a [HassassinTheAsssassin.GetFaith.GetAdjective] missionary, [HassassinTheAsssassin.GetFirstName] [HassassinTheAsssassin.GetDynasty.GetName], has founded a religious order known as the '[primary_title.GetName]' somewhere in western Persia. Using trickery and guile, this mysterious cult of trained killers has seized control of the mountain fortress of [alamut.GetNameNoTier] and converted it into their headquarters. Already a string of violent murders can be traced back to Hassan's devoted and fearless disciples..."
-  HEE_hassassin.5.a:0 "I should be careful..."
+ HEE_religious_spawns.2.t:0 "Imam [hasan11th.GetFirstNameNicknamed]'s Son"
+ HEE_religious_spawns.2.desc: "\"A Son has been found!\nImam [Muhammad12th.GetFirstNameNicknamed], the Twelfth Imam has been discovered!\nThe rightly guided one!\nThe Mahdi!\" People call on the streets outside your quarters, for they say that a new Imam of [muslimfaith.GetName] is among us, and that his birth had been kept hidden as to keep him safe from the [caliphate.GetName]. When you finally workout the words in your head to ask his whereabouts, you are simply told the Imam Mahdi has taken to hiding, and that only 4 deputies, assigned previously from Imam [hasan11th.GetFirstNameNicknamed] can communicate with the boy....."
+ HEE_religious_spawns.2.a:0 "Uh, oh?..."
+ HEE_religious_spawns.2.b:0 "The Prophesied Mahdi!"
 
-  dynn_F_Sabbah:0 "Sabbah"
-  dynnp_iSabbah:0 "-i Sabbah"
-  
-  HEE_fairhair.2.t:0 "A feast and your daughter."
-  HEE_fairhair.2.desc:0 "As the feast starts into motion, my guests move to sit around the table or gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my daughter, [gyda.GetName], to stay put in her room for the night. However I can clearly see her mingling with the guests and partaking in the festivities.\n\nI wonder if it would not be better for my daughter to retire for the night, after all, she is but a young girl surronded by increasingly drunken men. Then again, it does seem she is enjoying herself and the atmosphere..."
-  HEE_fairhair.2.a:0 "Perhaps my guests wouldn't mind."
-  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe."
+ HEE_religious_spawns.4.t:0 "A New Center of [faith.GetName], [salamiya.GetNameNoTier]."
+ HEE_religious_spawns.4.desc:0 "In recent years, the city of [salamiya.GetName] has grown further as a center of [faith.GetAdjective] belief and theology, although still an [faith.GetAdjective] secret, it has even become a headquaters to which [faith.GetAdjective] missionaries leave to spread the word of the faith.\n\nA rider from [salamiya.GetName] approaches your court today, asking for a donation to be used to grow the minority faith of the [faith.GetAdjective] within [salamiya.GetName] into a larger majority of the city, doing such could greatly boost the spread of [faith.GetName] elsewhere."
+ HEE_religious_spawns.4.a:0 "Let me assist them anyhow i can!"
+ HEE_religious_spawns.4.b:0 "..Sorry I cannot.."
 
-  HEE_fairhair.3.t:0 "Valhalla on Earth?"
-  HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of music and song assaults the ear with their intensity, the heat of the fireplace brings comforting warmth, and the main table's seats are filled with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
-  HEE_fairhair.3.a:0 "Approach Her"
-  HEE_fairhair.3.b:0 "Leave her alone"
+ HEE_hassassin.5.t:0 "Birth of the Assassins"
+ HEE_hassassin.5.d:0 "Word is spreading that a [HassassinTheAsssassin.GetFaith.GetAdjective] missionary, [HassassinTheAsssassin.GetFirstName] [HassassinTheAsssassin.GetDynasty.GetName], has founded a religious order known as the '[primary_title.GetName]' somewhere in western Persia. Using trickery and guile, this mysterious cult of trained killers has seized control of the mountain fortress of [alamut.GetNameNoTier] and converted it into their headquarters. Already a string of violent murders can be traced back to Hassan's devoted and fearless disciples..."
+ HEE_hassassin.5.a:0 "I should be careful..."
 
-  HEE_fairhair.4.t:0 "Is that a challenge?"
-  HEE_fairhair.4.desc:0 "As I approach her, I go to introduce myself. However she quickly shuts me down before I can utter a single word. Although that should have been the end of the discussion; her voice was also a thing of wonder and I yearned to hear more. \n\nWhen I go to follow her as she walks away, [gyda.GetName] turns to face me once more; \n"You warriors are all the same! You could conquer and be king over all of Norway, and I'd still think twice about talking once more with you...." \n\nAs she walks away, I ponder, was that a challenge? A Quest? Is that what I would need to achieve to make her mine? To unify all of Norway is no small task, but perhaps it is worth it for a woman like her...."
-  HEE_fairhair.4.a:0 "I'll do it, and to prove my commitment, I won't cut nor brush my hair until it's done"
-  HEE_fairhair.4.b:0 "Seems like a lot of work for someone, plenty of fish in the sea right?"
+ dynn_F_Sabbah:0 "Sabbah"
+ dynnp_iSabbah:0 "-i Sabbah"
 
-  HEE_fairhair.5.t:0 "The Lustful Rogue"
-  HEE_fairhair.5.desc:0 ""
-  HEE_fairhair.5.a:0 "This can not stand!"
-  HEE_fairhair.5.b:0 "Im sure nothing bad will happen..."
 
-  HEE_fairhair.6.t:0 "Point of No Return"
-  HEE_fairhair.6.desc:0 "News has come in from the south land that the people of Hordaland and Rogaland, Agder and Thelemark, are gathering, and bringing together ships and weapons, as well as a great body of men. It seems the lords of Southern Norway have heard of my pledge to become their king, and have banded together to stop my quest in its path.\n\n[king_eirikr.GetName] has sent a messanger who declares that as long as I forfeit my ambitions towards the throne of Norway and his daughter all will be forgiven, but should I persist in my quest I will be crushed by the mighty army he has gathered.\n\nThe time is now to decide if my love for [gyda.GetName], or desire to be king, merits the coming battle..."
-  HEE_fairhair.6.a:0 "I shall not back down!"
-  HEE_fairhair.6.b:0 "This challenge is too great..."
+ # HEE Fairhair Storyline
 
-  fairhairbackdownno: ""
-  fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
+ HEE_fairhair.2.t:0 "A feast and your daughter."
+ HEE_fairhair.2.desc:0 "As the feast starts into motion, my guests move to sit around the table or gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my daughter, [gyda.GetName], to stay put in her room for the night. However I can clearly see her mingling with the guests and partaking in the festivities.\n\nI wonder if it would not be better for my daughter to retire for the night, after all, she is but a young girl surronded by increasingly drunken men. Then again, it does seem she is enjoying herself and the atmosphere..."
+ HEE_fairhair.2.a:0 "Perhaps my guests wouldn't mind."
+ HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe."
 
-  HEE_fairhair.7.t:0 "The Promise Fulfilled"
-  HEE_fairhair.7.desc:0 "At long last I stand as King of Norway. Having fulfilled my vow, my hair has been combed and cut for which I am now known by the name "Fairhair". But how could I forget Gyda, for whose sake I had made my vow. I have sent for her, and she, as she had promised, has come to marry the King of all Norway."
-  HEE_fairhair.7.a:0 "She shall become my Queen!"
-  HEE_fairhair.7.b:0 "She shall be my woman"
-  HEE_fairhair.7.c:0 "My affection has faded"
+ HEE_fairhair.3.t:0 "Valhalla on Earth?"
+ HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of music and song assaults the ear with their intensity, the heat of the fireplace brings comforting warmth, and the main table's seats are filled with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
+ HEE_fairhair.3.a:0 "Approach Her"
+ HEE_fairhair.3.b:0 "Leave her alone"
 
-  # HEE_fairhair.8.t:0
-  # HEE_fairhair.8.desc:0
-  # HEE_fairhair.8.a:0
-  # HEE_fairhair.8.b:0
-  
-  fairhairconquest:0 "Harald "Tanglehair"'s Unification of Norway"
-  fairhair_conquest_cb:0 "Norwegian War of Unification"
-  fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
-  fairhair_CONQUEST_WAR_NAME:0 "Harald Tanglehair's Unification of Norway"
-  fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ HEE_fairhair.4.t:0 "Is that a challenge?"
+ HEE_fairhair.4.desc:0 "As I approach her, I go to introduce myself. However she quickly shuts me down before I can utter a single word. Although that should have been the end of the discussion; her voice was also a thing of wonder and I yearned to hear more. \n\nWhen I go to follow her as she walks away, [gyda.GetName] turns to face me once more; \n"You warriors are all the same! You could conquer and be king over all of Norway, and I'd still think twice about talking once more with you...." \n\nAs she walks away, I ponder, was that a challenge? A Quest? Is that what I would need to achieve to make her mine? To unify all of Norway is no small task, but perhaps it is worth it for a woman like her...."
+ HEE_fairhair.4.a:0 "I'll do it, and to prove my commitment, I won't cut nor brush my hair until it's done"
+ HEE_fairhair.4.b:0 "Seems like a lot of work for someone, plenty of fish in the sea right?"
 
-  pechenegsecondwar:0 "Pecheneg Migration"
-  pechenegs_conquest_cb:0 "Pecheneg Migration"
-  pechenegs_CONQUEST_CB_NAME:1 "Pecheneg Migration"
-  pechenegs_CONQUEST_WAR_NAME:0 "Pecheneg Migration"
-  pechenegs_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
-  NOMADIC_MIGRATION_WAR_NAME:""
+ HEE_fairhair.5.t:0 "The Lustful Rogue"
+ HEE_fairhair.5.desc:0 ""
+ HEE_fairhair.5.a:0 "This can not stand!"
+ HEE_fairhair.5.b:0 "Im sure nothing bad will happen..."
 
-  # HEE_hassassin.6.d: "1. [replacethis.GetName]\n2. [replacethis.GetFirstName] [replacethis.GetDynasty.GetName]\n3. [replacethis.GetFirstNameBase]\n4. [replacethis.GetFirstNameNicknamed]\n5. [replacethis.GetFirstNameNicknamedNoTooltip]\n6. [replacethis.GetFirstNameNicknamedNoTooltipRegnal]\n7. [replacethis.GetFirstNameNicknamedOrMe]\n8. [replacethis.GetFirstNameNicknamedOrMeNoTooltip]\n9. [replacethis.GetFirstNameNicknamedOrMeRegnal]\n10. [replacethis.GetFirstNameNicknamedPossessive]\n11. [replacethis.GetFirstNameNicknamedPossessiveNoTooltip]\n12.[replacethis.GetFirstNameNicknamedPossessiveNoTooltipRegnal]\n13. [replacethis.GetFirstNameNicknamedPossessiveOrMy]\n14. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltip]\n15. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltipRegnal]\n16. [replacethis.GetFirstNameNicknamedPossessiveOrMyRegnal]\n17. [replacethis.GetFirstNameNicknamedPossessiveRegnal]\n18. [replacethis.GetFirstNameNicknamedRegnal]\n19. [replacethis.GetFirstNameNoTooltip]\n20. [replacethis.GetFirstNameNoTooltipRegnal]\n21. [replacethis.GetFirstNameOrMe]\n22. [replacethis.GetFirstNameOrMeNoTooltip]\n23. [replacethis.GetFirstNameOrMeNoTooltipRegnal]\n24. [replacethis.GetFirstNameOrMeRegnal]\n25. [replacethis.GetFirstNamePossessive]\n26. [replacethis.GetFirstNamePossessiveNoTooltip]\n27. [replacethis.GetFirstNamePossessiveNoTooltipRegnal]\n28. [replacethis.GetFirstNamePossessiveOrMy]\n29. [replacethis.GetFirstNamePossessiveOrMyNoTooltip]\n30. [replacethis.GetFirstNamePossessiveOrMyNoTooltipRegnal]\n31. [replacethis.GetFirstNamePossessiveOrMyRegnal]\n32. [replacethis.GetFirstNamePossessiveRegnal]\n33. [replacethis.GetFirstNameRegnal]\n34. [replacethis.GetFullName]\n35. [replacethis.GetFullNameNicknamed]\n36. [replacethis.GetFullNameNicknamedNoTooltip]\n37. [replacethis.GetFullNameNicknamedNoTooltipRegnal]\n38. [replacethis.GetFullNameNicknamedOrMe]\n39. [replacethis.GetFullNameNicknamedOrMeNoTooltip]\n40. [replacethis.GetFullNameNicknamedOrMeNoTooltipRegnal]\n41. [replacethis.GetFullNameNicknamedOrMeRegnal]\n42. [replacethis.GetFullNameNicknamedPossessive]\n43. [replacethis.GetFullNameNicknamedPossessiveNoTooltip]\n44. [replacethis.GetFullNameNicknamedPossessiveNoTooltipRegnal]\n45. [replacethis.GetFullNameNicknamedPossessiveOrMy]\n46. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltip]\n47. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltipRegnal]\n48. [replacethis.GetFullNameNicknamedPossessiveOrMyRegnal]\n49. [replacethis.GetFullNameNicknamedPossessiveRegnal]\n50. [replacethis.GetFullNameNicknamedRegnal]\n51. [replacethis.GetFullNameNoTooltip]\n52. [replacethis.GetFullNameNoTooltipRegnal]\n53. [replacethis.GetFullNameOrMe]\n54. [replacethis.GetFullNameOrMeNoTooltip]\n55. [replacethis.GetFullNameOrMeNoTooltipRegnal]\n56. [replacethis.GetFullNameOrMeRegnal]\n57. [replacethis.GetFullNamePossessive]\n58. [replacethis.GetFullNamePossessiveNoTooltip]\n59. [replacethis.GetFullNamePossessiveNoTooltipRegnal]\n61. [replacethis.GetFullNamePossessiveOrMy]\n62. [replacethis.GetFullNamePossessiveOrMyNoTooltip]\n63. [replacethis.GetFullNamePossessiveOrMyNoTooltipRegnal]\n64. [replacethis.GetFullNamePossessiveOrMyRegnal]\n65. [replacethis.GetFullNamePossessiveRegnal]\n66. [replacethis.GetFullNameRegnal]\n"
-  
+ HEE_fairhair.6.t:0 "Point of No Return"
+ HEE_fairhair.6.desc:0 "News has come in from the south land that the people of Hordaland and Rogaland, Agder and Thelemark, are gathering, and bringing together ships and weapons, as well as a great body of men. It seems the lords of Southern Norway have heard of my pledge to become their king, and have banded together to stop my quest in its path.\n\n[king_eirikr.GetName] has sent a messanger who declares that as long as I forfeit my ambitions towards the throne of Norway and his daughter all will be forgiven, but should I persist in my quest I will be crushed by the mighty army he has gathered.\n\nThe time is now to decide if my love for [gyda.GetName], or desire to be king, merits the coming battle..."
+ HEE_fairhair.6.a:0 "I shall not back down!"
+ HEE_fairhair.6.b:0 "This challenge is too great..."
+
+ fairhairbackdownno: ""
+ fairhairbackdownyes: "You decide that this quest is too dificult to achieve"
+
+ HEE_fairhair.7.t:0 "The Promise Fulfilled"
+ HEE_fairhair.7.desc:0 "At long last I stand as King of Norway. Having fulfilled my vow, my hair has been combed and cut for which I am now known by the name "Fairhair". But how could I forget Gyda, for whose sake I had made my vow. I have sent for her, and she, as she had promised, has come to marry the King of all Norway."
+ HEE_fairhair.7.a:0 "She shall become my Queen!"
+ HEE_fairhair.7.b:0 "She shall be my woman"
+ HEE_fairhair.7.c:0 "My affection has faded"
+
+ # HEE_fairhair.8.t:0
+ # HEE_fairhair.8.desc:0
+ # HEE_fairhair.8.a:0
+ # HEE_fairhair.8.b:0
+
+ fairhairconquest:0 "Harald "Tanglehair"'s Unification of Norway"
+ fairhair_conquest_cb:0 "Norwegian War of Unification"
+ fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
+ fairhair_CONQUEST_WAR_NAME:0 "Harald Tanglehair's Unification of Norway"
+ fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
 
 
 
 
-#other loc
+
+
+
+
+ # HEE Pechengs
+
+ pechenegsecondwar:0 "Pecheneg Migration"
+ pechenegs_conquest_cb:0 "Pecheneg Migration"
+ pechenegs_CONQUEST_CB_NAME:1 "Pecheneg Migration"
+ pechenegs_CONQUEST_WAR_NAME:0 "Pecheneg Migration"
+ pechenegs_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ NOMADIC_MIGRATION_WAR_NAME:""
+
+ # HEE_hassassin.6.d: "1. [replacethis.GetName]\n2. [replacethis.GetFirstName] [replacethis.GetDynasty.GetName]\n3. [replacethis.GetFirstNameBase]\n4. [replacethis.GetFirstNameNicknamed]\n5. [replacethis.GetFirstNameNicknamedNoTooltip]\n6. [replacethis.GetFirstNameNicknamedNoTooltipRegnal]\n7. [replacethis.GetFirstNameNicknamedOrMe]\n8. [replacethis.GetFirstNameNicknamedOrMeNoTooltip]\n9. [replacethis.GetFirstNameNicknamedOrMeRegnal]\n10. [replacethis.GetFirstNameNicknamedPossessive]\n11. [replacethis.GetFirstNameNicknamedPossessiveNoTooltip]\n12.[replacethis.GetFirstNameNicknamedPossessiveNoTooltipRegnal]\n13. [replacethis.GetFirstNameNicknamedPossessiveOrMy]\n14. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltip]\n15. [replacethis.GetFirstNameNicknamedPossessiveOrMyNoTooltipRegnal]\n16. [replacethis.GetFirstNameNicknamedPossessiveOrMyRegnal]\n17. [replacethis.GetFirstNameNicknamedPossessiveRegnal]\n18. [replacethis.GetFirstNameNicknamedRegnal]\n19. [replacethis.GetFirstNameNoTooltip]\n20. [replacethis.GetFirstNameNoTooltipRegnal]\n21. [replacethis.GetFirstNameOrMe]\n22. [replacethis.GetFirstNameOrMeNoTooltip]\n23. [replacethis.GetFirstNameOrMeNoTooltipRegnal]\n24. [replacethis.GetFirstNameOrMeRegnal]\n25. [replacethis.GetFirstNamePossessive]\n26. [replacethis.GetFirstNamePossessiveNoTooltip]\n27. [replacethis.GetFirstNamePossessiveNoTooltipRegnal]\n28. [replacethis.GetFirstNamePossessiveOrMy]\n29. [replacethis.GetFirstNamePossessiveOrMyNoTooltip]\n30. [replacethis.GetFirstNamePossessiveOrMyNoTooltipRegnal]\n31. [replacethis.GetFirstNamePossessiveOrMyRegnal]\n32. [replacethis.GetFirstNamePossessiveRegnal]\n33. [replacethis.GetFirstNameRegnal]\n34. [replacethis.GetFullName]\n35. [replacethis.GetFullNameNicknamed]\n36. [replacethis.GetFullNameNicknamedNoTooltip]\n37. [replacethis.GetFullNameNicknamedNoTooltipRegnal]\n38. [replacethis.GetFullNameNicknamedOrMe]\n39. [replacethis.GetFullNameNicknamedOrMeNoTooltip]\n40. [replacethis.GetFullNameNicknamedOrMeNoTooltipRegnal]\n41. [replacethis.GetFullNameNicknamedOrMeRegnal]\n42. [replacethis.GetFullNameNicknamedPossessive]\n43. [replacethis.GetFullNameNicknamedPossessiveNoTooltip]\n44. [replacethis.GetFullNameNicknamedPossessiveNoTooltipRegnal]\n45. [replacethis.GetFullNameNicknamedPossessiveOrMy]\n46. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltip]\n47. [replacethis.GetFullNameNicknamedPossessiveOrMyNoTooltipRegnal]\n48. [replacethis.GetFullNameNicknamedPossessiveOrMyRegnal]\n49. [replacethis.GetFullNameNicknamedPossessiveRegnal]\n50. [replacethis.GetFullNameNicknamedRegnal]\n51. [replacethis.GetFullNameNoTooltip]\n52. [replacethis.GetFullNameNoTooltipRegnal]\n53. [replacethis.GetFullNameOrMe]\n54. [replacethis.GetFullNameOrMeNoTooltip]\n55. [replacethis.GetFullNameOrMeNoTooltipRegnal]\n56. [replacethis.GetFullNameOrMeRegnal]\n57. [replacethis.GetFullNamePossessive]\n58. [replacethis.GetFullNamePossessiveNoTooltip]\n59. [replacethis.GetFullNamePossessiveNoTooltipRegnal]\n61. [replacethis.GetFullNamePossessiveOrMy]\n62. [replacethis.GetFullNamePossessiveOrMyNoTooltip]\n63. [replacethis.GetFullNamePossessiveOrMyNoTooltipRegnal]\n64. [replacethis.GetFullNamePossessiveOrMyRegnal]\n65. [replacethis.GetFullNamePossessiveRegnal]\n66. [replacethis.GetFullNameRegnal]\n"
+
+
+
+
+
+
+
+ HEE_turkic_conquerors.200.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.200.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.200.a: "NEED LOCALIZATION"
+
+ HEE_turkic_conquerors.201.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.201.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.201.a: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.201.b: "NEED LOCALIZATION"
+
+ HEE_turkic_conquerors.202.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.202.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.202.a: "NEED LOCALIZATION"
+
+ HEE_turkic_conquerors.203.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.203.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.203.a: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.203.b: "NEED LOCALIZATION"
+
+ HEE_turkic_conquerors.204.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.204.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.204.a: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.204.b: "NEED LOCALIZATION"
+
+ HEE_turkic_conquerors.205.t: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.205.desc: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.205.a: "NEED LOCALIZATION"
+ HEE_turkic_conquerors.205.b: "NEED LOCALIZATION"
+
+ HEE_ghaznavids.5001.opening: "NEED LOCALIZATION"
+ HEE_ghaznavids.5001.desc: "NEED LOCALIZATION"
+ HEE_ghaznavids.5001.a: "NEED LOCALIZATION"
+ HEE_ghaznavids.5001.b: "NEED LOCALIZATION"
+
+ HEE_seljuk_invasion.5001.opening: "NEED LOCALIZATION"
+ HEE_seljuk_invasion.5001.desc: "NEED LOCALIZATION"
+ HEE_seljuk_invasion.5001.a: "NEED LOCALIZATION"
+ HEE_seljuk_invasion.5001.b: "NEED LOCALIZATION"
+
+
+
+ #other loc
+
  holy_order_county_government:0 "Holy Order"
  holy_order_county_government_desc:0 "The holy warriors of the orders have dedicated their life to fighting infidels and serving their faith. They may hold castles given to them by pious landholders. The order leader is chosen within the order ranks."
  holy_order_county_government_adjective:0 "Holy Order"
@@ -123,7 +178,7 @@
 
  TwelverShiaCalphiate: "Imamiyyah Imamate"
  
-  #Imamism (Twelver)
+ #Imamism (Twelver)
  imami:0 "عَشَرِيَّة‎"
  imami_adj:0 "Imamiyyah"
  imami_adherent:0 "Imamiyyah"

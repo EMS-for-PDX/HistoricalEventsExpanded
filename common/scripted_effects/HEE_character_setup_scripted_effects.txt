@@ -221,6 +221,22 @@ hee_samarra_relations_867_effect = {
 		#set_relation_rival = scope:al_muwaffak
 		remove_short_term_gold = 1500
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	# Simply here to stop the Abbasid caliph from making Shahrazur his capital
+	character:159169 = {
+		get_title = title:c_shahrazur
+	}
 
 
 }
@@ -244,6 +260,8 @@ hee_fairhair_867_effect = {
 	character:186012 = { save_scope_as = thorir_haklang } # Thorir Haklang was a berserker who fell during the Battle of Hafrsfjord.
 
 	character:144000 = { # Harald Fairhair
+		add_trait = lustful
+		#add_diplomacy_skill = 2
 		if = {
 			limit = {
 				is_alive = yes
@@ -261,6 +279,10 @@ hee_fairhair_867_effect = {
 				flag = prevented_from_raiding
 				days = 400
 			}
+		}
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
 		}
 	}
 	
@@ -284,6 +306,10 @@ hee_fairhair_867_effect = {
 		add_trait = ambitious
 		add_trait = stubborn
 		add_trait = unwed
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
 	}
 	
 	character:161302 = { # Rognvald Eysteinsson
@@ -294,6 +320,10 @@ hee_fairhair_867_effect = {
 		add_trait = brave
 		add_trait = wrathful
 		add_trait = diligent
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
 	}
 	
 	character:186011 = { # Kjotve the Rich
@@ -307,6 +337,10 @@ hee_fairhair_867_effect = {
 		add_trait = callous
 		add_gold = 500
 		give_nickname = nick_the_rich
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
 	}
 	
 	character:186012 = { # Thorir Haklang, son of Kjotve the Rich
@@ -317,6 +351,10 @@ hee_fairhair_867_effect = {
 		add_trait = sadistic
 		add_trait = vengeful
 		add_trait = berserker
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
 	}
 	
 	

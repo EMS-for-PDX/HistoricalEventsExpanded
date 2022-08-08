@@ -172,7 +172,7 @@ HEE_turkic_conquerors.202 = { #Pechenegs Unite, Khazar event
 	}
 
 	option = { 
-		name = HEE_turkic_conquerors.102.a
+		name = HEE_turkic_conquerors.202.a
 
 		scope:aqtobe = {
 			trigger_event = {
@@ -203,7 +203,7 @@ HEE_turkic_conquerors.203 = {
 	}
 
 	option = { 
-		name = HEE_turkic_conquerors.2.a
+		name = HEE_turkic_conquerors.203.a
 		
 		add_prestige = 1000
 		scope:ruler = {
@@ -291,7 +291,7 @@ HEE_turkic_conquerors.204 = {
 	}
 
 	option = {
-		name = HEE_turkic_conquerors.2.b
+		name = HEE_turkic_conquerors.204.b
 
 		ai_chance = {
 			base = 0
@@ -390,7 +390,7 @@ HEE_turkic_conquerors.205 = {
 	}
 
 	option = {
-		name = HEE_turkic_conquerors.2.b
+		name = HEE_turkic_conquerors.205.b
 
 		ai_chance = {
 			base = 0

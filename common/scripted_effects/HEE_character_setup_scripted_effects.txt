@@ -155,7 +155,6 @@ hee_karling_867_effect = {
 		add_trait = patient
 	}
 
-
 }
 
 
@@ -222,15 +221,70 @@ hee_samarra_relations_867_effect = {
 		remove_short_term_gold = 1500
 	}
 	
+	character:34015 = {
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_learning_3
+		add_trait = generous
+		add_trait = zealous
+		add_trait = temperate
+		add_trait = humble
+	}	
 	
+	character:34017 = {
+		set_relation_friend = scope:musa_bughoglu
+		set_relation_friend = scope:wasif_al_turki
+		create_alliance = scope:musa_bughoglu
+		create_alliance = scope:wasif_al_turki
+		
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_4
+		add_trait = gregarious
+		add_trait = brave
+		add_trait = diligent
+		add_trait = ambitious
+	}	
 	
+	character:34018 = {
+		HEE_remove_personality_traits_effect = yes
+		add_trait = rowdy
+		add_trait = greedy
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = sadistic
+		add_trait = diligent
+	}		
 	
+	character:163131 = {
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_2
+		add_trait = greedy
+		add_trait = ambitious
+		add_trait = deceitful
+		add_trait = schemer
+	}	
 	
-	
-	
-	
-	
-	
+	character:163132 = {
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = greedy
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = schemer
+	}		
+
+	character:turkish000007 = {
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = greedy
+		add_trait = ambitious
+		add_trait = callous
+		add_trait = schemer
+	}		
 	
 	
 	# Simply here to stop the Abbasid caliph from making Shahrazur his capital
@@ -261,7 +315,9 @@ hee_fairhair_867_effect = {
 
 	character:144000 = { # Harald Fairhair
 		add_trait = lustful
+		
 		#add_diplomacy_skill = 2
+		
 		if = {
 			limit = {
 				is_alive = yes
@@ -270,6 +326,7 @@ hee_fairhair_867_effect = {
 			remove_nickname = yes
 			remove_character_modifier = harald_tanglehairs_vow_modifier
 			}
+			
 		if = {
 			limit = {
 				is_ai = yes
@@ -280,6 +337,7 @@ hee_fairhair_867_effect = {
 				days = 400
 			}
 		}
+		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
@@ -293,19 +351,25 @@ hee_fairhair_867_effect = {
 		add_trait = brave
 		add_trait = zealous
 		add_trait = calm
+		
 		add_trait = strong
+		
 		give_nickname = nick_the_mighty
+		
 		set_father = scope:jute_king_eirikr
 		set_house = scope:jute_king_eirikr.house
 	}
 		
 	character:166044 = { # Gyda Eiriksdatter
 		set_age = 15
+		
 		HEE_remove_personality_traits_effect = yes
 		add_trait = arrogant
 		add_trait = ambitious
 		add_trait = stubborn
+		
 		add_trait = unwed
+		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
@@ -314,12 +378,14 @@ hee_fairhair_867_effect = {
 	
 	character:161302 = { # Rognvald Eysteinsson
 		set_relation_friend = scope:haraldr_fairhair
+		
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		add_trait = education_martial_3
 		add_trait = brave
 		add_trait = wrathful
 		add_trait = diligent
+		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
@@ -335,8 +401,11 @@ hee_fairhair_867_effect = {
 		add_trait = arrogant
 		add_trait = gluttonous
 		add_trait = callous
+		
 		add_gold = 500
+		
 		give_nickname = nick_the_rich
+		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
@@ -350,7 +419,9 @@ hee_fairhair_867_effect = {
 		add_trait = brave
 		add_trait = sadistic
 		add_trait = vengeful
+		
 		add_trait = berserker
+		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10

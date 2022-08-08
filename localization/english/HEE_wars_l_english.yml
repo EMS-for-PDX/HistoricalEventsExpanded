@@ -1,0 +1,39 @@
+﻿l_english:
+
+ fairhairconquest:0 "Harald "Tanglehair"'s Unification of Norway"
+ fairhair_conquest_cb:0 "Norwegian War of Unification"
+ fairhair_CONQUEST_CB_NAME:1 "Unify Norwegian Realm"
+ fairhair_CONQUEST_WAR_NAME:0 "Harald Tanglehair's Unification of Norway"
+ fairhair_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+
+
+
+
+
+
+
+
+ # HEE Pechengs
+
+ pechenegsecondwar:0 "Pecheneg Migration"
+ pechenegs_conquest_cb:0 "Pecheneg Migration"
+ pechenegs_CONQUEST_CB_NAME:1 "Pecheneg Migration"
+ pechenegs_CONQUEST_WAR_NAME:0 "Pecheneg Migration"
+ pechenegs_CONQUEST_WAR_NAME_BASE:0 "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ NOMADIC_MIGRATION_WAR_NAME:""
+
+
+
+ # Nomadic Wars
+
+ NOMADIC_MIGRATION_WAR_NAME: "Migration to [TITLE.GetNameNoTier]"
+ NOMADIC_MIGRATION_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ NOMADIC_MIGRATION_CB_NAME: "Migration"
+ 
+ nomadic_war_victory_desc_attacker: "You seize all titles within [defender.GetShortUINamePossessive] realm in the dejure lands of the target title. All lands outside of this will be abandoned."
+ nomadic_war_victory_desc: "Seizes all titles within [defender.GetShortUINamePossessive] realm in the dejure lands of the target title. All lands outside of this will be abandoned."
+ 
+ nomadic_invasion_war_warning_desc: "\n\n#X You may only attempt one migration per lifetime#!"
+ nomadic_invasion_war_victory_desc: "Seizes all titles within [defender.GetShortUINamePossessive] realm in the dejure lands of the target title. All lands outside of this will be abandoned."
+
+ msg_seljuk_invasion_war_invalidated_message: "The war ended inconclusively because the [casus_belli|E] is longer valid\nNobody gains or loses anything"

@@ -79,9 +79,6 @@ hee_karling_867_effect = {
 
 	# Relations #
 
-
-
-
 	# Lotharingia
 	character:6877 = { # teutberga
 		set_relation_friend = scope:pope_nicholas
@@ -120,6 +117,10 @@ hee_karling_867_effect = {
 
 
 	# Italy
+	character:30228 = { # ludwig_the_german
+		add_character_modifier = western_roman_emperor_modifier
+	}
+	
 	character:163094 = { # Sawdan
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
@@ -138,7 +139,15 @@ hee_karling_867_effect = {
 		add_trait = cynical
 	}
 
-
+	character:71901 = { # Berengar of Italy
+		create_betrothal = scope:bertila
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_1
+		add_trait = generous
+		add_trait = ambitious
+		add_trait = stubborn
+	}
 
 
 
@@ -149,6 +158,13 @@ hee_karling_867_effect = {
 
 
 	# East Francia
+	character:90107 = { # ludwig_the_german
+		add_character_modifier = {
+			modifier = invigorated_modifier
+			years = 7
+		}
+	}
+	
 	character:42019 = { # Ludwig the Younger
 		marry = scope:liutgard
 		

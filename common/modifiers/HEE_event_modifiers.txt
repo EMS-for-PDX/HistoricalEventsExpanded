@@ -13,6 +13,12 @@ the_turkic_conqueror_modifier = {
 	vassal_limit = 25
 }
 
+western_roman_emperor_modifier = {
+	icon = prestige_positive
+	monthly_prestige = 1
+	vassal_opinion = 10
+	vassal_limit = 25
+}
 
 # testing_water = {
 # 	#stacking = yes

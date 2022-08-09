@@ -60,8 +60,28 @@ hee_karling_867_effect = {
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	# Relations #
-	
+
+
+
+
 	# Lotharingia
 	character:6877 = { # teutberga
 		set_relation_friend = scope:pope_nicholas
@@ -95,6 +115,10 @@ hee_karling_867_effect = {
 
 
 
+
+
+
+
 	# Italy
 	character:163094 = { # Sawdan
 		HEE_remove_education_traits_effect = yes
@@ -116,10 +140,23 @@ hee_karling_867_effect = {
 
 
 
+
+
+
+
+
+
+
+
 	# East Francia
 	character:42019 = { # Ludwig the Younger
 		marry = scope:liutgard
 		
+	}
+
+	character:7945 = { # Arnulf of Carinthia
+		remove_trait = legitimized_bastard
+		add_trait = bastard
 	}
 
 	# Truces to represent the Divisio regni 
@@ -146,6 +183,14 @@ hee_karling_867_effect = {
 			name = divisio_regni_desc
 		}
 	}
+
+
+
+
+
+
+
+
 
 	# West Francia 
 	character:163175 = { # Ermentrud (854–877), 

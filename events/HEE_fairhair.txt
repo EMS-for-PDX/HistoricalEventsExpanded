@@ -477,13 +477,16 @@ HEE_fairhair.7 = { #Gyda
 
 	option = { 
 		name = HEE_fairhair.7.a
+		
 		divorce_effect = {
 			DIVORCER = root
 			DIVORCEE = scope:spouse
 		}
+		
 		marry = scope:gyda
+		
 		ai_chance = {
-			base = 30
+			base = 20
 		}
 	}
 
@@ -491,17 +494,19 @@ HEE_fairhair.7 = { #Gyda
 		name = HEE_fairhair.7.b
 		
 		make_concubine = scope:gyda
+		
 		ai_chance = {
-			base = 50
+			base = 70
 		}
 	}
 
 	option = {
 		name = HEE_fairhair.7.c
 	
-		add_piety = 100
+		add_piety = 250
+		
 		ai_chance = {
-			base = 20
+			base = 10
 		}
 	}
 }

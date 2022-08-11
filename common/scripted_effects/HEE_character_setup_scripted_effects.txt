@@ -61,7 +61,9 @@ hee_karling_867_effect = {
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
 
 
-
+	title:k_italy = { save_scope_as = k_italy }
+	title:k_east_francia = { save_scope_as = k_east_francia }
+	title:k_france = { save_scope_as = k_france }
 
 
 
@@ -147,14 +149,76 @@ hee_karling_867_effect = {
 		add_trait = generous
 		add_trait = ambitious
 		add_trait = stubborn
+		
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+	
+	# Removal of female-inherited claims
+	character:163057 = { # Unruoch of Friuli
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
 	}
 
+	character:167792 = { # Adalhard of Ravensburg
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
 
+	character:168183 = { # Rudolf of Guines
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
 
+	character:168082 = { # Eberhard Chatenois
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+	
+	character:168055 = { # Geraud de Poitiers
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+	
+	character:167765 = { # Oda Billung
+		remove_claim = scope:k_italy
+	}
+	
+	character:7911 = { # Ingeltrude Unruochinger
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
 
+	character:7816 = { # Judith Unruochinger
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+	
+	character:168065 = { # Heylwig Unruochinger
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
 
-
-
+	character:6449 = { # Bertha Robertine
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+	
+	character:7814 = { # Ermengarde of Italy
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
 
 
 	# East Francia
@@ -170,10 +234,23 @@ hee_karling_867_effect = {
 		
 	}
 
+	character:7954 = { # Luitgard
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_diplomacy_3
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = diligent
+		
+	}
+
 	character:7945 = { # Arnulf of Carinthia
 		remove_trait = legitimized_bastard
 		add_trait = bastard
 	}
+	
+	
+	
 
 	# Truces to represent the Divisio regni 
 	scope:ludwig_the_german = {
@@ -270,14 +347,104 @@ hee_byzantine_bulgaria_867_effect = {
 
 	# Scopes
 	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
-	character:70382 = { save_scope_as = boris } # https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria
-	character:70383 = { save_scope_as = vladimir_rasate } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
+	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
+	
+	character:70554 = { save_scope_as = patriarch_photios } # https://en.wikipedia.org/wiki/Photios_I_of_Constantinople
+	character:70555 = { save_scope_as = patriarch_ignatios } # https://en.wikipedia.org/wiki/Ignatios_of_Constantinople
+	
+	character:41316 = { save_scope_as = nikephoros_the_elder } # https://en.wikipedia.org/wiki/Nikephoros_Phokas_the_Elder
+	
+	character:70382 = { save_scope_as = boris_i } # https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria
+	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
+	
+	character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+	
+	faith:orthodox = { save_scope_as = orthodox }
+	faith:tengri_pagan = { save_scope_as = tengri }
+	
 	
 	# Relations
-	character:1700 = {
+	
+	character:70382 = {
+		add_trait = strong
+		add_trait = athletic
+	}
+	
+	character:70383 = {
+		set_character_faith = scope:orthodox
+	}
+	
+	
+	
+	
+	
+	
+	character:1700 = { # Emperor Basil I
 		set_age = 55
 	}
 
+	character:1702 = { # Emperor Leon the Wise
+		add_trait = disputed_heritage
+	}
+	
+	character:70554 = { # Photios I of Constantinople
+		add_learning_skill = 10
+		
+		HEE_remove_personality_traits_effect = yes
+		add_trait = zealous
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = diligent
+		
+		add_trait = devoted
+		
+		add_trait = intellect_good_2
+		
+		give_nickname = nick_the_great
+		
+		add_character_modifier = invigorated_modifier
+	}
+	
+	character:70555 = { # Ignatios of Constantinople
+		add_learning_skill = 5
+		
+		HEE_remove_personality_traits_effect = yes
+		add_trait = honest
+		add_trait = just
+		add_trait = zealous
+		add_trait = stubborn
+		
+		add_trait = devoted
+		
+		add_trait = eunuch
+		
+	}
+	
+	character:41316 = { # Nikephoros Phokas the Elder
+		add_learning_skill = 5
+		
+		HEE_remove_personality_traits_effect = yes
+		add_trait = brave
+		add_trait = just
+		add_trait = humble
+		
+		add_trait = rowdy
+		
+		add_trait = intellect_good_1
+		
+	}
+	
+	character:163147 = { # Ibrahim II of Ifriqiya
+
+		add_trait = diligent
+		add_trait = humble
+		
+		add_trait = overseer
+		add_trait = administrator
+		
+		add_character_modifier = invigorated_modifier
+		
+	}
 
 }
 

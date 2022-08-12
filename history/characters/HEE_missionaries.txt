@@ -1,0 +1,130 @@
+﻿
+# Leo, a droungarios of the Byzantine theme of Thessalonica
+HEE_historical_father_01 = {
+	name = "Leo"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	790.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		add_spouse = HEE_historical_mother_01
+	}
+	842.1.1 = {
+		death = yes
+	}
+}
+
+HEE_historical_mother_01 = {
+	name = "Maria"
+	female=yes
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "slovien"
+	795.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		death = yes
+	}
+}
+
+HEE_missionary_01 = {
+	name = "Michael"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_historical_father_01
+	mother = HEE_historical_mother_01
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 10
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = gregarious
+	trait = diligent
+	trait = stubborn
+	trait = humble
+	
+	#Other Traits
+	trait = theologian
+	trait = scholar
+	trait = devoted
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	820.1.1 = {
+		birth = yes
+	}
+	851.1.1 = {
+		name = "Methodius"
+	}
+	862.1.1 = {
+		employer = 187002 
+	}
+	885.4.6 = {
+		death = yes
+	}
+}
+
+HEE_missionary_02 = {
+	name = "Constantine"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_historical_father_01
+	mother = HEE_historical_mother_01
+	health = 3.5
+	
+	#Skills
+	diplomacy = 10
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 10
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = gregarious
+	trait = diligent
+	trait = patient
+	trait = humble
+	
+	#Other Traits
+	trait = theologian
+	trait = scholar
+	trait = devoted
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	828.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		effect = {
+			set_relation_friend = character:70554 # Patriarch Photius was a professor of Cyril's at University and his guiding light in earlier years
+		}
+	}
+	862.1.1 = {
+		employer = 187002 
+	}
+	868.12.15 = {
+		name = "Cyril" # Constatine did not recieve his nickname until he was near death (Maybe give him the nickname early anyway?)
+	}
+	869.2.14 = {
+		death = yes
+	}
+}

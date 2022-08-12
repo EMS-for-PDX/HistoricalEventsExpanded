@@ -221,6 +221,14 @@ hee_karling_867_effect = {
 	}
 
 
+
+
+
+
+
+
+
+
 	# East Francia
 	character:90107 = { # ludwig_the_german
 		add_character_modifier = {
@@ -305,7 +313,7 @@ hee_karling_867_effect = {
 	}
 
 	character:90123 = { # Louis the Stammerer
-		add_trait = weak
+		add_trait = infirm
 		marry = scope:ansgarde_of_burgundy
 	}
 	
@@ -316,6 +324,100 @@ hee_karling_867_effect = {
 		add_trait = trusting
 		add_trait = ambitious
 		add_trait = patient
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Karling Collapse
+hee_great_moravia_bohemia_867_effect = {	
+
+	# Scopes #
+	character:187002 = { save_scope_as = king_rastislav } # https://en.wikipedia.org/wiki/Rastislav_of_Moravia
+	character:187003 = { save_scope_as = svatopluk_i } # https://en.wikipedia.org/wiki/Svatopluk_I_of_Moravia
+	character:187006 = { save_scope_as = mojmir_ii } # https://en.wikipedia.org/wiki/Mojmir_II_of_Moravia
+	character:187007 = { save_scope_as = svatopluk_ii } # https://en.wikipedia.org/wiki/Svatopluk_II
+	character:187008 = { save_scope_as = predslav } # https://en.wikipedia.org/wiki/Predslav
+
+	character:HEE_missionary_01 = { save_scope_as = methodius } # https://en.wikipedia.org/wiki/Cyril_and_Methodius
+	character:HEE_missionary_02 = { save_scope_as = cyril } # https://en.wikipedia.org/wiki/Cyril_and_Methodius
+	
+	character:168351 = { save_scope_as = neklan } # https://en.wikipedia.org/wiki/Neklan
+	character:168352 = { save_scope_as = hostivit } # https://en.wikipedia.org/wiki/Hostiv%C3%ADt
+	character:500 = { save_scope_as = borivoj_i } # https://en.wikipedia.org/wiki/Bo%C5%99ivoj_I,_Duke_of_Bohemia
+	character:501 = { save_scope_as = ludmila } # https://en.wikipedia.org/wiki/Ludmila_of_Bohemia
+	
+	culture:radhanite = { save_scope_as = radhanite }
+	culture:khazar = { save_scope_as = khazar }
+	culture:slovien = { save_scope_as = slovien }
+	
+
+
+	character:HEE_missionary_01 = { # St. Methodius
+		learn_language_of_culture = scope:radhanite
+		learn_language_of_culture = scope:khazar
+		learn_language_of_culture = scope:slovien
+	}
+	
+	character:HEE_missionary_02 = { # St. Cyril
+		learn_language_of_culture = scope:radhanite
+		learn_language_of_culture = scope:khazar
+		learn_language_of_culture = scope:slovien
+	}
+
+	character:187002 = { # Rastislav of Moravia
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_2
+		add_trait = wrathful
+		add_trait = deceitful
+		add_trait = cynical
+	}
+	
+	character:187003 = { # Svatopluk I of Moravia
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_martial_3
+		add_trait = zealous
+		add_trait = ambitious
+		add_trait = diligent
+		add_trait = callous
+		
+		add_trait = diplomat
+	}
+
+	character:500 = { # Bořivoj I, Duke of Bohemia
+		HEE_remove_personality_traits_effect = yes
+		add_trait = calm
+		add_trait = deceitful
+		add_trait = cynical
+		add_trait = ambitious
+		
+		create_betrothal = scope:ludmila
+	}
+
+	character:501 = { # Ludmila of Bohemia		
+		HEE_remove_personality_traits_effect = yes
+		add_trait = just
+		add_trait = zealous
+		add_trait = temperate
+		add_trait = diligent
 	}
 
 }

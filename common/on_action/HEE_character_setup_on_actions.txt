@@ -4,6 +4,7 @@
 		hee_great_moravia_bohemia_867_effect_setup
 		hee_byzantine_bulgaria_867_effect_setup
 		hee_samarra_relations_867_effect_setup
+		hee_iranian_intermezzo_effect_setup
 		hee_fairhair_867_effect_setup
     }
 }
@@ -41,6 +42,15 @@ hee_samarra_relations_867_effect_setup = {
     }
     effect = {
         hee_samarra_relations_867_effect = yes
+    }
+}
+
+hee_iranian_intermezzo_effect_setup = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+        hee_iranian_intermezzo_effect = yes
     }
 }
 

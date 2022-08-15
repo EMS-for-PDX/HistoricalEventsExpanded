@@ -1,0 +1,168 @@
+﻿# Muslim Scholars for 867 Start Date #
+
+HEE_muslim_scholar_01 = { # https://en.wikipedia.org/wiki/Abbas_ibn_Firnas
+	name = "Abbas ibn Firnas"
+	#dynasty = 0
+	religion = "muwalladi"
+	culture = "andalusian"
+	#father = 
+	#mother = 
+	health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 8
+	intrigue = 8
+	learning = 12
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = brave
+	trait = diligent
+	trait = cynical
+	
+	#Other Traits
+	trait = scholar
+	trait = poet
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+	}
+	862.1.1 = {
+		employer = 73683 
+	}
+	887.4.6 = {
+		death = yes
+	}
+}
+
+HEE_muslim_scholar_02 = { # https://en.wikipedia.org/wiki/Al-Kindi
+	name = "Al-Kindi"
+	#dynasty = 0
+	religion = "ashari"
+	culture = "levantine"
+	#father = 
+	#mother = 
+	health = 4.5
+	
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 10
+	intrigue = 12
+	learning = 15
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = just
+	trait = diligent
+	trait = cynical
+	trait = patient
+	
+	#Other Traits
+	trait = scholar
+	
+	sexuality = asexual
+	disallow_random_traits = yes
+	801.1.1 = {
+		birth = yes
+	}
+	862.1.1 = {
+		employer = 34014 
+	}
+	873.1.1 = {
+		death = yes
+	}
+}
+
+HEE_muslim_scholar_03 = { # https://en.wikipedia.org/wiki/Dawud_al-Zahiri
+	name = "Dawud al-Zahiri"
+	#dynasty = 0
+	religion = "ashari" # Should be Athari - but religion doesnt exist
+	culture = "persian"
+	#father = 
+	#mother = 
+	health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 8
+	intrigue = 8
+	learning = 12
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = zealous
+	trait = just
+	trait = diligent
+	trait = calm
+	
+	#Other Traits
+	trait = scholar
+	
+	sexuality = asexual
+	disallow_random_traits = yes
+	815.1.1 = {
+		birth = yes
+	}
+	# 862.1.1 = {
+		# employer = 34014 
+	# }
+	883.1.1 = {
+		death = yes
+	}
+}
+
+HEE_muslim_scholar_04 = { # https://en.wikipedia.org/wiki/Abd_Allah_al-Qaysi
+	name = "Abd Allah al-Qaysi"
+	#dynasty = 0
+	religion = "ashari" # Should be Athari - but religion doesnt exist
+	culture = "andalusian"
+	#father = 
+	#mother = 
+	health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 8
+	intrigue = 8
+	learning = 10
+	prowess = 0
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = generous
+	trait = diligent
+	trait = patient
+	
+	#Other Traits
+	trait = scholar
+	
+	sexuality = asexual
+	disallow_random_traits = yes
+	835.1.1 = {
+		birth = yes
+	}
+	862.1.1 = {
+		employer = 73683 
+	}
+	886.1.1 = {
+		death = yes
+	}
+}

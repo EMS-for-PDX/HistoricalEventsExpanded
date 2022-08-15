@@ -490,7 +490,7 @@ hee_byzantine_bulgaria_867_effect = {
 	}
 	
 	character:70554 = { # Photios I of Constantinople
-		add_learning_skill = 10
+		add_learning_skill = 5
 		
 		HEE_remove_personality_traits_effect = yes
 		add_trait = zealous

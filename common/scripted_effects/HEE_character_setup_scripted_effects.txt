@@ -82,7 +82,7 @@ hee_karling_867_effect = {
 	# Relations #
 
 	# Lotharingia
-	character:6877 = { # teutberga
+	character:6877 = { # Teutberga
 		set_relation_friend = scope:pope_nicholas
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
@@ -92,7 +92,7 @@ hee_karling_867_effect = {
 		add_trait = stubborn
 	}
 	
-	character:168314 = { # waldrada
+	character:168314 = { # Waldrada
 		HEE_remove_personality_traits_effect = yes
 		add_trait = gregarious
 		add_trait = cynical
@@ -108,8 +108,6 @@ hee_karling_867_effect = {
 		get_title = title:c_colmar
 		get_title = title:d_alsace
 	}
-
-
 
 
 
@@ -230,7 +228,7 @@ hee_karling_867_effect = {
 
 
 	# East Francia
-	character:90107 = { # ludwig_the_german
+	character:90107 = { # Ludwig the German
 		add_character_modifier = {
 			modifier = invigorated_modifier
 			years = 7
@@ -345,7 +343,7 @@ hee_karling_867_effect = {
 
 
 
-# Karling Collapse
+# Great Moravia - Bohemia
 hee_great_moravia_bohemia_867_effect = {	
 
 	# Scopes #
@@ -468,8 +466,10 @@ hee_byzantine_bulgaria_867_effect = {
 	# Relations
 	
 	character:70382 = {
-		add_trait = strong
-		add_trait = athletic
+		add_character_modifier = {
+			modifier = invigorated_modifier
+			years = 30
+		}
 	}
 	
 	character:70383 = {
@@ -582,7 +582,7 @@ hee_samarra_relations_867_effect = {
 	title:c_nihawand = { save_scope_as = c_nihawand }
 	
 	# Relations
-	character:34014 = {
+	character:34014 = { # Al-Mutazz
 		#set_relation_rival = scope:al_muwaffak
 		remove_short_term_gold = 1500
 	}
@@ -692,6 +692,62 @@ hee_samarra_relations_867_effect = {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+# Iranian Intermezzo
+hee_iranian_intermezzo_effect = {	
+
+	# Scopes
+	character:163099 = { save_scope_as = nasr_i } # https://en.wikipedia.org/wiki/Nasr_I
+	character:163157 = { save_scope_as = ismail_samani } # https://en.wikipedia.org/wiki/Al-Muhtadi
+	
+	character:163100 = { save_scope_as = muhammad_ibn_tahir } # https://en.wikipedia.org/wiki/Muhammad_ibn_Tahir
+	character:1000230509 = { save_scope_as = muhammad_ibn_abdallah } # https://en.wikipedia.org/wiki/Muhammad_ibn_Abdallah_ibn_Tahir
+	character:163160 = { save_scope_as = ubaydallah_ibn_abdallah } # https://en.wikipedia.org/wiki/Ubaydallah_ibn_Abdallah_ibn_Tahir
+	character:163161 = { save_scope_as = sulayman_ibn_abdallah } # https://en.wikipedia.org/wiki/Sulayman_ibn_Abdallah_ibn_Tahir
+	
+	character:163157 = { # Ismail Samani
+		set_age = 18
+
+		HEE_remove_perks_effect = yes
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = education_martial_3
+		add_trait = generous
+		add_trait = zealous
+		add_trait = just
+		add_trait = compassionate
+		add_trait = ambitious
+		
+		add_trait = intellect_good_1
+		
+		add_trait = organizer
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 hee_fairhair_867_effect = {
 

@@ -78,7 +78,6 @@ hee_karling_867_effect = {
 
 
 
-
 	# Relations #
 
 	# Lotharingia
@@ -717,7 +716,6 @@ hee_iranian_intermezzo_effect = {
 	character:163157 = { # Ismail Samani
 		set_age = 18
 
-		HEE_remove_perks_effect = yes
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
 		

@@ -707,12 +707,22 @@ hee_iranian_intermezzo_effect = {
 	# Scopes
 	character:163099 = { save_scope_as = nasr_i } # https://en.wikipedia.org/wiki/Nasr_I
 	character:163157 = { save_scope_as = ismail_samani } # https://en.wikipedia.org/wiki/Al-Muhtadi
-	
+
 	character:163100 = { save_scope_as = muhammad_ibn_tahir } # https://en.wikipedia.org/wiki/Muhammad_ibn_Tahir
 	character:1000230509 = { save_scope_as = muhammad_ibn_abdallah } # https://en.wikipedia.org/wiki/Muhammad_ibn_Abdallah_ibn_Tahir
 	character:163160 = { save_scope_as = ubaydallah_ibn_abdallah } # https://en.wikipedia.org/wiki/Ubaydallah_ibn_Abdallah_ibn_Tahir
 	character:163161 = { save_scope_as = sulayman_ibn_abdallah } # https://en.wikipedia.org/wiki/Sulayman_ibn_Abdallah_ibn_Tahir
-	
+
+	character:sogdian0008 = { save_scope_as = abilsaj_devdad } # https://en.wikipedia.org/wiki/Abu%27l-Saj_Devdad
+	character:sogdian0009 = { save_scope_as = muhammad_ibn_abilsaj } # https://en.wikipedia.org/wiki/Muhammad_ibn_Abi%27l-Saj
+	character:sogdian0010 = { save_scope_as = yusuf_ibn_abilsaj } # https://en.wikipedia.org/wiki/Yusuf_ibn_Abi%27l-Saj
+
+	character:166987 = { save_scope_as = ziyarid_founder } # https://en.wikipedia.org/wiki/Ziyarid_dynasty
+
+	character:1231060 = { save_scope_as = buyid_founder } # https://en.wikipedia.org/wiki/Buyid_dynasty
+
+	character:180764 = { save_scope_as = sallarid_founder } # https://en.wikipedia.org/wiki/Sallarid_dynasty
+
 	character:163157 = { # Ismail Samani
 		set_age = 18
 

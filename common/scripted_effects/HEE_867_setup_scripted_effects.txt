@@ -570,6 +570,8 @@ hee_samarra_relations_867_effect = {
 	character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
 	character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
 	
+	# Create an uprising in  Fars around this character? https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
+	
 	title:d_kermanshah = { save_scope_as = d_kermanshah }
 	title:c_kermanshah = { save_scope_as = c_kermanshah }
 	title:c_masabadhan = { save_scope_as = c_masabadhan }

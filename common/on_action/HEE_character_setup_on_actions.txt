@@ -1,14 +1,19 @@
 ﻿on_game_start = {
     on_actions = {
+		# 867
 		hee_karling_867_effect_setup
 		hee_great_moravia_bohemia_867_effect_setup
 		hee_byzantine_bulgaria_867_effect_setup
 		hee_samarra_relations_867_effect_setup
 		hee_iranian_intermezzo_effect_setup
 		hee_fairhair_867_effect_setup
+		
+		# 1066
+		hee_byzantine_1066_effect_setup
     }
 }
 
+# 867
 hee_karling_867_effect_setup = {
     trigger = {
         game_start_date = 867.1.1
@@ -60,5 +65,17 @@ hee_fairhair_867_effect_setup = {
     }
     effect = {
         hee_fairhair_867_effect = yes
+    }
+}
+
+
+
+# 1066
+hee_byzantine_1066_effect_setup = {
+    trigger = {
+        game_start_date = 1066.9.15
+    }
+    effect = {
+        hee_byzantine_1066_effect = yes
     }
 }

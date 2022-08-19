@@ -76,7 +76,7 @@ HEE_muslim_scholar_02 = { # https://en.wikipedia.org/wiki/Al-Kindi
 	801.1.1 = {
 		birth = yes
 	}
-	862.1.1 = {
+	866.1.1 = {
 		employer = 34014 
 	}
 	873.1.1 = {

@@ -1,0 +1,294 @@
+﻿
+
+
+# Byzantine 1066 Collapse
+hee_byzantine_1066_effect = {	
+
+	# Scopes #
+	character:1732 = { save_scope_as = constantine_x } # https://en.wikipedia.org/wiki/Constantine_X_Doukas
+	character:1733 = { save_scope_as = eudokia_makrembolitissa } # https://en.wikipedia.org/wiki/Eudokia_Makrembolitissa
+	character:1736 = { save_scope_as = michael_vii } # https://en.wikipedia.org/wiki/Michael_VII_Doukas
+	character:1749 = { save_scope_as = princess_anna_doukaina } # A nun
+	character:9810 = { save_scope_as = coempperor_konstantios_doukas } # https://en.wikipedia.org/wiki/Andronikos_Doukas_(co-emperor)
+	character:9812 = { save_scope_as = theodora_doukaina } # https://en.wikipedia.org/wiki/Theodora_Doukaina_Selvo
+	character:71901 = { save_scope_as = coempperor_andronikos_doukas } # https://en.wikipedia.org/wiki/Konstantios_Doukas
+	character:9809 = { save_scope_as = zoe_doukaina } # married Adrianos Komnenos, a brother of Emperor Alexios I Komnenos
+
+	character:1746 = { save_scope_as = john_doukas } # https://en.wikipedia.org/wiki/John_Doukas_(Caesar)
+	character:1748 = { save_scope_as = andronikos_doukas } # https://en.wikipedia.org/wiki/Andronikos_Doukas_(cousin_of_Michael_VII)
+	character:1785 = { save_scope_as = constantine_doukas } # Died in 1074
+
+	character:1782 = { save_scope_as = michael_doukas } # https://en.wikipedia.org/wiki/Michael_Doukas_(protostrator)
+	character:1781 = { save_scope_as = megas_doux_john_doukas } # https://en.wikipedia.org/wiki/John_Doukas_(megas_doux)
+	character:1743 = { save_scope_as = irene_doukaina } # https://en.wikipedia.org/wiki/Irene_Doukaina
+	character:34436 = { save_scope_as = anna_doukaina } # Married George Palaiologos (ID: 42014)
+
+	character:1742 = { save_scope_as = alexios_i_komnenos } # https://en.wikipedia.org/wiki/Alexios_I_Komnenos
+	character:4511 = { save_scope_as = anna_dalassene } # https://en.wikipedia.org/wiki/Anna_Dalassene
+	character:1752 = { save_scope_as = john_komnenos } # https://en.wikipedia.org/wiki/John_Komnenos_(Domestic_of_the_Schools)
+	
+	character:4533 = { save_scope_as = maria_komnenos } # married the panhypersebastos Michael Taronites
+	character:1756 = { save_scope_as = manuel_komnenos } # https://en.wikipedia.org/wiki/Manuel_Komnenos_(kouropalates)
+	character:4538 = { save_scope_as = eudokia_komnenos } # married Nikephoros Melissenos
+	character:4558 = { save_scope_as = theodora_komnenos } # married the kouropalates Constantine Diogenes, son of Romanos IV
+	character:1758 = { save_scope_as = isaac_komnenos } # https://en.wikipedia.org/wiki/Isaac_Komnenos_(brother_of_Alexios_I)
+	character:1760 = { save_scope_as = adrianos_komnenos } # https://en.wikipedia.org/wiki/Adrianos_Komnenos
+	character:1762 = { save_scope_as = nikephoros_komnenos } # https://en.wikipedia.org/wiki/Nikephoros_Komnenos_(brother_of_Alexios_I)
+	
+	character:42014 = { save_scope_as = george_palaiologos } # https://en.wikipedia.org/wiki/George_Palaiologos
+	
+	character:1734 = { save_scope_as = romanos_iv } # https://en.wikipedia.org/wiki/Romanos_IV_Diogenes
+	character:1735 = { save_scope_as = constantine_diogenes } # https://en.wikipedia.org/wiki/Constantine_Diogenes_(son_of_Romanos_IV)
+	
+	character:1740 = { save_scope_as = nikephoros_iii_botaneiates } # https://en.wikipedia.org/wiki/Nikephoros_III_Botaneiates
+	
+	character:41552 = { save_scope_as = maria_of_alania } # https://en.wikipedia.org/wiki/Maria_of_Alania
+	
+	character:9958 = { save_scope_as = irene_of_georgia } # Georgian Princess married to Isaac Komnenos (brother of Alexios I) sometime after 4 August 1072
+	
+	character:34220 = { save_scope_as = roussel_de_bailleul } # https://en.wikipedia.org/wiki/Roussel_de_Bailleul
+
+	character:20511 = { save_scope_as = john_kantakouzenos } # https://en.wikipedia.org/wiki/Kantakouzenos
+	
+	character:20502 = { save_scope_as = nikephoros_bryennios_the_elder } # https://en.wikipedia.org/wiki/Nikephoros_Bryennios_the_Elder
+	character:232531 = { save_scope_as = nikephoros_bryennios_the_younger } # https://en.wikipedia.org/wiki/Nikephoros_Bryennios_the_Younger
+
+	character:41308 = { save_scope_as = nikephoros_basilakes } # https://en.wikipedia.org/wiki/Nikephoros_Basilakes
+	
+	character:85001 = { save_scope_as = philaretos_brachamios } # https://en.wikipedia.org/wiki/Philaretos_Brachamios
+	
+	character:20738 = { save_scope_as = marwanids } # https://en.wikipedia.org/wiki/Marwanids
+
+	title:c_constanta = { save_scope_as = c_constanta }
+
+	title:c_alexandretta = { save_scope_as = c_alexandretta }
+	title:c_antiocheia = { save_scope_as = c_antiocheia }
+	title:c_shayzar = { save_scope_as = c_shayzar }
+	title:d_antioch = { save_scope_as = d_antioch }
+
+	title:d_edessa = { save_scope_as = d_edessa }
+	title:c_marash = { save_scope_as = c_marash }
+	title:c_aintab = { save_scope_as = c_antiocheia }
+	title:c_edessa = { save_scope_as = c_aintab }
+	title:c_samosata = { save_scope_as = c_samosata }
+	
+	title:c_bakriya = { save_scope_as = c_bakriya }
+	title:c_mayyafariqin = { save_scope_as = c_mayyafariqin }
+	title:c_tall_basma = { save_scope_as = c_tall_basma }
+
+	# Relations #
+
+	character:1742 = { # Alexios I
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = brave
+		add_trait = diligent
+		add_trait = zealous
+		add_trait = ambitious
+		add_trait = stubborn
+		
+		add_trait = intellect_good_1
+		
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 25
+		}
+	}
+	
+	character:1743 = { # Irene Doukaina
+		add_trait = generous
+		add_trait = diligent
+		add_trait = shy
+		add_trait = ambitious
+
+		add_trait = beauty_good_2
+	}
+	
+	character:42014 = { # George Palaiologos
+		set_relation_friend = scope:alexios_i_komnenos # 
+
+		create_betrothal = scope:anna_doukaina
+
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = diligent
+		add_trait = generous
+		add_trait = just
+		add_trait = zealous
+
+	}
+	
+	character:4511 = { # Anna Dalassene
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = education_stewardship_3
+		add_trait = brave
+		add_trait = diligent
+		add_trait = ambitious
+		
+		add_trait = administrator
+	}
+	
+	character:41552 = { # Maria of Alania
+		set_age = 16
+		
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+		add_trait = education_intrigue_3
+		add_trait = generous
+		add_trait = calm
+		add_trait = ambitious
+
+		add_trait = beauty_good_3
+	}
+	
+	character:1733 = { # Empress Eudokia Makrembolitissa
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = ambitious
+		add_trait = humble
+		add_trait = cynical
+	}
+	
+	character:1734 = { # Emperor Romanos IV Diogenes
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_3
+		add_trait = generous
+		add_trait = honest
+		add_trait = brave
+		add_trait = impatient
+		
+		add_trait = unwed
+	}
+	
+	character:1748 = { # Andronikos Doukas (cousin of Michael VII)
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_2
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = deceitful
+	}
+	
+	character:1740 = { # Emperor Nikephoros III Botaneiates
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_3
+		add_trait = generous
+		add_trait = brave
+		add_trait = just
+		add_trait = diligent
+		
+		add_trait = unwed
+		
+		# His historical position
+		get_title = title:d_antioch
+		get_title = title:c_alexandretta
+		get_title = title:c_antiocheia
+		get_title = title:c_shayzar
+	}
+	
+	character:1756 = { # Manuel Komnenos (kouropalates)
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_2
+		add_trait = gregarious
+		add_trait = brave
+		add_trait = impatient
+	}
+
+	character:1758 = { # Isaac Komnenos (brother of Alexios I)
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_learning_3
+		add_trait = gregarious
+		add_trait = brave
+		add_trait = wrathful
+		
+		#marry = scope:irene_of_georgia (They dont marry till 1072+ but marry them early to simplify the process?)
+		
+		add_trait = hunter_1
+	}
+	
+	character:20502 = { # Nikephoros Bryennios the Elder
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = gregarious
+		add_trait = arrogant
+		add_trait = ambitious
+		add_trait = callous
+		
+		add_trait = strategist
+	}
+	
+	character:232531 = { # Nikephoros Bryennios the Younger
+		set_father = scope:nikephoros_bryennios_the_elder
+	
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = honest
+		add_trait = just
+		add_trait = diligent
+		add_trait = content
+		
+		add_trait = beauty_good_1
+		
+		give_nickname = nick_the_younger
+	}
+
+	character:41308 = { # Nikephoros Basilakes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = arrogant
+		add_trait = ambitious
+		add_trait = patient
+	}
+	
+	character:85001 = { # Philaretos Brachamios / Vahram Varajnuni
+		# His historical position
+		get_title = title:d_edessa
+		get_title = title:c_marash
+		get_title = title:c_aintab
+		get_title = title:c_edessa
+		get_title = title:c_samosata
+	}
+	
+	character:20738 = { # Marwanids
+		# His historical position
+		#get_title = title:c_bakriya
+		get_title = title:c_mayyafariqin
+		get_title = title:c_tall_basma
+	}
+
+	character:34220 = { # Roussel de Bailleul
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_3
+		add_trait = gregarious
+		add_trait = brave
+		add_trait = ambitious
+		
+		add_trait = reaver
+		
+		add_trait = administrator
+	}
+
+	character:20511 = { # John Kantakouzenos
+		get_title = title:c_constanta
+	}
+
+}
+
+
+
+
+
+

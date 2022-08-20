@@ -1,0 +1,223 @@
+﻿
+
+
+spawn_turkic_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = turkic_event_troops
+		levies = {
+			value = 1400
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}
+
+spawn_raimbaud_troops_effect = { # 8010 Troops
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = raimbaud_event_troops
+		levies = {
+			value = 4000
+		}
+		men_at_arms = {
+			type = vigmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = vigmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = vigmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = varangian_veterans
+			stacks = 5
+		}
+		men_at_arms = {
+			type = varangian_veterans
+			stacks = 5
+		}
+		men_at_arms = {
+			type = varangian_veterans
+			stacks = 5
+		}
+		men_at_arms = {
+			type = varangian_veterans
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}
+
+spawn_bailleul_troops_effect = { # 3010 Troops
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = bailleul_event_troops
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = armored_horsemen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}
+
+spawn_bulgarian_rebels_troops_effect = { # 5000 Troops
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = bulgarian_rebels_troops
+		levies = {
+			value = 3350
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}
+
+spawn_serbian_slavic_troops_effect = { # 2500 Troops
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = serbian_slavic_troops
+		levies = {
+			value = 400
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		men_at_arms = {
+			type = pikemen_unit
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}

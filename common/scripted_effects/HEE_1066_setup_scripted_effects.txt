@@ -13,11 +13,14 @@ hee_byzantine_1066_effect = {
 	character:9812 = { save_scope_as = theodora_doukaina } # https://en.wikipedia.org/wiki/Theodora_Doukaina_Selvo
 	character:71901 = { save_scope_as = coempperor_andronikos_doukas } # https://en.wikipedia.org/wiki/Konstantios_Doukas
 	character:9809 = { save_scope_as = zoe_doukaina } # married Adrianos Komnenos, a brother of Emperor Alexios I Komnenos
+	
+	character:41305 = { save_scope_as = michael_psellos } #https://en.wikipedia.org/wiki/Michael_Psellos
 
 	character:1746 = { save_scope_as = john_doukas } # https://en.wikipedia.org/wiki/John_Doukas_(Caesar)
 	character:1748 = { save_scope_as = andronikos_doukas } # https://en.wikipedia.org/wiki/Andronikos_Doukas_(cousin_of_Michael_VII)
 	character:1785 = { save_scope_as = constantine_doukas } # Died in 1074
 
+	character:727 = { save_scope_as = maria_of_bulgaria } # https://en.wikipedia.org/wiki/Maria_of_Bulgaria
 	character:1782 = { save_scope_as = michael_doukas } # https://en.wikipedia.org/wiki/Michael_Doukas_(protostrator)
 	character:1781 = { save_scope_as = megas_doux_john_doukas } # https://en.wikipedia.org/wiki/John_Doukas_(megas_doux)
 	character:1743 = { save_scope_as = irene_doukaina } # https://en.wikipedia.org/wiki/Irene_Doukaina
@@ -57,6 +60,14 @@ hee_byzantine_1066_effect = {
 	
 	character:85001 = { save_scope_as = philaretos_brachamios } # https://en.wikipedia.org/wiki/Philaretos_Brachamios
 	
+	character:34464 = { save_scope_as = nikephoros_karantenos } # https://en.wikipedia.org/wiki/Nikephoros_Karantenos
+
+	# Bulgarian Uprising: https://en.wikipedia.org/wiki/Uprising_of_Georgi_Voyteh
+	character:34463 = { save_scope_as = georgi_voyteh } # https://en.wikipedia.org/wiki/Georgi_Voyteh
+	
+	character:20493 = { save_scope_as = constantine_bodin } # https://en.wikipedia.org/wiki/Constantine_Bodin
+
+	# Muslims
 	character:20738 = { save_scope_as = marwanids } # https://en.wikipedia.org/wiki/Marwanids
 
 	title:c_constanta = { save_scope_as = c_constanta }
@@ -75,6 +86,10 @@ hee_byzantine_1066_effect = {
 	title:c_bakriya = { save_scope_as = c_bakriya }
 	title:c_mayyafariqin = { save_scope_as = c_mayyafariqin }
 	title:c_tall_basma = { save_scope_as = c_tall_basma }
+	
+	title:d_bulgaria = { save_scope_as = d_bulgaria }
+	title:c_skopje = { save_scope_as = c_skopje }
+	title:c_ohrid = { save_scope_as = c_ohrid }
 
 	# Relations #
 
@@ -163,6 +178,15 @@ hee_byzantine_1066_effect = {
 		
 		add_trait = unwed
 	}
+
+	character:41305 = { # Michael Psellos		
+		add_trait = ambitious
+		
+		add_trait = devoted
+		
+		add_trait = scholar 
+		
+	}
 	
 	character:1748 = { # Andronikos Doukas (cousin of Michael VII)
 		HEE_remove_education_traits_effect = yes
@@ -173,7 +197,21 @@ hee_byzantine_1066_effect = {
 		add_trait = ambitious
 		add_trait = deceitful
 	}
-	
+
+	character:727 = { # Maria of Bulgaria
+		add_gold = 1500
+
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_diplomacy_2
+		add_trait = generous
+		add_trait = trusting
+		add_trait = content
+		
+		add_trait = beauty_good_1
+	}
+
 	character:1740 = { # Emperor Nikephoros III Botaneiates
 		HEE_remove_education_traits_effect = yes
 		HEE_remove_personality_traits_effect = yes
@@ -251,6 +289,22 @@ hee_byzantine_1066_effect = {
 		add_trait = patient
 	}
 	
+	character:34464 = { # Nikephoros Karantenos
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_martial_3
+		add_trait = zealous
+		add_trait = deceitful
+		add_trait = callous
+		
+		add_trait = overseer
+		
+		get_title = title:d_bulgaria
+		get_title = title:c_skopje
+		get_title = title:c_ohrid
+	}
+
 	character:85001 = { # Philaretos Brachamios / Vahram Varajnuni
 		# His historical position
 		get_title = title:d_edessa
@@ -280,6 +334,27 @@ hee_byzantine_1066_effect = {
 		
 		add_trait = administrator
 	}
+	
+	character:34463 = { # Georgi Voyteh
+		HEE_remove_education_traits_effect = yes
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = education_diplomacy_3
+		add_trait = just
+		add_trait = ambitious
+		add_trait = deceitful
+	}
+	
+	character:20493 = { # Constantine Bodin
+		HEE_remove_personality_traits_effect = yes
+
+		add_trait = greedy
+		add_trait = brave
+		add_trait = ambitious
+		add_trait = callous
+		
+		add_trait = reaver
+	}
 
 	character:20511 = { # John Kantakouzenos
 		get_title = title:c_constanta
@@ -287,6 +362,82 @@ hee_byzantine_1066_effect = {
 
 }
 
+# Seljuk Politics
+hee_seljuk_1066_effect = {	
+
+	# Scopes #
+	character:3042 = { save_scope_as = malik_shah } # https://en.wikipedia.org/wiki/Malik-Shah_I
+	character:1000229906 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
+
+	character:3046 = { save_scope_as = suleiman_ibn_qutalmish } # https://en.wikipedia.org/wiki/Suleiman_ibn_Qutalmish
+
+	character:41704 = { save_scope_as = danishmend_gazi } # https://en.wikipedia.org/wiki/Danishmend_Gazi
+	
+	character:144073 = { save_scope_as = mengujek_ghazi } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Meng%C3%BCjek_Gazi
+	character:144073 = { save_scope_as = mengujek_ishak } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Rulers
+	
+	character:3079 = { save_scope_as = kasim_aksungur } # https://en.wikipedia.org/wiki/Aq_Sunqur_al-Hajib
+	
+	character:20713 = { save_scope_as = anushtegin_gharchai } # https://en.wikipedia.org/wiki/Anushtegin_Gharchai
+	character:144099 = { save_scope_as = muhammad_i_of_khwarazm } # https://en.wikipedia.org/wiki/Muhammad_I_of_Khwarazm
+
+	# Relations #
+
+	character:3042 = { # Malik-Shah I
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = calm
+		add_trait = temperate
+		add_trait = diligent
+		add_trait = humble
+		
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 25
+		}
+	}
+	
+	character:3046 = { # Suleiman ibn Qutalmish
+		add_martial_skill = 6
+
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = greedy
+		add_trait = ambitious
+		add_trait = cynical
+		add_trait = callous
+		
+		add_trait = reaver
+		
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 25
+		}
+	}
+	
+	character:41704 = { # https://en.wikipedia.org/wiki/Danishmend_Gazi
+		add_martial_skill = 4
+		add_prowess_skill = 5
+	
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = brave
+		add_trait = zealous
+		add_trait = ambitious
+		
+		add_trait = holy_warrior
+		
+		add_trait = faith_warrior
+		
+		add_trait = blademaster_2
+		
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 25
+		}
+	}
+
+}
 
 
 

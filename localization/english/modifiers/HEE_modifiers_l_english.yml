@@ -2,5 +2,9 @@
  
  #Special Traits HEE
 
- western_roman_emperor_modifier:0 "Western Roman Emperor"
- western_roman_emperor_modifier_desc:0 "This character has been recognized by a Pope as Roman Emperor. In both theory and diplomacy, the Roman Emperor is considered primus inter pares - first among equals among other Catholic monarchs across Europe."
+ western_roman_emperor_modifier: "Western Roman Emperor"
+ western_roman_emperor_modifier_desc: "This character has been recognized by a Pope as Roman Emperor. In both theory and diplomacy, the Roman Emperor is considered primus inter pares - first among equals among other Catholic monarchs across Europe."
+ 
+ ## County ##
+ regional_stronghold_modifier: "Regional Stronghold"
+ regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"

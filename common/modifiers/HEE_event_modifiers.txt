@@ -20,6 +20,14 @@ western_roman_emperor_modifier = {
 	vassal_limit = 25
 }
 
+## County ##
+regional_stronghold_modifier = {
+	icon = county_modifier_development_positive
+	additional_fort_level = 3
+	defender_holding_advantage = 5
+	garrison_size = 0.25
+}
+
 # testing_water = {
 # 	#stacking = yes
 # 	icon = martial_negative

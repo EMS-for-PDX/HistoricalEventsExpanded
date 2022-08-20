@@ -1,0 +1,132 @@
+﻿## Characters for the Byzantine Event Chain - 1066 ##
+
+HEE_nikephoritzes_01 = { # https://en.wikipedia.org/wiki/Nikephoritzes
+	name = "Nikephoros"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 10
+	intrigue = 6
+	learning = 6
+	prowess = 0
+	
+	#Education
+	trait = education_stewardship_4
+	
+	#Personality Traits
+	trait = greedy
+	trait = diligent
+	trait = ambitious
+	
+	#Other Traits
+	trait = administrator
+	trait = eunuch
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1020.1.1 = {
+		birth = yes
+	}
+	1020.1.1 = {
+		name = "Nikephoritzes"
+	}
+	1065.1.1 = {
+		employer = 1732 
+	}
+	1078.4.25 = {
+		death = yes
+	}
+}
+
+HEE_nestor_01 = { # https://en.wikipedia.org/wiki/Michael_VII_Doukas#Usurpers
+	name = "Nestor"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 6
+	learning = 6
+	prowess = 8
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = greedy
+	trait = callous
+	trait = cynical
+	trait = ambitious
+	
+	#Other Traits
+	trait = peasant_leader
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1033.1.1 = {
+		birth = yes #Unknown
+	}
+	1065.1.1 = { # A former slave of Constantine X
+		employer = 1732 
+	}
+	1099.4.25 = {
+		death = yes #Unknown
+	}
+}
+
+HEE_raimbaud_01 = { # https://en.wikipedia.org/wiki/Raimbaud
+	name = "Raimbaud"
+	#dynasty = 0
+	religion = "catholic"
+	culture = "norman"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 5
+	martial = 8
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	prowess = 8
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = greedy
+	trait = brave
+	trait = cynical
+	
+	#Other Traits
+	trait = adventurer
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1033.1.1 = {
+		birth = yes #Unknown
+	}
+	1065.1.1 = { # A former slave of Constantine X
+		employer = 1732 
+	}
+	1099.4.25 = {
+		death = yes #Unknown
+	}
+}

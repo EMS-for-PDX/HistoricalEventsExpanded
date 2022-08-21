@@ -366,8 +366,14 @@ hee_byzantine_1066_effect = {
 hee_seljuk_1066_effect = {	
 
 	# Scopes #
+	character:3040 = { save_scope_as = arp_arslan } # https://en.wikipedia.org/wiki/Alp_Arslan
 	character:3042 = { save_scope_as = malik_shah } # https://en.wikipedia.org/wiki/Malik-Shah_I
 	character:1000229906 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
+	
+	character:HEE_vizier_01 = { save_scope_as = nizam_al_mulk } # https://en.wikipedia.org/wiki/Nizam_al-Mulk
+
+	character:3014 = { save_scope_as = boritigin } # https://en.wikipedia.org/wiki/B%C3%B6ritigin
+	character:3016 = { save_scope_as = nasr } # https://en.wikipedia.org/wiki/B%C3%B6ritigin
 
 	character:3041 = { save_scope_as = qavurt } # https://en.wikipedia.org/wiki/Qavurt
 
@@ -389,6 +395,32 @@ hee_seljuk_1066_effect = {
 	character:144099 = { save_scope_as = muhammad_i_of_khwarazm } # https://en.wikipedia.org/wiki/Muhammad_I_of_Khwarazm
 
 	# Relations #
+	character:3040 = { fire_councillor = cp:councillor_steward }
+
+	character:3040 = {
+		assign_councillor_type = {
+			type = councillor_steward
+			target = scope:nizam_al_mulk
+		}
+	}
+
+	character:3045 = { # Terkhen (Fictional Wife of Arp Arslan)
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = trusting
+		add_trait = chaste
+		add_trait = content
+		
+		change_first_name = Safariyya
+	}
+
+	character:3016 = { # Shams al-Mulk Nasr
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = paranoid
+		add_trait = wrathful
+		add_trait = callous
+	}	
 
 	character:3042 = { # Malik-Shah I
 		HEE_remove_personality_traits_effect = yes

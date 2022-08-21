@@ -1,0 +1,141 @@
+﻿## Characters for the Seljuk Event Chain - 1066 ##
+
+HEE_vizier_01 = { # https://en.wikipedia.org/wiki/Nizam_al-Mulk
+	name = "Nizam al-Mulk"
+	#dynasty = 0
+	religion = "ashari"
+	culture = "persian"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 10
+	martial = 8
+	stewardship = 14
+	intrigue = 8
+	learning = 12
+	prowess = 0
+	
+	#Education
+	trait = education_stewardship_4
+	
+	#Personality Traits
+	trait = generous
+	trait = just
+	trait = diligent
+	trait = cynical
+	
+	#Other Traits
+	trait = organizer
+	trait = overseer
+	trait = administrator
+	trait = scholar
+	trait = shrewd
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1018.4.10 = {
+		birth = yes
+	}
+	1065.1.1 = {
+		employer = 3040 
+	}
+	1066.1.1 = {
+		effect = {
+			set_relation_friend = character:3042
+		}
+	}
+	1092.10.14 = {
+		death = yes
+	}
+}
+
+HEE_smbat_01 = { # https://en.wikipedia.org/wiki/Gurandukht_(daughter_of_George_I_of_Georgia)
+	name = "Smbat"
+	dynasty = 507
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41512
+	# mother =
+	health = 4.3
+	
+	#Skills
+	diplomacy = 5
+	martial = 6
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = arrogant
+	trait = wrathful
+	trait = zealous
+	
+	#Other Traits
+
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1022.1.1 = {
+		birth = yes # Unknown
+	}
+	1055.1.1 = {
+		add_spouse = 41553
+	}
+	1070.10.14 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_unnamed_gurandukht_daughter_01 = { # https://en.wikipedia.org/wiki/Gurandukht_(daughter_of_George_I_of_Georgia)
+	name = "Tamar"
+	female = yes
+	dynasty = 507
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_smbat_01
+	mother = 41553
+	health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 6
+	stewardship = 6
+	intrigue = 4
+	learning = 6
+	prowess = 4
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = forgiving
+	trait = temperate
+	trait = humble
+	
+	#Other Traits
+	trait = beauty_good_1
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	
+	1045.1.1 = {
+		birth = yes # Unknown
+	}
+	1065.1.1 = {
+		add_spouse = 3040
+	}
+	1074.1.1 = {
+		add_spouse = HEE_vizier_01
+	}
+	1099.10.14 = {
+		death = yes # Unknown
+	}
+}

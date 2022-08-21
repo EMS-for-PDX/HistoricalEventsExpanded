@@ -369,9 +369,16 @@ hee_seljuk_1066_effect = {
 	character:3042 = { save_scope_as = malik_shah } # https://en.wikipedia.org/wiki/Malik-Shah_I
 	character:1000229906 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
 
+	character:3041 = { save_scope_as = qavurt } # https://en.wikipedia.org/wiki/Qavurt
+
 	character:3046 = { save_scope_as = suleiman_ibn_qutalmish } # https://en.wikipedia.org/wiki/Suleiman_ibn_Qutalmish
+	character:41701 = { save_scope_as = kilij_arslan_i } # https://en.wikipedia.org/wiki/Kilij_Arslan_I
 
 	character:41704 = { save_scope_as = danishmend_gazi } # https://en.wikipedia.org/wiki/Danishmend_Gazi
+	
+	character:144065 = { save_scope_as = artuk_bey } # https://en.wikipedia.org/wiki/Artuk_Bey
+	
+	character:34262 = { save_scope_as = tzachas } # https://en.wikipedia.org/wiki/Tzachas
 	
 	character:144073 = { save_scope_as = mengujek_ghazi } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Meng%C3%BCjek_Gazi
 	character:144073 = { save_scope_as = mengujek_ishak } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Rulers
@@ -395,6 +402,14 @@ hee_seljuk_1066_effect = {
 			flag = immune_to_disease
 			years = 25
 		}
+	}
+	
+	character:3041 = { # Qavurt
+		HEE_remove_personality_traits_effect = yes
+		
+		add_trait = arrogant
+		add_trait = temperate
+		add_trait = ambitious
 	}
 	
 	character:3046 = { # Suleiman ibn Qutalmish

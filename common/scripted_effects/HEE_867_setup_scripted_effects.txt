@@ -708,7 +708,7 @@ hee_iranian_intermezzo_effect = {
 
 	# Scopes
 	character:163099 = { save_scope_as = nasr_i } # https://en.wikipedia.org/wiki/Nasr_I
-	character:163157 = { save_scope_as = ismail_samani } # https://en.wikipedia.org/wiki/Al-Muhtadi
+	character:163157 = { save_scope_as = ismail_samani } # https://en.wikipedia.org/wiki/Ismail_Samani
 
 	character:163100 = { save_scope_as = muhammad_ibn_tahir } # https://en.wikipedia.org/wiki/Muhammad_ibn_Tahir
 	character:1000230509 = { save_scope_as = muhammad_ibn_abdallah } # https://en.wikipedia.org/wiki/Muhammad_ibn_Abdallah_ibn_Tahir

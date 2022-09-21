@@ -6,6 +6,6 @@
 
 hee_louis_bari_victory = {
 	events = {
-		HEE_karling_collapse.0100
+		HEE_italy_questline.0100
 	}
 }

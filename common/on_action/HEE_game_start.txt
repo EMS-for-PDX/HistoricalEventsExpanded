@@ -85,7 +85,7 @@ HEE_karling_collapse = {
 					is_landed = yes
 				}
 				trigger_event = {
-					id = HEE_karling_collapse.0001
+					id = HEE_lotharingia_questline.0001
 					days = { 30 100 }
 				}
 			}

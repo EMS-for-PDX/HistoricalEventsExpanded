@@ -1,0 +1,53 @@
+﻿l_english:
+
+ d_test_empire: "Test"
+ d_test_empire_adj: "Tester"
+
+ k_abkhazia: "Abkhazia"
+ k_abkhazia: "Abkhazian"
+
+ k_kakheti-hereti: "Kakheti-Hereti"
+ k_kakheti-hereti_adj: "Kakhetian"
+ 
+ d_kakheti: "Kakheti"
+ d_kakheti_adj: "Kakhetian"
+ 
+ d_hereti: "Hereti"
+ d_hereti_adj: "Heretian"
+ 
+ k_hereti: "Hereti"
+ k_hereti_adj: "Heretian"
+ 
+ k_tashir-dzoraget: "Tashir-Dzoraget"
+ k_tashir-dzoraget_adj: "Lorian"
+ 
+ k_artsakh: "Artsakh"
+ k_artsakh_adj: "Artsakhian"
+ 
+ k_syunik: "Syunik"
+ k_syunik_adj: "Syunikian"
+
+ d_muslim_tbilisi: "Tbilisi"
+ d_muslim_tbilisi_adj: "Tbilisian"
+
+ d_ganja: "Ganja"
+ d_ganja_adj: "Ganjian"
+ 
+ d_sawad: "Sawad"
+ d_sawad_adj: "Sawadian"
+ 
+ # Ragusa
+ d_aghlabid_raiders: "Aghlabid Raiders"
+ siege_of_ragusa_event_troops: "Aghlabid Raiders"
+ 
+ d_norse_raiders: "Norse Raiders"
+ norse_raiders_event_troops: "Norse Raiders"
+ 
+ d_great_summer_army: "Great Summer Army"
+ great_summer_army_event_troops: "Great Summer Army"
+ 
+ #KURDISH_UPRISING
+ KURDISH_UPRISING_MEN_NAME: "Kurdish Rebels"
+ KURDISH_UPRISING_WOMEN_NAME: "Kurdish Rebels"
+ KURDISH_UPRISING_NEUTRAL_NAME: "Kurdish Rebels"
+ kurdish_local_event_troops: "Kurdish Rebels"

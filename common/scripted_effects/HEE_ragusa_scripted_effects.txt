@@ -1,0 +1,112 @@
+﻿hee_siege_of_ragusa_scripted_effect = {
+	character:HEE_saba_of_taranto = { save_scope_as = saba_of_taranto } # https://en.wikipedia.org/wiki/Siege_of_Ragusa_(866%E2%80%93868)
+	
+	character:HEE_saba_of_taranto = {
+		#Give the adventurer a dynamic title to tide them over.
+		#give_title = d_aghlabid_raiders
+		
+		# create_dynamic_title = {
+			# tier = duchy
+			# name = {
+				# first_valid = {
+					# triggered_desc = {
+						# trigger = {
+							# faith = { has_doctrine = doctrine_gender_male_dominated }
+						# }
+						# desc = TURKIC_ARMY_MEN_NAME #Change Name
+					# }
+					# triggered_desc = {
+						# trigger = {
+							# faith = { has_doctrine = doctrine_gender_female_dominated }
+						# }
+						# desc = TURKIC_ARMY_WOMEN_NAME #Change Name
+					# }
+					# triggered_desc = {
+						# trigger = {
+							# faith = { has_doctrine = doctrine_gender_equal }
+						# }
+						# desc = TURKIC_ARMY_NEUTRAL_NAME #Change Name
+					# }
+					# #Fallback, just in case.
+					# desc = TURKIC_ARMY_NEUTRAL_NAME #Change Name
+				# }
+			# }
+		# }
+	}
+	title:d_aghlabid_raiders = { save_scope_as = new_title }
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	scope:new_title = {
+		# set_capital_county = title:c_ragusa #Ragusa
+		# set_landless_title = yes
+		# set_ruler_uses_title_name = no
+		# TIT-27442
+		# set_no_automatic_claims = yes
+		# set_can_be_named_after_dynasty = no
+		change_title_holder = {
+			holder = scope:saba_of_taranto
+			change = scope:change
+		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	scope:new_title = {
+		generate_coa = yes
+		set_variable = {
+			name = temporary_title
+			value = yes
+		}
+	}
+	
+	title:c_ragusa.holder = {
+		save_scope_as = ragusa_target_holder
+	}
+	
+	#Declare the war.
+	scope:saba_of_taranto = {
+		start_war = {
+			casus_belli = county_conquest_cb
+			target = scope:ragusa_target_holder
+			target_title = title:c_ragusa
+		}
+	}
+	
+	#Setup event troops.
+	scope:saba_of_taranto = {
+		spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = siege_of_ragusa_event_troops
+			levies = {
+				value = 1500
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = light_footmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			location = province:468
+		}
+		# Suppress startup error false-positive
+		if = {
+			limit = { has_variable = random_location }
+			# Do nothing.
+		}
+		# Loan a little gold in case they're in debt/to keep them going.
+ 		scope:saba_of_taranto = { add_gold = 500 }
+	}
+	
+}

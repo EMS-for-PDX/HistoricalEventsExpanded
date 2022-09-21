@@ -82,3 +82,298 @@
 # 		}
 # 	}
 # }
+
+k_abkhazia = { # https://en.wikipedia.org/wiki/Kingdom_of_Abkhazia
+	767.1.1 = {
+		holder = 70472
+	}
+	786.1.1 = {
+		liege = 0
+	}
+	812.1.1 = {
+		holder = 70473
+	}
+	838.1.1 = {
+		holder = 70471
+	}
+	#860 setup
+	864.1.1 = {
+		holder = 70476
+	}
+	871.1.1 = {
+		holder = 70474
+	}
+	873.1.1 = {
+		holder = 70475
+	}
+	887.1.1 = {
+		holder = 70470
+	}
+	894.1.1 = {
+		holder = 70469
+	}
+	923.1.1 = {
+		holder = 70468
+	}
+	960.1.1 = {
+		holder = 70465
+	}
+	969.1.1 = {
+		holder = 70466
+	}
+	976.1.1 = {
+		holder = 70467
+	}
+	978.1.1 = {
+		holder = 41547
+	}
+	1008.1.1 = {
+		holder = 0
+	}
+}
+
+k_kakheti-hereti = {
+	1025.1.1 = {
+		holder = HEE_kvirike_iii_of_kakheti
+	}
+	1039.1.1 = {
+		holder = 41514
+	}
+	1058.1.1 = {
+		holder = 41515
+	}
+}
+
+d_kakheti = {
+	627.1.1 = {
+		holder = 159778
+	}
+	637.1.1 = {
+		holder = 159779
+	}
+	650.1.1 = {
+		holder = 159780
+	}
+	684.1.1 = {
+		holder = 159783
+	}
+	693.1.1 = {
+		holder = 159785
+	}
+	748.1.1 = {
+		holder = 159787
+	}
+	760.1.1 = {
+		holder = 159788
+	}
+	779.1.1 = {
+		holder = 159786
+	}
+	786.1.1 = {
+		holder = HEE_grigol_of_kakheti
+	}
+	827.1.1 = {
+		holder = HEE_vache_of_kakheti
+	}
+	839.1.1 = {
+		holder = HEE_samuel_of_kakheti
+	}
+	861.1.1 = {
+		holder = HEE_gabriel_of_kakheti
+	}
+	881.1.1 = {
+		holder = HEE_padla_i_of_kakheti
+	}
+	893.1.1 = {
+		holder = HEE_kvirike_i_of_kakheti
+	}
+	918.1.1 = {
+		holder = HEE_padla_ii_of_kakheti
+	}
+	929.1.1 = {
+		holder = HEE_kvirike_ii_of_kakheti
+	}
+	976.1.1 = {
+		holder = HEE_david_of_kakheti
+	}
+	1010.1.1 = {
+		holder = 0
+	}
+	1014.1.1 = {
+		holder = HEE_kvirike_iii_of_kakheti
+	}
+	1025.1.1 = {
+		holder = 0
+	}
+}
+
+d_hereti = {
+	#821 : Principality of Khachen
+	821.1.1 = {
+		liege = 0
+		holder = 159973	#Sahak Sahl Smbatean
+	}
+	855.1.1 = {
+		holder = 159966 #Atrnerseh, son of Sahak Sahl Smbatean
+	}
+	865.1.1 = {
+		holder = 159976 #Smbat, grandson of Sahak Sahl Smbatean
+	}
+	893.1.1 = {
+		holder = 0
+	}
+}
+
+k_hereti = {
+	893.1.1 = {
+		holder = 159976
+	}
+	897.1.1 = {
+		holder = HEE_adarnase_of_hereti
+	}
+	943.1.1 = {
+		holder = HEE_ishkhanik_of_hereti
+	}
+	951.1.1 = {
+		holder = HEE_john_of_hereti
+	}
+	959.1.1 = {
+		holder = 0
+	}
+}
+
+k_tashir-dzoraget = {
+	
+	979.1.1 = {
+		holder = 41511
+	}
+	989.1.1 = {
+		holder = 41512
+	}
+	1048.1.1 = {
+		holder = 41513
+	}
+}
+
+k_artsakh = {
+	
+	1000.1.1 = {
+		holder = 159986
+	}
+	1030.1.1 = {
+		holder = 159239
+	}
+}
+
+k_syunik = {
+	
+	987.1.1 = {
+		holder = 41554
+	}
+	1053.1.1 = {
+		holder = 41555
+	}
+	1060.1.1 = {
+		holder = 41556
+	}
+}
+
+d_muslim_tbilisi = {
+	811.1.1 = {
+		holder = 302363	#Ismail bin Shuab Shuabid
+	}
+	813.1.1 = {
+		holder = 302364	#Mohammed bin Atab
+	}
+	829.1.1 = {
+		holder = 302365	#Ali bin Shuab
+	}
+	833.1.1 = {
+		holder = 302366	#Ishaq bin Ismail bin Shuab
+	}
+	850.1.1 = {
+		liege = 0
+	}
+	
+	#Invaded by Bugha al-Kabir "the Turk" in 853
+	853.1.1 = {
+		holder = 163167	#Mohammed bin Khalil Shaybanid
+		liege = e_arabia
+	}
+	870.1.1 = {
+		holder = 159732	#Isa bin ash-Sheikh ash-Shayban
+	}
+	876.1.1 = {
+		holder = 302361	#Ibrahim Shaybanid
+	}
+	878.1.1 = {
+		holder = 302362	#Gabuloc Shaybanid
+	}
+	880.1.1 = {
+		holder = 302367	#Jaffar I bin Ali Jaffarid
+	}
+	914.1.1 = {
+		holder = 302368	#Mansur bin Jaffar Jaffarid
+	}
+	952.1.1 = {
+		holder = 302369	#Jaffar II bin Mansur Jaffarid
+	}
+	981.1.1 = {
+		holder = 302370	#Ali bin Jaffar Jaffarid
+	}
+	#1008 unification of Georgia and new kingdom
+	1032.1.1 = {
+		holder = 302371	#Jaffar III bin Ali Jaffarid
+	}
+	1046.1.1 = {
+		holder = 302372	#Mansur bin Jaffar Jaffarid
+	}
+	1054.1.1 = {
+		holder = 302373	#Abul-Haija bin Jaffar Jaffarid
+	}
+	1062.1.1 = {
+		holder = 302374	#Placeholder for city council
+	}
+	#1066 startdate
+	1068.1.1 = {
+		holder = 302375	#Fadlun of Ganja Jaffarid
+	}
+	1080.1.1 = {
+		holder = 302376	#Placeholder for city council
+	}
+	1088.1.1 = {
+		holder = 41608	#Placeholder for city council
+	}
+}
+
+d_ganja = {
+
+	971.1.1 = {
+		holder = 159162
+	}
+	978.1.1 = {
+		holder = 159168
+	}
+	986.1.1 = {
+		holder = 159163
+	}
+	1031.1.1 = {
+		holder = 159164
+	}
+	1034.1.1 = {
+		holder = 159165
+	}
+	1049.1.1 = {
+		holder = 159166
+	}
+	1049.3.1 = {
+		holder = 41600
+	}
+}
+
+d_sawad = {
+
+	851.10.1 = {
+		holder = 1000230509
+	}
+}

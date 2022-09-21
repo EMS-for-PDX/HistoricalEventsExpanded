@@ -1,0 +1,367 @@
+﻿namespace = HEE_rollo
+
+HEE_rollo.0001 = { # Rollo attacks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		this = character:242 #Rollo
+		is_alive = yes
+		is_imprisoned = no
+		exists = title:k_france
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_rollo.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		title:k_france.holder = { save_scope_as = king_of_france }
+		title:d_normandy.holder.liege = { save_scope_as = lord_over_normandy }
+		character:242 = { save_scope_as = rollo }
+		character:242 = { hee_rollo_scripted_effect = yes }
+		scope:lord_over_normandy = {
+			trigger_event = {
+				id = HEE_rollo.0002
+				days = { 30 60 } # 
+			}
+		}
+	}
+}
+
+HEE_rollo.0002 = {
+	type = character_event
+	title = HEE_rollo.0002.t
+	desc = HEE_rollo.0002.desc
+	theme = war
+	left_portrait = {
+		character = scope:lord_over_normandy
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:rollo
+		animation = personality_greedy
+	}
+	override_background = { event_background = fp1_beached_longships }
+
+	trigger = {
+		# Make sure the war is still ongoing
+		any_character_war = {
+			using_cb = ducal_conquest_cb
+			primary_attacker = scope:rollo
+			primary_defender = scope:lord_over_normandy
+		}
+	}
+
+	immediate = {
+		# Grab the CB for general reference.
+		random_character_war = {
+			limit = {
+				using_cb = ducal_conquest_cb
+				primary_attacker = scope:rollo
+				primary_defender = scope:lord_over_normandy
+			}
+			save_scope_as = sa_war
+		}
+	}
+
+	# Never! Back to your frozen hellscape of a home, scum!
+	option = {
+		name = HEE_rollo.0002.a
+
+		# Gain a bit of prestige for your boasting.
+		add_prestige = medium_prestige_gain
+		# Stress gain trade-off handled in stress impact.
+		# Clarify that this is merely another trade-off option.
+		custom_tooltip = HEE_rollo.0002.d.tt
+
+		stress_impact = {
+			base = medium_stress_gain
+			arrogant = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+			stubborn = minor_stress_impact_loss
+			vengeful = minor_stress_impact_loss
+			humble = medium_stress_impact_gain
+			content = medium_stress_impact_gain
+			fickle = medium_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 0
+			ai_value_modifier = {
+				ai_vengefulness = 0.5
+				ai_energy = 0.25
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = arrogant
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = ambitious
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = stubborn
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = vengeful
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = humble
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = content
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = fickle
+			}
+			modifier = {	# Weight down for stress.
+				add = -20
+				has_trait = forgiving
+			}
+		}
+	}
+	
+	# Well, if it's land they want...
+	option = {
+		name = HEE_rollo.0002.b
+		trigger = {
+			# Must be able to vassalise a duke.
+			highest_held_title_tier >= tier_kingdom
+			# Target duchy doesn't contain a player that isn't scope:defender.
+			NOT = {
+				any_player = {
+					# First, see if they're a vassal of scope:defender.
+					any_liege_or_above = { this = scope:lord_over_normandy }
+					# And if they are, make sure they have no titles held within the appropriate lands.
+					save_temporary_scope_as = vassal_player
+					any_in_list = {
+						list = target_titles
+						holder = scope:vassal_player
+					}
+				}
+			}
+			# Scope:defender must control at least some lands outside of the target duchy.
+			any_held_title = {
+				NOT = { is_in_list = target_titles }
+			}
+		}
+
+		# You allow them to win the war...
+		scope:sa_war = { end_war = attacker }
+		add_prestige = major_prestige_loss
+		# ... but then immediately vassalise them.
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = change
+		}
+		scope:rollo = {
+			change_liege = {
+				liege = scope:lord_over_normandy
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+		# This also gives a nice long truce so that they can't immediately usurp you.
+		hidden_effect = {
+			cancel_truce_both_ways = scope:rollo
+			scope:rollo = {
+				destroy_title = title:d_norse_raiders
+				get_title = title:d_normandy
+			}
+		}
+		add_truce_both_ways = {
+			character = scope:rollo
+			days = 7300
+			name = FP1_SCANDINAVIAN_ADVENTURER_VASSAL_TRUCE_NAME
+		}
+		# Plus we whack some opinion in there for good measure.
+		progress_towards_friend_effect = {
+			CHARACTER = scope:rollo
+			OPINION = 50
+			REASON = friend_fp1_renewed_trade_deal
+		}
+		# Add a breather before the next SA.
+		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
+
+		# Give Rollo Adventurer trait 
+		hidden_effect = {
+			scope:rollo = {
+				add_trait = adventurer
+			}
+		}
+
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			humble = minor_stress_impact_loss
+			content = minor_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+			greedy = major_stress_impact_gain
+			arrogant = major_stress_impact_gain
+			ambitious = major_stress_impact_gain
+			stubborn = major_stress_impact_gain
+			vengeful = major_stress_impact_gain
+		}
+		ai_chance = {
+			# Base 0 so that only a particular kind of AI will go for this.
+			base = 1000
+			ai_value_modifier = {
+				ai_rationality = 0.25
+				ai_greed = -0.5
+				ai_vengefulness = -0.75
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = generous
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = humble
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = content
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = fickle
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = forgiving
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = greedy
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = arrogant
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = ambitious
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = stubborn
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = vengeful
+			}
+		}
+	}
+	
+	# In my experience, soldiers prefer gold to glory.
+	option = {
+		name = HEE_rollo.0002.c
+		trigger = {
+			can_make_expensive_purchase_trigger = { PRICE = monumental_gold_value }
+		}
+
+		# Pay scope:attacker's troops to sod off...
+		custom_tooltip = HEE_rollo.0002.c.tt
+		remove_short_term_gold = monumental_gold_value
+		# ... thereby winning the war.
+		scope:sa_war = { end_war = defender }
+		reverse_add_opinion = {
+			target = scope:rollo
+			modifier = humiliated_opinion
+			opinion = -50
+		}
+		# Add a breather before the next SA.
+		fp1_add_realm_size_appropriate_sa_reprieve_effect = yes
+
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			humble = minor_stress_impact_loss
+			content = minor_stress_impact_loss
+			fickle = minor_stress_impact_loss
+			forgiving = minor_stress_impact_loss
+			greedy = major_stress_impact_gain
+			arrogant = major_stress_impact_gain
+			ambitious = major_stress_impact_gain
+			stubborn = major_stress_impact_gain
+			vengeful = major_stress_impact_gain
+		}
+		ai_chance = {
+			# Base allowed to stay high, since the fiscal purchase here is pretty high and the AI usually won't make it anyway.
+			base = 0
+			ai_value_modifier = {
+				ai_rationality = 0.25
+				ai_greed = -0.5
+				ai_vengefulness = -0.75
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = generous
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = humble
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = content
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = fickle
+			}
+			modifier = {	# Weight up for stress.
+				add = 10
+				has_trait = forgiving
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = greedy
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = arrogant
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = ambitious
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = stubborn
+			}
+			modifier = {	# Weight down for stress.
+				add = -30
+				has_trait = vengeful
+			}
+		}
+	}
+
+	# Then we'll banish these Nords to the sea.
+	option = {
+		name = HEE_rollo.0002.d
+
+		# Opt-out.
+		custom_tooltip = HEE_rollo.0002.d.tt
+
+		# No stress impact for the opt-out.
+		ai_chance = {
+			base = 0
+			ai_value_modifier = {
+				ai_energy = -0.25
+				ai_vengefulness = -0.25
+			}
+		}
+	}
+}

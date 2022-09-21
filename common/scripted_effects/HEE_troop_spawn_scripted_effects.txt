@@ -1,6 +1,46 @@
 ﻿
 
 
+spawn_local_kurdish_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = kurdish_local_event_troops
+		levies = {
+			value = 950
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 5
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = province:4118
+	}
+}
+
 spawn_turkic_troops_effect = {
 	spawn_army = {
 		uses_supply = no

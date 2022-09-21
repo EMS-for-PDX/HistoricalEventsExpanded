@@ -1,6 +1,115 @@
-﻿d_test_empire = {
-	color = { 113 88 101 }
-	color2 = { 255 255 255 }
+﻿# d_test_empire = {
+	# color = { 113 88 101 }
+	# color2 = { 255 255 255 }
+	# definite_form = yes
+	# capital = c_turnovo
+# }
+
+k_abkhazia = { # https://en.wikipedia.org/wiki/Kingdom_of_Abkhazia
+	color = { 70 70 80 }
+
+	capital = c_abkhazia # Tskhumi
+}
+
+k_kakheti-hereti = { # https://en.wikipedia.org/wiki/First_Kingdom_of_Kakheti
+	color = { 208 208 190 }
+
+	capital = c_kakheti
+}
+
+d_kakheti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Hereti#Kings_of_Kakheti_and_Hereti
+	color = { 208 208 190 }
+
+	capital = c_kakheti
+}
+
+d_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Hereti#Kings_of_Kakheti_and_Hereti
+	color = { 200 215 200 }
+
+	capital = c_hereti
+}
+
+k_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Hereti#Kings_of_Kakheti_and_Hereti
+	color = { 200 215 200 }
+
+	capital = c_hereti
+}
+
+k_tashir-dzoraget = { # https://en.wikipedia.org/wiki/Kingdom_of_Tashir-Dzoraget
+	color = { 205 160 160 }
+
+	capital = c_lori
+}
+
+k_artsakh = { # https://en.wikipedia.org/wiki/Kingdom_of_Artsakh
+	color = { 182 44 78 }
+
+	capital = c_khachen
+}
+
+k_syunik = { # https://en.wikipedia.org/wiki/Kingdom_of_Syunik
+	color = { 197 80 107 }
+
+	capital = c_suenik
+}
+
+d_muslim_tbilisi = { # https://en.wikipedia.org/wiki/Emirate_of_Tbilisi
+	color = { 20 100 30 }
+
+	capital = c_tbilisi
+}
+
+d_ganja = { # https://en.wikipedia.org/wiki/Category:Emirs_of_Ganja
+	color = { 88 104 67 }
+
+	capital = c_aran
+}
+
+d_sawad = { # https://en.wikipedia.org/wiki/Sawad
+	color = { 6 150 2 }
+
+	capital = c_baghdad
+}
+
+# Ragusa
+d_aghlabid_raiders = {
+	color = { 167 172 63 }
+
+	landless = yes
+	capital = c_bari
+	
 	definite_form = yes
-	capital = c_turnovo
+	ruler_uses_title_name = no
+	destroy_on_succession = yes
+	can_be_named_after_dynasty = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_norse_raiders = {
+	color = { 167 172 63 }
+
+	landless = yes
+	capital = c_sjaelland
+	
+	definite_form = yes
+	ruler_uses_title_name = no
+	destroy_on_succession = yes
+	can_be_named_after_dynasty = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
+d_great_summer_army = {
+	color = { 94 83 70 }
+
+	landless = yes
+	capital = c_norfolk
+	
+	definite_form = yes
+	ruler_uses_title_name = no
+	destroy_on_succession = yes
+	can_be_named_after_dynasty = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
 }

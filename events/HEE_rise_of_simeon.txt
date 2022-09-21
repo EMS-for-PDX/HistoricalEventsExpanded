@@ -1,0 +1,467 @@
+﻿namespace = HEE_rise_of_simeon
+
+
+HEE_rise_of_simeon.0001 = { #Boris abdicates
+	type = character_event
+	title = HEE_rise_of_simeon.0001.t
+	desc = HEE_rise_of_simeon.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_rise_of_simeon.0001
+				days = 365 #~1 years
+			}
+		}
+	}
+
+	immediate = {
+		every_held_title = {
+			add_to_list = boris_current_titles
+		}
+	}
+
+	option = {
+		name = HEE_rise_of_simeon.0001.a
+		
+		add_trait = devoted
+		
+		# depose = yes
+		
+		character:70383 = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = boris_current_titles
+				change_title_holder_include_vassals = {
+					holder = character:70383
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			
+			trigger_event = {
+				id = HEE_rise_of_simeon.0002
+				days = { 1 1000 } # One day to three years
+			}			
+		}
+		
+		set_player_character = character:70383 #Vladimir
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_rise_of_simeon.0001.b
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}
+
+HEE_rise_of_simeon.0002 = { #Vladimir wants Pagan Restoration
+	type = character_event
+	title = HEE_rise_of_simeon.0002.t
+	desc = HEE_rise_of_simeon.0002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_rise_of_simeon.0002
+				days = 365 #~1 years
+			}
+		}
+	}
+	
+	immediate = {
+		if ={
+			limit = {
+				is_married = yes
+			}
+			random_spouse = {
+				save_scope_as = vladimirs_wife
+			}
+		}
+	}
+
+	option = { #Pagan Restoration lets go!
+		name = HEE_rise_of_simeon.0002.a
+
+		set_character_faith = faith:tengri_pagan
+		
+		random_secret = { #Remove the Nonbeliever secret
+            limit = {
+                secret_type = secret_non_believer
+            }
+            remove_secret = yes
+        }
+
+		if ={
+			limit = {
+				is_married = yes
+			}
+			scope:vladimirs_wife = {
+				set_character_faith = faith:tengri_pagan
+			}
+		}
+
+		trigger_event = {
+			id = HEE_rise_of_simeon.0003
+			days = { 180 1300 } # Within four years
+		}	
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = { #Better not
+		name = HEE_rise_of_simeon.0002.b
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+}
+
+HEE_rise_of_simeon.0003 = { #Simeon is installed
+	type = character_event
+	title = HEE_rise_of_simeon.0003.t
+	desc = HEE_rise_of_simeon.0003.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_coward
+	}
+	right_portrait = {
+		character = character:70382
+		animation = personality_callous
+	}
+
+	trigger = {
+		character:70382 = { is_alive = yes }
+		character:712 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		# is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = HEE_rise_of_simeon.0001
+				# days = 365 #~1 years
+			# }
+		# }
+	# }
+
+	immediate = {
+		every_held_title = {
+			add_to_list = vladimirs_current_titles
+		}
+	}
+
+	option = {
+		name = HEE_rise_of_simeon.0003.a
+		
+		add_trait = blind
+		add_trait = devoted
+		
+		hidden_effect = {
+			add_trait = disinherited
+			add_character_modifier = recently_blinded
+		}
+		
+		if ={
+			limit = {
+				is_married = yes
+			}
+			scope:vladimirs_wife = {
+				add_trait = devoted
+			}
+		}
+		
+		# depose = yes
+		
+		character:712 = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			every_in_list = {
+				list = vladimirs_current_titles
+				change_title_holder_include_vassals = {
+					holder = character:712
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			
+			# trigger_event = {
+				# id = HEE_rise_of_simeon.0004
+			# }			
+		}
+		
+		set_player_character = character:712 #Simeon
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_rise_of_simeon.1000 = { #Simeon is set to Constantinople
+	title = HEE_rise_of_simeon.1000.t
+	desc = HEE_rise_of_simeon.1000.desc
+	theme = learning
+	left_portrait = character:712
+	lower_right_portrait = scope:ecumenical_patriarch
+
+	trigger = {
+		character:712 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		# is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_rise_of_simeon.1000
+				days = 180 #~1/2 years
+			}
+		}
+	}
+
+	immediate = {
+		if ={
+			limit = {
+				exists = title:k_orthodox
+			}
+			title:k_orthodox.holder = {
+				save_scope_as = ecumenical_patriarch
+			}
+		}
+		if ={
+			limit = {
+				exists = title:k_bulgaria
+			}
+			title:k_bulgaria.holder = {
+				save_scope_as = bulgarian_king
+			}
+		}
+		character:712 = { save_scope_as = simeon_i } 
+	}
+
+	option = {
+		name = HEE_rise_of_simeon.1000.a
+		
+		scope:ecumenical_patriarch = {
+			add_courtier = scope:simeon_i
+			
+		}
+		
+		scope:simeon_i = {
+			set_relation_guardian = scope:ecumenical_patriarch
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_rise_of_simeon.1999 = {
+	hidden = yes
+	
+	trigger = {
+		this = character:712
+		is_alive = yes
+	}
+	
+	immediate = {
+		title:k_bulgaria.holder = {
+			trigger_event = {
+				id = HEE_rise_of_simeon.2000
+			}
+		}
+	}
+}
+
+HEE_rise_of_simeon.2000 = { #Simeon returns home
+	title = HEE_rise_of_simeon.2000.t
+	desc = HEE_rise_of_simeon.2000.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = character:712
+		animation = personality_bold
+	}
+
+	trigger = {
+		character:712 = {
+			is_alive = yes
+		}
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		# is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = HEE_rise_of_simeon.0001
+				# days = 365 #~1 years
+			# }
+		# }
+	# }
+
+	immediate = {
+		if ={
+			limit = {
+				exists = title:k_bulgaria
+			}
+			title:k_bulgaria.holder = {
+				save_scope_as = bulgarian_king
+			}
+		}
+		character:712 = { save_scope_as = simeon_i }
+		scope:bulgarian_king = {
+			add_courtier = scope:simeon_i
+		}
+		hidden_effect = {
+			character:712 = {
+				HEE_remove_education_traits_effect = yes
+				HEE_remove_personality_traits_effect = yes
+				
+				add_trait = education_learning_4
+				add_trait = zealous
+				add_trait = ambitious
+				add_trait = diligent
+				add_trait = brave
+				if = {
+					limit = {
+						diplomacy < 12
+					}
+					add_diplomacy_skill = 4
+				}
+				if = {
+					limit = {
+						martial < 14
+					}
+					add_martial_skill = 4
+				}
+				if = {
+					limit = {
+						stewardship < 13
+					}
+					add_stewardship_skill = 4
+				}
+				if = {
+					limit = {
+						intrigue < 10
+					}
+					add_intrigue_skill = 4
+				}
+				if = {
+					limit = {
+						learning < 20
+					}
+					add_learning_skill = 4
+				}
+				if = {
+					limit = {
+						prowess < 12
+					}
+					add_prowess_skill = 4
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = HEE_rise_of_simeon.2000.a
+		
+		character:712 = {
+	
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

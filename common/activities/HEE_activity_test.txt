@@ -1,0 +1,27 @@
+﻿
+# The Adventure activity
+# base system by Linnéa Thimrén
+activity_catchall_movement = {
+	solo = yes
+	color = { 0.753906 0.267188 0.105469 1 }
+	start_immediately = yes
+	valid = {
+		activity_owner = {
+			is_alive = yes
+		}
+	}
+	on_spawn = {
+		invite_character_to_activity = activity_owner
+		accept_invitation_for_character = activity_owner
+	}
+	on_activate = {
+
+	}
+	on_complete = {
+		
+	}
+	on_invalidated = {
+		complete_activity = yes
+		#Notifications will be triggered thought the inspiration
+	}
+}

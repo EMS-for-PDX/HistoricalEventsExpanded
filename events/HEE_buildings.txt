@@ -1,0 +1,18 @@
+﻿namespace = HEEBuildings
+
+HEEBuildings.0001 = {
+	type = empty
+	hidden = yes
+	
+	immediate = {	
+		# Ragusa
+		title:b_ragusa.title_province = {
+			if = {
+				limit = { 
+					current_date >= 600.1.1
+				}
+				add_building = hill_forts_02
+			}
+		}
+	}
+}

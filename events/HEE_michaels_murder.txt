@@ -1,0 +1,231 @@
+﻿namespace = hee_basil_rise_michael_falls
+
+hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
+	type = character_event
+	title = hee_basil_rise_michael_falls.0001.t
+	desc = hee_basil_rise_michael_falls.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = character:HEE_basiliskianos
+		animation = personality_content
+	}
+
+	trigger = {
+		character:HEE_basiliskianos = { is_alive = yes }
+		character:1700 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_basil_rise_michael_falls.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		character:HEE_basiliskianos = { save_scope_as = basiliskianos }
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0001.a
+
+		custom_tooltip = michael_and_basiliskianos_go_out_drinking
+		
+		#progress_towards_friend_effect = { CHARACTER = scope:basiliskianos OPINION = no }
+		
+		add_stress = medium_stress_impact_loss
+		
+		trigger_event = {
+			id = hee_basil_rise_michael_falls.0002
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0001.b
+		
+		custom_tooltip = michael_says_no_to_drinking #ahistorical option
+
+		add_stress = major_stress_impact_gain
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}
+
+hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
+	type = character_event
+	title = hee_basil_rise_michael_falls.0002.t
+	desc = hee_basil_rise_michael_falls.0002.desc
+	theme = intrigue # Change
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = character:1700
+		animation = aggressive_sword
+	}
+
+	trigger = {
+		character:1700 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = hee_basil_rise_michael_falls.0002
+				# days = 30 #~1 month
+			# }
+		# }
+	# }
+
+	immediate = {
+		every_held_title = {
+			add_to_list = michael_current_titles
+		}
+		known_murder_effect = {
+			VICTIM = character:HEE_basiliskianos
+			MURDERER = character:1700
+			EXPOSER = character:1700
+		}
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0002.a
+		
+		custom_tooltip = michael_pleads_for_his_life
+		
+		hidden_effect = {
+			duel = {
+				skill = diplomacy
+				value = 12
+				95 = { #Kill them
+					# character:1700 = {
+						# create_title_and_vassal_change = {
+							# type = usurped
+							# save_scope_as = change
+							# add_claim_on_loss = yes
+						# }
+						# every_in_list = {
+							# list = michael_current_titles
+							# change_title_holder_include_vassals = {
+								# holder = character:1700
+								# change = scope:change
+							# }
+						# }
+						# resolve_title_and_vassal_change = scope:change		
+					# }
+					
+					set_designated_heir = character:1700
+					
+					#set_player_character = character:1700 #Basil I
+					
+					known_murder_effect = {
+						VICTIM = character:70490
+						MURDERER = character:1700
+						EXPOSER = character:1700
+					}
+					
+					character:1700 = {
+						remove_character_modifier = byzantine_coemperor_modifier
+						#remove_trait = murderer
+					}
+				}
+
+				5 = { #Miss!
+					
+				}
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0002.b
+		
+		custom_tooltip = michael_fights_for_his_life
+		
+		hidden_effect = {
+			duel = {
+				skill = prowess
+				value = 15
+				95 = { #Kill them
+					# character:1700 = {
+						# create_title_and_vassal_change = {
+							# type = usurped
+							# save_scope_as = change
+							# add_claim_on_loss = yes
+						# }
+						# every_in_list = {
+							# list = michael_current_titles
+							# change_title_holder_include_vassals = {
+								# holder = character:1700
+								# change = scope:change
+							# }
+						# }
+						# resolve_title_and_vassal_change = scope:change		
+					# }
+					
+					set_designated_heir = character:1700
+					
+					#set_player_character = character:1700 #Basil I
+					
+					known_murder_effect = {
+						VICTIM = character:70490
+						MURDERER = character:1700
+						EXPOSER = character:1700
+					}
+					
+					character:1700 = {
+						remove_character_modifier = byzantine_coemperor_modifier
+						#remove_trait = murderer
+					}
+				}
+
+				5 = { #Miss!
+					
+				}
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

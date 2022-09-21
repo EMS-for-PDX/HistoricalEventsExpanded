@@ -1,0 +1,146 @@
+﻿create_artifact_pedestal_crown_iron_effect = { #Create at start
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = artifact_pedestal_crown_iron_name
+		description = artifact_pedestal_crown_iron
+		type = pedestal
+		template = crown_iron_template
+		visuals = pedestal_crown_iron
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 905.3.1
+			recipient = character:167970 #Gotofredo
+			location = province:2575 #Rome
+		}
+		modifier = iron_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = iron_crown
+		add_artifact_history = {
+			type = inherited
+			date = 905.3.1
+			recipient = character:167970 #Gotofredo
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 910.8.4
+			recipient = character:167971 #Gausberto
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 940.1.1
+			recipient = character:167972 #Uberto
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 941.11.1
+			recipient = character:167973 #Adalberto
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 967.1.1
+			recipient = character:7727 #Aleramo Aleramicci
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 991.1.1
+			recipient = character:7728 #Ottone I
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 991.6.1
+			recipient = character:7729 #Guglielmo I
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 941.11.1
+			recipient = character:167973 #Adalberto
+		}
+		add_artifact_title_history = {
+			target = title:e_hre
+			date = 1039.2.4
+		}
+		save_scope_as = epic
+	}
+}
+
+create_artifact_wearing_crown_iron_effect = { #Create at start
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = artifact_pedestal_crown_iron_name
+		description = artifact_pedestal_crown_iron
+		type = helmet
+		template = crown_iron_template
+		visuals = wearing_iron_crown
+		wealth = scope:wealth
+		quality = scope:quality
+		history = {
+			type = created
+			date = 313.2.1
+			recipient = character:70523 #Konstantinos I the Great
+			location = province:496 #Constantinople
+		}
+		modifier = iron_crown_modifier
+		save_scope_as = newly_created_artifact
+		decaying = yes
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = wearing_iron_crown
+		add_artifact_history = {
+			type = given
+			date = 600.1.1
+			actor = character:7893
+			recipient = character:190171
+			location = province:2475
+		}
+		add_artifact_history = {
+			type = given
+			date = 774.7.10
+			recipient = character:6392
+			location = province:2475
+		}
+		add_artifact_history = {
+			type = given
+			date = 781.1.1
+			recipient = character:6394
+			location = province:2475
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 810.1.1
+			recipient = character:6396
+			location = province:2475
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 818.4.17
+			recipient = character:90095
+			location = province:2475
+		}
+		add_artifact_history = {
+			type = inherited
+			date = 865.1.1
+			recipient = character:30228
+		}
+		# k_italy history copied manually because it is destroyed before 1066
+		save_scope_as = epic
+	}
+}

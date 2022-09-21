@@ -1,0 +1,1942 @@
+﻿namespace = HEE_italy_questline
+
+# Louis the Younger chain
+HEE_italy_questline.0100 = { # Victory at Bari trigger
+	type = empty
+	hidden = yes
+
+	trigger = {
+		scope:attacker = {
+			NOT = { has_character_flag = bari_has_been_conquered }
+			is_alive = yes
+			is_landed = yes
+			is_independent_ruler = yes
+			#is_at_war = no
+			is_imprisoned = no
+		}	
+		scope:attacker = character:30228
+		scope:defender = character:163094
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		scope:attacker = {
+			add_character_flag = bari_has_been_conquered
+			trigger_event = {
+				id = HEE_italy_questline.0101
+				days = { 3 5 }
+			}
+		}
+	}
+}
+
+HEE_italy_questline.0101 = { # Louis has the option to garrison southern Italy after his victory at Bari
+	type = character_event
+	title = HEE_italy_questline.0101.t
+	desc = HEE_italy_questline.0101.desc
+	theme = crown # Change
+	left_portrait = {
+		character = character:30228
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = character:163094
+		animation = personality_honorable
+	}
+	lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:ruler_2
+	lower_right_portrait = scope:adelchis
+
+	trigger = {
+		character:163071 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0101
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:k_papal_state }
+			title:k_papal_state.holder = { save_scope_as = pope }
+		}
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+		
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+		
+		title:c_benevento = { save_scope_as = benevento }
+	}
+
+	option = {
+		name = HEE_italy_questline.0101.a
+		
+		custom_tooltip = louis_garrisons_southern_italy
+		
+		hidden_effect = {
+			# Louis garrisons his troops across Southern Italy
+			title:c_bari = {
+				add_county_modifier = {
+					modifier = louis_imperial_garrison
+					days = 1825
+				}
+			}
+			title:c_apulia = {
+				add_county_modifier = {
+					modifier = louis_imperial_garrison
+					days = 1825
+				}
+			}
+			title:c_benevento = {
+				add_county_modifier = {
+					modifier = louis_imperial_garrison
+					days = 1825
+				}
+			}
+			title:c_foggia = {
+				add_county_modifier = {
+					modifier = louis_imperial_garrison
+					days = 1825
+				}
+			}
+			title:c_lanciano = {
+				add_county_modifier = {
+					modifier = louis_imperial_garrison
+					days = 1825
+				}
+			}
+			
+			# Louis annoys the Southern Italian Lords with his troops
+			scope:adelchis = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -25
+				}
+			}
+			scope:sergius_ii_of_naples_stand_in = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -25
+				}
+			}
+			scope:guaifer_of_salerno_stand_in = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -25
+				}
+			}
+			
+			title:c_benevento.title_province = {
+				spawn_activity = {
+					type = activity_catchall_movement
+					owner = root
+				}
+			}
+		
+			activity = { save_scope_as = activity }
+		}
+		
+		scope:sawdan = {
+			add_character_flag = bari_has_been_lost
+			trigger_event = {
+				id = HEE_italy_questline.0131
+				days = { 7 10 }
+			}
+		}
+		
+
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0101.b
+
+		custom_tooltip = louis_doesnt_garrison_southern_italy
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Benevento
+	type = character_event
+	title = HEE_italy_questline.0131.t
+	desc = HEE_italy_questline.0131.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:adelchis
+		animation = personality_craven
+	}
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:ruler_2
+	lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		character:163094 = { is_alive = yes }
+		character:163071 = { is_alive = yes }
+		character:30228 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = HEE_italy_questline.0131
+				# days = 7 #~1 Month
+			# }
+		# }
+	# }
+
+	immediate = {
+		# trigger = { # FIGURE OUT HOW TO DO THIS WITHOUT TYRANNY
+			# allowed_to_imprison_character_trigger = { CHARACTER = scope:sawdan }
+			# trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = root.faith GENDER_CHARACTER = scope:owner }
+		# }
+		imprison_character_effect = {
+			TARGET = scope:sawdan
+			IMPRISONER = scope:adelchis
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0131.a
+		
+		custom_tooltip = sawdan_schemes_against_louis
+		
+		scope:sawdan = {
+			trigger_event = {
+				id = HEE_italy_questline.0132
+				days = { 7 14 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0131.b
+
+		custom_tooltip = sawdan_seeks_to_escape
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0132 = { # Sawdan tries to trick Adelchis into betraying the Emperor
+	type = character_event
+	title = HEE_italy_questline.0132.t
+	desc = HEE_italy_questline.0132.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_dishonorable
+	}
+	right_portrait = {
+		character = scope:adelchis
+		animation = worry
+	}
+	lower_left_portrait = scope:louis_the_younger
+	#lower_center_portrait = scope:ruler_2
+	#lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		character:163094 = { is_alive = yes }
+		character:163071 = { is_alive = yes }
+		character:30228 = { is_alive = yes }
+		is_alive = yes
+		#is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = yes
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = HEE_italy_questline.0131
+				# days = 7 #~1 Month
+			# }
+		# }
+	# }
+
+	immediate = {
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0151
+			}
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0132.a
+		
+		custom_tooltip = louis_is_an_arrogant_man # Louis is an arrogant man, he likely believes he should rule over you
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0132.b
+
+		custom_tooltip = louis_is_an_greedy_man # Louis is a greedy man, he secretly desires your lands and wealth
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0132.c
+
+		custom_tooltip = louis_is_an_fickle_man # Louis is a fickle man, his word can not be trusted
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0151 = { # Adelchis visits Sawdan in prison and hears his manipulative whispers
+	type = character_event
+	title = HEE_italy_questline.0151.t
+	desc = HEE_italy_questline.0151.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:sawdan
+		animation = personality_dishonorable
+	}
+	#lower_left_portrait = scope:louis_the_younger
+	lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:sawdan = { is_alive = yes }
+		scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		add_stress = medium_stress_impact_gain
+	}
+
+	option = {
+		name = HEE_italy_questline.0151.a
+		
+		custom_tooltip = perhaps_sawdan_is_right
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0152
+				days = { 3 7 }
+			}
+		}
+		
+		stress_impact = {
+			paranoid = major_stress_impact_loss
+			trusting = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0151.a
+		
+		custom_tooltip = i_trust_emperor_louis
+		
+		stress_impact = {
+			paranoid = major_stress_impact_gain
+			trusting = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0152 = { # Adelchis wonders how to deal with Emperor Louis
+	type = character_event
+	title = HEE_italy_questline.0152.t
+	desc = HEE_italy_questline.0152.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:louis_the_younger
+		animation = personality_dishonorable
+	}
+	lower_left_portrait = scope:sawdan
+	#lower_center_portrait = scope:ruler_2
+	#lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:sawdan = { is_alive = yes }
+		#scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		add_stress = medium_stress_impact_gain
+		
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+		
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+	}
+
+	option = {
+		name = HEE_italy_questline.0152.a
+		
+		custom_tooltip = emperor_louis_must_be_arrested_by_my_guards_immediately
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0102
+				days = 1
+			}
+		}
+		
+		stress_impact = {
+			paranoid = major_stress_impact_loss
+			trusting = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0152.b
+		trigger = { NOT = { has_character_flag = asked_for_support_in_his_conspiracy } }
+		
+		custom_tooltip = perhaps_other_southern_italian_lords_will_agree_to_help_me
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0153
+				days = { 3 10 }
+			}
+		}
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+			trusting = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0152.c
+		
+		custom_tooltip = i_will_confront_emperor_louis_in_person
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_gain
+			craven = major_stress_impact_gain
+			trusting = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0152.d
+		
+		custom_tooltip = perhaps_no_action_is_the_best_action
+		
+		stress_impact = {
+			paranoid = major_stress_impact_gain
+			craven = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0153 = { # Adelchis ponders what lords would support his actions against Emperor Louis
+	type = character_event
+	title = HEE_italy_questline.0153.t
+	desc = HEE_italy_questline.0153.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:louis_the_younger
+		animation = personality_dishonorable
+	}
+	lower_left_portrait = scope:lambert_i_stand_in
+	lower_center_portrait = scope:sergius_ii_of_naples_stand_in
+	lower_right_portrait = scope:guaifer_of_salerno_stand_in
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:sawdan = { is_alive = yes }
+		#scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+		
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+	}
+	
+	option = {
+		name = HEE_italy_questline.0153.a
+		
+		custom_tooltip = i_will_send_letters_asking_for_their_support
+		
+		scope:adelchis = {
+			add_character_flag = asked_for_support_in_his_conspiracy
+		}
+		
+		hidden_effect = {
+			random_list = {
+				90 = { # Letters are not intercepted by Emperor Louis
+					
+					}
+				10 = { # Letters are intercepted by Emperor Louis
+					scope:sergius_ii_of_naples_stand_in = {
+						trigger_event = {
+							id = HEE_italy_questline.0121
+							days = { 3 5 }
+						}
+					}
+				}
+			}
+		}
+
+		scope:lambert_i_stand_in = {
+			trigger_event = {
+				id = HEE_italy_questline.0171
+				days = 7
+			}
+		}
+		
+		scope:sergius_ii_of_naples_stand_in = {
+			trigger_event = {
+				id = HEE_italy_questline.0171
+				days = 7
+			}
+		}
+		
+		scope:guaifer_of_salerno_stand_in = {
+			trigger_event = {
+				id = HEE_italy_questline.0171
+				days = 7
+			}
+		}
+		
+		stress_impact = {
+			paranoid = major_stress_impact_loss
+			trusting = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0153.b
+		
+		custom_tooltip = i_can_not_risk_sending_letters
+		
+		scope:adelchis = { # Revert to wondering what to do again
+			trigger_event = {
+				id = HEE_italy_questline.0152
+				days = { 3 7 }
+			}
+		}
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+			trusting = medium_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0121 = { # Emperor Louis intercepts a letter from Adelchis revealing the Prince's intended betrayal
+	type = character_event
+	title = HEE_italy_questline.0121.t
+	desc = HEE_italy_questline.0121.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:adelchis
+		animation = schadenfreude
+	}
+	lower_left_portrait = scope:lambert_i_stand_in
+	lower_center_portrait = scope:sergius_ii_of_naples_stand_in
+	lower_right_portrait = scope:guaifer_of_salerno_stand_in
+
+	trigger = {
+		scope:adelchis = { has_character_flag = asked_for_support_in_his_conspiracy }
+		scope:adelchis = { is_alive = yes }
+		#scope:sawdan = { is_alive = yes }
+		#scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+	}	
+
+	option = {
+		name = HEE_italy_questline.0121.a
+		
+		custom_tooltip = i_must_flee_back_to_italy
+		
+		stress_impact = {
+			deceitful = major_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			
+			honest = major_stress_impact_gain
+			craven = medium_stress_impact_gain
+			content = minor_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+		
+		root = {
+			add_character_flag = fled_adelchis_domains
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0121.b
+		
+		custom_tooltip = i_will_secretly_call_some_of_my_troops_back_to_defend_me
+		
+		stress_impact = {
+			deceitful = major_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			
+			honest = major_stress_impact_gain
+			craven = medium_stress_impact_gain
+			content = minor_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+		
+		root = {
+			add_character_flag = called_for_more_guards
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0121.c
+		
+		custom_tooltip = these_letters_are_clearly_a_fruad
+		
+		stress_impact = {
+			deceitful = major_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			
+			honest = major_stress_impact_gain
+			craven = medium_stress_impact_gain
+			content = minor_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+HEE_italy_questline.0171 = { # Southern Italian Lords recieve Adelchis' proposal to turn against Emperor Louis
+	type = character_event
+	title = HEE_italy_questline.0171.t
+	desc = HEE_italy_questline.0171.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	# right_portrait = {
+		# character = scope:adelchis
+		# animation = worry
+	# }
+	lower_left_portrait = scope:adelchis
+	#lower_center_portrait = scope:lambert_i_stand_in
+	lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		#scope:sawdan = { is_alive = yes }
+		#scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+		
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+	}	
+	
+	option = {
+		name = HEE_italy_questline.0171.a
+		
+		custom_tooltip = i_will_support_adelchis
+		
+		stress_impact = {
+			deceitful = major_stress_impact_loss
+			greedy = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			
+			honest = major_stress_impact_gain
+			craven = medium_stress_impact_gain
+			content = minor_stress_impact_gain
+			just = major_stress_impact_gain
+		}
+		
+		root = {
+			add_character_flag = joined_adelchis_conspiracy
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					scope:adelchis = {
+						has_character_flag = recieved_conspirators_response
+					}
+				}
+			}
+			scope:adelchis = {
+				add_character_flag = recieved_conspirators_response
+			}
+			scope:adelchis = {
+				trigger_event = {
+					id = HEE_italy_questline.0154
+					days = { 5 10 }
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0171.b
+		
+		custom_tooltip = i_will_not_support_adelchis
+		
+		stress_impact = {
+			deceitful = major_stress_impact_gain
+			greedy = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+			
+			honest = major_stress_impact_loss
+			craven = medium_stress_impact_loss
+			content = minor_stress_impact_loss
+			just = major_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0154 = { # Adelchis, having recieved the other lords' responses, must decide whether to act
+	type = character_event
+	title = HEE_italy_questline.0154.t
+	desc = HEE_italy_questline.0154.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:louis_the_younger
+		animation = personality_callous
+	}
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:ruler_2
+	#lower_right_portrait = scope:adelchis
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+		
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
+	}
+	
+	option = {
+		name = HEE_italy_questline.0154.a
+		
+		custom_tooltip = the_time_to_act_against_louis_is_now
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0102
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0154.b
+		
+		custom_tooltip = perhaps_a_different_course_of_action
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0152
+				days = { 3 7 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}	
+}
+
+HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attempting to arrest him
+	type = character_event
+	title = HEE_italy_questline.0102.t
+	desc = HEE_italy_questline.0102.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+	right_portrait = {
+		character = scope:adelchis
+		animation = personality_coward
+	}
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:ruler_2
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:sawdan = { is_alive = yes }
+		#scope:sawdan = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0102
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+	}
+
+	option = {
+		name = HEE_italy_questline.0102.a
+		
+		custom_tooltip = louis_surrenders_peacefully
+		
+		hidden_effect = {
+			imprison_character_effect = {
+				TARGET = scope:louis_the_younger
+				IMPRISONER = scope:adelchis
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_alive = yes }
+				}
+			}
+			imprison_character_effect = {
+				TARGET = scope:engelberga
+				IMPRISONER = scope:adelchis
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_alive = yes }
+				}
+			}
+			imprison_character_effect = {
+				TARGET = scope:ermengard
+				IMPRISONER = scope:adelchis
+			}
+			scope:louis_the_younger = {
+				add_opinion = {
+					target = scope:adelchis
+					modifier = angry_opinion
+					opinion = -50
+				}
+			}
+			# Louis got robbed historically
+			scope:louis_the_younger = {
+				remove_short_term_gold = medium_gold_value
+			}
+			
+			# Give Louis a modifier to reflect his need for a second coronation
+			scope:louis_the_younger = {
+				add_character_modifier = shamed_by_imprisonment_modifier
+			}
+			
+			stress_impact = {
+				arrogant = medium_stress_impact_gain
+				brave = medium_stress_impact_gain
+				craven = major_stress_impact_loss
+			}
+		}
+		
+
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0155
+				days = { 2 5 }
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0102.b
+
+		custom_tooltip = louis_attempts_to_fight_back
+		
+		hidden_effect = {
+			duel = {
+				skill = prowess
+				value = 15
+				90 = { #Louis is captured anyway
+					imprison_character_effect = {
+						TARGET = scope:louis_the_younger
+						IMPRISONER = scope:adelchis
+					}
+					if = {
+						limit = {
+							scope:engelberga = { is_alive = yes }
+						}
+					}
+					imprison_character_effect = {
+						TARGET = scope:engelberga
+						IMPRISONER = scope:adelchis
+					}
+					if = {
+						limit = {
+							scope:ermengard = { is_alive = yes }
+						}
+					}
+					imprison_character_effect = {
+						TARGET = scope:ermengard
+						IMPRISONER = scope:adelchis
+					}
+					
+					# Louis got robbed historically
+					scope:louis_the_younger = {
+						remove_short_term_gold = medium_gold_value
+					}
+					
+					# Give Louis a modifier to reflect his need for a second coronation
+					scope:louis_the_younger = {
+						add_character_modifier = shamed_by_imprisonment_modifier
+					}
+
+					# Louis is understandly angry about his imprisonment
+					scope:louis_the_younger = {
+						add_opinion = {
+							target = scope:adelchis
+							modifier = angry_opinion
+							opinion = -50
+						}
+					}
+					
+					stress_impact = {
+						arrogant = medium_stress_impact_loss
+						brave = medium_stress_impact_loss
+						craven = major_stress_impact_gain
+					}
+
+					scope:adelchis = {
+						trigger_event = {
+							id = HEE_italy_questline.0155
+							days = { 2 5 }
+						}
+					}
+				}
+
+				10 = { #Louis and Family escape
+					
+					# LINK TO SIEGE OF SALERNO EVENT
+					
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_italy_questline.0155 = { # Adelchis, having arrested Louis, is asked by his Court Chaplain to release the Emperor
+	type = character_event
+	title = HEE_italy_questline.0155.t
+	desc = HEE_italy_questline.0155.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:bishop_of_benevento
+		animation = personality_forgiving
+	}
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:louis_the_younger = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0155
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_benevento }
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0155.a
+		
+		custom_tooltip = i_will_release_louis_without_condition
+		
+		hidden_effect = {
+			scope:louis_the_younger = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_imprisoned = yes }
+				}
+			}
+			scope:engelberga = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_imprisoned = yes }
+				}
+			}
+			scope:ermengard = {
+				release_from_prison = yes
+			}
+		}
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0104 # Louis must travel to Rome
+				days = 1
+			}
+		}
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0160 # Adelchis ponders the future
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0155.b
+		
+		custom_tooltip = i_will_release_louis_with_conditions
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -10
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0155.c
+		
+		custom_tooltip = i_will_not_release_louis
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -15
+				}
+			}
+		}
+
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0156 # Bishop will re-ask
+				days = { 3 7 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}	
+}
+
+HEE_italy_questline.0156 = { # Adelchis is asked by his chaplain again for Louis' release
+	type = character_event
+	title = HEE_italy_questline.0156.t
+	desc = HEE_italy_questline.0156.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:bishop_of_benevento
+		animation = personality_forgiving
+	}
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:louis_the_younger = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0156
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_benevento }
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0156.a
+		
+		custom_tooltip = i_will_release_louis_without_condition
+		
+		hidden_effect = {
+			scope:louis_the_younger = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_imprisoned = yes }
+				}
+			}
+			scope:engelberga = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_imprisoned = yes }
+				}
+			}
+			scope:ermengard = {
+				release_from_prison = yes
+			}
+		}
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0104 # Louis must travel to Rome
+				days = 1
+			}
+		}
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0160 # Adelchis ponders the future
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0156.b
+		
+		custom_tooltip = i_will_release_louis_with_conditions
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -10
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0156.c
+		
+		custom_tooltip = i_will_not_release_louis
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -15
+				}
+			}
+		}
+
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0157 # Bishop will ask...again
+				days = { 3 7 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}	
+}
+
+HEE_italy_questline.0157 = { # Adelchis is asked by his chaplain again for Louis' release
+	type = character_event
+	title = HEE_italy_questline.0157.t
+	desc = HEE_italy_questline.0157.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:bishop_of_benevento
+		animation = personality_forgiving
+	}
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:louis_the_younger = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0157
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_benevento }
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0157.a
+		
+		custom_tooltip = i_will_release_louis_without_condition
+		
+		hidden_effect = {
+			scope:louis_the_younger = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_imprisoned = yes }
+				}
+			}
+			scope:engelberga = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_imprisoned = yes }
+				}
+			}
+			scope:ermengard = {
+				release_from_prison = yes
+			}
+		}
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0104 # Louis must travel to Rome
+				days = 1
+			}
+		}
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0160 # Adelchis ponders the future
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0157.b
+		
+		custom_tooltip = i_will_release_louis_with_conditions
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -10
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0157.c
+		
+		custom_tooltip = i_will_not_release_louis
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -15
+				}
+			}
+		}
+
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0158 # Bishop will ask...yet again
+				days = { 3 7 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}	
+}
+
+HEE_italy_questline.0158 = { # Adelchis is asked by his chaplain yet again for Louis' release
+	type = character_event
+	title = HEE_italy_questline.0158.t
+	desc = HEE_italy_questline.0158.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = disapproval
+	}
+	right_portrait = {
+		character = scope:bishop_of_benevento
+		animation = personality_forgiving
+	}
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:louis_the_younger = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0158
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_benevento }
+		
+		stress_impact = {
+			paranoid = medium_stress_impact_loss
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0158.a
+		
+		custom_tooltip = i_will_release_louis_without_condition
+		
+		hidden_effect = {
+			scope:louis_the_younger = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_imprisoned = yes }
+				}
+			}
+			scope:engelberga = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_imprisoned = yes }
+				}
+			}
+			scope:ermengard = {
+				release_from_prison = yes
+			}
+		}
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0104 # Louis must travel to Rome
+				days = 1
+			}
+		}
+		
+		scope:adelchis = {
+			trigger_event = {
+				id = HEE_italy_questline.0160 # Adelchis ponders the future
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0158.b
+		
+		custom_tooltip = i_will_release_louis_with_conditions
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -10
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0158.c
+		
+		custom_tooltip = repremand_your_priest_firmly
+
+		hidden_effect = {
+			scope:bishop_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = angry_opinion
+					opinion = -30
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}	
+}
+
+HEE_italy_questline.0103 = { # Louis can be released, if he agrees to Adelchis' terms
+	type = character_event
+	title = HEE_italy_questline.0103.t
+	desc = HEE_italy_questline.0103.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:adelchis
+		animation = schadenfreude
+	}
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:adelchis = { is_alive = yes }
+		scope:louis_the_younger = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		#is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0103
+				days = 3 #~1 Month
+			}
+		}
+	}
+	
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:30228.activity = { save_scope_as = activity }
+	}
+	
+	option = {
+		name = HEE_italy_questline.0103.a
+		
+		custom_tooltip = louis_agrees_to_the_terms
+		
+		hidden_effect = {
+			scope:louis_the_younger = {
+				add_truce_both_ways = {
+					character = scope:adelchis
+					days = 18250 # 50 years
+					name = louis_oath_desc
+				}
+				add_character_flag = swore_an_oath_to_adelchis
+			}
+			scope:louis_the_younger = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:engelberga = { is_imprisoned = yes }
+				}
+			}
+			scope:engelberga = {
+				release_from_prison = yes
+			}
+			if = {
+				limit = {
+					scope:ermengard = { is_imprisoned = yes }
+				}
+			}
+			scope:ermengard = {
+				release_from_prison = yes
+			}
+			
+			scope:activity = {
+				complete_activity = yes
+			}
+		}
+		
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_italy_questline.0104 # Louis must travel to Rome
+				days = 1
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0103.b
+		
+		custom_tooltip = louis_does_not_agree_to_the_terms
+
+		hidden_effect = {
+			scope:adelchis = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -15
+				}
+			}
+		}
+
+		# scope:louis_the_younger = {
+			# trigger_event = {
+				# id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
+			# }
+		# }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0160 = { # Adelchis ponders what his future will hold
+	type = character_event
+	title = HEE_italy_questline.0160.t
+	desc = HEE_italy_questline.0160.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	# right_portrait = {
+		# character = scope:adelchis
+		# animation = schadenfreude
+	# }
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+	}
+	
+	option = {
+		name = HEE_italy_questline.0160.a
+		
+		custom_tooltip = adelchis_ponders_the_future
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

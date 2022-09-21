@@ -20,12 +20,52 @@ western_roman_emperor_modifier = {
 	vassal_limit = 25
 }
 
+shamed_by_imprisonment_modifier = {
+	icon = prestige_negative
+	monthly_prestige = -1
+	vassal_opinion = -15
+	independent_ruler_opinion = -20
+}
+
+byzantine_coemperor_modifier = {
+	icon = prestige_positive
+	monthly_prestige = 1
+	vassal_opinion = 10
+}
+
+anarchy_at_samarra_financial_straits = {
+	icon = economy_negative
+	domain_tax_mult = -0.25
+	vassal_tax_contribution_mult = -0.5
+}
+
+anarchy_at_samarra_loss_of_central_authority = {
+	icon = county_modifier_control_negative
+	monthly_county_control_change_factor = -0.5
+	vassal_opinion = -20
+}
+
+anarchy_at_samarra_unpaid_soldiery = {
+	icon = prowess_negative
+	knight_effectiveness_mult = -0.5
+	levy_reinforcement_rate = 0-0.5
+	supply_duration = -0.5
+	supply_capacity_mult = -0.5
+}
+
 ## County ##
 regional_stronghold_modifier = {
 	icon = county_modifier_development_positive
 	additional_fort_level = 3
 	defender_holding_advantage = 5
 	garrison_size = 0.25
+}
+
+louis_imperial_garrison = {
+	icon = county_modifier_control_positive
+	fort_level = 1
+	garrison_size = 0.25
+	monthly_county_control_change_factor = 0.5
 }
 
 # testing_water = {

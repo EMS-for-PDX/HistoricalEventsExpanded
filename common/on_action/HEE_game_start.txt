@@ -1,0 +1,294 @@
+﻿# Called every Jan 1st
+# Root does not exist
+on_game_start = {
+	on_actions = {
+		hee_buildings_setup
+		hee_siege_of_ragusa
+		hee_rise_of_simeon_constantinople_sendoff
+		hee_basil_rise_michael_falls
+		HEE_karling_collapse
+		hee_anarchy_at_samarra
+	}
+}
+
+hee_buildings_setup = {
+	events = {
+		HEEBuildings.0001		# Add Buildings
+	}
+}
+
+hee_siege_of_ragusa = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+        hee_siege_of_ragusa_scripted_effect = yes
+		title:c_ragusa.holder = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0001
+					days = { 300 365 }
+				}
+			}
+		}
+    }
+}
+
+hee_rise_of_simeon_constantinople_sendoff = {
+	effect = {
+		### 867 - Rise of Simeon ###
+		#Boris abdicates to become a Monk
+		title:k_bulgaria.holder = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_rise_of_simeon.1000
+					days = { 1800 3600 }
+				}
+			}
+		}
+	}
+}
+
+hee_basil_rise_michael_falls = {
+	effect = {
+		### 867 - Michael III Murder ###
+		character:70490 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_basil_rise_michael_falls.0001
+					days = 266
+				}
+			}
+		}
+	}
+}
+
+HEE_karling_collapse = {
+	effect = {
+		### 867 - Lothaire II's Chain ###
+		character:144998 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_karling_collapse.0001
+					days = { 30 100 }
+				}
+			}
+		}
+	}
+}
+
+hee_anarchy_at_samarra = {
+	effect = {
+		### 867 - Wasif's Death ###
+		character:turkish000007 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.0001
+					days = { 290 300 }
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+on_16th_birthday = {
+	on_actions = {
+		hee_rise_of_simeon_returns_home
+	}
+}
+
+hee_rise_of_simeon_returns_home = {
+	events = {
+		HEE_rise_of_simeon.1999
+	}
+}
+
+yearly_global_pulse = {
+	on_actions = {
+		hee_rise_of_simeon_startup_v2
+		hee_muhammad_ibn_wasil_startup
+		hee_rollo_conquest_of_normandy
+	}
+}
+
+hee_rise_of_simeon_startup_v2 = {
+	effect = {
+		#Seljuk Invasion to create them
+		# if = {
+			# limit = {
+				# has_game_rule = rise_of_simeon_off
+			# }
+		# }
+		# else_if = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = boris_has_abdicated }
+				# has_game_rule = rise_of_simeon
+			}
+			debug_log = "Checking for chance of firing Boris' abdication event"
+
+			random = {
+				chance = boris_abdication_base_chance
+				modifier = {
+					add = 1
+					current_date > 875.1.1
+				}
+				modifier = {
+					add = 39
+					current_date > 880.1.1
+				}
+				modifier = {
+					add = 30
+					current_date > 885.1.1
+				}
+				modifier = {
+					add = 30
+					current_date > 889.1.1
+				}
+				set_global_variable = {
+					name = boris_has_abdicated
+					value = yes
+				}
+				debug_log = "Attempting to force Boris' abdication"
+				### 867 - Rise of Simeon ###
+				#Boris abdicates to become a Monk
+				character:70382 = {
+					if = {
+						limit = {
+							is_alive = yes
+							is_landed = yes
+							character:70383 = { is_alive = yes }
+							character:712 = { is_alive = yes }
+						}
+						trigger_event = {
+							id = HEE_rise_of_simeon.0001
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+hee_muhammad_ibn_wasil_startup = {
+	effect = {
+		#Seljuk Invasion to create them
+		# if = {
+			# limit = {
+				# has_game_rule = rise_of_simeon_off
+			# }
+		# }
+		# else_if = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = alhanzali_has_attacked }
+				# has_game_rule = rise_of_simeon
+			}
+			debug_log = "Checking for chance of firing al-Hanzali's attack"
+
+			random = {
+				chance = boris_abdication_base_chance
+				modifier = {
+					add = 20
+					current_date > 868.6.1
+				}
+				modifier = {
+					add = 30
+					current_date > 869.6.1
+				}
+				modifier = {
+					add = 50
+					current_date > 870.6.1
+				}
+				set_global_variable = {
+					name = alhanzali_has_attacked
+					value = yes
+				}
+				debug_log = "Attempting to have al-Hanzali attack"
+				### 867 - Rise of Simeon ###
+				#Boris abdicates to become a Monk
+				hee_alhanzali_uprising_scripted_effect = yes
+			}
+		}
+	}
+}
+
+hee_rollo_conquest_of_normandy = {
+	effect = {
+		#Seljuk Invasion to create them
+		# if = {
+			# limit = {
+				# has_game_rule = rise_of_simeon_off
+			# }
+		# }
+		# else_if = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = rollo_has_attacked }
+				# has_game_rule = rise_of_simeon
+			}
+			debug_log = "Checking for chance of firing Rollo's Normandy invasion"
+
+			random = {
+				chance = boris_abdication_base_chance
+				modifier = {
+					add = 40
+					current_date > 875.1.1
+				}
+				modifier = {
+					add = 35
+					current_date > 895.1.1
+				}
+				modifier = {
+					add = 25
+					current_date > 910.1.1
+				}
+				set_global_variable = {
+					name = rollo_has_attacked
+					value = yes
+				}
+				debug_log = "Attempting to force Rollo's Normandy invasion"
+				### 867 - Rise of Simeon ###
+				#Boris abdicates to become a Monk
+				character:242 = {
+					if = {
+						limit = {
+							is_alive = yes
+						}
+						trigger_event = {
+							id = HEE_rollo.0001
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}

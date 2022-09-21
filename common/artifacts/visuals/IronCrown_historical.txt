@@ -1,0 +1,4 @@
+﻿wearing_iron_crown = {
+	icon = "artifact_crown.dds"
+	asset = male_headgear_secular_ep1_crown_of_lombardy_entity
+}

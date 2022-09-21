@@ -1,0 +1,339 @@
+﻿namespace = hee_anarchy_at_samarra
+
+hee_anarchy_at_samarra.0001 = { 
+	type = character_event
+	title = hee_anarchy_at_samarra.0001.t
+	desc = hee_anarchy_at_samarra.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_anarchy_at_samarra.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		# Scopes
+		character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
+		character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+		character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+		character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+		character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+		
+		character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+		character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
+		character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+		character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.0001.a
+
+		custom_tooltip = try_to_placate_the_soldiery
+		
+		hidden_effect = {
+			character:turkish000007 = {
+				death = {
+					death_reason = death_beaten_by_mob
+				}
+			}
+		}
+		
+		character:turkish000008 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.0021
+					days = { 5 10 }
+				}
+			}
+		}
+		
+		character:163131 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.0031
+					days = { 5 10 }
+				}
+			}
+		}
+		
+		character:34014 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.0002
+					days = { 5 10 }
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.0001.b
+		
+		custom_tooltip = try_to_fight_back_against_the_soldiery #ahistorical option
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}
+
+hee_anarchy_at_samarra.0002 = { # Contemplate moving against Bugha
+	type = character_event
+	title = hee_anarchy_at_samarra.0002.t
+	desc = hee_anarchy_at_samarra.0002.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:bugha_al_sharabi
+		animation = personality_dishonorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		# Scopes
+		character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
+		character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+		character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+		character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+		character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+		
+		character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+		character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
+		character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+		character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.0002.a
+
+		custom_tooltip = move_against_bugha
+		
+
+		trigger_event = {
+			id = hee_anarchy_at_samarra.0003
+			days = { 10 15 }
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.0002.b
+		
+		custom_tooltip = do_not_move_against_bugha #ahistorical option
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}
+
+hee_anarchy_at_samarra.0003 = { # Reach out to Salih for a possible alliance
+	type = character_event
+	title = hee_anarchy_at_samarra.0003.t
+	desc = hee_anarchy_at_samarra.0003.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_compassionate
+	}
+	right_portrait = {
+		character = scope:salih_ibn_wasif
+		animation = personality_cynical
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	option = {
+		name = hee_anarchy_at_samarra.0003.a
+
+		custom_tooltip = grant_salih_his_desired_appointments
+		
+
+		trigger_event = {
+			id = hee_anarchy_at_samarra.0003
+			days = { 10 15 }
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.0003.b
+		
+		custom_tooltip = do_not_move_against_bugha #ahistorical option
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
+	type = character_event
+	title = hee_anarchy_at_samarra.1000.t
+	desc = hee_anarchy_at_samarra.1000.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:salih_ibn_wasif
+		animation = personality_cynical
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	option = {
+		name = hee_anarchy_at_samarra.1000.a
+
+		custom_tooltip = plead_with_salih
+		
+		set_designated_heir = character:34015
+		
+		depose = yes
+
+		# trigger_event = {
+			# id = hee_anarchy_at_samarra.0003
+			# days = { 10 15 }
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.1000.b
+		
+		custom_tooltip = curse_salih #ahistorical option
+		
+		set_designated_heir = character:34015
+		
+		depose = yes
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
+	type = character_event
+	title = hee_anarchy_at_samarra.2000.t
+	desc = hee_anarchy_at_samarra.2000.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:salih_ibn_wasif
+		animation = personality_cynical
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	option = {
+		name = hee_anarchy_at_samarra.2000.a
+
+		custom_tooltip = plead_with_salih
+		
+		set_designated_heir = character:34016
+		
+		depose = yes
+
+		# trigger_event = {
+			# id = hee_anarchy_at_samarra.0003
+			# days = { 10 15 }
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_anarchy_at_samarra.2000.b
+		
+		custom_tooltip = curse_salih #ahistorical option
+		
+		set_designated_heir = character:34016
+		
+		depose = yes
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

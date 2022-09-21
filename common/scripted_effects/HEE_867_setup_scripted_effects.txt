@@ -464,6 +464,21 @@ hee_byzantine_bulgaria_867_effect = {
 	
 	# Relations
 	
+	if = { #If SE is loaded, give Basil Co-Emperor position
+		limit = {
+			exists = global_var:SE_is_loaded
+		}
+		character:70490 = {
+			appoint_court_position = {
+				recipient = scope:basil
+				court_position = succ_exp_co_emperor_court_position
+			}
+		}
+		character:1700 = {
+			remove_character_modifier = byzantine_coemperor_modifier
+		}
+	}
+	
 	character:70382 = {
 		add_character_modifier = {
 			modifier = invigorated_modifier
@@ -893,4 +908,41 @@ hee_fairhair_867_effect = {
 	}
 	
 	
+}
+
+hee_baltic_867_effect = {
+
+	# Scopes #
+	character:167855 = { save_scope_as = domagoj_of_croatia } # https://en.wikipedia.org/wiki/Domagoj_of_Croatia
+	character:167856 = { save_scope_as = iljko_of_croatia } # https://en.wikipedia.org/wiki/Iljko_of_Croatia
+	character:167857 = { save_scope_as = iljko_of_croatia } # https://en.wikipedia.org/wiki/Branimir_of_Croatia
+	
+	character:8601 = { save_scope_as = zdeslav_of_croatia } # https://en.wikipedia.org/wiki/Zdeslav_of_Croatia
+	character:8602 = { save_scope_as = petar_of_croatia } # https://en.wikipedia.org/wiki/Trpimir_I_of_Croatia#Descendants
+	character:8603 = { save_scope_as = muncimir_of_croatia } # https://en.wikipedia.org/wiki/Muncimir_of_Croatia
+
+	character:163116 = { save_scope_as = mutimir_of_serbia } # https://en.wikipedia.org/wiki/Mutimir_of_Serbia
+
+}
+
+hee_north_sea_867_effect = {
+
+	# Scopes #
+	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
+	
+	character:168650 = { save_scope_as = guthrum } # https://en.wikipedia.org/wiki/Guthrum
+		
+	character:242 = { # Rollo
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 50
+		}
+	}
+	
+	character:168650 = { # Guthrum
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
+	}
 }

@@ -71,6 +71,11 @@ HEE_missionary_01 = {
 	}
 	862.1.1 = {
 		employer = 187002 
+		effect = {
+			learn_language_of_culture = culture:radhanite
+			learn_language_of_culture = culture:khazar
+			learn_language_of_culture = culture:slovien
+		}
 	}
 	885.4.6 = {
 		death = yes
@@ -119,7 +124,12 @@ HEE_missionary_02 = {
 		}
 	}
 	862.1.1 = {
-		employer = 187002 
+		employer = 187002
+		effect = {
+			learn_language_of_culture = culture:radhanite
+			learn_language_of_culture = culture:khazar
+			learn_language_of_culture = culture:slovien
+		}
 	}
 	868.12.15 = {
 		name = "Cyril" # Constatine did not recieve his nickname until he was near death (Maybe give him the nickname early anyway?)

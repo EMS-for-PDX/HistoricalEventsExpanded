@@ -1,0 +1,71 @@
+﻿## These are really not in numeric order... sorry...
+
+# Byzantine
+hee_dekapolitissa = {
+	name = "dynn_Dekapolitissa"
+	culture = "greek"
+}
+
+# Arabic
+hee_numayrid = {
+	name = "dynn_Numayrid"
+	culture = "bedouin"
+}
+
+# Georgian
+hee_kvabulidze = {
+	name = "dynn_Kvabulidze"
+	culture = "georgian"	
+}
+
+hee_donauri = {
+	name = "dynn_Donauri"
+	culture = "georgian"	
+}
+
+hee_arevmaneli = {
+	name = "dynn_Arevmaneli"
+	culture = "georgian"	
+}
+
+hee_shavliani = {
+	name = "dynn_Shavliani"
+	culture = "georgian"	
+}
+
+# English
+hee_bebbanburg = {
+	prefix = "dynnp_of"
+	name = "dynn_Bebbanburg"
+	culture = "anglo_saxon"
+}
+
+hee_devon = {
+	prefix = "dynnp_of"
+	name = "dynn_Devon"
+	culture = "anglo_saxon"
+}
+
+hee_wiltshire = {
+	prefix = "dynnp_of"
+	name = "dynn_Wiltshire"
+	culture = "anglo_saxon"
+}
+
+hee_kent = {
+	prefix = "dynnp_of"
+	name = "dynn_Kent"
+	culture = "anglo_saxon"
+}
+
+hee_tikling = {
+	name = "dynn_Tikling"
+	culture = "norse"
+	motto = "dynn_Tikling_motto"
+}
+
+hee_knudlings = {
+	name = "dynn_Knudlings"
+	culture = "norse"
+	motto = "dynn_Knudlings_motto"
+}

@@ -1,0 +1,6 @@
+﻿ironcrown_to_court = {
+	in_type = helmet
+	in_visuals = wearing_iron_crown
+	out_type = pedestal
+	out_visuals = pedestal_crown_iron
+}

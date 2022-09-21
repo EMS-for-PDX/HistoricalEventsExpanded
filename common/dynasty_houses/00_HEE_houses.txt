@@ -13,3 +13,13 @@ house_ghaznavid = {
 	name = "Ghaznavid"
 	dynasty = 790
 }
+
+house_vermandois = { # Karling cadets
+	name = "dynn_Vermandois"
+	dynasty = 25061 #Karling
+}
+
+house_kiurikian = { # https://en.wikipedia.org/wiki/Kiurikian_dynasty
+	name = "dynn_Kiurikian"
+	dynasty = 507 # Bagratuni
+}

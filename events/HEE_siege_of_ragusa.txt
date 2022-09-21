@@ -1,0 +1,318 @@
+﻿namespace = HEE_siege_of_ragusa
+
+
+HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
+	type = character_event
+	title = HEE_siege_of_ragusa.0001.t
+	desc = HEE_siege_of_ragusa.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:roman_emperor
+		animation = personality_honorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0001
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		title:e_byzantium.holder = { save_scope_as = roman_emperor }
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0001.a
+		
+		custom_tooltip = reach_out_to_roman_emperor_for_aid
+		
+		title:e_byzantium.holder = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0002
+				days = { 7 10 }
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0001.b
+		
+		custom_tooltip = attempt_to_fend_off_aghlabids_without_aid
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
+	type = character_event
+	title = HEE_siege_of_ragusa.0002.t
+	desc = HEE_siege_of_ragusa.0002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:leader_of_ragusa
+		animation = beg
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0002
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		title:c_ragusa.holder = { save_scope_as = leader_of_ragusa }
+	}
+	
+	option = {
+		name = HEE_siege_of_ragusa.0002.a
+		
+		custom_tooltip = relieve_the_siege
+		
+		title:e_byzantium.holder = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0003
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0002.b
+		
+		custom_tooltip = provide_no_aid
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
+	type = character_event
+	title = HEE_siege_of_ragusa.0003.t
+	desc = HEE_siege_of_ragusa.0003.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:leader_of_ragusa
+		animation = beg
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0003
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		title:d_aegean_islands.holder = { save_scope_as = roman_navy_commander }
+		title:d_aghlabid_raiders.holder = { save_scope_as = aghlabid_raiders }
+		title:c_ragusa.holder = { save_scope_as = leader_of_ragusa }
+	}
+	
+	option = {
+		name = HEE_siege_of_ragusa.0003.a
+		
+		custom_tooltip = send_roman_navy
+		
+		scope:leader_of_ragusa = {
+			every_character_war = {
+				limit = {
+					primary_defender = scope:leader_of_ragusa
+					primary_attacker = scope:aghlabid_raiders
+				}
+				add_defender = scope:roman_navy_commander
+			}
+		}
+		
+		title:d_aegean_islands.holder = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0004
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0003.b
+		
+		custom_tooltip = change_your_mind
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
+	type = character_event
+	title = HEE_siege_of_ragusa.0004.t
+	desc = HEE_siege_of_ragusa.0004.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:roman_emperor
+		animation = personality_rational
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0004
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = roman_navy_troops
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = pikemen_unit
+				stacks = 5
+			}
+			men_at_arms = {
+				type = pikemen_unit
+				stacks = 5
+			}
+			men_at_arms = {
+				type = armored_footmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = armored_footmen
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
+				stacks = 5
+			}
+			location = capital_province
+		}
+	}
+	
+	option = {
+		name = HEE_siege_of_ragusa.0004.a
+		
+		custom_tooltip = you_are_ordered_to_relieve_the_siege
+		
+		# title:e_byzantium.holder = {
+			# trigger_event = {
+				# id = HEE_siege_of_ragusa.0005
+			# }
+		# }
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

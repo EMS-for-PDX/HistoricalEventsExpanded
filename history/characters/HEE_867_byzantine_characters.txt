@@ -1,0 +1,192 @@
+﻿## Characters for the Byzantine Event Chain - 867 ##
+
+HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapolitissa
+	name = "Eudokia"
+	female = yes
+	dynasty = hee_dekapolitissa
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 0
+	
+	#Education
+	trait = education_learning_2
+	
+	#Personality Traits
+	trait = calm
+	trait = humble
+	trait = chaste
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	840.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		add_spouse = 70490 # Michael III
+		effect = {
+			add_character_modifier = rejected_from_marriage_bed_modifier
+		}
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+HEE_thekla = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
+	name = "Thekla"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 0
+	
+	#Education
+	trait = education_intrigue_2
+	
+	#Personality Traits
+	trait = arrogant
+	trait = ambitious
+	trait = arbitrary
+	
+	#Other Traits
+	trait = unwed
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	831.1.1 = {
+		birth = yes
+	}
+	863.1.1 = {
+		employer = 70490 # Thekla was released as a nun
+	}
+	866.1.1 = {
+		effect = {
+			set_relation_lover = character:1700	# Allegedly Thekla was given as a mistress to Basil
+		}
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
+	name = "Basiliskianos"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 5
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_diplomacy_2
+	
+	#Personality Traits
+	trait = gregarious
+	trait = brave
+	trait = humble
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	840.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		employer = 70490
+	}
+	866.1.1 = {
+		effect = {
+			set_relation_friend = character:70490	# Allegedly Basiliskianos by 866 was a close companion of Michael III
+			set_relation_rival = character:1700 # Basil saw Basiliskianos as a potential threat to his co-emperorship
+		}
+	}
+	867.9.24 = {
+		death = yes
+	}
+}
+
+HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematician
+	name = "Leo"
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	health = 4.1
+	
+	#Skills
+	diplomacy = 8
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 15
+	prowess = 6
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = diligent
+	trait = cynical
+	trait = content
+	trait = chaste
+	
+	#Other Traits
+	trait = scholar
+	
+	trait = shrewd
+	trait = lifestyle_herbalist
+	trait = physician_3
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	790.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		employer = 70490
+	}
+	869.1.9 = {
+		death = yes
+	}
+}

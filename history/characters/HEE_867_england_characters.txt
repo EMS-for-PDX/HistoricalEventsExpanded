@@ -1,0 +1,791 @@
+﻿## Characters for the Byzantine Event Chain - 867 ##
+
+tlk_asser = { # 9th-century Welsh scholar and bishop who chronicled much of Alfred's life https://en.wikipedia.org/wiki/Asser
+	name = "Asser"
+	dynasty = 0
+	#female = yes
+	religion = catholic
+	culture = welsh
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 9
+	prowess = 5
+
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = generous
+	trait = honest
+	trait = diligent
+
+	#Other Traits
+	trait = devoted
+	trait = scholar
+	trait = journaller
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	846.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+			add_character_flag = no_cloak
+			add_character_flag = no_headgear
+		}
+	}
+	866.1.1 = {
+		employer = 159353
+	}
+	871.1.2 = {
+		employer = 7627
+		effect = {
+		     set_relation_friend = character:7627
+		}
+	}
+	909.1.1 = {
+		death = "910.1.1"
+    }
+}
+
+tlk_beocca = { #
+	name = "Beocca"
+	dynasty = 0
+	#female = yes
+	religion = catholic
+	culture = anglo_saxon
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 7
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = compassionate
+	trait = brave
+	trait = humble
+	trait = temperate
+
+	#Other Traits
+	trait = devoted
+	trait = scholar
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	846.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+			add_character_flag = no_cloak
+			add_character_flag = no_headgear
+		}
+	}
+	871.1.1 = {
+		employer = 7627
+	}
+	871.1.1 = {
+		give_council_position = councillor_court_chaplain
+	}
+	871.1.2 = {
+		effect = {
+		     set_relation_friend = character:7627
+		}
+	}
+	910.1.1 = {
+		death = "910.1.1"
+    }
+}
+
+tlk_ragnar_the_fearless = {
+	name = "Ragnar"
+	dynasty = hee_tikling
+	religion = norse_pagan
+	culture = norse
+	# father =
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 9
+	intrigue = 7
+	stewardship = 6
+	learning = 5
+	prowess = 10
+
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = just
+	trait = brave
+	trait = wrathful
+	trait = vengeful
+
+	#Other Traits
+	trait = viking
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	812.1.1 = {
+		birth = yes
+		give_nickname = nick_the_fearless
+	}
+	828.1.1 = {
+		add_spouse = tlk_sigrid
+	}
+	867.1.1 = {
+		employer = 163112
+	}
+	871.1.1 = {
+		death = yes
+    }
+}
+
+tlk_sigrid = {
+	name = "Sigrid"
+	dynasty = 0
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	father = 700017
+
+	# Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 7
+
+	#Education
+	trait = education_stewardship_2
+
+	#Personality Traits
+	trait = calm
+	trait = brave
+	trait = diligent
+	
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+	823.1.1 = {
+		birth = yes
+	}
+	871.1.1 = {
+		death = yes
+    }
+}
+
+tlk_ragnar_the_younger = {
+	name = "Ragnar"
+	dynasty = hee_tikling
+	religion = norse_pagan
+	culture = norse
+	father = tlk_ragnar_the_fearless
+	mother = tlk_sigrid
+
+	# Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 8
+
+	#Education
+	trait = education_martial_3	
+
+	#Personality Traits
+	trait = gregarious
+	trait = brave
+	trait = just
+	
+	#Other Traits
+	trait = loyal
+	trait = winter_soldier
+	
+	disallow_random_traits = yes
+	
+	sexuality = heterosexual
+    849.1.1 = {
+		birth = yes
+		give_nickname = nick_the_younger
+	}
+	875.1.1 = {
+		add_spouse = 700003
+	}
+	892.10.8 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 700005
+		}
+	}
+}
+
+tlk_thyra = {
+	name = "Thyra"
+	dynasty = hee_tikling
+	female = yes
+	religion = norse_pagan
+	culture = norse
+	father = tlk_ragnar_the_fearless
+	mother = tlk_sigrid
+
+	# Skills
+	martial = 4
+	diplomacy = 7
+	intrigue = 6
+	stewardship = 9
+	learning = 8
+	prowess = 6
+
+	# Education Trait
+	trait = education_learning_2
+
+	# Personality Traits
+	trait = calm
+	trait = patient
+	trait = shy
+	trait = compassionate
+	trait = charming
+
+	# Other Traits
+	trait = possessed_1 
+	
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    859.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+		}
+	}
+	885.1.1 = {
+		employer = 7627
+	}
+}
+
+tlk_aethelwulf = {
+	name = "E_thelwulf"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	sexuality = heterosexual
+	809.1.1 = {
+		birth = yes
+	}
+	861.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tlk_leofric = {
+	name = "Leofric"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	father = tlk_aethelwulf
+
+	# Skills
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 4
+	learning = 5
+	prowess = 7
+
+	# Education
+	trait = education_martial_3
+
+	#Personality Traits
+	trait = brave
+	trait = arrogant
+	trait = just
+	trait = impatient
+
+	#Other Traits
+	trait = blademaster_2
+	trait = loyal
+	trait = holy_warrior
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	844.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+			add_character_flag = no_cloak
+		}
+	}
+	867.1.1 = {
+		employer = 7627
+		give_council_position = councillor_marshal
+	}
+	871.4.24 = {
+		employer = 7627
+		give_council_position = councillor_marshal
+	}
+	878.5.3 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tlk_eadgyth = {
+	name = "Eadgyth"
+	dynasty = 0
+	female = yes
+	religion = catholic
+	culture = anglo_saxon
+	father = tlk_aethelwulf
+
+	# Education
+	trait = education_learning_2
+
+	#Personality Traits
+	trait = trusting
+	trait = humble
+	trait = shy
+
+	#Other Traits
+	trait = beauty_good_1
+
+	sexuality = heterosexual
+	847.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		add_trait = devoted
+	}
+	867.1.1 = {
+		employer = 7627
+	}
+	907.1.1 = {
+		death = yes
+	}
+}
+
+tlk_alfred_bastard = {
+	name = "Osferth"
+	dynasty_house = house_british_isles_wessex
+	religion = catholic
+	culture = anglo_saxon
+	father = 7627
+	mother = tlk_eadgyth 
+
+	# Skills
+	martial = 6
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 8
+	learning = 10
+	prowess = 8
+
+	# Education
+	trait = education_martial_2
+
+	#Personality Traits
+	trait = pensive
+
+	#Other Traits
+	trait = bastard
+	trait = devoted
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	865.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_cloak
+			add_character_flag = no_headgear
+		}
+	}
+	881.1.1 = {
+		#Personality Traits
+		add_trait = chaste
+		add_trait = calm
+		add_trait = humble
+		add_trait = brave
+	}
+	887.1.1 = {
+		employer = 900100
+	}
+	934.1.1 = {
+		death = yes
+	}
+}
+
+tlk_odda_the_elder = { # Inspired by Odda in the Last Kingdom, which was inspired by https://en.wikipedia.org/wiki/Odda,_Ealdorman_of_Devon
+	name = "Odda"
+	dynasty = hee_devon
+	religion = catholic
+	culture = anglo_saxon
+	# father =
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 6
+
+	#Education
+	trait = education_stewardship_3
+	
+	#Personality Traits
+	trait = brave
+	trait = just
+	trait = temperate
+	trait = diligent
+
+	#Other Traits
+	trait = loyal
+	trait = military_engineer
+	trait = organizer
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    821.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+		}
+	}
+    856.1.1 = {
+		effect = {
+			give_nickname = nick_the_elder
+		}
+	}
+	886.1.1 = {
+		death = yes
+	}
+}
+
+tlk_odda_the_younger = {
+	name = "Odda"
+	dynasty = hee_devon
+	religion = catholic
+	culture = anglo_saxon
+	father = tlk_odda_the_elder
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 8
+	martial = 6
+	stewardship = 5
+	intrigue = 8
+	learning = 6
+	prowess = 6
+
+	#Education
+	trait = education_intrigue_2
+	
+	#Personality Traits
+	trait = craven
+	trait = deceitful
+	trait = cynical
+	trait = arbitrary
+	trait = charming
+
+	#Other Traits
+	trait = disloyal
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    856.1.1 = {
+		birth = yes
+		effect = {
+			give_nickname = nick_the_younger
+			add_character_flag = no_headgear
+		}
+	}
+	856.1.1 = {
+		employer = tlk_odda_the_elder
+	}
+	878.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = tlk_odda_the_elder
+		}
+	}
+}
+
+tlk_wulfhere = { # Inspired by Wulfhere in the Last Kingdom, which was inspired by https://en.wikipedia.org/wiki/Wulfhere,_Ealdorman_of_Wiltshire
+	name = "Wulfhere"
+	dynasty = hee_wiltshire
+	religion = catholic
+	culture = anglo_saxon
+	# father =
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	prowess = 5
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = fickle
+	trait = deceitful
+	trait = cynical
+
+	#Other Traits
+	trait = disloyal
+	trait = organizer
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    825.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+		}
+	}
+	878.5.3 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+tlk_siglef = {
+	name = "Siglef"
+	dynasty = hee_kent
+	religion = catholic
+	culture = anglo_saxon
+	# father =
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	prowess = 5
+
+	#Education
+	trait = education_stewardship_2
+	
+	#Personality Traits
+	trait = diligent
+	trait = ambitious
+	trait = cynical
+
+	#Other Traits
+	trait = disloyal
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    832.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+		}
+	}
+	878.5.3 = {
+		death = yes
+	}
+}
+
+tlk_sigebriht  = {
+	name = "Sigebriht"
+	dynasty = hee_kent
+	religion = catholic
+	culture = anglo_saxon
+	father = tlk_siglef
+	# mother =
+	#health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	prowess = 5
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = calm
+	trait = vengeful
+	trait = ambitious
+	trait = rowdy
+
+	#Other Traits
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    863.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_headgear
+		}
+	}
+	878.5.3 = {
+		death = yes
+	}
+}
+
+tlk_harthacnut = {
+	name = "Harthacnut"
+	dynasty = hee_knudlings
+	religion = norse_pagan
+	culture = norse
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 7
+
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = arrogant
+	trait = brave
+	trait = ambitious
+	
+	#Other Traits
+	trait = viking
+	
+	sexuality = heterosexual
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 163112
+	}
+	876.1.1 = {
+		death = yes
+	}
+}
+
+tlk_gisela = {
+	name = "Gisela" 
+	dynasty = hee_knudlings
+	female = yes
+	religion = norse_pagan
+	culture = norse	
+	father = tlk_harthacnut
+
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 6
+
+	#Education
+	trait = education_diplomacy_2
+	
+	#Personality Traits
+	trait = forgiving
+	trait = compassionate
+	trait = stubborn
+	trait = diligent
+	
+	trait = charming
+	
+	#Other Traits
+	trait = beauty_good_1
+
+	disallow_random_traits = yes
+	
+	sexuality = heterosexual
+	857.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_cloak
+			add_character_flag = no_headgear
+		}
+	}
+	892.12.1 = {
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+tlk_guthred = { # https://en.wikipedia.org/wiki/Guthred
+	name = "Guthred"
+	dynasty = hee_knudlings
+	religion = catholic
+	culture = norse
+	father = tlk_harthacnut
+
+	#Skills
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
+
+	#Education
+	trait = education_diplomacy_1
+	
+	#Personality Traits
+	trait = craven
+	trait = compassionate
+	trait = content
+	trait = gregarious
+
+	#Other Traits
+
+	disallow_random_traits = yes
+	
+	sexuality = heterosexual
+	844.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_cloak
+		}	
+	}
+	895.8.24 = {
+		death = yes			
+	}
+}

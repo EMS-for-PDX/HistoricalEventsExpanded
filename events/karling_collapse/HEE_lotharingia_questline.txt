@@ -1,0 +1,1317 @@
+﻿namespace = HEE_lotharingia_questline
+
+# Lothaire's Chain
+HEE_lotharingia_questline.0001 = { #Lothaire's thoughts on his situation
+	type = character_event
+	title = HEE_lotharingia_questline.0001.t
+	desc = HEE_lotharingia_questline.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = character:7853
+		animation = personality_honorable
+	}
+	lower_left_portrait = scope:waldrada
+	#lower_center_portrait = scope:ruler_2
+	lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_lotharingia_questline.0001
+				days = 30 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:144998 = { save_scope_as = lothaire } # https://en.wikipedia.org/wiki/Lothair_II
+		character:168314 = { save_scope_as = waldrada } # https://en.wikipedia.org/wiki/Waldrada_of_Lotharingia
+		character:6877 = { save_scope_as = teutberga } # https://en.wikipedia.org/wiki/Teutberga
+		character:7853 = { save_scope_as = pope_nicholas } # https://en.wikipedia.org/wiki/Pope_Nicholas_I
+		character:7852 = { save_scope_as = pope_hadrian } # https://en.wikipedia.org/wiki/Pope_Adrian_II
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0001.a
+		
+		custom_tooltip = lothaire_continues_to_seek_an_annulment
+		
+		character:7853 = {
+			trigger_event = {
+				id = HEE_lotharingia_questline.0002
+				days = { 150 250 } # 
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0001.b
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_lotharingia_questline.0002 = { #Pope Nicholas dies around historical date
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		this = character:7853 #Pope Nicholas
+		is_ai = yes
+	}
+
+	#Resend
+
+
+	immediate = {
+		character:7853 = {
+			death = {
+				death_reason = death_natural_causes
+			}
+		}
+		character:144998 = {
+			trigger_event = {
+				id = HEE_lotharingia_questline.0003
+				days = { 10 30 } # 
+			}
+		}
+	}
+}
+
+HEE_lotharingia_questline.0003 = { #Teutberga expresses willingness for a divorce
+	type = character_event
+	title = HEE_lotharingia_questline.0003.t
+	desc = HEE_lotharingia_questline.0003.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = character:6877
+		animation = emotion_stress
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	option = {
+		name = HEE_lotharingia_questline.0003.a
+		
+		custom_tooltip = lothaire_must_go_to_rome
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0004
+			days = { 30 60 } # Within two years
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0003.b
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
+	type = character_event
+	title = HEE_lotharingia_questline.0004.t
+	desc = HEE_lotharingia_questline.0004.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_compassionate
+	}
+	right_portrait = {
+		character = character:168314
+		animation = emotion_admiration
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		# Need to code like pilgramage/activity so players feel like they are on a trip
+	}
+	
+	option = {
+		name = HEE_lotharingia_questline.0004.a
+		
+		custom_tooltip = lothaire_continues_to_seek_an_annulment
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0005
+			days = { 50 70 } # Within two to three months
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0005 = { #Lothaire & Pope meet
+	type = character_event
+	title = HEE_lotharingia_questline.0005.t
+	desc = HEE_lotharingia_questline.0005.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_forgiving
+	}
+	right_portrait = {
+		character = scope:pope
+		animation = personality_cynical
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		if ={
+			limit = {
+				exists = title:k_papal_state
+			}
+			title:k_papal_state.holder = {
+				save_scope_as = pope
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					this = character:144998
+					is_ai = no
+				}	
+			}
+			pan_camera_to_title = title:b_roma
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0005.a
+		
+		custom_tooltip = lothaire_debates_the_pope
+		#diplo challenge here?
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0006
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	# Include other options based on pope traits?
+	# option = {
+		# name = HEE_lotharingia_questline.0004.b
+		
+		# #custom_tooltip = lothaire_debates_the_pope
+		# #diplo challenge here?
+		
+		# trigger_event = {
+			# id = HEE_lotharingia_questline.0005
+			# days = { 50 70 } # Within two to three months
+		# }	
+		
+		# ai_chance = {
+			# base = 0
+		# }
+	# }
+}
+
+HEE_lotharingia_questline.0006 = { #pope gives lothaire the good news
+	type = character_event
+	title = HEE_lotharingia_questline.0006.t
+	desc = HEE_lotharingia_questline.0006.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = emotion_happy
+	}
+	right_portrait = {
+		character = scope:pope
+		animation = personality_callous
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0006.a
+		
+		custom_tooltip = lothaire_must_prepare_to_return_home
+		#diplo challenge here?
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0007
+			days = 7
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0007 = { #Lothaire sets off to return home
+	type = character_event
+	title = HEE_lotharingia_questline.0007.t
+	desc = HEE_lotharingia_questline.0007.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = emotion_happy
+	}
+	right_portrait = {
+		character = scope:pope
+		animation = personality_callous
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0007.a
+		
+		custom_tooltip = lothaire_cant_wait_to_see_waldrada
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0008
+			days = 7 #1 Week
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0008 = { #Lothaire falls ill
+	type = character_event
+	title = HEE_lotharingia_questline.0008.t
+	desc = HEE_lotharingia_questline.0008.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	# right_portrait = {
+		# character = scope:pope
+		# animation = personality_callous
+	# }
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		
+		add_trait = ill
+		
+		if = {
+			limit = {
+				AND = {
+					this = character:144998
+					is_ai = no
+				}	
+			}
+			pan_camera_to_title = title:b_siena
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0008.a
+		
+		custom_tooltip = lothaire_must_push_through
+		#diplo challenge here?
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0009
+			days = 7 #1 Week
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	#Provide a milder option for players to avoid death?
+	# option = {
+		# name = HEE_lotharingia_questline.0007.b
+		
+		#custom_tooltip = lothaire_slows_his_trip_to_recover
+		#diplo challenge here?
+		
+		# trigger_event = {
+			# id = HEE_lotharingia_questline.0008
+			# days = 7 #1 Week
+		# }	
+		
+		# ai_chance = {
+			# base = 0
+		# }
+	# }
+}
+
+HEE_lotharingia_questline.0009 = { #Lothaire's illness worsens
+	type = character_event
+	title = HEE_lotharingia_questline.0009.t
+	desc = HEE_lotharingia_questline.0009.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	# right_portrait = {
+		# character = scope:pope
+		# animation = personality_callous
+	# }
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		
+		remove_trait = ill
+		add_trait = pneumonic
+		
+		if = {
+			limit = {
+				AND = {
+					this = character:144998
+					is_ai = no
+				}	
+			}
+			pan_camera_to_title = title:b_piacenza
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0009.a
+		
+		custom_tooltip = lothaire_ponders_if_this_is_the_end
+		#diplo challenge here?
+		
+		trigger_event = {
+			id = HEE_lotharingia_questline.0010
+		}	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
+	type = character_event
+	title = HEE_lotharingia_questline.0010.t
+	desc = HEE_lotharingia_questline.0010.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	# right_portrait = {
+		# character = scope:pope
+		# animation = personality_callous
+	# }
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		every_held_title = {
+			add_to_list = lothaires_land
+		}
+		if ={
+			limit = {
+				character:90104 = { is_alive = yes }
+			}
+			character:90104 = { save_scope_as = charles_the_bald }
+		}
+		if ={
+			limit = {
+				character:90107 = { is_alive = yes }
+			}
+			character:90107 = { save_scope_as = ludwig_the_german }
+		}
+	}
+
+	option = {
+		name = HEE_lotharingia_questline.0010.a
+		
+		#custom_tooltip = lothaire_ponders_if_this_is_the_end
+		
+		random_list = {
+			90 = {
+				custom_tooltip = lothaire_succumbs_to_his_illness
+				hidden_effect = {
+					character:144998 = {
+						death = {
+							death_reason = death_pneumonic
+						}
+					}
+					character:30228 = {
+						set_primary_title_to = title:k_italy
+					}
+					scope:charles_the_bald = {
+						trigger_event = {
+							id = HEE_lotharingia_questline.0012
+							days = 30
+						}
+					}
+					scope:ludwig_the_german = {
+						trigger_event = {
+							id = HEE_lotharingia_questline.0012
+							days = 30 
+						}
+					}
+				}
+			}
+			10 = {
+				custom_tooltip = lothaire_miraculously_recovers
+				hidden_effect = {
+					remove_trait = pneumonic
+					trigger_event = {
+						id = HEE_lotharingia_questline.0011
+						days = { 7 14 }
+					}
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0011 = { #Alt-History: Lothaire recovers and returns home to marry Waldrada
+	type = character_event
+	title = HEE_lotharingia_questline.0011.t
+	desc = HEE_lotharingia_questline.0011.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_forgiving
+	}
+	right_portrait = {
+		character = character:168314
+		animation = chaplain
+	}
+	# lower_left_portrait = scope:teutberga
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:6877 = { is_alive = yes }
+		character:168314 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		divorce_effect = {
+			DIVORCER = root
+			DIVORCEE = character:6877
+		}
+	}
+	
+	option = {
+		name = HEE_lotharingia_questline.0011.a
+		
+		#custom_tooltip = lothaire_ponders_if_this_is_the_end
+		#diplo challenge here?
+		
+		marry = character:168314
+		
+		hidden_effect = {
+			character:168314 = {
+				remove_trait = unwed
+			}
+		}
+		
+		if = {
+			limit = {
+				character:90102 = { is_alive = yes }	
+			}
+			character:90102 = {
+				remove_trait = bastard
+				add_trait = legitimized_bastard
+			}
+		}
+		if = {
+			limit = {
+				character:7920 = { is_alive = yes }	
+			}
+			character:7920 = {
+				remove_trait = bastard
+				add_trait = legitimized_bastard
+			}
+		}
+		if = {
+			limit = {
+				character:163174 = { is_alive = yes }	
+			}
+			character:163174 = {
+				remove_trait = bastard
+				add_trait = legitimized_bastard
+			}
+		}
+		if = {
+			limit = {
+				character:168315 = { is_alive = yes }	
+			}
+			character:168315 = {
+				remove_trait = bastard
+				add_trait = legitimized_bastard
+			}
+		}
+		
+		# trigger_event = {
+			# id = HEE_lotharingia_questline.0009
+		# }	
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0012 = { #Charles the Bald considers a war against Louis the Younger for Lothaire's lands
+	type = character_event
+	title = HEE_lotharingia_questline.0012.t
+	desc = HEE_lotharingia_questline.0012.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:lothaire_successor
+		animation = personality_callous
+	}
+	lower_center_portrait = character:144998
+	
+	trigger = {
+		character:144998 = { is_alive = no }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = HEE_rise_of_simeon.0001
+				# days = 365 #~1 years
+			# }
+		# }
+	# }
+	
+	immediate = {
+		character:90107 = { save_scope_as = ludwig_the_german }
+		if ={
+			limit = {
+				exists = title:k_lotharingia
+			}
+			title:k_lotharingia.holder = {
+				save_scope_as = lothaire_successor
+			}
+		}
+	}
+	
+	option = {
+		name = HEE_lotharingia_questline.0012.a
+		
+		#custom_tooltip = lothaire_ponders_if_this_is_the_end
+		
+		start_war = { 
+			casus_belli = claim_cb
+			target = scope:lothaire_successor
+			target_title = title:k_lotharingia
+			claimant = root
+		}
+		
+		if = {
+			limit = {
+				NOT = {
+					scope:lothaire_successor = {
+						has_character_flag = treaty_proposal_sent
+					}
+				}
+			}
+			scope:lothaire_successor = {
+				add_character_flag = treaty_proposal_sent
+			}
+			scope:lothaire_successor = {
+				trigger_event = {
+					id = HEE_lotharingia_questline.0013
+					days = 30
+				}
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
+	type = character_event
+	title = HEE_lotharingia_questline.0013.t
+	desc = HEE_lotharingia_questline.0013.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:lothaire_successor
+		animation = personality_callous
+	}
+	lower_center_portrait = character:144998
+
+	trigger = {
+		character:144998 = { is_alive = no }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		#is_imprisoned = no
+	}
+
+	immediate = {
+		character:90107 = { save_scope_as = ludwig_the_german }
+		if ={
+			limit = {
+				exists = title:k_lotharingia
+			}
+			title:k_lotharingia.holder = {
+				save_scope_as = lothaire_successor
+			}
+		}
+		if ={
+			limit = {
+				exists = title:k_france
+			}
+			title:k_france.holder = {
+				save_scope_as = king_of_france
+			}
+		}
+		if ={
+			limit = {
+				exists = title:k_east_francia
+			}
+			title:k_east_francia.holder = {
+				save_scope_as = king_of_germany
+			}
+		}
+		if ={
+			limit = {
+				exists = title:k_italy
+			}
+			title:k_italy.holder = {
+				save_scope_as = king_of_italy
+			}
+		}
+	}
+	
+	option = {
+		name = HEE_lotharingia_questline.0013.a
+		
+		custom_tooltip = treaty_of_meerssen_is_signed
+		
+		hidden_effect = {
+			#Lothaire's Personal Domain
+			if = {
+				limit = {
+					title:c_bar.holder = title:k_italy.holder
+				}
+				title:c_bar = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_bar.holder = title:k_italy.holder
+					}
+					title:c_bar.holder.top_liege = title:k_italy.holder
+				}
+				title:c_bar.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			
+			if = {
+				limit = {
+					title:c_vaucouleurs.holder = title:k_italy.holder
+				}
+				title:c_vaucouleurs = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_vaucouleurs.holder = title:k_italy.holder
+					}
+					title:c_vaucouleurs.holder.top_liege = title:k_italy.holder
+				}
+				title:c_vaucouleurs.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			
+			if = {
+				limit = {
+					title:c_briey.holder = title:k_italy.holder
+				}
+				title:c_briey = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_briey.holder = title:k_italy.holder
+					}
+					title:c_briey.holder.top_liege = title:k_italy.holder
+				}
+				title:c_briey.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			
+			if = {
+				limit = {
+					title:c_nancy.holder = title:k_italy.holder
+				}
+				title:c_nancy = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_nancy.holder = title:k_italy.holder
+					}
+					title:c_nancy.holder.top_liege = title:k_italy.holder
+				}
+				title:c_nancy.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			
+			if = {
+				limit = {
+					title:c_neufchateau.holder = title:k_italy.holder
+				}
+				title:c_neufchateau = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_neufchateau.holder = title:k_italy.holder
+					}
+					title:c_neufchateau.holder.top_liege = title:k_italy.holder
+				}
+				title:c_neufchateau.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			#Go to France
+			title:c_zeeland.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_antwerpen.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_brabant.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_liege.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_luxembourg.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_lyon.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_viviers.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_france
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			#Goes to East Francia
+			title:c_westfriesland.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_nedersticht.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_guelders.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_zutphen.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_cologne.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_koblenz.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_aachen.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_trier.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_strassburg.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_colmar.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_sundgau.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_aargau.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_bern.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_besancon.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			#Goes to Italy
+			title:c_viennois.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_italy
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			
+			#Lotharingia, as it is partitioned, no longer exists
+			destroy_title = title:k_lotharingia
+			#F**k Frisia
+			destroy_title = title:k_frisia
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+}

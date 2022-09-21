@@ -1,0 +1,134 @@
+﻿## Characters for the Byzantine Event Chain - 867 ##
+
+HEE_saba_of_taranto = { # https://en.wikipedia.org/wiki/Siege_of_Ragusa_(866%E2%80%93868)#Siege_and_aftermath
+	name = "Saba"
+	#female = yes
+	#dynasty = 
+	religion = "ashari"
+	culture = "baranis"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 5
+	martial = 7
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = ambitious
+	trait = vengeful
+	trait = patient
+	
+	#Other Traits
+	trait = reaver
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	835.1.1 = {
+		birth = yes
+	}
+	888.1.1 = {
+		death = yes
+	}
+}
+
+HEE_adeltrude = { # https://en.wikipedia.org/wiki/Ageltrude
+	name = "Adeltrude"
+	female = yes
+	#dynasty = 
+	religion = "catholic"
+	culture = "lombard"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	# diplomacy = 5
+	# martial = 7
+	# stewardship = 5
+	# intrigue = 6
+	# learning = 5
+	# prowess = 6
+	
+	#Education
+	# trait = education_martial_2
+	
+	#Personality Traits
+	# trait = calm
+	# trait = humble
+	# trait = patient
+	
+	#Other Traits
+	# trait = reaver
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	822.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = 163071 # Adelchis of Benevento
+	}
+	888.1.1 = {
+		death = yes
+	}
+}
+
+HEE_ageltrude = { # https://en.wikipedia.org/wiki/Ageltrude
+	name = "Ageltrude"
+	female = yes
+	dynasty = 804
+	religion = "catholic"
+	culture = "lombard"
+	father = 163071
+	mother = HEE_adeltrude
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	prowess = 5
+	
+	#Education
+	trait = education_diplomacy_2
+	
+	#Personality Traits
+	trait = ambitious
+	trait = cynical
+	trait = patient
+	trait = charming
+	
+	#Other Traits
+	# trait = reaver
+	
+	#sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	860.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		create_betrothal = character:71903
+	}
+	875.1.1 = {
+		add_spouse = character:71903
+	}
+	923.8.27 = {
+		death = yes
+	}
+}

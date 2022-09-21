@@ -3,8 +3,26 @@
  #Special Traits HEE
 
  western_roman_emperor_modifier: "Western Roman Emperor"
- western_roman_emperor_modifier_desc: "This character has been recognized by a Pope as Roman Emperor. In both theory and diplomacy, the Roman Emperor is considered primus inter pares - first among equals among other Catholic monarchs across Europe."
+ western_roman_emperor_modifier_desc: "This character has been recognized by a Pope as Roman Emperor. In both theory and diplomacy, the Roman Emperor is considered primus inter pares - first among equals among other Catholic monarchs across Europe"
+
+ shamed_by_imprisonment_modifier: "Shamed by Imprisonment"
+ shamed_by_imprisonment_modifier_desc: "Despite bearing the title of Roman Emperor, this character was treacherously seized and imprisoned by Adelchis of Benevento. This action has left Emperor Louis with a mark of shame in the eyes of many - what Roman Emperor would allow a lowly Lombard Lord to treat them as such" 
+
+ byzantine_coemperor_modifier: "Co-Emperor"
+ byzantine_coemperor_modifier_desc: "The position of Co-Emperor affords the holder all the rights and privileges of the senior emperor including the ability to sire Born in the Purple heirs. This position is the most prestigious office a person can hold and bestows great honors upon the holder"
+ 
+ anarchy_at_samarra_financial_straits: "Financial Straits"
+ anarchy_at_samarra_financial_straits_desc: "The Caliphate is currently suffering from a shortage of revenue with which to pay the troops. The recent civil war and the current general anarchy have only worsened the situation, as revenue has stopped coming in even from the environs of Baghdad, let alone more remote provinces"
+ 
+ anarchy_at_samarra_loss_of_central_authority: "Loss of Central Authority"
+ anarchy_at_samarra_loss_of_central_authority_desc: "The ongoing troubles of the "Anarchy at Samarra" have inflicted great and lasting damage on the structures and prestige of the Abbasid central government, encouraging and facilitating secessionist and rebellious tendencies in the Caliphate's provinces"
+ 
+ anarchy_at_samarra_unpaid_soldiery: "Unpaid Soldiery"
+ anarchy_at_samarra_unpaid_soldiery_desc: "The lack of available revenue in which to pay the soldiers has lead to decline in the supplies afforded to our troops, decreasing their effectiveness"
  
  ## County ##
  regional_stronghold_modifier: "Regional Stronghold"
  regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"
+ 
+ louis_imperial_garrison: "Imperial Garrison"
+ louis_imperial_garrison_desc: "Following the fall of Bari, Emperor Louis attempted to set up greater control over all the south by garrisoning his troops in Beneventan fortresses"

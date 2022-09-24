@@ -1,25 +1,25 @@
-﻿IronCrownCategory = {
-
-	IronCrown = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = headgear
-				template = ep1_crown_of_lombardy
-				range = { 0 1 }
-			}
-		}	
-		weight = {
-			base = 0
-			modifier = {
-				add = 600
-				exists = this
-				#has_title = title:k_italy
-				
-				any_equipped_character_artifact = {
-					has_variable = wearing_iron_crown
-				}
-			}
-		}
-	}
-}
+﻿#IronCrownCategory = {
+#
+#	IronCrown = {
+#		dna_modifiers = {
+#			accessory = {
+#				mode = add
+#				gene = special_headgear
+#				template = ironcrown_headgear
+#				range = { 0 1 }
+#			}
+#		}	
+#		weight = {
+#			base = 0
+#			modifier = {
+#				add = 600
+#				exists = this
+#				#has_title = title:k_italy
+#				
+#				any_equipped_character_artifact = {
+#					has_variable = wearing_iron_crown
+#				}
+#			}
+#		}
+#	}
+#}

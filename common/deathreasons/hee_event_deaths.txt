@@ -1,0 +1,4 @@
+﻿death_hit_head_on_lintel_of_low_door = {
+	public_knowledge = yes
+	icon = "death_disease.dds"
+}

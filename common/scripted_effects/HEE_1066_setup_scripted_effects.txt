@@ -43,6 +43,8 @@ hee_byzantine_1066_effect = {
 	character:1734 = { save_scope_as = romanos_iv } # https://en.wikipedia.org/wiki/Romanos_IV_Diogenes
 	character:1735 = { save_scope_as = constantine_diogenes } # https://en.wikipedia.org/wiki/Constantine_Diogenes_(son_of_Romanos_IV)
 	
+	character:20544 = { save_scope_as = theodore_gabras } # https://en.wikipedia.org/wiki/Theodore_Gabras
+	
 	character:1740 = { save_scope_as = nikephoros_iii_botaneiates } # https://en.wikipedia.org/wiki/Nikephoros_III_Botaneiates
 	
 	character:41552 = { save_scope_as = maria_of_alania } # https://en.wikipedia.org/wiki/Maria_of_Alania
@@ -94,134 +96,19 @@ hee_byzantine_1066_effect = {
 	# Relations #
 
 	character:1742 = { # Alexios I
-		HEE_remove_personality_traits_effect = yes
-		
-		add_trait = brave
-		add_trait = diligent
-		add_trait = zealous
-		add_trait = ambitious
-		add_trait = stubborn
-		
-		add_trait = intellect_good_1
-		
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 25
 		}
 	}
 	
-	character:1743 = { # Irene Doukaina
-		add_trait = generous
-		add_trait = diligent
-		add_trait = shy
-		add_trait = ambitious
 
-		add_trait = beauty_good_2
-	}
-	
-	character:42014 = { # George Palaiologos
-		set_relation_friend = scope:alexios_i_komnenos # 
-
-		create_betrothal = scope:anna_doukaina
-
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = diligent
-		add_trait = generous
-		add_trait = just
-		add_trait = zealous
-
-	}
-	
-	character:4511 = { # Anna Dalassene
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		
-		add_trait = education_stewardship_3
-		add_trait = brave
-		add_trait = diligent
-		add_trait = ambitious
-		
-		add_trait = administrator
-	}
-	
-	character:41552 = { # Maria of Alania
-		set_age = 16
-		
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_intrigue_3
-		add_trait = generous
-		add_trait = calm
-		add_trait = ambitious
-
-		add_trait = beauty_good_3
-	}
-	
-	character:1733 = { # Empress Eudokia Makrembolitissa
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = ambitious
-		add_trait = humble
-		add_trait = cynical
-	}
 	
 	character:1734 = { # Emperor Romanos IV Diogenes
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_3
-		add_trait = generous
-		add_trait = honest
-		add_trait = brave
-		add_trait = impatient
-		
 		add_trait = unwed
 	}
 
-	character:41305 = { # Michael Psellos		
-		add_trait = ambitious
-		
-		add_trait = devoted
-		
-		add_trait = scholar 
-		
-	}
-	
-	character:1748 = { # Andronikos Doukas (cousin of Michael VII)
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_2
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = deceitful
-	}
-
-	character:727 = { # Maria of Bulgaria
-		add_gold = 1500
-
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_diplomacy_2
-		add_trait = generous
-		add_trait = trusting
-		add_trait = content
-		
-		add_trait = beauty_good_1
-	}
-
 	character:1740 = { # Emperor Nikephoros III Botaneiates
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_3
-		add_trait = generous
-		add_trait = brave
-		add_trait = just
-		add_trait = diligent
-		
 		add_trait = unwed
 		
 		# His historical position
@@ -231,129 +118,26 @@ hee_byzantine_1066_effect = {
 		get_title = title:c_shayzar
 	}
 	
-	character:1756 = { # Manuel Komnenos (kouropalates)
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_2
-		add_trait = gregarious
-		add_trait = brave
-		add_trait = impatient
-	}
-
-	character:1758 = { # Isaac Komnenos (brother of Alexios I)
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_learning_3
-		add_trait = gregarious
-		add_trait = brave
-		add_trait = wrathful
-		
-		#marry = scope:irene_of_georgia (They dont marry till 1072+ but marry them early to simplify the process?)
-		
-		add_trait = hunter_1
-	}
-	
-	character:20502 = { # Nikephoros Bryennios the Elder
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = gregarious
-		add_trait = arrogant
-		add_trait = ambitious
-		add_trait = callous
-		
-		add_trait = strategist
-	}
-	
-	character:232531 = { # Nikephoros Bryennios the Younger
-		set_father = scope:nikephoros_bryennios_the_elder
-	
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = honest
-		add_trait = just
-		add_trait = diligent
-		add_trait = content
-		
-		add_trait = beauty_good_1
-		
-		give_nickname = nick_the_younger
-	}
-
-	character:41308 = { # Nikephoros Basilakes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = arrogant
-		add_trait = ambitious
-		add_trait = patient
-	}
-	
 	character:34464 = { # Nikephoros Karantenos
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_3
-		add_trait = zealous
-		add_trait = deceitful
-		add_trait = callous
-		
-		add_trait = overseer
-		
 		get_title = title:d_bulgaria
 		get_title = title:c_skopje
 		get_title = title:c_ohrid
 	}
 
-	character:85001 = { # Philaretos Brachamios / Vahram Varajnuni
-		# His historical position
-		get_title = title:d_edessa
-		get_title = title:c_marash
-		get_title = title:c_aintab
-		get_title = title:c_edessa
-		get_title = title:c_samosata
-	}
+	# character:85001 = { # Philaretos Brachamios / Vahram Varajnuni
+		# # His historical position
+		# get_title = title:d_edessa
+		# get_title = title:c_marash
+		# get_title = title:c_aintab
+		# get_title = title:c_edessa
+		# get_title = title:c_samosata
+	# }
 	
 	character:20738 = { # Marwanids
 		# His historical position
 		#get_title = title:c_bakriya
 		get_title = title:c_mayyafariqin
 		get_title = title:c_tall_basma
-	}
-
-	character:34220 = { # Roussel de Bailleul
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_martial_3
-		add_trait = gregarious
-		add_trait = brave
-		add_trait = ambitious
-		
-		add_trait = reaver
-		
-		add_trait = administrator
-	}
-	
-	character:34463 = { # Georgi Voyteh
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = education_diplomacy_3
-		add_trait = just
-		add_trait = ambitious
-		add_trait = deceitful
-	}
-	
-	character:20493 = { # Constantine Bodin
-		HEE_remove_personality_traits_effect = yes
-
-		add_trait = greedy
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = callous
-		
-		add_trait = reaver
 	}
 
 	character:20511 = { # John Kantakouzenos
@@ -370,25 +154,30 @@ hee_seljuk_1066_effect = {
 	character:3042 = { save_scope_as = malik_shah } # https://en.wikipedia.org/wiki/Malik-Shah_I
 	character:1000229906 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
 	
-	character:HEE_vizier_01 = { save_scope_as = nizam_al_mulk } # https://en.wikipedia.org/wiki/Nizam_al-Mulk
+	character:3041 = { save_scope_as = qavurt } # https://en.wikipedia.org/wiki/Qavurt
+	
+	character:3050 = { save_scope_as = nizam_al_mulk } # https://en.wikipedia.org/wiki/Nizam_al-Mulk
 
 	character:3014 = { save_scope_as = boritigin } # https://en.wikipedia.org/wiki/B%C3%B6ritigin
 	character:3016 = { save_scope_as = nasr } # https://en.wikipedia.org/wiki/B%C3%B6ritigin
-
-	character:3041 = { save_scope_as = qavurt } # https://en.wikipedia.org/wiki/Qavurt
-
-	character:3046 = { save_scope_as = suleiman_ibn_qutalmish } # https://en.wikipedia.org/wiki/Suleiman_ibn_Qutalmish
-	character:41701 = { save_scope_as = kilij_arslan_i } # https://en.wikipedia.org/wiki/Kilij_Arslan_I
-
-	character:41704 = { save_scope_as = danishmend_gazi } # https://en.wikipedia.org/wiki/Danishmend_Gazi
-	
-	character:144065 = { save_scope_as = artuk_bey } # https://en.wikipedia.org/wiki/Artuk_Bey
 	
 	character:34262 = { save_scope_as = tzachas } # https://en.wikipedia.org/wiki/Tzachas
 	
-	character:144073 = { save_scope_as = mengujek_ghazi } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Meng%C3%BCjek_Gazi
-	character:144073 = { save_scope_as = mengujek_ishak } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Rulers
+	# https://en.wikipedia.org/wiki/Anatolian_beyliks#Beyliks_founded_after_Manzikert_(1071)
 	
+	character:3046 = { save_scope_as = suleiman_ibn_qutalmish } # https://en.wikipedia.org/wiki/Suleiman_ibn_Qutalmish
+	character:41701 = { save_scope_as = kilij_arslan_i } # https://en.wikipedia.org/wiki/Kilij_Arslan_I
+	
+	character:41704 = { save_scope_as = danishmend_gazi } # https://en.wikipedia.org/wiki/Danishmend_Gazi
+	
+	character:144073 = { save_scope_as = mengujek_ghazi } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Meng%C3%BCjek_Gazi
+	character:144074 = { save_scope_as = mengujek_ishak } # https://en.wikipedia.org/wiki/House_of_Meng%C3%BCjek#Rulers
+
+	character:144065 = { save_scope_as = artuk_bey } # https://en.wikipedia.org/wiki/Artuk_Bey
+	
+	character:144044 = { save_scope_as = saltukids } # https://en.wikipedia.org/wiki/Saltukids
+	
+	# Misc
 	character:3079 = { save_scope_as = kasim_aksungur } # https://en.wikipedia.org/wiki/Aq_Sunqur_al-Hajib
 	
 	character:20713 = { save_scope_as = anushtegin_gharchai } # https://en.wikipedia.org/wiki/Anushtegin_Gharchai

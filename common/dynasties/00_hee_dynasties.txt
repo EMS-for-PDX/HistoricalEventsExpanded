@@ -69,3 +69,8 @@ hee_knudlings = {
 	culture = "norse"
 	motto = "dynn_Knudlings_motto"
 }
+
+hee_bretagne = {
+	name = "dynn_Bretagne"
+	culture = "breton"	
+}

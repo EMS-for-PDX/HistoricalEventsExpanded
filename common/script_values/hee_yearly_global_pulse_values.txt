@@ -1,0 +1,4 @@
+﻿# Chance of Boris abdicating per year between 867 and 875
+boris_abdication_base_chance = 0
+
+zero_base_chance = 0

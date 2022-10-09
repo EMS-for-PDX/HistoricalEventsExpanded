@@ -3,8 +3,16 @@
  d_test_empire: "Test"
  d_test_empire_adj: "Tester"
 
+ e_carolingian_empire_article: "the "
+ e_carolingian_empire: "Carolingian Empire"
+ e_carolingian_empire_adj: "Carolingian"
+
+ k_alemania: "Alamannia"
+ k_alemania_adj: "Alamanni"
+ k_alemania_pre: "Alamanno"
+
  k_abkhazia: "Abkhazia"
- k_abkhazia: "Abkhazian"
+ k_abkhazia_adj: "Abkhazian"
 
  k_kakheti-hereti: "Kakheti-Hereti"
  k_kakheti-hereti_adj: "Kakhetian"

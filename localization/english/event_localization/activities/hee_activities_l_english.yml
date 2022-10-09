@@ -1,0 +1,10 @@
+﻿l_english:
+ ACTIVITY_WAITING_TOOLTIP:0 "Hosted by [CHARACTER.GetName].\nWaiting for all invitations to be answered.\n$DESC|F$\n\n#I Click to show details#! "
+ ACTIVITY_TIME_LEFT:0 "#D Will begin in $TIME|V$ days#!"
+ ACTIVITY_OWNED_BY:0 "#D Owner: $NAME$#!"
+ ACTIVITY_NAME:0 "$TYPE$"
+
+ activity_carloman_hunting_trip:0 "Hunt"
+ activity_carloman_hunting_trip_name:0 "[ACTIVITY.GetOwner.GetNamePossessiveOrMy|U] Hunt"
+ activity_carloman_hunting_trip_desc:0 "#D Hunting animals and stuff.#!"
+ activity_carloman_hunting_trip_owner:0 "Hunter"

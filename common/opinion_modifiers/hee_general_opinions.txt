@@ -1,0 +1,7 @@
+﻿# HEE Opinion Modifiers
+
+elopement_non_imprisionment_opinion = {
+	opinion = -30
+	decaying = yes
+	years = 30
+}

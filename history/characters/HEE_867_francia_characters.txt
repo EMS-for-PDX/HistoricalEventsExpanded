@@ -1,0 +1,132 @@
+﻿## Characters for the Francia area - 867 ##
+
+HEE_engelram = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
+	name = "Engelram"
+	# female = yes
+	# dynasty = hee_dekapolitissa
+	religion = "catholic"
+	culture = "french"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 5
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 5
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = honest
+	trait = diligent
+	trait = content
+	
+	#Other Traits
+	trait = loyal
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+	}
+	877.1.1 = {
+		death = yes
+	}
+}
+
+HEE_friderada = { # https://en.wikipedia.org/wiki/Friderada
+	name = "Friderada"
+	female = yes
+	dynasty = 669
+	religion = "catholic"
+	culture = "french"
+	father = 7959
+	mother = 167765
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	prowess = 5
+	
+	#Education
+	trait = education_learning_2
+	
+	#Personality Traits
+	trait = trusting
+	trait = lazy
+	trait = chaste
+	
+	#Other Traits
+	trait = beauty_good_1
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	843.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		add_spouse = HEE_engelram
+	}
+	880.1.1 = {
+		add_spouse = HEE_bernarius
+	}
+	883.1.1 = {
+		add_spouse = 90102
+	}
+	905.1.1 = {
+		death = yes
+	}
+}
+
+HEE_bernarius = { # http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156065
+	name = "Bernarius"
+	# female = yes
+	# dynasty = 669
+	religion = "catholic"
+	culture = "french"
+	# father = 7959
+	# mother = 167765
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 4
+	learning = 6
+	prowess = 6
+	
+	#Education
+	trait = education_stewardship_2
+	
+	#Personality Traits
+	trait = compassionate
+	trait = just
+	trait = content
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	845.1.1 = {
+		birth = yes
+	}
+	883.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 90102
+		}
+	}
+}

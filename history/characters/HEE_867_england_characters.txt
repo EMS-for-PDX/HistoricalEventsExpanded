@@ -114,6 +114,49 @@ tlk_beocca = { #
     }
 }
 
+tlk_eadred = { # https://en.wikipedia.org/wiki/Eadred_Lulisc
+	name = "Eadred"
+	dynasty = 0
+	#female = yes
+	religion = catholic
+	culture = anglo_saxon
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 8
+	prowess = 5
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = ambitious
+	trait = deceitful
+	trait = cynical
+
+	#Other Traits
+	trait = devoted
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	823.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 163123
+	}
+	880.1.1 = {
+		death = yes
+    }
+}
+
 tlk_ragnar_the_fearless = {
 	name = "Ragnar"
 	dynasty = hee_tikling
@@ -167,7 +210,7 @@ tlk_sigrid = {
 	female = yes
 	religion = norse_pagan
 	culture = norse
-	father = 700017
+	# father = 700017
 
 	# Skills
 	diplomacy = 6
@@ -263,14 +306,12 @@ tlk_thyra = {
 	trait = education_learning_2
 
 	# Personality Traits
+	trait = compassionate
 	trait = calm
 	trait = patient
-	trait = shy
-	trait = compassionate
 	trait = charming
 
 	# Other Traits
-	trait = possessed_1 
 	
 	disallow_random_traits = yes
 	sexuality = heterosexual
@@ -340,7 +381,7 @@ tlk_leofric = {
 		}
 	}
 	867.1.1 = {
-		employer = 7627
+		employer = tlk_odda_the_elder
 		give_council_position = councillor_marshal
 	}
 	871.4.24 = {
@@ -526,7 +567,7 @@ tlk_odda_the_younger = {
 			add_character_flag = no_headgear
 		}
 	}
-	856.1.1 = {
+	865.1.1 = {
 		employer = tlk_odda_the_elder
 	}
 	878.1.1 = {
@@ -535,6 +576,105 @@ tlk_odda_the_younger = {
 			killer = tlk_odda_the_elder
 		}
 	}
+}
+
+tlk_mildrith = {
+	name = "Mildrith"
+	dynasty = 0
+	female = yes
+	religion = catholic
+	culture = anglo_saxon
+
+	#Skills
+	diplomacy = 8
+	martial = 6
+	stewardship = 6
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = generous
+	trait = shy
+	trait = pensive
+	
+	#Other Traits
+	trait = beauty_good_1
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	859.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		employer = tlk_odda_the_elder
+		effect = {
+			set_relation_guardian = character:tlk_odda_the_elder
+		}
+	}
+	879.1.1 = {
+		employer = 7627
+	}
+	880.1.1 = {
+		add_trait = devoted
+	}
+}
+
+tlk_steapa = {
+	name = "Steapa"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	
+	#Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 5
+	learning = 4
+	prowess = 9
+
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = wrathful
+	trait = just
+	trait = cynical
+
+	#Other Traits
+	trait = intellect_bad_1
+	trait = loyal
+	trait = blademaster_2
+	trait = giant
+	trait = strong
+	
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	846.1.1 = {
+		birth = yes
+		give_nickname = nick_the_clever
+		effect = {
+			add_character_flag = no_headgear
+			add_character_flag = no_cloak
+		}
+	}
+	867.1.1 = {
+		employer = tlk_odda_the_elder
+	}
+	878.1.1 = {
+		employer = 7627
+		give_council_position = councillor_marshal
+	}
+	902.5.8 = {
+		death = {
+			death_reason = death_battle
+		}
+    }
 }
 
 tlk_wulfhere = { # Inspired by Wulfhere in the Last Kingdom, which was inspired by https://en.wikipedia.org/wiki/Wulfhere,_Ealdorman_of_Wiltshire
@@ -726,7 +866,6 @@ tlk_gisela = {
 	trait = forgiving
 	trait = compassionate
 	trait = stubborn
-	trait = diligent
 	
 	trait = charming
 	
@@ -787,5 +926,238 @@ tlk_guthred = { # https://en.wikipedia.org/wiki/Guthred
 	}
 	895.8.24 = {
 		death = yes			
+	}
+}
+
+tlk_cnut = { # https://en.wikipedia.org/wiki/Cnut_of_Northumbria
+	name = "Cnut"
+	dynasty = 0
+	religion = norse_pagan
+	culture = norse
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 7
+
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = arbitrary
+	trait = deceitful
+	trait = ambitious
+
+	#Other Traits
+	trait = organizer
+	trait = reaver
+	trait = blademaster_1
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+	851.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = no_cloak
+		}
+	}
+	867.1.1 = {
+		employer = 163112
+		give_nickname = nick_the_longsword
+	}
+	# 887.1.1 = {
+		# employer = 600115
+		# give_nickname = nick_the_longsword
+		# effect = {
+			# set_relation_rival = character:600115
+		# }
+	# }
+	910.8.5 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+	# 910.8.5 = {
+		# death = {
+			# death_reason = death_murder_known
+			# killer = 700003
+		# }
+	# }
+}
+
+hee_aethelfrith = { # https://en.wikipedia.org/wiki/%C3%86thelfrith_of_Mercia
+	name = "E_thelfrith"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 5
+	learning = 7
+	prowess = 5
+
+	#Education
+	trait = education_stewardship_2
+	
+	#Personality Traits
+	trait = calm
+	trait = trusting
+	trait = temperate
+
+	#Other Traits
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    843.1.1 = {
+		birth = yes
+	}
+	904.1.1 = {
+		death = yes
+	}
+}
+
+hee_osric = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
+	name = "Osric"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = trusting
+	trait = brave
+	trait = patient
+
+	#Other Traits
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    843.1.1 = {
+		birth = yes
+	}
+	904.1.1 = {
+		death = yes
+	}
+}
+
+hee_aethelwulf = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
+	name = "E_thelwulf"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+
+	#Education
+	trait = education_stewardship_2
+	
+	#Personality Traits
+	trait = gregarious
+	trait = zealous
+	trait = lustful
+
+	#Other Traits
+
+	disallow_random_traits = yes
+	sexuality = heterosexual
+    837.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+hee_aethelmod = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
+	name = "E_thelmod"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 6
+
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+
+    828.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+hee_ealdred = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
+	name = "Ealdred"
+	dynasty = 0
+	religion = catholic
+	culture = anglo_saxon
+	# father = 
+	# mother =
+	# health =
+	
+	#Skills
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 6
+
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+
+    841.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
 	}
 }

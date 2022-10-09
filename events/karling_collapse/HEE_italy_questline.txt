@@ -2102,3 +2102,54 @@ HEE_italy_questline.0104 = { # Louis is absolved from his oath and crowned a sec
 		#is_at_war = no
 		is_imprisoned = no
 	}
+}
+
+
+HEE_italy_questline.0999 = { #Louis comes down with his historically deadly illness
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		add_trait = consumption
+	}
+
+	trigger_event = {
+		id = HEE_italy_questline.1000
+		days = { 7 30 }
+	}
+}
+
+HEE_italy_questline.1000 = { #Louis dies or fever breaks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+
+	immediate = {
+		random_list = {
+			90 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_consumption
+					}
+				}
+			}
+			10 = { # Carloman's fever breaks
+				hidden_effect = {
+					remove_trait = consumption
+				}
+			}
+		}
+	}
+}

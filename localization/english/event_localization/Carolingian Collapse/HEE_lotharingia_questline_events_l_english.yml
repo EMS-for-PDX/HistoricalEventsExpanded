@@ -1,0 +1,11 @@
+﻿l_english:
+
+ #HEE Michael's Murder
+ HEE_lotharingia_questline.0013.t: "Treaty of Meerssen"
+ HEE_lotharingia_questline.0013.desc: "With your brother [lothaire.GetTitledFirstName]'s death and him leaving behind no legitimate children, by right his lands should fall to me. However with me and my armies engaged in Southern Italy, my ambitious relatives in East and West Francia have seen fit to discuss among themselves how best to partition *my* lands. I have even heard rumors that [king_of_france.GetTitledFirstName] has been crowned in Metz, having been accepted by many of the local nobility.\n\nWhile it could be too late to salvage my authority north of the Alps, I could abandon my ambitions regarding Southern Italy in a bid to secure Lotharingia..."
+ HEE_lotharingia_questline.0013.a: "I must accept unjust partition, for now."
+ HEE_lotharingia_questline.0013.b: "I will fight for my inheritance."
+
+ #Custom Tooltips
+ treaty_of_meerssen_is_signed: "You put your ambitions in Southern Italy at the forefront"
+ treaty_of_meerssen_is_disputed: "You decide to abandon your ambitions in Southern Italy to prioritize Lotharingia"

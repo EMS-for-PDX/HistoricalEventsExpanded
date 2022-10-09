@@ -132,3 +132,47 @@ HEE_ageltrude = { # https://en.wikipedia.org/wiki/Ageltrude
 		death = yes
 	}
 }
+
+HEE_landemarius = { # https://en.wikipedia.org/wiki/Siege_of_Salerno_(871%E2%80%93872)#Campaign
+	name = "Landemarius"
+	# female = yes
+	dynasty = 0
+	religion = "catholic"
+	culture = "italian"
+	# father = 163071
+	# mother = HEE_adeltrude
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 6
+	prowess = 8
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = brave
+	trait = honest
+	trait = humble
+	
+	#Other Traits
+	trait = strong
+	trait = beauty_good_1
+	
+	#sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 163091
+	}
+	901.8.27 = {
+		death = yes
+	}
+}

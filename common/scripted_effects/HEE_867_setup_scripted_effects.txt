@@ -36,6 +36,8 @@ hee_karling_867_effect = {
 	character:90105 = { save_scope_as = karl_the_fat } # https://en.wikipedia.org/wiki/Charles_the_Fat
 	character:7945 = { save_scope_as = arnulf } # https://en.wikipedia.org/wiki/Arnulf_of_Carinthia
 	
+	character:168593 = { save_scope_as = liutbert } # https://en.wikipedia.org/wiki/Liutbert_(archbishop_of_Mainz)
+	
 	character:7908 = { save_scope_as = otto } # https://en.wikipedia.org/wiki/Otto_I,_Duke_of_Saxony
 	character:144957 = { save_scope_as = bruno } # https://en.wikipedia.org/wiki/Bruno,_Duke_of_Saxony
 	character:7912 = { save_scope_as = hedwig } # https://en.wikipedia.org/wiki/Hedwig_of_Babenberg
@@ -55,7 +57,11 @@ hee_karling_867_effect = {
 	character:163178 = { save_scope_as = rotrude } # Rotrude (852–912), a nun, Abbess of Saint-Radegunde
 	# character: Create the missing daughter of Charles the Bald? = { save_scope_as = godehilde } # Godehilde (864–907)
 	# character: Create the two missing daughters of Louis the Stammerer? = { save_scope_as =  } # Princess Hildegarde (born in 864) & Princess Gisela (865–884)
-	
+
+	character:90109 = { save_scope_as = baldwin_i_of_flanders } # https://en.wikipedia.org/wiki/Baldwin_I,_Margrave_of_Flanders
+
+	character:31702 = { save_scope_as = adalard_the_seneschal } # https://en.wikipedia.org/wiki/Adalard_the_Seneschal
+
 	character:6448 = { save_scope_as = odo_of_france } # https://en.wikipedia.org/wiki/Odo_of_France
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
@@ -65,94 +71,67 @@ hee_karling_867_effect = {
 	title:k_east_francia = { save_scope_as = k_east_francia }
 	title:k_france = { save_scope_as = k_france }
 
+	# House-keeping #
+	character:31702 = { give_nickname = nick_the_seneschal }
 
+	character:90109 = { give_nickname = nick_the_iron }
 
-
-
-
-
-
-
-
-
-
-
-
-	# Relations #
-
-	# Lotharingia
-	character:6877 = { # Teutberga
-		set_relation_friend = scope:pope_nicholas
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_diplomacy_2
-		add_trait = honest
-		add_trait = zealous
-		add_trait = stubborn
-	}
-	
-	character:168314 = { # Waldrada
-		HEE_remove_personality_traits_effect = yes
-		add_trait = gregarious
-		add_trait = cynical
-		add_trait = patient
-		add_trait = unwed
-	}
-	
-	character:90102 = { # Hugh
-		HEE_remove_personality_traits_effect = yes
-		add_trait = ambitious
-		add_trait = callous
-		add_trait = cynical
-		get_title = title:c_colmar
-		get_title = title:d_alsace
+	scope:charles_the_bald = {
+		add_opinion = {
+			target = scope:baldwin_i_of_flanders
+			modifier = elopement_non_imprisionment_opinion
+		}
 	}
 
+	scope:charles_the_bald = {
+		add_opinion = {
+			target = scope:judith
+			modifier = elopement_non_imprisionment_opinion
+		}
+	}
 
+	# Italy #
 
-
-
-
-
-
-	# Italy
-	character:30228 = { # ludwig_the_german
+	character:30228 = { # Louis the Younger
 		add_character_modifier = western_roman_emperor_modifier
 	}
+
+	# Francia #
 	
-	character:163094 = { # Sawdan
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = brave
-		add_trait = just
-		add_trait = deceitful
-		add_trait = diligent
-		add_trait = organizer
+	# Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
+	character:168246 = {
+		give_nickname = nick_the_abbot
+		set_relation_ward = scope:odo_of_france
+		set_relation_ward = scope:robert_of_france
 	}
 
-	character:163071 = { # Adelchis of Benevento
-		HEE_remove_personality_traits_effect = yes
-		add_trait = craven
-		add_trait = paranoid
-		add_trait = cynical
+	# If Charles the Bald could be said to have a capital, it would be Compiègne
+	character:90104 = {
+		set_realm_capital = title:c_valois
 	}
 
+	# Gameplay impact of the Treaty of Coulaines (https://en.wikipedia.org/wiki/Treaty_of_Coulaines)
+	if = {
+		limit = { exists = title:k_france.holder }
+		title:k_france.holder = {
+			every_vassal = {
+				limit = {
+					vassal_contract_has_modifiable_obligations = yes
+				}
+				vassal_contract_decrease_obligation_level = feudal_government_taxes
+				vassal_contract_decrease_obligation_level = feudal_government_levies
+				set_vassal_contract_modification_blocked = no
+			}
+		}
+	}
+
+	# Removal of female-inherited claims
 	character:71901 = { # Berengar of Italy
-		create_betrothal = scope:bertila
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_1
-		add_trait = generous
-		add_trait = ambitious
-		add_trait = stubborn
-		
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
-	
-	# Removal of female-inherited claims
+
 	character:163057 = { # Unruoch of Friuli
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
@@ -218,45 +197,6 @@ hee_karling_867_effect = {
 	}
 
 
-
-
-
-
-
-
-
-
-	# East Francia
-	character:90107 = { # Ludwig the German
-		add_character_modifier = {
-			modifier = invigorated_modifier
-			years = 7
-		}
-	}
-	
-	character:42019 = { # Ludwig the Younger
-		marry = scope:liutgard
-		
-	}
-
-	character:7954 = { # Luitgard
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_diplomacy_3
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = diligent
-		
-	}
-
-	character:7945 = { # Arnulf of Carinthia
-		remove_trait = legitimized_bastard
-		add_trait = bastard
-	}
-	
-	
-	
-
 	# Truces to represent the Divisio regni 
 	scope:ludwig_the_german = {
 		add_truce_both_ways = {
@@ -281,48 +221,6 @@ hee_karling_867_effect = {
 			name = divisio_regni_desc
 		}
 	}
-
-
-
-
-
-
-
-
-
-	# West Francia 
-	character:163175 = { # Ermentrud (854–877), 
-		add_trait = devoted # A nun, Abbess of Hasnon
-	}
-
-	character:163178 = { # Rotrude (852–912), 
-		add_trait = devoted # A nun, Abbess of Saint-Radegunde
-	}
-	
-	character:42021 = { # Carloman, son of Charles the Bald
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_learning_3
-		add_trait = arbitrary
-		add_trait = ambitious
-		add_trait = stubborn
-		add_trait = devoted # Carloman was tonsured as a child
-	}
-
-	character:90123 = { # Louis the Stammerer
-		add_trait = infirm
-		marry = scope:ansgarde_of_burgundy
-	}
-	
-	character:91385 = { # Ansgarde of Burgundy
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_diplomacy_2
-		add_trait = trusting
-		add_trait = ambitious
-		add_trait = patient
-	}
-
 }
 
 
@@ -363,59 +261,6 @@ hee_great_moravia_bohemia_867_effect = {
 	culture:radhanite = { save_scope_as = radhanite }
 	culture:khazar = { save_scope_as = khazar }
 	culture:slovien = { save_scope_as = slovien }
-	
-
-
-	character:HEE_missionary_01 = { # St. Methodius
-		learn_language_of_culture = scope:radhanite
-		learn_language_of_culture = scope:khazar
-		learn_language_of_culture = scope:slovien
-	}
-	
-	character:HEE_missionary_02 = { # St. Cyril
-		learn_language_of_culture = scope:radhanite
-		learn_language_of_culture = scope:khazar
-		learn_language_of_culture = scope:slovien
-	}
-
-	character:187002 = { # Rastislav of Moravia
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_2
-		add_trait = wrathful
-		add_trait = deceitful
-		add_trait = cynical
-	}
-	
-	character:187003 = { # Svatopluk I of Moravia
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = zealous
-		add_trait = ambitious
-		add_trait = diligent
-		add_trait = callous
-		
-		add_trait = diplomat
-	}
-
-	character:500 = { # Bořivoj I, Duke of Bohemia
-		HEE_remove_personality_traits_effect = yes
-		add_trait = calm
-		add_trait = deceitful
-		add_trait = cynical
-		add_trait = ambitious
-		
-		create_betrothal = scope:ludmila
-	}
-
-	character:501 = { # Ludmila of Bohemia		
-		HEE_remove_personality_traits_effect = yes
-		add_trait = just
-		add_trait = zealous
-		add_trait = temperate
-		add_trait = diligent
-	}
 
 }
 
@@ -445,17 +290,23 @@ hee_great_moravia_bohemia_867_effect = {
 hee_byzantine_bulgaria_867_effect = {	
 
 	# Scopes
+	character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
+	character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
+	
 	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
 	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
 	
 	character:70554 = { save_scope_as = patriarch_photios } # https://en.wikipedia.org/wiki/Photios_I_of_Constantinople
 	character:70555 = { save_scope_as = patriarch_ignatios } # https://en.wikipedia.org/wiki/Ignatios_of_Constantinople
 	
+	character:145198 = { save_scope_as = leo_choirosphaktes } # https://en.wikipedia.org/wiki/Leo_Choirosphaktes
+	
 	character:41316 = { save_scope_as = nikephoros_the_elder } # https://en.wikipedia.org/wiki/Nikephoros_Phokas_the_Elder
 	
 	character:70382 = { save_scope_as = boris_i } # https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria
 	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
-	
+	character:712 = { save_scope_as = simeon_i } # https://en.wikipedia.org/wiki/Simeon_I_of_Bulgaria
+
 	character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
 	
 	faith:orthodox = { save_scope_as = orthodox }
@@ -463,7 +314,6 @@ hee_byzantine_bulgaria_867_effect = {
 	
 	
 	# Relations
-	
 	if = { #If SE is loaded, give Basil Co-Emperor position
 		limit = {
 			exists = global_var:SE_is_loaded
@@ -478,90 +328,45 @@ hee_byzantine_bulgaria_867_effect = {
 			remove_character_modifier = byzantine_coemperor_modifier
 		}
 	}
-	
-	character:70382 = {
-		add_character_modifier = {
-			modifier = invigorated_modifier
-			years = 30
+
+	# When Michael III started to favour another courtier, Basiliskianos, Basil decided that his position was being undermined. Michael threatened to invest Basiliskianos with the Imperial title 
+	character:1700 = {
+		add_opinion = {
+			target = character:70490
+			modifier = insulted_opinion
+			opinion = -20
+		}
+		add_opinion = {
+			target = character:70490
+			modifier = spurned_opinion
+			opinion = -20
+		}
+		add_opinion = {
+			target = character:70490
+			modifier = envy_opinion
+			opinion = -50
 		}
 	}
 	
-	character:70383 = {
-		set_character_faith = scope:orthodox
+	scope:leon = {
+		set_real_father = scope:michael_iii
 	}
 	
-	
-	
-	
-	
-	
-	character:1700 = { # Emperor Basil I
-		set_age = 55
-	}
-
-	character:1702 = { # Emperor Leon the Wise
-		add_trait = disputed_heritage
-	}
-	
-	character:70554 = { # Photios I of Constantinople
-		add_learning_skill = 5
-		
-		HEE_remove_personality_traits_effect = yes
-		add_trait = zealous
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = diligent
-		
-		add_trait = devoted
-		
-		add_trait = intellect_good_2
-		
-		give_nickname = nick_the_great
-		
-		add_character_modifier = invigorated_modifier
-	}
-	
-	character:70555 = { # Ignatios of Constantinople
-		add_learning_skill = 5
-		
-		HEE_remove_personality_traits_effect = yes
-		add_trait = honest
-		add_trait = just
-		add_trait = zealous
-		add_trait = stubborn
-		
-		add_trait = devoted
-		
-		add_trait = eunuch
-		
-	}
-	
-	character:41316 = { # Nikephoros Phokas the Elder
-		add_learning_skill = 5
-		
-		HEE_remove_personality_traits_effect = yes
-		add_trait = brave
-		add_trait = just
-		add_trait = humble
-		
-		add_trait = rowdy
-		
-		add_trait = intellect_good_1
-		
-	}
-	
-	character:163147 = { # Ibrahim II of Ifriqiya
-
-		add_trait = diligent
-		add_trait = humble
-		
-		add_trait = overseer
-		add_trait = administrator
-		
-		add_character_modifier = invigorated_modifier
-		
+	character:70490 = {
+		add_opinion = {
+			target = character:1702
+			modifier = truly_of_my_blood_opinion
+			opinion = 100
+		}
 	}
 
+	# character:1761 = {
+		# trigger_event = {
+			# id = pregnancy.2002
+			# days = { 30 60 }
+		# }
+	# }
+	
 }
 
 
@@ -597,118 +402,25 @@ hee_samarra_relations_867_effect = {
 	title:c_dinawar = { save_scope_as = c_dinawar }
 	title:c_nihawand = { save_scope_as = c_nihawand }
 	
-	# Relations
+	# Relations	
 	character:34014 = { # Al-Mutazz
-		#set_relation_rival = scope:al_muwaffak
-		remove_short_term_gold = 1500
+		add_trait = murderer
+		
+		add_character_modifier = anarchy_at_samarra_financial_straits
+		add_character_modifier = anarchy_at_samarra_loss_of_central_authority
+		add_character_modifier = anarchy_at_samarra_unpaid_soldiery
 	}
-	
-	character:34015 = { # Al-Muhtadi
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_learning_3
-		add_trait = generous
-		add_trait = zealous
-		add_trait = temperate
-		add_trait = humble
-	}	
-	
-	character:34017 = { # Al-Muwaffaq
-		set_relation_friend = scope:musa_bughoglu
-		set_relation_friend = scope:wasif_al_turki
-		create_alliance = scope:musa_bughoglu
-		scope:musa_bughoglu = {
-			add_opinion = {
-				target = character:34017
-					modifier = perk_negotiated_alliance_opinion
-			}
-		}
-		create_alliance = scope:wasif_al_turki
-		scope:wasif_al_turki = {
-			add_opinion = {
-				target = character:34017
-					modifier = perk_negotiated_alliance_opinion
-			}
-		}
 
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_4
-		add_trait = gregarious
-		add_trait = brave
-		add_trait = diligent
-		add_trait = ambitious
-	}	
-	
-	character:34018 = { # Al-Mu'tadid
-		HEE_remove_personality_traits_effect = yes
-		add_trait = rowdy
-		add_trait = greedy
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = sadistic
-		add_trait = diligent
-	}		
-	
-	character:163131 = { # Bugha al-Sharabi
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_2
-		add_trait = greedy
-		add_trait = ambitious
-		add_trait = deceitful
-		add_trait = schemer
-		
-	}	
-	
-	character:163132 = { # Musa ibn Bugha al-Kabir
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = greedy
-		add_trait = brave
-		add_trait = ambitious
-		add_trait = schemer
-		
-		get_title = title:c_karbala
-		get_title = title:c_anbar
-		
+	character:163131 = {	
 		spawn_turkic_troops_effect = yes
-	}		
-
-	character:turkish000007 = { # Wasif al-Turki
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = greedy
-		add_trait = ambitious
-		add_trait = callous
-		add_trait = schemer
-		
-		get_title = title:c_kirkuk
-		get_title = title:c_shahrazur
-		
-		add_pressed_claim = scope:d_kermanshah
-		add_pressed_claim = scope:c_kermanshah
-		add_pressed_claim = scope:c_masabadhan
-		add_pressed_claim = scope:c_saimara
-		add_pressed_claim = scope:d_hamadan
-		add_pressed_claim = scope:c_hamadan
-		add_pressed_claim = scope:c_dinawar
-		add_pressed_claim = scope:c_nihawand
-		
+	}
+	character:163132 = {	
 		spawn_turkic_troops_effect = yes
-	}		
-	
-	
-	# Simply here to stop the Abbasid caliph from making Shahrazur his capital
-	# character:159169 = {
-		# get_title = title:c_shahrazur
-	# }
-
-
+	}
+	character:turkish000007 = {	
+		spawn_turkic_troops_effect = yes
+	}
 }
-
 
 
 
@@ -739,24 +451,6 @@ hee_iranian_intermezzo_effect = {
 	character:1231060 = { save_scope_as = buyid_founder } # https://en.wikipedia.org/wiki/Buyid_dynasty
 
 	character:180764 = { save_scope_as = sallarid_founder } # https://en.wikipedia.org/wiki/Sallarid_dynasty
-
-	character:163157 = { # Ismail Samani
-		set_age = 18
-
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		
-		add_trait = education_martial_3
-		add_trait = generous
-		add_trait = zealous
-		add_trait = just
-		add_trait = compassionate
-		add_trait = ambitious
-		
-		add_trait = intellect_good_1
-		
-		add_trait = organizer
-	}	
 	
 }
 
@@ -788,15 +482,13 @@ hee_fairhair_867_effect = {
 	character:161301 = { save_scope_as = eystein } # https://en.wikipedia.org/wiki/Eystein_Glumra
 	character:161302 = { save_scope_as = rognvald_eysteinsson } # https://en.wikipedia.org/wiki/Rognvald_Eysteinsson
 	character:161303 = { save_scope_as = sigurd_eysteinsson } # https://en.wikipedia.org/wiki/Sigurd_Eysteinsson
+	
+	character:186003 = { save_scope_as = hakon_grjotgardsson } # https://en.wikipedia.org/wiki/H%C3%A5kon_Grjotgardsson
 
 	character:186011 = { save_scope_as = kjotve_the_rich } # https://en.wikipedia.org/wiki/Kjotve_the_Rich
 	character:186012 = { save_scope_as = thorir_haklang } # Thorir Haklang was a berserker who fell during the Battle of Hafrsfjord.
 
 	character:144000 = { # Harald Fairhair
-		add_trait = lustful
-		
-		#add_diplomacy_skill = 2
-		
 		if = {
 			limit = {
 				is_alive = yes
@@ -822,92 +514,20 @@ hee_fairhair_867_effect = {
 			years = 10
 		}
 	}
-	
-	character:6862 = { # Ragnhild the Mighty
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = brave
-		add_trait = zealous
-		add_trait = calm
-		
-		add_trait = strong
-		
-		give_nickname = nick_the_mighty
-		
-		set_father = scope:jute_king_eirikr
-		set_house = scope:jute_king_eirikr.house
-	}
 		
 	character:166044 = { # Gyda Eiriksdatter
-		set_age = 15
-		
-		HEE_remove_personality_traits_effect = yes
-		add_trait = arrogant
-		add_trait = ambitious
-		add_trait = stubborn
-		
+
 		add_trait = unwed
-		
+
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
 		}
 	}
-	
-	character:161302 = { # Rognvald Eysteinsson
-		set_relation_friend = scope:haraldr_fairhair
-		
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_3
-		add_trait = brave
-		add_trait = wrathful
-		add_trait = diligent
-		
-		add_character_flag = {
-			flag = immune_to_disease
-			years = 10
-		}
+
+	character:6862 = { # Ragnhild the Mighty
+		add_trait = unwed
 	}
-	
-	character:186011 = { # Kjotve the Rich
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_stewardship_4
-		add_trait = avaricious
-		add_trait = greedy
-		add_trait = arrogant
-		add_trait = gluttonous
-		add_trait = callous
-		
-		add_gold = 500
-		
-		give_nickname = nick_the_rich
-		
-		add_character_flag = {
-			flag = immune_to_disease
-			years = 10
-		}
-	}
-	
-	character:186012 = { # Thorir Haklang, son of Kjotve the Rich
-		HEE_remove_education_traits_effect = yes
-		HEE_remove_personality_traits_effect = yes
-		add_trait = education_martial_2
-		add_trait = brave
-		add_trait = sadistic
-		add_trait = vengeful
-		
-		add_trait = berserker
-		
-		add_character_flag = {
-			flag = immune_to_disease
-			years = 10
-		}
-	}
-	
-	
 }
 
 hee_baltic_867_effect = {

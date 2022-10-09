@@ -22,7 +22,7 @@ HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapoliti
 	trait = education_learning_2
 	
 	#Personality Traits
-	trait = calm
+	trait = generous
 	trait = humble
 	trait = chaste
 	
@@ -31,7 +31,6 @@ HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapoliti
 	sexuality = heterosexual
 	
 	disallow_random_traits = yes
-	
 	840.1.1 = {
 		birth = yes
 	}
@@ -39,6 +38,21 @@ HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapoliti
 		add_spouse = 70490 # Michael III
 		effect = {
 			add_character_modifier = rejected_from_marriage_bed_modifier
+			add_opinion = {
+				target = character:70490
+				modifier = unfaithful_spouse_discovered_opinion
+				opinion = -20
+			}
+			add_opinion = {
+				target = character:70490
+				modifier = refused_to_renounce_lover_opinion
+				opinion = -30
+			}
+			add_opinion = {
+				target = character:1761
+				modifier = slept_with_spouse_discovered_opinion
+				opinion = -30
+			}
 		}
 	}
 	900.1.1 = {

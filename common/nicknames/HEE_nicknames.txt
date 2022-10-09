@@ -6,3 +6,8 @@
 nick_the_rich = {}
 nick_the_mighty = {}
 nick_the_elder = {}
+nick_the_clever = {}
+nick_the_longsword = {}
+nick_the_abbot = {}
+nick_the_seneschal = {}
+nick_the_iron = {}

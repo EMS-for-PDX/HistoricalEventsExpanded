@@ -40,11 +40,11 @@
  
  
  
- 
- 
+ # Truce Descriptions
+ louis_oath_desc: "\nEmperor Louis has been released from his unjust imprisonment by Adelchis of Benevento after having sworn to the Prince on holy relics that he would take no revenge for the injury, nor ever enter Benevento with an army."
  divisio_regni_desc: "\nPeace has been forged between King Ludwig and his sons through the Divisio regni - the division of the King's land among his sons with Carloman recieving Bavaria, Ludwig the Younger recieving Saxony with Franconia and Thuringia, and Karl recieving Swabia with Raetia."
- 
- 
+ unfavourable_peace_venice_croatia_desc: "\nWhen Orso I Participazio came to power as the new Doge of Venice in 864, he broke the long lasting peace treaty between Croatia and the Venetian Republic signed in 839 and attacked Croatia, which was still occupied with infighting over Trpimir's inheritance. After winning the civil war in 865, the usurper Domagoj was forced to make an unfavourable peace with Venice, giving hostages as a guarantee for safe passage of Venetian ships in the Adriatic."
+ breton_viking_alliance_desc: "\nRelations between the vikings and the Bretons, who had became familiar with one another by reason of their occasional alliances and by the ordinary trading that inevitably took place in the peaceful intervals between the plundering expeditions, has changed. The vikings had shown that they could be harmless neighbours when it so pleased them, and that they could even be useful if their strength could be turned against the Frankish king as displayed in the Battle of Brissarthe (a battle fought on 2 July 866, between the Franks and a joint Breton-Viking army near Brissarthe, Neustria. It was marked by the death of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine). So a rash and experimental peace was made by Duke Salomon of Brittany with Hastein and his pirates. For the first time a viking host dwelt in France has been officially recognized, at any rate by its immediate neighbours, as settlers in the land."
  
  # Event Troops
  turkic_event_troops: "Turkic Troops"

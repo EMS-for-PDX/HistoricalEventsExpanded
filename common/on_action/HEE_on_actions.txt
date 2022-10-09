@@ -64,89 +64,6 @@ on_game_start_after_lobby = {
 # 	}
 # }
 
-on_title_gain = {
-	on_actions = {
-		HEE_titular_title_make_primary_title_gain
-	}
-}
-
-HEE_titular_title_make_primary_title_gain = {
-	trigger = {
-		exists = title:k_pechenegs.holder
-		this = title:k_pechenegs.holder 
-		title:k_pechenegs.holder = {
-			any_held_title = {
-				tier >= tier_kingdom
-				count > 1
-			}
-		}
-		highest_held_title_tier = tier_kingdom
-	}
-	effect = {
-		if = {
-			limit = {
-				title:k_pechenegs.holder = {
-					highest_held_title_tier = tier_kingdom
-					any_held_title = {
-						tier >= tier_kingdom
-						count > 1
-					}
-				} 
-			}
-			destroy_title = scope:title
-			title:k_pechenegs.holder = {
-				add_gold = 200
-			}
-		}
-	}
-}
-
-HEE_titular_title_make_primary = {
-	trigger = {
-		exists = title:k_pechenegs.holder
-		title:k_pechenegs.holder = {
-			any_held_title = {
-				tier >= tier_kingdom
-				count > 1
-			}
-		} 
-		highest_held_title_tier = tier_kingdom
-	}
-	effect = {
-		if = {
-			limit = {
-				title:k_pechenegs.holder = {
-					any_held_title = {
-						tier >= tier_kingdom
-						count > 1
-					}
-				} 
-			}
-			title:k_pechenegs.holder = {
-				random_held_title = {
-					limit = {
-						tier >= tier_kingdom
-						NOT = {
-							this = title:k_pechenegs
-						}
-					}
-					save_scope_as = destroying_title
-				}
-			}
-			destroy_title = scope:destroying_title
-			title:k_pechenegs.holder = {
-				add_gold = 200
-			}
-		}
-		title:k_pechenegs.holder = {
-			trigger_event = {
-				on_action = HEE_titular_title_make_primary
-				days = 30
-			}
-		}
-	}
-}
-
 HEE_fairhair_feast = {
 	trigger = {
 		character:166044 = {
@@ -277,7 +194,7 @@ HEE_pechenegs_first_war = {
 		NOT = { exists = global_var:pecheneg_won_first_war_on_action }
 	}
 	effect = {
-		title:k_pechenegs.holder = {
+		title:k_pechenegs_custom.holder = {
 			trigger_event = {
 				id = HEE_turkic_conquerors.204
 				days = { 5475 7305}
@@ -293,7 +210,7 @@ HEE_pechenegs_second_war = {
 		NOT = { exists = global_var:pecheneg_won_second_war_on_action }
 	}
 	effect = {
-		title:k_pechenegs.holder = {
+		title:k_pechenegs_custom.holder = {
 			trigger_event = {
 				id = HEE_turkic_conquerors.205
 				days = { 500 1000 }

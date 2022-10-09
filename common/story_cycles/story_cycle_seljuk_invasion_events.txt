@@ -345,7 +345,7 @@ story_pechenegs_invasion = {
 						has_character_flag = HEE_pechenegs_pending_invasion_2
 					}
 				}
-				has_title = title:k_pechenegs
+				has_title = title:k_pechenegs_custom
 			}
 		}
 
@@ -397,22 +397,22 @@ story_pechenegs_invasion = {
 			story_owner = {
 				NOT = {
 					any_held_title = {
-						this = title:k_pechenegs
+						this = title:k_pechenegs_custom
 					}
 				}
 			}
 		}
 
 		triggered_effect = {
-			trigger = { exists = title:k_pechenegs }
+			trigger = { exists = title:k_pechenegs_custom }
 			effect = {
 				if = {
 					limit = {
-						title:k_pechenegs.holder = {
+						title:k_pechenegs_custom.holder = {
 							culture = culture:pecheneg
 						}
 					}
-					make_story_owner = title:k_pechenegs.holder
+					make_story_owner = title:k_pechenegs_custom.holder
 				}
 				else = {
 					end_story = yes
@@ -421,7 +421,7 @@ story_pechenegs_invasion = {
 		}
 
 		triggered_effect = {
-			trigger = { NOT = { exists = title:k_pechenegs } }
+			trigger = { NOT = { exists = title:k_pechenegs_custom } }
 			effect = {
 				end_story = yes
 			}

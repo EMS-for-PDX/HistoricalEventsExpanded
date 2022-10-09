@@ -12,6 +12,13 @@ e_carolingian_empire = { # https://en.wikipedia.org/wiki/Carolingian_Empire
 	definite_form = yes
 }
 
+k_pechenegs_custom = {
+	color = { 132 108 72}
+	ignore_titularity_for_title_weighting = yes
+
+	capital = c_odessa # Odessa
+}
+
 k_alemania = { # https://en.wikipedia.org/wiki/Alamannia#Carolingian_regnum
 	color = { 230 230 230 }
 

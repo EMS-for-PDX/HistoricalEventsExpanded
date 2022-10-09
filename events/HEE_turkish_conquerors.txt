@@ -76,7 +76,7 @@ HEE_turkic_conquerors.200 = { #Pechenegs Unite
 				add_claim_on_loss = no
 			}
 			
-			title:k_pechenegs = {
+			title:k_pechenegs_custom = {
 				change_title_holder = {
 					holder = scope:aqtobe
 					change = scope:event1lands
@@ -241,7 +241,7 @@ HEE_turkic_conquerors.2041 = {
 	hidden = yes
 
 	immediate = {
-		title:k_pechenegs.holder = {
+		title:k_pechenegs_custom.holder = {
 			remove_character_flag = HEE_pechenegs_pending_invasion_1
 			trigger_event = HEE_turkic_conquerors.204
 		}
@@ -304,7 +304,7 @@ HEE_turkic_conquerors.2051 = {
 	hidden = yes
 
 	immediate = {
-		title:k_pechenegs.holder = {
+		title:k_pechenegs_custom.holder = {
 			trigger_event = HEE_turkic_conquerors.205
 			remove_character_flag = HEE_pechenegs_pending_invasion_2
 		}

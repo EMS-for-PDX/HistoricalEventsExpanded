@@ -20,3 +20,33 @@ house_mod_seljuk = {
 		instance = { position = { 0.5 0.48 } scale = { 0.90 0.90 }  }			
 	}
 }
+
+k_pechenegs_custom = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "yellow"
+	colored_emblem = {
+		texture = "ce_block_02.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "ce_block_02.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.48 } scale = { 0.7 0.7 }  }
+	}
+	colored_emblem = {
+		texture = "ce_border_circle_doted.dds"
+		color1 = "white"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.48 } scale = { 0.75 0.75 }  }
+	}
+	colored_emblem = {
+		texture = "ce_horse_statant.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.52 0.49 } scale = { 0.6 0.6 }  }
+	}
+}

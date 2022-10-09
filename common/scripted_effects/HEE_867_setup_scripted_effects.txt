@@ -978,12 +978,9 @@ hee_brittany_867_effect = {
 	# Alliance between Hastein and Salomon
 	character:163105 = {
 		create_alliance = scope:hastein
-		scope:hastein = {
-			add_opinion = {
-				target = character:163105
-				modifier = perk_negotiated_alliance_opinion
-				days = 60
-			}
+		add_opinion = {
+			target = scope:hastein
+			modifier = perk_negotiated_alliance_opinion
 		}
 		add_truce_both_ways = {
 			character = scope:hastein
@@ -997,7 +994,6 @@ hee_brittany_867_effect = {
 		add_opinion = {
 			target = scope:salomon
 			modifier = declared_war
-			days = 60
 		}
 	}
 }

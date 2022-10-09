@@ -2127,11 +2127,11 @@ HEE_italy_questline.0999 = { #Louis comes down with his historically deadly illn
 
 	immediate = {
 		add_trait = consumption
-	}
 
-	trigger_event = {
-		id = HEE_italy_questline.1000
-		days = { 7 30 }
+		trigger_event = {
+			id = HEE_italy_questline.1000
+			days = { 3 10 }
+		}
 	}
 }
 
@@ -2144,7 +2144,6 @@ HEE_italy_questline.1000 = { #Louis dies or fever breaks
 	}
 
 	#Resend
-
 
 	immediate = {
 		random_list = {

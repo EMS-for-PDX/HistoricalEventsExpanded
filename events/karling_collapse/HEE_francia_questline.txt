@@ -1,6 +1,110 @@
 ﻿namespace = HEE_francia_questline
 
-# Lothaire's Chain
+# Charles the Bald's Illness
+HEE_francia_questline.0098 = { #Charles the Bald comes down with his historically deadly illness
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		add_trait = pneumonic
+		
+		trigger_event = {
+			id = HEE_francia_questline.0099
+			days = { 3 10 }
+		}
+	}
+}
+
+HEE_francia_questline.0099 = { #Charles the Bald dies or fever breaks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		random_list = {
+			90 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_pneumonic
+					}
+				}
+			}
+			10 = { # Carloman's fever breaks
+				hidden_effect = {
+					remove_trait = pneumonic
+				}
+			}
+		}
+	}
+}
+
+# Louis the Stammerer's Illness
+HEE_francia_questline.0198 = { #Louis the Stammerer comes down with his historically deadly illness
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		add_trait = ill
+		add_character_modifier = {
+			modifier = exhausted_modifier
+			days = 60
+		}
+		trigger_event = {
+			id = HEE_francia_questline.0199
+			days = { 3 10 }
+		}
+	}
+}
+
+HEE_francia_questline.0199 = { #Louis the Stammerer dies or fever breaks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		random_list = {
+			90 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_ill
+					}
+				}
+			}
+			10 = { # Carloman's fever breaks
+				hidden_effect = {
+					remove_trait = ill
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
 HEE_francia_questline.0300 = { #Louis III encounters a beautiful girl who filts with him from afar as she retreats to her father's house
 	type = character_event
 	title = HEE_francia_questline.0300.t
@@ -546,7 +650,6 @@ HEE_francia_questline.0402 = { #Carloman II is (perhaps) accidently stabbed by h
 			id = HEE_francia_questline.0403
 			days = { 3 5 }
 		}
-
 	}
 }
 

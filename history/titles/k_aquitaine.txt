@@ -200,11 +200,13 @@ c_bordeaux = {
 		#Asgeir, Viking chieftain(848-863)
 		liege = 0
 		holder = HEE_asgeir
+		government = tribal_government
 	}
 	865.1.1 = {
 		#Sygtrygg, Asgeir's successor
 		liege = 0
 		holder = HEE_sygtrygg
+		government = tribal_government
 	}
 	# 863.1.1 = {
 		# holder = 168133 # Duke Arnaut de Vasconie of Gascogne
@@ -220,6 +222,7 @@ c_bordeaux = {
 	906.1.1 = {
 		holder = 7563 # Duke Garcia II of Gascogne
 		liege = d_gascogne
+		government = feudal_government
 	}
 	920.1.1 = {
 		holder = 7562 # Duke Sanche IV of Gascogne
@@ -427,12 +430,10 @@ c_albret = { # Needs to create the Lords of Albret that ruled 820-1572
 	}
 	858.1.1 = {
 		#Asgeir, Viking chieftain(848-863)
-		liege = 0
 		holder = HEE_asgeir
 	}
 	865.1.1 = {
 		#Sygtrygg, Asgeir's successor
-		liege = 0
 		holder = HEE_sygtrygg
 	}
 	# 864.1.1 = {
@@ -440,6 +441,7 @@ c_albret = { # Needs to create the Lords of Albret that ruled 820-1572
 		# holder = 163060
 	# }
 	893.1.1 = {
+		liege = "d_gascogne"
 		holder = 7563
 	}
 	955.1.1 = {

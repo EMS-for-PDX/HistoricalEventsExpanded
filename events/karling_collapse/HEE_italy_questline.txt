@@ -2005,10 +2005,10 @@ HEE_italy_questline.0104 = { # Emperor Louis ponders traveling to Rome to meet P
 	}
 }
 
-HEE_italy_questline.0104 = { # Emperor Louis meets with the Pope to discuss his pledge to Adlechis and a possible second correnation 
+HEE_italy_questline.0105 = { # Emperor Louis meets with the Pope to discuss his pledge to Adlechis and a possible second correnation 
 	type = character_event
-	title = HEE_italy_questline.0104.t
-	desc = HEE_italy_questline.0104.desc
+	title = HEE_italy_questline.0105.t
+	desc = HEE_italy_questline.0105.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -2058,7 +2058,7 @@ HEE_italy_questline.0104 = { # Emperor Louis meets with the Pope to discuss his 
 	}
 	
 	option = {
-		name = HEE_italy_questline.0104.a
+		name = HEE_italy_questline.0105.a
 		
 		custom_tooltip = louis_accepts_the_pope_aid
 
@@ -2068,7 +2068,7 @@ HEE_italy_questline.0104 = { # Emperor Louis meets with the Pope to discuss his 
 	}
 
 	option = {
-		name = HEE_italy_questline.0104.b
+		name = HEE_italy_questline.0105.b
 		
 		custom_tooltip = louis_refuses_the_pope
 
@@ -2078,10 +2078,10 @@ HEE_italy_questline.0104 = { # Emperor Louis meets with the Pope to discuss his 
 	}
 }
 
-HEE_italy_questline.0104 = { # Louis is absolved from his oath and crowned a second time as emperor
+HEE_italy_questline.0106 = { # Louis is absolved from his oath and crowned a second time as emperor
 	type = character_event
-	title = HEE_italy_questline.0104.t
-	desc = HEE_italy_questline.0104.desc
+	title = HEE_italy_questline.0106.t
+	desc = HEE_italy_questline.0106.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -2101,6 +2101,16 @@ HEE_italy_questline.0104 = { # Louis is absolved from his oath and crowned a sec
 		is_independent_ruler = yes
 		#is_at_war = no
 		is_imprisoned = no
+	}
+
+	option = {
+		name = HEE_italy_questline.0106.a
+		
+		custom_tooltip = louis_refuses_the_pope
+
+		ai_chance = {
+			base = 100
+		}
 	}
 }
 

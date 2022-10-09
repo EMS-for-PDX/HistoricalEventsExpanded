@@ -587,7 +587,9 @@ c_agenais = {
 		# liege = d_gascogne
 	# }
 	866.1.1 = {
+		government = feudal_government
 		holder = 40080 # Wulgrin (Establishment of a March against Vikings in Gascony)
+		liege = d_aquitaine
 	}
 	893.1.1 = {
 		holder = 7563 # Duke Garcia II of Gascogne

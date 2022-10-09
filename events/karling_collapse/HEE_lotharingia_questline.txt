@@ -186,14 +186,23 @@ HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
 	}
 	
 	immediate = {
-		# Need to code like pilgramage/activity so players feel like they are on a trip
+
 	}
 	
 	option = {
 		name = HEE_lotharingia_questline.0004.a
 		
-		custom_tooltip = lothaire_continues_to_seek_an_annulment
+		custom_tooltip = lothaire_begins_his_journey_to_rome
 		
+		hidden_effect = {
+			title:c_roma.title_province = {
+				spawn_activity = {
+					type = activity_lothaire_travel_to_rome
+					owner = root
+				}
+			}
+		}
+
 		trigger_event = {
 			id = HEE_lotharingia_questline.0005
 			days = { 50 70 } # Within two to three months
@@ -629,6 +638,12 @@ HEE_lotharingia_questline.0011 = { #Alt-History: Lothaire recovers and returns h
 	}
 	
 	immediate = {
+		hidden_effect = {
+			character:144998.activity = { save_scope_as = activity }
+			scope:activity = {
+				complete_activity = yes
+			}
+		}
 		divorce_effect = {
 			DIVORCER = root
 			DIVORCEE = character:6877
@@ -638,51 +653,48 @@ HEE_lotharingia_questline.0011 = { #Alt-History: Lothaire recovers and returns h
 	option = {
 		name = HEE_lotharingia_questline.0011.a
 		
-		#custom_tooltip = lothaire_ponders_if_this_is_the_end
-		#diplo challenge here?
-		
-		marry = character:168314
-		
+		custom_tooltip = lothaire_achieves_his_dreams
+
 		hidden_effect = {
+			marry = character:168314
 			character:168314 = {
 				remove_trait = unwed
 			}
-		}
-		
-		if = {
-			limit = {
-				character:90102 = { is_alive = yes }	
+			if = {
+				limit = {
+					character:90102 = { is_alive = yes }	
+				}
+				character:90102 = {
+					remove_trait = bastard
+					add_trait = legitimized_bastard
+				}
 			}
-			character:90102 = {
-				remove_trait = bastard
-				add_trait = legitimized_bastard
+			if = {
+				limit = {
+					character:7920 = { is_alive = yes }	
+				}
+				character:7920 = {
+					remove_trait = bastard
+					add_trait = legitimized_bastard
+				}
 			}
-		}
-		if = {
-			limit = {
-				character:7920 = { is_alive = yes }	
+			if = {
+				limit = {
+					character:163174 = { is_alive = yes }	
+				}
+				character:163174 = {
+					remove_trait = bastard
+					add_trait = legitimized_bastard
+				}
 			}
-			character:7920 = {
-				remove_trait = bastard
-				add_trait = legitimized_bastard
-			}
-		}
-		if = {
-			limit = {
-				character:163174 = { is_alive = yes }	
-			}
-			character:163174 = {
-				remove_trait = bastard
-				add_trait = legitimized_bastard
-			}
-		}
-		if = {
-			limit = {
-				character:168315 = { is_alive = yes }	
-			}
-			character:168315 = {
-				remove_trait = bastard
-				add_trait = legitimized_bastard
+			if = {
+				limit = {
+					character:168315 = { is_alive = yes }	
+				}
+				character:168315 = {
+					remove_trait = bastard
+					add_trait = legitimized_bastard
+				}
 			}
 		}
 		
@@ -788,11 +800,13 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 		character = root
 		animation = personality_cynical
 	}
-	right_portrait = {
-		character = scope:lothaire_successor
-		animation = personality_callous
-	}
-	lower_center_portrait = character:144998
+	# right_portrait = {
+		# character = scope:lothaire_successor
+		# animation = personality_callous
+	# }
+	lower_left_portrait = character:144998
+	lower_center_portrait = scope:king_of_france
+	lower_right_portrait = scope:king_of_germany
 
 	trigger = {
 		character:144998 = { is_alive = no }
@@ -1313,5 +1327,11 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 			base = 1000
 		}
 	}
+
+	option = {
+		name = HEE_lotharingia_questline.0013.b
+		
+		custom_tooltip = treaty_of_meerssen_is_disputed
+		
 	
 }

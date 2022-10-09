@@ -30,7 +30,7 @@ HEE_italy_questline.0100 = { # Victory at Bari trigger
 			add_character_flag = bari_has_been_conquered
 			trigger_event = {
 				id = HEE_italy_questline.0101
-				days = { 3 5 }
+				days = { 7 10 }
 			}
 		}
 	}
@@ -614,7 +614,7 @@ HEE_italy_questline.0153 = { # Adelchis ponders what lords would support his act
 					
 					}
 				10 = { # Letters are intercepted by Emperor Louis
-					scope:sergius_ii_of_naples_stand_in = {
+					scope:louis_the_younger = {
 						trigger_event = {
 							id = HEE_italy_questline.0121
 							days = { 3 5 }
@@ -1940,3 +1940,165 @@ HEE_italy_questline.0160 = { # Adelchis ponders what his future will hold
 		}
 	}
 }
+
+HEE_italy_questline.0104 = { # Emperor Louis ponders traveling to Rome to meet Pope
+	type = character_event
+	title = HEE_italy_questline.0104.t
+	desc = HEE_italy_questline.0104.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	# right_portrait = {
+		# character = scope:adelchis
+		# animation = schadenfreude
+	# }
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+	}
+	
+	option = {
+		name = HEE_italy_questline.0104.a
+		
+		custom_tooltip = louis_travels_to_rome
+
+		hidden_effect = {
+			title:c_roma.title_province = {
+				spawn_activity = {
+					type = activity_louis_travel_to_rome
+					owner = root
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0104.b
+		
+		custom_tooltip = louis_simply_returns_to_northern_italy
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0104 = { # Emperor Louis meets with the Pope to discuss his pledge to Adlechis and a possible second correnation 
+	type = character_event
+	title = HEE_italy_questline.0104.t
+	desc = HEE_italy_questline.0104.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	# right_portrait = {
+		character = scope:pope
+		animation = personality_rational
+	# }
+	#lower_left_portrait = scope:pope
+	#lower_center_portrait = scope:louis_the_younger
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+		if ={
+			limit = {
+				exists = title:k_papal_state
+			}
+			title:k_papal_state.holder = {
+				save_scope_as = pope
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					this = character:144998
+					is_ai = no
+				}	
+			}
+			pan_camera_to_title = title:b_roma
+		}
+
+	}
+	
+	option = {
+		name = HEE_italy_questline.0104.a
+		
+		custom_tooltip = louis_accepts_the_pope_aid
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_italy_questline.0104.b
+		
+		custom_tooltip = louis_refuses_the_pope
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_italy_questline.0104 = { # Louis is absolved from his oath and crowned a second time as emperor
+	type = character_event
+	title = HEE_italy_questline.0104.t
+	desc = HEE_italy_questline.0104.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	# right_portrait = {
+		character = scope:pope
+		animation = personality_zealous
+	# }
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:adelchis
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}

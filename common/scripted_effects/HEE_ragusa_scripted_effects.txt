@@ -67,7 +67,7 @@
 	#Declare the war.
 	scope:saba_of_taranto = {
 		start_war = {
-			casus_belli = county_conquest_cb
+			casus_belli = fp2_border_raid
 			target = scope:ragusa_target_holder
 			target_title = title:c_ragusa
 		}

@@ -9,6 +9,7 @@
 		hee_fairhair_867_effect_setup
 		hee_baltic_867_effect_setup
 		hee_north_sea_867_effect_setup
+		hee_brittany_867_effect_setup
 		
 		# 1066
 		hee_byzantine_1066_effect_setup
@@ -93,6 +94,15 @@ hee_north_sea_867_effect_setup = {
     }
     effect = {
         hee_north_sea_867_effect = yes
+    }
+}
+
+hee_brittany_867_effect_setup = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+        hee_brittany_867_effect = yes
     }
 }
 

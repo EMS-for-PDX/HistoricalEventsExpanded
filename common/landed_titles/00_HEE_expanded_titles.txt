@@ -5,6 +5,19 @@
 	# capital = c_turnovo
 # }
 
+e_carolingian_empire = { # https://en.wikipedia.org/wiki/Carolingian_Empire
+	color = { 7 7 145 }
+
+	capital = c_aachen
+	definite_form = yes
+}
+
+k_alemania = { # https://en.wikipedia.org/wiki/Alamannia#Carolingian_regnum
+	color = { 230 230 230 }
+
+    capital = c_ulm
+}
+
 k_abkhazia = { # https://en.wikipedia.org/wiki/Kingdom_of_Abkhazia
 	color = { 70 70 80 }
 

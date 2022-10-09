@@ -1228,3 +1228,141 @@ HEE_seljuk_empire = {
 # 		}
 # 	}
 # }
+
+
+
+
+
+
+## ON DEATHS ##
+
+on_death = {
+	on_actions = {
+		division_of_frankfurt
+		on_hugo_the_abbot_death
+		on_domagoj_of_croatia_death
+	}
+}
+
+division_of_frankfurt = {
+	trigger = {
+		this = character:90107
+        character:90107 = {
+            NOT = {
+                has_title = title:e_france
+                has_title = title:e_hre
+            }
+        }
+	}
+	events = {
+		HEE_germany_questline.0100
+	}
+}
+
+on_hugo_the_abbot_death = {
+	trigger = {
+		this = character:168246
+	}
+	effect = {
+		# Hugo the Abbot the the Guardian of Robert the Strong's inheritence
+		if = {
+			limit = {
+				this = character:168246
+				character:6448 = { is_alive = yes }
+			}
+			character:168246 = {
+				set_designated_heir = character:6448
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:168246
+				character:6448 = { is_alive = no }
+				character:6442 = { is_alive = yes }
+			}
+			character:168246 = {
+				set_designated_heir = character:6442
+			}	
+		}
+		else_if = {
+			limit = {
+				this = character:168246
+				character:6448 = { is_alive = no }
+				character:6442 = { is_alive = no }
+				exists = title:k_france
+			}
+			character:168246 = {
+				set_designated_heir = title:k_france.holder
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:168246
+				character:6448 = { is_alive = no }
+				character:6442 = { is_alive = no }
+				NOT = { exists = title:k_france }
+			}
+			debug_log = "No eligiable Robertines or King of France on Hugo's Death"
+		}
+		else = {
+			debug_log = "No eligiable Robertines or King of France on Hugo's Death"
+		}
+	}
+}
+
+on_domagoj_of_croatia_death = {
+	trigger = {
+		this = character:167855
+	}
+	effect = {
+		# Domagoj of Croatia - https://en.wikipedia.org/wiki/Domagoj_of_Croatia
+		if = {
+			limit = {
+				this = character:167855
+				character:8601 = { is_alive = yes }
+			}
+			character:8601 = {
+				trigger_event = {
+					id = HEE_croatia.001
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:167855
+				character:8601 = { is_alive = no }
+				character:8602 = { is_alive = yes }
+			}
+			character:8602 = {
+				trigger_event = {
+					id = HEE_croatia.001
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:167855
+				character:8601 = { is_alive = no }
+				character:8602 = { is_alive = no }
+				character:8603 = { is_alive = yes }
+			}
+			character:8603 = {
+				trigger_event = {
+					id = HEE_croatia.001
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:167855
+				character:8601 = { is_alive = no }
+				character:8602 = { is_alive = no }
+				character:8603 = { is_alive = no }
+			}
+			debug_log = "Trpimirovic Dynasty died before returning to Croatia"
+		}
+		else = {
+			debug_log = "Trpimirovic Dynasty died before returning to Croatia"
+		}
+	}
+}

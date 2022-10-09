@@ -68,6 +68,20 @@ louis_imperial_garrison = {
 	monthly_county_control_change_factor = 0.5
 }
 
+hee_867_aghlabid_dalmatia_raids_modifier = {
+	icon = martial_negative
+	build_speed = 0.5
+	tax_mult = -0.5
+	development_growth_factor = -0.25
+}
+
+hee_867_viking_raids_in_france_modifier = {
+	icon = martial_negative
+	build_speed = 0.5
+	tax_mult = -0.5
+	development_growth_factor = -0.25
+}
+
 # testing_water = {
 # 	#stacking = yes
 # 	icon = martial_negative

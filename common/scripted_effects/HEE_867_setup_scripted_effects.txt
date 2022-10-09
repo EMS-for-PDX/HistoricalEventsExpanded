@@ -915,13 +915,94 @@ hee_baltic_867_effect = {
 	# Scopes #
 	character:167855 = { save_scope_as = domagoj_of_croatia } # https://en.wikipedia.org/wiki/Domagoj_of_Croatia
 	character:167856 = { save_scope_as = iljko_of_croatia } # https://en.wikipedia.org/wiki/Iljko_of_Croatia
-	character:167857 = { save_scope_as = iljko_of_croatia } # https://en.wikipedia.org/wiki/Branimir_of_Croatia
+	character:167857 = { save_scope_as = branimir_of_croatia } # https://en.wikipedia.org/wiki/Branimir_of_Croatia
 	
 	character:8601 = { save_scope_as = zdeslav_of_croatia } # https://en.wikipedia.org/wiki/Zdeslav_of_Croatia
 	character:8602 = { save_scope_as = petar_of_croatia } # https://en.wikipedia.org/wiki/Trpimir_I_of_Croatia#Descendants
 	character:8603 = { save_scope_as = muncimir_of_croatia } # https://en.wikipedia.org/wiki/Muncimir_of_Croatia
 
 	character:163116 = { save_scope_as = mutimir_of_serbia } # https://en.wikipedia.org/wiki/Mutimir_of_Serbia
+
+	character:184026 = { save_scope_as = doge_orso_i_participazio } # https://en.wikipedia.org/wiki/Orso_I_Participazio
+
+	character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
+
+
+	title:c_gacka = { save_scope_as = c_gacka }
+	title:c_lika = { save_scope_as = c_lika }
+	title:c_knin = { save_scope_as = c_knin }
+
+	# After his father's death in 864, an uprising was launched that saw Zdeslav, Petar, and Muncimir exilied to Constantinople.
+	scope:michael_iii = {
+		add_courtier = scope:zdeslav_of_croatia
+		add_courtier = scope:petar_of_croatia
+		add_courtier = scope:muncimir_of_croatia
+	}
+
+	# In 865, Domagoj was forced to make an unfavourable peace with Venice, giving hostages as a guarantee for safe passage of Venetian ships in the Adriatic.
+	scope:doge_orso_i_participazio = {
+		add_truce_both_ways = {
+			character = scope:domagoj_of_croatia
+			days = 1095
+			name = unfavourable_peace_venice_croatia_desc
+		}
+	}
+	
+	scope:domagoj_of_croatia = {
+		add_opinion = {
+			target = scope:doge_orso_i_participazio
+			modifier = declared_war
+			opinion = -30
+		}
+	}
+
+	scope:doge_orso_i_participazio = {
+		add_unpressed_claim = scope:c_gacka
+		add_unpressed_claim = scope:c_lika
+		add_unpressed_claim = scope:c_knin
+	}
+
+
+	# Aftermath of Aghlabid raids in Dalmatia
+	province:3573 = { save_scope_as = b_risan }
+	province:3574 = { save_scope_as = b_cattaro }
+	province:3575 = { save_scope_as = b_antivari }
+	province:3576 = { save_scope_as = b_ulcinj }
+	
+	title:c_pomorje = { save_scope_as = c_pomorje }
+	title:c_travunia = { save_scope_as = c_travunia }
+
+	scope:c_pomorje = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_travunia = {
+		change_county_control = massive_county_control_loss
+	}
+	
+	scope:b_risan = {
+		add_province_modifier = {
+			modifier = hee_867_aghlabid_dalmatia_raids_modifier
+			days = 1825
+		}
+	}
+	scope:b_cattaro = {
+		add_province_modifier = {
+			modifier = hee_867_aghlabid_dalmatia_raids_modifier
+			days = 1825
+		}
+	}
+	scope:b_antivari = {
+		add_province_modifier = {
+			modifier = hee_867_aghlabid_dalmatia_raids_modifier
+			days = 1825
+		}
+	}
+	scope:b_ulcinj = {
+		add_province_modifier = {
+			modifier = hee_867_aghlabid_dalmatia_raids_modifier
+			days = 1825
+		}
+	}
 
 }
 
@@ -931,7 +1012,13 @@ hee_north_sea_867_effect = {
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
 	
 	character:168650 = { save_scope_as = guthrum } # https://en.wikipedia.org/wiki/Guthrum
-		
+	
+	character:163112 = { save_scope_as = halfdan } #
+
+	character:163112 = { # Halfdan
+		change_government = tribal_government
+	}
+	
 	character:242 = { # Rollo
 		add_character_flag = {
 			flag = immune_to_disease
@@ -943,6 +1030,352 @@ hee_north_sea_867_effect = {
 		add_character_flag = {
 			flag = immune_to_disease
 			years = 10
+		}
+	}
+
+	# Viking Settlement in 
+	
+	# Aftermath of Viking raids in Francia
+	province:2181 = { save_scope_as = b_mantes }
+	province:2190 = { save_scope_as = b_beaumont }
+
+	province:2333 = { save_scope_as = b_paris }
+	province:2356 = { save_scope_as = b_saint_dennis }
+	province:2357 = { save_scope_as = b_montreuil }
+
+	province:2354 = { save_scope_as = b_melun }
+
+	title:c_beaumont = { save_scope_as = c_beaumont }
+	title:c_ile_de_france = { save_scope_as = c_ile_de_france }
+	title:c_brie_francaise = { save_scope_as = c_brie_francaise }
+
+	scope:c_beaumont = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_ile_de_france = {
+		change_development_level = -5
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_brie_francaise = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	
+	scope:b_mantes = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_beaumont = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_paris = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_saint_dennis = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_saint_dennis = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_montreuil = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_melun = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	
+	province:2261 = { save_scope_as = b_saumur }
+	province:2267 = { save_scope_as = b_angers }
+
+	province:2274 = { save_scope_as = b_tours }
+	province:2275 = { save_scope_as = b_loches }
+	province:2319 = { save_scope_as = b_blois }
+
+	province:2320 = { save_scope_as = b_beaugency }
+	province:2338 = { save_scope_as = b_orleans }
+
+	province:2264 = { save_scope_as = b_sable }
+	province:2270 = { save_scope_as = b_le_mans }
+
+	province:2252 = { save_scope_as = b_poitiers }
+	province:2249 = { save_scope_as = b_lusignan }
+	province:2250 = { save_scope_as = b_melle }
+	province:2257 = { save_scope_as = b_thouars }
+
+	province:2284 = { save_scope_as = b_bellac }
+
+	province:2147 = { save_scope_as = b_la_rochelle }
+	province:2244 = { save_scope_as = b_angouleme }
+	province:2245 = { save_scope_as = b_saint_junien }
+	province:2262 = { save_scope_as = b_cognac }
+
+	title:c_anjou = { save_scope_as = c_anjou }
+	title:c_saumur = { save_scope_as = c_saumur }
+	title:c_maine = { save_scope_as = c_maine }
+	title:c_sable = { save_scope_as = c_sable }
+
+	title:c_tourraine = { save_scope_as = c_tourraine }
+	title:c_blois = { save_scope_as = c_blois }
+
+	title:c_orleans = { save_scope_as = c_orleans }
+
+	title:c_poitiers = { save_scope_as = c_poitiers }
+	title:c_lusignan = { save_scope_as = c_lusignan }
+	title:c_thouars = { save_scope_as = c_thouars }
+
+	title:c_bellac = { save_scope_as = c_bellac }
+
+	title:c_aunis = { save_scope_as = c_aunis }
+	title:c_angouleme = { save_scope_as = c_angouleme }
+
+	scope:c_anjou = {
+		change_development_level = -2
+		change_county_control = peasant_war_victory_county_control_loss
+	}
+	scope:c_saumur = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_maine = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_sable = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+
+	scope:c_tourraine = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_blois = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+
+	scope:c_orleans = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+
+	scope:c_poitiers = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_lusignan = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_thouars = {
+		change_development_level = -2
+		change_county_control = massive_county_control_loss
+	}
+
+	scope:c_bellac = {
+		change_development_level = -1
+		change_county_control = medium_county_control_loss
+	}
+
+	scope:c_aunis = {
+		change_development_level = -1
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_angouleme = {
+		change_development_level = -2
+		change_county_control = medium_county_control_loss
+	}
+	
+	scope:b_saumur = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_angers = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_tours = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_loches = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_blois = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_beaugency = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_orleans = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_sable = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_le_mans = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_poitiers = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_bellac = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_lusignan = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_melle = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_thouars = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_la_rochelle = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_angouleme = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_saint_junien = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_cognac = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+}
+
+hee_brittany_867_effect = {
+	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
+	character:HEE_guenebret_of_brittany = { save_scope_as = HEE_guenebret_of_brittany } #
+	character:159651 = { save_scope_as = riwallon } # http://fmg.ac/Projects/MedLands/BRITTANY.htm#_Toc480020737
+	character:159698 = { save_scope_as = alan_not_so_great } # WHO IS THIS???
+
+	character:50010 = { save_scope_as = ridoredh_of_vannes } #
+	character:50009 = { save_scope_as = pascweten } # https://en.wikipedia.org/wiki/Pascweten
+	character:50008 = { save_scope_as = alan_i } # https://en.wikipedia.org/wiki/Alan_I,_King_of_Brittany
+
+	character:159696 = { save_scope_as = gurvand } # https://en.wikipedia.org/wiki/Gurvand
+	character:1600 = { save_scope_as = judicael } # https://en.wikipedia.org/wiki/Judicael,_Duke_of_Brittany
+	character:160076 = { save_scope_as = berengar_ii_of_neustria } # https://en.wikipedia.org/wiki/Berengar_II_of_Neustria
+
+	character:6878 = { save_scope_as = hastein } # https://en.wikipedia.org/wiki/Hastein
+
+	character:90104 = { save_scope_as = charles_the_bald } # https://en.wikipedia.org/wiki/Charles_the_Bald
+	character:90123 = { save_scope_as = louis_the_stammerer } # https://en.wikipedia.org/wiki/Louis_the_Stammerer
+	character:91385 = { save_scope_as = ansgarde_of_burgundy } # https://en.wikipedia.org/wiki/Ansgarde_of_Burgundy (Remarry her to Louis - their annulment did not happen until 874-875)
+	character:90154 = { save_scope_as = louis_iii } # https://en.wikipedia.org/wiki/Louis_III_of_France
+	character:90155 = { save_scope_as = carloman_ii } # https://en.wikipedia.org/wiki/Carloman_II
+	character:168091 = { save_scope_as = adelaide_of_paris } # https://en.wikipedia.org/wiki/Adelaide_of_Paris
+	character:42021 = { save_scope_as = carloman } # https://en.wikipedia.org/wiki/Carloman,_son_of_Charles_the_Bald
+	character:90110 = { save_scope_as = judith } # https://en.wikipedia.org/wiki/Judith_of_Flanders
+	character:163175 = { save_scope_as = ermentrud } # Ermentrud (854–877), a nun, Abbess of Hasnon
+	character:163176 = { save_scope_as = hildegarde } # Hildegarde (born 856, died young)
+	character:163177 = { save_scope_as = gisela_ii } # Gisela (857–874)
+	character:163178 = { save_scope_as = rotrude } # Rotrude (852–912), a nun, Abbess of Saint-Radegunde
+
+	character:159651 = { # Prince Riwallon
+		set_mother = scope:HEE_guenebret_of_brittany
+	}
+
+	# Hastein set to Tribal government
+	character:6878 = {
+		change_government = tribal_government
+	}
+
+	# Alliance between Hastein and Salomon
+	character:163105 = {
+		create_alliance = scope:hastein
+		scope:hastein = {
+			add_opinion = {
+				target = character:163105
+					modifier = perk_negotiated_alliance_opinion
+			}
+		}
+		add_truce_both_ways = {
+			character = scope:hastein
+			days = 1825
+			name = breton_viking_alliance_desc
+		}
+	}
+
+	# Charles the Bald's opinion of Salomon is lessen due to war
+	scope:charles_the_bald = {
+		add_opinion = {
+			target = scope:salomon
+			modifier = declared_war
 		}
 	}
 }

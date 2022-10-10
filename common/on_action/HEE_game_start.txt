@@ -135,6 +135,7 @@ yearly_global_pulse = {
 		hee_charles_the_bald_illness
 		hee_louis_the_stammerer_illness
 		hee_carloman_of_bavaria_stroke
+		hee_ludwig_the_younger_illness
 		hee_louis_iii_unfortunate_accident
 		hee_carloman_ii_hunting_accident
 		hee_rise_of_simeon_startup
@@ -318,6 +319,51 @@ hee_carloman_of_bavaria_stroke = {
 						}
 						trigger_event = {
 							id = HEE_germany_questline.0200
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+hee_ludwig_the_younger_illness = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = ludwig_the_younger_event_fired }
+			}
+			debug_log = "Checking for chance of firing Ludwig the Younger's historical illness event"
+
+			random = {
+				chance = zero_base_chance
+				modifier = {
+					add = 25
+					current_date > 879.1.1
+				}
+				modifier = {
+					add = 50
+					current_date > 881.1.1
+				}
+				modifier = {
+					add = 24
+					current_date > 883.1.1
+				}
+				set_global_variable = {
+					name = ludwig_the_younger_event_fired
+					value = yes
+				}
+				debug_log = "Attempting to force Ludwig the Younger's historical illness event"
+				### 867 - Carolingian Collapse ###
+				#Louis II encounters a beautiful peasant
+				character:42019 = {
+					if = {
+						limit = {
+							is_alive = yes
+						}
+						trigger_event = {
+							id = HEE_francia_questline.0198
 							days = { 1 365 }
 						}
 					}

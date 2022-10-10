@@ -899,3 +899,52 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
  		}
 	}
 }
+
+# Ludwig the Younger's Illness
+HEE_germany_questline.0398 = { #Ludwig the Younger comes down with his historically deadly illness
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		add_trait = ill
+		
+		trigger_event = {
+			id = HEE_germany_questline.0399
+			days = { 3 10 }
+		}
+	}
+}
+
+HEE_germany_questline.0399 = { #Ludwig the Younger dies or fever breaks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		random_list = {
+			90 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_ill
+					}
+				}
+			}
+			10 = { # Carloman's fever breaks
+				hidden_effect = {
+					remove_trait = ill
+				}
+			}
+		}
+	}
+}

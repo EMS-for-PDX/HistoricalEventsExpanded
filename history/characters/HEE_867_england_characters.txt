@@ -2,7 +2,7 @@
 
 tlk_asser = { # 9th-century Welsh scholar and bishop who chronicled much of Alfred's life https://en.wikipedia.org/wiki/Asser
 	name = "Asser"
-	dynasty = 0
+	# dynasty = 0
 	#female = yes
 	religion = catholic
 	culture = welsh
@@ -58,7 +58,7 @@ tlk_asser = { # 9th-century Welsh scholar and bishop who chronicled much of Alfr
 
 tlk_beocca = { #
 	name = "Beocca"
-	dynasty = 0
+	# dynasty = 0
 	#female = yes
 	religion = catholic
 	culture = anglo_saxon
@@ -116,7 +116,7 @@ tlk_beocca = { #
 
 tlk_eadred = { # https://en.wikipedia.org/wiki/Eadred_Lulisc
 	name = "Eadred"
-	dynasty = 0
+	# dynasty = 0
 	#female = yes
 	religion = catholic
 	culture = anglo_saxon
@@ -206,7 +206,7 @@ tlk_ragnar_the_fearless = {
 
 tlk_sigrid = {
 	name = "Sigrid"
-	dynasty = 0
+	# dynasty = 0
 	female = yes
 	religion = norse_pagan
 	culture = norse
@@ -328,7 +328,7 @@ tlk_thyra = {
 
 tlk_aethelwulf = {
 	name = "E_thelwulf"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	sexuality = heterosexual
@@ -344,7 +344,7 @@ tlk_aethelwulf = {
 
 tlk_leofric = {
 	name = "Leofric"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	father = tlk_aethelwulf
@@ -397,7 +397,7 @@ tlk_leofric = {
 
 tlk_eadgyth = {
 	name = "Eadgyth"
-	dynasty = 0
+	# dynasty = 0
 	female = yes
 	religion = catholic
 	culture = anglo_saxon
@@ -580,7 +580,7 @@ tlk_odda_the_younger = {
 
 tlk_mildrith = {
 	name = "Mildrith"
-	dynasty = 0
+	# dynasty = 0
 	female = yes
 	religion = catholic
 	culture = anglo_saxon
@@ -625,7 +625,7 @@ tlk_mildrith = {
 
 tlk_steapa = {
 	name = "Steapa"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	
@@ -931,7 +931,7 @@ tlk_guthred = { # https://en.wikipedia.org/wiki/Guthred
 
 tlk_cnut = { # https://en.wikipedia.org/wiki/Cnut_of_Northumbria
 	name = "Cnut"
-	dynasty = 0
+	# dynasty = 0
 	religion = norse_pagan
 	culture = norse
 	
@@ -991,7 +991,7 @@ tlk_cnut = { # https://en.wikipedia.org/wiki/Cnut_of_Northumbria
 
 hee_aethelfrith = { # https://en.wikipedia.org/wiki/%C3%86thelfrith_of_Mercia
 	name = "E_thelfrith"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	# father = 
@@ -1028,7 +1028,7 @@ hee_aethelfrith = { # https://en.wikipedia.org/wiki/%C3%86thelfrith_of_Mercia
 
 hee_osric = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
 	name = "Osric"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	# father = 
@@ -1065,7 +1065,7 @@ hee_osric = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobilit
 
 hee_aethelwulf = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
 	name = "E_thelwulf"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	# father = 
@@ -1102,7 +1102,7 @@ hee_aethelwulf = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20no
 
 hee_aethelmod = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
 	name = "E_thelmod"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	# father = 
@@ -1133,7 +1133,7 @@ hee_aethelmod = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nob
 
 hee_ealdred = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobility.htm#_Toc284396923
 	name = "Ealdred"
-	dynasty = 0
+	# dynasty = 0
 	religion = catholic
 	culture = anglo_saxon
 	# father = 

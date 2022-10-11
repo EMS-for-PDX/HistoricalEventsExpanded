@@ -91,6 +91,20 @@ d_sawad = { # https://en.wikipedia.org/wiki/Sawad
 	capital = c_baghdad
 }
 
+d_paulician_principality = { # https://en.wikipedia.org/wiki/Paulicianism#Formation_of_Paulician_state
+	color = { 185 55 200 }
+
+	landless = yes
+	capital = c_satala
+	
+	definite_form = yes
+	ruler_uses_title_name = no
+	destroy_on_succession = yes
+	can_be_named_after_dynasty = no
+	no_automatic_claims = yes
+	de_jure_drift_disabled = yes
+}
+
 # Ragusa
 d_aghlabid_raiders = {
 	color = { 167 172 63 }

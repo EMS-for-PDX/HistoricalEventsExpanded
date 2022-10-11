@@ -424,6 +424,10 @@ HEE_fairhair.6 = { #Back-down?
 			remove_nickname = yes
 			remove_character_modifier = harald_tanglehairs_vow_modifier
 		}
+
+		scope:gyda = {
+			remove_trait = unwed
+		}
 		
 		ai_chance = {
 			base = 0
@@ -484,6 +488,10 @@ HEE_fairhair.7 = { #Gyda
 		}
 		
 		marry = scope:gyda
+
+		scope:gyda = {
+			remove_trait = unwed
+		}
 		
 		ai_chance = {
 			base = 20
@@ -495,6 +503,10 @@ HEE_fairhair.7 = { #Gyda
 		
 		make_concubine = scope:gyda
 		
+		scope:gyda = {
+			remove_trait = unwed
+		}
+		
 		ai_chance = {
 			base = 70
 		}
@@ -504,6 +516,10 @@ HEE_fairhair.7 = { #Gyda
 		name = HEE_fairhair.7.c
 	
 		add_piety = 250
+
+		scope:gyda = {
+			remove_trait = unwed
+		}
 		
 		ai_chance = {
 			base = 10

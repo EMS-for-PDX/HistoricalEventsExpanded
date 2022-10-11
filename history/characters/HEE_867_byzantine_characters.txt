@@ -204,3 +204,192 @@ HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematic
 		death = yes
 	}
 }
+
+HEE_karbeas_father = { # https://en.wikipedia.org/wiki/Karbeas
+	name = "Chrysocheir"
+	#dynasty = 0
+	religion = "paulician"
+	culture = "greek"
+	# father =
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	# diplomacy = 7
+	# martial = 5
+	# stewardship = 5
+	# intrigue = 5
+	# learning = 5
+	# prowess = 5
+	
+	#Education
+	trait = education_learning_1
+	
+	#Personality Traits
+	trait = honest
+	trait = zealous
+	trait = humble
+	
+	#Other Traits
+	
+	disallow_random_traits = yes
+	780.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = {
+			death_reason = death_impaled_after_refusing_conversion
+		}
+	}
+}
+
+HEE_karbeas = { # https://en.wikipedia.org/wiki/Karbeas
+	name = "Karbeas"
+	#dynasty = 0
+	religion = "paulician"
+	culture = "greek"
+	father = HEE_karbeas_father
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = arrogant
+	trait = cynical
+	trait = vengeful
+	
+	#Other Traits
+	trait = heresiarch
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+	}
+	863.9.3 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+HEE_chrysocheir_father = { # https://en.wikipedia.org/wiki/Chrysocheir
+	name = "Michael"
+	#dynasty = 0
+	religion = "paulician"
+	culture = "greek"
+	father = HEE_karbeas_father
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	# diplomacy = 6
+	# martial = 6
+	# stewardship = 6
+	# intrigue = 6
+	# learning = 6
+	# prowess = 6
+	
+	#Education
+	# trait = education_diplomacy_2
+	
+	#Personality Traits
+	# trait = zealous
+	# trait = brave
+	# trait = stubborn
+	
+	#Other Traits
+	# trait = holy_warrior
+	# trait = reaver
+	# trait = heresiarch
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	812.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		death = yes
+	}
+}
+
+HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
+	name = "Chrysocheir"
+	#dynasty = 0
+	religion = "paulician"
+	culture = "greek"
+	father = HEE_chrysocheir_father
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = zealous
+	trait = brave
+	trait = stubborn
+	
+	#Other Traits
+	trait = holy_warrior
+	trait = reaver
+	trait = heresiarch
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	835.1.1 = {
+		birth = yes
+	}
+	864.1.1 = { # Inherits Paulician Principality and its alliance and army
+		effect = {
+			create_alliance = character:159725
+			character:159725 = {
+				add_opinion = {
+					target = character:HEE_chrysocheir
+					modifier = perk_negotiated_alliance_opinion
+				}
+			}
+			spawn_army = {
+				name = event_troop_default_name
+				levies = 1500
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = pikemen_unit
+					stacks = 5
+				}
+				location = province:5705
+				origin = province:5705
+				inheritable = no
+			}
+		}
+	}
+	872.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

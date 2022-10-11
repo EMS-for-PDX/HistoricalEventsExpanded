@@ -307,6 +307,8 @@ hee_byzantine_bulgaria_867_effect = {
 	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
 	character:712 = { save_scope_as = simeon_i } # https://en.wikipedia.org/wiki/Simeon_I_of_Bulgaria
 
+	character:HEE_chrysocheir = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
+
 	character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
 	
 	faith:orthodox = { save_scope_as = orthodox }
@@ -948,7 +950,7 @@ hee_brittany_867_effect = {
 	character:50008 = { save_scope_as = alan_i } # https://en.wikipedia.org/wiki/Alan_I,_King_of_Brittany
 
 	character:159696 = { save_scope_as = gurvand } # https://en.wikipedia.org/wiki/Gurvand
-	character:1600 = { save_scope_as = judicael } # https://en.wikipedia.org/wiki/Judicael,_Duke_of_Brittany
+	character:91246 = { save_scope_as = judicael } # https://en.wikipedia.org/wiki/Judicael,_Duke_of_Brittany
 	character:160076 = { save_scope_as = berengar_ii_of_neustria } # https://en.wikipedia.org/wiki/Berengar_II_of_Neustria
 
 	character:6878 = { save_scope_as = hastein } # https://en.wikipedia.org/wiki/Hastein

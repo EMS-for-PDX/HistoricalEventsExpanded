@@ -2,3 +2,8 @@
 	public_knowledge = yes
 	icon = "death_disease.dds"
 }
+
+death_impaled_after_refusing_conversion = {
+	public_knowledge = yes
+	icon = "death_murder.dds"
+}

@@ -161,3 +161,43 @@ HEE_sygtrygg = {
 	880.1.1 = {
 		death = yes
 }
+
+HEE_efanda = {
+	name = "Efanda"
+	female = yes
+	#dynasty = 
+	religion = "norse_pagan"
+	culture = "norse"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 6
+	learning = 5
+	prowess = 7
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = honest
+	trait = brave
+	trait = stubborn
+
+	#Other Traits
+	trait = hunter_2
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	832.1.1 = {
+		birth = yes
+	}
+	877.1.1 = {
+		death = yes
+	}
+}

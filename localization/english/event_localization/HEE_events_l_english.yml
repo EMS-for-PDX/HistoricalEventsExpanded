@@ -101,7 +101,38 @@
  HEE_turkic_conquerors.205.desc: "NEED LOCALIZATION"
  HEE_turkic_conquerors.205.a: "NEED LOCALIZATION"
  HEE_turkic_conquerors.205.b: "NEED LOCALIZATION"
+ 
+ 
+ 
+ # HEE Constantine and Methodius Event Chain
 
+ HEE_constantine_and_methodius.0001.t:0 "An invitation from Rome"
+ HEE_constantine_and_methodius.0001.desc:0 "The Byzantine missionaries [cyril.GetTitledFirstName] and [methodius.GetTitledFirstName] arrived in our lands in 863 upon my request to evangelize my subjects.\n\nThey have done well so far; but as of recent, they have come into conflict with the Archdiocese of Salzburg, primarily with [aldawin_of_salzburg.GetTitledFirstName], who insists that our lands and those of Pannonia fall into the Latin sphere of influence. \n\nAs a consequence, the brothers have now been invited by [pope_nicholas.GetTitledFirstName] to solve this dispute."
+ HEE_constantine_and_methodius.0001.a:0 "Wish them a save journey"
+ HEE_constantine_and_methodius.0001.b:0 "I insist they stay"
+ 
+ tooltip_id_rather_they_stay:0 "[cyril.GetTitledFirstName] and [methodius.GetTitledFirstName] will stay in Moravia"
+ 
+ HEE_constantine_and_methodius.0002.t:0 "Constantine and Methodius in Pannonia"
+ HEE_constantine_and_methodius.0002.desc:0 "After departing from Moravia, the brothers [cyril.GetTitledFirstName] and [methodius.GetTitledFirstName] have arrived at my court to resupply for their travel to Rome. They have been summoned by [pope_nicholas.GetTitledFirstName] to solve the ongoing dispute over the religious jurisdiction of the Slavs in and around Pannonia.  \n\nWhile here, we could request their help to evangelize our own subjects before they move on. \n\nAlternatively, we can send them ahead with the necessary supplies right away."
+ HEE_constantine_and_methodius.0002.a:0 "Request their help"
+ HEE_constantine_and_methodius.0002.b:0 "Send them ahead"
+ 
+ tooltip_request_their_help:0 "[cyril.GetTitledFirstName] and [methodius.GetTitledFirstName] will convert your pagan counties"
+ tooltip_c_and_m_sent_ahead:0 "[cyril.GetTitledFirstName] and [methodius.GetTitledFirstName] will continue their journey to Rome"
+ 
+ #.0003 is only visible to the Pope which is not playable, so unsure if it *actually* needs a LOC
+ HEE_constantine_and_methodius.0003.t:0 "NEED LOCALIZATION"
+ HEE_constantine_and_methodius.0003.desc:0 "NEED LOCALIZATION"
+ HEE_constantine_and_methodius.0003.a:0 "NEED LOCALIZATION"
+ HEE_constantine_and_methodius.0003.b:0 "NEED LOCALIZATION"
+ 
+ HEE_constantine_and_methodius.0004.t:0 "Evangelization of the Pannonian Slavs"
+ HEE_constantine_and_methodius.0004.desc:0 "Thanks to the help of the missionary efforts of the brothers [cyril.GetTitledFirstName] and [methodius.GetTitledFirstName], the last of our subjects have finally embraced the Lord."
+ HEE_constantine_and_methodius.0004.a:0 "Wish them a save journey"
+ HEE_constantine_and_methodius.0004.b:0 "Maybe those eastern rites have a point..."
+
+ tooltip_catholic_to_orthodox_pannonia:0 "The newly converted counties will turn to Orthodoxy instead of Catholicism"
 
 
 

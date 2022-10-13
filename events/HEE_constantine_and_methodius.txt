@@ -1,0 +1,311 @@
+﻿namespace = HEE_constantine_and_methodius
+
+
+HEE_constantine_and_methodius.0001 = { #Constantine and Methodius depart for Rome
+	type = character_event
+	title = HEE_constantine_and_methodius.0001.t
+	desc = HEE_constantine_and_methodius.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = character:HEE_missionary_02
+		animation = personality_honorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+	}
+	
+	immediate = {
+		character:HEE_missionary_01 = { save_scope_as = methodius } # https://en.wikipedia.org/wiki/Cyril_and_Methodius
+		character:HEE_missionary_02 = { save_scope_as = cyril } # https://en.wikipedia.org/wiki/Cyril_and_Methodius
+		character:163056 = { save_scope_as = aldawin_of_salzburg } # https://de.wikipedia.org/wiki/Adalwin (Apparently there's no English wiki page of him)
+		character:7853 = { save_scope_as = pope_nicholas } # https://en.wikipedia.org/wiki/Pope_Nicholas_I
+		character:187002 = { save_scope_as = rostislav_of_moravia }
+		character:187012 = { save_scope_as = kocel_of_pannonia }
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0001.a
+		
+		scope:rostislav_of_moravia = {
+			remove_courtier_or_guest = {
+				character = scope:cyril
+			}
+			remove_courtier_or_guest = {
+				character = scope:methodius
+			}
+		}
+		
+		hidden_effect = {
+			scope:kocel_of_pannonia = {
+				add_courtier = scope:cyril
+				add_courtier = scope:methodius
+			}
+		}
+		
+		title:d_somogy.holder = {
+			trigger_event = {
+				id = HEE_constantine_and_methodius.0002
+				days = { 7 14 }
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0001.b
+		
+		custom_tooltip = tooltip_id_rather_they_stay
+
+		# stress_impact = {
+
+		# }
+		
+		add_internal_flag = dangerous
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_constantine_and_methodius.0002 = { #Constantine and Methodius arrive in Pannonia
+	type = character_event
+	title = HEE_constantine_and_methodius.0002.t
+	desc = HEE_constantine_and_methodius.0002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = character:HEE_missionary_02
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = character:HEE_missionary_01
+		animation = personality_honorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+	}
+	
+	immediate = {
+		add_courtier = scope:cyril
+		add_courtier = scope:methodius
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0002.a
+		
+		custom_tooltip = tooltip_request_their_help
+		
+		trigger_event = {
+			id = HEE_constantine_and_methodius.0004
+			days = { 30 60 }
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0002.b
+		
+		hidden_effect = {
+			scope:kocel_of_pannonia = {
+				remove_courtier_or_guest = {
+					character = scope:cyril
+				}
+				remove_courtier_or_guest = {
+					character = scope:methodius
+				}
+			}
+		}
+		
+		custom_tooltip = tooltip_c_and_m_sent_ahead
+		
+		title:k_papal_state.holder = {
+			trigger_event = {
+				id = HEE_constantine_and_methodius.0003
+				days = { 60 90 }
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+HEE_constantine_and_methodius.0003 = { #Constantine and Methodius arrive in Rome
+	type = character_event
+	title = HEE_constantine_and_methodius.0003.t
+	desc = HEE_constantine_and_methodius.0003.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = character:HEE_missionary_01
+		animation = personality_honorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+	}
+	
+	immediate = {
+		add_courtier = scope:cyril
+		add_courtier = scope:methodius
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0003.a
+		
+		custom_tooltip = c_and_m_end_of_chain
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+}
+
+HEE_constantine_and_methodius.0004 = { #Constantine and Methodius convert Pannonians
+	type = character_event
+	title = HEE_constantine_and_methodius.0004.t
+	desc = HEE_constantine_and_methodius.0004.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = character:HEE_missionary_02
+		animation = personality_honorable
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+	}
+	
+	immediate = {
+		title:c_baranya = {
+			set_county_faith = faith:catholic
+		}
+		title:c_tolna = {
+			set_county_faith = faith:catholic
+		}
+	}
+
+	option = {
+		name = HEE_constantine_and_methodius.0004.a
+		
+		hidden_effect = {
+			scope:kocel_of_pannonia = {
+				remove_courtier_or_guest = {
+					character = scope:cyril
+				}
+				remove_courtier_or_guest = {
+					character = scope:methodius
+				}
+			}
+		}
+		
+		custom_tooltip = tooltip_c_and_m_sent_ahead
+		
+		title:k_papal_state.holder = {
+			trigger_event = {
+				id = HEE_constantine_and_methodius.0003
+				days = { 60 90 }
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_constantine_and_methodius.0004.b
+		
+		custom_tooltip = tooltip_catholic_to_orthodox_pannonia
+		
+		hidden_effect = {
+			title:c_baranya = {
+				set_county_faith = faith:orthodox
+			}
+			title:c_tolna = {
+				set_county_faith = faith:orthodox
+			}
+		}
+		
+		set_character_faith_with_conversion = faith:orthodox
+		
+		hidden_effect = {
+			scope:kocel_of_pannonia = {
+				remove_courtier_or_guest = {
+					character = scope:cyril
+				}
+				remove_courtier_or_guest = {
+					character = scope:methodius
+				}
+			}
+		}
+		
+		custom_tooltip = tooltip_c_and_m_sent_ahead
+		
+		title:k_papal_state.holder = {
+			trigger_event = {
+				id = HEE_constantine_and_methodius.0003
+				days = { 60 90 }
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		add_internal_flag = dangerous
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}

@@ -10903,6 +10903,17 @@
 	religion = "catholic"
 	culture = franconian
 	father = 31701
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
+	trait = honest
+	trait = brave
+	trait = ambitious
+	trait = humble
+
+	#Other Traits
+	trait = poet
 	809.1.1 = {
 		birth = "809.1.1"
 	}

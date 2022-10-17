@@ -658,6 +658,16 @@ hee_north_sea_867_effect = {
 	# Viking Settlement in 
 	
 	# Aftermath of Viking raids in Francia
+	province:2176 = { save_scope_as = b_fecamp }
+	province:2178 = { save_scope_as = b_eu }
+
+	province:2175 = { save_scope_as = b_harcourt }
+	province:2179 = { save_scope_as = b_rouen }
+	province:2180 = { save_scope_as = b_gisors }
+
+	province:2329 = { save_scope_as = b_evreux }
+	province:2330 = { save_scope_as = b_vernon }
+
 	province:2181 = { save_scope_as = b_mantes }
 	province:2190 = { save_scope_as = b_beaumont }
 
@@ -667,23 +677,82 @@ hee_north_sea_867_effect = {
 
 	province:2354 = { save_scope_as = b_melun }
 
+	title:c_eu = { save_scope_as = c_eu }
+	title:c_rouen = { save_scope_as = c_rouen }
+	title:c_evreux = { save_scope_as = c_evreux }
+
 	title:c_beaumont = { save_scope_as = c_beaumont }
 	title:c_ile_de_france = { save_scope_as = c_ile_de_france }
 	title:c_brie_francaise = { save_scope_as = c_brie_francaise }
 
-	scope:c_beaumont = {
+	scope:c_eu = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
+	}
+	scope:c_rouen = {
+		change_development_level = -3
+		change_county_control = peasant_war_victory_county_control_loss
+	}
+	scope:c_evreux = {
+		change_development_level = -2
+		change_county_control = peasant_war_victory_county_control_loss
+	}
+
+	scope:c_beaumont = {
+		change_development_level = -3
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 	scope:c_ile_de_france = {
 		change_development_level = -5
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 	scope:c_brie_francaise = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
-	
+
+	scope:b_fecamp = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_eu = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_harcourt = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_rouen = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_gisors = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_evreux = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
+	scope:b_vernon = {
+		add_province_modifier = {
+			modifier = hee_867_viking_raids_in_france_modifier
+			days = 1825
+		}
+	}
 	scope:b_mantes = {
 		add_province_modifier = {
 			modifier = hee_867_viking_raids_in_france_modifier
@@ -777,29 +846,29 @@ hee_north_sea_867_effect = {
 	}
 	scope:c_saumur = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 	scope:c_maine = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 	scope:c_sable = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 
 	scope:c_tourraine = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 	scope:c_blois = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 
 	scope:c_orleans = {
 		change_development_level = -2
-		change_county_control = massive_county_control_loss
+		change_county_control = peasant_war_victory_county_control_loss
 	}
 
 	scope:c_poitiers = {

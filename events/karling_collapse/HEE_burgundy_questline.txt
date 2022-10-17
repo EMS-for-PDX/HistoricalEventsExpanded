@@ -1,0 +1,69 @@
+﻿namespace = HEE_burgundy_questline
+
+# Lothaire's Chain
+HEE_burgundy_questline.0001 = { #Lothaire's thoughts on his situation
+	type = character_event
+	title = HEE_burgundy_questline.0001.t
+	desc = HEE_burgundy_questline.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	# right_portrait = {
+		# character = character:7853
+		# animation = personality_honorable
+	# }
+	# lower_left_portrait = scope:waldrada
+	#lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:teutberga
+
+	trigger = {
+		character:7981 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_burgundy_questline.0001
+				days = 30 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_burgundy_questline.0001.a
+		
+		custom_tooltip = girart_retires_to_avignon
+		
+		set_designated_heir = character:7981
+		
+		depose = yes
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_burgundy_questline.0001.b
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

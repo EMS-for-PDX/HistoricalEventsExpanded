@@ -764,7 +764,7 @@
 		}	
 	}
 	866.1.1 = {
-		add_spouse = 6863
+		# add_spouse = 6863 # Fictional wife with no basis in history
 
 		effect = {
 			give_nickname = nick_troublemaker
@@ -813,24 +813,33 @@
 
 40606 = {
 	name = "Helgi"		#Oleg the Seer
-	dynasty = 705
-	religion = slavic_pagan
+	# dynasty = 705
+	religion = norse_pagan
 	culture = norse
-	father = 40605 #Rurik (wasn't actually his son but his "kinsman" who ruled between Rurik and Rurik's son Yngvar)
+	# father = 40605 #Rurik (wasn't actually his son but his "kinsman" who ruled between Rurik and Rurik's son Yngvar)
+	mother = HEE_efanda_mother # Scholars think Oleg was the brother of Rurik's wife
 	diplomacy = 9
 	martial = 9
+	stewardship = 8
+	intrigue = 8
 	learning = 9
-	trait = intellect_good_1
-	trait = arrogant
-	trait = education_martial_3
+	# trait = intellect_good_1
+	trait = zealous
+	trait = education_martial_4
 	trait = greedy
+	trait = ambitious
 	trait = stubborn
-	trait = legitimized_bastard #fiction
-	850.1.1 = {
+	# trait = legitimized_bastard #fiction
+	trait = loyal # Did not kill/usurp Igor
+	trait = shrewd
+	trait = reaver
+	trait = organizer
+	842.1.1 = {
 		birth = yes
 	}
 	866.1.1 = {
 		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:40605 }
 			give_nickname = nick_the_seer
 			random = {
 				chance = 33

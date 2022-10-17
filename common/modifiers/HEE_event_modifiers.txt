@@ -82,6 +82,13 @@ hee_867_viking_raids_in_france_modifier = {
 	development_growth_factor = -0.25
 }
 
+hee_867_viking_settlements_in_france_modifier = {
+	icon = family_positive
+	tax_mult = -0.25
+	development_growth_factor = 0.25
+	monthly_county_control_change_factor = -0.5
+}
+
 # testing_water = {
 # 	#stacking = yes
 # 	icon = martial_negative

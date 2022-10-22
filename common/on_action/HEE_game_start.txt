@@ -402,7 +402,7 @@ hee_ludwig_the_younger_illness = {
 							is_alive = yes
 						}
 						trigger_event = {
-							id = HEE_francia_questline.0198
+							id = HEE_germany_questline.0398
 							days = { 1 365 }
 						}
 					}

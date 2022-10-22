@@ -1,0 +1,1552 @@
+﻿namespace = HEE_siege_of_salerno # https://en.wikipedia.org/wiki/Siege_of_Salerno_(871%E2%80%93872)
+
+
+HEE_siege_of_salerno.0001 = { #Prince Guaifer meets an Arab who compliments the prince on his cap
+	type = character_event
+	title = HEE_siege_of_salerno.0001.t
+	desc = HEE_siege_of_salerno.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_forgiving
+	}
+	right_portrait = {
+		character = scope:arab_man
+		animation = personality_compassionate
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0001
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		hidden_effect = {
+			create_character = { 
+				age = { 28 32 }
+				location = root.capital_province
+				name = "Muhammad"
+				gender = male
+				template = servant_character
+				random_traits_list = {
+					count = 1
+					education_diplomacy_2  = {}
+					education_stewardship_2  = {}
+					education_learning_2  = {}
+				}
+				random_traits_list = { #Personality traits
+					count = 3
+					gregarious = {}
+					honest = {}
+					brave = {}
+					calm = {}
+					cynical = {}
+					temperate = {}
+					compassionate = {}
+				}
+				culture = scope:muhammad_ii_of_ifriqiya.capital_province.culture
+				faith = scope:muhammad_ii_of_ifriqiya.faith
+				dynasty = none 
+				save_scope_as = arab_man	
+			}
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0001.a
+		
+		custom_tooltip = give_your_cap_to_the_arab
+		
+		scope:emir_of_ifriqiya = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0100
+				days = { 7 10 }
+			}
+		}
+		
+		stress_impact = {
+			generous = major_stress_impact_loss
+			greedy = major_stress_impact_gain
+			zealous = medium_stress_impact_gain
+			humble = medium_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0001.b
+		
+		custom_tooltip = thank_the_arab_for_his_compliment
+
+		scope:emir_of_ifriqiya = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0100
+				days = { 7 10 }
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0001.c
+		
+		custom_tooltip = dismiss_the_arab
+
+		scope:emir_of_ifriqiya = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0100
+				days = { 7 10 }
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0100 = { #Aghlabid Emir hears of the fall of Bari
+	type = character_event
+	title = HEE_siege_of_salerno.0100.t
+	desc = HEE_siege_of_salerno.0100.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:louis_the_younger
+		animation = personality_bold
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0100
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_salerno.holder = { save_scope_as = c_salerno }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+	}
+	
+	option = {
+		name = HEE_siege_of_salerno.0100.a
+		
+		custom_tooltip = we_must_respond_to_bari_fall
+		
+		trigger_event = {
+			id = HEE_siege_of_salerno.0101
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0100.b
+		
+		custom_tooltip = italy_is_lost_to_us
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0101 = { #The Emir of Ifriqiya decides how to respond
+	type = character_event
+	title = HEE_siege_of_salerno.0101.t
+	desc = HEE_siege_of_salerno.0101.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:marshal_of_ifriqiya
+		animation = personality_forgiving
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0101
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+		
+		cp:councillor_marshal = { save_scope_as = marshal_of_ifriqiya }
+
+		create_character = { 
+			age = { 30 40 }
+			location = root.capital_province
+			name = "Abd Allah"
+			gender = male
+			faith = faith:ashari
+			culture = culture:baranis
+			dynasty = none 
+			random_traits_list = {
+				count = 1
+				education_martial_2  = {}
+				education_martial_3  = {}
+				education_martial_4  = {}
+			}
+			random_traits_list = { #Personality traits
+				count = 3
+				honest = {}
+				brave = {}
+				calm = {}
+				zealous = {}
+				callous = {}
+				wrathful = {}
+				impatient = {}
+				diligent = {}
+			}
+			diplomacy = 7
+			martial = 8
+			stewardship = 6
+			intrigue = 6
+			learning = 5
+			prowess = 8
+			save_scope_as = ifriqiya_commander	
+		}
+	}
+	
+	option = {
+		name = HEE_siege_of_salerno.0101.a
+		
+		custom_tooltip = send_the_navy_to_attack_salerno
+
+		hidden_effect = {
+			scope:ifriqiya_commander = {
+				create_dynamic_title = {
+					tier = duchy
+					name = AGHLABID_ITALIAN_PENNSULA_TITLE_NAME
+				}
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = change
+					add_claim_on_loss = no
+				}
+				scope:new_title = {
+					set_capital_county = scope:salerno
+					set_landless_title = yes
+					set_destroy_on_gain_same_tier = yes
+					set_no_automatic_claims = yes
+					set_can_be_named_after_dynasty = no
+					change_title_holder = {
+						holder = scope:ifriqiya_commander
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+				scope:new_title = {
+					generate_coa = yes
+					set_variable = {
+						name = temporary_title
+						value = yes
+					}
+				}
+
+				# Moving the new title under the Aghlabids
+				title:k_africa.holder = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					
+					scope:new_title.holder = {
+						change_liege = {
+							liege = title:k_africa.holder
+							change = scope:change
+						}
+					}
+					
+					resolve_title_and_vassal_change = scope:change
+				}
+				
+				start_war = {
+					casus_belli = major_religious_war
+					target = scope:ruler_of_salerno
+					target_title = title:k_sicily
+				}
+				
+				add_gold = 350
+				
+				spawn_army = {
+					uses_supply = no
+					inheritable = no
+					name = siege_of_ragusa_event_troops
+					levies = {
+						value = 2490
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 5
+					}
+					men_at_arms = {
+						type = light_footmen
+						stacks = 5
+					}
+					men_at_arms = {
+						type = bowmen
+						stacks = 5
+					}
+					men_at_arms = {
+						type = bowmen
+						stacks = 5
+					}
+					men_at_arms = {
+						type = mubarizun
+						stacks = 5
+					}
+					men_at_arms = {
+						type = mangonel
+						stacks = 1
+					}
+					location = province:2627
+				}
+			}
+		}
+
+		scope:ruler_of_salerno = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0002
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0101.b
+		
+		custom_tooltip = send_the_navy_to_attack_naples
+
+		scope:ifriqiya_commander = {
+			create_dynamic_title = {
+				tier = duchy
+				name = AGHLABID_ITALIAN_PENNSULA_TITLE_NAME
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = scope:naples
+				set_landless_title = yes
+				set_destroy_on_gain_same_tier = yes
+				set_no_automatic_claims = yes
+				set_can_be_named_after_dynasty = no
+				change_title_holder = {
+					holder = scope:ifriqiya_commander
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			scope:new_title = {
+				generate_coa = yes
+				set_variable = {
+					name = temporary_title
+					value = yes
+				}
+			}
+			
+			start_war = {
+				casus_belli = major_religious_war
+				target = scope:ruler_of_naples
+				target_title = title:k_sicily
+			}
+			
+			add_gold = 350
+			
+			spawn_army = {
+				uses_supply = no
+				inheritable = no
+				name = siege_of_ragusa_event_troops
+				levies = {
+					value = 2490
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mubarizun
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 1
+				}
+				location = province:2627
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		name = HEE_siege_of_salerno.0101.c
+		
+		custom_tooltip = send_the_navy_to_attack_benevento
+
+		scope:ifriqiya_commander = {
+			create_dynamic_title = {
+				tier = duchy
+				name = AGHLABID_ITALIAN_PENNSULA_TITLE_NAME
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = scope:naples
+				set_landless_title = yes
+				set_destroy_on_gain_same_tier = yes
+				set_no_automatic_claims = yes
+				set_can_be_named_after_dynasty = no
+				change_title_holder = {
+					holder = scope:ifriqiya_commander
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+			scope:new_title = {
+				generate_coa = yes
+				set_variable = {
+					name = temporary_title
+					value = yes
+				}
+			}
+			
+			start_war = {
+				casus_belli = major_religious_war
+				target = scope:ruler_of_benevento
+				target_title = title:k_sicily
+			}
+			
+			add_gold = 350
+			
+			spawn_army = {
+				uses_supply = no
+				inheritable = no
+				name = siege_of_ragusa_event_troops
+				levies = {
+					value = 2490
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = light_footmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mubarizun
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 1
+				}
+				location = province:2627
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0101.d
+		
+		custom_tooltip = actually_do_nothing
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0002 = { #An Amalfitan merchant warns Prince Guaifer
+	type = character_event
+	title = HEE_siege_of_salerno.0002.t
+	desc = HEE_siege_of_salerno.0002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:amalfitan_merchant
+		animation = personality_compassionate
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0002
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		create_character = {
+			template = merchant_template
+			age = { 30 55 }
+			gender_female_chance = root_faith_dominant_gender_adjusted_female_chance
+			location = root.capital_province
+			culture = scope:ruler_of_naples.capital_province.culture
+			faith = scope:ruler_of_naples.capital_province.faith
+			dynasty = none 
+			save_scope_as = amalfitan_merchant	
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0002.a
+		
+		custom_tooltip = believe_the_warning_and_prepare_salerno
+		
+		hidden_effect = {
+			# In preparation for the siege, Salerno's defences were strengthened and the garrison reinforced
+			scope:b_salerno = {
+				add_province_modifier = {
+					modifier = strengthened_salerno_defenses_modifier
+					days = 1825
+				}
+			}
+
+			stress_impact = {
+				paranoid = major_stress_impact_gain
+			}
+		}
+		
+		trigger_event = {
+			id = HEE_siege_of_salerno.0003
+			days = { 3 7 }
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0002.b
+		
+		custom_tooltip = ask_your_spymaster_to_confirm_the_rumors
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0002.c
+		
+		custom_tooltip = dismiss_the_merchant_rumors
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0003 = { #Ask the Southern Italian lords for aid
+	type = character_event
+	title = HEE_siege_of_salerno.0003.t
+	desc = HEE_siege_of_salerno.0003.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	# right_portrait = {
+		# character = scope:amalfitan_merchant
+		# animation = personality_compassionate
+	# }
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0003
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0003.a
+		
+		custom_tooltip = request_aid_from_southern_italian_lords
+
+		scope:ruler_of_naples = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0004
+				days = 3
+			}
+		}
+		
+		scope:ruler_of_benevento = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0004
+				days = 3
+			}
+		}
+
+		trigger_event = {
+			id = HEE_siege_of_salerno.0005
+			days = 5
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0003.b
+		
+		custom_tooltip = dismiss_the_merchant_rumors
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0004 = { #Ask the Southern Italian lords for aid
+	type = character_event
+	title = HEE_siege_of_salerno.0004.t
+	desc = HEE_siege_of_salerno.0004.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_forgiving
+	}
+	# right_portrait = {
+		# character = scope:amalfitan_merchant
+		# animation = personality_compassionate
+	# }
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0004
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		# Peasant Conscriptions/Volunteers 
+		spawn_army = {
+			uses_supply = no
+			inheritable = no
+			name = siege_of_ragusa_event_troops
+			levies = {
+				value = 500
+			}
+			location = province:2612
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0004.a
+		
+		custom_tooltip = salerno_shall_have_our_full_support
+
+		hidden_effect = {
+			create_alliance = scope:ruler_of_salerno
+			scope:ruler_of_salerno = {
+				add_opinion = {
+					target = root
+					modifier = perk_negotiated_alliance_opinion
+					days = 730
+				}
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0004.b
+		
+		custom_tooltip = salerno_can_have_some_monetary_support
+
+		hidden_effect = {
+			remove_short_term_gold = medium_gold_value
+
+			scope:ruler_of_salerno = {
+				add_gold = medium_gold_value
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0004.c
+		
+		custom_tooltip = salerno_is_not_my_problem
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0005 = { #Salerno must decide if the help of Louis II of Italy is needed
+	type = character_event
+	title = HEE_siege_of_salerno.0005.t
+	desc = HEE_siege_of_salerno.0005.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	# right_portrait = {
+		# character = scope:amalfitan_merchant
+		# animation = personality_compassionate
+	# }
+	lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+		scope:louis_the_younger = { is_alive = yes }
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_salerno }
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0005.a
+		
+		custom_tooltip = we_must_ask_for_louis_aid
+
+		hidden_effect = {
+			add_prestige = -150
+			
+			trigger_event = {
+				id = HEE_siege_of_salerno.0006
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0005.b
+		
+		custom_tooltip = we_do_not_need_the_emperor_help
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
+	type = character_event
+	title = HEE_siege_of_salerno.0005.t
+	desc = HEE_siege_of_salerno.0005.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:louis_the_younger
+		animation = personality_bold
+	}
+	lower_left_portrait = scope:chancellor_of_salerno
+	#lower_center_portrait = scope:ruler_2
+	lower_right_portrait = scope:bishop_of_salerno
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+		scope:louis_the_younger = { is_alive = yes }
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+		character:145215 = { save_scope_as = guaimar_of_salerno } # https://en.wikipedia.org/wiki/Guaimar_I_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		cp:councillor_chancellor = { save_scope_as = chancellor_of_salerno }
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_salerno }
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0005.a
+		trigger = { scope:guaimar_of_salerno = { is_alive = yes } }
+		
+		custom_tooltip = my_son_guaimar_of_salerno_will_be_envoy
+
+		hidden_effect = {
+			character:145215 = { save_scope_as = salerno_envoy }
+
+			title:c_turin.title_province = {
+				spawn_activity = {
+					type = activity_salerno_envoy_to_louis
+					owner = scope:guaimar_of_salerno
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0006
+				days = 4
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0005.b
+		
+		custom_tooltip = my_chaplain_will_be_envoy
+
+		hidden_effect = {
+			cp:councillor_court_chaplain = { save_scope_as = salerno_envoy }
+
+			title:c_turin.title_province = {
+				spawn_activity = {
+					type = activity_salerno_envoy_to_louis
+					owner = scope:bishop_of_salerno
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0006
+				days = 4
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0005.c
+
+		custom_tooltip = my_chancellor_will_be_envoy
+
+		hidden_effect = {
+			cp:councillor_chancellor = { save_scope_as = salerno_envoy }
+
+			title:c_turin.title_province = {
+				spawn_activity = {
+					type = activity_salerno_envoy_to_louis
+					owner = scope:salerno_envoy
+				}
+			}
+		}
+
+		scope:louis_the_younger = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0006
+				days = 4
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
+	type = character_event
+	title = HEE_siege_of_salerno.0006.t
+	desc = HEE_siege_of_salerno.0006.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:salerno_envoy
+		animation = personality_bold
+	}
+	# lower_right_portrait = scope:louis_the_younger
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+		character:145215 = { save_scope_as = guaimar_of_salerno } # https://en.wikipedia.org/wiki/Guaimar_I_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0006.a
+		
+		custom_tooltip = salerno_shall_have_my_full_support
+
+		hidden_effect = {
+			scope:ruler_of_salerno = {
+				every_character_war = {
+					limit = {
+						primary_defender = scope:ruler_of_salerno
+						primary_attacker = scope:ifriqiya_commander
+					}
+					add_defender = scope:louis_the_younger
+				}
+			}
+
+			scope:salerno_envoy = {
+				trigger_event = {
+					id = HEE_activity_end.0001
+				}
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0006.b
+		
+		custom_tooltip = salerno_can_have_some_monetary_support
+
+		hidden_effect = {
+			remove_short_term_gold = medium_gold_value
+
+			scope:ruler_of_salerno = {
+				add_gold = medium_gold_value
+			}
+
+			scope:salerno_envoy = {
+				trigger_event = {
+					id = HEE_activity_end.0001
+				}
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0006.c
+		
+		custom_tooltip = salerno_is_not_my_problem
+
+		hidden_effect = {
+			scope:salerno_envoy = {
+				trigger_event = {
+					id = HEE_activity_end.0001
+				}
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_salerno.0006.d
+		trigger = { scope:ruler_of_salerno = { has_character_flag = joined_adelchis_conspiracy } }
+
+		custom_tooltip = i_remember_salerno_intrigues
+
+		imprison_character_effect = {
+			TARGET = scope:salerno_envoy
+			IMPRISONER = scope:louis_the_younger
+		}
+
+		trigger_event = {
+			id = HEE_italy_questline.0007
+			days = { 20 40 }
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
+	type = character_event
+	title = HEE_italy_questline.0007.t
+	desc = HEE_italy_questline.0007.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:bishop_of_benevento
+		animation = personality_forgiving
+	}
+	#lower_left_portrait = scope:pope
+	lower_center_portrait = scope:salerno_envoy
+	#lower_right_portrait = scope:adelchis
+
+	trigger = {
+		scope:louis_the_younger = { is_alive = yes }
+		scope:salerno_envoy = { is_alive = yes }
+		scope:salerno_envoy = { is_imprisoned = yes }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_italy_questline.0007
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+		character:145215 = { save_scope_as = guaimar_of_salerno } # https://en.wikipedia.org/wiki/Guaimar_I_of_Salerno
+
+		title:c_napoli = { save_scope_as = naples }
+		title:c_napoli.holder = { save_scope_as = ruler_of_naples }
+
+		province:2612 = { save_scope_as = b_salerno }
+		title:c_salerno = { save_scope_as = salerno }
+		title:c_salerno.holder = { save_scope_as = ruler_of_salerno }
+
+		title:c_benevento = { save_scope_as = benevento }
+		title:c_benevento.holder = { save_scope_as = ruler_of_benevento }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		scope:salerno_envoy.activity = { save_scope_as = diplomatic_mission }
+		
+		cp:councillor_court_chaplain = { save_scope_as = bishop_of_italy }
+
+		if ={
+			limit = { exists = title:k_papal_state }
+			title:k_papal_state.holder = { save_scope_as = pope }
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0007.a
+		
+		custom_tooltip = I_will_defend_salerno
+		
+		hidden_effect = {
+			scope:salerno_envoy = {
+				release_from_prison = yes
+			}
+
+			scope:ruler_of_salerno = {
+				every_character_war = {
+					limit = {
+						primary_defender = scope:ruler_of_salerno
+						primary_attacker = scope:ifriqiya_commander
+					}
+					add_defender = scope:louis_the_younger
+				}
+			}
+
+			scope:salerno_envoy = {
+				trigger_event = {
+					id = HEE_activity_end.0001
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_italy_questline.0007.b
+		
+		custom_tooltip = salerno_shall_suffer_regardless
+
+		hidden_effect = {
+			scope:salerno_envoy = {
+				trigger_event = {
+					id = HEE_activity_end.0001
+				}
+			}
+
+			scope:bishop_of_italy = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -25
+				}
+			}
+
+			scope:pope = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -25
+				}
+			}
+
+			scope:ruler_of_benevento = {
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -50
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_activity_end.0001 = { # Victory at Bari trigger
+	type = empty
+	hidden = yes
+
+	trigger = {
+
+	}
+
+	immediate = {
+		root.activity = { save_scope_as = activity }
+
+		scope:activity = {
+			complete_activity = yes
+		}
+	}
+}

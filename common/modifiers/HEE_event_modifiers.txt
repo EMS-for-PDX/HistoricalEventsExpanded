@@ -89,6 +89,13 @@ hee_867_viking_settlements_in_france_modifier = {
 	monthly_county_control_change_factor = -0.5
 }
 
+strengthened_salerno_defenses_modifier = {
+	icon = martial_positive
+	fort_level = 3
+	garrison_size = 1.0
+	defender_holding_advantage = 10
+}
+
 # testing_water = {
 # 	#stacking = yes
 # 	icon = martial_negative

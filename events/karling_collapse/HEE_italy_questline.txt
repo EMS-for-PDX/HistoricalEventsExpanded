@@ -25,12 +25,30 @@ HEE_italy_questline.0100 = { # Victory at Bari trigger
 		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
 		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
 		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
-		
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_salerno.holder = { save_scope_as = duke_of_salerno }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		# Emperor Louis's choice to garrison Southern Italy
 		scope:attacker = {
 			add_character_flag = bari_has_been_conquered
 			trigger_event = {
 				id = HEE_italy_questline.0101
 				days = { 7 10 }
+			}
+		}
+
+		# Siege of Salerno start
+		scope:duke_of_salerno = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0001
+				days = { 15 45 }
 			}
 		}
 	}
@@ -1019,6 +1037,12 @@ HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attemptin
 		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
 		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
 		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		title:d_spoleto.holder = { save_scope_as = lambert_i_stand_in }
+		
+		title:c_napoli.holder = { save_scope_as = sergius_ii_of_naples_stand_in }
+
+		title:c_salerno.holder = { save_scope_as = guaifer_of_salerno_stand_in }
 	}
 
 	option = {
@@ -1063,6 +1087,8 @@ HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attemptin
 			
 			# Give Louis a modifier to reflect his need for a second coronation
 			scope:louis_the_younger = {
+				add_character_flag = unjustly_imprisoned_by_adelchis
+				
 				add_character_modifier = shamed_by_imprisonment_modifier
 			}
 			
@@ -1127,6 +1153,8 @@ HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attemptin
 					
 					# Give Louis a modifier to reflect his need for a second coronation
 					scope:louis_the_younger = {
+						add_character_flag = unjustly_imprisoned_by_adelchis
+
 						add_character_modifier = shamed_by_imprisonment_modifier
 					}
 
@@ -1134,8 +1162,37 @@ HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attemptin
 					scope:louis_the_younger = {
 						add_opinion = {
 							target = scope:adelchis
-							modifier = angry_opinion
-							opinion = -50
+							modifier = schemed_against_me
+						}
+					}
+
+					if = {
+						limit = { scope:lambert_i_stand_in = { has_character_flag = joined_adelchis_conspiracy } }
+					}
+					scope:louis_the_younger = {
+						add_opinion = {
+							target = scope:lambert_i_stand_in
+							modifier = schemed_against_me
+						}
+					}
+
+					if = {
+						limit = { scope:sergius_ii_of_naples_stand_in = { has_character_flag = joined_adelchis_conspiracy } }
+					}
+					scope:louis_the_younger = {
+						add_opinion = {
+							target = scope:sergius_ii_of_naples_stand_in
+							modifier = schemed_against_me
+						}
+					}
+
+					if = {
+						limit = { scope:guaifer_of_salerno_stand_in = { has_character_flag = joined_adelchis_conspiracy } }
+					}
+					scope:louis_the_younger = {
+						add_opinion = {
+							target = scope:guaifer_of_salerno_stand_in
+							modifier = schemed_against_me
 						}
 					}
 					
@@ -1981,6 +2038,11 @@ HEE_italy_questline.0104 = { # Emperor Louis ponders traveling to Rome to meet P
 		custom_tooltip = louis_travels_to_rome
 
 		hidden_effect = {
+			trigger_event = {
+				id = HEE_italy_questline.0105
+				days = { 7 10 }
+			}
+
 			title:c_roma.title_province = {
 				spawn_activity = {
 					type = activity_louis_travel_to_rome
@@ -2014,10 +2076,10 @@ HEE_italy_questline.0105 = { # Emperor Louis meets with the Pope to discuss his 
 		character = root
 		animation = worry
 	}
-	# right_portrait = {
+	right_portrait = {
 		character = scope:pope
 		animation = personality_rational
-	# }
+	}
 	#lower_left_portrait = scope:pope
 	#lower_center_portrait = scope:louis_the_younger
 	#lower_right_portrait = scope:adelchis
@@ -2061,6 +2123,11 @@ HEE_italy_questline.0105 = { # Emperor Louis meets with the Pope to discuss his 
 		name = HEE_italy_questline.0105.a
 		
 		custom_tooltip = louis_accepts_the_pope_aid
+
+		trigger_event = {
+			id = HEE_italy_questline.0106
+			days = 1
+		}
 
 		ai_chance = {
 			base = 1000
@@ -2107,9 +2174,19 @@ HEE_italy_questline.0106 = { # Louis is absolved from his oath and crowned a sec
 		name = HEE_italy_questline.0106.a
 		
 		custom_tooltip = louis_refuses_the_pope
+		
+		hidden_effect = {
+			add_character_flag = was_recrowned_by_the_pope
+			
+			scope:louis_the_younger = {
+				cancel_truce_both_ways = scope:adelchis
+
+				remove_character_modifier = shamed_by_imprisonment_modifier
+			}
+		}
 
 		ai_chance = {
-			base = 100
+			base = 1000
 		}
 	}
 }

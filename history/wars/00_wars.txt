@@ -117,7 +117,7 @@ war = {
 		d_sicily
 	}
 	casus_belli = ducal_conquest_cb
-	attackers = { 163096  }
+	attackers = { 163096 maghrebi0001 }
 	defenders = { 70490 } # Altered to reflect Michael III being alive
 }
 

@@ -1239,8 +1239,10 @@ on_domagoj_of_croatia_death = {
 				character:8601 = { is_alive = yes }
 			}
 			character:8601 = {
+				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_croatia.001
+					id = HEE_byzantine_croatia.001
+					days = { 7 20 }
 				}	
 			}
 		}
@@ -1251,8 +1253,10 @@ on_domagoj_of_croatia_death = {
 				character:8602 = { is_alive = yes }
 			}
 			character:8602 = {
+				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_croatia.001
+					id = HEE_byzantine_croatia.001
+					days = { 7 20 }
 				}	
 			}
 		}
@@ -1264,8 +1268,10 @@ on_domagoj_of_croatia_death = {
 				character:8603 = { is_alive = yes }
 			}
 			character:8603 = {
+				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_croatia.001
+					id = HEE_byzantine_croatia.001
+					days = { 7 20 }
 				}	
 			}
 		}

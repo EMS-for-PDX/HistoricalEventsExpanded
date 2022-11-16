@@ -1,0 +1,235 @@
+﻿namespace = HEE_byzantine_croatia
+
+
+HEE_byzantine_croatia.0001 = { # Louis has the option to garrison southern Italy after his victory at Bari
+	type = character_event
+	title = HEE_italy_questline.0001.t
+	desc = HEE_italy_questline.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:eremperor
+		animation = personality_honorable
+	}
+	# lower_left_portrait = scope:pope
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_byzantine_croatia.0001
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:e_byzantium }
+			title:e_byzantium.holder = { save_scope_as = eremperor }
+		}
+		character:167855 = { save_scope_as = domagoj_of_croatia } # https://en.wikipedia.org/wiki/Domagoj_of_Croatia
+		character:167856 = { save_scope_as = iljko_of_croatia } # https://en.wikipedia.org/wiki/Iljko_of_Croatia
+		character:167857 = { save_scope_as = branimir_of_croatia } # https://en.wikipedia.org/wiki/Branimir_of_Croatia
+
+		character:163116 = { save_scope_as = mutimir_of_serbia } # https://en.wikipedia.org/wiki/Mutimir_of_Serbia
+
+		character:184026 = { save_scope_as = doge_orso_i_participazio } # https://en.wikipedia.org/wiki/Orso_I_Participazio
+
+		character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0001.a
+		
+		custom_tooltip = ask_the_eremperor_for_help
+		
+		hidden_effect = {
+			scope:eremperor = {
+				trigger_event = {
+					id = HEE_byzantine_croatia.0002
+					days = { 3 10 }
+				}
+			}
+		}
+		
+
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0001.b
+
+		custom_tooltip = refuse_to_ask_the_eremperor_for_help
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_byzantine_croatia.0002 = { # Louis has the option to garrison southern Italy after his victory at Bari
+	type = character_event
+	title = HEE_italy_questline.0002.t
+	desc = HEE_italy_questline.0002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:croatian_claimant
+		animation = beg
+	}
+	# lower_left_portrait = scope:pope
+	# lower_center_portrait = scope:ruler_2
+	# lower_right_portrait = scope:adelchis
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_byzantine_croatia.0002
+				days = 7 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:e_byzantium }
+			title:e_byzantium.holder = { save_scope_as = eremperor }
+		}
+
+		if ={
+			limit = { exists = title:d_croatia }
+			title:d_croatia.holder = { save_scope_as = duke_of_croatia }
+		}
+
+		character:8601 = { save_scope_as = zdeslav_of_croatia } # https://en.wikipedia.org/wiki/Zdeslav_of_Croatia
+		character:8602 = { save_scope_as = petar_of_croatia } # https://en.wikipedia.org/wiki/Trpimir_I_of_Croatia#Descendants
+		character:8603 = { save_scope_as = muncimir_of_croatia } # https://en.wikipedia.org/wiki/Muncimir_of_Croatia
+
+		character:163116 = { save_scope_as = mutimir_of_serbia } # https://en.wikipedia.org/wiki/Mutimir_of_Serbia
+
+		character:184026 = { save_scope_as = doge_orso_i_participazio } # https://en.wikipedia.org/wiki/Orso_I_Participazio
+
+		character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0002.a
+		
+		custom_tooltip = support_the_trpimirovic_dynasty
+		
+		hidden_effect = {
+			scope:eremperor = {
+				start_war = {
+					casus_belli = claim_cb
+					target = scope:duke_of_croatia
+					target_title = title:d_croatia
+					claimant = scope:croatian_claimant
+				}
+			}
+		}
+		
+
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0002.b
+
+		custom_tooltip = do_not_support_the_trpimirovic_dynasty
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Louis the Younger chain
+HEE_byzantine_croatia.0100 = { # Victory at Bari trigger
+	type = empty
+	hidden = yes
+
+	trigger = {
+		scope:attacker = {
+			NOT = { has_character_flag = bari_has_been_conquered }
+			is_alive = yes
+			is_landed = yes
+			is_independent_ruler = yes
+			#is_at_war = no
+			is_imprisoned = no
+		}	
+		scope:attacker = character:30228
+		scope:defender = character:163094
+	}
+
+	immediate = {
+		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
+		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
+		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
+		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
+		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
+
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		character:163091 = { save_scope_as = guaifer_of_salerno } # https://en.wikipedia.org/wiki/Guaifer_of_Salerno
+
+		title:c_salerno.holder = { save_scope_as = duke_of_salerno }
+
+		title:k_africa.holder = { save_scope_as = emir_of_ifriqiya }
+
+		# Emperor Louis's choice to garrison Southern Italy
+		scope:attacker = {
+			add_character_flag = bari_has_been_conquered
+			trigger_event = {
+				id = HEE_italy_questline.0101
+				days = { 7 10 }
+			}
+		}
+
+		# Siege of Salerno start
+		scope:duke_of_salerno = {
+			trigger_event = {
+				id = HEE_siege_of_salerno.0001
+				days = { 15 45 }
+			}
+		}
+	}
+}

@@ -1068,3 +1068,24 @@ hee_brittany_867_effect = {
 		}
 	}
 }
+
+hee_paulicians_867_effect = {
+	title:c_satala = {
+		set_county_faith = faith:paulician
+	}
+	title:c_azysia = {
+		set_county_faith = faith:paulician
+	}
+	title:c_ablastha = {
+		set_county_faith = faith:paulician
+	}
+	title:c_lycandus = {
+		set_county_faith = faith:paulician
+	}
+	title:c_melitene = {
+		set_county_faith = faith:paulician
+	}
+	title:c_mesopotamia = {
+		set_county_faith = faith:paulician
+	}
+}

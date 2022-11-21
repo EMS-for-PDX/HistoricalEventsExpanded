@@ -316,3 +316,183 @@ HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
 		}
 	}
 }
+
+HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
+	type = empty
+	hidden = yes
+
+	trigger = {
+		scope:defender = {
+			NOT = { has_character_flag = ragusa_has_been_defended }
+			is_alive = yes
+			is_landed = yes
+			is_independent_ruler = yes
+			#is_at_war = no
+			is_imprisoned = no
+		}	
+		scope:attacker = character:HEE_saba_of_taranto
+		scope:defender = character:303447
+	}
+
+	immediate = {
+		scope:defender = {
+			add_character_flag = ragusa_has_been_defended
+		}
+
+		# "Ooryphas' "showing of the flag" had swift results, as the Slavic tribes sent envoys to the Emperor, once more acknowledging his suzerainty"
+		if = {
+			limit = {
+				NOT = {
+					title:c_rashka.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_rashka.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_rashka.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					title:c_duklja.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_duklja.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_duklja.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					title:c_travunia.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_travunia.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_travunia.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					title:c_zachlumia.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_zachlumia.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_zachlumia.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					title:c_pagania.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_pagania.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_pagania.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					title:c_rama.holder = {
+						has_character_flag = heard_of_ragusa_defense
+					}
+				}
+			}
+			title:c_rama.holder = {
+				add_character_flag = heard_of_ragusa_defense
+			}
+			title:c_rama.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0006
+					days = { 7 30 }
+				}
+			}
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREmperor
+	type = character_event
+	title = HEE_siege_of_ragusa.0006.t
+	desc = HEE_siege_of_ragusa.0006.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:roman_emperor
+		animation = personality_honorable
+	}
+
+	immediate = {
+		title:e_byzantium.holder = { save_scope_as = roman_emperor }
+	}
+
+	option = { # Convert to Orthodoxy
+		name = HEE_siege_of_ragusa.0006.a
+		
+		set_character_faith_with_conversion = faith:orthodox
+
+		scope:roman_emperor = {
+			add_opinion = {
+				target = root
+				modifier = pious_opinion
+				opinion = 25
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

@@ -1,0 +1,30 @@
+﻿on_war_won_attacker = {
+	on_actions = {
+		hee_louis_bari_victory
+		hee_trpimirovic_croatia_victory
+	}
+}
+
+hee_louis_bari_victory = {
+	events = {
+		HEE_italy_questline.0100
+	}
+}
+
+hee_trpimirovic_croatia_victory = {
+	events = {
+		HEE_byzantine_croatia.0003
+	}
+}
+
+on_war_won_defender = {
+	on_actions = {
+		hee_siege_of_ragusa_victory
+	}
+}
+
+hee_siege_of_ragusa_victory = {
+	events = {
+		HEE_siege_of_ragusa.0005
+	}
+}

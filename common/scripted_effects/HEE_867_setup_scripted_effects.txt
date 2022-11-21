@@ -422,6 +422,28 @@ hee_samarra_relations_867_effect = {
 	character:turkish000007 = {	
 		spawn_turkic_troops_effect = yes
 	}
+
+	create_title_and_vassal_change = {
+		type = independency
+		save_scope_as = going_independent
+		add_claim_on_loss = no
+	}
+	character:74038 = {
+		becomes_independent = {
+			change = scope:going_independent
+		}
+	}
+	character:74039 = {
+		becomes_independent = {
+			change = scope:going_independent
+		}
+	}
+	character:74040 = {
+		becomes_independent = {
+			change = scope:going_independent
+		}
+	}
+	resolve_title_and_vassal_change = scope:going_independent	
 }
 
 

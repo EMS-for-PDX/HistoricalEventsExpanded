@@ -314,7 +314,11 @@ HEE_rise_of_simeon.1000 = { #Simeon is set to Constantinople
 				save_scope_as = bulgarian_king
 			}
 		}
-		character:712 = { save_scope_as = simeon_i } 
+		character:712 = { save_scope_as = simeon_i }
+		
+		hidden_effect = {
+			character:712 = { add_stress = -300 } 
+		}
 	}
 
 	option = {
@@ -395,20 +399,18 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 				save_scope_as = bulgarian_king
 			}
 		}
+		
 		character:712 = { save_scope_as = simeon_i }
+		
 		scope:bulgarian_king = {
 			add_courtier = scope:simeon_i
 		}
+		
 		hidden_effect = {
 			character:712 = {
 				HEE_remove_education_traits_effect = yes
 				HEE_remove_personality_traits_effect = yes
-				
-				add_trait = education_learning_4
-				add_trait = zealous
-				add_trait = ambitious
-				add_trait = diligent
-				add_trait = brave
+
 				if = {
 					limit = {
 						diplomacy < 12
@@ -445,6 +447,17 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 					}
 					add_prowess_skill = 4
 				}
+
+				add_trait = education_learning_4
+				add_trait = zealous
+				add_trait = ambitious
+				add_trait = diligent
+				add_trait = brave
+
+				remove_trait = intellect_good_1
+				add_trait = intellect_good_2
+				
+				add_character_modifier = student_of_rome_modifier
 			}
 		}
 	}

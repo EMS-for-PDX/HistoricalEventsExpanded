@@ -4,6 +4,7 @@
 # 
 #################################################
 
+## Character ##
 the_turkic_conqueror_modifier = {
 	icon = horse_positive
 	dread_baseline_add = 20
@@ -52,6 +53,14 @@ anarchy_at_samarra_unpaid_soldiery = {
 	supply_duration = -0.5
 	supply_capacity_mult = -0.5
 }
+
+student_of_rome_modifier = {
+	icon = learning_positive
+	learning = 2
+	monthly_lifestyle_xp_gain_mult = 0.15
+}
+
+
 
 ## County ##
 regional_stronghold_modifier = {

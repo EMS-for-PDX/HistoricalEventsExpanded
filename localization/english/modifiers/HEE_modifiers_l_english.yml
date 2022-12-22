@@ -19,6 +19,9 @@
  
  anarchy_at_samarra_unpaid_soldiery: "Unpaid Soldiery"
  anarchy_at_samarra_unpaid_soldiery_desc: "The lack of available revenue in which to pay the soldiers has lead to decline in the supplies afforded to our troops, decreasing their effectiveness"
+
+ student_of_rome_modifier: "Student of Rome"
+ student_of_rome_modifier_desc: "Sent to the leading University of Constantinople to receive theological education, Simeon spent nearly a decade in the Byzantine capital where he received an excellent education and studied the rhetoric of Demosthenes and Aristotle. He also learned fluent Greek, to the extent that he was referred to as "the half-Greek" in Byzantine chronicles."
  
  ## County ##
  regional_stronghold_modifier: "Regional Stronghold"

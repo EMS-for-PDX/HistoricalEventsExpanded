@@ -8869,17 +8869,17 @@
 	prowess = 6
 	religion = "orthodox"
 	culture = "greek"
-	trait = gregarious
-	trait = brave
-	trait = zealous
+	trait = gregarious # More generous interpretation of Michael's partying
+	trait = brave # The impression gained from Arab sources is one of Michael as an active and often successful military commander
+	trait = cynical # According to Byz sources, Michael orchestrated public displays mocking the processions and rituals of the church
 	# trait = drunkard
 	trait = reveler_2
-	trait = education_martial_3
+	trait = education_martial_3 # The impression gained from Arab sources, however, is one of Michael as an active and often successful military commander
 	trait = born_in_the_purple
 	sexuality = heterosexual
 	
-	840.1.19 = {
-		birth = "840.1.19"
+	840.1.9 = {
+		birth = "840.1.9"
 	}
 	855.1.1 = {
 		effect = {
@@ -8893,7 +8893,7 @@
 			# killer = 1700 # Basil "the_Macedonian"
 		# }
 	# }
-# The historical date, but since the bookmark starts on January 1, moved back.
+	# The historical date, but since the bookmark starts on January 1, moved back.
 	867.9.24 = {
 		give_nickname = nick_the_drunkard
 		death = {

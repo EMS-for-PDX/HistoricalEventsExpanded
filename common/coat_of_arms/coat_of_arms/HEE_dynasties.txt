@@ -1,0 +1,189 @@
+﻿@smErmine = 0.27
+@smLysX = 0.23
+@smLysY = 0.26
+
+8642 = { # Amorios
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_letter_alpha.dds"
+		instance={
+			position={ 0.350000 0.380000 }
+			scale={ 0.180000 0.180000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.300000 }
+			scale={ 0.050000 0.400000 }
+			depth=6.010000
+		}
+
+		instance={
+			position={ 0.500000 0.250000 }
+			scale={ 0.400000 0.050000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.500000 0.590000 }
+			scale={ 0.400000 0.060000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.500000 0.670000 }
+			scale={ 0.500000 0.060000 }
+			depth=9.010000
+		}
+
+		instance={
+			position={ 0.500000 0.750000 }
+			scale={ 0.600000 0.060000 }
+			depth=10.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_letter_omega.dds"
+		instance={
+			position={ 0.650000 0.380000 }
+			scale={ 0.180000 0.180000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_pile_mask.dds"
+		instance={
+			position={ 0.350000 0.250000 }
+			scale={ 0.120000 0.250000 }
+			depth=2.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.650000 0.250000 }
+			scale={ 0.120000 0.250000 }
+			depth=3.010000
+			rotation=-90
+		}
+
+		instance={
+			position={ 0.500000 0.130000 }
+			scale={ 0.250000 0.120000 }
+			depth=4.010000
+			rotation=180
+		}
+
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.250000 0.120000 }
+			depth=5.010000
+		}
+
+	}
+}
+
+hee_tephrice = { # Leaders of the Paulician principality of Tephrike
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=yellow
+		texture="ce_double_tressure.dds"
+		instance={
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_fire.dds"
+		instance={
+			scale={ 0.580000 0.580000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_religion_paulicanism.dds"
+		instance={
+			position={ 0.500000 0.570000 }
+			scale={ 0.210000 0.210000 }
+		}
+
+	}
+
+}
+
+1022275 = { # Ooryphas
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		texture="ce_letter_alpha.dds"
+		instance={
+			position={ 0.340000 0.300000 }
+			scale={ 0.150000 0.150000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_letter_omega.dds"
+		instance={
+			position={ 0.680000 0.300000 }
+			scale={ 0.160000 0.160000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=red
+		color3=blue
+		texture="ce_waves_02.dds"
+		instance={
+			position={ 0.500000 0.550000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_chi_rho.dds"
+		instance={
+			position={ 0.510000 0.300000 }
+			scale={ 0.590000 0.590000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+

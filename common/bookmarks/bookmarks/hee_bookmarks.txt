@@ -1,0 +1,127 @@
+﻿
+bm_867_hee_byzantines = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Michael III
+	character = {
+		name = "bookmark_hee_byzantine_michael_iii"
+		history_id = 70490
+		dynasty = 8642
+		dynasty_splendor_level = 2
+		type = male
+		birth = 840.1.9
+		title = e_byzantium
+		government = feudal_government
+		culture = greek
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 700 325 }
+
+		animation = personality_bold
+
+		# Basil I, Co-Emperor and eventual Killer, ID: 1700
+		character = {
+			name = "bookmark_hee_byzantine_basil_i"
+			relation = "BOOKMARK_RELATION_COEMPEROR"
+			dynasty = 644
+			type = male
+			birth = 830.5.25
+			culture = greek
+			religion = orthodox
+			history_id = 1700
+
+			animation = disapproval
+		}
+		
+		# Basiliskianos, friend, ID: HEE_basiliskianos
+		character = {
+			name = "bookmark_hee_byzantine_basiliskianos"
+			relation = "BOOKMARK_RELATION_FRIEND"
+			dynasty = 0
+			type = male
+			birth = 840.1.1
+			culture = greek
+			religion = orthodox
+			history_id = HEE_basiliskianos
+
+			animation = personality_greedy
+		}
+	}
+
+	# Niketas Ooryphas
+	character = {
+		name = "bookmark_hee_byzantine_niketas_ooryphas"
+		history_id = 145931
+		dynasty = 1022275
+		dynasty_splendor_level = 1
+		type = male
+		birth = 820.1.1
+		title = d_aegean_islands
+		government = feudal_government
+		culture = greek
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 480 620 }
+
+		animation = personality_rational
+
+	}
+
+	# Chrysocheir
+	character = {
+		name = "bookmark_hee_byzantine_chrysocheir"
+		history_id = HEE_chrysocheir
+		dynasty = hee_tephrice
+		dynasty_splendor_level = 1
+		type = male
+		birth = 835.1.1
+		title = d_paulician_principality
+		government = feudal_government
+		culture = greek
+		religion = paulician
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 1150 550 }
+
+		animation = personality_vengeful
+
+	}
+
+	# Phokas Family
+	character = {
+		name = "bookmark_hee_byzantine_leon_phokas"
+		history_id = 145147
+		dynasty = 641
+		dynasty_splendor_level = 1
+		type = male
+		birth = 830.1.1
+		title = c_seleucia
+		government = feudal_government
+		culture = greek
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 950 700 }
+
+		animation = personality_bold
+
+		# Nikephoros, son, ID: 41316
+		character = {
+			name = "bookmark_hee_byzantine_nikephoros_phokas"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 641
+			type = male
+			birth = 855.1.1
+			culture = greek
+			religion = orthodox
+			history_id = 41316
+
+			animation = personality_content
+		}
+
+	}
+}

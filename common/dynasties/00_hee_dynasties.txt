@@ -6,6 +6,12 @@ hee_dekapolitissa = {
 	culture = "greek"
 }
 
+hee_tephrice = {
+	prefix = "dynnp_of"
+	name = "dynn_Tephrice"
+	culture = "greek"
+}
+
 # Arabic
 hee_numayrid = {
 	name = "dynn_Numayrid"

@@ -221,6 +221,10 @@ hee_karling_867_effect = {
 			name = divisio_regni_desc
 		}
 	}
+
+	scope:karlmann = {
+		remove_trait = ill
+	}
 }
 
 

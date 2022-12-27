@@ -157,6 +157,54 @@ HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
 	}
 }
 
+HEE_danielis = { # https://en.wikipedia.org/wiki/Danielis
+	name = "Danielis"
+	female = yes
+	dynasty = hee_patras
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 4
+	stewardship = 8
+	intrigue = 6
+	learning = 6
+	prowess = 2
+	
+	#Education
+	trait = education_stewardship_4
+	
+	#Personality Traits
+	trait = generous
+	trait = arrogant
+	trait = diligent
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	820.1.1 = {
+		birth = yes
+	}
+	850.1.1 = { # Danielis was an extremely wealthy landowner, owning a significant part of the Peloponnese, as well as a flourishing carpet and textile industry
+		add_gold = 1500
+	}
+	855.1.1 = {
+		effect = {
+			set_relation_friend = character:1700 # The (likely fictional) woman gave Basil lavish gifts, land property, and a place in her household
+		}
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
 HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematician
 	name = "Leo"
 	#dynasty = 0

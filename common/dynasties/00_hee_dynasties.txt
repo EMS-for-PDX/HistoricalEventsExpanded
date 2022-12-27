@@ -12,6 +12,12 @@ hee_tephrice = {
 	culture = "greek"
 }
 
+hee_patras = {
+	prefix = "dynnp_of"
+	name = "dynn_Patras"
+	culture = "greek"
+}
+
 # Arabic
 hee_numayrid = {
 	name = "dynn_Numayrid"

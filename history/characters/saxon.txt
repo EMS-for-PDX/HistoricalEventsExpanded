@@ -68,6 +68,7 @@
 	trait = brave
 	trait = ambitious
 	trait = diligent
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 7959
 	mother = 167765
 	845.1.1 = {

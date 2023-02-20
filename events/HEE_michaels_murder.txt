@@ -37,6 +37,8 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 	immediate = {
 		character:HEE_basiliskianos = { save_scope_as = basiliskianos }
 		
+		character:1700 = { save_scope_as = basil }
+		
 		add_stress = medium_stress_impact_gain
 	}
 
@@ -80,6 +82,13 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 					target = scope:michael_iii
 					modifier = disappointed_opinion
 					opinion = -5
+				}
+			}
+
+			scope:basil = { # Basil will get his throne one way or another
+				start_scheme = {
+					target = character:70490
+					type = murder
 				}
 			}
 		}

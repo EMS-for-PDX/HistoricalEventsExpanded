@@ -107,6 +107,7 @@
 	trait = just
 	trait = humble
 	trait = chaste
+	fertility = 0.3 # Reduce chance of children so historical Karling inheritence can occur
 	837.1.1 = {
 		birth = "837.1.1"
 	}

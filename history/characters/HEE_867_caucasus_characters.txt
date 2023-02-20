@@ -1,4 +1,128 @@
-﻿## Characters for the Byzantine Event Chain - 867 ##
+﻿## Characters for the Caucasus - 867 ##
+
+HEE_george_of_abkhazia_wife = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
+	name = "Ekaterine"
+	female = yes
+	#dynasty = 0
+	religion = "orthodox"
+	culture = "georgian"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	# diplomacy = 6
+	# martial = 5
+	# stewardship = 6
+	intrigue = 7
+	# learning = 6
+	# prowess = 0
+	
+	#Education
+	trait = education_intrigue_2
+	
+	#Personality Traits
+	trait = arbitrary
+	trait = ambitious
+	trait = lustful
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	830.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		add_spouse = 70476
+	}
+	869.1.1 = {
+		effect = {
+			set_relation_lover = character:70474 # On the death of Georges I, his wife, whose name is not specified, seduced by a nobleman, the John Shavliani, put on death Tinen and attempted to kill Bagrat to give the throne of Abkhazia to her lover
+		}
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+HEE_tinen_of_tchikha = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
+	name = "Tinen"
+	dynasty = 101737
+	religion = "orthodox"
+	culture = "georgian"
+	father = 70471
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	# diplomacy = 6
+	# martial = 5
+	# stewardship = 6
+	# intrigue = 7
+	# learning = 6
+	# prowess = 0
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = honest
+	trait = trusting
+	trait = diligent
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	827.1.1 = {
+		birth = yes
+	}
+	871.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 70474 # Technically the Queen, but ordered by John of Abkhazia
+		}
+	}
+}
+
+HEE_guaram_mampali_daughter = { # https://en.wikipedia.org/wiki/Bagrat_I_of_Abkhazia#Family
+	name = "Dedika"
+	female = yes
+	dynasty_house = house_bagrationi # Georgian Bagrationi cadets
+	religion = "orthodox"
+	culture = "georgian"
+	father = 160032
+	# mother =
+	#health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+	
+	# disallow_random_traits = yes
+	855.1.1 = {
+		birth = yes
+	}
+	872.1.1 = {
+		add_spouse = 70475
+	}
+	889.1.1 = {
+		add_spouse = 70470
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
 
 HEE_grigol_of_kakheti = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	name = "Grigol"
@@ -566,6 +690,65 @@ HEE_john_of_hereti = { # https://en.wikipedia.org/wiki/John_of_Hereti
 		birth = yes
 	}
 	959.1.1 = {
+		death = yes
+	}
+}
+
+HEE_ashot_iv_unnamed_daughter = { # https://en.wikipedia.org/wiki/Ashot_Msaker
+	name = "Katranide"
+	female = yes
+	dynasty = 507
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41502
+	mother = 159882
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	800.1.1 = {
+		birth = yes
+	}
+	835.1.1 = {
+		add_spouse = levantine000002
+	}
+	865.1.1 = {
+		death = yes
+	}
+}
+
+HEE_artsruni_unnamed_princess = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_Zurara
+	name = "Dzoyk"
+	female = yes
+	dynasty = 101736
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41560
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	848.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
 		death = yes
 	}
 }

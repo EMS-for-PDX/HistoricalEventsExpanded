@@ -2006,7 +2006,7 @@ d_damascus = {
 		holder = levantine0001
 	}
 	866.1.1 = {
-		holder = 146080
+		holder = HEE_damascus_governor
 	}
 	978.1.1 = {
 		liege = "k_egypt"
@@ -2203,7 +2203,7 @@ c_damascus = {
 	}
 	866.1.1 = {
 		liege = "d_damascus"
-		holder = 146080
+		holder = HEE_damascus_governor
 	}
 	1066.1.1 = {
 		holder = 20768
@@ -2389,7 +2389,7 @@ c_juwair = {
 	}
 	866.1.1 = {
 		liege = "d_damascus"
-		holder = 146080
+		holder = HEE_damascus_governor
 	}
 	1066.1.1 = {
 		holder = 20768
@@ -2615,7 +2615,7 @@ c_hauran = {
 	}
 	866.1.1 = {
 		liege = "d_damascus"
-		holder = 146080
+		holder = HEE_damascus_governor
 	}
 	877.1.1 = {
 		liege = 0

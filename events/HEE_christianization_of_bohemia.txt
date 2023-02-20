@@ -1,0 +1,111 @@
+﻿namespace = HEE_christianization_of_bohemia
+
+
+HEE_christianization_of_bohemia.0001 = { #Salvic tribes consider swearing fealty to the EREmperor
+	type = character_event
+	title = HEE_christianization_of_bohemia.0001.t
+	desc = HEE_christianization_of_bohemia.0001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	# right_portrait = {
+		# character = scope:roman_emperor
+		# animation = personality_honorable
+	# }
+
+	trigger = {
+		not = { religion = religion:christianity_religion }
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		title:k_orthodox.holder = { save_scope_as = ecumenical_patriarch }
+		
+		title:k_papal_state.holder = { save_scope_as = pope }
+	}
+
+	option = { # Convert to Orthodoxy
+		name = HEE_christianization_of_bohemia.0001.a
+		
+		set_character_faith_with_conversion = faith:orthodox
+
+		scope:ecumenical_patriarch = {
+			add_opinion = {
+				target = root
+				modifier = pious_opinion
+				opinion = 25
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Convert to Catholicism
+		name = HEE_christianization_of_bohemia.0001.b
+		
+		set_character_faith_with_conversion = faith:catholic
+
+		scope:pope = {
+			add_opinion = {
+				target = root
+				modifier = pious_opinion
+				opinion = 25
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # The Old Ways are best
+		name = HEE_christianization_of_bohemia.0001.c
+		
+		every_vassal = {
+			limit = {
+				faith = root.faith
+			}
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 25
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				faith = root.faith
+			}
+
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 25
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

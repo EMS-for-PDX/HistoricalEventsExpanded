@@ -559,6 +559,7 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 			}
 			character:90107 = { save_scope_as = ludwig_the_german }
 		}
+		title:k_burgundy = { save_scope_as = k_burgundy }
 	}
 
 	option = {
@@ -590,6 +591,8 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 							days = 30 
 						}
 					}
+					
+					scope:k_burgundy = { add_title_law = male_only_law }
 				}
 			}
 			10 = {

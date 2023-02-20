@@ -69,7 +69,14 @@ hee_karling_867_effect = {
 
 	title:k_italy = { save_scope_as = k_italy }
 	title:k_east_francia = { save_scope_as = k_east_francia }
+	title:k_lotharingia = { save_scope_as = k_lotharingia }
+	title:k_bavaria = { save_scope_as = k_bavaria }
 	title:k_france = { save_scope_as = k_france }
+
+	scope:k_italy = { add_title_law = male_only_law }
+	scope:k_lotharingia = { add_title_law = male_only_law }
+	scope:k_east_francia = { add_title_law = male_only_law }
+	scope:k_bavaria = { add_title_law = male_only_law }
 
 	# House-keeping #
 	character:31702 = { give_nickname = nick_the_seneschal }
@@ -314,11 +321,221 @@ hee_byzantine_bulgaria_867_effect = {
 	character:HEE_chrysocheir = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
 
 	character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
-	
+
+	character:HEE_danielis = { save_scope_as = danielis_of_patras } # https://en.wikipedia.org/wiki/Danielis
+
+	character:HEE_gregory_asbestas = { save_scope_as = gregory_asbestas } # https://en.wikipedia.org/wiki/Gregory_Asbestas
+
+	character:168291 = { save_scope_as = petar_the_diplomat } # https://en.wikipedia.org/wiki/Peter_(diplomat)
+
 	faith:orthodox = { save_scope_as = orthodox }
 	faith:tengri_pagan = { save_scope_as = tengri }
-	
-	
+
+	title:b_vostitsa = { save_scope_as = b_vostitsa }
+
+	title:c_brysis = { save_scope_as = c_brysis }
+	title:c_adrianopolis = { save_scope_as = c_adrianopolis }
+	title:c_kalliopolis = { save_scope_as = c_kalliopolis }
+	title:c_mosynopolis = { save_scope_as = c_mosynopolis }
+	title:c_serres = { save_scope_as = c_serres }
+	title:c_naxos = { save_scope_as = c_naxos }
+	title:c_abydos = { save_scope_as = c_abydos }
+	title:c_lesbos = { save_scope_as = c_lesbos }
+	title:c_chios = { save_scope_as = c_chios }
+	title:c_rhodos = { save_scope_as = c_rhodos }
+	title:c_thessalonika = { save_scope_as = c_thessalonika }
+	title:c_chalkidike = { save_scope_as = c_chalkidike }
+	title:c_veria = { save_scope_as = c_veria }
+	title:c_thessalia = { save_scope_as = c_thessalia }
+	title:c_demetrias = { save_scope_as = c_demetrias }
+	title:c_neopatras = { save_scope_as = c_neopatras }
+	title:c_thessaliotis = { save_scope_as = c_thessaliotis }
+	title:c_dyrrachion = { save_scope_as = c_dyrrachion }
+
+	scope:c_dyrrachion = {
+		change_development_level = 8
+	}
+	scope:c_brysis = {
+		change_development_level = 4
+	}
+	scope:c_adrianopolis = {
+		change_development_level = 4
+	}
+	scope:c_kalliopolis = {
+		change_development_level = 4
+	}
+	scope:c_mosynopolis = {
+		change_development_level = 4
+	}
+	scope:c_serres = {
+		change_development_level = 4
+	}
+	scope:c_naxos = {
+		change_development_level = 2
+	}
+	scope:c_abydos = {
+		change_development_level = 4
+	}
+	scope:c_lesbos = {
+		change_development_level = 4
+	}
+	scope:c_chios = {
+		change_development_level = 4
+	}
+	scope:c_rhodos = {
+		change_development_level = 1
+	}
+	scope:c_thessalonika = {
+		change_development_level = 14
+	}
+	scope:c_chalkidike = {
+		change_development_level = 2
+	}
+	scope:c_veria = {
+		change_development_level = 4
+	}
+	scope:c_thessalia = {
+		change_development_level = 4
+	}
+	scope:c_demetrias = {
+		change_development_level = 4
+	}
+	scope:c_neopatras = {
+		change_development_level = 4
+	}
+	scope:c_thessaliotis = {
+		change_development_level = 2
+	}
+
+	title:c_attica = { save_scope_as = c_attica }
+	title:c_achaia = { save_scope_as = c_achaia }
+	title:c_korinthos = { save_scope_as = c_korinthos }
+	title:c_messenia = { save_scope_as = c_messenia }
+	title:c_laconia = { save_scope_as = c_laconia }
+
+	scope:c_attica = {
+		change_development_level = 5
+	}
+	scope:c_achaia = {
+		change_development_level = 5
+	}
+	scope:c_korinthos = {
+		change_development_level = 5
+	}
+	scope:c_messenia = {
+		change_development_level = 4
+	}
+	scope:c_laconia = {
+		change_development_level = 2
+	}
+
+	title:c_nikaea = { save_scope_as = c_nikaea }
+	title:c_mysia = { save_scope_as = c_mysia }
+	title:c_prusa = { save_scope_as = c_prusa }
+	title:c_ionia = { save_scope_as = c_ionia }
+	title:c_aeolis = { save_scope_as = c_aeolis }
+	title:c_thyatira = { save_scope_as = c_thyatira }
+	title:c_bithynia = { save_scope_as = c_bithynia }
+	title:c_tarsos = { save_scope_as = c_tarsos }
+	title:c_honorias = { save_scope_as = c_honorias }
+
+	scope:c_nikaea = {
+		change_development_level = 5
+	}
+	scope:c_mysia = {
+		change_development_level = 4
+	}
+	scope:c_prusa = {
+		change_development_level = 4
+	}
+	scope:c_ionia = {
+		change_development_level = 4
+	}
+	scope:c_aeolis = {
+		change_development_level = 3
+	}
+	scope:c_thyatira = {
+		change_development_level = 4
+	}
+	scope:c_bithynia = {
+		change_development_level = 4
+	}
+	scope:c_tarsos = {
+		change_development_level = 4
+	}
+	scope:c_honorias = {
+		change_development_level = 4
+	}
+
+	title:c_paphlagonia = { save_scope_as = c_paphlagonia }
+	title:c_sinope = { save_scope_as = c_sinope }
+	title:c_helenopontus = { save_scope_as = c_helenopontus }
+	title:c_cerasus = { save_scope_as = c_cerasus }
+	title:c_trebizond = { save_scope_as = c_trebizond }
+	title:c_colonea = { save_scope_as = c_colonea }
+
+	scope:c_paphlagonia = {
+		change_development_level = 3
+	}
+	scope:c_sinope = {
+		change_development_level = 4
+	}
+	scope:c_helenopontus = {
+		change_development_level = 4
+	}
+	scope:c_cerasus = {
+		change_development_level = 4
+	}
+	scope:c_trebizond = {
+		change_development_level = 4
+	}
+	scope:c_colonea = {
+		change_development_level = 4
+	}
+
+	title:c_caria = { save_scope_as = c_caria }
+	title:c_lycia = { save_scope_as = c_lycia }
+	title:c_pamphylia = { save_scope_as = c_pamphylia }
+	title:c_seleucia = { save_scope_as = c_seleucia }
+	title:c_cilicia = { save_scope_as = c_cilicia }
+	title:c_tall_hamid = { save_scope_as = c_tall_hamid }
+
+	scope:c_caria = {
+		change_development_level = 3
+	}
+	scope:c_lycia = {
+		change_development_level = 4
+	}
+	scope:c_pamphylia = {
+		change_development_level = 3
+	}
+	scope:c_seleucia = {
+		change_development_level = 3
+	}
+	scope:c_cilicia = {
+		change_development_level = 4
+	}
+	scope:c_tall_hamid = {
+		change_development_level = 3
+	}
+
+	title:c_constanta = { save_scope_as = c_constanta }
+	title:d_dobrudja = { save_scope_as = d_dobrudja }
+
+	scope:petar_the_diplomat = {
+		get_title = title:d_dobrudja
+		get_title = title:c_constanta
+	}
+
+	# character:145190 = { fire_councillor = cp:councillor_court_chaplain }
+
+	# character:145190 = {
+		# assign_councillor_type = {
+			# type = councillor_court_chaplain
+			# target = scope:gregory_asbestas
+		# }
+	# }
+
 	# Relations
 	if = { #If SE is loaded, give Basil Co-Emperor position
 		limit = {
@@ -340,12 +557,12 @@ hee_byzantine_bulgaria_867_effect = {
 		add_opinion = {
 			target = character:70490
 			modifier = insulted_opinion
-			opinion = -20
+			opinion = -25
 		}
 		add_opinion = {
 			target = character:70490
 			modifier = spurned_opinion
-			opinion = -20
+			opinion = -50
 		}
 		add_opinion = {
 			target = character:70490
@@ -366,6 +583,10 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	scope:danielis_of_patras = {
+		get_title = title:b_vostitsa
+	}
+
 	# character:1761 = {
 		# trigger_event = {
 			# id = pregnancy.2002
@@ -382,7 +603,7 @@ hee_byzantine_bulgaria_867_effect = {
 
 
 # Anarchy at Samarra
-hee_samarra_relations_867_effect = {	
+hee_samarra_relations_867_effect = {
 
 	# Scopes
 	character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
@@ -397,6 +618,8 @@ hee_samarra_relations_867_effect = {
 	character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
 	
 	# Create an uprising in  Fars around this character? https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
+	character:159732 = { save_scope_as = isa_shaybanid } 
+	character:HEE_damascus_governor = { save_scope_as = damascus_governor } 
 	
 	title:d_kermanshah = { save_scope_as = d_kermanshah }
 	title:c_kermanshah = { save_scope_as = c_kermanshah }
@@ -407,6 +630,8 @@ hee_samarra_relations_867_effect = {
 	title:c_hamadan = { save_scope_as = c_hamadan }
 	title:c_dinawar = { save_scope_as = c_dinawar }
 	title:c_nihawand = { save_scope_as = c_nihawand }
+	
+	title:d_damascus = { save_scope_as = d_damascus }
 	
 	# Relations	
 	character:34014 = { # Al-Mutazz
@@ -447,7 +672,20 @@ hee_samarra_relations_867_effect = {
 			change = scope:going_independent
 		}
 	}
-	resolve_title_and_vassal_change = scope:going_independent	
+
+	resolve_title_and_vassal_change = scope:going_independent
+
+	scope:isa_shaybanid = { add_unpressed_claim = scope:d_damascus }
+
+		#Declare Isa's illegal seizing of Damascus
+		scope:isa_shaybanid = {
+			start_war = {
+				casus_belli = claim_cb
+				target = scope:damascus_governor
+				claimant = scope:isa_shaybanid
+				target_title = scope:d_damascus
+			}
+		}	
 }
 
 
@@ -479,7 +717,11 @@ hee_iranian_intermezzo_effect = {
 	character:1231060 = { save_scope_as = buyid_founder } # https://en.wikipedia.org/wiki/Buyid_dynasty
 
 	character:180764 = { save_scope_as = sallarid_founder } # https://en.wikipedia.org/wiki/Sallarid_dynasty
-	
+
+	character:163161 = { # Troops provided by Muhammad ibn Tahir as reinforcements to take back Tabaristan
+		spawn_tahirid_troops_effect = yes
+	}
+
 }
 
 
@@ -666,6 +908,13 @@ hee_north_sea_867_effect = {
 	character:163112 = { # Halfdan
 		change_government = tribal_government
 	}
+
+	# Adding some prestige to the renowned Sons of Lothbrok
+	character:163108 = { add_prestige = 2500 }
+	character:163110 = { add_prestige = 2500 }
+	character:163111 = { add_prestige = 2500 }
+	character:163112 = { add_prestige = 2500 }
+	character:163119 = { add_prestige = 2500 }
 	
 	character:242 = { # Rollo
 		add_character_flag = {
@@ -1096,6 +1345,27 @@ hee_brittany_867_effect = {
 }
 
 hee_paulicians_867_effect = {
+	# Scopes
+	character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
+	character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
+	
+	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
+	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
+	
+	character:70554 = { save_scope_as = patriarch_photios } # https://en.wikipedia.org/wiki/Photios_I_of_Constantinople
+	character:70555 = { save_scope_as = patriarch_ignatios } # https://en.wikipedia.org/wiki/Ignatios_of_Constantinople
+	
+	character:145198 = { save_scope_as = leo_choirosphaktes } # https://en.wikipedia.org/wiki/Leo_Choirosphaktes
+	
+	character:41316 = { save_scope_as = nikephoros_the_elder } # https://en.wikipedia.org/wiki/Nikephoros_Phokas_the_Elder
+	
+	character:70382 = { save_scope_as = boris_i } # https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria
+	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
+	character:712 = { save_scope_as = simeon_i } # https://en.wikipedia.org/wiki/Simeon_I_of_Bulgaria
+
+	character:HEE_chrysocheir = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
+
+
 	title:c_satala = {
 		set_county_faith = faith:paulician
 	}
@@ -1114,4 +1384,19 @@ hee_paulicians_867_effect = {
 	title:c_mesopotamia = {
 		set_county_faith = faith:paulician
 	}
+
+		scope:chrysocheir = {
+			start_war = {
+				casus_belli = grand_raid_cb
+				target = scope:michael_iii
+				target_title = title:k_anatolia
+			}
+		}
+}
+
+hee_north_africa_867_effect = {
+	
+	character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+	character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
 }

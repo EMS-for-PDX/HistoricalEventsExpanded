@@ -1,0 +1,236 @@
+﻿grand_raid_cb = {
+	group = event
+
+	allowed_for_character = {}
+
+	allowed_against_character = {
+		has_title = title:e_byzantium
+	}
+
+    valid_to_start = {
+		always = no
+    }
+
+	target_titles = neighbor_land
+	#target_title_tier = county
+	target_title_tier = kingdom
+	target_de_jure_regions_above = yes
+	should_show_war_goal_subview = yes
+	combine_into_one = yes
+	mutually_exclusive_titles = { always = yes }
+
+	should_invalidate = {
+		NOT = {
+			any_in_list = {
+				list = target_titles
+				any_in_de_jure_hierarchy = {
+					tier >= tier_county
+					exists = holder
+					holder = {
+						OR = {
+							this = scope:defender
+							target_is_liege_or_above = scope:defender
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_invalidated_desc = msg_county_conquest_war_invalidated_message
+
+	on_invalidated = {}
+
+	on_declaration = {
+		on_declared_war = yes
+	}
+
+	cost = {}
+
+	on_victory_desc = {
+		triggered_desc = {
+			trigger = { scope:attacker = { is_local_player = yes } }
+			desc = grand_raid_war_warning_desc
+		}
+	}
+
+	on_victory = {
+		scope:attacker = {
+			add_prestige = 1500
+			dynasty = {
+				add_dynasty_prestige = 300
+			}
+		}
+		scope:defender = { add_prestige = -1500 }
+		every_in_list = {
+			list = target_titles
+
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_county }
+				# Set raided province modifier
+				title_province = {
+					add_province_modifier = { # TODO_CD_FP2 (JP) change to border raid modifier?
+						modifier = recently_looted_modifier
+						years = 5
+					}
+				}
+				# show_as_tooltip = {
+					# every_in_list = {
+						# list = target_titles
+						# fp2_border_raid_damage_effect = yes
+					# }
+				# }
+				# Find province for building destruction
+				# ordered_county_province = {
+					# order_by = num_buildings
+					# random = {
+						# chance = 25
+						# modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
+						# modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
+						# custom_tooltip = destroy_random_building_tt
+						# destroy_random_building_variable_effect = yes
+					# }
+				# }
+			}
+		}
+	}
+
+	on_white_peace_desc = {
+		triggered_desc = {
+			trigger = {
+				scope:attacker = { is_local_player = yes }
+			}
+			desc = border_raid_cb_desc_white_peace_attacker
+		}
+		triggered_desc = {
+			trigger = {
+				scope:defender = { is_local_player = yes }
+			}
+			desc = border_raid_cb_desc_white_peace_defender
+		}
+	}
+
+	on_white_peace = {
+		# Prestige loss for the attacker
+		scope:attacker = {
+			add_prestige = {
+				value = miniscule_prestige_value
+				multiply = -1.0
+			}
+			stress_impact = {
+				ambitious = medium_stress_impact_gain
+				arrogant = medium_stress_impact_gain
+			}
+		}
+
+		# Prestige for the attacker's war allies
+		add_from_contribution_attackers = {
+			prestige = minor_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		# Prestige for the defender's war allies
+		add_from_contribution_defenders = {
+			prestige = minor_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		scope:defender = {
+			stress_impact = {
+				arrogant = medium_stress_impact_gain
+			}
+		}
+
+		add_truce_white_peace_effect = yes
+	}
+
+	on_defeat_desc = {
+		triggered_desc = {
+			trigger = {
+				scope:attacker = { is_local_player = yes }
+			}
+			desc = border_raid_cb_desc_defeat_attacker
+		}
+		triggered_desc = {
+			trigger = {
+				scope:defender = { is_local_player = yes }
+			}
+			desc = border_raid_cb_desc_defeat_defender
+		}
+	}
+
+	on_defeat = {
+
+		# Prestige loss for the attacker
+		scope:attacker = {
+			pay_short_term_gold_reparations_effect = {
+				GOLD_VALUE = 1
+			}
+			add_prestige = {
+				value = medium_prestige_value
+				multiply = -1.0
+			}
+		}
+
+		# Prestige for Defender
+		scope:defender = {
+			add_prestige_war_defender_effect = {
+				PRESTIGE_VALUE = medium_prestige_value
+			}
+		}
+
+		# Prestige for the attacker's war allies
+		add_from_contribution_attackers = {
+			prestige = minor_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		# Prestige for the defender's war allies
+		add_from_contribution_defenders = {
+			prestige = minor_prestige_value
+			opinion = {
+				modifier = contributed_in_war
+			}
+		}
+
+		add_truce_attacker_defeat_effect = yes
+
+		scope:attacker = {
+			save_temporary_scope_as = loser
+		}
+
+		on_lost_aggression_war_discontent_loss = yes
+	}
+
+	transfer_behavior = transfer
+
+	on_primary_attacker_death = inherit
+	on_primary_defender_death = inherit
+
+	attacker_allies_inherit = yes
+	defender_allies_inherit = yes
+
+	war_name = GRAND_RAID_WAR_NAME
+	war_name_base = GRAND_RAID_WAR_NAME_BASE
+	cb_name = GRAND_RAID_CB
+
+	interface_priority = 100
+
+	# # The war will last 2 years at most
+	# defender_ticking_warscore_delay = { months = 3 }
+	# defender_ticking_warscore = 0.15
+
+	# attacker_wargoal_percentage = 1
+	# attacker_ticking_warscore = 1
+
+	# max_defender_score_from_occupation = 100
+	# max_attacker_score_from_occupation = 1
+
+	# ticking_war_score_targets_entire_realm = no
+}

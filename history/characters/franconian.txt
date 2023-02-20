@@ -17,6 +17,7 @@
 	trait = stubborn
 	trait = trusting
 	sexuality = heterosexual
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90095
 	mother = 91002
 	806.1.1 = {
@@ -57,6 +58,7 @@
 	trait = beauty_good_2
 	trait = strong
 	sexuality = heterosexual
+	fertility = 0.05 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90107 #(Ludwig the German)
 	mother = 7987
 	830.1.14 = {
@@ -118,6 +120,7 @@
 	trait = honest
 	trait = fickle
 	trait = gregarious
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90107 #(Ludwig the German)
 	mother = 7987
 	835.1.14 = {
@@ -147,6 +150,7 @@
 	trait = generous
 	trait = zealous
 	trait = possessed_1
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90107 #(Ludwig the German)
 	mother = 7987
 	839.1.14 = {
@@ -1888,7 +1892,7 @@
 10096 = {
 	name = "Judith"
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 3
 	intrigue = 7
@@ -1907,7 +1911,7 @@
 
 10097 = {
 	name = "Arnulf"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -1928,7 +1932,7 @@
 
 10098 = {
 	name = "Berthold"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 6
 	diplomacy = 5
 	intrigue = 7
@@ -1970,7 +1974,7 @@
 
 11061 = {
 	name = "Heinrich"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -1989,7 +1993,7 @@
 
 11067 = {
 	name = "Berthold"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2007,7 +2011,7 @@
 
 11069 = {
 	name = "Arnulf"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2048,7 +2052,7 @@
 
 1434 = {
 	name = "Heinrich"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 4
 	intrigue = 6
@@ -2072,7 +2076,7 @@
 1435 = {
 	name = "Elika"
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 8
 	diplomacy = 7
 	intrigue = 4
@@ -2094,7 +2098,7 @@
 1437 = {
 	name = "Judith"
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 5
 	diplomacy = 7
 	intrigue = 6
@@ -2131,7 +2135,7 @@
 20261 = {
 	name = "Otto"
 	# AKA: Kuno
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 6
 	diplomacy = 7
 	intrigue = 5
@@ -2527,7 +2531,7 @@
 
 30671 = {
 	name = "Burchard"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -2565,7 +2569,7 @@
 	name = "Beatrix"
 	# AKA: Adelaide
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2752,7 +2756,7 @@
 
 7969 = {
 	name = "Luitpold"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2773,7 +2777,7 @@
 
 7970 = {
 	name = "Eberhard"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2792,7 +2796,7 @@
 
 7971 = {
 	name = "Berthold"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2811,7 +2815,7 @@
 
 7972 = {
 	name = "Heinrich"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2944,7 +2948,7 @@
 31527 = {
 	name = "Adelheid"
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -2958,7 +2962,7 @@
 
 31528 = {
 	name = "Kuno"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 11061
@@ -3032,7 +3036,7 @@
 
 33469 = {
 	name = "Heinrich"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -3241,7 +3245,7 @@
 
 168302 = {
 	name = "Liutbert" #real name uncertain
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 168301
@@ -3256,7 +3260,7 @@
 
 168303 = {
 	name = "Herolt"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 168302
@@ -3271,7 +3275,7 @@
 
 168304 = {
 	name = "Alberik"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 168303
@@ -3286,7 +3290,7 @@
 
 168305 = {
 	name = "Herolt"
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 168304
@@ -3302,7 +3306,7 @@
 168306 = {
 	name = "Rihni"
 	female = yes
-	dynasty_house = house_babenberg
+	dynasty = 416
 	religion = "catholic"
 	culture = franconian
 	father = 168303
@@ -18062,6 +18066,27 @@
 	name = "Liutbert"
 	religion = "catholic"
 	culture = franconian
+
+	#Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 8
+	prowess = 7
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = brave
+	trait = arrogant
+	trait = zealous
+	trait = diligent
+	
+	#Other Traits
+	trait = diplomat # reckoned the first Archchancellor of Germany
+
 	830.1.1 = {
 		birth = yes
 	}

@@ -4127,6 +4127,8 @@
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
+	trait = education_diplomacy_4 # Good speaker
+	diplomacy = 9
 	trait = honest
 	trait = ambitious
 	trait = patient
@@ -4508,6 +4510,7 @@
 
 166044 = {
 	name = "Gyda" #Gyda Eiriksdottir
+	dna = HEE_gyda_dna
 	female = yes
 	dynasty = 1040004
 	religion = "norse_pagan"
@@ -4541,6 +4544,9 @@
 	
 	852.1.1 = {
 		birth = "854.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	935.1.1 = {
 		death = "935.1.1"
@@ -5265,6 +5271,8 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "norse"
+	father = hee_inger
+	mother = hee_melisenna_martinakia
 	trait = lustful
 	trait = greedy
 	trait = education_diplomacy_1
@@ -5744,6 +5752,11 @@
 	father = 163112 # "Halfdan" # Ragnarsson 'Hvitserk' (fictionally - Gudfrid existed but wasn't Halfdan's son)
 	mother = 306009 #Fictional wife of Halfdan
 	trait = legitimized_bastard
+	trait = education_martial_3
+	trait = greedy
+	trait = ambitious # Sought power
+	trait = cynical # Accepted baptism and converted
+	trait = raider # Norse Raider
 	844.1.1 = {
 		birth = yes
 	}
@@ -6463,6 +6476,7 @@
 	trait = reaver
 	trait = organizer
 	trait = viking
+	trait = shrewd
 	
 	839.1.1 = {
 		birth = yes

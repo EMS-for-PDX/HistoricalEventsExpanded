@@ -350,8 +350,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_rashka.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_rashka.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }
@@ -369,8 +367,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_duklja.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_duklja.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }
@@ -388,8 +384,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_travunia.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_travunia.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }
@@ -407,8 +401,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_zachlumia.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_zachlumia.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }
@@ -426,8 +418,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_pagania.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_pagania.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }
@@ -445,8 +435,6 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			}
 			title:c_rama.holder = {
 				add_character_flag = heard_of_ragusa_defense
-			}
-			title:c_rama.holder = {
 				trigger_event = {
 					id = HEE_siege_of_ragusa.0006
 					days = { 7 30 }

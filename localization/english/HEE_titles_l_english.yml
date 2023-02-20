@@ -7,6 +7,9 @@
  e_carolingian_empire: "Carolingian Empire"
  e_carolingian_empire_adj: "Carolingian"
 
+ k_provence: "Provence"
+ k_provence_adj: "Provencian"
+
  k_pechenegs_custom: "Pechenegs"
  k_pechenegs_custom_adj: "Pecheneg"
 
@@ -50,6 +53,9 @@
  d_paulician_principality: "Paulician Principality"
  d_paulician_principality_adj: "Paulician"
  
+ d_byzantine_sicily: "Sicily"
+ d_byzantine_sicily_adj: "Sicilian"
+ 
  # Ragusa
  d_aghlabid_raiders: "Aghlabid Raiders"
  siege_of_ragusa_event_troops: "Aghlabid Raiders"
@@ -58,9 +64,9 @@
  norse_raiders_event_troops: "Norse Raiders"
  
  d_great_summer_army: "Great Summer Army"
- great_summer_army_event_troops: "Great Summer Army"
  
  #KURDISH_UPRISING
+ GREAT_SUMMER_ARMY_NEUTRAL_NAME: "Great Summer Army"
  AGHLABID_ITALIAN_PENNSULA_TITLE_NAME: "al-Ard al-Kabira"
  KURDISH_UPRISING_MEN_NAME: "Kurdish Rebels"
  KURDISH_UPRISING_WOMEN_NAME: "Kurdish Rebels"

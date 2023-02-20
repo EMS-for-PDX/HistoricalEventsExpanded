@@ -118,7 +118,7 @@ war = {
 	}
 	casus_belli = ducal_conquest_cb
 	attackers = { 163096 maghrebi0001 }
-	defenders = { 70490 } # Altered to reflect Michael III being alive
+	defenders = { 70490 145190 } # Altered to reflect Michael III being alive
 }
 
 #Saffarid-Tahirid War

@@ -1,5 +1,27 @@
 ﻿
-
+spawn_tahirid_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = no
+		name = kurdish_local_event_troops
+		levies = {
+			value = 450
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 3
+		}
+		men_at_arms = {
+			type = ayyar
+			stacks = 2
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		location = capital_province
+	}
+}
 
 spawn_local_kurdish_troops_effect = {
 	spawn_army = {

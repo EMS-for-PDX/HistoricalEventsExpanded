@@ -62,23 +62,7 @@
 			inheritable = no
 			name = norse_raiders_event_troops
 			levies = {
-				value = 950
-			}
-			men_at_arms = {
-				type = light_footmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = light_footmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
+				value = 1500
 			}
 			men_at_arms = {
 				type = huscarl
@@ -86,18 +70,6 @@
 			}
 			men_at_arms = {
 				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = mangonel
 				stacks = 5
 			}
 			location = province:2179 #Rouen

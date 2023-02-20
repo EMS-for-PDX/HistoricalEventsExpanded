@@ -1,0 +1,134 @@
+﻿## Characters for the Iranian Interrezzo - 867 ##
+
+HEE_maziar_ibn_qarin  = { # https://en.wikipedia.org/wiki/Qarin_I
+	name = "Maziar"
+	#female = yes
+	dynasty_house = house_bavandid # Bavandid
+	religion = "ashari"
+	culture = "daylamite"
+	father = 160294
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+
+	
+	#disallow_random_traits = yes
+	829.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = { # Held with his brother as hostages to the Zaydid court. Unknown what happened to him, but with his father's mutiny, he likely was killed
+		death = {
+			death_reason = death_execution
+			killer = 45108 # Hasan 'the Missionary'
+		}
+	}
+}
+
+HEE_jafar_ibn_shahriyar  = { # https://en.wikipedia.org/wiki/Qarin_I
+	name = "Ja'far"
+	#female = yes
+	dynasty_house = house_bavandid # Bavandid
+	religion = "ashari"
+	culture = "daylamite"
+	father = 160292
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+
+	
+	#disallow_random_traits = yes
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = { # Held with his brother as hostages to the Zaydid court. Unknown what happened to him, but with his father's mutiny, he likely was killed
+		death = {
+			death_reason = death_battle
+			killer = 45108 # Hasan 'the Missionary'
+		}
+	}
+}
+
+HEE_khurshid_justanid = {
+	name = "Khurshid"
+	#female = yes
+	dynasty = 7513
+	religion = "zayidi"
+	culture = "daylamite"
+	father = 41605
+	mother = 180763
+	#health = 5.0
+	
+	#Skills
+	trait = arrogant
+	trait = honest
+	trait = impatient
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+
+	#disallow_random_traits = yes
+	845.1.1 = { # Unknown
+		birth = yes
+	}
+	865.12.1 = { # Deposed in 865 by Hasan 'the Missionary', unknown what happened to him after, so lets just say he was killed
+		death = {
+			death_reason = death_execution
+			killer = 45108 # Hasan 'the Missionary'
+		}
+	}
+}
+
+HEE_muhammad_ibn_vasif = { # https://en.wikipedia.org/wiki/Ya%27qub_ibn_al-Layth_al-Saffar#Campaigns_in_Sistan_and_Khorasan
+	name = "Muhammad"
+	#female = yes
+	#dynasty = 
+	religion = "ashari"
+	culture = "persian"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	# Skills
+	diplomacy = 7
+	martial = 5
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	
+	# Education
+	trait = education_stewardship_3
+	
+	# Personality Traits
+
+	
+	# Other Traits
+
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	835.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}

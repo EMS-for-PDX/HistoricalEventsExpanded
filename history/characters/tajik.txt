@@ -85,6 +85,18 @@
 	religion = "maturidi"
 	culture = "tajik"
 	father = 163155
+
+	# Skills
+	
+	# Education
+	trait = education_martial_3 # became a military leader for the Tahirid governor of Khurasan
+	
+	# Personality Traits
+	trait = honest # Having been defeated near Pushang, he advised Muhammad to compromise with the Saffarid
+	trait = brave # Standard warrior trait
+
+	# Other Traits
+
 	810.1.1 = {
 		birth = yes
 	}
@@ -100,16 +112,26 @@
 	culture = "tajik"
 	father = 163154
 	
-	trait = education_martial_3
-	
+	#Skills
+	diplomacy = 8
+	martial = 9
+	stewardship = 8
+	intrigue = 6
+	learning = 8
+	prowess = 8
+
+	#Education
+	trait = education_martial_4
+
+	# Personality Traits
 	trait = generous
 	trait = zealous
 	trait = just
 	trait = compassionate
 	trait = ambitious
-	
-	trait = intellect_good_1
-	
+
+	# Other Traits
+	trait = intellect_good_2
 	trait = organizer
 	
 	849.5.1 = {
@@ -214,6 +236,20 @@
 	religion = "ashari"
 	culture = "tajik"
 	father = 163159
+
+	# Skills
+
+	
+	# Education
+	trait = education_diplomacy_2 # Worked through influence to enhance his power
+	
+	# Personality Traits
+	trait = brave # Muhammad refused to flee his capital and was captured by the Saffarids
+	trait = stubborn # Muhammad refused to flee his capital and was captured by the Saffarids
+	trait = diligent # Did not shy away from constant efforts to advance his agenda
+	
+	# Other Traits
+
 	840.1.1 = {
 		birth = yes
 	}
@@ -242,6 +278,7 @@
 	religion = "ashari"
 	culture = "tajik"
 	father = 163158
+	trait = disinherited
 	815.1.1 = {
 		birth = yes
 	}
@@ -301,7 +338,7 @@
 	prowess = 5
 	
 	#Education
-	trait = education_intrigue_2
+	trait = education_stewardship_1
 	
 	#Personality Traits
 	trait = greedy
@@ -311,24 +348,38 @@
 	824.1.1 = {
 		birth = yes
 	}
+	864.1.1 = { # Lost Tabaristan to Alid rebels - give claims to push him to take it back
+		effect = {
+			add_pressed_claim = title:d_tabaristan
+			add_pressed_claim = title:c_mazandaran
+			add_pressed_claim = title:c_baduspan
+			add_pressed_claim = title:c_ruyan
+		}
+		effect = {
+			set_relation_rival = {
+				target = character:45108
+				reason = sulayman_and_hasan_rivalry_desc
+			}	
+		}
+	}
 	879.1.1 = {
 		death = yes
 	}
 }
 
-163162 = {
-	name = "Muhammad"
-	dynasty = 811
-	religion = "ashari"
-	culture = "tajik"
-	father = 163158
-	820.1.1 = {
-		birth = yes
-	}
-	890.1.1 = {
-		death = yes
-	}
-}
+# 163162 = { Removed because he is a duplicate character of 10002230509
+	# name = "Muhammad"
+	# dynasty = 811
+	# religion = "ashari"
+	# culture = "tajik"
+	# father = 163158
+	# 820.1.1 = {
+		# birth = yes
+	# }
+	# 890.1.1 = {
+		# death = yes
+	# }
+# }
 
 188686 = {
 	name = "Tahir"

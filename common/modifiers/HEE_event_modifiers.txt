@@ -42,14 +42,15 @@ anarchy_at_samarra_financial_straits = {
 
 anarchy_at_samarra_loss_of_central_authority = {
 	icon = county_modifier_control_negative
-	monthly_county_control_change_factor = -0.5
 	vassal_opinion = -20
+	monthly_prestige_gain_mult = -0.25
+	monthly_county_control_change_factor = -0.5
 }
 
 anarchy_at_samarra_unpaid_soldiery = {
 	icon = prowess_negative
 	knight_effectiveness_mult = -0.5
-	levy_reinforcement_rate = 0-0.5
+	levy_reinforcement_rate = -0.5
 	supply_duration = -0.5
 	supply_capacity_mult = -0.5
 }
@@ -103,6 +104,13 @@ strengthened_salerno_defenses_modifier = {
 	fort_level = 3
 	garrison_size = 1.0
 	defender_holding_advantage = 10
+}
+
+hee_aftermath_of_plague_modifier = {
+	icon = county_modifier_development_negative
+	build_speed = 0.75
+	tax_mult = -0.75
+	development_growth_factor = -0.5
 }
 
 # testing_water = {

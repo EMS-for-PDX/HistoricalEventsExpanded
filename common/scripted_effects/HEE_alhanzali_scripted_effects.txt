@@ -1,36 +1,13 @@
 ﻿hee_alhanzali_uprising_scripted_effect = {
 	character:HEE_muhammad_ibn_wasil = { save_scope_as = al_hanzali } # https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
 	
-	character:HEE_muhammad_ibn_wasil = {
+	scope:al_hanzali = {
 		#Give the adventurer a dynamic title to tide them over.
 		#give_title = d_aghlabid_raiders
 		
 		create_dynamic_title = {
 			tier = duchy
-			name = {
-				first_valid = {
-					triggered_desc = {
-						trigger = {
-							faith = { has_doctrine = doctrine_gender_male_dominated }
-						}
-						desc = KURDISH_UPRISING_MEN_NAME #Change Name
-					}
-					triggered_desc = {
-						trigger = {
-							faith = { has_doctrine = doctrine_gender_female_dominated }
-						}
-						desc = KURDISH_UPRISING_WOMEN_NAME #Change Name
-					}
-					triggered_desc = {
-						trigger = {
-							faith = { has_doctrine = doctrine_gender_equal }
-						}
-						desc = KURDISH_UPRISING_NEUTRAL_NAME #Change Name
-					}
-					#Fallback, just in case.
-					desc = KURDISH_UPRISING_NEUTRAL_NAME #Change Name
-				}
-			}
+			name = KURDISH_UPRISING_NEUTRAL_NAME
 		}
 	}
 	
@@ -83,9 +60,10 @@
 		spawn_army = {
 			uses_supply = no
 			inheritable = no
+			war_keep_on_attacker_victory = no
 			name = kurdish_local_event_troops
 			levies = {
-				value = 450
+				value = 1000
 			}
 			men_at_arms = {
 				type = light_footmen
@@ -96,19 +74,23 @@
 				stacks = 5
 			}
 			men_at_arms = {
-				type = bowmen
-				stacks = 5
+				type = light_footmen
+				stacks = 4
 			}
 			men_at_arms = {
 				type = bowmen
 				stacks = 5
 			}
 			men_at_arms = {
-				type = camel_rider
+				type = bowmen
 				stacks = 5
 			}
 			men_at_arms = {
-				type = camel_rider
+				type = mubarizun
+				stacks = 5
+			}
+			men_at_arms = {
+				type = mangonel
 				stacks = 5
 			}
 			men_at_arms = {
@@ -123,7 +105,7 @@
 			# Do nothing.
 		}
 		# Loan a little gold in case they're in debt/to keep them going.
- 		scope:al_hanzali = { add_gold = 250 }
+ 		scope:al_hanzali = { add_gold = 100 }
 	}
 	
 }

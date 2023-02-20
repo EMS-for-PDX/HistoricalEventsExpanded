@@ -12,6 +12,12 @@ e_carolingian_empire = { # https://en.wikipedia.org/wiki/Carolingian_Empire
 	definite_form = yes
 }
 
+k_provence = { # https://en.wikipedia.org/wiki/Lower_Burgundy
+	color = { 180 30 70 }
+
+	capital = c_venaissin # Venaissin
+}
+
 k_pechenegs_custom = {
 	color = { 132 108 72}
 	ignore_titularity_for_title_weighting = yes
@@ -47,6 +53,12 @@ d_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Her
 	color = { 200 215 200 }
 
 	capital = c_hereti
+}
+
+d_byzantine_sicily = { # https://en.wikipedia.org/wiki/Sicily_(theme)
+	color = { 131 90 158 }
+
+	capital = c_siracusa
 }
 
 k_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Hereti#Kings_of_Kakheti_and_Hereti
@@ -94,12 +106,21 @@ d_sawad = { # https://en.wikipedia.org/wiki/Sawad
 d_paulician_principality = { # https://en.wikipedia.org/wiki/Paulicianism#Formation_of_Paulician_state
 	color = { 185 55 200 }
 
-	landless = yes
+	ai_primary_priority = {
+		if = {
+			limit = {
+				faith = faith:paulician
+			}
+			add = @always_primary_score
+		}
+	}
+
+	# landless = yes
 	capital = c_satala
 	
 	definite_form = yes
 	ruler_uses_title_name = no
-	destroy_on_succession = yes
+	# destroy_on_succession = yes
 	can_be_named_after_dynasty = no
 	no_automatic_claims = yes
 	de_jure_drift_disabled = yes

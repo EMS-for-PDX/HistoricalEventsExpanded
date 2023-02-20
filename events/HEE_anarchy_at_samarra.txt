@@ -205,10 +205,10 @@ hee_anarchy_at_samarra.0003 = { # Reach out to Salih for a possible alliance
 		custom_tooltip = grant_salih_his_desired_appointments
 		
 
-		trigger_event = {
-			id = hee_anarchy_at_samarra.0003
-			days = { 10 15 }
-		}
+		# trigger_event = {
+			# id = hee_anarchy_at_samarra.0003
+			# days = { 10 15 }
+		# }
 		
 		ai_chance = {
 			base = 1000
@@ -255,12 +255,38 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 		
 		set_designated_heir = character:34015
 		
+		if = {
+			limit = {
+				scope:al_mutazz = { has_character_modifier = anarchy_at_samarra_financial_straits }
+			}
+			character:34015 = { add_character_modifier = anarchy_at_samarra_financial_straits }
+		}
+		
+		if = {
+			limit = {
+				scope:al_mutazz = { has_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+			}
+			character:34015 = { add_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+		}
+
+		if = {
+			limit = {
+				scope:al_mutazz = { has_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+			}
+			character:34015 = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+		}		
+		
 		depose = yes
 
-		# trigger_event = {
-			# id = hee_anarchy_at_samarra.0003
-			# days = { 10 15 }
-		# }
+		imprison_character_effect = {
+			TARGET = scope:al_mutazz
+			IMPRISONER = scope:salih_ibn_wasif
+		}
+
+		trigger_event = {
+			id = hee_anarchy_at_samarra.1001
+			days = { 3 5 }
+		}
 		
 		ai_chance = {
 			base = 1000
@@ -270,14 +296,69 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 	option = {
 		name = hee_anarchy_at_samarra.1000.b
 		
-		custom_tooltip = curse_salih #ahistorical option
+		custom_tooltip = curse_salih 
 		
 		set_designated_heir = character:34015
 		
 		depose = yes
+
+		imprison_character_effect = {
+			TARGET = scope:al_mutazz
+			IMPRISONER = scope:salih_ibn_wasif
+		}
+
+		trigger_event = {
+			id = hee_anarchy_at_samarra.1001
+			days = { 3 5 }
+		}
 		
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+
+hee_anarchy_at_samarra.1001 = { # Al-Mutazz's death
+	type = character_event
+	title = hee_anarchy_at_samarra.1001.t
+	desc = hee_anarchy_at_samarra.1001.desc
+	theme = prison
+	override_background = { event_background = dungeon }
+	left_portrait = {
+		character = root
+		animation = prisondungeon
+	}
+	# right_portrait = {
+		# character = scope:salih_ibn_wasif
+		# animation = personality_cynical
+	# }
+
+	trigger = {
+		scope:al_mutazz = { is_alive = yes }
+		scope:al_mutazz = { is_landed = no }
+		scope:al_mutazz = { is_imprisoned = yes }
+	}
+	
+	immediate = {
+		scope:al_muhtadi = {
+			trigger_event = {
+				id = hee_anarchy_at_samarra.2000
+				days = { 350 370 }
+			}
+		}
+	}
+
+	option = { # Die
+		name = hee_anarchy_at_samarra.1001.a
+
+		hidden_effect = {
+			death = {
+				death_reason = death_dungeon
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
 		}
 	}
 }
@@ -292,8 +373,8 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 		animation = fear
 	}
 	right_portrait = {
-		character = scope:salih_ibn_wasif
-		animation = personality_cynical
+		character = scope:musa_bughoglu
+		animation = personality_vengeful
 	}
 
 	trigger = {
@@ -303,15 +384,71 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 		#is_at_war = no
 		is_imprisoned = no
 	}
+
+	immediate = {
+		# Scopes
+		# character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
+		character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+		character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+		character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+		character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+		
+		character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+		character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
+		character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+		character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+
+	}
 	
 	option = {
 		name = hee_anarchy_at_samarra.2000.a
 
-		custom_tooltip = plead_with_salih
+		#Al-Mu'tamid recieves the title of Caliph, but nothing else
+		scope:al_mutamid = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			
+			title:d_sunni = {
+				change_title_holder = {
+					holder = scope:al_mutamid
+					change = scope:change
+				}
+			}
+			
+			resolve_title_and_vassal_change = scope:change
+		}
 		
-		set_designated_heir = character:34016
+		set_designated_heir = character:34017 # Al-Muwaffaq
+
+		if = {
+			limit = {
+				character:34015 = { has_character_modifier = anarchy_at_samarra_financial_straits }
+			}
+			character:34017 = { add_character_modifier = anarchy_at_samarra_financial_straits }
+		}
 		
-		depose = yes
+		if = {
+			limit = {
+				character:34015 = { has_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+			}
+			character:34017 = { add_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+		}
+
+		if = {
+			limit = {
+				character:34015 = { has_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+			}
+			character:34017 = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+		}	
+
+		known_murder_effect = {
+			VICTIM = character:34015
+			MURDERER = character:163132
+			EXPOSER = character:163132
+		}
 
 		# trigger_event = {
 			# id = hee_anarchy_at_samarra.0003
@@ -326,14 +463,197 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 	option = {
 		name = hee_anarchy_at_samarra.2000.b
 		
-		custom_tooltip = curse_salih #ahistorical option
+		#Al-Mu'tamid recieves the title of Caliph, but nothing else
+		scope:al_mutamid = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			
+			title:d_sunni = {
+				change_title_holder = {
+					holder = scope:al_mutamid
+					change = scope:change
+				}
+			}
+			
+			resolve_title_and_vassal_change = scope:change
+		}
 		
-		set_designated_heir = character:34016
-		
-		depose = yes
+		set_designated_heir = character:34017 # Al-Muwaffaq
+
+		known_murder_effect = {
+			VICTIM = character:34015
+			MURDERER = character:163132
+			EXPOSER = character:163132
+		}
 		
 		ai_chance = {
 			base = 0
 		}
+	}
+}
+
+hee_anarchy_at_samarra.9000 = {
+	type = empty
+	hidden = yes
+
+	trigger = {
+		has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		#is_imprisoned = no
+	}
+
+	immediate = {
+		trigger_event = {
+			id = hee_anarchy_at_samarra.9001
+			days = { 180 540 } #~1 month
+		}
+
+		title:k_jerusalem = { save_scope_as = k_jerusalem }
+		title:k_syria = { save_scope_as = k_syria }
+		title:k_anatolia = { save_scope_as = k_anatolia }
+		title:k_jazira = { save_scope_as = k_jazira }
+		title:k_arabia = { save_scope_as = k_arabia }
+		title:k_mesopotamia = { save_scope_as = k_mesopotamia }
+		title:k_armenia = { save_scope_as = k_armenia }
+		title:k_daylam = { save_scope_as = k_daylam }
+		title:k_cyprus = { save_scope_as = k_cyprus }
+		title:k_armenian_principality = { save_scope_as = k_armenian_principality }
+		
+		title:d_damascus = { save_scope_as = d_damascus }
+		title:d_shammar = { save_scope_as = d_shammar }
+		title:d_lebanon = { save_scope_as = d_lebanon }
+		title:d_homs = { save_scope_as = d_homs }
+		title:d_cilicia = { save_scope_as = d_cilicia }
+		title:d_muslim_tbilisi = { save_scope_as = d_muslim_tbilisi }
+
+		every_vassal = {
+			limit = {
+				or = {
+					primary_title = {
+						or = {
+							target_is_de_jure_liege_or_above = scope:k_jerusalem
+							target_is_de_jure_liege_or_above = scope:k_cyprus
+							target_is_de_jure_liege_or_above = scope:k_armenia
+							target_is_de_jure_liege_or_above = scope:k_daylam
+							target_is_de_jure_liege_or_above = scope:d_damascus
+							target_is_de_jure_liege_or_above = scope:d_shammar
+							target_is_de_jure_liege_or_above = scope:d_lebanon
+							target_is_de_jure_liege_or_above = scope:d_homs
+						}
+					}
+					primary_title = scope:k_armenian_principality
+					primary_title = scope:d_homs
+					primary_title = scope:d_shammar
+					primary_title = scope:d_lebanon
+					primary_title = scope:d_damascus
+					primary_title = scope:d_cilicia
+					primary_title = scope:d_muslim_tbilisi
+				}
+			}
+			add_to_list = distant_vassals
+		}
+
+		create_title_and_vassal_change = {
+			type = independency
+			save_scope_as = going_independent
+			add_claim_on_loss = no
+		}
+		every_in_list = {
+			list = distant_vassals
+			becomes_independent = {
+				change = scope:going_independent
+			}
+		}
+		resolve_title_and_vassal_change = scope:going_independent
+	}
+}
+
+hee_anarchy_at_samarra.9001 = {
+	type = empty
+	hidden = yes
+
+	trigger = {
+		has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		#is_imprisoned = no
+	}
+
+	immediate = {
+		title:k_jerusalem = { save_scope_as = k_jerusalem }
+		title:k_syria = { save_scope_as = k_syria }
+		title:k_anatolia = { save_scope_as = k_anatolia }
+		title:k_jazira = { save_scope_as = k_jazira }
+		title:k_arabia = { save_scope_as = k_arabia }
+		title:k_mesopotamia = { save_scope_as = k_mesopotamia }
+		title:k_armenia = { save_scope_as = k_armenia }
+		title:k_daylam = { save_scope_as = k_daylam }
+		title:k_cyprus = { save_scope_as = k_cyprus }
+		
+		title:d_jawf = { save_scope_as = d_jawf }
+		title:d_aleppo = { save_scope_as = d_aleppo }
+		title:d_palmyra = { save_scope_as = d_palmyra }
+		title:d_edessa = { save_scope_as = d_edessa }
+		title:d_diyarbakr = { save_scope_as = d_diyarbakr }
+		title:d_diyarrabia = { save_scope_as = d_diyarrabia }
+		title:d_diyarmudar = { save_scope_as = d_diyarmudar }
+
+		every_vassal = {
+			limit = {
+				or = {
+					primary_title = {
+						or = {
+							target_is_de_jure_liege_or_above = scope:k_syria
+							target_is_de_jure_liege_or_above = scope:d_jawf
+						}
+					}
+					primary_title = scope:d_aleppo
+					primary_title = scope:d_palmyra
+					primary_title = scope:d_edessa
+					primary_title = scope:d_diyarbakr
+					primary_title = scope:d_diyarrabia
+					primary_title = scope:d_diyarmudar
+				}
+			}
+			add_to_list = distant_vassals
+		}
+
+		create_title_and_vassal_change = {
+			type = independency
+			save_scope_as = going_independent
+			add_claim_on_loss = no
+		}
+		every_in_list = {
+			list = distant_vassals
+			becomes_independent = {
+				change = scope:going_independent
+			}
+		}
+		resolve_title_and_vassal_change = scope:going_independent
+
+		# Dissolve the Empire
+		create_title_and_vassal_change = {
+			type = created
+			save_scope_as = title_change
+			add_claim_on_loss = yes
+		}
+		
+		title:k_mesopotamia = {
+			change_title_holder = {
+				holder = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		
+		destroy_title = title:e_arabia
 	}
 }

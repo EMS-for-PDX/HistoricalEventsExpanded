@@ -87,8 +87,8 @@ HEE_byzantine_croatia.0001 = { # After the death of the usurper Domagoj, a Trpim
 
 HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of the Trpimirovic dynasty for Imperial support in reclaiming Croatia
 	type = character_event
-	title = HEE_italy_questline.0002.t
-	desc = HEE_italy_questline.0002.desc
+	title = HEE_byzantine_croatia.0002.t
+	desc = HEE_byzantine_croatia.0002.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -121,7 +121,10 @@ HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of
 	}
 
 	immediate = {
-
+		if ={
+			limit = { exists = title:d_croatia }
+			title:d_croatia.holder = { save_scope_as = duke_of_croatia }
+		}
 	}
 
 	option = {
@@ -133,7 +136,7 @@ HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of
 			scope:eremperor = {
 				add_character_flag = supported_the_trpimirovic_dynasty
 				start_war = {
-					casus_belli = claim_cb
+					casus_belli = croatianreconquest
 					target = scope:duke_of_croatia
 					target_title = title:d_croatia
 					claimant = scope:croatian_claimant
@@ -164,41 +167,254 @@ HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of
 	}
 }
 
-# Louis the Younger chain
-HEE_byzantine_croatia.0003 = { # Victory at Bari trigger
+HEE_byzantine_croatia.0003 = { # Croatian reconquest trigger
 	type = empty
 	hidden = yes
 
 	trigger = {
-		scope:attacker = {
-			NOT = { has_character_flag = reclaimed_croatia_for_the_trpimirovic_dynasty }
-			has_character_flag = supported_the_trpimirovic_dynasty
-			is_alive = yes
-			is_landed = yes
-			is_independent_ruler = yes
-			#is_at_war = no
-			is_imprisoned = no
-		
-		}	
-		scope:defender = title:d_croatia.holder
+
 	}
 
 	immediate = {
+		if ={
+			limit = { exists = title:k_papal_state }
+			title:k_papal_state.holder = { save_scope_as = pope }
+		}
 		# Emperor Louis's choice to garrison Southern Italy
 		scope:attacker = {
 			add_character_flag = reclaimed_croatia_for_the_trpimirovic_dynasty
 		}
 
-		if = {
-			limit = {
-				character:167857 = { is_alive = yes }
+		scope:pope = {
+			trigger_event = {
+				id = HEE_byzantine_croatia.004
+				days = { 7 20 }
 			}
-			character:167857 = {
+		}
+	}
+}
+
+HEE_byzantine_croatia.0004 = { # The Pope hears of Croatia's shift to Orthodoxy, and fears he must take action
+	type = character_event
+	title = HEE_byzantine_croatia.0004.t
+	desc = HEE_byzantine_croatia.0004.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:eremperor
+		animation = personality_dishonorable
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:e_byzantium }
+			title:e_byzantium.holder = { save_scope_as = eremperor }
+		}
+		character:167857 = { save_scope_as = branimir_of_croatia } # https://en.wikipedia.org/wiki/Branimir_of_Croatia
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0004.a
+		
+		custom_tooltip = reach_out_to_branimir_of_croatia
+		
+		hidden_effect = {
+			scope:branimir_of_croatia = {
 				trigger_event = {
-					id = HEE_byzantine_croatia.004
-					days = { 7 20 }
-				}	
+					id = HEE_byzantine_croatia.5
+					days = { 7 14 }
+				}
 			}
+		}
+		
+
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0004.b
+		
+		custom_tooltip = do_not_reach_out_to_branimir_of_croatia
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_byzantine_croatia.0005 = { # Branimir gets request from the Pope to deal with his liege
+	type = letter_event
+	opening = {
+		desc = HEE_byzantine_croatia.0005.opening
+	}
+	desc = HEE_byzantine_croatia.0005.desc
+	sender = scope:pope
+
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0005.a
+
+		trigger_event = {
+			id = HEE_byzantine_croatia.0006
+		}
+	}
+}
+
+HEE_byzantine_croatia.0006 = { # Branimir considers his options
+	type = character_event
+	title = HEE_byzantine_croatia.0006.t
+	desc = HEE_byzantine_croatia.0006.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:duke_of_croatia
+		animation = personality_dishonorable
+	}
+
+	lower_left_portrait = scope:pope
+
+	immediate = {
+		if ={
+			limit = { exists = title:d_croatia }
+			title:d_croatia.holder = { save_scope_as = duke_of_croatia }
+		}
+	}
+
+	option = { # Murder the Duke
+		name = HEE_byzantine_croatia.0006.a
+
+		scope:duke_of_croatia = {
+			trigger_event = {
+				id = HEE_byzantine_croatia.0007
+				days = { 7 14 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Talk with the Duke
+		name = HEE_byzantine_croatia.0006.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Do nothing
+		name = HEE_byzantine_croatia.0006.c
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+HEE_byzantine_croatia.0007 = { # Croatian Duke recieves letter from Pope asking for armed escort for Papal Legate
+	type = letter_event
+	opening = {
+		desc = HEE_byzantine_croatia.0007.opening
+	}
+	desc = HEE_byzantine_croatia.0007.desc
+	sender = scope:pope
+
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0007.a
+
+		trigger_event = {
+			id = HEE_byzantine_croatia.0008
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0007.a
+	}
+}
+	
+HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
+	type = character_event
+	title = HEE_byzantine_croatia.0008.t
+	desc = HEE_byzantine_croatia.0008.desc
+	theme = crown # Change
+	override_background = { event_background = terrain_scope }
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:branimir_of_croatia
+		animation = personality_dishonorable
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0008.a
+
+		custom_tooltip = michael_pleads_for_his_life
+
+		hidden_effect = {
+			# Branimir becomes Duke
+			set_designated_heir = scope:branimir_of_croatia
+
+			# Branimir is known for the murder
+			known_murder_effect = {
+				VICTIM = scope:duke_of_croatia
+				MURDERER = scope:branimir_of_croatia
+				EXPOSER = scope:branimir_of_croatia
+			}
+
+			# Branimir breaks from Byzantium
+			create_title_and_vassal_change = {
+				type = independency
+				save_scope_as = going_independent
+				add_claim_on_loss = no
+			}
+
+			scope:branimir_of_croatia = {
+				becomes_independent = {
+					change = scope:going_independent
+				}
+			}
+			
+			resolve_title_and_vassal_change = scope:going_independent	
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_byzantine_croatia.0008.b
+
+		ai_chance = {
+			base = 0
 		}
 	}
 }

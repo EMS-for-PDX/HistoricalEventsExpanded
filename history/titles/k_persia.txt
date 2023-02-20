@@ -1006,7 +1006,7 @@ c_yazd = {
 		holder = 188730
 	}
 	862.1.1 = {
-		holder = 163162
+		holder = HEE_muhammad_ibn_vasif # Muhammad ibn Vasif
 	}
 	867.1.1 = {
 		liege = k_makran
@@ -1082,7 +1082,7 @@ c_mafaza = {
 	}
 	
 	862.1.1 = {
-		holder = 163162
+		holder = HEE_muhammad_ibn_vasif
 	}
 	867.1.1 = {
 		liege = d_fars
@@ -1179,7 +1179,7 @@ c_shahre-babak = {
 		#liege = k_makran
 	}
 	862.1.1 = {
-		holder = 163162
+		holder = HEE_muhammad_ibn_vasif
 	}
 	1063.9.4 = {
 		liege = "d_isfahan"

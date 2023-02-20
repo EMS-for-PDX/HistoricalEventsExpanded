@@ -1425,8 +1425,9 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "georgian"
-	trait = craven
-	trait = lazy
+	trait = just
+	trait = vengeful
+	trait = cynical
 	trait = education_intrigue_2
 	father = 70471
 	
@@ -1519,11 +1520,15 @@
 	culture = "georgian"
 	trait = arbitrary
 	trait = deceitful
+	trait = ambitious
 	trait = education_martial_4
 	#father = 70476
 	
 	832.1.1 = {
 		birth = "832.1.1"
+	}
+	866.1.1 = {
+		employer = 70476 # George I of Abkhazia
 	}
 	882.1.1 = {
 		death = "882.1.1"

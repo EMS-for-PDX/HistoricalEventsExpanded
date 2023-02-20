@@ -1711,15 +1711,31 @@
 163101 = {
 	name = "Ya_qub" # Founder of the Saffarid dynasty
 	dynasty = 812
-	martial = 8
 	religion = "ashari"
 	culture = "persian"
 	father = 163163
-	trait = brave
-	trait = wrathful
-	trait = generous
-	trait = ambitious
+	
+	#Skills
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 7
+	
+	#Education
 	trait = education_martial_4
+	
+	#Personality Traits
+	trait = generous
+	trait = just
+	trait = temperate
+	trait = ambitious
+	
+	#Other Traits
+	trait = holy_warrior
+	trait = celibate
+
 	840.1.1 = {
 		birth = yes
 	}
@@ -1924,6 +1940,27 @@
 	religion = "ashari"
 	culture = "persian"
 	father = 163163
+
+	#Skills
+	diplomacy = 8
+	martial = 6
+	stewardship = 6
+	intrigue = 8
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = just
+	trait = diligent
+	trait = temperate
+	trait = patient
+	
+	#Other Traits
+	trait = holy_warrior
+
 	841.1.1 = {
 		birth = yes
 	}
@@ -1937,7 +1974,27 @@
 	dynasty = 812
 	religion = "ashari"
 	culture = "persian"
-		father = 163163
+	father = 163163
+
+	#Skills
+	diplomacy = 5
+	martial = 9
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 9
+	
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
+	trait = brave
+	trait = diligent
+	trait = temperate
+	trait = humble
+	
+	#Other Traits
+
 	842.1.1 = {
 		birth = yes
 	}

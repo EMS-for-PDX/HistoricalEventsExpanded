@@ -1,5 +1,888 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
 
+HEE_marinos_father_of_theodora = { # https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)#Background_and_early_life
+	name = "Marinos"
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	# father = marinos
+	# mother =
+	# health = 5.0
+	
+	# #Skills
+	# diplomacy = 9
+	# martial = 5
+	# stewardship = 8
+	# intrigue = 6
+	# learning = 8
+	
+	#Education
+	trait = education_martial_3
+	
+	# #Personality Traits
+	# trait = zealous
+	# trait = just
+	# trait = diligent
+	
+	# #Other Traits
+	# trait = diplomat
+	# trait = beauty_good_2
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	770.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		add_spouse = HEE_theoktiste_mother_of_theophilos # https://en.wikipedia.org/wiki/Theoktiste
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+HEE_theoktiste_mother_of_theophilos = { # https://en.wikipedia.org/wiki/Theoktiste
+	name = "Theoktiste"
+	female = yes
+	# dynasty = hee_dekapolitissa
+	religion = "orthodox"
+	culture = "armenian"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	# diplomacy = 9
+	# martial = 5
+	# stewardship = 8
+	# intrigue = 6
+	# learning = 8
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = generous
+	trait = zealous
+	trait = humble
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	775.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+}
+
+HEE_bardas_brother_of_theodora = { # https://en.wikipedia.org/wiki/Bardas
+	name = "Bardas"
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 8
+	
+	#Education
+	trait = education_stewardship_4
+	
+	#Personality Traits
+	trait = greedy
+	trait = diligent
+	trait = ambitious
+	
+	#Other Traits
+	trait = administrator
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		add_spouse = HEE_bardas_first_wife
+	}
+	855.1.1 = {
+		add_spouse = HEE_bardas_second_wife
+	}
+	862.1.1 = {
+		remove_spouse = HEE_bardas_second_wife
+	}
+	865.1.1 = {
+		effect = {
+			set_relation_rival = character:1700 # Basil desired Bardas' position in court
+		}
+	}
+	866.4.21 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 1700 # Basil "the_Macedonian"
+		}
+	}
+}
+
+HEE_bardas_first_wife = { # https://en.wikipedia.org/wiki/Bardas#Family
+	name = "Elardora"
+	female = yes
+
+	religion = "orthodox"
+	culture = "greek"
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	815.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+HEE_bardas_second_wife = { # https://en.wikipedia.org/wiki/Bardas#Family
+	name = "Theodosia"
+	female = yes
+
+	religion = "orthodox"
+	culture = "greek"
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	825.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+HEE_antigonos_bardas_son = { # https://en.wikipedia.org/wiki/Bardas
+	name = "Antigonos"
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_bardas_brother_of_theodora
+	mother = HEE_bardas_first_wife
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 6
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = gregarious
+	trait = trusting
+	trait = brave
+	
+	trait = rowdy
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	853.1.1 = {
+		birth = yes
+	}
+	866.4.21 = {
+		effect = {
+			set_relation_rival = character:1700 # Basil assassinated Antiogonos' father
+		}
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_irene_bardas_daughter = { # https://en.wikipedia.org/wiki/Bardas#Family
+	name = "Irene"
+	female = yes
+	dynasty = hee_marikonian # Fictional
+	father = HEE_bardas_brother_of_theodora
+	mother = HEE_bardas_first_wife
+
+	religion = "orthodox"
+	culture = "greek"
+
+	#Skills
+
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	848.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+HEE_symbatios_the_armenian = { # https://en.wikipedia.org/wiki/Symbatios_the_Armenian
+	name = "Symbatios"
+
+	religion = "orthodox"
+	culture = "armenian"
+	
+	#Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 6
+	prowess = 7
+	
+	#Education
+	trait = education_intrigue_2
+	
+	#Personality Traits
+	trait = wrathful
+	trait = arrogant
+	trait = ambitious
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	830.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		effect = {
+			give_nickname = nick_the_armenian
+		}
+	}
+	865.1.1 = {
+		add_spouse = HEE_irene_bardas_daughter
+	}
+	866.10.1 = {
+		trait = one_eyed
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_george_peganes = { # https://en.wikipedia.org/wiki/Symbatios_the_Armenian
+	name = "George"
+	dynasty = hee_peganes
+	religion = "orthodox"
+	culture = "greek"
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	trait = ambitious
+	
+	#Other Traits
+
+	825.1.1 = {
+		birth = yes
+	}
+	866.10.1 = {
+		trait = blind
+	}
+	869.1.1 = {
+		death = yes
+	}
+}
+
+HEE_unnamed_bardas_son = { # https://en.wikipedia.org/wiki/Bardas
+	name = "Marinos"
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_bardas_brother_of_theodora
+	mother = HEE_bardas_first_wife
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+
+	#Personality Traits
+	trait = brave
+	trait = temperate
+	trait = humble
+
+	#Other Traits
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+	840.1.1 = {
+		birth = yes
+	}
+	858.1.1 = {
+		add_spouse = HEE_bardas_mistress
+	}
+	875.1.1 = {
+		death = yes
+	}
+}
+
+HEE_bardas_mistress = {
+	name = "Theodora"
+	female = yes
+
+	religion = "orthodox"
+	culture = "greek"
+
+	#Other Traits
+	trait = beauty_good_1
+
+	sexuality = heterosexual
+
+	848.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+HEE_theodora_wife_of_theophilos = { # https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)
+	name = "Theodora"
+	female = yes
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 9
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 8
+	
+	#Education
+	trait = education_diplomacy_4
+	
+	#Personality Traits
+	trait = zealous
+	trait = just
+	trait = diligent
+	
+	#Other Traits
+	trait = diplomat
+	trait = beauty_good_2
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	815.1.1 = {
+		birth = yes
+	}
+	830.6.5 = {
+		add_spouse = 70491 # Emperor Theophilos
+	}
+	856.3.15 = {
+		trait = devoted
+	}
+	867.11.15 = {
+		death = yes
+	}
+}
+
+HEE_sophia_sister_of_theodora = { # https://en.wikipedia.org/wiki/Theoktiste
+	name = "Sophia"
+	female = yes
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	810.1.1 = {
+		birth = yes
+	}
+	845.3.6 = { # Assuming she became a nun following the execution of her husband Constantine Baboutzikos
+		trait = devoted
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+
+HEE_constantine_baboutzikos = { # https://en.wikipedia.org/wiki/42_Martyrs_of_Amorium
+	name = "Constantine"
+	dynasty = hee_baboutzikos
+	religion = "iconoclast"
+	culture = "greek"
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	trait = zealous
+	
+	#Other Traits
+
+	805.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		add_spouse = HEE_sophia_sister_of_theodora
+	}
+	845.3.6 = {
+		death = {
+			death_reason = death_execution
+			killer = 34009 # Caliph al-Wathiq
+		}
+	}
+}
+
+HEE_maria_sister_of_theodora = { # https://en.wikipedia.org/wiki/Theoktiste
+	name = "Maria"
+	female = yes
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = beauty_good_3 
+
+	812.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		effect = {
+			give_nickname = nick_the_beautiful
+		}
+	}
+	866.1.1 = { # Assuming she became a nun following the (fictional) death of her husband
+		trait = devoted
+	}
+	872.1.1 = {
+		death = yes
+	}
+}
+
+HEE_arsaber_husband_to_maria = { # https://en.wikipedia.org/wiki/Theoktiste
+	name = "Arsaber"
+	religion = "iconoclast"
+	culture = "greek"
+	# father = HEE_marinos_father_of_theodora
+	# mother = HEE_theoktiste_mother_of_theophilos
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+	807.1.1 = {
+		birth = yes
+	}
+	834.1.1 = {
+		add_spouse = HEE_maria_sister_of_theodora
+	}
+	843.3.11 = { # Feast of Orthodoxy
+		religion = "orthodox"
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+
+HEE_stephen_son_of_maria = { # https://en.wikipedia.org/wiki/Stephen_(son_of_Kalomaria)
+	name = "Stephen"
+	dynasty = hee_magistros # Representative of his position/nickname
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_arsaber_husband_to_maria
+	mother = HEE_maria_sister_of_theodora
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+	845.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70490 # Michael III
+	}
+	921.2.8 = {
+		trait = devoted # Accused of having himself designs on the throne, he was exiled to the island of Antigone, where he was forced to become a monk
+	}
+	922.1.1 = {
+		death = yes
+	}
+}
+
+HEE_irene_sister_of_theodora = { # https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)#Background_and_early_life
+	name = "Irene"
+	female = yes
+	dynasty = hee_marikonian # Fictional
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+
+	#Skills
+
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	813.1.1 = {
+		birth = yes
+	}
+	834.1.1 = {
+		add_spouse = HEE_theophobos # Unknown who her exact husband was, in interest of coverage, I will have her married twice
+	}
+	845.1.1 = {
+		add_spouse = HEE_sergios
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_theophobos = { # https://en.wikipedia.org/wiki/Theophobos
+	name = "Nasir"
+	dynasty = hee_kurramites # Representative of the Khurramites Nasir lead
+	religion = "khurramism"
+	culture = "persian"
+	# father = HEE_marinos_father_of_theodora
+	# mother = HEE_theoktiste_mother_of_theophilos
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 8
+	stewardship = 8
+	intrigue = 6
+	learning = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = just
+	trait = humble
+	
+	#Other Traits
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	800.1.1 = {
+		birth = yes
+	}
+	834.1.1 = {
+		religion = "iconoclast"
+		name = "Theophobos"
+	}
+	842.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70491 # Emperor Theophilos
+		}
+	}
+}
+
+HEE_sergios = {
+	name = "Sergios"
+	dynasty = hee_constantinopoli
+	religion = "orthodox"
+	culture = "greek"
+	# father = *Related to  Patriarch of Constantinople Photios but need to invent relation?*
+	# mother = *Related to  Patriarch of Constantinople Photios but need to invent relation?*
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+
+	812.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_bardas_kontomytes = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
+	name = "Bardas"
+	dynasty = hee_constantinopoli
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_sergios
+	mother = HEE_irene_sister_of_theodora
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+
+	838.1.1 = {
+		birth = yes
+	}
+	858.1.1 = {
+		add_spouse = HEE_constantine_kontomytes_daughter
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+HEE_stephen_kontomytes = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
+	name = "Stephen"
+	dynasty = hee_constantinopoli
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_sergios
+	mother = HEE_irene_sister_of_theodora
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+
+	840.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+HEE_constantine_kontomytes_daughter = { # https://en.wikipedia.org/wiki/Constantine_Kontomytes
+	name = "Theodora"
+	female = yes
+	dynasty = 1022168
+	religion = "orthodox"
+	culture = "greek"
+	father = 145190
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+
+
+	840.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+HEE_petronas_brother_of_theodora = { # https://en.wikipedia.org/wiki/Petronas_(general)
+	name = "Petronas"
+	dynasty = hee_marikonian # Fictional
+	religion = "iconoclast"
+	culture = "armenian"
+	father = HEE_marinos_father_of_theodora
+	mother = HEE_theoktiste_mother_of_theophilos
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 8
+	
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
+	trait = arrogant
+	trait = brave
+	trait = ambitious
+	
+	#Other Traits
+	trait = strategist
+	trait = organizer
+	trait = holy_warrior
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	816.1.1 = {
+		birth = yes
+	}
+	843.3.11 = { # Feast of Orthodoxy
+		religion = "orthodox"
+	}
+	865.11.11 = {
+		death = yes
+	}
+}
+
+HEE_thekla = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
+	name = "Thekla"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491
+	mother = HEE_theodora_wife_of_theophilos
+	health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 8
+	learning = 6
+	prowess = 0
+	
+	#Education
+	trait = education_intrigue_2
+	
+	#Personality Traits
+	trait = arrogant
+	trait = ambitious
+	trait = arbitrary
+	
+	#Other Traits
+	trait = unwed
+	
+	sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	
+	831.1.1 = {
+		birth = yes
+	}
+	863.1.1 = {
+		employer = 70490 # Thekla was released as a nun
+	}
+	866.1.1 = {
+		effect = {
+			set_relation_lover = character:1700	# Allegedly Thekla was given as a mistress to Basil
+		}
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
 HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapolitissa
 	name = "Eudokia"
 	female = yes
@@ -60,55 +943,6 @@ HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapoliti
 	}
 }
 
-HEE_thekla = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
-	name = "Thekla"
-	female = yes
-	dynasty = 8642
-	religion = "orthodox"
-	culture = "greek"
-	father = 70491
-	# mother =
-	health = 5.0
-	
-	#Skills
-	diplomacy = 6
-	martial = 5
-	stewardship = 6
-	intrigue = 8
-	learning = 6
-	prowess = 0
-	
-	#Education
-	trait = education_intrigue_2
-	
-	#Personality Traits
-	trait = arrogant
-	trait = ambitious
-	trait = arbitrary
-	
-	#Other Traits
-	trait = unwed
-	
-	sexuality = heterosexual
-	
-	disallow_random_traits = yes
-	
-	831.1.1 = {
-		birth = yes
-	}
-	863.1.1 = {
-		employer = 70490 # Thekla was released as a nun
-	}
-	866.1.1 = {
-		effect = {
-			set_relation_lover = character:1700	# Allegedly Thekla was given as a mistress to Basil
-		}
-	}
-	870.1.1 = {
-		death = yes
-	}
-}
-
 HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
 	name = "Basiliskianos"
 	#dynasty = 0
@@ -153,7 +987,10 @@ HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
 		}
 	}
 	867.9.24 = {
-		death = yes
+		death = {
+			death_reason = death_murder_known
+			killer = 1700 # Basil "the_Macedonian"
+		}
 	}
 }
 
@@ -200,7 +1037,136 @@ HEE_danielis = { # https://en.wikipedia.org/wiki/Danielis
 			set_relation_friend = character:1700 # The (likely fictional) woman gave Basil lavish gifts, land property, and a place in her household
 		}
 	}
+	866.1.1 = {
+		employer = 70490 # Emperor Michael III - Closest I can get to Macedonia
+	}
 	890.1.1 = {
+		death = yes
+	}
+}
+
+HEE_andrew_the_scythian = { # https://en.wikipedia.org/wiki/Andrew_the_Scythian
+	name = "Andrew"
+	# dynasty = 
+	religion = "orthodox"
+	culture = "vlach"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 7
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = cynical
+	trait = patient
+	
+	#Other Traits
+	trait = cautious_leader
+	trait = loyal
+	
+	disallow_random_traits = yes
+	835.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70490 # Emperor Michael III
+		give_nickname = nick_the_scythian
+	}
+	886.1.1 = {
+		effect = {
+			set_relation_friend = character:9897 # When Leo succeeded his father, Andrew quickly emerged as the new emperor's right-hand man
+		}
+	}
+	894.1.1 = {
+		death = yes
+	}
+}
+
+HEE_arethas_of_caesarea = { # https://en.wikipedia.org/wiki/Arethas_of_Caesarea
+	name = "Arethas"
+	# dynasty = 
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = arrogant
+	trait = ambitious
+	trait = cynical
+	trait = curious
+	
+	#Other Traits
+	trait = devoted
+	
+	disallow_random_traits = yes
+	860.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70554 # Photios I of Constantinople
+	}
+	939.1.1 = {
+		death = yes
+	}
+}
+
+HEE_constantine_maniakes = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
+	name = "Constantine"
+	dynasty = hee_maniakes
+	religion = "orthodox"
+	culture = "armenian"
+	# father = 
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 8
+	martial = 6
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = compassionate
+	trait = just
+	trait = diligent
+	
+	#Other Traits
+	trait = intellect_good_2
+	trait = strong
+
+	810.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70490 # Emperor Michael III
+	}
+	870.1.1 = {
 		death = yes
 	}
 }
@@ -253,11 +1219,317 @@ HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematic
 	}
 }
 
+HEE_anna_martinakioi = { # https://en.wikipedia.org/wiki/Theophano_Martinakia
+	name = "Anna"
+	female = yes
+	dynasty = 0
+	religion = "orthodox"
+	culture = "greek"
+	# father =
+	# mother =
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+	
+	837.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		add_spouse = 145181
+	}
+	892.1.1 = {
+		death = yes
+	}
+}
+
+HEE_theophano_martinakia = { # https://en.wikipedia.org/wiki/Theophano_Martinakia
+	name = "Theophano"
+	female = yes
+	dynasty = 1022160
+	religion = "orthodox"
+	culture = "greek"
+	father = 145181
+	mother = HEE_anna_martinakioi
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+	
+	866.1.1 = {
+		birth = yes
+	}
+	883.1.1 = {
+		add_spouse = 1702
+	}
+	893.1.1 = {
+		add_trait = devoted
+	}
+	897.11.10 = {
+		death = yes
+	}
+}
+
+HEE_stylianos_zaoutzes = { # https://en.wikipedia.org/wiki/Stylianos_Zaoutzes
+	name = "Stylianos"
+	dynasty = hee_zaoutzes
+	religion = "orthodox"
+	culture = "armenian"
+	# father =
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = calm
+	trait = arrogant
+	trait = ambitious
+	
+	#Other Traits
+	
+	disallow_random_traits = yes
+	839.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 145108 # Zaoutzes was of Armenian descent, and was born in the thema of Macedonia
+	}
+	899.1.1 = {
+		death = yes
+	}
+}
+
+HEE_tzantzes_zaoutzes = { # https://en.wikipedia.org/wiki/Stylianos_Zaoutzes
+	name = "Tzantzes"
+	dynasty = hee_zaoutzes
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_stylianos_zaoutzes
+	# mother =
+	# health = 4.1
+	
+	#Skills
+
+	
+	#Education
+
+	
+	#Personality Traits
+
+	
+	#Other Traits
+	
+
+	865.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+
+HEE_zoe_zoutzaina = { # https://en.wikipedia.org/wiki/Karbeas
+	name = "Zoe"
+	dna = dna_zoe_zaoutzaina
+	female = yes
+	dynasty = hee_zaoutzes
+	religion = "orthodox"
+	culture = "armenian"
+	father = HEE_stylianos_zaoutzes
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+	trait = beauty_good_3
+
+	867.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	899.5.1 = {
+		death = yes
+	}
+}
+
+HEE_christopher_domestic_of_the_schools = { # https://en.wikipedia.org/wiki/Christopher_(Domestic_of_the_Schools)
+	name = "Christopher"
+	# dynasty = 
+	religion = "orthodox"
+	culture = "greek"
+	# father = 
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	diplomacy = 6
+	martial = 9
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = zealous
+	trait = diligent
+	
+	#Other Traits
+	trait = holy_warrior
+	trait = aggressive_attacker
+	
+	disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70490 # Michael III
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+
+HEE_gregory_asbestas = { # https://en.wikipedia.org/wiki/Gregory_Asbestas
+	name = "Gregory"
+	dynasty = hee_asbestas
+	religion = "orthodox"
+	culture = "greek"
+	# father = 
+	# mother =
+	# health = 4.1
+	
+	#Skills
+	diplomacy = 6
+	martial = 5
+	stewardship = 6
+	intrigue = 7
+	learning = 8
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = wrathful
+	trait = zealous
+	trait = stubborn
+	
+	#Other Traits
+	trait = devoted
+	
+	disallow_random_traits = yes
+	810.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 145190 # as Archbishop of Syracuse
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+hee_inger = { # https://en.wikipedia.org/wiki/Inger_(senator)
+	name = "Ingvar"
+	dynasty = 1022158
+	religion = "norse_pagan"
+	culture = "norse"
+	# father = 
+	# mother =
+	# health = 4.5
+
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 5
+	intrigue = 5
+	learning = 3
+	prowess = 8
+
+	#Education
+	trait = education_martial_2
+
+	#Personality Traits
+	trait = gregarious
+	trait = brave
+	trait = cynical
+
+	#Other Traits
+	trait = varangian
+
+	814.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		religion = orthodox
+		add_spouse = hee_melisenna_martinakia
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+hee_melisenna_martinakia = {
+	name = "Melisenna"
+	female = yes
+	dynasty = hee_martinakoi
+	religion = "orthodox"
+	culture = "greek"
+	# father = 
+	# mother =
+	# health = 4.5
+
+	#Skills
+
+
+	#Education
+
+
+	#Personality Traits
+
+
+	#Other Traits
+
+
+	820.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
 HEE_karbeas_father = { # https://en.wikipedia.org/wiki/Karbeas
 	name = "Chrysocheir"
 	dynasty = hee_tephrice
 	religion = "paulician"
-	culture = "greek"
+	culture = "armenian"
 	# father =
 	# mother =
 	# health = 4.1
@@ -295,7 +1567,7 @@ HEE_karbeas = { # https://en.wikipedia.org/wiki/Karbeas
 	name = "Karbeas"
 	dynasty = hee_tephrice
 	religion = "paulician"
-	culture = "greek"
+	culture = "armenian"
 	father = HEE_karbeas_father
 	# mother =
 	# health = 4.1
@@ -336,7 +1608,7 @@ HEE_chrysocheir_father = { # https://en.wikipedia.org/wiki/Chrysocheir
 	name = "Michael"
 	dynasty = hee_tephrice
 	religion = "paulician"
-	culture = "greek"
+	culture = "armenian"
 	father = HEE_karbeas_father
 	# mother =
 	# health = 4.1
@@ -375,26 +1647,28 @@ HEE_chrysocheir_father = { # https://en.wikipedia.org/wiki/Chrysocheir
 
 HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 	name = "Chrysocheir"
+	dna = HEE_chrysocheir_dna
 	dynasty = hee_tephrice
 	religion = "paulician"
-	culture = "greek"
+	culture = "armenian"
 	father = HEE_chrysocheir_father
 	# mother =
 	# health = 4.1
 	
 	#Skills
-	diplomacy = 6
+	diplomacy = 7
 	martial = 8
 	stewardship = 7
 	intrigue = 6
 	learning = 6
-	prowess = 6
+	prowess = 8
 	
 	#Education
 	trait = education_martial_3
 	
 	#Personality Traits
 	trait = zealous
+	trait = arrogant
 	trait = brave
 	trait = stubborn
 	
@@ -408,6 +1682,9 @@ HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 	disallow_random_traits = yes
 	835.1.1 = {
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	862.1.1 = {
 		add_spouse = HEE_chrysocheir_wife
@@ -450,7 +1727,7 @@ HEE_chrysocheir_wife = { # https://en.wikipedia.org/wiki/Chrysocheir
 	female = yes
 	dynasty = hee_tephrice
 	religion = "paulician"
-	culture = "greek"
+	culture = "armenian"
 	father = HEE_karbeas
 	# mother =
 	# health = 4.1

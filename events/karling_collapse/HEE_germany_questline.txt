@@ -709,16 +709,64 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 		cp:councillor_court_chaplain = { save_scope_as = carloman_bishop }
 
 		title:k_bavaria = { save_scope_as = k_bavaria }
+		title:k_italy = { save_scope_as = k_italy }
+		title:k_burgundy = { save_scope_as = k_burgundy }
+		title:k_lotharingia = { save_scope_as = k_lotharingia }
 		
 		every_held_title = {
 			add_to_list = carloman_current_titles
 		}
-		
+
 		every_held_title = {
 			limit = {
-				NOT = { this = scope:k_bavaria }
+				tier < tier_kingdom
+				target_is_de_jure_liege_or_above = scope:k_bavaria
 			}
-			add_to_list = carloman_current_titles_minus_bavaria
+			add_to_list = carloman_bavarian_domain
+		}
+
+		every_held_title = {
+			limit = {
+				tier < tier_kingdom
+				target_is_de_jure_liege_or_above = scope:k_italy
+			}
+			add_to_list = carloman_italian_domain
+		}
+
+		every_vassal = {
+			limit = {
+				primary_title = {
+					target_is_de_jure_liege_or_above = scope:k_italy
+				}
+			}
+			add_to_list = italian_vassals
+		}
+
+		every_vassal = {
+			limit = {
+				primary_title = {
+					target_is_de_jure_liege_or_above = scope:k_burgundy
+				}
+			}
+			add_to_list = burgundian_vassals
+		}
+
+		every_vassal = {
+			limit = {
+				primary_title = {
+					target_is_de_jure_liege_or_above = scope:k_bavaria
+				}
+			}
+			add_to_list = bavarian_vassals
+		}
+
+		every_vassal = {
+			limit = {
+				primary_title = {
+					target_is_de_jure_liege_or_above = scope:k_lotharingia
+				}
+			}
+			add_to_list = lotharingian_vassals
 		}
 	}
 
@@ -790,30 +838,155 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
  		}
 	}
 
-	option = { #Ludwig's claim is uncontested, he shall become King
+	option = { #My Brothers' claims are uncontested, they shall recieve my kingdoms
 		name = HEE_germany_questline.0201.b
+		
+		trigger = {
+			character:42019 = { is_alive = yes }
+			character:7945 = { is_alive = yes }
+		}
 		
 		# custom_tooltip = Provide Historical Context?
 
 		hidden_effect = {
-			#Ludwig recieves the Kingdom of Bavaria
-			scope:ludwig_the_younger = {
-				create_title_and_vassal_change = {
-					type = granted
-					save_scope_as = change
-					add_claim_on_loss = yes
-				}
+			# Bavaria
+			if = {
+				limit = { has_title = title:k_bavaria }
 				
-				title:k_bavaria = {
-					change_title_holder = {
-						holder = scope:ludwig_the_younger
-						change = scope:change
+				#Ludwig recieves the Kingdom of Bavaria
+				scope:ludwig_the_younger = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
 					}
+					
+					title:k_bavaria = {
+						change_title_holder = {
+							holder = scope:ludwig_the_younger
+							change = scope:change
+						}
+					}
+					
+					resolve_title_and_vassal_change = scope:change
+				}
+			
+				#King of Bavaria gets Bavarian vassals
+				scope:ludwig_the_younger = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					every_in_list = {
+						list = bavarian_vassals
+						change_liege = {
+							liege = title:k_bavaria.holder
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+
+			# Italy
+			if = {
+				limit = { has_title = title:k_italy }
+
+				# Like IRL, Karl the Fat gets Italy if Karlmann has the title	
+				scope:karl_the_fat = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					
+					title:k_italy = {
+						change_title_holder = {
+							holder = scope:karl_the_fat
+							change = scope:change
+						}
+					}
+					
+					resolve_title_and_vassal_change = scope:change
+				}
+
+				#King of Italy gets Italian vassals
+				scope:karl_the_fat = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					every_in_list = {
+						list = italian_vassals
+						change_liege = {
+							liege = title:k_italy.holder
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+
+				# Italian land held by Carlomann goes as well
+				scope:karl_the_fat = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					every_in_list = {
+						list = carloman_italian_domain
+						change_title_holder_include_vassals = {
+							holder = scope:karl_the_fat
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+
+			# Burgundy
+			if = {
+				limit = { has_title = title:k_burgundy }
+
+				# Burgundy goes to Karl the Fat because historically its Italy
+				scope:karl_the_fat = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					
+					title:k_burgundy = {
+						change_title_holder = {
+							holder = scope:karl_the_fat
+							change = scope:change
+						}
+					}
+					
+					resolve_title_and_vassal_change = scope:change
 				}
 				
-				resolve_title_and_vassal_change = scope:change
+				#King of Burgundy gets Burgundian vassals
+				scope:karl_the_fat = {
+					create_title_and_vassal_change = {
+						type = granted
+						save_scope_as = change
+						add_claim_on_loss = yes
+					}
+					every_in_list = {
+						list = burgundian_vassals
+						change_liege = {
+							liege = title:k_burgundy.holder
+							change = scope:change
+						}
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
 			}
 			
+			# Clean-up in case of issues with Karlomann's domain
 			title:k_bavaria.holder = {
 				create_title_and_vassal_change = {
 					type = granted
@@ -831,7 +1004,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 				resolve_title_and_vassal_change = scope:change
 			}
 
-			#Arnulf recieves the rest of Carloman's titles
+			#Arnulf recieves his father's Bavarian lands
 			scope:arnulf = {
 				create_title_and_vassal_change = {
 					type = granted
@@ -839,7 +1012,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 					add_claim_on_loss = yes
 				}
 				every_in_list = {
-					list = carloman_current_titles_minus_bavaria
+					list = carloman_bavarian_domain
 					change_title_holder_include_vassals = {
 						holder = scope:arnulf
 						change = scope:change
@@ -849,7 +1022,10 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 			}
 			
 			set_player_character = scope:arnulf
-			
+
+			# In the event of any lingering titles not covered
+			depose = yes
+		
 			#Arnulf loses opinion of Carloman and Ludwig
 			scope:arnulf = {
 				add_opinion = {
@@ -870,6 +1046,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 				
 				set_relation_rival = scope:ludwig_the_younger
 			}
+
 			# Ludwig is grateful you recognized his claims
 			scope:ludwig_the_younger = {
 				add_opinion = {
@@ -914,6 +1091,14 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 			}
 			# Ludwig does not believe you are fit to remain King
 			scope:ludwig_the_younger = {
+				add_opinion = {
+					target = root
+					modifier = weak_opinion
+					opinion = -50
+				}
+			}
+			# Karl does not believe you are fit to remain King
+			scope:karl_the_fat = {
 				add_opinion = {
 					target = root
 					modifier = weak_opinion

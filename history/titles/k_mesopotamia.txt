@@ -153,13 +153,9 @@ c_hulwan = {
 		holder = 188659
 	}
 	866.1.1 = {
+		holder = 34016
 		liege = e_arabia
-		holder = 163131
 	}
-	# 866.1.1 = {
-		# holder = 34016
-		# liege = e_arabia
-	# }
 	
 	1066.1.1 = {
 		liege = k_persia
@@ -277,12 +273,9 @@ c_kirkuk = {
 		holder = 188659
 	}
 	
-	862.1.1 = {
+	866.1.1 = {
 		liege = e_arabia
 		holder = turkish000007
-	}
-	867.10.29 = {
-		holder = turkish000008
 	}
 	
 	1066.1.1 = {
@@ -526,15 +519,10 @@ d_wasit = {
 	769.1.1 = {
 		holder = 188649
 	}
+	
 	866.1.1 = {
-		holder = 0
+		holder = 34015
 	}
-	# 851.1.1 = {
-		# holder = 1000230509
-	# }
-	# 866.1.1 = {
-		# holder = 34015
-	# }
 	869.1.1 = {
 		liege = 0
 		holder = 0
@@ -547,13 +535,10 @@ c_wasit = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
+	866.1.1 = {
+		liege = d_wasit
+		holder = 34015
 	}
-	# 866.1.1 = {
-		# liege = d_wasit
-		# holder = 34015
-	# }
 	1066.1.1 = {
 		liege = d_baghdad
 		holder = 20712
@@ -638,13 +623,11 @@ c_tib = {
 	768.1.1 = {
 		holder = 188631 # Khuzaymah b Khazmi (fictitious assignment)
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = "d_wasit"
-		# holder = 34015
-	# }
+	
+	866.1.1 = {
+		liege = "d_wasit"
+		holder = 34015
+	}
 	869.1.1 = {
 		liege = 0
 	}
@@ -741,13 +724,11 @@ c_kufa = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
 	}
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
 	1012.1.1 = {
 		liege = d_kufa
 		holder = 159482 # Ali Mayzadid
@@ -832,13 +813,11 @@ c_safata = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	1012.1.1 = {
 		liege = d_kufa
 		holder = 159482 # Ali Mayzadid
@@ -923,13 +902,11 @@ c_qadisiya = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	
 	1066.1.1 = {
 		holder = 93319
@@ -1014,12 +991,10 @@ c_batiha = {
 	768.1.1 = {
 		holder = 188665
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# holder = 34015
-	# }
+	
+	866.1.1 = {
+		holder = 34015
+	}
 	869.1.1 = {
 		liege = 0
 	}
@@ -1106,13 +1081,11 @@ c_akhadid = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	
 	1066.1.1 = {
 		holder = 93319
@@ -1194,13 +1167,11 @@ c_waqisa = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	
 	1066.1.1 = {
 		holder = 93319
@@ -1280,15 +1251,13 @@ c_waqisa = {
 d_basra = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
-	# 851.1.1 = {
-		# holder = 1000230509
-	# }	
+	
 	866.1.1 = {
 		liege = "e_arabia"
 	}
-	# 866.1.1 = {
-		# holder = 34017
-	# }
+	866.1.1 = {
+		holder = 34017
+	}
 	978.1.1 = {
 		liege = "k_persia"
 	}
@@ -1378,13 +1347,11 @@ c_basra = {
 		liege = e_arabia
 		holder = 188608 # Jabir b Tubah al-Kibani
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	1066.1.1 = {
 		holder = 93319
 	}
@@ -1465,13 +1432,11 @@ c_ubulla = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = d_basra
-		# holder = 34017
-	# }
+	
+	866.1.1 = {
+		liege = d_basra
+		holder = 34017
+	}
 	
 	1066.1.1 = {
 		holder = 93319
@@ -1556,15 +1521,13 @@ c_rusafa = {
 	768.1.1 = {
 		holder = 188630 # Khazim b Khuzaymah (fictitious assignment)
 	}
-	851.1.1 = {
-		holder = 1000230509
-	}	
-	# 866.1.1 = {
-		# liege = "d_wasit"
-	# }
-	# 866.1.1 = {
-		# holder = 34015
-	# }
+	
+	866.1.1 = {
+		liege = "d_wasit"
+	}
+	866.1.1 = {
+		holder = 34015
+	}
 	869.1.1 = {
 		liege = 0
 	}
@@ -1984,12 +1947,8 @@ c_iskaf = {
 		holder = 34013
 	}
 	866.1.1 = {
-		holder = 163131
-		liege = e_arabia
+		holder = 34016
 	}
-	# 866.1.1 = {
-		# holder = 34016
-	# }
 	892.10.1 = {
 		holder = 34018
 	}
@@ -2024,7 +1983,6 @@ c_iskaf = {
 		holder = 3084
 	}
 	1066.1.1 = {
-		liege = d_sunni
 		holder = 20740
 	}
 	
@@ -2403,12 +2361,8 @@ c_badaraya = {
 		holder = 34013
 	}
 	866.1.1 = {
-		holder = 163131
-		liege = e_arabia
+		holder = 34016
 	}
-	# 866.1.1 = {
-		# holder = 34016
-	# }
 	892.10.1 = {
 		holder = 34018
 	}
@@ -2443,7 +2397,6 @@ c_badaraya = {
 		holder = 3084
 	}
 	1066.1.1 = {
-		liege = d_sunni
 		holder = 20740
 	}
 	1075.1.1 = {

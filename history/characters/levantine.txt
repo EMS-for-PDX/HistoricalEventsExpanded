@@ -5861,6 +5861,23 @@
 	culture = "levantine"
 	dynasty = 1029123
 	father = 159731
+
+	#Skills
+	
+	#Education
+	trait = education_martial_3 # Isa first appears in 848, in the ranks of the Abbasid army and spread his power through military means
+	
+	#Personality Traits
+	trait = generous # Canard credits Isa in particular with a "certain reputation for magnificence and generosity"
+	trait = arrogant # Historian Canard credits Isa in particular with a "certain reputation for magnificence and generosity"
+	trait = ambitious # Sought to form his own state in the Anarchy
+	
+	#Other Traits
+	trait = poet  # Isa were esteemed for the quality of his Arabic poetry.
+
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -7213,6 +7230,25 @@
 	culture = "levantine"
 	religion = "ismaili"
 
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave # Lead battles, warrior, etc.
+	trait = diligent # Became a prominent leader in the rebellion i.e worked hard
+	trait = cynical # Defected to the Kharijite rebels
+	
+	#Other Traits
+	trait = unyielding_defender #  Hamdan offered tenacious opposition to Al-Mutadid's attempts to subjugate his province
+
 	837.1.1 = {
 		birth = "837.1.1"
 	}
@@ -7408,6 +7444,22 @@
 	religion = "ashari"
 	culture = "levantine"
 	father = 159732
+
+	#Skills
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = ambitious
+	trait = cynical # Al-Mu'tadid's cousin and panegyrist, Ibn al-Mu'tazz, claimed that he "contemplated crossing into Byzantine territory and becoming a Christian"
+	
+	#Other Traits
+	trait = poet
+
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
 	841.1.1 = {
 		birth = yes
 	}
@@ -7889,9 +7941,32 @@ levantine000003 = {
 	dynasty = 7503 
 	religion = ashari
 	father = levantine000002
+	mother = HEE_ashot_iv_unnamed_daughter
 	culture = levantine
+
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	trait = diligent # Was  Isa ibn al-Shaykh's chief subordinate and ran administration when Isa could not
+	trait = cynical # According to rumors, he secretly converted to Christianity
+	trait = content # Never seemed to want to shoot any higher than emir of Arzen
+	
+	# Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
 	841.1.1 = {
 		birth = yes
+	}
+	865.1.1 = {
+		add_spouse = HEE_artsruni_unnamed_princess
+		effect = {
+			add_secret = {
+				type = secret_non_believer # According to rumors, he secretly converted to Christianity
+			}
+		}
 	}
 	896.1.1 = {
 		death = yes
@@ -8308,12 +8383,30 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	religion = "ashari"
 	culture = levantine
 	father = 34010
+
+	#Skills
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	prowess = 7
+	
+	#Education
 	trait = education_martial_4
+	
+	#Personality Traits
 	trait = gregarious
 	trait = brave
 	trait = diligent
 	trait = ambitious
+	
+	#Other Traits
 	trait = sayyid
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
 	840.1.1 = {
 		birth = yes
 	}
@@ -8323,7 +8416,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 		character:163132 = {
 			add_opinion = {
 				target = character:34017
-					modifier = perk_negotiated_alliance_opinion
+				modifier = perk_negotiated_alliance_opinion
 			}
 		}
 		set_relation_friend = character:turkish000007
@@ -8331,7 +8424,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 		character:turkish000007 = {
 			add_opinion = {
 				target = character:34017
-					modifier = perk_negotiated_alliance_opinion
+				modifier = perk_negotiated_alliance_opinion
 			}
 		}		
 	}
@@ -8346,13 +8439,32 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	religion = "ashari"
 	culture = levantine
 	father = 34017
-	trait = rowdy
+
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+	prowess = 6
+	
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
 	trait = greedy
 	trait = brave
 	trait = ambitious
 	trait = sadistic
 	trait = diligent
+
+	trait = rowdy
+
+	#Other Traits
 	trait = sayyid
+	
+	#sexuality = heterosexual
+
 	disallow_random_traits = yes
 	857.1.1 = {
 		birth = yes

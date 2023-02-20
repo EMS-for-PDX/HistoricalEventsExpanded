@@ -739,3 +739,381 @@ HEE_francia_questline.0404 = { #Carloman II's dies or his fever breaks
 		}
 	}
 }
+
+HEE_francia_questline.1000 = { #Rise of Provence questline
+	type = character_event
+	title = HEE_francia_questline.1000.t
+	desc = HEE_francia_questline.1000.desc
+	theme = crown
+ 	left_portrait = {
+		character = root
+		animation = rational
+ 	}
+	right_portrait = {
+		character = king_of_france
+		animation = personality_coward
+	}
+	#lower_left_portrait = scope:waldrada
+	#lower_center_portrait = scope:ruler_2
+	#lower_right_portrait = scope:teutberga
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_francia_questline.1000
+				days = 30 #~1 Month
+			}
+		}
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:k_france }
+			title:k_france.holder = { save_scope_as = king_of_france }
+		}
+		
+		title:c_viviers.holder = { save_scope_as = bishop_of_viviers }
+		
+		title:c_nice.holder = { save_scope_as = bishop_of_nice }
+		
+		title:c_lyon.holder = { save_scope_as = count_of_lyon }
+		
+		title:c_forez.holder = { save_scope_as = count_of_forez }
+		
+		title:c_provence.holder = { save_scope_as = count_of_provence }
+		
+		title:c_venaissin.holder = { save_scope_as = count_of_venaissin }
+		
+		title:c_forcalquier.holder = { save_scope_as = count_of_forcalquier }
+	}
+
+	option = {
+		name = HEE_francia_questline.1000.a
+		
+		custom_tooltip = seek_the_support_of_neighboring_vassals
+
+
+		scope:bishop_of_viviers = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+		scope:bishop_of_nice = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+		scope:count_of_lyon = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+		scope:count_of_forez = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+		scope:count_of_provence = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+		scope:count_of_venaissin = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+		
+		scope:count_of_forcalquier = {
+			trigger_event = {
+				id = HEE_francia_questline.1001
+				days = 7
+			}
+		}
+
+ 		ai_chance = {
+ 			base = 1000
+ 		}
+	}
+}
+
+HEE_francia_questline.1001 = { # Adelchis ponders what lords would support his actions against Emperor Louis
+	type = character_event
+	title = HEE_francia_questline.1001.t
+	desc = HEE_francia_questline.1001.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:elected_king_of_provence
+		animation = personality_dishonorable
+	}
+	# lower_left_portrait = scope:lambert_i_stand_in
+	# lower_center_portrait = scope:sergius_ii_of_naples_stand_in
+	# lower_right_portrait = scope:guaifer_of_salerno_stand_in
+
+	trigger = {
+		NOT = { has_character_flag = recieved_boso_proposal }
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		add_character_flag = recieved_boso_proposal
+	}
+	
+	option = {
+		name = HEE_francia_questline.1001.a
+
+		custom_tooltip = support_boso_as_king
+		
+		add_character_flag = supported_boso_as_king_of_provence
+
+		scope:elected_king_of_provence = {
+			trigger_event = {
+				id = HEE_francia_questline.1002
+				days = 7
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_francia_questline.1001.b
+		
+		custom_tooltip = refuse_to_support_boso_as_king
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_francia_questline.1002 = { # Adelchis ponders what lords would support his actions against Emperor Louis
+	type = character_event
+	title = HEE_francia_questline.1002.t
+	desc = HEE_francia_questline.1002.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:elected_king_of_provence
+		animation = personality_dishonorable
+	}
+	# lower_left_portrait = scope:lambert_i_stand_in
+	# lower_center_portrait = scope:sergius_ii_of_naples_stand_in
+	# lower_right_portrait = scope:guaifer_of_salerno_stand_in
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		#is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+	
+	immediate = {
+		title:c_viviers.holder = { save_scope_as = bishop_of_viviers }
+		
+		title:c_nice.holder = { save_scope_as = bishop_of_nice }
+		
+		title:c_lyon.holder = { save_scope_as = count_of_lyon }
+		
+		title:c_forez.holder = { save_scope_as = count_of_forez }
+		
+		title:c_provence.holder = { save_scope_as = count_of_provence }
+		
+		title:c_venaissin.holder = { save_scope_as = count_of_venaissin }
+		
+		title:c_forcalquier.holder = { save_scope_as = count_of_forcalquier }
+	}
+	
+	option = {
+		name = HEE_francia_questline.1002.a
+
+		custom_tooltip = boso_becomes_king_of_provence
+	
+		scope:elected_king_of_provence = {
+			capital_county = {
+				save_scope_as = capital_county_effect
+			}
+		
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = title_change
+				add_claim_on_loss = no
+			}
+		
+			title:k_provence = {
+				change_title_holder = {
+					holder = root
+					change = scope:title_change
+				}
+			}
+		
+			resolve_title_and_vassal_change = scope:title_change
+		}
+
+		title:k_provence = {
+			set_capital_county = scope:capital_county_effect
+			set_de_jure_liege_title = title:e_france
+			set_coa = title:c_venaissin
+		}
+		
+			if = {
+				title:c_viviers.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_viviers.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_nice.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_nice.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_lyon.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_lyon.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_forez.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_forez.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_provence.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_provence.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_venaissin.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_venaissin.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			if = {
+				title:c_forcalquier.holder = { has_character_flag = supported_boso_as_king_of_provence}
+			}
+			title:c_forcalquier.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:elected_king_of_provence
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+	
+	option = {
+		name = HEE_francia_questline.1002.b
+		
+		custom_tooltip = boso_backtracks_on_king_of_provence
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

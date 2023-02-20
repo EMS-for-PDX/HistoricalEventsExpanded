@@ -1,7 +1,7 @@
 ﻿on_war_won_attacker = {
 	on_actions = {
 		hee_louis_bari_victory
-		hee_trpimirovic_croatia_victory
+		hee_great_summer_army_victory
 	}
 }
 
@@ -11,9 +11,9 @@ hee_louis_bari_victory = {
 	}
 }
 
-hee_trpimirovic_croatia_victory = {
+hee_great_summer_army_victory = {
 	events = {
-		HEE_byzantine_croatia.0003
+		HEE_great_summer_army.0002
 	}
 }
 

@@ -9,6 +9,7 @@
 	trait = zealous
 	trait = stubborn
 	trait = infertile
+	fertility = 0.0 # Infertile should give no possibility
 	father = 7976 # Boso the Elder
 	831.1.1 = {
 		birth = yes
@@ -9836,6 +9837,7 @@
 	trait = arrogant
 	trait = greedy
 	trait = fickle
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	sexuality = heterosexual
 	835.1.1 = {
 		birth = yes
@@ -25750,12 +25752,12 @@
 	trait = calm
 	trait = zealous
 	trait = education_diplomacy_3
-	father = 7561
-	833.1.1 = {
-		birth = "833.1.1"
+	father = 7976 # Boso the Elder
+	815.1.1 = {
+		birth = "815.1.1"
 	}
-	865.1.1 = {
-		death = "865.1.1"
+	883.1.1 = {
+		death = "883.1.1"
 	}
 }
 
@@ -25774,8 +25776,8 @@
 	trait = education_diplomacy_3
 	father = 7979
 	mother = 7978
-	850.1.1 = {
-		birth = "850.1.1"
+	841.1.1 = {
+		birth = "841.1.1"
 	}
 	876.1.1 = {
 		add_spouse = 7982
@@ -25851,8 +25853,8 @@
 	trait = education_diplomacy_3
 	father = 7979
 	mother = 7978
-	851.1.1 = {
-		birth = "851.1.1"
+	858.1.1 = {
+		birth = "858.1.1"
 	}
 	876.1.1 = {
 		add_spouse = 7993
@@ -26883,6 +26885,7 @@
 	trait = deceitful
 	trait = impatient
 	trait = stubborn
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	sexuality = heterosexual
 	father = 90095
 	mother = 7986
@@ -27188,6 +27191,7 @@
 	trait = stuttering
 	trait = education_diplomacy_3
 	trait = weak
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90104 #(King Charles the Bald)
 	mother = 167830 #(Irminitrude of Orléans)
 	843.1.2 = {
@@ -27365,6 +27369,7 @@
 	culture = french
 	father = 90123 # Louis le Bègue
 	mother = 91385 # Ansgarde de Bourgogne
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	trait = rowdy
 	863.1.18 = {
 		birth = "863.1.18"
@@ -27381,6 +27386,7 @@
 	culture = french
 	father = 90123 # Louis le Bègue
 	mother = 91385 # Ansgarde de Bourgogne
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	trait = bossy
 	866.1.18 = {
 		birth = "866.1.18"
@@ -44139,6 +44145,7 @@
 	trait = gregarious
 	trait = diligent
 	trait = humble
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 167881
 	834.1.1 = {
 		birth = "834.1.1"
@@ -45300,10 +45307,12 @@
 	martial = 3
 	intrigue = 2
 	learning = 10
+	trait = curious
 	trait = humble
 	trait = forgiving
 	trait = temperate
 	trait = devoted
+	disallow_random_traits = yes
 	853.1.1 = {
 		birth = "853.1.1"
 	}
@@ -45402,8 +45411,8 @@
 	culture = french
 	father = 7979
 	mother = 7978
-	852.1.1 = {
-		birth = "852.1.1"
+	845.1.1 = {
+		birth = "845.1.1"
 	}
 	920.1.1 = {
 		death = "920.1.1"
@@ -46727,7 +46736,20 @@
 	dynasty_house = house_orleans #Orléans	
 	religion = catholic	
 	culture = french
-	father = 167829		
+	father = 167829
+
+	#Education
+	trait = education_learning_3
+
+	#Personality Traits
+	trait = zealous
+	trait = diligent
+	trait = humble
+	trait = chaste
+
+	#Other Traits
+	trait = loyal
+
 	823.9.27 = {		
 		birth = yes
 	}

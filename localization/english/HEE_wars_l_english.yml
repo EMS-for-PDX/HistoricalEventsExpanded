@@ -37,8 +37,15 @@
  nomadic_invasion_war_victory_desc: "Seizes all titles within [defender.GetShortUINamePossessive] realm in the dejure lands of the target title. All lands outside of this will be abandoned."
 
  msg_seljuk_invasion_war_invalidated_message: "The war ended inconclusively because the [casus_belli|E] is longer valid\nNobody gains or loses anything"
- 
- 
+
+
+ # Grand Raid 
+ GRAND_RAID_WAR_NAME: "[ATTACKER.GetPrimaryTitle.GetName|U] Grand Raid"
+ GRAND_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
+ GRAND_RAID_CB: "Grand Raid"
+ grand_raid_war_warning_desc: "#X You may only attempt one grand raid every 5 years#!"
+ GRAND_RAID_TOOLTIP: "Gold and Prestige are calculated using the defender's realm size"
+
  
  # Truce Descriptions
  louis_oath_desc: "\nEmperor Louis has been released from his unjust imprisonment by Adelchis of Benevento after having sworn to the Prince on holy relics that he would take no revenge for the injury, nor ever enter Benevento with an army."
@@ -47,6 +54,8 @@
  breton_viking_alliance_desc: "\nRelations between the vikings and the Bretons, who had became familiar with one another by reason of their occasional alliances and by the ordinary trading that inevitably took place in the peaceful intervals between the plundering expeditions, has changed. The vikings had shown that they could be harmless neighbours when it so pleased them, and that they could even be useful if their strength could be turned against the Frankish king as displayed in the Battle of Brissarthe (a battle fought on 2 July 866, between the Franks and a joint Breton-Viking army near Brissarthe, Neustria. It was marked by the death of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine). So a rash and experimental peace was made by Duke Salomon of Brittany with Hastein and his pirates. For the first time a viking host dwelt in France has been officially recognized, at any rate by its immediate neighbours, as settlers in the land."
  
  # Event Troops
+ great_summer_army_event_troops: "Great Summer Army"
+ 
  turkic_event_troops: "Turkic Troops"
  
  raimbaud_event_troops: "Norman Mercenaries"

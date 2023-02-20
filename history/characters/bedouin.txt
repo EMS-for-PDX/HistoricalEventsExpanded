@@ -1,6 +1,6 @@
 ﻿45108 = {
 	name = "Hasan" # ibn Zayd (great-great-grandson of Hasan ibn Zayd, governor of Medina)
-	dynasty = 7296 # Hashimid
+	dynasty = 7512 # Alids
 	religion = "zayidi"
 	culture = "bedouin"
 	father = 163128
@@ -20,6 +20,7 @@
 	trait = just
 	trait = zealous
 	trait = callous
+	trait = stubborn
 	
 	#Other Traits
 	trait = sayyid
@@ -5615,6 +5616,11 @@
 	830.1.1 = {
 		birth = yes
 	}
+	864.1.1 = { # He inherited from his predecessors a stable and prosperous state
+		effect = {
+			add_gold = 500
+		}
+	}
 	875.1.1 = {
 		death = yes
 	}
@@ -6707,8 +6713,15 @@
 	dynasty = 7512
 	religion = "zayidi"
 	culture = "bedouin"
-	trait = sayyid
 	father = 163128
+	
+	trait = fickle # In 897, Muhammad provided refuge to Bakr ibn Abd al-Aziz then the next year killed him
+	trait = generous # donated to other members of the Alid family across the Muslim world.
+	trait = zealous #  Muhammad espoused and promoted Zaydi Shi'ism and Mu'tazilism, while repressing Sunni opposition
+	
+	trait = sayyid
+	trait = poet # uhammad was also a cultured man, who appreciated good poetry and even composed poems of his own
+	
 	832.1.1 = {
 		birth = "832.1.1"
 	}

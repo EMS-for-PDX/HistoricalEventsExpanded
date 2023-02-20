@@ -1,9 +1,37 @@
 ﻿## Characters for the Francia area - 867 ##
 
+HEE_charles_the_fat_bastard = { # https://en.wikipedia.org/wiki/Bernard_(son_of_Charles_the_Fat)
+	name = "Bernard"
+	# female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 90105
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+
+	#Other Traits
+	trait = bastard
+
+	# disallow_random_traits = yes
+	867.1.1 = { # C. 870, included for the gameplay since its technically possible
+		birth = yes
+	}
+	891.1.1 = {
+		death = yes
+	}
+}
+
 HEE_engelram = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
 	name = "Engelram"
 	# female = yes
-	# dynasty = hee_dekapolitissa
+	# dynasty = 
 	religion = "catholic"
 	culture = "french"
 	# father =
@@ -170,6 +198,109 @@ HEE_girart_wife = { # https://en.wikipedia.org/wiki/Girart_de_Roussillon
 		add_spouse = 163062
 	}
 	883.1.1 = {
+		death = yes
+	}
+}
+
+HEE_hugh_of_saxony = { # https://en.wikipedia.org/wiki/Hugh_of_Saxony
+	name = "Hugh"
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 42019
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave
+	trait = humble
+	trait = chaste
+	
+	#Other Traits
+	trait = unyielding_defender
+	trait = bastard
+	
+	# sexuality = heterosexual
+	
+	disallow_random_traits = yes
+	851.1.1 = {
+		birth = yes
+	}
+	880.2.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+HEE_louis_bastard_bernhard = { # https://en.wikipedia.org/wiki/Hugh_of_Saxony
+	name = "Bernhard"
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 42019
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = bastard
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	852.1.1 = {
+		birth = yes
+	}
+	880.2.1 = {
+		death = yes
+	}
+}
+
+HEE_unknown_wife_of_rastislav = { # 
+	name = "Jarmila"
+	female = yes
+	# dynasty = 
+	religion = "slavic_pagan"
+	culture = "slovien"
+	# father =
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	820.1.1 = {
+		birth = yes
+	}
+	831.1.1 = {
+		religion = "catholic"
+	}
+	840.1.1 = {
+		add_spouse = 187002
+	}
+	888.1.1 = {
 		death = yes
 	}
 }

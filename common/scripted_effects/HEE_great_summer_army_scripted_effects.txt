@@ -7,11 +7,11 @@
 		
 		create_dynamic_title = {
 			tier = duchy
-			name = { SCANDANAVIAN_ADVENTURER_NEUTRAL_NAME }
+			name = GREAT_SUMMER_ARMY_NEUTRAL_NAME
 		}
 	}
 	
-	title:d_great_summer_army = { save_scope_as = new_title }
+	# title:d_great_summer_army = { save_scope_as = new_title }
 	
 	create_title_and_vassal_change = {
 		type = created
@@ -20,6 +20,12 @@
 	}
 	
 	scope:new_title = {
+		set_capital_county = title:c_middlesex #London
+		set_landless_title = yes
+		# set_ruler_uses_title_name = no
+		# TIT-27442
+		set_no_automatic_claims = yes
+		set_can_be_named_after_dynasty = no
 		change_title_holder = {
 			holder = scope:guthrum
 			change = scope:change
@@ -36,16 +42,20 @@
 		}
 	}
 	
-	title:d_normandy.holder.liege = {
-		save_scope_as = normandy_target_holder
+	title:d_norfolk.holder.liege = {
+		save_scope_as = east_anglia_target_holder
 	}
+
+	# Loan a few resources in case they're in debt/to keep them going.
+ 	scope:guthrum = { add_gold = 550 }
+	scope:guthrum = { add_prestige = 1500 }
 	
 	#Declare the war.
 	scope:guthrum = {
 		start_war = {
 			casus_belli = ducal_conquest_cb
-			target = scope:normandy_target_holder
-			target_title = title:d_normandy
+			target = scope:east_anglia_target_holder
+			target_title = title:d_norfolk
 		}
 	}
 	
@@ -56,7 +66,7 @@
 			inheritable = no
 			name = great_summer_army_event_troops
 			levies = {
-				value = 2950
+				value = 1950
 			}
 			men_at_arms = {
 				type = light_footmen
@@ -101,8 +111,5 @@
 			limit = { has_variable = random_location }
 			# Do nothing.
 		}
-		# Loan a little gold in case they're in debt/to keep them going.
- 		scope:rollo = { add_gold = 550 }
 	}
-	
 }

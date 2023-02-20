@@ -41,3 +41,185 @@ HEE_muhammad_ibn_wasil = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
 		death = yes
 	}
 }
+
+HEE_hamdan_unknown_kurdish_wife = {
+	name = "Rojhelat"
+	female = yes
+	# dynasty = 
+	culture = "kurdish"
+	religion = "ismaili"
+	# father =
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	839.1.1 = { # Unknown
+		birth = yes
+	}
+	860.1.1 = {
+		add_spouse = 163133
+	}
+	895.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_ibrahim_hamdanid = { # https://en.wikipedia.org/wiki/Hamdan_ibn_Hamdun#/media/File:Hamdanid_family_tree.svg
+	name = "Ibrahim"
+	# female = yes
+	dynasty = 7518
+	culture = "levantine"
+	religion = "ismaili"
+	father = 163133
+	mother = HEE_hamdan_unknown_kurdish_wife
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	#Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	864.1.1 = { # Unknown
+		birth = yes
+	}
+	905.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_husayn_hamdanid = { # https://en.wikipedia.org/wiki/Husayn_ibn_Hamdan
+	name = "Husayn"
+	# female = yes
+	dynasty = 7518
+	culture = "levantine"
+	religion = "ismaili"
+	father = 163133
+	mother = HEE_hamdan_unknown_kurdish_wife
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	866.1.1 = { # Unknown
+		birth = yes
+	}
+	918.10.15 = { # executed in October/November 918 on the caliph's orders
+		death = yes
+	}
+}
+
+HEE_abdallah_hamdanid = { # https://en.wikipedia.org/wiki/Abdallah_ibn_Hamdan
+	name = "Abdallah"
+	# female = yes
+	dynasty = 7518
+	culture = "levantine"
+	religion = "ismaili"
+	father = 163133
+	mother = HEE_hamdan_unknown_kurdish_wife
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	875.1.1 = { # Unknown
+		birth = yes
+	}
+	929.2.29 = { # Abdallah was killed defending al-Qahir, whom he had sworn to protect
+		death = yes
+	}
+}
+
+HEE_damascus_governor_father = { # https://en.wikipedia.org/wiki/List_of_rulers_of_Damascus
+	name = "Khalil"
+	# female = yes
+	dynasty = hee_shaybani
+	culture = "levantine"
+	religion = "ashari"
+	# father = 
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	850.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_damascus_governor = { # https://en.wikipedia.org/wiki/List_of_rulers_of_Damascus
+	name = "Ahmad"
+	# female = yes
+	dynasty = hee_shaybani
+	culture = "levantine"
+	religion = "ashari"
+	father = HEE_damascus_governor_father
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	830.1.1 = { # Unknown
+		birth = yes
+	}
+	896.1.1 = { # Unknown
+		death = yes
+	}
+}

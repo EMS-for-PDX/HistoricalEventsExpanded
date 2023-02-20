@@ -85,6 +85,11 @@
 	religion = "catholic"
 	culture = bavarian
 	father = 167810
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
+	trait = education_learning_3
+	trait = honest
+	trait = stubborn
+	trait = humble
 	834.1.1 = {
 		birth = "834.1.1"
 	}
@@ -258,7 +263,7 @@
 	trait = callous
 	trait = just
 	trait = education_martial_3
-	trait = legitimized_bastard
+	trait = bastard # If he is legitmized, it fucks with inheiritance 
 	father = 42018 #(King Karlmann of Bavaria)
 	mother = 167813
 	850.1.1 = {
@@ -3218,8 +3223,8 @@
 	trait = gluttonous
 	father = 7988
 	mother = 161485
-	842.1.1 = {
-		birth = "838.1.1"
+	835.1.1 = { # Konrad was an older brother of Hugh the Abbot
+		birth = "835.1.1"
 	}
 	876.1.1 = {
 		death = "876.1.1"
@@ -8880,6 +8885,7 @@
 4262 = {
 	name = "Hedwig"
 	female = yes
+	father = 11061 # Added merely so dynasty tree makes sense. No idea where she should go
 	dynasty = 416
 	martial = 4
 	diplomacy = 6

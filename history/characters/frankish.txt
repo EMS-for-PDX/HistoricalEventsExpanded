@@ -4197,6 +4197,7 @@
 	religion = catholic
 	culture = french
 	father = 91383
+	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	
 	trait = education_diplomacy_2
 	trait = trusting

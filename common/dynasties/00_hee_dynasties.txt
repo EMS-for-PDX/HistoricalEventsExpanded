@@ -6,22 +6,87 @@ hee_dekapolitissa = {
 	culture = "greek"
 }
 
-hee_tephrice = {
-	prefix = "dynnp_of"
-	name = "dynn_Tephrice"
-	culture = "greek"
-}
-
 hee_patras = {
 	prefix = "dynnp_of"
 	name = "dynn_Patras"
 	culture = "greek"
 }
 
+hee_kurramites = {
+	name = "dynn_HEEKhurramites"
+	culture = "persian"
+}
+
+hee_baboutzikos = {
+	name = "dynn_Baboutzikos"
+	culture = "greek"
+}
+
+hee_peganes = {
+	name = "dynn_Peganes"
+	culture = "greek"
+}
+
+hee_martinakioi = {
+	name = "dynn_Martinakioi"
+	culture = "greek"
+}
+
+hee_martinakoi = {
+	name = "dynn_Martinakoi"
+	culture = "greek"
+}
+
+hee_constantinopoli = { # Representative of noble family from Constantinople
+	name = "dynn_Constantinopoli"
+	culture = "greek"
+}
+
+hee_magistros = {
+	name = "dynn_Magistros"
+	culture = "greek"
+}
+
+hee_asbestas = {
+	name = "dynn_Asbestas"
+	culture = "greek"
+}
+
+hee_maniakes = {
+	name = "dynn_Maniakes"
+	culture = "armenian"
+}
+
+hee_marikonian = {
+	name = "dynn_Marikonian"
+	culture = "armenian"
+}
+
+hee_tephrice = {
+	prefix = "dynnp_of"
+	name = "dynn_Tephrice"
+	culture = "armenian"
+}
+
+hee_zaoutzes = {
+	name = "dynn_Zaoutzes"
+	culture = "armenian"
+}
+
 # Arabic
 hee_numayrid = {
 	name = "dynn_Numayrid"
 	culture = "bedouin"
+}
+
+hee_shaybani = {
+	name = "dynn_Shaybani"
+	culture = "levantine"
+}
+
+hee_akrites = {
+	name = "dynn_Akrites"
+	culture = "levantine"
 }
 
 # Georgian
@@ -85,4 +150,10 @@ hee_knudlings = {
 hee_bretagne = {
 	name = "dynn_Bretagne"
 	culture = "breton"	
+}
+
+# Fun stories
+hee_luka = {
+	name = "dynn_Luka"
+	culture = "italian"	
 }

@@ -1,0 +1,207 @@
+﻿namespace = HEE_aghlabids_questline
+
+HEE_aghlabids_questline.0001 = { # News of a plague outbreaks reaches the Emir
+	type = character_event
+	title = HEE_aghlabids_questline.0001.t
+	desc = HEE_aghlabids_questline.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	# right_portrait = {
+		# character = character:HEE_basiliskianos
+		# animation = personality_content
+	# }
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_aghlabids_questline.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+	
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		if = {
+			limit = { has_title = title:k_africa }
+			title:k_africa = {
+				every_in_de_jure_hierarchy = {
+					custom = every_controlled_province_in_the_mediterranean_region
+					limit = {
+						tier = tier_county
+						title_province = { geographical_region = custom_roman_africa }
+						 holder = {
+							OR = {
+								this = root
+								target_is_liege_or_above = root
+							}
+						}
+					}
+					add_county_modifier = {
+						modifier = hee_aftermath_of_plague_modifier
+						years = 3
+					}
+				}
+			}
+		}
+
+	}
+
+	option = {
+		name = HEE_aghlabids_questline.0001.a
+
+		if ={
+			limit = { this = character:163096 }
+			trigger_event = {
+				id = HEE_aghlabids_questline.0002
+				days = { 7 180 }
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_aghlabids_questline.0001.b
+
+		if ={
+			limit = { this = character:163096 }
+			trigger_event = {
+				id = HEE_aghlabids_questline.0002
+				days = { 7 180 }
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_aghlabids_questline.0002 = { #Charles the Bald comes down with his historically deadly illness
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		this = character:163096
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		add_trait = bubonic_plague
+		
+		trigger_event = {
+			id = HEE_aghlabids_questline.0003
+			days = { 7 14 }
+		}
+	}
+}
+
+HEE_aghlabids_questline.0003 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		this = character:163096
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		random_list = {
+			99 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_bubonic_plague
+					}
+				}
+			}
+			1 = {
+			
+			}
+		}
+	}
+}
+
+HEE_aghlabids_questline.1000 = { # Crowds uplift Ibrahim as Emir
+	type = character_event
+	title = HEE_aghlabids_questline.1000.t
+	desc = HEE_aghlabids_questline.1000.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	# right_portrait = {
+		# character = character:HEE_basiliskianos
+		# animation = personality_content
+	# }
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_aghlabids_questline.1000
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+	
+		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
+		character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+		if ={
+			limit = { is_ai = yes }
+			add_stress = -300
+		}
+
+	}
+
+	option = {
+		name = HEE_aghlabids_questline.1000.a
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_aghlabids_questline.1000.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}

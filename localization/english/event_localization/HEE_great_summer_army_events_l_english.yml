@@ -1,0 +1,32 @@
+﻿l_english:
+
+ #HEE Michael's Murder
+ HEE_great_summer_army.0003.t: "A Question of Faith"
+ HEE_great_summer_army.0003.desc: "Traditionally, our people have employed the use of puppet rulers over our conquered lands to pacify the people. However Edmund, the former King of East Anglia, has refused to comply with your demands. Deciding to give him one last opportunity, I venture into the dungeon to speak with him.\n\nWhile your men release him from his bindings, you ask him "Oh miserable King Edmund of East Anglia, you have had the night to rethink my offer. How do you answer?"\n\nStruggling to regain any shred of the dignity associated with his title of king, he stammers, "I...I have considered your offer and, yes, I will continue to rule East Anglia as you suggest. I will suffer your presence. I will provide you with horses, food, coin, and hostages. I will do all that you demand. But...only if you, Lord Guttorm, and all your men...submit to God. That is my demand. You must be baptized.""
+ HEE_great_summer_army.0003.a: ""I must be what?""
+
+ HEE_great_summer_army.0004.t: "A Christian Washing"
+ HEE_great_summer_army.0004.desc: "Off to the side, one of my men scoffs at the request: "I have heard of this rite. You must stand in a barrel of water and they pour more water over you!"\n\nConfused, you ask, "You want to wash me?"\n\nKing Edmund mutters "No..." while another of your men speaks up, "Your scent upsets them!"\n\nAnnoyed, King Edmund raises his voice, "No, to cleanse you of your sins! There is only one God and I demand you serve him!"\n\nHis words seem to upset one of your men who shout, "Kill him now!" but Edmund's words have intrigued you - "Why must I serve him?"\n\nThe defeated King raises a hand to the sky, "Because God is great, all-powerful, all-magnificent."\n\nYour irritated man replies, "Have him stop his yapping and prove it!""
+ HEE_great_summer_army.0004.a: ""Ah, agreed. Prove to me your God is great""
+
+ HEE_great_summer_army.0005.t: "The Proof of St. Sebastian"
+ HEE_great_summer_army.0005.desc: "King Edmund seems offended, "Prove it? Look here!" He pulls out a necklace necklace from around his neck, addorned with only a small wooden figure of a half-naked man with indents in his chest. "This is Saint Sebastian! A Roman Soldier who refused to renounce his faith and was struck with arrows for it, but he survived!"\n\n"So he lived?" you ask.\n\nEdmund pauses, "Well, he was then clubbed to death..."\n\n"So he still died?" you ask, confused.\n\n"Because it was God's will!"\n\n"So, would your God protect you from my arrows?" you ask.\n\nOne of your men scoff, "If he was all-powerful, he would."\n\n"Yes, if it was God's will, he would yes!" proclaims Edmund."
+ HEE_great_summer_army.0005.a: ""So let us try.""
+
+ HEE_great_summer_army.0006.t: "Proof of God"
+ HEE_great_summer_army.0006.desc: "With Edmund's declaration of God's power, you decide to test him. "We shall shoot arrows at you and, if you survive...we will all be washed."\n\nEdmund is rendered speechless for many long moments, before he tries to walk back his demands, "Very well. I will continue to be king but we will dispense with the need for the baptisms. The, uh... washing. I withdraw my request."\n\nHowever Edmund's piteful words do not temper your newfound interest in the supposed power of this God. "But you claim your God is all-powerful. I want it proven."\n\nTurning to your guards, you order Edmund to be stripped as you motion for your archers to take their positions. However, before this test of the Christian God, you have one last question for the King."
+ HEE_great_summer_army.0006.a: ""Tell me truthfully, are you afraid?""
+
+ HEE_great_summer_army.0007.t: "The Martyrdom of Edmund"
+ HEE_great_summer_army.0007.desc: "Edmund, though scared, seemed strangely defiant. "God is great."\n\n"We shall see."\n\nAs your men nock their arrows, Edmund grows restless, "Shoot...Shoot!" he cries. But you caution your men, "Ah...These are my men, and only I tell them when to shoot." Hearing this, Edmund lets out a breath he had been holding.\n\n"Shoot"\n\nEdmund's eyes can only widen as he is shoot by multiple arrows. Falling to the ground, Edmund gasps for breath. Walking over to stand over the arrow-ridden King, you ask, "Do you now wish to be clubbed, or will the arrows be sufficient?"\n\nEdmund has no answer as the life fades from his eyes and his gasps fall silent."
+ HEE_great_summer_army.0007.a: ""It seems your God was not with you.""
+
+ HEE_great_summer_army.0008.t: "To Wessex"
+ HEE_great_summer_army.0008.desc: "Though we have conquered East Anglia, its lands are wet and swampy. It is not suitable for settlement. However the rich lands of Wessex are. Comprised mainly of farmers, they should offer no resistence at the sight of our might."
+ HEE_great_summer_army.0008.a: ""To Wessex!""
+
+ HEE_great_summer_army.0010.t: "Beginnings of Greatness"
+ HEE_great_summer_army.0010.desc: "As I walk through the Royal Palace at Winchester, lead by members of the clergy to the Great Hall where I am to be coronated, I can not help but consider the task set before me.\n\nAs I step into the Great Hall, I am met with my chaplain, a goblet of holy water, and a crowd filled with noble and clergymen alike. Coming to a stop in front of the goblet, I am stripped of my tunic as my chaplain begins to annoint my body with holy water.\n\n"Our God, in his heaven, we ask you to find favor with your devoted servant Alfred. Bless him with courage, strength, and wisdom. Never leave his side. Amen." The crowd echoes, "Amen." "Allow him pure and holy thoughts and the power to carry out your work on this earth as our king. Allow this anointing of Alfred to enable your will."\n\nSpeaking directly to me the chaplain continues, "You are God's King, Alfred of Wessex. Vivat Rex Alfredus!" The crowd, solemnly echoes his words, "Vivat Rex Alfredus! Vivat Rex Alfredus!""
+ HEE_great_summer_army.0010.a: "Accept the Crown of Wessex"
+
+ #Custom Tooltips

@@ -2224,7 +2224,7 @@
 	trait = education_diplomacy_3
 	religion = "orthodox"
 	culture = "bulgarian"
-	850.1.1 = {
+	830.1.1 = {
 		birth = "850.1.1"
 	}
 	889.1.1 = {

@@ -1231,11 +1231,14 @@ d_diyarbakr = {
 	807.1.1 = {
 		holder = 146135
 	}
-	840.1.1 = {
-		holder = levantine000002
-	}
-	852.1.1 = {
-		holder = levantine000003
+	# 840.1.1 = {
+		# holder = levantine000002
+	# }
+	# 852.1.1 = {
+		# holder = levantine000003
+	# }
+	860.1.1 = {
+		holder = 146080 # Diyar-bakr is powerbase of the Shaybanids. Given to Isa's son because that is where he will eventually end up
 	}
 	890.1 = {
 		liege = 0
@@ -1272,12 +1275,8 @@ c_tall_basma = {
 	780.1.1 = {
 		holder = 159575
 	}
-	840.1.1 = {
-		holder = levantine000002
-		liege = e_arabia
-	}
-	852.1.1 = {
-		holder = levantine000003
+	860.1.1 = {
+		holder = 146080 # Diyar-bakr is powerbase of the Shaybanids. Given to Isa's son because that is where he will eventually end up
 	}
 	968.1.1 = {
 		liege = "d_mesopotamia"
@@ -1472,6 +1471,7 @@ c_mayyafariqin = {
 	}
 	852.1.1 = {
 		holder = levantine000003
+		liege = "d_diyarbakr"
 	}
 	968.1.1 = {
 		liege = "d_mesopotamia"
@@ -1554,6 +1554,7 @@ c_bakriya = {
 	}
 	852.1.1 = {
 		holder = levantine000003
+		liege = "d_diyarbakr"
 	}
 	968.1.1 = {
 		liege = "d_mesopotamia"
@@ -1617,12 +1618,8 @@ c_amida = {
 	817.1.1 = {
 		holder = 146136
 	}
-	840.1.1 = {
-		holder = levantine000002
-		liege = e_arabia
-	}
-	852.1.1 = {
-		holder = levantine000003
+	860.1.1 = {
+		holder = 146080 # Diyar-bakr is powerbase of the Shaybanids. Given to Isa's son because that is where he will eventually end up
 	}
 	1066.1.1 = {
 		liege = "d_edessa"

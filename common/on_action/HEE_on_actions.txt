@@ -1158,6 +1158,8 @@ on_death = {
 		division_of_frankfurt
 		on_hugo_the_abbot_death
 		on_domagoj_of_croatia_death
+		on_louis_the_stammerer_death
+		on_muhammad_ii_death
 	}
 }
 
@@ -1241,7 +1243,7 @@ on_domagoj_of_croatia_death = {
 			character:8601 = {
 				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_byzantine_croatia.001
+					id = HEE_byzantine_croatia.0001
 					days = { 7 20 }
 				}	
 			}
@@ -1255,7 +1257,7 @@ on_domagoj_of_croatia_death = {
 			character:8602 = {
 				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_byzantine_croatia.001
+					id = HEE_byzantine_croatia.0001
 					days = { 7 20 }
 				}	
 			}
@@ -1270,7 +1272,7 @@ on_domagoj_of_croatia_death = {
 			character:8603 = {
 				save_scope_as = croatian_claimant
 				trigger_event = {
-					id = HEE_byzantine_croatia.001
+					id = HEE_byzantine_croatia.0001
 					days = { 7 20 }
 				}	
 			}
@@ -1286,6 +1288,75 @@ on_domagoj_of_croatia_death = {
 		}
 		else = {
 			debug_log = "Trpimirovic Dynasty died before returning to Croatia"
+		}
+	}
+}
+
+on_louis_the_stammerer_death = {
+	trigger = {
+		this = character:90123
+	}
+	effect = {
+		# On Louis the Stammerer's death, Boso of Provence is elected King of Provence
+		if = {
+			limit = {
+				this = character:90123
+				character:7981 = { is_alive = yes }
+			}
+			character:7981 = {
+				save_scope_as = elected_king_of_provence
+				trigger_event = {
+					id = HEE_francia_questline.1000
+					days = { 7 15 }
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:90123
+				character:7981 = { is_alive = no }
+			}
+			debug_log = "Boso died before being able to be elected King"
+		}
+		else = {
+			debug_log = "Boso died before being able to be elected King"
+		}
+	}
+}
+
+on_muhammad_ii_death = {
+	trigger = {
+		this = character:163096
+		exists = player_heir
+		player_heir = { is_adult = no }
+	}
+
+	effect = {
+		# On Muhammad II's death, Ibrahim II is pushed forward by popular crowds and endorsed by the jurists of Kairouan to become Emir
+		if = {
+			limit = {
+				this = character:163096
+				character:163147 = { is_alive = yes }
+			}
+			character:163096 = {
+				set_designated_heir = character:163147
+			}
+			character:163147 = {
+				save_scope_as = ibrahim
+				trigger_event = {
+					id = HEE_aghlabids_questline.1000
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:163096
+				character:163147 = { is_alive = no }
+			}
+			debug_log = "Ibrahim died before being able to be elected Emir"
+		}
+		else = {
+			debug_log = "Ibrahim died before being able to be elected Emir"
 		}
 	}
 }

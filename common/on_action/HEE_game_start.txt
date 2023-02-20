@@ -3,6 +3,7 @@
 on_game_start = {
 	on_actions = {
 		hee_buildings_setup
+		hee_great_summer_army
 		hee_siege_of_ragusa
 		hee_rise_of_simeon_constantinople_sendoff
 		hee_basil_rise_michael_falls
@@ -17,6 +18,26 @@ hee_buildings_setup = {
 	events = {
 		HEEBuildings.0001		# Add Buildings
 	}
+}
+
+hee_great_summer_army = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+		title:d_norfolk.holder = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_great_summer_army.0001
+					days = { 720 1000 }
+				}
+			}
+		}
+    }
 }
 
 hee_siege_of_ragusa = {
@@ -110,6 +131,32 @@ hee_anarchy_at_samarra = {
 				}
 			}
 		}
+		### 867 - Al-Mutazz's Deposition ###
+		character:34014 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.1000
+					days = { 900 1000 }
+				}
+			}
+		}
+		### Gradual disintegration of Abbasid Caliphate ###
+		character:34014 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = hee_anarchy_at_samarra.9000
+					days = { 1 365 }
+				}
+			}
+		}
 	}
 }
 
@@ -180,6 +227,8 @@ yearly_global_pulse = {
 		hee_rise_of_simeon_startup
 		hee_muhammad_ibn_wasil_startup
 		hee_rollo_conquest_of_normandy
+		hee_christianization_of_bohemia
+		HEE_plague_in_africa
 	}
 }
 
@@ -649,6 +698,112 @@ hee_rollo_conquest_of_normandy = {
 						}
 						trigger_event = {
 							id = HEE_rollo.0001
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+hee_christianization_of_bohemia = {
+		effect = {
+		#Seljuk Invasion to create them
+		# if = {
+			# limit = {
+				# has_game_rule = rise_of_simeon_off
+			# }
+		# }
+		# else_if = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = bohemia_has_christianized }
+				# has_game_rule = rise_of_simeon
+			}
+			debug_log = "Checking for chance of firing the Christianization of Bohemia"
+
+			random = {
+				chance = boris_abdication_base_chance
+				modifier = {
+					add = 25
+					current_date > 875.1.1
+				}
+				modifier = {
+					add = 35
+					current_date > 880.1.1
+				}
+				modifier = {
+					add = 30
+					current_date > 900.1.1
+				}
+				set_global_variable = {
+					name = bohemia_has_christianized
+					value = yes
+				}
+				debug_log = "Attempting to force the Christianization of Bohemia"
+				### 867 - Rise of Simeon ###
+				#Boris abdicates to become a Monk
+				title:d_bohemia.holder = {
+					if = {
+						limit = {
+							is_alive = yes
+						}
+						trigger_event = {
+							id = HEE_christianization_of_bohemia.0001
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+HEE_plague_in_africa = {
+		effect = {
+		#Seljuk Invasion to create them
+		# if = {
+			# limit = {
+				# has_game_rule = rise_of_simeon_off
+			# }
+		# }
+		# else_if = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = plague_outbreak_in_north_africa }
+				# has_game_rule = rise_of_simeon
+			}
+			debug_log = "Checking for chance of firing the Plague in Africa"
+
+			random = {
+				chance = boris_abdication_base_chance
+				modifier = {
+					add = 20
+					current_date > 870.1.1
+				}
+				modifier = {
+					add = 50
+					current_date > 873.1.1
+				}
+				modifier = {
+					add = 30
+					current_date > 875.1.1
+				}
+				set_global_variable = {
+					name = plague_outbreak_in_north_africa
+					value = yes
+				}
+				debug_log = "Attempting to force the Plague in Africa"
+				### 867 - Rise of Simeon ###
+				#Boris abdicates to become a Monk
+				title:k_africa.holder = {
+					if = {
+						limit = {
+							is_alive = yes
+						}
+						trigger_event = {
+							id = HEE_aghlabids_questline.0001
 							days = { 1 365 }
 						}
 					}

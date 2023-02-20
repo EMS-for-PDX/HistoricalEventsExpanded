@@ -1109,8 +1109,14 @@ c_derby = {
 		liege = "d_hereford"
 		holder = 205081
 	}
+	839.1.1 = {
+		holder = 306018 #Æthelred Mucel
+	}
 	852.1.1 = {
-		holder = 163102
+		liege = "d_hereford"
+	}
+	879.1.1 = {
+		holder = 306021 #Æthelwulf Mucel
 	}
 	1066.1.1 = {
 		liege = "d_lancaster"
@@ -1481,8 +1487,8 @@ c_lincolnshire = {
 	839.1.1 = {
 		holder = 306018 #Æthelred Mucel
 	}
-	879.1.1 = {
-		holder = 306021 #Æthelwulf Mucel
+	866.1.1 = {
+		holder = 163112 #Great Heathen Army moves through (i.e conquers) this area in 866
 	}
 	1055.1.1 = {
 		liege = "d_york"
@@ -1880,11 +1886,14 @@ c_leicestershire = {
 	758.1.1 = {
 		holder = 205072
 	}
+	839.1.1 = {
+		holder = 306018 #Æthelred Mucel
+	}
 	852.1.1 = {
 		liege = "d_hereford"
 	}
-	852.1.1 = {
-		holder = 163102
+	879.1.1 = {
+		holder = 306021 #Æthelwulf Mucel
 	}
 	1066.1.1 = {
 		liege = "k_england"
@@ -1933,8 +1942,8 @@ c_nottinghamshire = {
 	852.1.1 = {
 		liege = "d_hereford"
 	}
-	879.1.1 = {
-		holder = 306021 #Æthelwulf Mucel
+	866.1.1 = {
+		holder = 163112 # Great Heathen Army moves through here (i.e conquers) this area in 866
 	}
 	1066.1.1 = {
 		liege = "k_england"

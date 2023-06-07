@@ -113,7 +113,7 @@
 	}
 	866.1.1 = {
 		effect = {
-			set_relation_friend = character:90107 #His liege Ludwig, who he was on relatively good terms with despite the general instability and discontent in the realm.
+			set_relation_friend = { reason = friend_generic_history target = character:90107 } #His liege Ludwig, who he was on relatively good terms with despite the general instability and discontent in the realm.
 		}
 	}
 	875.1.1 = {
@@ -15788,7 +15788,7 @@ fox_1 = {
 	}
 	1040.4.7 = {
 		effect = {
-			set_relation_rival = character:bear_1
+			set_relation_rival = { target = character:bear_1 reason = rival_historical }
 		}
 		add_pressed_claim = title:c_wittenberg
 	}
@@ -15898,7 +15898,6 @@ saxon0001 = {
 	stewardship = 3
 	religion = "catholic"
 	culture = "saxon"
-	trait = blademaster_3
 	trait = education_martial_4
 
 	1040.1.1 = {
@@ -15906,6 +15905,18 @@ saxon0001 = {
 	}
 	1066.1.1 = {
 		employer = 7757
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
 	}
 	1092.1.1 = {
 		death = yes

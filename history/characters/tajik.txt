@@ -367,20 +367,6 @@
 	}
 }
 
-# 163162 = { Removed because he is a duplicate character of 10002230509
-	# name = "Muhammad"
-	# dynasty = 811
-	# religion = "ashari"
-	# culture = "tajik"
-	# father = 163158
-	# 820.1.1 = {
-		# birth = yes
-	# }
-	# 890.1.1 = {
-		# death = yes
-	# }
-# }
-
 188686 = {
 	name = "Tahir"
 	dynasty = 811 # Tahirid

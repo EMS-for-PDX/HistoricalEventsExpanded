@@ -650,7 +650,8 @@
 }
 
 6879 = {
-	name = "Vigdis" #
+	name = "Vigdis" # Haesteinn's wife Vigdis
+	dna = 6879_vigdis
 	female = yes
 	religion = norse_pagan
 	culture = norse
@@ -813,10 +814,9 @@
 
 40606 = {
 	name = "Helgi"		#Oleg the Seer
-	# dynasty = 705
+	dna = 40606_helgi_the_seer
 	religion = norse_pagan
 	culture = norse
-	# father = 40605 #Rurik (wasn't actually his son but his "kinsman" who ruled between Rurik and Rurik's son Yngvar)
 	mother = HEE_efanda_mother # Scholars think Oleg was the brother of Rurik's wife
 	diplomacy = 9
 	martial = 9
@@ -829,7 +829,6 @@
 	trait = greedy
 	trait = ambitious
 	trait = stubborn
-	# trait = legitimized_bastard #fiction
 	trait = loyal # Did not kill/usurp Igor
 	trait = shrewd
 	trait = reaver
@@ -1038,6 +1037,7 @@
 
 100500 = {
 	name = "Eirikr" # According to most sources son of "Anund_Uppsale", but we've cut both him and his father "Erik", son of Björn Ironside
+	dna = 100500_eirikr
 	dynasty_house = house_munso #Munsö
 	martial = 4
 	diplomacy = 4
@@ -1837,7 +1837,7 @@
 	religion = "catholic"
 	culture = norse
 	trait = education_intrigue_2
-	trait = hunter_1
+	trait = lifestyle_hunter
 	father = 101510 #Knud The Great
 	mother = 135 #Ældgyth
 	1015.1.1 = {
@@ -2773,7 +2773,7 @@
 	trait = chaste
 	trait = arrogant
 	trait = cynical
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 	father = 183900 #Eindride av Gimse
 	980.1.1 = {
@@ -3020,7 +3020,7 @@
 	trait = brave
 	trait = ambitious
 	trait = lustful
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_3
 	trait = organizer
 	father = 168323
@@ -3041,7 +3041,6 @@
 		}
 	}
 	867.1.1 = {
-		#add_spouse = 6862
 		effect = {
 			add_prestige = 400
 		}
@@ -3626,7 +3625,7 @@
 	trait = brave
 	trait = impatient
 	trait = honest
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_diplomacy_3
 	trait = viking
 	father = 163109 #Ragnarr Lodbrok
@@ -3668,12 +3667,25 @@
 	trait = content
 	trait = brave
 	trait = intellect_good_2
-	trait = mystic_2
 	822.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}
+	}
+	865.1.1 = {
+		effect = {
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+                trait = lifestyle_mystic
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
 	}
 	888.1.1 = {
 		death = yes
@@ -3698,7 +3710,7 @@
 	}
 	800.1.1 = {
 		trait = wrathful
-		trait = hunter_1
+		trait = lifestyle_hunter
 		trait = strong
 		trait = brave
 		trait = viking
@@ -3743,6 +3755,7 @@
 
 6836 = {
 	name = "Aslaug" # Aka Kraka or Randalin
+	dna = 6836_aslaug
 	female = yes
 	religion = "norse_pagan"
 	culture = "norse"
@@ -3756,9 +3769,22 @@
 	trait = zealous
 	trait = temperate
 	trait = education_stewardship_4
-	trait = mystic_1
 	802.1.1 = {
 		birth = yes
+	}
+	830.1.1 = {
+		effect = {
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+                trait = lifestyle_mystic
+                value = {
+                    integer_range = {
+                        min = small_lifestyle_random_xp_low
+                        max = small_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
 	}
 	875.1.1 = {
 		death = yes
@@ -3778,7 +3804,7 @@
 	intrigue = 5
 	learning = 3
 	trait = patient
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = gregarious
 	trait = viking
 	trait = zealous
@@ -3891,7 +3917,6 @@
 	learning = 3
 	prowess = 6
 	trait = ambitious
-	trait = blademaster_2
 	trait = callous
 	trait = vengeful
 	trait = one_legged
@@ -3909,6 +3934,18 @@
 	}
 	866.1.1 = {
 		add_spouse = 306011 #Fictional
+			effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
 	}
 	838.1.1 = {
 		give_nickname = nick_the_boneless
@@ -3959,6 +3996,7 @@
 
 306011 = { #Fictional wife of Ivar the Boneless
 	name = Freydi_s
+	dna = 306011_freydis
 	female = yes
 	religion = norse_pagan
 	culture = norse
@@ -4045,7 +4083,7 @@
 	intrigue = 5
 	learning = 3
 	trait = ambitious
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = wrathful
 	trait = callous
 	trait = viking
@@ -4108,6 +4146,7 @@
 
 306009 = { #Fictional wife of Halfdan
 	name = IngjerT_r
+	dna = 306009_ingjerdr
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
@@ -4124,6 +4163,7 @@
 
 306010 = { #Fictional daughter of Halfdan
 	name = Saga
+	dna = 306010_saga
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
@@ -4180,7 +4220,7 @@
 	intrigue = 4
 	learning = 2
 	prowess = 10
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = blademaster_2
 	trait = arbitrary
 	trait = brave
@@ -4351,7 +4391,7 @@
 	intrigue = 4
 	learning = 3
 	trait = wrathful
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = arrogant
 	trait = honest
 	trait = education_martial_3
@@ -4498,8 +4538,6 @@
 	trait = just
 	trait = brave
 
-	#Other Traits
-
 	819.1.1 = {
 		birth = "819.1.1"
 	}
@@ -4514,7 +4552,7 @@
 	female = yes
 	dynasty = 1040004
 	religion = "norse_pagan"
-	culture = "norwegian"
+	culture = norse
 	father = 166329
 	
 	#Skills
@@ -4543,7 +4581,7 @@
 	sexuality = heterosexual
 	
 	852.1.1 = {
-		birth = "854.1.1"
+		birth = "852.1.1"
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}
@@ -5746,6 +5784,7 @@
 
 168336 = {
 	name = "GuT_friT_" #the Seaking
+	dna = 168336_gudfrid
 	dynasty_house = house_hvitserk
 	religion = "norse_pagan"
 	culture = norse

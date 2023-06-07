@@ -5862,8 +5862,6 @@
 	dynasty = 1029123
 	father = 159731
 
-	#Skills
-	
 	#Education
 	trait = education_martial_3 # Isa first appears in 848, in the ranks of the Abbasid army and spread his power through military means
 	
@@ -5875,9 +5873,6 @@
 	#Other Traits
 	trait = poet  # Isa were esteemed for the quality of his Arabic poetry.
 
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -7445,8 +7440,6 @@
 	culture = "levantine"
 	father = 159732
 
-	#Skills
-
 	#Education
 	trait = education_martial_2
 	
@@ -7457,9 +7450,6 @@
 	#Other Traits
 	trait = poet
 
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
 	841.1.1 = {
 		birth = yes
 	}
@@ -7943,20 +7933,12 @@ levantine000003 = {
 	father = levantine000002
 	mother = HEE_ashot_iv_unnamed_daughter
 	culture = levantine
-
-	# Skills
-	
-	# Education
 	
 	# Personality Traits
 	trait = diligent # Was  Isa ibn al-Shaykh's chief subordinate and ran administration when Isa could not
 	trait = cynical # According to rumors, he secretly converted to Christianity
 	trait = content # Never seemed to want to shoot any higher than emir of Arzen
 	
-	# Other Traits
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	841.1.1 = {
 		birth = yes
 	}
@@ -8133,11 +8115,14 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	father = 34002
 	mother = 188746
 	trait = sayyid
+	trait = lifestyle_hunter
 	735.1.1 = {
 		birth = yes
 	}
 	785.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_hunting_accident
+		}
 	}
 }
 
@@ -8403,15 +8388,11 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	
 	#Other Traits
 	trait = sayyid
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
 	840.1.1 = {
 		birth = yes
 	}
 	866.1.1 = {
-		set_relation_friend = character:163132
+		set_relation_friend = { reason = friend_generic_history target = character:163132 }
 		create_alliance = character:163132
 		character:163132 = {
 			add_opinion = {
@@ -8419,7 +8400,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 				modifier = perk_negotiated_alliance_opinion
 			}
 		}
-		set_relation_friend = character:turkish000007
+		set_relation_friend = { reason = friend_generic_history target = character:turkish000007 }
 		create_alliance = character:turkish000007
 		character:turkish000007 = {
 			add_opinion = {
@@ -9274,7 +9255,7 @@ levantine0001 = {
 	}
 	855.1.1 = {
 		effect = {
-			set_relation_friend = character:73838 # Sheik Izraq ibn Muntil of Madrid
+			set_relation_friend = { reason = friend_generic_history target = character:73838 } # Sheik Izraq ibn Muntil of Madrid
 		}
 	}
 	886.8.4 = {
@@ -12020,6 +12001,27 @@ levantine0129 = {
 		birth = yes
 	}
 	994.1.1 = {
+		death = yes
+	}
+}
+
+levantine0130 = {
+	name = "Rajiya" # Name fictionalised: we know she existed, just not what she was called.
+	dynasty = 101727
+	religion = ashari
+	culture = levantine
+	father = 3084 # Calipha al-Qa'im
+	female = yes
+	trait = sayyid
+
+	# Dates are fictionalised: we only really know that she was of age to marry Alp Arslan's uncle/prior ruler of the Turks, Tughril-Beg.
+	1037.1.1 = {
+		birth = yes
+	}
+	1063.1.1 = {
+		add_spouse = 3038
+	}
+	1080.1.1 = {
 		death = yes
 	}
 }

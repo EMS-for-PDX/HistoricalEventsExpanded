@@ -388,11 +388,6 @@ maghrebi0001 = {
 	dynasty = salimid # Create Salimid Dynasty
 	religion = "ashari"
 	culture = "maghrebi"
-
-	#Skills
-
-	
-	#Education
 	trait = education_martial_2
 	
 	#Personality Traits

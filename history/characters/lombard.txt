@@ -864,7 +864,7 @@
 	}
 	751.1.1 = {
 		trait = devoted
-		trait = mystic_3
+		trait = lifestyle_mystic
 	}
 	803.1.1 = {
 		death = yes
@@ -1030,6 +1030,7 @@
 	culture = "lombard"
 
 	father = 190160
+	trait = lifestyle_hunter
 
 	789.1.1 = {
 		birth = yes
@@ -1662,6 +1663,7 @@
 
 	father = 190342
 	mother = 190191
+	trait = lifestyle_hunter
 
 	717.1.1 = {
 		birth = yes
@@ -1671,7 +1673,7 @@
 	}
 	756.12.1 = {
 		death = {
-			death_reason = death_horse_riding_accident
+			death_reason = death_hunting_accident
 		}
 	}
 }
@@ -3656,7 +3658,7 @@
 	culture = lombard
 	trait = theologian
 	trait = architect
-	trait = mystic_3
+	trait = lifestyle_mystic
 	trait = education_learning_3
 
 	father = 163075
@@ -3775,6 +3777,7 @@
 
 1123 = {
 	name = "Sichelgaita" # Sichelgaita Lampertidi, wife of Robert Guiscard of Apulia
+	dna = 1123_sichelgaita
 	female = yes
 	dynasty_house = house_lampertidi
 	religion = catholic

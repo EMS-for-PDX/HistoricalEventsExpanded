@@ -90,6 +90,9 @@
 	831.1.1 = {
 		religion = "catholic"
 	}
+	864.1.1 = {
+		religion = "orthodox" # Rastislav turned to the Byzantines for religious support, accepting the missonaries Constantine and Methodius into his realm
+	}
 	869.1.1 = {
 		death = "869.1.1"
 	}

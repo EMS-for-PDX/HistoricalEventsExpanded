@@ -498,6 +498,7 @@
 
 1132 = {
 	name = "Roger"
+	dna = 1132_roger_of_messina
 	dynasty = 678
 	martial = 8
 	diplomacy = 7
@@ -710,6 +711,7 @@
 
 1140 = {
 	name = "Bohemond"
+	dna = 1140_bohemond
 	dynasty = 678
 	martial = 8
 	diplomacy = 7
@@ -729,6 +731,9 @@
 	mother = 10003
 	1055.1.1 = {
 		birth = "1055.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	1105.1.1 = {
 		add_spouse = 205511
@@ -5005,7 +5010,7 @@
 	trait = cynical
 	trait = education_stewardship_3
 	trait = greedy
-	trait = hunter_1
+	trait = lifestyle_hunter
 	1035.1.1 = {
 		birth = "1035.1.1"
 	}

@@ -890,7 +890,13 @@ beards_scripted_characters = {
             	exists = this
             	exists = character:easteregg_maxence_voleau
             	this = character:easteregg_maxence_voleau
-            }  
+            }
+		    modifier = {
+                add = 999
+                exists = this
+                exists = character:1736 #Michael VII Doukas
+                this = character:1736 #Michael VII Doukas
+            } 
         }
     }
 
@@ -1040,6 +1046,12 @@ beards_scripted_characters = {
                 exists = this
                 exists = character:7756 #Boniface of Tuscany
                 this = character:7756 #Boniface of Tuscany
+            }
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:1732 #Konstantinos X Doukas
+                this = character:1732 #Konstantinos X Doukas
             }
         }
     }
@@ -1196,4 +1208,24 @@ beards_scripted_characters = {
             }
         }
     }
+
+    male_beard_western_9b = { # Short Round Beard
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = beards
+                template = western_beards_curly
+                value = 0.99 # For the randomness to work correctly
+            }
+        }   
+        weight = {
+            base = 0
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:1742 #Alexios I Komnenos
+                this = character:1742 #Alexios I Komnenos
+            }
+		}
+	}
 }

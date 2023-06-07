@@ -41,6 +41,7 @@
 #Karlmann of Bavaria
 42018 = {
 	name = "Karlmann"
+	dna = 42018_karlmann
 	dynasty = 25061
 	martial = 8
 	diplomacy = 8
@@ -69,23 +70,23 @@
 	}
 	846.1.1 = {
 		effect = {
-			set_relation_friend = character:7987 #His mother Hemma, he was her favorite
+			set_relation_friend = { reason = friend_generic_history target = character:7987 } #His mother Hemma, he was her favorite
 		}
 	}
 	850.1.1 = {
 		effect = {
-			set_relation_lover = character:167813 # Liutswind
-			set_relation_rival = character:167812 # Liutswind's brother, Ernst
+			set_relation_lover = { reason = lover_history target = character:167813 } # Liutswind
+			set_relation_rival = { target = character:167812 reason = rival_historical } # Liutswind's brother, Ernst
 		}
 	}
 	860.1.1 = {
 		effect = {
-			set_relation_rival = character:90107
-			# add_opinion = {
-				# target = character:90107 #Karlmann had a "conflictual" relationship with his father
-				# modifier = hate_opinion
-				# opinion = -200
-			# }
+			set_relation_rival = { target = character:90107 reason = rival_historical }
+			add_opinion = {
+				target = character:90107 #Karlmann had a "conflictual" relationship with his father
+				modifier = hate_opinion
+				opinion = -200
+			}
 		}
 	}
 	864.1.1 = {
@@ -109,6 +110,7 @@
 42019 = {
 	name = "Ludwig"
 	# AKA: Ludwig 'der Junge'
+	dna = 42019_ludwig
 	dynasty = 25061
 	martial = 6
 	diplomacy = 8
@@ -137,6 +139,7 @@
 
 90105 = {
 	name = "Karl" # AKA: Karl 'Pinguis'
+	dna = 90105_karl
 	dynasty = 25061
 	martial = 4
 	diplomacy = 5
@@ -1708,6 +1711,7 @@
 	culture = franconian
 	father = 10084
 	mother = 20209
+	trait = lifestyle_hunter
 	984.1.1 = {
 		birth = "984.1.1"
 	}
@@ -1715,7 +1719,9 @@
 		add_spouse = 1385
 	}
 	1015.5.13 = {
-		death = "1015.5.13"
+		death = {
+			death_reason = death_hunting_mistakenly_shot
+		}
 	}
 }
 
@@ -1892,7 +1898,7 @@
 10096 = {
 	name = "Judith"
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 3
 	intrigue = 7
@@ -1911,7 +1917,7 @@
 
 10097 = {
 	name = "Arnulf"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -1932,7 +1938,7 @@
 
 10098 = {
 	name = "Berthold"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 6
 	diplomacy = 5
 	intrigue = 7
@@ -1974,7 +1980,7 @@
 
 11061 = {
 	name = "Heinrich"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -1993,7 +1999,7 @@
 
 11067 = {
 	name = "Berthold"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2011,7 +2017,7 @@
 
 11069 = {
 	name = "Arnulf"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2052,7 +2058,7 @@
 
 1434 = {
 	name = "Heinrich"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 4
 	intrigue = 6
@@ -2076,7 +2082,7 @@
 1435 = {
 	name = "Elika"
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 8
 	diplomacy = 7
 	intrigue = 4
@@ -2098,7 +2104,7 @@
 1437 = {
 	name = "Judith"
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 5
 	diplomacy = 7
 	intrigue = 6
@@ -2135,7 +2141,7 @@
 20261 = {
 	name = "Otto"
 	# AKA: Kuno
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 6
 	diplomacy = 7
 	intrigue = 5
@@ -2531,7 +2537,7 @@
 
 30671 = {
 	name = "Burchard"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -2569,7 +2575,7 @@
 	name = "Beatrix"
 	# AKA: Adelaide
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2756,7 +2762,7 @@
 
 7969 = {
 	name = "Luitpold"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2777,7 +2783,7 @@
 
 7970 = {
 	name = "Eberhard"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
@@ -2796,7 +2802,7 @@
 
 7971 = {
 	name = "Berthold"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2815,7 +2821,7 @@
 
 7972 = {
 	name = "Heinrich"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	martial = 4
 	diplomacy = 3
 	intrigue = 3
@@ -2948,7 +2954,7 @@
 31527 = {
 	name = "Adelheid"
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -2962,7 +2968,7 @@
 
 31528 = {
 	name = "Kuno"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 11061
@@ -3036,7 +3042,7 @@
 
 33469 = {
 	name = "Heinrich"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 31528
@@ -3245,7 +3251,7 @@
 
 168302 = {
 	name = "Liutbert" #real name uncertain
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 168301
@@ -3260,7 +3266,7 @@
 
 168303 = {
 	name = "Herolt"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 168302
@@ -3275,7 +3281,7 @@
 
 168304 = {
 	name = "Alberik"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 168303
@@ -3290,7 +3296,7 @@
 
 168305 = {
 	name = "Herolt"
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 168304
@@ -3306,7 +3312,7 @@
 168306 = {
 	name = "Rihni"
 	female = yes
-	dynasty = 416
+	dynasty_house = house_babenberg
 	religion = "catholic"
 	culture = franconian
 	father = 168303
@@ -7563,7 +7569,7 @@
 	religion = "catholic"
 	culture = franconian
 	trait = arrogant
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = temperate
 	trait = just
 	trait = education_diplomacy_4
@@ -8578,7 +8584,7 @@
 	religion = "catholic"
 	culture = franconian
 	trait = drunkard
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_stewardship_2
 	father = 1616
 	mother = 471
@@ -12658,7 +12664,7 @@
 	stewardship = 7
 	religion = "catholic"
 	culture = franconian
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = greedy
 	trait = education_martial_1
 	father = 20240
@@ -12678,7 +12684,7 @@
 	religion = "catholic"
 	culture = franconian
 	father = 20237
-	mother = 1337
+	mother = 11038
 	1056.1.1 = {
 		birth = "1056.1.1"
 	}
@@ -12723,7 +12729,7 @@
 	religion = "catholic"
 	culture = franconian
 	father = 20237
-	mother = 1337
+	mother = 11038
 	1060.1.1 = {
 		birth = "1060.1.1"
 	}

@@ -560,9 +560,9 @@
 	}
 }
 
-41552 = {
+41552 = { # AKA: Mariam, or Maria of Alania
 	name = "Martha"
-	# AKA: Mariam
+	dna = 41552_maria
 	female = yes
 	dynasty_house = house_bagrationi # Georgian Bagrationi cadets
 	martial = 7
@@ -571,19 +571,27 @@
 	stewardship = 8
 	religion = "orthodox"
 	culture = "georgian"
-	trait = generous
-	trait = calm
+	trait = ambitious #Involved in the second imperial coup 
 	trait = diligent
-	trait = charming
+	trait = generous #Noted for her charity
+	trait = curious
 	trait = beauty_good_3
 	disallow_random_traits = yes
 	father = 9952
 	mother = 9953
 	1053.1.1 = {
 		birth = "1053.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
-	1090.1.1 = {
-		death = "1090.1.1"
+	1066.1.2 = {
+		effect = {
+			create_betrothal = character:1736 #In real life they were married at this time, but we don't marry underage characters in this game so bethrothal it is
+		}
+	}
+	1118.1.1 = {
+		death = "1118.1.1"
 	}
 }
 
@@ -1425,9 +1433,9 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "georgian"
-	trait = just
+	trait = ambitious
 	trait = vengeful
-	trait = cynical
+	trait = callous
 	trait = education_intrigue_2
 	father = 70471
 	
@@ -1513,15 +1521,18 @@
 	name = "Ioane"
 	dynasty = hee_shavliani
 	martial = 7
-	diplomacy = 4
+	diplomacy = 7
 	intrigue = 5
 	stewardship = 6
+	learning = 5
 	religion = "orthodox"
 	culture = "georgian"
-	trait = arbitrary
-	trait = deceitful
 	trait = ambitious
+	trait = calm
+	trait = deceitful
+	trait = diligent
 	trait = education_martial_4
+	trait = beauty_good_1
 	#father = 70476
 	
 	832.1.1 = {
@@ -1544,8 +1555,9 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "georgian"
-	trait = arrogant
+	trait = calm
 	trait = brave
+	trait = diligent
 	trait = education_martial_2
 	father = 70474
 	
@@ -1567,8 +1579,10 @@
 	religion = "orthodox"
 	culture = "georgian"
 	trait = intellect_good_1
+	trait = ambitious
 	trait = paranoid
 	trait = education_stewardship_2
+	trait = infertile
 	father = 70472
 	
 	807.1.1 = {
@@ -2979,7 +2993,8 @@
 	culture = "georgian"
 	trait = humble
 	trait = just
-	trait = education_martial_2
+	trait = rowdy
+	disallow_random_traits = yes
 	father = 41541
 	mother = 41528
 	854.1.1 = {
@@ -3171,9 +3186,10 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "georgian"
-	trait = honest
-	trait = lazy
-	trait = education_intrigue_2
+	trait = generous
+	trait = ambitious
+	trait = cynical
+	trait = education_martial_2
 	father = 41540
 	815.1.1 = {
 		birth = "815.1.1"

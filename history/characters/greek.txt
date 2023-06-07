@@ -1,31 +1,24 @@
 ﻿1700 = {
 	name = "Basileios"
 	dynasty = 644
-	religion = "orthodox"
-	culture = "greek"
-	health = 4.0
-	
-	father = 145129
-	
-	diplomacy = 8
 	martial = 6
-	stewardship = 6
+	diplomacy = 8
 	intrigue = 10
+	stewardship = 6
 	learning = 5
 	prowess = 10
-	
+	religion = "orthodox"
+	culture = "greek"
 	trait = education_martial_2
-
+	trait = strong
 	trait = brave
 	trait = deceitful
 	trait = ambitious
 	trait = diligent
-	
-	trait = strong
 	trait = beauty_good_1
-	
+	trait = lifestyle_hunter
 	sexuality = bisexual
-	
+	father = 145129
 	830.5.25 = {
 		birth = "830.5.25"
 	}
@@ -34,7 +27,7 @@
 	}
 	861.1.1 = {
 		employer = 70490 # Michael III
-		set_relation_friend = character:70490 # Soon after entering the Emperor's service, Basil became the Byzantine Emperor's companion, confidant, and bodyguard 
+		set_relation_friend = { reason = friend_generic_history target = character:70490 } # Soon after entering the Emperor's service, Basil became the Byzantine Emperor's companion, confidant, and bodyguard 
 	}
 	864.12.31 = {
 		remove_spouse = 145131
@@ -49,7 +42,9 @@
 		add_pressed_claim = title:e_byzantium
 	}
 	886.8.29 = {
-		death = "886.8.29"
+		death = {
+			death_reason = death_deer
+		}
 	}
 }
 
@@ -1025,6 +1020,9 @@
 	867.1.1 = {
 		birth = "867.1.1"
 	}
+	944.1.1 = {
+		trait = devoted
+	}
 	948.6.15 = {
 		death = "948.6.15"
 	}
@@ -1271,6 +1269,8 @@
 	}
 	1042.4.20 = {
 		trait = blind
+		trait = devoted
+		trait = eunuch
 	}
 	1042.8.24 = {
 		death = "1042.8.24"
@@ -1321,8 +1321,14 @@
 	1007.1.1 = {
 		birth = "1007.1.1"
 	}
+	1030.1.1 = {
+		trait = lifestyle_hunter
+	}
 	1056.1.1 = {
 		add_spouse = 729
+	}
+	1057.8.31 = {
+		trait = devoted
 	}
 	1061.1.1 = {
 		death = "1061.1.1"
@@ -1452,9 +1458,11 @@
 	1050.1.1 = {
 		birth = "1050.1.1"
 	}
-	1066.1.1 = {
-		add_spouse = 41552
-	}
+	#1066.1.2 = {
+	#	effect = {
+	#		create_betrothal = character:41552 # Dealth with in her entry
+	#	}
+	#}
 	1078.1.1 = {
 		remove_spouse = 41552
 	}
@@ -1634,7 +1642,7 @@
 	}
 	1066.1.1 = {
 		effect = {
-			set_relation_rival = character:1734	#A bit early, as the events that would cause this wouldn't start till 1067, but better to have the rivalry ready to go straight off the bat.
+			set_relation_rival = { target = character:1734 reason = rival_historical }	#A bit early, as the events that would cause this wouldn't start till 1067, but better to have the rivalry ready to go straight off the bat.
 		}
 	}
 	1088.5.12 = {
@@ -2043,6 +2051,9 @@
 	}
 	994.1.1 = {
 		add_spouse = 42002
+	}
+	1028.1.1 = {
+		trait = blind
 	}
 	1033.1.1 = {
 		death = "1033.1.1"
@@ -4655,7 +4666,7 @@
 	stewardship = 3
 	religion = "orthodox"
 	culture = "greek"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = greedy
 	trait = ambitious
 	trait = lustful
@@ -4731,7 +4742,7 @@
 	dynasty = 634
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_learning_3
+	trait = education_learning_4
 	trait = scholar
 	trait = intellect_good_3
 	trait = born_in_the_purple
@@ -6500,15 +6511,15 @@
 	name = "Nikephoros"
 	dna = HEE_nikephoros_phokas_dna
 	dynasty = 641
-	father = 145147
-	diplomacy = 7
 	martial = 8
-	stewardship = 7
+	diplomacy = 7
 	intrigue = 6
+	stewardship = 7
 	learning = 6
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_3
+	father = 145147
 	trait = calm
 	trait = brave
 	trait = just
@@ -6774,12 +6785,11 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = generous
 	trait = just
 	trait = diligent
+	trait = generous
 	trait = zealous
-	trait = bossy
-	trait = education_martial_2
+	trait = rowdy
 	disallow_random_traits = yes
 	father = 1764
 	mother = 1765
@@ -6787,7 +6797,7 @@
 		birth = "1054.1.1"
 	}
 	1066.1.1 = {
-		set_relation_friend = character:1742 # 
+		set_relation_friend = { reason = friend_generic_history target = character:1742 } # 
 		create_betrothal = character:34436
 	}
 	1081.1.1 = {
@@ -8468,7 +8478,7 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_intrigue_2
 	father = 70400
 	
@@ -8732,7 +8742,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = temperate
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 	father = 70431
 	
@@ -8773,6 +8783,9 @@
 	father = 70431
 	1009.1.1 = {
 		birth = "1009.1.1"
+	}
+	1057.8.31 = {
+		trait = devoted
 	}
 	1057.10.1 = {
 		death = "1057.10.1"
@@ -8863,12 +8876,10 @@
 	name = "Michael"
 	# AKA: Mikhael 'the Drunkard'
 	dynasty = 8642
-	father = 70491
-	mother = HEE_theodora_wife_of_theophilos
-	diplomacy = 7
 	martial = 8
-	stewardship = 7
+	diplomacy = 7
 	intrigue = 5
+	stewardship = 7
 	learning = 5
 	prowess = 6
 	religion = "orthodox"
@@ -8878,29 +8889,17 @@
 	trait = brave # The impression gained from Arab sources is one of Michael as an active and often successful military commander
 	trait = diligent # Michael presided over the reconstruction of ruined cities and structures, the reopening of closed monasteries, and the reorganization of the imperial university at the Maganaura palace
 	# trait = cynical (Not taking a stance on this) # According to Byz sources, Michael orchestrated public displays mocking the processions and rituals of the church
-	# trait = drunkard
-	trait = reveler_2
-	trait = education_martial_3 # The impression gained from Arab sources, however, is one of Michael as an active and often successful military commander
+	trait = lifestyle_reveler
+	trait = education_martial_3 # The impression gained from Arab sources is one of Michael as an active and often successful military commander
 	trait = flexible_leader # Lead wars in Bulgaria, the Peloponnese, Anatolia, and Syria
 	trait = born_in_the_purple
+	father = 70491
+	mother = HEE_theodora_wife_of_theophilos
 	sexuality = heterosexual
 	
 	840.1.9 = {
 		birth = "840.1.9"
 	}
-	855.1.1 = {
-		effect = {
-			set_relation_lover = character:1761	# Eudokia was long time mistress of Michael
-		}
-	}
-	# 866.9.24 = {
-		# give_nickname = nick_the_drunkard
-		# death = {
-			# death_reason = death_murder
-			# killer = 1700 # Basil "the_Macedonian"
-		# }
-	# }
-	# The historical date, but since the bookmark starts on January 1, moved back.
 	867.9.24 = {
 		give_nickname = nick_the_drunkard
 		death = {
@@ -8956,28 +8955,6 @@
 	}
 }
 
-70493 = {
-	name = "Leon"
-	# AKA: Leo 'the Armenian'
-	dynasty = 8643
-	martial = 6
-	diplomacy = 3
-	intrigue = 5
-	stewardship = 7
-	religion = "iconoclast"
-	culture = "greek"
-	trait = ambitious
-	trait = deceitful
-	trait = education_stewardship_3
-	
-	780.1.1 = {
-		birth = "780.1.1"
-	}
-	820.12.27 = {
-		death = "820.12.27"
-	}
-}
-
 70494 = {
 	name = "Michael"
 	dynasty = 8644
@@ -8999,6 +8976,9 @@
 	}
 	793.1.1 = {
 		add_spouse = 70495
+	}
+	813.1.1 = {
+		trait = devoted
 	}
 	815.1.1 = {
 		religion = "iconoclast"
@@ -9042,7 +9022,7 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_martial_2
 	father = 70497
 	
@@ -9159,6 +9139,7 @@
 	mother = 145787
 	750.1.25 = {
 		birth = "750.1.25"
+		give_nickname = nick_the_mother_culture
 	}
 	768.12.17 = {
 		add_spouse = 70498
@@ -9260,6 +9241,9 @@
 	685.1.1 = {
 		birth = "685.1.1"
 	}
+	715.11.1 = {
+		trait = devoted
+	}
 	719.6.1 = {
 		death = "719.6.1"
 	}
@@ -9282,7 +9266,10 @@
 		birth = "655.1.1"
 	}
 	706.2.1 = {
-		death = "706.2.1"
+		death = {
+			death_reason = death_execution
+			killer = 70506 # Justinian II
+		}
 	}
 }
 
@@ -9560,6 +9547,9 @@
 	father = 145069
 	685.1.1 = {
 		birth = "685.1.1"
+	}
+	717.3.25 = {
+		trait = devoted
 	}
 	755.1.1 = {
 		death = "755.1.1"
@@ -9856,27 +9846,21 @@
 	name = "Photios"
 	# AKA: Photios 'Megale'
 	dynasty = 8649
+	health = 5.0
+	learning = 10
+	martial = 6
+	diplomacy = 8
+	intrigue = 8
+	stewardship = 8
 	religion = "orthodox"
 	culture = "greek"
-	health = 5.0
-	
-	diplomacy = 8
-	martial = 6
-	stewardship = 8
-	intrigue = 8
-	learning = 10
-	
-	trait = education_learning_4
-
 	trait = zealous
 	trait = brave
 	trait = ambitious
 	trait = diligent
-
 	trait = intellect_good_2
-	
 	trait = scholar
-
+	trait = education_learning_4
 	trait = devoted
 	
 	820.1.1 = {
@@ -9893,32 +9877,27 @@
 70555 = {
 	name = "Ignatios"
 	dynasty = 8644
-	father = 70494
+	learning = 10
+	martial = 5
+	diplomacy = 6
+	intrigue = 5
+	stewardship = 7
 	religion = "orthodox"
 	culture = "greek"
-	
-	diplomacy = 6
-	martial = 5
-	stewardship = 7
-	intrigue = 5
-	learning = 10
-	
-	trait = education_learning_3
-	
-	trait = honest
+	trait = celibate
 	trait = just
+	trait = honest
 	trait = zealous
 	trait = humble
-	
-	trait = celibate	
-	
-	trait = eunuch
-	
-	trait = devoted
-	
-	
+	trait = education_learning_3
+	father = 70494
+
 	797.1.1 = {
 		birth = "797.1.1"
+	}
+	813.1.1 = {
+		trait = eunuch
+		trait = devoted
 	}
 	877.10.23 = {
 		death = "877.10.23"
@@ -15317,7 +15296,10 @@
 		birth = "665.1.1"
 	}
 	706.2.1 = {
-		death = "706.2.1"
+		death = {
+			death_reason = death_execution
+			killer = 70506 # Justinian II
+		}
 	}
 }
 
@@ -15330,6 +15312,9 @@
 	father = 145071
 	626.1.1 = {
 		birth = "626.1.1"
+	}
+	641.4.20 = {
+		trait = disfigured
 	}
 	641.12.1 = {
 		death = "641.12.1"
@@ -17488,9 +17473,8 @@
 	#Other Traits
 	trait = forder
 
-	disallow_random_traits = yes
-	815.1.1 = {
-		birth = "815.1.1"
+	839.1.1 = {
+		birth = "839.1.1"
 	}
 	891.1.1 = {
 		death = "891.1.1"
@@ -17618,7 +17602,7 @@
 		birth = "847.1.1"
 	}
 	920.1.1 = {
-		death = "894.1.1"
+		death = "920.1.1"
 	}
 }
 

@@ -1473,8 +1473,12 @@
 	1008.1.1 = {
 		birth = "1008.1.1"
 	}
-	1030.1.1 = {
-		death = "1030.1.1"
+	1028.1.1 = {
+		trait = blind
+		trait = devoted
+	}
+	1061.1.1 = {
+		death = yes
 	}
 }
 
@@ -1522,14 +1526,14 @@
 	}
 	855.1.1 = {
 		effect = {
-			set_relation_lover = character:168076	#Meets Vasilka's mother.
+			set_relation_lover = { reason = lover_history target = character:168076 } 	#Meets Vasilka's mother.
 		}
 	}
 	864.1.1 = {
 		religion = "orthodox"
 		capital = "c_dorostorum"
 		effect = {
-			set_relation_rival = character:70383	#Vladimir does not take kindly to Christianity.
+			set_relation_rival = { target = character:70383 reason = rival_historical }	#Vladimir does not take kindly to Christianity.
 			set_relation_potential_friend = character:712	#Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
 		}
 	}
@@ -1569,7 +1573,12 @@
 	}
 	893.1.1 = {
 		trait = blind
-		death = "893.1.1"
+	}
+	896.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 70382
+		}
 	}
 }
 
@@ -1918,6 +1927,7 @@
 	trait = brave
 	trait = wrathful
 	trait = education_martial_3
+	trait = lifestyle_hunter
 	father = 728
 	969.1.2 = {
 		birth = "969.1.2"
@@ -1929,7 +1939,10 @@
 		remove_spouse = 492
 	}
 	1015.10.1 = {
-		death = "1015.10.1"
+		death = {
+			death_reason = death_hunting_accident
+			killer = 722 # Ivan Vladislav
+		}
 	}
 }
 
@@ -2021,7 +2034,7 @@
 	}
 	864.1.1 = {
 		religion = "orthodox"
-		add_trait = disinherited	#His father preferred his newborn brother, Simeon.
+		trait = disinherited	#His father preferred his newborn brother, Simeon.
 	}
 	896.1.1 = {
 		death = "896.1.1"
@@ -2225,7 +2238,7 @@
 	religion = "orthodox"
 	culture = "bulgarian"
 	830.1.1 = {
-		birth = "850.1.1"
+		birth = "830.1.1"
 	}
 	889.1.1 = {
 		death = "889.1.1"

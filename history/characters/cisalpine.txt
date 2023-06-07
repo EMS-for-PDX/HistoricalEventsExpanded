@@ -1572,7 +1572,7 @@
 	culture = "cisalpine"
 	trait = theologian
 	trait = chaste
-	trait = mystic_2
+	trait = lifestyle_mystic
 	trait = education_learning_3
 	
 	1110.1.1 = {
@@ -1776,7 +1776,7 @@
 	stewardship = 7
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = brave
 	trait = education_martial_2
 	
@@ -1985,7 +1985,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = diligent
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = education_martial_3
 
 	father = 70634
@@ -2009,7 +2009,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = diligent
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_stewardship_3
 
 	father = 70628
@@ -2032,7 +2032,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = strong
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 
 	father = cisalpine0179
@@ -2284,8 +2284,8 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = arrogant
-	trait = blademaster_1
 	trait = education_martial_2
+	trait = lifestyle_blademaster
 
 	father = 223597
 	
@@ -2491,7 +2491,7 @@
 	trait = craven
 	trait = arrogant
 	trait = devoted
-	trait = mystic_3
+	trait = lifestyle_mystic
 	trait = education_learning_1
 
 	father = 223596
@@ -2517,7 +2517,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = cynical
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_intrigue_3
 
 	father = 223596
@@ -2624,7 +2624,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = zealous
-	trait = mystic_2
+	trait = lifestyle_mystic
 	trait = devoted
 	trait = education_learning_2
 
@@ -2723,7 +2723,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = bastard
 	trait = education_stewardship_4
 	father = 70662
@@ -2931,8 +2931,8 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = ambitious
-	trait = blademaster_1
 	trait = education_martial_1
+	trait = lifestyle_blademaster
 
 	father = 70669
 	mother = 70673
@@ -3010,7 +3010,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = cynical
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_diplomacy_1
 
 	father = 70674
@@ -3332,7 +3332,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = gluttonous
 	trait = education_diplomacy_2
 
@@ -3681,7 +3681,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = greedy
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_1
 
 	father = cisalpine0281
@@ -3947,7 +3947,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = greedy
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_diplomacy_3
 
 	father = 70743
@@ -4094,7 +4094,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = deceitful
 	trait = education_martial_4
 
@@ -4902,7 +4902,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = greedy
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_stewardship_1
 
 	father = 213031
@@ -5384,7 +5384,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = mystic_1
+	trait = lifestyle_mystic
 	trait = theologian
 	trait = education_learning_3
 
@@ -5719,7 +5719,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_martial_2
 
 	father = 70977
@@ -5902,7 +5902,7 @@
 	stewardship = 7
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_stewardship_2
 
 	father = 70988
@@ -6131,7 +6131,7 @@
 	stewardship = 6
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 
 	father = 71023
@@ -6759,7 +6759,7 @@
 	stewardship = 6
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 
 	father = 71050
@@ -7747,7 +7747,7 @@
 	stewardship = 6
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = greedy
 	trait = education_stewardship_1
 
@@ -8017,7 +8017,7 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = content
 	trait = education_martial_4
 
@@ -8207,7 +8207,7 @@
 	stewardship = 5
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = honest
 	trait = education_diplomacy_4
 
@@ -8231,7 +8231,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = drunkard
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = education_intrigue_4
 
 	father = 71133
@@ -8374,7 +8374,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = intellect_bad_1
 	trait = education_stewardship_3
 
@@ -10647,7 +10647,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = brave
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 
 	father = 167941
@@ -10768,7 +10768,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = arbitrary
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = education_martial_2
 
 	father = cisalpine0450
@@ -10791,7 +10791,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = lustful
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_stewardship_2
 
 	father = cisalpine0460
@@ -10814,7 +10814,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = chaste
-	trait = mystic_1
+	trait = lifestyle_mystic
 	trait = education_martial_3
 
 	father = 71268
@@ -11019,7 +11019,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = lazy
-	trait = blademaster_1
+	trait = lifestyle_blademaster
 	trait = education_intrigue_1
 
 	father = 71277
@@ -11283,7 +11283,7 @@
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = brave
-	trait = hunter_1
+	trait = lifestyle_hunter
 	trait = education_martial_2
 
 	father = 71296
@@ -11601,7 +11601,7 @@
 	stewardship = 5
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = wrathful
 	trait = education_diplomacy_1
 
@@ -17364,7 +17364,7 @@ cisalpine0042 = {
 	dynasty_house = house_spino_fiorito
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = blademaster_2
+	trait = lifestyle_blademaster
 	trait = education_martial_3
 
 	father = cisalpine0041
@@ -17457,7 +17457,7 @@ cisalpine0047 = {
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = theologian
-	trait = mystic_1
+	trait = lifestyle_mystic
 	trait = education_learning_3
 
 	father = cisalpine0046
@@ -19148,7 +19148,7 @@ cisalpine0147 = {
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = devoted
-	trait = blademaster_3
+	trait = lifestyle_blademaster
 	trait = education_martial_4
 
 	father = 70658
@@ -19475,7 +19475,7 @@ cisalpine0166 = {
 	religion = "catholic"
 	culture = "cisalpine"
 	trait = devoted
-	trait = mystic_3
+	trait = lifestyle_mystic
 	trait = education_learning_4
 
 	father = cisalpine0165
@@ -24477,7 +24477,7 @@ cisalpine0458 = {
 	dynasty_house = house_biandrate
 	religion = "catholic"
 	culture = "cisalpine"
-	trait = mystic_3
+	trait = lifestyle_mystic
 	trait = devoted
 	trait = education_learning_2
 

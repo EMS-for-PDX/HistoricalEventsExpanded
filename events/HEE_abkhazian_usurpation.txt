@@ -1,0 +1,129 @@
+﻿namespace = HEE_abkhazian_usurpation
+
+HEE_abkhazian_usurpation.0001 = { # News of a plague outbreaks reaches the Emir
+	type = character_event
+	title = HEE_abkhazian_usurpation.0001.t
+	desc = HEE_abkhazian_usurpation.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = character:HEE_george_of_abkhazia_wife
+		animation = love
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		# is_independent_ruler = yes
+		# is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_abkhazian_usurpation.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+	
+		character:HEE_george_of_abkhazia_wife = { save_scope_as = george_of_abkhazia_wife } # 
+		character:70474 = { save_scope_as = john_of_abkhazia } #
+		
+		character:HEE_tinen_of_tchikha = { save_scope_as = tinen_of_tchikha } # 
+		character:70470 = { save_scope_as = bagrat_i_of_abkhazia } # 
+
+	}
+
+	option = {
+		name = HEE_abkhazian_usurpation.0001.a
+
+		trigger_event = {
+			id = HEE_abkhazian_usurpation.0002
+			days = { 2 5 }
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_abkhazian_usurpation.0002 = {
+	type = character_event
+	title = HEE_abkhazian_usurpation.0002.t
+	desc = HEE_abkhazian_usurpation.0002.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+	
+		character:HEE_george_of_abkhazia_wife = { save_scope_as = george_of_abkhazia_wife } # 
+		character:70474 = { save_scope_as = john_of_abkhazia } #
+		
+		character:HEE_tinen_of_tchikha = { save_scope_as = tinen_of_tchikha } # 
+		character:70470 = { save_scope_as = bagrat_i_of_abkhazia } # 
+
+		if = {
+			limit = { character:HEE_tinen_of_tchikha = { is_alive = yes } }
+			
+			imprison_character_effect = {
+				TARGET = scope:tinen_of_tchikha
+				IMPRISONER = scope:john_of_abkhazia
+			}
+		}
+
+		if = {
+			limit = { character:70470 = { is_alive = yes } }
+			
+			imprison_character_effect = {
+				TARGET = scope:bagrat_i_of_abkhazia
+				IMPRISONER = scope:john_of_abkhazia
+			}
+		}
+
+		if ={
+			limit = {
+				exists = title:e_byzantium
+			}
+			title:e_byzantium.holder = {
+				save_scope_as = roman_emperor
+			}
+		}
+
+	}
+
+
+	option = { # 
+		name = HEE_abkhazian_usurpation.0002.a
+
+		scope:tinen_of_tchikha = {
+			death = {
+				death_reason = death_execution
+				killer = scope:john_of_abkhazia # Sultan Muhammad I of Andalusia
+			}
+		}
+
+		scope:bagrat_i_of_abkhazia = {
+			release_from_prison = yes
+		}
+
+		scope:roman_emperor = {
+			add_courtier = scope:bagrat_i_of_abkhazia
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

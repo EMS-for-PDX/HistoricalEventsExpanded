@@ -934,7 +934,7 @@
 	}
 	1060.1.1 = {
 		effect = {
-			remove_short_term_gold = 500
+			remove_short_term_gold = 1000
 		}
 	}
 	1094.1.10 = {
@@ -1999,6 +1999,7 @@ additional_fatimids_1 = {
 	stewardship = 6
 	trait = diligent
 	trait = ambitious
+	trait = callous
 	trait = family_first
 	trait = education_diplomacy_4
 	female = yes

@@ -80,6 +80,7 @@
 
 167813 = {
 	name = "Liutswind"
+	dna = 167813_liutswind
 	female = yes
 	dynasty = 9556
 	religion = "catholic"
@@ -251,6 +252,7 @@
 
 7945 = {
 	name = "Arnulf"
+	dna = 7945_arnulf
 	dynasty = 25061
 	martial = 4
 	diplomacy = 8
@@ -271,7 +273,7 @@
 	}
 	866.1.1 = {
 		effect = {
-			set_relation_friend = character:42018 # Beloved by his father, and a loyal son
+			set_relation_friend = { reason = friend_generic_history target = character:42018 } # Beloved by his father, and a loyal son
 		}
 	}
 	890.1.1 = {
@@ -3165,6 +3167,7 @@
 
 7987 = {
 	name = "Hemma"
+	dna = 7987_hemma
 	female = yes
 	dynasty = 650
 	martial = 5
@@ -6309,7 +6312,7 @@
 	religion = "catholic"
 	culture = bavarian
 	trait = lustful
-	trait = reveler_1
+	trait = lifestyle_reveler
 	trait = education_learning_1
 	father = 212932
 	mother = 212937
@@ -8941,12 +8944,23 @@
 	1065.1.1 = {
 		birth = "1065.1.1"
 	}
-	# TODO: Why is 20257 landless at this point?
-	#1065.1.2 = {
-	#	employer = 20257
-	#}
+	1065.1.2 = {
+		employer = 20257
+	}
 	1081.1.1 = {
-		add_trait = blademaster_1	#Add adult trait
+		add_trait = lifestyle_blademaster	#Add adult trait
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = small_lifestyle_random_xp_low
+                        max = small_lifestyle_random_xp_high
+                    }
+                }
+            }
+		}
 	}
 	1096.1.1 = {
 		death = "1096.1.1"
@@ -8971,7 +8985,7 @@
 		employer = 70622
 	}
 	1082.1.1 = {
-		add_trait = hunter_1	#Add adult trait
+		add_trait = lifestyle_hunter	#Add adult trait
 	}
 	1115.11.20 = {
 		death = "1115.11.20"

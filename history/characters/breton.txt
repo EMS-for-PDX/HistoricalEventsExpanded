@@ -4016,7 +4016,7 @@
 	dynasty_house = house_poher #de Poher
 	father = 163105
 	840.1.1 = {
-		birth = "830.1.1"
+		birth = "840.1.1"
 	}
 	877.1.1 = {
 		death = "877.1.1"

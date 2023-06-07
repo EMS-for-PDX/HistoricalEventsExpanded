@@ -1160,6 +1160,7 @@ on_death = {
 		on_domagoj_of_croatia_death
 		on_louis_the_stammerer_death
 		on_muhammad_ii_death
+		on_george_i_of_abkhazia_death
 	}
 }
 
@@ -1296,6 +1297,7 @@ on_louis_the_stammerer_death = {
 	trigger = {
 		this = character:90123
 	}
+
 	effect = {
 		# On Louis the Stammerer's death, Boso of Provence is elected King of Provence
 		if = {
@@ -1359,4 +1361,46 @@ on_muhammad_ii_death = {
 			debug_log = "Ibrahim died before being able to be elected Emir"
 		}
 	}
+}
+
+on_george_i_of_abkhazia_death = {
+	trigger = {
+		this = character:70476
+	}
+	
+	effect = {
+		# On Muhammad II's death, Ibrahim II is pushed forward by popular crowds and endorsed by the jurists of Kairouan to become Emir
+		if = {
+			limit = {
+				this = character:70476
+				character:HEE_george_of_abkhazia_wife = { is_alive = yes }
+				character:70474 = { is_alive = yes }
+			}
+			character:70476 = {
+				set_designated_heir = character:70474
+			}
+			character:70474 = {
+				save_scope_as = john_of_abkhazia
+				set_relation_lover = character:HEE_george_of_abkhazia_wife
+				trigger_event = {
+					id = HEE_abkhazian_usurpation.0001
+				}	
+			}
+		}
+		else_if = {
+			limit = {
+				this = character:70476
+				OR = {
+					character:HEE_george_of_abkhazia_wife = { is_alive = no }
+					character:70474 = { is_alive = no }
+				}
+			}
+			debug_log = "Key Abkhazian Usurpation Participants are not alive to enact the scheme"
+		}
+		else = {
+			debug_log = "Key Abkhazian Usurpation Participants are not alive to enact the scheme"
+		}
+	}
+}	
+	
 }

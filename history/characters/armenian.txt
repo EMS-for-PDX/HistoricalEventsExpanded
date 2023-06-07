@@ -1667,7 +1667,7 @@
 		birth = "820.1.1"
 	}
 	840.1.1 = {
-		set_relation_friend = character:armenian_000081	#His brother, though ambitious supported his reign. Just not his son's.
+		set_relation_friend = { reason = friend_generic_history target = character:armenian_000081 }	#His brother, though ambitious supported his reign. Just not his son's.
 		add_spouse = armenian.000082
 	}
 	867.1.1 = {
@@ -2918,9 +2918,10 @@
 	culture = "armenian"
 	trait = greedy
 	trait = honest
-	trait = education_martial_2
+	trait = rowdy
 	father = 41589
 	mother = 159289
+	disallow_random_traits = yes
 	1051.1.1 = {
 		birth = "1051.1.1"
 	}
@@ -3342,8 +3343,8 @@
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	trait = humble
-	trait = blademaster_1
 	trait = education_martial_3
+	trait = lifestyle_blademaster
 	father = 70454
 	620.1.1 = {
 		birth = "620.1.1"
@@ -3417,6 +3418,31 @@
 	}
 	607.1.1 = {
 		death = "607.1.1"
+	}
+}
+
+70493 = {
+	name = "Leon"
+	# AKA: Leo 'the Armenian'
+	dynasty = 8643
+	martial = 6
+	diplomacy = 3
+	intrigue = 5
+	stewardship = 7
+	religion = "iconoclast"
+	culture = "armenian"
+	trait = ambitious
+	trait = deceitful
+	trait = education_stewardship_3
+	
+	780.1.1 = {
+		birth = "780.1.1"
+	}
+	800.1.1 = {
+		give_nickname = nick_the_own_culture
+	}
+	820.12.27 = {
+		death = "820.12.27"
 	}
 }
 
@@ -8198,6 +8224,7 @@
 	}
 	743.11.2 = {
 		trait = blind
+		trait = devoted
 	}
 	745.1.1 = {
 		death = "745.1.1"

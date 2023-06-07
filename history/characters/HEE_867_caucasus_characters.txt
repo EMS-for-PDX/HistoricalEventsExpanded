@@ -65,12 +65,12 @@ HEE_tinen_of_tchikha = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	# prowess = 0
 	
 	#Education
-	trait = education_diplomacy_3
+	trait = education_diplomacy_1
 	
 	#Personality Traits
-	trait = honest
-	trait = trusting
-	trait = diligent
+	trait = craven
+	trait = lazy
+	trait = gluttonous
 	
 	#Other Traits
 	

@@ -33,7 +33,7 @@
 	864.1.1 = {
 		give_nickname = nick_the_missionary	#Ascends to the throne of Daylam
 		effect = {
-			set_relation_friend = character:163166	#Loyally supported by his brother throughout.
+			set_relation_friend = { reason = friend_generic_history target = character:163166 }	#Loyally supported by his brother throughout.
 			#add_hook = {
 			#	target = character:163166
 			#	type = loyalty_hook
@@ -1428,13 +1428,14 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "bedouin"
-	trait = education_martial_2
+	trait = rowdy
 	trait = brave
 	trait = diligent
-	trait = arrogant
+	#trait = arrogant
 	trait = calm
 	trait = greedy
 	trait = cynical
+	disallow_random_traits = yes
 	1055.1.2 = {
 		birth = "1055.1.2"
 		culture = "greek"
@@ -5610,8 +5611,8 @@
 	trait = content
 	trait = diligent
 
-	trait = hunter_2
-	trait = reveler_2
+	trait = lifestyle_hunter
+	trait = lifestyle_reveler
 
 	830.1.1 = {
 		birth = yes
@@ -5730,7 +5731,6 @@
 	culture = maghrebi # Banu Tamim tribe
 	father = 163145
 	sexuality = bisexual
-	health = 4.8
 
 	diplomacy = 8
 	martial = 9
@@ -6713,6 +6713,7 @@
 	dynasty = 7512
 	religion = "zayidi"
 	culture = "bedouin"
+	trait = sayyid
 	father = 163128
 	
 	trait = fickle # In 897, Muhammad provided refuge to Bakr ibn Abd al-Aziz then the next year killed him
@@ -12557,7 +12558,6 @@ bedouin0181 = {
 	religion = ashari
 	culture = bedouin
 	trait = brave
-	trait = blademaster_3
 	trait = education_stewardship_3
 
 	father = 73968 # Abd al-Aziz ibn Hashim
@@ -12568,6 +12568,18 @@ bedouin0181 = {
 	}
 	852.9.22 = {
 		employer = 73683 # Sultan Muhammad I of Andalusia
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = medium_lifestyle_random_xp_low
+                        max = medium_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
 	}
 	887.1.1 = {
 		death = {

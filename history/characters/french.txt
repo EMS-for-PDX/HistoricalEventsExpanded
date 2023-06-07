@@ -1,5 +1,6 @@
 ﻿6877 = { #Spouse of Lothaire II, 144998
 	name = Teutberga
+	dna = 6877_teutberga
 	female = yes
 	dynasty = 7052
 	religion = catholic
@@ -16,18 +17,18 @@
 	}
 	854.1.1 = {
 		effect = {
-			set_relation_rival = character:168314 # Waldrada, husband's lover
+			set_relation_rival = { target = character:168314 reason = rival_historical } # Waldrada, husband's lover
 		}
 	}
 	861.1.1 = {
 		effect = {
-			set_relation_rival = character:144998 # Husband Lothaire II, tries to annul marriage
+set_relation_rival = { target = character:144998 reason = rival_historical } # Husband Lothaire II, tries to annul marriage
 		}
 	}
 	863.1.1 = {
 		effect = {
-			set_relation_friend = character:90104 #(King Charles the Bald), defended her marriage and gave shelter
-			set_relation_friend = character:7853 #(Pope Nicholas), defended her marriage and forced Lothaire to take her back
+			set_relation_friend = { reason = friend_generic_history target = character:90104 } #(King Charles the Bald), defended her marriage and gave shelter
+			set_relation_friend = { reason = friend_generic_history target = character:7853 } #(Pope Nicholas), defended her marriage and forced Lothaire to take her back
 		}
 	}
 	875.1.1 = {
@@ -13201,6 +13202,10 @@
 	1013.1.2 = {
 		birth = "1013.1.2"
 	}
+	1066.9.15 = {
+		# Move him to his nephew's court so he can be regent.
+		employer = 40905
+	}
 	1073.1.2 = {
 		death = "1073.1.2"
 	}
@@ -14593,12 +14598,14 @@
 	trait = arbitrary
 	trait = ambitious
 	trait = stubborn
-	trait = devoted 
 	trait = disfigured
 	father = 90104 #(King Charles the Bald)
 	mother = 167830 #(Irminitrude of Orléans)
 	849.1.2 = {
 		birth = "849.1.2"
+	}
+	854.1.1 = { #Carloman was tonsured as a child in 854 in furtherance of his father's policy of preventing a partition of the kingdom
+		trait = devoted
 	}
 	876.1.2 = {
 		death = "876.1.2"
@@ -21944,6 +21951,7 @@
 6440 = {
 	name = "Robert" #Robert the Strong, marquis of Neustrie, count of Tour and Anjou.
 	# AKA: Robert 'Fortis'
+	dna = 6440_robert_the_strong
 	dynasty = 743 #House Capet #Robertine (dynasty of house Capet)
 	religion = "catholic"
 	culture = french
@@ -22104,7 +22112,7 @@
 	}
 	866.7.2 = {
 		effect = {
-			set_relation_rival = character:6878 # Hastein the Viking, killed his father
+			set_relation_rival = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father
 		}
 	}
 	884.1.1 = {
@@ -26898,10 +26906,10 @@
 	}
 	842.1.1 = {
 		add_spouse = 167830 #(Irminitrude of Orléans)
-		give_nickname = nick_the_bald
+		give_nickname = nick_the_bald_ironic
 	}
 	858.12.1 = {
-		set_relation_rival = character:90107 #(Ludwig the German), tried to take his Kingdom title
+		set_relation_rival = { target = character:90107 reason = rival_historical } #(Ludwig the German), tried to take his Kingdom title
 	}
 	870.1.1 = {
 		add_spouse = 168164
@@ -26914,6 +26922,7 @@
 #Judith of Flanders
 90110 = {
 	name = "Judith"
+	dna = 90110_judith
 	female = yes
 	dynasty = 25061
 	religion = "catholic"
@@ -27182,6 +27191,7 @@
 90123 = {
 	name = "Louis"
 	# AKA: Louis 'le Begue'
+	dna = 90123_louis_the_stammerer
 	dynasty = 25061
 	religion = "catholic"
 	culture = french
@@ -27203,7 +27213,7 @@
 	}
 	866.7.1 = {
 		#remove_spouse = 91385 # Ansgarde de Bourgogne
-		set_relation_friend = character:7853 # Pope Nicholas
+		set_relation_friend = { reason = friend_generic_history target = character:7853 } # Pope Nicholas
 	}
 	875.1.1 = {
 		add_spouse = 168091
@@ -27247,11 +27257,14 @@
 	culture = french
 	father = 90125
 	mother = 167001
+	trait = lifestyle_hunter
 	967.1.1 = {
 		birth = "967.1.1"
 	}
 	987.5.22 = {
-		death = "987.5.22"
+		death = {
+			death_reason = death_hunting_accident
+		}
 	}
 }
 
@@ -27391,8 +27404,13 @@
 	866.1.18 = {
 		birth = "866.1.18"
 	}
+	880.1.1 = {
+		add_trait = lifestyle_hunter
+	}
 	884.12.12 = {
-		death = "884.12.12"
+		death = {
+			death_reason = death_hunting_mistakenly_stabbed
+		}
 	}
 }
 
@@ -41861,12 +41879,16 @@
 	religion = "catholic"
 	culture = french
 	father = 71903
+	trait = lifestyle_hunter
 	876.1.1 = {
 		birth = "876.1.1"
 	}
 	898.10.15 = {
-		death = "898.10.15"
+		death = {
+			death_reason = death_hunting_accident
+		}
 	}
+
 }
 
 71905 = {
@@ -42870,6 +42892,7 @@
 #Odo I, Count of Troyes
 163065 = {
 	name = "Eudes"
+	dna = 163065_eudes_of_bourbon
 	dynasty = 743 #Robertine (dynasty of house Capet)
 	religion = "catholic"
 	culture = french
@@ -44135,6 +44158,7 @@
 
 167894 = {
 	name = "Engelberga"
+	dna = 167894_engelberga
 	female = yes
 	dynasty = 9561
 	religion = "catholic"
@@ -46731,6 +46755,7 @@
 }
 167830 = {	
 	name = "Irmintrud"
+	dna = 167830_irmintrud
 	#AKA Ermentrude, wife of Charles the Bald
 	female = yes	
 	dynasty_house = house_orleans #Orléans	
@@ -46742,7 +46767,6 @@
 	trait = education_learning_3
 
 	#Personality Traits
-	trait = zealous
 	trait = diligent
 	trait = humble
 	trait = chaste

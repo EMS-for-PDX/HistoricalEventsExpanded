@@ -10350,13 +10350,26 @@
 	religion = "catholic"
 	culture = swabian
 	trait = intellect_good_1
-	trait = blademaster_1
 	trait = education_martial_4
 	1040.1.1 = {
 		birth = "1040.1.1"
 	}
 	1045.1.1 = {
 		employer = 1610
+	}
+	1066.1.1 = {
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+                trait = lifestyle_blademaster
+                value = {
+                    integer_range = {
+                        min = small_lifestyle_random_xp_low
+                        max = small_lifestyle_random_xp_high
+                    }
+                }
+            }
+		}
 	}
 	1078.11.5 = {
 		employer = 10087

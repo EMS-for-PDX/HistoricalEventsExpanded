@@ -4479,6 +4479,10 @@
 	religion = "catholic"
 	culture = "dutch"
 	trait = education_martial_2
+	trait = callous
+	trait = generous
+	trait = diligent
+
 	father = 362
 	mother = 40710
 	1012.1.1 = {

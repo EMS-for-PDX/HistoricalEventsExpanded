@@ -1535,7 +1535,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 }
 
 HEE_activity_end.0001 = { # Victory at Bari trigger
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

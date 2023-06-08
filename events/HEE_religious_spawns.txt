@@ -123,7 +123,7 @@
 
 
 # HEE_religious_spawns.3 = { #spawning Hamdan Qarmat in 
-# 	type = empty
+# 	scope = none
 # 	hidden = yes
 
 # 	immediate = {
@@ -219,7 +219,7 @@
 # }
 
 # HEE_religious_spawns.6 = {
-# 	type = empty
+# 	scope = none
 # 	hidden = yes
 
 # 	immediate = {
@@ -240,7 +240,7 @@
 # }
 
 # HEE_religious_spawns.7 = {
-# 	type = empty
+# 	scope = none
 # 	hidden = yes
 
 # 	trigger = {
@@ -278,7 +278,7 @@
 # }
 
 # # HEE_religious_spawns.1 = { #Spawning Nusayrism
-# # 	type = empty
+# # 	scope = none
 # # 	hidden = yes
 
 # # 	immediate = {

@@ -8887,8 +8887,7 @@
 	trait = gregarious # More generous interpretation of Michael's partying
 	trait = trusting # Reasoning behind Michael not seeing Basil's plots
 	trait = brave # The impression gained from Arab sources is one of Michael as an active and often successful military commander
-	trait = diligent # Michael presided over the reconstruction of ruined cities and structures, the reopening of closed monasteries, and the reorganization of the imperial university at the Maganaura palace
-	# trait = cynical (Not taking a stance on this) # According to Byz sources, Michael orchestrated public displays mocking the processions and rituals of the church
+	trait = ambitious # Overthrew his Mother's regency to obtain sole control of the Empire, sough to expand Byz influence in Khazaria, Bulgaria, and Moravia
 	trait = lifestyle_reveler
 	trait = education_martial_3 # The impression gained from Arab sources is one of Michael as an active and often successful military commander
 	trait = flexible_leader # Lead wars in Bulgaria, the Peloponnese, Anatolia, and Syria
@@ -17473,8 +17472,8 @@
 	#Other Traits
 	trait = forder
 
-	839.1.1 = {
-		birth = "839.1.1"
+	810.1.1 = {
+		birth = "810.1.1"
 	}
 	891.1.1 = {
 		death = "891.1.1"

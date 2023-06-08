@@ -168,7 +168,7 @@ HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of
 }
 
 HEE_byzantine_croatia.0003 = { # Croatian reconquest trigger
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

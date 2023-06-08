@@ -318,7 +318,7 @@ HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
 }
 
 HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

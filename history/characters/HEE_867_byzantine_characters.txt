@@ -720,7 +720,7 @@ HEE_bardas_kontomytes = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
 	#Other Traits
 
 
-	838.1.1 = {
+	833.1.1 = {
 		birth = yes
 	}
 	858.1.1 = {
@@ -752,7 +752,7 @@ HEE_stephen_kontomytes = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
 	#Other Traits
 
 
-	840.1.1 = {
+	837.1.1 = {
 		birth = yes
 	}
 	895.1.1 = {
@@ -782,7 +782,7 @@ HEE_constantine_kontomytes_daughter = { # https://en.wikipedia.org/wiki/Constant
 	#Other Traits
 
 
-	840.1.1 = {
+	830.1.1 = {
 		birth = yes
 	}
 	895.1.1 = {

@@ -1,7 +1,7 @@
 ﻿namespace = HEEBuildings
 
 HEEBuildings.0001 = {
-	type = empty
+	scope = none
 	hidden = yes
 	
 	immediate = {	

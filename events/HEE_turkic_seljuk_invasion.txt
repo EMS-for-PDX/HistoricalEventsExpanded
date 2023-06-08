@@ -2,7 +2,7 @@
 
 ### Spawn Seljuk
 HEE_seljuk_invasion.0001 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -13,7 +13,7 @@ HEE_seljuk_invasion.0001 = {
 }
 
 HEE_seljuk_invasion.00112 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -53,7 +53,7 @@ HEE_seljuk_invasion.00112 = {
 
 ### Spawn Empire 
 HEE_seljuk_invasion.0011 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -97,7 +97,7 @@ HEE_seljuk_invasion.0011 = {
 }
 
 HEE_seljuk_invasion.00111 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {

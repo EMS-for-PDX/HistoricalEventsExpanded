@@ -2,7 +2,7 @@
 
 # Louis the Younger chain
 HEE_italy_questline.0100 = { # Victory at Bari trigger
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

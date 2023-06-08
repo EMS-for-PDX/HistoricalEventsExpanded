@@ -2,7 +2,7 @@
 
 ### Spawn Seljuk
 HEE_ghaznavids.0001 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -19,7 +19,7 @@ HEE_ghaznavids.0001 = {
 }
 
 HEE_ghaznavids.00112 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -45,7 +45,7 @@ HEE_ghaznavids.00112 = {
 
 ### Spawn Empire 
 HEE_ghaznavids.0011 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {

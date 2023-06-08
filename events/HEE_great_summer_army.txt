@@ -2,7 +2,7 @@
 
 
 HEE_great_summer_army.0001 = { #Great Summer Army attacks
-	type = empty
+	scope = none
 	hidden = yes
 
 	immediate = {
@@ -21,7 +21,7 @@ HEE_great_summer_army.0001 = { #Great Summer Army attacks
 }
 
 HEE_great_summer_army.0002 = { # Victory in East Anglia trigger
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

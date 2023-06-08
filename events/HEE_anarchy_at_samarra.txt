@@ -496,7 +496,7 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 }
 
 hee_anarchy_at_samarra.9000 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {
@@ -575,7 +575,7 @@ hee_anarchy_at_samarra.9000 = {
 }
 
 hee_anarchy_at_samarra.9001 = {
-	type = empty
+	scope = none
 	hidden = yes
 
 	trigger = {

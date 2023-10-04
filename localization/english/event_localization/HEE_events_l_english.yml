@@ -32,7 +32,7 @@
  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe."
 
  HEE_fairhair.3.t:0 "Valhalla on Earth?"
- HEE_fairhair.3.desc:0 "I wander the great hall of [location.GetNameNoTooltip]. The sound of music and song assaults the ear with their intensity, the heat of the fireplace brings comforting warmth, and the main table's seats are filled with the realm's mightiest drunks. The usual feast indeed, but a boring one. \n\nThinking about the best time to exit quietly, I turn my head towards the door when I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
+ HEE_fairhair.3.desc:0 "PLACEHOLDER CHANGE. Having being invited to a small local feast in the [location.GetName], I find myself utterly bored, just as I am fixing myself to leave back home I see out of the corner of my eye one of the most beautiful sights I'd ever laid my eyes upon - it was the daughter of the host [fatherboi.GetName],\n[gyda.GetName]. \n\nShe bears the face that quickly takes a hold of my mind. Whatever it takes, this woman will become mine. I crave it. This may be my best time to speak with her... but perhaps I should simply let her be..."
  HEE_fairhair.3.a:0 "Approach Her"
  HEE_fairhair.3.b:0 "Leave her alone"
 

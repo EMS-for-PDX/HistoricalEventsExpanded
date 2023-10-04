@@ -1,9 +1,9 @@
-version="0.1"
+version="1.10.*"
 tags={
 	"Historical"
 	"Events"
 	"Decisions"
 }
 name="HistoricalEventsExpandedDeveloper"
-supported_version="1.7.2"
+supported_version="1.10.*"
 remote_file_id="2675374763"

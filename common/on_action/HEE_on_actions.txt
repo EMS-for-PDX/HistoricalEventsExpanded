@@ -87,17 +87,12 @@ HEE_fairhair_feast = {
 	}
 	effect = {
 		character:166329 = {
-			capital_province = {
-				spawn_activity = {
-					type = activity_feast_fairhair
-					owner = character:166329
-				}
-			}
 			debug_log = "Setting Feast for Fairhair"
 			set_global_variable = fairhair_feast
 		}
 		character:144000 = {
 			add_character_flag = HEE_fairhair_feast_on_action_fired
+			trigger_event = HEE_fairhair.3
 		}
 	}
 }

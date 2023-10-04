@@ -944,7 +944,7 @@ hee_fairhair_867_effect = {
 			}
 			add_character_flag = {
 				flag = prevented_from_raiding
-				days = 400
+				days = 500
 			}
 		}
 		

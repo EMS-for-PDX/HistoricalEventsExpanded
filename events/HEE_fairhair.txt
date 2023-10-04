@@ -10,10 +10,10 @@ HEE_fairhair.1 = { #Set-up event
 	sender = scope:sender
 
 	trigger = {
-		can_join_activities = yes
+		#can_join_activities = yes
 		is_adult = yes
-		is_busy_in_events = no
-		is_in_an_activity = no
+		is_busy_in_events_localised = no
+		#is_in_an_activity = no
 		#is_at_war = no
 		is_imprisoned = no
 		is_healthy = yes
@@ -21,7 +21,7 @@ HEE_fairhair.1 = { #Set-up event
 			exists = var:booked_for_a_party
 			exists = var:engaged_in_single_combat
 		}
-		NOT = { exists = var:is_handling_feast_invitation }
+		#NOT = { exists = var:is_handling_feast_invitation }
 	}
 
 	on_trigger_fail = { #Trigger invitation again if it was blocked because the character was handling another invitation
@@ -210,18 +210,13 @@ HEE_fairhair.3 = { #sees her for the first time
 	}
 
 	immediate = {
-		scope:activity = {
-			 activity_owner = {
-				random_child = {
-					limit = {
-						is_male = no
-					}
-					save_scope_as = gyda
-				}
-				save_scope_as = fatherboi	 
-			}
+		character:166329 = {
+			save_scope_as = fatherboi
 		}
-		location = {
+		character:166044 = {
+			save_scope_as = gyda
+		}
+		province:256 = {
 			save_scope_as = location
 		}
 		character:144000 = {
@@ -267,27 +262,12 @@ HEE_fairhair.4 = { #takes the vows
 	}
 
 	immediate = {
-		scope:activity = {
-			activity_owner = {
-			   random_child = {
-				   limit = {
-					   is_male = no
-					   age >= 16
-				   }
-					save_scope_as = gyda
-				}
-				save_scope_as = fatherboi	 
-			}
-		}
 		character:144000 = {
 			add_character_flag = {
 				flag = HEE_fairhair_4_fired
 				days = 30
 			}
 		}
-		location = {
-			save_scope_as = location
-		}	
 	}
 
 	option = { 
@@ -305,6 +285,28 @@ HEE_fairhair.4 = { #takes the vows
 		name = HEE_fairhair.4.b
 		ai_chance = {
 			base = 0
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				character:144000 = {
+					is_alive = yes
+					is_landed = yes
+					has_character_modifier = harald_tanglehairs_vow_modifier
+				}
+				character:166329 = {
+					is_alive = yes
+					is_landed = yes
+				}
+			}
+			character:166329 = {
+				trigger_event = {
+					id = HEE_fairhair.5
+					days = { 7 14 }
+				}
+			}
 		}
 	}
 }
@@ -396,6 +398,11 @@ HEE_fairhair.6 = { #Back-down?
 				casus_belli = fairhairconquest
 				target = title:c_hordalandi.holder
 				target_title = title:c_hordalandi
+				target_title = title:c_telemark
+				target_title = title:c_nedenes
+				target_title = title:c_agdeside
+				target_title = title:c_rogalandi
+				target_title = title:c_sogn
 				claimant = character:144000
 			}
 

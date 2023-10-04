@@ -1,6 +1,188 @@
 ﻿l_english:
- #Descs
+ #Memories
+ michael_invasion_of_bulguria: "Invasion of Bulgaria"
+ michael_invasion_of_bulguria_desc: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, Caesar Bardas and I invaded Bulgaria"
+ michael_invasion_of_bulguria_second_perspective_1: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, you and the Caesar Bardas invaded Bulgaria"
+ michael_invasion_of_bulguria_third_perspective_1: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, Michael III and the Caesar Bardas invaded Bulgaria"
+ 
+ michael_conversion_of_bulguria: "Conversion of Bulgaria"
+ michael_conversion_of_bulguria_desc: "As part of a peace settlement between the Bulgarians and Romans, I imposed the conversion of Boris and his state according to the Byzantine rite. I stood as sponsor, by proxy, for Boris at his baptism - where Boris took on the Christian name Michael"
+ michael_conversion_of_bulguria_desc_second_perspective_1: "As part of a peace settlement between the Bulgarians and Romans, you imposed the conversion of Boris and his state according to the Byzantine rite. You stood as sponsor, by proxy, for Boris at his baptism - where Boris took on the Christian name Michael"
+ michael_conversion_of_bulguria_desc_third_perspective_1: "As part of a peace settlement between the Bulgarians and Romans, Michael III imposed the conversion of Boris and his state according to the Byzantine rite. Michael III stood as sponsor, by proxy, for Boris at his baptism - where Boris took on the Christian name Michael"
+ 
+ michael_missionary_expedition_khazars: "Cyril's Missionary Expedition to the Khazars"
+ michael_missionary_expedition_khazars_desc: "Under the guidance of Patriarch Photios, I sponsored the mission of the priest Cyril to the Khazar Khagan in an effort to stop the expansion of Judaism among the Khazars"
+ michael_missionary_expedition_khazars_desc_second_perspective_1: "Under the guidance of Patriarch Photios, you sponsored the mission of the priest Cyril to the Khazar Khagan in an effort to stop the expansion of Judaism among the Khazars"
+ michael_missionary_expedition_khazars_desc_third_perspective_1: "Under the guidance of Patriarch Photios, Michael III sponsored the mission of the priest Cyril to the Khazar Khagan in an effort to stop the expansion of Judaism among the Khazars"
+ 
+ michael_missionary_expedition_great_moravia: "Cyril and Methodius' Missionary Expedition to Great Moravia"
+ michael_missionary_expedition_great_moravia_desc: "In response to requests from Prince Rastislav of Great Moravia, I sent the missionaries Cyril and Methodios to assist in evangelizing Rastislav's Slavic subjects"
+ michael_missionary_expedition_great_moravia_desc_second_perspective_1: "In response to requests from Prince Rastislav of Great Moravia, Michael III and the Patriarch Photius sent the missionaries Cyril and Methodios to assist in evangelizing Rastislav's Slavic subjects"
+ michael_missionary_expedition_great_moravia_desc_third_perspective_1: "In response to requests from Prince Rastislav of Great Moravia, Michael III and the Patriarch Photius sent the missionaries Cyril and Methodios to assist in evangelizing Rastislav's Slavic subjects"
+
+ michael_overthrows_regency: "Ended Regency"
+ michael_overthrows_regency_desc: "With the support of my uncles, the Ceasar Bardas and the successful general Petronas, I overthrew the regency of my mother Theodora"
+ michael_overthrows_regency_desc_second_perspective_1: "With the support of your uncles, the Ceasar Bardas and the successful general Petronas, you overthrew the regency of your mother Theodora"
+ michael_overthrows_regency_desc_third_perspective_1: "With the support of his uncles, the Ceasar Bardas and the successful general Petronas, Michael III overthrew the regency of his mother Theodora"
+
+ michael_crowned_coemperor: "Crowned Co-Emperor"
+ michael_crowned_coemperor_desc: "I was crowned Co-Emperor of the Romans by my father Emperor Theophilos"
+ michael_crowned_coemperor_desc_second_perspective_1: "You was crowned Co-Emperor of the Romans by your father Emperor Theophilos"
+ michael_crowned_coemperor_desc_second_perspective_1: "Michael III was crowned Co-Emperor of the Romans by his father Emperor Theophilos"
+
+ michael_crowned_emperor: "Crowned Emperor"
+ michael_crowned_emperor_desc: "Following the death of my father Theophilos, I succeeded him as sole Emperor of the Romans"
+ michael_crowned_emperor_desc_second_perspective_1: "Following the death of your father Theophilos, you succeeded him as sole Emperor of the Romans"
+ michael_crowned_emperor_desc_third_perspective_1: "Following the death of his father Theophilos, Michael III succeeded him as sole Emperor of the Romans"
+
+ michael_brideshow: "Bride-show"
+ michael_brideshow_desc: "Not approving of my mistress Eudokia Ingerina, my mother Theodora organized a bride-show on my behalf where she chose the noblewoman Eudokia Dekapolitissa to be my lawful wife and empress"
+ michael_brideshow_desc_second_perspective_1: "Not approving of your mistress Eudokia Ingerina, your mother Theodora organized a bride-show on your behalf where she chose the noblewoman Eudokia Dekapolitissa to be your lawful wife and empress"
+ michael_brideshow_desc_third_perspective_1: "Not approving of Michael III's mistress Eudokia Ingerina, the Empress Mother Theodora organized a bride-show on her son's behalf where she chose the noblewoman Eudokia Dekapolitissa to be his lawful wife and empress"
+
+ nasar_battle_of_lalakaon: "Battle of Lalakaon"
+ nasar_battle_of_lalakaon_desc: "I commanded a portion of the Imperial Army in the Battle of Lalakaon, where the Romans inflicted a crushing defeat on the joint army of Umar al-Aqta, the emir of Melitene, and Karbeas, leader of the Paulician Principality of Tephrike, that saw both leaders along with a majority of their forces slain"
+ nasar_battle_of_lalakaon_desc_second_perspective_1: "You commanded a portion of the Imperial Army in the Battle of Lalakaon, where the Romans inflicted a crushing defeat on the joint army of Umar al-Aqta, the emir of Melitene, and Karbeas, leader of the Paulician Principality of Tephrike, that saw both leaders along with a majority of their forces slain"
+ nasar_battle_of_lalakaon_desc_third_perspective_1: "Nasar commanded a portion of the Imperial Army in the Battle of Lalakaon, where the Romans inflicted a crushing defeat on the joint army of Umar al-Aqta, the emir of Melitene, and Karbeas, leader of the Paulician Principality of Tephrike, that saw both leaders along with a majority of their forces slain"
+
+ lalakaon_roman_triumph: "Roman Triumph"
+ lalakaon_roman_triumph_desc: "For my role in the Battle of Lalakaon, I was awarded with a Roman Triumph at the Hippodrome in Constantinople"
+ lalakaon_roman_triumph_desc_second_perspective_1: "For your role in the Battle of Lalakaon, you were awarded with a Roman Triumph at the Hippodrome in Constantinople"
+ lalakaon_roman_triumph_desc_third_perspective_1: "For his role in the Battle of Lalakaon, Nasar was awarded with a Roman Triumph at the Hippodrome in Constantinople"
+
+ michael_confines_family_to_convent: "Relegated to a Monastery"
+ michael_confines_family_to_convent_desc: "Because of my frayed relationship with the Emperor, I was expelled from the Imperial Palace by Michael III and confined to a monastery in Cyprus"
+ michael_confines_family_to_convent_desc_second_perspective_1: "Because of your frayed relationship with the Emperor, you were expelled from the Imperial Palace by Michael III and confined to a monastery in Cyprus"
+ michael_confines_family_to_convent_desc_third_perspective_1: "Because of his frayed relationship with his mother and sisters, Michael III expelled his mother and sisters from the Imperial Palace and confined them to a monastery in Cyprus"
+
+ murder_of_erispoe: "Assassination of Erispoe"
+ murder_of_erispoe_desc_1: "Fearing the growing connection between my liege Erispoe and West Francia would weaken my political influence, I assassinated Erispoe and seized the Breton throne"
+ murder_of_erispoe_desc_second_perspective_1: "Fearing the growing connection between your liege Erispoe and West Francia would weaken your political influence, you assassinated Erispoe and seized the Breton throne"
+ murder_of_erispoe_desc_third_perspective_1: "Fearing the growing connection between his liege Erispoe and West Francia would weaken his political influence, Salomon assassinated Erispoe and seized the Breton throne"
+
+ salomon_swears_oath_to_charles: "Oath of Loyality"
+ salomon_swears_oath_to_charles_desc: "I swore an oath to King Charles of West Francia to become his loyal follower; in return, I was granted the counties of Rennes and Nantes to be held from Charles in fee"
+ salomon_swears_oath_to_charles_desc_second_perspective_1: "You swore an oath to King Charles of West Francia to become his loyal follower; in return, you were granted the counties of Rennes and Nantes to be held from Charles in fee"
+ salomon_swears_oath_to_charles_desc_third_perspective_1: "Salomon swore an oath to King Charles of West Francia to become his loyal follower; in return, he was granted the counties of Rennes and Nantes to be held from Charles in fee"
+
+ salomon_858_instigation_revolt: "Rebellious Instigation"
+ salomon_858_instigation_revolt_desc: "I instigated a large-scale revolt of the Frankish nobles of Neustria against Charles the Bald"
+ salomon_858_instigation_revolt_desc_second_perspective_1: "You instigated a large-scale revolt of the Frankish nobles of Neustria against Charles the Bald"
+ salomon_858_instigation_revolt_desc_third_perspective_1: "Salomon instigated a large-scale revolt of the Frankish nobles of Neustria against Charles the Bald"
+
+ salomon_862_hired_vikings: "Hired Vikings"
+ salomon_862_hired_vikings_desc: "I purchased the services of a band of Vikings to ravage the Loire valley in Nuestria"
+ salomon_862_hired_vikings_desc_second_perspective_1: "You purchased the services of a band of Vikings to ravage the Loire valley in Nuestria"
+ salomon_862_hired_vikings_desc_third_perspective_1: "Salomon purchased the services of a band of Vikings to ravage the Loire valley in Nuestria"
+
+ salomon_charles_863_treaty: "Treaty of 863"
+ salomon_charles_863_treaty_desc: "Threatened by King Charles having gathered an army to march on Brittany, I decided to negotiate a peace with the French Monarch whereby western Anjou was recognised as a part of Brittany while I commended myself to Charles and paid tribute"
+ salomon_charles_863_treaty_desc_second_perspective_1: "Threatened by King Charles having gathered an army to march on Brittany, you decided to negotiate a peace with the French Monarch whereby western Anjou was recognised as a part of Brittany while you commended yourself to Charles and paid tribute"
+ salomon_charles_863_treaty_desc_third_perspective_1: "Threatened by King Charles having gathered an army to march on Brittany, Salomon decided to negotiate a peace with the French Monarch whereby western Anjou was recognised as a part of Brittany while Salomon commended himself to Charles and paid tribute"
+
+ salomon_866_haesteinn_alliance: "Allied with Vikings"
+ salomon_866_haesteinn_alliance_desc: "I halted tribute payments to King Charles and allied with Hasteinn, a Norse chieftain, to form a joint Breton-Viking raiding party that ravaged the regions of Anjou, Maine, and Touraine"
+ salomon_866_haesteinn_alliance_desc_second_perspective_1: "You halted tribute payments to King Charles and allied with Hasteinn, a Norse chieftain, to form a joint Breton-Viking raiding party that ravaged the regions of Anjou, Maine, and Touraine"
+ salomon_866_haesteinn_alliance_desc_third_perspective_1: "Salomon halted tribute payments to King Charles and allied with Hasteinn, a Norse chieftain, to form a joint Breton-Viking raiding party that ravaged the regions of Anjou, Maine, and Touraine"
+
+ salomon_battle_of_brissarthe: "Battle of Brissarthe"
+ salomon_battle_of_brissarthe_desc: "I lead the Breton portion of the joint Breton-Viking army against the Franks at the Battle of Brissarthe - a battle which saw the deaths of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine"
+ salomon_battle_of_brissarthe_desc_second_perspective_1: "You lead the Breton portion of the joint Breton-Viking army against the Franks at the Battle of Brissarthe - a battle which saw the deaths of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine"
+ salomon_battle_of_brissarthe_desc_third_perspective_1: "Salomon lead the Breton portion of the joint Breton-Viking army against the Franks at the Battle of Brissarthe - a battle which saw the deaths of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine"
+
+ 837_diet_of_aachen: "Diet of Aachen"
+ 837_diet_of_aachen_desc: "At a diet in Aachen, my father Louis the Pious bade the Frankish nobility do homage to me as his heir of the entire land which was once Gaul"
+ 837_diet_of_aachen_desc_second_perspective_1: "At a diet in Aachen, your father Louis the Pious bade the Frankish nobility do homage to you as his heir of the entire land which was once Gaul"
+ 837_diet_of_aachen_desc_third_perspective_1: "At a diet in Aachen, Emperor Louis the Pious bade the Frankish nobility do homage to Charles as his heir of the entire land which was once Gaul"
+
+ charles_inheritance_of_aquitaine: "Inheritance of Aquitaine"
+ charles_inheritance_of_aquitaine_desc: "Upon the death of my half-brother Pepin of Aquitaine, my father awarded me with the Kingdom of Aquitaine, which angered the Aquitainian nobles who elected Pepin's son as Pepin II"
+ charles_inheritance_of_aquitaine_desc_second_perspective_1: "Upon the death of your half-brother Pepin of Aquitaine, your father awarded you with the Kingdom of Aquitaine, which angered the Aquitainian nobles who elected Pepin's son as Pepin II"
+ charles_inheritance_of_aquitaine_desc_third_perspective_1: "Upon the death of Pepin of Aquitaine, Emperor Louis the Pious awarded Charles with the Kingdom of Aquitaine, which angered the Aquitainian nobles who elected Pepin's son as Pepin II"
+
+ charles_carolingian_civil_war_start: "Carolingian Civil War"
+ charles_carolingian_civil_war_start_desc: "Following the death of my father Louis the Pious, my half-brother and newly-crowned Emperor Lothaire precipitated a new Carolingian civil war by declaring his imperium over all the lands of the empire and, joining with our nephew Pepin II of Aquitaine, attacked my lands in the Loire Valley"
+ charles_carolingian_civil_war_start_desc_second_perspective_1: "Following the death of your father Louis the Pious, your half-brother and newly-crowned Emperor Lothaire precipitated a new Carolingian civil war by declaring his imperium over all the lands of the empire and, joining with your nephew Pepin II of Aquitaine, attacked your lands in the Loire Valley"
+ charles_carolingian_civil_war_start_desc_third_perspective_1: "Following the death of Louis the Pious, the newly-crowned Emperor Lothaire precipitated a new Carolingian civil war by declaring his imperium over all the lands of the empire and, joining with his nephew Pepin II of Aquitaine, attacked the Loire Valley"
+
+ charles_battle_of_fontenoy: "Battle of Fontenoy"
+ charles_battle_of_fontenoy_desc: "Alongside my half-brother Ludwig the German and his army, I lead the Frankish army against the combined forces of Emperor Lothaire and Pepin II of Aquitaine in what has been considered to have been the most bloodiest battle in Carolingian times - the Battle of Fontenoy - which ended in our victory"
+ charles_battle_of_fontenoy_desc_second_perspective_1: "Alongside your half-brother Ludwig the German and his army, you lead the Frankish army against the combined forces of Emperor Lothaire and Pepin II of Aquitaine in what has been considered to have been the bloodiest battle in Carolingian times - the Battle of Fontenoy - which ended in your victory"
+ charles_battle_of_fontenoy_desc_third_perspective_1: "Alongside his half-brother Ludwig the German and his army, Charles lead the Frankish army against the combined forces of Emperor Lothaire and Pepin II of Aquitaine in what has been considered to have been the bloodiest battle in Carolingian times - the Battle of Fontenoy - which ended in victory for Charles and Ludwig"
+
+ charles_oaths_of_strasbourg: "Oaths of Strasbourg"
+ charles_oaths_of_strasbourg_desc: "I met with my half-brother and ally Ludwig the German in Strasbourg where we both, before our combined armies, swore oaths that promised allegiance to each other and to be united against our brother Lothaire"
+ charles_oaths_of_strasbourg_desc_second_perspective_1: "You met with your half-brother and ally Ludwig the German in Strasbourg where you both, before your combined armies, swore oaths that promised allegiance to each other and to be united against your brother Lothaire"
+ charles_oaths_of_strasbourg_desc_third_perspective_1: "Charles met with his half-brother and ally Ludwig the German in Strasbourg where they both, before their combined armies, swore oaths that promised allegiance to each other and to be united against their brother Lothaire"
+
+ charles_treaty_of_verdun: "Treaty of Verdun"
+ charles_treaty_of_verdun_desc: "Following almost three years of civil war and negotiations lasting more than a year, Louis the German, Lothaire, and I signed the Treaty of Verdun. This treaty confirmed Lothaire as Emperor and ruler of Francia Media (the Middle Frankish kingdom) while Ludwig received Francia Orientalis (the East Frankish kingdom) and I recieved Francia Occidentalis (the West Frankish kingdom)"
+ charles_treaty_of_verdun_desc_second_perspective_1: "Following almost three years of civil war and negotiations lasting more than a year, you, Louis the German, and Lothaire signed the Treaty of Verdun. This treaty confirmed Lothaire as Emperor and ruler of Francia Media (the Middle Frankish kingdom) while Ludwig received Francia Orientalis (the East Frankish kingdom) and you recieved Francia Occidentalis (the West Frankish kingdom)"
+ charles_treaty_of_verdun_desc_third_perspective_1: "Following almost three years of civil war and negotiations lasting more than a year, Charles the Bald, Louis the German, and Lothaire I signed the Treaty of Verdun. This treaty confirmed Lothaire as Emperor and ruler of Francia Media (the Middle Frankish kingdom) while Ludwig received Francia Orientalis (the East Frankish kingdom) and Charles the Bald recieved Francia Occidentalis (the West Frankish kingdom)"
+
+ treaty_of_coulaines: "Treaty of Coulaines"
+ treaty_of_coulaines_desc: "Upon returning from an unsuccessful campaign against Brittany, the Treaty of Coulaines was concluded between me and my West Frankish nobility and clergy. The treaty, broadly speaking, restricted the powers of the king while guaranteeing certain rights and responsibilites of the nobility and clergy"
+ treaty_of_coulaines_desc_second_perspective_1: "Upon returning from an unsuccessful campaign against Brittany, the Treaty of Coulaines was concluded between you and your West Frankish nobility and clergy. The treaty, broadly speaking, restricted the powers of the king while guaranteeing certain rights and responsibilites of the nobility and clergy"
+ treaty_of_coulaines_desc_third_perspective_1: "Upon returning from an unsuccessful campaign against Brittany, the Treaty of Coulaines was concluded between King Charles and his West Frankish nobility and clergy. The treaty, broadly speaking, restricted the powers of the king while guaranteeing certain rights and responsibilites of the nobility and clergy"
+
+ battle_of_ballon: "Battle of Ballon"
+ battle_of_ballon_desc: "Attempting to reimpose Frankish control of Brittany, I met Nominoë, Duke of Brittany, at the Battle of Ballon where I was defeated by the Bretons who were able to exploit their knowledge of the treacherous wetland battlefield"
+ battle_of_ballon_desc_second_perspective_1: "Attempting to reimpose Frankish control of Brittany, you met Nominoë, Duke of Brittany, at the Battle of Ballon where you were defeated by the Bretons who were able to exploit their knowledge of the treacherous wetland battlefield"
+ battle_of_ballon_desc_third_perspective_1: "Attempting to reimpose Frankish control of Brittany, Charles the Bald met Nominoë, Duke of Brittany, at the Battle of Ballon where the Frankish King was defeated by the Bretons who were able to exploit their knowledge of the treacherous wetland battlefield"
+
+ battle_of_jengland: "Battle of Jengland"
+ battle_of_jengland_desc: "Responding to Breton raids in the region of Maine, I confronted Nominoë's son and successor Erispoe in the Battle of Jengland that saw my army suffer a decisive defeat at the hands of Breton javelineers who utilized Parthian-esque tactics to inflict catastrophic losses on my men and horses"
+ battle_of_jengland_desc_second_perspective_1: "Responding to Breton raids in the region of Maine, you confronted Nominoë's son and successor Erispoe in the Battle of Jengland that saw your army suffer a decisive defeat at the hands of Breton javelineers who utilized Parthian-esque tactics to inflict catastrophic losses on your men and horses"
+ battle_of_jengland_desc_third_perspective_1: "Responding to Breton raids in the region of Maine, Charles the Bald confronted Nominoë's son and successor Erispoe in the Battle of Jengland that saw Charles' army suffer a decisive defeat at the hands of Breton javelineers who utilized Parthian-esque tactics to inflict catastrophic losses on Frankish men and horses"
+
+ treaty_of_angers: "Treaty of Angers"
+ treaty_of_angers_desc: "Following my defeat in the Battle of Jengland, I met with Erispoe and concluded a peace treaty between us. I invested Erispoe with the counties of Rennes and Nantes as well as bestowed him with royal regalia and Erispoe in turn pledged himself to me with the giving of hands and an oath of fidelity. By the treaty, though Erispoe remained in principle subject to my authority, he could now also see himself as sovereign in his own realm"
+ treaty_of_angers_desc_second_perspective_1: "Following your defeat in the Battle of Jengland, you met with Erispoe and concluded a peace treaty. You invested Erispoe with the counties of Rennes and Nantes as well as bestowed him with royal regalia and Erispoe in turn pledged himself to you with the giving of hands and an oath of fidelity. By the treaty, though Erispoe remained in principle subject to your authority, he could now also see himself as sovereign in his own realm"
+ treaty_of_angers_desc_third_perspective_1: "Following Charles' defeat in the Battle of Jengland, he met with Erispoe and concluded a peace treaty. Charles invested Erispoe with the counties of Rennes and Nantes as well as bestowed him with royal regalia and Erispoe in turn pledged himself to the Frankish king with the giving of hands and an oath of fidelity. By the treaty, though Erispoe remained in principle subject to Charles' authority, he could now also see himself as sovereign in his own realm"
+
+ frankish_breton_improved_relations: "Franco-Breton Relations"
+ frankish_breton_improved_relations_desc: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, I stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to my young son Louis"
+ frankish_breton_improved_relations_desc_second_perspective_1: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, you stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to your young son Louis"
+ frankish_breton_improved_relations_desc_third_perspective_1: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, Charles stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to the King's young son Louis"
+
+ 845_siege_of_paris: "845 Siege of Paris"
+ 845_siege_of_paris_desc: "A fleet of 120 Viking ships containing more than 5,000 men arrived in Paris on Easter Sunday, and having already defeated the smaller Frankish army I raised in defense of the city, entered the city and plundered it. Unable to assemble an effective defence, the Vikings withdrew only after I paid a ransom of 7,000 livres (French pounds) of silver and gold, amounting to approximately 2,570 kg"
+ 845_siege_of_paris_desc_second_perspective_1: "A fleet of 120 Viking ships containing more than 5,000 men arrived in Paris on Easter Sunday, and having already defeated the smaller Frankish army you raised in defense of the city, entered the city and plundered it. Unable to assemble an effective defence, the Vikings withdrew only after you paid a ransom of 7,000 livres (French pounds) of silver and gold, amounting to approximately 2,570 kg"
+ 845_siege_of_paris_desc_third_perspective_1: "A fleet of 120 Viking ships containing more than 5,000 men arrived in Paris on Easter Sunday, and having already defeated the smaller Frankish army raised in defense of the city, entered the city and plundered it. Unable to assemble an effective defence, the Vikings withdrew only after Charles the Bald paid a ransom of 7,000 livres (French pounds) of silver and gold, amounting to approximately 2,570 kg"
+
+ charles_invasion_of_west_francia: "Invasion of West Francia"
+ charles_invasion_of_west_francia_desc: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, I was forced to flee to Burgundy"
+ charles_invasion_of_west_francia_desc_second_perspective_1: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, you were forced to flee to Burgundy"
+ charles_invasion_of_west_francia_desc_third_perspective_1: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, Charles the Bald was forced to flee to Burgundy"
+
+ charles_treaty_of_koblenz: "Treaty of Koblenz"
+ charles_treaty_of_koblenz_desc: "Through the continued support of the West Frankish bishops, who refused to crown Ludwig the German king, and by the fidelity of the Welfs, who were related to my mother, Judith, I managed to come to terms with my half-brother in which we both made public vows to uphold the peace between our respective realms"
+ charles_treaty_of_koblenz_desc_second_perspective_1: "Through the continued support of the West Frankish bishops, who refused to crown Ludwig the German king, and by the fidelity of the Welfs, who were related to your mother, Judith, you managed to come to terms with your half-brother in which you both made public vows to uphold the peace between your respective realms"
+ charles_treaty_of_koblenz_desc_third_perspective_1: "Through the continued support of the West Frankish bishops, who refused to crown Ludwig the German king, and by the fidelity of the Welfs, who were related to his mother, Judith, Charles the Bald managed to come to terms with Ludwig in which they both made public vows to uphold the peace between their respective realms"
+
+ charles_payment_veland: "Payment to Veland"
+ charles_payment_veland_desc: "Plagued by Viking settlements in the Lower Siene region, I made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
+ charles_payment_veland_desc_second_perspective_1: "Plagued by Viking settlements in the Lower Siene region, you made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
+ charles_payment_veland_desc_third_perspective_1: "Plagued by Viking settlements in the Lower Siene region, King Charles made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
+
+ edict_of_pitres: "Edict of Pîtres"
+ edict_of_pitres_desc: "I announced the Edict of Pîtres, which not only declared that fortified bridges should be built at all towns on rivers to prevent the dreaded longships from sailing into the interior, but also ordered all men who had horses or could afford horses to serve in the army as cavalrymen"
+ edict_of_pitres_desc_second_perspective_1: "You announced the Edict of Pîtres, which not only declared that fortified bridges should be built at all towns on rivers to prevent the dreaded longships from sailing into the interior, but also ordered all men who had horses or could afford horses to serve in the army as cavalrymen"
+ edict_of_pitres_desc_third_perspective_1: "King Charles announced the Edict of Pîtres, which not only declared that fortified bridges should be built at all towns on rivers to prevent the dreaded longships from sailing into the interior, but also ordered all men who had horses or could afford horses to serve in the army as cavalrymen"
+
+ charles_diplomacy_with_cordoba: "Diplomacy with Cordoba"
+ charles_diplomacy_with_cordoba_desc: "I engaged in diplomacy with the Emirate of Cordoba, receiving camels from Emir Muhammad I as a gift"
+ charles_diplomacy_with_cordoba_desc_second_perspective_1: "You engaged in diplomacy with the Emirate of Cordoba, receiving camels from Emir Muhammad I as a gift"
+ charles_diplomacy_with_cordoba_desc_third_perspective_1: "Charles engaged in diplomacy with the Emirate of Cordoba, receiving camels from Emir Muhammad I as a gift"
+
+ charles_danegeld_866: "Danegeld of 866"
+ charles_danegeld_866_desc: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, I paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
+ charles_danegeld_866_desc_second_perspective_1: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, you paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
+ charles_danegeld_866_desc_third_perspective_1: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, King Charles paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
+
+ #Relationships
  sulayman_and_hasan_rivalry_desc: "Sulayman ibn Abdallah ibn Tahir was appointed governor of Tabaristan in the early 850s, but by 864, his excessive taxation and tyranny caused the residents of the province to rise up in revolt. The rebels, who proclaimed the 'Alid al-Hasan ibn Zayd as their leader, quickly gained strength, drawing support from the people of Tabaristan as well as the Daylamites of neighboring Daylam. After defeating Sulayman's forces, the hated governor abandoned Tabaristan for Gurgan, leaving al-Hasan in control of the province."
  
  bayakbak_and_ibn_tulun_friendship_desc: "According to the 10th-century author al-Balawi, after his father's death Ahmad came under the tutelage of the Turkish general Bayakbak, a close companion of Tulun, who had been taken captive alongside him. At his deathbed, Tulun urged his friend to take care of his wife and son, and Bayakbak thereafter treated the young Ahmad as his own son. Even after Ahmad had grown the two remained close, thus when al-Mu'tazz gave Bakbak charge of Egypt, Bakbak in turn sent his stepson Ahmad as his lieutenant and resident governor."
  yarjukh_and_ibn_tulun_friendship_desc: "After reaching adulthood, Ibn Tulun fought in the frontier wars with the Byzantine Empire. There he also met another senior Turkish leader, Yarjukh, with whom he became close with. This friendship lead to Ibn Tulun marrying Yarjukh's daughter, Khatun, who became his first wife and the mother of his eldest son, Abbas, and his daughter Fatimah."
+ tulun_mudabbir_shukayr_power_struggle_desc: "The effective separation of powers, in medieval Islam, was in provincial administration - between the three divisions of military affairs, finance, and communications. Its purpose was to maintain the ultimate control of the imperial government, and prevent the emergence of provincial autonomies. When Ibn Tuliin arrived in Fustat as Egypt's newly appointed governor, he found two officials appointed by and responsible to Baghdad - the financial intendant, Ibn al-Mudabbir, and the postmaster, Shukayr. When both Ibn al-Mudabbir and Shukayr came out to meet him with a gift (bribe) of 10,000 dinars, Ibn Tulun refused to accept it - signaling his intention to be sole master of his province - and thus sparking a struggle for power between the three"

@@ -1089,6 +1089,8 @@
 	female = yes
 	religion = "orthodox"
 	culture = "greek"
+	trait = beauty_good_3
+	trait = intellect_good_1
 	941.1.1 = {
 		birth = "941.1.1"
 	}
@@ -1104,6 +1106,9 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_4
+	trait = zealous
+	trait = arrogant
+	trait = brave
 	father = 41317
 	912.1.1 = {
 		birth = "912.1.1"
@@ -2737,6 +2742,7 @@
 	culture = "greek"
 	trait = wrathful
 	trait = education_diplomacy_2
+	father = 20564
 	900.1.1 = {
 		birth = "900.1.1"
 	}
@@ -2751,7 +2757,7 @@
 20520 = {
 	name = "Theophano"
 	female = yes
-	dynasty = 640
+	dynasty = 641
 	martial = 4
 	diplomacy = 8
 	intrigue = 4
@@ -2763,7 +2769,7 @@
 	trait = greedy
 	trait = ill
 	trait = education_diplomacy_1
-	father = 20564
+	father = 41317
 	908.1.1 = {
 		birth = "908.1.1"
 	}
@@ -8899,6 +8905,67 @@
 	840.1.9 = {
 		birth = "840.1.9"
 	}
+	840.5.16 = { # Michael is crowned co-emperor
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_crowned_coemperor }
+			}
+		}
+	}
+	842.1.20 = { # Michael is crowned emperor
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_crowned_emperor }
+			}
+		}
+	}
+	855.2.14 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:1761 } 	#Begins affair with Eudokia
+		}
+	}
+	855.7.22 = { # Michael undergoes a bride show and marries Eudokia
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_brideshow }
+			}
+		}
+	}
+	856.3.15 = { # Michael overthrows regency
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_overthrows_regency }
+			}
+		}
+	}
+	860.1.1 = { # Michael sent Cyril on a mission to the Khazars
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_missionary_expedition_khazars }
+			}
+		}
+	}
+	863.1.1 = { # Michael sent Cyril on a mission to Great Moravia
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_missionary_expedition_great_moravia }
+			}
+		}
+	}
+	863.11.4 = { # Michael's Invasion of Bulgaria - In the last months of 863 the Byzantines attacked Bulgaria again
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_invasion_of_bulguria }
+			}
+		}
+	}
+	864.10.22 = { # Conversion of Bulgaria - In the late autumn of 864, a mission from the Patriarch of Constantinople Photios arrived at the Bulgarian capital Pliska and converted the Khan, his family and high-ranking dignitaries.
+		effect = {
+			character:70490 = {
+				create_character_memory = { type = michael_conversion_of_bulguria }
+			}
+		}
+	}
 	867.9.24 = {
 		give_nickname = nick_the_drunkard
 		death = {
@@ -8919,7 +8986,8 @@
 	culture = "greek"
 	trait = paranoid
 	trait = just
-	trait = education_martial_1
+	trait = brave
+	trait = education_martial_2
 	father = 70492
 	
 	813.1.1 = {
@@ -8942,6 +9010,7 @@
 	culture = "greek"
 	trait = brave
 	trait = ambitious
+	trait = cynical
 	trait = education_martial_4
 	775.1.1 = {
 		birth = "775.1.1"
@@ -13569,6 +13638,11 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_4
+	trait = generous
+	trait = brave
+	trait = vengeful
+	trait = ambitious
+	trait = beauty_good_2
 	father = 20519
 	mother = 20520
 	925.1.1 = {
@@ -16580,8 +16654,8 @@
 	trait = chaste
 	trait = content
 	trait = education_stewardship_2
-	838.1.1 = {
-		birth = "838.1.1"
+	834.1.1 = {
+		birth = "834.1.1"
 	}
 	885.1.1 = {
 		death = "885.1.1"
@@ -16596,8 +16670,8 @@
 	culture = "greek"
 	father = 1700
 	mother = 145131
-	862.1.1 = {
-		birth = "862.1.1"
+	855.1.1 = {
+		birth = "855.1.1"
 	}
 	920.1.1 = {
 		death = "920.1.1"
@@ -16612,8 +16686,8 @@
 	trait = education_martial_3
 	father = 1700
 	mother = 145131
-	864.1.1 = {
-		birth = "864.1.1"
+	860.1.1 = {
+		birth = "860.1.1"
 	}
 	879.9.3 = {
 		death = "879.9.3"
@@ -16957,11 +17031,23 @@
 	dynasty = 639
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_martial_2
-	835.1.1 = {
-		birth = "835.1.1"
+
+	# Skills
+	
+	# Education
+	trait = education_martial_3
+	
+	# Personality Traits
+	trait = zealous
+	trait = brave
+	
+	# Other Traits
+	trait = holy_warrior
+
+	810.1.1 = {
+		birth = "810.1.1"
 	}
-	890.1.1 = {
+	870.1.1 = {
 		death = "890.1.1"
 	}
 }
@@ -16971,13 +17057,33 @@
 	dynasty = 639
 	religion = "orthodox"
 	culture = "greek"
+
+	# Skills
+	diplomacy = 7
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+	
+	# Education
 	trait = education_martial_3
-		father = 145156
-	860.1.1 = {
-		birth = "860.1.1"
+	
+	# Personality Traits
+	trait = just
+	trait = brave
+	trait = temperate
+	
+	# Other Traits
+	trait = intellect_good_1
+	trait = holy_warrior
+
+	father = 145156
+	850.1.1 = {
+		birth = "850.1.1"
 	}
-	920.1.1 = {
-		death = "920.1.1"
+	910.1.1 = {
+		death = "910.1.1"
 	}
 }
 
@@ -17215,7 +17321,13 @@
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
+	martial = 12
 	trait = education_martial_4
+	trait = zealous
+	trait = diligent
+	trait = brave
+	trait = ambitious
+	trait = loyal
 	father = 145172
 	890.1.1 = {
 		birth = "890.1.1"

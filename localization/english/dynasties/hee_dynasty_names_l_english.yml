@@ -29,14 +29,40 @@
  dynn_Maniakes: "Maniakes"
  
  dynn_Asbestas: "Asbestas"
+
+ dynn_Kapnogenes: "Kapnogenes"
  
  dynn_Zaoutzes: "Zaoutzes"
+
+ dynn_Mardaites: "Mardaites"
 
  dynn_Numayrid: "Numayrid"
  
  dynn_Shaybani: "Shaybani"
  
  dynn_Akrites: "Akrites"
+
+ dynn_Azdi: "Azdi"
+
+ dynn_Shukayr: "al-Khadim"
+
+ dynn_al_Mudabbir: "al-Mudabbir"
+
+ dynn_al_Sufi: "al-Sufi"
+
+ dynn_al_Tabataba: "al-Tabataba"
+
+ dynn_Sukunid: "Sukunid"
+
+ dynn_al_Farghani: "al-Farghani"
+
+ dynn_al_Kan: "al-Kan"
+
+ dynn_al_Madhara_i: "al-Madhara'i"
+
+ dynn_al_Daya: "al-Daya"
+
+ dynn_Khachen: "Khachen"
 
  dynn_Vermandois: "Vermandois"
 
@@ -65,3 +91,11 @@
  dynn_Bretagne: "Bretagne"
  
  dynn_Luka: "Luka"
+
+ dynn_Vannes: "Vannes"
+
+ dynn_Rennes: "Rennes"
+
+ dynn_Nantes: "Nantes"
+
+ dynn_Loire: "Loire"

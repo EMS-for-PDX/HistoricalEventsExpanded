@@ -6,12 +6,16 @@
 	stewardship = 1
 	prowess = 2
 
-	same_culture_opinion = 10
-	vassal_limit = 10
 	dread_baseline_add = 25
-	dread_decay_mult = -0.12
-	hostile_scheme_resistance_mult = 0.12
-	enemy_hostile_scheme_success_chance_add = -10
+	dread_decay_mult = -0.25
+	same_culture_opinion = 20
+	vassal_limit = 50
+	hostile_scheme_resistance_mult = 0.25
+	enemy_hostile_scheme_success_chance_add = -50
+	minority_opinion = 30
+	army_maintenance_mult = -0.35
+	archer_cavalry_siege_value_add = 0.3
+	light_cavalry_siege_value_add = 0.3
 	
 	desc = {
 		first_valid = {

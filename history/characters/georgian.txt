@@ -627,7 +627,7 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "georgian"
-	father = 70468
+	father = 70468 # https://en.wikipedia.org/wiki/Gurandukht_of_Abkhazia
 	946.1.1 = {
 		birth = "946.1.1"
 	}
@@ -1414,6 +1414,7 @@
 	trait = arrogant
 	trait = ambitious
 	trait = education_martial_3
+	disallow_random_traits = yes
 	father = 70470
 	
 	854.1.1 = {
@@ -1447,7 +1448,7 @@
 	}
 }
 
-70471 = {
+70471 = { # https://en.wikipedia.org/wiki/Demetrius_II_of_Abkhazia
 	name = "Demetre"
 	dynasty = 101737
 	martial = 4
@@ -1558,7 +1559,9 @@
 	trait = calm
 	trait = brave
 	trait = diligent
+	trait = rowdy
 	trait = education_martial_2
+	disallow_random_traits = yes
 	father = 70474
 	
 	857.1.1 = {
@@ -1579,10 +1582,11 @@
 	religion = "orthodox"
 	culture = "georgian"
 	trait = intellect_good_1
-	trait = ambitious
-	trait = paranoid
+	trait = generous
+	trait = trusting
+	trait = calm
 	trait = education_stewardship_2
-	trait = infertile
+	trait = infertile # Never seemed to have kids, leading to crisis
 	father = 70472
 	
 	807.1.1 = {
@@ -2909,9 +2913,10 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "georgian"
-	trait = ambitious
 	trait = greedy
-	trait = education_intrigue_1
+	trait = ambitious
+	trait = craven 
+	trait = education_intrigue_2
 	father = 160032
 	
 	850.1.1 = {
@@ -3188,7 +3193,7 @@
 	culture = "georgian"
 	trait = generous
 	trait = ambitious
-	trait = cynical
+	trait = humble
 	trait = education_martial_2
 	father = 41540
 	815.1.1 = {
@@ -3201,4 +3206,21 @@
 		death = "876.1.1"
 	}
 }
+
+extra_georgians_1 = { #unnamed in the sources, but known to have married Alp Arslan
+	name = "Chiora"
+	dynasty_house = house_bagrationi # Georgian Bagrationi cadets
+	religion = "orthodox"
+	culture = "georgian"
+	female = yes 
+	mother = 41553
+	father = extra_armenians_1
+	1045.1.1 = {
+		birth = yes
+	}
+	1090.1.1 = {
+		death = yes
+	}
+}
+
 

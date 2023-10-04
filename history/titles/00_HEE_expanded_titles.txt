@@ -300,6 +300,9 @@ d_muslim_tbilisi = {
 		holder = 163167	#Mohammed bin Khalil Shaybanid
 		liege = e_arabia
 	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
+	}
 	870.1.1 = {
 		holder = 159732	#Isa bin ash-Sheikh ash-Shayban
 	}
@@ -390,5 +393,90 @@ d_byzantine_sicily = {
 	860.1.1 = {
 		holder = 145190
 		liege = "e_byzantium"
+	}
+}
+
+d_kaysite = {
+	863.1.1 = {
+		holder = 159722
+		liege = "e_arabia"
+	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
+	}
+}
+
+d_melitene = {
+	820.1.1 = {
+		holder = 159723
+	}
+	855.1.1 = {
+		holder = 159724
+	}
+	863.9.3 = {
+		holder = 159725
+	}
+}
+
+d_suenik = {
+	646.1.1 = {
+		holder = 160008
+	}
+	652.1.1 = {
+		holder = 160009
+	}
+	679.1.1 = {
+		holder = 160010
+	}
+	698.1.1 = {
+		holder = 160011
+	}
+	741.1.1 = {
+		holder = 160012
+	}
+	750.1.1 = {
+		holder = 160013
+		liege = 0
+	}
+	780.1.1 = {
+		holder = 159243
+	}
+	811.1.1 = {
+		holder = 159244
+	}
+	848.1.1 = {
+		holder = 159264
+	}
+	851.1.1 = {
+		holder = 159251
+	}
+}
+
+k_arminiya = {
+	866.1.1 = {
+		holder = HEE_867_armenian_governor
+		liege = e_arabia
+	}
+	867.1.1 = {
+		liege = 0 # Essentially independent as a result of the Fifth Fitna
+	}
+}
+
+d_khachen = {
+	840.1.1 = {
+		holder = HEE_atrnerseh_of_khachen
+	}
+	855.1.1 = {
+		holder = HEE_gregor_naren
+	}
+}
+
+d_homs = {
+	860.1.1 = {
+		holder = levantine000010
+		liege = e_arabia
+	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
 	}
 }

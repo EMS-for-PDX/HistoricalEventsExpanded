@@ -175,7 +175,6 @@ k_syunik = {
 
 }
 
-
 d_muslim_tbilisi = {
 	pattern="pattern_solid.dds"
 	color1=white
@@ -220,4 +219,120 @@ d_paulician_principality = {
 		}
 
 	}
+}
+
+d_suenik = {
+	pattern="pattern_solid.dds"
+	color1=grey
+	color2=white
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_cross_greek.dds"
+		instance={
+			position={ 0.315000 0.300000 }
+			scale={ 0.550000 0.550000 }
+		}
+
+		instance={
+			position={ 0.685000 0.300000 }
+			scale={ 0.550000 0.550000 }
+		}
+
+		instance={
+			position={ 0.500000 0.640000 }
+			scale={ 0.550000 0.550000 }
+		}
+
+	}
+
+}
+
+k_arminiya = {
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_border_circle_doted.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_trefoil_eretnid.dds"
+		instance={
+			position={ 0.500000 0.420000 }
+			scale={ 0.650000 0.650000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.700000 0.700000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_religion_islam_generic.dds"
+		instance={
+			position={ 0.480000 0.480000 }
+			scale={ 0.290000 0.290000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=white
+		texture="ce_block_02.dds"
+		instance={
+			depth=4.010000
+		}
+
+	}
+
+}
+
+d_khachen = {
+	custom=yes
+	pattern="pattern__solid_designer.dds"
+	color1=red
+	color2=yellow
+	color3=green
+	colored_emblem={
+		color1=black
+		texture="ce_religion_armenian.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_mena_pale.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
 }

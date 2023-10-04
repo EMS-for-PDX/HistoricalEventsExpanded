@@ -3645,7 +3645,7 @@ c_grunningen = {
 	1268.10.29 = {
 		liege = "e_hre"
 	}
-	#counts of Tübingen
+	#counts of Tï¿½bingen
 	
 	1268.10.29 = {
 		holder = 33558
@@ -4042,6 +4042,9 @@ d_angria = {
 		de_jure_liege = k_east_francia
 	}
 	866.1.1 = {
+		holder = 144957
+	}
+	880.2.2 = {
 		holder = 7908
 	}
 	912.11.12 = {
@@ -4311,7 +4314,7 @@ c_bremen = {
 	}
 	
 	1178.6.18 = {
-		holder = 30305 #Bertram von Köln
+		holder = 30305 #Bertram von Kï¿½ln
 	}
 	
 	
@@ -4345,7 +4348,7 @@ c_bremen = {
 		holder = 30310 #Heinrich von Goltern
 	}
 	1308.1.1 = {
-		holder = 30311 #Bernhard von Wölpe
+		holder = 30311 #Bernhard von Wï¿½lpe
 	}
 	
 	1310.9.17 = {
@@ -6333,6 +6336,9 @@ d_ostfalen = {
 		holder = 7959
 	}
 	866.1.1 = {
+		holder = 144957
+	}
+	880.2.2 = {
 		holder = 7908
 	}
 	912.11.12 = {
@@ -6598,7 +6604,7 @@ c_hamburg = {
 	}
 	
 	1178.6.18 = {
-		holder = 30305 #Bertram von Köln
+		holder = 30305 #Bertram von Kï¿½ln
 	}
 	
 	1180.1.1 = {
@@ -7488,6 +7494,9 @@ d_westfalen = {
 		de_jure_liege = k_east_francia
 	}
 	866.1.1 = {
+		holder = 144957
+	}
+	880.2.2 = {
 		holder = 7908
 	}
 	912.11.12 = {
@@ -7570,7 +7579,7 @@ c_osnabruck = {
 		holder = 20224 #Benno von Osnabruck
 	}
 	1067.12.3 = {
-		holder = 30335 #Benno von Löhningen
+		holder = 30335 #Benno von Lï¿½hningen
 	}
 	1088.7.27 = {
 		holder = 30336 #Markward von Corvey
@@ -7625,7 +7634,7 @@ c_osnabruck = {
 	1258.12.20 =
 	
 	{
-	holder = 30356 #Baldewin von Rüssel
+	holder = 30356 #Baldewin von Rï¿½ssel
 	}
 	1264.1.1 =
 	
@@ -7759,7 +7768,7 @@ c_munster = {
 	}
 	
 	1084.4.18 = {
-		holder = 30314 #Erpho von Münster
+		holder = 30314 #Erpho von Mï¿½nster
 	}
 	
 	1097.11.9 = {

@@ -1,23 +1,5 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
 
-HEE_ibn_tulun_father = { # Tulun, ibn Tulun's father
-	name = "Tulun"
-	dynasty = 820
-	religion = "ashari"
-	culture = "uyghur" # # Tulun was a Turk from a locality known in Arabic sources as Tagharghar or Toghuz[o]ghuz, i.e., the Uyghur confederation.
-
-	prowess = 6
-
-	trait = education_martial_3
-	
-	800.2.5 = { # Unknown, but had Ibn Tulun in 835
-		birth = yes
-	}
-	855.1.1 = { # Died in 854/855
-		death = yes
-	}
-}
-
 HEE_ibn_tulun_mother = { # Qasim, ibn Tulun's mother
 	name = "Qasim"
 	religion = "ashari"
@@ -28,7 +10,7 @@ HEE_ibn_tulun_mother = { # Qasim, ibn Tulun's mother
 		birth = yes
 	}
 	834.1.1 = {
-		add_spouse = HEE_ibn_tulun_father # Tulun
+		add_spouse = extra_tulunids_5 # Tulun
 	}
 	856.1.1 = {
 		add_spouse = HEE_bayakbak # Bayakbak
@@ -134,52 +116,6 @@ HEE_ibn_tulun_first_wife = { # ibn Tulun's wife and mother of his eldest son Abb
 	}
 }
 
-# ibn Tulun's first born son, who failed to rebel against his father in 879
-HEE_ibn_tulun_firstborn = {
-	name = "al-Abbas"
-	dynasty = 820
-	religion = "ashari"
-	culture = "egyptian"
-	father = 163115
-	mother = HEE_ibn_tulun_first_wife
-
-	trait = trusting # Easily manipulated by others
-	trait = fickle # Pliable of mind
-	# After capturing his son following his rebellion, ibn Tulun asked his son to gouge the eyes and cut the hands of his conspirators as a secret test of character
-	# When al-Abbas did this without hesitation, ibn Tulun was said to have wept profusely and imprisoned him. 
-	trait = arbitrary 
-	trait = callous
-
-	disallow_random_traits = yes
-	852.1.1 = { # Unknown
-		birth = yes
-	}
-	884.1.1 = {
-		death = {
-			death_reason = death_execution
-			killer = 163138
-		}
-	}
-}
-
-# ibn Tulun's daughter
-HEE_ibn_tulun_daughter = {
-	name = "Fatimah"
-	female = yes
-	dynasty = 820
-	religion = "ashari"
-	culture = "egyptian"
-	father = 163115
-	mother = HEE_ibn_tulun_first_wife
-
-	856.1.2 = { # Unknown
-		birth = yes
-	}
-	909.1.1 = { # Unknown
-		death = yes
-	}
-}
-
 HEE_ibn_tulun_second_wife = { # ibn Tulun's second wife, a slave gifted to him by Caliph al-Musta'in
 	name = "Miyas"
 	religion = "ashari"
@@ -194,24 +130,6 @@ HEE_ibn_tulun_second_wife = { # ibn Tulun's second wife, a slave gifted to him b
 	}
 	909.1.1 = {
 		death = yes
-	}
-}
-
-HEE_ibn_tulun_fourthborn = { # Fourth son of Ibn Tulun who was left in charge of affairs in Egypt in 879 during his brother's rebellion
-	name = "Mukarram"
-	dynasty = 820
-	religion = "ashari"
-	culture = "egyptian"
-	father = 163115
-	mother = HEE_ibn_tulun_first_wife
-
-	858.2.2 = {
-		birth = yes
-	}
-	897.1.1 = { # Later rebelled himself against his nephew in 897 and was executed
-		death = {
-			death_reason = death_execution
-		}
 	}
 }
 
@@ -293,38 +211,40 @@ HEE_ibn_tulun_fifth_daughter = { # Daughter of Ibn Tulun
 # tried to outmaneuver each other in the Abbasid court. Eventually, Shukayr was dismissed c. 872 and died soon after
 HEE_shukayr = {
 	name = "Shukayr"
-	dynasty = RICE_shukayr_egypt
+	dynasty = hee_shukayr
 	religion = "ashari"
 	culture = "egyptian"
 
 	#Skills
-	# diplomacy = 5
-	# martial = 7
-	# stewardship = 5
-	# intrigue = 6
-	# learning = 5
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 7
 	# prowess = 6
 	
 	#Education
-	trait = education_intrigue_2
+	trait = education_intrigue_3
 	
 	#Personality Traits
 	trait = ambitious # Wanted to keep his powerful position as head of the postal service (intelligence)
 	trait = deceitful # Gave ibn Tulun a gift, not due to generousity, but to buy his loyality
+	trait = calm
 	
 	#Other Traits
+	trait = administrator # head of the postal service (barid) and of correspondence with the caliphal government
 	
 	#sexuality = heterosexual
 	
 	#disallow_random_traits = yes
-	830.1.1 = { # Unknown
+	820.1.1 = { # Unknown
 		birth = yes
 	}
-	866.1.1 = { # Lower opinion instead of rivalry for now
+	866.1.1 = {
 		effect = {
-			set_relation_friend = {
-				target = character:RICE_upper_egypt_010
-			}	
+			add_character_modifier = egyptian_spymaster_modifier
+			add_gold = 350 # considering his position and large cash bribe to Ibn Tulun, quite a wealthy man
+			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:163115 }
 		}
 	}
 	872.1.1 = {
@@ -334,8 +254,8 @@ HEE_shukayr = {
 
 
 HEE_al_mudabbir_father = { # al-Mudabbir's father, apparently was of Persian origin
-	name = "Muhammad"
-	dynasty = RICE_al_mudabbir_egypt
+	name = "Muhammad" # ibn Muhammad 
+	dynasty = hee_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
 	# Unknown
@@ -347,31 +267,33 @@ HEE_al_mudabbir_father = { # al-Mudabbir's father, apparently was of Persian ori
 	}
 }
 
-HEE_al_mudabbir = { # al-Mudabbir himself
+HEE_al_mudabbir = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-Hasan_Ahmad_ibn_Muhammad_ibn_Abdallah_ibn_al-Mudabbir
 	name = "Abdul-Hasan"
-	dynasty = RICE_al_mudabbir_egypt
+	dynasty = hee_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
 	father = HEE_al_mudabbir_father
 
 	#Skills
-	# diplomacy = 5
-	# martial = 7
-	# stewardship = 5
-	# intrigue = 6
-	# learning = 5
+	diplomacy = 7
+	martial = 7
+	stewardship = 10
+	intrigue = 8
+	learning = 8
 	# prowess = 6
 	
 	#Education
-	trait = education_diplomacy_3 # distinguished man of letters
+	trait = education_stewardship_4 # Highly competent steward
 	
 	#Personality Traits
 	trait = greedy # was said to increase taxes in Egypt unfairly
-	trait = callous # was said to increase taxes in Egypt unfairly
 	trait = ambitious # was said to increase taxes in Egypt unfairly
+	trait = diligent # seemingly quite good at his job
 	trait = cynical # doubled the kharāj and the jizya and raised new taxes — a move widely denounced as un-Quranic
 	
 	#Other Traits
+	trait = administrator # fiscal administrator 
+	trait = scholar # distinguished man of letters/author of a now lost Kitāb al-Mujālasa wa ’l-mudhākara ("Book of Companionship and Conversation")
 	trait = poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
 
 	#sexuality = heterosexual
@@ -380,6 +302,15 @@ HEE_al_mudabbir = { # al-Mudabbir himself
 	836.3.6 = { # Unknown
 		birth = yes
 	}
+	866.1.1 = {
+		effect = {
+			add_character_modifier = results_of_egyptian_heavy_taxes_modifier
+			add_character_modifier = constantly_protected_by_bodyguards_modifier
+			add_gold = 350 # considering his position and large cash bribe to Ibn Tulun, quite a wealthy man
+			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:163115 }
+			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:HEE_shukayr }
+		}
+	}
 	883.1.1 = { # Died in prison
 		death = yes
 	}
@@ -387,26 +318,30 @@ HEE_al_mudabbir = { # al-Mudabbir himself
 
 HEE_al_mudabbir_brother = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 	name = "Abu_Ishaq"
-	dynasty = RICE_al_mudabbir_egypt
+	dynasty = hee_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
 	father = HEE_al_mudabbir_father
 
 	#Skills
-	# diplomacy = 5
-	# martial = 7
-	# stewardship = 5
-	# intrigue = 6
-	# learning = 5
+	diplomacy = 8
+	martial = 7
+	stewardship = 9
+	intrigue = 6
+	learning = 8
 	# prowess = 6
 	
 	#Education
-	trait = education_stewardship_3 # wrote a book on administration
+	trait = education_stewardship_3 # Highly competent steward, though slightly less so than his brother
 	
 	#Personality Traits
+	trait = gregarious # rose to prominence as one of the drinking companions of Caliph al-Mutawakkil
 	trait = diligent # broke a prison wall to escape while captured by Zanj rebels
+	trait = content # seemed to not be involved with the various politics of the age
 	
 	#Other Traits
+	trait = administrator # fiscal administrator 
+	trait = scholar # wrote a book on administration/distinguished man of letters
 	trait = poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
 
 	#sexuality = heterosexual
@@ -423,10 +358,10 @@ HEE_al_mudabbir_brother = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 	}
 }
 
-HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba
+HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka, proclaiming himself caliph
 	name = "bugha_al_asghar"
-	dynasty = RICE_al_tabataba_egypt
-	religion = "ismaili" # Not sure if the right one
+	dynasty = hee_al_tabataba
+	religion = "ashari" # THE CAMBRIDGE HISTORY OF EGYPT says he proclaimed himself Caliph, so Ashari? If Shia would be Imam?
 	culture = "bedouin"
 
 	#Skills
@@ -462,15 +397,15 @@ HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba
 	}
 }
 
-HEE_ibn_al_sufi = { # Ibn al-Sufi, Ibrahim ibn Muhammad
+HEE_ibn_al_sufi = { # Ibn al-Sufi, Ibrahim ibn Muhammad - a descendant of Ali's son Umar, who rebelled in late 869 and massacred the populace of Esna
 	name = "Ibrahim"
-	dynasty = RICE_al_sufi_egypt
-	religion = "ismaili" # Not sure if the right one
+	dynasty = hee_al_sufi
+	religion = "ismaili" # No historically associated faith - given to just provoke in-game conflict
 	culture = "egyptian"
 	
 	#Skills
 	diplomacy = 10 # Formented rebellions for many years, so must have been charismatic
-	# martial = 7
+	martial = 8 # Had mild success against ibn Tulun, so buffed his martial to compensate for no martial education trait
 	# stewardship = 5
 	# intrigue = 6
 	# learning = 5
@@ -481,11 +416,12 @@ HEE_ibn_al_sufi = { # Ibn al-Sufi, Ibrahim ibn Muhammad
 	
 	#Personality Traits
 	trait = wrathful # Massacred inhabitants of Esna, ravaged Aswan where he cut thouands of palm trees
-	trait = vengeful
 	trait = gregarious
+	trait = callous
+	trait = ambitious
 	
 	#Other Traits
-	trait = sayyid # Alid who revolted in the Egyptian oases in 869, was later sent to Medina
+	trait = sayyid # Technically an Alid, but Sayyid traits seems to cover Alids
 	
 	835.5.31 = { # Unknown
 		birth = yes
@@ -497,8 +433,8 @@ HEE_ibn_al_sufi = { # Ibn al-Sufi, Ibrahim ibn Muhammad
 
 HEE_abu_ruh_sukun = { # Abu Ruh Sukun / Former partisan of al-Sufi in the oases who rebelled in 872-873, offered a truce
 	name = "Abu_Ruh_Sukun"
-	dynasty = RICE_sukunid_egypt
-	religion = "ismaili" # Not sure if the right one
+	dynasty = hee_sukunid
+	religion = "ismaili" # No associated historical religion, simply made the same as Ibn al-Sufi
 	culture = "egyptian"
 
 	#Skills
@@ -511,6 +447,11 @@ HEE_abu_ruh_sukun = { # Abu Ruh Sukun / Former partisan of al-Sufi in the oases 
 
 	#Education
 	trait = education_martial_3 # ibn Tulun was compelled to make a truce with him, so must have been good at martial
+
+	#Personality Traits
+	trait = calm # Calmer than Ibn al-Sufi, possibly accepted truce with Ibn Tulun
+	trait = brave # standard martial trait - willing to carry on the fight with Ibn Tulun after Ibn al-Sufi's defeat
+	trait = temperate
 
 	843.7.22 = { # Unknown
 		birth = yes
@@ -525,11 +466,25 @@ HEE_abu_ruh_sukun = { # Abu Ruh Sukun / Former partisan of al-Sufi in the oases 
 
 HEE_ibn_al_faraj = { # Muhammad ibn al-Faraj al-Farghani / Governor of Barca who declared rebellion in 874-875
 	name = "Muhammad"
-	dynasty = RICE_al_farghani_egypt
+	dynasty = hee_al_farghani
 	religion = "ashari"
 	culture = "sogdian" # Farghani = Fergana, so family probably originally came from there
 	
-	trait = education_martial_3
+	#Skills
+	# diplomacy = 10
+	martial = 9 # 
+	# stewardship = 5
+	# intrigue = 6
+	# learning = 5
+	# prowess = 6
+
+	#Education
+	trait = education_martial_2 # 
+
+	#Personality Traits
+	trait = arrogant # Typical upstart vassal trait
+	trait = ambitious # Rebelled against Ibn Tulun
+	trait = stubborn # The army despatched by Ibn Tulun achieved no success by soft tactics, and was forced to use siege engines to storm the city
 	
 	839.5.16 = { # Unknown
 		birth = yes
@@ -539,20 +494,18 @@ HEE_ibn_al_faraj = { # Muhammad ibn al-Faraj al-Farghani / Governor of Barca who
 	}
 }
 
-
-
 HEE_ibn_tulun_chancellor = { # Abu Ja'far Muhammad ibn 'Abd al-Kan
 	name = "Abu_Jafar_Muhammad"
-	dynasty = RICE_al_kan_egypt
+	dynasty = hee_al_kan
 	religion = "ashari"
 	culture = "egyptian"
 
 	# Skills
-	diplomacy = 6 # He was considered capable, thus his relevant skills and traits should support that
+	diplomacy = 8 # He was considered capable, thus his relevant skills and traits should support that
 	stewardship = 7 # He was considered capable, thus his relevant skills and traits should support that
 
 	#Education
-	trait = education_diplomacy_3
+	trait = education_diplomacy_3 # He was considered capable, thus his relevant skills and traits should support that
 	
 	#Personality Traits
 	trait = honest # He was considered capable, thus his relevant skills and traits should support that
@@ -570,9 +523,11 @@ HEE_ibn_tulun_chancellor = { # Abu Ja'far Muhammad ibn 'Abd al-Kan
 	}
 }
 
+# al-Madhara'i Family #
+
 HEE_al_madharai_father = { # Abu Bakr al-Madhara'i's father - family was originally from Iraq
 	name = "Ibrahim"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "levantine"
 	
@@ -586,7 +541,7 @@ HEE_al_madharai_father = { # Abu Bakr al-Madhara'i's father - family was origina
 
 HEE_al_madharai = { # Abu Bakr Ahmad ibn Ibrahim al-Madhara'i al-Atrash (the Deaf) / https://en.wikipedia.org/wiki/Abu_Bakr_Ahmad_ibn_Ibrahim_al-Madhara%27i
 	name = "Ahmad"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_al_madharai_father
@@ -621,7 +576,7 @@ HEE_al_madharai = { # Abu Bakr Ahmad ibn Ibrahim al-Madhara'i al-Atrash (the Dea
 # Abu Bakr al-Madhara'i's fictitious wife
 HEE_al_madharai_fictitious_wife = {
 	name = "Mariam"
-	#dynasty = RICE_al_madhara_i_egypt
+	#dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	female = yes
@@ -635,10 +590,9 @@ HEE_al_madharai_fictitious_wife = {
 	}
 }
 
-
 HEE_al_madharai_firstborn = { # Ali, al-Madhara'i's son, who handled Tulunid finances in Egypt
 	name = "Ali"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_al_madharai
@@ -646,7 +600,7 @@ HEE_al_madharai_firstborn = { # Ali, al-Madhara'i's son, who handled Tulunid fin
 
 	stewardship = 7
 
-	trait=education_stewardship_3
+	trait = education_stewardship_3
 
 
 	852.5.28 = { # Unknown
@@ -659,10 +613,9 @@ HEE_al_madharai_firstborn = { # Ali, al-Madhara'i's son, who handled Tulunid fin
 	}
 }
 
-
 HEE_al_madharai_secondborn = { # al-Husayn, al-Madhara'i's son, who handled Tulunid finances in Syria
 	name = "al-Husayn"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_al_madharai
@@ -670,7 +623,7 @@ HEE_al_madharai_secondborn = { # al-Husayn, al-Madhara'i's son, who handled Tulu
 	
 	stewardship = 7
 
-	trait=education_stewardship_3
+	trait = education_stewardship_3
 	
 	# Unknown
 	858.8.25 = {
@@ -684,14 +637,14 @@ HEE_al_madharai_secondborn = { # al-Husayn, al-Madhara'i's son, who handled Tulu
 
 HEE_al_madharai_first_grandchild = { # Ali al-Madhara'i's son, Ahmad
 	name = "Ahmad"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_al_madharai_firstborn
 
 	stewardship = 7
 
-	trait=education_stewardship_3
+	trait = education_stewardship_3
 
 	# Unknown
 	869.5.14 = {
@@ -703,10 +656,9 @@ HEE_al_madharai_first_grandchild = { # Ali al-Madhara'i's son, Ahmad
 	}
 }
 
-
 HEE_al_madharai_second_grandchild = { # Ali al-Madhara'i's son, Muhammad, last prominent member of his clan
 	name = "Muhammad"
-	dynasty = RICE_al_madhara_i_egypt
+	dynasty = hee_al_madhara_i
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_al_madharai_firstborn
@@ -714,7 +666,7 @@ HEE_al_madharai_second_grandchild = { # Ali al-Madhara'i's son, Muhammad, last p
 	diplomacy = 8
 	stewardship = 7
 
-	trait=education_stewardship_3
+	trait = education_stewardship_3
 
 	# Known year
 	871.3.30 = {
@@ -726,10 +678,13 @@ HEE_al_madharai_second_grandchild = { # Ali al-Madhara'i's son, Muhammad, last p
 	}
 }
 
+
+# al-Daya Family #
+
 # Yusuf al-Daya's father
 HEE_yusuf_al_daya_father = {
 	name = "Ibrahim"
-	dynasty = RICE_al_daya_egypt
+	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "levantine"
 
@@ -749,7 +704,7 @@ HEE_yusuf_al_daya_father = {
 # Father of the more famous Ahmad ibn Yusuf ibn al-Daya
 HEE_yusuf_al_daya = {
 	name = "Yusuf"
-	dynasty = RICE_al_daya_egypt
+	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_yusuf_al_daya_father
@@ -786,7 +741,7 @@ HEE_yusuf_al_daya = {
 
 HEE_yusuf_al_daya_first_wife = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
 	name = "Sadiya"
-	#dynasty = RICE_al_daya_egypt
+	#dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "levantine"
 	female = yes
@@ -801,7 +756,7 @@ HEE_yusuf_al_daya_first_wife = { # Fictitious wife of Yusuf al-Daya - said to ha
 
 HEE_yusuf_al_daya_second_wife = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
 	name = "Nura"
-	#dynasty = RICE_al_daya_egypt
+	#dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
 	female = yes
@@ -819,23 +774,30 @@ HEE_yusuf_al_daya_second_wife = { # Fictitious wife of Yusuf al-Daya - said to h
 # Also major landholder around Cairo
 HEE_ahmad_ibn_al_daya = {
 	name = "Ahmad"
-	dynasty = RICE_al_daya_egypt
+	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_yusuf_al_daya
 	mother = HEE_yusuf_al_daya_first_wife
 
 	# Skills
+	diplomacy = 8
+	martial = 7
 	stewardship = 8
+	intrigue = 6
 	learning = 8
 
 	#Education
 	trait = education_learning_4
 	
 	#Personality Traits
+	trait = calm # 
+	trait = diligent # 
+	trait = patient
 
 	#Other Traits
 	trait = intellect_good_1
+	trait = scholar
 
 	# Confusingly, some sources list 859 or 864, others around the 830s
 	834.1.11 = {
@@ -847,11 +809,9 @@ HEE_ahmad_ibn_al_daya = {
 	}
 }
 
-
-
 HEE_yusuf_al_daya_secondborn = { # Yusuf's other son Yaqub
 	name = "Ahmad"
-	dynasty = RICE_al_daya_egypt
+	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_yusuf_al_daya
@@ -870,7 +830,7 @@ HEE_yusuf_al_daya_secondborn = { # Yusuf's other son Yaqub
 
 HEE_yusuf_al_daya_thirdborn = { # Yusuf's other son al-Hasan
 	name = "Al-Hasan"
-	dynasty = RICE_al_daya_egypt
+	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
 	father = HEE_yusuf_al_daya

@@ -1,34 +1,26 @@
-﻿## Characters for the Byzantine Event Chain - 867 ##
+﻿## Characters for Brittany - 867 ##
 
-HEE_guenebret_of_brittany = { # https://www.geni.com/people/Guenebret-de-Bretagne/6000000003649692023
-	name = "Guenebret"
+HEE_wembrit_of_brittany = { # https://upload.wikimedia.org/wikipedia/commons/8/8a/M_F_Gervais_Rulers_of_Brittany_Family_Tree.pdf
+	name = "Wembrit"
 	female = yes
 	dynasty = hee_bretagne
 	religion = "catholic"
 	culture = "breton"
-	# father =
-	# mother =
-	# health = 5.0
+	#father =
+	#mother =
+	#health =
 	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
+	# Skills
 	
-	#Education
+	# Education
 	trait = education_learning_2
 	
-	#Personality Traits
-	# trait = generous
-	# trait = humble
-	# trait = chaste
+	# Personality Traits
+
 	
 	#Other Traits
 	
-	sexuality = heterosexual
+	#sexuality = heterosexual
 
 	823.1.1 = {
 		birth = yes
@@ -37,6 +29,101 @@ HEE_guenebret_of_brittany = { # https://www.geni.com/people/Guenebret-de-Bretagn
 		add_spouse = 163105 # Salomon of Brittany
 	}
 	886.1.1 = {
+		death = yes
+	}
+}
+
+HEE_daughter_of_erispoe = { # https://upload.wikimedia.org/wikipedia/commons/8/8a/M_F_Gervais_Rulers_of_Brittany_Family_Tree.pdf
+	name = "Tanetlowen"
+	female = yes
+	dynasty_house = house_british_isles_breizh #Breizh
+	religion = "catholic"
+	culture = "breton"
+	father = 159965 # Erispoe of Brittany
+	#mother =
+	#health =
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	#Other Traits
+	
+	#sexuality = heterosexual
+
+	837.1.1 = {
+		birth = yes
+	}
+	857.1.1 = {
+		add_spouse = 159696 # Gurvand, Count of Rennes - https://en.wikipedia.org/wiki/Gurvand
+	}
+	885.1.1 = {
+		death = yes
+	}
+}
+
+HEE_prostlon_of_brittany = { # https://upload.wikimedia.org/wikipedia/commons/8/8a/M_F_Gervais_Rulers_of_Brittany_Family_Tree.pdf
+	name = "Prostlon"
+	female = yes
+	dynasty_house = house_poher #de Poher
+	religion = "catholic"
+	culture = "breton"
+	father = 163105 # Salomon of Brittany
+	mother = HEE_wembrit_of_brittany
+	#health =
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	#Other Traits
+	
+	#sexuality = heterosexual
+
+	842.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		add_spouse = 50009 # Pascweten, Count of Vannes - https://en.wikipedia.org/wiki/Pascweten
+	}
+	885.1.1 = {
+		death = yes
+	}
+}
+
+HEE_unknown_daughter_of_gurvand = { # https://upload.wikimedia.org/wikipedia/commons/8/8a/M_F_Gervais_Rulers_of_Brittany_Family_Tree.pdf
+	name = "Tanetlowen"
+	female = yes
+	dynasty = hee_rennes #Rennes
+	religion = "catholic"
+	culture = "breton"
+	father = 159696 # Gurvand, Count of Rennes - https://en.wikipedia.org/wiki/Gurvand
+	mother = HEE_daughter_of_erispoe
+	#health =
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	#Other Traits
+	
+	#sexuality = heterosexual
+
+	856.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			create_betrothal = character:160076 # Berengar II of Neustria - https://en.wikipedia.org/wiki/Berengar_II_of_Neustria
+		}
+	}
+	885.1.1 = {
 		death = yes
 	}
 }

@@ -11,6 +11,9 @@ d_aleppo = {
 	860.1.1 = {
 		holder = 159738
 	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
+	}
 	1066.1.1 = {
 		holder = 20743
 		# liege = "k_persia"
@@ -524,7 +527,7 @@ d_edessa = {
 		holder=146037
 	}
 	860.1.1 = {
-		holder=159736
+		holder=0
 	}
 	983.1.1= {
 		liege=0
@@ -639,7 +642,7 @@ c_samosata = {
 		liege = "d_edessa"
 	}
 	860.1.1 = {
-		holder = 159736
+		holder = 159725
 	}
 	962.1.1 = {
 		liege = "d_armeniac"
@@ -740,8 +743,11 @@ c_marash = {
 	806.1.1 = {
 		liege = "d_edessa"
 	}
-	860.1.1 = {
-		holder = 159736
+	852.1.1 = {
+		holder = 163135 # Part of the jund of al-Awasim and al-Thughur 
+	}
+	862.1.1 = {
+		holder = armenian.000084
 	}
 	962.1.1 = {
 		liege = "d_armeniac"
@@ -842,8 +848,11 @@ c_aintab = {
 	806.1.1 = {
 		liege = "d_edessa"
 	}
-	860.1.1 = {
-		holder = 159736
+	852.1.1 = {
+		holder = 163135 # Part of the jund of al-Awasim and al-Thughur 
+	}
+	862.1.1 = {
+		holder = armenian.000084
 	}
 	962.1.1 = {
 		liege = "d_cilicia"
@@ -1051,6 +1060,7 @@ c_shayzar = {
 	}
 	860.1.1 = {
 		holder = 159737
+		liege = d_homs # Part of Jund Homs
 	}
 	1066.1.1 = {
 		holder = 1758
@@ -1637,9 +1647,6 @@ d_lebanon = {
 		holder = 146021
 	}
 	860.1.1 = {
-		holder = 159737
-	}
-	880.1.1 = {
 		holder = 0
 		liege = 0
 	}
@@ -1840,6 +1847,7 @@ c_tripoli = {
 	}
 	860.1.1 = {
 		holder = 159737
+		liege = d_homs # Part of Jund Homs (Technically Tripoli is part of Jund Damascus but province mapping does not help here)
 	}
 	1066.1.1 = {
 		holder = 20769
@@ -2007,6 +2015,9 @@ d_damascus = {
 	}
 	866.1.1 = {
 		holder = HEE_damascus_governor
+	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
 	}
 	978.1.1 = {
 		liege = "k_egypt"
@@ -2503,9 +2514,8 @@ c_baalbek = {
 	794.1.1 = {
 		holder = 146021
 	}
-	860.1.1 = {
-		holder = levantine000010
-		liege = e_arabia
+	866.1.1 = {
+		holder = HEE_damascus_governor # Part of Jund Damascus
 	}
 	1066.1.1 = {
 		liege = "d_damascus"
@@ -2749,9 +2759,6 @@ d_palmyra = {
 	815.1.1 = {
 		holder = 0
 	}
-	866.1.1 = {
-		holder = levantine0001
-	}
 	877.1.1 = {
 		liege = 0
 		holder = 0
@@ -2777,7 +2784,7 @@ c_palmyra = {
 		holder = 159738
 	}
 	866.1.1 = {
-		holder = levantine0001
+		holder = levantine000010 # Part of Jund Homs
 	}	
 	1066.1.1 = {
 		holder = 20743
@@ -2880,8 +2887,8 @@ c_sukhna = {
 	#815.1.1 = {
 	#	holder = 0
 	#}
-	866.1.1 = {
-		holder = levantine0001
+	860.1.1 = {
+		holder = 159738 # Part of the Jund Qinnasrin 
 	}
 	877.1.1 = {
 		liege = 0

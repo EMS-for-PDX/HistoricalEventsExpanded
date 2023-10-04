@@ -38,6 +38,9 @@ d_cilicia = {
 	862.1.1 = {
 		holder = armenian.000084
 	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Anarchy of Samarra
+	}
 	962.1.1 = {
 		liege = "e_byzantium"
 	}
@@ -69,7 +72,7 @@ d_cilicia = {
 		liege = "e_byzantium"
 	}
 	1140.2.14 = {
-		holder = 223010 #Stepané I Rubenid
+		holder = 223010 #Stepanï¿½ I Rubenid
 	}
 	1145.1.1 = {
 		holder = 223014 #Thoros II Rubenid
@@ -531,7 +534,7 @@ c_tall_hamid = {
 		holder=223012 #Levon I Rubenid
 	}
 	1140.2.14= {
-		holder=223010 #Stepané I Rubenid
+		holder=223010 #Stepanï¿½ I Rubenid
 	}
 	1145.1.1= {
 		holder=223014 #Thoros II Rubenid

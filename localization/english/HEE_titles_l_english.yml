@@ -55,6 +55,21 @@
  
  d_byzantine_sicily: "Sicily"
  d_byzantine_sicily_adj: "Sicilian"
+
+ d_kaysite: "Kaysite"
+ d_kaysite_adj: "Kaysite"
+
+ d_melitene: "Melitene"
+ d_melitene_adj: "Melitenian"
+
+ d_suenik: "Suenik"
+ d_suenik_adj: "Suenian"
+
+ k_arminiya: "Arminiya"
+ k_arminiya_adj: "Armenian"
+ 
+ d_khachen: "Khachen"
+ d_khachen_adj: "Khachian"
  
  # Ragusa
  d_aghlabid_raiders: "Aghlabid Raiders"

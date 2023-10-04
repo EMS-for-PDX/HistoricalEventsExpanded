@@ -19,12 +19,12 @@ HEE_george_of_abkhazia_wife = { # https://en.wikipedia.org/wiki/Grigol_of_Kakhet
 	# prowess = 0
 	
 	#Education
-	trait = education_intrigue_2
+	trait = education_diplomacy_2
 	
 	#Personality Traits
-	trait = arbitrary
-	trait = ambitious
-	trait = lustful
+	trait = trusting
+	trait = compassionate
+	trait = diligent
 	
 	#Other Traits
 	
@@ -749,6 +749,441 @@ HEE_artsruni_unnamed_princess = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra
 		birth = yes
 	}
 	899.1.1 = {
+		death = yes
+	}
+}
+
+HEE_ashot_second_daughter = {
+	name = "Mariam"
+	female = yes
+	dynasty = 507
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41505
+	mother = armenian.000082
+	martial = 6
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	trait = zealous
+	trait = generous
+	trait = curious
+	disallow_random_traits = yes
+	854.1.1 = {
+		birth = "860.1.1"
+	}
+	865.1.1 = {
+		effect = {
+			create_betrothal = character:159251 # Ashot strengthened relations with the Siunia Dynasty by arranging a marriage between his second daughter, Mariam, and Prince Vasak Gabur IV
+		}
+	}
+	875.1.1 = {
+		add_spouse = 159251
+	}
+	914.1.1 = {
+		death = "914.1.1"
+	}
+}
+
+HEE_gourgen_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
+	name = "Gourgen"
+	#female = yes
+	dynasty = 101736
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41559
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	# diplomacy = 6
+	# martial = 5
+	# stewardship = 6
+	# intrigue = 6
+	# learning = 6
+	# prowess = 0
+	
+	#Education
+	# trait = education_learning_2
+	
+	#Personality Traits
+	# trait = calm
+	# trait = humble
+	# trait = chaste
+	
+	#Other Traits
+	trait = loyal
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	818.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		death = yes
+	}
+}
+
+HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
+	name = "Grigor"
+	# female = yes
+	dynasty = 101736
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41559
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	# diplomacy = 6
+	# martial = 5
+	# stewardship = 6
+	# intrigue = 6
+	# learning = 6
+	# prowess = 0
+	
+	#Education
+	# trait = education_learning_2
+	
+	#Personality Traits
+	# trait = calm
+	# trait = humble
+	# trait = chaste
+	
+	#Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	820.1.1 = {
+		birth = yes
+	}
+	859.1.1 = {
+		death = yes
+	}
+}
+
+HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
+	name = "al-Ala"
+	#female = yes
+	dynasty = hee_azdi
+	religion = "ashari"
+	culture = "levantine"
+	father = HEE_867_armenian_governor_father
+	#mother =
+	#health = 5.0
+	
+	# Skills
+	diplomacy = 7
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 7
+	
+	# Education
+	trait = education_martial_3
+	
+	# Personality Traits
+	trait = wrathful
+	trait = brave
+	trait = impatient
+	
+	# Other Traits
+	trait = reaver
+	
+	sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	820.1.1 = {
+		birth = yes
+	}
+	874.1.1 = {
+		death = yes
+	}
+}
+
+HEE_867_armenian_governor_father = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
+	name = "Ahmad"
+	#female = yes
+	dynasty = hee_azdi
+	religion = "ashari"
+	culture = "levantine"
+	#father = 
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	796.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+HEE_gregor_naren = { # Gregor Naren - Prince of Khachen
+	name = "Grigor Naren"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_atrnerseh_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	835.1.1 = {
+		birth = yes
+	}
+	881.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atrnerseh_of_khachen = { # Gregor Naren - Prince of Khachen
+	name = "Atrnerseh"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_issac_ii_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	800.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		death = yes
+	}
+}
+
+HEE_issac_ii_of_khachen = { # Gregor Naren - Prince of Khachen
+	name = "Issac"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_vasak_iii_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	787.1.1 = {
+		birth = yes
+	}
+	832.1.1 = {
+		death = yes
+	}
+}
+
+HEE_vasak_iii_of_khachen = { # Gregor Naren - Prince of Khachen
+	name = "Vasak"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_kourd_ii_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	760.1.1 = {
+		birth = yes
+	}
+	821.1.1 = {
+		death = yes
+	}
+}
+
+HEE_kourd_ii_of_khachen = { # Gregor Naren - Prince of Khachen
+	name = "Grigor Naren"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = HEE_babgen_iii_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	715.1.1 = {
+		birth = yes
+	}
+	770.1.1 = {
+		death = yes
+	}
+}
+
+HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
+	name = "Babgen"
+	#female = yes
+	dynasty = hee_khachen_princes
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	#father = HEE_babgen_iii_of_khachen
+	#mother =
+	#health = 
+	
+	# Skills
+	#diplomacy = 
+	#martial = 
+	#stewardship = 
+	#intrigue = 
+	#learning = 
+	#prowess = 
+	
+	# Education
+	#trait = 
+	
+	# Personality Traits
+	#trait = 
+	#trait = 
+	#trait = 
+	
+	# Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	670.1.1 = {
+		birth = yes
+	}
+	698.1.1 = {
 		death = yes
 	}
 }

@@ -1293,6 +1293,13 @@ hairstyles_scripted_characters = {
                 exists = character:easteregg_stina_arvidsson_radestig
                 this = character:easteregg_stina_arvidsson_radestig
             }
+
+             modifier = {
+                add = 999
+                exists = this
+                exists = character:HEE_Frigg
+                this = character:HEE_Frigg
+            }
         }
     }
 
@@ -1864,6 +1871,12 @@ hairstyles_scripted_characters = {
                 exists = character:237 #Agnes, Mother of Henry IV Salian
                 this = character:237 #Agnes, Mother of Henry IV Salian
             }
+            modifier = {
+                add = 999
+				exists = this
+                exists = character:HEE_Eir
+                this = character:HEE_Eir
+            }
         }
     }
 
@@ -2387,6 +2400,13 @@ hairstyles_scripted_characters = {
                 exists = character:70292
                 this = character:70292
             }
+
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:HEE_Freyja
+                this = character:HEE_Freyja
+            }
         }
     }
 
@@ -2432,6 +2452,13 @@ hairstyles_scripted_characters = {
         }   
         weight = {
             base = 0
+
+             modifier = {
+                add = 999
+                exists = this
+                exists = character:HEE_Sif
+                this = character:HEE_Sif
+            }		
         }
     }
 

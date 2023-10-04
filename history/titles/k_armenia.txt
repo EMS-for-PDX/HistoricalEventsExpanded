@@ -96,6 +96,9 @@ k_armenian_principality = {
 		liege = e_arabia
 		holder = 41505
 	}
+	867.1.1 = {
+		liege = 0 # Essentially Independent as a result of the Fifth Fitna 
+	}
 	884.1.1 = {
 		holder = 0 # Kings Restored
 	}
@@ -159,15 +162,15 @@ k_old_armenia = {
 
 d_mesopotamia = {
 	#Arabic
-	820.1.1 = {
-		holder = 159723
-	}
-	855.1.1 = {
-		holder = 159724
-	}
-	863.1.1 = {
-		holder = 159725
-	}
+	#820.1.1 = {
+	#	holder = 159723
+	#}
+	#855.1.1 = {
+	#	holder = 159724
+	#}
+	#863.9.3 = {
+	#	holder = 159725
+	#}
 	
 	#Byz
 	965.1.1 = {
@@ -258,16 +261,16 @@ c_melitene = {
 	750.1.1 = {
 		holder = 159877
 	}
-	820.1.1 = {
-		liege = "d_mesopotamia"
-	}
+	#820.1.1 = {
+	#	liege = "d_mesopotamia"
+	#}
 	820.1.1 = {
 		holder = 159723
 	}
 	855.1.1 = {
 		holder = 159724
 	}
-	863.1.1 = {
+	863.9.3 = {
 		holder = 159725
 	}
 	1060.1.1 = {
@@ -333,14 +336,8 @@ c_theodosiopolis = {
 	769.1.1 = {
 		holder = 145845
 	}
-	820.1.1 = {
-		holder = 159723
-	}
-	855.1.1 = {
-		holder = 159724
-	}
 	863.1.1 = {
-		holder = 159725
+		holder = 159722
 	}
 	1060.1.1 = {
 		holder = 85001
@@ -412,16 +409,16 @@ c_mesopotamia = {
 	750.1.1 = {
 		holder = 159877
 	}
-	820.1.1 = {
-		liege = "d_mesopotamia"
-	}
+	#820.1.1 = {
+	#	liege = "d_mesopotamia"
+	#}
 	820.1.1 = {
 		holder = 159723
 	}
 	855.1.1 = {
 		holder = 159724
 	}
-	863.1.1 = {
+	863.9.3 = {
 		holder = 159725
 	}
 	1060.1.1 = {
@@ -517,8 +514,14 @@ d_vaspurakan = {
 	836.1.1 = {
 		holder = 41560
 	}
-	862.1.1 = {
-		liege = k_armenian_principality	#For the not-quite-a-kingdom under Ashot I, before he becomes king.
+	857.1.1 = {
+		holder = 41562
+	}
+	861.1.1 = {
+		holder = 41560
+	}
+	874.1.1 = {
+		holder = 41562
 	}
 	
 	#884 Armenia independant from Abbasid
@@ -1356,16 +1359,13 @@ c_khachen = {
 	654.1.1 = {
 		liege = e_arabia
 	}
-	#821 : Principality of Khachen
-	821.1.1 = {
+	#840 : Principality of Khachen
+	840.1.1 = {
+		holder = HEE_atrnerseh_of_khachen
 		liege = 0
-		holder = 159973	#Sahak Sahl Smbatean
 	}
 	855.1.1 = {
-		holder = 159966 #Atrnerseh, son of Sahak Sahl Smbatean
-	}
-	865.1.1 = {
-		holder = 159976 #Smbat, grandson of Sahak Sahl Smbatean
+		holder = HEE_gregor_naren
 	}
 	
 	#Vassal state of Bagratid Armenia
@@ -1541,80 +1541,11 @@ c_dvin = {
 	867.1.1 = {	change_development_level = 7 }
 	1066.1.1 = { change_development_level = 10 }
 	
-	646.1.1 = {
-		liege = d_greater_armenia
-		holder = 145996
+	642.1.6 = {
+		liege = e_arabia # On January 6, 642 the Arabs stormed and took the city, with many deaths. Dvin became the center of the Muslim province of Arminiya. 
 	}
-	653.1.1 = {
-		holder = 70454
-	}
-	654.1.1 = {
-		holder = 145996
-	}
-	655.1.1 = {
-		holder = 159871
-	}
-	661.1.1 = {
-		holder = 70452
-	}
-	684.1.1 = {
-		holder = 70448
-	}
-	690.1.1 = {
-		holder = 159571
-	}
-	693.8.29 = {
-		holder = 70447
-	}
-	726.1.1 = {
-		holder = 41500
-	}
-	745.1.1 = {
-		holder = 70451
-	}
-	746.1.1 = {
-		holder = 41500
-	}
-	749.1.1 = {
-		holder = 70451
-	}
-	750.1.1 = {
-		holder = 70450
-	}
-	754.1.1 = {
-		holder = 145998
-	}
-	761.1.1 = {
-		holder = 41501
-	}
-	767.1.1 = {
-		liege = d_greater_armenia
-		holder = 146024
-	}
-	769.1.1 = {
-		holder = 146036
-	}
-	770.1.1 = {
-		holder = 188575
-	}
-	774.1.1 = {
-		holder = 146016
-	}
-	778.1.1 = {
-		holder = 146053
-	}
-	785.1.1 = {
-		liege = d_greater_armenia
-		holder = 41502
-	}
-	826.1.1 = {
-		holder = 41530
-	}
-	851.1.1 = {
-		holder = 41504
-	}
-	862.1.1 = {
-		holder = 41505
+	866.1.1 = {
+		holder = HEE_867_armenian_governor
 	}
 	890.1.1 = {
 		holder = 41506

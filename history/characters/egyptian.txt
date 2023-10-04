@@ -1679,7 +1679,7 @@
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
-	father = HEE_ibn_tulun_father
+	father = extra_tulunids_5
 	mother = HEE_ibn_tulun_mother
 
 	#Skills
@@ -1729,8 +1729,8 @@
 	trait = callous # Assassinated his own brother Abbas
 
 	disallow_random_traits = yes
-	855.1.1 = {
-		birth = "855.1.1"
+	864.1.1 = {
+		birth = "864.1.1"
 	}
 	896.1.1 = {
 		death = "896.1.1"
@@ -1738,13 +1738,13 @@
 }
 
 163139 = {
-	name = "Shaybad"
+	name = "Shayban"
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	856.1.1 = {
-		birth = "856.1.1"
+	867.1.1 = {
+		birth = "867.1.1"
 	}
 	905.1.10 = {
 		death = "905.1.10"
@@ -2007,6 +2007,151 @@ additional_fatimids_1 = {
 		birth = yes
 	}
 	1071.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_1 = {
+	name = "al-Abbas" # Eldest son of Ahmad ibn Tulun
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = 163115
+	mother = HEE_ibn_tulun_first_wife
+
+	trait = trusting # Easily manipulated by others
+	trait = fickle # Pliable of mind
+	# After capturing his son following his rebellion, ibn Tulun asked his son to gouge the eyes and cut the hands of his conspirators as a secret test of character
+	# When al-Abbas did this without hesitation, ibn Tulun was said to have wept profusely and imprisoned him. 
+	trait = arbitrary 
+	trait = callous
+
+	disallow_random_traits = yes
+	857.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 163138
+		}
+	}
+}
+
+extra_tulunids_2 = {
+	name = "Fatima" # Eldest daughter of Ahmad ibn Tulun
+	female = yes
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = 163115
+	mother = HEE_ibn_tulun_first_wife
+	858.1.1 = {
+		birth = yes
+	}
+	909.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_3 = {
+	name = "Mudar"
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = 163115
+	865.1.1 = {
+		birth = yes
+	}
+	894.1.1 = { # Later rebelled himself against his nephew in 897 and was executed
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+extra_tulunids_4 = {
+	name = "Rabi_a"
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = 163115
+	866.1.1 = {
+		birth = yes
+	}
+	897.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_5 = {
+	name = "Tulun" # Father of Ahmad ibn Tulun and source of the Tulunid name
+	dynasty = 820
+	religion = "ashari"
+	culture = "turkish"
+	trait = education_martial_2
+	806.1.1 = {
+		birth = yes
+	}
+	854.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_6 = {
+	name = "Musa" # Younger brother of Ahmad ibn Tulun
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = extra_tulunids_5
+	838.1.1 = {
+		birth = yes
+	}
+	879.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_7 = {
+	name = "Habsiya" # Younger sister of Ahmad ibn Tulun
+	female = yes
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = extra_tulunids_5
+	841.1.1 = {
+		birth = yes
+	}
+	892.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_8 = {
+	name = "Samana" # Younger sister of Ahmad ibn Tulun
+	female = yes
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = extra_tulunids_5
+	844.1.1 = {
+		birth = yes
+	}
+	901.1.1 = {
+		death = yes
+	}
+}
+
+extra_tulunids_9 = {
+	name = "Muhammad" # Muhammad ibn Musa ibn Tulun
+	dynasty = 820
+	religion = "ashari"
+	culture = "egyptian"
+	father = extra_tulunids_6
+	860.1.1 = {
+		birth = yes
+	}
+	892.1.1 = {
 		death = yes
 	}
 }

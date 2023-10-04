@@ -844,7 +844,9 @@
 		birth = "852.1.1"
 	}
 	860.1.1 = {
-		create_betrothal = character:501
+		effect = {
+			create_betrothal = character:501
+		}
 	}
 	874.1.1 = {
 		add_spouse = 501

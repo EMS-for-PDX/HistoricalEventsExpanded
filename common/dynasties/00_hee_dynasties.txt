@@ -52,6 +52,11 @@ hee_asbestas = {
 	culture = "greek"
 }
 
+hee_kapnogenes = {
+	name = "dynn_Kapnogenes"
+	culture = "greek"
+}
+
 hee_maniakes = {
 	name = "dynn_Maniakes"
 	culture = "armenian"
@@ -68,9 +73,20 @@ hee_tephrice = {
 	culture = "armenian"
 }
 
+hee_khachen_princes = {
+	prefix = "dynnp_of"
+	name = "dynn_Khachen"
+	culture = "armenian"
+}
+
 hee_zaoutzes = {
 	name = "dynn_Zaoutzes"
 	culture = "armenian"
+}
+
+hee_mardaites = {
+	name = "dynn_Mardaites"
+	culture = "assyrian"
 }
 
 # Arabic
@@ -86,6 +102,56 @@ hee_shaybani = {
 
 hee_akrites = {
 	name = "dynn_Akrites"
+	culture = "levantine"
+}
+
+hee_azdi = {
+	name = "dynn_Azdi"
+	culture = "levantine"
+}
+
+hee_shukayr = {
+	name = "dynn_Shukayr"
+	culture = "egyptian"
+}
+
+hee_al_sufi = {
+	name = "dynn_al_Sufi"
+	culture = "egyptian"
+}
+
+hee_al_mudabbir = {
+	name = "dynn_al_Mudabbir"
+	culture = "persian"
+}
+
+hee_al_tabataba = {
+	name = "dynn_al_Tabataba"
+	culture = "bedouin"
+}
+
+hee_sukunid = {
+	name = "dynn_Sukunid"
+	culture = "egyptian"
+}
+
+hee_al_farghani = {
+	name = "dynn_al_Farghani"
+	culture = "sogdian"
+}
+
+hee_al_kan = {
+	name = "dynn_al_Kan"
+	culture = "egyptian"
+}
+
+hee_al_madhara_i = {
+	name = "dynn_al_Madhara_i"
+	culture = "levantine"
+}
+
+hee_al_daya = {
+	name = "dynn_al_Daya"
 	culture = "levantine"
 }
 
@@ -156,4 +222,32 @@ hee_bretagne = {
 hee_luka = {
 	name = "dynn_Luka"
 	culture = "italian"	
+}
+
+# Fuck the Britons, this is one fucked up geneology in-game
+hee_vannes = {
+	name = "dynn_Vannes"
+	culture = "breton"	
+}
+
+hee_rennes = {
+	name = "dynn_Rennes"
+	culture = "breton"	
+}
+
+hee_nantes = {
+	name = "dynn_Nantes"
+	culture = "breton"	
+}
+
+hee_braganza = {
+	prefix = "dynnp_de"
+	name = "dynn_BraganC_a"
+	culture = "galician"
+}
+
+hee_loire = {
+	prefix = "dynnp_of"
+	name = "dynn_Loire"
+	culture = "french"
 }

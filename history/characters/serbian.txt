@@ -2388,6 +2388,10 @@
 	832.1.1 = {
 		birth = "832.1.1"
 	}
+	865.1.1 = {
+		set_relation_potential_rival = character:163116 #His brother Mutimir, who banished him after an attempted rebellion against Mutimir
+		employer = 70382 #Boris I, whose court he was exiled to after rebelling against his brother
+	}
 	870.1.1 = {
 		religion = orthodox
 	}
@@ -2407,6 +2411,10 @@
 	father = 167861
 	834.1.1 = {
 		birth = "834.1.1"
+	}
+	865.1.1 = {
+		set_relation_potential_rival = character:163116 #His brother Mutimir, who banished him after an attempted rebellion against Mutimir
+		employer = 70382 #Boris I, whose court he was exiled to after rebelling against his brother
 	}
 	870.1.1 = {
 		religion = orthodox
@@ -2593,6 +2601,9 @@
 	father = 167862
 	855.1.1 = {
 		birth = "855.1.1"
+	}
+	865.1.1 = {
+		employer = 70382 #Boris I, whose court he was exiled to after his father rebelled against Mutimir
 	}
 	905.1.1 = {
 		death = "905.1.1"

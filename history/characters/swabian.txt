@@ -6876,7 +6876,9 @@
 		birth = "810.1.1"
 	}
 	866.9.1 = {
-		death = "866.9.1"
+		death = {
+			death_reason = death_childbirth
+		}
 	}
 }
 

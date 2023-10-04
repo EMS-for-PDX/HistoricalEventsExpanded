@@ -1295,7 +1295,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 
 			scope:salerno_envoy = {
 				trigger_event = {
-					id = HEE_activity_end.0001
+					id = HEE_siege_of_salerno.0879
 				}
 			}
 		}
@@ -1323,7 +1323,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 
 			scope:salerno_envoy = {
 				trigger_event = {
-					id = HEE_activity_end.0001
+					id = HEE_siege_of_salerno.0879
 				}
 			}
 		}
@@ -1345,7 +1345,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 		hidden_effect = {
 			scope:salerno_envoy = {
 				trigger_event = {
-					id = HEE_activity_end.0001
+					id = HEE_siege_of_salerno.0879
 				}
 			}
 		}
@@ -1481,7 +1481,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 
 			scope:salerno_envoy = {
 				trigger_event = {
-					id = HEE_activity_end.0001
+					id = HEE_siege_of_salerno.0879
 				}
 			}
 		}
@@ -1499,7 +1499,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 		hidden_effect = {
 			scope:salerno_envoy = {
 				trigger_event = {
-					id = HEE_activity_end.0001
+					id = HEE_siege_of_salerno.0879
 				}
 			}
 
@@ -1534,7 +1534,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 	}
 }
 
-HEE_activity_end.0001 = { # Victory at Bari trigger
+HEE_siege_of_salerno.0879 = { # Victory at Bari trigger
 	scope = none
 	hidden = yes
 

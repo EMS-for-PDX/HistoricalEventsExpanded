@@ -1596,10 +1596,15 @@
 	stewardship = 6
 	religion = "armenian_apostolic"
 	culture = "armenian"
+	trait = diligent
+	trait = zealous
+	trait = humble
+	trait = education_diplomacy_4
+	trait = intellect_good_2
 	father = 41502
 	mother = 159882
-	815.1.1 = {
-		birth = "815.1.1"
+	798.1.1 = {
+		birth = "798.1.1"
 	}
 	827.1.1 = {
 		add_spouse = 41559
@@ -1671,13 +1676,7 @@
 		add_spouse = armenian.000082
 	}
 	867.1.1 = {
-		#Set up the semi-tributary semi-vassal Armenian caliphal state.
-		effect = {
-			vassal_contract_set_obligation_level = {
-				type = jizya_special_rights
-				level = 1
-			}
-		}
+
 	}
 	890.1.1 = {
 		death = "890.1.1"
@@ -2048,7 +2047,7 @@
 	culture = "armenian"
 	father = 41505
 	mother = armenian.000082
-	860.1.1 = {
+	853.1.1 = {
 		birth = "860.1.1"
 	}
 	889.1.1 = {
@@ -2352,8 +2351,8 @@
 	culture = "armenian"
 	father = 41559
 	mother = 41503
-	828.1.1 = {
-		birth = "828.1.1"
+	816.1.1 = {
+		birth = "816.1.1"
 	}
 	874.1.1 = {
 		death = "874.1.1"
@@ -2387,11 +2386,20 @@
 	diplomacy = 6
 	intrigue = 6
 	stewardship = 6
+	trait = forgiving # clearly didnt hold a grudge after Ashot attacked him
+	trait = calm
+	trait = brave
+	trait = education_martial_2
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41560
-	855.1.1 = {
-		birth = "855.1.1"
+	844.1.1 = {
+		birth = "844.1.1"
+	}
+	863.1.1 = {
+		effect = {
+			create_betrothal = character:41527
+		}
 	}
 	872.1.1 = {
 		add_spouse = 41527
@@ -3433,6 +3441,7 @@
 	culture = "armenian"
 	trait = ambitious
 	trait = deceitful
+	trait = cynical
 	trait = education_stewardship_3
 	
 	780.1.1 = {
@@ -9186,14 +9195,19 @@ armenian.000082 = {
 
 	#Personality Traits
 	trait = brave
-	trait = content
-	trait = sadistic
+	trait = diligent
+	trait = ambitious
+
+	#Other Traits
+	trait = reaver
 
 	812.1.1 = {
 		birth = yes
 	}
-	863.1.1 = {
-		death = yes
+	863.10.1 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -9219,10 +9233,38 @@ armenian.000084 = {
 	religion = "ashari"
 	
 	#Education
-	trait = education_martial_2
+	trait = education_martial_3
+
+	#Personality Traits
+	trait = honest
+	trait = just
+	trait = brave
+
+	#Other Traits
+	trait = gallant # According to the 10th-century account of al-Mas'udi, his reputation was such that he was among the "illustrious Muslims" whose portraits were displayed in Byzantine churches in recognition of their valour. 
 	
 	842.1.1 = {
 		birth = yes #Fictionalised birth date.
+	}
+	866.1.1 = { # Following the Muslim defeat at Lalakaon, private donations and volunteers for the holy war began to gather at the border emirates
+		effect = {
+			add_gold = 300
+			spawn_army = {
+				name = ghazi_volunteer_troops
+				levies = 1000
+				men_at_arms = {
+					type = light_footmen
+					stacks = 3
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 2
+				}
+				location = province:761
+				origin = province:761
+				inheritable = no
+			}
+		}
 	}
 	873.1.1 = {
 		death = yes
@@ -9243,6 +9285,25 @@ armenian.000084 = {
 		add_matrilineal_spouse = 200239 # Glasuinta (visigothic.txt)
 	}
 	661.1.1 = {
+		death = yes
+	}
+}
+
+####Armenians needed for FP3 history pass#####
+
+extra_armenians_1 = {
+	name = "Smbat"
+	dynasty_house = house_kiurikian
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41512
+	1025.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		add_spouse = 41553
+	}
+	1070.1.1 = {
 		death = yes
 	}
 }

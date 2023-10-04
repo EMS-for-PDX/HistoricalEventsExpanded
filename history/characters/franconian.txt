@@ -7857,7 +7857,7 @@
 	}
 }
 
-212948 = {
+212948 = { # https://en.wikipedia.org/wiki/Poppo,_Duke_of_Thuringia
 	name = "Poppo" #1218-1245
 	dynasty_house = house_babenberger
 	martial = 6
@@ -7881,17 +7881,18 @@
 	}
 }
 
-7910 = {
+7910 = { # https://en.wikipedia.org/wiki/Henry,_Margrave_of_the_Franks
 	name = "Heinrich"
 	dynasty_house = house_babenberger
-	martial = 5
+	martial = 8
 	diplomacy = 5
 	intrigue = 8
 	stewardship = 4
 	religion = "catholic"
 	culture = franconian
-	trait = chaste
-	trait = cynical
+	trait = wrathful
+	trait = deceitful
+	trait = brave
 	trait = education_martial_3
 	father = 33330
 	837.1.1 = {
@@ -7900,7 +7901,7 @@
 	850.1.1 = {
 		add_spouse = 7911
 	}
-	886.1.1 = {
+	886.8.28 = {
 		death = "886.1.1"
 	}
 }
@@ -11494,7 +11495,9 @@
 		birth = "841.1.1"
 	}
 	867.1.1 = {
-		create_betrothal = character:167889
+		effect = {
+			create_betrothal = character:167889
+		}
 	}
 	881.1.1 = {
 		add_spouse = 167889
@@ -18082,12 +18085,11 @@
 	prowess = 7
 	
 	#Education
-	trait = education_learning_4
+	trait = education_diplomacy_4
 	
 	#Personality Traits
 	trait = brave
 	trait = arrogant
-	trait = zealous
 	trait = diligent
 	
 	#Other Traits

@@ -401,6 +401,9 @@ d_palestine = {
 	847.1.1 = {
 		holder = 159732
 	}
+	867.1.1 = {
+		liege = 0 # Broken away as a result of the Fifth Fitna 
+	}
 	870.1.1 = {
 		holder = 163137
 	}

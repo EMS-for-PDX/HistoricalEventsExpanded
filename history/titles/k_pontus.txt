@@ -652,13 +652,7 @@ d_sebasteia = {
 		liege = e_byzantium
 	}
 	
-	#867
-	830.5.10 = {
-		holder = 302353	#fictional Gerasimos Kardias
-	}
-	861.6.16 = {
-		holder = 302355	#fictional Leontios Kardias
-	}
+	#867 - Theme of Sebasteia does not exist; created in the early 10th century
 	
 	#Senekerim-Hovhannes Artsruni
 	1022.1.1 = {
@@ -684,7 +678,7 @@ c_sebasteia = {
 	
 	#867
 	830.5.10 = {
-		liege = d_sebasteia
+		liege = d_charsianon # Until it was raised to a Theme, it was probably subordinate of the theme of Charsianon
 		holder = 302353	#fictional Gerasimos Kardias
 	}
 	861.6.16 = {
@@ -905,13 +899,11 @@ c_ablastha = {
 		liege = d_sebasteia
 		holder = 302353	#fictional Gerasimos Kardias
 	}
-	850.1.1 = {
-		holder = HEE_karbeas
-		liege = 0
+	855.1.1 = {
+		holder = 159724
 	}
 	863.9.3 = {
-		holder = HEE_chrysocheir
-		liege = 0
+		holder = 159725
 	}
 	# 861.6.16 = {
 		# holder = 302355	#fictional Leontios Kardias
@@ -1266,6 +1258,7 @@ c_kyzistra = {
 	}
 	855.1.1 = {
 		holder = 145110
+		liege = "d_cappadocia" # More associated with the Theme of Cappadocia
 	}
 	1060.1.1 = {
 		holder = 20534

@@ -1,0 +1,730 @@
+﻿## Custom HEE Character Memories ##
+
+# Michael III
+michael_invasion_of_bulguria = {
+	categories = { positive war martial war_started }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = michael_invasion_of_bulguria_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_invasion_of_bulguria_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_invasion_of_bulguria_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_conversion_of_bulguria = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_conversion_of_bulguria_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_conversion_of_bulguria_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_conversion_of_bulguria_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_missionary_expedition_khazars = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_missionary_expedition_khazars_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_missionary_expedition_khazars_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_missionary_expedition_khazars_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_missionary_expedition_great_moravia = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_missionary_expedition_great_moravia_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_missionary_expedition_great_moravia_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_missionary_expedition_great_moravia_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_overthrows_regency = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_overthrows_regency_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_overthrows_regency_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_overthrows_regency_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_crowned_coemperor = {
+	categories = { positive title }
+	icon = "title.dds"
+	description = {
+		random_valid = { desc = michael_crowned_coemperor_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_crowned_coemperor_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_crowned_coemperor_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_crowned_emperor = {
+	categories = { positive title }
+	icon = "title.dds"
+	description = {
+		random_valid = { desc = michael_crowned_emperor_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_crowned_emperor_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_crowned_emperor_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_brideshow = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_brideshow_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_brideshow_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_brideshow_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+nasar_battle_of_lalakaon = {
+	categories = { positive war martial war_started }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = nasar_battle_of_lalakaon_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = nasar_battle_of_lalakaon_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = nasar_battle_of_lalakaon_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+lalakaon_roman_triumph = {
+	categories = { positive war martial }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = lalakaon_roman_triumph_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = lalakaon_roman_triumph_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = lalakaon_roman_triumph_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+michael_confines_family_to_convent = {
+	categories = { negative }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = michael_confines_family_to_convent_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = michael_confines_family_to_convent_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = michael_confines_family_to_convent_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+# Salomon of Brittany
+murder_of_erispoe = {
+	categories = { positive death murder intrigue }
+	icon = "murder.dds"
+	description = {
+		random_valid = {
+			desc = murder_of_erispoe_desc_1
+		}
+	}
+
+	second_perspective_description = {
+		random_valid = {
+			desc = murder_of_erispoe_desc_second_perspective_1
+		}
+	}
+
+	third_perspective_description = {
+		random_valid = {
+			desc = murder_of_erispoe_desc_third_perspective_1
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_swears_oath_to_charles = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = salomon_swears_oath_to_charles_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_swears_oath_to_charles_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_swears_oath_to_charles_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_858_instigation_revolt = {
+	categories = { positive intrigue }
+	icon = "intrigue.dds"
+	description = {
+		random_valid = { desc = salomon_858_instigation_revolt_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_858_instigation_revolt_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_858_instigation_revolt_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_862_hired_vikings = {
+	categories = { positive war martial war_started }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = salomon_862_hired_vikings_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_862_hired_vikings_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_862_hired_vikings_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_charles_863_treaty = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = salomon_charles_863_treaty_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_charles_863_treaty_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_charles_863_treaty_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_866_haesteinn_alliance = {
+	categories = { positive war martial war_started }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = salomon_866_haesteinn_alliance_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_866_haesteinn_alliance_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_866_haesteinn_alliance_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+salomon_battle_of_brissarthe = {
+	categories = { positive war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = salomon_battle_of_brissarthe_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = salomon_battle_of_brissarthe_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = salomon_battle_of_brissarthe_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+# Charles the Bald
+837_diet_of_aachen = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = 837_diet_of_aachen_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = 837_diet_of_aachen_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = 837_diet_of_aachen_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_inheritance_of_aquitaine = {
+	categories = { positive title }
+	icon = "title.dds"
+	description = {
+		random_valid = { desc = charles_inheritance_of_aquitaine_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_inheritance_of_aquitaine_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_inheritance_of_aquitaine_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_carolingian_civil_war_start = {
+	categories = { positive war martial war_started }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = charles_carolingian_civil_war_start_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_carolingian_civil_war_start_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_carolingian_civil_war_start_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_battle_of_fontenoy = {
+	categories = { positive war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = charles_battle_of_fontenoy_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_battle_of_fontenoy_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_battle_of_fontenoy_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_oaths_of_strasbourg = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_oaths_of_strasbourg_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_oaths_of_strasbourg_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_oaths_of_strasbourg_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_treaty_of_verdun = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_treaty_of_verdun_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_treaty_of_verdun_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_treaty_of_verdun_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+treaty_of_coulaines = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = treaty_of_coulaines_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = treaty_of_coulaines_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = treaty_of_coulaines_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+battle_of_ballon = {
+	categories = { negative war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = battle_of_ballon_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = battle_of_ballon_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = battle_of_ballon_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+battle_of_jengland = {
+	categories = { negative war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = battle_of_jengland_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = battle_of_jengland_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = battle_of_jengland_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+treaty_of_angers = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = treaty_of_angers_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = treaty_of_angers_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = treaty_of_angers_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+frankish_breton_improved_relations = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = frankish_breton_improved_relations_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = frankish_breton_improved_relations_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = frankish_breton_improved_relations_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+845_siege_of_paris = {
+	categories = { negative war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = 845_siege_of_paris_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = 845_siege_of_paris_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = 845_siege_of_paris_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_invasion_of_west_francia = {
+	categories = { negative war martial battle }
+	icon = "war_started.dds"
+	description = {
+		random_valid = { desc = charles_invasion_of_west_francia_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_invasion_of_west_francia_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_invasion_of_west_francia_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_treaty_of_koblenz = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_treaty_of_koblenz_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_treaty_of_koblenz_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_treaty_of_koblenz_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_payment_veland = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_payment_veland_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_payment_veland_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_payment_veland_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+edict_of_pitres = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = edict_of_pitres_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = edict_of_pitres_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = edict_of_pitres_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_diplomacy_with_cordoba = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_diplomacy_with_cordoba_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_diplomacy_with_cordoba_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_diplomacy_with_cordoba_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_danegeld_866 = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = charles_danegeld_866_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_danegeld_866_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_danegeld_866_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}

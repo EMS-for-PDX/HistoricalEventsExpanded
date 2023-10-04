@@ -395,24 +395,24 @@ HEE_theodora_wife_of_theophilos = { # https://en.wikipedia.org/wiki/Theodora_(wi
 	culture = "armenian"
 	father = HEE_marinos_father_of_theodora
 	mother = HEE_theoktiste_mother_of_theophilos
-	# health = 5.0
+	#health = 5.0
 	
-	#Skills
+	# Skills
 	diplomacy = 9
 	martial = 5
 	stewardship = 8
 	intrigue = 6
 	learning = 8
 	
-	#Education
+	# Education
 	trait = education_diplomacy_4
 	
-	#Personality Traits
+	# Personality Traits
 	trait = zealous
 	trait = just
 	trait = diligent
 	
-	#Other Traits
+	# Other Traits
 	trait = diplomat
 	trait = beauty_good_2
 	
@@ -428,7 +428,198 @@ HEE_theodora_wife_of_theophilos = { # https://en.wikipedia.org/wiki/Theodora_(wi
 	856.3.15 = {
 		trait = devoted
 	}
+	857.1.1 = {
+		employer = 145127 # Theodora continued to live in the imperial palace until 857 or 858, when she and Michael's sisters were expelled and confined to a convent in Cyprus
+		effect = {
+			character:HEE_theodora_wife_of_theophilos = {
+				create_character_memory = { type = michael_confines_family_to_convent }
+			}
+		}
+	}
 	867.11.15 = {
+		death = yes
+	}
+}
+
+HEE_constantine_son_of_theophilos = { # https://en.wikipedia.org/wiki/Constantine_(son_of_Theophilos)
+	name = "Constantine"
+	#female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491 # Theophilos
+	mother = HEE_theodora_wife_of_theophilos # Theodora
+	#health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	trait = born_in_the_purple
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	831.1.1 = {
+		birth = yes
+	}
+	835.1.1 = {
+		death = yes
+	}
+}
+
+HEE_anna_daughter_of_theophilos = { # https://en.wikipedia.org/wiki/Theophilos_(emperor)#Family
+	name = "Anna"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491 # Theophilos
+	mother = HEE_theodora_wife_of_theophilos # Theodora
+	#health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	trait = born_in_the_purple
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	832.1.1 = {
+		birth = yes
+	}
+	856.3.15 = {
+		trait = devoted
+	}
+	857.1.1 = {
+		employer = 145127 # Theodora continued to live in the imperial palace until 857 or 858, when she and Michael's sisters were expelled and confined to a convent in Cyprus
+		effect = {
+			character:HEE_anna_daughter_of_theophilos = {
+				create_character_memory = { type = michael_confines_family_to_convent }
+			}
+		}
+	}
+	887.1.1 = {
+		death = yes
+	}
+}
+
+HEE_anastasia_daughter_of_theophilos = { # https://en.wikipedia.org/wiki/Theophilos_(emperor)#Family
+	name = "Anastasia"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491 # Theophilos
+	mother = HEE_theodora_wife_of_theophilos # Theodora
+	#health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	trait = born_in_the_purple
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	833.1.1 = {
+		birth = yes
+	}
+	856.3.15 = {
+		trait = devoted
+	}
+	857.1.1 = {
+		employer = 145127 # Theodora continued to live in the imperial palace until 857 or 858, when she and Michael's sisters were expelled and confined to a convent in Cyprus
+		effect = {
+			character:HEE_anastasia_daughter_of_theophilos = {
+				create_character_memory = { type = michael_confines_family_to_convent }
+			}
+		}
+	}
+	882.1.1 = {
+		death = yes
+	}
+}
+
+HEE_pulcheria_daughter_of_theophilos = { # https://en.wikipedia.org/wiki/Theophilos_(emperor)#Family
+	name = "Pulcheria"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491 # Theophilos
+	mother = HEE_theodora_wife_of_theophilos # Theodora
+	#health = 5.0
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+	trait = born_in_the_purple
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	836.1.1 = {
+		birth = yes
+	}
+	856.3.15 = {
+		trait = devoted
+	}
+	857.1.1 = {
+		employer = 145127 # Theodora continued to live in the imperial palace until 857 or 858, when she and Michael's sisters were expelled and confined to a convent in Cyprus
+		effect = {
+			character:HEE_pulcheria_daughter_of_theophilos = {
+				create_character_memory = { type = michael_confines_family_to_convent }
+			}
+		}
+	}
+	891.1.1 = {
+		death = yes
+	}
+}
+
+HEE_maria_daughter_of_theophilos = { # https://en.wikipedia.org/wiki/Theophilos_(emperor)#Family
+	name = "Maria"
+	female = yes
+	dynasty = 8642
+	religion = "orthodox"
+	culture = "greek"
+	father = 70491 # Theophilos
+	mother = HEE_theodora_wife_of_theophilos # Theodora
+	#health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = born_in_the_purple
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	838.1.1 = {
+		birth = yes
+	}
+	842.1.1 = {
 		death = yes
 	}
 }
@@ -801,7 +992,7 @@ HEE_petronas_brother_of_theodora = { # https://en.wikipedia.org/wiki/Petronas_(g
 	
 	#Skills
 	diplomacy = 6
-	martial = 8
+	martial = 10
 	stewardship = 6
 	intrigue = 5
 	learning = 5
@@ -943,14 +1134,39 @@ HEE_eudokia_dekapolitissa = { # https://en.wikipedia.org/wiki/Eudokia_Dekapoliti
 	}
 }
 
-HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
-	name = "Basiliskianos"
-	#dynasty = 0
+HEE_basiliskianos_father = { # https://en.wikipedia.org/wiki/Basiliskianos
+	name = "Theodoros"
+	dynasty = hee_kapnogenes
 	religion = "orthodox"
 	culture = "greek"
-	# father =
+	# father = 
 	# mother =
-	health = 5.0
+	# health = 
+	
+	#Skills
+
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	805.1.1 = {
+		birth = yes
+	}
+	865.1.1 = {
+		death = yes
+	}
+}
+
+HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
+	name = "Basiliskianos"
+	dynasty = hee_kapnogenes
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_basiliskianos_father
+	# mother =
+	# health = 5.0
 	
 	#Skills
 	diplomacy = 8
@@ -991,6 +1207,31 @@ HEE_basiliskianos = { # https://en.wikipedia.org/wiki/Basiliskianos
 			death_reason = death_murder_known
 			killer = 1700 # Basil "the_Macedonian"
 		}
+	}
+}
+
+HEE_basiliskianos_brother = { # https://en.wikipedia.org/wiki/Basiliskianos
+	name = "Constantine"
+	dynasty = hee_kapnogenes
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_basiliskianos_father
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	842.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
 	}
 }
 
@@ -1055,19 +1296,19 @@ HEE_andrew_the_scythian = { # https://en.wikipedia.org/wiki/Andrew_the_Scythian
 	# health = 5.0
 	
 	#Skills
-	diplomacy = 7
-	martial = 8
+	diplomacy = 8
+	martial = 10
 	stewardship = 7
 	intrigue = 6
 	learning = 6
-	prowess = 7
+	prowess = 8
 	
 	#Education
-	trait = education_martial_3
+	trait = education_martial_4
 	
 	#Personality Traits
 	trait = brave
-	trait = cynical
+	trait = temperate
 	trait = patient
 	
 	#Other Traits
@@ -1079,7 +1320,7 @@ HEE_andrew_the_scythian = { # https://en.wikipedia.org/wiki/Andrew_the_Scythian
 		birth = yes
 	}
 	866.1.1 = {
-		employer = 70490 # Emperor Michael III
+		employer = 145111 # Though possibly in the employ of Emperor Michael III at game start, moved to the Opsician Theme early so everyone is not in the Imperial Court
 		give_nickname = nick_the_scythian
 	}
 	886.1.1 = {
@@ -1345,7 +1586,7 @@ HEE_tzantzes_zaoutzes = { # https://en.wikipedia.org/wiki/Stylianos_Zaoutzes
 	}
 }
 
-HEE_zoe_zoutzaina = { # https://en.wikipedia.org/wiki/Karbeas
+HEE_zoe_zoutzaina = { # https://en.wikipedia.org/wiki/Zoe_Zaoutzaina
 	name = "Zoe"
 	dna = dna_zoe_zaoutzaina
 	female = yes
@@ -1386,23 +1627,23 @@ HEE_christopher_domestic_of_the_schools = { # https://en.wikipedia.org/wiki/Chri
 	# health = 4.1
 	
 	#Skills
-	diplomacy = 6
-	martial = 9
-	stewardship = 6
-	intrigue = 5
-	learning = 5
+	diplomacy = 8
+	martial = 10
+	stewardship = 8
+	intrigue = 7
+	learning = 6
 	
 	#Education
-	trait = education_martial_3
+	trait = education_martial_4
 	
 	#Personality Traits
+	trait = calm
 	trait = brave
-	trait = zealous
 	trait = diligent
 	
 	#Other Traits
+	trait = organizer
 	trait = holy_warrior
-	trait = aggressive_attacker
 	
 	disallow_random_traits = yes
 	847.1.1 = {
@@ -1410,6 +1651,11 @@ HEE_christopher_domestic_of_the_schools = { # https://en.wikipedia.org/wiki/Chri
 	}
 	866.1.1 = {
 		employer = 70490 # Michael III
+	}
+	867.1.1 = {
+		effect = {
+			create_betrothal = character:145132
+		}
 	}
 	910.1.1 = {
 		death = yes
@@ -1655,7 +1901,7 @@ HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 	# mother =
 	# health = 4.1
 	
-	#Skills
+	# Skills
 	diplomacy = 7
 	martial = 8
 	stewardship = 7
@@ -1663,16 +1909,16 @@ HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 	learning = 6
 	prowess = 8
 	
-	#Education
+	# Education
 	trait = education_martial_3
 	
-	#Personality Traits
+	# Personality Traits
 	trait = zealous
 	trait = arrogant
 	trait = brave
 	trait = stubborn
 	
-	#Other Traits
+	# Other Traits
 	trait = holy_warrior
 	trait = reaver
 	trait = heresiarch
@@ -1700,18 +1946,26 @@ HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 			}
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1500
+				levies = 400
 				men_at_arms = {
 					type = bowmen
-					stacks = 5
+					stacks = 3
 				}
 				men_at_arms = {
 					type = pikemen_unit
+					stacks = 2
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mangonel
 					stacks = 5
 				}
 				location = province:5705
 				origin = province:5705
-				inheritable = no
+				inheritable = yes
 			}
 		}
 	}
@@ -1748,5 +2002,135 @@ HEE_chrysocheir_wife = { # https://en.wikipedia.org/wiki/Chrysocheir
 	}
 	899.1.1 = { # Ficitional
 		death = yes
+	}
+}
+
+HEE_nasar = { # https://en.wikipedia.org/wiki/Nasar
+	name = "Nasar"
+	dynasty = hee_mardaites
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_nasar_father
+	
+	# Skills
+	diplomacy = 7
+	martial = 10
+	stewardship = 8
+	intrigue = 6
+	learning = 6
+	prowess = 8
+	
+	# Education
+	trait = education_martial_4
+	
+	# Personality Traits
+	trait = brave
+	trait = just
+	trait = diligent
+	trait = humble
+	
+	# Other Traits
+	trait = strategist
+	trait = organizer
+
+	832.1.1 = { # Unknown
+		birth = yes
+	}
+	863.9.3 = { # Battle of Lalakaon
+		effect = {
+			character:HEE_nasar = {
+				create_character_memory = { type = nasar_battle_of_lalakaon }
+			}
+		}
+	}
+	863.10.10 = { # Roman Triumph
+		effect = {
+			character:HEE_nasar = {
+				create_character_memory = { type = lalakaon_roman_triumph }
+			}
+		}
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_nasar_father = { # https://en.wikipedia.org/wiki/Nasar
+	name = "Christopher"
+	dynasty = hee_mardaites
+	religion = "orthodox"
+	culture = "assyrian"
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	865.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_nasar_brother = { # https://en.wikipedia.org/wiki/Nasar
+	name = "Barsanes"
+	dynasty = hee_mardaites
+	religion = "orthodox"
+	culture = "greek"
+	father = HEE_nasar_father
+	
+	# Skills
+	
+	# Education
+	
+	# Personality Traits
+	
+	# Other Traits
+
+	835.1.1 = { # Unknown
+		birth = yes
+	}
+	887.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_umar_unnamed_son = { # Possible fictional son of Umar al-Aqta who was captured after the Battle of Lalakaon - created to enhance Abu Abdallah's character
+	name = "Marwan"
+	religion = "ashari"
+	culture = "levantine"
+	dynasty = 1029120
+	father = 159724
+
+	# Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 5
+	prowess = 6
+	
+	# Education
+	trait = education_martial_3
+	
+	# Personality Traits
+	trait = wrathful
+	trait = honest
+	trait = impatient
+	
+	# Other Traits
+
+	828.1.1 = {
+		birth = "830.1.1"
+	}
+	865.1.1 = {
+		death = {
+			death_reason = death_dungeon_passive
+		}
 	}
 }

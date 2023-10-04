@@ -66,6 +66,7 @@ hee_karling_867_effect = {
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
 
+	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
 
 	title:k_italy = { save_scope_as = k_italy }
 	title:k_east_francia = { save_scope_as = k_east_francia }
@@ -99,26 +100,34 @@ hee_karling_867_effect = {
 
 	# Italy #
 
-	character:30228 = { # Louis the Younger
+	character:30228 = { # Louis the Younger is the current Western Roman Emperor
 		add_character_modifier = western_roman_emperor_modifier
 	}
 
+	character:30228 = { # Capital of Italy is Pavia
+		set_realm_capital = title:c_pavia
+	}
+
 	# Francia #
+
+	scope:charles_the_bald = { # Declare Charle's attempted subjugation of the Bretons 
+		start_war = {
+			casus_belli = vassalization_cb
+			target = scope:salomon
+		}
+	}	
 	
-	# Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
-	character:168246 = {
+	character:168246 = { # Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
 		give_nickname = nick_the_abbot
 		set_relation_ward = scope:odo_of_france
 		set_relation_ward = scope:robert_of_france
 	}
 
-	# If Charles the Bald could be said to have a capital, it would be Compiègne
-	character:90104 = {
+	character:90104 = { # If Charles the Bald could be said to have a capital, it would be Compiègne
 		set_realm_capital = title:c_valois
 	}
 
-	# Gameplay impact of the Treaty of Coulaines (https://en.wikipedia.org/wiki/Treaty_of_Coulaines)
-	if = {
+	if = { # Gameplay impact of the Treaty of Coulaines (https://en.wikipedia.org/wiki/Treaty_of_Coulaines)
 		limit = { exists = title:k_france.holder }
 		title:k_france.holder = {
 			every_vassal = {
@@ -127,12 +136,12 @@ hee_karling_867_effect = {
 				}
 				vassal_contract_decrease_obligation_level = feudal_government_taxes
 				vassal_contract_decrease_obligation_level = feudal_government_levies
-				set_vassal_contract_modification_blocked = no
+				set_vassal_contract_modification_blocked = yes
 			}
 		}
 	}
 
-	# Removal of female-inherited claims
+	# Removal of female-inherited claims $
 	character:71901 = { # Berengar of Italy
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
@@ -327,6 +336,13 @@ hee_byzantine_bulgaria_867_effect = {
 	character:HEE_gregory_asbestas = { save_scope_as = gregory_asbestas } # https://en.wikipedia.org/wiki/Gregory_Asbestas
 
 	character:168291 = { save_scope_as = petar_the_diplomat } # https://en.wikipedia.org/wiki/Peter_(diplomat)
+
+	character:41505 = { save_scope_as = ashot_i_of_armenia } # https://en.wikipedia.org/wiki/Ashot_I_of_Armenia
+
+	character:41560 = { save_scope_as = ashot_arcruni } # https://fr.wikipedia.org/wiki/Achot_Ier_Ar%C3%A7rouni
+	character:159251 = { save_scope_as = vasak_ii_of_suenik }
+
+	character:159722 = { save_scope_as = abul_ward_kaysite } # https://en.wikipedia.org/wiki/Kaysites
 
 	faith:orthodox = { save_scope_as = orthodox }
 	faith:tengri_pagan = { save_scope_as = tengri }
@@ -552,6 +568,10 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	character:70490 = { # Michael III
+		add_character_modifier = michael_administrative_indifference
+	}
+
 	# When Michael III started to favour another courtier, Basiliskianos, Basil decided that his position was being undermined. Michael threatened to invest Basiliskianos with the Imperial title 
 	character:1700 = {
 		add_opinion = {
@@ -593,7 +613,48 @@ hee_byzantine_bulgaria_867_effect = {
 			# days = { 30 60 }
 		# }
 	# }
+
+	# The Byzantines and Bulgarians concluded a "deep peace" for a 30-year period in exchange for Bulgaria's conversion
+	scope:michael_iii = {
+		add_truce_both_ways = {
+			character = scope:boris_i
+			years = 27
+			name = bulgarian_conversion_peace_desc
+		}
+	}
+
+	character:163116 = { save_scope_as = mutimir_of_serbia } # https://en.wikipedia.org/wiki/Mutimir_of_Serbia
+
+	scope:mutimir_of_serbia = {
+		add_truce_both_ways = {
+			character = scope:boris_i
+			days = 5475
+			name = serbian_bulgarian_truce_desc
+		}
+	}
 	
+	scope:ashot_i_of_armenia = {
+		create_alliance = scope:ashot_arcruni
+		scope:ashot_arcruni = {
+			add_opinion = {
+				target = scope:ashot_i_of_armenia
+				modifier = perk_negotiated_alliance_opinion
+			}
+		}	
+		create_alliance = scope:vasak_ii_of_suenik
+		scope:vasak_ii_of_suenik = {
+			add_opinion = {
+				target = scope:ashot_i_of_armenia
+				modifier = perk_negotiated_alliance_opinion
+			}
+		}	
+		add_truce_both_ways = {
+			character = scope:abul_ward_kaysite
+			days = 365
+			name = ashot_kaysite_truce_desc
+		}
+	}
+
 }
 
 
@@ -677,15 +738,123 @@ hee_samarra_relations_867_effect = {
 
 	scope:isa_shaybanid = { add_unpressed_claim = scope:d_damascus }
 
-		#Declare Isa's illegal seizing of Damascus
-		scope:isa_shaybanid = {
-			start_war = {
-				casus_belli = claim_cb
-				target = scope:damascus_governor
-				claimant = scope:isa_shaybanid
-				target_title = scope:d_damascus
+	#Declare Isa's illegal seizing of Damascus
+	scope:isa_shaybanid = {
+		start_war = {
+			casus_belli = claim_cb
+			target = scope:damascus_governor
+			claimant = scope:isa_shaybanid
+			target_title = scope:d_damascus
+		}
+	}
+
+
+	# Aftermath of the Abbasid Civil War
+	title:c_anbar = { save_scope_as = c_anbar }
+	title:c_karbala = { save_scope_as = c_karbala }
+	title:c_baghdad = { save_scope_as = c_baghdad }
+	title:c_iskaf = { save_scope_as = c_iskaf }
+	title:c_badaraya = { save_scope_as = c_badaraya }
+
+	scope:c_anbar = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_karbala = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_baghdad = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_iskaf = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_badaraya = {
+		change_county_control = massive_county_control_loss
+	}
+	
+	scope:c_anbar = {
+		add_county_modifier = {
+			modifier = hee_fifth_fitna_aftermath_modifier
+			years = 25
+		}
+	}
+	scope:c_karbala = {
+		add_county_modifier = {
+			modifier = hee_fifth_fitna_aftermath_modifier
+			years = 25
+		}
+	}
+	scope:c_baghdad = {
+		add_county_modifier = {
+			modifier = hee_fifth_fitna_aftermath_modifier
+			years = 25
+		}
+	}
+	scope:c_iskaf = {
+		add_county_modifier = {
+			modifier = hee_fifth_fitna_aftermath_modifier
+			years = 25
+		}
+	}
+	scope:c_badaraya = {
+		add_county_modifier = {
+			modifier = hee_fifth_fitna_aftermath_modifier
+			years = 25
+		}
+	}
+
+
+
+
+
+
+# Egypt stuff
+	if = { # Gameplay portrayal of Ibn Tulun's limited authority
+		limit = { exists = title:k_egypt.holder }
+		title:k_egypt.holder = {
+		 	every_vassal = {
+				limit = {
+					OR = {
+						this = character:HEE_shukayr
+						this = character:HEE_al_mudabbir
+					}
+					vassal_contract_has_modifiable_obligations = yes
+				}
+				vassal_contract_set_obligation_level = { type = council_rights level = 1 } # Council Rights
+				vassal_contract_set_obligation_level = { type = title_revocation_rights level = 1 } # Title Revocation
+				set_vassal_contract_modification_blocked = yes # Block players from instantly changing contracts
 			}
-		}	
+		}
+	}
+
+character:HEE_yusuf_al_daya = { save_scope_as = yusuf_al_daya }
+title:b_hulwan-cairo = { save_scope_as = b_hulwan-cairo }
+
+scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -1385,13 +1554,42 @@ hee_paulicians_867_effect = {
 		set_county_faith = faith:paulician
 	}
 
-		scope:chrysocheir = {
-			start_war = {
-				casus_belli = grand_raid_cb
-				target = scope:michael_iii
-				target_title = title:k_anatolia
-			}
+	title:c_brysis = { save_scope_as = c_brysis }
+	title:c_kalliopolis = { save_scope_as = c_kalliopolis }
+
+	scope:c_brysis = {
+		add_county_modifier = {
+			modifier = hee_867_paulician_settlements_thrace_modifier
+			years = 25
 		}
+	}
+
+	scope:c_kalliopolis = {
+		add_county_modifier = {
+			modifier = hee_867_paulician_settlements_thrace_modifier
+			years = 25
+		}
+	}
+
+
+	# Fortify Paulician capital of Tephrike
+	province:5705 = { save_scope_as = b_tephrice }
+	
+	scope:b_tephrice = {
+		add_province_modifier = {
+			modifier = hee_867_fortified_capital_tephrike_modifier
+			years = 10
+		}
+		add_building = hill_forts_02
+	}
+
+	scope:chrysocheir = {
+		start_war = {
+			casus_belli = grand_raid_cb
+			target = scope:michael_iii
+			target_title = title:k_anatolia
+		}
+	}
 }
 
 hee_north_africa_867_effect = {

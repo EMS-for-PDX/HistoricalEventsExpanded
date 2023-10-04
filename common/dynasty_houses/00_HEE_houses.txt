@@ -23,3 +23,9 @@ house_kiurikian = { # https://en.wikipedia.org/wiki/Kiurikian_dynasty
 	name = "dynn_Kiurikian"
 	dynasty = 507 # Bagratuni
 }
+
+house_hee_penthievre = { # Rennes cadets / Edouarzh
+	prefix = "dynnp_de"
+	name = "dynn_PenthiE_vre"
+	dynasty = hee_rennes # Rennes
+}

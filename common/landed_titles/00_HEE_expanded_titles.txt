@@ -168,3 +168,33 @@ d_great_summer_army = {
 	no_automatic_claims = yes
 	de_jure_drift_disabled = yes
 }
+
+d_kaysite = { # https://en.wikipedia.org/wiki/Kaysites
+	color = { 120 200 5 }
+
+	capital = c_apahunik
+}
+
+d_melitene = { # 
+	color = { 180 240 120 }
+
+	capital = c_melitene
+}
+
+d_suenik = { # 
+	color = { 197 80 107 }
+
+	capital = c_suenik
+}
+
+k_arminiya = { # https://en.wikipedia.org/wiki/Arminiya
+	color = { 88 99 2 }
+
+	capital = c_dvin
+}
+
+d_khachen = { # 
+	color = { 182 44 78 }
+
+	capital = c_khachen
+}

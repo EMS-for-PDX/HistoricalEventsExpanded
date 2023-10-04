@@ -16,7 +16,7 @@
 	}
 }
 
-7959 = {
+7959 = { # https://en.wikipedia.org/wiki/Liudolf,_Duke_of_Saxony
 	name = "Luidolf"
 	# AKA: Liudolf
 	dynasty = 669
@@ -40,13 +40,17 @@
 	}
 }
 
-144957 = {
+144957 = { # https://en.wikipedia.org/wiki/Bruno,_Duke_of_Saxony
 	name = "Bruno"
 	dynasty = 669
 	religion = "catholic"
 	culture = saxon
 	father = 7959
 	mother = 167765
+	trait = education_martial_2
+	trait = brave
+	trait = content
+	trait = impatient
 	840.1.1 = {
 		birth = "840.1.1"
 	}
@@ -54,7 +58,7 @@
 		death = "880.2.2"
 	}
 }
-7954 = {
+7954 = { # https://en.wikipedia.org/wiki/Liutgard_of_Saxony_(died_885)
 	name = "Liutgard"
 	female = yes
 	dynasty = 669

@@ -4259,7 +4259,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 
 205742 = {
 	name = "Alain"
-	dynasty_house = house_penthievre
+	dynasty_house = house_hee_penthievre
 	religion = "catholic"
 	culture = french
 	father = 205743
@@ -4274,7 +4274,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 
 205743 = {
 	name = "Henri"
-	dynasty_house = house_penthievre #Rennes house of Penthièvre
+	dynasty_house = house_hee_penthievre #Rennes house of Penthièvre
 	religion = "catholic"
 	culture = french
 	trait = education_learning_3
@@ -4313,7 +4313,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 205746 = {
 	name = "Alix" #a daughter without name, spouse of Conan le Bref de Léon
 	female = yes
-	dynasty_house = house_penthievre #Rennes house of Penthièvre
+	dynasty_house = house_hee_penthievre #Rennes house of Penthièvre
 	religion = "catholic"
 	culture = french
 	father = 205743 #Henri de Bretagne
@@ -4328,7 +4328,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 
 205747 = {
 	name = "Geslin"
-	dynasty_house = house_penthievre
+	dynasty_house = house_hee_penthievre
 	religion = "catholic"
 	culture = french
 	father = 205743
@@ -4343,7 +4343,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 
 205748 = {
 	name = "Conan"
-	dynasty_house = house_penthievre
+	dynasty_house = house_hee_penthievre
 	religion = "catholic"
 	culture = french
 	trait = education_learning_3
@@ -21955,7 +21955,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	dynasty = 743 #House Capet #Robertine (dynasty of house Capet)
 	religion = "catholic"
 	culture = french
+	trait = education_martial_3
 	trait = physique_good_2
+	trait = fickle
+	trait = brave
+	trait = ambitious
 	father = 91005 #Robert III de Hesbaye
 	mother = 91122 #Waldrade d'Orléans
 	830.1.1 = {
@@ -22107,6 +22111,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 6440 #Robert the Strong of Anjou
 	mother = 161485 #Adelaide of Tours
 	trait = calm
+	trait = brave
+	trait = bossy
+	disallow_random_traits = yes
 	857.1.1 = {
 		birth = yes
 	}
@@ -22114,6 +22121,10 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		effect = {
 			set_relation_rival = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father
 		}
+	}
+	884.1.1 = {
+		remove_trait = bossy
+		trait = education_martial_3
 	}
 	884.1.1 = {
 		add_spouse = 91125 #Théodérade de Troyes
@@ -26904,9 +26915,135 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 			add_character_flag = has_scripted_appearance
 		}
 	}
+	837.1.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = 837_diet_of_aachen }
+			}
+		}
+	}
+	838.12.13 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_inheritance_of_aquitaine }
+			}
+		}
+	}
+	840.7.24 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_carolingian_civil_war_start }
+			}
+		}
+	}
+	841.6.25 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_battle_of_fontenoy }
+			}
+		}
+	}
 	842.1.1 = {
 		add_spouse = 167830 #(Irminitrude of Orléans)
 		give_nickname = nick_the_bald_ironic
+	}
+	842.2.14 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_oaths_of_strasbourg }
+			}
+		}
+	}
+	843.8.8 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_treaty_of_verdun }
+			}
+		}
+	}
+	843.11.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = treaty_of_coulaines }
+			}
+		}
+	}
+	845.3.27 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = battle_of_ballon }
+			}
+		}
+	}
+	845.3.29 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = 845_siege_of_paris }
+			}
+		}
+	}
+	851.8.22 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = battle_of_jengland }
+			}
+		}
+	}
+	851.9.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = treaty_of_angers }
+			}
+		}
+	}
+	856.2.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = frankish_breton_improved_relations }
+			}
+		}
+	}
+	858.1.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_invasion_of_west_francia }
+			}
+		}
+	}
+	860.6.7 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_treaty_of_koblenz }
+			}
+		}
+	}
+	860.11.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_payment_veland }
+			}
+		}
+	}
+	864.1.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = edict_of_pitres }
+			}
+		}
+	}
+	865.2.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_diplomacy_with_cordoba }
+			}
+		}
+	}
+	866.1.1 = {
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_danegeld_866 }
+			}
+		}
 	}
 	858.12.1 = {
 		set_relation_rival = { target = character:90107 reason = rival_historical } #(Ludwig the German), tried to take his Kingdom title

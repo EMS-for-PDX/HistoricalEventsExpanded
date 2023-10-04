@@ -1,6 +1,8 @@
 ﻿ l_english:
  
  #Special Traits HEE
+ michael_administrative_indifference: "Administrative Distain"
+ michael_administrative_indifference_desc: "Michael distains the boring work of governance, prefering to leave the administration of his realm to powerful ministers while he personally leads the army against the enemies of the Empire."
 
  western_roman_emperor_modifier: "Western Roman Emperor"
  western_roman_emperor_modifier_desc: "This character has been recognized by a Pope as Roman Emperor. In both theory and diplomacy, the Roman Emperor is considered primus inter pares - first among equals among other Catholic monarchs across Europe"
@@ -18,11 +20,20 @@
  anarchy_at_samarra_loss_of_central_authority_desc: "The ongoing troubles of the "Anarchy at Samarra" have inflicted great and lasting damage on the structures and prestige of the Abbasid central government, encouraging and facilitating secessionist and rebellious tendencies in the Caliphate's provinces"
  
  anarchy_at_samarra_unpaid_soldiery: "Unpaid Soldiery"
- anarchy_at_samarra_unpaid_soldiery_desc: "The lack of available revenue in which to pay the soldiers has lead to decline in the supplies afforded to our troops, decreasing their effectiveness"
+ anarchy_at_samarra_unpaid_soldiery_desc: "The lack of available revenue in which to pay the soldiers has lead to decline in the supplies afforded to our troops, which has in turn vastly decreased their effectiveness"
 
  student_of_rome_modifier: "Student of Rome"
- student_of_rome_modifier_desc: "Sent to the leading University of Constantinople to receive theological education, Simeon spent nearly a decade in the Byzantine capital where he received an excellent education and studied the rhetoric of Demosthenes and Aristotle. He also learned fluent Greek, to the extent that he was referred to as "the half-Greek" in Byzantine chronicles."
+ student_of_rome_modifier_desc: "Sent to the leading University of Constantinople to receive theological education, Simeon spent nearly a decade in the Byzantine capital where he received an excellent education and studied the rhetoric of Demosthenes and Aristotle. He also learned fluent Greek, to the extent that he was referred to as "the half-Greek" in Byzantine chronicles"
  
+ egyptian_spymaster_modifier: "Head of Postal Service"
+ egyptian_spymaster_modifier_desc: "As the head of the postal service (barid) in Egypt, offically this character is responsible for all correspondence within the province - most importantly ones with the caliphal government - though this position serves largely as a cover for their true role as informant and spymaster"
+
+ results_of_egyptian_heavy_taxes_modifier: "Implimented Harsh Taxes"
+ results_of_egyptian_heavy_taxes_modifier_desc: "To boost the province's revenue, this character took a series of measures, including doubling the kharāj (Islamic tax on agricultural land and its produce) and the jizya (tax on non-muslims) as well as raising new taxes (mukūs)—a move widely denounced as un-Quranic, demanding the payment of taxes each lunar year (instead of the longer solar year), imposing a state monopoly on caustic soda, and depriving the Christian clergy of their traditional tax privileges and exemptions"
+
+ constantly_protected_by_bodyguards_modifier: "Constantly Protected"
+ constantly_protected_by_bodyguards_modifier_desc: "To ensure their safety, this character is constantly escorted by a hundred bodyguards"
+
  ## County ##
  regional_stronghold_modifier: "Regional Stronghold"
  regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"
@@ -40,4 +51,13 @@
  strengthened_salerno_defenses_modifier_desc: "In preparation for a siege, Salerno's defences have been strengthened and the garrison reinforced."
  
  hee_aftermath_of_plague_modifier: "Aftermath of Plague"
- hee_aftermath_of_plague_modifier_desc: "In the early to mid 870s, a caravan of pilgrims from Mecca introduced the plague into Ifriqiya – this, and an ensuing famine led to severe depopulation and the weakening of the region."
+ hee_aftermath_of_plague_modifier_desc: "In the early to mid 870s, a caravan of pilgrims from Mecca introduced the plague into Ifriqiya. This plague, and the ensuing famine, led to severe depopulation and the weakening of the region."
+ 
+ hee_867_fortified_capital_tephrike_modifier: "Fortified Capital"
+ hee_867_fortified_capital_tephrike_modifier_desc: "In response to the renewed persecution throughout Asia Minor by the Eastern Roman Empire, many Paulicians, under their new leader Karbeas, fled across the border to the areas of Armenia under Arab control. Under the protection of Umar al-Aqta, the Emir of Melitene, the sect was permitted by the Arabs to establish an independent state centered around the newly built city of Tephrike. The Paulicians fortified it and used Tephrike as refuge and the capital of their state during the ninth century."
+
+ hee_867_paulician_settlements_thrace_modifier: "Paulician Settlements"
+ hee_867_paulician_settlements_thrace_modifier_desc: "Following an expedition led by Michael's uncle and general, Petronas, against the Paulicians from the eastern frontier and the Arab borderlands in 856, the imperial government resettled them in Thrace, thus cutting them off from their coreligionists and populating another border region. Though the Paulicians are angry over their forced move, and the natives upset at their new neighbors, no one can doubt the economic boon they provide to the land."
+
+ hee_fifth_fitna_aftermath_modifier: "Aftermath of the Fifth Fitna"
+ hee_fifth_fitna_aftermath_modifier_desc: "The Abbasid civil war, sometimes known as the Fifth Fitna, was (at least economically speaking) extremely destructive for the Caliphate. The costs of campaigning for both sides, including paying for soldiers' and officers' salaries as well as other wartime expenses, was enormous. The cutting of the canals around al-Anbar contributed to a long term economic decline in the region while the numerous acts of plunder and forcing people from their fields disrupted the productivity of the Central Iraq, perhaps the Caliphate's richest province, which put additional financial strain on the state. Baghdad itself was devastated, with the eastern side of the city never fully recovering from the damage it incurred during the war."

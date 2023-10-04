@@ -1517,6 +1517,7 @@
 	trait = callous	#Blinded his own son, threatened to blind the others, ruthlessly broke pagan revolts throughout his reign. Rarely mean, but utterly pragmatic.
 	trait = cynical	#Converted for political reasons.
 	trait = education_martial_4
+	trait = diplomat #Maneuvered shifting political alliances between East Francia and the Byzantines, and the Eastern and Western Churches to achieve his goals
 	father = 70384
 	825.1.1 = {
 		birth = "825.1.1"
@@ -1532,12 +1533,19 @@
 	864.1.1 = {
 		religion = "orthodox"
 		capital = "c_dorostorum"
+		name = "Boris-Michael"
 		effect = {
 			set_relation_rival = { target = character:70383 reason = rival_historical }	#Vladimir does not take kindly to Christianity.
 			set_relation_potential_friend = character:712	#Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
 		}
 	}
-	889 = {
+	865.6.1 = {
+		add_character_flag = { # In the summer of 865 a group of Bulgar aristocrats started an open revolt. Boris ruthlessly suppressed it and executed 52 boyars together with their entire families.
+			flag = recent_nation_fracturing_faction_war
+			years = faction_nation_fracturing_war_defeat_cooldown
+		}
+	}
+	889.1.1 = {
 		trait = devoted	#Abdicated to become a monk.
 	}
 	907.5.2 = {
@@ -2185,12 +2193,15 @@
 	name = "Marmais"
 	dynasty = 9582
 	trait = education_martial_3
+	trait = brave # He participated actively in the Byzantine–Bulgarian war of 913–927 but he is better known for his interference and campaigns against the Principality of Serbia
+	trait = deceitful # Convinced Petar Gojniković to meet him, then captured him and sent him to Preslav
+	trait = impatient # Given to explain how he was caught in the ambush that resulted in his death
 	religion = "tengri_pagan"
 	culture = "bulgarian"
 	850.1.1 = {
 		birth = "850.1.1"
 	}
-	893.1.1 = {
+	866.1.1 = {
 		religion = "orthodox"
 	}
 	924.1.1 = {
@@ -2235,6 +2246,11 @@
 	name = "Petar"
 	#dynasty = 9585
 	trait = education_diplomacy_3
+	diplomacy = 10
+	trait = diplomat
+	trait = calm
+	trait = diligent
+	trait = temperate
 	religion = "orthodox"
 	culture = "bulgarian"
 	830.1.1 = {

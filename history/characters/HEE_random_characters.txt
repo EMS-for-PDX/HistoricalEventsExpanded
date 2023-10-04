@@ -29,7 +29,6 @@ HEE_digenes_akritas = { # https://ia800203.us.archive.org/25/items/DigenesAkrite
 	
 	#Other Traits
 	trait = strong
-	trait = blademaster_3
 	trait = hunter_3
 
 	sexuality = heterosexual
@@ -38,6 +37,11 @@ HEE_digenes_akritas = { # https://ia800203.us.archive.org/25/items/DigenesAkrite
 		birth = yes # Unknown
 		effect = {
 			add_character_flag = has_scripted_appearance
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
 		}
 	}
 	866.1.1 = {
@@ -373,6 +377,229 @@ HEE_second_random_italian_woman_4 = { # https://www.reddit.com/r/CKTinder/commen
 		employer = 168008 # Genoa
 	}
 	905.1.1 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_Frigg = { # 
+	name = "Frigg"
+	female = yes
+	dna = HEE_frigg_dna
+	# dynasty = 
+	religion = "norse_pagan"
+	culture = "norse"
+	# father = 
+	# mother =
+	# health = 
+	
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 9
+	intrigue = 7
+	learning = 7
+	prowess = 8
+	
+	#Education
+	trait = education_diplomacy_4
+	
+	#Personality Traits
+	trait = honest
+	trait = compassionate
+	trait = diligent
+	
+	#Other Traits
+	trait = beauty_good_3
+	trait = intellect_good_2
+	trait = lifestyle_mystic
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	835.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	867.1.1 = {
+		employer = 168365 # Far North
+		move_to_pool = yes
+		effect = {
+            add_trait_xp = {
+                trait = lifestyle_mystic
+                value = {
+                    integer_range = {
+                        min = small_lifestyle_random_xp_low
+                        max = small_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+	}
+	877.1.1 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_Sif = { # 
+	name = "Sif"
+	female = yes
+	dna = HEE_sif_dna
+	# dynasty = 
+	religion = "norse_pagan"
+	culture = "norse"
+	# father = 
+	mother = HEE_Frigg
+	# health = 
+	
+	#Skills
+	diplomacy = 7
+	martial = 10
+	stewardship = 7
+	intrigue = 8
+	learning = 6
+	prowess = 10
+	
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
+	trait = wrathful
+	trait = arrogant
+	trait = brave
+	
+	#Other Traits
+	trait = physique_good_3
+	trait = beauty_good_2
+	trait = shieldmaiden
+	trait = lifestyle_hunter
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	849.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 168365 # Far North
+		move_to_pool = yes
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+        }
+	}
+	877.1.1 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_Freyja = { # 
+	name = "Freyja"
+	female = yes
+	dna = HEE_freyja_dna
+	# dynasty = 
+	religion = "norse_pagan"
+	culture = "norse"
+	# father = 
+	mother = HEE_Frigg
+	# health = 
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 9
+	prowess = 7
+	
+	#Education
+	trait = education_stewardship_4
+	
+	#Personality Traits
+	trait = generous
+	trait = calm
+	trait = humble
+	
+	#Other Traits
+	trait = beauty_good_3
+	trait = fecund
+	trait = lifestyle_gardener
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	850.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 168365 # Far North
+		move_to_pool = yes
+	}
+	877.1.1 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_Eir = { # 
+	name = "Eir"
+	female = yes
+	dna = HEE_eir_dna
+	# dynasty = 
+	religion = "norse_pagan"
+	culture = "norse"
+	# father = 
+	mother = HEE_Frigg
+	# health = 
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 6
+	learning = 9
+	prowess = 7
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = honest
+	trait = diligent
+	trait = patient
+	
+	#Other Traits
+	trait = intellect_good_2
+	trait = beauty_good_2
+	trait = lifestyle_physician
+
+	sexuality = heterosexual
+
+	disallow_random_traits = yes
+
+	851.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 168365 # Far North
+		move_to_pool = yes
+	}
+	877.1.1 = {
 		death = yes # Unknown
 	}
 }

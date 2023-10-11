@@ -164,6 +164,13 @@ hee_fifth_fitna_aftermath_modifier = {
 	development_growth_factor = -0.5
 }
 
+hee_tondrakian_purge_modifier = {
+	icon = county_modifier_control_positive
+	monthly_county_control_change_factor = 0.15
+	development_growth_factor = -0.1
+	county_opinion_add = -25
+}
+
 # testing_water = {
 # 	#stacking = yes
 # 	icon = martial_negative

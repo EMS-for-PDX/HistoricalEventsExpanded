@@ -1,0 +1,26 @@
+﻿l_english:
+
+ # Bookmark Loc
+ bm_867_hee_egypt: "Struggle on the Nile"
+ bm_867_hee_egypt_desc: "When newly appointed governor Ahmad ibn Tulun entered Fustat on 27 August 866 (868 historically), Egypt was undergoing a transformative process. In 834 its early Muslim elite, the Arab settler families of Fustat, lost their privileges and government pay, and power passed to officials sent by the Abbasid court. At about the same time, for the first time the Muslim population began surpassing the Coptic Christians in numbers, and the rural districts were increasingly subject to both Arabization and Islamization. The rapidity of this process, and the influx of settlers after the discovery of gold and emerald mines at Aswan, meant that Upper Egypt in particular was only superficially controlled by the local governor. Furthermore, the persistence of internecine strife and turmoil at the heart of the Abbasid state — the so-called "Anarchy at Samarra" — led to the appearance of millennialist revolutionary movements in the province under a series of Alid pretenders. \n\n#bold It has been over 800 years since Egypt was an independent political power. Can you take up the challenge and ensure you and your family become equal to, if not surpass, the Pharaohs of Old?"
+
+ # Ibn Tulun Loc
+ bookmark_hee_egypt_ibn_tulun: "Ahmad ibn Tulun"
+ bookmark_hee_egypt_ibn_tulun_desc: "When the Turkish general Bakbak was given charge of Egypt by the Caliph Al-Mutazz, he feared moving away from the centre of power in Samarra. Thus Bakbak turned to his stepson Ahmad to be his lieutenant and resident governor. However when he arrived in the province, Ibn Tulun found his position was far from undisputed. He controlled only the military affairs of the province while the fiscal administration and communication apparatus rest in the hands of the powerful veteran administrator Ibn al-Mudabbir and the cunning Shukayr respectively. Intending on being the sole master of his province, Ibn Tulun finds himself in an internal power struggle with his most powerful "vassals" over who shall command Egypt. \n\n#bold However internal disputes are far from Ibn Tulun's only worries. An Alid uprising in the west, an upstart adventurer in the south, and an ambitious governor to the East, Ibn Tulun must secure a realm that could break a lesser man.#!"
+
+ bookmark_hee_egypt_al_abbas: "Al-Abbas"
+ bookmark_hee_egypt_khumarawayh: "Khumarawayh"
+
+ # ibn al-Mudabbir Loc
+ bookmark_hee_egypt_al_mudabbir: "Abu'l-Hasan ibn al-Mudabbir"
+ bookmark_hee_egypt_al_mudabbir_desc: "A distinguished man of letters who rose to prominence at the court of the Abbasids at Samarra, Abu'l-Hasan first appears as director of the department of the army under Caliph al-Wathiq. Under al-Wathiq's successor al-Mutawakkil, he rose further before being disgraced by the vizier Ubayd Allah ibn Khaqan, who saw in him a dangerous rival.\n\nThis disgrace did not last long, and soon he was released and appointed as fiscal administrator for the Syrian districts of Damascus and Jordan. From there ibn al-Mudabbir moved to the same post in Egypt where, to boost the province's revenue, he took a series of widly unpopular yet lucrative measures. As a result, ibn al-Mudabbir has become both the most powerful as well as the most hated man in Egypt.\n\n#bold However with the arrival of the new governor Ibn Tulun, ibn al-Mudabbir finds himself facing his greatest challenge yet. Can you overcome the odds and avoid a second fall from grace?"
+
+ bookmark_hee_egypt_abu_ishaq: "Abu Ishaq Ibrahim"
+
+ # Shukayr Loc
+ bookmark_hee_egypt_shukayr: "Shukayr"
+ bookmark_hee_egypt_shukayr_desc: "As head of the Egyptian branch of the barid (postal service), Shukayr is not only responsible for the overland delivery of official correspondence throughout the province, but also the functioning of the local domestic intelligence agency, which serves to inform the caliphs on events in the provinces and the activities of government officials - such as the new governor Ibn Tulun. \n\n#bold With Ibn Tulun seeking his dismissal, Shukayr finds himself in a three-way struggle over control of the province. Can you guide the spymaster to victory?"
+
+ # al-Umari Loc
+ bookmark_hee_egypt_al_umari: "al-Umari"
+ bookmark_hee_egypt_al_umari_desc: "Scholar, Merchant, and Warlord. All words that could be used to describe the Arab adventurer that has made the Eastern Desert his new home. Not even a decade ago, al-Umari hired a private army and settled at a mine near Abu Hamad in eastern Makuria, though over multiple confrontations, he has been pushed back into the desert to nurse his wounds. With news of the recent discovery of deep gold deposits in Wadi al-Allaq, al-Umari now has the means by which to fund whatever endeavour he wishes to embark on next.\n\n#bold Be warned, al-Umari's gold is coveted by many - Egypt, Makuria, and perhaps even his own men..."

@@ -25,7 +25,7 @@
 		trait = viking
 	}
 	867.1.1 = {
-		employer = 186004
+		employer = HEE_sygtrygg
 	}
 	886.1.1 = {
 		add_spouse = 241
@@ -3186,6 +3186,9 @@
 	830.1.1 = {
 		birth = "830.1.1"
 	}
+	866.1.1 = {
+		employer = 144000 # Fairhair
+	}
 	880.1.1 = {
 		death = "880.1.1"
 	}
@@ -3221,6 +3224,7 @@
 		birth = "850.1.1"
 	}
 	866.1.1 = {
+		employer = 144000 # Fairhair
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:144000 }
 		}
@@ -3238,6 +3242,9 @@
 	father = 161301
 	852.1.1 = {
 		birth = "852.1.1"
+	}
+	866.1.1 = {
+		employer = 144000 # Fairhair
 	}
 	892.1.1 = {
 		death = "892.1.1"
@@ -4536,8 +4543,8 @@
 	trait = education_diplomacy_2
 	
 	#Personality Traits
+	trait = arrogant
 	trait = wrathful
-	trait = just
 	trait = brave
 
 	819.1.1 = {
@@ -4558,12 +4565,12 @@
 	father = 166329
 	
 	#Skills
-	diplomacy = 6
-	martial = 6
-	stewardship = 6
-	intrigue = 6
-	learning = 6
-	prowess = 5
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 9
+	learning = 8
+	prowess = 6
 	
 	#Education
 	trait = education_diplomacy_3
@@ -5070,19 +5077,30 @@
 	790.1.1 = {
 			birth = "790.1.1"
 			}
-	868.1.1 = {
-			death = "868.1.1"
+	865.1.1 = {
+			death = "865.1.1"
 			}
 }
 
-186003 = {
+186003 = { # https://en.wikipedia.org/wiki/H%C3%A5kon_Grjotgardsson
 	name = "Hakon"
 	dynasty = 1043302
 	father = 186002
 	religion = "norse_pagan"
 	culture = "norse"
-	845.1.1 = {
-			birth = "845.1.1"
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = brave
+	trait = ambitious # Håkon sought to extend his kingdom southwards
+	trait = temperate # Håkon and Harald entered a union of joint forces - Hakon submitted to Harald so a more reasonable ruler 
+	
+	#Other Traits
+
+	835.1.1 = {
+			birth = "835.1.1"
 			}
 	917.1.1 = {
 			death = "917.1.1"
@@ -6526,6 +6544,9 @@
 	
 	839.1.1 = {
 		birth = yes
+	}
+	866.1.1 = {
+		employer = 144000 # Fairhair
 	}
 	881.1.1 = {
 		religion = "catholic"

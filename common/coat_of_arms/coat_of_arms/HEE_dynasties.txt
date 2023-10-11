@@ -725,3 +725,151 @@ hee_elden_norse = { # https://www.reddit.com/r/CKHeraldry/comments/157cla3/elden
 	}
  
 }
+
+1029119 = { # Kaysites
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=blue
+		color2=black
+		texture="ce_tamgha_roundel_frame.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_arabic_allah.dds"
+		instance={
+			scale={ 0.290000 0.290000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_solomon_star_08.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+1029123 = { # Shaybanids
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_square_kaaba.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=white
+		texture="ce_polylobe_plain_frame.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_square_kaaba.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.390000 0.390000 }
+		}
+
+	}
+
+}
+
+hee_al_mudabbir = {
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=green
+	color3=yellow
+	colored_emblem={
+		color1=black
+		color2=green
+		texture="ce_crescent_random.dds"
+		instance={
+			position={ 0.500000 0.510000 }
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_scales.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.450000 0.450000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_polylobe_circle_frame.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+hee_shukayr = {
+	pattern="pattern_tricolor_bend_02.dds"
+	color1=black
+	color2=yellow
+	color3=white
+	colored_emblem={
+		color1=red
+		color2=white
+		texture="ce_empty.dds"
+	}
+
+	colored_emblem={
+		color1=white
+		color2=red
+		texture="ce_india_small_dagger.dds"
+		instance={
+			scale={ 0.600000 0.600000 }
+			depth=1.010000
+			rotation=225
+		}
+
+	}
+
+}
+

@@ -125,3 +125,438 @@ bm_867_hee_byzantines = {
 
 	}
 }
+
+bm_867_hee_transcaucasia = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Ashot I
+	character = {
+		name = "bookmark_hee_armenian_ashot_i"
+		history_id = 41505
+		dynasty = 507
+		dynasty_splendor_level = 3
+		type = male
+		birth = 820.1.9
+		title = k_armenian_principality
+		government = feudal_government
+		culture = armenian
+		religion = armenian_apostolic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 700 325 }
+
+		animation = personality_bold
+
+		# Smbat I, Son and eventual Successor
+		character = {
+			name = "bookmark_hee_armenian_smbat"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 507
+			type = male
+			birth = 850.1.1
+			culture = armenian
+			religion = armenian_apostolic
+			history_id = 41506
+
+			animation = disapproval
+		}
+		
+		# Abas, Brother and leading general 
+		character = {
+			name = "bookmark_hee_armenian_abas"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 507
+			type = male
+			birth = 830.1.1
+			culture = armenian
+			religion = armenian_apostolic
+			history_id = armenian_000081
+
+			animation = personality_greedy
+		}
+	}
+
+	# al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
+	character = {
+		name = "bookmark_hee_armenian_ibn_ahmad"
+		history_id = HEE_867_armenian_governor
+		dynasty = hee_azdi
+		dynasty_splendor_level = 1
+		type = male
+		birth = 820.1.1
+		title = k_arminiya
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 920 520 }
+
+		animation = personality_rational
+
+	}
+
+	# The first Kaysite amir, Abu'l-Ward
+	character = {
+		name = "bookmark_hee_armenian_kaysite_founder"
+		history_id = 159722
+		dynasty = 1029119
+		dynasty_splendor_level = 1
+		type = male
+		birth = 835.1.1
+		title = d_kaysite
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 480 620 }
+
+		animation = personality_vengeful
+
+		# Abu'l-Ward's son and successor
+		character = {
+			name = "bookmark_hee_armenian_kaysite_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1029119
+			type = male
+			birth = 853.1.1
+			culture = levantine
+			religion = ashari
+			history_id = HEE_kaysite_son
+
+			animation = personality_greedy
+		}
+
+	}
+
+	# Haytham ibn Khalid
+	character = {
+		name = "bookmark_hee_armenian_haytham_ibn_khalid"
+		history_id = 159733
+		dynasty = 1029123
+		dynasty_splendor_level = 2
+		type = male
+		birth = 822.1.1
+		title = d_shirvan
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1150 300 }
+
+		animation = personality_bold
+
+		# Muhammad ibn Khalid al-Shaybani, brother
+		character = {
+			name = "bookmark_hee_armenian_muhammad_ibn_khalid"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 1029123
+			type = male
+			birth = 817.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 146077
+
+			animation = personality_content
+		}
+
+		# Yazid ibn Khalid, brother
+		character = {
+			name = "bookmark_hee_armenian_yazid_ibn_khalid"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 1029123
+			type = male
+			birth = 819.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 146078
+
+			animation = personality_content
+		}
+
+	}
+}
+
+bm_867_hee_norway = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Harald Fairhair
+	character = {
+		name = "bookmark_hee_norway_fairhair"
+		history_id = 144000
+		dynasty = 499
+		dynasty_splendor_level = 1
+		type = male
+		birth = 850.1.1
+		title = c_vestfold
+		government = tribal_government
+		culture = norse
+		religion = norse_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 800 550 }
+
+		animation = personality_bold
+
+		# Guttorm, maternal uncle and protector
+		character = {
+			name = "bookmark_hee_norway_guttorm"
+			relation = "BOOKMARK_RELATION_UNCLE"
+			dynasty = 9613
+			type = male
+			birth = 839.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = 168650
+
+			animation = personality_honorable
+		}
+		
+		# Rognvaldr, confidant and friend
+		character = {
+			name = "bookmark_hee_norway_rognvaldr"
+			relation = "BOOKMARK_RELATION_FRIEND"
+			dynasty = 461
+			type = male
+			birth = 850.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = 161302
+
+			animation = personality_bold
+		}
+	}
+
+	# Kjotve the Rich/Cruel
+	character = {
+		name = "bookmark_hee_norway_kjotve"
+		history_id = 186011
+		dynasty = 1043304
+		dynasty_splendor_level = 1
+		type = male
+		birth = 820.1.1
+		title = c_nedenes
+		government = tribal_government
+		culture = norse
+		religion = norse_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 500 750 }
+
+		animation = personality_greedy
+
+		character = {
+			name = "bookmark_hee_norway_tore"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1043304
+			type = male
+			birth = 842.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = 186012
+
+			animation = map_rage
+		}
+
+	}
+
+	# Håkon Grjotgardsson, Earl of Lade
+	character = {
+		name = "bookmark_hee_norway_hakon"
+		history_id = 186003
+		dynasty = 1043302
+		dynasty_splendor_level = 1
+		type = male
+		birth = 835.1.1
+		title = c_namdalfylki
+		government = tribal_government
+		culture = norse
+		religion = norse_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 750 275 }
+
+		animation = map_dismissal
+
+		# Asa, Daughter
+		character = {
+			name = "bookmark_hee_norway_asa"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = 1043302
+			type = female
+			birth = 851.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = HEE_asa_hakondottir
+
+			animation = personality_content
+		}
+
+	}
+
+	# Eirikr, King of Hordaland
+	character = {
+		name = "bookmark_hee_norway_eirikr"
+		history_id = 166329
+		dynasty = 1040004
+		dynasty_splendor_level = 1
+		type = male
+		birth = 819.1.1
+		title = c_hordalandi
+		government = tribal_government
+		culture = norse
+		religion = norse_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 480 500 }
+
+		animation = map_worry
+
+		# Gyda, Daughter
+		character = {
+			name = "bookmark_hee_norway_gyda"
+			relation = "BOOKMARK_RELATION_DAUGHTER"
+			dynasty = 1040004
+			type = female
+			birth = 852.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = 146077
+
+			animation = personality_bold
+		}
+
+	}
+}
+
+bm_867_hee_egypt = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Ibn Tulun
+	character = {
+		name = "bookmark_hee_egypt_ibn_tulun"
+		history_id = 163115
+		dynasty = 820
+		dynasty_splendor_level = 1
+		type = male
+		birth = 835.9.20
+		title = k_egypt
+		government = clan_government
+		culture = egyptian
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 975 250 }
+
+		animation = personality_bold
+
+		# Al-Abbas, trecherous heir
+		character = {
+			name = "bookmark_hee_egypt_al_abbas"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 820
+			type = male
+			birth = 857.1.1
+			culture = egyptian
+			religion = ashari
+			history_id = extra_tulunids_1
+
+			animation = personality_dishonorable
+		}
+		
+		# Khumarawayh, historical successor
+		character = {
+			name = "bookmark_hee_egypt_khumarawayh"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 820
+			type = male
+			birth = 864.1.1
+			culture = egyptian
+			religion = ashari
+			history_id = 163138
+
+			animation = personality_honorable
+		}
+	}
+
+	# ibn al-Mudabbir
+	character = {
+		name = "bookmark_hee_egypt_al_mudabbir"
+		history_id = HEE_al_mudabbir
+		dynasty = hee_al_mudabbir
+		dynasty_splendor_level = 1
+		type = male
+		birth = 836.3.6
+		title = d_al-said
+		government = clan_government
+		culture = persian
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 900 550 }
+
+		animation = personality_greedy
+
+		character = {
+			name = "bookmark_hee_egypt_abu_ishaq"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = hee_al_mudabbir
+			type = male
+			birth = 839.9.9
+			culture = persian
+			religion = ashari
+			history_id = HEE_al_mudabbir_brother
+
+			animation = personality_content
+		}
+
+	}
+
+	# Shukayr, Head of the Egyptian Barid
+	character = {
+		name = "bookmark_hee_egypt_shukayr"
+		history_id = HEE_shukayr
+		dynasty = hee_shukayr
+		dynasty_splendor_level = 1
+		type = male
+		birth = 820.1.1
+		title = d_alexandria
+		government = clan_government
+		culture = egyptian
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 650 275 }
+
+		animation = map_dismissal
+
+	}
+
+	# al-Umari
+	character = {
+		name = "bookmark_hee_egypt_al_umari"
+		history_id = bedouin0018
+		dynasty = bedouindyn002
+		dynasty_splendor_level = 1
+		type = male
+		birth = 825.1.1
+		title = d_eastern_desert
+		government = clan_government
+		culture = bedouin
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1150 800 }
+
+		animation = map_worry
+
+	}
+}

@@ -191,6 +191,8 @@ k_arminiya = { # https://en.wikipedia.org/wiki/Arminiya
 	color = { 88 99 2 }
 
 	capital = c_dvin
+
+	can_be_named_after_dynasty = no # Governorship, not technically a De Jure title or Independent Realm
 }
 
 d_khachen = { # 

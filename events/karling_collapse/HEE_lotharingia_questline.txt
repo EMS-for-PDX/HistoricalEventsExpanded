@@ -193,20 +193,17 @@ HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
 		name = HEE_lotharingia_questline.0004.a
 		
 		custom_tooltip = lothaire_begins_his_journey_to_rome
-		
-		hidden_effect = {
-			title:c_roma.title_province = {
-				spawn_activity = {
-					type = activity_lothaire_travel_to_rome
-					owner = root
-				}
-			}
-		}
 
-		trigger_event = {
-			id = HEE_lotharingia_questline.0005
-			days = { 50 70 } # Within two to three months
-		}	
+		start_travel_plan = {
+            destination = title:b_roma.title_province
+            return_trip = no
+            players_use_planner = no # Change later?
+            #companion = scope:companion1
+            #companion = scope:companion2
+            #companion = scope:companion3
+            on_arrival_event = HEE_lotharingia_questline.0005
+            on_arrival_destinations = last
+        }
 		
 		ai_chance = {
 			base = 1000
@@ -250,15 +247,6 @@ HEE_lotharingia_questline.0005 = { #Lothaire & Pope meet
 				save_scope_as = pope
 			}
 		}
-		if = {
-			limit = {
-				AND = {
-					this = character:144998
-					is_ai = no
-				}	
-			}
-			pan_camera_to_title = title:b_roma
-		}
 	}
 
 	option = {
@@ -269,7 +257,11 @@ HEE_lotharingia_questline.0005 = { #Lothaire & Pope meet
 		
 		trigger_event = {
 			id = HEE_lotharingia_questline.0006
-		}	
+		}
+
+		current_travel_plan = {
+            delay_travel_plan = { days = 7 }
+        }
 		
 		ai_chance = {
 			base = 1000
@@ -365,6 +357,10 @@ HEE_lotharingia_questline.0007 = { #Lothaire sets off to return home
 		is_imprisoned = no
 	}
 
+	immediate = {
+		add_character_flag = lothaire_has_visited_rome
+	}
+
 	option = {
 		name = HEE_lotharingia_questline.0007.a
 		
@@ -399,6 +395,15 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 	# lower_right_portrait = scope:teutberga
 
 	trigger = {
+		character:144998 = { has_character_flag = lothaire_has_visited_rome }
+		this = character:144998
+        character:144998 = {
+            is_travelling = yes
+            current_travel_plan = {
+                travel_plan_owner = root
+            }
+        }
+        location = province:2488 # Piacenza
 		character:6877 = { is_alive = yes }
 		character:168314 = { is_alive = yes }
 		is_alive = yes
@@ -409,18 +414,7 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 	}
 	
 	immediate = {
-		
 		add_trait = ill
-		
-		if = {
-			limit = {
-				AND = {
-					this = character:144998
-					is_ai = no
-				}	
-			}
-			pan_camera_to_title = title:b_siena
-		}
 	}
 
 	option = {
@@ -440,21 +434,25 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 	}
 
 	#Provide a milder option for players to avoid death?
-	# option = {
-		# name = HEE_lotharingia_questline.0007.b
+	option = {
+		name = HEE_lotharingia_questline.0007.b
 		
-		#custom_tooltip = lothaire_slows_his_trip_to_recover
-		#diplo challenge here?
+		custom_tooltip = lothaire_slows_his_trip_to_recover
+		# diplo challenge here?
 		
-		# trigger_event = {
-			# id = HEE_lotharingia_questline.0008
-			# days = 7 #1 Week
-		# }	
+		trigger_event = {
+			id = HEE_lotharingia_questline.0008
+			days = 7 #1 Week
+		}
+
+		current_travel_plan = {
+            delay_travel_plan = { days = 10 }
+        }
 		
-		# ai_chance = {
-			# base = 0
-		# }
-	# }
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
 HEE_lotharingia_questline.0009 = { #Lothaire's illness worsens
@@ -822,6 +820,7 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 
 	immediate = {
 		character:90107 = { save_scope_as = ludwig_the_german }
+		character:144998 = { save_scope_as = lothaire }
 		if ={
 			limit = {
 				exists = title:k_lotharingia
@@ -1335,6 +1334,5 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 		name = HEE_lotharingia_questline.0013.b
 		
 		custom_tooltip = treaty_of_meerssen_is_disputed
-		
-	
+	}
 }

@@ -5939,6 +5939,15 @@
 	religion = "ashari"
 	culture = "levantine"
 	father = 146076
+
+	#Education
+	trait = education_stewardship_2 # Fanfic that he was a better steward than his brothers thus entrusted with estates in Shirvan
+	
+	#Personality Traits
+	trait = honest # Essentially openly broke with the caliphate by declaring himself Shirvanshah
+	trait = arrogant # adopted the Persian title "Shirvanshah", and after the murder of the Abbasid caliph al-Mutawakkil in 861, Haytham and his heirs became de facto independent rulers of Shirvan
+	trait = ambitious # adopted the Persian title "Shirvanshah", and after the murder of the Abbasid caliph al-Mutawakkil in 861, Haytham and his heirs became de facto independent rulers of Shirvan
+
 	822.1.1 = {
 		birth = yes
 	}
@@ -7304,12 +7313,25 @@
 		death = "874.1.1"
 	}
 }
+
 163167 = {
 	name = "Muhammad"
 	dynasty = 1029123
 	religion = "ashari"
 	culture = "levantine"
 	father = 159733
+
+	#Education
+	trait = education_martial_2 # "He was ruler of justice and fought against infidels".
+	
+	#Personality Traits
+	trait = zealous # "He was ruler of justice and fought against infidels".
+	trait = just # "He was ruler of justice and fought against infidels".
+	trait = brave # "He was ruler of justice and fought against infidels".
+	
+	#Other Traits
+	trait = holy_warrior # "He was ruler of justice and fought against infidels".
+
 	839.1.1 = {
 		birth = "839.1.1"
 	}

@@ -568,6 +568,14 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	# Set up Basil as Diarch as he is CoEmperor
+	character:70490 = { designate_diarch = character:1700 }
+
+	remove_generated_diarch_consequences_effect = {
+		NEW_DIARCH = character:1700
+		LIEGE = character:70490
+	}
+
 	character:70490 = { # Michael III
 		add_character_modifier = michael_administrative_indifference
 	}
@@ -835,7 +843,15 @@ scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }
 
 
 
-
+	# Aftermath of the Abbasid Civil War
+	title:c_apahunik = { save_scope_as = c_apahunik }
+	
+	scope:c_apahunik = {
+		add_county_modifier = {
+			modifier = hee_tondrakian_purge_modifier
+			years = 10
+		}
+	}
 
 
 
@@ -1493,10 +1509,12 @@ hee_brittany_867_effect = {
 	# Alliance between Hastein and Salomon
 	character:163105 = {
 		create_alliance = scope:hastein
-		add_opinion = {
-			target = scope:hastein
-			modifier = perk_negotiated_alliance_opinion
-		}
+		scope:hastein = {
+			add_opinion = {
+				target = scope:salomon
+				modifier = perk_negotiated_alliance_opinion
+			}
+		}	
 		add_truce_both_ways = {
 			character = scope:hastein
 			days = 1825

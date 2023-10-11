@@ -1,88 +1,3 @@
-# d_test_empire = {
-# 	740.1.1 = {
-# 		holder = 188637
-# 		effect = {
-# 			character:188637 = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	785.1.1 = {
-# 		holder = 163153
-# 		effect = {
-# 			character:163153 = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	786.1.1 = {
-# 		holder = 188638 
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	788.1.1 = {
-# 		holder = 163155
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	790.1.1 = {
-# 		holder = 163154 
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}		
-# 		}
-# 	}
-	
-# 	792.1.1 = {
-# 		holder = 188639
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-
-# 	812.1.1 = {
-# 		holder = 163156
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	821.1.1 = {
-# 		holder = 163157
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	830.1.1 = {
-# 		holder = 163099
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# 	830.1.1 = {
-# 		holder = 163156
-# 		effect = {
-# 			holder = {
-# 				set_character_faith_with_conversion = faith:ashari
-# 			}
-# 		}
-# 	}
-# }
-
 k_abkhazia = { # https://en.wikipedia.org/wiki/Kingdom_of_Abkhazia
 	767.1.1 = {
 		holder = 70472
@@ -453,9 +368,20 @@ d_suenik = {
 }
 
 k_arminiya = {
+	800.1.1 = {
+		liege = e_arabia
+	}
+	852.1.1 = {
+		holder = turkish000003 # Bugha al-Kabir
+	}
+	857.1.1 = {
+		holder = 146077 # Muhammad ibn Khalid al-Shaybani 
+	}
+	862.1.1 = {
+		holder = 163135 # Ali ibn Yahya al-Armani 
+	}
 	866.1.1 = {
 		holder = HEE_867_armenian_governor
-		liege = e_arabia
 	}
 	867.1.1 = {
 		liege = 0 # Essentially independent as a result of the Fifth Fitna

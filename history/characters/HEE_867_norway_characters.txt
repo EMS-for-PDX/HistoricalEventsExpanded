@@ -1,0 +1,401 @@
+﻿## Characters for Norway - 867 ##
+
+HEE_snaefrithr_svasadottir = { # Snæfrithr Svásadottir - https://en.wikipedia.org/wiki/Sn%C3%A6frithr_Sv%C3%A1sadottir
+	name = "Snæfrithr"
+	female = yes
+	#dynasty = 
+	religion = "norse_pagan"
+	culture = "sami"
+	father = HEE_svasi
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 9
+	intrigue = 10
+	learning = 10
+	prowess = 8
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = calm
+	trait = deceitful
+	trait = cynical
+	
+	#Other Traits
+	trait = beauty_good_3 # The king was over come with lust at the mere sight of her 
+	trait = fecund # During her three year long marriage with Fairfair she gave birth to 4 children
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	851.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			add_secret = { type = secret_witch }
+		}
+	}
+	867.1.1 = {
+		employer = 6844 # Upplond
+		move_to_pool = yes
+		effect = {
+            add_trait_xp = {
+                trait = lifestyle_mystic
+				value = 100
+            }
+        }
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+HEE_svasi = { # Svasi - https://en.wikipedia.org/wiki/Sn%C3%A6frithr_Sv%C3%A1sadottir
+	name = "Svasi"
+	#female = yes
+	#dynasty = 
+	religion = "norse_pagan"
+	culture = "sami"
+	# father = HEE_svasi
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 9
+	intrigue = 10
+	learning = 10
+	prowess = 8
+	
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = gregarious
+	trait = arrogant # Svási would not allow his daughter to be a concubine so the two were married
+	trait = ambitious # Wants his daughter to marry a king
+	
+	#Other Traits
+	trait = giant 
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	835.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 6844 # Upplond
+		move_to_pool = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+HEE_hildr = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B3lfsd%C3%B3ttir
+	name = "Hildr"
+	female = yes
+	dynasty = hee_nefja
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_rolv_nefia
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	diplomacy = 10
+	martial = 7
+	stewardship = 8
+	intrigue = 7
+	learning = 10
+	prowess = 6
+	
+	#Education
+	trait = education_diplomacy_4
+	
+	#Personality Traits
+	trait = forgiving
+	trait = diligent
+	trait = patient
+	
+	#Other Traits
+	trait = poet # she composed a skaldic stanza (lausavísa), which is one of the few examples of skaldic poetry composed by a woman that have come down to modern day
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	851.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+
+HEE_rolv_nefia = { # Hrólfr nefja - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B3lfsd%C3%B3ttir
+	name = "Hrolfr"
+	# female = yes
+	dynasty = hee_nefja
+	religion = "norse_pagan"
+	culture = "norse"
+	# father =
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+	trait = education_martial_2
+
+	#Personality Traits
+	trait = arbitrary # he plundered in Vík. This aroused King Harald Fairhair's anger and he was banished
+	trait = brave
+	trait = impatient
+
+	#Other Traits
+	trait = viking # used to go on viking expeditions
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	825.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+HEE_asa_hakondottir = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B3lfsd%C3%B3ttir
+	name = "Asa"
+	female = yes
+	dynasty = 1043302
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 186003
+	# mother =
+	#health = 5.0
+	
+	#Skills
+	
+	#Education
+	trait = education_stewardship_3
+	
+	#Personality Traits
+	trait = brave
+	trait = honest
+	trait = humble
+	
+	#Other Traits
+	
+	#sexuality = heterosexual
+	
+	#disallow_random_traits = yes
+	
+	851.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_father = { # Atli the Slender - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Hundolf"
+	# female = yes
+	dynasty = hee_gaular # a jarl of Gaular in Fjordane
+	religion = "norse_pagan"
+	culture = "norse"
+	# father =
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+	trait = education_martial_2
+
+	#Personality Traits
+	trait = arrogant
+	trait = wrathful
+	trait = stubborn
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	790.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_the_slender = { # Atli the Slender - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Atli"
+	# female = yes
+	dynasty = hee_gaular
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_atli_father
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+	trait = education_martial_2
+
+	#Personality Traits
+	trait = arrogant
+	trait = wrathful
+	trait = stubborn
+
+	#Other Traits
+	trait = beauty_good_1 # Explination for Slender nickname
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	820.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		give_nickname = nick_the_slender
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:168323 } #Halfdan the Black - He became friends with King Halfdan the Black of Vestfold and accompanied him on a number of his expeditions
+		}
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_first_son = { # Hallstein - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Hallstein"
+	# female = yes
+	dynasty = hee_gaular
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_atli_the_slender
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	845.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_second_son = { # Holmstein - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Holmstein"
+	# female = yes
+	dynasty = hee_gaular
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_atli_the_slender
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_third_son = { # Herstein - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Herstein"
+	# female = yes
+	dynasty = hee_gaular
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_atli_the_slender
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	848.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+HEE_atli_daughter = { # Solveig - https://en.wikipedia.org/wiki/Atli_the_Slender
+	name = "Solveig"
+	female = yes
+	dynasty = hee_gaular
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_atli_the_slender
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	849.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}

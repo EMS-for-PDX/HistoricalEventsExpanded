@@ -1619,7 +1619,7 @@ HEE_zoe_zoutzaina = { # https://en.wikipedia.org/wiki/Zoe_Zaoutzaina
 
 HEE_christopher_domestic_of_the_schools = { # https://en.wikipedia.org/wiki/Christopher_(Domestic_of_the_Schools)
 	name = "Christopher"
-	# dynasty = 
+	dynasty = hee_gambros
 	religion = "orthodox"
 	culture = "greek"
 	# father = 

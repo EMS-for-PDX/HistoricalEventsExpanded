@@ -888,20 +888,41 @@ HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Arme
 	# Education
 	trait = education_martial_3
 	
-	# Personality Traits
-	trait = wrathful
-	trait = brave
+	# Personality Traits - nothing known about him, added for consistency and story-telling
+	trait = zealous
+	trait = just
 	trait = impatient
 	
 	# Other Traits
 	trait = reaver
+	trait = loyal
 	
-	sexuality = heterosexual
+	#sexuality = heterosexual
 	
 	#disallow_random_traits = yes
 	
 	820.1.1 = {
 		birth = yes
+		effect = {
+			# Sort his perk tree out. Allow him to vassalize the Armenian Princes
+			if = {
+				limit = { NOT = { has_perk = thoughtful_perk } }
+				add_perk = thoughtful_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = ducal_conquest_perk } }
+				add_perk = ducal_conquest_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = forced_vassalage_perk } }
+				add_perk = forced_vassalage_perk
+			}
+		}	
+	}
+	866.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:163131 } #Bugha al-Sharabi - The one who appointed him Governor in Bugha's stead, collected taxes and admin estates in his name
+		}
 	}
 	874.1.1 = {
 		death = yes
@@ -1185,5 +1206,19 @@ HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 	}
 	698.1.1 = {
 		death = yes
+	}
+}
+
+HEE_kaysite_son = { # Abu'l-Ward's son and successor
+	name = "_Abd al-Hamid"
+	religion = "ashari"
+	culture = "levantine"
+	dynasty = 1029119
+	father = 159722
+	853.1.1 = { # Fictional
+		birth = "853.1.1"
+	}
+	910.1.1 = { # Fictional
+		death = "910.1.1"
 	}
 }

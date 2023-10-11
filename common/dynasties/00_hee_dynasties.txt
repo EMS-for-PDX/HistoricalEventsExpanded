@@ -52,6 +52,11 @@ hee_asbestas = {
 	culture = "greek"
 }
 
+hee_gambros = {
+	name = "dynn_Gambros"
+	culture = "greek"
+}
+
 hee_kapnogenes = {
 	name = "dynn_Kapnogenes"
 	culture = "greek"
@@ -249,5 +254,16 @@ hee_braganza = {
 hee_loire = {
 	prefix = "dynnp_of"
 	name = "dynn_Loire"
+	culture = "french"
+}
+
+hee_nefja = {
+	name = "dynn_Nefja"
+	culture = "norse"
+}
+
+hee_gaular = {
+	prefix = "dynnp_of"
+	name = "dynn_Gaular"
 	culture = "french"
 }

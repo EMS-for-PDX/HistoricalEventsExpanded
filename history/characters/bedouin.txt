@@ -9820,7 +9820,7 @@ bedouin0018 = {
 
 	#Other Traits
 	trait = scholar
-	trait = shrewd
+	trait = adventurer
 
 	825.1.1 = {
 		birth = yes

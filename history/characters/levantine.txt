@@ -403,6 +403,7 @@
 	culture = "levantine"
 	trait = education_learning_2
 	father = 159271
+	mother = extra_bedouins_0031
 	1033.1.1 = {
 		birth = "1033.1.1"
 	}
@@ -3395,7 +3396,7 @@
 	culture = "egyptian"
 	1061.1.1 = {
 		birth = "1061.1.1"
-	}	
+	}
 	1111.1.1 = {
 		death = "1111.1.1"
 	}
@@ -3410,7 +3411,7 @@
 	father = 226051
 	1188.1.1 = {
 		birth = "1188.1.1"
-	}	
+	}
 	1205.1.1 = {
 		death = "1205.1.1"
 	}
@@ -3425,7 +3426,7 @@
 	father = 226051
 	1213.1.1 = {
 		birth = "1213.1.1"
-	}	
+	}
 	1236.11.1 = {
 		death = "1236.11.1"
 	}
@@ -3441,7 +3442,7 @@
 	father = 34702
 	1229.1.1 = {
 		birth = "1229.1.1"
-	}	
+	}
 	1255.1.1 = {
 		death = "1255.1.1"
 	}
@@ -3457,7 +3458,7 @@
 	father = 34703
 	1245.1.1 = {
 		birth = "1245.1.1"
-	}	
+	}
 	1295.1.1 = {
 		death = "1295.1.1"
 	}
@@ -3473,7 +3474,7 @@
 	father = 144081
 	1230.1.1 = {
 		birth = "1230.1.1"
-	}	
+	}
 	1260.1.1 = {
 		death = "1260.1.1"
 	}
@@ -3489,7 +3490,7 @@
 	father = 144082
 	1244.1.1 = {
 		birth = "1244.1.1"
-	}	
+	}
 	1260.1.1 = {
 		death = "1260.1.1"
 	}
@@ -3504,7 +3505,7 @@
 	father = 226051
 	1195.1.1 = {
 		birth = "1195.1.1"
-	}	
+	}
 	1241.1.1 = {
 		death = "1241.1.1"
 	}
@@ -3519,7 +3520,7 @@
 	1230.1.1 = {
 		birth = "1230.1.1"
 	}
-		
+
 	1263.1.1 = {
 		death = "1263.1.1"
 	}
@@ -7280,40 +7281,6 @@
 	}
 }
 
-163133 = {
-	name = "Hamdan"
-	dynasty = 7518
-
-	culture = "levantine"
-	religion = "ismaili"
-
-	#Skills
-	diplomacy = 6
-	martial = 7
-	stewardship = 7
-	intrigue = 5
-	learning = 5
-	prowess = 6
-	
-	#Education
-	trait = education_martial_3
-	
-	#Personality Traits
-	trait = brave # Lead battles, warrior, etc.
-	trait = diligent # Became a prominent leader in the rebellion i.e worked hard
-	trait = cynical # Defected to the Kharijite rebels
-	
-	#Other Traits
-	trait = unyielding_defender #  Hamdan offered tenacious opposition to Al-Mutadid's attempts to subjugate his province
-
-	837.1.1 = {
-		birth = "837.1.1"
-	}
-	874.1.1 = {
-		death = "874.1.1"
-	}
-}
-
 163167 = {
 	name = "Muhammad"
 	dynasty = 1029123
@@ -7356,18 +7323,6 @@
 	}
 }
 
-188655 = {
-	name = "Salahaddin" # fictitious holder of Al-Habbariyah
-	dynasty = 1042127 # Banu Taghlib
-	religion = "ashari"
-	culture = "levantine"
-	733.1.1 = {
-		birth = yes
-	}
-	800.1.1 = {
-		death = yes
-	}
-}
 146038 = {
 	name = "Sulayman"
 	dynasty = 1022360 # Subaid
@@ -7980,7 +7935,7 @@
 
 levantine000001 = {
 	name = "Zurara"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	culture = levantine
 	789.1.1 = {
@@ -7993,7 +7948,7 @@ levantine000001 = {
 
 levantine000002 = { # https://en.wikipedia.org/wiki/Musa_ibn_Zurara
 	name = "Musa"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	father = levantine000001
 	culture = levantine
@@ -8007,7 +7962,7 @@ levantine000002 = { # https://en.wikipedia.org/wiki/Musa_ibn_Zurara
 
 levantine000003 = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_Zurara
 	name = "Abu_l_Maghra"
-	dynasty = 7503 
+	dynasty = 7503
 	religion = ashari
 	father = levantine000002
 	mother = HEE_ashot_iv_unnamed_daughter
@@ -8023,11 +7978,10 @@ levantine000003 = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_
 	}
 	865.1.1 = {
 		add_spouse = HEE_artsruni_unnamed_princess
-		effect = {
-			add_secret = {
-				type = secret_non_believer # According to rumors, he secretly converted to Christianity
-			}
-		}
+			effect = {
+				make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:orthodox }
+				 learn_language_of_culture = culture:armenian
+			} 
 	}
 	896.1.1 = {
 		death = yes
@@ -8078,6 +8032,7 @@ levantine000012 = { #Ayyub's son
 		death = yes
 	}
 }
+
 extra_taghlibs_1 = {
 	name = "Al-Khattab"
 	dynasty_house = house_al_adawiyya #Banu Taghlib al-ʿAdawīyya
@@ -8214,8 +8169,26 @@ extra_taghlibs_7 = { #appointed ruler of Diyar Rabi'a ~820
 	religion = ashari
 	culture = levantine
 	father = extra_taghlibs_7
-	trait = zealous
+
+	#Skills
+	diplomacy = 6
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 6
+	
+	#Education
 	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave # Lead battles, warrior, etc.
+	trait = diligent # Became a prominent leader in the rebellion i.e worked hard
+	trait = zealous # Defected to the Kharijite rebels
+	
+	#Other Traits
+	trait = unyielding_defender #  Hamdan offered tenacious opposition to Al-Mutadid's attempts to subjugate his province
+
 	832.1.1 = {
 		birth = yes
 	}
@@ -8400,7 +8373,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	dynasty = 1042113
 	religion = ashari
 	culture = levantine
-	
+
 	839.1.1 = {
 		birth = yes
 	}
@@ -8636,12 +8609,12 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	mother = abbasid_concubines_1
 	trait = sayyid
 	trait = poet
-	trait = callous
-	trait = cynical
 	trait = arbitrary
-	trait = paranoid
+	trait = calm
+	trait = diligent
+	trait = callous
 	trait = education_diplomacy_1
-	
+
 	847.1.1 = {
 		birth = yes
 		effect = {
@@ -8657,8 +8630,6 @@ levantine000010 = { #fictional ruler of Banu Kilab
 		add_pressed_claim = title:d_edessa # Mustazhirids
 		add_pressed_claim = title:d_azerbaijan # Yazidids
 		capital = c_samarra #Capital at the time
-		
-		remove_short_term_gold = 500
 
 		add_character_flag = {
 			flag = recent_nation_fracturing_faction_war
@@ -8668,6 +8639,8 @@ levantine000010 = { #fictional ruler of Banu Kilab
 		add_character_modifier = {
 			modifier = fp3_struggle_caliph_super_suspicious_modifier
 		}
+
+		remove_short_term_gold = 500 # State suffered from lack of funds
 	}
 	869.1.1 = {
 		death = yes
@@ -8736,7 +8709,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	#Personality Traits
 	trait = brave
 	trait = diligent
-	trait = gregarious
+	trait = gregarious 
 	trait = ambitious
 	
 	#Other Traits
@@ -8762,7 +8735,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 					modifier = perk_negotiated_alliance_opinion
 				}
 			}
-		}	
+		}
 	}
 	891.6.2 = {
 		death = yes
@@ -9449,7 +9422,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	religion = muwalladi
 	culture = levantine
 	trait = education_stewardship_2
- 
+
 	father = 45001 # Emir al-Rasid of Cordoba
 
 	1036.1.1 = {
@@ -9491,7 +9464,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 		add_concubine = levantine0024 # Hulal
 	}
 	763.1.1= {
-	 	give_nickname = nick_the_hawk_of_quraysh
+		give_nickname = nick_the_hawk_of_quraysh
 	}
 	788.9.29 = {
 		death = yes
@@ -12273,7 +12246,7 @@ levantine0125 = {
 	1054.1.1 = {
 		birth = yes
 	}
-	 1070.1.1 = {
+	1070.1.1 = {
 		trait = education_learning_2
 	}
 	1104.1.1 = {
@@ -12737,6 +12710,54 @@ azariqa_0006 = { #historical Azariqa leader in Bam
 
 	821.12.12 = {
 		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+			spawn_army = {
+				name = azariqa_fanatics
+				levies = 400
+				men_at_arms = {
+					type = mubarizun
+					stacks = 1
+				}
+				location = province:4083
+				origin = province:4083 
+				inheritable = yes
+			}
+		}
 	}
 	868.1.1 = {
 		death = {

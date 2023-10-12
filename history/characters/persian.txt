@@ -419,8 +419,28 @@
 	1018.4.10 = {
 		birth = yes
 	}
-	1063.9.5 = {
-		give_nickname = nick_nizam_al_mulk
+	1063.9.5 = { give_nickname = nick_order_of_the_realm }
+	1066.1.1 = {
+		employer = 3040
+		effect  = {
+			# Set up some mutual respect for a good working arrangement.
+			## A solid lil relationship, though they do actually share very similar traits regardless.
+			set_relation_friend = {
+				target = character:3040
+				reason = friend_generic_history
+			}
+			## But also let's reinforce the hell out of it.
+			add_opinion = {
+				target = character:3040
+				modifier = respect_opinion
+				opinion = 100
+			}
+			reverse_add_opinion = {
+				target = character:3040
+				modifier = respect_opinion
+				opinion = 100
+			}
+		}
 	}
 	1092.10.14 = {
 		death = "1092.10.14"
@@ -1680,15 +1700,15 @@
 	father = 163163
 
 	martial = 12
-	diplomacy = 5
+	diplomacy = 8
 	intrigue = 8
 	stewardship = 9
 	learning = 4
 	prowess = 13
 
 	trait = ambitious
-	trait = brave
-	trait = temperate
+	trait = brave 
+	trait = temperate 
 	trait = generous
 	trait = education_martial_4
 	trait = disfigured
@@ -1714,6 +1734,7 @@
 		effect = {
 			set_relation_potential_rival = character:34014 #the Caliph Mu'tazz
 			set_relation_potential_friend = character:163162 #a Tahirid who became a close ally of Ya'qub
+			set_relation_potential_friend = character:163164 #his brother, to prevent him joining murdering schemes against this guy too early
 			add_prestige = 1200
 			add_gold = 200 
 			spawn_army = {
@@ -2199,17 +2220,18 @@ extra_saffarids_21 = {
 
 	martial = 9
 	diplomacy = 8
-	intrigue = 12
+	intrigue = 8 #traits boost this immesively already
 	stewardship = 5
 	learning = 4
 	prowess = 11
-	
+
 	trait = ambitious
 	trait = callous  
-	trait = temperate
+	trait = temperate 
 	trait = diligent
 	trait = education_intrigue_2
 	trait = shrewd
+	trait = loyal
 
 	disallow_random_traits = yes
 
@@ -2222,7 +2244,9 @@ extra_saffarids_21 = {
 	855.1.1 = {
 		effect = { learn_language_of_culture = culture:bedouin	}
 	}
-
+	867.1.1 = {
+		give_council_position = councillor_spymaster
+	}
 	902.1.1 = {
 		death = { 
 			death_reason = death_execution 
@@ -2261,13 +2285,14 @@ extra_saffarids_23 = {
 	prowess = 9
 	
 	#Education
-	trait = education_martial_4
+	trait = education_martial_3
 	
 	#Personality Traits
 	trait = brave
 	trait = diligent
 	trait = temperate
 	trait = humble
+
 	842.1.1 = {
 		birth = yes
 	}
@@ -5441,6 +5466,9 @@ hunas_5 = {
 	1043.4.10 = {
 		birth = yes
 	}
+	1066.1.1 = {
+		employer = 3040
+	}
 	1095.1.1 = {
 		employer = 144013
 		give_council_position = councillor_chancellor
@@ -5491,6 +5519,9 @@ hunas_5 = {
 	father = 3050
 	1056.4.4 = {
 		birth = yes
+	}
+	1066.1.1 = {
+		employer = 3040
 	}
 	1103.6.6 = {
 		employer = 144013
@@ -5805,6 +5836,9 @@ extra_persians_10 = { #pre-1066 son of Nizam al-Mulk
 	trait = diligent 
 	1051.1.1 = {
 		birth = yes
+	}
+	1066.1.1 = {
+		employer = 3040
 	}
 	1101.1.1 = {
 		death = {

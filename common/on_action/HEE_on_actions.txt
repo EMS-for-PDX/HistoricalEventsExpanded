@@ -351,6 +351,9 @@ HEE_ghaznavids = {
 }
 
 HEE_seljuk_spawn = {
+	trigger = {
+		always = no
+	}
 	effect = {
 		#Seljuk Invasion to create them
 		if = {

@@ -74,66 +74,6 @@ HEE_hamdan_unknown_kurdish_wife = {
 	}
 }
 
-HEE_ibrahim_hamdanid = { # https://en.wikipedia.org/wiki/Hamdan_ibn_Hamdun#/media/File:Hamdanid_family_tree.svg
-	name = "Ibrahim"
-	# female = yes
-	dynasty = 7518
-	culture = "levantine"
-	religion = "ismaili"
-	father = 163133
-	mother = HEE_hamdan_unknown_kurdish_wife
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-
-	#Personality Traits
-
-	# Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
-	
-	864.1.1 = { # Unknown
-		birth = yes
-	}
-	905.1.1 = { # Unknown
-		death = yes
-	}
-}
-
-HEE_husayn_hamdanid = { # https://en.wikipedia.org/wiki/Husayn_ibn_Hamdan
-	name = "Husayn"
-	# female = yes
-	dynasty = 7518
-	culture = "levantine"
-	religion = "ismaili"
-	father = 163133
-	mother = HEE_hamdan_unknown_kurdish_wife
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
-	
-	866.1.1 = { # Unknown
-		birth = yes
-	}
-	918.10.15 = { # executed in October/November 918 on the caliph's orders
-		death = yes
-	}
-}
-
 HEE_abdallah_hamdanid = { # https://en.wikipedia.org/wiki/Abdallah_ibn_Hamdan
 	name = "Abdallah"
 	# female = yes
@@ -220,6 +160,67 @@ HEE_damascus_governor = { # https://en.wikipedia.org/wiki/List_of_rulers_of_Dama
 		birth = yes
 	}
 	896.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_muflih_al_turki = { # Muflih Al-Turki, chief lieutenant to the general Musa ibn Bugha al-Kabir - https://en.wikipedia.org/wiki/Muflih_al-Turki
+	name = "Muflih"
+	# female = yes
+	dynasty = hee_al_turki
+	culture = "turkish"
+	religion = "ashari"
+	# father = 
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+	trait = education_martial_2
+
+	# Personality Traits
+	trait = brave # Typical soldier trait, fought in multiple battles
+	trait = diligent # chief lieutenant to Musa, assumingly was relied on and did hard work
+	trait = content # Seemingly happy to be Musa's subbordinate
+
+	# Other Traits
+	trait = loyal
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	828.1.1 = { # Unknown
+		birth = yes
+	}
+	872.4.2 = { # On April 1 Muflih was mortally wounded by an arrow that struck him in the temple. Died of his wound on the following morning
+		death = yes
+	}
+}
+
+HEE_muflih_al_turki_son = { # Muflih Al-Turki, chief lieutenant to the general Musa ibn Bugha al-Kabir - https://en.wikipedia.org/wiki/Muflih_al-Turki
+	name = "Abd al-Rahman"
+	# female = yes
+	dynasty = hee_al_turki
+	culture = "turkish"
+	religion = "ashari"
+	father = HEE_muflih_al_turki
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	848.1.1 = { # Unknown
+		birth = yes
+	}
+	890.1.1 = { # Unknown
 		death = yes
 	}
 }

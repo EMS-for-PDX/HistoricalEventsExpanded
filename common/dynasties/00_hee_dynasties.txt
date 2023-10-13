@@ -265,5 +265,10 @@ hee_nefja = {
 hee_gaular = {
 	prefix = "dynnp_of"
 	name = "dynn_Gaular"
-	culture = "french"
+	culture = "norse"
+}
+
+hee_al_turki = {
+	name = "dynn_al_Turki"
+	culture = "turkish"
 }

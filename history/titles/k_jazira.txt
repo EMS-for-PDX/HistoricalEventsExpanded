@@ -1767,7 +1767,7 @@ c_hadithat-ana = {
 	#	holder = 0
 	#}
 	866.1.1 = {
-		liege = "d_euphrates"
+		liege = "e_arabia"
 		holder = extra_kurds_0010
 	}
 	877.1.1 = {

@@ -3462,7 +3462,10 @@ d_kermanshah = {
 		liege=0
 		holder = 163098
 	}
-	
+	866.1.1={
+		liege= "e_arabia"
+		holder = 163132
+	}
 	1063.9.4= {
 		holder=3040
 	}
@@ -3701,9 +3704,9 @@ c_saimara = {
 		holder = 188631 # Khuzaymah b Khazmi (fictitious assignment)
 	}
 	
-	866.1.1 = {
-		liege = "d_wasit"
-		holder = 34015
+	866.1.1={
+		liege = d_kermanshah
+		holder = HEE_muflih_al_turki # Musa ibn Bugha al-Kabir's chief lieutenant
 	}
 	869.1.1 = {
 		liege = 0

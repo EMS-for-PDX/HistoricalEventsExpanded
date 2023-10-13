@@ -1,0 +1,29 @@
+##################################################
+# 867 WARS
+
+# Charles the Bald's March on Brittany
+war = {
+	name = "war_867_Charles_March_on_Brittany"
+	start_date = 867.1.1
+	end_date = 867.8.15
+	targeted_titles={
+		
+	}
+	casus_belli = vassalization_cb
+	attackers = { 90104 }
+	defenders = { 163105 }
+}
+
+# Abbasid Punitive Campaigns against the Dulafids
+war = {
+	name = "war_867_Abbasid_Dulafid_Campaign"
+	start_date = 867.1.1
+	end_date = 868.1.1
+	targeted_titles={
+		d_hamadan
+	}
+	casus_belli = claim_cb
+	attackers = { 163132 }
+	defenders = { 163098 }
+	claimant = 163132
+}

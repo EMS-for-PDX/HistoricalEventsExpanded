@@ -144,19 +144,6 @@ hee_anarchy_at_samarra = {
 				}
 			}
 		}
-		### Gradual disintegration of Abbasid Caliphate ###
-		character:34014 = {
-			if = {
-				limit = {
-					is_alive = yes
-					is_landed = yes
-				}
-				trigger_event = {
-					id = hee_anarchy_at_samarra.9000
-					days = { 1 365 }
-				}
-			}
-		}
 	}
 }
 

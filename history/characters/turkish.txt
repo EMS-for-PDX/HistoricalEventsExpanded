@@ -7237,6 +7237,9 @@
 	866.1.1 = {
 		effect = {
 			add_unpressed_claim = title:c_rayy
+			add_unpressed_claim = title:d_hamadan # Appointed Governor of Jibal
+			add_unpressed_claim = title:d_rayy # Appointed Governor of Jibal
+			add_unpressed_claim = title:d_isfahan # Appointed Governor of Jibal
 		}
 	}
 	877.1.1 = {

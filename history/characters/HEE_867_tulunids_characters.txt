@@ -241,6 +241,7 @@ HEE_shukayr = {
 		birth = yes
 	}
 	866.1.1 = {
+		give_council_position = councillor_spymaster
 		effect = {
 			add_character_modifier = egyptian_spymaster_modifier
 			add_gold = 350 # considering his position and large cash bribe to Ibn Tulun, quite a wealthy man
@@ -303,6 +304,7 @@ HEE_al_mudabbir = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27
 		birth = yes
 	}
 	866.1.1 = {
+		give_council_position = councillor_steward
 		effect = {
 			add_character_modifier = results_of_egyptian_heavy_taxes_modifier
 			add_character_modifier = constantly_protected_by_bodyguards_modifier
@@ -373,7 +375,7 @@ HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - r
 	# prowess = 6
 	
 	#Education
-	trait = education_diplomacy_3 # wrote a book on administration
+	trait = education_diplomacy_3
 	
 	#Personality Traits
 	trait = arrogant # Proclaimed himself Caliph
@@ -517,6 +519,10 @@ HEE_ibn_tulun_chancellor = { # Abu Ja'far Muhammad ibn 'Abd al-Kan
 
 	830.10.6 = { # Unknown
 		birth = yes
+	}
+	866.1.1 = {
+		employer = 163115
+		give_council_position = councillor_chancellor
 	}
 	891.3.7 = { # died in 891
 		death = yes
@@ -810,7 +816,7 @@ HEE_ahmad_ibn_al_daya = {
 }
 
 HEE_yusuf_al_daya_secondborn = { # Yusuf's other son Yaqub
-	name = "Ahmad"
+	name = "Yaqub"
 	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"

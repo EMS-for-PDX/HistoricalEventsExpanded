@@ -259,7 +259,7 @@ war = {
 	}
 	casus_belli = azariqa_rebellion_cb
 	attackers = { extra_kurds_0010 }
-	defenders = { 34014 } #Caliph al-Mutazz
+	defenders = { 34014 levantine000009 } #Caliph al-Mutazz & Governor of Jazira
 
 	extra_kurds_0010 = {
 		867.1.1 = {

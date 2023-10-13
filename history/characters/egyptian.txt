@@ -1711,6 +1711,12 @@
 	835.9.20 = {
 		birth = "835.9.20"
 	}
+	866.1.1 = {
+		add_character_flag = {
+			flag = recent_nation_fracturing_faction_war
+			years = faction_nation_fracturing_war_defeat_cooldown
+		}
+	}
 	884.3.1 = {
 		death = "884.3.1"
 	}
@@ -1727,6 +1733,7 @@
 	trait = arrogant # Eager to display his wealth, the Tulunid ruler built numerous palaces for himself and his favourites, and engaged in famous displays of royal extravagance
 	trait = forgiving # treated the prisoners of war from Tawahin with exceptional clemency, giving them the choice of either staying in Egypt under his own service or returning to Iraq without ransom
 	trait = callous # Assassinated his own brother Abbas
+	trait = charming
 
 	disallow_random_traits = yes
 	864.1.1 = {

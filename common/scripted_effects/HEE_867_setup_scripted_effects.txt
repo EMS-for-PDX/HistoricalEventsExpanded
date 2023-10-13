@@ -110,12 +110,12 @@ hee_karling_867_effect = {
 
 	# Francia #
 
-	scope:charles_the_bald = { # Declare Charle's attempted subjugation of the Bretons 
-		start_war = {
-			casus_belli = vassalization_cb
-			target = scope:salomon
-		}
-	}	
+	# scope:charles_the_bald = { # Declare Charle's attempted subjugation of the Bretons 
+	# 	start_war = {
+	# 		casus_belli = vassalization_cb
+	# 		target = scope:salomon
+	# 	}
+	# }
 	
 	character:168246 = { # Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
 		give_nickname = nick_the_abbot

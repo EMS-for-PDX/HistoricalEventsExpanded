@@ -10,7 +10,7 @@ house_mod_seljuk = {
 }
 
 house_ghaznavid = {
-	name = "Ghaznavid"
+	name = "dynn_Ghaznavid"
 	dynasty = 790
 }
 

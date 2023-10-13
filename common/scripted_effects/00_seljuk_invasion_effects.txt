@@ -1347,7 +1347,8 @@ spawn_ghaznavids_character_effect = {
 	create_character = {
 		name = "Sabuktigin"
 		location = scope:ghaznavids_birthplace
-		template = HEE_ghaznavid_template 
+		template = HEE_ghaznavid_template
+		dynasty_house = house:house_ghaznavid
 		save_scope_as = ghaznavid
 	}
 	
@@ -1365,16 +1366,22 @@ spawn_ghaznavids_character_effect = {
 			modifier = the_turkic_conqueror_modifier
 		}
 		add_trait = turkish_conqueror
-		#form_the_seljuk_empire_effect = yes
-		add_trait = fecund
 		add_prestige = 5000
 		add_gold = 2000
 		add_piety = 1000
+		add_dread = high_dread
 		dynasty = {
-			add_dynasty_prestige_level = 3
+			add_dynasty_prestige_level = 2
 			add_dynasty_prestige = 1000
 			add_dynasty_perk = warfare_legacy_1
 			add_dynasty_perk = warfare_legacy_2
+			add_dynasty_perk = warfare_legacy_3
+			if = {
+				limit = {
+					has_dlc_feature = hybridize_culture
+				}
+				add_dynasty_perk = ep1_culture_legacy_1
+			}
 		}
 		set_global_variable = {
 			name = ghaznaviddynasty
@@ -1384,24 +1391,14 @@ spawn_ghaznavids_character_effect = {
 			name = ghaznavidfounder
 			value = scope:ghaznavid
 		}
-		dynasty = {
-			set_dynasty_name = "Ghaznavid"
-			set_coa = dynasty:790
-		}
-		house = {
-			set_house_name = "Ghaznavid"
-			set_coa = dynasty:790
-		}
 	}
+
 	create_character = {
-		age = 0.1
-		name = "Mahmud"
+		name = "Mahmud" 
 		father = scope:ghaznavid
 		location = scope:ghaznavids_birthplace
-		faith = scope:ghaznavid.faith
-		dynasty = scope:ghaznavid.house
-		culture = scope:ghaznavid.culture
-		gender_female_chance = 0
+		template = HEE_ghaznavid_mahmud_template
+		dynasty_house = house:house_ghaznavid
 		save_scope_as = Mahmud
 		add_trait = turkish_conqueror
 		set_global_variable = {
@@ -1414,14 +1411,11 @@ spawn_ghaznavids_character_effect = {
 	}
 
 	create_character = {
-		age = 0.1
 		name = "Ismail"
 		father = scope:ghaznavid
 		location = scope:ghaznavids_birthplace
-		faith = scope:ghaznavid.faith
-		dynasty = scope:ghaznavid.house
-		culture = scope:ghaznavid.culture
-		gender_female_chance = 0
+		template = HEE_ghaznavid_ismail_template
+		dynasty_house = house:house_ghaznavid
 		save_scope_as = Ismail
 		add_trait = turkish_conqueror
 		set_global_variable = {

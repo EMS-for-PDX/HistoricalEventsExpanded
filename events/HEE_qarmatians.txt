@@ -1,0 +1,478 @@
+﻿namespace = HEE_qarmatians
+
+### Spawn Seljuk
+HEE_qarmatians.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning the qarmatians before 1066 start date"
+		debug_log_date = yes
+		spawn_qarmatians_character_effect = yes
+		global_var:qarmatian_founder = {
+			trigger_event = {
+				id = HEE_qarmatians.0112
+				days = 5
+			}
+		}
+	}
+}
+
+HEE_qarmatians.0112 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		global_var:qarmatian_founder = { 
+			#give_ghaznavid_land_effect = yes
+			add_pressed_claim = title:d_bahrain
+			add_pressed_claim = title:d_al-hasa
+			trigger_event = {
+				id = HEE_qarmatians.0011 #trigger the actual war stuff
+				days = { 30 100 }
+			}
+		}
+	}
+}
+
+### Spawn Empire 
+HEE_qarmatians.0011 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		global_var:qarmatian_founder = {
+			create_dynamic_title = {
+				tier = kingdom
+				name = "Qarmatians"
+			}
+			create_title_and_vassal_change = {
+				type = created
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			scope:new_title = {
+				set_capital_county = title:c_al-hasa
+				set_landless_title = yes
+				set_no_automatic_claims = yes
+				set_definitive_form = yes
+				set_can_be_named_after_dynasty = no
+
+				change_title_holder = {
+					holder = global_var:qarmatian_founder
+					change = scope:change
+				}
+			}
+		
+			resolve_title_and_vassal_change = scope:change
+		
+			scope:new_title = { 
+				set_coa = global_var:qarmatian_founder.house
+				set_color_from_title = title:c_al-hasa
+			}
+			
+			add_realm_law_skip_effects = high_partition_succession_law
+		
+			set_global_variable = {
+				name = qarmatian_realm_title
+				value = scope:new_title
+			}
+			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+			create_story = story_qarmatian_invasion
+		}
+	}
+}
+
+# The Seljuks demands subjugation
+HEE_qarmatians.5001 = {
+	type = letter_event
+	opening = HEE_qarmatians.5001.opening
+	desc = HEE_qarmatians.5001.desc
+	sender = {
+		character = scope:ghaznavid_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { is_at_war_with = scope:ghaznavid_emperor }
+		NOT = { root = scope:ghaznavid_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	option = { # Submit
+		name = HEE_qarmatians.5001.a
+		custom_tooltip = HEE_qarmatians.5001.a.tt
+		hidden_effect = {
+			scope:ghaznavid_emperor = {
+				trigger_event = HEE_qarmatians.2002
+			}
+		}
+		ai_chance = {
+			base = 100
+			# More likely for Altaic group to join the big 'un
+			# modifier = {
+			# 	add = 200
+			# 	culture_group = culture_group:mongolic_group
+			# }
+			# More likely if you're just a count
+			modifier = {
+				add = 300
+				highest_held_title_tier = tier_county
+			}
+			# More likely if you're a duke
+			modifier = {
+				add = 100
+				highest_held_title_tier = tier_duchy
+			}
+			# Unlikely if you're Arrogant
+			modifier = {
+				factor = 0.2
+				has_trait = arrogant
+			}
+			# Unlikely if you're brave
+			modifier = {
+				factor = 0.2
+				has_trait = brave
+			}
+			# Likely if you're a Craven
+			modifier = {
+				factor = 1.2
+				has_trait = craven
+			}
+			# Lower chance if you're decently large
+			modifier = {
+				factor = 0.5
+				realm_size >= 35 # Poland-sized
+			}
+			# No chance of accepting if you're large
+			modifier = {
+				factor = 0
+				realm_size >= 55 # Hungary-sized
+			}
+		}
+	}
+
+	option = { # Resist
+		name = HEE_qarmatians.5001.b
+		custom_tooltip = HEE_qarmatians.2001.b.tt
+		add_internal_flag = dangerous
+		hidden_effect = {
+			scope:ghaznavid_emperor = {
+				trigger_event = {
+					id = HEE_qarmatians.2003
+					days = 10
+				}
+			}
+		}		
+		ai_chance = {
+			base = 300
+		}
+	}
+}
+
+# Subjugation accepted
+HEE_qarmatians.2002 = {
+	type = letter_event
+	opening = HEE_qarmatians.2002.opening
+	desc = HEE_qarmatians.2002.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		scope:demand_recipient = {
+			change_liege = {
+				liege = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone accepted Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # Wise choice
+		name = HEE_qarmatians.2002.a
+	}
+}
+
+# Subjugation refused
+HEE_qarmatians.2003 = {
+	type = letter_event
+	opening = HEE_qarmatians.2003.opening
+	desc = HEE_qarmatians.2003.desc
+	sender = {
+		character = scope:demand_recipient
+		animation = personality_bold
+	}
+
+	immediate = {
+		hidden_effect = {
+			scope:demand_recipient.primary_title = {
+				save_scope_as = target_title
+			}
+		}
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone refused Seljuk subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # War it is
+		name = HEE_qarmatians.2003.a
+		if = {
+			limit = {
+				exists = scope:target_title.kingdom
+			}
+			start_war = {
+				cb = seljuk_invasion_war
+				target = scope:target_title.holder
+				target_title = scope:target_title.kingdom
+			}
+		}
+		else = {
+			debug_log = "Failed to find a target empire for a Ghazna invasion!"
+			debug_log_scopes = yes
+
+			start_war = {
+				cb = seljuk_invasion_war
+				target = scope:target_title.holder
+				target_title = scope:target_title.holder.capital_province.kingdom
+			}
+		}
+	}
+}
+
+# The Khan demands subjugation - Empire
+HEE_qarmatians.2111 = {
+	type = letter_event
+	opening = HEE_qarmatians.2001.opening
+	desc = HEE_qarmatians.2101.desc
+	sender = {
+		character = scope:ghaznavid_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { root = scope:ghaznavid_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	# Outrageous!
+	option = {
+		name = HEE_qarmatians.2111.b
+		custom_tooltip = HEE_qarmatians.2111.b.tt
+		hidden_effect = {
+			scope:ghaznavid_emperor = {
+				trigger_event = HEE_qarmatians.2112
+			}
+		}
+	}
+}
+
+# Subjugation refused
+HEE_qarmatians.2112 = {
+	type = letter_event
+	opening = HEE_qarmatians.2003.opening
+	desc = HEE_qarmatians.2112.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone refused Ghanza subjugation - Broke alliance"
+		debug_log_scopes = yes
+	}
+
+	option = { # Our alliance is over
+		name = HEE_qarmatians.2112.a
+		break_alliance = scope:demand_recipient
+	}
+}
+
+HEE_qarmatians.2101 = { #king
+	type = letter_event
+	opening = HEE_qarmatians.2001.opening
+	desc = HEE_qarmatians.2101.desc
+	sender = {
+		character = scope:ghaznavid_emperor
+		animation = personality_bold
+	}
+
+	trigger = {
+		NOT = { root = scope:ghaznavid_emperor }
+	}
+
+	immediate = {
+		save_scope_as = demand_recipient
+	}
+
+	option = { # Submit
+		name = HEE_qarmatians.2101.a
+		custom_tooltip = HEE_qarmatians.2001.a.tt
+		hidden_effect = {
+			scope:ghaznavid_emperor = {
+				trigger_event = HEE_qarmatians.2102
+			}
+		}
+		ai_chance = {
+			base = 100
+			# More likely for Altaic group to join the big 'un
+			# modifier = {
+			# 	add = 300
+			# 	culture_group = culture_group:mongolic_group
+			# }
+			# More likely if you're just a count
+			modifier = {
+				add = 1000
+				highest_held_title_tier = tier_county
+			}
+			# More likely if you're a duke
+			modifier = {
+				add = 400
+				highest_held_title_tier = tier_duchy
+			}
+			# Unlikely if you're Arrogant
+			modifier = {
+				factor = 0.2
+				has_trait = arrogant
+			}
+			# Unlikely if you're brave
+			modifier = {
+				factor = 0.2
+				has_trait = brave
+			}
+			# Likely if you're a Craven
+			modifier = {
+				factor = 2
+				has_trait = craven
+			}
+			# Lower chance if you're decently large
+			modifier = {
+				factor = 0.5
+				realm_size >= 35 # Poland-sized
+			}
+			# No chance of accepting if you're large
+			modifier = {
+				factor = 0
+				realm_size >= 55 # Hungary-sized
+			}
+		}
+	}
+
+	option = {
+		name = HEE_qarmatians.2101.b
+		add_internal_flag = dangerous
+		custom_tooltip = HEE_qarmatians.2101.b.tt
+		hidden_effect = {
+			scope:ghaznavid_emperor = {
+				trigger_event = HEE_qarmatians.2103
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# Subjugation accepted
+HEE_qarmatians.2102 = {
+	type = letter_event
+	opening = HEE_qarmatians.2002.opening
+	desc = HEE_qarmatians.2002.desc
+	sender = scope:demand_recipient
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = title_change
+			add_claim_on_loss = no
+		}
+		scope:demand_recipient = {
+			change_liege = {
+				liege = root
+				change = scope:title_change
+			}
+		}
+		resolve_title_and_vassal_change = scope:title_change
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+
+		debug_log = "Someone accepted Ghanza subjugation"
+		debug_log_scopes = yes
+	}
+
+	option = { # Wise choice
+		name = HEE_qarmatians.2002.a
+	}
+}
+
+# Subjugation refused
+HEE_qarmatians.2103 = {
+	type = letter_event
+	opening = HEE_qarmatians.2003.opening
+	desc = HEE_qarmatians.2003.desc
+	sender = {
+		character = scope:demand_recipient
+		animation = personality_bold
+	}
+
+	immediate = {
+		# Remove from the list blocking war declarations
+		remove_list_variable = {
+			name = subjugation_offer_under_consideration
+			target = scope:demand_recipient
+		}
+		break_alliance = scope:demand_recipient
+
+		debug_log = "Someone refused Ghanza subjugation"
+		debug_log_scopes = yes
+	}
+
+	# War it is
+	option = {
+		name = HEE_qarmatians.2103.a
+		start_war = {
+			cb = seljuk_invasion_war
+			target = scope:target_title.holder
+			target_title = scope:target_title.empire
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# Just you wait...
+	option = {
+		name = HEE_qarmatians.2103.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}

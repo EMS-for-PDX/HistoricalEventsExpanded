@@ -52,3 +52,20 @@ custom_pecheneg_wallachia = {
 		d_oltenia d_muntenia d_transylvanian_alps d_moldova d_bugeac d_bukovina
 	}
 }
+
+core_qarmatian_region = {
+	duchies = {
+		d_bahrain d_al-hasa
+	}
+}
+
+max_qarmatian_invasion_region = {
+	duchies = {
+		#Arabia
+		d_jawf d_amman d_shammar d_medina d_mecca d_asir d_najd d_yamama d_al-hasa d_bahrain d_oman
+		#Yemen
+		d_sanaa d_jawf-al-yamani d_taizz d_hadramawt d_mahra
+		#meso
+		d_samarra d_kurdistan d_wasit d_kufa d_basra d_baghdad
+	}
+}

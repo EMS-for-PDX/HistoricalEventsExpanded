@@ -71,3 +71,24 @@ HEE_ghaznavid_ismail_template = {
 	trait = rowdy
 	random_traits = no
 }
+
+HEE_qarmatian_founder_template = {
+	age = 49
+	gender = male
+	diplomacy = 12
+	martial = 9
+	stewardship = 8
+	intrigue = 10
+	learning = 8
+	prowess = 6
+	faith = faith:qarmatian
+	culture = culture:persian
+	trait = education_diplomacy_4
+	trait = gregarious
+	trait = deceitful
+	trait = ambitious
+	trait = diplomat
+	trait = heresiarch
+	trait = organizer
+	random_traits = no
+}

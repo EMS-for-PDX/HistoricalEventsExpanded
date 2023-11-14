@@ -367,7 +367,6 @@ tlk_leofric = {
 	trait = impatient
 
 	#Other Traits
-	trait = blademaster_2
 	trait = loyal
 	trait = holy_warrior
 
@@ -383,6 +382,13 @@ tlk_leofric = {
 	867.1.1 = {
 		employer = tlk_odda_the_elder
 		give_council_position = councillor_marshal
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+        }
 	}
 	871.4.24 = {
 		employer = 7627
@@ -419,7 +425,7 @@ tlk_eadgyth = {
 		birth = yes
 	}
 	865.1.1 = {
-		add_trait = devoted
+		trait = devoted
 	}
 	867.1.1 = {
 		employer = 7627
@@ -466,10 +472,10 @@ tlk_alfred_bastard = {
 	}
 	881.1.1 = {
 		#Personality Traits
-		add_trait = chaste
-		add_trait = calm
-		add_trait = humble
-		add_trait = brave
+		trait = chaste
+		trait = calm
+		trait = humble
+		trait = brave
 	}
 	887.1.1 = {
 		employer = 900100
@@ -619,7 +625,7 @@ tlk_mildrith = {
 		employer = 7627
 	}
 	880.1.1 = {
-		add_trait = devoted
+		trait = devoted
 	}
 }
 
@@ -649,7 +655,6 @@ tlk_steapa = {
 	#Other Traits
 	trait = intellect_bad_1
 	trait = loyal
-	trait = blademaster_2
 	trait = giant
 	trait = strong
 	
@@ -665,6 +670,13 @@ tlk_steapa = {
 	}
 	867.1.1 = {
 		employer = tlk_odda_the_elder
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+        }
 	}
 	878.1.1 = {
 		employer = 7627
@@ -955,7 +967,6 @@ tlk_cnut = { # https://en.wikipedia.org/wiki/Cnut_of_Northumbria
 	#Other Traits
 	trait = organizer
 	trait = reaver
-	trait = blademaster_1
 
 	disallow_random_traits = yes
 	sexuality = heterosexual
@@ -968,6 +979,13 @@ tlk_cnut = { # https://en.wikipedia.org/wiki/Cnut_of_Northumbria
 	867.1.1 = {
 		employer = 163112
 		give_nickname = nick_the_longsword
+		effect = {
+			add_trait = lifestyle_blademaster
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 50
+			}
+        }
 	}
 	# 887.1.1 = {
 		# employer = 600115
@@ -1159,5 +1177,57 @@ hee_ealdred = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobil
 	}
 	880.1.1 = {
 		death = yes
+	}
+}
+
+hee_aethelhelm_aetheling = { # https://en.wikipedia.org/wiki/%C3%86thelhelm
+	name = "E_thelhelm"
+	dynasty_house = house_british_isles_wessex
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 33358
+	mother = 306015
+	# health =
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	866.1.1 = {
+		birth = yes
+	}
+	895.1.1 = { # Estimated to have died during the 890s
+		death = yes
+	}
+}
+
+hee_aethelwold_aetheling = { # https://en.wikipedia.org/wiki/%C3%86thelwold_%C3%A6theling
+	name = "E_thelwold"
+	dynasty_house = house_british_isles_wessex
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 33358
+	mother = 306015
+	# health =
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	867.1.1 = {
+		birth = yes
+	}
+	902.12.13 = {
+		death = {
+			death_reason = death_battle # Died at the Battle of the Holme
+		}
 	}
 }

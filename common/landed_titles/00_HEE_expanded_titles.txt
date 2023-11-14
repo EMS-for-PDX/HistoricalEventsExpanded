@@ -5,6 +5,58 @@
 	# capital = c_turnovo
 # }
 
+e_bulgarian_principality = { # From the country's Christianization in 864 and the assumption of the imperial title by its rulers in 913, the country is also referred to as the Principality of Bulgaria
+	color = { 113 88 101 }
+	
+	definite_form = yes
+	
+	capital = c_dorostorum
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:bulgarian
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+
+}
+
+e_bulgarian_khanate = { # Between 681 and 864 the country is also called by modern historians as the Bulgarian Khanate, or the Bulgar Khaganate, from the Turkic title of khan/khagan borne by its rulers
+	color = { 113 88 101 }
+	
+	definite_form = yes
+	
+	capital = c_dorostorum
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:bulgarian
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+
+}
+
 e_carolingian_empire = { # https://en.wikipedia.org/wiki/Carolingian_Empire
 	color = { 7 7 145 }
 

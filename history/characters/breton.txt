@@ -3185,7 +3185,7 @@
 		}
 	}
 	857.11.2 = {
-		add_trait = murderer # assassinated his cousin Erispoe and seized the Breton throne in 857
+		trait = murderer # assassinated his cousin Erispoe and seized the Breton throne in 857
 		effect = {
 			character:163105 = {
 				create_character_memory = { type = murder_of_erispoe }

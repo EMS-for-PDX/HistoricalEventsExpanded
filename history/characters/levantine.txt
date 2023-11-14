@@ -5916,19 +5916,32 @@
 	dynasty = 1029123
 	father = 159731
 
+	#Skills
+	diplomacy = 10
+	martial = 9
+	stewardship = 8
+	intrigue = 8
+	learning = 7
+	prowess = 8
+
 	#Education
 	trait = education_martial_3 # Isa first appears in 848, in the ranks of the Abbasid army and spread his power through military means
 	
 	#Personality Traits
 	trait = generous # Canard credits Isa in particular with a "certain reputation for magnificence and generosity"
 	trait = arrogant # Historian Canard credits Isa in particular with a "certain reputation for magnificence and generosity"
+	trait = stubborn #  Isa was one of the governors who refused to immediately acknowledge the new Caliph, al-Mu'tazz / When offered amnesty by Caliph al-Muhtadi, Isa refused 
 	trait = ambitious # Sought to form his own state in the Anarchy
 	
 	#Other Traits
+	trait = desert_warrior # Commander trait suited for his environment
 	trait = poet  # Isa were esteemed for the quality of his Arabic poetry.
 
 	820.1.1 = {
 		birth = "820.1.1"
+	}
+	866.1.1 = {
+		add_gold = 250 # Aquired great riches in Egypt, which Isa brought with him to Palestine
 	}
 	883.1.1 = {
 		death = "883.1.1"
@@ -8368,11 +8381,32 @@ fictional_taghlibs_2 = { #attested circumstancially
 
 ###################Banu Taghlib end###########################
 
-levantine000010 = { #fictional ruler of Banu Kilab
-	name = "Khalid"
+levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by their broad cultural aspects
+	name = "Hasan"
 	dynasty = 1042113
-	religion = ashari
+	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
 	culture = levantine
+	father = hee_fictional_banu_kilab_0001
+
+	#Skills
+	diplomacy = 8
+	martial = 9
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 10
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = gregarious
+	trait = brave
+	trait = ambitious
+	
+	#Other Traits
+	trait = reaver
+	trait = poet
 
 	839.1.1 = {
 		birth = yes
@@ -8613,7 +8647,7 @@ levantine000010 = { #fictional ruler of Banu Kilab
 	trait = calm
 	trait = diligent
 	trait = callous
-	trait = education_diplomacy_1
+	trait = education_intrigue_3
 
 	847.1.1 = {
 		birth = yes
@@ -12827,6 +12861,11 @@ abbasid_concubines_1 = { #mother of al-Mut'azz
 	religion = orthodox
 	culture = greek
 	female = yes
+
+	trait = greedy # Hoarded vast amounts of wealth
+	trait = deceitful # Lied to her son when al-Mutazz asked her for money
+	trait = callous # Didnt care that her son desperated needed money to live
+
 	825.1.1 = { #speculative 
 		birth = yes
 	}
@@ -12848,6 +12887,9 @@ abbasid_concubines_2 = { #mother of al-Mu'tamid
 	}
 	842.1.1 = {
 		faith = ashari 
+	}
+	867.1.1 = {
+		add_gold = 1150 # Accounts say she had a vast fortune
 	}
 	865.1.1 = {
 		death = yes

@@ -152,7 +152,7 @@ hee_seljuk_1066_effect = {
 	# Scopes #
 	character:3040 = { save_scope_as = arp_arslan } # https://en.wikipedia.org/wiki/Alp_Arslan
 	character:3042 = { save_scope_as = malik_shah } # https://en.wikipedia.org/wiki/Malik-Shah_I
-	character:1000229906 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
+	character:extra_karakhanids_11 = { save_scope_as = turkan_khatun } # https://en.wikipedia.org/wiki/Terken_Khatun_(wife_of_Malik-Shah_I)
 	
 	character:3041 = { save_scope_as = qavurt } # https://en.wikipedia.org/wiki/Qavurt
 	

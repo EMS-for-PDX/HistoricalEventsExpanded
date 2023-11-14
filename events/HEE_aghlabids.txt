@@ -10,8 +10,8 @@ HEE_aghlabids_questline.0001 = { # News of a plague outbreaks reaches the Emir
 		animation = personality_rational
 	}
 	# right_portrait = {
-		# character = character:HEE_basiliskianos
-		# animation = personality_content
+		# character = character:
+		# animation = 
 	# }
 
 	trigger = {

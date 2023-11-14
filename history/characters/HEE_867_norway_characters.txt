@@ -399,3 +399,65 @@ HEE_atli_daughter = { # Solveig - https://en.wikipedia.org/wiki/Atli_the_Slender
 		death = yes
 	}
 }
+
+HEE_eirikr_fictional_son = { # 
+	name = "Hrolfr"
+	# female = yes
+	dynasty = 1040004
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 166329
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	839.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+HEE_eirikr_fictional_second_son = { # 
+	name = "Einarr"
+	# female = yes
+	dynasty = 1040004
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 166329
+	# mother =
+	# health = 5.0
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	843.1.1 = {
+		birth = yes
+	}
+	864.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

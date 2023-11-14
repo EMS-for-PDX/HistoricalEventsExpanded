@@ -110,7 +110,7 @@ HEE_francia_questline.0300 = { #Louis III encounters a beautiful girl who filts 
 	title = HEE_francia_questline.0300.t
 	desc = HEE_francia_questline.0300.desc
 	theme = intrigue_temptation_focus
-	override_background = { event_background = market }
+	override_background = { reference = market }
  	left_portrait = {
  		character = scope:beautiful_peasant
  		animation = flirtation
@@ -298,7 +298,7 @@ HEE_francia_questline.0301 = { #Louis III hit his head on the lintel of a low do
 	title = HEE_francia_questline.0301.t
 	desc = HEE_francia_questline.0301.desc
 	theme = intrigue_temptation_focus
-	override_background = { event_background = market }
+	override_background = { reference = market }
  	left_portrait = {
  		character = scope:beautiful_peasant
  		animation = shock
@@ -519,7 +519,7 @@ HEE_francia_questline.0401 = { #Carloman II encounters a wild boar
 	title = HEE_francia_questline.0401.t
 	desc = HEE_francia_questline.0401.desc
 	theme = hunt_activity
-	override_background = { event_background = terrain_scope }
+	override_background = { reference = terrain_scope }
  	left_portrait = {
 		character = root
 		animation = shock
@@ -572,13 +572,7 @@ HEE_francia_questline.0401 = { #Carloman II encounters a wild boar
 		name = HEE_francia_questline.0401.b
 
 		trigger = {
-			has_trait = {
-				OR = {
-					hunter_1
-					hunter_2
-					hunter_3
-				}
-			}
+			has_trait = { lifestyle_hunter }
 		}
 
 		custom_tooltip = you_use_your_skill_to_kill_the_boar
@@ -594,7 +588,7 @@ HEE_francia_questline.0402 = { #Carloman II is (perhaps) accidently stabbed by h
 	title = HEE_francia_questline.0402.t
 	desc = HEE_francia_questline.0402.desc
 	theme = hunt_activity
-	override_background = { event_background = terrain_scope }
+	override_background = { reference = terrain_scope }
  	left_portrait = {
 		character = root
 		animation = pain
@@ -658,7 +652,7 @@ HEE_francia_questline.0403 = { #Carloman II's stab wound becomes infected and he
 	title = HEE_francia_questline.0403.t
 	desc = HEE_francia_questline.0403.desc
 	theme = hunt_activity
-	override_background = { event_background = terrain_scope }
+	override_background = { reference = terrain_scope }
  	left_portrait = {
 		character = root
 		animation = sick

@@ -189,6 +189,9 @@ d_visegrad = {
 	858.1.1 = {
 		holder = 168072
 	}
+	863.1.1 = {
+		liege = "e_bulgarian_principality"
+	}
 	884.1.1 = {
 		holder = 168073
 	}
@@ -3027,6 +3030,9 @@ d_transylvania = {
 	852.1.1 = {
 		holder = 168069
 	}
+	863.1.1 = {
+		liege = "e_bulgarian_principality"
+	}
 	895.1.1 = {
 		liege = "k_magyar"
 	}
@@ -3758,9 +3764,9 @@ d_bihar = {
 		holder = 146153
 		government = tribal_government
 	}
-	860.1.1 = {
-		holder = 70382
-	}
+	# 860.1.1 = {
+	# 	holder = 70382
+	# }
 	895.1.1 = {
 		liege = "k_magyar"
 		holder = 0
@@ -4291,6 +4297,9 @@ d_temes = {
 	}
 	860.1.1 = {
 		holder = 168290
+	}
+	863.1.1 = {
+		liege = "e_bulgarian_principality"
 	}
 	895.1.1 = {
 		liege = "k_magyar"
@@ -5625,6 +5634,9 @@ c_szerem = {
 	}
 	860.1.1 = {
 		holder = 168067
+	}
+	863.1.1 = {
+		liege = "e_bulgarian_principality"
 	}
 	1066.1.1 = {
 		liege = "d_vidin"

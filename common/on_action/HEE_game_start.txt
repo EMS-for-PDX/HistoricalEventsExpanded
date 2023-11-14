@@ -65,7 +65,7 @@ hee_rise_of_simeon_constantinople_sendoff = {
 	effect = {
 		### 867 - Rise of Simeon ###
 		#Boris abdicates to become a Monk
-		title:k_bulgaria.holder = {
+		title:e_bulgarian_principality.holder = {
 			if = {
 				limit = {
 					is_alive = yes
@@ -540,13 +540,6 @@ hee_carloman_ii_hunting_accident = {
 
 hee_rise_of_simeon_startup = {
 	effect = {
-		#Seljuk Invasion to create them
-		# if = {
-			# limit = {
-				# has_game_rule = rise_of_simeon_off
-			# }
-		# }
-		# else_if = {
 		if = {
 			limit = {
 				NOT = { has_global_variable = boris_has_abdicated }
@@ -561,7 +554,7 @@ hee_rise_of_simeon_startup = {
 					current_date > 875.1.1
 				}
 				modifier = {
-					add = 39
+					add = 10
 					current_date > 880.1.1
 				}
 				modifier = {
@@ -569,7 +562,7 @@ hee_rise_of_simeon_startup = {
 					current_date > 885.1.1
 				}
 				modifier = {
-					add = 30
+					add = 59
 					current_date > 889.1.1
 				}
 				set_global_variable = {

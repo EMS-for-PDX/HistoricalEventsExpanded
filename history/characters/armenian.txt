@@ -7790,7 +7790,7 @@
 	}
 }
 159976 = {
-	name = "Grigor Hamam"
+	name = "Grigor_Hamam"
 	dynasty = 1029025
 	religion = "armenian_apostolic"
 	culture = "armenian"

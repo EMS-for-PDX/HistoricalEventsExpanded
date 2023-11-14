@@ -4230,7 +4230,7 @@
 	learning = 2
 	prowess = 10
 	trait = lifestyle_hunter
-	trait = blademaster_2
+	trait = lifestyle_blademaster
 	trait = arbitrary
 	trait = brave
 	trait = wrathful
@@ -4244,6 +4244,16 @@
 	}
 	866.11.1 = {
 		employer = 163112
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				value = 100
+			}
+			add_trait_xp = {
+				trait = lifestyle_blademaster
+				value = 100
+			}
+		}
 	}
 	878.6.6 = {
 		death = yes # Battle of Cynwit
@@ -4546,6 +4556,10 @@
 	trait = arrogant
 	trait = wrathful
 	trait = brave
+
+	#Other Traits
+	trait = reaver
+	trait = viking
 
 	819.1.1 = {
 		birth = "819.1.1"
@@ -5820,7 +5834,8 @@
 	trait = greedy
 	trait = ambitious # Sought power
 	trait = cynical # Accepted baptism and converted
-	trait = raider # Norse Raider
+	trait = reaver # Norse Raider
+	trait = viking # Norse Raider
 	844.1.1 = {
 		birth = yes
 	}

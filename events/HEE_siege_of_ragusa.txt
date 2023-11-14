@@ -215,7 +215,35 @@ HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
 	option = {
 		name = HEE_siege_of_ragusa.0003.b
 		
-		custom_tooltip = change_your_mind
+		custom_tooltip = send_ragusa_a_shipment_of_supplies
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0003.c
+		
+		custom_tooltip = send_both_soldiers_and_supplies_to_ragusa
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0003.d
+		
+		custom_tooltip = provide_no_aid
 
 		# stress_impact = {
 

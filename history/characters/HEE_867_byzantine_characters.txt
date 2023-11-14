@@ -1325,7 +1325,7 @@ HEE_andrew_the_scythian = { # https://en.wikipedia.org/wiki/Andrew_the_Scythian
 	}
 	886.1.1 = {
 		effect = {
-			set_relation_friend = character:9897 # When Leo succeeded his father, Andrew quickly emerged as the new emperor's right-hand man
+			set_relation_friend = character:1702 # When Leo succeeded his father, Andrew quickly emerged as the new emperor's right-hand man
 		}
 	}
 	894.1.1 = {
@@ -1443,7 +1443,7 @@ HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematic
 	
 	trait = shrewd
 	trait = lifestyle_herbalist
-	trait = physician_3
+	trait = lifestyle_physician
 	
 	sexuality = heterosexual
 	
@@ -1454,6 +1454,12 @@ HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematic
 	}
 	860.1.1 = {
 		employer = 70490
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+        }
 	}
 	869.1.9 = {
 		death = yes
@@ -1463,7 +1469,7 @@ HEE_leo_the_mathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematic
 HEE_anna_martinakioi = { # https://en.wikipedia.org/wiki/Theophano_Martinakia
 	name = "Anna"
 	female = yes
-	dynasty = 0
+	# dynasty = 
 	religion = "orthodox"
 	culture = "greek"
 	# father =
@@ -1512,7 +1518,7 @@ HEE_theophano_martinakia = { # https://en.wikipedia.org/wiki/Theophano_Martinaki
 		add_spouse = 1702
 	}
 	893.1.1 = {
-		add_trait = devoted
+		trait = devoted
 	}
 	897.11.10 = {
 		death = yes
@@ -1695,6 +1701,7 @@ HEE_gregory_asbestas = { # https://en.wikipedia.org/wiki/Gregory_Asbestas
 	}
 	866.1.1 = {
 		employer = 145190 # as Archbishop of Syracuse
+		give_council_position = councillor_court_chaplain #Archbishop of Syracuse
 	}
 	880.1.1 = {
 		death = yes
@@ -1937,28 +1944,58 @@ HEE_chrysocheir = { # https://en.wikipedia.org/wiki/Chrysocheir
 	}
 	864.1.1 = { # Inherits Paulician Principality and its alliance and army
 		effect = {
-			create_alliance = character:159725
+			create_alliance = character:159725 # Inherited alliance with the Emirate of Melitene
 			character:159725 = {
 				add_opinion = {
 					target = character:HEE_chrysocheir
 					modifier = perk_negotiated_alliance_opinion
 				}
 			}
+			if = {
+				limit = { NOT = { has_perk = stalwart_leader_perk } }
+				add_perk = stalwart_leader_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = bellum_justum_perk } }
+				add_perk = bellum_justum_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = parthian_tactics_perk } }
+				add_perk = parthian_tactics_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = organized_retreat_perk } }
+				add_perk = organized_retreat_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = hit_and_run_perk } }
+				add_perk = hit_and_run_perk
+			}
+			if = {
+				limit = { NOT = { has_perk = engineered_for_destruction_perk } }
+				add_perk = engineered_for_destruction_perk
+			}
 			spawn_army = {
-				name = event_troop_default_name
-				levies = 400
-				men_at_arms = {
-					type = bowmen
-					stacks = 3
-				}
+				name = paulician_veterns_event_troops
 				men_at_arms = {
 					type = pikemen_unit
 					stacks = 2
 				}
 				men_at_arms = {
-					type = mangonel
-					stacks = 5
+					type = armored_footmen
+					stacks = 2
 				}
+				men_at_arms = {
+					type = cataphract
+					stacks = 2
+				}
+				location = province:5705
+				origin = province:5705
+				inheritable = yes
+			}
+			spawn_army = {
+				name = paulician_conscripted_levies_event_troops
+				levies = 700
 				men_at_arms = {
 					type = mangonel
 					stacks = 5
@@ -2007,16 +2044,17 @@ HEE_chrysocheir_wife = { # https://en.wikipedia.org/wiki/Chrysocheir
 
 HEE_nasar = { # https://en.wikipedia.org/wiki/Nasar
 	name = "Nasar"
+	dna = HEE_ray_stevenson
 	dynasty = hee_mardaites
 	religion = "orthodox"
 	culture = "greek"
 	father = HEE_nasar_father
 	
 	# Skills
-	diplomacy = 7
+	diplomacy = 9
 	martial = 10
 	stewardship = 8
-	intrigue = 6
+	intrigue = 7
 	learning = 6
 	prowess = 8
 	
@@ -2027,14 +2065,17 @@ HEE_nasar = { # https://en.wikipedia.org/wiki/Nasar
 	trait = brave
 	trait = just
 	trait = diligent
-	trait = humble
 	
 	# Other Traits
 	trait = strategist
 	trait = organizer
+	trait = loyal # Despite being a successful general, never rose up against the Emperor
 
 	832.1.1 = { # Unknown
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}	
 	}
 	863.9.3 = { # Battle of Lalakaon
 		effect = {
@@ -2045,6 +2086,7 @@ HEE_nasar = { # https://en.wikipedia.org/wiki/Nasar
 	}
 	863.10.10 = { # Roman Triumph
 		effect = {
+			add_prestige_experience = 2000
 			character:HEE_nasar = {
 				create_character_memory = { type = lalakaon_roman_triumph }
 			}

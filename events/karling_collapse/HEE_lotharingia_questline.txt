@@ -114,7 +114,7 @@ HEE_lotharingia_questline.0003 = { #Teutberga expresses willingness for a divorc
 	}
 	right_portrait = {
 		character = character:6877
-		animation = emotion_stress
+		animation = stress
 	}
 	# lower_left_portrait = scope:teutberga
 	# lower_center_portrait = scope:ruler_2
@@ -128,6 +128,13 @@ HEE_lotharingia_questline.0003 = { #Teutberga expresses willingness for a divorc
 		#is_independent_ruler = yes
 		is_at_war = no
 		is_imprisoned = no
+	}
+
+	immediate = {
+		if ={
+			limit = { exists = title:k_papal_state }
+			title:k_papal_state.holder = { save_scope_as = pope }
+		}
 	}
 	
 	option = {
@@ -145,17 +152,6 @@ HEE_lotharingia_questline.0003 = { #Teutberga expresses willingness for a divorc
 		}
 	}
 
-	option = {
-		name = HEE_lotharingia_questline.0003.b
-
-		# stress_impact = {
-
-		# }
-		
-		ai_chance = {
-			base = 0
-		}
-	}
 }
 
 HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
@@ -169,7 +165,7 @@ HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
 	}
 	right_portrait = {
 		character = character:168314
-		animation = emotion_admiration
+		animation = admiration
 	}
 	# lower_left_portrait = scope:teutberga
 	# lower_center_portrait = scope:ruler_2
@@ -293,11 +289,11 @@ HEE_lotharingia_questline.0006 = { #pope gives lothaire the good news
 	theme = crown # Change
 	left_portrait = {
 		character = root
-		animation = emotion_happy
+		animation = happiness
 	}
 	right_portrait = {
 		character = scope:pope
-		animation = personality_callous
+		animation = personality_compassionate
 	}
 	# lower_left_portrait = scope:teutberga
 	# lower_center_portrait = scope:ruler_2
@@ -317,7 +313,6 @@ HEE_lotharingia_questline.0006 = { #pope gives lothaire the good news
 		name = HEE_lotharingia_questline.0006.a
 		
 		custom_tooltip = lothaire_must_prepare_to_return_home
-		#diplo challenge here?
 		
 		trigger_event = {
 			id = HEE_lotharingia_questline.0007
@@ -337,12 +332,12 @@ HEE_lotharingia_questline.0007 = { #Lothaire sets off to return home
 	theme = crown # Change
 	left_portrait = {
 		character = root
-		animation = emotion_happy
+		animation = happiness
 	}
-	right_portrait = {
-		character = scope:pope
-		animation = personality_callous
-	}
+	# right_portrait = {
+	# 	character = scope:pope
+	# 	animation = personality_callous
+	# }
 	# lower_left_portrait = scope:teutberga
 	# lower_center_portrait = scope:ruler_2
 	# lower_right_portrait = scope:teutberga
@@ -382,6 +377,7 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 	title = HEE_lotharingia_questline.0008.t
 	desc = HEE_lotharingia_questline.0008.desc
 	theme = crown # Change
+	override_background = { reference = terrain_scope }
 	left_portrait = {
 		character = root
 		animation = sick
@@ -435,13 +431,13 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 
 	#Provide a milder option for players to avoid death?
 	option = {
-		name = HEE_lotharingia_questline.0007.b
+		name = HEE_lotharingia_questline.0008.b
 		
 		custom_tooltip = lothaire_slows_his_trip_to_recover
 		# diplo challenge here?
 		
 		trigger_event = {
-			id = HEE_lotharingia_questline.0008
+			id = HEE_lotharingia_questline.0009
 			days = 7 #1 Week
 		}
 
@@ -460,6 +456,7 @@ HEE_lotharingia_questline.0009 = { #Lothaire's illness worsens
 	title = HEE_lotharingia_questline.0009.t
 	desc = HEE_lotharingia_questline.0009.desc
 	theme = crown # Change
+	override_background = { reference = terrain_scope }
 	left_portrait = {
 		character = root
 		animation = sick
@@ -519,6 +516,7 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 	title = HEE_lotharingia_questline.0010.t
 	desc = HEE_lotharingia_questline.0010.desc
 	theme = crown # Change
+	override_background = { reference = terrain_scope }
 	left_portrait = {
 		character = root
 		animation = sick

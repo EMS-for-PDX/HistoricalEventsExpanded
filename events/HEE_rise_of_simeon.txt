@@ -12,6 +12,7 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 	}
 
 	trigger = {
+		character:712 = { is_alive = yes } # Simeon needs to be alive
 		is_alive = yes
 		is_landed = yes
 		is_independent_ruler = yes
@@ -36,34 +37,50 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 	}
 
 	option = {
-		name = HEE_rise_of_simeon.0001.a
-		
-		add_trait = devoted
-		
-		# depose = yes
-		
-		character:70383 = {
-			create_title_and_vassal_change = {
-				type = granted
-				save_scope_as = change
-				add_claim_on_loss = yes
-			}
-			every_in_list = {
-				list = boris_current_titles
-				change_title_holder_include_vassals = {
-					holder = character:70383
-					change = scope:change
+		trigger = {
+			character:70383 = {
+				NOT = { 
+					OR = {
+						has_relation_rival = character:70382
+						has_relation_nemesis = character:70382
+						has_trait = denounced
+						has_trait = disinherited
+						has_trait = excommunicated
+					}
 				}
 			}
-			resolve_title_and_vassal_change = scope:change
-			
-			trigger_event = {
-				id = HEE_rise_of_simeon.0002
-				days = { 1 1000 } # One day to three years
-			}			
+
+		}
+		name = HEE_rise_of_simeon.0001.a
+
+		custom_tooltip = boris_abdication_to_his_son
+		
+		hidden_effect = {
+			add_trait = devoted
+			character:70383 = { # Give titles to Vladimir
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = boris_current_titles
+					change_title_holder_include_vassals = {
+						holder = character:70383
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+				
+				trigger_event = {
+					id = HEE_rise_of_simeon.0002
+					days = { 1 1000 } # One day to three years
+				}			
+			}
+		
+			set_player_character = character:70383 #Vladimir
 		}
 		
-		set_player_character = character:70383 #Vladimir
 		
 		# stress_impact = {
 
@@ -75,7 +92,54 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 	}
 
 	option = {
+		trigger = {
+			character:70383 = {
+				OR = {
+					has_relation_rival = character:70382
+					has_relation_nemesis = character:70382
+					has_trait = denounced
+					has_trait = disinherited
+					has_trait = excommunicated
+				}
+			}
+
+		}
+
 		name = HEE_rise_of_simeon.0001.b
+
+		custom_tooltip = boris_abdication_to_his_son
+
+		hidden_effect = {
+			add_trait = devoted
+			
+			character:712 = { # Give titles to Simeon
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = boris_current_titles
+					change_title_holder_include_vassals = {
+						holder = character:712
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change	
+			}
+
+			set_player_character = character:712 #Simeon
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_rise_of_simeon.0001.c
+
+		custom_tooltip = boris_refuses_abdication_to_his_son
 
 		# stress_impact = {
 
@@ -85,8 +149,6 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 			base = 0
 		}
 	}
-
-
 }
 
 HEE_rise_of_simeon.0002 = { #Vladimir wants Pagan Restoration
@@ -131,14 +193,9 @@ HEE_rise_of_simeon.0002 = { #Vladimir wants Pagan Restoration
 	option = { #Pagan Restoration lets go!
 		name = HEE_rise_of_simeon.0002.a
 
+		custom_tooltip = valdimir_pagan_restoration
+
 		set_character_faith = faith:tengri_pagan
-		
-		random_secret = { #Remove the Nonbeliever secret
-            limit = {
-                secret_type = secret_non_believer
-            }
-            remove_secret = yes
-        }
 
 		if ={
 			limit = {
@@ -146,6 +203,26 @@ HEE_rise_of_simeon.0002 = { #Vladimir wants Pagan Restoration
 			}
 			scope:vladimirs_wife = {
 				set_character_faith = faith:tengri_pagan
+			}
+		}
+
+		every_vassal = {
+			limit = {
+				has_religion = religion:christianity_religion #You need to be Christian
+			}
+			add_opinion = {
+				modifier = vladimir_pagan_heretic
+				target = root
+			}
+		}
+
+		every_vassal = {
+			limit = {
+				has_religion = religion:tengrism_religion #You need to be Christian
+			}
+			add_opinion = {
+				modifier = vladimir_pagan_restorer
+				target = root
 			}
 		}
 
@@ -165,6 +242,8 @@ HEE_rise_of_simeon.0002 = { #Vladimir wants Pagan Restoration
 	
 	option = { #Better not
 		name = HEE_rise_of_simeon.0002.b
+
+		custom_tooltip = vladimir_decides_to_be_cautious
 
 		# stress_impact = {
 
@@ -308,9 +387,9 @@ HEE_rise_of_simeon.1000 = { #Simeon is set to Constantinople
 		}
 		if ={
 			limit = {
-				exists = title:k_bulgaria
+				exists = title:e_bulgarian_principality
 			}
-			title:k_bulgaria.holder = {
+			title:e_bulgarian_principality.holder = {
 				save_scope_as = bulgarian_king
 			}
 		}
@@ -324,13 +403,17 @@ HEE_rise_of_simeon.1000 = { #Simeon is set to Constantinople
 	option = {
 		name = HEE_rise_of_simeon.1000.a
 		
-		scope:ecumenical_patriarch = {
-			add_courtier = scope:simeon_i
+		custom_tooltip = simeon_sent_to_constantinople
+
+		hidden_effect = {
+			scope:ecumenical_patriarch = {
+				add_courtier = scope:simeon_i
+				
+			}
 			
-		}
-		
-		scope:simeon_i = {
-			set_relation_guardian = scope:ecumenical_patriarch
+			scope:simeon_i = {
+				set_relation_guardian = scope:ecumenical_patriarch
+			}
 		}
 		
 		ai_chance = {
@@ -348,7 +431,7 @@ HEE_rise_of_simeon.1999 = {
 	}
 	
 	immediate = {
-		title:k_bulgaria.holder = {
+		title:e_bulgarian_principality.holder = {
 			trigger_event = {
 				id = HEE_rise_of_simeon.2000
 			}
@@ -393,9 +476,9 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 	immediate = {
 		if ={
 			limit = {
-				exists = title:k_bulgaria
+				exists = title:e_bulgarian_principality
 			}
-			title:k_bulgaria.holder = {
+			title:e_bulgarian_principality.holder = {
 				save_scope_as = bulgarian_king
 			}
 		}
@@ -413,51 +496,51 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 
 				if = {
 					limit = {
-						diplomacy < 12
+						diplomacy < 14
 					}
-					add_diplomacy_skill = 4
+					add_diplomacy_skill = 5
 				}
 				if = {
 					limit = {
 						martial < 14
 					}
-					add_martial_skill = 4
+					add_martial_skill = 5
 				}
 				if = {
 					limit = {
-						stewardship < 13
+						stewardship < 14
 					}
-					add_stewardship_skill = 4
+					add_stewardship_skill = 5
 				}
 				if = {
 					limit = {
-						intrigue < 10
+						intrigue < 14
 					}
-					add_intrigue_skill = 4
+					add_intrigue_skill = 5
 				}
 				if = {
 					limit = {
 						learning < 20
 					}
-					add_learning_skill = 4
+					add_learning_skill = 5
 				}
 				if = {
 					limit = {
 						prowess < 12
 					}
-					add_prowess_skill = 4
+					add_prowess_skill = 5
 				}
 
-				add_trait = education_learning_4
+				add_trait = education_learning_5
 				add_trait = zealous
-				add_trait = ambitious
 				add_trait = diligent
 				add_trait = brave
+				add_trait = ambitious
 
 				remove_trait = intellect_good_1
 				add_trait = intellect_good_2
 				
-				add_character_modifier = student_of_rome_modifier
+				add_character_modifier = imperial_ambitions_modifier
 			}
 		}
 	}

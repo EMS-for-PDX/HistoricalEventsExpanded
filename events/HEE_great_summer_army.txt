@@ -80,7 +80,7 @@ HEE_great_summer_army.0003 = {
 	title = HEE_great_summer_army.0003.t
 	desc = HEE_great_summer_army.0003.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = personality_dishonorable
@@ -122,7 +122,7 @@ HEE_great_summer_army.0004 = {
 	title = HEE_great_summer_army.0004.t
 	desc = HEE_great_summer_army.0004.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = personality_dishonorable
@@ -159,7 +159,7 @@ HEE_great_summer_army.0005 = {
 	title = HEE_great_summer_army.0005.t
 	desc = HEE_great_summer_army.0005.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = personality_dishonorable
@@ -196,7 +196,7 @@ HEE_great_summer_army.0006 = {
 	title = HEE_great_summer_army.0006.t
 	desc = HEE_great_summer_army.0006.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = personality_dishonorable
@@ -233,7 +233,7 @@ HEE_great_summer_army.0007 = {
 	title = HEE_great_summer_army.0007.t
 	desc = HEE_great_summer_army.0007.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = personality_dishonorable

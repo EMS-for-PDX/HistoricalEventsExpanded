@@ -48,7 +48,7 @@ HEE_rollo.0002 = {
 		character = scope:rollo
 		animation = personality_greedy
 	}
-	override_background = { event_background = fp1_beached_longships }
+	override_background = { reference = fp1_beached_longships }
 
 	trigger = {
 		# Make sure the war is still ongoing

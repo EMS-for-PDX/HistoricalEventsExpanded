@@ -508,6 +508,12 @@ hairstyles_scripted_characters = {
                 exists = character:145147
                 this = character:145147
             }
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:HEE_nasar
+                this = character:HEE_nasar
+            }
         }
     }
 
@@ -904,12 +910,6 @@ hairstyles_scripted_characters = {
         }   
         weight = {
             base = 0
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:easteregg_magne_skjaeran
-                this = character:easteregg_magne_skjaeran
-            }
         }
     }
 
@@ -1105,6 +1105,12 @@ hairstyles_scripted_characters = {
 				exists = this
                 exists = character:101515 #king_svend
                 this = character:101515 #king_svend
+            }
+            modifier = {
+                add = 999
+				exists = this
+				exists = character:HEE_nasar #Nasar
+				this = character:HEE_nasar #Nasar
             }
         }
     }

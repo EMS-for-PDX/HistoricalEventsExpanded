@@ -1,4 +1,5 @@
 ﻿grand_raid_cb = {
+	icon = invasion
 	group = event
 
 	allowed_for_character = {}
@@ -11,13 +12,13 @@
 		always = no
     }
 
-	target_titles = neighbor_land
-	#target_title_tier = county
-	target_title_tier = kingdom
+	target_titles = all
+	target_title_tier = all
 	target_de_jure_regions_above = yes
 	should_show_war_goal_subview = yes
 	combine_into_one = yes
 	mutually_exclusive_titles = { always = yes }
+	allow_hostages = no
 
 	should_invalidate = {
 		NOT = {
@@ -55,42 +56,70 @@
 	}
 
 	on_victory = {
+		#EP2 accolade glory gain for winning against higher ranked enemy
+		scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
+
 		scope:attacker = {
-			add_prestige = 1500
-			dynasty = {
-				add_dynasty_prestige = 300
+			add_gold = 1000
+		}
+
+		# Attacker gets Prestige Experience, Defender loses Prestige, all other participants gain Prestige based on their war contribution.
+		modify_all_participants_fame_values = {
+			WINNER = scope:attacker
+			LOSER = scope:defender
+			FAME_BASE = medium_prestige_value
+			IS_RELIGIOUS_WAR = no
+			WINNER_FAME_SCALE = 10
+			LOSER_FAME_SCALE = -10
+			WINNER_ALLY_FAME_SCALE = 10
+			LOSER_ALLY_FAME_SCALE = 10
+		}
+
+		custom_tooltip = emperor_is_shamed_by_vassals
+		hidden_effect = {
+			scope:defender = { 
+				add_prestige = -1000
+				every_vassal = {
+					limit = {
+						primary_title = {
+							or = {
+								target_is_de_jure_liege_or_above = title:k_anatolia
+								target_is_de_jure_liege_or_above = title:k_pontus
+								target_is_de_jure_liege_or_above = title:k_nikaea
+							}
+						}
+					}
+					add_opinion = {
+						modifier = unable_to_defend_empire
+						target = scope:attacker
+					}
+				}
 			}
 		}
-		scope:defender = { add_prestige = -1500 }
-		every_in_list = {
-			list = target_titles
+		
+		custom_tooltip = anatolia_is_ravaged_by_paulicians
+		hidden_effect = {
+			every_in_list = {
+				list = target_titles
 
-			every_in_de_jure_hierarchy = {
-				limit = { tier = tier_county }
-				# Set raided province modifier
-				title_province = {
-					add_province_modifier = { # TODO_CD_FP2 (JP) change to border raid modifier?
+				every_in_de_jure_hierarchy = {
+					limit = { 
+						tier = tier_county
+						holder.top_liege = scope:defender
+					}
+					# Set raided province modifier
+					add_county_modifier = {
 						modifier = recently_looted_modifier
 						years = 5
 					}
-				}
-				# show_as_tooltip = {
-					# every_in_list = {
-						# list = target_titles
-						# fp2_border_raid_damage_effect = yes
-					# }
-				# }
-				# Find province for building destruction
-				# ordered_county_province = {
-					# order_by = num_buildings
+					# Possible building destruction
 					# random = {
-						# chance = 25
-						# modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
-						# modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
-						# custom_tooltip = destroy_random_building_tt
-						# destroy_random_building_variable_effect = yes
+					# 	chance = 25
+					# 	modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
+					# 	modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
+					# 	destroy_random_building_variable_effect = yes
 					# }
-				# }
+				}
 			}
 		}
 	}
@@ -114,7 +143,7 @@
 		# Prestige loss for the attacker
 		scope:attacker = {
 			add_prestige = {
-				value = miniscule_prestige_value
+				value = minor_prestige_value
 				multiply = -1.0
 			}
 			stress_impact = {
@@ -123,20 +152,13 @@
 			}
 		}
 
-		# Prestige for the attacker's war allies
-		add_from_contribution_attackers = {
-			prestige = minor_prestige_value
-			opinion = {
-				modifier = contributed_in_war
-			}
-		}
-
-		# Prestige for the defender's war allies
-		add_from_contribution_defenders = {
-			prestige = minor_prestige_value
-			opinion = {
-				modifier = contributed_in_war
-			}
+		# Allies on both sides get full prestige value for helping in the war, based on their war participation.
+		modify_allies_of_participants_fame_values = {
+			WINNER = scope:attacker # not important as scale values are identical
+			FAME_BASE = medium_prestige_value
+			IS_RELIGIOUS_WAR = no
+			WINNER_ALLY_FAME_SCALE = 1
+			LOSER_ALLY_FAME_SCALE = 1
 		}
 
 		scope:defender = {
@@ -165,13 +187,22 @@
 
 	on_defeat = {
 
+		scope:attacker = {
+			every_held_title = {
+				
+			}
+			every_vassal = {
+
+			}
+		}
+
 		# Prestige loss for the attacker
 		scope:attacker = {
 			pay_short_term_gold_reparations_effect = {
 				GOLD_VALUE = 1
 			}
 			add_prestige = {
-				value = medium_prestige_value
+				value = major_prestige_value
 				multiply = -1.0
 			}
 		}
@@ -179,13 +210,13 @@
 		# Prestige for Defender
 		scope:defender = {
 			add_prestige_war_defender_effect = {
-				PRESTIGE_VALUE = medium_prestige_value
+				PRESTIGE_VALUE = major_prestige_value
 			}
 		}
 
 		# Prestige for the attacker's war allies
 		add_from_contribution_attackers = {
-			prestige = minor_prestige_value
+			prestige = medium_prestige_value
 			opinion = {
 				modifier = contributed_in_war
 			}
@@ -193,7 +224,7 @@
 
 		# Prestige for the defender's war allies
 		add_from_contribution_defenders = {
-			prestige = minor_prestige_value
+			prestige = medium_prestige_value
 			opinion = {
 				modifier = contributed_in_war
 			}

@@ -359,7 +359,7 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 	title = HEE_byzantine_croatia.0008.t
 	desc = HEE_byzantine_croatia.0008.desc
 	theme = crown # Change
-	override_background = { event_background = terrain_scope }
+	override_background = { reference = terrain_scope }
 	left_portrait = {
 		character = root
 		animation = fear

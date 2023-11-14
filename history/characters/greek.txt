@@ -967,7 +967,7 @@
 		birth = "866.9.29"
 	}
 	882.9.29 = {
-		add_trait = scholar	#Add adult trait
+		trait = scholar	#Add adult trait
 	}
 	906.1.9 = {
 		add_spouse = 1703
@@ -1768,7 +1768,7 @@
 	trait = gregarious
 	trait = brave
 	trait = wrathful
-	trait = hunter_1
+	trait = lifestyle_hunter
 	1047.1.1 = {
 		birth = "1047.1.1"
 	}
@@ -17819,16 +17819,40 @@
 	}
 }
 
-163134 = {
+163134 = { # https://en.wikipedia.org/wiki/Mu%27nis_al-Muzaffar
 	name = "Mu_nis"
 
 	culture = "greek"
 	religion = "ashari"
-	
+
+	# Skills
+	diplomacy = 9
+	martial = 10
+	stewardship = 9
+	intrigue = 10
+	learning = 8
+	prowess = 8
+
+	# Education
+	trait = education_martial_4
+
+	# Personality Traits
+	trait = arrogant
+	trait = brave
+	trait = diligent
+	trait = ambitious
+
+	# Other Traits
+	trait = strategist
+	trait = unyielding_defender # Mu'nis led the defence of the Hasani Palace and the coup to depose al-Muqtadir and replace him with his brother Abdallah ibn al-Mu'tazz collapsed
+	trait = reaver # Lead multiple summer raids against the ERE
 	trait = "eunuch"
 	
 	845.1.1 = {
 		birth = "845.1.1"
+	}
+	867.1.1 = {
+		give_nickname = nick_the_eunuch
 	}
 	933.1.1 = {
 		death = "933.1.1"

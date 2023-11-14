@@ -3,6 +3,14 @@
  d_test_empire: "Test"
  d_test_empire_adj: "Tester"
 
+ e_bulgarian_principality_article: "the "
+ e_bulgarian_principality: "Principality of Bulgaria"
+ e_bulgarian_principality_adj: "Bulgarian"
+
+ e_bulgarian_khanate_article: "the "
+ e_bulgarian_khanate: "Bulgarian Khanate"
+ e_bulgarian_khanate_adj: "Bulgarian"
+
  e_carolingian_empire_article: "the "
  e_carolingian_empire: "Carolingian Empire"
  e_carolingian_empire_adj: "Carolingian"

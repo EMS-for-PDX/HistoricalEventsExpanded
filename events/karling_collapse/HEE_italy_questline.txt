@@ -2154,10 +2154,10 @@ HEE_italy_questline.0106 = { # Louis is absolved from his oath and crowned a sec
 		character = root
 		animation = personality_honorable
 	}
-	# right_portrait = {
+	right_portrait = {
 		character = scope:pope
 		animation = personality_zealous
-	# }
+	}
 	#lower_left_portrait = scope:pope
 	lower_center_portrait = scope:adelchis
 	#lower_right_portrait = scope:adelchis

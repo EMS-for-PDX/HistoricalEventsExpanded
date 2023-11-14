@@ -29,23 +29,30 @@ HEE_digenes_akritas = { # https://ia800203.us.archive.org/25/items/DigenesAkrite
 	
 	#Other Traits
 	trait = strong
-	trait = hunter_3
 
 	sexuality = heterosexual
-	# disallow_random_traits = yes
+	disallow_random_traits = yes
 	847.1.1 = {
 		birth = yes # Unknown
 		effect = {
 			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 145156
+		move_to_pool = yes
+		effect = {
+			add_trait = lifestyle_hunter
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				value = 100
+			}
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
 				trait = lifestyle_blademaster
 				value = 100
 			}
-		}
-	}
-	866.1.1 = {
-		employer = 145156
+        }
 	}
 	877.1.1 = {
 		death = yes # Unknown

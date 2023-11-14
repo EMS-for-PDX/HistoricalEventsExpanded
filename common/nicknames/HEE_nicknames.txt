@@ -15,3 +15,4 @@ nick_the_armenian = {}
 nick_the_beautiful = {}
 nick_the_scythian = {}
 nick_the_slender = {}
+nick_the_bloodshedder = {}

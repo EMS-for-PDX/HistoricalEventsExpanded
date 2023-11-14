@@ -1,7 +1,7 @@
 ﻿# Muslim Scholars for 867 Start Date #
 
 HEE_muslim_scholar_01 = { # https://en.wikipedia.org/wiki/Abbas_ibn_Firnas
-	name = "Abbas ibn Firnas"
+	name = "Abbas_ibn_Firnas"
 	#dynasty = 0
 	religion = "muwalladi"
 	culture = "andalusian"
@@ -85,7 +85,7 @@ HEE_muslim_scholar_02 = { # https://en.wikipedia.org/wiki/Al-Kindi
 }
 
 HEE_muslim_scholar_03 = { # https://en.wikipedia.org/wiki/Dawud_al-Zahiri
-	name = "Dawud al-Zahiri"
+	name = "Dawud_al-Zahiri"
 	#dynasty = 0
 	religion = "ashari" # Should be Athari - but religion doesnt exist
 	culture = "persian"
@@ -127,7 +127,7 @@ HEE_muslim_scholar_03 = { # https://en.wikipedia.org/wiki/Dawud_al-Zahiri
 }
 
 HEE_muslim_scholar_04 = { # https://en.wikipedia.org/wiki/Abd_Allah_al-Qaysi
-	name = "Abd Allah al-Qaysi"
+	name = "Abd_Allah_al-Qaysi"
 	#dynasty = 0
 	religion = "ashari" # Should be Athari - but religion doesnt exist
 	culture = "andalusian"

@@ -1,4 +1,73 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
+HEE_mutazz_vizier = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
+	name = "Ahmad"
+	# female = yes
+	dynasty = hee_anbari
+	culture = "assyrian"
+	religion = "nestorian"
+	father = HEE_mutazz_vizier_father
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+	trait = education_stewardship_3
+
+	# Personality Traits
+	trait = diligent
+	trait = cynical
+	trait = patient
+
+	# Other Traits
+	trait = administrator
+
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	824.1.1 = { # Unknown
+		birth = yes
+	}
+	845.1.1 = { # Unknown
+		faith = ashari
+	}
+	866.9.8 = { # Unknown
+		employer = 34014
+	}
+	869.9.8 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_mutazz_vizier_father = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
+	name = "Isra'il"
+	# female = yes
+	dynasty = hee_anbari
+	culture = "assyrian"
+	religion = "nestorian"
+	# father = 
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	865.9.8 = { # Unknown
+		death = yes
+	}
+}
 
 HEE_muhammad_ibn_wasil = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
 	name = "al-Hanzali"
@@ -77,7 +146,7 @@ HEE_hamdan_unknown_kurdish_wife = {
 HEE_abdallah_hamdanid = { # https://en.wikipedia.org/wiki/Abdallah_ibn_Hamdan
 	name = "Abdallah"
 	# female = yes
-	dynasty = 7518
+	dynasty_house = house_hamdan #a little bit early, but it makes the dynasty tree better
 	culture = "levantine"
 	religion = "ismaili"
 	father = 163133
@@ -219,6 +288,227 @@ HEE_muflih_al_turki_son = { # Muflih Al-Turki, chief lieutenant to the general M
 	# disallow_random_traits = yes
 	848.1.1 = { # Unknown
 		birth = yes
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_muhammad_ibn_bugha = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
+	name = "Muhammad"
+	# female = yes
+	dynasty = 7517
+	culture = "khazar"
+	religion = "ashari"
+	father = turkish000003
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+	trait = education_martial_2
+
+	# Personality Traits
+	trait = trusting
+	trait = brave
+	trait = stubborn
+
+	# Other Traits
+	trait = unyielding_defender # During the civil war of 865–866, he was responsible for seizing and defending the town of al-Anbar on behalf of al-Mu'tazz
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	830.1.1 = { # Unknown
+		birth = yes
+	}
+	870.1.1 = { # Executed by Caliph al-Muhtadi 
+		death = {
+			death_reason = death_execution
+			killer = 34015 # 
+		}
+	}
+}
+
+HEE_muhammad_ibn_bugha_son = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
+	name = "Nasar"
+	# female = yes
+	dynasty = 7517
+	culture = "khazar"
+	religion = "ashari"
+	father = HEE_muhammad_ibn_bugha
+	# mother = 
+	# health = 5.0
+	
+	# Skills
+	
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	848.1.1 = { # Unknown
+		birth = yes
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hee_fictional_banu_kilab_0001 = {
+	name = "Ali"
+	# female = yes
+	dynasty = 1042113
+	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
+	culture = levantine
+	# father = 
+	# mother = 
+	# health = 
+
+	# Skills
+
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	861.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hee_fictional_banu_kilab_0002 = {
+	name = "Alawiyya"
+	female = yes
+	dynasty = 1042113
+	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
+	culture = levantine
+	father = hee_fictional_banu_kilab_0001
+	# mother = 
+	# health = 
+
+	# Skills
+
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	840.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = { # Unknown
+		add_spouse = 159732 # Isa formed a marriage alliance with the Banu Kilab, marrying a Kilabi wife
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hee_muwaffaq_concubine = {
+	name = "Dirar"
+	female = yes
+	# dynasty = 1042113
+	religion = orthodox # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
+	culture = greek
+	# father = 
+	# mother = 
+	# health = 
+
+	# Skills
+
+	# Education
+
+	# Personality Traits
+	trait = brave
+	trait = chaste # al-Muwaffaq only has one recorded child, likely because he was always out campaigning but reduced fertility here
+	trait = humble
+
+	# Other Traits
+	trait = beauty_good_1
+
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	841.1.1 = { # Unknown
+		birth = yes
+	}
+	860.1.1 = {
+		faith = ashari
+		add_spouse = 34017
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hee_mutamid_concubine_1 = {
+	name = "Nabt"
+	female = yes
+	# dynasty =
+	religion = ashari
+	culture = levantine
+	# father = 
+	# mother = 
+	# health = 
+
+	# Skills
+
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	843.1.1 = { # Unknown
+		birth = yes
+	}
+	860.1.1 = {
+		add_spouse = 34016 # al-Mu'tamid
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hee_mutamid_concubine_2 = {
+	name = "Khallafah"
+	female = yes
+	# dynasty =
+	religion = ashari
+	culture = levantine
+	# father = 
+	# mother = 
+	# health = 
+
+	# Skills
+
+	# Education
+
+	# Personality Traits
+
+	# Other Traits
+
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	842.1.1 = { # Unknown
+		birth = yes
+	}
+	863.1.1 = {
+		add_spouse = 34016 # al-Mu'tamid
 	}
 	890.1.1 = { # Unknown
 		death = yes

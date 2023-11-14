@@ -5619,14 +5619,14 @@
 	father = 163145
 	sexuality = heterosexual
 
-	diplomacy = 5
+	diplomacy = 7
 	martial = 8
 	stewardship = 7
-	intrigue = 4
-	learning = 10
-	prowess = 10
+	intrigue = 6
+	learning = 8
+	prowess = 8
 
-	trait = education_stewardship_3
+	trait = education_diplomacy_2
 
 	trait = generous
 	trait = gregarious
@@ -5761,17 +5761,15 @@
 	learning = 9
 	prowess = 6
 
-	trait = education_intrigue_3
+	trait = education_stewardship_4
 
 	trait = callous
 	trait = just
+	trait = zealous
 	trait = diligent
 	trait = ambitious
-	trait = humble
 
 	trait = intellect_good_2
-	
-	trait = shrewd
 	
 	trait = overseer
 	trait = administrator
@@ -5780,11 +5778,13 @@
 		birth = yes
 	}
 	883.1.1 = {
-		remove_trait = callous
-		add_trait = sadistic
-		add_trait = lunatic_1
-		add_trait = depressed_genetic
-		add_trait = torturer
+		effect = {
+			remove_trait = callous
+			add_trait = sadistic
+			add_trait = lunatic_1
+			add_trait = depressed_genetic
+			add_trait = torturer
+		}
 	}
 	902.10.23 = {
 		death = yes
@@ -6616,7 +6616,7 @@
 	}
 }
 
-160015 = {
+160015 = { # https://en.wikipedia.org/wiki/Isma%27il_ibn_Yusuf
 	name = "Isma_il"
 	dynasty = 7296
 
@@ -6624,14 +6624,23 @@
 	religion = "ismaili"
 	trait = sayyid
 	father = 163130
+
+	trait = education_martial_2
+	trait = greedy
+	trait = ambitious
+	trait = callous
+
 	840.1.1 = {
 		birth = "840.1.1"
 	}
 	866.1.1 = {
+		give_nickname = nick_the_bloodshedder
+	}
+	866.4.1 = {
 		death = "866.1.1"
 	}
 }
-160016 = {
+160016 = { # https://en.wikipedia.org/wiki/Banu_Ukhaidhir
 	name = "Yusuf"
 	dynasty_house = house_ukhaidhirid
 
@@ -12621,15 +12630,15 @@ bedouin0181 = {
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	887.1.1 = {
 		death = {

@@ -1,6 +1,9 @@
-﻿ l_english:
- 
+﻿l_english:
+
  #Special Traits HEE
+ alfred_annointed_by_the_pope: "Annointed by the Pope"
+ alfred_annointed_by_the_pope_desc: "In 853, Alfred is reported by the Anglo-Saxon Chronicle to have been sent to Rome where he was confirmed by Pope Leo IV, who "anointed him as king". Possibly an anticipatory coronation in preparation for his eventual succession to the throne of Wessex, Alfred has nonetheless been recognized by the Holy Father as one of God's representatives on earth."
+
  michael_administrative_indifference: "Administrative Distain"
  michael_administrative_indifference_desc: "Michael distains the boring work of governance, prefering to leave the administration of his realm to powerful ministers while he personally leads the army against the enemies of the Empire."
 
@@ -20,10 +23,10 @@
  anarchy_at_samarra_loss_of_central_authority_desc: "The ongoing troubles of the "Anarchy at Samarra" have inflicted great and lasting damage on the structures and prestige of the Abbasid central government, encouraging and facilitating secessionist and rebellious tendencies in the Caliphate's provinces"
  
  anarchy_at_samarra_unpaid_soldiery: "Unpaid Soldiery"
- anarchy_at_samarra_unpaid_soldiery_desc: "The lack of available revenue in which to pay the soldiers has lead to decline in the supplies afforded to our troops, which has in turn vastly decreased their effectiveness"
+ anarchy_at_samarra_unpaid_soldiery_desc: "According to contemporary historian al-Tabari, the amount of money required to pay the Caliphal armies during this time was equivalent to the full revenue of the Caliphate for two years. This inability to pay the soldiers has not only bred discontent among them, but also lead to decline in the supplies afforded to our troops - which has in turn vastly decreased their effectiveness"
 
- student_of_rome_modifier: "Student of Rome"
- student_of_rome_modifier_desc: "Sent to the leading University of Constantinople to receive theological education, Simeon spent nearly a decade in the Byzantine capital where he received an excellent education and studied the rhetoric of Demosthenes and Aristotle. He also learned fluent Greek, to the extent that he was referred to as "the half-Greek" in Byzantine chronicles"
+ imperial_ambitions_modifier: "Imperial Ambitions"
+ imperial_ambitions_modifier_desc: "Sent to the leading University of Constantinople to receive theological education, Simeon spent nearly a decade in the Byzantine capital where he found himself inspired by the sights and stories of the Roman Capital. Having returned home, Simeon now finds himself driven by the desire to establish himself as an equal to the great Emperors of Rome..."
  
  egyptian_spymaster_modifier: "Head of Postal Service"
  egyptian_spymaster_modifier_desc: "As the head of the postal service (barid) in Egypt, offically this character is responsible for all correspondence within the province - most importantly ones with the caliphal government - though this position serves largely as a cover for their true role as informant and spymaster"
@@ -62,5 +65,11 @@
  hee_fifth_fitna_aftermath_modifier: "Aftermath of the Fifth Fitna"
  hee_fifth_fitna_aftermath_modifier_desc: "The Abbasid civil war, sometimes known as the Fifth Fitna, was (at least economically speaking) extremely destructive for the Caliphate. The costs of campaigning for both sides, including paying for soldiers' and officers' salaries as well as other wartime expenses, was enormous. The cutting of the canals around al-Anbar contributed to a long term economic decline in the region while the numerous acts of plunder and forcing people from their fields disrupted the productivity of the Central Iraq, perhaps the Caliphate's richest province, which put additional financial strain on the state. Baghdad itself was devastated, with the eastern side of the city never fully recovering from the damage it incurred during the war."
 
-hee_tondrakian_purge_modifier: "T'ondrakian Purge"
-hee_tondrakian_purge_modifier_desc: "In the early years of the Kaysite amirate, the T'ondrakian religious sect was active in the provinces of Apahunik' and Hark'. The T'ondrakians were opposed to both the Armenian Church and the Muslim amirs of Armenia. Abu'l-Ward, considering them a threat to his rule, slaughtered a large number of them and executed their leader Smbat Zarehawanc'i."
+ hee_tondrakian_purge_modifier: "T'ondrakian Purge"
+ hee_tondrakian_purge_modifier_desc: "In the early years of the Kaysite amirate, the T'ondrakian religious sect was active in the provinces of Apahunik' and Hark'. The T'ondrakians were opposed to both the Armenian Church and the Muslim amirs of Armenia. Abu'l-Ward, considering them a threat to his rule, slaughtered a large number of them and executed their leader Smbat Zarehawanc'i."
+
+ hee_865_mecca_raid_modifier: "Aftermath of the Alid Uprising"
+ hee_865_mecca_raid_modifier_desc: "The uprising began in Mecca in April 865, when Isma'il ibn Yusuf, a Hasanid Alid, and his supporters forced the local Abbasid governor, Ja'far ibn al-Fadl ibn Isa ibn Musa, to flee the city. Isma'il then proceeded to plunder the city, even removing the valuable objects from the Ka'aba and emptying the treasury of money and valuables, as well as extorting 200,000 gold dinars from the inhabitants. After fifty days he left for Medina, but although the governor of the latter made no attempt to resist and went into hiding, Isma'il returned to Mecca and laid siege to it. As the siege dragged on, famine spread in Mecca, and many of its inhabitants died; after 57 days, the Alid left Mecca and made for Jeddah. There he repeated his exactions, confiscating wealth, merchandise, and food.\n\nIn January 866, on the Day of Arafah, he attacked the Hajj pilgrims and their accompanying Abbasid military escort, sent by Caliph al-Mu'tazz. After killing some 1100 pilgrims, the rest fled into Mecca, and did not dare exit the city, while Isma'il returned to Jeddah unmolested. Isma'il died in March/April 866 of smallpox, afterwhich his brother Muhammad succeeded him, but was pushed by Abbasid forces into the Yamama region in central Arabia."
+
+ paulicians_levied_for_war: "Levied for War"
+ paulicians_levied_for_war_desc: "In response to the threats against their state, every able-bodied man has been conscripted to fight the enemies of their faith. Though this has greatly increased the amount of available fighting men, it has equally depleted their homes of essential workers and tradesmen."

@@ -1151,6 +1151,9 @@ d_diyarmudar = {
 	840.1.1 = {
 		holder = levantine000004
 	}
+	866.1.1 = {
+		liege = 0 # Broke away due to the Fifth Fitna
+	}
 	890.1.1 = {
 		holder = 0
 	}
@@ -1245,6 +1248,9 @@ d_diyarbakr = {
 	# }
 	860.1.1 = {
 		holder = 146080 # Diyar-bakr is powerbase of the Shaybanids. Given to Isa's son because that is where he will eventually end up
+	}
+	866.1.1 = {
+		liege = 0 # Broke away due to the Fifth Fitna
 	}
 	890.1 = {
 		liege = 0

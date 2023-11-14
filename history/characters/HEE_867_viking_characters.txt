@@ -1,6 +1,6 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
 
-HEE_asgeir = {
+HEE_asgeir = { # https://en.wikipedia.org/wiki/Viking_incursions_into_Gascony
 	name = "Asgeir"
 	#female = yes
 	#dynasty = 
@@ -215,26 +215,15 @@ HEE_efanda_mother = { # Fictional so Igor and Efanda can be siblings
 	#health = 5.0
 	
 	#Skills
-	# diplomacy = 7
-	# martial = 7
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 5
-	# prowess = 7
 	
 	#Education
-	# trait = education_martial_3
-	
+
 	#Personality Traits
-	# trait = honest
-	# trait = brave
-	# trait = stubborn
 
 	#Other Traits
-	# trait = hunter_2
-	
+
 	#sexuality = heterosexual
-	
+
 	#disallow_random_traits = yes
 	812.1.1 = {
 		birth = yes
@@ -271,7 +260,6 @@ HEE_efanda = {
 	trait = stubborn
 
 	#Other Traits
-	trait = hunter_2
 	
 	#sexuality = heterosexual
 	
@@ -281,6 +269,13 @@ HEE_efanda = {
 	}
 	866.1.1 = {
 		add_spouse = 40605
+		effect = {
+			add_trait = lifestyle_hunter
+			add_trait_xp = {
+				trait = lifestyle_hunter
+				value = 100
+			}
+        }
 	}
 	877.1.1 = {
 		death = yes

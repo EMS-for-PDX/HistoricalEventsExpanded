@@ -290,31 +290,92 @@ hee_azdi = {
 
 hee_mardaites = {
 	pattern="pattern_solid.dds"
-	color1=white
-	color2=white
-	color3=blue
+	color1=blue
+	color2=yellow
+	color3=white
+	colored_emblem={
+		color1=yellow
+		texture="ce_letter_alpha.dds"
+		instance={
+			position={ 0.230000 0.190000 }
+			scale={ 0.350000 0.350000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_letter_omega.dds"
+		instance={
+			position={ 0.760000 0.180000 }
+			scale={ 0.340000 0.340000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		texture="cat_sun_macedonia.dds"
+		instance={
+			scale={ 0.610000 0.610000 }
+			depth=4.010000
+		}
+
+	}
+
 	colored_emblem={
 		color1=blue
-		color2=blue
-		texture="ce_lozenge.dds"
+		texture="ce_diamond_01.dds"
 		instance={
-			position={ 0.300000 0.300000 }
-			scale={ 0.500000 0.500000 }
+			scale={ 0.850000 0.850000 }
+			depth=5.010000
 		}
 
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_chi_rho.dds"
 		instance={
-			position={ 0.700000 0.300000 }
-			scale={ 0.500000 0.500000 }
+			scale={ 0.500000 0.660000 }
 		}
 
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_diamond_01.dds"
 		instance={
-			position={ 0.500000 0.700000 }
-			scale={ 0.500000 0.500000 }
+			depth=6.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_cross_large.dds"
+		instance={
+			depth=7.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="cat_letter_omega.dds"
+		instance={
+			position={ 0.230000 0.170000 }
+			scale={ 0.340000 0.340000 }
+			depth=3.010000
 		}
 
 	}
 
 }
+	
 
 hee_rennes = {
 	pattern="pattern_solid.dds"
@@ -546,7 +607,6 @@ hee_braganza = {
 
 
 bedouindyn002 = { # al-Umari
-	custom=yes
 	pattern="pattern_solid.dds"
 	color1=black
 	color2=white
@@ -659,7 +719,6 @@ hee_akrites = {
 }
 
 hee_elden_norse = { # https://www.reddit.com/r/CKHeraldry/comments/157cla3/elden_ring_inspired_crest/
-	custom=yes
 	pattern="pattern_solid.dds"
 	color1=black
 	color2=white
@@ -873,4 +932,224 @@ house_ghaznavid = { # Ghaznavid # EE
 		color2 = "yellow"
 		instance = { position = { 0.5 0.45 } scale = { 0.9 0.9 }  }
 	}
+}
+
+1042113 = { # Banu Kilab
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=white
+		color2=yellow
+		texture="ce_mena_ceremonial_sword.dds"
+		instance={
+			position={ 0.500000 0.570000 }
+			scale={ 0.360000 0.380000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_border_nebuly.dds"
+		instance={
+			scale={ 0.920000 0.920000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=brown
+		texture="ce_shield_01.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.530000 0.560000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_arabic_nazrid.dds"
+		instance={
+			position={ 0.490000 0.370000 }
+			scale={ 0.440000 1.000000 }
+		}
+
+	}
+
+}
+
+8636 = { # Balgarsko
+	pattern="pattern_solid.dds"
+	color1=purple
+	color2=red
+	colored_emblem={
+		color1=yellow
+		color2=purple
+		color3=purple
+		texture="ce_leopard_passant_guardant.dds"
+		instance={
+			position={ 0.500000 0.670000 }
+			scale={ 0.850000 0.850000 }
+		}
+
+		instance={
+			position={ 0.500000 0.415000 }
+			scale={ 0.850000 0.850000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.160000 }
+			scale={ 0.850000 0.850000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+640 = { # Kourkouras
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=yellow
+		texture="ce_cross_08.dds"
+		instance={
+			scale={ 0.810000 0.810000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_martlet.dds"
+		instance={
+			position={ 0.680000 0.690000 }
+			scale={ -0.230000 0.230000 }
+		}
+
+		instance={
+			position={ 0.330000 0.700000 }
+			scale={ 0.230000 0.230000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.680000 0.300000 }
+			scale={ -0.230000 0.230000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.320000 0.310000 }
+			scale={ 0.230000 0.230000 }
+			depth=4.010000
+		}
+
+	}
+
+}
+
+
+better_wessex = {
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_cross_08.dds"
+		instance={
+			position={ 0.680000 0.690000 }
+			scale={ 0.230000 0.230000 }
+		}
+
+		instance={
+			position={ 0.330000 0.700000 }
+			scale={ 0.230000 0.230000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.680000 0.300000 }
+			scale={ 0.230000 0.230000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.320000 0.310000 }
+			scale={ 0.230000 0.230000 }
+			depth=3.010000
+		}
+
+		instance={
+			scale={ 0.900000 0.900000 }
+			depth=4.010000
+		}
+
+	}
+
+}
+
+better_wessex_2 = { 
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_cross_08.dds"
+		instance={
+			position={ 0.500000 0.410000 }
+			scale={ 0.710000 0.710000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow_light
+		color3=black
+		texture="ce_martlet.dds"
+		instance={
+			position={ 0.280000 0.210000 }
+			scale={ 0.250000 0.250000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.730000 0.210000 }
+			scale={ 0.250000 0.250000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.280000 0.610000 }
+			scale={ 0.250000 0.250000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.730000 0.610000 }
+			scale={ 0.250000 0.250000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.500000 0.850000 }
+			scale={ 0.250000 0.250000 }
+			depth=5.010000
+		}
+
+	}
+
 }

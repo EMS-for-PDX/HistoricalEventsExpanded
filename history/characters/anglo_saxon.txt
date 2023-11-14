@@ -1450,6 +1450,12 @@
 		}	
 	}
 	859.1.1 = {
+		trait = pilgrim
+		effect = {
+			add_character_modifier = alfred_annointed_by_the_pope
+		}
+	}
+	859.1.1 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:33358 } # ?helred, brother and king of Wessex
 		}

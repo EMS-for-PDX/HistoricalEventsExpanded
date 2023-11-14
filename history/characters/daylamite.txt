@@ -506,7 +506,7 @@
 		} 
 	}
 	865.1.1 = {
-		add_trait = cancer
+		trait = cancer
 	}
 	867.5.4 = {
 		death = {
@@ -1134,7 +1134,7 @@
 	#Personality Traits
 	trait = fickle
 	trait = trusting
-	trait = stubbborn
+	trait = stubborn
 	
 	#Other Traits
 	trait = unyielding_defender

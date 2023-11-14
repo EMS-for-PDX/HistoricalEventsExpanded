@@ -109,13 +109,6 @@ hee_karling_867_effect = {
 	}
 
 	# Francia #
-
-	# scope:charles_the_bald = { # Declare Charle's attempted subjugation of the Bretons 
-	# 	start_war = {
-	# 		casus_belli = vassalization_cb
-	# 		target = scope:salomon
-	# 	}
-	# }
 	
 	character:168246 = { # Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
 		give_nickname = nick_the_abbot
@@ -543,15 +536,6 @@ hee_byzantine_bulgaria_867_effect = {
 		get_title = title:c_constanta
 	}
 
-	# character:145190 = { fire_councillor = cp:councillor_court_chaplain }
-
-	# character:145190 = {
-		# assign_councillor_type = {
-			# type = councillor_court_chaplain
-			# target = scope:gregory_asbestas
-		# }
-	# }
-
 	# Relations
 	if = { #If SE is loaded, give Basil Co-Emperor position
 		limit = {
@@ -603,24 +587,24 @@ hee_byzantine_bulgaria_867_effect = {
 		set_real_father = scope:michael_iii
 	}
 	
-	character:70490 = {
+	scope:michael_iii = {
 		add_opinion = {
-			target = character:1702
+			target = scope:leon
 			modifier = truly_of_my_blood_opinion
 			opinion = 100
+		}
+	}
+
+	scope:michael_iii = {
+		had_sex_with_effect = {
+			CHARACTER = scope:eudokia_ingerina
+			PREGNANCY_CHANCE = pregnancy_chance
 		}
 	}
 
 	scope:danielis_of_patras = {
 		get_title = title:b_vostitsa
 	}
-
-	# character:1761 = {
-		# trigger_event = {
-			# id = pregnancy.2002
-			# days = { 30 60 }
-		# }
-	# }
 
 	# The Byzantines and Bulgarians concluded a "deep peace" for a 30-year period in exchange for Bulgaria's conversion
 	scope:michael_iii = {
@@ -711,6 +695,23 @@ hee_samarra_relations_867_effect = {
 		add_character_modifier = anarchy_at_samarra_unpaid_soldiery
 	}
 
+	# Set up al-Mutazz's historical Vizier
+	character:34014 = {
+		designate_diarch = character:HEE_mutazz_vizier
+			# This is a vizierate as well, so start the diarchy manually.
+			start_diarchy = vizierate
+			# Tell Alp that he appointed Hassan so he remembers not to dismiss him.
+			set_variable = {
+				name = my_vizier
+				value = character:HEE_mutazz_vizier
+			}
+	}
+
+	remove_generated_diarch_consequences_effect = {
+		NEW_DIARCH = character:HEE_mutazz_vizier
+		LIEGE = character:34014
+	}
+
 	character:163131 = {	
 		spawn_turkic_troops_effect = yes
 	}
@@ -721,41 +722,15 @@ hee_samarra_relations_867_effect = {
 		spawn_turkic_troops_effect = yes
 	}
 
-	create_title_and_vassal_change = {
-		type = independency
-		save_scope_as = going_independent
-		add_claim_on_loss = no
+	scope:isa_shaybanid = { # Alliance between Isa and the Banu Kilab
+		create_alliance = character:levantine000010
+		character:levantine000010 = {
+			add_opinion = {
+				target = scope:isa_shaybanid
+				modifier = perk_negotiated_alliance_opinion
+			}
+		}	
 	}
-	character:74038 = {
-		becomes_independent = {
-			change = scope:going_independent
-		}
-	}
-	character:74039 = {
-		becomes_independent = {
-			change = scope:going_independent
-		}
-	}
-	character:74040 = {
-		becomes_independent = {
-			change = scope:going_independent
-		}
-	}
-
-	resolve_title_and_vassal_change = scope:going_independent
-
-	scope:isa_shaybanid = { add_unpressed_claim = scope:d_damascus }
-
-	#Declare Isa's illegal seizing of Damascus
-	scope:isa_shaybanid = {
-		start_war = {
-			casus_belli = claim_cb
-			target = scope:damascus_governor
-			claimant = scope:isa_shaybanid
-			target_title = scope:d_damascus
-		}
-	}
-
 
 	# Aftermath of the Abbasid Civil War
 	title:c_anbar = { save_scope_as = c_anbar }
@@ -811,12 +786,51 @@ hee_samarra_relations_867_effect = {
 		}
 	}
 
+	# Aftermath of Isma'il ibn Yusuf's Alid Uprising in the Hejaz
+	title:c_mecca = { save_scope_as = c_mecca }
+	title:c_medina = { save_scope_as = c_medina }
+
+	scope:c_mecca = {
+		change_county_control = massive_county_control_loss
+	}
+	scope:c_medina = {
+		change_county_control = massive_county_control_loss
+	}
+	
+	scope:c_mecca = {
+		add_county_modifier = {
+			modifier = hee_865_mecca_raid_modifier
+			years = 5
+		}
+	}
+
+	scope:c_medina = {
+		add_county_modifier = {
+			modifier = hee_865_mecca_raid_modifier
+			years = 5
+		}
+	}
+
+	# Power of the Turkish military
+	if = {
+		limit = { exists = title:e_arabia.holder }
+		title:e_arabia.holder = {
+		 	every_vassal = {
+				limit = {
+					AND = {
+						culture = { has_cultural_pillar = heritage_turkic }
+						vassal_contract_has_modifiable_obligations = yes
+					}
+				}
+				vassal_contract_set_obligation_level = { type = council_rights level = 1 } # Council Rights
+				vassal_contract_set_obligation_level = { type = title_revocation_rights level = 1 } # Title Revocation
+				set_vassal_contract_modification_blocked = yes # Block players from instantly changing contracts
+			}
+		}
+	}
 
 
-
-
-
-# Egypt stuff
+	# Egypt stuff
 	if = { # Gameplay portrayal of Ibn Tulun's limited authority
 		limit = { exists = title:k_egypt.holder }
 		title:k_egypt.holder = {
@@ -835,15 +849,19 @@ hee_samarra_relations_867_effect = {
 		}
 	}
 
-character:HEE_yusuf_al_daya = { save_scope_as = yusuf_al_daya }
-title:b_hulwan-cairo = { save_scope_as = b_hulwan-cairo }
+	character:HEE_yusuf_al_daya = { save_scope_as = yusuf_al_daya }
+	title:b_hulwan-cairo = { save_scope_as = b_hulwan-cairo }
 
-scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }
+	scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }
 
+	title:c_allaqi.title_province = { 
+		set_holding_type = castle_holding
+		add_special_building = allaq_mines_01
+	}
 
+	character:bedouin0018 = { change_government = clan_government }
 
-
-	# Aftermath of the Abbasid Civil War
+	# Aftermath of the Kaysite Tondrakian Purge
 	title:c_apahunik = { save_scope_as = c_apahunik }
 	
 	scope:c_apahunik = {
@@ -857,17 +875,43 @@ scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+	# Large Shia Presence in Syria
+	title:c_homs = {
+		set_county_faith = faith:imami
+	}
+	title:c_hama = {
+		set_county_faith = faith:imami
+	}
+	title:c_suriya = {
+		set_county_faith = faith:imami
+	}
+	title:c_aleppo = {
+		set_county_faith = faith:imami
+	}
+	title:c_syrrusafa = {
+		set_county_faith = faith:imami
+	}
+	title:c_sukhna = {
+		set_county_faith = faith:imami
+	}
+	title:c_rahba = {
+		set_county_faith = faith:imami
+	}
+	title:c_palmyra = {
+		set_county_faith = faith:imami
+	}
+	title:c_qaryatan = {
+		set_county_faith = faith:imami
+	}
+	title:c_baalbek = {
+		set_county_faith = faith:imami
+	}
+	title:c_juwair = {
+		set_county_faith = faith:imami
+	}
+	title:c_damascus = {
+		set_county_faith = faith:imami
+	}
 
 
 
@@ -1057,13 +1101,13 @@ hee_baltic_867_effect = {
 	scope:b_risan = {
 		add_province_modifier = {
 			modifier = hee_867_aghlabid_dalmatia_raids_modifier
-			days = 1825
+			years = 5
 		}
 	}
 	scope:b_cattaro = {
 		add_province_modifier = {
 			modifier = hee_867_aghlabid_dalmatia_raids_modifier
-			days = 1825
+			years = 5
 		}
 	}
 	scope:b_antivari = {
@@ -1470,7 +1514,7 @@ hee_north_sea_867_effect = {
 
 hee_brittany_867_effect = {
 	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
-	character:HEE_guenebret_of_brittany = { save_scope_as = HEE_guenebret_of_brittany } #
+	character:HEE_wembrit_of_brittany = { save_scope_as = HEE_wembrit_of_brittany } # https://upload.wikimedia.org/wikipedia/commons/8/8a/M_F_Gervais_Rulers_of_Brittany_Family_Tree.pdf
 	character:159651 = { save_scope_as = riwallon } # http://fmg.ac/Projects/MedLands/BRITTANY.htm#_Toc480020737
 	character:159698 = { save_scope_as = alan_not_so_great } # WHO IS THIS???
 
@@ -1498,7 +1542,7 @@ hee_brittany_867_effect = {
 	character:163178 = { save_scope_as = rotrude } # Rotrude (852–912), a nun, Abbess of Saint-Radegunde
 
 	character:159651 = { # Prince Riwallon
-		set_mother = scope:HEE_guenebret_of_brittany
+		set_mother = scope:HEE_wembrit_of_brittany
 	}
 
 	# Hastein set to Tribal government
@@ -1555,15 +1599,27 @@ hee_paulicians_867_effect = {
 
 	title:c_satala = {
 		set_county_faith = faith:paulician
+		add_county_modifier = {
+			modifier = paulicians_levied_for_war
+			years = 10
+		}
 	}
 	title:c_azysia = {
 		set_county_faith = faith:paulician
+		add_county_modifier = {
+			modifier = paulicians_levied_for_war
+			years = 10
+		}
 	}
 	title:c_ablastha = {
 		set_county_faith = faith:paulician
 	}
 	title:c_lycandus = {
 		set_county_faith = faith:paulician
+		add_county_modifier = {
+			modifier = paulicians_levied_for_war
+			years = 10
+		}
 	}
 	title:c_melitene = {
 		set_county_faith = faith:paulician
@@ -1594,18 +1650,11 @@ hee_paulicians_867_effect = {
 	province:5705 = { save_scope_as = b_tephrice }
 	
 	scope:b_tephrice = {
+		set_holding_type = castle_holding
+		add_building = hill_forts_02
 		add_province_modifier = {
 			modifier = hee_867_fortified_capital_tephrike_modifier
 			years = 10
-		}
-		add_building = hill_forts_02
-	}
-
-	scope:chrysocheir = {
-		start_war = {
-			casus_belli = grand_raid_cb
-			target = scope:michael_iii
-			target_title = title:k_anatolia
 		}
 	}
 }
@@ -1615,4 +1664,18 @@ hee_north_africa_867_effect = {
 	character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
 	character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
 
+}
+
+hee_kievan_rus_867_effect = {
+
+	character:40605 = { save_scope_as = rurik } # https://en.wikipedia.org/wiki/Rurik
+	character:40606 = { save_scope_as = oleg } # https://en.wikipedia.org/wiki/Oleg_the_Wise
+
+	# Set up Oleg as Diarch as he will be the one to guide Rurik's son Igor when Igor is young
+	character:40605 = { designate_diarch = character:40606 }
+
+	remove_generated_diarch_consequences_effect = {
+		NEW_DIARCH = character:40606
+		LIEGE = character:40605
+	}
 }

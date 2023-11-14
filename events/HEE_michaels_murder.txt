@@ -51,7 +51,7 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 		hidden_effect = {
 			add_stress = medium_stress_impact_loss
 
-			scope:HEE_basiliskianos = {
+			scope:basiliskianos = {
 				add_opinion = {
 					target = scope:michael_iii
 					modifier = pleased_opinion
@@ -77,7 +77,7 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 		hidden_effect = {
 			add_stress = major_stress_impact_gain
 			
-			scope:HEE_basiliskianos = {
+			scope:basiliskianos = {
 				add_opinion = {
 					target = scope:michael_iii
 					modifier = disappointed_opinion
@@ -147,9 +147,9 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 		}
 
 		known_murder_effect = {
-			VICTIM = character:HEE_basiliskianos
-			MURDERER = character:1700
-			EXPOSER = character:1700
+			VICTIM = scope:basiliskianos
+			MURDERER = scope:basil
+			EXPOSER = scope:basil
 		}
 	}
 
@@ -159,12 +159,12 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 		custom_tooltip = michael_pleads_for_his_life
 
 		hidden_effect = {
-			set_designated_heir = character:1700
+			set_designated_heir = scope:basil
 
 			known_murder_effect = {
-				VICTIM = character:70490
-				MURDERER = character:1700
-				EXPOSER = character:1700
+				VICTIM = scope:michael_iii
+				MURDERER = scope:basil
+				EXPOSER = scope:basil
 			}
 
 			scope:eudokia_ingerina = {
@@ -179,7 +179,7 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 				add_trait = devoted
 			}
 
-			character:1700 = {
+			scope:basil = {
 				remove_character_modifier = byzantine_coemperor_modifier
 			}
 		}
@@ -198,31 +198,14 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 			duel = {
 				skill = prowess
 				value = 15
-				99 = { #Kill them
-					# character:1700 = {
-						# create_title_and_vassal_change = {
-							# type = usurped
-							# save_scope_as = change
-							# add_claim_on_loss = yes
-						# }
-						# every_in_list = {
-							# list = michael_current_titles
-							# change_title_holder_include_vassals = {
-								# holder = character:1700
-								# change = scope:change
-							# }
-						# }
-						# resolve_title_and_vassal_change = scope:change		
-					# }
+				50 = { #Kill them
 					
-					set_designated_heir = character:1700
-					
-					#set_player_character = character:1700 #Basil I
+					set_designated_heir = scope:basil
 					
 					known_murder_effect = {
-						VICTIM = character:70490
-						MURDERER = character:1700
-						EXPOSER = character:1700
+						VICTIM = scope:michael_iii
+						MURDERER = scope:basil
+						EXPOSER = scope:basil
 					}
 					
 					scope:eudokia_ingerina = {
@@ -237,17 +220,21 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 						add_trait = devoted
 					}
 
-					character:1700 = {
+					scope:basil = {
 						remove_character_modifier = byzantine_coemperor_modifier
 						#remove_trait = murderer
 					}
 				}
 
-				1 = { #Miss!
+				50 = { #Miss!
 					scope:michael_iii = {
 						add_opinion = {
 							target = scope:basil
-							modifier = schemed_against_me
+							modifier = attempted_murder_opinion
+						}
+						add_opinion = {
+							target = scope:basil
+							modifier = orchestrated_coup_opinion
 						}
 					}
 				}

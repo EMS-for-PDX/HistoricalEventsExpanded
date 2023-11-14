@@ -21928,7 +21928,7 @@ cisalpine0308 = {
 		birth = yes
 	}
 	1073.1.1 = {
-		add_trait = scholar	#Add adult trait
+		trait = scholar	#Add adult trait
 	}
 	1079.1.1 = {
 		death = {
@@ -28042,8 +28042,8 @@ cisalpine0667 = {
 		birth = yes
 	}
 	1071.1.1 = {
-		add_trait = celibate	#Add adult trait
-		add_trait = theologian	#Add adult trait
+		trait = celibate	#Add adult trait
+		trait = theologian	#Add adult trait
 	}
 	1120.10.4 = {
 		death = yes
@@ -28061,8 +28061,8 @@ cisalpine0668 = {
 		birth = yes
 	}
 	1074.1.1 = {
-		add_trait = celibate	#Add adult trait
-		add_trait = theologian	#Add adult trait
+		trait = celibate	#Add adult trait
+		trait = theologian	#Add adult trait
 	}
 	1126.5.8 = {
 		death = yes

@@ -412,7 +412,7 @@
 	trait = ambitious
 	trait = just
 	trait = diligent
-	trait = education_diplomacy_4
+	trait = education_diplomacy_5
 	trait = overseer
 	trait = administrator
 	trait = scholar
@@ -1706,11 +1706,13 @@
 	learning = 4
 	prowess = 13
 
-	trait = ambitious
+	trait = zealous
 	trait = brave 
-	trait = temperate 
-	trait = generous
+	trait = stubborn 
+	trait = ambitious
+
 	trait = education_martial_4
+
 	trait = disfigured
 	trait = organizer 
 	trait = holy_warrior
@@ -1741,7 +1743,7 @@
 				name = yaqubs_ayyar_loyalists
 				men_at_arms = {
 					type = ayyar
-					stacks = 3
+					stacks = 5
 				}
 				location = province:4289 #Zaranj
 				origin = province:4289 #Zaranj
@@ -5955,7 +5957,7 @@ persian_scholars_1 = { #Omar Khayyam
 		birth = "998.1.1"
 	}
 	1030.1.1 = {
-		add_trait = blind
+		trait = blind
 	}
 	1041.3.19 = {
 		death = {

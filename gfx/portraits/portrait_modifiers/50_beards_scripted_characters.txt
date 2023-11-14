@@ -58,6 +58,12 @@ beards_scripted_characters = {
                 exists = character:145147
                 this = character:145147
             }
+            modifier = {
+                add = 999
+                exists = this
+                exists = character:HEE_nasar
+                this = character:HEE_nasar
+            }
         }
     }
 
@@ -500,12 +506,6 @@ beards_scripted_characters = {
 				exists = this
                 exists = character:522 #dukevratislav
                 this = character:522 #duke_vratislav
-            }
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:easteregg_magne_skjaeran
-                this = character:easteregg_magne_skjaeran
             }
             modifier = {
                 add = 999

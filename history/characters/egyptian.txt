@@ -1733,7 +1733,7 @@
 	trait = arrogant # Eager to display his wealth, the Tulunid ruler built numerous palaces for himself and his favourites, and engaged in famous displays of royal extravagance
 	trait = forgiving # treated the prisoners of war from Tawahin with exceptional clemency, giving them the choice of either staying in Egypt under his own service or returning to Iraq without ransom
 	trait = callous # Assassinated his own brother Abbas
-	trait = charming
+	trait = pensive
 
 	disallow_random_traits = yes
 	864.1.1 = {
@@ -2032,6 +2032,7 @@ extra_tulunids_1 = {
 	# When al-Abbas did this without hesitation, ibn Tulun was said to have wept profusely and imprisoned him. 
 	trait = arbitrary 
 	trait = callous
+	trait = charming 
 
 	disallow_random_traits = yes
 	857.1.1 = {

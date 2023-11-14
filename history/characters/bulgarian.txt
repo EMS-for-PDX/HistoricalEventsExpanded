@@ -1535,8 +1535,8 @@
 		capital = "c_dorostorum"
 		name = "Boris-Michael"
 		effect = {
-			set_relation_rival = { target = character:70383 reason = rival_historical }	#Vladimir does not take kindly to Christianity.
-			set_relation_potential_friend = character:712	#Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
+			set_relation_potential_rival = character:70383 #Vladimir does not take kindly to Christianity.
+			set_relation_potential_friend = character:712 #Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
 		}
 	}
 	865.6.1 = {
@@ -1574,9 +1574,7 @@
 	864.1.1 = {
 		religion = "orthodox"
 		effect = {
-			add_secret = {
-				type = secret_non_believer # Remains a believer of Tengri
-			}
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:tengri_pagan } # Remained a follower of Tengrism
 		}
 	}
 	893.1.1 = {

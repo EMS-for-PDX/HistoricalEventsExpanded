@@ -323,7 +323,7 @@ hee_anarchy_at_samarra.1001 = { # Al-Mutazz's death
 	title = hee_anarchy_at_samarra.1001.t
 	desc = hee_anarchy_at_samarra.1001.desc
 	theme = prison
-	override_background = { event_background = dungeon }
+	override_background = { reference = dungeon }
 	left_portrait = {
 		character = root
 		animation = prisondungeon

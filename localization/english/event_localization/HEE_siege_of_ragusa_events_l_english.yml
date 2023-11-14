@@ -1,0 +1,19 @@
+﻿l_english:
+
+ #Rise of Simeon
+ HEE_siege_of_ragusa.0002.t: "A Plea for Aid"
+ HEE_siege_of_ragusa.0002.desc: "Over the decades, weakened Imperial authority over the western Balkans has allowed the local Slavic tribes to throw off our suzerainty and re-asserted their independence. However, this has opened the door to both Slavic and Saracen pirates in the Adriatic Sea, a consequence that is now bearing down on the city of Ragusa.\n\nFor months now, the people of Ragusa have managed to resist the Aghlabid siege and avoid the plundering of their city - a fate that has already befallen the cities of Budva, Risan, and Kotor. But now, with their strength declining, Ragusa has sent envoys to my court asking for aid in repelling the Muslim raiders.\n\nThey pledge to accept the Christian faith and once more acknowledge Imperial suzerainty, but while this is a god-given chance to strengthen our ties in the West, the question remains if I can spare the resources..."
+ HEE_siege_of_ragusa.0002.a: "We shall provide assistance."
+ HEE_siege_of_ragusa.0002.b: "I can not spare the men."
+ relieve_the_siege: "You decide to send aid to the Zachlouboi in Ragusa, hoping this will lead to the re-establishment of Roman Authority in the Balkans and their conversion to the Orthodox faith."
+ provide_no_aid: "Whatever your reasonings, you decide not to provide any aid to Ragusa, leaving their fate in their own hands."
+
+ HEE_siege_of_ragusa.0003.t: "The Question of Aid"
+ HEE_siege_of_ragusa.0003.desc: "The question remains of what form my assistence will come in. My steward suggests a simple shipment of supplies will be sufficent, believing that the Muslim reavers will eventually abandon the siege when it becomes clear Ragusa will not give in nor be overcome. My marshal suggests the opposite - to deploy the Imperial Fleet to relieve Ragusa in a show of force that will not only deter any further raids in the region; but also signal our intentions to bring the region back into the Roman fold. I could always compromise, and send both a small detachment of men alongside supplies to help relieve the siege.\n\nThen again, I have not formally pledged my aid. I could always go back on my word and refuse Ragusa any relief..."
+ HEE_siege_of_ragusa.0003.a: "These raiders will suffer the full might of my Fleet."
+ send_roman_navy: "You will dispatch the Imperial Fleet to sail for Ragusa and push back the Muslim raiders."
+ HEE_siege_of_ragusa.0003.b: "Grain and swords are what Ragusa need."
+ send_ragusa_a_shipment_of_supplies: "You send a shipment of food and weapons to help Ragusa continue to endure the siege."
+ HEE_siege_of_ragusa.0003.c: "Roman grain and soldiers will show our support."
+ send_both_soldiers_and_supplies_to_ragusa: "You dispatch men alongside supplies to help relieve Ragusa of their siege"
+ HEE_siege_of_ragusa.0003.d: "I have changed my mind. Ragusa will have no aid."

@@ -1,11 +1,62 @@
 ﻿l_english:
 
- #HEE Michael's Murder
+ #Lothair's Quest for Annulment
+ HEE_lotharingia_questline.0001.t: "A Question of Devotion"
+ HEE_lotharingia_questline.0001.desc: "Every day I see Teutberga I am reminded of my failure to divorce her and marry my true love Waldrada. These days the mere sight of my legal spouse is a burden I am forced to shoulder, as both the stubborn Pope and my ambitious family seem determined to ensure my barren marriage stands.\n\nI feel myself sometimes weaken in my resolve to see Waldrada become my wife, wondering if perhaps God does not intend for me to be happy or perhaps my enduring love for Waldrada is but a distraction imposed on me by the Devil, but these thoughts, though persistant, can not win. I must endure and find a way to marry the woman I truly love.\n\nThen again... is that what is best...?"
+ HEE_lotharingia_questline.0001.a: "I will continue my struggle."
+ HEE_lotharingia_questline.0001.b: "I must accept my marriage."
+
+ HEE_lotharingia_questline.0003.t: "A Long-sought Acceptance"
+ HEE_lotharingia_questline.0003.desc: ""I will agree to an annulment."\n\nWhen those words left Teutberga's mouth I could scarcely believe my own ears. Whether by my consistant insistence, the recent death of her champion Pope Nicolaus, or perhaps even her own desire to see an end to our loveless relationship, it seems my wife has finally accepted our need for an annulment.\n\nTruly it seems my persistence in this issue has finally born fruit, as with Teutberga's acceptance of an annulment, I only need the approval of the new Pope, [pope.GetTitledFirstName], which should be a trival task now my "wife" has given her consent."
+ HEE_lotharingia_questline.0003.a: "To Rome I must go!"
+
+ HEE_lotharingia_questline.0004.t: "Departure"
+ HEE_lotharingia_questline.0004.desc: "Though the affairs of my realm have delayed me, I can not longer put off my travel to Italy - nor do I wish to. The sooner I depart, the sooner I may be freed of my legal attachment to Teutberga.\n\nWith my caravan assembled, I bid farewell to Waldrada and my children who have come to see me off. With a promise to make haste home to them once I recieve the Pope's assent, I depart for the Eternal City."
+ HEE_lotharingia_questline.0004.a: "I go with hope in my heart."
+
+ HEE_lotharingia_questline.0005.t: "An Audience with the Supreme Pontiff"
+ HEE_lotharingia_questline.0005.desc: "As I enter the halls of the Lateran Palace, palace of the Pope, I am greeted with mosaics and frescos glorious beyond description. But beyond this entry hall I am greeted by [pope.GetTitledFirstName], God's representative on Earth. Over many hours, I present my case for annulment, citing my childless marriage as evidence of a lack of consumation. The Pope and his advisor listen to my case largely in silence, only occasionally interrupting me to ask clarifying or probing questions.\n\nBy the time my audience with the Pope comes to a close, I fear that perhaps my words were not persuasive enough despite my case. The Pope only tells me he will call on me in short order after conferring with his fellow bishops to give his verdict."
+ HEE_lotharingia_questline.0005.a: "I now await my judgement..."
+
+ HEE_lotharingia_questline.0006.t: "A Favorable Result"
+ HEE_lotharingia_questline.0006.desc: "When word reached me that the Pope had made a decision on my annulment, I dont believe I had ever been so nervious since perhaps when Waldrada had gone into labor with our first son Hugh. Having beseched God's favor all week, I could only pray once more to God that he would see my prayers answered as I once more entered the Lateran Palace.\n\nIndeed even when [pope.GetTitledFirstName] declared my marriage annuled, I could feel no relief as I was sure it would be but moments before I awoke from this dream. But as time continued to move forward in this blissful reality, it dawned on me that perhaps God did answer my prayers. The Lord had spoke to his Shepard on Earth and has seen my resolve rewarded with the potential to now marry the one I truly love. With this, I can not wait to return home and deliver this good news."
+ HEE_lotharingia_questline.0006.a: "I can not wait to return home!"
+
+ HEE_lotharingia_questline.0007.t: "Going Home"
+ HEE_lotharingia_questline.0007.desc: "Having settled my affairs in the Eternal City, it comes time to begin the journey home. With God's help, I will soon be home and finally embrace my love as my legal and lawful spouse, free to openly love one another as we were meant to."
+ HEE_lotharingia_questline.0007.a: "Waldrada, just a tad longer my love!"
+
+ HEE_lotharingia_questline.0008.t: "A Devilish Delay"
+ HEE_lotharingia_questline.0008.desc: "Whether it be due to our brisk pace home, a disagreement between my body and our supplies, or the Devil's machinations, I find myself plagued by bad humors. Though some in my entourage question if our pace should be slowed, if not stopped altogether until I recover, I feel to stop now would be in some part a failure of my love for Waldrada and our family. To delay the good news I bring for even a day would be too long for my love, who is surely awaiting my return."
+ HEE_lotharingia_questline.0008.a: "This illness will not slow my return!"
+ HEE_lotharingia_questline.0008.b: "No matter my urgency, my health can not be risked."
+
+ HEE_lotharingia_questline.0009.t: "A Malevolent Malady"
+ HEE_lotharingia_questline.0009.desc: "Time have not been kind to me, as my illness has only grown in strength over these last few days. What once was simply bad humors has become an onslaught of constant coughs and a sense of faintness in my head. Some in my entourage fear to come near me now, and even those that do - despite their words assuring me of my eventual recovery - look at me more with mourning in their eyes than anything else, as if they saw me as consigned to death already."
+ HEE_lotharingia_questline.0009.a: "God, has thou forsaken me now?"
+
  HEE_lotharingia_questline.0013.t: "Treaty of Meerssen"
  HEE_lotharingia_questline.0013.desc: "With your brother [lothaire.GetTitledFirstName]'s death and him leaving behind no legitimate children, by right his lands should fall to me. However with me and my armies engaged in Southern Italy, my ambitious relatives in East and West Francia have seen fit to discuss among themselves how best to partition *my* lands. I have even heard rumors that [king_of_france.GetTitledFirstName] has been crowned in Metz, having been accepted by many of the local nobility.\n\nWhile it could be too late to salvage my authority north of the Alps, I could abandon my ambitions regarding Southern Italy in a bid to secure Lotharingia..."
  HEE_lotharingia_questline.0013.a: "I must accept unjust partition, for now."
  HEE_lotharingia_questline.0013.b: "I will fight for my inheritance."
 
  #Custom Tooltips
+ lothaire_continues_to_seek_an_annulment: "You shall not falter in your pursuit for an annulment"
+
+ lothaire_must_go_to_rome: "With Teutberga's agreement, you must now travel to Italy to obtain the assent of [pope.GetTitledFirstName] once you settle your affairs at home"
+
+ lothaire_begins_his_journey_to_rome: "With affairs at home somewhat settled, you now depart for the Holy City of Rome"
+
+ lothaire_debates_the_pope: "Having presented your case, you must now pray your words have proven persuasive enough for [pope.GetTitledFirstName]"
+
+ lothaire_must_prepare_to_return_home: "Having placed a favourable interpretation upon the words of [pope.GetTitledFirstName], you must now prepare for the journey home"
+
+ lothaire_cant_wait_to_see_waldrada: "Eager to return home and share the good news, you set out from the Eternal City"
+
+ lothaire_must_push_through: "Driven by your love, whether it be courage or foolishness, you refuse to allow your illness to slow your pace"
+ lothaire_slows_his_trip_to_recover: "Be it be concern for your illness, fearful it might intensify, or simply to allivate the worries of your entourage, you decide to halt your travel until you recover"
+
+ lothaire_ponders_if_this_is_the_end: "Brought low by this illness, a part of you can not help but wonder if this will be your end..."
+
  treaty_of_meerssen_is_signed: "You put your ambitions in Southern Italy at the forefront"
  treaty_of_meerssen_is_disputed: "You decide to abandon your ambitions in Southern Italy to prioritize Lotharingia"

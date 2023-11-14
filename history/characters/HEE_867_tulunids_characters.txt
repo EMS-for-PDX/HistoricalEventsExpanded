@@ -73,7 +73,7 @@ HEE_bayakbak = {
 
 HEE_yarjukh = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
 	name = "Yarjukh"
-	dynasty = RICE_yarjukhid_egypt
+	dynasty = hee_yarjukhid
 	religion = "ashari"
 	culture = "turkish"
 	trait = education_martial_3
@@ -100,7 +100,7 @@ HEE_yarjukh = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
 HEE_ibn_tulun_first_wife = { # ibn Tulun's wife and mother of his eldest son Abbas and his daughter Fatimah
 	name = "Khatun"
 	female = yes
-	dynasty=RICE_yarjukhid_egypt
+	dynasty = hee_yarjukhid
 	religion = "ashari"
 	culture = "turkish"
 	father = HEE_yarjukh
@@ -352,8 +352,8 @@ HEE_al_mudabbir_brother = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 	839.9.9 = { # Unknown
 		birth = yes
 	}
-	866.1.1 = {
-		employer = 34014 # Al-Mutazz
+	867.1.1 = {
+		employer = sogdian0008 # Owner of Ahwaz, where Abu Ishaq was appointed tax-collector
 	}
 	892.1.1 = { # Died in prison
 		death = yes

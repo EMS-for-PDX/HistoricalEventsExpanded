@@ -5,6 +5,22 @@
 #################################################
 
 ## Character ##
+imperial_ambitions_modifier = {
+	icon = prestige_positive
+	monthly_lifestyle_xp_gain_mult = 0.20
+	glory_hound_opinion = 20
+	courtly_opinion = 10
+	monthly_prestige_gain_mult = 0.1
+	monthly_dynasty_prestige_mult = 0.05
+}
+
+alfred_annointed_by_the_pope = {
+	icon = prestige_positive
+	monthly_prestige = 0.25
+	short_reign_duration_mult = -0.25
+	christianity_religion_opinion = 15
+}
+
 michael_administrative_indifference = {
 	icon = county_modifier_corruption_negative
 	stress_gain_mult = -0.15
@@ -12,7 +28,6 @@ michael_administrative_indifference = {
 	parochial_opinion = -20
 	glory_hound_opinion = 15
 }
-
 
 the_turkic_conqueror_modifier = {
 	icon = horse_positive
@@ -51,8 +66,9 @@ anarchy_at_samarra_financial_straits = {
 
 anarchy_at_samarra_loss_of_central_authority = {
 	icon = county_modifier_control_negative
-	vassal_opinion = -20
-	monthly_prestige_gain_mult = -0.25
+	monthly_prestige_gain_mult = -0.2
+	vassal_opinion = -25
+	independent_ruler_opinion = -35
 	monthly_county_control_change_factor = -0.5
 }
 
@@ -62,12 +78,6 @@ anarchy_at_samarra_unpaid_soldiery = {
 	maa_damage_mult = -0.5
 	maa_toughness_mult = -0.5
 	supply_capacity_mult = -0.5
-}
-
-student_of_rome_modifier = {
-	icon = learning_positive
-	learning = 2
-	monthly_lifestyle_xp_gain_mult = 0.15
 }
 
 egyptian_spymaster_modifier = {
@@ -169,6 +179,22 @@ hee_tondrakian_purge_modifier = {
 	monthly_county_control_change_factor = 0.15
 	development_growth_factor = -0.1
 	county_opinion_add = -25
+}
+
+hee_865_mecca_raid_modifier = {
+	icon = martial_negative
+	build_speed = 0.50
+	tax_mult = -0.35
+	development_growth_factor = -0.25
+	county_opinion_add = -25
+}
+
+paulicians_levied_for_war = {
+	icon = prowess_negative
+	levy_size = 1
+	build_speed = 0.50
+	tax_mult = -0.35
+	development_growth_factor = -0.3
 }
 
 # testing_water = {

@@ -25826,7 +25826,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		birth = "859.1.1"
 	}
 	880.1.1. = {
-		add_trait = unyielding_defender
+		trait = unyielding_defender
 	}
 	897.1.1 = {
 		death = "897.1.1"
@@ -27542,7 +27542,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		birth = "866.1.18"
 	}
 	880.1.1 = {
-		add_trait = lifestyle_hunter
+		trait = lifestyle_hunter
 	}
 	884.12.12 = {
 		death = {

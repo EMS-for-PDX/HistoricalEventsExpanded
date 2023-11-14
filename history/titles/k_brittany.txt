@@ -11,7 +11,7 @@ d_brittany = {
 	#Proto-kingdom of Bretagne
 	833.1.1 = {
 		holder = 159694 #Nomino�
-		liege = 90095 #Louis the Pious
+		liege = "90095" #Louis the Pious
 	}
 	867.1.1 = { change_development_level = 5 }
 	851.3.7 = {

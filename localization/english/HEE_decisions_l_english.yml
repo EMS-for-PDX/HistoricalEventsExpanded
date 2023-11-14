@@ -1,0 +1,21 @@
+﻿l_english:
+
+ ai_stress_loss_decision:0 "AI Stress Loss"
+ ai_stress_loss_decision_tooltip:2 "AI will lose some stress"
+ ai_stress_loss_decision_desc:0 "#F If you are seeing this text, something is wrong.#!"
+ ai_stress_loss_decision_confirm:0 "Lose some stress!"
+
+anarchy_at_samarra_financial_straits_decision: "Begin Financial Recovery"
+anarchy_at_samarra_financial_straits_decision_tooltip: "Begin repairing the damage of the Anarchy by stablizing the treasury"
+anarchy_at_samarra_financial_straits_decision_desc: "Since the murder of Caliph al-Mutawakkil, the Caliphate has been siezed by chaos. Insubordinate governors, political powerplays, and civil war has seen the once vast treasury of the Abbasids shrunk to nearly nothing. Revenue has stopped coming in even from the environs of Baghdad, let alone more remote provinces, leading to a lack of funds to pay soldiers or administrators. If one could restablish a stable treasury, it would go a long way towards repairing the damage of the Anarchy."
+anarchy_at_samarra_financial_straits_decision_confirm: "The Struggle continues"
+
+anarchy_at_samarra_loss_of_central_authority_decision: "Restore a Measure of Central Authority"
+anarchy_at_samarra_loss_of_central_authority_decision_tooltip: "Begin repairing the damage of the Anarchy by restoring some authority"
+anarchy_at_samarra_loss_of_central_authority_decision_desc: "Since the Anarchy at Samarra began, the authority of the Caliphate has been chipped away by seccessionist governors and ambitious generals. This trend must be stopped, and if we can restore the reputation of the caliphate with our most powerful vassals, it may be possible to restore our previous influence."
+anarchy_at_samarra_loss_of_central_authority_decision_confirm: "Our task remains incomplete"
+
+anarchy_at_samarra_unpaid_soldiery_decision: "Pay the Army"
+anarchy_at_samarra_unpaid_soldiery_decision_tooltip: "You repay the debts owed to your armies"
+anarchy_at_samarra_unpaid_soldiery_decision_desc: "With the onset of the Anarchy, and the ensuing collapse of Caliphal authority, the ability of the Caliphate to pay its soldiers was severely diminished. This inability to pay the army had already brought down the Caliph Al-Musta'in, and by the time of the ascension of Al-Mutazz the amount of money required to pay the Caliphal armies was equivalent to the full revenue of the Caliphate for two years according to contemporary historians. If one could repay the debts owed to the military by the state, it would surely be seen as a good sign of recovery."
+anarchy_at_samarra_unpaid_soldiery_decision_confirm: "Our Debts are paid"

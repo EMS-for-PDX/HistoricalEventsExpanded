@@ -27,3 +27,31 @@ war = {
 	defenders = { 163098 }
 	claimant = 163132
 }
+
+# Abbasid Punitive Campaigns against the Dulafids
+war = {
+	name = "war_867_Isa_Seizure_of_Damascus"
+	start_date = 867.1.1
+	end_date = 867.6.1
+	targeted_titles = {
+		d_amman
+		d_damascus
+		d_oultrejourdain
+	}
+	casus_belli = invasion_war
+	attackers = { 159732 }
+	defenders = { HEE_damascus_governor }
+}
+
+ war = {
+ 	name = "war_867_Paulician_Grand_Raid"
+ 	start_date = 867.1.1
+ 	end_date = 867.6.1
+ 	targeted_titles = {
+ 		k_anatolia
+		k_pontus
+ 	}
+ 	casus_belli = grand_raid_cb
+ 	attackers = { HEE_chrysocheir }
+	defenders = { 70490 }
+}

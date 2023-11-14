@@ -1073,10 +1073,10 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide if the help of Louis II of It
 	}
 }
 
-HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
+HEE_siege_of_salerno.0006 = { #Salerno must decide who to send as their envoy
 	type = character_event
-	title = HEE_siege_of_salerno.0005.t
-	desc = HEE_siege_of_salerno.0005.desc
+	title = HEE_siege_of_salerno.0006.t
+	desc = HEE_siege_of_salerno.0006.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -1130,7 +1130,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0005.a
+		name = HEE_siege_of_salerno.0006.a
 		trigger = { scope:guaimar_of_salerno = { is_alive = yes } }
 		
 		custom_tooltip = my_son_guaimar_of_salerno_will_be_envoy
@@ -1148,7 +1148,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 
 		scope:louis_the_younger = {
 			trigger_event = {
-				id = HEE_siege_of_salerno.0006
+				id = HEE_siege_of_salerno.0007
 				days = 4
 			}
 		}
@@ -1163,7 +1163,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0005.b
+		name = HEE_siege_of_salerno.0006.b
 		
 		custom_tooltip = my_chaplain_will_be_envoy
 
@@ -1180,7 +1180,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 
 		scope:louis_the_younger = {
 			trigger_event = {
-				id = HEE_siege_of_salerno.0006
+				id = HEE_siege_of_salerno.0007
 				days = 4
 			}
 		}
@@ -1195,7 +1195,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0005.c
+		name = HEE_siege_of_salerno.0006.c
 
 		custom_tooltip = my_chancellor_will_be_envoy
 
@@ -1212,7 +1212,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 
 		scope:louis_the_younger = {
 			trigger_event = {
-				id = HEE_siege_of_salerno.0006
+				id = HEE_siege_of_salerno.0007
 				days = 4
 			}
 		}
@@ -1227,7 +1227,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide who to send as their envoy
 	}
 }
 
-HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
+HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 	type = character_event
 	title = HEE_siege_of_salerno.0006.t
 	desc = HEE_siege_of_salerno.0006.desc
@@ -1278,7 +1278,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0006.a
+		name = HEE_siege_of_salerno.0007.a
 		
 		custom_tooltip = salerno_shall_have_my_full_support
 
@@ -1310,7 +1310,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0006.b
+		name = HEE_siege_of_salerno.0007.b
 		
 		custom_tooltip = salerno_can_have_some_monetary_support
 
@@ -1338,7 +1338,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0006.c
+		name = HEE_siege_of_salerno.0007.c
 		
 		custom_tooltip = salerno_is_not_my_problem
 
@@ -1360,7 +1360,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 	}
 
 	option = {
-		name = HEE_siege_of_salerno.0006.d
+		name = HEE_siege_of_salerno.0007.d
 		trigger = { scope:ruler_of_salerno = { has_character_flag = joined_adelchis_conspiracy } }
 
 		custom_tooltip = i_remember_salerno_intrigues
@@ -1371,7 +1371,7 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 		}
 
 		trigger_event = {
-			id = HEE_italy_questline.0007
+			id = HEE_siege_of_salerno.0008
 			days = { 20 40 }
 		}
 
@@ -1385,10 +1385,10 @@ HEE_siege_of_salerno.0006 = { #Louis recieves an envoy from Salerno
 	}
 }
 
-HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
+HEE_siege_of_salerno.0008 = { # Louis Chaplain begs him to defend Christiandom
 	type = character_event
-	title = HEE_italy_questline.0007.t
-	desc = HEE_italy_questline.0007.desc
+	title = HEE_siege_of_salerno.0008.t
+	desc = HEE_siege_of_salerno.0008.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -1417,7 +1417,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 	on_trigger_fail = {
 		if = {
 			trigger_event = {
-				id = HEE_italy_questline.0007
+				id = HEE_siege_of_salerno.0008
 				days = 7 #~1 Month
 			}
 		}
@@ -1460,7 +1460,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 	}
 	
 	option = {
-		name = HEE_italy_questline.0007.a
+		name = HEE_siege_of_salerno.0008.a
 		
 		custom_tooltip = I_will_defend_salerno
 		
@@ -1492,7 +1492,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 	}
 	
 	option = {
-		name = HEE_italy_questline.0007.b
+		name = HEE_siege_of_salerno.0008.b
 		
 		custom_tooltip = salerno_shall_suffer_regardless
 
@@ -1534,7 +1534,7 @@ HEE_italy_questline.0007 = { # Louis Chaplain begs him to defend Christiandom
 	}
 }
 
-HEE_siege_of_salerno.0879 = { # Victory at Bari trigger
+HEE_siege_of_salerno.0879 = { # 
 	scope = none
 	hidden = yes
 

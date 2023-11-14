@@ -5,3 +5,19 @@ elopement_non_imprisionment_opinion = {
 	decaying = yes
 	years = 30
 }
+
+unable_to_defend_empire = {
+	opinion = -50
+	decaying = yes
+	years = 25
+}
+
+vladimir_pagan_heretic = {
+	opinion = -50
+	years = 25
+}
+
+vladimir_pagan_restorer = {
+	opinion = 50
+	years = 25
+}

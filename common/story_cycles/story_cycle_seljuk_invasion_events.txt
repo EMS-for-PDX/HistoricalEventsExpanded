@@ -309,7 +309,8 @@ story_qarmatian_invasion = {
 				}
 			}
 		}
-		spawn_qarmatian_troops_effect = yes
+		global_var:qarmatian_realm_title.holder = { spawn_qarmatian_troops_effect = yes }
+
 	}
 
 	on_end = {

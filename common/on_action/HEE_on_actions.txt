@@ -8,6 +8,7 @@ yearly_global_pulse = {
 		HEE_seljuk_empire
 		HEE_seljuk_empire_invasion
 		HEE_ghaznavids
+		HEE_qarmatians
 		HEE_fairhair_feast
 		HEE_titular_title_make_primary
 	}
@@ -231,8 +232,8 @@ HEE_qarmatians = {
 		else = {
 			if = {
 				limit = {
-					current_date > 965.1.1
-					current_date < 1000.1.1 
+					current_date > 899.1.1
+					current_date < 940.1.1 
 					NOT = { has_global_variable = qarmatians_have_appeared }
 					has_game_rule = turkic_invasions_historical
 				}
@@ -247,6 +248,18 @@ HEE_qarmatians = {
 					modifier = {
 						add = 300
 						current_date > 900.1.1
+					}
+					modifier = {
+						add = 900
+						current_date > 901.1.1
+					}
+					modifier = {
+						add = 1900
+						current_date > 902.1.1
+					}
+					modifier = {
+						add = 2900
+						current_date > 903.1.1
 					}
 					set_global_variable = {
 						name = qarmatians_have_appeared

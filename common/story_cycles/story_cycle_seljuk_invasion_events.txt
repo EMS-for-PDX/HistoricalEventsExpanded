@@ -443,22 +443,22 @@ story_qarmatian_invasion = {
 			story_owner = {
 				NOT = {
 					any_held_title = {
-						this = global_var:GhaznavidEmpireTitle
+						this = global_var:qarmatian_realm_title
 					}
 				}
 			}
 		}
 
 		triggered_effect = {
-			trigger = { exists = global_var:GhaznavidEmpireTitle }
+			trigger = { exists = global_var:qarmatian_realm_title }
 			effect = {
 				if = {
 					limit = {
-						global_var:GhaznavidEmpireTitle.holder = {
-							culture = culture:turkish
+						global_var:qarmatian_realm_title.holder = {
+							faith = faith:qarmatian
 						}
 					}
-					make_story_owner = global_var:GhaznavidEmpireTitle.holder
+					make_story_owner = global_var:qarmatian_realm_title.holder
 				}
 				else = {
 					end_story = yes
@@ -467,7 +467,7 @@ story_qarmatian_invasion = {
 		}
 
 		triggered_effect = {
-			trigger = { NOT = { exists = global_var:GhaznavidEmpireTitle } }
+			trigger = { NOT = { exists = global_var:qarmatian_realm_title } }
 			effect = {
 				end_story = yes
 			}

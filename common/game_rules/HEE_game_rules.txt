@@ -10,3 +10,11 @@ turkic_invasions  = {
 	turkic_invasions_random = {}
 	turkic_invasions_off = {}
 }
+
+jda_jeannes_chastity_belt = {
+	default = jda_loosened_chastity_belt #Historically she took a vow of chastity, but like a dozen people asked for this
+
+	jda_tight_chastity_belt = {  }
+	jda_loosened_chastity_belt = {  }
+	jda_unlocked_chastity_belt = { }
+}

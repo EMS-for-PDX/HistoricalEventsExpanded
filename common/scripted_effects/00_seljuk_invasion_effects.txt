@@ -209,13 +209,12 @@ spawn_ghaznavids_character_effect = {
 		template = HEE_ghaznavid_mahmud_template
 		dynasty_house = house:house_ghaznavid
 		save_scope_as = Mahmud
-		add_trait = turkish_conqueror
+	}
+
+	scope:Mahmud = {
 		set_global_variable = {
 			name = GhaznavidMahmud
 			value = scope:Mahmud
-		}
-		add_character_modifier = {
-			modifier = the_turkic_conqueror_modifier
 		}
 	}
 
@@ -226,15 +225,15 @@ spawn_ghaznavids_character_effect = {
 		template = HEE_ghaznavid_ismail_template
 		dynasty_house = house:house_ghaznavid
 		save_scope_as = Ismail
-		add_trait = turkish_conqueror
+	}
+
+	scope:Ismail = {
 		set_global_variable = {
 			name = GhaznavidIsmail
 			value = scope:Ismail
 		}
-		add_character_modifier = {
-			modifier = the_turkic_conqueror_modifier
-		}
 	}
+
 }
 
 spawn_ghaznavid_troops_effect = {
@@ -659,12 +658,14 @@ send_ghaznavid_subjugation_demand_effect = {
 	}
 }
 
+
+## Qarmatians ##
+
 spawn_qarmatians_character_effect = {
 	title:c_qatif.title_province = {
 		save_scope_as = qarmatians_birthplace
 	}
 	create_character = {
-		name = "Abu Sa'id"
 		location = scope:qarmatians_birthplace
 		template = HEE_qarmatian_founder_template
 		dynasty = inherit
@@ -673,6 +674,9 @@ spawn_qarmatians_character_effect = {
 	}
 	
 	scope:qarmatian_founder = {
+		add_character_flag = {
+			flag = no_headgear # Not a seeker of formal royality status and its associated regalia
+		}
 		# Make temporarily immune to disease
 		add_character_flag = {
 			flag = immune_to_disease
@@ -682,26 +686,15 @@ spawn_qarmatians_character_effect = {
 			flag = is_party_baron
 			years = 5
 		}
-		# add_character_modifier = {
-		# 	modifier = the_turkic_conqueror_modifier
-		# }
-		#add_trait = turkish_conqueror
-		add_prestige = 1000
-		add_gold = 1000
-		add_piety = 1000
+		add_prestige = 1500
+		add_gold = 500
+		add_piety = 2000
 		add_dread = high_dread
 		dynasty = {
 			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 500
 			add_dynasty_perk = warfare_legacy_1
-			# add_dynasty_perk = warfare_legacy_2
-			# add_dynasty_perk = warfare_legacy_3
-			# if = {
-			# 	limit = {
-			# 		has_dlc_feature = hybridize_culture
-			# 	}
-			# 	add_dynasty_perk = ep1_culture_legacy_1
-			# }
+			add_dynasty_perk = warfare_legacy_2
 		}
 		set_global_variable = {
 			name = qarmatian_dynasty
@@ -713,22 +706,20 @@ spawn_qarmatians_character_effect = {
 		}
 	}
 
-	# create_character = {
-	# 	name = "Mahmud" 
-	# 	father = scope:ghaznavid
-	# 	location = scope:ghaznavids_birthplace
-	# 	template = HEE_ghaznavid_mahmud_template
-	# 	dynasty_house = house:house_ghaznavid
-	# 	save_scope_as = Mahmud
-	# 	add_trait = turkish_conqueror
-	# 	set_global_variable = {
-	# 		name = GhaznavidMahmud
-	# 		value = scope:Mahmud
-	# 	}
-	# 	add_character_modifier = {
-	# 		modifier = the_turkic_conqueror_modifier
-	# 	}
-	# }
+	create_character = {
+		father = scope:qarmatian_founder
+		location = scope:qarmatians_birthplace
+		template = jannabid_first_son_character_template
+		dynasty = inherit
+		save_scope_as = Qasim
+	}
+
+	scope:Qasim = {
+		set_global_variable = {
+			name = JannabidQasim
+			value = scope:Qasim
+		}
+	}
 
 	# create_character = {
 	# 	name = "Ismail"
@@ -748,29 +739,83 @@ spawn_qarmatians_character_effect = {
 	# }
 }
 
-spawn_qarmatian_troops_effect = {
+spawn_qarmatian_starting_troops_effect = {
 	spawn_army = {
 		uses_supply = no
 		inheritable = yes
 		name = qarmatian_event_troops
 		men_at_arms = {
-			type = camel_rider
-			stacks = 10
-		}
-		men_at_arms = {
-			type = mubarizun
-			stacks = 6
+			type = light_footmen
+			stacks = 5
 		}
 		men_at_arms = {
 			type = light_footmen
-			stacks = 10
+			stacks = 5
 		}
-		levies = 3400
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mubarizun
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mubarizun
+			stacks = 5
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 5
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 3950
 		location = global_var:qarmatian_founder.location
 	}
 }
 
-# focus on forming a custom persian empire and freeing turkish people first
+spawn_qarmatian_reinforcements_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = qarmatian_event_troops
+		men_at_arms = {
+			type = light_footmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = bowmen
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mubarizun
+			stacks = 5
+		}
+		men_at_arms = {
+			type = camel_rider
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 1450
+		location = global_var:qarmatian_founder.location
+	}
+}
+
+# Qarmatian targeting for wars
 qarmatian_war_target_evaluation_and_declaration_effect = {
 	# Set the qarmatian leader as reference point
 	save_scope_as = lead_qarmatian
@@ -877,7 +922,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 			exists = scope:next_invasion_target
 		}
 		start_war = {
-			cb = major_religious_war
+			cb = religious_war
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}

@@ -1134,7 +1134,7 @@
 	#Personality Traits
 	trait = fickle
 	trait = trusting
-	trait = stubborn
+	trait = ambitious
 	
 	#Other Traits
 	trait = unyielding_defender

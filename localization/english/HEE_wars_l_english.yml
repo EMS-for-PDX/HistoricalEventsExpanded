@@ -52,12 +52,20 @@ anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor wil
  
  # Truce Descriptions
  louis_oath_desc: "\nEmperor Louis has been released from his unjust imprisonment by Adelchis of Benevento after having sworn to the Prince on holy relics that he would take no revenge for the injury, nor ever enter Benevento with an army."
+
  divisio_regni_desc: "\nPeace has been forged between King Ludwig and his sons through the Divisio regni - the division of the King's land among his sons with Carloman recieving Bavaria, Ludwig the Younger recieving Saxony with Franconia and Thuringia, and Karl recieving Swabia with Raetia."
+
  unfavourable_peace_venice_croatia_desc: "\nWhen Orso I Participazio came to power as the new Doge of Venice in 864, he broke the long lasting peace treaty between Croatia and the Venetian Republic signed in 839 and attacked Croatia, which was still occupied with infighting over Trpimir's inheritance. After winning the civil war in 865, the usurper Domagoj was forced to make an unfavourable peace with Venice, giving hostages as a guarantee for safe passage of Venetian ships in the Adriatic."
+
  breton_viking_alliance_desc: "\nRelations between the vikings and the Bretons, who had became familiar with one another by reason of their occasional alliances and by the ordinary trading that inevitably took place in the peaceful intervals between the plundering expeditions, has changed. The vikings had shown that they could be harmless neighbours when it so pleased them, and that they could even be useful if their strength could be turned against the Frankish king as displayed in the Battle of Brissarthe (a battle fought on 2 July 866, between the Franks and a joint Breton-Viking army near Brissarthe, Neustria. It was marked by the death of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine). So a rash and experimental peace was made by Duke Salomon of Brittany with Hastein and his pirates. For the first time a viking host dwelt in France has been officially recognized, at any rate by its immediate neighbours, as settlers in the land."
+
  serbian_bulgarian_truce_desc: "\nIn 853 or 854, the Bulgar Army, led by Vladimir, the son of Boris I of Bulgaria, invaded Serbia in an attempt to exact vengeance for a previous defeat. The Serbian Army was led by Mutimir and his brothers, which defeated the Bulgars, capturing Vladimir and 12 boyars. Boris I and Mutimir agreed to cease hostilities (and perhaps an alliance), and Mutimir sent his sons Bran and Stefan to the border to escort the prisoners, where they exchanged items as a sign of peace.\n\nSoon after this in the 860s the younger brothers started a rebellion against Mutimir after he had given them less and less power. Mutimir crushes the rebellion and the two brothers are sent as prisoners, a guarantee of peace, to Tsar Boris I court at Pliska, the Bulgar capital."
+
  ashot_kaysite_truce_desc: "\nWith the help of his brother and sparapet (a title denoting the supreme commander of the army) Abas Bagratuni, Ashot I began a campaign againstthe Kaysites of Manazkert in 863. Although it ended with Ashot's victory, the campaign ended with no territorial gains for the Armenian ruler."
+
  bulgarian_conversion_peace_desc: "\nIn the last months of 863 the Byzantines attacked Bulgaria, probably after having been informed that Boris was willing to accept Latin Christianity. Before any actual military engagements took place, Khan Boris was forced to sue for peace due to being unprepared for war because of Bulgaria being badly affected by crop failure and earthquakes that year. Negotiations were set up and Boris promised to convert to Eastern Orthodox Christianity along with his people, requesting missionaries to come to Bulgaria and begin the process. In exchange for Bulgaria's conversion to Eastern Orthodoxy, the two sides concluded a "deep peace" for a 30-year period along with the Byzantines returning the previously conquered border region of Zagora."
+
+ dane_saxon_peace_desc: "\nWith neitther Saxon or Dane able to completely destroy the other, both sides have agreed to a temporary truce. Ceding the lands of Essex to the Great Summer Army, with no small amount of coin, both sides lick their wounds and prepare for the seemingly destined renewal of conflict."
 
  # Event Troops
  great_summer_army_event_troops: "Great Summer Army"
@@ -76,3 +84,5 @@ anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor wil
 
  paulician_conscripted_levies_event_troops: "Paulician Conscripts"
  paulician_veterns_event_troops: "Paulician Veterans "
+
+ qarmatian_event_troops: "Qarmatian Zealots"

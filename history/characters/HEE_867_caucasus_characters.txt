@@ -793,7 +793,7 @@ HEE_gourgen_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7roun
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41559
-	# mother =
+	mother = 41503
 	# health = 5.0
 	
 	#Skills
@@ -834,7 +834,7 @@ HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41559
-	# mother =
+	mother = 41503
 	# health = 5.0
 	
 	#Skills
@@ -970,7 +970,7 @@ HEE_867_armenian_governor_father = { # al-Ala ibn Ahmad al-Azdi - Arab Governor 
 }
 
 HEE_gregor_naren = { # Gregor Naren - Prince of Khachen
-	name = "Grigor Naren"
+	name = "Grigor_Naren"
 	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
@@ -1130,7 +1130,7 @@ HEE_vasak_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 }
 
 HEE_kourd_ii_of_khachen = { # Gregor Naren - Prince of Khachen
-	name = "Grigor Naren"
+	name = "Kourd"
 	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
@@ -1210,7 +1210,7 @@ HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 }
 
 HEE_kaysite_son = { # Abu'l-Ward's son and successor
-	name = "_Abd al-Hamid"
+	name = "_Abd_al-Hamid"
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029119

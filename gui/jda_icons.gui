@@ -1,0 +1,29 @@
+texticon = {
+	icon = jda_chastity_belt
+	iconsize = {
+		texture = "gfx/interface/icons/icon_chastity_belt.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = jda_loose_chastity_belt
+	iconsize = {
+		texture = "gfx/interface/icons/icon_loose_chastity_belt.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = jda_unlocked_chastity_belt
+	iconsize = {
+		texture = "gfx/interface/icons/icon_unlocked_chastity_belt.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

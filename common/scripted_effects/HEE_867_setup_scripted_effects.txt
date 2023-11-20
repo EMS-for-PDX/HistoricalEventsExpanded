@@ -84,6 +84,10 @@ hee_karling_867_effect = {
 
 	character:90109 = { give_nickname = nick_the_iron }
 
+	scope:louis_the_younger = {
+		house = { set_house_head = scope:louis_the_younger }
+	}
+
 	scope:charles_the_bald = {
 		add_opinion = {
 			target = scope:baldwin_i_of_flanders

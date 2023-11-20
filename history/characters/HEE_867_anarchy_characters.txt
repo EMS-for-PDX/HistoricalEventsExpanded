@@ -40,7 +40,7 @@ HEE_mutazz_vizier = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anb
 }
 
 HEE_mutazz_vizier_father = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
-	name = "Isra'il"
+	name = "Isra_il"
 	# female = yes
 	dynasty = hee_anbari
 	culture = "assyrian"
@@ -267,7 +267,7 @@ HEE_muflih_al_turki = { # Muflih Al-Turki, chief lieutenant to the general Musa 
 }
 
 HEE_muflih_al_turki_son = { # Muflih Al-Turki, chief lieutenant to the general Musa ibn Bugha al-Kabir - https://en.wikipedia.org/wiki/Muflih_al-Turki
-	name = "Abd al-Rahman"
+	name = "Abd-al-Rahman"
 	# female = yes
 	dynasty = hee_al_turki
 	culture = "turkish"
@@ -331,7 +331,7 @@ HEE_muhammad_ibn_bugha = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
 }
 
 HEE_muhammad_ibn_bugha_son = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
-	name = "Nasar"
+	name = "Nasr"
 	# female = yes
 	dynasty = 7517
 	culture = "khazar"

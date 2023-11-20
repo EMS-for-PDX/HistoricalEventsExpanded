@@ -3,8 +3,8 @@
  d_test_empire: "Test"
  d_test_empire_adj: "Tester"
 
- e_bulgarian_principality_article: "the "
- e_bulgarian_principality: "Principality of Bulgaria"
+ e_bulgarian_principality_article: "the Principality of "
+ e_bulgarian_principality: "Bulgaria"
  e_bulgarian_principality_adj: "Bulgarian"
 
  e_bulgarian_khanate_article: "the "
@@ -95,3 +95,7 @@
  KURDISH_UPRISING_WOMEN_NAME: "Kurdish Rebels"
  KURDISH_UPRISING_NEUTRAL_NAME: "Kurdish Rebels"
  kurdish_local_event_troops: "Kurdish Rebels"
+
+ #Artifacts
+ k_jeanne_banner:0 "Jeanne's Banner"
+ k_jeanne_banner_adj:0 "Jeanne's"

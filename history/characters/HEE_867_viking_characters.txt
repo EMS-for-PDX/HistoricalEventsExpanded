@@ -273,6 +273,7 @@ HEE_efanda = {
 			add_trait = lifestyle_hunter
 			add_trait_xp = {
 				trait = lifestyle_hunter
+				track = hunter
 				value = 100
 			}
         }

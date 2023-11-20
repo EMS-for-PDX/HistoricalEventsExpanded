@@ -637,12 +637,6 @@ HEE_lotharingia_questline.0011 = { #Alt-History: Lothaire recovers and returns h
 	}
 	
 	immediate = {
-		hidden_effect = {
-			character:144998.activity = { save_scope_as = activity }
-			scope:activity = {
-				complete_activity = yes
-			}
-		}
 		divorce_effect = {
 			DIVORCER = root
 			DIVORCEE = character:6877

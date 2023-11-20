@@ -39,7 +39,6 @@ tlk_asser = { # 9th-century Welsh scholar and bishop who chronicled much of Alfr
 		effect = {
 			add_character_flag = no_headgear
 			add_character_flag = no_cloak
-			add_character_flag = no_headgear
 		}
 	}
 	866.1.1 = {

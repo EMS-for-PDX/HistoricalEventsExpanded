@@ -37,6 +37,12 @@
  constantly_protected_by_bodyguards_modifier: "Constantly Protected"
  constantly_protected_by_bodyguards_modifier_desc: "To ensure their safety, this character is constantly escorted by a hundred bodyguards"
 
+ jeanne_divine_guidance_modifier:0 "Divine Guidance"
+ jeanne_divine_guidance_modifier_desc:0 "Supposedly visited frequently by visions of angels and saints, this character's firm belief in the divinity of their visions strengthen their confidence and piety, though some among the clergy take issue with their claims of divine guidance"
+
+ realm_religious_fervor_modifier:0 "Realm Religious Fervor"
+ realm_religious_fervor_modifier_desc:1 "The entire realm is gripped by religious fervor and an unquestioning belief in the ruler's divine mandate"
+
  ## County ##
  regional_stronghold_modifier: "Regional Stronghold"
  regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"

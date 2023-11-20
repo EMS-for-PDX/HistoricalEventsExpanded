@@ -5,6 +5,7 @@
  ai_stress_loss_decision_desc:0 "#F If you are seeing this text, something is wrong.#!"
  ai_stress_loss_decision_confirm:0 "Lose some stress!"
 
+# Anarchy at Samarra Decisions
 anarchy_at_samarra_financial_straits_decision: "Begin Financial Recovery"
 anarchy_at_samarra_financial_straits_decision_tooltip: "Begin repairing the damage of the Anarchy by stablizing the treasury"
 anarchy_at_samarra_financial_straits_decision_desc: "Since the murder of Caliph al-Mutawakkil, the Caliphate has been siezed by chaos. Insubordinate governors, political powerplays, and civil war has seen the once vast treasury of the Abbasids shrunk to nearly nothing. Revenue has stopped coming in even from the environs of Baghdad, let alone more remote provinces, leading to a lack of funds to pay soldiers or administrators. If one could restablish a stable treasury, it would go a long way towards repairing the damage of the Anarchy."
@@ -19,3 +20,10 @@ anarchy_at_samarra_unpaid_soldiery_decision: "Pay the Army"
 anarchy_at_samarra_unpaid_soldiery_decision_tooltip: "You repay the debts owed to your armies"
 anarchy_at_samarra_unpaid_soldiery_decision_desc: "With the onset of the Anarchy, and the ensuing collapse of Caliphal authority, the ability of the Caliphate to pay its soldiers was severely diminished. This inability to pay the army had already brought down the Caliph Al-Musta'in, and by the time of the ascension of Al-Mutazz the amount of money required to pay the Caliphal armies was equivalent to the full revenue of the Caliphate for two years according to contemporary historians. If one could repay the debts owed to the military by the state, it would surely be seen as a good sign of recovery."
 anarchy_at_samarra_unpaid_soldiery_decision_confirm: "Our Debts are paid"
+
+# Jeanne d'Arc Decisions
+jeanne_darc_manual_decision: "Listen to the peasants"
+jeanne_darc_manual_decision_desc: "While your realm is engulfed in war, rumors have reached you of a peasant girl who seek an audience with yourself. Claiming to have visions of Saints such as St. Michael, St. Margaret, and St. Catherine, this girl seems to believe she is ordained by the Lord to lead my armies to victory against our enemies. Regardless of the truth of her claims, rumors of the girl have spread far and wide within my realm, and it may be time to meet with her and decide for yourself if she is indeed godsent..."
+jeanne_darc_manual_decision_tooltip: "You invite the rumored peasant girl to court"
+jeanne_darc_manual_decision_effect_tooltip: "You invite the rumored peasant girl to court"
+jeanne_darc_manual_decision_confirm: "Send the herald"

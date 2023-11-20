@@ -3764,9 +3764,9 @@ d_bihar = {
 		holder = 146153
 		government = tribal_government
 	}
-	# 860.1.1 = {
-	# 	holder = 70382
-	# }
+	860.1.1 = {
+		holder = 0
+	}
 	895.1.1 = {
 		liege = "k_magyar"
 		holder = 0

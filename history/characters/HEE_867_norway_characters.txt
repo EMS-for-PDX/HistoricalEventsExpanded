@@ -1,7 +1,7 @@
 ﻿## Characters for Norway - 867 ##
 
 HEE_snaefrithr_svasadottir = { # Snæfrithr Svásadottir - https://en.wikipedia.org/wiki/Sn%C3%A6frithr_Sv%C3%A1sadottir
-	name = "Snæfrithr"
+	name = "SnE_frithr"
 	female = yes
 	#dynasty = 
 	religion = "norse_pagan"

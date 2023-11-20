@@ -606,7 +606,7 @@ hee_anarchy_at_samarra.9001 = {
 		title:d_diyarrabia = { save_scope_as = d_diyarrabia }
 		title:d_diyarmudar = { save_scope_as = d_diyarmudar }
 
-		title:c_al_jawl = { save_scope_as = c_al_jawl }
+		title:c_al_jawf = { save_scope_as = c_al_jawf }
 		title:c_thalabiya = { save_scope_as = c_thalabiya }
 
 		every_vassal = {
@@ -625,7 +625,7 @@ hee_anarchy_at_samarra.9001 = {
 					primary_title = scope:d_diyarrabia
 					primary_title = scope:d_diyarmudar
 					primary_title = scope:d_jawf
-					primary_title = scope:c_al_jawl
+					primary_title = scope:c_al_jawf
 					primary_title = scope:c_thalabiya
 				}
 			}

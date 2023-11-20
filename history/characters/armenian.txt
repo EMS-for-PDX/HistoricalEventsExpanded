@@ -2329,8 +2329,8 @@
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 160014
-	810.1.1 = {
-		birth = "810.1.1"
+	800.1.1 = {
+		birth = "800.1.1"
 	}
 	827.1.1 = {
 		add_spouse = 41503

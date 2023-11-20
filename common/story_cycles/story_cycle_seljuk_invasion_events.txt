@@ -297,19 +297,19 @@ story_qarmatian_invasion = {
 		every_county_in_region = {
 			region = core_qarmatian_region
 			limit = { NOT = { holder = root } }
-			save_scope_as = next_invasion_title_target
+			duchy = { save_scope_as = next_invasion_title_target }
 			holder = {
 				save_scope_as = ruler_to_declare_on
 				global_var:qarmatian_realm_title.holder = {
 					start_war = {
-						cb = fp3_seljuk_invasion_cb
+						cb = ducal_conquest_cb
 						target = scope:ruler_to_declare_on
 						target_title = scope:next_invasion_title_target
 					}
 				}
 			}
 		}
-		global_var:qarmatian_realm_title.holder = { spawn_qarmatian_troops_effect = yes }
+		global_var:qarmatian_realm_title.holder = { spawn_qarmatian_starting_troops_effect = yes }
 
 	}
 
@@ -376,12 +376,12 @@ story_qarmatian_invasion = {
 				every_county_in_region = {
 					region = core_qarmatian_region
 					limit = { NOT = { holder = root } }
-					save_scope_as = next_invasion_title_target
+					duchy = { save_scope_as = next_invasion_title_target }
 					holder = {
 						save_scope_as = ruler_to_declare_on
 						global_var:qarmatian_realm_title.holder = {
 							start_war = {
-								cb = fp3_seljuk_invasion_cb
+								cb = ducal_conquest_cb
 								target = scope:ruler_to_declare_on
 								target_title = scope:next_invasion_title_target
 							}
@@ -426,6 +426,46 @@ story_qarmatian_invasion = {
 					qarmatian_war_target_evaluation_and_declaration_effect = yes
 				}
 				debug_log = "The story started a new war for the lead_qarmatians"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Qarmatian Reinforcements if forces get too weak
+	effect_group = {
+		days = { 200 300 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				current_military_strength <= 6000
+				NOT = {
+					current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
+					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
+				}
+				any_held_title = {
+					this = global_var:qarmatian_realm_title
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					spawn_qarmatian_reinforcements_effect = yes
+				}
+				debug_log = "The story gave reinforcements to the lead_qarmatians"
 				debug_log_date = yes
 				story_owner = {
 					save_scope_as = owner

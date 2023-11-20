@@ -136,6 +136,11 @@ hee_al_tabataba = {
 	culture = "bedouin"
 }
 
+hee_banu_sanbar = {
+	name = "dynn_Banu_Sanbar"
+	culture = "bedouin"
+}
+
 hee_sukunid = {
 	name = "dynn_Sukunid"
 	culture = "egyptian"
@@ -282,4 +287,14 @@ hee_anbari = {
 hee_yarjukhid = {
 	name = "dynn_Yarjukhid"
 	culture = "turkish"	
+}
+
+jeanne_darc = {
+	prefix = "dynnp_d_"
+	name = "dynn_Arc"
+	culture = "french"
+}
+jeanne_ancilla = {
+	name = "dynn_Ancilla"
+	culture = "french"
 }

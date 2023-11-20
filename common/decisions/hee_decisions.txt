@@ -1,8 +1,8 @@
 ﻿# Anarchy in Samarra Restoration Decisions
 
-##########################################
-# Recover Finances for the Caliphate	 #
-##########################################
+#################################################
+#	Anarchy in Samarra Restoration Decisions	#
+#################################################
 
 anarchy_at_samarra_financial_straits_decision = {
 	picture = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
@@ -185,4 +185,63 @@ anarchy_at_samarra_unpaid_soldiery_decision = {
 	ai_will_do = {
 		base = 1000
 	}
+}
+
+#############################
+#	Jeanne d'Arc Decisions	#
+#############################
+jeanne_darc_manual_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	
+	is_shown = {
+		is_ai = no
+		is_ruler = yes
+		# Players can trigger whenever because I'm nice
+		# current_date >= 1000.1.1
+		NOT = { exists = global_var:jeanne_darc_spawned }
+		NOT = {
+			faith = {
+				OR = {
+					has_doctrine = doctrine_gender_female_dominated
+					has_doctrine = doctrine_gender_equal
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		religion = religion:christianity_religion
+		is_independent_ruler = yes
+		highest_held_title_tier >= tier_kingdom
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		is_imprisoned = no
+		is_at_war = yes
+		NOT = {
+			OR = {
+				has_game_rule = full_gender_equality
+				has_game_rule = inversed_gender_equality
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = jeanne_darc_manual_decision_effect_tooltip
+		root = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0001
+				days = { 5 9 }
+			}
+		}
+	}
+
+	cost = {
+		piety = 250
+	}
+
+	ai_check_interval = 0
+
+	cooldown = { days = 1825 }
 }

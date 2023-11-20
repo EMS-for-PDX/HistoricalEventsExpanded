@@ -45,6 +45,7 @@ HEE_digenes_akritas = { # https://ia800203.us.archive.org/25/items/DigenesAkrite
 			add_trait = lifestyle_hunter
 			add_trait_xp = {
 				trait = lifestyle_hunter
+				track = hunter
 				value = 100
 			}
 			add_trait = lifestyle_blademaster
@@ -493,7 +494,7 @@ HEE_Sif = { #
 			add_character_flag = has_scripted_appearance
 		}
 	}
-	866.1.1 = {
+	867.1.1 = {
 		employer = 168365 # Far North
 		move_to_pool = yes
 		effect = {
@@ -551,7 +552,7 @@ HEE_Freyja = { #
 			add_character_flag = has_scripted_appearance
 		}
 	}
-	866.1.1 = {
+	867.1.1 = {
 		employer = 168365 # Far North
 		move_to_pool = yes
 	}
@@ -602,7 +603,7 @@ HEE_Eir = { #
 			add_character_flag = has_scripted_appearance
 		}
 	}
-	866.1.1 = {
+	867.1.1 = {
 		employer = 168365 # Far North
 		move_to_pool = yes
 	}

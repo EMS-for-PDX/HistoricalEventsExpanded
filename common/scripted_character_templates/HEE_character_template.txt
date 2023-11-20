@@ -72,23 +72,50 @@ HEE_ghaznavid_ismail_template = {
 	random_traits = no
 }
 
-HEE_qarmatian_founder_template = {
+HEE_qarmatian_founder_template = { # Abu Sa'id al-Jannabi (c.855 - 913)
+	name = "Abu Sa'id"
 	age = 49
 	gender = male
+	faith = faith:qarmatian
+	culture = culture:persian
+
+	# Skills
 	diplomacy = 12
 	martial = 9
 	stewardship = 8
 	intrigue = 10
 	learning = 8
 	prowess = 6
-	faith = faith:qarmatian
-	culture = culture:persian
+
+	# Education
 	trait = education_diplomacy_4
+
+	# Personality Traits
 	trait = gregarious
 	trait = deceitful
 	trait = ambitious
+	trait = zealous
+
+	# Other Traits 
 	trait = diplomat
 	trait = heresiarch
+	trait = peasant_leader
 	trait = organizer
+
 	random_traits = no
+	after_creation = {
+		add_perk = faithful_perk
+		add_perk = zealous_proselytizer_perk
+	}
+}
+
+# Abu Sa'id's first son (Unknown - at the latest by 923)
+jannabid_first_son_character_template = {
+	name = "Abu'l-Qasim" 
+	age = 4
+	gender = male
+	faith = faith:qarmatian
+	culture = culture:persian
+
+	random_traits = yes
 }

@@ -572,7 +572,7 @@ HEE_francia_questline.0401 = { #Carloman II encounters a wild boar
 		name = HEE_francia_questline.0401.b
 
 		trigger = {
-			has_trait = { lifestyle_hunter }
+			has_trait = lifestyle_hunter
 		}
 
 		custom_tooltip = you_use_your_skill_to_kill_the_boar

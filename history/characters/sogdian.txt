@@ -1003,10 +1003,12 @@ sogdian0010 = {
 	mother = sogdian0116
 
 	#Traits
+	trait = rowdy
+
 	trait = arbitrary 
 	trait = ambitious # Constantly swapped sides between Tulunids and Abbasids to gain more power. Eventually became Governor of Adharbayjan and Armenia under the Abbasids only to eventually declare pseudo-independence
 	trait = callous # Unable to seize control of the stronghold of Tmogvi, he captured the fortress of Q'ueli and put its defender Gobron to death. Overthrew his newphew (and likely put him to death imo). During the siege of Erenjak, in an effort to convince the defenders to surrender, Yusuf had King Smbat tortured and executed before the fortress' walls.
-	
+
 	disallow_random_traits = yes
 	854.1.8 = {
 		birth = yes

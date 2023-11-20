@@ -14,6 +14,42 @@ yearly_global_pulse = {
 	}
 }
 
+yearly_playable_pulse = {
+	effect = {
+		if = {
+			limit = { current_date >= 1000.1.1 }
+
+		}
+		random = {
+			chance = 10
+			modifier = {
+				add = 10
+				current_date > 1080.1.1
+			}
+			modifier = {
+				add = 10
+				current_date > 1160.1.1
+			}
+			modifier = {
+				add = 20
+				current_date > 1250.1.1
+			}
+			modifier = { #More likely if you're French
+				add = 20
+				culture = culture:french
+			}
+			modifier = { #When Jeanne historically started influence France
+				add = 100
+				current_date >= 1429.1.1
+			}
+			trigger_event = {
+				id = HEE_jeanne_darc.0001
+				days = { 2 175 }
+			}
+		}
+	}
+}
+
 on_game_start_after_lobby = {
 	on_actions = {
 		#HEE_spawning_twelver_hof
@@ -655,5 +691,19 @@ on_aethelred_of_wessex_death = {
 			}
 		}
 	}
+}
 
+# On Marriage #
+on_marriage = {
+	events = {
+		HEE_jeanne_darc.0019 #Checks to see if newly married is Jeanne
+	}
+}
+
+
+# On Birth Mothers #
+on_birth_mother = {
+	events = {
+		HEE_jeanne_darc.0021 #Checks to see if Jeanne is a mother
+	}
 }

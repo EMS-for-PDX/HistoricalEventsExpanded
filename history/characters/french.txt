@@ -26769,6 +26769,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	819.1.1 = {
 		add_spouse = 7986
+		give_nick = nick_the_pious
 	}
 	840.6.20 = {
 		death = "840.6.20"

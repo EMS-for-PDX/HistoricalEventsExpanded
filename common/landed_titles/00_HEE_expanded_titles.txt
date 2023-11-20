@@ -1,9 +1,7 @@
-﻿# d_test_empire = {
-	# color = { 113 88 101 }
-	# color2 = { 255 255 255 }
-	# definite_form = yes
-	# capital = c_turnovo
-# }
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+@never_primary_score = -1000
 
 e_bulgarian_principality = { # From the country's Christianization in 864 and the assumption of the imperial title by its rulers in 913, the country is also referred to as the Principality of Bulgaria
 	color = { 113 88 101 }
@@ -251,4 +249,14 @@ d_khachen = { #
 	color = { 182 44 78 }
 
 	capital = c_khachen
+}
+
+# Artifacts
+k_jeanne_banner = {
+	color = { 158 102 36 }
+	color2 = { 200 0 0 }
+
+	capital = c_orleans # Orleans
+	
+	can_create = { always = no }
 }

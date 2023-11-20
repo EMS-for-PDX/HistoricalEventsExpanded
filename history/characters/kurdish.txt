@@ -1472,8 +1472,8 @@
 	female = yes
 	religion = "mazdayasna"
 	culture = "kurdish"
-	840.1.1 = {
-		birth = "840.1.1"
+	827.1.1 = {
+		birth = "827.1.1"
 	}
 	900.1.1 = {
 		death = "900.1.1"

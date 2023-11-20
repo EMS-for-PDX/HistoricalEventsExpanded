@@ -1,0 +1,1351 @@
+﻿namespace = HEE_jeanne_darc
+
+HEE_jeanne_darc.0001 = {
+	type = character_event
+
+	hidden = yes
+	
+	trigger = {
+		NOT = {
+			OR = {
+				has_game_rule = full_gender_equality
+				has_game_rule = inversed_gender_equality
+			}
+			faith = {
+				OR = {
+					has_doctrine = doctrine_gender_female_dominated
+					has_doctrine = doctrine_gender_equal
+				}
+			}
+		}
+		# current_date >= 1000.1.1
+		highest_held_title_tier >= tier_kingdom
+		is_ai = no
+		is_ruler = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+		is_adult = yes
+		religion = religion:christianity_religion
+
+		is_at_war = yes
+		
+		NOT = { exists = global_var:jeanne_darc_spawned }
+	}
+
+	# Insert time offset
+
+	immediate = {
+		set_global_variable = {
+			name = jeanne_darc_spawned
+			value = yes
+		}
+		create_character = {
+			
+			age = 17
+			gender = female
+
+			random_traits = no
+
+			trait = education_martial_5
+
+			trait = brave
+			trait = zealous
+			trait = temperate
+			trait = chaste
+
+			trait = holy_warrior
+			trait = unyielding_defender
+			
+			trait = celibate
+			
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+
+			employer = root
+
+			diplomacy = {
+				min_template_high_skill
+				max_template_high_skill
+			}
+			martial = {
+				min_template_high_skill
+				max_template_high_skill
+			}
+			stewardship = {
+				min_template_decent_skill
+				max_template_decent_skill
+			}
+			intrigue = {
+				min_template_low_skill
+				max_template_low_skill
+			}
+			learning = {
+				min_template_decent_skill
+				max_template_decent_skill
+			}
+			prowess = {
+				min_template_high_skill
+				max_template_high_skill
+			}
+
+			save_scope_as = jeanne_the_maid
+
+			after_creation = {
+				# Character Flags
+				add_character_flag = is_jeanne_the_maid
+				add_character_flag = special_marshal
+
+				copy_inheritable_appearance_from = character:HEE_random_italian_woman
+				add_character_flag = has_scripted_appearance
+
+				# Perks
+				add_perk = stalwart_leader_perk
+				add_perk = chivalric_dominance_perk
+				add_perk = never_back_down_perk
+
+				add_perk = bellum_justum_perk
+				add_perk = parthian_tactics_perk
+				add_perk = envelopment_perk
+				add_perk = organized_retreat_perk
+				add_perk = hit_and_run_perk
+				add_perk = engineered_for_destruction_perk
+				add_perk = living_off_the_land_perk
+				add_perk = sappers_perk
+
+				# Special French content
+				if = {		
+					limit = { culture = culture:french }
+					change_first_name = Jeanne
+					give_nickname = nick_la_pucelle
+					
+				}
+				if = {
+					limit = { NOT = { culture = culture:french } }
+					give_nickname = nick_the_maid
+				}
+
+				# Opinion Modifiers
+				add_character_modifier = {
+					modifier = jeanne_divine_guidance_modifier
+				}
+				add_character_modifier = {
+					modifier = ignores_gender_army_rules
+				}
+
+				# Opinion boost of you
+				add_opinion = {
+					modifier = loyal_servant
+					target = root
+					opinion = 50
+				}
+				
+				# Next Event
+				trigger_event = HEE_jeanne_darc.0002
+			}
+		}
+	}
+}
+
+# Jeanne event
+HEE_jeanne_darc.0002 = {
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		liege = {
+			save_scope_as = jeanne_liege
+			if = {
+				limit = {
+					any_realm_county = {
+						this = title:c_orleans
+					}
+				}
+				random_list = {
+					65 = {
+						title:c_orleans.county = {
+							save_scope_as = home_of_jeanne_darc
+						}
+					}
+					35 = {
+						random_realm_county = {
+							save_scope_as = home_of_jeanne_darc
+						}
+					}
+				}
+			}
+			else = {
+				random_realm_county = {
+					save_scope_as = home_of_jeanne_darc
+				}
+			}
+			trigger_event = { id = HEE_jeanne_darc.0004 }
+			trigger_event = {
+				id = HEE_jeanne_darc.0003
+				months = { 3 5 }
+			}
+		}
+	}
+}
+
+# Jeanne finds Charles Martel's sword 
+HEE_jeanne_darc.0003 = {
+	type = character_event
+	title = HEE_jeanne_darc.0003.t
+	desc = HEE_jeanne_darc.0003.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = throne_room_one_handed_passive_1
+	}
+	artifact = {
+		target = scope:newly_created_artifact
+		position = lower_right_portrait
+	}
+
+	trigger = {
+		scope:jeanne_the_maid = {
+			AND = {
+				is_imprisoned = no
+				is_alive = yes
+			}
+		}
+	}
+
+	immediate = {
+		scope:jeanne_the_maid = {
+			if = {
+				limit = { culture = culture:french }
+				character:131721 = { save_scope_as = first_owner }
+				set_artifact_rarity_famed = yes
+				create_artifact = {
+					name = jeanne_sword_name
+					description = jeanne_sword_french_description
+					visuals = sword
+					type = sword
+					wealth = scope:wealth
+					quality = scope:quality
+					
+					history = {
+						type = created
+						date = 721.1.1
+						recipient = scope:first_owner
+						location = province:2274 #Tours
+					}
+					modifier = artifact_prowess_11_modifier
+					save_scope_as = newly_created_artifact
+					decaying = no
+				}
+				hidden_effect = {
+					scope:newly_created_artifact = {
+						add_scaled_artifact_modifier_prowess_effect = yes
+						add_scaled_artifact_modifier_piety_effect = yes
+						add_artifact_modifier = artifact_knight_effectiveness_10_modifier
+						add_artifact_modifier = jeanne_sword_public_opinion
+					}
+				}
+			}
+			else = {
+				set_artifact_rarity_famed = yes
+				create_artifact = {
+					name = jeanne_sword_name
+					description = jeanne_sword_description
+					visuals = sword
+					type = sword
+					wealth = scope:wealth
+					quality = scope:quality
+
+					history = {
+						type = created_before_history
+						#location = random_realm_province
+					}
+					
+					modifier = artifact_prowess_1_modifier
+					save_scope_as = newly_created_artifact
+					decaying = no
+				}
+				hidden_effect = {
+					scope:newly_created_artifact = {
+						add_scaled_artifact_modifier_prowess_effect = yes
+						add_scaled_artifact_modifier_piety_effect = yes
+						add_artifact_modifier = artifact_knight_effectiveness_10_modifier
+						add_artifact_modifier = jeanne_sword_public_opinion
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0003.a
+
+		scope:newly_created_artifact = {
+			set_owner = scope:jeanne_the_maid
+			equip_artifact_to_owner = yes
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0023
+				months = { 4 6 }
+			}
+		}
+	}
+}
+
+# scope:jeanne_the_maid = {
+# 	create_artifact = {
+# 		name = jeanne_wall_banner_name
+# 		description = jeanne_wall_banner_description
+# 		visuals = banner
+# 		visuals_source = title:k_jeanne_banner
+# 		type = wall_big
+# 		modifier = artifact_placeholder_modifier
+# 		save_scope_as = newly_created_artifact
+# 		wealth = scope:wealth
+# 		quality = scope:quality
+# 		history = {
+# 			type = created
+# 			recipient = this
+# 			location = this.location
+# 		}
+# 	}
+# }
+
+# Notify monarch of this new servant of the crown
+HEE_jeanne_darc.0004 = {
+	type = character_event
+	title = HEE_jeanne_darc.0004.t
+	desc = HEE_jeanne_darc.0004.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0004.a
+		custom_tooltip = HEE_jeanne_darc.0004.a.tt
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0005
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc - Nobles react
+HEE_jeanne_darc.0005 = {
+	type = character_event
+	title = HEE_jeanne_darc.0005.t
+	desc = HEE_jeanne_darc.0005.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_honorable
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0005.a
+
+		custom_tooltip = HEE_jeanne_darc.0005.a.tt
+
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = {
+					NOR = {
+						has_government = theocracy_government
+						has_council_position = councillor_court_chaplain
+						has_government = republic_government
+					}
+					NOR = {
+						has_trait = generous
+						has_trait = compassionate
+						has_trait = content
+					}
+				}
+				add_opinion = {
+					target = root #scope:jeanne_liege
+					modifier = hate_opinion
+					opinion = -15
+				}
+			}
+
+			trigger_event = {
+				id = HEE_jeanne_darc.0006
+				months = { 1 2 }
+			}
+		}
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0005.b
+		trigger = {
+			diplomacy >= 10
+		}
+		skill = diplomacy
+		add_prestige = minor_prestige_gain
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0006
+				months = { 1 2 }
+			}
+		}
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0005.c
+
+		imprison = {
+			target = scope:jeanne_the_maid
+			type = dungeon
+		}
+
+		scope:jeanne_the_maid = { remove_character_flag = special_marshal }
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0030 # Trial for heresy!
+				days = { 9 15 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc approaches liege to talk of God and life
+HEE_jeanne_darc.0006 = {
+	type = character_event
+	title = HEE_jeanne_darc.0006.t
+	desc = HEE_jeanne_darc.0006.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_honorable
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0006.a
+		hidden_effect = { trigger_event = HEE_jeanne_darc.0007 }
+	}
+	option = {
+		name = HEE_jeanne_darc.0006.b
+		add_piety = 30
+		if = { 
+			limit = { has_trait = cynical }
+			remove_trait = cynical
+		}
+		add_trait = zealous
+		hidden_effect = { trigger_event = HEE_jeanne_darc.0008 }
+	}
+	option = {
+		name = HEE_jeanne_darc.0006.c
+		add_prestige = 30
+		scope:jeanne_the_maid = {
+			add_prestige = -30
+		}
+		hidden_effect = { trigger_event = HEE_jeanne_darc.0009 }
+	}
+	option = {
+		name = HEE_jeanne_darc.0006.d
+		trigger = {
+			OR= {
+				AND = {
+					has_trait = lustful
+					has_trait = cynical
+					intrigue >= 10
+				}
+				AND = {
+					OR = {
+						has_trait = lustful
+						has_trait = cynical
+					}
+					has_game_rule = jda_loosened_chastity_belt
+				}
+				# intrigue >= 5
+				has_game_rule = jda_unlocked_chastity_belt
+			}
+			is_female = no
+		}
+		if = {
+			limit = {
+				has_game_rule = jda_tight_chastity_belt
+			}
+			custom_tooltip = HEE_jeanne_darc.0006.d.tt.1
+		}
+		if = {
+			limit = {
+				has_game_rule = jda_loosened_chastity_belt
+			}
+			custom_tooltip = HEE_jeanne_darc.0006.d.tt.2
+		}
+		if = {
+			limit = {
+				has_game_rule = jda_unlocked_chastity_belt
+			}
+			custom_tooltip = HEE_jeanne_darc.0006.d.tt.3
+		}
+		random_list = {
+			20 = {
+				set_relation_lover = scope:jeanne_the_maid
+				scope:jeanne_the_maid = {
+					# remove_trait = celibate
+					add_prestige = -50
+					if = {
+						limit = { has_nickname = nick_the_maid }
+						give_nickname = nick_the_bold
+					}
+				}
+				modifier = {
+					has_game_rule = jda_loosened_chastity_belt
+					add = 60
+				}
+				modifier = {
+					has_game_rule = jda_unlocked_chastity_belt
+					factor = 1
+				}
+				hidden_effect = { trigger_event = HEE_jeanne_darc.0010 }
+			}
+			80 = {
+				hidden_effect = { trigger_event = HEE_jeanne_darc.0011 }
+				modifier = {
+					has_game_rule = jda_loosened_chastity_belt
+					add = -60
+				}
+				modifier = {
+					has_game_rule = jda_unlocked_chastity_belt
+					factor = 0
+				}
+			}
+		}
+	}
+}
+
+HEE_jeanne_darc.0007 = {
+	type = character_event
+	title = HEE_jeanne_darc.0007.t
+	desc = HEE_jeanne_darc.0007.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0007.a
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0012
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+HEE_jeanne_darc.0008 = {
+	type = character_event
+	title = HEE_jeanne_darc.0008.t
+	desc = HEE_jeanne_darc.0008.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0008.a
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0012
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+HEE_jeanne_darc.0009 = {
+	type = character_event
+	title = HEE_jeanne_darc.0009.t
+	desc = HEE_jeanne_darc.0009.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0009.a
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0012
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+HEE_jeanne_darc.0010 = {
+	type = character_event
+	title = HEE_jeanne_darc.0010.t
+	desc = HEE_jeanne_darc.0010.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = flirtation
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0010.a
+		scope:jeanne_the_maid = {
+			remove_trait = celibate
+			had_sex_with_effect = {
+				CHARACTER = scope:jeanne_liege
+				PREGNANCY_CHANCE = seduce_pregnancy_chance
+			}
+		}
+		trigger_event = {
+			id = HEE_jeanne_darc.0012
+			months = { 1 2 }
+		}
+	}
+}
+
+HEE_jeanne_darc.0011 = {
+	type = character_event
+	title = HEE_jeanne_darc.0011.t
+	desc = HEE_jeanne_darc.0011.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = shock
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0011.a
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0012
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+# Peasants like Jeanne
+HEE_jeanne_darc.0012 = {
+	type = character_event
+	title = HEE_jeanne_darc.0012.t
+	desc = HEE_jeanne_darc.0012.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = happiness
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0012.a
+
+		# Gives a modifier that lowers peasant rebellion chance
+		add_character_modifier = {
+			modifier = realm_religious_fervor_modifier
+			years = 1
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0013
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+# Jeanne comes with advice to liege
+HEE_jeanne_darc.0013 = {
+	type = character_event
+	title = HEE_jeanne_darc.0013.t
+	desc = HEE_jeanne_darc.0013.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_bold
+	}
+	
+	immediate = {
+		scope:jeanne_liege.realm_priest = {
+			save_scope_as = jeanne_court_chaplain
+		}
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0013.a
+		add_piety = 30
+		scope:jeanne_liege.culture = { add_random_innovation = culture_group_military }
+		custom_tooltip = HEE_jeanne_darc.0005.a.tt
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = {
+					NOR = {
+						has_government = theocracy_government
+						has_council_position = councillor_court_chaplain
+						has_government = republic_government
+					}
+					NOR = {
+						has_trait = education_martial_4
+						has_trait = education_martial_3
+						has_trait = content
+					}
+				}
+				add_opinion = {
+					target = scope:jeanne_liege #root
+					modifier = hate_opinion
+					opinion = -15
+				}
+			}
+
+			trigger_event = {
+				id = HEE_jeanne_darc.0014
+				months = { 1 2 }
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0013.b
+		add_prestige = 30
+		scope:jeanne_the_maid = { add_prestige = -30 }
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0014
+				months = { 1 2 }
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0013.c
+		
+		imprison = {
+			target = scope:jeanne_the_maid
+			type = dungeon
+		}
+		scope:jeanne_the_maid = { remove_character_flag = special_marshal }
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0030 # Trial for heresy!
+				days = { 9 15 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc - Church Reacts
+HEE_jeanne_darc.0014 = {
+	type = character_event
+	title = HEE_jeanne_darc.0014.t
+	desc = HEE_jeanne_darc.0014.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_liege.realm_priest
+		animation = anger
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0014.a
+		custom_tooltip = HEE_jeanne_darc.0014.a.tt
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = {
+					OR = {
+						has_government = theocracy_government
+						has_council_position = councillor_court_chaplain
+					}
+					NOR = {
+						has_trait = education_martial_4
+						has_trait = education_martial_3
+						has_trait = content
+					}
+				}
+				add_opinion = {
+					target = scope:jeanne_liege #root
+					modifier = hate_opinion
+					opinion = -15
+				}
+			}
+			trigger_event = {
+				id = HEE_jeanne_darc.0015
+				months = { 1 2 }
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0014.b
+		trigger = {
+			diplomacy >= 10
+		}
+		skill = diplomacy
+		add_prestige = 20
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0015
+				months = { 1 2 }
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0014.c
+		
+		imprison = {
+			target = scope:jeanne_the_maid
+			type = dungeon
+		}
+		scope:jeanne_the_maid = { remove_character_flag = special_marshal }
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0030 # Trial for heresy!
+				days = { 9 15 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc - Jeanne's ways affect liege
+HEE_jeanne_darc.0015 = {
+	type = character_event
+	title = HEE_jeanne_darc.0015.t
+	desc = HEE_jeanne_darc.0015.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+
+	immediate = {
+		scope:jeanne_liege.cp:councillor_chancellor = {
+			save_scope_as = jeanne_chancellor
+		}
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0015.a
+		add_piety = 30
+		if = {
+			limit = { NOT = { has_trait = zealous } }
+			random_list = {
+				20 = {
+					remove_trait = cynical
+					add_trait = zealous
+				}
+				80 = {
+					
+				}
+			}
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0016
+				months = { 1 2 }
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0015.b
+		if = {
+			limit = { NOT = { has_trait = cynical } }
+			random_list = {
+				30 = {
+					remove_trait = zealous
+					add_trait = cynical
+				}
+				70 = {
+
+				}
+			}
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0016
+				months = { 1 2 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc - Nobles complain again - issue of low birth
+HEE_jeanne_darc.0016 = {
+	type = character_event
+	title = HEE_jeanne_darc.0016.t
+	desc = HEE_jeanne_darc.0016.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_court_chaplain
+		animation = worry
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0016.a
+		hidden_effect = {
+			every_vassal_or_below = {
+				limit = {
+					NOR = {
+						has_government = theocracy_government
+						has_council_position = councillor_court_chaplain
+						has_government = republic_government
+					}
+					NOR = {
+						has_trait = generous
+						has_trait = compassionate
+						has_trait = content
+					}
+				}
+				add_opinion = {
+					target = root #scope:jeanne_liege
+					modifier = hate_opinion
+					opinion = -15
+				}
+			}
+			trigger_event = {
+				id = HEE_jeanne_darc.0040 #Jeanne's story ends
+				years = 4
+			}
+		}
+		custom_tooltip = HEE_jeanne_darc.0005.a.tt
+	}
+	option = {
+		name = HEE_jeanne_darc.0016.b
+		scope:jeanne_the_maid = { add_prestige = -100 }
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0040 #Jeanne's story ends
+				years = 4
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0016.c
+		scope:jeanne_the_maid = {
+			if = {
+				limit = {
+					NOT = { 
+						culture = culture:french
+					}
+				}
+				add_prestige = 200
+				set_house = house:house_jeanne_ancilla
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_nickname = nick_darc
+						culture = culture:french
+					}
+				}
+				# give_nickname = nick_the_maid
+				add_prestige = 1000
+				add_prestige_level = 2
+				set_house = house:house_jeanne_darc
+
+				# Opinion boost of you
+				add_opinion = {
+					modifier = respect_opinion
+					target = root
+					opinion = 50
+				}
+			}
+		}
+		every_vassal = {
+			limit = {
+				or = {
+					has_vassal_stance = courtly
+					has_vassal_stance = zealot
+				}
+			}
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -35
+			}
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0040 #Jeanne's story ends
+				years = 4
+			}
+		}
+	}
+	option = {
+		name = HEE_jeanne_darc.0016.d
+		
+		imprison = {
+			target = scope:jeanne_the_maid
+			type = dungeon
+		}
+		scope:jeanne_the_maid = { remove_character_flag = special_marshal }
+
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0030 # Trial for heresy!
+				days = { 9 15 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc marries trigger. Not the cleanest way of doing things, I know, but at least it works
+HEE_jeanne_darc.0019 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		OR = {
+			root = { has_character_flag = is_jeanne_the_maid }
+			scope:spouse = { has_character_flag = is_jeanne_the_maid }
+		}
+		exists = global_var:jeanne_darc_spawned
+		NOT = { exists = global_var:jeanne_darc_married }
+		# is_ai = no
+		# religion = religion:christianity_religion
+	}
+
+	immediate = {
+		if = {
+			limit = { root = { has_character_flag = is_jeanne_the_maid } }
+			save_scope_as = jeanne_the_maid
+		}
+		else_if = {
+			limit = { scope:spouse = { has_character_flag = is_jeanne_the_maid } }
+			scope:spouse = { save_scope_as = jeanne_the_maid }
+		}
+		scope:jeanne_the_maid.liege = {
+			save_scope_as = jeanne_liege
+		}
+		every_ruler = { # Now informs every christian lord in range
+			if = {
+				limit = {
+					AND = {
+						in_diplomatic_range = scope:jeanne_liege
+						religion = religion:christianity_religion
+					}
+				}
+				trigger_event = { id = HEE_jeanne_darc.0020 }
+			}
+		}
+	}
+}
+
+# If Jeanne d'Arc marries
+HEE_jeanne_darc.0020 = {
+	type = character_event
+	title = HEE_jeanne_darc.0020.t
+	desc = HEE_jeanne_darc.0020.desc
+	theme = realm
+	
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_bold
+	}
+
+	trigger = {
+		# Making sure
+		scope:jeanne_the_maid = {
+			is_married = yes
+		}
+		exists = global_var:jeanne_darc_spawned
+		NOT = { exists = global_var:jeanne_darc_married }
+		is_ai = no
+		religion = religion:christianity_religion
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_game_rule = jda_loosened_chastity_belt
+						has_game_rule = jda_unlocked_chastity_belt
+					}
+				}
+				remove_trait = celibate
+			}
+		}
+	}
+	
+	option = { #CK2 removed the special marshal character flag here but I didn't. Doesn't make sense as future events reference her being martial
+		name = HEE_jeanne_darc.0020.a
+		set_global_variable = {
+			name = jeanne_darc_married
+			value = yes
+		}
+		scope:jeanne_the_maid = {
+			if = {
+				limit = { has_nickname = nick_the_maid }
+				give_nickname = nick_the_bold
+			}
+		}
+	}
+}
+
+# If Jeanne d'Arc has a child
+HEE_jeanne_darc.0021 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		# scope:jeanne_the_maid = {
+		# 	any_child = {
+		# 		even_if_dead = yes
+		# 		count >= 1
+		# 	}
+		# }
+		has_character_flag = is_jeanne_the_maid
+		exists = global_var:jeanne_darc_spawned
+		NOT = { exists = global_var:jeanne_darc_mother }
+		# is_ai = no
+		# religion = religion:christianity_religion
+	}
+
+	immediate = {
+		root = { save_scope_as = jeanne_the_maid }
+		every_ruler = { # Now informs every christian lord in range
+			if = {
+				limit = {
+					AND = {
+						in_diplomatic_range = scope:jeanne_the_maid.liege
+						religion = religion:christianity_religion
+					}
+				}
+				trigger_event = { id = HEE_jeanne_darc.0022 }
+			}
+		}
+	}
+}
+
+HEE_jeanne_darc.0022 = {
+	type = character_event
+	title = HEE_jeanne_darc.0022.t
+	desc = HEE_jeanne_darc.0022.desc
+	theme = pregnancy
+	
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = newborn
+	}
+	
+	
+	option = {
+		name = HEE_jeanne_darc.0022.a
+		set_global_variable = {
+			name = jeanne_darc_mother
+			value = yes
+		}
+		scope:jeanne_the_maid = {
+			if = {
+				limit = { has_nickname = nick_the_maid }
+				give_nickname = nick_the_bold
+			}
+		}
+	}
+}
+
+# Jeanne gains her Banner
+HEE_jeanne_darc.0023 = {
+	type = character_event
+	title = HEE_jeanne_darc.0023.t
+	desc = HEE_jeanne_darc.0023.desc
+	theme = realm
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	artifact = { # I know it's a non-combat banner but there are no other ways of showing banners. I might change it to be regalia or a trinket instead.
+		target = scope:newly_created_artifact
+		position = lower_right_portrait
+	}
+
+	trigger = {
+		scope:jeanne_the_maid = {
+			AND = {
+				is_imprisoned = no
+				is_alive = yes
+			}
+		}
+	}
+
+	immediate = {
+		scope:jeanne_the_maid = {
+			create_artifact = {
+				name = jeanne_wall_banner_name
+				description = jeanne_wall_banner_description
+				visuals = banner
+				visuals_source = title:k_jeanne_banner
+				type = wall_big
+				modifier = artifact_placeholder_modifier
+				save_scope_as = newly_created_artifact
+				wealth = scope:wealth
+				quality = scope:quality
+				history = {
+					type = created
+					recipient = scope:jeanne_the_maid
+				}
+			}
+		}
+		hidden_effect = {
+			scope:newly_created_artifact = {
+				add_scaled_artifact_modifier_piety_effect = yes
+				add_artifact_modifier = artifact_knight_effectiveness_8_modifier
+				add_artifact_modifier = jeanne_banner_opinion
+			}
+		}
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0023.a
+	}
+}
+
+# Trial of Jeanne d'Arc begins
+HEE_jeanne_darc.0030 = {
+	type = character_event
+	title = HEE_jeanne_darc.0030.t
+	desc = HEE_jeanne_darc.0030.desc
+	theme = unfriendly
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0030.a
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0031 # Give verdict
+				months = { 2 3 }
+			}
+		}
+	}
+}
+
+# In hindsight I should have made the trial more interactive and engaged. Maybe an event two or three events about questioning her. Include that famous quote "If I am not, may God put me there; and if I am, may God so keep me. I should be the saddest creature in the world if I knew I were not in His grace."
+
+# Trial of Jeanne d'Arc - give verdict
+HEE_jeanne_darc.0031 = {
+	type = character_event
+	title = HEE_jeanne_darc.0031.t
+	desc = HEE_jeanne_darc.0031.desc
+	theme = prison
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = personality_zealous
+	}
+	
+	option = { #Guilty
+		name = HEE_jeanne_darc.0031.a
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0032
+				days = { 3 5 }
+			}
+		}
+	}
+	option = { #Innocent
+		name = HEE_jeanne_darc.0031.b
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0033
+				days = { 3 5 }
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc is burned at the stake
+HEE_jeanne_darc.0032 = {
+	type = character_event
+	title = HEE_jeanne_darc.0032.t
+	desc = HEE_jeanne_darc.0032.desc
+	theme = death
+	override_background = { reference = gallows }
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = schadenfreude	
+	}
+	artifact = { #This is not showing up is why I hate life
+		target = scope:newly_created_ashes
+		position = lower_right_portrait
+	}
+	
+	option = {
+		name = HEE_jeanne_darc.0032.a
+		scope:jeanne_the_maid = {
+			death = {
+				death_reason = death_burned
+			}
+		}
+		scope:jeanne_liege = {
+			if = {
+				limit = { has_royal_court = yes }
+				create_artifact_ashes_effect = { # Mainly for Dom. Love you buddy.  But in all seriousness collecting the ashes of saints was common however since Jeanne was a heretical peasant at the time of her death, and wasn't canonised util 1920, it's highly unlikely anyone collected her remains.
+					OWNER = scope:jeanne_liege
+					CREATOR = scope:jeanne_the_maid
+				}
+			}
+		}
+	}
+}
+
+# Jeanne d'Arc aquitted
+HEE_jeanne_darc.0033 = {
+	type = character_event
+	title = HEE_jeanne_darc.0033.t
+	desc = HEE_jeanne_darc.0033.desc
+	theme = death
+	override_background = { reference = gallows }
+	left_portrait = scope:jeanne_the_maid
+	
+	option = {
+		name = HEE_jeanne_darc.0033.a
+		scope:jeanne_the_maid = {
+			release_from_prison = yes
+			add_trait = devoted
+		}
+		hidden_effect = {
+			trigger_event = {
+				id = HEE_jeanne_darc.0040 #Jeanne's story ends
+				years = 4
+			}
+		}
+	}
+}
+
+# Stormy times over for Jeanne d'Arc
+HEE_jeanne_darc.0040 = {
+	type = character_event
+	title = HEE_jeanne_darc.0040.t
+	desc = HEE_jeanne_darc.0040.desc
+	theme = realm
+	
+	left_portrait = {
+		character = scope:jeanne_the_maid
+		animation = war_over_win
+	}
+
+	option = {
+		name = HEE_jeanne_darc.0040.a
+	}
+}
+
+# HEE_jeanne_darc.0041 = {
+# 	type = character_event
+# 	hidden = yes
+
+# 	immediate = {
+# 		root = { save_scope_as = jeanne_the_maid }
+# 		root.liege = { save_scope_as = jeanne_liege }
+# 		liege = {
+# 			trigger_event = { id = HEE_jeanne_darc.0040 }
+# 		}
+# 	}
+# }

@@ -1,0 +1,113 @@
+﻿l_english:
+ 
+ # Jeanne finds Charles Martel's Sword
+ HEE_jeanne_darc.0003.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip]'s Sword"
+ HEE_jeanne_darc.0003.desc:0 "My [jeanne_liege.GetLadyLord], the peasant woman from [home_of_jeanne_darc.GetNameNoTierNoTooltip] has claimed a sword she dug up from underneath a church dedicated to Saint Catherine. She claims that the voices of angels let her to it and she uses not a ornate scabbard but one made from leather."
+ HEE_jeanne_darc.0003.a:0 "Peasant women wielding swords? What strange world we live in."
+ 
+ # Player learns of Jeanne
+ HEE_jeanne_darc.0004.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip], the Maid of [home_of_jeanne_darc.GetNameNoTierNoTooltip]"
+ HEE_jeanne_darc.0004.desc:0 "My [jeanne_liege.GetLadyLord], there are strange tidings from the county of [home_of_jeanne_darc.GetNameNoTierNoTooltip]. As our country suffers under the strain of war, a young woman has come forward and declared that the Lord has spoken to her and instructed her to deliver us from the enemies of our land. She wears armour, wields a sword and rides with the soldiers. Her name is [jeanne_the_maid.GetFullNameNoTooltip] and she is said to be approaching your court at this very moment to offer her services to you as a leader in the war.\n\nSurely, it's an absurd notion that a young peasant woman should take the role of marshal or general of the [jeanne_liege.GetTitleTierName]'s armies?"
+ HEE_jeanne_darc.0004.a:0 "Let us receive her and see what she can do for us."
+ HEE_jeanne_darc.0004.a.tt:0 "[jeanne_the_maid.GetFirstNameNoTooltip] the Maid of [home_of_jeanne_darc.GetNameNoTierNoTooltip] has arrived at the court of [jeanne_liege.GetTitledFirstName]."
+ 
+ HEE_jeanne_darc.0005.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] – the nobles react"
+ HEE_jeanne_darc.0005.desc:0 "My [jeanne_liege.GetTitleTierName], the lords of the Realm complain. They think it most unfitting and strange that a young maid of low birth is allowed such a prominent position when there are noble lords aplenty who are much more well prepared and competent to lead your armies. Some of them are asking if you are doing this deliberately to insult them.\n\nThere is also the issue of her claiming to be personally sent by God - it sounds rather heretical."
+ HEE_jeanne_darc.0005.a:0 "Let them moan. I am the [jeanne_liege.GetTitleTierName]."
+ HEE_jeanne_darc.0005.a.tt:0 "Many of the lords in the realm will be angry with you." #[jeanne_liege.GetTitledFirstName]
+ HEE_jeanne_darc.0005.b:0 "I agree, but this woman is popular among the common folk."
+ HEE_jeanne_darc.0005.c:0 "Very well, we shall put her on trial for heresy."
+ 
+ HEE_jeanne_darc.0006.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] and the [jeanne_liege.GetTitleTierName]"
+ HEE_jeanne_darc.0006.desc:0 "One evening at court, [jeanne_the_maid.GetFirstNameNoTooltip] approaches you and asks to speak with you in private. You agree and the both of you sit down for a talk in your chambers. [jeanne_the_maid.GetFirstNameNoTooltip] speaks to you of her visions of Christ and her quest to save the country from the enemy. She speaks with passion, her simple honesty and forceful zeal both coming across as she looks you in the eyes. She declares her fierce loyalty and love for you as the chosen [jeanne_liege.GetTitleTierName]. You are quite impressed by her passion, intelligence and sincerity."
+ HEE_jeanne_darc.0006.a:0 "Thank you for coming to see me, [jeanne_the_maid.GetFirstNameNoTooltip]"
+ HEE_jeanne_darc.0006.b:0 "My dearest [jeanne_the_maid.GetFirstNameNoTooltip], you are truly sent by [jeanne_liege.GetFaith.HighGodName]!"
+ HEE_jeanne_darc.0006.c:0 "We both know you are a powerhungry impostor, [jeanne_the_maid.GetFirstNameNoTooltip]."
+ HEE_jeanne_darc.0006.d:0 "Love, you say? Come sit over here..."
+ HEE_jeanne_darc.0006.d.tt.1:0 "This option is available to you due to your [GetTrait('lustful').GetName( GetNullCharacter )] and [GetTrait('cynical').GetName( GetNullCharacter )] nature and your high [intrigue|E]."
+ HEE_jeanne_darc.0006.d.tt.2:0 "This option is available to you due to your [GetTrait('lustful').GetName( GetNullCharacter )] and or [GetTrait('cynical').GetName( GetNullCharacter )] nature."
+ HEE_jeanne_darc.0006.d.tt.3:0 "This option is available to you due to you being super attractive and totally not an inbred freak of nature."
+ 
+ HEE_jeanne_darc.0007.t:0 "The Mission"
+ HEE_jeanne_darc.0007.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] looks at you seriously. 'I hope you have been listening, my [jeanne_liege.GetLadyLord]. The country is hurting and you, its rightful sovereign, is the one to mend it. I shall aid you, this is the mission I have been given by our Lord Christ.'"
+ HEE_jeanne_darc.0007.a:0 "Very good."
+ 
+ HEE_jeanne_darc.0008.t:0 "Zeal"
+ HEE_jeanne_darc.0008.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] looks at you with tears of joyous fervour in her eyes. 'My [jeanne_liege.GetLadyLord], you are the highest and also the wisest [jeanne_liege.GetWomanMan] in the realm. God shall guide you through me, and the people shall be saved. With the sword of righteousness in my hand, guided by your wisdom and the will of God, we will be victorious!"
+ HEE_jeanne_darc.0008.a:0 "So it shall be!"
+ 
+ HEE_jeanne_darc.0009.t:0 "Mistrust"
+ HEE_jeanne_darc.0009.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] stands up, a shocked and bewildered expression or her face. 'My [jeanne_liege.GetLadyLord], your accusation wounds me most deeply! I have heard evil things said of me, but did not think I would hear it from you. Still, my loyalty to you comes from Christ and He is stronger than the Devil who has corrupted your faith. I shall always remain your servant, my [jeanne_liege.GetLadyLord]'.\n\nWith these last words, [jeanne_the_maid.GetFirstNameNoTooltip] kneels before you, tears of sorrow streaming down her face."
+ HEE_jeanne_darc.0009.a:0 "Stop this ridiculous charade, woman."
+
+ HEE_jeanne_darc.0010.t:0 "The Lovers"
+ HEE_jeanne_darc.0010.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] quietly sits down next to you and looks into your eyes. As you embrace her and kiss her, she shudders and whispers: 'My Lord, see how my hands tremble at your touch. Just as I felt this immense joy mixed with bewilderment when Christ first spoke to me, so do I now feel my blood rushing in the same way in your presence. It seems to me that it is the will of God that we shall be together.'"
+ HEE_jeanne_darc.0010.a:0 "Come to my bedchamber then, [jeanne_the_maid.GetFirstNameNoTooltip]."
+ 
+ HEE_jeanne_darc.0011.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] the Chaste"
+ HEE_jeanne_darc.0011.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] recoils away from your advances, her eyes expressing surprise, sorrow and anger as she looks at you. 'My Lord, I did not think the devil would have sown such dark seeds in you as to try and impose on my chastity! I belong to Christ and to no man. Rest assured, my Lord - my loyalty to you is untouched, but so shall my body also remain, lest it be the touch of cold steel and martyrdom.'"
+ HEE_jeanne_darc.0011.a:0 "I see."
+
+ HEE_jeanne_darc.0012.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] and the common folk"
+ HEE_jeanne_darc.0012.desc:0 "The entire country is boiling with rumours and gossip of [jeanne_the_maid.GetFullNameNoTooltip], the humble country girl who rose to become a trusted servant of the [jeanne_liege.GetTitleTierName]. Hope of defeating the realm's enemies is blossoming, and peasants everywhere are celebrating this fantastic tale of a virgin saviour from the humblest ranks of society."
+ HEE_jeanne_darc.0012.a:0 "She is truly a legend in her own time!"
+ 
+ HEE_jeanne_darc.0013.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] requests an audience"
+ HEE_jeanne_darc.0013.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] has come before you asking to speak to you at the council. She says that the military establishment seems trapped in old doctrines and that the commanders would benefit from more offensive thinking, as well as more religious schooling, of course.\n\nThere is grumbling from some of the assembled nobles at her speech."
+ HEE_jeanne_darc.0013.a:0 "Thank you, [jeanne_the_maid.GetFirstNameNoTooltip], that's a good idea."
+ HEE_jeanne_darc.0013.b:0 "When I need your advice, I'll ask for it."
+ HEE_jeanne_darc.0013.c:0 "I've had enough of this insolence – arrest her!"
+ 
+ HEE_jeanne_darc.0014.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] and the Church"
+ HEE_jeanne_darc.0014.desc:0 "Your [jeanne_court_chaplain.GetCouncilTitle] [jeanne_court_chaplain.GetFirstNameNoTooltip] approaches you one morning for a candid conversation: 'My [jeanne_liege.GetLadyLord], there is much displeasure among the clergy at the elevation of this young woman, [jeanne_the_maid.GetFirstNameNoTooltip]. The things she says are considered heretical by some in the Holy Church, and others, frankly, see their positions threatened by one of such low birth and meager schooling gaining so much prestige. I would advise you to consider whether it is worth protecting this young lass at so great a potential cost.'"
+ HEE_jeanne_darc.0014.a:0 "Please remind these clergymen who is [jeanne_liege.GetTitleTierName]."
+ HEE_jeanne_darc.0014.a.tt:0 "Many members of the realm's clergy will be angry with [jeanne_liege.GetTitledFirstName]."
+ HEE_jeanne_darc.0014.b:0 "She is merely a tool, the Church has nothing to fear."
+ HEE_jeanne_darc.0014.c:0 "Very well, we will put her on trial and see if she is a heretic."
+ 
+ HEE_jeanne_darc.0015.t:0 "The influence of [jeanne_the_maid.GetFirstNameNoTooltip]"
+ HEE_jeanne_darc.0015.desc:0 "These are unusual times. [jeanne_the_maid.GetFirstNameNoTooltip]'s influence is felt all around, wherever you go. There is a surge in religiosity among the commoners, who see her as a national saviour and almost a Christ-figure. Among the nobles many are charmed by her pious innocence and energetic zeal, in spite of most of them also viewing her as a dangerous upstart. Meanwhile, the clergy is divided, some seeing a heretic and others a saint."
+ HEE_jeanne_darc.0015.a:0 "We should all try to be more like her."
+ HEE_jeanne_darc.0015.b:0 "I dislike fanatics, but I will suffer her for now."
+ 
+ HEE_jeanne_darc.0016.t:0 "A common girl from [home_of_jeanne_darc.GetNameNoTierNoTooltip]"
+ HEE_jeanne_darc.0016.desc:0 "Your [jeanne_court_chaplain.GetCouncilTitle|U] [jeanne_court_chaplain.GetFirstNameNoTooltip] comes to see you, a look of worry on [jeanne_court_chaplain.GetHerHis] face. [jeanne_court_chaplain.GetSheHe] explains that there are increased grumblings among the nobles regarding the position of your protegé [jeanne_the_maid.GetFirstNameNoTooltip]. Many of them refuse to accept that a lowborn woman from [home_of_jeanne_darc.GetNameNoTierNoTooltip], however competent and pious, be continuously given so many privileges normally reserved for nobility. It sets a bad example for the peasants and may cause unrest, they fear. There have also been numerous incidents of perceived insults and scandals of protocol between [jeanne_the_maid.GetFirstNameNoTooltip] and various prestigious army commanders.\n\nIt seems many nobles feel they have suffered her too long, and some still entertain the idea of demanding her arrest and trial for heresy."
+ HEE_jeanne_darc.0016.a:0 "Bah! Their own incompetence makes them envious."
+ HEE_jeanne_darc.0016.b:0 "I shall force her to speak more humbly henceforth."
+ HEE_jeanne_darc.0016.c:0 "Not noble enough? Bring her before me and I shall knight her!"
+ HEE_jeanne_darc.0016.d:0 "I cannot abide this any longer. Put her in chains!"
+ 
+ # Jeanne marries
+ HEE_jeanne_darc.0020.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] marries"
+ HEE_jeanne_darc.0020.desc:0 "Never has the realm seen so much attention focused on the wedding of one who is not of noble birth. The wedding of [jeanne_the_maid.GetFirstNameNoTooltip] has caused ringing of churchbells and impromptu feasts and prayers among the common folk all around the country.\n\nNo longer a maid perhaps, but an icon of the realm still, and even the [jeanne_liege.GetTitleTierName] should make sure to make a public toast to the newly-weds."
+ HEE_jeanne_darc.0020.a:0 "Indeed!"
+ 
+ HEE_jeanne_darc.0022.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] the mother"
+ HEE_jeanne_darc.0022.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] the Maid she used to be, but no longer. Some of her followers speak of a virgin birth, though such talk is frowned upon by the Church. The image of [jeanne_the_maid.GetFirstNameNoTooltip] has now changed in the eyes of many, but she continues to be a focus of adulation, and very soon after the birth she has once again taken up her sword and saddled her horse."
+ HEE_jeanne_darc.0022.a:0 "So strong!"
+ 
+ HEE_jeanne_darc.0023.t:0 "The White Banner"
+ HEE_jeanne_darc.0023.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] has commissioned a banner bearing the figure of Jesus flanked by two angels on his side.\nShe claims that the voices of angels instructed her to make a battle-worthy banner, made from a designed she claimed came straight from heaven.\nThe words Jesus Maria can be found stiched on part of the banner."
+ HEE_jeanne_darc.0023.a:0 "So strong!"
+
+ HEE_jeanne_darc.0030.t:0 "The trial of [jeanne_the_maid.GetFirstNameNoTooltip]"
+ HEE_jeanne_darc.0030.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] has been put on trial for heresy. She claims to be sent by Christ, to be his messenger. She is accused of being sent by the devil, and of claiming to be God's daughter, and of sinning by wearing men's attire, among other things. The judges come mostly from the clergy, and they begin a hard line of questioning against the young woman. There is unrest outside the castle where the trial is held, as many followers have come to pray for her and express their belief in her innocence. This trial seems set to last for a while."
+ HEE_jeanne_darc.0030.a:0 "The truth shall be our only concern."
+ 
+ HEE_jeanne_darc.0031.t:0 "The trial of [jeanne_the_maid.GetFirstNameNoTooltip] – judgement"
+ HEE_jeanne_darc.0031.desc:0 "[jeanne_the_maid.GetFirstNameNoTooltip] has been put through long sessions of questioning for over a month now. After much deliberation on the law and theology and evaluation of testimony the case still seems unclear to many. It all seems to come down to whether you want to believe that she is a messenger of God or of the Devil. Or perhaps it's more down to whether it is politically expedient to convict her or not. Young [jeanne_the_maid.GetFirstNameNoTooltip] herself has assumed a position of sorrowful fatalism. She says she has seen her fate in a vision and that she knows what is to come.\nThe crowds surrounding the trial all await the verdict with tension. If [jeanne_the_maid.GetFirstNameNoTooltip] were to be aquitted, the humiliation of the trial itself surely signifies that she has fallen from royal grace and will never come back to hold the position she once did. But in the case of a conviction, a gruesome death by burning at the stake is certain to be the fate that awaits her. There is little mercy for heretics."
+ HEE_jeanne_darc.0031.a:0 "She is guilty."
+ HEE_jeanne_darc.0031.b:0 "She is innocent."
+ 
+ HEE_jeanne_darc.0032.t:0 "The execution of [jeanne_the_maid.GetFirstNameNoTooltip]"
+ HEE_jeanne_darc.0032.desc:0 "The flames leap higher and higher, crackling as they begin to eat at the wood. Slowly, [jeanne_the_maid.GetFirstNameNoTooltip] starts to twist as they begin to lick her legs. The gathered crowd stares in stunned silence - some hungry for her death, others overcome by horror at what they see. The life of this woman is coming to an end, she who captured the attention of the entire realm during these months. Saint or devil – the eyes of the onlookers hold different views, but it seems certain that she will remembered for many many years. Perhaps she shall have her restitution in time, perhaps not.\nAs the flames climb higher and take hold of [jeanne_the_maid.GetFirstNameNoTooltip]'s body, she twitches violently but still does not cry out. Her gaze is fixed on the heavens, tears streaming from her face. Many onlookers turn away now, but others are fixed to the spot, unable to avert their eyes. Slowly, [jeanne_the_maid.GetFirstNameNoTooltip] disappears from view as the flames rise around her."
+ HEE_jeanne_darc.0032.a:0 "May the Lord have mercy on her soul."
+ 
+ HEE_jeanne_darc.0033.t:0 "[jeanne_the_maid.GetFirstNameNoTooltip] is aquitted"
+ HEE_jeanne_darc.0033.desc:0 "The aquittal of [jeanne_the_maid.GetFirstNameNoTooltip] have left mixed reactions across the realm. There are celebrations among the peasants, and more mixed reactions among the nobility and clergy. [jeanne_the_maid.GetFirstNameNoTooltip] herself spends these days in prayer. She realizes that she will not lead armies again nor enjoy the ear of the [jeanne_liege.GetTitleTierName] as before. Still, the aquittal at the trial has vindicated her words and actions and she seems at peace. No longer on the grand stage of war and politics, she seems now content to spend the rest of her days living as a nun."
+ HEE_jeanne_darc.0033.a:0 "You are safe now, [jeanne_the_maid.GetFirstNameNoTooltip]."
+ 
+ HEE_jeanne_darc.0040.t:0 "Years later..."
+ HEE_jeanne_darc.0040.desc:0 "After the first turbulent years, it seems everyone in the country has gotten used to [jeanne_the_maid.GetFullNameNoTooltip]. Some appreciate her and some do not, but the more violent controversy and commotion has died out and people are now preoccupied with other matters. She lives on, although the tales of the early years of the Maid of [home_of_jeanne_darc.GetNameNoTierNoTooltip] are already the stuff of legend."
+ HEE_jeanne_darc.0040.a:0 "With time, anything and everything becomes normal."
+ 

@@ -587,6 +587,7 @@ HEE_great_summer_army.0013 = {
 			add_truce_both_ways = {
 				character = scope:guthrum
 				days = 3700
+				name = dane_saxon_peace_desc
 			}
 		}
 

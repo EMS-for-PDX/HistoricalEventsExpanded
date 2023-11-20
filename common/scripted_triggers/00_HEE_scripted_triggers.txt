@@ -7,3 +7,14 @@
 #         is_sea_province = yes
 #     }
 # }
+
+#Mimics the CK2 tag
+is_priest = {
+	NOR = {
+		OR = {
+			has_government = theocracy_government
+			has_council_position = councillor_court_chaplain
+		}
+		has_government = republic_government
+	}
+}

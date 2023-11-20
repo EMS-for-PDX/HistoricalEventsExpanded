@@ -5803,7 +5803,7 @@
 	}
 }
 159725 = {
-	name = "Abu Abdallah"
+	name = "Abu_Abdallah"
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029120
@@ -12891,7 +12891,7 @@ abbasid_concubines_2 = { #mother of al-Mu'tamid
 	867.1.1 = {
 		add_gold = 1150 # Accounts say she had a vast fortune
 	}
-	865.1.1 = {
+	890.1.1 = {
 		death = yes
 	}
 }

@@ -36,6 +36,11 @@
 		effect = {
 			set_relation_friend = character:extra_samanids_6	
 			set_realm_capital = title:c_samarkand
+
+			if = {
+				limit = { has_fp3_dlc_trigger = yes }
+				add_trait = fp3_struggle_supporter
+			}
 		}
 	}
 	892.1.1 = {
@@ -155,6 +160,11 @@
 			set_relation_potential_rival = character:extra_samanids_6 #Asad, his brother
 			set_relation_rival = character:sogdian0109 #Abu Ishaq Ibrahim, the former ruler of Bukhara 
 			learn_language_of_culture = culture:bedouin
+
+			if = {
+				limit = { has_fp3_dlc_trigger = yes }
+				add_trait = fp3_struggle_supporter
+			}
 		}
 	}
 	907.11.24 = {
@@ -706,7 +716,7 @@ extra_samanids_27 = {
 		effect = {
 			set_relation_potential_friend =  character:34014 #the Caliph Mu'tazz	
 			set_relation_potential_rival = character:163160 #Ubaudalla, his uncle
-			set_relation_rival = character:163101 #Ya'qub, the Saffarid emir  
+			set_relation_potential_rival = character:163101 #Ya'qub, the Saffarid emir  
 			add_unpressed_claim = title:d_kirman #was technically the caliphal governor of this area, to Ya'qub Saffarid and/or the Azariqa had usurped it by this point 
 			add_unpressed_claim = title:d_zabulistan #again, technically the governor 
 			learn_language_of_culture = culture:bedouin
@@ -714,6 +724,11 @@ extra_samanids_27 = {
 				target = character:34014
 				opinion = 20 
 				modifier = favored_vassal_opinion
+			}
+
+			if = {
+				limit = { has_fp3_dlc_trigger = yes }
+				add_trait = fp3_struggle_supporter
 			}
 		}
 	}

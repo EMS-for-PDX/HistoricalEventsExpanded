@@ -11,3 +11,7 @@
  nick_the_scythian: "the Scythian"
  nick_the_slender: "the Slender"
  nick_the_bloodshedder: "the Blood-Shedder"
+ nick_darc: "d'Arc"
+ nick_the_maid: "the Maid"
+ nick_la_pucelle: "la Pucelle"
+ nick_la_pucelle_desc: "Translated as "the Maiden", [CHARACTER.GetShortUINameNoTooltipNoFormat] [CharAreIs(CHARACTER)] considered an icon of virtue, sincerity, and most notably purity."

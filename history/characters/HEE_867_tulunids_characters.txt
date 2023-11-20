@@ -458,9 +458,9 @@ HEE_abu_ruh_sukun = { # Abu Ruh Sukun / Former partisan of al-Sufi in the oases 
 	843.7.22 = { # Unknown
 		birth = yes
 	}
-	866.1.1 = {
-		employer = HEE_ibn_al_sufi
-	}
+	# 860.1.1 = {
+	# 	employer = HEE_ibn_al_sufi
+	# }
 	897.9.12 = { # Unknown
 		death = yes
 	}

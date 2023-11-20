@@ -29,3 +29,15 @@ house_hee_penthievre = { # Rennes cadets / Edouarzh
 	name = "dynn_PenthiE_vre"
 	dynasty = hee_rennes # Rennes
 }
+
+house_jeanne_darc = {
+	prefix = "dynnp_d_"
+	name = "dynn_Arc"
+	dynasty = jeanne_darc
+	motto = dynn_du_lys_motto
+}
+
+house_jeanne_ancilla = {
+	name = "dynn_Ancilla"
+	dynasty = jeanne_ancilla
+}

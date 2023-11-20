@@ -32,7 +32,7 @@ HEE_maziar_ibn_qarin  = { # https://en.wikipedia.org/wiki/Qarin_I
 }
 
 HEE_jafar_ibn_shahriyar  = { # https://en.wikipedia.org/wiki/Qarin_I
-	name = "Ja'far"
+	name = "Ja_far"
 	#female = yes
 	dynasty_house = house_bavandid # Bavandid
 	religion = "ashari"

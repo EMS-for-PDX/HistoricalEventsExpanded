@@ -1,4 +1,10 @@
 ﻿l_english:
+
+ # SN 1006
+ HEE_supernova_1066_record_name:0 "[ROOT.Char.GetCulture.GetNameNoTooltip] Account of the 1006 Supernova"
+ HEE_supernova_1066_record_desc:0 "This text records the observations various [ROOT.Char.GetCulture.GetName] astronomers made concerning the 1006 Supernova, the brighest observed stellar event in recorded history. A large 'new' star was seen in the sky for up to a few weeks and possibly as long as a couple years. Due to the extraordinary nature of this event, [ROOT.Char.GetTitledFirstName] encouraged local scholars to write down some notes about it for posterity."
+
+ # Jeanne d'Arc
  jeanne_ashes_name:0 "[creator.GetNameNicknamedNoTooltip]'s Ashes"
  jeanne_ashes_description:1 "The ashes of [creator.GetNameNicknamedNoTooltip], considered holy by a select few, these ashes were collected by [creator.GetFirstNameNoTooltip]'s most devout followers. They claim that one day [creator.GetNameNicknamedNoTooltip] will be proclaimed a saint."
 

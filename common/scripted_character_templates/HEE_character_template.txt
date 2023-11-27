@@ -1,27 +1,4 @@
-﻿#spawning Seljuk
-HEE_seljuk_template = {
-	age = 22
-	gender = male
-	dynasty_house = house:house_mod_seljuk
-	martial = 9
-	diplomacy = 5
-	intrigue = 3
-	stewardship = 1
-	learning = 5
-	faith = faith:maturidi
-	culture = culture:turkish
-	trait = education_martial_5
-	trait = arrogant
-	trait = wrathful
-	trait = zealous
-	trait = ambitious
-	trait = callous
-	trait = organizer
-	trait = open_terrain_expert
-	trait = athletic
-	random_traits = no
-}
-
+﻿### GHAZNAVIDS ###
 HEE_ghaznavid_template = {
 	age = 35
 	gender = male
@@ -38,7 +15,6 @@ HEE_ghaznavid_template = {
 	trait = zealous
 	trait = vengeful
 	trait = ambitious
-	trait = intellect_good_1
 	trait = organizer
 	trait = desert_warrior
 	random_traits = no
@@ -72,6 +48,7 @@ HEE_ghaznavid_ismail_template = {
 	random_traits = no
 }
 
+### QARMATIANS ###
 HEE_qarmatian_founder_template = { # Abu Sa'id al-Jannabi (c.855 - 913)
 	name = "Abu Sa'id"
 	age = 49
@@ -118,4 +95,140 @@ jannabid_first_son_character_template = {
 	culture = culture:persian
 
 	random_traits = yes
+}
+
+### FATIMIDS ###
+HEE_ismaili_missionary_template = { # https://en.wikipedia.org/wiki/Abu_Abdallah_al-Shi%27i
+	age = { 35 50 }
+	gender = male
+	faith = faith:ismaili
+	culture = culture:levantine
+
+	#Skills
+	diplomacy = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+	martial = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+	learning = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	prowess = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+
+	trait = education_diplomacy_4
+	trait = generous
+	trait = zealous
+	trait = just
+	trait = temperate
+	trait = diplomat
+	trait = organizer
+	random_traits = no
+}
+
+HEE_fatimid_founder_template = { # https://en.wikipedia.org/wiki/Abd_Allah_al-Mahdi_Billah
+	age = 35
+	gender = male
+	faith = faith:ismaili
+	culture = culture:levantine
+
+	#Skills
+	diplomacy = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	martial = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	learning = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	prowess = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+
+	trait = education_diplomacy_4
+	trait = generous
+	trait = zealous
+	trait = just
+	trait = temperate
+	trait = diplomat
+	trait = organizer
+	random_traits = no
+}
+
+### JEANNE D'ARC ###
+jeanne_darc_character_template = {
+	age = 17
+	gender = female
+	dynasty = none
+	faith = faith:catholic
+	culture = culture:french
+
+	#Skills
+	diplomacy = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+	martial = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+	learning = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	prowess = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+
+	#Education
+	trait = education_martial_5
+
+	#Personality Traits
+	trait = brave
+	trait = zealous
+	trait = temperate
+	trait = chaste
+
+	#Other Traits
+	trait = holy_warrior
+	trait = unyielding_defender
+	trait = celibate
+
+	random_traits = no
 }

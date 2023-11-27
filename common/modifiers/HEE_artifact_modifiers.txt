@@ -1,0 +1,18 @@
+﻿jeanne_ashes_modifier = {
+	court_grandeur_baseline_add = 1
+	monthly_prestige = 0.1
+	monthly_piety = 0.25
+}
+
+jeanne_sword_public_opinion = { county_opinion_add = 10 }
+
+jeanne_banner_opinion = {
+	county_opinion_add = 5
+	same_culture_opinion = 10	
+}
+
+artifact_HEE_supernova_1066_record = {
+	learning = 1
+	monthly_learning_lifestyle_xp_gain_mult = 0.03
+	monthly_prestige = 0.15
+}

@@ -182,3 +182,5 @@ ghaznavids_invasion_target_character_weight = {
 }
 
 qarmatians_appearance_base_chance = 1
+
+hee_generic_appearance_base_chance = 1

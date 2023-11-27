@@ -62,11 +62,7 @@
 			inheritable = no
 			name = norse_raiders_event_troops
 			levies = {
-				value = 1500
-			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
+				value = 1000
 			}
 			men_at_arms = {
 				type = huscarl

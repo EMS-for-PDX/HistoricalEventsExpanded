@@ -611,3 +611,99 @@ HEE_Eir = { #
 		death = yes # Unknown
 	}
 }
+
+HEE_ariela_raven = { # 
+	name = "Ariela"
+	female = yes
+	dna = HEE_ariela_raven
+	# dynasty = hee_luka
+	religion = "orthodox"
+	culture = "greek"
+	# father = HEE_random_italian_woman_father
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 11
+	martial = 9
+	stewardship = 10
+	intrigue = 10
+	learning = 9
+	prowess = 8
+	
+	#Education
+	trait = education_intrigue_4
+	
+	#Personality Traits
+	trait = calm
+	trait = arrogant
+	trait = diligent
+	trait = cynical
+	
+	#Other Traits
+	trait = beauty_good_3
+	trait = intellect_good_1
+	trait = loyal
+
+	sexuality = heterosexual
+	# disallow_random_traits = yes
+	843.1.1 = {
+		birth = yes # Unknown
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 145185 # Thessaloniki
+	}
+	910.1.1 = {
+		death = yes # Unknown
+	}
+}
+
+HEE_verdia_baltino = { # 
+	name = "Verdia"
+	female = yes
+	dna = HEE_verdia_baltino
+	# dynasty = hee_luka
+	religion = "orthodox"
+	culture = "greek"
+	# father = HEE_random_italian_woman_father
+	# mother = 
+	# health = 5.0
+	
+	#Skills
+	diplomacy = 12
+	martial = 6
+	stewardship = 9
+	intrigue = 5
+	learning = 9
+	prowess = 8
+	
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = trusting
+	trait = generous
+	trait = temperate
+	
+	#Other Traits
+	trait = beauty_good_2
+	trait = loyal
+
+	sexuality = heterosexual
+	# disallow_random_traits = yes
+	845.1.1 = {
+		birth = yes # Unknown
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
+	}
+	866.1.1 = {
+		employer = 145185 # Thessaloniki
+	}
+	910.1.1 = {
+		death = yes # Unknown
+	}
+}

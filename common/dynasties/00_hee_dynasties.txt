@@ -298,3 +298,8 @@ jeanne_ancilla = {
 	name = "dynn_Ancilla"
 	culture = "french"
 }
+
+hee_al_shii = {
+	name = "dynn_al_Shii"
+	culture = "levantine"
+}

@@ -69,3 +69,33 @@ max_qarmatian_invasion_region = {
 		d_samarra d_kurdistan d_wasit d_kufa d_basra d_baghdad
 	}
 }
+
+core_starting_fatimid_region = {
+	duchies = {
+		# Eastern Tahert
+		d_bejaia d_zab
+		#Africa
+		d_kairouan d_tunis d_kroumerie d_gabes d_jerid d_tripolitania d_syrte
+		#Island of Sicily
+		d_sicily
+	}
+}
+
+max_fatimid_invasion_region = {
+	duchies = {
+		#Africa
+		d_kairouan d_tunis d_kroumerie d_gabes d_jerid d_tripolitania d_syrte
+		#Egypt
+		d_cyrenaica d_alexandria d_delta d_cairo d_al-wahat d_al-said d_eastern_desert d_sinai
+		#Arabia
+		d_jawf d_amman d_shammar d_medina d_mecca d_asir d_najd d_yamama d_al-hasa d_bahrain d_oman
+		#Island of Sicily
+		d_sicily
+		#Tahert
+		d_tlemcen d_tahert d_alger d_bejaia d_zab d_mzab
+		#Maghreb
+		d_marrakesh d_sous d_tafilalt d_fes d_rif d_canarias
+		#Yemen
+		d_sanaa d_jawf-al-yamani d_taizz d_hadramawt d_mahra
+	}
+}

@@ -8730,12 +8730,12 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	mother = abbasid_concubines_6
 
 	#Skills
-	diplomacy = 7
-	martial = 8
-	stewardship = 7
-	intrigue = 6
-	learning = 5
-	prowess = 7
+	diplomacy = 9
+	martial = 11
+	stewardship = 8
+	intrigue = 7
+	learning = 6
+	prowess = 8
 	
 	#Education
 	trait = education_martial_4

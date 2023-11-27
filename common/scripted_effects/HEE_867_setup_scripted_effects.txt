@@ -1683,3 +1683,53 @@ hee_kievan_rus_867_effect = {
 		LIEGE = character:40605
 	}
 }
+
+## Dynasty Changes ##
+
+hee_dynastic_changes_867_effect = {
+
+	# Scopes #
+	character:30228 = { save_scope_as = karling_dynasty } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
+	character:6016 = { save_scope_as = cetchathach_dynasty }
+	character:70382 = { save_scope_as = balgarsko_dynasty }
+	character:34014 = { save_scope_as = abbasid_dynasty }
+	character:73683 = { save_scope_as = umayyad_dynasty }
+
+	scope:karling_dynasty = {
+		dynasty = {
+			add_dynasty_perk = glory_legacy_1
+			add_dynasty_perk = glory_legacy_2
+		}
+	}
+
+	scope:cetchathach_dynasty = {
+		dynasty = {
+			add_dynasty_prestige_level = -3
+			add_dynasty_prestige = 50
+			add_dynasty_perk = kin_legacy_1
+		}
+	}
+
+	scope:balgarsko_dynasty = {
+		dynasty = {
+			add_dynasty_prestige = 50
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = guile_legacy_1
+		}
+	}
+
+	scope:abbasid_dynasty = {
+		dynasty = {
+			add_dynasty_perk = erudition_legacy_1
+			add_dynasty_perk = erudition_legacy_2
+		}
+	}
+
+	scope:umayyad_dynasty = {
+		dynasty = {
+			add_dynasty_perk = erudition_legacy_1
+			add_dynasty_perk = erudition_legacy_2
+		}
+	}
+}
+

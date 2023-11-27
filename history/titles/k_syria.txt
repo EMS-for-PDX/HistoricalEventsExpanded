@@ -747,7 +747,8 @@ c_marash = {
 		holder = 163135 # Part of the jund of al-Awasim and al-Thughur 
 	}
 	862.1.1 = {
-		holder = armenian.000084
+		liege = "d_cilicia"
+		holder = 159730
 	}
 	962.1.1 = {
 		liege = "d_armeniac"
@@ -852,7 +853,8 @@ c_aintab = {
 		holder = 163135 # Part of the jund of al-Awasim and al-Thughur 
 	}
 	862.1.1 = {
-		holder = armenian.000084
+		liege = "d_cilicia"
+		holder = 159730
 	}
 	962.1.1 = {
 		liege = "d_cilicia"
@@ -1396,8 +1398,8 @@ c_antiocheia = {
 	863.1.1 = {
 		liege = "d_cilicia"
 	}
-	863.1.1 = {
-		holder = 159730
+	862.1.1 = {
+		holder = armenian.000084
 	}	
 	969.1.1 = {
 		liege = "d_antioch"

@@ -1199,3 +1199,34 @@ jeanne_ancilla = { # Ancilla means maid in Latin. In CK2 it was Gladius Christi 
 	}			
 }
 house_jeanne_ancilla = jeanne_ancilla
+
+hee_al_shii = {
+	pattern="pattern_chief.dds"
+	color1=black
+	color2=green
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_tiger_calligraphy.dds"
+		instance={
+			position={ 0.500000 0.170000 }
+			scale={ 0.520000 0.330000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_arabic_mahdi.dds"
+		instance={
+			position={ 0.500000 0.620000 }
+			scale={ 0.660000 0.660000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+house_al_shii = hee_al_shii

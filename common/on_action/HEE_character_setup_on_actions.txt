@@ -13,6 +13,7 @@
 		hee_paulicians_867_effect_setup
 		hee_north_africa_867_effect_setup
         hee_kievan_rus_867_effect_setup
+        hee_dynastic_changes_867_effect_setup
 
 		# 1066
 		hee_byzantine_1066_effect_setup
@@ -134,6 +135,15 @@ hee_kievan_rus_867_effect_setup = {
     effect = {
         hee_kievan_rus_867_effect = yes
     }
+}
+
+hee_dynastic_changes_867_effect_setup = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+        hee_dynastic_changes_867_effect = yes
+    }   
 }
 
 

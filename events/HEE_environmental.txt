@@ -1,0 +1,720 @@
+﻿namespace = HEE_environmental
+
+##################################################
+# Medieval Warm Period
+# by EmrysValdr
+##################################################
+
+scripted_effect special_event_reaction_list_builder_effect = {
+	random_list = {
+		10 = {
+			trigger = {
+				has_trait = eccentric
+				NOT = { has_character_flag = special_event_reaction_event_eccentric }
+			}
+			add_character_flag = special_event_reaction_event_eccentric
+		}
+		10 = {
+			trigger = {
+				has_trait = lustful
+				NOT = { has_character_flag = special_event_reaction_event_lustful }
+			}
+			add_character_flag = special_event_reaction_event_lustful
+		}
+		10 = {
+			trigger = {
+				has_trait = chaste
+				NOT = { has_character_flag = special_event_reaction_event_chaste }
+			}
+			add_character_flag = special_event_reaction_event_chaste
+		}
+		10 = {
+			trigger = {
+				has_trait = gluttonous
+				NOT = { has_character_flag = special_event_reaction_event_gluttonous }
+			}
+			add_character_flag = special_event_reaction_event_gluttonous
+		}
+		10 = {
+			trigger = {
+				has_trait = temperate
+				NOT = { has_character_flag = special_event_reaction_event_temperate }
+			}
+			add_character_flag = special_event_reaction_event_temperate
+		}
+		10 = {
+			trigger = {
+				has_trait = greedy
+				NOT = { has_character_flag = special_event_reaction_event_greedy }
+			}
+			add_character_flag = special_event_reaction_event_greedy
+		}
+		10 = {
+			trigger = {
+				has_trait = generous
+				NOT = { has_character_flag = special_event_reaction_event_generous }
+			}
+			add_character_flag = special_event_reaction_event_generous
+		}
+		10 = {
+			trigger = {
+				has_trait = lazy
+				NOT = { has_character_flag = special_event_reaction_event_lazy }
+			}
+			add_character_flag = special_event_reaction_event_lazy
+		}
+		10 = {
+			trigger = {
+				has_trait = diligent
+				NOT = { has_character_flag = special_event_reaction_event_diligent }
+			}
+			add_character_flag = special_event_reaction_event_diligent
+		}
+		10 = {
+			trigger = {
+				has_trait = wrathful
+				NOT = { has_character_flag = special_event_reaction_event_wrathful }
+			}
+			add_character_flag = special_event_reaction_event_wrathful
+		}
+		10 = {
+			trigger = {
+				has_trait = calm
+				NOT = { has_character_flag = special_event_reaction_event_calm }
+			}
+			add_character_flag = special_event_reaction_event_calm
+		}
+		10 = {
+			trigger = {
+				has_trait = patient
+				NOT = { has_character_flag = special_event_reaction_event_patient }
+			}
+			add_character_flag = special_event_reaction_event_patient
+		}
+		10 = {
+			trigger = {
+				has_trait = impatient
+				NOT = { has_character_flag = special_event_reaction_event_impatient }
+			}
+			add_character_flag = special_event_reaction_event_impatient
+		}
+		10 = {
+			trigger = {
+				has_trait = arrogant
+				NOT = { has_character_flag = special_event_reaction_event_arrogant }
+			}
+			add_character_flag = special_event_reaction_event_arrogant
+		}
+		10 = {
+			trigger = {
+				has_trait = humble
+				NOT = { has_character_flag = special_event_reaction_event_humble }
+			}
+			add_character_flag = special_event_reaction_event_humble
+		}
+		10 = {
+			trigger = {
+				has_trait = deceitful
+				NOT = { has_character_flag = special_event_reaction_event_deceitful }
+			}
+			add_character_flag = special_event_reaction_event_deceitful
+		}
+		10 = {
+			trigger = {
+				has_trait = honest
+				NOT = { has_character_flag = special_event_reaction_event_honest }
+			}
+			add_character_flag = special_event_reaction_event_honest
+		}
+		10 = {
+			trigger = {
+				has_trait = craven
+				NOT = { has_character_flag = special_event_reaction_event_craven }
+			}
+			add_character_flag = special_event_reaction_event_craven
+		}
+		10 = {
+			trigger = {
+				has_trait = brave
+				NOT = { has_character_flag = special_event_reaction_event_brave }
+			}
+			add_character_flag = special_event_reaction_event_brave
+		}
+		10 = {
+			trigger = {
+				has_trait = shy
+				NOT = { has_character_flag = special_event_reaction_event_shy }
+			}
+			add_character_flag = special_event_reaction_event_shy
+		}
+		10 = {
+			trigger = {
+				has_trait = gregarious
+				NOT = { has_character_flag = special_event_reaction_event_gregarious }
+			}
+			add_character_flag = special_event_reaction_event_gregarious
+		}
+		10 = {
+			trigger = {
+				has_trait = ambitious
+				NOT = { has_character_flag = special_event_reaction_event_ambitious }
+			}
+			add_character_flag = special_event_reaction_event_ambitious
+		}
+		10 = {
+			trigger = {
+				has_trait = content
+				NOT = { has_character_flag = special_event_reaction_event_content }
+			}
+			add_character_flag = special_event_reaction_event_content
+		}
+		10 = {
+			trigger = {
+				has_trait = arbitrary
+				NOT = { has_character_flag = special_event_reaction_event_arbitrary }
+			}
+			add_character_flag = special_event_reaction_event_arbitrary
+		}
+		10 = {
+			trigger = {
+				has_trait = just
+				NOT = { has_character_flag = special_event_reaction_event_just }
+			}
+			add_character_flag = special_event_reaction_event_just
+		}
+		10 = {
+			trigger = {
+				has_trait = cynical
+				NOT = { has_character_flag = special_event_reaction_event_cynical }
+			}
+			add_character_flag = special_event_reaction_event_cynical
+		}
+		10 = {
+			trigger = {
+				has_trait = zealous
+				NOT = { has_character_flag = special_event_reaction_event_zealous }
+			}
+			add_character_flag = special_event_reaction_event_zealous
+		}
+		10 = {
+			trigger = {
+				has_trait = paranoid
+				NOT = { has_character_flag = special_event_reaction_event_paranoid }
+			}
+			add_character_flag = special_event_reaction_event_paranoid
+		}
+		10 = {
+			trigger = {
+				has_trait = trusting
+				NOT = { has_character_flag = special_event_reaction_event_trusting }
+			}
+			add_character_flag = special_event_reaction_event_trusting
+		}
+		10 = {
+			trigger = {
+				has_trait = compassionate
+				NOT = { has_character_flag = special_event_reaction_event_compassionate }
+			}
+			add_character_flag = special_event_reaction_event_compassionate
+		}
+		10 = {
+			trigger = {
+				has_trait = callous
+				NOT = { has_character_flag = special_event_reaction_event_callous }
+			}
+			add_character_flag = special_event_reaction_event_callous
+		}
+		10 = {
+			trigger = {
+				has_trait = sadistic
+				NOT = { has_character_flag = special_event_reaction_event_sadistic }
+			}
+			add_character_flag = special_event_reaction_event_sadistic
+		}
+		10 = {
+			trigger = {
+				has_trait = stubborn
+				NOT = { has_character_flag = special_event_reaction_event_stubborn }
+			}
+			add_character_flag = special_event_reaction_event_stubborn
+		}
+		10 = {
+			trigger = {
+				has_trait = fickle
+				NOT = { has_character_flag = special_event_reaction_event_fickle }
+			}
+			add_character_flag = special_event_reaction_event_fickle
+		}
+		10 = {
+			trigger = {
+				has_trait = vengeful
+				NOT = { has_character_flag = special_event_reaction_event_vengeful }
+			}
+			add_character_flag = special_event_reaction_event_vengeful
+		}
+		10 = {
+			trigger = {
+				has_trait = forgiving
+				NOT = { has_character_flag = special_event_reaction_event_forgiving }
+			}
+			add_character_flag = special_event_reaction_event_forgiving
+		}
+	}
+}
+
+scripted_effect special_event_reaction_standard_effect = {
+	#But what does it *mean*?
+	random_list = {
+		50 = {
+			desc = HEE_special_event.0001.gain_stress
+			send_interface_toast = {
+				title = HEE_special_event.0001.gain_stress
+				left_icon = root
+				add_stress = major_stress_gain
+			}
+		}
+		50 = {
+			desc = HEE_special_event.0001.lose_stress
+			send_interface_toast = {
+				title = HEE_special_event.0001.lose_stress
+				left_icon = root
+				add_stress = major_stress_loss
+			}
+		}
+	}
+}
+
+HEE_environmental.0001 = { # Hidden Event to add the modifiers
+	# Define Event
+	scope = none
+	hidden = yes
+
+	# Trigger event if Medieval Warm Period has not started
+	trigger = {
+		NOT = { has_global_variable = medieval_warm_period_started }
+	}
+
+	immediate = {
+		hidden_effect = { # Add modifier to counties in Europe
+			every_county_in_region = {
+				region = world_europe
+				add_county_modifier = {
+					modifier = medieval_warm_period
+				}
+			}
+
+			# Save variable to prevent repeat prompts
+			set_global_variable = {
+				name = medieval_warm_period_started
+				value = yes
+			}
+
+			every_ruler = { # Notify appropriate rulers of the Medieval Warm Period
+				limit = {
+					AND = {
+						is_ai = no
+						title_capital_county.title_province = { geographical_region = world_europe }
+					}
+				}
+				trigger_event = HEE_environmental.0002 # Medieval Warm Period has started
+			}
+		}
+	}
+}
+
+HEE_environmental.0002 = { # Player reaction event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_environmental.0002.t
+	desc = HEE_environmental.0002.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	override_background = { reference = terrain_scope }
+
+	trigger = {
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_HEE_environmental_0002 }
+		
+		#MWP should have started
+		has_global_variable = medieval_warm_period_started
+
+		#Only for players.
+		is_ai = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_environmental.0002
+				days = 180 #~6 Month
+			}
+		}
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_HEE_environmental_0002
+			days = 27375	#75 years.
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0002.a
+
+		ai_chance = {
+			#Not for the AI.
+			base = 100
+		}
+	}
+}
+
+HEE_environmental.0003 = { # Hidden Event to add the modifiers
+	# Define Event
+	scope = none
+	hidden = yes
+
+	# Trigger event if Medieval Warm Period has not started
+	trigger = {
+		has_global_variable = medieval_warm_period_started
+	}
+
+	immediate = {
+		hidden_effect = { # Remove MWP modifier from counties in Europe
+			every_county_in_region = {
+				region = world_europe
+				remove_county_modifier = medieval_warm_period
+			}
+		}
+
+		# Save variable to prevent repeat prompts
+		set_global_variable = {
+			name = medieval_warm_period_ended
+			value = yes
+		}
+
+		every_ruler = { # Notify appropriate rulers of the Medieval Warm Period
+			limit = {
+				AND = {
+					is_ai = no
+					title_capital_county.title_province = { geographical_region = world_europe }
+				}
+			}
+
+			trigger_event = HEE_environmental.0004 # Medieval Warm Period has ended
+		}
+	}
+}
+
+HEE_environmental.0004 = { # Player reaction event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_environmental.0004.t
+	desc = HEE_environmental.0004.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	override_background = { reference = terrain_scope }
+
+	trigger = {
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_HEE_environmental_0004 }
+		
+		#MWP should have ended
+		has_global_variable = medieval_warm_period_ended
+
+		#Only for players.
+		is_ai = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_environmental.0004
+				days = 180 #~6 Month
+			}
+		}
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_HEE_environmental_0004
+			days = 27375	#75 years.
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0004.a
+
+		ai_chance = {
+			#Not for the AI.
+			base = 100
+		}
+	}
+}
+
+HEE_environmental.0005 = { # Hidden Event to add the modifiers
+	# Define Event
+	scope = none
+	hidden = yes
+
+	# Trigger event if Medieval Warm Period has not started
+	trigger = {
+		NOT = {
+			has_global_variable = little_ice_age_started
+		}
+	}
+
+	immediate = {
+		hidden_effect = { # Add modifier to counties in Europe
+			every_county_in_region = {
+				region = world_europe
+				add_county_modifier = {
+					modifier = little_ice_age
+				}
+			}
+		}
+		
+		set_global_variable = { # Save variable to prevent repeat prompts
+			name = little_ice_age_started
+			value = yes
+		}
+
+		every_ruler = { # Notify appropriate rulers of the Medieval Warm Period
+			limit = {
+				AND = {
+					is_ai = no
+					title_capital_county.title_province = { geographical_region = world_europe }
+				}
+			}
+
+			trigger_event = HEE_environmental.0006 # Medieval Warm Period has started
+		}
+	}
+}
+
+HEE_environmental.0006 = { # Player reaction event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_environmental.0006.t
+	desc = HEE_environmental.0006.desc
+	theme = learning_scholarship_focus
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+	override_background = { reference = HEE_full_background_little_ice_age }
+
+	trigger = {
+		is_available_at_peace_adult = yes
+		NOT = { has_character_flag = had_HEE_environmental_0006 }
+		
+		#MWP should have started
+		has_global_variable = little_ice_age_started
+
+		#Only for players.
+		is_ai = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_environmental.0006
+				days = 180 #~6 Month
+			}
+		}
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_HEE_environmental_0006
+			days = 27375	#75 years.
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0006.a
+
+		ai_chance = {
+			#Not for the AI.
+			base = 100
+		}
+	}
+}
+
+############################################################################################################
+# 
+# SN 1006 - https://en.wikipedia.org/wiki/SN_1006
+# A select few rulers, including all players, get to react to the 1006 Suprenova
+# 
+############################################################################################################
+
+HEE_environmental.0100 = {
+	scope = none
+	hidden = yes
+	
+	immediate = {
+
+		set_global_variable = {
+			name = SN_1006_has_happened
+			value = yes
+		}
+
+		# Send the appropriate notification event to each player.
+		every_ruler = {
+			# Human players will always get it
+			if = {
+				limit = {
+					is_ai = no
+				}
+				trigger_event = HEE_environmental.0101
+			}
+			else = {
+				random = {
+					chance = 20
+					modifier = {
+						learning >= decent_skill_rating
+						add = 5
+					}
+					modifier = {
+						has_trait = scholar
+						add = 5
+					}
+					modifier = {
+						has_trait = theologian
+						add = 5
+					}
+					modifier = {
+						has_trait = lifestyle_mystic
+						add = 5
+					}
+					# Most notable records are from China and Japan
+					modifier = {
+						culture_has_east_asian_heritage_pillar_trigger = yes
+						add = 10
+					}
+					# Also noted in the Middle East
+					modifier = {
+						OR = {
+							culture_has_west_asian_heritage_pillar_trigger = yes
+							culture_has_mena_heritage_pillar_trigger = yes
+						}
+						add = 5
+					}
+					trigger_event = HEE_environmental.0101
+				} 
+			}
+		}
+	}
+}
+
+HEE_environmental.0101 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_environmental.0101.t
+	desc = HEE_environmental.0101.desc
+	theme = realm
+	override_background = { reference = HEE_full_background_sn_1006 }
+	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+
+	# Pay astronomers to record observations about it
+	option = {
+		name = HEE_environmental.0101.a
+		trigger = {
+			OR = {
+				gold >= 80
+				is_ai = no
+			}
+		}
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				add = 10
+				learning >= decent_skill_rating
+			}
+			modifier = {
+				add = 10
+				OR = {
+					has_trait = scholar
+					has_trait = theologian
+					has_trait = lifestyle_mystic
+				}
+			}
+		}
+		
+		remove_short_term_gold = 80
+		add_prestige = 100
+
+		create_artifact = {
+			name = HEE_supernova_1066_record_name
+			type = miscellaneous
+			description = HEE_supernova_1066_record_desc 
+			visuals = book
+			modifier = artifact_HEE_supernova_1066_record
+			save_scope_as = record
+			wealth = 58
+			quality = 58
+			history = {
+				type = created_before_history
+			}
+		}
+
+		clicksound = "event:/DLC/FP2/SFX/UI/fp2_struggle_start_select"
+	}
+	
+	# Pray for a good omen
+	option = {
+		name = HEE_environmental.0101.b
+		trigger = {
+			OR = {
+				gold >= 25
+				is_ai = no
+			}
+		}
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = 15
+				has_trait = zealous
+			}
+		}
+
+		remove_short_term_gold = 25
+		add_piety = 100
+
+		stress_impact = {
+			cynical = minor_stress_impact_gain
+			zealous = minor_stress_impact_loss
+		}
+	}
+	
+	# Whatever
+	option = {
+		name = HEE_environmental.0101.c
+
+		ai_chance = {
+			base = 25
+		}
+
+	}
+
+	after = {
+		create_character_memory = {
+			type = HEE_memory_supernova_1006
+		}
+	}
+
+}

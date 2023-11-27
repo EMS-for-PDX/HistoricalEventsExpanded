@@ -111,19 +111,6 @@ realm_religious_fervor_modifier = {
 	county_opinion_add = 25
 }
 
-jeanne_ashes_modifier = {
-	court_grandeur_baseline_add = 1
-	monthly_prestige = 0.1
-	monthly_piety = 0.25
-}
-
-jeanne_sword_public_opinion = { county_opinion_add = 10 }
-
-jeanne_banner_opinion = {
-	county_opinion_add = 5
-	same_culture_opinion = 10	
-}
-
 ## County ##
 regional_stronghold_modifier = {
 	icon = county_modifier_development_positive
@@ -181,14 +168,14 @@ hee_867_fortified_capital_tephrike_modifier = {
 	monthly_county_control_change_factor = 0.5
 }
 
-hee_867_paulician_settlements_thrace_modifier = {
+hee_867_paulician_settlements_thrace_modifier = { # Modifier for Paulicians settled in Thrace in 867
 	icon = family_positive
 	tax_mult = 0.1
 	development_growth_factor = 0.15
 	county_opinion_add = -20
 }
 
-hee_fifth_fitna_aftermath_modifier = {
+hee_fifth_fitna_aftermath_modifier = { # Modifier to represent the devestation of Iraq via the Fifth Fitna
 	icon = county_modifier_development_negative
 	fort_level = -1
 	tax_mult = -0.35
@@ -197,14 +184,14 @@ hee_fifth_fitna_aftermath_modifier = {
 	development_growth_factor = -0.5
 }
 
-hee_tondrakian_purge_modifier = {
+hee_tondrakian_purge_modifier = { # Modifier for the Tondrakian Purge by the Kaysites
 	icon = county_modifier_control_positive
 	monthly_county_control_change_factor = 0.15
 	development_growth_factor = -0.1
 	county_opinion_add = -25
 }
 
-hee_865_mecca_raid_modifier = {
+hee_865_mecca_raid_modifier = { # Modifier for 865 Sack of Mecca
 	icon = martial_negative
 	build_speed = 0.50
 	tax_mult = -0.35
@@ -212,13 +199,33 @@ hee_865_mecca_raid_modifier = {
 	county_opinion_add = -25
 }
 
-paulicians_levied_for_war = {
+paulicians_levied_for_war = { # Modifier to represent negative effect of so many Paulicians levied for war
 	icon = prowess_negative
 	levy_size = 1
 	build_speed = 0.50
 	tax_mult = -0.35
 	development_growth_factor = -0.3
 }
+
+medieval_warm_period = { # Modifier for Medieval Warm Period
+	icon = county_modifier_development_positive
+	county_opinion_add = 10
+	development_growth_factor = 0.15
+	supply_limit_mult = 0.20
+}
+
+little_ice_age = { # Modifier for Little Ice Age
+	icon = county_modifier_development_negative
+	development_growth_factor = -0.1
+	supply_limit_mult = -0.15
+}
+
+
+volcanic_winter = { # Modifier for the Samalas Eruption of 1257
+	icon = outdoors_negative
+	supply_limit_mult = -0.1
+}
+
 
 # testing_water = {
 # 	#stacking = yes

@@ -9231,6 +9231,14 @@ armenian.000084 = {
 	father = 163135
 	culture = "armenian"
 	religion = "ashari"
+
+	#Skills
+	diplomacy = 8
+	martial = 9
+	stewardship = 8
+	intrigue = 6
+	intrigue = 8
+	prowess = 8
 	
 	#Education
 	trait = education_martial_3

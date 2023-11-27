@@ -1,0 +1,25 @@
+﻿
+
+HEE_full_background_night_sky = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/HEE_night_sky.dds"
+		environment = "environment_event_garden" # added because it is expected in events
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+}
+
+HEE_full_background_sn_1006 = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/sn1006_sky_and_horizon.dds"
+		environment = "environment_event_garden" # added because it is expected in events
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+}
+
+HEE_full_background_little_ice_age = {
+	background = {	# Intro
+		reference = "gfx/interface/illustrations/event_story/fullscreen_little_ice_age.dds"
+		environment = "environment_event_garden" # added because it is expected in events
+		ambience = "event:/SFX/Events/Backgrounds/desert_day"
+	}
+}

@@ -1,5 +1,12 @@
 ﻿l_english:
- #Memories
+
+ #Special Events
+ HEE_memory_supernova_1006: "witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on [owner.GetHerHim]"
+ HEE_memory_supernova_1006_desc: "I witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on me"
+ HEE_memory_supernova_1006_desc_second_perspective: "you witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on yourself"
+ HEE_memory_supernova_1006_desc_third_perspective: "[owner.GetName] witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on [owner.GetHerHim]"
+
+ #Character Specific
  michael_invasion_of_bulguria: "Invasion of Bulgaria"
  michael_invasion_of_bulguria_desc: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, Caesar Bardas and I invaded Bulgaria"
  michael_invasion_of_bulguria_desc_second_perspective_1: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, you and the Caesar Bardas invaded Bulgaria"

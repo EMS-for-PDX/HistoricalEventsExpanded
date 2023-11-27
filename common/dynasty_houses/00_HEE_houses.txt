@@ -41,3 +41,8 @@ house_jeanne_ancilla = {
 	name = "dynn_Ancilla"
 	dynasty = jeanne_ancilla
 }
+
+house_al_shii = {
+	name = "dynn_al_Shii"
+	dynasty = hee_al_shii
+}

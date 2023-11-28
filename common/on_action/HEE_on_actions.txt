@@ -9,7 +9,7 @@ yearly_global_pulse = {
 		HEE_seljuk_empire_invasion
 		HEE_ghaznavids
 		HEE_qarmatian_uprising
-		# HEE_fatimid_uprising
+		HEE_kutama_uprising
 		HEE_fairhair_feast
 		HEE_titular_title_make_primary
 		HEE_SN_1006
@@ -386,95 +386,47 @@ HEE_qarmatian_uprising = {
 	}
 }
 
-HEE_fatimid_uprising = {
+HEE_kutama_uprising = {
 	effect = {
-		#Seljuk Invasion to create them
 		if = {
 			limit = {
-				has_game_rule = turkic_invasions_off
+				current_date > 890.1.1
+				current_date < 940.1.1 
+				NOT = { has_global_variable = kutama_have_arisen }
+				has_game_rule = turkic_invasions_historical
 			}
-		}
-		# else_if = {
-		# 	limit = {
-		# 		NOT = { has_global_variable = qarmatians_have_appeared }
-		# 		has_game_rule = turkic_invasions_random
-		# 	}
-		# 	debug_log = "Checking for chance of spawning qarmatians under random settings"
+			debug_log = "Checking for chance of spawning the Kutama under historical settings"
 
-		# 	random = {
-		# 		chance = qarmatians_appearance_base_chance
-		# 		modifier = {
-		# 			factor = 0.25
-		# 			current_date < 900.1.1
-		# 		}
-		# 		modifier = {
-		# 			add = 39
-		# 			current_date > 930.1.1
-		# 		}
-		# 		modifier = {
-		# 			add = 39
-		# 			current_date > 960.1.1
-		# 		}
-		# 		modifier = {
-		# 			add = 30
-		# 			current_date > 1020.1.1
-		# 		}
-		# 		modifier = {
-		# 			add = 30
-		# 			current_date > 1100.1.1
-		# 		}
-		# 		set_global_variable = {
-		# 			name = qarmatians_have_appeared
-		# 			value = yes
-		# 		}
-		# 		debug_log = "Attempting to spawn qarmatians within 240 days"
-		# 		trigger_event = {
-		# 			id = HEE_qarmatians.0001
-		# 			days = { 2 240 }
-		# 		}
-		# 	}
-		# }
-		else = {
-			if = {
-				limit = {
-					current_date > 890.1.1
-					current_date < 940.1.1 
-					NOT = { has_global_variable = fatimids_have_appeared }
-					has_game_rule = turkic_invasions_historical
+			random = {
+				chance = hee_generic_appearance_base_chance # Base chance of 1
+				modifier = {
+					add = 300
+					current_date > 895.1.1
 				}
-				debug_log = "Checking for chance of spawning the Fatimids under historical settings"
-
-				random = {
-					chance = qarmatians_appearance_base_chance
-					modifier = {
-						add = 300
-						current_date > 895.1.1
-					}
-					modifier = {
-						add = 300
-						current_date > 900.1.1
-					}
-					modifier = {
-						add = 900
-						current_date > 905.1.1
-					}
-					modifier = {
-						add = 1900
-						current_date > 910.1.1
-					}
-					modifier = {
-						add = 2900
-						current_date > 915.1.1
-					}
-					set_global_variable = {
-						name = fatimids_have_appeared
-						value = yes
-					}
-					debug_log = "Attempting to spawn the Fatimid uprising within 240 days"
-					trigger_event = {
-						id = HEE_fatimid_uprising.0001
-						days = { 2 240 }
-					}
+				modifier = {
+					add = 300
+					current_date > 900.1.1
+				}
+				modifier = {
+					add = 900
+					current_date > 905.1.1
+				}
+				modifier = {
+					add = 1900
+					current_date > 910.1.1
+				}
+				modifier = {
+					add = 2900
+					current_date > 915.1.1
+				}
+				set_global_variable = {
+					name = kutama_have_arisen
+					value = yes
+				}
+				debug_log = "Attempting to spawn the Kutama uprising within 240 days"
+				trigger_event = {
+					id = HEE_fatimid_uprising.0001
+					days = { 2 240 }
 				}
 			}
 		}

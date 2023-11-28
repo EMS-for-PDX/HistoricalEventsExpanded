@@ -70,6 +70,13 @@ max_qarmatian_invasion_region = {
 	}
 }
 
+kutama_uprising_region = {
+	duchies = {
+		# Eastern Tahert
+		d_bejaia 
+	}
+}
+
 core_starting_fatimid_region = {
 	duchies = {
 		# Eastern Tahert

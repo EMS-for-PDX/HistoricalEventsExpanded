@@ -1230,3 +1230,5 @@ hee_al_shii = {
 }
 
 house_al_shii = hee_al_shii
+
+house_fatimid = 589

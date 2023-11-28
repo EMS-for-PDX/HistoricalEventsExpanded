@@ -14,6 +14,11 @@ house_ghaznavid = {
 	dynasty = 790
 }
 
+house_fatimid = {
+	name = "dynn_Fatimid"
+	dynasty = 589
+}
+
 house_vermandois = { # Karling cadets
 	name = "dynn_Vermandois"
 	dynasty = 25061 #Karling

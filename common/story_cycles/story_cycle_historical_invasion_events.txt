@@ -663,34 +663,18 @@ story_pechenegs_invasion = {
 
 ## Fatimids ##
 
-story_fatimid_invasion = {
-	# by Uber
+story_kutama_uprising = {
+	# by EmrysValdr & Uber
 	
 	on_setup = {
-		every_county_in_region = {
-			region = core_starting_fatimid_region
-			limit = { NOT = { holder = root } }
-			duchy = { save_scope_as = next_invasion_title_target }
-			holder = {
-				save_scope_as = ruler_to_declare_on
-				global_var:qarmatian_realm_title.holder = {
-					start_war = {
-						cb = ducal_conquest_cb
-						target = scope:ruler_to_declare_on
-						target_title = scope:next_invasion_title_target
-					}
-				}
-			}
-		}
-		global_var:qarmatian_realm_title.holder = { spawn_qarmatian_starting_troops_effect = yes }
-
+		global_var:Abu_Abdallah_al_Shii = { spawn_fatimid_starting_troops_effect = yes }
 	}
 
 	on_end = {
-		debug_log = "qarmatian story ended on:"
+		debug_log = "Kutama Uprising story ended on:"
 		debug_log_date = yes
 		set_global_variable = {
-			name = qarmatian_story_has_ended
+			name = kutama_uprising_story_has_ended
 			value = yes
 		}
 	}
@@ -714,60 +698,10 @@ story_fatimid_invasion = {
 		if = {
 			limit = { exists = scope:new_story_owner }
 			make_story_owner = scope:new_story_owner
-			scope:new_story_owner = {
-				add_trait = heresiarch
-			}
-			debug_log = "Successfully replaced the Qarmatian Leader"
+
+			debug_log = "Successfully replaced the Kutama Leader"
 			debug_log_date = yes
 			debug_log_scopes = yes
-		}
-	}
-
-	#Start a new war if none is ongoing, AFTER they own bahrain
-	effect_group = {
-		days = { 100 200 }
-
-		trigger = {
-			story_owner = {
-				is_at_war = no
-				prestige > 0
-				gold > 0
-				NOT = { completely_controls_region = core_qarmatian_region }
-				any_held_title = {
-					this = global_var:qarmatian_realm_title
-				}
-			}
-		}
-
-		triggered_effect = {
-			trigger = {
-				story_owner = {
-					is_ai = yes
-				}
-			}
-			effect = {
-				every_county_in_region = {
-					region = core_qarmatian_region
-					limit = { NOT = { holder = root } }
-					duchy = { save_scope_as = next_invasion_title_target }
-					holder = {
-						save_scope_as = ruler_to_declare_on
-						global_var:qarmatian_realm_title.holder = {
-							start_war = {
-								cb = ducal_conquest_cb
-								target = scope:ruler_to_declare_on
-								target_title = scope:next_invasion_title_target
-							}
-						}
-					}
-				}
-				debug_log = "The story started a new war for the lead_qarmatians"
-				debug_log_date = yes
-				story_owner = {
-					save_scope_as = owner
-				}
-				debug_log_scopes = yes
-			}
 		}
 	}
 
@@ -780,11 +714,7 @@ story_fatimid_invasion = {
 				is_at_war = no
 				prestige > 0
 				gold > 0
-				realm_size <= 60
-				completely_controls_region = core_qarmatian_region
-				any_held_title = {
-					this = global_var:qarmatian_realm_title
-				}
+				NOT = { completely_controls_region = core_starting_fatimid_region }
 			}
 		}
 
@@ -796,9 +726,9 @@ story_fatimid_invasion = {
 			}
 			effect = {
 				story_owner = {
-					qarmatian_war_target_evaluation_and_declaration_effect = yes
+					kutama_war_target_evaluation_and_declaration_effect = yes
 				}
-				debug_log = "The story started a new war for the lead_qarmatians"
+				debug_log = "The story started a new war for the lead Kutama"
 				debug_log_date = yes
 				story_owner = {
 					save_scope_as = owner
@@ -808,81 +738,62 @@ story_fatimid_invasion = {
 		}
 	}
 
-	# Qarmatian Reinforcements if forces get too weak
-	effect_group = {
-		days = { 100 200 }
+	# Kutama Reinforcements if forces get too weak
+	# effect_group = {
+	# 	days = { 100 200 }
 
-		trigger = {
-			story_owner = {
-				is_at_war = no
-				prestige > 0
-				gold > 0
-				current_military_strength <= 6000
-				NOT = {
-					current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
-					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
-				}
-				any_held_title = {
-					this = global_var:qarmatian_realm_title
-				}
-			}
-		}
+	# 	trigger = {
+	# 		story_owner = {
+	# 			is_at_war = no
+	# 			prestige > 0
+	# 			gold > 0
+	# 			current_military_strength <= 6000
+	# 			NOT = {
+	# 				current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
+	# 				completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
+	# 			}
+	# 			any_held_title = {
+	# 				this = global_var:qarmatian_realm_title
+	# 			}
+	# 		}
+	# 	}
 
-		triggered_effect = {
-			trigger = {
-				story_owner = {
-					is_ai = yes
-				}
-			}
-			effect = {
-				story_owner = {
-					spawn_qarmatian_reinforcements_effect = yes
-				}
-				debug_log = "The story gave reinforcements to the lead_qarmatians"
-				debug_log_date = yes
-				story_owner = {
-					save_scope_as = owner
-				}
-				debug_log_scopes = yes
-			}
-		}
-	}
+	# 	triggered_effect = {
+	# 		trigger = {
+	# 			story_owner = {
+	# 				is_ai = yes
+	# 			}
+	# 		}
+	# 		effect = {
+	# 			story_owner = {
+	# 				spawn_qarmatian_reinforcements_effect = yes
+	# 			}
+	# 			debug_log = "The story gave reinforcements to the lead_qarmatians"
+	# 			debug_log_date = yes
+	# 			story_owner = {
+	# 				save_scope_as = owner
+	# 			}
+	# 			debug_log_scopes = yes
+	# 		}
+	# 	}
+	# }
 
 	# Story handling in case of succession weirdness
 	effect_group = {
 		days = 180
 
-		trigger = {
+		trigger = { 
 			story_owner = {
-				NOT = {
-					any_held_title = {
-						this = global_var:qarmatian_realm_title
-					}
-				}
+				completely_controls_region = core_starting_fatimid_region
 			}
 		}
 
 		triggered_effect = {
-			trigger = { exists = global_var:qarmatian_realm_title }
-			effect = {
-				if = {
-					limit = {
-						global_var:qarmatian_realm_title.holder = {
-							faith = faith:qarmatian
-						}
-					}
-					make_story_owner = global_var:qarmatian_realm_title.holder
-				}
-				else = {
-					end_story = yes
-				}
-			}
-		}
-
-		triggered_effect = {
-			trigger = { NOT = { exists = global_var:qarmatian_realm_title } }
 			effect = {
 				end_story = yes
+				# trigger_event = {
+				# 	id = HEE_fatimid_uprising.1000 # MAKE EVENT
+				# }
 			}
 		}
 	}

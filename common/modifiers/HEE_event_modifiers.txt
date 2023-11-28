@@ -209,7 +209,7 @@ paulicians_levied_for_war = { # Modifier to represent negative effect of so many
 
 medieval_warm_period = { # Modifier for Medieval Warm Period
 	icon = county_modifier_development_positive
-	county_opinion_add = 10
+	county_opinion_add = 5
 	development_growth_factor = 0.15
 	supply_limit_mult = 0.20
 }

@@ -37,11 +37,14 @@
  constantly_protected_by_bodyguards_modifier: "Constantly Protected"
  constantly_protected_by_bodyguards_modifier_desc: "To ensure their safety, this character is constantly escorted by a hundred bodyguards"
 
- jeanne_divine_guidance_modifier:0 "Divine Guidance"
- jeanne_divine_guidance_modifier_desc:0 "Supposedly visited frequently by visions of angels and saints, this character's firm belief in the divinity of their visions strengthen their confidence and piety, though some among the clergy take issue with their claims of divine guidance"
+ jeanne_divine_guidance_modifier: "Divine Guidance"
+ jeanne_divine_guidance_modifier_desc: "Supposedly visited frequently by visions of angels and saints, this character's firm belief in the divinity of their visions strengthen their confidence and piety, though some among the clergy take issue with their claims of divine guidance"
 
- realm_religious_fervor_modifier:0 "Realm Religious Fervor"
- realm_religious_fervor_modifier_desc:1 "The entire realm is gripped by religious fervor and an unquestioning belief in the ruler's divine mandate"
+ realm_religious_fervor_modifier: "Realm Religious Fervor"
+ realm_religious_fervor_modifier_desc: "The entire realm is gripped by religious fervor and an unquestioning belief in the ruler's divine mandate"
+
+ al_muwaffaq_personal_modifier: "Charismatic Commander"
+ al_muwaffaq_personal_modifier_desc: "In his close relations with the Turkish military, and his active participation in military affairs, al-Muwaffaq differed from most Abbasid princes of his time. Al-Muwaffaq's drive and energy, close personal relationship with military leadership, his own prestige as a prince of the Abbasid dynasty, and willingness to lead from the front, inspired in his men a great willingness to fight not for money, but for himself and his cause"
 
  ## County ##
  regional_stronghold_modifier: "Regional Stronghold"

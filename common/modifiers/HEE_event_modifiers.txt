@@ -111,6 +111,19 @@ realm_religious_fervor_modifier = {
 	county_opinion_add = 25
 }
 
+al_muwaffaq_personal_modifier = {
+	icon = prowess_positive
+	men_at_arms_maintenance = -0.25
+	army_maintenance_mult = -0.5
+	county_opinion_add = 10
+}
+
+
+
+
+
+
+
 ## County ##
 regional_stronghold_modifier = {
 	icon = county_modifier_development_positive

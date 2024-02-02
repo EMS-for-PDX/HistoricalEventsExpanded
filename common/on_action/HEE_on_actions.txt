@@ -401,11 +401,11 @@ HEE_kutama_uprising = {
 				chance = hee_generic_appearance_base_chance # Base chance of 1
 				modifier = {
 					add = 300
-					current_date > 895.1.1
+					current_date > 900.1.1
 				}
 				modifier = {
 					add = 300
-					current_date > 900.1.1
+					current_date > 902.1.1
 				}
 				modifier = {
 					add = 900

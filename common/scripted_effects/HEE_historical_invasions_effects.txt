@@ -931,7 +931,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 
 ## Fatimids ##
 
-spawn_fatimids_character_effect = {
+spawn_ismali_missionary_character_effect = {
 	title:c_bejaia.title_province = {
 		save_scope_as = kutama_uprising_location
 	}
@@ -1026,19 +1026,11 @@ spawn_fatimid_starting_troops_effect = {
 			stacks = 5
 		}
 		men_at_arms = {
-			type = abudrar
-			stacks = 5
-		}
-		men_at_arms = {
 			type = bowmen
 			stacks = 5
 		}
 		men_at_arms = {
 			type = bowmen
-			stacks = 5
-		}
-		men_at_arms = {
-			type = mulaththamun
 			stacks = 5
 		}
 		men_at_arms = {
@@ -1057,7 +1049,7 @@ spawn_fatimid_starting_troops_effect = {
 			type = mangonel
 			stacks = 5
 		}
-		levies = 3450
+		levies = 2450
 		location = global_var:Abu_Abdallah_al_Shii.location
 	}
 }
@@ -1193,6 +1185,193 @@ kutama_war_target_evaluation_and_declaration_effect = {
 					}
 					any_realm_province = {
 						geographical_region = core_starting_fatimid_region
+					}
+				}
+				save_temporary_scope_as = next_invasion_target
+				primary_title = {
+					limit = { NOT = { tier = tier_empire } }
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+		}
+		start_war = {
+			cb = religious_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+}
+
+spawn_fatimid_caliph_character_effect = {
+	title:c_kairwan.title_province = {
+		save_scope_as = fatimid_enthronement_location
+	}
+	create_character = {
+		name = "al-Mahdī biʾllāh"
+		location = scope:fatimid_enthronement_location
+		template = HEE_fatimid_founder_template
+		dynasty = inherit
+		father = character:33920
+		save_scope_as = first_fatimid_caliph
+	}
+	
+	scope:first_fatimid_caliph = {
+		# Make temporarily immune to disease
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
+		add_character_flag = {
+			flag = is_party_baron
+			years = 5
+		}
+		add_prestige = 1000
+		add_gold = 2500
+		add_piety = 1000
+		dynasty = {
+			add_dynasty_perk = glory_legacy_1
+			add_dynasty_perk = glory_legacy_2
+		}
+		set_global_variable = {
+			name = first_fatimid_caliph
+			value = scope:first_fatimid_caliph
+		}
+	}
+
+	create_character = {
+		name = "Ja'far"
+		location = scope:fatimid_enthronement_location
+		template = HEE_fatimid_founder_confidant_template
+		save_scope_as = fatimid_founder_confidant
+	}
+
+	create_character = {
+		name = "al-Qa'im"
+		location = scope:fatimid_enthronement_location
+		template = HEE_second_fatimid_caliph_template
+		dynasty = inherit
+		father = scope:first_fatimid_caliph
+		save_scope_as = second_fatimid_caliph
+	}
+
+	scope:second_fatimid_caliph = {
+		set_global_variable = {
+			name = second_fatimid_caliph
+			value = scope:second_fatimid_caliph
+		}
+	}
+}
+
+# Kutama targeting for wars
+fatimid_war_target_evaluation_and_declaration_effect = {
+	# Set the Fatimid leader as reference point
+	save_scope_as = lead_fatimid
+
+	# Select a new target
+	if = { # Check if a direct neighbor is a valid war target
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				NOR = {
+					is_allied_to = scope:lead_fatimid
+					this = scope:lead_fatimid
+					top_liege = scope:lead_fatimid
+					current_military_strength > scope:lead_fatimid
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_fatimid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = max_fatimid_invasion_region
+				}
+				primary_title = {
+					NOT = { tier = tier_empire }
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOR = {
+					is_allied_to = scope:lead_fatimid
+					this = scope:lead_fatimid
+					top_liege = scope:lead_fatimid
+					current_military_strength > scope:lead_fatimid
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_fatimid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = max_fatimid_invasion_region
+				}
+			}
+
+			save_temporary_scope_as = next_invasion_target
+			primary_title = {
+				limit = { NOT = { tier = tier_empire } }
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+	}
+	else_if = { # if no direct neighbors are valid war targets, then check the neighbors of the neighbors
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					NOR = {
+						is_allied_to = scope:lead_fatimid
+						this = scope:lead_fatimid
+						top_liege = scope:lead_fatimid
+						current_military_strength > scope:lead_fatimid
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_fatimid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = max_fatimid_invasion_region
+					}
+					primary_title = {
+						NOT = { tier = tier_empire }
+					}
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					NOR = {
+						is_allied_to = scope:lead_fatimid
+						this = scope:lead_fatimid
+						top_liege = scope:lead_fatimid
+						current_military_strength > scope:lead_fatimid
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_fatimid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = max_fatimid_invasion_region
 					}
 				}
 				save_temporary_scope_as = next_invasion_target

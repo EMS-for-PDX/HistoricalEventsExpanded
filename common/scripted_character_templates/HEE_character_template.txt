@@ -168,18 +168,68 @@ HEE_fatimid_founder_template = { # https://en.wikipedia.org/wiki/Abd_Allah_al-Ma
 		max_template_decent_skill
 	}
 	prowess = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+
+	trait = education_stewardship_3
+	trait = gregarious
+	trait = arrogant
+	trait = deceitful
+	trait = ambitious
+	trait = sayyid
+	random_traits = no
+}
+
+HEE_fatimid_founder_confidant_template = {
+	age = 36
+	gender = male
+	faith = faith:ismaili
+	culture = culture:levantine
+
+	#Skills
+	diplomacy = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	martial = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	learning = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	prowess = {
 		min_template_decent_skill
 		max_template_decent_skill
 	}
 
-	trait = education_diplomacy_4
-	trait = generous
-	trait = zealous
-	trait = just
-	trait = temperate
-	trait = diplomat
-	trait = organizer
+	trait = education_learning_3
+	trait = calm
+	trait = diligent
+	trait = stubborn
+	trait = loyal
+	trait = eunuch
 	random_traits = no
+}
+
+HEE_second_fatimid_caliph_template = {
+	name = "al-Qa'im"
+	age = { 5 8 }
+	gender = male
+	faith = faith:ismaili
+	culture = culture:levantine
+
+	random_traits = yes
 }
 
 ### JEANNE D'ARC ###

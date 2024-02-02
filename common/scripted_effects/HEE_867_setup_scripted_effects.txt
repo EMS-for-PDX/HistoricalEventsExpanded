@@ -716,6 +716,10 @@ hee_samarra_relations_867_effect = {
 		LIEGE = character:34014
 	}
 
+	scope:al_muwaffaq = { #
+		add_character_modifier = al_muwaffaq_personal_modifier
+	}
+
 	character:163131 = {	
 		spawn_turkic_troops_effect = yes
 	}

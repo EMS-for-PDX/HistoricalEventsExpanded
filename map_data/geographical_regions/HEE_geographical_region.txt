@@ -79,12 +79,8 @@ kutama_uprising_region = {
 
 core_starting_fatimid_region = {
 	duchies = {
-		# Eastern Tahert
-		d_bejaia d_zab
 		#Africa
-		d_kairouan d_tunis d_kroumerie d_gabes d_jerid d_tripolitania d_syrte
-		#Island of Sicily
-		d_sicily
+		d_kairouan d_tunis d_kroumerie d_gabes d_jerid
 	}
 }
 
@@ -96,6 +92,10 @@ max_fatimid_invasion_region = {
 		d_cyrenaica d_alexandria d_delta d_cairo d_al-wahat d_al-said d_eastern_desert d_sinai
 		#Arabia
 		d_jawf d_amman d_shammar d_medina d_mecca d_asir d_najd d_yamama d_al-hasa d_bahrain d_oman
+		#Syria
+		d_damascus d_aleppo d_antioch d_edessa d_homs d_lebanon d_palmyra
+		#Jerusalem
+		d_oultrejourdain d_palestine d_urdunn
 		#Island of Sicily
 		d_sicily
 		#Tahert

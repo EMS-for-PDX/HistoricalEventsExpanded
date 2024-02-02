@@ -227,6 +227,8 @@
   Ghaznavid_Empire:0 "Ghaznavids"
   Ghaznavid: "Ghaznavid"
 
+  Fatimid_Empire:0 "Fatimid Empire"
+
   HEE_ghaznavids.2001.opening:0 "My destined servant,"
   HEE_ghaznavids.2001.desc:0 "As the ruler of the universe, it is inevitable that you will bow to me. Let it be in an oath of fealty, rather than with an axeman's blade against your neck."
   HEE_ghaznavids.2001.a:0 "I submit with honor, my [ghaznavid_emperor.GetTitleAsNameNoTooltip]."

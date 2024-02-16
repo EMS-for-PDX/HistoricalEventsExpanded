@@ -1,56 +1,23 @@
 ﻿namespace = HEE_fairhair
 
 
-HEE_fairhair.1 = { #Set-up event
-	type = letter_event
-	opening = {
-		desc = feast.1501.opening
+HEE_fairhair.1 = { # Eirikr hosts a feast
+	type = character_event
+	title = HEE_fairhair.1.t
+	desc = HEE_fairhair.1.desc
+	theme = feast_activity
+	left_portrait = {
+		character = root
+		animation = personality_content
 	}
-	desc = feast.1503.desc
-	sender = scope:sender
-
-	trigger = {
-		#can_join_activities = yes
-		is_adult = yes
-		is_busy_in_events_localised = no
-		#is_in_an_activity = no
-		#is_at_war = no
-		is_imprisoned = no
-		is_healthy = yes
-		NOR = {
-			exists = var:booked_for_a_party
-			exists = var:engaged_in_single_combat
-		}
-		#NOT = { exists = var:is_handling_feast_invitation }
-	}
-
-	on_trigger_fail = { #Trigger invitation again if it was blocked because the character was handling another invitation
-		if = {
-			limit = {
-				is_available_for_activity_trigger = yes
-				exists = var:is_handling_feast_invitation
-			}
-			trigger_event = {
-				id = HEE_fairhair.1
-				days = 1
-			}
-		}
-		debug_log = "Failed to invite Fairhair to fesat"
+	right_portrait = {
+		character = scope:sender
+		animation = personality_compassionate
 	}
 
 	immediate = {
-		scope:activity.activity_owner = {
-			save_scope_as = sender
-		}
-		scope:activity.activity_province = {
-			barony = {
-				save_scope_as = barony
-			}
-		}
-		set_variable = {
-			name = is_handling_feast_invitation
-			value = scope:sender
-			days = 20
+		character:166329 = {
+			save_scope_as = king_eirikr
 		}
 		character:144000 = {
 			add_character_flag = {
@@ -58,139 +25,77 @@ HEE_fairhair.1 = { #Set-up event
 				days = 30
 			}
 		}
-
-		debug_log = "invited Fairhair to fesat"
 	}
 
-	option = {
-		name = feast.1503.a
-		play_music_cue = mx_cue_banquet
-		scope:activity = {
-			accept_invitation_for_character = prev
-		}
-		set_variable = {
-			name = booked_for_a_party
-			value = scope:sender
-			days = 20
-		}
-		debug_log = "Fairhair said yes"
+	option = { 
+		name = HEE_fairhair.1.a
 		character:144000 = {
-			add_character_flag = {
-				days = 30
-				flag = HEE_fairhair_1_Fairhair_said_yes
+			trigger_event = {
+				id = HEE_fairhair.2
+				days = 3 
 			}
-		}
-		stress_impact = {
-			comfort_eater = minor_stress_loss
-			drunkard = minor_stress_loss
 		}
 		ai_chance = {
-			base = 1000
+			base = 100
 		}
 	}
 
 	option = {
-		name = feast.1503.b
-		scope:activity = {
-			decline_invitation_for_character = prev
-		}
-		debug_log = "Fairhair said no"
-		character:144000 = {
-			add_character_flag = {
-				flag = HEE_fairhair_1_Fairhair_said_no	
-				days = 30
-			}
-		}
-		stress_impact = {
-			inappetetic = minor_stress_loss
-			reclusive = minor_stress_loss
-		}
+		name = HEE_fairhair.1.b
 		ai_chance = {
 			base = 0
 		}
 	}
-
-	after = {
-		remove_variable = is_handling_feast_invitation
-	}
 }
 
-HEE_fairhair.2 = { #Let your daughter wander the party, 
-	type = character_event
+HEE_fairhair.2 = { # Letter from Eirikr to harald
+	type = letter_event
 	title = HEE_fairhair.2.t
 	desc = HEE_fairhair.2.desc
 	theme = feast_activity
-	left_portrait = {
-		character = root
-		animation = personality_content
-	}
-	right_portrait = {
-		character = scope:gyda
-		animation = personality_compassionate
-	}
-
+	sender = scope:king_eirikr
 	immediate = {
-		scope:activity = {
-			 activity_owner = {
-				random_child = {
-					limit = {
-						is_male = no
-					}
-					save_scope_as = gyda
-				}
-				save_scope_as = fatherboi	 
-			}
-		}
-		hidden_effect = {
-			scope:gyda = {
-				add_trait = beauty_good_3 
-			}
+		character:166329 = {
+			save_scope_as = king_eirikr
 		}
 		character:144000 = {
 			add_character_flag = {
 				flag = HEE_fairhair_2_fired
 				days = 30
 			}
-		} 
+		}
 	}
 
 	option = { 
 		name = HEE_fairhair.2.a
-		trigger = {
-			character:144000 = {
-				is_alive = yes
-				is_landed = yes
-				NOT = {
-					has_character_modifier = harald_tanglehairs_vow_modifier
-				}
-			}
-		}
-
-		character:144000 = {
-			trigger_event = {
-				id = HEE_fairhair.3
-				days = 3
-			}
+		start_travel_plan = {
+			destination = scope:king_eirikr.capital_province
+			on_arrival_destinations = all_but_last
+			on_arrival_event = HEE_fairhair.20
+			return_trip = yes # One way
 		}
 		ai_chance = {
-			base = 1000
+			base = 100
 		}
 	}
 
 	option = {
 		name = HEE_fairhair.2.b
-
-		scope:gyda = {
-			add_opinion = {
-				modifier = angry_opinion
-				target = scope:fatherboi
-				opinion = {
-					value = -50
-				}
-			}
-		}
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+
+HEE_fairhair.20 = {
+	hidden = yes
+
+	immediate = {
+		character:144000 = {
+			trigger_event = {
+				id = HEE_fairhair.3
+				days = 3
+			}
 		}
 	}
 }
@@ -224,6 +129,9 @@ HEE_fairhair.3 = { #sees her for the first time
 				flag = HEE_fairhair_3_fired
 				days = 30
 			}
+		}
+		current_travel_plan ?= {
+			delay_travel_plan = { days = 10 }
 		} 
 	}
 
@@ -340,7 +248,7 @@ HEE_fairhair.5 = { #Father finds out
 		character:144000 = {
 			trigger_event = {
 				id = HEE_fairhair.6
-				days = { 20 40 }
+				days = { 80 100 }
 			}
 		}
 		ai_chance = {

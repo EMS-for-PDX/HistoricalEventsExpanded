@@ -133,7 +133,7 @@ HEE_fairhair_feast = {
 		}
 		character:144000 = {
 			add_character_flag = HEE_fairhair_feast_on_action_fired
-			trigger_event = HEE_fairhair.3
+			#trigger_event = HEE_fairhair.3
 		}
 	}
 }

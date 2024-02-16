@@ -1,0 +1,74 @@
+﻿## Seljuks ##
+
+story_rurik_health = {
+	# by Uber
+	
+	on_setup = {
+		# story_owner = { # Start conquest of all of seljuks
+		# 	start_wars_for_seljukia_effect = yes
+		# }
+	}
+
+	on_end = {
+		debug_log = "rurik_heath story ended on:"
+		debug_log_date = yes
+	}
+
+	# Constantly check the health of Rurik
+	effect_group = {
+		days = { 1 2 }
+
+		trigger = {
+			story_owner = {
+				health < fine_health
+				age >= 30 # HEE TODO: Change before release
+				is_imprisoned = no
+				primary_heir = {
+					age <= 16
+				}
+				NOT = { has_character_flag = has_considered_succession }
+			}
+			#always = yes 
+		}
+
+		triggered_effect = {
+			effect = {
+				story_owner = {
+					trigger_event = {
+						id = HEE_kiev_rus.1 # Decide Sucessor
+					}
+				}
+			}
+		}
+	}
+
+	#Constantly check the health of Rurik
+	effect_group = {
+		days = { 1 2 }
+
+		trigger = {
+			story_owner = {
+				health < fine_health
+				age >= 30 # HEE TODO: Change before release
+				is_imprisoned = no
+				any_child = {
+					age >= 16
+					is_male = yes
+				}
+				primary_heir = character:40606
+				has_character_flag = has_considered_succession
+			}
+			#always = yes 
+		}
+
+		triggered_effect = {
+			effect = {
+				story_owner = {
+					trigger_event = {
+						id = HEE_kiev_rus.1 # Reconsider Sucessor
+					}
+				}
+			}
+		}
+	}
+}

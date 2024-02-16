@@ -1,0 +1,153 @@
+﻿namespace = HEE_kiev_rus
+
+# Kiev Rus Events #
+# Fires on Death of Rurik
+HEE_kiev_rus.1 = {
+	type = character_event
+	id = HEE_kiev_rus.1
+	title = HEE_kiev_rus.1.t
+	desc = HEE_kiev_rus.1.desc
+	theme = death
+	left_portrait = {
+		character = root
+		animation = sick
+	}
+	right_portrait = {
+		character = scope:helgi
+		animation = personality_compassionate
+	}
+	lower_center_portrait = {
+		trigger = {
+			exists = scope:child
+		}
+		character = scope:child
+		animation = personality_bold
+	}
+
+	immediate = {
+		character:40606 = {
+			save_scope_as = helgi
+		}
+		if = {
+			limit = {
+				primary_heir = {
+					dynasty = root.dynasty
+				}
+			}
+			primary_heir = {
+				save_scope_as = child
+			}
+		}
+		if = {
+			limit = {
+				primary_heir = {
+					NOT = { dynasty = root.dynasty }
+				} 
+			}
+			random_child = {
+				limit = {
+					root.primary_title = {
+						place_in_line_of_succession = {
+							target = prev
+							value = 2
+						}
+					}
+				}
+				save_scope_as = child
+			}
+		}
+	}
+
+	option = { 
+		name = HEE_kiev_rus.1.a
+		
+		set_designated_heir = character:40606
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_kiev_rus.1.b
+		trigger = {
+			scope:child = {
+				age <= 16
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	# Choose the Son who is now of age
+	option = {
+		name = HEE_kiev_rus.1.c
+		trigger = {
+			scope:child = {
+				age >= 16
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				NOT = { has_character_flag = has_considered_succession }
+			}
+			add_character_flag = has_considered_succession
+		}
+	}
+}
+
+
+# HEE_fairhair.1 = { # Eirikr hosts a feast
+# 	type = character_event
+# 	title = HEE_fairhair.1.t
+# 	desc = HEE_fairhair.1.desc
+# 	theme = feast_activity
+# 	left_portrait = {
+# 		character = root
+# 		animation = personality_content
+# 	}
+# 	right_portrait = {
+# 		character = scope:sender
+# 		animation = personality_compassionate
+# 	}
+
+# 	immediate = {
+# 		character:166329 = {
+# 			save_scope_as = king_eirikr
+# 		}
+# 		character:144000 = {
+# 			add_character_flag = {
+# 				flag = HEE_fairhair_1_fired
+# 				days = 30
+# 			}
+# 		}
+# 	}
+
+# 	option = { 
+# 		name = HEE_fairhair.1.a
+# 		character:144000 = {
+# 			trigger_event = {
+# 				id = HEE_fairhair.2
+# 				days = 3 
+# 			}
+# 		}
+# 		ai_chance = {
+# 			base = 100
+# 		}
+# 	}
+
+# 	option = {
+# 		name = HEE_fairhair.1.b
+# 		ai_chance = {
+# 			base = 0
+# 		}
+# 	}
+# }

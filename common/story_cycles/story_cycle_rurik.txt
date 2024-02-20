@@ -72,3 +72,144 @@ story_rurik_health = {
 		}
 	}
 }
+
+story_rurikid_expansion = {
+	# by EmrysValdr
+	
+	on_setup = {
+		# global_var:rurik_successor = { spawn_rurik_starting_troops_effect = yes }
+		# every_ruler = {
+		# 	limit = {
+		# 		AND = {
+		# 			is_ai = no
+		# 			title_capital_county.title_province = { geographical_region = ghw_region_russia }
+		# 		}
+		# 	}
+		# 	trigger_event = { id = HEE_kiev_rus.0010 }
+		# }
+	}
+
+	on_end = {
+		debug_log = "Rurikid Expansion story ended on:"
+		debug_log_date = yes
+		set_global_variable = {
+			name = rurik_expansion_story_has_ended
+			value = yes
+		}
+	}
+
+	on_owner_death = {	
+		story_owner = {
+			if = {
+				limit = {
+					any_child = { # if the ruler has a reasonable heir...
+						is_primary_heir_of = scope:story.story_owner
+					}
+				}
+				random_child = {
+					limit = {
+						is_primary_heir_of = scope:story.story_owner		
+					}
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}
+			}
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+
+			debug_log = "Successfully replaced the Rurikid Leader"
+			debug_log_date = yes
+			debug_log_scopes = yes
+		}
+	}
+
+	#Start a new war if none is ongoing
+	effect_group = {
+		days = { 50 100 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				NOT = { completely_controls_region = rurikid_invasion_region }
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+
+			effect = {
+				story_owner = {
+					rurikid_war_target_evaluation_and_declaration_effect = yes
+				}
+				debug_log = "The story started a new war for the lead Rurikid"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Rurikid Reinforcements if forces get too weak
+	effect_group = {
+		days = { 100 200 }
+
+		trigger = {
+			story_owner = {
+				#is_at_war = no
+				prestige > 0
+				gold > 0
+				current_military_strength <= 5000
+				NOR = {
+					current_year >= 920 # After this, it is fine for Rurikids to fail in their expansion
+					completely_controls_region = rurikid_invasion_region # No need for added strength when they reach a great extent
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					save_scope_as = owner
+					spawn_rurikid_reinforcements_effect = yes
+				}
+				debug_log = "The story gave reinforcements to the lead Rurikid"
+				debug_log_date = yes
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Story handling in case of succession weirdness
+	effect_group = {
+		days = { 200 300 }
+
+		trigger = { 
+			story_owner = {
+				OR = {
+					current_year >= 1000 # After this, it is fine for Fatimids to stop story expansion
+					completely_controls_region = rurikid_invasion_region # No need for forced expansion when they reach a great extent
+				}
+			}
+		}
+
+		triggered_effect = {
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+}

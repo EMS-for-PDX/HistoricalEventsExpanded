@@ -106,3 +106,14 @@ max_fatimid_invasion_region = {
 		d_sanaa d_jawf-al-yamani d_taizz d_hadramawt d_mahra
 	}
 }
+
+rurikid_invasion_region = {
+	duchies = {
+		#Novgorod
+		d_novgorod d_vepsia d_luki
+		#White Rus
+		d_grodno d_pinsk d_minsk d_polotsk d_smolensk
+		#Ruthenia
+		d_kiev d_turov d_pereyaslavl d_chernigov d_karachev d_novosil
+	}
+}

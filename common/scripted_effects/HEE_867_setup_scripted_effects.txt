@@ -651,6 +651,20 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	# Bulgaria in 867 is more akin to Tribal than Feudal or Admin
+	character:70382 = { # Boris I
+		change_government = tribal_government
+	}
+
+	if = {
+		limit = { exists = title:e_bulgarian_principality.holder }
+		title:e_bulgarian_principality.holder = {
+		 	every_vassal = {
+				change_government = tribal_government
+			}
+		}
+	}
+
 }
 
 
@@ -1653,7 +1667,6 @@ hee_paulicians_867_effect = {
 		}
 	}
 
-
 	# Fortify Paulician capital of Tephrike
 	province:5705 = { save_scope_as = b_tephrice }
 	
@@ -1680,12 +1693,21 @@ hee_kievan_rus_867_effect = {
 	character:40606 = { save_scope_as = oleg } # https://en.wikipedia.org/wiki/Oleg_the_Wise
 
 	# Set up Oleg as Diarch as he will be the one to guide Rurik's son Igor when Igor is young
-	character:40605 = { designate_diarch = character:40606 }
+	scope:rurik = { designate_diarch = scope:oleg }
 
 	remove_generated_diarch_consequences_effect = {
-		NEW_DIARCH = character:40606
-		LIEGE = character:40605
+		NEW_DIARCH = scope:oleg
+		LIEGE = scope:rurik
 	}
+
+	scope:rurik = {
+		add_prestige = 1000
+	}
+
+	scope:oleg = {
+		add_prestige = 1000
+	}
+
 }
 
 ## Dynasty Changes ##

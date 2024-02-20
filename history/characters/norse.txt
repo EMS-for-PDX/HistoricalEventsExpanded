@@ -816,10 +816,11 @@
 
 40606 = {
 	name = "Helgi"		#Oleg the Seer
+	dynasty = hee_volkhvs
 	dna = 40606_helgi_the_seer
 	religion = norse_pagan
 	culture = norse
-	mother = HEE_efanda_mother # Scholars think Oleg was the brother of Rurik's wife
+	mother = HEE_efanda_mother # Some scholars think Oleg was the brother of Rurik's wife
 	diplomacy = 9
 	martial = 9
 	stewardship = 8
@@ -840,7 +841,7 @@
 	}
 	866.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:40605 }
+			set_relation_best_friend = { reason = friend_generic_history target = character:40605 }
 			give_nickname = nick_the_seer
 			random = {
 				chance = 33
@@ -4280,10 +4281,20 @@
 		give_nickname = nick_the_stranger # Oskyldr -> Askold
 		birth = yes
 	}
+	860.6.18 = { # Rus Raid of Constantinople (860)
+		add_prestige = 400 
+		add_prestige_experience = 1000 # Rich and prestigious from raiding
+		effect = {
+			character:6811 = {
+				create_character_memory = { type = 860_raid_on_constantinople }
+			}
+		}
+	}
 	863.1.1 = {
 		add_spouse = 6872
 	}
 	867.1.1 = {
+		religion = "orthodox" # An encyclical letter of Patriarch Photius of Constantinople, datable to early 867, references Rus conversion to Christianity - most likely Askold/Dyre
 		effect = {
 			add_gold = 500
 			# Give Viking adventurer some adventuring troops.
@@ -4321,7 +4332,10 @@
 		}
 	}
 	882.1.1 = {
-		death = yes
+		death = {
+			death_reason = death_murder_known
+			killer = 40606
+		}
 	}
 }
 

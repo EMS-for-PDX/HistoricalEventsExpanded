@@ -755,3 +755,23 @@ charles_danegeld_866 = {
 		years = memory_default_duration
 	}
 }
+
+860_raid_on_constantinople = {
+	categories = { positive war martial battle }
+	icon = "battle.dds"
+	description = {
+		random_valid = { desc = 860_raid_on_constantinople_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = 860_raid_on_constantinople_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = 860_raid_on_constantinople_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}

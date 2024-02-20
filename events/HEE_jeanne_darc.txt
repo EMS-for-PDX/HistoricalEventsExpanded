@@ -1186,6 +1186,7 @@ HEE_jeanne_darc.0023 = {
 				save_scope_as = newly_created_artifact
 				wealth = scope:wealth
 				quality = scope:quality
+				decaying = no
 				history = {
 					type = created
 					recipient = scope:jeanne_the_maid

@@ -1,5 +1,5 @@
 ﻿on_game_start = {
 	events = {
-		iron_crown_historical_artifacts.0023			# Historical Artifacts Generator
+		HEE_historical_artifact_generation.0001		# Historical Artifact Generator
 	}
 }

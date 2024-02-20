@@ -1,20 +1,29 @@
-﻿namespace = iron_crown_historical_artifacts
+﻿namespace = HEE_historical_artifact_generation
 # Generation of historical artifacts #
 
 #Historical artifacts generator at game start
-iron_crown_historical_artifacts.0023 = {
+HEE_historical_artifact_generation.0001	 = {
 	scope = none
 	hidden = yes
 
 	immediate = {
 		#Historical Artifacts
-		random_ruler = {
+		random_ruler = { # Iron Crown
 			limit = {
 				has_title = title:k_italy
 			}
 			if = {
 				limit = { has_dlc_feature = royal_court current_date < 1000.1.1 } #Court artifacts
 				create_artifact_wearing_crown_iron_effect = { OWNER = this }
+			}
+		}
+		random_ruler = { # Raven Banner
+			limit = {
+				has_title = title:d_york
+			}
+			if = {
+				limit = { has_dlc_feature = royal_court current_date < 1000.1.1 } #Court artifacts
+				create_artifact_raven_banner_effect = { OWNER = this }
 			}
 		}
 	}

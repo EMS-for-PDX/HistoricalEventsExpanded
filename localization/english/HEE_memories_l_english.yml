@@ -187,6 +187,11 @@
  charles_danegeld_866_desc_second_perspective_1: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, you paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
  charles_danegeld_866_desc_third_perspective_1: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, King Charles paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
 
+ 860_raid_on_constantinople: "Raid on Constantinople"
+ 860_raid_on_constantinople_desc: "Alongside my friend, I lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, we plundered largely unopposed and, after many days, returned to our own lands in triumph"
+ 860_raid_on_constantinople_desc_second_perspective_1: "Alongside your friend, you lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, you plundered largely unopposed and, after many days, returned to your own lands in triumph"
+ 860_raid_on_constantinople_desc_third_perspective_1: "Haskuldr and Dyre lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, they plundered largely unopposed and, after many days, returned to their own lands in triumph"
+
  #Relationships
  sulayman_and_hasan_rivalry_desc: "Sulayman ibn Abdallah ibn Tahir was appointed governor of Tabaristan in the early 850s, but by 864, his excessive taxation and tyranny caused the residents of the province to rise up in revolt. The rebels, who proclaimed the 'Alid al-Hasan ibn Zayd as their leader, quickly gained strength, drawing support from the people of Tabaristan as well as the Daylamites of neighboring Daylam. After defeating Sulayman's forces, the hated governor abandoned Tabaristan for Gurgan, leaving al-Hasan in control of the province."
  

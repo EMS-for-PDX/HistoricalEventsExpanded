@@ -196,6 +196,10 @@ jeanne_darc_manual_decision = {
 	is_shown = {
 		is_ai = no
 		is_ruler = yes
+		religion = religion:christianity_religion
+		is_at_war = yes
+		highest_held_title_tier >= tier_kingdom
+		piety_level >= 3
 		# Players can trigger whenever because I'm nice
 		# current_date >= 1000.1.1
 		NOT = { exists = global_var:jeanne_darc_spawned }
@@ -210,15 +214,13 @@ jeanne_darc_manual_decision = {
 	}
 
 	is_valid = {
-		religion = religion:christianity_religion
-		is_independent_ruler = yes
-		highest_held_title_tier >= tier_kingdom
+
 	}
 
 	is_valid_showing_failures_only = {
 		is_available_adult = yes
 		is_imprisoned = no
-		is_at_war = yes
+		is_at_war = no
 		NOT = {
 			OR = {
 				has_game_rule = full_gender_equality

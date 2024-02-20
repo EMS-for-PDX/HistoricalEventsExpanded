@@ -63,6 +63,13 @@ HEE_kiev_rus.1 = {
 		
 		set_designated_heir = character:40606
 
+		hidden_effect = {
+			character:40606 = {
+				save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+				create_story = story_rurikid_expansion
+			}
+		}
+
 		ai_chance = {
 			base = 100
 		}
@@ -73,6 +80,15 @@ HEE_kiev_rus.1 = {
 		trigger = {
 			scope:child = {
 				age <= 16
+			}
+		}
+
+		set_designated_heir = scope:child
+
+		hidden_effect = {
+			scope:child = {
+				save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+				create_story = story_rurikid_expansion
 			}
 		}
 
@@ -89,11 +105,21 @@ HEE_kiev_rus.1 = {
 				age >= 16
 			}
 		}
+
+		set_designated_heir = scope:child
+
+		hidden_effect = {
+			scope:child = {
+				save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+				create_story = story_rurikid_expansion
+			}
+		}
 		
 		ai_chance = {
 			base = 0
 		}
 	}
+
 	after = {
 		if = {
 			limit = {

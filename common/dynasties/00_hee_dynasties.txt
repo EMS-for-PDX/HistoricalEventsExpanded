@@ -263,6 +263,8 @@ hee_loire = {
 	culture = "french"
 }
 
+
+# Norse
 hee_nefja = {
 	name = "dynn_Nefja"
 	culture = "norse"
@@ -278,6 +280,20 @@ hee_al_turki = {
 	name = "dynn_al_Turki"
 	culture = "turkish"
 }
+
+hee_volkhvs = {
+	name = "dynn_volkhvs"
+	culture = "norse"
+}
+
+hee_kievichi = {
+	name = "dynn_kievichi"
+	culture = "norse"
+}
+
+
+
+
 
 hee_anbari = {
 	name = "dynn_Anbari"

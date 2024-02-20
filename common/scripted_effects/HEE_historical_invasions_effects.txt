@@ -1280,7 +1280,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_fatimid
 					this = scope:lead_fatimid
 					top_liege = scope:lead_fatimid
-					current_military_strength > scope:lead_fatimid
+					current_military_strength > scope:lead_fatimid.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1304,7 +1304,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_fatimid
 					this = scope:lead_fatimid
 					top_liege = scope:lead_fatimid
-					current_military_strength > scope:lead_fatimid
+					current_military_strength > scope:lead_fatimid.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1334,7 +1334,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_fatimid
 						this = scope:lead_fatimid
 						top_liege = scope:lead_fatimid
-						current_military_strength > scope:lead_fatimid
+						current_military_strength > scope:lead_fatimid.current_military_strength
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1360,7 +1360,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_fatimid
 						this = scope:lead_fatimid
 						top_liege = scope:lead_fatimid
-						current_military_strength > scope:lead_fatimid
+						current_military_strength > scope:lead_fatimid.current_military_strength
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1391,5 +1391,145 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}
+	}
+}
+
+## Rurikids ##
+
+# Rurikd targeting for wars
+rurikid_war_target_evaluation_and_declaration_effect = {
+	# Set the qarmatian leader as reference point
+	save_scope_as = lead_rurikid
+
+	# Select a new target
+	if = { # Check if a direct neighbor is a valid war target
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				NOR = {
+					is_allied_to = scope:lead_rurikid
+					this = scope:lead_rurikid
+					top_liege = scope:lead_rurikid
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_rurikid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = rurikid_invasion_region
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOR = {
+					is_allied_to = scope:lead_rurikid
+					this = scope:lead_rurikid
+					top_liege = scope:lead_rurikid
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_rurikid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = rurikid_invasion_region
+				}
+			}
+			save_temporary_scope_as = next_invasion_target
+			primary_title = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+	}
+	else_if = { # if no direct neighbors are valid war targets, then check the neighbors of the neighbors
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					NOR = {
+						is_allied_to = scope:lead_rurikid
+						this = scope:lead_rurikid
+						top_liege = scope:lead_rurikid
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_rurikid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = rurikid_invasion_region
+					}
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					NOR = {
+						is_allied_to = scope:lead_rurikid
+						this = scope:lead_rurikid
+						top_liege = scope:lead_rurikid
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_rurikid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = rurikid_invasion_region
+					}
+				}
+				save_temporary_scope_as = next_invasion_target
+				primary_title = {
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+		}
+		start_war = {
+			cb = tribal_subjugation_cb
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+}
+
+spawn_rurikid_reinforcements_effect = {
+	save_scope_as = lead_rurikid
+
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = rurikid_event_troops
+		men_at_arms = {
+			type = huscarl
+			stacks = 3
+		}
+		men_at_arms = {
+			type = huscarl
+			stacks = 3
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 350
+		location = scope:lead_rurikid.location
 	}
 }

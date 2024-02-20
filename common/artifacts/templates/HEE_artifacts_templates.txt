@@ -14,7 +14,7 @@
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
-		court_grandeur_baseline_add = 6
+		court_grandeur_baseline_add = 3
 	}
 
 	unique = yes
@@ -32,8 +32,26 @@ jeanne_banner_template = {
 
 	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
 	fallback = {
-		court_grandeur_baseline_add = 6
+		court_grandeur_baseline_add = 5
 	}
 
 	unique = yes
 }
+
+raven_banner_template = { # https://en.wikipedia.org/wiki/Raven_banner
+	can_equip = {
+		always = yes
+	}
+
+	# can this character benefit from the full modifiers of the artifact?
+	can_benefit = {
+		has_religion = religion:germanic_religion
+	}
+
+	# if a given character does not pass the "can_benefit" trigger then this modifier will be applied instead.
+	fallback = {
+		court_grandeur_baseline_add = 5
+	}
+
+	unique = yes
+} 

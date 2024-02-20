@@ -1442,9 +1442,43 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 					geographical_region = rurikid_invasion_region
 				}
 			}
+
 			save_temporary_scope_as = next_invasion_target
-			primary_title = {
-				save_temporary_scope_as = next_invasion_title_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:lead_rurikid.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:lead_rurikid }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:lead_rurikidr: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
 			}
 		}
 	}
@@ -1456,6 +1490,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_rurikid
 						this = scope:lead_rurikid
 						top_liege = scope:lead_rurikid
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1478,6 +1513,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_rurikid
 						this = scope:lead_rurikid
 						top_liege = scope:lead_rurikid
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1501,9 +1537,27 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 	if = {
 		limit = {
 			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		start_war = {
 			cb = tribal_subjugation_cb
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		start_war = {
+			cb = invasion_war
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}

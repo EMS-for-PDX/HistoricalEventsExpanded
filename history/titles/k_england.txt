@@ -2587,7 +2587,7 @@ c_berkshire = {
 	}
 	860.1.1 = {
 		liege = d_somerset
-		holder = hee_aethelwulf
+		holder = hee_aethelwulf_of_berkshire
 	}
 	# 865.1.1 = {
 		# liege = "k_england"

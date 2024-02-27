@@ -8953,8 +8953,32 @@ armenian.000065 = {
 	#dynasty = 0
 	religion = "armenian_apostolic"
 	culture = "armenian"
+
+	#Skills
+	diplomacy = 10
+	learning = 10
+	
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = zealous
+	trait = just
+	trait = temperate
+	trait = humble
+	
+	#Other Traits
+	trait = theologian
+	trait = devoted
+
 	838.1.1 = {	#Fictionalised birth date.
 		birth = yes
+	}
+	866.1.1 = {
+		employer = 41505
+		effect = {
+			set_relation_friend = character:41505 # Ashot I
+		}
 	}
 	898.1.1 = {
 		death = yes

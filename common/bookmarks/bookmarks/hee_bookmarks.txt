@@ -560,3 +560,191 @@ bm_867_hee_egypt = {
 
 	}
 }
+
+bm_867_hee_khazaria = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Manasseh II, Khagan of Khazaria
+	character = {
+		name = "bookmark_hee_khazaria_manasseh_ii"
+		history_id = 74025
+		dynasty = 12270
+		dynasty_splendor_level = 3
+		type = male
+		birth = 838.1.1
+		title = e_caspian-pontic_steppe
+		government = tribal_government
+		culture = khazar
+		religion = kabarism
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 925 600 }
+
+		animation = personality_bold
+
+		# Belet, Wife
+		character = {
+			name = "bookmark_hee_khazaria_belet"
+			relation = "BOOKMARK_RELATION_WIFE"
+			dynasty = 0
+			type = female
+			birth = 838.1.1
+			culture = khazar
+			religion = kabarism
+			history_id = 173000
+
+			animation = disapproval
+		}
+		
+		# Nisi, Son and Heir
+		character = {
+			name = "bookmark_hee_khazaria_nisi"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 12270
+			type = male
+			birth = 855.1.1
+			culture = khazar
+			religion = kabarism
+			history_id = 74026
+
+			animation = personality_greedy
+		}
+	}
+
+	# Askold and Dir
+	character = {
+		name = "bookmark_hee_khazaria_dyre_the_stranger"
+		history_id = 6811
+		dynasty = 490
+		dynasty_splendor_level = 1
+		type = male
+		birth = 845.1.1
+		title = d_kiev
+		government = tribal_government
+		culture = norse
+		religion = orthodox
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 250 500 }
+
+		animation = personality_rational
+
+		# Askold, Best Friend 
+		character = {
+			name = "bookmark_hee_khazaria_hoskuldr"
+			relation = "BOOKMARK_RELATION_FRIEND"
+			dynasty = hee_kievichi
+			type = male
+			birth = 843.1.1
+			culture = norse
+			religion = orthodox
+			history_id = HEE_askold
+
+			animation = personality_greedy
+		}
+
+	}
+
+	# Ashina Family
+	character = {
+		name = "bookmark_hee_khazaria_zachariah"
+		history_id = 74017
+		dynasty = 12269
+		dynasty_splendor_level = 3
+		type = male
+		birth = 840.1.1
+		title = d_don_valley
+		government = tribal_government
+		culture = khazar
+		religion = kabarism
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 625 675 }
+
+		animation = personality_vengeful
+
+		# Yeldem, Sister 
+		character = {
+			name = "bookmark_hee_khazaria_yeldem"
+			relation = "BOOKMARK_RELATION_SISTER"
+			dynasty = 12269
+			type = female
+			birth = 846.1.1
+			culture = khazar
+			religion = kabarism
+			history_id = 194369
+
+			animation = personality_greedy
+		}
+	}
+
+	# Dulo Dynasty
+	character = {
+		name = "bookmark_hee_khazaria_shilki"
+		history_id = 159128
+		dynasty = 591
+		dynasty_splendor_level = 4
+		type = male
+		birth = 830.1.1
+		title = d_volga_bulgaria
+		government = tribal_government
+		culture = bolghar
+		religion = tengri_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 975 200 }
+
+		animation = personality_bold
+
+		# Sarica, Wife
+		character = {
+			name = "bookmark_hee_khazaria_sarica"
+			relation = "BOOKMARK_RELATION_WIFE"
+			dynasty = 1029155
+			type = female
+			birth = 842.1.1
+			culture = bolghar
+			religion = tengri_pagan
+			history_id = 6856
+
+			animation = personality_content
+		}
+
+		# Almis, Son and eventual Heir
+		character = {
+			name = "bookmark_hee_khazaria_almis"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 591
+			type = male
+			birth = 860.1.1
+			culture = bolghar
+			religion = tengri_pagan
+			history_id = 125600
+
+			animation = personality_content
+		}
+
+	}
+
+	# Pechenegs
+	character = {
+		name = "bookmark_hee_khazaria_pechenegs"
+		history_id = 302717
+		dynasty = 2001110	#Aqton
+		dynasty_splendor_level = 1
+		type = male
+		birth = 836.2.12
+		title = c_aqtobe
+		government = tribal_government
+		culture = pecheneg
+		religion = tengri_pagan
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 1250 350 }
+
+		animation = personality_bold
+
+	}
+
+}

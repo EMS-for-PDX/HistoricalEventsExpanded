@@ -11,6 +11,7 @@ on_game_start = {
 		hee_anarchy_at_samarra
 		HEE_travels_of_constantine_and_methodius
 		hee_girart_de_roussillon_retirement
+		hee_brittany_salomon_peace
 	}
 }
 
@@ -184,7 +185,24 @@ hee_girart_de_roussillon_retirement = {
 	}
 }
 
-
+hee_brittany_salomon_peace = {
+	effect = {
+		### 867 - Brittany Chain ###
+		character:163105 = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+					is_at_war = yes
+				}
+				trigger_event = {
+					id = hee_brittany.0001
+					days = 220
+				}
+			}
+		}
+	}
+}
 
 
 

@@ -520,6 +520,26 @@ story_qarmatian_invasion = {
 			}
 		}
 	}
+
+	# End of Story either due to time passing or completing their goal
+	effect_group = {
+		days = { 200 300 }
+
+		trigger = {
+			story_owner = {
+				OR = {
+					current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
+					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
+				}
+			}
+		}
+
+		triggered_effect = {
+			effect = {
+				end_story = yes
+			}
+		}
+	}
 }
 
 story_pechenegs_invasion = {

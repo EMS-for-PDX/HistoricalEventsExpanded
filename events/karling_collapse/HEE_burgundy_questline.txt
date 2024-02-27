@@ -1,7 +1,7 @@
 ﻿namespace = HEE_burgundy_questline
 
-# Lothaire's Chain
-HEE_burgundy_questline.0001 = { #Lothaire's thoughts on his situation
+# Provence
+HEE_burgundy_questline.0001 = { #Girart's historical retirement
 	type = character_event
 	title = HEE_burgundy_questline.0001.t
 	desc = HEE_burgundy_questline.0001.desc

@@ -1,0 +1,270 @@
+﻿namespace = hee_brittany
+
+hee_brittany.0001 = { #Salomon considers peace with West Francia
+	type = character_event
+	title = hee_brittany.0001.t
+	desc = hee_brittany.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = character:HEE_basiliskianos
+		animation = personality_content
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_brittany.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		character:50009 = { save_scope_as = pascweten }
+		
+		title:k_france.holder = { save_scope_as = french_king }
+
+		cp:councillor_chancellor = { save_scope_as = chancellor_of_brittany }
+	}
+
+	option = {
+		name = hee_brittany.0001.a
+
+		custom_tooltip = salomon_dispatches_his_chancellor_to_west_francia
+
+		hidden_effect = {
+
+
+
+		}
+		
+		scope:french_king = {
+			trigger_event = {
+				id = hee_brittany.0002
+				days = { 5 7 }
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { #ahistorical option
+		name = hee_brittany.0001.b
+		
+		custom_tooltip = salomon_refuses_to_dispatch_his_chancellor_to_west_francia 
+
+		hidden_effect = {
+
+
+
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+
+}
+
+hee_brittany.0002 = { #The French King recieves Salomon's Envoy
+	type = character_event
+	title = hee_brittany.0002.t
+	desc = hee_brittany.0002.desc
+	theme = intrigue # Change
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = character:163105
+		animation = personality_dishonorable
+	}
+
+	trigger = {
+		character:163105 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = hee_basil_rise_michael_falls.0002
+				# days = 30 #~1 month
+			# }
+		# }
+	# }
+
+	immediate = {
+
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0002.a
+
+		custom_tooltip = agree_to_salomon_peace_talks
+
+		hidden_effect = {
+			trigger_event = {
+				id = hee_brittany.0003
+				days = { 2 5 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_basil_rise_michael_falls.0002.b
+		
+		custom_tooltip = refuse_salomon_peace_talks
+		
+		hidden_effect = {
+
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_brittany.0003 = { #Franco-Breton Peace Talks - https://en.wikipedia.org/wiki/Treaty_of_Compi%C3%A8gne_(867)
+	type = character_event
+	title = hee_brittany.0003.t
+	desc = hee_brittany.0003.desc
+	theme = intrigue # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:chancellor_of_brittany
+		animation = personality_forgiving
+	}
+
+	trigger = {
+		character:163105 = { is_alive = yes }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	# on_trigger_fail = {
+		# if = {
+			# trigger_event = {
+				# id = hee_basil_rise_michael_falls.0003
+				# days = 30 #~1 month
+			# }
+		# }
+	# }
+
+	immediate = {
+		title:k_france.holder = { save_scope_as = french_king }
+		title:d_brittany.holder = { save_scope_as = breton_duke }
+		character:6878 = { save_scope_as = haesteinn }
+	}
+
+	option = {
+		name = hee_brittany.0003.a
+
+		custom_tooltip = agree_to_salomon_peace_talks
+
+		hidden_effect = {
+
+			# End the current war
+			scope:french_king = {
+				every_character_war = {
+					limit = {
+						primary_defender = scope:breton_duke
+						primary_attacker = scope:french_king
+					}
+					end_war = white_peace
+				}
+			}
+
+			# Break Alliance between Bretons and Vikings
+			scope:haesteinn = {
+				remove_opinion = {
+					target = scope:breton_duke
+					modifier = perk_negotiated_alliance_opinion
+				}
+				cancel_truce_both_ways = scope:breton_duke
+			}
+	
+			# Truces to represent the peace between Franks and Bretons
+			scope:french_king = {
+				add_truce_both_ways = {
+					character = scope:breton_duke
+					days = 3700
+					name = franco_breton_peace_desc
+				}
+			}
+
+			# Brittany gets Avranches as part of the peace
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+			title:c_avranches = {
+				change_title_holder = {
+					holder = character:163105
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_brittany.0003.b
+		
+		custom_tooltip = refuse_salomon_peace_talks
+		
+		hidden_effect = {
+
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

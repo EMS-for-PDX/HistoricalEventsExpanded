@@ -133,7 +133,7 @@ HEE_fairhair_feast = {
 		}
 		character:144000 = {
 			add_character_flag = HEE_fairhair_feast_on_action_fired
-			#trigger_event = HEE_fairhair.3
+			trigger_event = HEE_fairhair.1 
 		}
 	}
 }
@@ -148,6 +148,7 @@ HEE_fairhair = {
 			limit = {
 				character:166329 = {
 					is_alive = yes
+					is_landed = no
 				}
 			}
 			create_title_and_vassal_change = {
@@ -192,18 +193,28 @@ HEE_fairhair = {
 		}
 		if = {
 			limit = {
-				character:166044 = {
-					is_alive = yes
+				character:166329 = {
+					is_ai = yes
+					NOT = { has_character_flag = prevented_from_raiding }
 				}
 			}
-			character:166044 = {
-				set_age = 15
+			character:166329 = {
+				add_character_flag = {
+					flag = prevented_from_raiding
+					days = 400
+				}
 			}
 		}
 	}
 }
 
 HEE_jeanne_darc = {
+	trigger = {
+		AND = {
+			NOT = { exists = global_var:jeanne_darc_spawned }
+			current_year >= 1000
+		}
+	}
 	effect = {
 		if = {
 			limit = { current_date >= 1000.1.1 }

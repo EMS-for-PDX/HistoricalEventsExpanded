@@ -2203,7 +2203,9 @@
 		religion = "orthodox"
 	}
 	924.1.1 = {
-		death = "924.1.1"
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 

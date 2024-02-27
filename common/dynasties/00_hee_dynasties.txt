@@ -319,3 +319,14 @@ hee_al_shii = {
 	name = "dynn_al_Shii"
 	culture = "levantine"
 }
+
+# Bulgarians
+hee_sursuvul = {
+	name = "dynn_Sursuvul"
+	culture = "bulgarian"	
+}
+
+hee_sigritsa = {
+	name = "dynn_Sigritsa"
+	culture = "bulgarian"	
+}

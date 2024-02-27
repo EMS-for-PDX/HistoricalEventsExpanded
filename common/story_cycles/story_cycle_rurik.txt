@@ -193,14 +193,14 @@ story_rurikid_expansion = {
 		}
 	}
 
-	# Story handling in case of succession weirdness
+	# End of Story
 	effect_group = {
 		days = { 200 300 }
 
 		trigger = { 
 			story_owner = {
 				OR = {
-					current_year >= 1000 # After this, it is fine for Fatimids to stop story expansion
+					current_year >= 1000 # After this, its clear the Rurikids have failed and thus its best to stop story expansion
 					completely_controls_region = rurikid_invasion_region # No need for forced expansion when they reach a great extent
 				}
 			}
@@ -208,6 +208,15 @@ story_rurikid_expansion = {
 
 		triggered_effect = {
 			effect = {
+				if = {
+					limit = {
+						story_owner = { completely_controls_region = rurikid_invasion_region }
+					}
+					story_owner = {
+						save_scope_as = owner
+						trigger_event = { id = HEE_kiev_rus.1000 }
+					}
+				}
 				end_story = yes
 			}
 		}

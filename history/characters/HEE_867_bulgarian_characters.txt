@@ -1,0 +1,162 @@
+﻿## Characters for the Bulgarians - 867 ##
+
+HEE_george_sursuvul_father = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
+	name = "Symeon"
+	dynasty = hee_sursuvul
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	# father = marinos
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	825.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		add_spouse = HEE_george_sursuvul_mother
+		religion = "orthodox"
+	}
+	897.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+HEE_george_sursuvul_mother = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
+	name = "Vasilka"
+	female = yes
+	# dynasty = hee_sursuvul
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	# father = marinos
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	833.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		religion = "orthodox"
+	}
+	900.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+HEE_theodore_sigritsa_father = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+	name = "Symeon"
+	dynasty = hee_sigritsa
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	# father = marinos
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	829.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		add_spouse = HEE_theodore_sigritsa_mother
+		religion = "orthodox"
+	}
+	892.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+HEE_theodore_sigritsa_mother = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+	name = "Vasilka"
+	female = yes
+	# dynasty = hee_sursuvul
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	# father = marinos
+	# mother =
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	# sexuality = heterosexual
+	
+	# disallow_random_traits = yes
+	831.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		religion = "orthodox"
+	}
+	897.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+HEE_theodore_sigritsa = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+	name = "Theodore"
+	dynasty = hee_sigritsa
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	father = HEE_theodore_sigritsa_father
+	mother = HEE_theodore_sigritsa_mother
+	# health = 5.0
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	
+	# sexuality = heterosexual
+	# disallow_random_traits = yes
+	866.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		add_spouse = HEE_theodore_sigritsa_mother
+		religion = "orthodox"
+	}
+	924.1.1 = { # Fictional
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

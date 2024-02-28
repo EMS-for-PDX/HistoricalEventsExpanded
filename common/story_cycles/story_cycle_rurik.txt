@@ -16,7 +16,7 @@ story_rurik_health = {
 
 	# Constantly check the health of Rurik
 	effect_group = {
-		days = { 1 2 }
+		days = { 100 150 }
 
 		trigger = {
 			story_owner = {
@@ -35,7 +35,7 @@ story_rurik_health = {
 			effect = {
 				story_owner = {
 					trigger_event = {
-						id = HEE_kiev_rus.1 # Decide Sucessor
+						id = HEE_kiev_rus.0002 # Decide Sucessor
 					}
 				}
 			}
@@ -44,7 +44,7 @@ story_rurik_health = {
 
 	#Constantly check the health of Rurik
 	effect_group = {
-		days = { 1 2 }
+		days = { 150 200 }
 
 		trigger = {
 			story_owner = {
@@ -58,14 +58,13 @@ story_rurik_health = {
 				primary_heir = character:40606
 				has_character_flag = has_considered_succession
 			}
-			#always = yes 
 		}
 
 		triggered_effect = {
 			effect = {
 				story_owner = {
 					trigger_event = {
-						id = HEE_kiev_rus.1 # Reconsider Sucessor
+						id = HEE_kiev_rus.0002 # Reconsider Sucessor
 					}
 				}
 			}

@@ -1,12 +1,36 @@
 ﻿namespace = HEE_kiev_rus
 
 # Kiev Rus Events #
-# Fires on Death of Rurik
-HEE_kiev_rus.1 = {
+HEE_kiev_rus.0001 = { #Rurik comes down with a deadly illness
 	type = character_event
-	id = HEE_kiev_rus.1
-	title = HEE_kiev_rus.1.t
-	desc = HEE_kiev_rus.1.desc
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	immediate = {
+		add_trait = consumption
+
+		if = {
+			limit = {
+				NOT = { has_character_flag = rurik_historical_illness }
+			}
+			add_character_flag = rurik_historical_illness
+		}
+
+		trigger_event = {
+			id = HEE_kiev_rus.0002
+			days = { 3 10 }
+		}
+	}
+}
+
+HEE_kiev_rus.0002 = { # Rurik considers succession
+	type = character_event
+	id = HEE_kiev_rus.0002
+	title = HEE_kiev_rus.0002.t
+	desc = HEE_kiev_rus.0002.desc
 	theme = death
 	left_portrait = {
 		character = root
@@ -59,7 +83,7 @@ HEE_kiev_rus.1 = {
 	}
 
 	option = { 
-		name = HEE_kiev_rus.1.a
+		name = HEE_kiev_rus.0002.a
 		
 		set_designated_heir = character:40606
 
@@ -76,7 +100,7 @@ HEE_kiev_rus.1 = {
 	}
 
 	option = {
-		name = HEE_kiev_rus.1.b
+		name = HEE_kiev_rus.0002.b
 		trigger = {
 			scope:child = {
 				age <= 16
@@ -99,7 +123,7 @@ HEE_kiev_rus.1 = {
 
 	# Choose the Son who is now of age
 	option = {
-		name = HEE_kiev_rus.1.c
+		name = HEE_kiev_rus.0002.c
 		trigger = {
 			scope:child = {
 				age >= 16
@@ -127,9 +151,105 @@ HEE_kiev_rus.1 = {
 			}
 			add_character_flag = has_considered_succession
 		}
+
+		if = {
+			limit = {
+				has_character_flag = rurik_historical_illness
+			}
+			trigger_event = {
+				id = HEE_kiev_rus.0003
+				days = { 3 10 }
+			}
+		}
 	}
 }
 
+HEE_kiev_rus.0003 = { #Rurik dies or fever breaks
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+	}
+
+	#Resend
+
+	immediate = {
+		random_list = {
+			90 = { # Dies
+				hidden_effect = {
+					death = {
+						death_reason = death_consumption
+					}
+				}
+			}
+			10 = { # Rurik's fever breaks
+				hidden_effect = {
+					remove_trait = consumption
+					trigger_event = { # Alt-History, inspired by his near-death experience, Rurik is pushed to forge the Kievan Rus
+						id = HEE_kiev_rus.0004
+						days = { 3 10 }
+					}
+				}
+			}
+		}
+	}
+}
+
+
+HEE_kiev_rus.0004 = { # Alt-History, inspired by his near-death experience, Rurik is pushed to forge the Kievan Rus
+	type = character_event
+	id = HEE_kiev_rus.0004
+	title = HEE_kiev_rus.0004.t
+	desc = HEE_kiev_rus.0004.desc
+
+	theme = death
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:helgi
+		animation = personality_rational
+	}
+
+	immediate = {
+		character:40606 = { save_scope_as = helgi }
+	}
+
+	option = { 
+		name = HEE_kiev_rus.0004.a
+
+		hidden_effect = {
+			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+			create_story = story_rurikid_expansion
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # What Rurik has now is enough for him
+		name = HEE_kiev_rus.0004.b
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_trait = ambitious
+				}
+				remove_trait = ambitious
+				add_trait = content
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
 
 HEE_kiev_rus.1000 = {
 	scope = none
@@ -151,50 +271,3 @@ HEE_kiev_rus.1000 = {
 		resolve_title_and_vassal_change = scope:change
 	}
 }
-
-# HEE_fairhair.1 = { # Eirikr hosts a feast
-# 	type = character_event
-# 	title = HEE_fairhair.1.t
-# 	desc = HEE_fairhair.1.desc
-# 	theme = feast_activity
-# 	left_portrait = {
-# 		character = root
-# 		animation = personality_content
-# 	}
-# 	right_portrait = {
-# 		character = scope:sender
-# 		animation = personality_compassionate
-# 	}
-
-# 	immediate = {
-# 		character:166329 = {
-# 			save_scope_as = king_eirikr
-# 		}
-# 		character:144000 = {
-# 			add_character_flag = {
-# 				flag = HEE_fairhair_1_fired
-# 				days = 30
-# 			}
-# 		}
-# 	}
-
-# 	option = { 
-# 		name = HEE_fairhair.1.a
-# 		character:144000 = {
-# 			trigger_event = {
-# 				id = HEE_fairhair.2
-# 				days = 3 
-# 			}
-# 		}
-# 		ai_chance = {
-# 			base = 100
-# 		}
-# 	}
-
-# 	option = {
-# 		name = HEE_fairhair.1.b
-# 		ai_chance = {
-# 			base = 0
-# 		}
-# 	}
-# }

@@ -838,6 +838,25 @@
 	culture = "pecheneg"
 	father = 180233
 	mother = 180246
+
+	#Skills
+	diplomacy = 7
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 8
+	prowess = 0
+	
+	#Education
+	trait = education_stewardship_3
+	
+	#Personality Traits
+	trait = arrogant
+	trait = generous
+	trait = content
+	
+	#Other Traits
+
 	812.1.19 = {
 		birth = "812.1.19"
 	}
@@ -1317,6 +1336,28 @@
 	dynasty = 2001110	#Aqton
 	religion = tengri_pagan
 	culture = pecheneg
+
+	#Skills
+	diplomacy = 10
+	martial = 9
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 7
+	
+	#Education
+	trait = education_martial_4
+	
+	#Personality Traits
+	trait = gregarious
+	trait = brave
+	trait = vengeful
+	trait = ambitious
+	
+	#Other Traits
+	trait = organizer
+	trait = reaver
+
 	836.2.12 = {
 		birth = yes
 	}

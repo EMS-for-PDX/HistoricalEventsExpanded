@@ -1692,6 +1692,8 @@ hee_kievan_rus_867_effect = {
 	character:40605 = { save_scope_as = rurik } # https://en.wikipedia.org/wiki/Rurik
 	character:40606 = { save_scope_as = oleg } # https://en.wikipedia.org/wiki/Oleg_the_Wise
 
+	title:k_novgorod = { save_scope_as = k_novgorod }
+
 	# Set up Oleg as Diarch as he will be the one to guide Rurik's son Igor when Igor is young
 	scope:rurik = { designate_diarch = scope:oleg }
 
@@ -1706,6 +1708,7 @@ hee_kievan_rus_867_effect = {
 
 	scope:oleg = {
 		add_prestige = 1000
+		add_unpressed_claim = scope:k_novgorod
 	}
 
 }

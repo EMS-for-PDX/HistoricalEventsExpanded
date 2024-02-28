@@ -234,6 +234,7 @@ yearly_global_pulse = {
 		hee_rollo_conquest_of_normandy
 		hee_christianization_of_bohemia
 		HEE_plague_in_africa
+		hee_rurik_illness
 	}
 }
 
@@ -802,6 +803,55 @@ HEE_plague_in_africa = {
 						}
 						trigger_event = {
 							id = HEE_aghlabids_questline.0001
+							days = { 1 365 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+hee_rurik_illness = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = rurik_illness_event_fired }
+			}
+			debug_log = "Checking for chance of firing Rurik's potential death event"
+
+			random = {
+				chance = zero_base_chance
+				modifier = {
+					add = 25
+					current_date > 870.1.1
+				}
+				modifier = {
+					add = 25
+					current_date > 873.1.1
+				}
+				modifier = {
+					add = 25
+					current_date > 875.1.1
+				}
+				modifier = {
+					add = 24
+					current_date > 878.1.1
+				}
+				set_global_variable = {
+					name = rurik_illness_event_fired
+					value = yes
+				}
+				debug_log = "Attempting to force Rurik's potential death event"
+				### 867 - Kievan Rus formation ###
+				#Rurik comes down with a powerful illness
+				character:40605 = {
+					if = {
+						limit = {
+							is_alive = yes
+						}
+						trigger_event = {
+							id = HEE_kiev_rus.0001
 							days = { 1 365 }
 						}
 					}

@@ -49,7 +49,7 @@
 	culture = norse
 	father = 40605
 	mother = 6863
-	875.1.1 = {
+	867.1.1 = { # 875, moved forward as of now - FIX
 		birth = yes
 	}
 	903.1.1 = {
@@ -815,7 +815,7 @@
 }
 
 40606 = {
-	name = "Helgi"		#Oleg the Seer
+	name = "Oleg"		#Oleg the Seer
 	dynasty = hee_volkhvs
 	dna = 40606_helgi_the_seer
 	religion = norse_pagan
@@ -843,9 +843,15 @@
 		effect = {
 			set_relation_best_friend = { reason = friend_generic_history target = character:40605 }
 			give_nickname = nick_the_seer
-			random = {
-				chance = 33
-				give_witch_secret_or_trait_effect = yes
+			add_trait = lifestyle_mystic
+			add_trait_xp = {
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
 			}
 		}
 	}	

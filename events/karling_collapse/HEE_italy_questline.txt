@@ -118,6 +118,11 @@ HEE_italy_questline.0101 = { # Louis has the option to garrison southern Italy a
 		
 		hidden_effect = {
 			# Louis garrisons his troops across Southern Italy
+			add_character_modifier = {
+				modifier = armies_engaged_in_the_south_modifier
+				days = 1825
+			}
+
 			title:c_bari = {
 				add_county_modifier = {
 					modifier = louis_imperial_garrison
@@ -186,7 +191,7 @@ HEE_italy_questline.0101 = { # Louis has the option to garrison southern Italy a
 			add_character_flag = bari_has_been_lost
 			trigger_event = {
 				id = HEE_italy_questline.0131
-				days = { 7 10 }
+				days = { 2 5 }
 			}
 		}
 		
@@ -223,7 +228,7 @@ HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Bene
 	}
 	right_portrait = {
 		character = scope:adelchis
-		animation = personality_craven
+		animation = personality_coward
 	}
 	#lower_left_portrait = scope:pope
 	#lower_center_portrait = scope:ruler_2
@@ -251,10 +256,6 @@ HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Bene
 	# }
 
 	immediate = {
-		# trigger = { # FIGURE OUT HOW TO DO THIS WITHOUT TYRANNY
-			# allowed_to_imprison_character_trigger = { CHARACTER = scope:sawdan }
-			# trait_is_criminal_in_faith_trigger = { TRAIT = deviant FAITH = root.faith GENDER_CHARACTER = scope:owner }
-		# }
 		imprison_character_effect = {
 			TARGET = scope:sawdan
 			IMPRISONER = scope:adelchis
@@ -269,7 +270,7 @@ HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Bene
 		scope:sawdan = {
 			trigger_event = {
 				id = HEE_italy_questline.0132
-				days = { 7 14 }
+				days = { 5 12 }
 			}
 		}
 
@@ -434,7 +435,7 @@ HEE_italy_questline.0151 = { # Adelchis visits Sawdan in prison and hears his ma
 	}
 	
 	option = {
-		name = HEE_italy_questline.0151.a
+		name = HEE_italy_questline.0151.b
 		
 		custom_tooltip = i_trust_emperor_louis
 		
@@ -1002,7 +1003,7 @@ HEE_italy_questline.0102 = { # Louis is confronted by Adelchis' guards attemptin
 	}
 	right_portrait = {
 		character = scope:adelchis
-		animation = personality_coward
+		animation = aggressive_sword
 	}
 	#lower_left_portrait = scope:pope
 	#lower_center_portrait = scope:ruler_2
@@ -1529,7 +1530,7 @@ HEE_italy_questline.0156 = { # Adelchis is asked by his chaplain again for Louis
 	}	
 }
 
-HEE_italy_questline.0157 = { # Adelchis is asked by his chaplain again for Louis' release
+HEE_italy_questline.0157 = { # Adelchis is asked by his chaplain yet again for Louis' release
 	type = character_event
 	title = HEE_italy_questline.0157.t
 	desc = HEE_italy_questline.0157.desc
@@ -1649,164 +1650,12 @@ HEE_italy_questline.0157 = { # Adelchis is asked by his chaplain again for Louis
 		}
 
 		ai_chance = {
-			base = 0
+			base = 1000
 		}
 	}
 
 	option = {
 		name = HEE_italy_questline.0157.c
-		
-		custom_tooltip = i_will_not_release_louis
-
-		hidden_effect = {
-			scope:bishop_of_benevento = {
-				add_opinion = {
-					target = root
-					modifier = disappointed_opinion
-					opinion = -15
-				}
-			}
-		}
-
-		scope:adelchis = {
-			trigger_event = {
-				id = HEE_italy_questline.0158 # Bishop will ask...yet again
-				days = { 3 7 }
-			}
-		}
-
-		ai_chance = {
-			base = 1000
-		}
-	}	
-}
-
-HEE_italy_questline.0158 = { # Adelchis is asked by his chaplain yet again for Louis' release
-	type = character_event
-	title = HEE_italy_questline.0158.t
-	desc = HEE_italy_questline.0158.desc
-	theme = crown # Change
-	left_portrait = {
-		character = root
-		animation = disapproval
-	}
-	right_portrait = {
-		character = scope:bishop_of_benevento
-		animation = personality_forgiving
-	}
-	#lower_left_portrait = scope:pope
-	lower_center_portrait = scope:louis_the_younger
-	#lower_right_portrait = scope:adelchis
-
-	trigger = {
-		scope:louis_the_younger = { is_alive = yes }
-		scope:louis_the_younger = { is_imprisoned = yes }
-		is_alive = yes
-		is_landed = yes
-		#is_independent_ruler = yes
-		#is_at_war = no
-		is_imprisoned = no
-	}
-
-	#Resend
-	on_trigger_fail = {
-		if = {
-			trigger_event = {
-				id = HEE_italy_questline.0158
-				days = 7 #~1 Month
-			}
-		}
-	}
-
-	immediate = {
-		character:30228 = { save_scope_as = louis_the_younger } # https://en.wikipedia.org/wiki/Louis_II_of_Italy
-		character:167894 = { save_scope_as = engelberga } # https://en.wikipedia.org/wiki/Engelberga
-		character:163172 = { save_scope_as = gisele } # Gisela (852/855-before 28 April 868), Abbess of the Monastery of San Salvador of Brescia from the year 861.
-		character:7982 = { save_scope_as = ermengard } # https://en.wikipedia.org/wiki/Ermengard_of_Italy
-		character:163071 = { save_scope_as = adelchis } # https://en.wikipedia.org/wiki/Adelchis_of_Benevento
-		character:163094 = { save_scope_as = sawdan } # https://en.wikipedia.org/wiki/Emirate_of_Bari#Rule_of_Sawdan
-		
-		cp:councillor_court_chaplain = { save_scope_as = bishop_of_benevento }
-		
-		stress_impact = {
-			paranoid = medium_stress_impact_loss
-		}
-	}
-	
-	option = {
-		name = HEE_italy_questline.0158.a
-		
-		custom_tooltip = i_will_release_louis_without_condition
-		
-		hidden_effect = {
-			scope:louis_the_younger = {
-				release_from_prison = yes
-			}
-			if = {
-				limit = {
-					scope:engelberga = { is_imprisoned = yes }
-				}
-			}
-			scope:engelberga = {
-				release_from_prison = yes
-			}
-			if = {
-				limit = {
-					scope:ermengard = { is_imprisoned = yes }
-				}
-			}
-			scope:ermengard = {
-				release_from_prison = yes
-			}
-		}
-		
-		scope:louis_the_younger = {
-			trigger_event = {
-				id = HEE_italy_questline.0104 # Louis must travel to Rome
-				days = 1
-			}
-		}
-		
-		scope:adelchis = {
-			trigger_event = {
-				id = HEE_italy_questline.0160 # Adelchis ponders the future
-				days = 1
-			}
-		}
-
-		ai_chance = {
-			base = 0
-		}
-	}
-	
-	option = {
-		name = HEE_italy_questline.0158.b
-		
-		custom_tooltip = i_will_release_louis_with_conditions
-
-		hidden_effect = {
-			scope:bishop_of_benevento = {
-				add_opinion = {
-					target = root
-					modifier = disappointed_opinion
-					opinion = -10
-				}
-			}
-		}
-
-		scope:louis_the_younger = {
-			trigger_event = {
-				id = HEE_italy_questline.0103 # Louis must agree to Adelchis' conditions
-			}
-		}
-
-		ai_chance = {
-			base = 1000
-		}
-	}
-
-	option = {
-		name = HEE_italy_questline.0158.c
 		
 		custom_tooltip = repremand_your_priest_firmly
 
@@ -1830,7 +1679,8 @@ HEE_italy_questline.0103 = { # Louis can be released, if he agrees to Adelchis' 
 	type = character_event
 	title = HEE_italy_questline.0103.t
 	desc = HEE_italy_questline.0103.desc
-	theme = crown # Change
+	theme = prison
+	override_background = { reference = bedchamber }
 	left_portrait = {
 		character = root
 		animation = worry
@@ -2002,7 +1852,8 @@ HEE_italy_questline.0104 = { # Emperor Louis ponders traveling to Rome to meet P
 	type = character_event
 	title = HEE_italy_questline.0104.t
 	desc = HEE_italy_questline.0104.desc
-	theme = crown # Change
+	theme = realm # Change
+	override_background = { reference = terrain } 
 	left_portrait = {
 		character = root
 		animation = stress
@@ -2173,7 +2024,7 @@ HEE_italy_questline.0106 = { # Louis is absolved from his oath and crowned a sec
 	option = {
 		name = HEE_italy_questline.0106.a
 		
-		custom_tooltip = louis_refuses_the_pope
+		custom_tooltip = louis_is_crowned_again
 		
 		hidden_effect = {
 			add_character_flag = was_recrowned_by_the_pope

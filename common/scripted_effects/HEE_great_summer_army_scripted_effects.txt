@@ -69,31 +69,7 @@
 				value = 1950
 			}
 			men_at_arms = {
-				type = light_footmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = light_footmen
-				stacks = 5
-			}
-			men_at_arms = {
 				type = bowmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = huscarl
 				stacks = 5
 			}
 			men_at_arms = {

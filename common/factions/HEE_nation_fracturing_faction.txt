@@ -1,4 +1,4 @@
-﻿nation_fracturing_faction = {
+﻿nation_fracturing_faction = { # REMOVE FOR RELEASE
 	casus_belli = nation_fracturing_faction_war
 	
 	short_effect_desc = nation_fracturing_faction_short_effect_desc
@@ -73,6 +73,7 @@
 
 		liege = {
 			is_independent_ruler = yes
+			legitimacy_level = 0
 			has_realm_law = crown_authority_0
 			NOT = { government_has_flag = government_is_theocracy }
 			custom_tooltip = {
@@ -113,6 +114,7 @@
 		
 		liege = {
 			is_independent_ruler = yes
+			legitimacy_level = 0
 			has_realm_law = crown_authority_0
 			NOT = { government_has_flag = government_is_theocracy }
 			custom_tooltip = {
@@ -226,8 +228,9 @@
 			FACTION_TARGET = scope:faction.faction_target
 		}
 
-		modifier = { # FP4 Divine Mandate perk
-			liege.dynasty = { has_dynasty_perk = fp4_legitimacy_legacy_4 }
+		modifier = { # CE1 Divine Mandate perk
+			desc = "FACTION_REASON_LEGITIMACY_LEGACY_4"
+			liege.dynasty = { has_dynasty_perk = ce1_legitimacy_legacy_4 }
 			add = -35
 		}
 	}

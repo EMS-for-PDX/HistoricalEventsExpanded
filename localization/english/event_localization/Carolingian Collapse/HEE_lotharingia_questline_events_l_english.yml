@@ -2,7 +2,7 @@
 
  #Lothair's Quest for Annulment
  HEE_lotharingia_questline.0001.t: "A Question of Devotion"
- HEE_lotharingia_questline.0001.desc: "Every day I see Teutberga I am reminded of my failure to divorce her and marry my true love Waldrada. These days the mere sight of my legal spouse is a burden I am forced to shoulder, as both the stubborn Pope and my ambitious family seem determined to ensure my barren marriage stands.\n\nI feel myself sometimes weaken in my resolve to see Waldrada become my wife, wondering if perhaps God does not intend for me to be happy or perhaps my enduring love for Waldrada is but a distraction imposed on me by the Devil, but these thoughts, though persistant, can not win. I must endure and find a way to marry the woman I truly love.\n\nThen again... is that what is best...?"
+ HEE_lotharingia_questline.0001.desc: "Every day I see Teutberga I am reminded of my failure to divorce her and marry my true love Waldrada. These days the mere sight of my legal spouse is a burden I am forced to shoulder, as both the stubborn Pope and my ambitious family seem determined to ensure my barren and loveless marriage stands.\n\nSometimes I feel my resolve to see Waldrada become my wife weaken, wondering if perhaps God does not intend for me to be happy or perhaps my enduring love for Waldrada is but a distraction imposed on me by the Devil. But I can not allow these thoughts, though persistant, to win. I must endure and find a way to marry the woman I truly love.\n\nThen again I must wonder... is that what is best...?"
  HEE_lotharingia_questline.0001.a: "I will continue my struggle."
  HEE_lotharingia_questline.0001.b: "I must accept my marriage."
 
@@ -35,13 +35,18 @@
  HEE_lotharingia_questline.0009.desc: "Time have not been kind to me, as my illness has only grown in strength over these last few days. What once was simply bad humors has become an onslaught of constant coughs and a sense of faintness in my head. Some in my entourage fear to come near me now, and even those that do - despite their words assuring me of my eventual recovery - look at me more with mourning in their eyes than anything else, as if they saw me as consigned to death already."
  HEE_lotharingia_questline.0009.a: "God, has thou forsaken me now?"
 
+ HEE_lotharingia_questline.0010.t: "The End...?"
+ HEE_lotharingia_questline.0010.desc: "As you lie in your bed, the weight of your mortality pressing upon you, you can not help but reflect upon the tumultuous journey that led you to this moment. You recall the passion you felt when you first laid eyes on Waldrada, the fury you felt at your father for forcing you to marry Teutberga, the joy you felt when your first child was born, and the struggles you went through to wed the women you truly loved. Part of you, even now so close to meeting him, curses God for his consistent denial of your happiness - of your simple desire to have a true family born of love not politics.\n\nAs your strength wanes and the shadows lengthen around you, you contemplate what might come next, and hope that if God is cruel enough to take you now, he will be merciful enough to see you reunited with your loved ones in the next life."
+ HEE_lotharingia_questline.0010.a: "..."
+
  HEE_lotharingia_questline.0013.t: "Treaty of Meerssen"
- HEE_lotharingia_questline.0013.desc: "With your brother [lothaire.GetTitledFirstName]'s death and him leaving behind no legitimate children, by right his lands should fall to me. However with me and my armies engaged in Southern Italy, my ambitious relatives in East and West Francia have seen fit to discuss among themselves how best to partition *my* lands. I have even heard rumors that [king_of_france.GetTitledFirstName] has been crowned in Metz, having been accepted by many of the local nobility.\n\nWhile it could be too late to salvage my authority north of the Alps, I could abandon my ambitions regarding Southern Italy in a bid to secure Lotharingia..."
+ HEE_lotharingia_questline.0013.desc: "With the death of [lothaire.GetTitledFirstName], and my brother having left behind no legitimate children, by right his lands should fall to me. However with my armies otherwise occupied, my ambitious relatives in East and West Francia have seen fit to discuss among themselves how best to partition *my* lands. I have even heard rumors that [king_of_france.GetTitledFirstName] has been crowned in Metz, having been accepted by many of the local nobility.\n\nWhile it could be too late to salvage my authority north of the Alps, I could abandon my ambitions regarding Southern Italy in a bid to secure Lotharingia..."
  HEE_lotharingia_questline.0013.a: "I must accept unjust partition, for now."
  HEE_lotharingia_questline.0013.b: "I will fight for my inheritance."
 
  #Custom Tooltips
  lothaire_continues_to_seek_an_annulment: "You shall not falter in your pursuit for an annulment"
+ lothaire_discontinues_seeking_an_annulment: "You shall accept your marriage to Teutberga and let Waldrada go"
 
  lothaire_must_go_to_rome: "With Teutberga's agreement, you must now travel to Italy to obtain the assent of [pope.GetTitledFirstName] once you settle your affairs at home"
 
@@ -57,6 +62,8 @@
  lothaire_slows_his_trip_to_recover: "Be it be concern for your illness, fearful it might intensify, or simply to allivate the worries of your entourage, you decide to halt your travel until you recover"
 
  lothaire_ponders_if_this_is_the_end: "Brought low by this illness, a part of you can not help but wonder if this will be your end..."
+
+ lothaire_closes_his_eyes: "The darkness overcomes you, as you drift off to an uncertain future..."
 
  treaty_of_meerssen_is_signed: "You put your ambitions in Southern Italy at the forefront"
  treaty_of_meerssen_is_disputed: "You decide to abandon your ambitions in Southern Italy to prioritize Lotharingia"

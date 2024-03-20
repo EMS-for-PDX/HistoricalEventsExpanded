@@ -35,6 +35,21 @@ HEE_SN_1006 = {
 	}
 }
 
+HEE_1202_syria_earthquake = {
+	trigger = {
+		AND = {
+			NOT = { has_global_variable = 1202_syria_earthquake_has_happened }
+			current_year = 1202
+		}
+	}
+	effect = {
+		trigger_event = {
+			id = HEE_environmental.0100
+			days = { 140 141 }
+		}
+	}
+}
+
 HEE_medieval_warm_period = { # For Medieval Warm Period events
 	trigger = {
 		AND = {

@@ -27,6 +27,32 @@ HEE_memory_supernova_1006 = {
 	}
 }
 
+HEE_memory_earthquake_1202 = {
+	categories = { minor positive } 
+	icon = "_default.dds"
+	description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1202_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1202_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1202_desc_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
 # Michael III
 michael_invasion_of_bulguria = {
 	categories = { positive war martial war_started }

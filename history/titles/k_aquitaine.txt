@@ -830,6 +830,12 @@ c_angouleme = {
 		holder = 190505 #Wulgrin (II)
 		liege = "d_aquitaine"
 	}
+	839.1.1 = {
+		holder = HEE_turpio #Turpio
+	}
+	863.10.4 = {
+		holder = 168131 #Emenon of Poitiers 
+	}
 	
 	#House Taillefer
 	866.1.1 = {
@@ -951,7 +957,9 @@ c_perigord = {
 	806.1.1 = {
 		holder = 190505 #Wulgrin (II)
 	}
-	
+	863.1.1 = {
+		holder = 168131 #Emenon
+	}
 	#House Taillefer
 	866.1.1 = {
 		holder = 40080	#Wulgrim I Taillefer
@@ -1045,9 +1053,13 @@ c_perigord = {
 }
 
 c_limousin = {
-	865.1.1 = {
+	841.1.1 = {
 		liege = d_toulouse
-		holder = 127007 #Bernard de Toulouse
+		holder = 40230 #Raymond I, Count of Toulouse
+	}
+	853.1.1 = {
+		liege = d_aquitaine
+		holder = 168055 #Gerhard II, Count of Limousin
 	}
 	879.1.1 = {
 		holder = 40264	#Foucher/Foulques
@@ -2548,11 +2560,19 @@ d_auvergne = {
 }
 
 c_auvergne = {
+	831.1.1 = {
+		liege = k_france
+		holder = 90130	#Gerard, Count of Auvergne
+	}
 	864.1.1 = {
 		liege = d_aquitaine
-		holder = 127019	#Bernard I
+		holder = 127021	#Bernard I
 	}
-	
+	871.1.1 = {
+		liege = d_aquitaine
+		holder = 127019	#Bernard II Plantapilosa
+	}
+
 	#House of Auvergne
 	950.1.1 = {
 		holder = 40124	#Robert II de Clermont
@@ -3331,7 +3351,13 @@ c_poitiers = {
 		holder = 190510 #Abbon
 		liege = d_aquitaine
 	}
-	852.1.1 = {
+	828.1.1 = {
+		holder = 168131	#Emenon of Poitiers 
+	}
+	838.1.1 = {
+		holder = 168136	#Bernard II, Count of Poitiers
+	}
+	839.1.1 = {
 		holder = 90129	#Ramnulf I
 		liege = d_aquitaine
 	}

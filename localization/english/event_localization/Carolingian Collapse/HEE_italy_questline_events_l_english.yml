@@ -1,0 +1,140 @@
+﻿l_english:
+
+ HEE_italy_questline.0101.t: "Security in the South"
+ HEE_italy_questline.0101.desc: "Despite my recent victory over the Muslims with my successful capture of Bari, Southern Italy remains unsecured. Whispers of a possible Muslim military response echo throughout the land, the defeated [sawdan.GetTitledFirstName] remains still holds great support among the populace, and even the Lombard princes who invited me South for protection now view my presence as an irritation. Even so, the city of Bari, a prize that has long eluded me, now belongs to me, the question now becomes how best to hold it.\n\nWhile perhaps it could be potential provocation, I could deploy a number of my troops to garrison key Christian controlled forts in Southern Italy - which would serve both as a stabilizing force to the populace and a deterent to my enemies."
+ HEE_italy_questline.0101.a: "The South must remain secure."
+ HEE_italy_questline.0101.b: "This would be a step too far."
+
+ HEE_italy_questline.0131.t: "God works in strange ways"
+ HEE_italy_questline.0131.desc: "Failure. That is what my attempt to flee back into friendly territory has ended in. Not only has my capital Bari now fallen to that Christian Emperor in the North, but now I find myself at their so-called mercy. Still, not all is lost. My captor [adelchis.GetTitledFirstName] is no true friend to [louis_the_younger.GetTitledFirstName] and has so far treated me well. He allows me to recieve many visitors and ironically enough, it seems I may be more popular amongst the people than their supposed Emperor.\n\nIt may be possible to twist my current imprisonnment to my advantage - the Beneventian Prince seems quite malleable, but perhaps it would just be best to seek a more immediate end to my imprisonment..."
+ HEE_italy_questline.0131.a: "Allah has given me this opportunity, I can not refuse it."
+ HEE_italy_questline.0131.b: "Escape is the best and only real option."
+
+ HEE_italy_questline.0132.t: "The Final Push"
+ HEE_italy_questline.0132.desc: "For several days now I have had the opportunity to speak with my "host" [adelchis.GetTitledFirstName]. And over time, I have glimpsed ever so slightly into the mind of this Christian Prince: His worries, doubts, and fears. It has fallen on him to preserve his ancient principality and its independence, and now that it seems the threat I once posed has deminished, he now ponders if the next threat comes from the North.\n\nThe Prince seems posed to take action against his former ally, it seems now I only need to say the right words to resonate with what he wishes to hear..."
+ HEE_italy_questline.0132.a: "[louis_the_younger.GetTitledFirstName] is an arrogant soul, he may think it his right to rule over you."
+ HEE_italy_questline.0132.b: "[louis_the_younger.GetTitledFirstName] is known for his greed, he might seek to steal your wealth and lands."
+ HEE_italy_questline.0132.c: "[louis_the_younger.GetTitledFirstName] is a fickle man, his word can not be trusted."
+
+ HEE_italy_questline.0151.t: "Whom to trust..."
+ HEE_italy_questline.0151.desc: "For some time now, [sawdan.GetTitledFirstName] has been an... unwilling recipient of Beneventian hospitality. And so I have taken the liberty of conversing with my once-foe on several occasions - a man who despite his current situation remains affable and cordial, bearing a poise I do not believe I could have in a similiar situation.\n\nThough our conversation began on mundane subjects, it quickly shifted to a figure familiar to us both: [louis_the_younger.GetTitledFirstName]. The so-called Emperor of the Romans has seen fit in the aftermath of the triumph in Bari to occupy my fortresses and continue to infringe upon my city. I had hoped that the Emperor would be a useful counterweight to the Muslim threat, but now that the Muslim threat has vanished, perhaps he is now my Principality's greatest threat? My own thoughts are echoed by Sawdan's words, as he speaks of Louis' reputation for vanity, greed, and fickleness. Is it possible I can trust a man such as that?"
+ HEE_italy_questline.0151.a: "[sawdan.GetTitledFirstName]'s words may hold some truth..."
+ HEE_italy_questline.0151.b: "Does [sawdan.GetTitledFirstName] take me for a fool?"
+
+ HEE_italy_questline.0152.t: "The Best Course of Action"
+ HEE_italy_questline.0152.desc: "With a furrowed brow, you find yourself once more gazing out of the window of your chamber, watching the sun dip below the horizon. Your mind races, considering the delicate balance of power within the Italian peninsula. With his victory at Bari, [louis_the_younger.GetTitledFirstName]' presence now looms large, casting a shadow over each of the Southern Italian realms, and may now pose a threat to the ancient principality in your care and its independence which you seek to perserve.\n\nTurning your attention to the map spread out before you, you trace the borders of your realm with an unsteady hand. What action shall you take? What course shall you set that best ensures the prosperity and security of you and your people..."
+ HEE_italy_questline.0152.a: "Swift action is best, my guard stands ready."
+ HEE_italy_questline.0152.b: "It may be best to seek further support before acting."
+ HEE_italy_questline.0152.c: "I will confront [louis_the_younger.GetTitledFirstName] personally."
+ HEE_italy_questline.0152.d: "Perhaps now is not the time to act..."
+
+ HEE_italy_questline.0153.t: "Letters of Intent"
+ HEE_italy_questline.0153.desc: "In your chambers, surrounded by maps and parchments detailing your realm's affairs, you find it necessary once more to ponder your next move against [louis_the_younger.GetTitledFirstName]. [louis_the_younger.GetTitledFirstName]' ambitions threatens not only your own domain but also the autonomy of *all* Southern Italian lords, and thus, you consider the idea of seeking assistance from the Lords of Spoleto, Capua, and Salerno.\n\nIn the quiet of your chambers, you ponder the implications of reaching out to these lords. Would they see the wisdom in joining forces against a common foe? Or would they view your proposal with suspicion, wary of your sincerity? Worst of all, they could themselves alert [louis_the_younger.GetTitledFirstName] of your plans, ruining the plans you have labored to keep hidden. Yet even with these concerns, the allure of a united front against [louis_the_younger.GetTitledFirstName] is undeniable..."
+ HEE_italy_questline.0153.a: "The support of the Southern Lords is essential."
+ HEE_italy_questline.0153.b: "The risk is too great."
+
+ HEE_italy_questline.0171.t: "A Dangerous Proposition"
+ HEE_italy_questline.0171.desc: "A relatively mundane day is made far more interesting when a messenger enters your hall with a letter bearing the seal of [adelchis.GetTitledFirstName]. Inside, you find yourself presented with a delicate proposition: a plea for assistance from [adelchis.GetTitledFirstName], who seeks your aid against [louis_the_younger.GetTitledFirstName]. It seems the Prince fears that with the fall of Bari, [louis_the_younger.GetTitledFirstName] will seek to impose his rule over all of Southern Italy - Muslim and Christian alike.\n\nYou retire to the solitude of your chambers to ponder the weighty decision that this missive brings before you. Thoughts swirl in your mind as you consider the implications of aligning yourself with Adelchis. On one hand, the opportunity to challenge the authority of a ruler whose ambitions may threaten the autonomy of your Principality resonates deeply with you. On the other hand, there is no small amount of risk. Foremost among them is can Adelchis be trusted as an ally, or does he plan to merely use you towards some unknown purpose?"
+ HEE_italy_questline.0171.a: ""[louis_the_younger.GetTitledFirstName] is indeed a threat, once best faced alongside allies.""
+ HEE_italy_questline.0171.b: ""[louis_the_younger.GetTitledFirstName] has yet to prove himself my enemy.""
+
+ HEE_italy_questline.0154.t: "The Time for Action"
+ HEE_italy_questline.0154.desc: "With the replies from the other lords of Southern Italy now in hand, the pieces of your plan finally begin to fall into place, and the time to move against [louis_the_younger.GetTitledFirstName] moves ever closer. As you convene with your advisors and trusted confidants, plans begin to take shape with a clarity born of determination and purpose. The Southern Italian lords, once divided by petty rivalries and squabbles, now stand united in their resolve to challenge the authority of Louis II and assert their authority over Southern Italy.\n\nBut even as you revel in the prospect of victory, a shadow of doubt lingers in the recesses of your mind. Will this alliance you have forged prove strong enough to withstand the trials that lie ahead? Can you trust your newfound allies to remain steadfast in the face of adversity, or will they falter when the moment of truth arrives? As your advisors and trusted confidants look to you for direction, is it finally time to take action?"
+ HEE_italy_questline.0154.a: ""We move against [louis_the_younger.GetTitledFirstName] at once!""
+ HEE_italy_questline.0154.b: ""I have changed my mind, it is not time to move against [louis_the_younger.GetTitledFirstName].""
+
+ HEE_italy_questline.0102.t: "Betrayal in Benevento"
+ HEE_italy_questline.0102.desc: "A calm night is interrupted by the sounds of heavy footsteps echoing outside your chambers in the corridor. Before you can question the cause or source of the noise, [adelchis.GetTitledFirstName] and a number of his guards burst into your chambers, their faces twisted with determination and hostility. The scene before you turns swifttly to one of chaos and confusion, as your family and attendants react with shock and alarm to the sudden intrusion.\n\nYour mind races as you struggle to comprehend the reason for this unexpected intrusion, but the fog of confusion lifts ever so slightly as the Prince approaches you. The cold steel of his voice cuts through the air like a dagger, as he accuses you of treachery and treason again Benevento - his words dripping with venomous intent as he demands the surrender of you, your family, and guard. You glance at the small number of household guards at your disposal, who await your orders with swords drawn. Though outnumbered, they will fight to the death to defend you if you give the order, but will you?"
+ HEE_italy_questline.0102.a: ""Lay down your weapons men, no one shall be harmed.""
+ HEE_italy_questline.0102.b: ""To arms men!""
+
+ HEE_italy_questline.0155.t: "Appeal from a Higher Power"
+ HEE_italy_questline.0155.desc: "While I believed that imprisoning [louis_the_younger.GetTitledFirstName] would ease my burdens, it seems to have created some new ones. My court chaplain for some days now has been in a sore mood, and has now revealed the reason why. He has come to me requesting the immediate release of [louis_the_younger.GetTitledFirstName]. His words speak to the importance of mercy and forgiveness, of upholding the principles of justice and compassion even in the face of uncertainity.\n\nWhile my chaplain certainly speaks well, it does nothing to alleviate my fears of what might occur if I allow [louis_the_younger.GetTitledFirstName] to go free. Still, the request of my chaplain demands a response."
+ HEE_italy_questline.0155.a: ""You may be right. [louis_the_younger.GetTitledFirstName] may go free at once.""
+ HEE_italy_questline.0155.b: ""[louis_the_younger.GetTitledFirstName] may go free, on some conditions...""
+ HEE_italy_questline.0155.c: ""I am no fool! [louis_the_younger.GetTitledFirstName] can not go free!""
+
+ HEE_italy_questline.0156.t: "Appeal from a Higher Power"
+ HEE_italy_questline.0156.desc: "For the second time in as many weeks, you find yourself confronted by [bishop_of_benevento.GetTitledFirstName] on the subject of [louis_the_younger.GetTitledFirstName]'s imprisonment. It seems my previous answer did not settle the matter for [bishop_of_benevento.GetTitledFirstName], and thus I again am subjected to a lecture on the need to release [louis_the_younger.GetTitledFirstName].\n\nAlthough this appeal calls not on the importance of traditional Christian values such as mercy and forgivness, but instead on the political necessity of [louis_the_younger.GetTitledFirstName]'s release. [bishop_of_benevento.GetTitledFirstName] claims that to continue to hold the Emperor will only invite chaos to our realm, both from Christians seeking retribution for [louis_the_younger.GetTitledFirstName]'s imprisonment and by Muslims who may be enboldened when they hear the news. It seems I again must make my stance clear on this issue..."
+ HEE_italy_questline.0156.a: ""You may be right. [louis_the_younger.GetTitledFirstName] may go free at once.""
+ HEE_italy_questline.0156.b: ""[louis_the_younger.GetTitledFirstName] may go free, on some conditions...""
+ HEE_italy_questline.0156.c: ""I am no fool! [louis_the_younger.GetTitledFirstName] can not go free!""
+
+ HEE_italy_questline.0157.t: "Third Times the Charm?"
+ HEE_italy_questline.0157.desc: "For days now you have heard murmurings about your court about your treatment of [louis_the_younger.GetTitledFirstName], the voices seeming increasing with each passing hour. And now, yet again, you find yourself grappling with a familiar dilemma as your court chaplain approaches you with a request for the release of [louis_the_younger.GetTitledFirstName] from prison. Despite your previous refusals, the chaplain's unwavering persistence serves as a constant reminder of the weight of the decision you took to stem [louis_the_younger.GetTitledFirstName]'s ambitions.\n\nIt seems only yesterday my court supported my action against [louis_the_younger.GetTitledFirstName], but it seems their memory is short, as now they grumble and moan about the cost of such an inprisonment - and deride me for doing so. Have they so quickly forgotten the threat that [louis_the_younger.GetTitledFirstName] poses to our independence? But it seems despite my previous answers, I must once more make my position clear on this subject..."
+ HEE_italy_questline.0157.a: ""You may be right. [louis_the_younger.GetTitledFirstName] may go free at once.""
+ HEE_italy_questline.0157.b: ""[louis_the_younger.GetTitledFirstName] may go free, on some conditions...""
+ HEE_italy_questline.0157.c: ""Silence! I will hear NO more on this subject!""
+
+ HEE_italy_questline.0103.t: "The Price of Freedom"
+ HEE_italy_questline.0103.desc: "Some time has passed since your capture, and you continue to remained confined to the boundaries of this chamber, the modest decor doing little to mask the fact that while this room contains neither bars nor chains - it remains a prison all the same. The days have stretched on, each passing moment a testament to both the injustice and indignity of your captivity.\n\nSuddenly, the heavy wooden door creaks open, admitting a shaft of dim light that pierces the gloom of your solitude. [adelchis.GetTitledFirstName] enters, flanked by a retinue of guards, as the sight of him fills you with equal parts anticipation and apprehension as you ponder why he has come. With a voice like ice, Adelchis demands that you swear an oath on the Book never to return to Benevento nor seek revenge for your imprisonment if you wish to secure freedom for yourself and your family. The audacity of his demands leaves you reeling, a bitter taste of indignation rising in your throat as you contemplate the choice before you."
+ HEE_italy_questline.0103.a: ""I shall swear [adelchis.GetFirstName], but never forgive nor forget.""
+ HEE_italy_questline.0103.b: ""I will never agree to these terms [adelchis.GetFirstName].""
+
+ HEE_italy_questline.0160.t: "To the Future"
+ HEE_italy_questline.0160.desc: "With [louis_the_younger.GetTitledFirstName] now free, you contemplate the implications of your actions. Doubts gnaw at the edges of your consciousness, no doubt the echoes of the reasons you had to act against him to begin with.\n\nWill Louis honor the terms of his release, or will he seek retribution for his unjust imprisonment despite his oath? The uncertainty of it all looms large in your mind, a reminder of the precariousness of action and the fragility of power. But it remains out of your hands now. [louis_the_younger.GetTitledFirstName] is now free, or as free as one shackled by a title can be, and you only can hope that your paths never cross again."
+ HEE_italy_questline.0160.a: ""It rests in God's hands now...""
+
+ HEE_italy_questline.0104.t: "The Way Forward"
+ HEE_italy_questline.0104.desc: "For too long you were subject to the deceitful machinations of Adelchis of Benevento, but now you stand liberated from the chains of unjust imprisonment. The taste of freedom is sweet upon your lips, a welcome reprieve from the darkness that once threatened to engulf you and your family.\n\nYet, as you survey the landscape before you, a nagging shadow lingers in the recesses of your mind. The shame of your imprisonment, and the oath that you were compelled to swear, hangs over you. To be absolved of my oath, and be free of my shame, would require the intervention of the clergy - and among the clergy, only the Pope is suitable for one of my rank.\n\nBut Rome is its own beast, and many among my party seek the comfort of home in the North. Indeed, even a part of me wishes the same. Nevertheless, the choice naturally falls to me, so the question reamins of which path shall I follow?"
+ HEE_italy_questline.0104.a: ""The Eternal City awaits.""
+ HEE_italy_questline.0104.b: ""What I seek most at this moment is the comfort of home.""
+
+ HEE_italy_questline.0105.t: "A Holy Audience"
+ HEE_italy_questline.0105.desc: "Having recently arrived in Rome, you stand before the hallowed halls of the Vatican, anticipation coursing through your veins as you prepare to meet with the Pope. The doors swing open before you, revealing the grandeur of the papal audience chamber in all its splendor. The air is thick with incense and the murmurs of attendants, a palpable sense of reverence filling the space as you approach the throne where the Pope sits in solemn silence.\n\nWith a deep breath, you kneel before His Holiness, your heart pounding in your chest as you plead your case. You speak of your recent imprisonment at the hands of [adelchis.GetTitledFirstName], of the injustices that have been visited upon you and your family. You beseech the Pope for absolution, for a release from the oath you were forced to swear under duress. The Pope hears your words, and offers both a release to your oath and an opportunity to erase all shame from your name: a second crowning as Emperor of the Romans."
+ HEE_italy_questline.0105.a: ""Your words do me great honor, I would gladly accept.""
+ HEE_italy_questline.0105.b: ""While your words are welcome, I respectfully must decline.""
+
+ HEE_italy_questline.0106.t: "The Second Crowning"
+ HEE_italy_questline.0106.desc: "The interior of St. Peter's Basilica is illuminated by the soft glow of candlelight as I enter this sacred space, accompanied by my retinue who comprise a solemn procession. The air is heavy with anticipation as the faithful gather to witness a momentous occasion - my second coronation as Emperor of the Romans, blessed by the Holy Father himself. I kneel before the Pope, who is clad in resplendent robes of crimson and gold, as the pontiff raises his hand in benediction, signaling the beginning of the sacred ceremony.\n\nIn a voice that resonates with authority, the Pope bestows his blessing upon me, invoking the favor of the Almighty as he places the imperial crown upon his head. The hushed murmurs of the assembled crowd swell to a crescendo as the momentous occasion unfolds before them, the echoes of history reverberating through these hallowed halls.\n\nBut even as the cheers of the faithful fill the air, a solemn undertone lingers beneath the surface - the matter of my oath to [adelchis.GetTitledFirstName], a stain upon my honor that cannot be ignored. With a gesture of solemn grace, the Pope turns to me, his expression grave as he speaks words of absolution, washing away the shame of my recent captivity and releasing me from the bonds of my oath. With the ceremony complete, the Pope beckons me to stand, and bask once more in the glory of the title I have again recieved."
+ HEE_italy_questline.0106.a: "I rise once more as imperator Romanorum "
+
+ # Custom Tooltips
+ louis_garrisons_southern_italy: "You shall deploy a portion of your army to garrison forts across Southern Italy"
+ louis_doesnt_garrison_southern_italy: "Whatever your reasons, you will refrain from garrisoning forts in Southern Italy"
+
+ sawdan_schemes_against_louis: "You will attempt to use your current situation to scheme against [louis_the_younger.GetTitledFirstName]"
+ sawdan_seeks_to_escape: "You will prioritize nothing but your escape and safety."
+
+ louis_is_an_arrogant_man: "You seek to remind [adelchis.GetTitledFirstName] of [louis_the_younger.GetTitledFirstName]'s reputation for vanity - and an arrogance that may believe that he should rule over all Christians, including those in Benevento..."
+ louis_is_an_greedy_man: "You seek to remind [adelchis.GetTitledFirstName] of [louis_the_younger.GetTitledFirstName]'s reputation for greed - and an avarice that may seek the lands and wealth that can be found aplenty in Southern Italy..."
+ louis_is_an_fickle_man: "You seek to remind [adelchis.GetTitledFirstName] of [louis_the_younger.GetTitledFirstName]'s reputation for fickliness - and that no matter what the Christian Emperor promises, there can be no guarantee that he will keep his word..."
+
+ perhaps_sawdan_is_right: "Despite the source, you can not deny there is some truth in what [sawdan.GetTitledFirstName] says. If [louis_the_younger.GetTitledFirstName] is indeed the next threat I must face, how best shall I deal with him..."
+ i_trust_emperor_louis: "You will hear no more whispers from your prisoner. No matter your reasons, you shall put some measure of trust in [louis_the_younger.GetTitledFirstName] - or at least more trust than you have in [sawdan.GetTitledFirstName]."
+
+ emperor_louis_must_be_arrested_by_my_guards_immediately: "The element of surprise may be key. Alongside your trusted guard, you will seek to arrest [louis_the_younger.GetTitledFirstName] while he remains in Benevento."
+ perhaps_other_southern_italian_lords_will_agree_to_help_me: "To act alone may be foolhardy. It would be best to seek the support of my fellow Southern Italian lords in my endeavour to keep Southern Italy out of the hands of [louis_the_younger.GetTitledFirstName]."
+ i_will_confront_emperor_louis_in_person: "A direct approach may be best. I will confront [louis_the_younger.GetTitledFirstName] personally about my concerns and allow him the opportunity to speak."
+ perhaps_no_action_is_the_best_action: "Sometimes no action is the smartest action. Now is not the time to act against i_can_not_risk_sending_letters."
+
+ i_will_send_letters_asking_for_their_support: "Believing the need for a united Southern Italian front is too great, you will dispatch letters to your neighboring lords in attempt to gain their support against [louis_the_younger.GetTitledFirstName]"
+ i_can_not_risk_sending_letters: "Deeming the risk too great, you will not seek the support of your fellow Lords of Southern Italy."
+
+ i_will_support_adelchis: "You decide to support the schemes of [adelchis.GetTitledFirstName] against [louis_the_younger.GetTitledFirstName]."
+ i_will_not_support_adelchis: "Whatever your reasonings, you decide to not support the schemes of [adelchis.GetTitledFirstName] against [louis_the_younger.GetTitledFirstName]."
+
+ the_time_to_act_against_louis_is_now: "The time for plans is over. The time for action is now. Alongside your guard, you will move to arrest and imprison [louis_the_younger.GetTitledFirstName]."
+ perhaps_a_different_course_of_action: "More planning never hurt anyone. You will call off the current plan of action and deliberate once more on the best course of action (if any) to take against [louis_the_younger.GetTitledFirstName]."
+
+ louis_surrenders_peacefully: "For the moment you are outnumbered and outmaneuvered. To fight now would lead only to unnecessary injury and perhaps even death, a risk that will not only burden your guards, but also your family who stand beside you. As much as it pains you, you will concede to the unjust treatment that surely awaits you at [adelchis.GetTitledFirstName]' hand."
+ louis_attempts_to_fight_back: "You may be outnumbered and outmaneuvered but you refuse to go down without a fight. [adelchis.GetTitledFirstName] has proven himself to be a snake, and if you were to surrender to him now, you could not be sure of your fate - much less the fate of your family who stand beside you. Though the risk is great, you and your guard will seek to escape the current plight by way of valor and steel."
+
+ i_will_release_louis_without_condition: "At the urging of your court chaplain, you will release [louis_the_younger.GetTitledFirstName] and his family as soon as possible, with no conditions for their release."
+ i_will_release_louis_with_conditions: "At the urging of your court chaplain, you will consider releasing [louis_the_younger.GetTitledFirstName] and his family - so long as Louis agrees to swear an oath never to return to Benevento nor seek retribution for his inprisonment."
+ i_will_not_release_louis: "You refuse to consider releasing [louis_the_younger.GetTitledFirstName] or his family at this moment."
+
+ repremand_your_priest_firmly: "Angered by the incessant questioning of your chaplain, you will make clear beyond all doubt that [louis_the_younger.GetTitledFirstName] will remain where he is and that is not to be questioned again."
+
+ louis_agrees_to_the_terms: "Begrudgingly, you must admit the current offer is your best chance of escaping your current situation. And though this oath may bind your actions, you know there may be ways to be absolved of such oaths and be free to return to Benevento sometime in the future to take revenge on those who have wronged you."
+ louis_does_not_agree_to_the_terms: "To acquiesce to these demands, or any demands, is beneath you - you who has been crowned Emperor of the Romans. You do not submit, you demand, and no matter your current situation you will neither bend nor break."
+
+ adelchis_ponders_the_future: "With [louis_the_younger.GetTitledFirstName] now free, you can not help but wonder at what the future will hold for you and your realm."
+
+ louis_travels_to_rome: "Seeking to be freed from both your oath to [adelchis.GetTitledFirstName] and the shame of your imprisonment, you shall travel to Rome to seek an audience with the Supreme Pontiff himself."
+ louis_simply_returns_to_northern_italy: "After so much turmoil, your heart longs for peace and comfort. You shall return to your home in Northern Italy before considering your next steps."
+
+ louis_accepts_the_pope_aid: "You will accept the Pope's offer of both absolution and a second crowning. As such, the oath you swore to [adelchis.GetTitledFirstName] will be voided, and any disgrace that lingers in your name will be cleansed."
+ louis_refuses_the_pope: "Whatever your reasonings, you refuse the Pope's offer. As such, you are still beholden to your oath to [adelchis.GetTitledFirstName] and burdened by the disgrace you suffered by virtue of your imprisonment."
+
+ louis_is_crowned_again: "As the weight of your shame is lifted from your shoulders, you rise for a second time as Emperor of the Romans, head of the Christian Empire, and successor to Charlemagne."

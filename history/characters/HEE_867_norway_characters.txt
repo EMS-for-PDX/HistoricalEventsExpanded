@@ -1,4 +1,118 @@
 ﻿## Characters for Norway - 867 ##
+HEE_harald_granraude = { # Harald Granraude - https://en.wikipedia.org/wiki/Harald_Granraude
+	name = "Harald"
+	dynasty = hee_granraude
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = arrogant
+	trait = brave
+	trait = stubborn
+	765.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 168320
+		}
+	}
+}
+
+HEE_gyrd_granraude = { # Harald Granraude - https://en.wikipedia.org/wiki/Harald_Granraude
+	name = "Gyrd"
+	dynasty = hee_granraude
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_harald_granraude
+	trait = honest
+	trait = brave
+	trait = impatient
+	793.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 168320
+		}
+	}
+}
+
+HEE_asa_haraldsdottir = { # Åsa Haraldsdottir of Agder - https://en.wikipedia.org/wiki/%C3%85sa_Haraldsdottir_of_Agder
+	name = "Asa"
+	female = yes
+	dynasty = hee_granraude
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_harald_granraude
+	
+	#Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 8
+	intrigue = 9
+	learning = 6
+	prowess = 8
+	
+	#Education
+	trait = education_stewardship_3
+	
+	#Personality Traits
+	trait = calm
+	trait = vengeful
+	trait = diligent
+	
+	#Other Traits
+	trait = intellect_good_1
+
+	794.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		add_spouse = 168320 # Gudrød the Hunter
+	}
+	840.1.1 = {
+		death = yes
+	}
+}
+
+HEE_gandalf_father = { # Gandalf Alfgeirsson - https://en.wikipedia.org/wiki/Gandalf_Alfgeirsson
+	name = "Álfgeir"
+	dynasty = hee_granraude
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = arrogant
+	trait = brave
+	trait = stubborn
+	765.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 168320
+		}
+	}
+}
+
+HEE_gandalf_alfgeirsson = { # Gandalf Alfgeirsson - https://en.wikipedia.org/wiki/Gandalf_Alfgeirsson
+	name = "Gandalf"
+	dynasty = hee_granraude
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = arrogant
+	trait = brave
+	trait = stubborn
+	765.1.1 = {
+		birth = yes
+	}
+	819.1.1 = {
+		death = {
+			death_reason = death_murder
+			killer = 168320
+		}
+	}
+}
 
 HEE_snaefrithr_svasadottir = { # Snæfrithr Svásadottir - https://en.wikipedia.org/wiki/Sn%C3%A6frithr_Sv%C3%A1sadottir
 	name = "SnE_frithr"
@@ -196,13 +310,6 @@ HEE_asa_hakondottir = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/H
 	trait = brave
 	trait = honest
 	trait = humble
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	851.1.1 = {
 		birth = yes
 	}
@@ -211,15 +318,104 @@ HEE_asa_hakondottir = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/H
 	}
 }
 
+HEE_asgautr_hakonsson = { # Ásgautr, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
+	name = "Ásgautr"
+	dynasty = 1043302
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 186003
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+
+	#disallow_random_traits = yes
+	850.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_asbjorn_hakonsson = { # # Ásbjǫrn, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
+	name = "Ásbjǫrn"
+	dynasty = 1043302
+	religion = "norse_pagan"
+	culture = "norse"
+	father = 186003
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	#Other Traits
+
+	#sexuality = heterosexual
+	#disallow_random_traits = yes
+	852.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_haraldr_goldbeard = { # Harald Gullskjegg ("Goldbeard", father of Ragnhild, first wife of Halfdan the Black) - https://en.wikipedia.org/wiki/Sogn
+	name = "Haraldr"
+	dynasty = hee_gullskjegg
+	religion = "norse_pagan"
+	culture = "norse"
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	790.1.1 = {
+		birth = yes
+	}
+	848.1.1 = {
+		death = yes
+	}
+}
+
+HEE_rognhildr_goldbeard = { # Ragnhild, first wife of Halfdan the Black - https://en.wikipedia.org/wiki/Sogn
+	name = "RO_gnhildr"
+	female = yes
+	dynasty = hee_gullskjegg
+	religion = "norse_pagan"
+	culture = "norse"
+	father = HEE_haraldr_goldbeard
+
+	#Skills
+
+	#Education
+
+	#Personality Traits
+
+	821.1.1 = {
+		birth = yes
+	}
+	848.12.1 = {
+		death = yes
+	}
+}
+
 HEE_atli_father = { # Atli the Slender - https://en.wikipedia.org/wiki/Atli_the_Slender
 	name = "Hundolf"
-	# female = yes
 	dynasty = hee_gaular # a jarl of Gaular in Fjordane
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	# mother =
-	# health = 5.0
 
 	#Skills
 
@@ -231,11 +427,6 @@ HEE_atli_father = { # Atli the Slender - https://en.wikipedia.org/wiki/Atli_the_
 	trait = wrathful
 	trait = stubborn
 
-	#Other Traits
-
-	#sexuality = heterosexual
-
-	#disallow_random_traits = yes
 	790.1.1 = {
 		birth = yes
 	}
@@ -458,6 +649,25 @@ HEE_eirikr_fictional_second_son = { #
 	864.1.1 = {
 		death = {
 			death_reason = death_battle
+		}
+	}
+}
+
+haki_the_beserker = { # 
+	name = "Haki"
+	religion = "norse_pagan"
+	culture = "norse"
+	trait = education_martial_2
+	trait = wrathful
+	trait = ambitious
+	trait = callous
+	trait = berserker
+	825.1.1 = {
+		birth = yes
+	}
+	849.1.1 = {
+		death = { #killed himself after failing to recover his stolen wife
+			death_reason = death_suicide
 		}
 	}
 }

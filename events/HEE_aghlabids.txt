@@ -37,6 +37,13 @@ HEE_aghlabids_questline.0001 = { # News of a plague outbreaks reaches the Emir
 		character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
 		character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
 
+		scope:muhammad_ii_of_ifriqiya.capital_province = { # Spawn Plague
+			create_epidemic_outbreak = {
+				type = bubonic_plague
+				intensity = minor
+			}
+		}
+
 		if = {
 			limit = { has_title = title:k_africa }
 			title:k_africa = {

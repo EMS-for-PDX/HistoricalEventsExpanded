@@ -1015,7 +1015,7 @@
 
 	father = 190160
 
-	783.1.1 = {
+	792.1.1 = {
 		birth = yes
 	}
 	840.1.1 = {
@@ -3656,6 +3656,8 @@
 	dynasty = 7184
 	religion = catholic
 	culture = lombard
+	trait = cynical
+	trait = devoted
 	trait = theologian
 	trait = architect
 	trait = lifestyle_mystic

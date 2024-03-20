@@ -1,0 +1,90 @@
+﻿## Anarchy at Samarra ##
+
+story_anarchy_at_samarra = {
+	# by EmrysValdr
+	
+	on_setup = {
+		story_owner = { # Add Character Modifiers
+			add_character_modifier = anarchy_at_samarra_financial_straits
+			add_character_modifier = anarchy_at_samarra_loss_of_central_authority
+			add_character_modifier = anarchy_at_samarra_unpaid_soldiery
+		}
+	}
+
+	on_end = {
+		debug_log = "amarchy_at_samarra story ended on:"
+		debug_log_date = yes
+	}
+
+	on_owner_death = {	
+		story_owner = {
+			if = {
+				limit = {
+					AND = {
+						exists = player_heir
+						exists = title:e_arabia.holder
+					}
+				}
+				player_heir = {
+					limit = {
+						is_primary_heir_of = title:e_arabia	
+					}
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}
+			}
+			else = {
+				limit = {
+					AND = {
+						exists = title:e_arabia.holder
+					}
+				}
+				title:e_arabia.holder = {
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}		
+			}
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+
+			debug_log = "Successfully replaced the Abbasid Leader"
+			debug_log_date = yes
+			debug_log_scopes = yes
+		}
+	}
+
+	effect_group = { # Story handling in case of succession weirdness
+		days = 180
+
+		trigger = {
+			story_owner = {
+				NOT = {
+					any_held_title = {
+						this = title:e_arabia
+					}
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { exists = title:e_arabia }
+			effect = {
+				title:e_arabia.holder = {
+					make_story_owner = title:e_arabia.holder
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = { 
+				NOT = { 
+					exists = title:e_arabia 
+				} 
+			}
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+
+}

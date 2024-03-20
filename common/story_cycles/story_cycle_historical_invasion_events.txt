@@ -221,6 +221,43 @@ story_ghaznavid_invasion = {
 
 	#Start a new war if none is ongoing
 	effect_group = {
+		days = { 200 300 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				NOR = {
+					current_year >= 1040 # After this, it is fine for Ghaznavids to decline in strength
+					completely_controls_region = max_ghaznavid_invasion_region # No need for added strength when they reach a great extent
+				}
+				any_held_title = { this = global_var:GhaznavidEmpireTitle }
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					ghaznavid_war_target_evaluation_and_declaration_effect = yes
+				}
+				debug_log = "The story started a new war for the Ghaznavids"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Ghaznavid Reinforcements if forces get too weak
+	effect_group = {
 		days = { 100 200 }
 
 		trigger = {
@@ -228,7 +265,11 @@ story_ghaznavid_invasion = {
 				is_at_war = no
 				prestige > 0
 				gold > 0
-				realm_size <= 120
+				current_military_strength <= 10000
+				NOR = {
+					current_year >= 1040 # After this, it is fine for Ghaznavids to decline in strength
+					completely_controls_region = max_ghaznavid_invasion_region # No need for added strength when they reach a great extent
+				}
 				any_held_title = {
 					this = global_var:GhaznavidEmpireTitle
 				}
@@ -243,9 +284,9 @@ story_ghaznavid_invasion = {
 			}
 			effect = {
 				story_owner = {
-					ghaznavid_war_target_evaluation_and_declaration_effect = yes
+					spawn_ghaznavid_reinforcements_effect = yes
 				}
-				debug_log = "The story started a new war for the seljuks"
+				debug_log = "The story gave reinforcements to the Ghaznavid Leader"
 				debug_log_date = yes
 				story_owner = {
 					save_scope_as = owner
@@ -288,6 +329,26 @@ story_ghaznavid_invasion = {
 
 		triggered_effect = {
 			trigger = { NOT = { exists = global_var:GhaznavidEmpireTitle } }
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+
+	# Story Ending due to size or time
+	effect_group = {
+		days = { 200 300 }
+
+		trigger = { 
+			story_owner = {
+				OR = {
+					current_year >= 1040 # After this, it is fine for Ghaznavids to stop story expansion
+					completely_controls_region = max_ghaznavid_invasion_region # No need for forced expansion when Ghaznavids reach a great extent
+				}
+			}
+		}
+
+		triggered_effect = {
 			effect = {
 				end_story = yes
 			}
@@ -679,6 +740,42 @@ story_pechenegs_invasion = {
 			}
 		}
 	}
+
+	effect_group = {
+		days = 180
+
+		trigger = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				AND = {
+					has_title = title:k_magyar
+					culture = culture:mogyer
+
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				title:k_magyar.holder = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				title:k_magyar.holder = {
+					save_scope_as = invader
+					add_character_flag = undertaking_hungarian_migration
+					trigger_event = east_europe.0141
+					hidden_effect = {
+						add_to_global_variable_list = {
+							name = unavailable_unique_decisions
+							target = flag:flag_launched_hungarian_migration
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
 
 ## Fatimids ##
@@ -758,9 +855,9 @@ story_kutama_uprising = {
 		}
 	}
 
-	# Story handling in case of succession weirdness
+	# Trigger Fatimid Creation and Expansion
 	effect_group = {
-		days = { 100 159 }
+		days = { 100 180 }
 
 		trigger = { 
 			story_owner = {
@@ -877,7 +974,7 @@ story_fatimid_expansion = {
 		}
 	}
 
-	# Story handling in case of succession weirdness
+	# Story Ending due to size or time
 	effect_group = {
 		days = { 200 300 }
 

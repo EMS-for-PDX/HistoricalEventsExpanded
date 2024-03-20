@@ -53,6 +53,23 @@ custom_pecheneg_wallachia = {
 	}
 }
 
+max_ghaznavid_invasion_region = {
+	duchies = {
+		#North and East Persia
+		d_isfahan d_kirman d_yazd d_rayy
+		#k_khorasan
+		d_nishapur d_merv d_ghur d_herat d_balkh d_nasa d_kohestan
+		#k_makran
+		d_jabal_kufs d_makran d_sistan
+		#k_kabulistan
+		d_kabul d_zabulistan
+		#Sindh
+		d_sauvira d_bhakkar
+		#Punjab
+		d_multan d_lahore d_gandhara
+	}
+}
+
 core_qarmatian_region = {
 	duchies = {
 		d_bahrain d_al-hasa
@@ -115,5 +132,57 @@ rurikid_invasion_region = {
 		d_grodno d_pinsk d_minsk d_polotsk d_smolensk
 		#Ruthenia
 		d_kiev d_turov d_pereyaslavl d_chernigov d_karachev d_novosil
+	}
+}
+
+# Region in the Middle East where Earthquake hit hardest
+1202_syria_earthquake_epicenter_region = {
+	duchies = {
+		# Southwestern Syria/Palestine
+		d_damascus d_lebanon d_urdunn d_palestine
+	}
+	
+	counties = {
+		c_homs c_shayzar c_qaryatan c_maab c_balqa
+	}
+}
+
+# Regions where the Earthquake was felt, but not really affected
+1202_syria_earthquake_tremor_region = {
+	duchies = {
+		#Anatolia
+		d_aegean_islands d_ephese d_opsikion d_cilicia d_cibyrrhaeot d_anatolia d_thracesia d_optimatoi d_bucellaria d_paphlagonia d_armeniac d_sebasteia d_charsianon d_cappadocia d_chaldia
+		#Armenia
+		d_mesopotamia d_vaspurakan
+		#Azerbaijan
+		d_azerbaijan
+		#Crete
+		d_krete
+		#Cyprus
+		d_cyprus
+		#Jazira
+		d_diyarrabia d_diyarmudar d_diyarbakr d_euphrates
+		#Mesopotamia
+		d_kermanshah d_basra d_baghdad d_samarra d_kurdistan d_wasit d_kufa
+		#Northern Syria
+		d_aleppo d_antioch
+		#Arabia
+		d_jawf d_shammar d_medina d_mecca d_asir d_najd d_yamama d_al-hasa d_bahrain
+		#Egypt
+		d_alexandria d_delta d_cairo d_al-said d_sinai
+		#Cyrenaica
+		d_cyrenaica d_syrte
+		#Africa
+		d_tunis d_kairouan d_kroumerie d_jerid d_tripolitania
+		#Sicily
+		d_apulia d_salerno d_calabria d_sicily
+		#Hellas
+		d_athens d_achaia
+		#Thessalonika
+		d_thrace d_strymon d_thessalonika d_thessaly
+	}
+	
+	counties = {
+		c_jilat
 	}
 }

@@ -291,9 +291,15 @@ hee_kievichi = {
 	culture = "norse"
 }
 
+hee_granraude = {
+	name = "dynn_Granraude"
+	culture = "norse"
+}
 
-
-
+hee_gullskjegg = {
+	name = "dynn_Gullskjegg"
+	culture = "norse"
+}
 
 hee_anbari = {
 	name = "dynn_Anbari"

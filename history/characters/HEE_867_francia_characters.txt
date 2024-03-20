@@ -1,5 +1,72 @@
 ﻿## Characters for the Francia area - 867 ##
 
+HEE_lothair_the_lame = { # https://en.wikipedia.org/wiki/Lothair_the_Lame
+	name = "Lothaire"
+	dynasty = 25061
+	religion = "catholic"
+	culture = "french"
+	father = 90104
+	mother = 167830
+	trait = clubfooted # he was born disabled
+	848.1.1 = {
+		birth = yes
+	}
+	861.1.1 = {
+		trait = devoted
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+
+HEE_hildegard_daughter_of_the_bald = { # https://en.wikipedia.org/wiki/Charles_the_Bald#Marriages_and_children
+	name = "Godehilde"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "french"
+	father = 90104
+	mother = 167830
+	864.1.1 = {
+		birth = yes
+	}
+	907.1.1 = {
+		death = yes
+	}
+}
+
+HEE_hildegard_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
+	name = "Hildegard"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "french"
+	father = 90123
+	mother = 91385
+	864.1.1 = {
+		birth = yes
+	}
+	888.1.1 = {
+		death = yes
+	}
+}
+
+HEE_gisele_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
+	name = "Gisele"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "french"
+	father = 90123
+	mother = 91385
+	865.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+}
+
 HEE_charles_the_fat_bastard = { # https://en.wikipedia.org/wiki/Bernard_(son_of_Charles_the_Fat)
 	name = "Bernard"
 	# female = yes
@@ -302,5 +369,71 @@ HEE_unknown_wife_of_rastislav = { #
 	}
 	888.1.1 = {
 		death = yes
+	}
+}
+
+HEE_theotgaud_archbishop_of_trier = { # https://en.wikipedia.org/wiki/Theotgaud
+	name = "Theotgaud"
+	dynasty = 246
+	religion = "catholic"
+	culture = "dutch"
+	father = 168626
+	
+	#Education
+	trait = education_learning_1
+	
+	#Personality Traits
+	trait = craven
+	trait = trusting
+	trait = content
+
+	#Other Traits
+	trait = devoted
+
+	835.1.1 = {
+		birth = "835.1.1"
+	}
+	863.10.1 = {
+		trait = excommunicated
+	}
+	867.12.1 = {
+		remove_trait = excommunicated
+	}
+	868.1.1 = {
+		death = "868.1.1"
+	}
+}
+
+HEE_turpio = { # https://en.wikipedia.org/wiki/Turpio
+	name = "Turpio"
+	dynasty = 100217
+	religion = "catholic"
+	culture = "occitan"
+	father = 168129
+	
+	#Skills
+	martial = 9
+	prowess = 10
+
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = zealous
+	trait = generous
+	trait = brave
+
+	#Other Traits
+	trait = architect
+	trait = lifestyle_blademaster
+	trait = unyielding_defender
+
+	807.1.1 = { #Unknown
+		birth = yes
+	}
+	863.10.4 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }

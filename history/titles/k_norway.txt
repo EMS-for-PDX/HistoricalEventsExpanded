@@ -385,6 +385,26 @@ c_vestfold = {
 }
 
 
+d_agder = {
+	790.1.1 = {
+		holder = HEE_harald_granraude # King Harald Granraude of Agder
+		government = tribal_government
+	}
+	819.1.1 = {
+		holder = 168320 # Gudrød Veidekonge
+	}
+	820.1.1 = {
+		holder = HEE_asa_haraldsdottir # Åsa Haraldsdottir 
+	}
+	837.1.1 = {
+		holder = 168323 # Halfdan the Black
+	}
+	850.1.1 = {
+		holder = 186011 # Kjotve the Rich/Cruel
+	}
+}
+
+
 c_telemark = {
 	21.1.1 = {
 		change_development_level = 2
@@ -515,8 +535,21 @@ c_nedenes = {
 		#liege = d_sjaelland
 		government = tribal_government
 	}
-	867.1.1 = {
-		holder = 186011
+	790.1.1 = {
+		holder = HEE_harald_granraude # King Harald Granraude of Agder
+		government = tribal_government
+	}
+	819.1.1 = {
+		holder = 168320 # Gudrød Veidekonge
+	}
+	820.1.1 = {
+		holder = HEE_asa_haraldsdottir # Åsa Haraldsdottir 
+	}
+	837.1.1 = {
+		holder = 168323 # Halfdan the Black
+	}
+	850.1.1 = {
+		holder = 186011 # Kjotve the Rich/Cruel
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -627,8 +660,21 @@ c_agdeside = {
 		#liege = d_sjaelland
 		government = tribal_government
 	}
-	867.1.1 = {
-		holder = 186011
+	790.1.1 = {
+		holder = HEE_harald_granraude # King Harald Granraude of Agder
+		government = tribal_government
+	}
+	819.1.1 = {
+		holder = 168320 # Gudrød Veidekonge
+	}
+	820.1.1 = {
+		holder = HEE_asa_haraldsdottir # Åsa Haraldsdottir 
+	}
+	837.1.1 = {
+		holder = 168323 # Halfdan the Black
+	}
+	850.1.1 = {
+		holder = 186011 # Kjotve the Rich/Cruel
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -945,8 +991,17 @@ c_sogn = {
 		holder = 194012
 		government = tribal_government
 	}
+	810.1.1 = {
+		holder = HEE_haraldr_goldbeard
+	}
+	848.1.1 = {
+		holder = 168324 # Haraldr, Grandson of Goldbeard and son of Halfdan the Black
+	}
+	849.1.1 = {
+		holder = 168323 # Halfdan the Black
+	}
 	850.1.1 = {
-		holder = HEE_atli_the_slender
+		holder = HEE_atli_the_slender # Given to Atli by Halfdan to administer
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.

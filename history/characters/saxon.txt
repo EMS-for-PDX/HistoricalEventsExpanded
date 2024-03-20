@@ -115,9 +115,9 @@
 	851.1.1 = {
 		birth = "851.1.1"
 	}
-	866.1.1 = {
+	867.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:90107 } #His liege Ludwig, who he was on relatively good terms with despite the general instability and discontent in the realm.
+			create_betrothal = character:7912
 		}
 	}
 	875.1.1 = {

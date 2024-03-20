@@ -2,5 +2,9 @@
  
   #Special Traits HEE
 
-  trait_unwed:0 "Unwed"
-  trait_unwed_desc:0 "Whether by choice or circumstance, [ROOT.GetCharacter.GetFirstNameNoTooltip] remains unmarried."
+  trait_unwed: "Unwed"
+  trait_unwed_desc: "Whether by choice or circumstance, [ROOT.GetCharacter.GetFirstNameNoTooltip] remains unmarried."
+
+  trait_widowed: "Widowed"
+  trait_widowed_desc: "This character's spouse has died, leaving them widowed."
+  trait_widowed_character_desc: "The light in [ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] life has been snuffed, leaving [ROOT.GetCharacter.GetHerHim] to continue on alone."

@@ -7741,14 +7741,40 @@
 	}
 }
 
-163117 = {
+163117 = { # https://en.wikipedia.org/wiki/Rimbert
 	name = "Rimbert"
 	religion = "catholic"
 	culture = "dutch"
+
+	#Education
+	trait = education_learning_4
+	
+	#Personality Traits
+	trait = generous 
+	trait = brave
+	trait = zealous
+	trait = diligent
+
+	#Other Traits
+	trait = lifestyle_mystic # it is chronicled in the Vita Rimberti that Rimbert had performed numerous miracles
+	trait = devoted
+
 	830.1.1 = {
 		birth = "830.1.1"
 	}
-	
+	867.1.1 = {
+		effect = {
+            add_trait_xp = {
+                trait = lifestyle_mystic
+                value = {
+                    integer_range = {
+                        min = small_lifestyle_random_xp_low
+                        max = small_lifestyle_random_xp_high
+                    }
+                }
+            }
+        }
+	}
 	888.6.11 = {
 		death = "888.6.11"
 	}
@@ -7783,15 +7809,41 @@
 	}
 }
 
-167704 = {
+167704 = { # https://en.wikipedia.org/wiki/Gunther_(archbishop_of_Cologne)
 	name = "Gunthar"
 	dynasty = 246
 	religion = "catholic"
 	culture = "dutch"
-	trait = education_learning_2
-	father = 168626
-	835.1.1 = {
-		birth = "835.1.1"
+	father = 168625
+
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+	prowess = 6
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = arrogant
+	trait = stubborn
+	trait = cynical
+	trait = diligent
+
+	#Other Traits
+	trait = devoted
+
+	820.1.1 = {
+		birth = "820.1.1"
+	}
+	863.10.1 = {
+		trait = excommunicated
+	}
+	869.7.1 = {
+		remove_trait = excommunicated
 	}
 	873.1.1 = {
 		death = "873.1.1"

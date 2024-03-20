@@ -722,9 +722,13 @@
 	culture = franconian	
 	father = 7946
 	mother = 167811	
+	trait = devoted # abbot of St. Maximin's at Trier
 	839.1.1 = {		
 		birth = "839.1.1"
 	}	
+	867.1.1 = {		
+		employer = 31702 # Owner of Trier
+	}		
 	879.1.1 = {		
 		death = "879.1.1"	
 	}
@@ -18102,12 +18106,28 @@
 		death = yes
 	}
 }
-163052 = {
+163052 = { # https://en.wikipedia.org/wiki/Wilbert_(archbishop_of_Cologne)
 	name = "Wilibert"
 	religion = "catholic"
 	culture = franconian
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = honest
+	trait = zealous
+	trait = temperate
+	
+	#Other Traits
+	trait = devoted
+	trait = diplomat # reckoned the first Archchancellor of Germany
+
 	840.1.1 = {
 		birth = "840.1.1"
+	}
+	867.1.1 = {
+		employer = 167704
 	}
 	889.9.11 = {
 		death = "889.9.11"

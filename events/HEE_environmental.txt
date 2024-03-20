@@ -1,7 +1,7 @@
 ﻿namespace = HEE_environmental
 
 ##################################################
-# Medieval Warm Period
+# Medieval Warm Period & Little Ice Age
 # by EmrysValdr
 ##################################################
 
@@ -313,7 +313,7 @@ HEE_environmental.0001 = { # Hidden Event to add the modifiers
 				limit = {
 					AND = {
 						is_ai = no
-						title_capital_county.title_province = { geographical_region = world_europe }
+						capital_province = { geographical_region = world_europe }
 					}
 				}
 				trigger_event = HEE_environmental.0002 # Medieval Warm Period has started
@@ -714,6 +714,143 @@ HEE_environmental.0101 = { # Fullscreen Intro Event
 	after = {
 		create_character_memory = {
 			type = HEE_memory_supernova_1006
+		}
+	}
+
+}
+
+##################################################
+# 1202 Syria earthquake
+# by EmrysValdr
+##################################################
+HEE_environmental.0200 = { # Hidden Event to add the modifiers
+	# Define Event
+	scope = none
+	hidden = yes
+
+	# Trigger event if 1202 Syria earthquake has not occured
+	trigger = {
+		NOT = { has_global_variable = 1202_syria_earthquake_has_happened }
+	}
+
+	immediate = {
+		hidden_effect = { # Add modifier to counties in Palastine and Southwest Syria
+			every_county_in_region = {
+				region = 1202_syria_earthquake_epicenter_region
+				change_development_level = major_development_level_loss
+				add_county_modifier = {
+					modifier = 1202_syria_earthquake_epicenter_modifier
+					years = 10
+				}
+			}
+
+			# Save variable to prevent repeat prompts
+			set_global_variable = {
+				name = 1202_syria_earthquake_has_happened
+				value = yes
+			}
+
+			every_ruler = { # Notify appropriate rulers of the Earthquake
+				if = {
+					limit = {
+						AND = {
+							is_ai = no
+							capital_province = { geographical_region = 1202_syria_earthquake_epicenter_region }
+						}
+					}
+					trigger_event = HEE_environmental.0201 # Medieval Warm Period has started
+				}
+				if = {
+					limit = {
+						AND = {
+							is_ai = yes
+							capital_province = { geographical_region = 1202_syria_earthquake_epicenter_region }
+						}
+					}
+					add_legitimacy = -500
+				}
+			}
+		}
+	}
+}
+
+
+HEE_environmental.0201 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_environmental.0201.t
+	desc = HEE_environmental.0201.desc
+	theme = realm
+	override_background = { reference = fp3_fullscreen_sunder }
+	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+
+		add_legitimacy = -500
+		add_stress = 100
+	}
+
+	option = {
+		name = HEE_environmental.0201.a
+
+		trigger = {
+			OR = {
+				has_trait = august
+			}
+		}
+
+		custom_tooltip = you_can_use_your_skill_to_rally_the_people
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0201.b
+
+		trigger = {
+			OR = {
+				has_trait = overseer
+			}
+		}
+
+		custom_tooltip = you_can_use_your_skill_to_organize_the_people
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0201.c
+
+		trigger = {
+			OR = {
+				stewardship >= 20
+				has_trait = architect
+			}
+		}
+
+		custom_tooltip = you_can_use_your_skill_to_help_rebuild
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Default
+		name = HEE_environmental.0201.z
+
+		ai_chance = {
+			base = 50
+		}
+	}
+
+	after = {
+		create_character_memory = {
+			type = HEE_memory_earthquake_1202
 		}
 	}
 

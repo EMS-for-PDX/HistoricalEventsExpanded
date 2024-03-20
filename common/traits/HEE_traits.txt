@@ -35,13 +35,42 @@
 }
 
 unwed = {
-	index = 289
-	monthly_piety = 1
 	birth = 0
 	random_creation = 0
-	flag = can_not_marry
 	shown_in_ruler_designer = no
+	
+	monthly_piety = 1
+
+	flag = can_not_marry
+
 	desc = {
 		desc = trait_unwed_desc
+	}
+}
+
+widowed = { # Remove
+	birth = 0
+	random_creation = 0
+	shown_in_ruler_designer = no
+	
+	same_opinion = 5
+	
+	flag = can_not_marry
+	
+	ruler_designer_cost = -20
+	
+	ai_energy = -15
+	ai_sociability = medium_negative_ai_value
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_widowed_desc
+			}
+			desc = trait_widowed_character_desc
+		}
 	}
 }

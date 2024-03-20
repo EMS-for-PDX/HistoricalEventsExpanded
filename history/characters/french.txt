@@ -5,10 +5,10 @@
 	dynasty = 7052
 	religion = catholic
 	culture = french
-	trait = education_diplomacy_2
 	trait = honest
 	trait = zealous
 	trait = stubborn
+	trait = education_diplomacy_2
 	trait = infertile
 	fertility = 0.0 # Infertile should give no possibility
 	father = 7976 # Boso the Elder
@@ -22,7 +22,7 @@
 	}
 	861.1.1 = {
 		effect = {
-set_relation_rival = { target = character:144998 reason = rival_historical } # Husband Lothaire II, tries to annul marriage
+			set_relation_rival = { target = character:144998 reason = rival_historical } # Husband Lothaire II, tries to annul marriage
 		}
 	}
 	863.1.1 = {
@@ -614,6 +614,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = education_martial_2
+	trait = humble
+	trait = patient
+	trait = content
 	father = 1180
 	mother = 1115
 	1047.1.1 = {
@@ -2749,10 +2752,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 8
 	religion = "catholic"
 	culture = french
-	trait = lustful
-	trait = generous
-	trait = humble
-	trait = education_intrigue_1
 	father = 204980
 	mother = 205529
 	1164.1.1 = {
@@ -2963,8 +2962,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 205502 #Louis VI le Gros
 	mother = 213118 #Adèle de Savoie
 	trait = education_learning_3
-	trait = temperate
-	trait = zealous
+	trait = chaste
+	trait = humble
 	trait = trusting
 	1120.1.1 = {
 		birth = "1120.1.1"
@@ -2973,7 +2972,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		add_spouse = 205730 #Aliénor d'Aquitaine
 	}
 	1137.8.1 = {
-		give_nickname = nick_the_young
+		give_nickname = nick_the_younger
 	}
 	1141.1.1 = {
 		trait = excommunicated
@@ -2981,11 +2980,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	1144.4.22 = {
 		remove_trait = excommunicated
 	}
-	1146.3.31 = {
-		trait = faith_warrior
-	}
-	1148.7.1 = {
-		remove_trait = faith_warrior
+	1148.7.24 = {
+		add_trait = faith_warrior # Siege of Damascus
 	}
 	1152.3.18 = {
 		remove_spouse = 205730 #Aliénor d'Aquitaine
@@ -2995,6 +2991,15 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1160.11.13 = {
 		add_spouse = 205505 #Adèle de Champagne
+	}
+	1178.1.1 = {
+		effect = {
+			if = {
+				limit = { has_realm_law = crown_authority_0 }
+				add_realm_law = crown_authority_2
+			}
+			add_realm_law = high_partition_succession_law
+		}
 	}
 	1179.1.1 = {
 		trait = ill
@@ -3104,6 +3109,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = honest
 	trait = just
 	trait = cynical
+	trait = bossy
+	disallow_random_traits = yes
 	father = 205500 #Louis VII le Jeune
 	mother = 205505 #Adèle de Champagne
 	1165.8.21 = {
@@ -3186,11 +3193,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	1144.1.1 = {
 		add_spouse = 91134 #Harvise d'Évreux
 	}
-	1146.3.31 = {
-		trait = faith_warrior
-	}
-	1148.7.1 = {
-		remove_trait = faith_warrior
+	1148.7.24 = {
+		add_trait = faith_warrior # Siege of Damascus
 	}
 	1152.1.1 = {
 		add_spouse = 91135 #Agnès de Braine
@@ -3217,8 +3221,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		remove_trait = faith_warrior
 	}
 	1150.1.1 = {
-		add_spouse = 231017 #Élisabeth de Courtenay
-		dynasty = 9301 #Capetian house of Courtenay
+		add_matrilineal_spouse = 231017 #Élisabeth de Courtenay
 	}
 	1179.1.1 = {
 		trait = faith_warrior
@@ -3829,9 +3832,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 6
 	religion = "catholic"
 	culture = french
-	trait = deceitful
-	trait = just
-	trait = education_learning_3
 	father = 205651
 	mother = 205596
 	1162.11.7 = {
@@ -4888,18 +4888,21 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 4
 	religion = "catholic"
 	culture = french
-	trait = wrathful
-	trait = education_martial_2
+	trait = education_stewardship_3
+	trait = generous
+	trait = zealous
+	trait = just
 	father = 205897
 	mother = 205898
 	1093.1.2 = {
-		birth = "1093.1.2"
+		birth = yes
 	}
 	1124.1.2 = {
 		add_spouse = 205893
 	}
-	1151.1.1 = {
-		death = "1151.1.1"
+	1152.1.10 = {
+		death = yes
+		give_nickname = nick_the_great
 	}
 }
 
@@ -4920,6 +4923,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1167.1.2 = {
 		add_spouse = 205504
+	}
+	1178.1.1 = {
+		give_nickname = nick_the_good
 	}
 	1191.1.20 = {
 		death = "1191.1.20"
@@ -5166,7 +5172,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 5
 	religion = "catholic"
 	culture = french
-	trait = inbred
 	trait = education_intrigue_2
 	father = 205966
 	mother = 205512
@@ -5250,18 +5255,25 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 4
 	religion = "catholic"
 	culture = french
-	trait = brave
-	trait = education_learning_3
+	trait = diligent
+	trait = just
+	trait = generous
+	trait = education_stewardship_4
+	trait = scholar
+	trait = administrator
 	father = 205891
 	mother = 205893
-	1126.1.2 = {
-		birth = "1126.1.2"
+	1127.12.1 = {
+		birth = yes
+	}
+	1148.7.24 = {
+		add_trait = faith_warrior # Siege of Damascus
 	}
 	1161.1.2 = {
 		add_spouse = 205512
 	}
 	1181.1.6 = {
-		death = "1181.1.6"
+		death = yes
 	}
 }
 
@@ -5607,6 +5619,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1031.7.20 = {
 		death = "1031.7.20"
+		give_nickname = nick_the_pious
 	}
 }
 
@@ -5615,6 +5628,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	dynasty_house = house_bourgogne #Capetian house of Burgundy
 	religion = "catholic"
 	culture = french
+	trait = tourney_participant
 	father = 206001
 	mother = 206002
 	1148.1.1 = {
@@ -5766,11 +5780,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = content
-	trait = gluttonous
-	trait = just
-	trait = honest
-	trait = cynical
 	trait = diligent
+	trait = curious
+	disallow_random_traits = yes
 	father = 206000 #Hugues III de Bourgogne
 	mother = 212587 #Alix de Lorraine
 	1166.1.1 = {
@@ -6068,11 +6080,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = humble
 	father = 232016
 	mother = 183154
-	1135.1.2 = {
-		birth = "1135.1.2"
+	1135.1.1 = {
+		birth = yes
 	}
 	1185.3.30 = {
-		death = "1185.3.30"
+		death = yes
 	}
 }
 
@@ -6093,6 +6105,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	mother = 212499
 	1140.1.2 = {
 		birth = "1140.1.2"
+	}
+	1176.5.13 = {
+		effect = {
+			set_relation_rival = { target = character:212583 } # his brother, Ferry
+		}
 	}
 	1206.4.1 = {
 		death = "1206.4.1"
@@ -6288,16 +6305,20 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 5
 	religion = "catholic"
 	culture = french
-	trait = chaste
-	trait = zealous
-	trait = just
-	trait = education_martial_2
+	trait = ambitious # "his ultimate goal: the unification of the territories lying between France and Germany into one state under his rule"
+	trait = zealous # "He was loyal to the church and persecuted heretics"
+	trait = wrathful # "the count seems to have had a violent and brutal temperament"
+	trait = administrator # "replaced the ancient castellans with a new administrative corps composed, for the first time, of salaried and removable functionaries"
+	trait = education_stewardship_3 # "He was always concerned about the economic advancement of his country"
 	father = 212590
 	mother = 205955
 	1143.1.1 = {
 		birth = "1143.1.1"
 	}
-	1190.1.1 = {
+	1157.1.1 = {
+		add_spouse = 91079 # Elisabeth de Vermandois
+	}
+	1178.4.9 = {
 		trait = faith_warrior
 	}
 	1191.6.1 = {
@@ -6600,7 +6621,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 212650 = {
 	name = "Gertrude"
 	female = yes
-	dynasty = 23110
+	dynasty = 23110 # Joinville
 	martial = 6
 	diplomacy = 6
 	intrigue = 7
@@ -6611,17 +6632,17 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = stuttering
 	trait = education_intrigue_2
 	father = 212651
-	1141.1.1 = {
-		birth = "1141.1.1"
+	1145.1.1 = {
+		birth = yes
 	}
 	1189.12.26 = {
-		death = "1189.12.26"
+		death = yes
 	}
 }
 
 212651 = {
-	name = "Godefroi"
-	dynasty = 23110
+	name = "Geoffroy"
+	dynasty = 23110 # Joinville
 	martial = 6
 	diplomacy = 5
 	intrigue = 6
@@ -6629,11 +6650,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = education_martial_2
-	1102.1.2 = {
-		birth = "1102.1.2"
+	1115.1.2 = {
+		birth = yes
 	}
-	1157.1.2 = {
-		death = "1157.1.2"
+	1188.1.2 = {
+		death = yes
 	}
 }
 
@@ -6792,11 +6813,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = education_diplomacy_3
 	father = 212691
 	mother = 212700
-	1114.1.1 = {
-		birth = "1114.1.1"
+	1112.1.1 = {
+		birth = yes
 	}
 	1158.12.28 = {
-		death = "1158.12.28"
+		death = yes
 	}
 }
 
@@ -7030,7 +7051,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = education_stewardship_2
-	father = 213030
 	1125.1.1 = {
 		birth = "1125.1.1"
 	}
@@ -7358,7 +7378,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 208 #Henri Ier de France
 	mother = 627 #Anne de Kiev
 	1052.1.1 = {
-		birth = "1052.1.1"
+		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}	
@@ -7381,8 +7401,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	1104.12.1 = {
 		remove_trait = excommunicated
 	}
-	1108.7.30 = {
-		death = "1108.7.30"
+	1108.7.29 = {
+		death = yes
 	}
 }
 
@@ -7405,10 +7425,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1098.6.2 = {
 		give_nickname = nick_the_great
-		remove_trait = faith_warrior
-	}
-	1101.5.1 = {
-		trait = faith_warrior
 	}
 	1102.10.1 = {
 		trait = wounded_2
@@ -7636,6 +7652,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = leper
+	trait = brave
+	trait = diligent
+	trait = chaste
 	trait = education_diplomacy_3
 	father = 223520
 	mother = 223521
@@ -7661,7 +7680,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 380
 	mother = 91021 #Bertrade de Montfort
 	1092.1.2 = {
-		birth = "1092.1.2"
+		birth = yes
 	}
 	1110.1.2 = {
 		add_spouse = 232009
@@ -7670,7 +7689,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		add_spouse = 232006 # Melisende de Rethel
 	}
 	1143.11.13 = {
-		death = "1143.11.13"
+		death = yes
 	}
 }
 
@@ -7729,16 +7748,13 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 7
 	religion = "catholic"
 	culture = french
-	trait = generous
-	trait = ill
-	trait = education_intrigue_1
 	father = 223540
 	mother = 223522
-	1177.1.1 = {
-		birth = "1177.1.1"
+	1177.12.1 = {
+		birth = yes
 	}
 	1186.8.2 = {
-		death = "1186.8.2"
+		death = yes
 	}
 }
 
@@ -7845,7 +7861,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	stewardship = 3
 	religion = "catholic"
 	culture = french
-	trait = lustful
 	trait = greedy
 	trait = deceitful
 	trait = wrathful
@@ -8096,8 +8111,10 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = arbitrary
-	trait = lustful
-	trait = education_intrigue_3
+	trait = gregarious # "She was able to win over everybody by her radiant appearance, her pearly complexion, her even disposition, her straightforward intelligence and her charming address"
+	trait = lustful # "a nun with lovers"
+	trait = beauty_good_3 # "Outstanding in beauty; such beauty, the Constantinopolitans said, their age had never seen"
+	trait = education_diplomacy_3 # "an irresistable persuader with her charming manners"
 	father = 223740
 	mother = 223720
 	1145.1.1 = {
@@ -8160,6 +8177,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1175.1.1 = {
 		add_spouse = 223752 #Theodora Komnenos
+		give_nickname = nick_the_stammerer
 	}
 	1181.1.1 = {
 		remove_spouse = 223752
@@ -11679,7 +11697,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = education_intrigue_1
 	father = 392
 	1040.1.2 = {
-		birth = "1040.1.2"
+		birth = yes
 	}
 	1058.1.2 = {
 		add_spouse = 255
@@ -11688,8 +11706,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		employer = 394 #Thibaut I de Blois
 		move_to_pool = yes
 	}
-	1090.1.2 = {
-		death = "1090.1.2"
+	1115.1.1 = {
+		death = yes
 	}
 }
 
@@ -11947,6 +11965,14 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	culture = french
 	father = 168085
 	mother = 168084
+	martial = 6
+	stewardship = 7
+	trait = education_martial_2
+	trait = calm
+	trait = diligent # he built many castles, to defend against the Vikings
+	trait = content # Never seemed to move against his liege
+	trait = architect # he built many castles, to defend against the Vikings
+	trait = unyielding_defender # experienced some success limiting viking movements in Aquitaine
 	830.1.1 = {
 		birth = "830.1.1"
 	}
@@ -13381,10 +13407,10 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 391
 	mother = 255
 	1061.1.2 = {
-		birth = "1061.1.2"
+		birth = yes
 	}
-	1111.1.2 = {
-		death = "1111.1.2"
+	1127.1.1 = {
+		death = yes
 	}
 }
 
@@ -13511,6 +13537,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = education_martial_4
+	trait = cynical
+	trait = fickle
+	trait = diligent
 	father = 168063
 	1021.1.1 = {
 		birth = "1021.1.1"
@@ -14519,6 +14548,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	diplomacy = 4
 	intrigue = 4
 	stewardship = 7
+	learning = 3
 	religion = "catholic"
 	culture = french
 	trait = lustful
@@ -14598,7 +14628,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	trait = arbitrary
 	trait = ambitious
 	trait = stubborn
-	trait = disfigured
 	father = 90104 #(King Charles the Bald)
 	mother = 167830 #(Irminitrude of Orléans)
 	849.1.2 = {
@@ -18368,7 +18397,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = just
-	trait = inbred
 	trait = education_intrigue_1
 	1300.1.2 = {
 		birth = "1300.1.2"
@@ -20089,6 +20117,20 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	1247.10.18 = {
 		death = "1247.10.18"
+	}
+}
+
+31382 = {
+	name = "Gauthier"
+	dynasty = 80
+	religion = "catholic"
+	culture = french
+	father = 9050
+	1120.1.1 = {
+		birth = "1120.1.1"
+	}
+	1161.1.1 = {
+		death = "1161.1.1"
 	}
 }
 
@@ -22124,7 +22166,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	884.1.1 = {
 		remove_trait = bossy
-		trait = education_martial_3
+		add_trait = education_martial_3
 	}
 	884.1.1 = {
 		add_spouse = 91125 #Théodérade de Troyes
@@ -24579,11 +24621,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	father = 32294
-	1060.1.1 = {
-		birth = "1060.1.1"
+	1055.1.1 = {
+		birth = yes
 	}
 	1123.5.3 = {
-		death = "1123.5.3"
+		death = yes
 	}
 }
 
@@ -25825,8 +25867,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	859.1.1 = {
 		birth = "859.1.1"
 	}
-	880.1.1. = {
-		trait = unyielding_defender
+	880.1.1 = {
+		add_trait = unyielding_defender
 	}
 	897.1.1 = {
 		death = "897.1.1"
@@ -26769,7 +26811,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 	819.1.1 = {
 		add_spouse = 7986
-		give_nick = nick_the_pious
+		give_nickname = nick_the_pious
 	}
 	840.6.20 = {
 		death = "840.6.20"
@@ -27350,7 +27392,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		give_nickname = nick_the_stammerer
 	}
 	866.7.1 = {
-		#remove_spouse = 91385 # Ansgarde de Bourgogne
 		set_relation_friend = { reason = friend_generic_history target = character:7853 } # Pope Nicholas
 	}
 	875.1.1 = {
@@ -27434,12 +27475,17 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	diplomacy = 5
 	intrigue = 8
 	stewardship = 8
+	trait = education_diplomacy_3
+	trait = calm
+	trait = ambitious
+	trait = diligent
+	trait = patient
 	religion = "catholic"
 	culture = french
 	father = 90129
 	mother = 168018
-	840.1.1 = {
-		birth = "840.1.1"
+	850.1.1 = {
+		birth = "850.1.1"
 	}
 	890.10.1 = {
 		death = "890.10.1"
@@ -27543,7 +27589,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		birth = "866.1.18"
 	}
 	880.1.1 = {
-		trait = lifestyle_hunter
+		add_trait = lifestyle_hunter
 	}
 	884.12.12 = {
 		death = {
@@ -29565,8 +29611,8 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	culture = french
 	father = 205713 #Guy I de Nevers
 	mother = 205714 #Mathilde de Bourgogne
-	1171.1.1 = {
-		birth = "1171.1.1"
+	1168.1.1 = {
+		birth = "1168.1.1"
 	}
 	1181.10.17 = {
 		death = "1181.10.17"
@@ -36504,10 +36550,10 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	culture = french
 	father = 91205 #Salon I de Sens
 	1135.1.1 = {
-		birth = "1135.1.1" #unknown
+		birth = yes #unknown
 	}
-	1175.1.24 = {
-		death = "1175.1.24" #a 24th of January, before 1180
+	1179.1.24 = {
+		death = yes #a 24th of January, before 1180
 	}
 }
 
@@ -40773,18 +40819,26 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 }
 
-163049 = {
+163049 = { # https://en.wikipedia.org/wiki/Hincmar
 	name = "Hincmar"
 	religion = "catholic"
 	culture = french
+	learning = 12
 	trait = education_learning_4
 	trait = zealous
 	trait = ambitious
-	trait = humble
+	trait = diligent
+	trait = stubborn
 	trait = scholar
 	trait = theologian
+	trait = loyal
 	806.1.1 = {
 		birth = "806.1.1"
+	}
+	840.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:90104 } #friend, advisor, and propagandist of Charles the Bald
+		}
 	}
 	882.12.21 = {
 		death = "882.12.21"
@@ -42038,6 +42092,9 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	mother = 71907
 	816.1.1 = {
 		birth = "816.1.1"
+	}
+	835.1.1 = {
+		add_spouse = 190162
 	}
 	860.1.1 = {
 		death = "860.1.1"
@@ -43372,11 +43429,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 		birth = "1110.1.1"
 	}
 	1140.1.1 = {
-		employer = 223525 #King Folques of Jerusalem
 		trait = faith_warrior
-	}
-	1143.11.13 = {
-		employer = 231067 #King of Jerusalem
 	}
 	1152.1.1 = {
 		employer = 33211 #Exiled to Belgium/Liege
@@ -44324,6 +44377,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	father = 71905
+	mother = 190162
 	845.1.1 = {
 		birth = "845.1.1"
 	}
@@ -44499,7 +44553,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	father = 168020
-	mother = 168024
+	mother = 168026
 	810.1.1 = {
 		birth = "810.1.1"
 	}
@@ -44530,9 +44584,6 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	father = 168017
 	774.1.1 = {
 		birth = "774.1.1"
-	}
-	795.1.1 = {
-		add_spouse = 168024
 	}
 	816.1.1 = {
 		add_spouse = 168026
@@ -44596,17 +44647,22 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	775.1.1 = {
 		birth = "775.1.1"
 	}
+	800.1.1 = {
+		trait = devoted # Rotrude eventually became a nun, joining her aunt Gisela, abbess of Chelles
+	}
 	810.6.6 = {
 		death = "810.6.6"
 	}
 }
 
-168025 = {
+168025 = { # https://en.wikipedia.org/wiki/Louis_(abbot_of_Saint-Denis)
 	name = "Louis"
 	dynasty = 9569
 	religion = "catholic"
 	culture = french
 	trait = education_learning_3
+	trait = bastard
+	trait = devoted
 	father = 168020
 	mother = 168024
 	800.1.1 = {
@@ -44664,18 +44720,31 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 }
 
-168029 = {
+168029 = { # https://en.wikipedia.org/wiki/Joscelin_(bishop_of_Paris)
 	name = "Gauzlin"
 	dynasty = 9569
 	religion = "catholic"
 	culture = french
+	diplomacy = 9
+	martial = 8
 	trait = education_learning_3
+	trait = zealous
+	trait = diligent
+	trait = brave
+	trait = unyielding_defender
+	trait = diplomat #From 855 to 867 he held intermittently, and from 867 to 881 regularly, the office of chancellor to Charles the Bald and his successors
 	father = 168020
 	mother = 168026
 	822.1.1 = {
 		birth = "822.1.1"
 	}
-	
+	848.1.1 = {
+		trait = devoted
+	}
+	855.1.1 = {
+		employer = 90104
+		give_council_position = councillor_chancellor #From 855 to 867 he held intermittently, and from 867 to 881 regularly, the office of chancellor to Charles the Bald and his successors
+	}
 	886.4.16 = {
 		death = "886.4.16"
 	}
@@ -44995,6 +45064,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	trait = education_learning_3
+	trait = devoted # abbot of St. Germain-des-Pres and St. Hilary of Poitiers
 	father = 90129
 	mother = 168018
 	847.1.1 = {
@@ -45336,8 +45406,13 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	religion = "catholic"
 	culture = french
 	father = 168086
-	856.1.1 = {
-		birth = "856.1.1"
+	trait = just
+	trait = stubborn
+	trait = patient
+	trait = pensive
+	disallow_random_traits = yes
+	853.1.1 = {
+		birth = "853.1.1"
 	}
 	
 	901.11.9 = {
@@ -45524,11 +45599,11 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	culture = french
 	father = 90104 #(King Charles the Bald)
 	mother = 167830 #(Irminitrude of Orléans)
-	851.1.1 = {
-		birth = "851.1.1 "
+	856.1.1 = {
+		birth = "856.1.1 "
 	}
-	880.1.1 = {
-		death = "880.1.1"
+	857.1.1 = { # Died young
+		death = "857.1.1"
 	}
 }
 
@@ -45573,11 +45648,16 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	culture = french
 	father = 7979
 	mother = 7978
+	trait = education_stewardship_3
+	trait = diligent # Whenever Charles went to war, Richilde managed the realm
+	trait = temperate
+	trait = ambitious # Richilde attempted to assume a position of authority upon the death of Louis III in 882
+	trait = fecund # Had 5 kids in 7 years of marriage
 	845.1.1 = {
 		birth = "845.1.1"
 	}
-	920.1.1 = {
-		death = "920.1.1"
+	910.6.2 = {
+		death = "910.6.2"
 	}
 }
 
@@ -46598,15 +46678,19 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	}
 }
 
-127019 = {
+127019 = { # https://en.wikipedia.org/wiki/Bernard_Plantapilosa
 	name = "Bernard"
 	dynasty = 100217
 	father = 163063
 	mother = 168141
 	martial = 7
 	diplomacy = 8
-	intrigue = 5
+	intrigue = 8
 	stewardship = 6
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = deceitful
+	trait = callous
 	religion = catholic
 	culture = french
 	841.3.22 = {
@@ -46899,7 +46983,7 @@ set_relation_rival = { target = character:144998 reason = rival_historical } # H
 	dynasty_house = house_orleans #Orléans	
 	religion = catholic	
 	culture = french
-	father = 167829
+	father = 167829		
 
 	#Education
 	trait = education_learning_3

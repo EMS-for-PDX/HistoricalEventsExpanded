@@ -10,8 +10,8 @@ HEE_great_summer_army.0001 = { #Great Summer Army attacks
 		character:168650 = { save_scope_as = guthrum }
 		title:d_york.holder.liege = { save_scope_as = great_heathen_army }
 
-		scope:guthrum = { create_alliance = character:163112 }
-		character:163112 = {
+		scope:guthrum = { create_alliance = scope:great_heathen_army }
+		scope:great_heathen_army = {
 			add_opinion = {
 				target = scope:guthrum
 				modifier = perk_negotiated_alliance_opinion

@@ -28,6 +28,7 @@ hee_karling_867_effect = {
 	character:163174 = { save_scope_as = irmgard } # Ermengarde (d. 90?)
 	character:168315 = { save_scope_as = gisela } # Gisela (c. 865–908), who in 883 married Godfrey, the Viking leader ruling in Frisia, who was murdered in 885
 	character:168336 = { save_scope_as = godfrid } # https://en.wikipedia.org/wiki/Godfrid,_Duke_of_Frisia
+	character:167704 = { save_scope_as = gunthar } # https://en.wikipedia.org/wiki/Gunther_(archbishop_of_Cologne)
 	
 	character:90107 = { save_scope_as = ludwig_the_german } # https://en.wikipedia.org/wiki/Louis_the_German
 	character:7987 = { save_scope_as = hemma } # https://en.wikipedia.org/wiki/Hemma
@@ -62,31 +63,40 @@ hee_karling_867_effect = {
 
 	character:31702 = { save_scope_as = adalard_the_seneschal } # https://en.wikipedia.org/wiki/Adalard_the_Seneschal
 
+	character:127019 = { save_scope_as = bernard_plantapilosa } # 
+
 	character:6448 = { save_scope_as = odo_of_france } # https://en.wikipedia.org/wiki/Odo_of_France
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
 
 	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
 
+	title:e_france = { save_scope_as = e_carolingian_empire }
 	title:k_italy = { save_scope_as = k_italy }
 	title:k_east_francia = { save_scope_as = k_east_francia }
 	title:k_lotharingia = { save_scope_as = k_lotharingia }
 	title:k_bavaria = { save_scope_as = k_bavaria }
 	title:k_france = { save_scope_as = k_france }
 
+	# House-keeping #
+ 	title:e_france = {
+		set_coa = title:b_pomposa
+		set_color_from_title = title:d_urdunn
+ 	}
+
+	scope:e_carolingian_empire = { add_title_law = male_only_law }
 	scope:k_italy = { add_title_law = male_only_law }
 	scope:k_lotharingia = { add_title_law = male_only_law }
 	scope:k_east_francia = { add_title_law = male_only_law }
 	scope:k_bavaria = { add_title_law = male_only_law }
 
-	# House-keeping #
-	character:31702 = { give_nickname = nick_the_seneschal }
-
-	character:90109 = { give_nickname = nick_the_iron }
-
 	scope:louis_the_younger = {
 		house = { set_house_head = scope:louis_the_younger }
 	}
+
+	character:31702 = { give_nickname = nick_the_seneschal }
+
+	character:90109 = { give_nickname = nick_the_iron }
 
 	scope:charles_the_bald = {
 		add_opinion = {
@@ -100,6 +110,22 @@ hee_karling_867_effect = {
 			target = scope:judith
 			modifier = elopement_non_imprisionment_opinion
 		}
+	}
+
+	every_ruler = {
+		limit = {
+			AND = {
+				is_landed = yes
+				dynasty = scope:charles_the_bald.dynasty
+			}
+		}
+		add_legitimacy = 500
+	}
+
+	# Lotharingia #
+	consume_all_criminal_reasons_effect = {
+		LIEGE = scope:lothaire
+		CRIMINAL = scope:gunthar
 	}
 
 	# Italy #
@@ -116,6 +142,7 @@ hee_karling_867_effect = {
 	
 	character:168246 = { # Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
 		give_nickname = nick_the_abbot
+		set_designated_heir = scope:odo_of_france
 		set_relation_ward = scope:odo_of_france
 		set_relation_ward = scope:robert_of_france
 	}
@@ -138,72 +165,89 @@ hee_karling_867_effect = {
 		}
 	}
 
+	title:b_autun = { save_scope_as = b_autun }
+	scope:bernard_plantapilosa = {
+		get_title = scope:b_autun
+	}
+
 	# Removal of female-inherited claims $
 	character:71901 = { # Berengar of Italy
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:163057 = { # Unruoch of Friuli
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:167792 = { # Adalhard of Ravensburg
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:168183 = { # Rudolf of Guines
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:168082 = { # Eberhard Chatenois
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 	
 	character:168055 = { # Geraud de Poitiers
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 	
 	character:167765 = { # Oda Billung
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 	}
 	
 	character:7911 = { # Ingeltrude Unruochinger
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:7816 = { # Judith Unruochinger
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 	
 	character:168065 = { # Heylwig Unruochinger
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 
 	character:6449 = { # Bertha Robertine
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
 	}
 	
 	character:7814 = { # Ermengarde of Italy
+		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
 		remove_claim = scope:k_france
@@ -716,13 +760,13 @@ hee_samarra_relations_867_effect = {
 	# Set up al-Mutazz's historical Vizier
 	character:34014 = {
 		designate_diarch = character:HEE_mutazz_vizier
-			# This is a vizierate as well, so start the diarchy manually.
-			start_diarchy = vizierate
-			# Tell Alp that he appointed Hassan so he remembers not to dismiss him.
-			set_variable = {
-				name = my_vizier
-				value = character:HEE_mutazz_vizier
-			}
+		# This is a vizierate as well, so start the diarchy manually.
+		start_diarchy = vizierate
+		# Tell Alp that he appointed Hassan so he remembers not to dismiss him.
+		set_variable = {
+			name = my_vizier
+			value = character:HEE_mutazz_vizier
+		}
 	}
 
 	remove_generated_diarch_consequences_effect = {
@@ -994,6 +1038,8 @@ hee_fairhair_867_effect = {
 	# Scopes #
 	character:144000 = { save_scope_as = haraldr_fairhair } # https://en.wikipedia.org/wiki/Harald_Fairhair
 	character:6862 = { save_scope_as = ragnhild_the_mighty } # https://en.wikipedia.org/wiki/Ragnhild_the_Mighty
+
+	character:168650 = { save_scope_as = guttorm } # Haraldr's Maternal Uncle, Regent, and General
 	
 	character:6866 = { save_scope_as = jute_king_eirikr } # https://en.wikipedia.org/wiki/Ragnhild_the_Mighty
 	
@@ -1048,6 +1094,14 @@ hee_fairhair_867_effect = {
 
 	character:6862 = { # Ragnhild the Mighty
 		add_trait = unwed
+	}
+
+	# Set up Guttorm as Regent as he was Haraldr's guardian and regent growing up, and a great general in the battles to come
+	scope:haraldr_fairhair = { designate_diarch = scope:guttorm }
+
+	remove_generated_diarch_consequences_effect = {
+		NEW_DIARCH = scope:guttorm
+		LIEGE = scope:haraldr_fairhair
 	}
 }
 

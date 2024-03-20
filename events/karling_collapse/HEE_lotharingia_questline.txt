@@ -66,9 +66,19 @@ HEE_lotharingia_questline.0001 = { #Lothaire's thoughts on his situation
 	option = {
 		name = HEE_lotharingia_questline.0001.b
 
-		# stress_impact = {
+		custom_tooltip = lothaire_discontinues_seeking_an_annulment
 
-		# }
+		hidden_effect = {
+			remove_relation_soulmate = scope:waldrada
+			reverse_add_opinion = {
+				target = scope:waldrada
+				modifier = lover_abandoned_me_opinion
+			}
+
+			stress_impact = {
+				base = medium_stress_gain
+			}
+		}
 		
 		ai_chance = {
 			base = 0
@@ -192,13 +202,13 @@ HEE_lotharingia_questline.0004 = { #Lothaire leaves for Rome with his entourage
 
 		start_travel_plan = {
             destination = title:b_roma.title_province
-            return_trip = no
+            return_trip = yes
             players_use_planner = no # Change later?
             #companion = scope:companion1
             #companion = scope:companion2
             #companion = scope:companion3
             on_arrival_event = HEE_lotharingia_questline.0005
-            on_arrival_destinations = last
+            on_arrival_destinations = all_but_last
         }
 		
 		ai_chance = {
@@ -483,6 +493,10 @@ HEE_lotharingia_questline.0009 = { #Lothaire's illness worsens
 		
 		remove_trait = ill
 		add_trait = pneumonic
+
+		current_travel_plan = {
+            delay_travel_plan = { days = 3 }
+        }
 		
 		if = {
 			limit = {
@@ -499,7 +513,6 @@ HEE_lotharingia_questline.0009 = { #Lothaire's illness worsens
 		name = HEE_lotharingia_questline.0009.a
 		
 		custom_tooltip = lothaire_ponders_if_this_is_the_end
-		#diplo challenge here?
 		
 		trigger_event = {
 			id = HEE_lotharingia_questline.0010
@@ -561,12 +574,10 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 	option = {
 		name = HEE_lotharingia_questline.0010.a
 		
-		#custom_tooltip = lothaire_ponders_if_this_is_the_end
-		
-		random_list = {
-			90 = {
-				custom_tooltip = lothaire_succumbs_to_his_illness
-				hidden_effect = {
+		custom_tooltip = lothaire_closes_his_eyes
+		hidden_effect = {	
+			random_list = {
+				90 = {
 					character:144998 = {
 						death = {
 							death_reason = death_pneumonic
@@ -590,10 +601,7 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 					
 					scope:k_burgundy = { add_title_law = male_only_law }
 				}
-			}
-			10 = {
-				custom_tooltip = lothaire_miraculously_recovers
-				hidden_effect = {
+				10 = {
 					remove_trait = pneumonic
 					trigger_event = {
 						id = HEE_lotharingia_questline.0011
@@ -602,7 +610,7 @@ HEE_lotharingia_questline.0010 = { #Lothaire experiences a fever dream
 				}
 			}
 		}
-		
+			
 		ai_chance = {
 			base = 1000
 		}
@@ -853,6 +861,7 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 		custom_tooltip = treaty_of_meerssen_is_signed
 		
 		hidden_effect = {
+
 			#Lothaire's Personal Domain
 			if = {
 				limit = {
@@ -1043,6 +1052,7 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 					resolve_title_and_vassal_change = scope:change
 				}
 			}
+
 			#Go to France
 			title:c_zeeland.holder = {
 				create_title_and_vassal_change = {
@@ -1128,6 +1138,7 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 				}
 				resolve_title_and_vassal_change = scope:change
 			}
+
 			#Goes to East Francia
 			title:c_westfriesland.holder = {
 				create_title_and_vassal_change = {
@@ -1297,6 +1308,7 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 				}
 				resolve_title_and_vassal_change = scope:change
 			}
+
 			#Goes to Italy
 			title:c_viennois.holder = {
 				create_title_and_vassal_change = {
@@ -1309,6 +1321,19 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 					change = scope:change
 				}
 				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:king_of_italy = {	# Manually end wars just in case
+				every_character_war = {
+					limit = {
+						OR = {
+							primary_attacker = scope:king_of_germany
+							primary_attacker = scope:king_of_france
+						}
+						primary_defender = scope:king_of_italy
+					}
+					end_war = white_peace
+				}
 			}
 			
 			#Lotharingia, as it is partitioned, no longer exists

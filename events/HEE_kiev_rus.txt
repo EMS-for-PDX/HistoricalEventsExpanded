@@ -72,7 +72,7 @@ HEE_kiev_rus.0002 = { # Rurik considers succession
 				limit = {
 					root.primary_title = {
 						place_in_line_of_succession = {
-							target = prev
+							target == prev
 							value = 2
 						}
 					}
@@ -85,12 +85,17 @@ HEE_kiev_rus.0002 = { # Rurik considers succession
 	option = { 
 		name = HEE_kiev_rus.0002.a
 		
-		set_designated_heir = character:40606
+		set_designated_heir = character:40606 # Oleg
 
 		hidden_effect = {
 			character:40606 = {
 				save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
 				create_story = story_rurikid_expansion
+				set_relation_ward = scope:child
+				trigger_event = {
+					id = HEE_kiev_rus.0005
+					days = { 3 10 }
+				}
 			}
 		}
 
@@ -242,6 +247,54 @@ HEE_kiev_rus.0004 = { # Alt-History, inspired by his near-death experience, Ruri
 				remove_trait = ambitious
 				add_trait = content
 			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+HEE_kiev_rus.0005 = { # Oleg considers the oath he swore to Rurik, and what that entails
+	type = character_event
+	id = HEE_kiev_rus.0005
+	title = HEE_kiev_rus.0005.t
+	desc = HEE_kiev_rus.0005.desc
+
+	theme = death
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:helgi
+		animation = personality_rational
+	}
+
+	immediate = {
+		character:40606 = { save_scope_as = helgi }
+	}
+
+	option = { 
+		name = HEE_kiev_rus.0005.a
+
+		hidden_effect = {
+			add_trait = unwed
+			set_designated_heir = scope:child
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # What Rurik has now is enough for him
+		name = HEE_kiev_rus.0005.b
+
+		hidden_effect = {
+
 		}
 
 		ai_chance = {

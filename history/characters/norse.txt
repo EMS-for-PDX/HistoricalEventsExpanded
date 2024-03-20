@@ -48,8 +48,8 @@
 	religion = norse_pagan
 	culture = norse
 	father = 40605
-	mother = 6863
-	867.1.1 = { # 875, moved forward as of now - FIX
+	mother = HEE_efanda
+	867.1.1 = { # 875, moved forward as of now - FIX/REMOVE FOR RELEASE
 		birth = yes
 	}
 	903.1.1 = {
@@ -821,21 +821,21 @@
 	religion = norse_pagan
 	culture = norse
 	mother = HEE_efanda_mother # Some scholars think Oleg was the brother of Rurik's wife
+	health = 5.5 # Lived a good long life
 	diplomacy = 9
 	martial = 9
 	stewardship = 8
-	intrigue = 8
-	learning = 9
-	# trait = intellect_good_1
-	trait = zealous
+	intrigue = 9
+	learning = 8
+	prowess = 8
 	trait = education_martial_4
+	trait = zealous
 	trait = greedy
 	trait = ambitious
 	trait = stubborn
 	trait = loyal # Did not kill/usurp Igor
 	trait = shrewd
 	trait = reaver
-	trait = organizer
 	842.1.1 = {
 		birth = yes
 	}
@@ -3018,24 +3018,25 @@
 	dynasty = 499
 	religion = "norse_pagan"
 	culture = norse
-	martial = 7
-	stewardship = 6
-	diplomacy = 7
-	intrigue = 5
-	learning = 5
-	prowess = 6
-	trait = intellect_good_1
+	martial = 8
+	stewardship = 7
+	diplomacy = 8
+	intrigue = 6
+	learning = 6
+	prowess = 8
+	trait = intellect_good_2 # According to Heimskringla, Harald was of all men the biggest and strongest and most handsome to look at, a wise and most outstanding man. 
+	trait = beauty_good_2 # According to Heimskringla, Harald was of all men the biggest and strongest and most handsome to look at, a wise and most outstanding man. 
 	trait = calm
 	trait = brave
 	trait = ambitious
 	trait = lustful
 	trait = lifestyle_hunter
 	trait = education_martial_3
-	trait = organizer
 	father = 168323
 	mother = 168649
 	sexuality = heterosexual
-	health = 4.9
+	health = 5.5
+	disallow_random_traits = yes
 	850.1.1 = {
 		give_nickname = nick_tanglehair
 		birth = "850.1.1"
@@ -4601,11 +4602,10 @@
 	
 	#Skills
 	diplomacy = 8
-	martial = 7
-	stewardship = 8
-	intrigue = 9
-	learning = 8
-	prowess = 6
+	martial = 6
+	stewardship = 7
+	intrigue = 8
+	learning = 6
 	
 	#Education
 	trait = education_diplomacy_3
@@ -4615,17 +4615,12 @@
 	trait = ambitious
 	trait = stubborn
 	
-	trait = charming
-	
 	#Other Traits
 	trait = beauty_good_3
 	
-	disallow_random_traits = yes
-	
 	sexuality = heterosexual
-	
-	852.1.1 = {
-		birth = "852.1.1"
+	851.1.1 = {
+		birth = "851.1.1"
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}
@@ -5558,6 +5553,11 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168316
+	trait = education_martial_2
+	trait = generous
+	trait = gregarious
+	trait = brave
+	trait = reaver # According to Ynglinga saga, Eystein died returning from a viking raid to Varna
 	740.1.1 = {
 		birth = "740.1.1"
 	}
@@ -5586,11 +5586,25 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168317
+
+	#Education
+	trait = education_martial_3 # He was a great warrior who often pillaged and gathered great amounts of loot. 
+	
+	#Personality Traits
+	trait = generous # He was said to be generous in gold but would starve his men of food
+	trait = temperate # He was said to be generous in gold but would starve his men of food
+	trait = brave # He was a great warrior who often pillaged and gathered great amounts of loot. 
+	
+	#Other Traits
+	trait = reaver # He was a great warrior who often pillaged and gathered great amounts of loot. 
+
 	775.1.1 = {
 		birth = "775.1.1"
 	}
 	833.1.1 = {
-		death = "833.1.1"
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -5600,11 +5614,28 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168319
-	805.1.1 = {
-		birth = "805.1.1"
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = gregarious
+	trait = arrogant
+	trait = lustful
+	trait = callous
+	
+	#Other Traits
+	trait = lifestyle_hunter # Known as the Hunter
+
+	785.1.1 = {
+		birth = "785.1.1"
+		give_nickname = nick_the_magnificent
 	}
-	865.1.1 = {
-		death = "865.1.1"
+	820.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = HEE_asa_haraldsdottir
+		}
 	}
 }
 
@@ -5614,11 +5645,19 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168320
-	830.1.1 = {
+	martial = 9 # He was a powerful man and a great warrior - Heimskringla, Chap. 49
+	prowess = 10 # He was a powerful man and a great warrior - Heimskringla, Chap. 49
+	trait = education_martial_3 # He was a powerful man and a great warrior - Heimskringla, Chap. 49
+	trait = brave # He was a powerful man and a great warrior - Heimskringla, Chap. 49
+	trait = beauty_good_2 # He was the most handsome and tallest of all men. 
+	trait = giant # He was the most handsome and tallest of all men. 
+	815.1.1 = {
 		birth = "830.1.1"
 	}
-	880.1.1 = {
-		death = "880.1.1"
+	850.1.1 = {
+		death = {
+			death_reason = death_gout_ridden # He got a pain in his leg and died of it
+		}
 	}
 }
 
@@ -5643,30 +5682,52 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168320
-	825.1.1 = {
-		birth = "825.1.1"
+	mother = HEE_asa_haraldsdottir
+
+	#Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 6
+	intrigue = 7
+	learning = 5
+	prowess = 8
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = brave # Lead armies 
+	trait = just # Heimskringla states Halfdan was a man of Justice who put forth laws and followed them
+	trait = deceitful #  some scholars have suggested that the linkage to the earlier Yngling dynasty of Vestfold was a later invention, created to associate a conquering Halfdan and his son Harald Fairhair with the family glorified in the Ynglingatal, whom he had displaced
+	trait = ambitious # Conquered much land
+
+	820.1.1 = {
+		birth = "820.1.1" # Heimskringla states Halfdan was forty years old when he died
+	}
+	838.1.1 = {
+		add_spouse = HEE_rognhildr_goldbeard
 	}
 	849.1.1 = {
 		add_spouse = 168649
 	}
-	866.1.1 = {
-		death = "866.1.1"
+	860.1.1 = {
+		death = "860.1.1" # Harald was but ten years old when he succeeded his father according to the sagas
 	}
 }
 
 168324 = {
-	name = "SigurT_r"
+	name = "Haraldr"
 	dynasty = 499
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168323
-	mother = 168649
-	849.1.1 = {
-		birth = "849.1.1"
+	mother = HEE_rognhildr_goldbeard
+	839.1.1 = {
+		birth = "839.1.1"
 	}
 
-	858.1.1 = {
-		death = "858.1.1"
+	849.1.1 = {
+		death = "849.1.1"
 	}
 }
 
@@ -6520,14 +6581,22 @@
 	dynasty = 9613
 	religion = "norse_pagan"
 	culture = "norse"
+	trait = education_martial_2
+	trait = brave
+	trait = beauty_good_2 # According to Heimskringla, he was larger and stronger than any other man. He was also the most handsome man to look at. 
+	trait = strong # According to Heimskringla, he was larger and stronger than any other man. He was also the most handsome man to look at. 
+	trait = lifestyle_hunter # According to Heimskringla, it is said of Sigurðr’s activities, that he used to ride out alone into the wildernesses. He hunted huge and dangerous beasts. 
 	800.1.1 = {
 		birth = yes
 	}
 	829.1.1 = {
 		add_spouse = 168632
 	}
-	855.1.1 = {
-		death = yes
+	848.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = haki_the_beserker # The Berserker Hild
+		}
 	}
 }
 
@@ -6539,10 +6608,17 @@
 	culture = "norse"
 	father = 168648
 	mother = 168632
-	830.1.1 = {
+	trait = calm
+	trait = diligent
+	trait = content
+	trait = intellect_good_2 # According to Heimskringla, Queen Ragnhildr dreamed great dreams, and she was highly intelligent.
+	trait = lifestyle_gardener
+	828.1.1 = {
 		birth = yes
 	}
-	
+	848.1.1 = {
+		add_spouse = haki_the_beserker
+	}
 	888.1.1 = {
 		death = yes
 	}
@@ -6557,12 +6633,12 @@
 	mother = 168632
 	
 	#Skills
-	diplomacy = 6
-	martial = 7
+	diplomacy = 7
+	martial = 8
 	stewardship = 6
-	intrigue = 5
+	intrigue = 7
 	learning = 5
-	prowess = 8
+	prowess = 9
 	
 	#Education
 	trait = education_martial_3

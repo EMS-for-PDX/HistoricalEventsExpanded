@@ -69,7 +69,7 @@ anarchy_at_samarra_loss_of_central_authority = {
 	monthly_prestige_gain_mult = -0.2
 	vassal_opinion = -25
 	independent_ruler_opinion = -35
-	monthly_county_control_change_factor = -0.5
+	monthly_county_control_growth_factor = -0.5
 }
 
 anarchy_at_samarra_unpaid_soldiery = {
@@ -118,13 +118,34 @@ al_muwaffaq_personal_modifier = {
 	county_opinion_add = 10
 }
 
-
+armies_engaged_in_the_south_modifier = {
+	icon = martial_negative
+	levy_size = -0.2
+}
 
 
 
 
 
 ## County ##
+1202_syria_earthquake_epicenter_modifier = {
+	icon = county_modifier_development_negative
+	additional_fort_level = -8
+	defender_holding_advantage = -10
+	build_speed = 0.75
+	levy_size = -0.4
+	garrison_size = -0.4
+	tax_mult = -0.5
+	development_growth_factor = -0.5
+	travel_danger = 25
+}
+
+1202_syria_earthquake_tremor_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = -10
+	monthly_county_control_decline_factor = 0.15
+}
+
 regional_stronghold_modifier = {
 	icon = county_modifier_development_positive
 	additional_fort_level = 3
@@ -136,7 +157,7 @@ louis_imperial_garrison = {
 	icon = county_modifier_control_positive
 	fort_level = 1
 	garrison_size = 0.25
-	monthly_county_control_change_factor = 0.5
+	monthly_county_control_growth_factor = 0.5
 }
 
 hee_867_aghlabid_dalmatia_raids_modifier = {
@@ -157,7 +178,7 @@ hee_867_viking_settlements_in_france_modifier = {
 	icon = family_positive
 	tax_mult = -0.25
 	development_growth_factor = 0.25
-	monthly_county_control_change_factor = -0.5
+	monthly_county_control_growth_factor = -0.5
 }
 
 strengthened_salerno_defenses_modifier = {
@@ -178,7 +199,7 @@ hee_867_fortified_capital_tephrike_modifier = {
 	icon = county_modifier_development_positive
 	fort_level = 1
 	garrison_size = 0.25
-	monthly_county_control_change_factor = 0.5
+	monthly_county_control_growth_factor = 0.5
 }
 
 hee_867_paulician_settlements_thrace_modifier = { # Modifier for Paulicians settled in Thrace in 867
@@ -199,7 +220,7 @@ hee_fifth_fitna_aftermath_modifier = { # Modifier to represent the devestation o
 
 hee_tondrakian_purge_modifier = { # Modifier for the Tondrakian Purge by the Kaysites
 	icon = county_modifier_control_positive
-	monthly_county_control_change_factor = 0.15
+	monthly_county_control_growth_factor = 0.15
 	development_growth_factor = -0.1
 	county_opinion_add = -25
 }

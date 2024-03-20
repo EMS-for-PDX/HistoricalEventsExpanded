@@ -1,6 +1,6 @@
 ﻿namespace = HEE_ghaznavids 
 
-### Spawn Seljuk
+### Spawn Ghaznavids
 HEE_ghaznavids.0001 = {
 	scope = none
 	hidden = yes

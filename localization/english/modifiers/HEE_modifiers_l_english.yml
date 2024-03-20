@@ -46,7 +46,16 @@
  al_muwaffaq_personal_modifier: "Charismatic Commander"
  al_muwaffaq_personal_modifier_desc: "In his close relations with the Turkish military, and his active participation in military affairs, al-Muwaffaq differed from most Abbasid princes of his time. Al-Muwaffaq's drive and energy, close personal relationship with military leadership, his own prestige as a prince of the Abbasid dynasty, and willingness to lead from the front, inspired in his men a great willingness to fight not for money, but for himself and his cause"
 
+ armies_engaged_in_the_south_modifier: "Armies engaged in the South"
+ armies_engaged_in_the_south_modifier_desc: "Having sent a number of his forces to Southern Italy to garrison key forts, Louis has fewer troops readily at his disposal to call upon"
+
  ## County ##
+ 1202_syria_earthquake_epicenter_modifier: "Aftermath of the 1202 Earthquake"
+ 1202_syria_earthquake_epicenter_modifier_desc: "In May 1202 a severe earthquake struck Palastine and southwestern Syria. While a magnitude of 7.6 has been estimated, there can be no doubt as to the severity of the damage inflicted by the event. English historian Ralph of Coggeshall (d.1228) reported that the cities of Acre and Tyre were “overthrown” while Arabic accounts write that the city of Bedegene was "swallowed up". Nablus, thought to have been near the epicenter of the quake, was almost entirely destroyed, while in Damascus, as in many other places, mosques collapsed, causing great terror amongst the population. There was heavy loss of life in Tripoli, where the old castle of Arqa was ruined. Arabic reports speak of over a million people having died, which are likely exaggerated, but should not detract from the fact this remains one of the most catastrophic quakes to hit the region in history."
+
+ 1202_syria_earthquake_tremor_modifier: "Tremors from the 1202 Syrian Earthquake"
+ 1202_syria_earthquake_tremor_modifier_desc: "The 1202 Syrian Earthquake must have felt like an apocalyptic event for those who experienced it. Striking at about dawn on 20 May 1202 with an epicenter in southwestern Syria, the earthquake is estimated to have killed around 30,000 people while heavily damaging cities and towns across the region - most notably Tyre, Acre and Nablus. And though the quake occured in Palastine, tremors were recorded from Sicily in the west to Azerbaijan in the east and from Constantinople in the north to Aswan in the south. It was these tremors that have shaken the earth, frighting the local populace who view them as a sign that troubled times may be approaching."
+
  regional_stronghold_modifier: "Regional Stronghold"
  regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"
  

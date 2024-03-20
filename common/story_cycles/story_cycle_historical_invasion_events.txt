@@ -745,11 +745,12 @@ story_pechenegs_invasion = {
 		days = 180
 
 		trigger = {
-			any_neighboring_and_across_water_top_liege_realm_owner = {
-				AND = {
-					has_title = title:k_magyar
-					culture = culture:mogyer
-
+			any_realm_county = { 
+				any_neighboring_county = { 
+					holder = { 
+						has_title = title:k_magyar 
+						#has_culture = culture:mogyer
+					}
 				}
 			}
 		}

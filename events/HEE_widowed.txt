@@ -1,0 +1,35 @@
+﻿namespace = HEE_widowed
+
+HEE_widowed.0001 = { # 
+	type = character_event
+	title = HEE_widowed.0001.t
+	desc = HEE_widowed.0001.desc
+	theme = diplomacy
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_widowed.0001.a
+		
+		add_trait = widowed
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_widowed.0001.b
+
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

@@ -220,3 +220,22 @@ HEE_wulfad_of_bourges = { # https://en.wikipedia.org/wiki/Wulfad
 		death = yes
 	}
 }
+
+HEE_giovanni_of_arezzo = { # Giovanni (vescovo di Arezzo) - https://it.wikipedia.org/wiki/Giovanni_(vescovo_di_Arezzo)
+	name = "Giovanni"
+	religion = "catholic"
+	culture = "italian"
+	diplomacy = 9
+	trait = education_learning_3
+	trait = calm # A good diplomatic trait
+	trait = zealous # Known as a man of great faith
+	trait = diligent # A good diplomatic trait
+	trait = diplomat # He often carried out diplomatic tasks at the behest of the Pope
+	trait = devoted # Was a bishop
+	825.1.1 = { # Unknown?
+		birth = yes
+	}
+	900.1.1 = { # circa. 900
+		death = yes
+	}
+}

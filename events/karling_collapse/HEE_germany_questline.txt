@@ -58,7 +58,7 @@ HEE_germany_questline.0100 = {
                         limit = {
                             exists = global_var:CE_is_loaded
                         }
-                        set_de_jure_liege_title = title:e_france
+                        set_de_jure_liege_title = title:e_hre
                     }
                     else = {
                         set_de_jure_liege_title = title:e_germany
@@ -708,10 +708,14 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 
 		cp:councillor_court_chaplain = { save_scope_as = carloman_bishop }
 
+        title:e_hre = { save_scope_as = e_carolingian_empire }
 		title:k_bavaria = { save_scope_as = k_bavaria }
 		title:k_italy = { save_scope_as = k_italy }
 		title:k_burgundy = { save_scope_as = k_burgundy }
 		title:k_lotharingia = { save_scope_as = k_lotharingia }
+        title:k_romagna = { save_scope_as = k_romagna }
+        title:k_sicily = { save_scope_as = k_sicily }
+        title:k_sardinia = { save_scope_as = k_sardinia }
 		
 		every_held_title = {
 			add_to_list = carloman_current_titles
@@ -728,7 +732,12 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 		every_held_title = {
 			limit = {
 				tier < tier_kingdom
-				target_is_de_jure_liege_or_above = scope:k_italy
+                OR = {
+                    target_is_de_jure_liege_or_above = scope:k_italy
+                    target_is_de_jure_liege_or_above = scope:k_romagna
+                    target_is_de_jure_liege_or_above = scope:k_sicily
+                    target_is_de_jure_liege_or_above = scope:k_sardinia
+                }
 			}
 			add_to_list = carloman_italian_domain
 		}
@@ -736,7 +745,12 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 		every_vassal = {
 			limit = {
 				primary_title = {
-					target_is_de_jure_liege_or_above = scope:k_italy
+                    OR = {
+                        target_is_de_jure_liege_or_above = scope:k_italy
+                        target_is_de_jure_liege_or_above = scope:k_romagna
+                        target_is_de_jure_liege_or_above = scope:k_sicily
+                        target_is_de_jure_liege_or_above = scope:k_sardinia
+                    }
 				}
 			}
 			add_to_list = italian_vassals
@@ -1024,6 +1038,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 			set_player_character = scope:arnulf
 
 			# In the event of any lingering titles not covered
+            set_designated_heir = scope:ludwig_the_younger
 			depose = yes
 		
 			#Arnulf loses opinion of Carloman and Ludwig

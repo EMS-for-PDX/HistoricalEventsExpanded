@@ -9858,7 +9858,7 @@
 	trait = fickle
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	sexuality = heterosexual
-	835.1.1 = {
+	825.1.1 = {
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
@@ -11965,12 +11965,17 @@
 	culture = french
 	father = 168085
 	mother = 168084
+	diplomacy = 6
 	martial = 6
 	stewardship = 7
+	intrigue = 9
+	learning = 6
+	prowess = 6
 	trait = education_martial_2
 	trait = calm
 	trait = diligent # he built many castles, to defend against the Vikings
 	trait = content # Never seemed to move against his liege
+	trait = brave # Was active in stemming the viking raids in the region
 	trait = architect # he built many castles, to defend against the Vikings
 	trait = unyielding_defender # experienced some success limiting viking movements in Aquitaine
 	830.1.1 = {
@@ -25781,7 +25786,7 @@
 	}
 }
 
-7977 = {
+7977 = { # https://en.wikipedia.org/wiki/Hucbert
 	name = "Hucbert"
 	dynasty = 7052
 	martial = 6
@@ -25790,16 +25795,21 @@
 	stewardship = 8
 	religion = "catholic"
 	culture = french
-	trait = diligent
-	trait = calm
-	trait = zealous
-	trait = education_diplomacy_3
+	trait = ambitious # Sought power in Lothaire's kingdom
+	trait = stubborn # Resisted attempts by Lothaire and Louis to curtail his power and land, resisted Louis II's rule during 863–4 often through proving rebels with safe havens within the deep mountains passes under his control
+	trait = lustful # Accused of committing innumerable adulteries and disgraceful fornication
+	trait = callous # Accused of committing homicides and raiding
+	trait = education_martial_2
+	trait = raider # Conducted a number of raids and had a reputation for intolerable plundering
 	father = 7976
 	820.1.1 = {
 		birth = "820.1.1"
 	}
 	864.1.1 = {
-		death = "864.1.1"
+		death = {
+			death_reason = death_battle # Killed at the Battle of Orbe in 864
+			killer = 7989 # by the 'sons of Conrad', possibly Conrad II, Duke of Transjurane Burgundy
+		}
 	}
 }
 
@@ -25829,12 +25839,14 @@
 	diplomacy = 7
 	intrigue = 8
 	stewardship = 8
+	learning = 7
 	religion = "catholic"
 	culture = french
+	trait = gregarious
+	trait = ambitious
 	trait = diligent
-	trait = calm
-	trait = zealous
-	trait = education_diplomacy_3
+	trait = patient
+	trait = education_diplomacy_5
 	father = 7979
 	mother = 7978
 	841.1.1 = {
@@ -27534,7 +27546,9 @@
 		add_spouse = 151301
 	}
 	841.6.25 = {
-		death = "841.6.25"
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -40674,12 +40688,12 @@
 	}
 }
 
-144984 = {
+144984 = { # https://fr.wikipedia.org/wiki/Nibelung_IV
 	name = "Nibelung"
 	dynasty_house = house_nibelunging #Nibelunging
 	religion = "catholic"
 	culture = french
-	father = 144985
+	father = 190552 # Nibelung III
 	800.1.1 = {
 		birth = "800.1.1"
 	}
@@ -43085,7 +43099,7 @@
 }
 
 #Odo I, Count of Troyes
-163065 = {
+163065 = { # https://en.wikipedia.org/wiki/Odo_I,_Count_of_Troyes
 	name = "Eudes"
 	dna = 163065_eudes_of_bourbon
 	dynasty = 743 #Robertine (dynasty of house Capet)
@@ -43115,7 +43129,7 @@
 	}
 }
 
-163093 = {
+163093 = { # Son of https://en.wikipedia.org/wiki/Matfrid
 	name = "Matfried"
 	dynasty = 667
 	religion = "catholic"
@@ -45427,6 +45441,7 @@
 	religion = "catholic"
 	culture = french
 	father = 163065
+	mother = HEE_Wandilmodis
 	838.1.1 = {
 		birth = "838.1.1"
 	}
@@ -46819,10 +46834,15 @@
 }
 #End of counts of Clermont
 303413 = {
-	name = "HervE_"
-	#placeholder for 867 c_boulogne
+	name = "Herrequin"
+	#A proverbially wicked count named Herrequin is recorded for the 9th century, but he may be legendary
 	culture = french
 	religion = catholic
+	trait = education_intrigue_5
+	trait = vengeful
+	trait = deceitful
+	trait = brave
+	trait = cynical
 	833.1.1 = {
 		birth = yes
 	}
@@ -46849,7 +46869,7 @@
 	dynasty = 2001320	#Milonid
 	culture = french
 	religion = catholic
-	father = 303413
+	father = 303414
 	849.1.1 = {		#random guess
 		birth = yes
 	}
@@ -46911,11 +46931,14 @@
 	religion = catholic
 	culture = french
 	father = 163065
+	mother = HEE_Wandilmodis
 	852.1.1 = {
 		birth = yes
 	}
-	899.1.1 = {
-		death = yes
+	886.1.1 = {
+		death = {
+			death_reason = death_battle # Killed fighting Vikings
+		}
 	}
 }
 ##Adrien of Orleans' family

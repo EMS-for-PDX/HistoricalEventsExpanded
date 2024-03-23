@@ -1,7 +1,7 @@
 ﻿namespace = HEE_carolingian_dissolution
-# West Francia's Chain - Ludwig the German, Carloman of Bavaria, Ludwig the Younger, Karl the Fat
+# Dissolution of the Carolingian Empire/Breakdown of Carolingian System in the HRE
 
-# Division of Frankfurt 
+# Karl's Forced Abdication
 HEE_carolingian_dissolution.9999 = {
 	type = character_event
 	title = HEE_carolingian_dissolution.9999.t
@@ -54,6 +54,7 @@ HEE_carolingian_dissolution.9999 = {
 		title:k_romagna = { save_scope_as = k_romagna }
 		title:k_france = { save_scope_as = k_france }
 		title:k_aquitaine = { save_scope_as = k_aquitaine }
+		title:k_sardinia = { save_scope_as = k_sardinia }
 		title:k_sicily = { save_scope_as = k_sicily } # Pesky Bari
 		
 		every_held_title = {
@@ -71,7 +72,12 @@ HEE_carolingian_dissolution.9999 = {
 		every_held_title = {
 			limit = {
 				tier < tier_kingdom
-				target_is_de_jure_liege_or_above = scope:k_italy
+				OR = {
+					target_is_de_jure_liege_or_above = scope:k_italy
+					target_is_de_jure_liege_or_above = scope:k_romagna
+					target_is_de_jure_liege_or_above = scope:k_sardinia
+					target_is_de_jure_liege_or_above = scope:k_sicily
+				}
 			}
 			add_to_list = karl_italian_domain
 		}
@@ -145,19 +151,15 @@ HEE_carolingian_dissolution.9999 = {
 		every_vassal = {
 			limit = {
 				primary_title = {
-					target_is_de_jure_liege_or_above = scope:k_italy
+					OR = {
+						target_is_de_jure_liege_or_above = scope:k_italy
+						target_is_de_jure_liege_or_above = scope:k_romagna
+						target_is_de_jure_liege_or_above = scope:k_sardinia
+						target_is_de_jure_liege_or_above = scope:k_sicily
+					}
 				}
 			}
 			add_to_list = italian_vassals
-		}
-
-		every_vassal = {
-			limit = {
-				primary_title = {
-					target_is_de_jure_liege_or_above = scope:k_romagna
-				}
-			}
-			add_to_list = romagnian_vassals
 		}
 
 		every_vassal = {
@@ -206,7 +208,7 @@ HEE_carolingian_dissolution.9999 = {
 		}
 	}
 
-	option = { #My Brothers' claims are uncontested, they shall recieve my kingdoms
+	option = { #Accept your forced abdication
 		name = HEE_carolingian_dissolution.9999.a
 		
 		trigger = {
@@ -215,473 +217,297 @@ HEE_carolingian_dissolution.9999 = {
 		
 		# custom_tooltip = Provide Historical Context?
 
-			# EAST FRANCIA
-			if = {
-				limit = { has_title = title:k_east_francia }
-				
-				#Arnulf recieves the Kingdom of Bavaria
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_east_francia = {
-						change_title_holder = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
+		destroy_title = title:e_hre # Actually dissolve the Empire
+
+		# EAST FRANCIA
+		if = {
+			limit = { has_title = title:k_east_francia }
 			
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = german_vassals
-						change_liege = {
-							liege = title:k_east_francia.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_german_domain
-						change_title_holder_include_vassals = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-
-			# ALEMANIA
-			if = {
-				limit = { has_title = title:k_alemania }
-				
-				#Arnulf recieves the Kingdom of Bavaria
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_alemania = {
-						change_title_holder = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-			
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = alemanian_vassals
-						change_liege = {
-							liege = title:k_alemania.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_alemanian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-	
-			# BAVARIA
-			if = {
-				limit = { has_title = title:k_bavaria }
-				
-				#Arnulf recieves the Kingdom of Bavaria
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_bavaria = {
-						change_title_holder = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-			
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = bavarian_vassals
-						change_liege = {
-							liege = title:k_bavaria.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_bavarian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-			
-			# LOTHARINGIA
-			if = {
-				limit = { has_title = title:k_lotharingia }
-				
-				#Arnulf recieves the Kingdom of Bavaria
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_lotharingia = {
-						change_title_holder = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-			
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = lotharingian_vassals
-						change_liege = {
-							liege = title:k_lotharingia.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:arnulf = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_lotharingian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:arnulf
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-
-			# ITALY
-			if = {
-				limit = { has_title = title:k_italy }
-
-				scope:berengar_of_friuli_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_italy = {
-						change_title_holder = {
-							holder = scope:berengar_of_friuli_stand_in
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:berengar_of_friuli_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = italian_vassals
-						change_liege = {
-							liege = title:k_italy.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:berengar_of_friuli_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = romagnian_vassals
-						change_liege = {
-							liege = title:k_italy.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:berengar_of_friuli_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_italian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:berengar_of_friuli_stand_in
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-
-			# BURGUNDY
-			if = {
-				limit = { has_title = title:k_burgundy }
-
-				# Burgundy goes to Karl the Fat because historically its Italy
-				scope:rudolph_i_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_burgundy = {
-						change_title_holder = {
-							holder = scope:rudolph_i_stand_in
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-				
-				#King of Burgundy gets Burgundian vassals
-				scope:rudolph_i_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = burgundian_vassals
-						change_liege = {
-							liege = title:k_burgundy.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:rudolph_i_stand_in = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_burgundian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:rudolph_i_stand_in
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-
-			# FRANCE
-			if = {
-				limit = { has_title = title:k_france }
-
-				# Burgundy goes to Karl the Fat because historically its Italy
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_france = {
-						change_title_holder = {
-							holder = scope:odo_of_paris
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = french_vassals
-						change_liege = {
-							liege = title:k_france.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_french_domain
-						change_title_holder_include_vassals = {
-							holder = scope:odo_of_paris
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-			}
-
-			# AQUITAINE
-			if = {
-				limit = { has_title = title:k_aquitaine }
-
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					
-					title:k_aquitaine = {
-						change_title_holder = {
-							holder = scope:odo_of_paris
-							change = scope:change
-						}
-					}
-					
-					resolve_title_and_vassal_change = scope:change
-				}
-				
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = aquitanian_vassals
-						change_liege = {
-							liege = title:k_aquitaine.holder
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-
-				scope:odo_of_paris = {
-					create_title_and_vassal_change = {
-						type = granted
-						save_scope_as = change
-						add_claim_on_loss = yes
-					}
-					every_in_list = {
-						list = karl_aquitanian_domain
-						change_title_holder_include_vassals = {
-							holder = scope:odo_of_paris
-							change = scope:change
-						}
-					}
-					resolve_title_and_vassal_change = scope:change
-				}
-			}
-			
-			# Clean-up in case of issues with Karlomann's domain
-			title:k_bavaria.holder = {
+			#Arnulf recieves the Kingdom of Bavaria
+			scope:arnulf = {
 				create_title_and_vassal_change = {
 					type = granted
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
 				
-				title:d_bavaria.holder = {
+				title:k_east_francia = {
+					change_title_holder = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+		
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = german_vassals
+					change_liege = {
+						liege = title:k_east_francia.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_german_domain
+					change_title_holder_include_vassals = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# ALEMANIA
+		if = {
+			limit = { has_title = title:k_alemania }
+			
+			#Arnulf recieves the Kingdom of Bavaria
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_alemania = {
+					change_title_holder = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+		
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = alemanian_vassals
+					change_liege = {
+						liege = title:k_alemania.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_alemanian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# BAVARIA
+		if = {
+			limit = { has_title = title:k_bavaria }
+			
+			#Arnulf recieves the Kingdom of Bavaria
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_bavaria = {
+					change_title_holder = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+		
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = bavarian_vassals
 					change_liege = {
 						liege = title:k_bavaria.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_bavarian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		
+		# LOTHARINGIA
+		if = {
+			limit = { has_title = title:k_lotharingia }
+			
+			#Arnulf recieves the Kingdom of Bavaria
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_lotharingia = {
+					change_title_holder = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+		
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = lotharingian_vassals
+					change_liege = {
+						liege = title:k_lotharingia.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:arnulf = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_lotharingian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:arnulf
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# ITALY
+		if = {
+			limit = { has_title = title:k_italy }
+
+			scope:berengar_of_friuli_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_italy = {
+					change_title_holder = {
+						holder = scope:berengar_of_friuli_stand_in
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:berengar_of_friuli_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = italian_vassals
+					change_liege = {
+						liege = title:k_italy.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:berengar_of_friuli_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_italian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:berengar_of_friuli_stand_in
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# BURGUNDY
+		if = {
+			limit = { has_title = title:k_burgundy }
+
+			# Burgundy goes to Karl the Fat because historically its Italy
+			scope:rudolph_i_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_burgundy = {
+					change_title_holder = {
+						holder = scope:rudolph_i_stand_in
 						change = scope:change
 					}
 				}
@@ -689,9 +515,171 @@ HEE_carolingian_dissolution.9999 = {
 				resolve_title_and_vassal_change = scope:change
 			}
 			
+			#King of Burgundy gets Burgundian vassals
+			scope:rudolph_i_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = burgundian_vassals
+					change_liege = {
+						liege = title:k_burgundy.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
 
-			# In the event of any lingering titles not covered
-			# depose = yes
+			scope:rudolph_i_stand_in = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_burgundian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:rudolph_i_stand_in
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+
+		# FRANCE
+		if = {
+			limit = { has_title = title:k_france }
+
+			# Burgundy goes to Karl the Fat because historically its Italy
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_france = {
+					change_title_holder = {
+						holder = scope:odo_of_paris
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = french_vassals
+					change_liege = {
+						liege = title:k_france.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_french_domain
+					change_title_holder_include_vassals = {
+						holder = scope:odo_of_paris
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+		}
+
+		# AQUITAINE
+		if = {
+			limit = { has_title = title:k_aquitaine }
+
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				
+				title:k_aquitaine = {
+					change_title_holder = {
+						holder = scope:odo_of_paris
+						change = scope:change
+					}
+				}
+				
+				resolve_title_and_vassal_change = scope:change
+			}
+			
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = aquitanian_vassals
+					change_liege = {
+						liege = title:k_aquitaine.holder
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+
+			scope:odo_of_paris = {
+				create_title_and_vassal_change = {
+					type = granted
+					save_scope_as = change
+					add_claim_on_loss = yes
+				}
+				every_in_list = {
+					list = karl_aquitanian_domain
+					change_title_holder_include_vassals = {
+						holder = scope:odo_of_paris
+						change = scope:change
+					}
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+		}
+		
+		# Clean-up in case of issues with Karlomann's domain
+		title:k_bavaria.holder = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			
+			title:d_bavaria.holder = {
+				change_liege = {
+					liege = title:k_bavaria.holder
+					change = scope:change
+				}
+			}
+			
+			resolve_title_and_vassal_change = scope:change
+		}
+		
+
+		# In the event of any lingering titles not covered
+		# depose = yes
 			
 		ai_chance = {
  			base = 100

@@ -2,6 +2,7 @@
 
 e_bulgarian_principality = {
 	864.1.1 = {
+		government = tribal_government
 		holder = 70382 #Boris
 		effect = {
 			set_capital_county = title:c_dorostorum
@@ -45,6 +46,7 @@ e_bulgarian_principality = {
 e_bulgarian_khanate = {
 	632.1.1 = {
 		holder = 159117
+		government = tribal_government
 	}
 	665.1.1 = {
 		holder = 159127

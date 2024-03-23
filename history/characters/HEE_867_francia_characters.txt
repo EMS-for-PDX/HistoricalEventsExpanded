@@ -62,6 +62,9 @@ HEE_gisele_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/L
 	865.1.1 = {
 		birth = yes
 	}
+	885.1.1 = {
+		add_spouse = 303420 # Robert I of Troyes
+	}
 	884.1.1 = {
 		death = yes
 	}
@@ -97,24 +100,20 @@ HEE_charles_the_fat_bastard = { # https://en.wikipedia.org/wiki/Bernard_(son_of_
 
 HEE_engelram = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
 	name = "Engelram"
-	# female = yes
 	# dynasty = 
 	religion = "catholic"
 	culture = "french"
-	# father =
-	# mother =
-	# health = 5.0
 	
 	#Skills
 	diplomacy = 8
 	martial = 5
-	stewardship = 7
+	stewardship = 8
 	intrigue = 7
 	learning = 6
 	prowess = 5
 	
 	#Education
-	trait = education_diplomacy_3
+	trait = education_stewardship_3 # Engleram was Chamberlain, Master of the Doorkeepers and Administrator of the fisc under Charles the Bald
 	
 	#Personality Traits
 	trait = honest
@@ -181,6 +180,36 @@ HEE_friderada = { # https://en.wikipedia.org/wiki/Friderada
 	}
 	905.1.1 = {
 		death = yes
+	}
+}
+
+HEE_engelram_daughter = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
+	name = "Oda"
+	female = yes
+	# dynasty = 
+	religion = "catholic"
+	culture = "french"
+	father = HEE_engelram
+	mother = HEE_friderada
+	
+	#Education
+	trait = charming
+	
+	#Personality Traits
+	trait = lustful
+	
+	disallow_random_traits = yes
+	861.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		add_spouse = 144994 # Ricwin, Count of Verdun
+	}
+	895.1.1 = {
+		death = {
+			death_reason = death_execution
+			killer = 144994 # Ricwin, Count of Verdun, who ordered the beheading of his wife for her unchastity
+		}
 	}
 }
 
@@ -435,5 +464,74 @@ HEE_turpio = { # https://en.wikipedia.org/wiki/Turpio
 		death = {
 			death_reason = death_battle
 		}
+	}
+}
+
+HEE_richilde_of_macons = {
+	name = "Richilde"
+	female = yes
+	dynasty = 9306 #Bivinids/Nithard-Richard from Middle Rhine
+	religion = "catholic"
+	culture = french
+	father = 91396 #Richard, brother of Nithard
+	808.1.1 = {
+		birth = yes
+	}
+	863.1.1 = {
+		add_spouse = 163066 # Ecchard de Mâcon
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_amuna_wife_of_garcia_ii = {
+	name = "Amuna" #Amuna, wife of García II Sánchez of Gascony
+	female = yes
+	dynasty = 541
+	religion = "catholic"
+	culture = french
+	father = 40080
+	mother = 168142
+	862.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		add_spouse = 7563
+	}
+	920.1.1 = {
+		death = yes
+	}
+}
+
+HEE_Wandilmodis = {
+	name = "Wandilmodis" #Wandilmodis, wife of Eudes Ier de Troyes (Robertien)
+	female = yes
+	dynasty = hee_of_worms
+	religion = "catholic"
+	culture = "franconian"
+	820.1.1 = { # Unknown?
+		birth = yes
+	}
+	846.1.1 = {
+		add_spouse = 163065
+	}
+	878.1.1 = { # Unknown?
+		death = yes
+	}
+}
+
+HEE_odo_ii_of_troyes = {
+	name = "Eudes"	#Probable count of Dijon in 867
+	dynasty = 743 #Robertine (dynasty of house Capet)
+	religion = catholic
+	culture = french
+	father = 163065
+	mother = HEE_Wandilmodis
+	850.1.1 = {
+		birth = yes
+	}
+	876.1.1 = {
+		death = yes
 	}
 }

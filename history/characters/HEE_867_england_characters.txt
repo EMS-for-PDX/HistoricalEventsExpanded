@@ -691,50 +691,6 @@ tlk_steapa = {
     }
 }
 
-tlk_wulfhere = { # Inspired by Wulfhere in the Last Kingdom, which was inspired by https://en.wikipedia.org/wiki/Wulfhere,_Ealdorman_of_Wiltshire
-	name = "Wulfhere"
-	dynasty = hee_wiltshire
-	religion = catholic
-	culture = anglo_saxon
-	# father =
-	# mother =
-	#health =
-	
-	#Skills
-	diplomacy = 6
-	martial = 7
-	stewardship = 6
-	intrigue = 7
-	learning = 6
-	prowess = 5
-
-	#Education
-	trait = education_martial_2
-	
-	#Personality Traits
-	trait = fickle
-	trait = deceitful
-	trait = cynical
-
-	#Other Traits
-	trait = disloyal
-	trait = organizer
-
-	disallow_random_traits = yes
-	sexuality = heterosexual
-    825.1.1 = {
-		birth = yes
-		effect = {
-			add_character_flag = no_headgear
-		}
-	}
-	878.5.3 = {
-		death = {
-			death_reason = death_battle
-		}
-	}
-}
-
 tlk_siglef = {
 	name = "Siglef"
 	dynasty = hee_kent

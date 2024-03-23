@@ -76,6 +76,7 @@ hee_tephrice = {
 	prefix = "dynnp_of"
 	name = "dynn_Tephrice"
 	culture = "armenian"
+	motto = "dynn_Tephrice_motto"
 }
 
 hee_khachen_princes = {
@@ -261,6 +262,12 @@ hee_loire = {
 	prefix = "dynnp_of"
 	name = "dynn_Loire"
 	culture = "french"
+}
+
+hee_of_worms = {
+	prefix = "dynnp_von"
+	name = "dynn_Worms"
+	culture = "franconian"
 }
 
 

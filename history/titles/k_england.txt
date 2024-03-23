@@ -30,7 +30,7 @@ k_england = {
 		holder = 106 # Aethelraed the Unready
 	}
 	1013.12.25 = {
-		holder = 101505 # Svend Tveskägg
+		holder = 101505 # Svend Tveskï¿½gg
 	}
 	1014.2.3 = {
 		holder = 106 # Aethelraed the Unready
@@ -167,7 +167,7 @@ c_middlesex = {
 		holder = 106 # Aethelraed the Unready
 	}
 	1013.12.25 = {
-		holder = 101505 # Svend Tveskägg
+		holder = 101505 # Svend Tveskï¿½gg
 	}
 	1014.2.3 = {
 		holder = 106 # Aethelraed the Unready
@@ -410,7 +410,7 @@ c_hertfordshire = {
 		holder = 106 # Aethelraed the Unready
 	}
 	1013.12.25 = {
-		holder = 101505 # Svend Tveskägg
+		holder = 101505 # Svend Tveskï¿½gg
 	}
 	1014.2.3 = {
 		holder = 106 # Aethelraed the Unready
@@ -525,7 +525,7 @@ c_buckinghamshire = {
 		holder = 106 # Aethelraed the Unready
 	}
 	1013.12.25 = {
-		holder = 101505 # Svend Tveskägg
+		holder = 101505 # Svend Tveskï¿½gg
 	}
 	1014.2.3 = {
 		holder = 106 # Aethelraed the Unready
@@ -1110,13 +1110,13 @@ c_derby = {
 		holder = 205081
 	}
 	839.1.1 = {
-		holder = 306018 #Æthelred Mucel
+		holder = 306018 #ï¿½thelred Mucel
 	}
 	852.1.1 = {
 		liege = "d_hereford"
 	}
 	879.1.1 = {
-		holder = 306021 #Æthelwulf Mucel
+		holder = 306021 #ï¿½thelwulf Mucel
 	}
 	1066.1.1 = {
 		liege = "d_lancaster"
@@ -1271,13 +1271,13 @@ c_north_riding = {
 		holder = 5660 #Morcar
 	}
 	1070.1.1 = {
-		holder = 356 #Alain 'Rufus' de Penthièvre
+		holder = 356 #Alain 'Rufus' de Penthiï¿½vre
 	}
 	1089.1.1 = {
 		holder = 10047 #Alain Niger
 	}
 	1093.1.1 = {
-		holder = 205744 #Étienne I de Penthièvre
+		holder = 205744 #ï¿½tienne I de Penthiï¿½vre
 	}
 	1093.8.24 = {
 		holder = 146 #William II Rufus
@@ -1289,7 +1289,7 @@ c_north_riding = {
 		holder = 205851 #Stephen
 	}
 	1136.4.21 = {
-		holder = 205751 #Alain de Penthièvre
+		holder = 205751 #Alain de Penthiï¿½vre
 	}
 	1146.1.1 = {
 		holder = 205851 #Stephen
@@ -1346,13 +1346,13 @@ c_east_riding = {
 		holder = 5660 #Morcar
 	}
 	1070.1.1 = {
-		holder = 356 #Alain 'Rufus' de Penthièvre
+		holder = 356 #Alain 'Rufus' de Penthiï¿½vre
 	}
 	1089.1.1 = {
 		holder = 10047 #Alain Niger
 	}
 	1093.1.1 = {
-		holder = 205744 #Étienne I de Penthièvre
+		holder = 205744 #ï¿½tienne I de Penthiï¿½vre
 	}
 	1093.8.24 = {
 		holder = 146 #William II Rufus
@@ -1364,7 +1364,7 @@ c_east_riding = {
 		holder = 205851 #Stephen
 	}
 	1136.4.21 = {
-		holder = 205751 #Alain de Penthièvre
+		holder = 205751 #Alain de Penthiï¿½vre
 	}
 	1146.1.1 = {
 		holder = 205851 #Stephen
@@ -1421,13 +1421,13 @@ c_west_riding = {
 		holder = 5660 #Morcar
 	}
 	1070.1.1 = {
-		holder = 356 #Alain 'Rufus' de Penthièvre
+		holder = 356 #Alain 'Rufus' de Penthiï¿½vre
 	}
 	1089.1.1 = {
 		holder = 10047 #Alain Niger
 	}
 	1093.1.1 = {
-		holder = 205744 #Étienne I de Penthièvre
+		holder = 205744 #ï¿½tienne I de Penthiï¿½vre
 	}
 	1093.8.24 = {
 		holder = 146 #William II Rufus
@@ -1439,7 +1439,7 @@ c_west_riding = {
 		holder = 205851 #Stephen
 	}
 	1136.4.21 = {
-		holder = 205751 #Alain de Penthièvre
+		holder = 205751 #Alain de Penthiï¿½vre
 	}
 	1146.1.1 = {
 		holder = 205851 #Stephen
@@ -1485,7 +1485,7 @@ c_lincolnshire = {
 		liege = "d_hereford"
 	}
 	839.1.1 = {
-		holder = 306018 #Æthelred Mucel
+		holder = 306018 #ï¿½thelred Mucel
 	}
 	866.1.1 = {
 		holder = 163112 #Great Heathen Army moves through (i.e conquers) this area in 866
@@ -1887,13 +1887,13 @@ c_leicestershire = {
 		holder = 205072
 	}
 	839.1.1 = {
-		holder = 306018 #Æthelred Mucel
+		holder = 306018 #ï¿½thelred Mucel
 	}
 	852.1.1 = {
 		liege = "d_hereford"
 	}
 	879.1.1 = {
-		holder = 306021 #Æthelwulf Mucel
+		holder = 306021 #ï¿½thelwulf Mucel
 	}
 	1066.1.1 = {
 		liege = "k_england"
@@ -1937,7 +1937,7 @@ c_nottinghamshire = {
 		holder = 205072
 	}
 	839.1.1 = {
-		holder = 306018 #Æthelred Mucel
+		holder = 306018 #ï¿½thelred Mucel
 	}
 	852.1.1 = {
 		liege = "d_hereford"
@@ -2470,7 +2470,7 @@ c_wiltshire = {
 	}
 	855.1.1 = {
 		liege = "d_somerset"
-		holder = tlk_wulfhere # Wulfhere, Ealdorman of Wiltshire
+		holder = 306016 # Wulfhere, Ealdorman of Wiltshire
 	}
 	# 865.1.1 = {
 		# liege = "k_england"
@@ -2504,7 +2504,7 @@ c_wiltshire = {
 		holder = 204532 #Ela of Salisbury
 	}
 	1261.1.1 = {
-		holder = 454041 #Margaret Longespée
+		holder = 454041 #Margaret Longespï¿½e
 	}
 	1310.1.1 = {
 		holder = 454023 #Alice de Lacy
@@ -2892,7 +2892,7 @@ b_canterbury = {
 		holder = 180690 # Eadsige
 	}
 	1050.10.29 = {
-		holder = 180691 # Robert of Jumièges
+		holder = 180691 # Robert of Jumiï¿½ges
 	}
 	1052.9.1 = {
 		holder = 5604 # Stigand
@@ -3719,7 +3719,7 @@ c_cornwall = {
 		holder = 161281 #Kadoc of Cornwall
 	}
 	1071.1.1 = {
-		holder = 354 #Brian of Penthièvre
+		holder = 354 #Brian of Penthiï¿½vre
 	}
 	1072.1.1 = {
 		holder = 150 #Robert, Count of Mortain
@@ -3734,7 +3734,7 @@ c_cornwall = {
 		holder = 205851 #Stephen
 	}
 	1140.1.1 = {
-		holder = 205751 #Alain de Penthièvre
+		holder = 205751 #Alain de Penthiï¿½vre
 	}
 	1141.1.1 = {
 		holder = 204571 #Reginald de Dunstanville

@@ -10348,7 +10348,7 @@
 	}
 }
 
-127007 = {
+127007 = { # https://fr.wikipedia.org/wiki/Bernard_de_Rouergue
 	name = "Bernat" #Bernard de Toulouse
 	dynasty = 727
 	martial = 8
@@ -12827,7 +12827,9 @@
 		add_spouse = 168132
 	}
 	866.1.1 = {
-		death = "866.1.1"
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -12903,7 +12905,7 @@
 	}
 }
 
-168137 = {
+168137 = { # https://en.wikipedia.org/wiki/Bernard_of_Gothia
 	name = "Bernat" # Bernard de Gothia, Duke of Barcelona (865-878) & Count of Barcelona & Rousillon (865-878) & Girona (870-878)
 	dna = 168137_bernat_of_gothia
 	dynasty = 100217

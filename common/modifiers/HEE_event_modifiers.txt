@@ -21,6 +21,14 @@ alfred_annointed_by_the_pope = {
 	christianity_religion_opinion = 15
 }
 
+alfred_lifelong_illness = {
+	icon = health_negative
+	health = -0.3
+	negate_health_penalty_add = -0.5
+	prowess = -10
+	vassal_opinion = 5
+}
+
 michael_administrative_indifference = {
 	icon = county_modifier_corruption_negative
 	stress_gain_mult = -0.15

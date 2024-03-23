@@ -1462,6 +1462,9 @@
 	}
 	867.1.1 = {
 		add_spouse = 306020
+		effect = {
+			add_character_modifier = alfred_lifelong_illness
+		}
 	}
 	890.1.1 = {
 		give_nickname = nick_the_great
@@ -1852,7 +1855,7 @@
 	stewardship = 8
 	trait = education_stewardship_3
 	trait = diligent
-	trait = shy
+	trait = brave
 	trait = just
 	fertility = 0.3 #Reduce chance of children before death so Alfred is more likely to inherit
 	840.1.1 = {
@@ -1878,7 +1881,7 @@
 	mother = 306017 #Fictional
 	father = 306016 #Fictional
 	fertility = 0.3 #Reduce chance of children before death so Alfred is more likely to inherit
-	831.1.1 = {
+	837.1.1 = {
 		birth = yes
 	}
 	899.1.6 = {
@@ -1886,15 +1889,35 @@
 	}
 }
 
-306016 = { #Fictional vassal of ?helred and fictional father of Wulfthryth
-	name = Uhtred
+306016 = { # Inspired by Wulfhere in the Last Kingdom, which in turn is inspired by https://en.wikipedia.org/wiki/Wulfhere,_Ealdorman_of_Wiltshire, possible father to Queen Wulfthryth
+	name = Wulfhere
+	dynasty = hee_wiltshire
 	religion = catholic
 	culture = anglo_saxon
-	803.1.1 = {
+	diplomacy = 6
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+	prowess = 5
+	trait = education_martial_2
+	trait = fickle
+	trait = deceitful
+	trait = cynical
+	trait = organizer
+	818.1.1 = {
 		birth = yes
 	}
-	870.1.6 = {
-		death = yes
+	840.1.1 = {
+		add_spouse = 306017
+	}
+	878.1.1 = {
+		trait = disloyal # Possibly betrayed Alfred to Guthrum
+	}
+	878.5.3 = {
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -1903,7 +1926,7 @@
 	female = yes
 	religion = catholic
 	culture = anglo_saxon
-	805.1.1 = {
+	815.1.1 = {
 		birth = yes
 	}
 	870.1.6 = {

@@ -22,8 +22,9 @@
 	scope:new_title = {
 		set_capital_county = title:c_middlesex #London
 		set_landless_title = yes
-		# set_ruler_uses_title_name = no
-		# TIT-27442
+		set_destroy_if_invalid_heir = yes
+		set_destroy_on_gain_same_tier = yes
+		set_delete_on_destroy = yes
 		set_no_automatic_claims = yes
 		set_can_be_named_after_dynasty = no
 		change_title_holder = {

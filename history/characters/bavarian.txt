@@ -3578,7 +3578,7 @@
 	name = "Welf"
 	dynasty = 650
 	trait = education_learning_2
-	trait = celibate
+	trait = devoted # abbot of Saint-Riquier
 	religion = "catholic"
 	culture = bavarian
 	father = 144974

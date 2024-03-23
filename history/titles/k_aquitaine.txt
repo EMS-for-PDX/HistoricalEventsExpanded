@@ -1159,7 +1159,7 @@ c_saintonge = {
 		liege = "d_poitou"
 	}
 	866.10.1 = {
-		holder = 90128
+		holder = 40080
 	}
 	890.10.1 = {
 		holder = 90127
@@ -1305,15 +1305,9 @@ c_aunis = {
 
 
 d_toulouse = {
-	769.1.1 = {
-		holder = 190514 #Guillaume
-		liege = k_lotharingia
-	}
-	778.1.1 = {
-		liege = "k_aquitaine"
-	}
 	790.1.1 = {
 		holder = 168130 #Guillaume I Gellones
+		liege = "k_aquitaine"
 	}
 	806.1.1 = {
 		holder = 168079 #Beggo Chatenois
@@ -1336,13 +1330,16 @@ d_toulouse = {
 	}
 	865.4.16 = {
 		liege =  k_aquitaine
-		holder = 127007 #Bernard de Toulouse
+		holder = 127007 #Bernard II de Toulouse
 	}
 	874.8.1 = {
-		holder = 40232 #Eudes de Toulouse
+		holder = 127019 #Bernard III Plantapilosa
 	}
 	884.12.12 = {
 		liege = "k_france"
+	}
+	886.1.1 = {
+		holder = 40232 #Eudes de Toulouse
 	}
 	918.6.17 = {
 		holder = 40234 #Raymond II de Toulouse
@@ -1413,12 +1410,9 @@ c_toulouse = {
 	867.1.1 = { change_development_level = 6 }
 	1066.1.1 = { change_development_level = 10 }
 	
-	769.1.1 = {
-		holder = 190514 #Guillaume
-		liege = d_toulouse
-	}
 	790.1.1 = {
 		holder = 168130 #Guillaume I Gellones
+		liege = d_toulouse
 	}
 	806.1.1 = {
 		holder = 168079 #Beggo Chatenois
@@ -1441,13 +1435,16 @@ c_toulouse = {
 	}
 	865.4.16 = {
 		liege =  k_aquitaine
-		holder = 127007 #Bernard de Toulouse
+		holder = 127007 #Bernard II de Toulouse
 	}
 	874.8.1 = {
-		holder = 40232 #Eudes de Toulouse
+		holder = 127019 #Bernard III Plantapilosa
 	}
 	884.12.12 = {
 		liege = "k_france"
+	}
+	886.1.1 = {
+		holder = 40232 #Eudes de Toulouse
 	}
 	918.6.17 = {
 		holder = 40234 #Raymond II de Toulouse
@@ -1515,17 +1512,9 @@ c_toulouse = {
 }
 
 c_quercy = {
-	769.1.1 = {
-		holder = 190514 #Guillaume
-	}
-	769.1.1 = {
-		liege = k_lotharingia
-	}
-	778.1.1 = {
-		liege = "d_toulouse"
-	}
 	790.1.1 = {
 		holder = 168130 #Guillaume I Gellones
+		liege = "d_toulouse"
 	}
 	806.1.1 = {
 		holder = 168079 #Beggo Chatenois
@@ -1546,9 +1535,13 @@ c_quercy = {
 		holder = 40230 #Raymond Ier de Toulouse
 	}
 	865.4.16 = {
-		holder = 127007 #Bernard de Toulouse
+		liege =  k_aquitaine
+		holder = 127007 #Bernard II de Toulouse
 	}
 	874.8.1 = {
+		holder = 127019 #Bernard III Plantapilosa
+	}
+	886.1.1 = {
 		holder = 40232 #Eudes de Toulouse
 	}
 	918.6.17 = {
@@ -1711,9 +1704,13 @@ c_rouergue = {
 		holder = 40230 #Raymond Ier de Toulouse
 	}
 	865.4.16 = {
-		holder = 127007 #Bernard de Toulouse
+		liege =  k_aquitaine
+		holder = 127007 #Bernard II de Toulouse
 	}
 	874.8.1 = {
+		holder = 127019 #Bernard III Plantapilosa
+	}
+	886.1.1 = {
 		holder = 40232 #Eudes de Toulouse
 	}
 	#918 - Ermengaud
@@ -1742,9 +1739,13 @@ c_millau = {
 		holder = 40230 #Raymond Ier de Toulouse
 	}
 	865.4.16 = {
-		holder = 127007 #Bernard de Toulouse
+		liege =  k_aquitaine
+		holder = 127007 #Bernard II de Toulouse
 	}
 	874.8.1 = {
+		holder = 127019 #Bernard III Plantapilosa
+	}
+	886.1.1 = {
 		holder = 40232 #Eudes de Toulouse
 	}
 	#918 - Ermengaud
@@ -1764,9 +1765,15 @@ c_millau = {
 }
 
 c_albi = {
-	864.1.1 = {
-		holder = 127007 #Bernard de Toulouse
-		liege = d_toulouse
+	865.4.16 = {
+		holder = 127007 #Bernard II de Toulouse
+		liege =  d_toulouse
+	}
+	874.8.1 = {
+		holder = 127019 #Bernard III Plantapilosa
+	}
+	886.1.1 = {
+		holder = 40232 #Eudes de Toulouse
 	}
 	
 	#Viscounts of Albi
@@ -1909,7 +1916,7 @@ c_carcassonne = {
 		liege = d_barcelona
 	}
 	872.1.1 = {
-		holder = 190557 # Bernard
+		holder = 127019 # Bernard
 		liege = d_toulouse
 	}
 	873.6.1 = {
@@ -2032,8 +2039,14 @@ c_foix = {
 		liege = d_gascogne
 	}
 	865.4.16 = {
-		holder = 127007 #Bernard de Toulouse
-		liege = "d_toulouse"
+		holder = 127007 #Bernard II de Toulouse
+		liege =  d_toulouse
+	}
+	874.8.1 = {
+		holder = 127019 #Bernard III Plantapilosa
+	}
+	886.1.1 = {
+		holder = 40232 #Eudes de Toulouse
 	}
 	957.1.1 = {
 		holder = 40182
@@ -2889,7 +2902,7 @@ d_bourbon = {
 c_bourbon = {
 	834.1.1 = {
 		liege = k_france
-		holder = 163065
+		holder = 90104 # Going with idea Bourbonnais was essentially royal domain
 	}
 	915.1.1 = {
 		holder = 40150	#Aymar
@@ -2955,25 +2968,18 @@ c_bellac = {
 		holder = 190561 #Geofrey
 		liege = k_lotharingia
 	}
-	778.1.1 = {
-		liege = "k_aquitaine"
-		holder = 6392
+	828.1.1 = {
+		holder = 168131	#Emenon of Poitiers 
 	}
-	781.1.1 = {
-		holder = 90095
+	838.1.1 = {
+		holder = 168136	#Bernard II, Count of Poitiers
 	}
-	817.1.1 = {
-		holder = 90096
+	839.1.1 = {
+		holder = 90129	#Ramnulf I
+		liege = d_aquitaine
 	}
-	838.1.14 = {
-		holder = 90104
-	}
-	855.1.1 = {
-		holder = 42020
-	}
-	866.1.30 = {
-		holder = 90123
-		liege = "d_aquitaine"
+	866.10.1 = {
+		holder = 90128	#Ramnulf II
 	}
 	879.1.1 = {
 		holder = 90155
@@ -3067,7 +3073,7 @@ c_bellac = {
 c_jaligny = {
 	834.1.1 = {
 		liege = k_france
-		holder = 163065
+		holder = 90104 # Going with idea Bourbonnais was essentially royal domain
 	}
 	915.1.1 = {
 		holder = 40150	#Aymar
@@ -3133,25 +3139,18 @@ c_la_marche = {
 		holder = 190561 #Geofrey
 		liege = k_lotharingia
 	}
-	778.1.1 = {
-		liege = "k_aquitaine"
-		holder = 6392
+	828.1.1 = {
+		holder = 168131	#Emenon of Poitiers 
 	}
-	781.1.1 = {
-		holder = 90095
+	838.1.1 = {
+		holder = 168136	#Bernard II, Count of Poitiers
 	}
-	817.1.1 = {
-		holder = 90096
+	839.1.1 = {
+		holder = 90129	#Ramnulf I
+		liege = d_aquitaine
 	}
-	838.1.14 = {
-		holder = 90104
-	}
-	855.1.1 = {
-		holder = 42020
-	}
-	866.1.30 = {
-		holder = 90123
-		liege = "d_aquitaine"
+	866.10.1 = {
+		holder = 90128	#Ramnulf II
 	}
 	879.1.1 = {
 		holder = 90155

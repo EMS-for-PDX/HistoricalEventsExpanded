@@ -1082,20 +1082,22 @@
 }
 190511 = {
 	name = "Theoderic" #duke of Lower Burgundy
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
-	father = 144987
-	735.1.1 = {
-		birth = yes
+	740.1.1 = {
+		birth = "740.1.1"
 	}
-	798.1.1 = {
-		death = yes
+	760.1.1 = {
+		add_spouse = 168128
+	}
+	804.1.1 = {
+		death = "804.1.1"
 	}
 }
 190512 = {
 	name = "Teudoin" #duke of Lower Burgundy
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190511
@@ -1108,7 +1110,7 @@
 }
 190513 = {
 	name = "Theoderic" #duke of Lower Burgundy
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190512
@@ -1119,23 +1121,10 @@
 		death = yes
 	}
 }
-190514 = {
-	name = "Guillaume" #duke of Toulouse
-	dynasty_house = house_nibelunging #Nibelunging
-	religion = "catholic"
-	culture = "frankish"
-	father = 190511
-	753.1.1 = {
-		birth = yes
-	}
-	815.1.1 = {
-		death = yes
-	}
-}
 190515 = {
 	name = "Abba" #wife of Nibelung
 	female = yes
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190511
@@ -1148,7 +1137,7 @@
 }
 190516 = {
 	name = "Theoderic"
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190511
@@ -1159,22 +1148,9 @@
 		death = yes
 	}
 }
-190517 = {
-	name = "Adalelm"
-	dynasty_house = house_nibelunging #Nibelunging
-	religion = "catholic"
-	culture = "frankish"
-	father = 190511
-	762.1.1 = {
-		birth = yes
-	}
-	804.1.1 = {
-		death = yes
-	}
-}
 190518 = {
 	name = "Niebelung"
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190511
@@ -1187,7 +1163,7 @@
 }
 190519 = {
 	name = "Bertrand"
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190518
@@ -1201,7 +1177,7 @@
 190520 = {
 	name = "Berta"
 	female = yes
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
 	father = 190511
@@ -1282,38 +1258,12 @@
 		death = yes
 	}
 }
-190556 = {
-	name = "Bernard" #duke of Toulouse count of Barcellona
-	dynasty_house = house_nibelunging #Nibelunging
-	religion = "catholic"
-	culture = "frankish"
-	father = 190514
-	795.1.1 = {
-		birth = yes
-	}
-	844.1.1 = {
-		death = yes
-	}
-}
-190557 = {
-	name = "Bernard" #duke of Toulouse
-	dynasty_house = house_nibelunging #Nibelunging
-	religion = "catholic"
-	culture = "french"
-	father = 190556
-	841.3.22 = {
-		birth = yes
-	}
-	886.1.1 = {
-		death = yes
-	}
-}
 190558 = {
 	name = "Theoderic"
-	dynasty_house = house_nibelunging #Nibelunging
+	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
-	father = 190514
+	father = 168130
 	798.1.1 = {
 		birth = yes
 	}
@@ -3963,7 +3913,7 @@
 	}
 }
 
-163092 = {
+163092 = { # https://en.wikipedia.org/wiki/Matfrid
 	name = "Matfried"
 	dynasty = 667
 	religion = "catholic"
@@ -4004,21 +3954,6 @@
 		death = "816.10.28"
 	}
 }
-168127 = {
-	name = "Thierry"
-	dynasty = 100217
-	religion = "catholic"
-	culture = "frankish"
-	740.1.1 = {
-		birth = "740.1.1"
-	}
-	760.1.1 = {
-		add_spouse = 168128
-	}
-	804.1.1 = {
-		death = "804.1.1"
-	}
-}
 
 168128 = {
 	name = "Aldana"
@@ -4043,7 +3978,7 @@
 	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
-	father = 168127
+	father = 190511
 	mother = 168128
 	765.1.1 = {
 		birth = "765.1.1"
@@ -4061,7 +3996,7 @@
 	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
-	father = 168127
+	father = 190511
 	mother = 168128
 	766.1.1 = {
 		birth = "766.1.1"
@@ -4427,7 +4362,7 @@
 	}
 }
 
-167976 = {
+167976 = { # Progenitor of the Hucpoldings, a dynasty that belonged to the aristocratic elite of the Carolingian empire and came to Italy under Lothar I (c.847) and tried to settle there and eventually gained renown as Counts of Bologna
 	name = "Hucbald"
 	dynasty = 9566
 	religion = catholic
@@ -4555,20 +4490,21 @@ frankish0005 = {
 	756.1.1 = {
 		birth = yes
 	}
-	856.1.1 = {
+	806.1.1 = {
 		death = yes
 	}
 }
 
 frankish0006 = {
-	name = "Romilla" # Romilla Gellones, wife of Duke Bera of Barcelona (70140)
+	name = "Romilla" # Romilla, wife of Duke Bera of Barcelona (70140)
 	female = yes
-	dynasty = 100217 # Gellones Dynasty
+	dynasty = frankish_aragon # Frankish Aragón Dynasty
+	father = frankish0005
 	religion = "catholic"
 	culture = "frankish"
 	trait = education_diplomacy_1
 
-	771.1.1 = {
+	775.1.1 = {
 		birth = yes
 	}
 	822.1.1 = {

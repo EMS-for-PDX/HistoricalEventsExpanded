@@ -17,6 +17,39 @@ yearly_global_pulse = {
 		HEE_medieval_warm_period_end
 		HEE_little_ice_age
 		#climate_volcanic_winter_yearly_global_pulse
+		HEE_carolingian_dissolution
+	}
+}
+
+HEE_carolingian_dissolution = {
+	trigger = {
+		AND = {
+			NOT = { has_global_variable = carolingian_empire_has_dissolved }
+			exists = title:e_hre.holder
+			#title:e_hre.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
+			OR = {
+				title:e_hre.holder = { has_trait = excommunicated }
+				title:e_hre.holder = { legitimacy_level <= 2 }
+				title:e_hre.holder = {	
+					any_vassal = {
+						count >= 4 # 4 Powerful vassals need to dislike you
+						is_powerful_vassal = yes
+						opinion = {
+							target = title:e_hre.holder
+							value <= medium_negative_opinion
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		title:e_hre.holder = {
+			trigger_event = {
+				id = HEE_carolingian_dissolution.9999
+				days = { 1 365 }
+			}
+		}
 	}
 }
 
@@ -583,8 +616,10 @@ division_of_frankfurt = {
 		this = character:90107
         character:90107 = {
             NOT = {
-                has_title = title:e_france
-                has_title = title:e_hre
+				OR = {
+               		has_title = title:e_france
+            		has_title = title:e_hre
+				}
             }
         }
 	}

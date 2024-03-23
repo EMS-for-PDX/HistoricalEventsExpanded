@@ -7092,18 +7092,25 @@
 	diplomacy = 7
 	intrigue = 8
 	stewardship = 8
+	learning = 9
 	religion = "catholic"
 	culture = "italian"
-	trait = diligent
-	trait = calm
-	trait = zealous
-	trait = education_diplomacy_3
+	trait = zealous # Nicholas rebuilt and endowed several churches, and constantly sought to encourage religious life. He led a pious personal life guided by a spirit of Christian asceticism
+	trait = just # Going in person to Ravenna, the pope then investigated the wrongdoings of Archbishop John of Ravenna and equitably regulated everything.
+	trait = diligent # In many other ecclesiastical matters, he issued letters and decisions, and he took active measures against bishops who neglected their duties
+	trait = ambitious # Nicholas was seen as trying to extend his papal power beyond what was canonical authority by asserting a "rulership" over the Church/Nicholas asserted that the pope should have suzerainty over all Christians, even royalty, in matters of faith and morals
+	trait = education_learning_5 # Born to a distinguished family in Rome, son of the Defensor Theodore, Nicholas received excellent education.
+	trait = theologian
+	trait = scholar
 	800.1.1 = {
 		birth = "800.1.1"
 	}
 	858.4.17 = {
 	name = "Nicolaus"
 	# AKA: Martin
+		effect = {
+			add_character_modifier = court_7040_ascetic_practices # led a pious personal life guided by a spirit of Christian asceticism
+		}
 	}
 	867.11.13 = {
 		death = "867.11.13"

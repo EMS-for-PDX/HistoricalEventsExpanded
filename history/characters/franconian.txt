@@ -12,7 +12,7 @@
 	stewardship = 5
 	religion = "catholic"
 	culture = franconian
-	trait = education_martial_1
+	trait = education_martial_3
 	trait = ambitious
 	trait = stubborn
 	trait = trusting

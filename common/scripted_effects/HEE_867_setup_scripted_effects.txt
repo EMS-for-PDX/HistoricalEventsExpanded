@@ -63,7 +63,7 @@ hee_karling_867_effect = {
 
 	character:31702 = { save_scope_as = adalard_the_seneschal } # https://en.wikipedia.org/wiki/Adalard_the_Seneschal
 
-	character:127019 = { save_scope_as = bernard_plantapilosa } # 
+	character:127019 = { save_scope_as = bernard_plantapilosa } # https://en.wikipedia.org/wiki/Bernard_Plantapilosa
 
 	character:6448 = { save_scope_as = odo_of_france } # https://en.wikipedia.org/wiki/Odo_of_France
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
@@ -71,7 +71,7 @@ hee_karling_867_effect = {
 
 	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
 
-	title:e_france = { save_scope_as = e_carolingian_empire }
+	title:e_hre = { save_scope_as = e_carolingian_empire }
 	title:k_italy = { save_scope_as = k_italy }
 	title:k_east_francia = { save_scope_as = k_east_francia }
 	title:k_lotharingia = { save_scope_as = k_lotharingia }
@@ -80,8 +80,12 @@ hee_karling_867_effect = {
 
 	# House-keeping #
  	title:e_france = {
-		set_coa = title:b_pomposa
-		set_color_from_title = title:d_urdunn
+ 		every_in_de_jure_hierarchy = {
+ 			limit = {
+ 				tier = tier_kingdom
+ 			}
+ 			set_de_jure_liege_title = title:e_hre
+ 		}
  	}
 
 	scope:e_carolingian_empire = { add_title_law = male_only_law }

@@ -742,7 +742,7 @@ story_pechenegs_invasion = {
 	}
 
 	effect_group = {
-		days = 180
+		days = { 200 300 }
 
 		trigger = {
 			any_realm_county = { 
@@ -765,11 +765,11 @@ story_pechenegs_invasion = {
 				title:k_magyar.holder = {
 					save_scope_as = invader
 					add_character_flag = undertaking_hungarian_migration
-					trigger_event = east_europe.0141
+					trigger_event = HEE_turkic_conquerors.3000
 					hidden_effect = {
 						add_to_global_variable_list = {
 							name = unavailable_unique_decisions
-							target = flag:flag_launched_hungarian_migration
+							target = flag:flag_launched_HEE_hungarian_migration
 						}
 					}
 				}

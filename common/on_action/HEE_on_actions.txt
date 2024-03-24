@@ -26,7 +26,7 @@ HEE_carolingian_dissolution = {
 		AND = {
 			NOT = { has_global_variable = carolingian_empire_has_dissolved }
 			exists = title:e_hre.holder
-			#title:e_hre.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
+			title:e_hre.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
 			OR = {
 				title:e_hre.holder = { has_trait = excommunicated }
 				title:e_hre.holder = { legitimacy_level <= 2 }

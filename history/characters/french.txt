@@ -22012,9 +22012,6 @@
 	830.1.1 = {
 		birth = yes #between 815 and 830
 	}
-#	854.1.1 = { Can't find a source for this spouse
-#		add_spouse = 91123 #Emma, d. of Conrad I of Burgundy
-#	}
 	862.1.1 = {
 		give_nickname = nick_the_strong
 	}
@@ -47006,7 +47003,8 @@
 	dynasty_house = house_orleans #Orléans	
 	religion = catholic	
 	culture = french
-	father = 167829		
+	father = 167829
+	mother = HEE_engeltrude_of_fezensac	
 
 	#Education
 	trait = education_learning_3
@@ -47033,6 +47031,7 @@
 	religion = catholic	
 	culture = french
 	father = 167829		
+	mother = HEE_engeltrude_of_fezensac
 	829.1.1 = {		
 		birth = yes
 	}

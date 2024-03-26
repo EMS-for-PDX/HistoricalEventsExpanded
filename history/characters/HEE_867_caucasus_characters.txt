@@ -1211,12 +1211,16 @@ HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 
 HEE_kaysite_son = { # Abu'l-Ward's son and successor
 	name = "_Abd_al-Hamid"
+	dna = HEE_kaysite_son_dna
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029119
 	father = 159722
 	853.1.1 = { # Fictional
 		birth = "853.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	910.1.1 = { # Fictional
 		death = "910.1.1"

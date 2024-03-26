@@ -1564,6 +1564,7 @@ c_quercy = {
 	}
 	1063.1.1 = {
 		holder = 138002
+		liege = d_toulouse
 	}
 	1094.1.1 = {
 		holder = 338 #Raymond IV de Toulouse
@@ -1720,6 +1721,7 @@ c_rouergue = {
 	#1054 - Berthe
 	1065.1.1 = {
 		holder = 338 #Raymond IV de Toulouse
+		liege = d_toulouse
 	}
 	1105.10.1 = {
 		holder = 223671 #Bertrand de Toulouse
@@ -1755,6 +1757,7 @@ c_millau = {
 	#1054 - Berthe
 	1065.1.1 = {
 		holder = 338 #Raymond IV de Toulouse
+		liege = d_toulouse
 	}
 	1105.10.1 = {
 		holder = 223671 #Bertrand de Toulouse

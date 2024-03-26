@@ -8490,6 +8490,7 @@
 
 146077 = {
 	name = "Muhammad"
+	dna = 146077_muhammad_dna
 	dynasty = 1029123
 	religion = "ashari"
 	culture = "bedouin"
@@ -8500,6 +8501,9 @@
 	trait = diligent
 	817.1.1 = {
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	844.1.1 = {
 		# dynasty = 1029124
@@ -8511,12 +8515,16 @@
 
 146078 = {
 	name = "Yazid"
+	dna = 146078_yazid_dna
 	dynasty = 1029123
 	religion = "ashari"
 	culture = "bedouin"
 	father = 146076
 	819.1.1 = {
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	844.1.1 = {
 		# dynasty = 1029124

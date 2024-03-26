@@ -421,6 +421,7 @@
 	trait = wrathful
 	trait = education_intrigue_2
 	father = 167829
+	mother = HEE_engeltrude_of_fezensac
 	815.1.1 = {
 		birth = "815.1.1"
 	}
@@ -487,6 +488,9 @@
 	835.1.1 = {
 		birth = "835.1.1"
 	}
+	850.1.1 = {
+		add_spouse = 91123 # It is assumed that Udo was married to an unnamed daughter of Count Conrad I of Auxerre 
+	}
 	880.1.1 = {
 		death = "880.1.1"
 	}
@@ -503,6 +507,7 @@
 	trait = wrathful
 	trait = education_intrigue_2
 	father = 7950
+	mother = 91123
 	855.1.1 = {
 		birth = "855.1.1"
 	}
@@ -541,6 +546,7 @@
 	trait = wrathful
 	trait = education_intrigue_2
 	father = 7950
+	mother = 91123
 	850.1.1 = {
 		birth = "850.1.1"
 	}
@@ -603,6 +609,7 @@
 	trait = wrathful
 	trait = education_intrigue_2
 	father = 7950
+	mother = 91123
 	852.1.1 = {
 		birth = "852.1.1"
 	}

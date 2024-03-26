@@ -1,0 +1,71 @@
+﻿## Characters to help represent the stateless Avars in the Carpathian Basin - 867 ##
+
+fictional_avars_0001 = { # 
+	name = "Kotrag"
+	#dynasty = fictional_avar_dynasty_01
+	religion = "orthodox"
+	culture = "avar"
+
+	830.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+fictional_avars_0002 = { # 
+	name = "Barjik"
+	#dynasty = fictional_avar_dynasty_02
+	religion = "catholic"
+	culture = "avar"
+
+	825.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+fictional_avars_0003 = { # 
+	name = "Telerig"
+	#dynasty = fictional_avar_dynasty_02
+	religion = "catholic"
+	culture = "avar"
+
+	843.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+fictional_avars_0004 = { # 
+	name = "Malamir"
+	#dynasty = fictional_avar_dynasty_02
+	religion = "orthodox"
+	culture = "avar"
+
+	832.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}
+
+fictional_avars_0005 = { # 
+	name = "Iltäbär"
+	#dynasty = fictional_avar_dynasty_02
+	religion = "catholic"
+	culture = "avar"
+
+	836.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
+	}
+}

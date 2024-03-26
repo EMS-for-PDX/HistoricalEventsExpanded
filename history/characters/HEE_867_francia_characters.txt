@@ -535,3 +535,21 @@ HEE_odo_ii_of_troyes = {
 		death = yes
 	}
 }
+
+HEE_engeltrude_of_fezensac = {
+	name = "Engeltrude"	#Engeltrude of Fézensac, Wife to Count Eudes of Orléans and Sister of Adalhard the Seneschal
+	female = yes
+	dynasty = 667
+	religion = "catholic"
+	culture = franconian
+	father = 31701
+	798.1.1 = {
+		birth = yes
+	}
+	815.1.1 = {
+		add_spouse = 167829 # Eudes of Orleans
+	}
+	865.1.1 = {
+		death = yes
+	}
+}

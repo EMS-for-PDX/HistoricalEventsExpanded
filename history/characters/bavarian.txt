@@ -3483,11 +3483,11 @@
 	culture = bavarian
 	father = 7988 #Conrad I of Burgundy
 	mother = 161485
-	840.1.1 = {
+	832.1.1 = {
 		birth = "832.1.1" #random
 	}
-	865.1.1 = {
-		death = "865.1.1" #random
+	870.1.1 = {
+		death = "870.1.1" #random
 	}
 }
 

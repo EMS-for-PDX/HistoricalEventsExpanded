@@ -887,6 +887,12 @@ c_apahunik = {
 
 }
 
+b_manzikert = {
+	863.1.1 = {
+		holder = 159722
+		effect = { set_capital_barony = yes } # Manzikert seems far more important regionally. Capital of the Kaysites
+	}
+}
 
 c_vaspurakan = {
 	646.1.1 = {

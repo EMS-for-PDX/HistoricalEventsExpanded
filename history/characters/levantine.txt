@@ -5740,6 +5740,7 @@
 
 159722 = {
 	name = "Abu_l-Ward"
+	dna = 159722_abul_ward_dna
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029119
@@ -5750,6 +5751,9 @@
 	trait = diplomat
 	830.1.1 = {
 		birth = "830.1.1"
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	900.1.1 = {
 		death = "900.1.1"
@@ -5949,6 +5953,7 @@
 }
 159733 = {
 	name = "Haytham"
+	dna = 159733_haytham_dna
 	dynasty = 1029123
 	religion = "ashari"
 	culture = "levantine"
@@ -5964,6 +5969,9 @@
 
 	822.1.1 = {
 		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+		}
 	}
 	844.1.1 = {
 		dynasty_house = house_yazidid

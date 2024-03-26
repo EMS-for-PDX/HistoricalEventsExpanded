@@ -173,7 +173,6 @@ k_hungary = {
 
 d_visegrad = {
 	805.1.1 = {
-		liege = "k_bulgaria"
 		holder = 146172
 		government = tribal_government
 	}
@@ -188,9 +187,6 @@ d_visegrad = {
 	}
 	858.1.1 = {
 		holder = 168072
-	}
-	863.1.1 = {
-		liege = "e_bulgarian_principality"
 	}
 	884.1.1 = {
 		holder = 168073
@@ -3824,6 +3820,7 @@ c_bihar = {
 	}
 	865.1.1 = {
 		holder = 168285
+		liege = 0 # The remaining Avars are small and stateless entities
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -3923,7 +3920,8 @@ c_zarand = {
 		holder = 168072
 	}
 	865.1.1 = {
-		holder = 168285
+		holder = fictional_avars_0001
+		liege = "d_temes"
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -4023,7 +4021,8 @@ c_bekes = {
 		holder = 168072
 	}
 	865.1.1 = {
-		holder = 168285
+		holder = fictional_avars_0002
+		liege = 0 # The remaining Avars are small stateless entities
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -4106,8 +4105,9 @@ c_szabolcs = {
 	846.1.1 = {
 		holder = 168072
 	}
-	866.1.1 = {
-		holder = 168073
+	865.1.1 = {
+		holder = fictional_avars_0004
+		liege = 0 # The remaining Avars are small and stateless entities
 	}
 	884.1.1 = {
 		holder = 168074
@@ -4230,7 +4230,8 @@ c_szatmar = {
 		holder = 168072
 	}
 	865.1.1 = {
-		holder = 168285
+		holder = fictional_avars_0003
+		liege = 0 # The remaining Avars are small and stateless entities
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -4439,7 +4440,8 @@ c_arad = {
 		holder = 168072
 	}
 	865.1.1 = {
-		holder = 168285
+		holder = fictional_avars_0001
+		liege = "d_temes"
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -4687,8 +4689,9 @@ c_csanad = {
 	830.1.1 = {
 		holder = 168071
 	}
-	858.1.1 = {
-		holder = 168072
+	865.1.1 = {
+		holder = fictional_avars_0001
+		liege = "d_temes"
 	}
 	884.1.1 = {
 		holder = 168073
@@ -4961,8 +4964,9 @@ c_csongrad = {
 	830.1.1 = {
 		holder = 168071
 	}
-	858.1.1 = {
-		holder = 168072
+	865.1.1 = {
+		holder = fictional_avars_0005
+		liege = 0 # The remaining Avars are small and stateless entities
 	}
 	884.1.1 = {
 		holder = 168073

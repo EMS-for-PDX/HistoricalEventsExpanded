@@ -460,6 +460,7 @@
 	dynasty_house = house_orleans
 
 	father = 167829
+	mother = HEE_engeltrude_of_fezensac
 
 	religion = catholic
 	culture = frankish

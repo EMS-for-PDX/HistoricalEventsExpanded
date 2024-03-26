@@ -1731,7 +1731,11 @@ c_satala = {
 	1335.1.1 = {
 		liege = "k_eretnid"
 	}
-	
-
 }
 
+b_tephrice = {
+	850.1.1 = {
+		holder = HEE_karbeas
+		effect = { set_capital_barony = yes } # Capital of the Paulician Principality
+	}
+}

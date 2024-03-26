@@ -32,6 +32,12 @@ HEE_carolingian_dissolution.9999 = {
 		character:7945 = { save_scope_as = arnulf } # https://en.wikipedia.org/wiki/Arnulf_of_Carinthia
 
 		character:6448 = { save_scope_as = odo_of_paris }
+
+		# Save variable to prevent repeat prompts
+		set_global_variable = {
+			name = carolingian_empire_has_dissolved
+			value = yes
+		}
 		
 		if ={
 			limit = { exists = title:d_friuli }

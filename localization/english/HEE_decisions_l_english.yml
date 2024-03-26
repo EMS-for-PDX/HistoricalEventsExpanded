@@ -21,6 +21,14 @@ anarchy_at_samarra_unpaid_soldiery_decision_tooltip: "You repay the debts owed t
 anarchy_at_samarra_unpaid_soldiery_decision_desc: "With the onset of the Anarchy, and the ensuing collapse of Caliphal authority, the ability of the Caliphate to pay its soldiers was severely diminished. This inability to pay the army had already brought down the Caliph Al-Musta'in, and by the time of the ascension of Al-Mutazz the amount of money required to pay the Caliphal armies was equivalent to the full revenue of the Caliphate for two years according to contemporary historians. If one could repay the debts owed to the military by the state, it would surely be seen as a good sign of recovery."
 anarchy_at_samarra_unpaid_soldiery_decision_confirm: "Our Debts are paid"
 
+# Pecheneg Migration
+launch_pecheneg_migration_decision:0 "Prepare to Cross Khazaria"
+launch_pecheneg_migration_decision_desc:0 "Competing tribes on the steppe, especially the marauding Pecheneg warbands that litter our territory, are making life increasingly difficult. Across the Carpathians, however, lie the fertile, wooded valleys and rolling plains of weak Pannonia..."
+launch_pecheneg_migration_decision_tooltip:0 "Move across Khazaria to settle in new and safer lands"
+launch_pecheneg_migration_decision_flavour_effect:0 "You gain the single-use special [hungarian_invasion_casus_belli|E]"
+launch_pecheneg_migration_decision_confirm:0 "Send riders to each tribe!"
+launch_pecheneg_migration_decision_before_last_date:0 "The date is 900.1.1 or earlier"
+
 # Jeanne d'Arc Decisions
 jeanne_darc_manual_decision: "Listen to the peasants"
 jeanne_darc_manual_decision_desc: "While your realm is engulfed in war, rumors have reached you of a peasant girl who seek an audience with yourself. Claiming to have visions of Saints such as St. Michael, St. Margaret, and St. Catherine, this girl seems to believe she is ordained by the Lord to lead my armies to victory against our enemies. Regardless of the truth of her claims, rumors of the girl have spread far and wide within my realm, and it may be time to meet with her and decide for yourself if she is indeed godsent..."

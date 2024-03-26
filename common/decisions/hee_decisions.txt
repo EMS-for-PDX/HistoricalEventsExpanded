@@ -187,6 +187,105 @@ anarchy_at_samarra_unpaid_soldiery_decision = {
 	}
 }
 
+#####################################
+# Pecheneg Migration				#
+# by EmrysValdr						#
+#####################################
+launch_pecheneg_migration_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	major = yes
+
+	ai_check_interval = 60
+
+	desc = launch_pecheneg_migration_decision_desc
+	selection_tooltip = launch_pecheneg_migration_decision_tooltip
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		exists = dynasty
+		#Either be independent, or else not beneath another Mogyer.
+		OR = {
+			is_independent_ruler = yes
+			NOT = { liege = { culture = culture:pecheneg } }
+		}
+		#Must be a steppe Pecheneg.
+		culture = culture:pecheneg
+		#Must not already control a large chunk of Steppe.
+		NOT = {
+			any_county_in_region = {
+				region = world_steppe
+				count >= 12
+				OR = {
+					holder = root
+					holder = {
+						any_liege_or_above = { this = root }
+					}
+				}
+			}
+		}
+		#You can only do it once.
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_launched_pecheneg_migration
+			}
+		}
+		#And the moment for the migration must not have passed.
+		current_date <= 900.1.1
+	}
+
+	is_valid = {
+		#An emperor does not voluntarily lose a tier.
+		highest_held_title_tier <= tier_kingdom
+		#Must be seen as a legitimate ruler by your people
+		legitimacy_level >= 3
+		#Cannot be a settled people.
+		government_has_flag = government_is_tribal
+		#Reshow this here so that players realise they're on a timer.
+		custom_description = {
+			text = launch_pecheneg_migration_decision_before_last_date
+			current_date <= 900.1.1
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_available_adult = yes
+		#Can't be fighting elsewhere.
+		is_at_war = no
+	}
+
+	effect = {
+		save_scope_as = invader
+		custom_tooltip = launch_pecheneg_migration_decision_flavour_effect
+		add_character_flag = undertaking_pecheneg_migration
+		trigger_event = HEE_pecheneg_migration.0001
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_launched_pecheneg_migration
+			}
+		}
+	}
+
+	cost = {
+		#Charge a reasonable lump of prestige.
+		prestige = 1000
+	}
+
+	ai_potential = {
+		#AI decision making is governed via event.
+		always = no
+	}
+
+	ai_will_do = {
+		#AI decision making is governed via event.
+		base = 0
+	}
+}
+
 #############################
 #	Jeanne d'Arc Decisions	#
 #############################

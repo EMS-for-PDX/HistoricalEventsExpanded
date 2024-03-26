@@ -306,6 +306,7 @@ HEE_pechenegs = {
 			limit = {
 				title:c_aqtobe.holder = {
 					is_alive = yes
+					is_ai = yes
 				}
 			}
 			title:c_aqtobe.holder = {

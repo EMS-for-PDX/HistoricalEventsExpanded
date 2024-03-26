@@ -192,9 +192,7 @@ anarchy_at_samarra_unpaid_soldiery_decision = {
 # by EmrysValdr						#
 #####################################
 launch_pecheneg_migration_decision = {
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
-	}
+	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
 	major = yes
 
 	ai_check_interval = 60
@@ -261,7 +259,7 @@ launch_pecheneg_migration_decision = {
 		save_scope_as = invader
 		custom_tooltip = launch_pecheneg_migration_decision_flavour_effect
 		add_character_flag = undertaking_pecheneg_migration
-		trigger_event = HEE_pecheneg_migration.0001
+		trigger_event = HEE_turkic_conquerors.200
 		hidden_effect = {
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions

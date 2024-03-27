@@ -9856,6 +9856,7 @@
 	trait = arrogant
 	trait = greedy
 	trait = fickle
+	trait = holy_warrior # His reign is largely defined by his struggles to subdue the Muslims in Southern Italy
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	sexuality = heterosexual
 	825.1.1 = {
@@ -22163,7 +22164,12 @@
 	}
 	866.7.2 = {
 		effect = {
-			set_relation_rival = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father
+			set_relation_potential_rival = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
+			add_opinion = {
+				target = character:6878 #Hastein killed Odo's father
+				modifier = hate_opinion
+				opinion = -200
+			}
 		}
 	}
 	884.1.1 = {
@@ -40728,7 +40734,7 @@
 	father = 30227
 	mother = 161484
 	trait = cynical
-	trait = temperate
+	trait = stubborn
 	trait = calm
 	trait = education_diplomacy_3
 	sexuality = heterosexual
@@ -44287,15 +44293,15 @@
 	}
 }
 
-167889 = {
+167889 = { # https://it.wikipedia.org/wiki/Bertila_di_Spoleto
 	name = "Bertila"
 	female = yes
 	dynasty = 9561
 	religion = "catholic"
 	culture = french
 	father = 167882
-	865.1.1 = {
-		birth = "865.1.1"
+	857.1.1 = {
+		birth = "857.1.1"
 	}
 	915.12.1 = {
 		death = "915.12.1"
@@ -44324,7 +44330,7 @@
 
 
 
-167891 = {
+167891 = { # https://it.wikipedia.org/wiki/Suppone_III
 	name = "Suppo"
 	dynasty = 9561
 	religion = "catholic"

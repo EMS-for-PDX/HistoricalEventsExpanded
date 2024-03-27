@@ -1036,11 +1036,8 @@ c_aachen = {
 	817.1.1 = {
 		holder = 30227
 	}
-	841.1.1 = {
-		holder = 7815
-	}
-	867.1.1 = {
-		holder = 161525
+	855.9.20 = {
+		holder = 144998
 	}
 	892.1.1 = {
 		holder = 7812
@@ -1213,11 +1210,8 @@ c_maastricht = {
 	817.1.1 = {
 		holder = 30227
 	}
-	841.1.1 = {
-		holder = 7815
-	}
-	867.1.1 = {
-		holder = 161525
+	855.9.20 = {
+		holder = 144998
 	}
 	892.1.1 = {
 		holder = 7812
@@ -1399,17 +1393,15 @@ c_trier = {
 	842.1.1 = {
 		holder = 7979
 	}
-	863.1.1 = {
-		holder = 144998 #Lothair II
-	}
-	864.1.1 = {
-		holder = 31702
+	850.1.1 = {
+		holder = HEE_theotgaud_archbishop_of_trier
+		government = theocracy_government
 	}
 	903.1.1 = {
 		liege = "d_lower_lorraine"
 	}
 	1016.1.1 = {
-			holder = 183189 #Poppo von Babenberg
+		holder = 183189 #Poppo von Babenberg
 	}
 	1066.6.1 = {
 		government = theocracy_government

@@ -134,15 +134,30 @@
 	}
 } # Nephew of Rostislav
 
-187004 = {
+187004 = { # https://en.wikipedia.org/wiki/Slavomir_of_Moravia
 	name = "SlavomI_r"
 	# AKA: Slavomír Mojmírovci
 	dynasty = 7508
 	religion = "catholic"
 	culture = "slovien"
 	father = 187010
+	trait = education_learning_2
+	trait = craven # When Svatopluk was released, Slavomir did not contest him for title of dux
+	trait = temperate # When Svatopluk was arrested, the Moravians threatened to kill Slavomír if he did not take up the office of dux. Of necessity, he agreed. Seems to not have wanted the position
+	trait = content # When Svatopluk was arrested, the Moravians threatened to kill Slavomír if he did not take up the office of dux. Of necessity, he agreed. Seems to not have wanted the position
 	842.1.1 = {
 		birth = "842.1.1"
+	}
+	863.1.1 = {
+		trait = devoted # seems to have been a disciple of Saints Cyril and Methodius and is mentioned as a priest in the Annals of Fulda (year 871)
+	}
+	864.1.1 = {
+		employer = 187002 # Rostislav Mojmírovci
+		effect = {
+			character:90107 = {
+				take_hostage = character:187004
+			}
+		}
 	}
 	871.12.1 = {
 		death = "871.12.1"

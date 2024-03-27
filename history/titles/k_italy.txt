@@ -2891,6 +2891,7 @@ c_parma = {
 	}
 	861.1.1 = {
 		holder = 167882 # Suppo II of Spoleto
+		liege = k_italy
 	}
 	879.1.1 = {
 		holder = 167885 # Adelchis II Supponidi
@@ -3547,6 +3548,15 @@ b_luni = {
 	}
 }
 
+d_emilia = {
+	850.1.1 = {
+		holder = HEE_geogory_duke_of_aemilia
+		liege = k_italy
+	}
+	865.1.1 = {
+		holder = 0
+	}
+}
 
 c_modena = {
 	761.1.1 = {
@@ -4625,7 +4635,7 @@ c_arezzo = {
 	867.1.1 = { # Bishop of Arezzo
 		holder = HEE_giovanni_of_arezzo
 		government = theocracy_government
-		liege = d_toscana # Might move to Pope at later date - FIX
+		liege = k_papal_state
 	}
 	886.1.1 = {
 		holder = 167902
@@ -4844,9 +4854,6 @@ c_orbetello = {
 	}
 	767.1.1 = {
 		holder = 190569 #Amonius
-	}
-	846.1.1 = {
-		liege = "d_toscana"
 	}
 	860.1.1 = {
 		holder = 167911

@@ -2539,10 +2539,8 @@ c_nassau = {
 		holder = 7946
 	}
 	860.1.1 = {
-		holder = 7947
-	}
-	906.1.1 = {
-		liege = "d_east_franconia"
+		holder = 7950
+		liege = "d_east_franconia" # The Brothers are restored their lands by Ludwig the Younger, thus should be under him
 	}
 	1066.1.1 = {
 		holder = franconian0002
@@ -2604,9 +2602,7 @@ c_marburg = {
 	}
 	860.1.1 = {
 		holder = 7947
-	}
-	906.1.1 = {
-		liege = "d_east_franconia"
+		liege = "d_east_franconia" # The Brothers are restored their lands by Ludwig the Younger, thus should be under him
 	}
 	1066.1.1 = {
 		holder = 1316

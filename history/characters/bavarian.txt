@@ -3191,7 +3191,7 @@
 	}
 }
 
-7988 = {
+7988 = { # https://de.wikipedia.org/wiki/Konrad_I._(Welfen)
 	name = "Konrad"
 	dynasty = 650
 	martial = 5
@@ -9626,8 +9626,9 @@
 	culture = bavarian
 	father = 167976
 	mother = 167977
-	852.1.1 = {
-		birth = "852.1.1"
+	trait = devoted # abbess of the abbey of Sant'Andrea in Florence
+	848.1.1 = {
+		birth = "848.1.1"
 	}
 	902.1.1 = {
 		death = "902.1.1"

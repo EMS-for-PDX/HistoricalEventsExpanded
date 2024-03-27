@@ -6059,7 +6059,7 @@
 	}
 }
 
-167882 = {
+167882 = { # https://it.wikipedia.org/wiki/Suppone_II
 	name = "Suppo"
 	dynasty = 9561
 	religion = "catholic"
@@ -7429,7 +7429,7 @@
 	}
 }
 
-7913 = {
+7913 = { # https://en.wikipedia.org/wiki/Theophylact_I,_Count_of_Tusculum
 	name = "Theophylact"
 	# AKA: Theophyylact
 	dynasty = 7051
@@ -7439,12 +7439,13 @@
 	stewardship = 8
 	religion = "catholic"
 	culture = "italian"
-	trait = diligent
-	trait = calm
-	trait = zealous
-	trait = education_diplomacy_3
-	846.1.1 = {
-		birth = "846.1.1"
+	trait = arrogant
+	trait = ambitious
+	trait = cynical
+	trait = callous
+	trait = education_martial_2 # He is mentioned for the first time in a document of 901 as palatine iudex (palace judge, or leader of the militia) of Emperor Louis the Blind
+	849.1.1 = {
+		birth = "849.1.1"
 	}
 	888.1.1 = {
 		add_spouse = 7914
@@ -7454,7 +7455,7 @@
 	}
 }
 
-7914 = {
+7914 = { # https://en.wikipedia.org/wiki/Theodora_(senatrix)
 	name = "Theodora"
 	female = yes 
 	martial = 6
@@ -7463,9 +7464,9 @@
 	stewardship = 8
 	religion = "catholic"
 	culture = "italian"
+	trait = ambitious
 	trait = diligent
-	trait = calm
-	trait = zealous
+	trait = cynical
 	trait = education_diplomacy_3
 	867.1.1 = {
 		birth = yes

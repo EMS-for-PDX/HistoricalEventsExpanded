@@ -4368,7 +4368,10 @@
 	dynasty = 9566
 	religion = catholic
 	culture = french
-	
+	trait = education_stewardship_3 # In a relationship of fidelitas with Lothair, he became comes sacri palacii of Louis II in 851, an office with important judicial functions (an office that required a high degree of jurisprudential competence)
+	trait = just
+	trait = ambitious
+
 	830.1.1 = {
 		birth = yes
 	}

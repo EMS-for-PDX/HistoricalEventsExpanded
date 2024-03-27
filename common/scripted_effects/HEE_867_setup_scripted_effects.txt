@@ -56,8 +56,6 @@ hee_karling_867_effect = {
 	character:163176 = { save_scope_as = hildegarde } # Hildegarde (born 856, died young)
 	character:163177 = { save_scope_as = gisela_ii } # Gisela (857–874)
 	character:163178 = { save_scope_as = rotrude } # Rotrude (852–912), a nun, Abbess of Saint-Radegunde
-	# character: Create the missing daughter of Charles the Bald? = { save_scope_as = godehilde } # Godehilde (864–907)
-	# character: Create the two missing daughters of Louis the Stammerer? = { save_scope_as =  } # Princess Hildegarde (born in 864) & Princess Gisela (865–884)
 
 	character:90109 = { save_scope_as = baldwin_i_of_flanders } # https://en.wikipedia.org/wiki/Baldwin_I,_Margrave_of_Flanders
 
@@ -68,6 +66,8 @@ hee_karling_867_effect = {
 	character:6448 = { save_scope_as = odo_of_france } # https://en.wikipedia.org/wiki/Odo_of_France
 	character:6442 = { save_scope_as = robert_of_france } # https://en.wikipedia.org/wiki/Robert_I_of_France
 	character:242 = { save_scope_as = rollo } # https://en.wikipedia.org/wiki/Rollo
+
+	character:6878 = { save_scope_as = hastein }
 
 	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
 
@@ -167,11 +167,6 @@ hee_karling_867_effect = {
 				set_vassal_contract_modification_blocked = yes
 			}
 		}
-	}
-
-	title:b_autun = { save_scope_as = b_autun }
-	scope:bernard_plantapilosa = {
-		get_title = scope:b_autun
 	}
 
 	# Removal of female-inherited claims $
@@ -283,9 +278,8 @@ hee_karling_867_effect = {
 		}
 	}
 
-	scope:karlmann = {
-		remove_trait = ill
-	}
+	# Opinion modifiers if needed
+
 }
 
 
@@ -311,6 +305,7 @@ hee_great_moravia_bohemia_867_effect = {
 	# Scopes #
 	character:187002 = { save_scope_as = king_rastislav } # https://en.wikipedia.org/wiki/Rastislav_of_Moravia
 	character:187003 = { save_scope_as = svatopluk_i } # https://en.wikipedia.org/wiki/Svatopluk_I_of_Moravia
+	character:187004 = { save_scope_as = slavomir_of_moravia } # https://en.wikipedia.org/wiki/Slavomir_of_Moravia
 	character:187006 = { save_scope_as = mojmir_ii } # https://en.wikipedia.org/wiki/Mojmir_II_of_Moravia
 	character:187007 = { save_scope_as = svatopluk_ii } # https://en.wikipedia.org/wiki/Svatopluk_II
 	character:187008 = { save_scope_as = predslav } # https://en.wikipedia.org/wiki/Predslav
@@ -326,6 +321,8 @@ hee_great_moravia_bohemia_867_effect = {
 	culture:radhanite = { save_scope_as = radhanite }
 	culture:khazar = { save_scope_as = khazar }
 	culture:slovien = { save_scope_as = slovien }
+
+
 
 }
 

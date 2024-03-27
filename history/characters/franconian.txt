@@ -82,11 +82,6 @@
 	860.1.1 = {
 		effect = {
 			set_relation_rival = { target = character:90107 reason = rival_historical }
-			add_opinion = {
-				target = character:90107 #Karlmann had a "conflictual" relationship with his father
-				modifier = hate_opinion
-				opinion = -200
-			}
 		}
 	}
 	864.1.1 = {
@@ -97,9 +92,6 @@
 	}
 	866.1.1 = {
 		add_spouse = 167813# Liutswind
-	}
-	867.1.1 = {
-        contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
 	}
 	880.9.29 = {
 		death = yes
@@ -409,7 +401,7 @@
 		death = "1012.4.1"
 	}
 }
-7946 = {
+7946 = { # https://en.wikipedia.org/wiki/Gebhard,_Count_of_the_Lahngau
 	name = "Gebhard"
 	dynasty_house = house_orleans
 	martial = 4
@@ -432,7 +424,7 @@
 		death = "860.1.1"
 	}
 }
-7947 = {
+7947 = { # https://de.wikipedia.org/wiki/Berengar_(Hessengau)
 	name = "Berengar"
 	dynasty_house = house_orleans
 	martial = 4
@@ -472,7 +464,7 @@
 		death = "903.1.1"
 	}
 }
-7950 = {
+7950 = { # https://de.wikipedia.org/wiki/Udo_im_Lahngau
 	name = "Udo"
 	dynasty_house = house_orleans
 	martial = 4

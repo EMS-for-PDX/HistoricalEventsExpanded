@@ -553,3 +553,97 @@ HEE_engeltrude_of_fezensac = {
 		death = yes
 	}
 }
+
+HEE_giovanni_fictional_father = {
+	name = "Giovanni"
+	dynasty = 9567 #
+	religion = "catholic"
+	culture = "cisalpine"
+	780.1.1 = {
+		birth = yes
+	}
+	835.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+HEE_geogory_duke_of_aemilia = { # George, Duke of Emilia. Read more on him in THE BEGINNINGS OF THE TEMPORAL SOVEREIGNTY OF THE POPES A.D. 754-1073: https://ia801303.us.archive.org/8/items/cu31924029389222/cu31924029389222.pdf
+	name = "Gregory"
+	dynasty = 9567 # Brother of Giovanni VII
+	father = HEE_giovanni_fictional_father
+	religion = "catholic"
+	culture = "cisalpine"
+	trait = education_martial_3 # Had ingratiated himself with Louis by means of military service against the Saracens in Southern Italy
+	trait = wrathful
+	trait = callous
+	trait = cynical
+	808.1.1 = { # Unknown
+		birth = yes
+	}
+	853.1.1 = {
+		trait = murderer # who had been convicted of conspiracy in the murder of a papal legate, but pardoned by Emperor Louis II
+	}
+	865.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+HEE_giovanni_VII_of_ravenna = { # https://it.wikipedia.org/wiki/Arcidiocesi_di_Ravenna-Cervia / https://www.jstor.org/stable/3164449?read-now=1&seq=2
+	name = "Giovanni"
+	dynasty = 9567 # Martino, Duke of Ravenna, was his nephew
+	father = HEE_giovanni_fictional_father
+	religion = "catholic"
+	culture = "cisalpine"
+	trait = education_learning_3
+	trait = arbitrary
+	trait = ambitious
+	trait = stubborn
+	trait = cynical
+	trait = devoted
+	810.1.1 = {
+		birth = yes
+	}
+	861.2.24 = {
+		trait = excommunicated
+		effect = {
+			set_relation_potential_rival = character:7853 #Pope Nicolaus excommunicates John
+		}
+	}
+	861.11.18 = {
+		remove_trait = excommunicated
+	}
+	878.1.1 = {
+		death = yes
+	}
+}
+
+HEE_leopardus_of_ancona = { # According to Peruzzi (p. 96) and Ughelli (I, p. 330), Leopardus was instituted by Pope Nicholas I (858–867). In 866, according to Ughelli, he was sent to spread the gospel in Bulgaria. In 869, Pope Hadrian II wrote to King Michael of the Bulgarians, mentioning his legates Leopardus of Ancona and Dominicus of Treviso. Philippus Jaffé and S. Lowenfeld, p. 372, no. 2925.
+	name = "Leopardus"
+	religion = "catholic"
+	culture = "cisalpine"
+	trait = education_diplomacy_3
+	trait = honest
+	trait = zealous
+	trait = patient
+	trait = theologian
+	trait = devoted
+	815.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+HEE_pietro_of_urbino = { # https://it.wikipedia.org/wiki/Arcidiocesi_di_Urbino-Urbania-Sant%27Angelo_in_Vado
+	name = "Pietro"
+	religion = "catholic"
+	culture = "cisalpine"
+	trait = devoted
+	818.1.1 = {
+		birth = yes
+	}
+	875.1.1 = {
+		death = yes
+	}
+}

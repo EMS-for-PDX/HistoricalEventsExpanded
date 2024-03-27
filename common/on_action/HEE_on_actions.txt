@@ -24,6 +24,7 @@ yearly_global_pulse = {
 HEE_carolingian_dissolution = {
 	trigger = {
 		AND = {
+			game_start_date <= 867.1.1
 			NOT = { has_global_variable = carolingian_empire_has_dissolved }
 			exists = title:e_hre.holder
 			title:e_hre.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited

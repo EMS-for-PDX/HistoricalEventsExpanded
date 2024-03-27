@@ -14529,15 +14529,15 @@
 168002 = {
 	name = "Martino"
 	dynasty = 9567
+	father = HEE_geogory_duke_of_aemilia # Was nephew of John VII of Ravenna, so being the son of John's brother makes sense
 	religion = "catholic"
 	culture = "cisalpine"
 	845.1.1 = {
 		birth = "845.1.1"
 	}
-	# Martino now a bishop, cannot be married
-	#866.1.1 = { 
-	#	add_spouse = 167978
-	#}
+	866.1.1 = { 
+		add_spouse = 167978
+	}
 	896.9.1 = {
 		death = "896.9.1"
 	}

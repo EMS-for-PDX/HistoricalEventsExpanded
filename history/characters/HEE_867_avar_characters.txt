@@ -17,7 +17,7 @@ fictional_avars_0001 = { #
 fictional_avars_0002 = { # 
 	name = "Barjik"
 	#dynasty = fictional_avar_dynasty_02
-	religion = "catholic"
+	religion = "orthodox"
 	culture = "avar"
 
 	825.1.1 = {

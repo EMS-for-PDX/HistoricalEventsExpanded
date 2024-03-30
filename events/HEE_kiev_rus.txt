@@ -311,7 +311,7 @@ HEE_kiev_rus.1000 = {
 	immediate = {
 		# Give Kievian Rus title
 		create_title_and_vassal_change = {
-			type = granted
+			type = created
 			save_scope_as = change
 			add_claim_on_loss = no
 		}

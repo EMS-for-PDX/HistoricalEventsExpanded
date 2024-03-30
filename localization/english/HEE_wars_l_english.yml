@@ -13,8 +13,8 @@
  war_867_Isa_Seizure_of_Damascus: "Isa's Seizure of Damascus"
  war_867_Paulician_Grand_Raid: "Paulician Raids into Asia Minor"
 
-emperor_is_shamed_by_vassals: "Unable to defend the Empire's borders, the Emperor's prestige will be greatly injured and his ability to lead called into question"
-anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor will be ravaged by the Paulicians"
+ emperor_is_shamed_by_vassals: "Unable to defend the Empire's borders, the Emperor's prestige will be greatly injured and his ability to lead called into question"
+ anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor will be ravaged by the Paulicians"
 
  # HEE Pechengs
 
@@ -67,6 +67,10 @@ anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor wil
 
  dane_saxon_peace_desc: "\nWith neitther Saxon or Dane able to completely destroy the other, both sides have agreed to a temporary truce. Ceding the lands of Essex to the Great Summer Army, with no small amount of coin, both sides lick their wounds and prepare for the seemingly destined renewal of conflict."
 
+ franco_breton_peace_desc: "\nFor many years the alliance between the Bretons and Vikings has savaged West Francia, but now peace has finally been made between the French and Bretons. In exchange for King Charles recognizing Salomon as ruler over Brittany and ceding the land of Avranches to Brittany, Salomon has broken his ties with the Northmen and swore an oath of fealty to the French King."
+
+ treaty_of_orbe_truce_desc: "\nFollowing the death of the Emperor Lothaire, the sons of the Emperor - Louis II of Italy, Lothaire II of Lotharingia, and Charles of Provence - fought for a short time over the division of their father's land. However this conflict was brought to an end in October 856 at Orbe, where the three brothers reached a final settlement and agreed to make peace with one another. And though Charles has since passed, the remaining brothers continue to keep the peace between them."
+
  # Event Troops
  great_summer_army_event_troops: "Great Summer Army"
  
@@ -91,3 +95,4 @@ anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor wil
 
  kutama_event_troops: "Kutama Tribesmen"
  fatimid_event_troops: "Ismali Zealots"
+ pecheneg_event_troops: "Pecheneg Riders"

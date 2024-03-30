@@ -90,7 +90,7 @@ k_lotharingia = {
 	817.1.1 = {
 		holder = 30227 #Lothair I
 	}
-	855.8.22 = {
+	855.9.20 = {
 		holder = 144998 #Lothair II
 		name = LOTHARINGIA
 		effect = {

@@ -288,7 +288,7 @@ hee_al_turki = {
 	culture = "turkish"
 }
 
-hee_volkhvs = {
+hee_volkhvs = { # Inspired by https://en.wikipedia.org/wiki/Volkhovnik, a class Oleg may have been a part of
 	name = "dynn_volkhvs"
 	culture = "norse"
 }

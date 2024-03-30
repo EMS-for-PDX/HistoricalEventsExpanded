@@ -278,6 +278,14 @@ hee_karling_867_effect = {
 		}
 	}
 
+	scope:louis_the_younger = {
+		add_truce_both_ways = {
+			character = scope:lothaire
+			days = 10950
+			name = treaty_of_orbe_truce_desc
+		}
+	}
+
 	# Opinion modifiers if needed
 
 }

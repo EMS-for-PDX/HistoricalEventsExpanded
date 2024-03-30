@@ -232,7 +232,7 @@ HEE_carolingian_dissolution.9999 = {
 			#Arnulf recieves the Kingdom of Bavaria
 			scope:arnulf = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -284,10 +284,10 @@ HEE_carolingian_dissolution.9999 = {
 		if = {
 			limit = { has_title = title:k_alemania }
 			
-			#Arnulf recieves the Kingdom of Bavaria
+			#Arnulf recieves the Kingdom of Alemania
 			scope:arnulf = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -342,7 +342,7 @@ HEE_carolingian_dissolution.9999 = {
 			#Arnulf recieves the Kingdom of Bavaria
 			scope:arnulf = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -397,7 +397,7 @@ HEE_carolingian_dissolution.9999 = {
 			#Arnulf recieves the Kingdom of Bavaria
 			scope:arnulf = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -451,7 +451,7 @@ HEE_carolingian_dissolution.9999 = {
 
 			scope:berengar_of_friuli_stand_in = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -506,7 +506,7 @@ HEE_carolingian_dissolution.9999 = {
 			# Burgundy goes to Karl the Fat because historically its Italy
 			scope:rudolph_i_stand_in = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -562,7 +562,7 @@ HEE_carolingian_dissolution.9999 = {
 			# Burgundy goes to Karl the Fat because historically its Italy
 			scope:odo_of_paris = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}
@@ -617,7 +617,7 @@ HEE_carolingian_dissolution.9999 = {
 
 			scope:odo_of_paris = {
 				create_title_and_vassal_change = {
-					type = granted
+					type = faction_demand
 					save_scope_as = change
 					add_claim_on_loss = yes
 				}

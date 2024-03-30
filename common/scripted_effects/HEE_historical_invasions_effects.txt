@@ -845,6 +845,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_qarmatian
 					this = scope:lead_qarmatian
 					top_liege = scope:lead_qarmatian
+					current_military_strength > scope:lead_qarmatian.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -865,6 +866,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_qarmatian
 					this = scope:lead_qarmatian
 					top_liege = scope:lead_qarmatian
+					current_military_strength > scope:lead_qarmatian.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -878,9 +880,43 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 					geographical_region = max_qarmatian_invasion_region
 				}
 			}
+
 			save_temporary_scope_as = next_invasion_target
-			primary_title = {
-				save_temporary_scope_as = next_invasion_title_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:lead_qarmatian.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:lead_qarmatian }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:lead_qarmatian: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
 			}
 		}
 	}
@@ -892,6 +928,8 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_qarmatian
 						this = scope:lead_qarmatian
 						top_liege = scope:lead_qarmatian
+						current_military_strength > scope:lead_qarmatian.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -914,6 +952,8 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_qarmatian
 						this = scope:lead_qarmatian
 						top_liege = scope:lead_qarmatian
+						current_military_strength > scope:lead_qarmatian.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -937,6 +977,24 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 	if = {
 		limit = {
 			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+		}
+		start_war = {
+			cb = religious_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
 		}
 		start_war = {
 			cb = religious_war
@@ -1103,7 +1161,7 @@ spawn_fatimid_reinforcements_effect = {
 
 # Kutama targeting for wars
 kutama_war_target_evaluation_and_declaration_effect = {
-	# Set the Fatimid leader as reference point
+	# Set the Kutama leader as reference point
 	save_scope_as = lead_kutama
 
 	# Select a new target
@@ -1114,6 +1172,7 @@ kutama_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_kutama
 					this = scope:lead_kutama
 					top_liege = scope:lead_kutama
+					current_military_strength > scope:lead_kutama.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1126,9 +1185,6 @@ kutama_war_target_evaluation_and_declaration_effect = {
 				any_realm_province = {
 					geographical_region = core_starting_fatimid_region
 				}
-				primary_title = {
-					NOT = { tier = tier_empire }
-				}
 			}
 		}
 		random_neighboring_and_across_water_top_liege_realm_owner = {
@@ -1137,6 +1193,7 @@ kutama_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_kutama
 					this = scope:lead_kutama
 					top_liege = scope:lead_kutama
+					current_military_strength > scope:lead_kutama.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1152,9 +1209,41 @@ kutama_war_target_evaluation_and_declaration_effect = {
 			}
 
 			save_temporary_scope_as = next_invasion_target
-			primary_title = {
-				limit = { NOT = { tier = tier_empire } }
-				save_temporary_scope_as = next_invasion_title_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:lead_kutama.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:lead_kutama }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:lead_kutama: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
 			}
 		}
 	}
@@ -1166,6 +1255,8 @@ kutama_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_kutama
 						this = scope:lead_kutama
 						top_liege = scope:lead_kutama
+						current_military_strength > scope:lead_kutama.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1178,9 +1269,6 @@ kutama_war_target_evaluation_and_declaration_effect = {
 					any_realm_province = {
 						geographical_region = core_starting_fatimid_region
 					}
-					primary_title = {
-						NOT = { tier = tier_empire }
-					}
 				}
 			}
 		}
@@ -1191,6 +1279,8 @@ kutama_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_kutama
 						this = scope:lead_kutama
 						top_liege = scope:lead_kutama
+						current_military_strength > scope:lead_kutama.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1206,7 +1296,6 @@ kutama_war_target_evaluation_and_declaration_effect = {
 				}
 				save_temporary_scope_as = next_invasion_target
 				primary_title = {
-					limit = { NOT = { tier = tier_empire } }
 					save_temporary_scope_as = next_invasion_title_target
 				}
 			}
@@ -1215,6 +1304,24 @@ kutama_war_target_evaluation_and_declaration_effect = {
 	if = {
 		limit = {
 			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+		}
+		start_war = {
+			cb = religious_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
 		}
 		start_war = {
 			cb = religious_war
@@ -1284,7 +1391,7 @@ spawn_fatimid_caliph_character_effect = {
 	}
 }
 
-# Kutama targeting for wars
+# Fatimid targeting for wars
 fatimid_war_target_evaluation_and_declaration_effect = {
 	# Set the Fatimid leader as reference point
 	save_scope_as = lead_fatimid
@@ -1310,9 +1417,6 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 				any_realm_province = {
 					geographical_region = max_fatimid_invasion_region
 				}
-				primary_title = {
-					NOT = { tier = tier_empire }
-				}
 			}
 		}
 		random_neighboring_and_across_water_top_liege_realm_owner = {
@@ -1337,9 +1441,41 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 			}
 
 			save_temporary_scope_as = next_invasion_target
-			primary_title = {
-				limit = { NOT = { tier = tier_empire } }
-				save_temporary_scope_as = next_invasion_title_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:lead_fatimid.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:lead_fatimid }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:lead_fatimid: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
 			}
 		}
 	}
@@ -1352,6 +1488,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 						this = scope:lead_fatimid
 						top_liege = scope:lead_fatimid
 						current_military_strength > scope:lead_fatimid.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1364,9 +1501,6 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 					any_realm_province = {
 						geographical_region = max_fatimid_invasion_region
 					}
-					primary_title = {
-						NOT = { tier = tier_empire }
-					}
 				}
 			}
 		}
@@ -1378,6 +1512,7 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 						this = scope:lead_fatimid
 						top_liege = scope:lead_fatimid
 						current_military_strength > scope:lead_fatimid.current_military_strength
+						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
 					NOT = {
@@ -1393,7 +1528,6 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 				}
 				save_temporary_scope_as = next_invasion_target
 				primary_title = {
-					limit = { NOT = { tier = tier_empire } }
 					save_temporary_scope_as = next_invasion_title_target
 				}
 			}
@@ -1402,9 +1536,27 @@ fatimid_war_target_evaluation_and_declaration_effect = {
 	if = {
 		limit = {
 			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
 		}
 		start_war = {
-			cb = religious_war
+			cb = invasion_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		start_war = {
+			cb = invasion_war
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}
@@ -1426,6 +1578,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_rurikid
 					this = scope:lead_rurikid
 					top_liege = scope:lead_rurikid
+					current_military_strength > scope:lead_rurikid.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1446,6 +1599,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 					is_allied_to = scope:lead_rurikid
 					this = scope:lead_rurikid
 					top_liege = scope:lead_rurikid
+					current_military_strength > scope:lead_rurikid.current_military_strength
 				}
 				save_temporary_scope_as = truce_check
 				NOT = {
@@ -1481,7 +1635,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 								NOT = { target_is_de_facto_liege_or_above = scope:lead_rurikid }
 							}
 							kingdom = { save_temporary_scope_as = next_invasion_title_target }
-							debug_log = "scope:lead_rurikidr: scoped random neighboring kingdom"
+							debug_log = "scope:lead_rurikid: scoped random neighboring kingdom"
 						}
 					}
 				}
@@ -1507,6 +1661,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_rurikid
 						this = scope:lead_rurikid
 						top_liege = scope:lead_rurikid
+						current_military_strength > scope:lead_rurikid.current_military_strength
 						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
@@ -1530,6 +1685,7 @@ rurikid_war_target_evaluation_and_declaration_effect = {
 						is_allied_to = scope:lead_rurikid
 						this = scope:lead_rurikid
 						top_liege = scope:lead_rurikid
+						current_military_strength > scope:lead_rurikid.current_military_strength
 						highest_held_title_tier = tier_empire
 					}
 					save_temporary_scope_as = truce_check
@@ -1639,5 +1795,217 @@ TestingEffect = {
 			add_claim_on_loss = no
 		}
 		resolve_title_and_vassal_change = scope:change
+	}
+}
+
+spawn_pechenegs_starting_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = pecheneg_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 2450
+		location = scope:story_owner.capital_province
+	}
+}
+
+spawn_pechenegs_reinforcements_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = pecheneg_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 1450
+		location = scope:story_owner.capital_province
+	}
+}
+
+# Pecheneg targeting for wars
+pecheneg_war_target_evaluation_and_declaration_effect = {
+	# Set the Pecheneg leader as reference point
+	save_scope_as = pecheneg_khan
+
+	# Select a new target
+	if = { # Check if a direct neighbor is a valid war target
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				NOR = {
+					is_allied_to = scope:pecheneg_khan
+					this = scope:pecheneg_khan
+					top_liege = scope:pecheneg_khan
+					current_military_strength > scope:pecheneg_khan.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:pecheneg_khan = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = max_pecheneg_invasion_region
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOR = {
+					is_allied_to = scope:pecheneg_khan
+					this = scope:pecheneg_khan
+					top_liege = scope:pecheneg_khan
+					current_military_strength > scope:pecheneg_khan.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:pecheneg_khan = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = max_pecheneg_invasion_region
+				}
+			}
+
+			save_temporary_scope_as = next_invasion_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:pecheneg_khan.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:pecheneg_khan }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:pecheneg_khan: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
+			}
+		}
+	}
+	else_if = { # if no direct neighbors are valid war targets, then check the neighbors of the neighbors
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					NOR = {
+						is_allied_to = scope:pecheneg_khan
+						this = scope:pecheneg_khan
+						top_liege = scope:pecheneg_khan
+						current_military_strength > scope:pecheneg_khan.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:pecheneg_khan = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = max_pecheneg_invasion_region
+					}
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					NOR = {
+						is_allied_to = scope:pecheneg_khan
+						this = scope:pecheneg_khan
+						top_liege = scope:pecheneg_khan
+						current_military_strength > scope:pecheneg_khan.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:pecheneg_khan = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = max_pecheneg_invasion_region
+					}
+				}
+				save_temporary_scope_as = next_invasion_target
+				primary_title = {
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+		}
+		start_war = {
+			cb = invasion_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		start_war = {
+			cb = invasion_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
 	}
 }

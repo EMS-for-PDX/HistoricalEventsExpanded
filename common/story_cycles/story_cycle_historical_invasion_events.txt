@@ -649,7 +649,7 @@ story_kutama_uprising = {
 
 	#Start a new war if none is ongoing, AFTER they own bahrain
 	effect_group = {
-		days = { 50 150 }
+		days = { 100 200 }
 
 		trigger = {
 			story_owner = {
@@ -808,6 +808,159 @@ story_fatimid_expansion = {
 				OR = {
 					current_year >= 1000 # After this, it is fine for Fatimids to stop story expansion
 					completely_controls_region = max_fatimid_invasion_region # No need for forced expansion when they reach a great extent
+				}
+			}
+		}
+
+		triggered_effect = {
+			effect = {
+				end_story = yes
+			}
+		}
+	}
+}
+
+story_pecheneg_expansion = {
+	# by EmrysValdr
+	
+	on_setup = {
+		if = {
+			limit = { title:k_pechenegs_custom.holder.current_military_strength <= 6000 }
+			title:k_pechenegs_custom.holder = { spawn_pecheneg_starting_troops_effect = yes }
+		}
+		every_ruler = { # Notify appropriate rulers of the Rise of the Pechenegs
+			limit = {
+				AND = {
+					is_ai = no
+					OR = {
+						title_capital_county.title_province = { geographical_region = world_middle_east_arabia }
+						title_capital_county.title_province = { geographical_region = world_middle_east_jerusalem }
+						title_capital_county.title_province = { geographical_region = world_africa_north }
+					}
+				}
+			}
+			trigger_event = HEE_fatimid_uprising.0103 # 
+		}
+	}
+
+	on_end = {
+		debug_log = "Pecheneg Expansion story ended on:"
+		debug_log_date = yes
+		set_global_variable = {
+			name = pecheneg_expansion_story_has_ended
+			value = yes
+		}
+	}
+
+	on_owner_death = {	
+		story_owner = {
+			if = {
+				limit = {
+					any_child = { # if the ruler has a reasonable heir...
+						is_primary_heir_of = scope:story.story_owner
+					}
+				}
+				random_child = {
+					limit = {
+						is_primary_heir_of = scope:story.story_owner		
+					}
+					save_scope_as = new_story_owner # pass chain to appropriate target
+				}
+			}
+		}
+		if = {
+			limit = { exists = scope:new_story_owner }
+			make_story_owner = scope:new_story_owner
+
+			debug_log = "Successfully replaced the Pecheneg Khan"
+			debug_log_date = yes
+			debug_log_scopes = yes
+		}
+	}
+
+	#Start a new war if none is ongoing, assuming they are not at max intended extent
+	effect_group = {
+		days = { 300 500 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				NOT = { completely_controls_region = max_pecheneg_invasion_region }
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					pecheneg_war_target_evaluation_and_declaration_effect = yes
+				}
+				debug_log = "The story started a new war for the lead Fatimid"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Pechenegs Reinforcements if forces get a tad too weak
+	effect_group = {
+		days = { 200 365 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 0
+				gold > 0
+				current_military_strength <= 5000
+				NOR = {
+					current_year >= 1000 # After this, it is fine for Pechenegs to decline in strength
+					completely_controls_region = max_pecheneg_invasion_region # No need for added strength when they reach a great extent
+					legitimacy_level <= 2 # Low legitimacy ruler does not inspire reinforcements
+				}
+				any_held_title = {
+					this = title:k_pechenegs_custom
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				story_owner = {
+					spawn_pechenegs_reinforcements_effect = yes
+				}
+				debug_log = "The story gave reinforcements to the Pecheneg Khan"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
+
+	# Story Ending due to size or time
+	effect_group = {
+		days = { 365 500 }
+
+		trigger = { 
+			story_owner = {
+				OR = {
+					current_year >= 1050 # After this, it is fine for Pechenegs to stop story expansion
+					completely_controls_region = max_pecheneg_invasion_region # No need for forced expansion when they reach a great extent
 				}
 			}
 		}

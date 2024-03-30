@@ -9630,6 +9630,9 @@
 	848.1.1 = {
 		birth = "848.1.1"
 	}
+	867.1.1 = {
+		employer = 163070 # Duke of Tuscany, as Berta is Abbess of Chiesa di Sant'Andrea (Firenze)
+	}
 	902.1.1 = {
 		death = "902.1.1"
 	}

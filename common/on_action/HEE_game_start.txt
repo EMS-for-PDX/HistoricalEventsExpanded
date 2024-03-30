@@ -499,10 +499,17 @@ hee_louis_iii_unfortunate_accident = {
 				character:90154 = {
 					if = {
 						limit = {
+							is_ai = no
 							is_alive = yes
 						}
 						trigger_event = {
 							id = HEE_francia_questline.0300
+							days = { 1 365 }
+						}
+					}
+					else = {
+						trigger_event = {
+							id = HEE_francia_questline.0303
 							days = { 1 365 }
 						}
 					}
@@ -544,10 +551,17 @@ hee_carloman_ii_hunting_accident = {
 				character:90155 = {
 					if = {
 						limit = {
+							is_ai = no
 							is_alive = yes
 						}
 						trigger_event = {
 							id = HEE_francia_questline.0400
+							days = { 1 365 }
+						}
+					}
+					else = {
+						trigger_event = {
+							id = HEE_francia_questline.0405
 							days = { 1 365 }
 						}
 					}
@@ -612,13 +626,6 @@ hee_rise_of_simeon_startup = {
 
 hee_muhammad_ibn_wasil_startup = {
 	effect = {
-		#Seljuk Invasion to create them
-		# if = {
-			# limit = {
-				# has_game_rule = rise_of_simeon_off
-			# }
-		# }
-		# else_if = {
 		if = {
 			limit = {
 				NOT = { has_global_variable = alhanzali_has_attacked }
@@ -655,13 +662,6 @@ hee_muhammad_ibn_wasil_startup = {
 
 hee_rollo_conquest_of_normandy = {
 	effect = {
-		#Seljuk Invasion to create them
-		# if = {
-			# limit = {
-				# has_game_rule = rise_of_simeon_off
-			# }
-		# }
-		# else_if = {
 		if = {
 			limit = {
 				NOT = { has_global_variable = rollo_has_attacked }
@@ -708,13 +708,6 @@ hee_rollo_conquest_of_normandy = {
 
 hee_christianization_of_bohemia = {
 		effect = {
-		#Seljuk Invasion to create them
-		# if = {
-			# limit = {
-				# has_game_rule = rise_of_simeon_off
-			# }
-		# }
-		# else_if = {
 		if = {
 			limit = {
 				NOT = { has_global_variable = bohemia_has_christianized }
@@ -761,13 +754,6 @@ hee_christianization_of_bohemia = {
 
 HEE_plague_in_africa = {
 		effect = {
-		#Seljuk Invasion to create them
-		# if = {
-			# limit = {
-				# has_game_rule = rise_of_simeon_off
-			# }
-		# }
-		# else_if = {
 		if = {
 			limit = {
 				NOT = { has_global_variable = plague_outbreak_in_north_africa }

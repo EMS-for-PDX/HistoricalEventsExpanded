@@ -235,168 +235,6 @@ HEE_turkic_conquerors.203 = {
 	}
 }
 
-HEE_turkic_conquerors.2041 = {
-	type = character_event
-	hidden = yes
-
-	immediate = {
-		title:k_pechenegs_custom.holder = {
-			remove_character_flag = HEE_pechenegs_pending_invasion_1
-			trigger_event = HEE_turkic_conquerors.204
-		}
-	}
-}
-
-HEE_turkic_conquerors.204 = {
-	type = character_event
-	title = HEE_turkic_conquerors.204.t
-	desc = HEE_turkic_conquerors.204.desc
-	theme = faith
-	left_portrait = {
-		character = root
-		animation = personality_content
-	}
-
-	immediate = {
-		save_scope_as = ruler
-
-		set_global_variable = HEE_turkic_conquerors_204_fired
-	}
-
-	option = { 
-		name = HEE_turkic_conquerors.204.a
-		
-		add_prestige = 500
-		scope:ruler = {
-			start_war = {
-				casus_belli = pechenegs_migration_cb
-				target = title:e_caspian-pontic_steppe.holder
-				target_title = title:c_tana
-				target_title = title:c_oleshye
-				target_title = title:c_khortytsia
-				target_title = title:c_kalos_limen
-				target_title = title:c_perekop
-			}
-		}
-
-		add_character_flag = {
-			flag = HEE_turkic_conquerors_204_fired
-			#days = 30
-		}
-
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = {
-		name = HEE_turkic_conquerors.204.b
-
-		ai_chance = {
-			base = 0
-		}
-	}
-}
-
-HEE_turkic_conquerors.2051 = {
-	type = character_event
-	hidden = yes
-
-	immediate = {
-		title:k_pechenegs_custom.holder = {
-			trigger_event = HEE_turkic_conquerors.205
-			remove_character_flag = HEE_pechenegs_pending_invasion_2
-		}
-	}
-}
-
-HEE_turkic_conquerors.205 = {
-	type = character_event
-	title = HEE_turkic_conquerors.205.t
-	desc = HEE_turkic_conquerors.205.desc
-	theme = faith
-	left_portrait = {
-		character = root
-		animation = personality_content
-	}
-
-	immediate = {
-		save_scope_as = ruler
-
-		set_global_variable = HEE_turkic_conquerors_205_fired
-	}
-
-	option = { 
-		name = HEE_turkic_conquerors.205.a
-		
-		add_prestige = 500
-
-		every_ruler = {
-			limit = {
-				any_sub_realm_county = {
-					title_province = { geographical_region = custom_pechenegs }
-				}
-			}
-			if = { limit = { NOT = { is_in_list = top_liege_targets } }
-				add_to_temporary_list = top_liege_targets
-			}
-		}
-
-		every_in_list = {
-			list = top_liege_targets
-			save_temporary_scope_as = new_war_target
-			random_sub_realm_county = {
-				limit = {
-					title_province = { geographical_region = custom_pechenegs }
-				}
-				save_scope_as = war_target_title
-			}
-			# Declare the war
-			scope:ruler = {
-				start_war = {
-					cb = pechenegsecondwar
-					target = scope:new_war_target.top_liege
-					target_title = scope:war_target_title
-				}
-			}
-		}
-		
-		every_duchy = {
-			limit = {
-				title_capital_county = {
-					title_province = { geographical_region = custom_pecheneg_wallachia }
-				}
-			}
-			add_to_temporary_list = claim_titles
-		}
-
-		every_in_list = {
-			list = claim_titles
-
-			root = {
-				add_pressed_claim = prev
-			}
-		}
-
-		add_character_flag = {
-			flag = HEE_turkic_conquerors_205_fired
-			#days = 30
-		}
-
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = {
-		name = HEE_turkic_conquerors.205.b
-
-		ai_chance = {
-			base = 0
-		}
-	}
-}
-
 HEE_turkic_conquerors.3000 = { # Magyars Move
 	type = character_event
 	title = HEE_turkic_conquerors.3000.t
@@ -550,10 +388,26 @@ HEE_turkic_conquerors.3000 = { # Magyars Move
 				target_title = title:k_hungary
 			}
 		}
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_launched_HEE_hungarian_migration
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
 	}
 
 	# OH NOR 
 	option = {
-		
+
+		# Nothing!
+
+		ai_chance = {
+			base = 0
+		}
 	}
 }

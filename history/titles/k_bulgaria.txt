@@ -2768,6 +2768,10 @@ c_philippopolis = {
 		#holder = 1700
 		holder = 70382
 	}
+	867.1.1 = {
+		holder = HEE_theodore_sigritsa_father
+		liege = e_bulgarian_principality
+	}
 	
 	1064.1.1 = {
 		holder = 1736
@@ -2900,6 +2904,9 @@ c_kran = {
 	852.1.1 = {
 		holder = 70382 #Boris
 	}
+	867.1.1 = {
+		holder = HEE_theodore_sigritsa_father
+	}
 	1066.1.1 = {
 		holder = 1748
 	}
@@ -3005,6 +3012,9 @@ c_beroe = {
 	866.9.24 = {
 		#holder = 1700
 		holder = 70382
+	}
+	867.1.1 = {
+		holder = HEE_theodore_sigritsa_father
 	}
 	
 	1064.1.1 = {
@@ -3257,6 +3267,10 @@ c_zherkovo = {
 		#holder = 1700
 		holder = 70382
 	}
+	867.1.1 = {
+		holder = HEE_george_sursuvul_father
+		liege = e_bulgarian_principality
+	}
 	
 	1064.1.1 = {
 		holder = 1736
@@ -3341,6 +3355,9 @@ c_rhodopes = {
 	866.9.24 = {
 		#holder = 1700
 		holder = 70382
+	}
+	867.1.1 = {
+		holder = HEE_george_sursuvul_father
 	}
 	
 	1064.1.1 = {

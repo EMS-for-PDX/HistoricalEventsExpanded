@@ -620,7 +620,7 @@ HEE_giovanni_VII_of_ravenna = { # https://it.wikipedia.org/wiki/Arcidiocesi_di_R
 HEE_leopardus_of_ancona = { # According to Peruzzi (p. 96) and Ughelli (I, p. 330), Leopardus was instituted by Pope Nicholas I (858–867). In 866, according to Ughelli, he was sent to spread the gospel in Bulgaria. In 869, Pope Hadrian II wrote to King Michael of the Bulgarians, mentioning his legates Leopardus of Ancona and Dominicus of Treviso. Philippus Jaffé and S. Lowenfeld, p. 372, no. 2925.
 	name = "Leopardus"
 	religion = "catholic"
-	culture = "cisalpine"
+	culture = "italian"
 	trait = education_diplomacy_3
 	trait = honest
 	trait = zealous
@@ -638,12 +638,291 @@ HEE_leopardus_of_ancona = { # According to Peruzzi (p. 96) and Ughelli (I, p. 33
 HEE_pietro_of_urbino = { # https://it.wikipedia.org/wiki/Arcidiocesi_di_Urbino-Urbania-Sant%27Angelo_in_Vado
 	name = "Pietro"
 	religion = "catholic"
-	culture = "cisalpine"
+	culture = "italian"
 	trait = devoted
 	818.1.1 = {
 		birth = yes
 	}
 	875.1.1 = {
+		death = yes
+	}
+}
+
+HEE_dominicus_of_treviso = { # Dominicus of Treviso
+	name = "Dominicus"
+	religion = "catholic"
+	culture = "cisalpine"
+	trait = devoted
+	825.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown, before 880 AD
+		death = yes
+	}
+}
+
+HEE_vifredo_of_piacenza = { # Vifredo of Piacenza - https://it.wikipedia.org/wiki/Vifredo_I
+	name = "Vifredo"
+	religion = "catholic"
+	culture = "french" # After her husband's death, in one document Berta calls herself filia b. mem. Vvifredi comiti ex genere francorum, living according to the law of the Sali Franks, what determines an automatic placement of her father among the lineages of Sali Franks introduced by the Carolingians as governmental officials in the newly created Cisalpine political environment. 
+	diplomacy = 7
+	stewardship = 8
+	trait = education_stewardship_4 # Under his leadership, the county is administered efficiently
+	trait = just # Oversaw several disputes, with the Emperor Louis only intervening in one
+	trait = diligent # Under his leadership, the county is administered efficiently
+	trait = content # Complementary third trait
+	810.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown, though date of death must be fixed before February 881
+		death = yes
+	}
+}
+
+HEE_berta_of_piacenza = { # Berta of Piacenza, wife of Suppo II
+	name = "Berta"
+	female = yes
+	father = HEE_vifredo_of_piacenza
+	religion = "catholic"
+	culture = "french"
+	trait = generous # after her husband's death she would donate to the church of Sant'Antonino those goods received as an inheritance from her father in Piacenza and the surrounding area
+	835.1.1 = { # Unknown
+		birth = yes
+	}
+	855.1.1 = {
+		add_spouse = 167882 # Suppo II
+	}
+	895.1.1 = { # Unknown, though she did survive her husband
+		death = yes
+	}
+}
+
+# Aldobrandeschi - https://it.wikipedia.org/wiki/Aldobrandeschi
+
+unknown_aldobrandeschi_0001 = { # unidentified Alperto, father of Ilprando I
+	name = "Alperto"
+	religion = "catholic"
+	culture = "italian"
+	700.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+
+unknown_aldobrandeschi_0002 = { # Ilprando I, "humilis abbas" of the church of San Pietro Somaldi in Lucca.
+	name = "Ilprando"
+	father = unknown_aldobrandeschi_0001
+	religion = "catholic"
+	culture = "italian"
+	745.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0001 = { # Possible rector of the church
+	name = "Alperto"
+	father = unknown_aldobrandeschi_0002
+	religion = "catholic"
+	culture = "italian"
+	trait = devoted
+	762.1.1 = { # Unknown
+		birth = yes
+	}
+	805.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0002 = { # Father of Eriprando Aldobrandeschi and the one who began to lay the foundation for the family's rise - https://it.wikipedia.org/wiki/Ildebrando_I_Aldobrandeschi
+	name = "Ildebrando"
+	father = unknown_aldobrandeschi_0002
+	religion = catholic
+	culture = italian
+	trait = greedy
+	trait = arrogant
+	trait = ambitious
+	765.1.1 = { # Unknown
+		birth = yes
+	}
+	800.1.1 = {
+		add_spouse = alateo_0002
+	}
+	830.1.1 = { # Died sometime after 826 AD
+		death = yes
+	}
+}
+
+alateo_0002 = { # Ferilapa, daughter of Ferualdo of the late Alateo, wife of Ildebrando I Aldobrandeschi
+	name = "Ferilapa"
+	female = yes
+	dynasty = HEE_alateo # Alateo
+	father = alateo_0001
+	religion = catholic
+	culture = italian
+	768.1.1 = { # Unknown
+		birth = yes
+	}
+	835.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+alateo_0001 = {
+	name = "Ferualdo"
+	dynasty = HEE_alateo # Alateo
+	religion = catholic
+	culture = italian
+	trait = ambitious
+	746.1.1 = { # Unknown
+		birth = yes
+	}
+	805.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+additional_aldobrandeschi_0003 = { #
+	name = "Ilprando"
+	father = additional_aldobrandeschi_0002
+	mother = alateo_0002
+	religion = catholic
+	culture = italian
+	795.1.1 = { # Unknown
+		birth = yes
+	}
+	807.1.1 = { # Died sometime shortly after 800
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0004 = { # Eriprando Aldobrandeschi, father of the first count of the Aldobrandeschi - https://it.wikipedia.org/wiki/Eriprando_Aldobrandeschi
+	name = "Eriprando"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0002
+	mother = alateo_0002
+	religion = catholic
+	culture = italian
+	799.1.1 = { # Unknown
+		birth = yes
+	}
+	861.1.1 = { # Died sometime around 861
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0005 = { # Eriprando II Aldobrandeschi, documented only as an imperial vassal. Based on the name, Im making a guess he was the oldest son
+	name = "Eriprando"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0004
+	religion = catholic
+	culture = italian
+	820.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0006 = { # Geremia Aldobrandeschi, bishop of Lucca - https://it.wikipedia.org/wiki/Geremia_Aldobrandeschi
+	name = "Geremia"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0004
+	religion = catholic
+	culture = italian
+	824.1.1 = { # Unknown
+		birth = yes
+	}
+	852.10.3 = {
+		trait = devoted # He is documented bishop of Lucca since 3 October 852
+	}
+	867.1.1 = {
+		employer = 163070 # Duke Adalberto of Tuscany, owner of Lucca 
+	}
+	869.1.1 = { # He died after 868, and was succeeded by Gherardo
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0007 = { # Ademari Aldobrandeschi, documented only as an imperial vassal
+	name = "Ademari"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0004
+	religion = catholic
+	culture = italian
+	826.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 30228 # Emperor Louis II. As an Imperial Vassal, makes sense to be in his court
+	}
+	878.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0008 = { # Ildebrando II Aldobrandeschi, first count of the family - https://it.wikipedia.org/wiki/Ildebrando_II_Aldobrandeschi
+	name = "Ildebrando"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0004
+	religion = catholic
+	culture = italian
+	trait = education_stewardship_4
+	trait = zealous # He took part in a placit in 871 in which he assisted the bishop in the work of recovering lost ecclesiastical assets
+	trait = ambitious # Ildebrando definitively marked the passage of the family «from the middle aristocracy of Lucca to the top of the Tuscan (and Italian) elite»
+	trait = diligent # From the analysis of his transitions and acquisitions, a constant commitment to increasing his assets emerges
+	trait = brave # In the Gesta Berengarii Imperatoris, Ildebrando appears at the head of the Thyrreni (Tuscans) in support of Guido in the battle of Trebbia in 889; at the sight of his companions fleeing, the count urges them to take courage and face the enemy
+	830.1.1 = { # Unknown
+		birth = yes
+	}
+	900.1.1 = { # Died sometime around 900 AD
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0009 = { # Ildebrando III Aldobrandeschi - https://it.wikipedia.org/wiki/Ildebrando_III_Aldobrandeschi
+	name = "Ildebrando"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0008 # Probably son of Hildebrand II, it is difficult to reconstruct his genealogy due to the few sources available about the 10th century
+	religion = catholic
+	culture = italian
+	867.1.1 = { # Unknown, dated for start to avoid random family generation and its technically possible
+		birth = yes
+	}
+	939.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0010 = { # Gherardo Aldobrandeschi - https://it.wikipedia.org/wiki/Gherardo_Aldobrandeschi
+	name = "Gherardo"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0009
+	religion = catholic
+	culture = italian
+	910.1.1 = { # Unknown
+		birth = yes
+	}
+	966.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additional_aldobrandeschi_0011 = { # Lamberto Aldobrandeschi - https://it.wikipedia.org/wiki/Aldobrandeschi#Conti_di_Suvereto
+	name = "Lamberto"
+	dynasty = 1042000 # Aldobrandeschi
+	father = additional_aldobrandeschi_0009
+	religion = catholic
+	culture = italian
+	913.1.1 = { # Unknown
+		birth = yes
+	}
+	973.1.1 = { # Unknown
 		death = yes
 	}
 }

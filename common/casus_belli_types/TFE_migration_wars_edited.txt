@@ -222,41 +222,67 @@
 			}
 		}
 		on_declared_war = yes
-		scope:attacker = {
-			#One army to conquer.
+		scope:attacker = { # Spawn army, more troops for more legitimacy
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 5000
+				levies = 1900
 				men_at_arms = {
 					type = light_horsemen
-					stacks = 10
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 5
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 5
 				}
 				location = scope:attacker.capital_province
 				inheritable = no
 				uses_supply = no
 			}
-			#And one army to hold.
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 3000
-				men_at_arms = {
-					type = horse_archers
-					stacks = 5
+			if = {
+				limit = { legitimacy_level >= 3 }
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2500
+					men_at_arms = {
+						type = horse_archers
+						stacks = 5
+					}
+					inheritable = no
+					location = scope:attacker.capital_province
+					uses_supply = no
 				}
-				inheritable = no
-				location = scope:attacker.capital_province
-				uses_supply = no
 			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 3000
-				men_at_arms = {
-					type = horse_archers
-					stacks = 5
+			if = {
+				limit = { legitimacy_level >= 4 }
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2500
+					men_at_arms = {
+						type = horse_archers
+						stacks = 5
+					}
+					inheritable = no
+					location = scope:attacker.capital_province
+					uses_supply = no
 				}
-				inheritable = no
-				location = scope:attacker.capital_province
-				uses_supply = no
+			}
+			if = {
+				limit = { legitimacy_level = 5 }
+				spawn_army = {
+					name = event_troop_default_name
+					levies = 2500
+					men_at_arms = {
+						type = horse_archers
+						stacks = 5
+					}
+					inheritable = no
+					location = scope:attacker.capital_province
+					uses_supply = no
+				}
 			}
 		}
 
@@ -300,22 +326,13 @@
 	on_victory = {	
 		if = {
 			limit = {
-				title:c_dnipro = {
-					holder.liege = {
-						this = title:k_magyar.holder 
-					}
-				}
+				exists = title:k_magyar.holder 
+				NOT = { exists = global_var:flag_launched_HEE_hungarian_migration }
 			}
 			title:k_magyar.holder = {
 				save_scope_as = invader
 				add_character_flag = undertaking_hungarian_migration
-				trigger_event = HEE_turkic_conquerors.3000
-				# hidden_effect = {
-				# 	add_to_global_variable_list = {
-				# 		name = unavailable_unique_decisions
-				# 		target = flag:flag_launched_HEE_hungarian_migration
-				# 	}
-				# }
+				trigger_event = HEE_turkic_conquerors.3000 # Global var added via event
 			}
 		}
 
@@ -547,6 +564,8 @@
 
 		# Truce
 		add_truce_attacker_victory_effect = yes
+
+		scope:attacker = { create_story = story_pecheneg_expansion } # Start story for Pecheneg expansion into Carpathia
 	}
 
 	on_white_peace_desc = {
@@ -663,5 +682,4 @@
 	cb_name = pechenegs_CONQUEST_CB_NAME
 	
 	interface_priority = 100
-
 }

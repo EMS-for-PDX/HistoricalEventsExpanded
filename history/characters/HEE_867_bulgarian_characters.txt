@@ -1,7 +1,7 @@
 ﻿## Characters for the Bulgarians - 867 ##
 
 HEE_george_sursuvul_father = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
-	name = "Symeon"
+	name = "Kresimir"
 	dynasty = hee_sursuvul
 	religion = "tengri_pagan"
 	culture = "bulgarian"
@@ -99,7 +99,6 @@ HEE_theodore_sigritsa_father = { # Family of Theodore Sigritsa (essentially fict
 HEE_theodore_sigritsa_mother = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
 	name = "Vasilka"
 	female = yes
-	# dynasty = hee_sursuvul
 	religion = "tengri_pagan"
 	culture = "bulgarian"
 	# father = marinos
@@ -131,7 +130,7 @@ HEE_theodore_sigritsa_mother = { # Family of Theodore Sigritsa (essentially fict
 HEE_theodore_sigritsa = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
 	name = "Theodore"
 	dynasty = hee_sigritsa
-	religion = "tengri_pagan"
+	religion = "orthodox"
 	culture = "bulgarian"
 	father = HEE_theodore_sigritsa_father
 	mother = HEE_theodore_sigritsa_mother
@@ -150,11 +149,7 @@ HEE_theodore_sigritsa = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Th
 	866.1.1 = { # Fictional
 		birth = yes
 	}
-	864.1.1 = {
-		add_spouse = HEE_theodore_sigritsa_mother
-		religion = "orthodox"
-	}
-	924.1.1 = { # Fictional
+	924.1.1 = { # in 924 he and Marmais, leading a small army, were ambushed by the Serbs and killed. Their deaths were followed by the Bulgarian annexation in the same year
 		death = {
 			death_reason = death_battle
 		}

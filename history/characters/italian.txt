@@ -6107,6 +6107,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
+	mother = HEE_berta_of_piacenza
 	855.1.1 = {
 		birth = "855.1.1"
 	}
@@ -6121,6 +6122,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
+	mother = HEE_berta_of_piacenza
 	860.1.1 = {
 		birth = "860.1.1"
 	}
@@ -6135,6 +6137,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
+	mother = HEE_berta_of_piacenza
 	862.1.1 = {
 		birth = "862.1.1"
 	}
@@ -6149,6 +6152,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
+	mother = HEE_berta_of_piacenza
 	864.1.1 = {
 		birth = yes
 	}
@@ -24133,6 +24137,7 @@ aldobrandeschi_9 = {
 	dynasty = 1042000 # Aldobrandeschi
 	religion = catholic
 	culture = italian
+	father = additional_aldobrandeschi_0010
 	940.1.1 = {
 		birth = yes
 	}

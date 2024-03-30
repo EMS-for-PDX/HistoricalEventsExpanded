@@ -831,8 +831,9 @@ c_treviso = {
 	863.1.1 = {
 		liege = "d_verona"
 	}
-	863.1.1 = {
-		holder = 163057
+	865.1.1 = {
+		holder = HEE_dominicus_of_treviso # Bishop of Treviso, who held effective Count status
+		government = theocracy_government
 	}
 	1028.1.1 = {
 		holder = 70626 # Rambaldo I di Treviso
@@ -3044,6 +3045,12 @@ c_parma = {
 	}
 }
 
+b_piacenza = {
+	850.1.1 = {
+		holder = HEE_vifredo_of_piacenza
+	}
+}
+
 c_tortona = {
 	565.1.1 = {
 		holder = 190124 # Alboin  of Italy
@@ -4855,8 +4862,8 @@ c_orbetello = {
 	767.1.1 = {
 		holder = 190569 #Amonius
 	}
-	860.1.1 = {
-		holder = 167911
+	855.1.1 = {
+		holder = additional_aldobrandeschi_0008
 	}
 	1061.7.27 = {
 		holder = 2008

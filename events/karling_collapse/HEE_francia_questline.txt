@@ -393,6 +393,75 @@ HEE_francia_questline.0302 = { #Louis III dies, is permanently disabled, or begi
 	}
 }
 
+HEE_francia_questline.0303 = { #by Mathilda Bjarnehed
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		this = character:90154 #Louis III
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { is_at_war = yes }
+
+			random_list = {
+				20 = { #Very wounded
+					increase_wounds_effect = { REASON = battle }
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+				}
+				80 = { #Killed
+					random_war_enemy = {
+						if = {
+							limit = { is_commanding_army = yes }
+							save_scope_as = killer
+						}
+						else = {
+							random_knight = {
+								save_scope_as = killer
+							}
+						}
+					}
+					if = {
+						limit = { exists = scope:killer }
+						death = {
+							death_reason = death_hunting_accident
+							killer = scope:killer
+						}
+					}
+				}
+			}	
+		}
+		else = {
+			random_list = {
+				90 = { # Dies, based on his historical accident
+					death = {
+						death_reason = death_hit_head_on_lintel_of_low_door
+					}
+				}
+				9 = { # Louis III's head injury doesnt kill him, but permanently injuries him
+					add_trait = incapable
+				}
+				1 = { # True alt-history, Louis is wounded, but likely will survive
+					increase_wounds_effect = { REASON = horse_riding_accident }
+				}
+			}	
+		}
+	}
+}
+
 HEE_francia_questline.0400 = { #Carloman's servant proposes a hunt
 	type = character_event
 	title = HEE_francia_questline.0400.t
@@ -617,7 +686,7 @@ HEE_francia_questline.0402 = { #Carloman II is (perhaps) accidently stabbed by h
 	}
 
 	immediate = {
-		add_trait = wounded_1
+		increase_wounds_effect = { REASON = hunting_accident }
 	}
 
 	option = {
@@ -719,20 +788,93 @@ HEE_francia_questline.0404 = { #Carloman II's dies or his fever breaks
 	immediate = {
 		random_list = {
 			90 = { # Dies
-				hidden_effect = {
-					death = {
-						death_reason = death_hunting_accident
-					}
+				death = {
+					death_reason = death_hunting_accident
 				}
 			}
 			10 = { # Carloman's fever breaks
-				hidden_effect = {
-					remove_trait = ill
-				}
+				remove_trait = ill
 			}
 		}
 	}
 }
+
+HEE_francia_questline.0405 = { #by Mathilda Bjarnehed
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		this = character:90155 #Carloman II
+		is_ai = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { is_at_war = yes }
+
+			random_list = {
+				20 = { #Very wounded
+					increase_wounds_effect = { REASON = battle }
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+					if = {
+						limit = { is_alive = yes }
+						increase_wounds_effect = { REASON = battle }
+					}
+				}
+				80 = { #Killed
+					random_war_enemy = {
+						if = {
+							limit = { is_commanding_army = yes }
+							save_scope_as = killer
+						}
+						else = {
+							random_knight = {
+								save_scope_as = killer
+							}
+						}
+					}
+					if = {
+						limit = { exists = scope:killer }
+						death = {
+							death_reason = death_hunting_accident
+							killer = scope:killer
+						}
+					}
+				}
+			}	
+		}
+		else = {
+			random_list = {
+				90 = { # Dies, based on his historical accident
+					death = {
+						death_reason = death_hunting_accident
+					}
+				}
+				9 = { # Carloman II is wounded, but lives
+					increase_wounds_effect = { REASON = hunting_accident }
+					add_character_modifier = {
+						modifier = infected_wound_modifier
+						days = 30
+					}
+				}
+				1 = { # True alt-history, Carlomann's hunt goes off without issue
+					if = {
+						limit = { NOT = { has_trait = lifestyle_hunter } }
+						add_trait = lifestyle_hunter
+					}
+				}
+			}	
+		}
+	}
+}
+
 
 HEE_francia_questline.1000 = { #Rise of Provence questline
 	type = character_event

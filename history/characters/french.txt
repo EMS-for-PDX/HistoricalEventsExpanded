@@ -9865,6 +9865,11 @@
 			add_character_flag = has_scripted_appearance
 		}
 	}
+	849.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:167894 } 	#The relationship between Louis and Engelberga seems to have begun before the marriage, starting in an unspecified period between 848 and 851, a relationship that led to the conception of the couple's firstborn, Gisla
+		}
+	}
 	852.1.1 = {
 		give_nickname = nick_the_younger
 		add_spouse = 167894
@@ -25879,8 +25884,8 @@
 
 	father = 30228 #(King Louis II of Italy)
 	mother = 167894
-	859.1.1 = {
-		birth = "859.1.1"
+	855.1.1 = {
+		birth = "855.1.1"
 	}
 	880.1.1 = {
 		add_trait = unyielding_defender
@@ -44300,6 +44305,7 @@
 	religion = "catholic"
 	culture = french
 	father = 167882
+	mother = HEE_berta_of_piacenza
 	857.1.1 = {
 		birth = "857.1.1"
 	}
@@ -44375,12 +44381,12 @@
 	trait = education_diplomacy_3
 	trait = diplomat
 	trait = gregarious
+	trait = arrogant # According to the historian, Kreutz, B. M., the arrest of Engelberga and her husband, Ludovico, which took place in Benevento, in 871, was due to the authoritarian and arrogant behavior of the empress
 	trait = diligent
-	trait = humble
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 167881
-	834.1.1 = {
-		birth = "834.1.1"
+	830.1.1 = {
+		birth = "830.1.1"
 	}
 	901.1.1 = {
 		death = "901.1.1"
@@ -45562,14 +45568,15 @@
 	martial = 3
 	intrigue = 2
 	learning = 10
-	trait = curious
+	trait = education_learning_3
 	trait = humble
 	trait = forgiving
 	trait = temperate
 	trait = devoted
+	trait = bastard # Born of Louis and Engelberga relationship pre-marriage
 	disallow_random_traits = yes
-	853.1.1 = {
-		birth = "853.1.1"
+	851.1.1 = {
+		birth = "851.1.1"
 	}
 	868.4.28 = {
 		death = "868.4.28"

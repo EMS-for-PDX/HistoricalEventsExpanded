@@ -186,3 +186,20 @@ rurikid_invasion_region = {
 		c_jilat
 	}
 }
+
+max_pecheneg_invasion_region = {
+	duchies = {
+		#Zaporizhia
+		d_yedisan d_levedia d_don_valley
+		#Western Caucasus
+		d_azov
+		#Moldavia
+		d_bukovina d_moldova d_bugeac
+		#Dacia
+		d_transylvanian_alps d_muntenia d_oltenia
+	}
+
+	counties = {
+		c_kalos_limen c_perekop c_sarkel
+	}
+}

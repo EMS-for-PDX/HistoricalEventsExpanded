@@ -1224,7 +1224,31 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 				}
 				resolve_title_and_vassal_change = scope:change
 			}
+			title:c_maastricht.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
 			title:c_trier.holder = {
+				create_title_and_vassal_change = {
+					type = granted #or whatever
+					save_scope_as = change
+				}
+				
+				change_liege = {
+					liege = scope:king_of_germany
+					change = scope:change
+				}
+				resolve_title_and_vassal_change = scope:change
+			}
+			title:c_metz.holder = {
 				create_title_and_vassal_change = {
 					type = granted #or whatever
 					save_scope_as = change

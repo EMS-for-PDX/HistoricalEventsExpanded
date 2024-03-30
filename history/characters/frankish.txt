@@ -4363,7 +4363,7 @@
 	}
 }
 
-167976 = { # Progenitor of the Hucpoldings, a dynasty that belonged to the aristocratic elite of the Carolingian empire and came to Italy under Lothar I (c.847) and tried to settle there and eventually gained renown as Counts of Bologna
+167976 = { # Progenitor of the Hucpoldings - https://it.wikipedia.org/wiki/Hucpold
 	name = "Hucbald"
 	dynasty = 9566
 	religion = catholic

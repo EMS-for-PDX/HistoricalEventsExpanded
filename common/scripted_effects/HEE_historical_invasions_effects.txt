@@ -2009,3 +2009,223 @@ pecheneg_war_target_evaluation_and_declaration_effect = {
 		}
 	}
 }
+
+spawn_hungarian_starting_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = magyar_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 1450
+		location = scope:story_owner.capital_province
+	}
+}
+
+spawn_hungarian_reinforcements_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = magyar_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 950
+		location = scope:story_owner.capital_province
+	}
+}
+
+# Magyar targeting for Grand Raids
+kalandozasok_war_target_evaluation_and_declaration_effect = {
+	# Set the Magyar leader as reference point
+	save_scope_as = magyar_gyula
+
+	# Select a new target
+	if = { # Check if a direct neighbor is a valid war target
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				NOR = {
+					is_allied_to = scope:magyar_gyula
+					this = scope:magyar_gyula
+					top_liege = scope:magyar_gyula
+					current_military_strength > scope:magyar_gyula.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:magyar_gyula = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = kalandozasok_invasion_region
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOR = {
+					is_allied_to = scope:magyar_gyula
+					this = scope:magyar_gyula
+					top_liege = scope:magyar_gyula
+					current_military_strength > scope:magyar_gyula.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:magyar_gyula = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = kalandozasok_invasion_region
+				}
+			}
+
+			save_temporary_scope_as = next_invasion_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:magyar_gyula.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:magyar_gyula }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:magyar_gyula: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
+			}
+		}
+	}
+	else_if = { # if no direct neighbors are valid war targets, then check the neighbors of the neighbors
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					NOR = {
+						is_allied_to = scope:magyar_gyula
+						this = scope:magyar_gyula
+						top_liege = scope:magyar_gyula
+						current_military_strength > scope:magyar_gyula.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:magyar_gyula = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = kalandozasok_invasion_region
+					}
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					NOR = {
+						is_allied_to = scope:magyar_gyula
+						this = scope:magyar_gyula
+						top_liege = scope:magyar_gyula
+						current_military_strength > scope:magyar_gyula.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:magyar_gyula = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = kalandozasok_invasion_region
+					}
+				}
+				save_temporary_scope_as = next_invasion_target
+				primary_title = {
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier = tier_empire
+				}
+			}
+		}
+		start_war = {
+			cb = grand_raid_cb
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier = tier_empire
+			}
+		}
+		start_war = {
+			cb = grand_raid_cb
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+}

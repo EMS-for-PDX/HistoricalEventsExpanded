@@ -640,10 +640,6 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 	
-	scope:leon = {
-		set_real_father = scope:michael_iii
-	}
-	
 	scope:michael_iii = {
 		add_opinion = {
 			target = scope:leon

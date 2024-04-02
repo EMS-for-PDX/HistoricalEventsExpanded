@@ -5,19 +5,22 @@
 	allowed_for_character = {}
 
 	allowed_against_character = {
-		has_title = title:e_byzantium
+		highest_held_title_tier >= tier_kingdom
+		any_vassal_or_below = {
+			NOT = {
+				THIS = scope:attacker
+			}
+		}
 	}
 
     valid_to_start = {
 		always = no
     }
 
-	target_titles = all
+	target_titles = none
 	target_title_tier = all
 	target_de_jure_regions_above = yes
-	should_show_war_goal_subview = yes
-	combine_into_one = yes
-	mutually_exclusive_titles = { always = yes }
+	ignore_effect = change_title_holder
 	allow_hostages = no
 
 	should_invalidate = {
@@ -56,11 +59,62 @@
 	}
 
 	on_victory = {
+		custom_tooltip = ruler_is_shamed_by_vassals
+		hidden_effect = {
+			scope:defender = { 
+				every_vassal = {
+					add_opinion = {
+						modifier = unable_to_defend_realm
+						target = scope:attacker
+					}
+				}
+			}
+		}
+		
+		custom_tooltip = realm_is_ravaged_by_raiders
+		hidden_effect = {
+			every_in_list = {
+				list = target_titles
+
+				every_in_de_jure_hierarchy = {
+					limit = { 
+						tier = tier_county
+						holder.top_liege = scope:defender
+					}
+					save_scope_as = raid_county
+
+					# Set raided province modifier
+					add_county_modifier = {
+						modifier = recently_looted_modifier
+						years = 5
+					}
+
+					# Control and Dev loss
+					fp2_border_raid_damage_effect = yes
+
+					# Possible building destruction
+					random = {
+						chance = 25
+						modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
+						modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
+						custom_tooltip = destroy_random_building_tt
+						destroy_random_building_effect = yes
+					}
+				}
+			}
+		}
+
+		# Legitimacy
+		add_legitimacy_attacker_victory_effect = yes
+
 		#EP2 accolade glory gain for winning against higher ranked enemy
 		scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
 
-		scope:attacker = {
-			add_gold = 1000
+		scope:defender = {
+			pay_long_term_gold = {
+				target = scope:attacker
+				gold = grand_raid_gold
+			}
 		}
 
 		# Attacker gets Prestige Experience, Defender loses Prestige, all other participants gain Prestige based on their war contribution.
@@ -73,54 +127,6 @@
 			LOSER_FAME_SCALE = -10
 			WINNER_ALLY_FAME_SCALE = 10
 			LOSER_ALLY_FAME_SCALE = 10
-		}
-
-		custom_tooltip = emperor_is_shamed_by_vassals
-		hidden_effect = {
-			scope:defender = { 
-				add_prestige = -1000
-				every_vassal = {
-					limit = {
-						primary_title = {
-							or = {
-								target_is_de_jure_liege_or_above = title:k_anatolia
-								target_is_de_jure_liege_or_above = title:k_pontus
-								target_is_de_jure_liege_or_above = title:k_nikaea
-							}
-						}
-					}
-					add_opinion = {
-						modifier = unable_to_defend_empire
-						target = scope:attacker
-					}
-				}
-			}
-		}
-		
-		custom_tooltip = anatolia_is_ravaged_by_paulicians
-		hidden_effect = {
-			every_in_list = {
-				list = target_titles
-
-				every_in_de_jure_hierarchy = {
-					limit = { 
-						tier = tier_county
-						holder.top_liege = scope:defender
-					}
-					# Set raided province modifier
-					add_county_modifier = {
-						modifier = recently_looted_modifier
-						years = 5
-					}
-					# Possible building destruction
-					# random = {
-					# 	chance = 25
-					# 	modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
-					# 	modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
-					# 	destroy_random_building_variable_effect = yes
-					# }
-				}
-			}
 		}
 	}
 
@@ -186,6 +192,8 @@
 	}
 
 	on_defeat = {
+		# Legitimacy
+		add_legitimacy_attacker_defeat_effect = yes
 
 		scope:attacker = {
 			every_held_title = {
@@ -241,11 +249,11 @@
 
 	transfer_behavior = transfer
 
-	on_primary_attacker_death = inherit
-	on_primary_defender_death = inherit
+	on_primary_attacker_death = invalidate # With Raid leader's death, raid is cancelled
+	on_primary_defender_death = inherit # Raiders dont care if which ruler is which
 
 	attacker_allies_inherit = yes
-	defender_allies_inherit = yes
+	defender_allies_inherit = no
 
 	war_name = GRAND_RAID_WAR_NAME
 	war_name_base = GRAND_RAID_WAR_NAME_BASE
@@ -253,15 +261,8 @@
 
 	interface_priority = 100
 
-	# # The war will last 2 years at most
-	# defender_ticking_warscore_delay = { months = 3 }
-	# defender_ticking_warscore = 0.15
+	max_attacker_score_from_battles = 1000 # Defeating the defending armies significantly enough leaves them unable to defend
+	max_defender_score_from_battles = 1000 # Defender's primary way of ending raids should be via beating back raiders
 
-	# attacker_wargoal_percentage = 1
-	# attacker_ticking_warscore = 1
-
-	# max_defender_score_from_occupation = 100
-	# max_attacker_score_from_occupation = 1
-
-	# ticking_war_score_targets_entire_realm = no
+	truce_days = 3650
 }

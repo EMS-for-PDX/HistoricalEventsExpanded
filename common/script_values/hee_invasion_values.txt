@@ -184,3 +184,15 @@ ghaznavids_invasion_target_character_weight = {
 qarmatians_appearance_base_chance = 1
 
 hee_generic_appearance_base_chance = 1
+
+grand_raid_gold = {
+	value = 0
+	scope:defender = {
+		every_realm_county = {
+			add = 1
+		}
+	}
+	multiply = 10
+	
+	min = 200
+}

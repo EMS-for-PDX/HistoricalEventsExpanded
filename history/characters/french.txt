@@ -25808,7 +25808,7 @@
 	trait = lustful # Accused of committing innumerable adulteries and disgraceful fornication
 	trait = callous # Accused of committing homicides and raiding
 	trait = education_martial_2
-	trait = raider # Conducted a number of raids and had a reputation for intolerable plundering
+	trait = reaver # Conducted a number of raids and had a reputation for intolerable plundering
 	father = 7976
 	820.1.1 = {
 		birth = "820.1.1"

@@ -203,3 +203,31 @@ max_pecheneg_invasion_region = {
 		c_kalos_limen c_perekop c_sarkel
 	}
 }
+
+kalandozasok_invasion_region = { # Raiding Region
+	duchies = {
+		#Moravia
+		d_moravia
+		#Bavaria
+		d_bavaria d_nordgau d_salzburg d_augsburg d_steyermark d_osterreich d_tyrol d_carinthia
+		#Germany
+		d_east_franconia d_west_franconia d_hesse d_currezia d_alsace d_swabia
+		#Italy
+		d_friuli d_verona d_piedmonte d_lombardia d_genoa d_emilia d_pisa d_toscana
+		#Croatia
+		d_dalmatia d_croatia d_slavonia d_ragusa
+		#Bosnia
+		d_bosna d_lower_bosna d_usora
+		#Serbia
+		d_rashka d_macva d_duklja
+		#Epirus
+		d_dyrrachion d_epirus d_cephalonia
+		#Thessalonika
+		d_thrace d_strymon d_thessalonika d_thessaly d_aegean_islands
+		#Bulgaria
+		d_vidin d_turnovo d_dobrudja d_bulgaria d_philippopolis
+		#Wallachia (dacia)
+		d_transylvanian_alps d_muntenia d_oltenia
+	}
+
+}

@@ -965,6 +965,9 @@
 	mother = 1761
 	866.9.29 = {
 		birth = "866.9.29"
+        effect = {
+            set_real_father = character:70490 # Michael III, most likely Leon's real father
+        }
 	}
 	882.9.29 = {
 		trait = scholar	#Add adult trait
@@ -9907,6 +9910,9 @@
 	mother = 1761
 	867.11.1 = {
 		birth = "867.11.1"
+        effect = {
+            set_real_father = character:70490 # Michael III, like with Leon it is likely Michael III was Stephan's real father
+        }
 	}
 	893.5.18 = {
 		death = "893.5.18"

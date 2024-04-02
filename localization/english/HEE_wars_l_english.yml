@@ -13,8 +13,8 @@
  war_867_Isa_Seizure_of_Damascus: "Isa's Seizure of Damascus"
  war_867_Paulician_Grand_Raid: "Paulician Raids into Asia Minor"
 
- emperor_is_shamed_by_vassals: "Unable to defend the Empire's borders, the Emperor's prestige will be greatly injured and his ability to lead called into question"
- anatolia_is_ravaged_by_paulicians: "With the Roman Army defeated, Asia Minor will be ravaged by the Paulicians"
+ ruler_is_shamed_by_vassals: "Unable to defend the borders of [defender.GetPrimaryTitle.GetNameNoTier], [defender.GetShortUINamePossessive] prestige will be greatly injured and [defender.GetHerHis] ability to lead called into question"
+ realm_is_ravaged_by_raiders: "With the armies of [defender.GetPrimaryTitle.GetNameNoTier] defeated, the lands within [defender.GetPrimaryTitle.GetNameNoTier] will be ravaged by the [attacker.GetPrimaryTitle.GetAdjective] raiding parties"
 
  # HEE Pechengs
 
@@ -43,6 +43,7 @@
 
 
  # Grand Raid 
+ grand_raid_cb: "Grand Raid"
  GRAND_RAID_WAR_NAME: "[ATTACKER.GetPrimaryTitle.GetName|U] Grand Raid"
  GRAND_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
  GRAND_RAID_CB: "Grand Raid"
@@ -96,3 +97,4 @@
  kutama_event_troops: "Kutama Tribesmen"
  fatimid_event_troops: "Ismali Zealots"
  pecheneg_event_troops: "Pecheneg Riders"
+ magyar_event_troops: "Hungarian Horsemen"

@@ -1032,7 +1032,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 		}
 	}
 
-	#Start a new war if none is ongoing, BEFORE they own Hungary
+	#Start a new war if none is ongoing, BEFORE they completely control Hungary
 	effect_group = {
 		days = { 100 200 }
 
@@ -1055,13 +1055,20 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				}
 			}
 			effect = {
-				every_county_in_region = {
-					region = custom_hungary
-					limit = { NOT = { holder = root } }
+				story_owner = {
+					save_scope_as = owner
+				}
+				random_neighboring_county = {
+					limit = {
+						# title_province = {
+						# 	geographical_region = custom_hungary
+						# }
+						NOR = { holder = scope:owner holder.top_liege = scope:owner } 
+					}
 					duchy = { save_scope_as = next_invasion_title_target }
 					holder = {
-						save_scope_as = ruler_to_declare_on
-						story_owner = {
+						top_liege = { save_scope_as = ruler_to_declare_on }
+						scope:owner = {
 							start_war = {
 								cb = ducal_conquest_cb
 								target = scope:ruler_to_declare_on
@@ -1072,15 +1079,17 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				}
 				debug_log = "The story started a new war for the lead_hungarian"
 				debug_log_date = yes
-				story_owner = {
-					save_scope_as = owner
-				}
 				debug_log_scopes = yes
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = "Declared Cool War"
+					left_icon = root
+				}
 			}
 		}
 	}
 
-	#Start a Grand Raid if none is ongoing, AFTER they own Hungary
+	#Start a Grand Raid if none is ongoing, AFTER they completely control Hungary
 	effect_group = {
 		days = { 200 300 }
 

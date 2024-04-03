@@ -18,3 +18,16 @@ jda_jeannes_chastity_belt = {
 	jda_loosened_chastity_belt = {  }
 	jda_unlocked_chastity_belt = { }
 }
+
+hungarian_migration = {
+	
+	categories = {
+		historicity flavor
+	}
+	
+	default = launch_historical
+	launch_historical = {}
+	#launch_immediate = {}
+	launch_random = {}
+	launch_off = { flag = blocks_achievements }
+}

@@ -20,26 +20,11 @@ is_priest = {
 }
 
 TestingTriggers = {
-	#There must be a suitable Eastern European Mogyer ruler around.
-	any_county_in_region = {
-		region = world_steppe
-		holder = { 
-			culture = culture:mogyer
-			government_has_flag = government_is_tribal
-			highest_held_title_tier <= tier_kingdom
-			OR = {
-				is_independent_ruler = yes
-				NOT = {
-					liege = { culture = culture:mogyer }
-				}
-			}
-		}
-	}
-	#Pannonia must have a valid ruler to declare war on: someone with at least a duchy-ish sized chunk of the land, and who isn't a fellow Mogyer.
-	any_county_in_region = {
-		region = custom_hungary
-		holder = {
-			hungarian_migration_valid_pannonian_target_trigger = { COUNT = 6 }
-		}
+	is_at_war = no
+	prestige > 0
+	gold > 0
+	NOT = { completely_controls_region = custom_hungary }
+	any_held_title = {
+		this = title:k_hungary
 	}
 }

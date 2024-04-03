@@ -714,6 +714,13 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+
+	# Magyar's in 867 won't invade until we fire it 
+
+	add_to_global_variable_list = {
+		name = unavailable_unique_decisions
+		target = flag:flag_launched_hungarian_migration
+	}
 }
 
 

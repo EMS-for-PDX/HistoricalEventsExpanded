@@ -383,7 +383,7 @@ HEE_turkic_conquerors.3000 = { # Magyars Move
 			#Now, declare war using the pre-scripted flow.
 			add_character_flag = undertaking_hungarian_migration
 			start_war = {
-				cb = hungarian_migration_cb
+				cb = HEE_hungarian_migration_cb
 				target = scope:pannonian_defender
 				target_title = title:k_hungary
 			}

@@ -1043,7 +1043,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				gold > 0
 				NOT = { completely_controls_region = custom_hungary }
 				any_held_title = {
-					this = title:k_magyar
+					this = title:k_hungary
 				}
 			}
 		}
@@ -1092,7 +1092,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				realm_size <= 60
 				completely_controls_region = custom_hungary
 				any_held_title = {
-					this = title:k_magyar
+					this = title:k_hungary
 				}
 			}
 		}
@@ -1132,7 +1132,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
 				}
 				any_held_title = {
-					this = title:k_magyar
+					this = title:k_hungary
 				}
 			}
 		}
@@ -1165,22 +1165,22 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 			story_owner = {
 				NOT = {
 					any_held_title = {
-						this = title:k_magyar
+						this = title:k_hungary
 					}
 				}
 			}
 		}
 
 		triggered_effect = {
-			trigger = { exists = title:k_magyar }
+			trigger = { exists = title:k_hungary }
 			effect = {
 				if = {
 					limit = {
-						title:k_magyar.holder = {
+						title:k_hungary.holder = {
 							faith = faith:magyar_pagan
 						}
 					}
-					make_story_owner = title:k_magyar.holder
+					make_story_owner = title:k_hungary.holder
 				}
 				else = {
 					end_story = yes
@@ -1189,7 +1189,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 		}
 
 		triggered_effect = {
-			trigger = { NOT = { exists = title:k_magyar } }
+			trigger = { NOT = { exists = title:k_hungary } }
 			effect = {
 				end_story = yes
 			}

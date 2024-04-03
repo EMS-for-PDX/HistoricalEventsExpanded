@@ -2032,7 +2032,7 @@ spawn_hungarian_starting_troops_effect = {
 			stacks = 5
 		}
 		levies = 1450
-		location = scope:story_owner.capital_province
+		location = capital_province
 	}
 }
 
@@ -2054,7 +2054,7 @@ spawn_hungarian_reinforcements_effect = {
 			stacks = 5
 		}
 		levies = 950
-		location = scope:story_owner.capital_province
+		location = capital_province
 	}
 }
 

@@ -9,11 +9,11 @@
  provide_no_aid: "Whatever your reasonings, you decide not to provide any aid to Ragusa, leaving their fate in their own hands."
 
  HEE_siege_of_ragusa.0003.t: "The Question of Aid"
- HEE_siege_of_ragusa.0003.desc: "The question remains of what form my assistence will come in. My steward suggests a simple shipment of supplies will be sufficent, believing that the Muslim reavers will eventually abandon the siege when it becomes clear Ragusa will not give in nor be overcome. My marshal suggests the opposite - to deploy the Imperial Fleet to relieve Ragusa in a show of force that will not only deter any further raids in the region; but also signal our intentions to bring the region back into the Roman fold. I could always compromise, and send both a small detachment of men alongside supplies to help relieve the siege.\n\nThen again, I have not formally pledged my aid. I could always go back on my word and refuse Ragusa any relief..."
+ HEE_siege_of_ragusa.0003.desc: "The question remains of what form my assistance will come in. My steward suggests a simple shipment of supplies will be sufficient, believing that the Muslim reavers will eventually abandon the siege when it becomes clear Ragusa will not give in nor be overcome. My marshal suggests the opposite - to deploy the Imperial Fleet to relieve Ragusa in a show of force that will not only deter any further raids in the region but also signal our intentions to bring the region back into the Roman fold. I could always compromise and send a small detachment of men alongside supplies to help relieve the siege.\n\nThen again, I have not formally pledged my aid. I could always go back on my word and refuse Ragusa any relief..."
  HEE_siege_of_ragusa.0003.a: "These raiders will suffer the full might of my Fleet."
  send_roman_navy: "You will dispatch the Imperial Fleet to sail for Ragusa and push back the Muslim raiders."
  HEE_siege_of_ragusa.0003.b: "Grain and swords are what Ragusa need."
  send_ragusa_a_shipment_of_supplies: "You send a shipment of food and weapons to help Ragusa continue to endure the siege."
  HEE_siege_of_ragusa.0003.c: "Roman grain and soldiers will show our support."
- send_both_soldiers_and_supplies_to_ragusa: "You dispatch men alongside supplies to help relieve Ragusa of their siege"
+ send_both_soldiers_and_supplies_to_ragusa: "You dispatch men alongside supplies to help relieve Ragusa of their siege."
  HEE_siege_of_ragusa.0003.d: "I have changed my mind. Ragusa will have no aid."

@@ -78,7 +78,16 @@
  
  d_khachen: "Khachen"
  d_khachen_adj: "Khachian"
+
+ d_nekor: "Nekor"
+ d_nekor_adj: "Nekorian"
  
+ d_barghawata: "Barghawata"
+ d_barghawata_adj: "Barghawatan"
+
+ k_sarir: "Sarir"
+ k_sarir_adj: "Sarian"
+
  # Ragusa
  d_aghlabid_raiders: "Aghlabid Raiders"
  siege_of_ragusa_event_troops: "Aghlabid Raiders"

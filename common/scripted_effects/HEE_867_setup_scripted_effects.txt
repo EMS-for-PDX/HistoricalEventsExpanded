@@ -721,6 +721,15 @@ hee_byzantine_bulgaria_867_effect = {
 		name = unavailable_unique_decisions
 		target = flag:flag_launched_hungarian_migration
 	}
+
+	province:5342 = { save_scope_as = b_sambalut }
+
+	# Capital of the Emirate of Nekor
+	scope:b_sambalut = {
+		set_holding_type = castle_holding
+		add_building = hill_forts_02
+	}
+	scope:b_sambalut.barony = { set_capital_barony = yes }
 }
 
 
@@ -1750,6 +1759,15 @@ hee_north_africa_867_effect = {
 	
 	character:163096 = { save_scope_as = muhammad_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Muhammad_II_of_Ifriqiya
 	character:163147 = { save_scope_as = ibrahim_ii_of_ifriqiya } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
+
+	province:4679 = { save_scope_as = b_nakor }
+
+	# Capital of the Emirate of Nekor
+	scope:b_nakor = {
+		set_holding_type = castle_holding
+		add_building = common_tradeport_02
+	}
+	scope:b_nakor.barony = { set_capital_barony = yes }
 
 }
 

@@ -521,3 +521,109 @@ d_homs = {
 		liege = 0 # Broken away as a result of the Fifth Fitna 
 	}
 }
+
+d_nekor = {
+	710.1.1 = {
+		government = clan_government
+		holder = 168254
+	}
+	749.1.1 = {
+		holder = 168255
+	}
+	755.1.1 = {
+		holder = 168256
+	}
+	760.1.1 = {
+		holder = 168257
+	}
+	803.1.1 = {
+		holder = 168258
+	}
+	864.1.1 = {
+		holder = 168259
+	}
+	916.1.1 = {
+		holder = 168260
+	}
+	927.1.1 = {
+		holder = 168261
+	}
+	929.1.1 = {
+		holder = 168264
+	}
+	935.1.1 = {
+		holder = 0
+	}
+}
+
+d_barghawata = {
+	767.1.1 = {
+		government = clan_government
+		holder = 168276
+	}
+	792.1.1 = {
+		holder = 168277
+	}
+	842.1.1 = {
+		holder = 168278
+	}
+	885.1.1 = {
+		holder = 168279
+	}
+	917.1.1 = {
+		holder = 168280
+	}
+	961.1.1 = {
+		holder = 168281
+	}
+	989.1.1 = {
+		holder = baranis0011
+	}
+	1029.1.1 = {
+		holder = baranis0012
+	}
+	1054.1.1 = {
+		holder = baranis0013
+	}
+	1058.1.1 = {
+		holder = 0
+	}
+}
+
+k_sarir = {
+	740.1.1 = {
+		holder = saririds_1
+		government = clan_government
+	}
+	788.1.1 = {
+		holder = saririds_2
+	}
+	832.1.1 = {
+		holder = saririds_3
+	}
+	836.1.1 = {
+		holder = saririds_4
+	}
+	853.1.1 = {
+		holder = saririds_5
+	}
+	905.1.1 = {
+		holder = saririds_6
+	}
+	940.1.1 = {
+		holder = saririds_7
+	}
+	950.1.1 = {
+		holder = saririds_8
+	}
+	1025.1.1 = {
+		holder = saririds_9
+	}
+	1026.1.1 = {
+		holder = saririds_10
+	}
+	1064.1.1 = {
+		liege = 0 #Sarir seem to have been independent at this time, though more research wouldn't hurt 
+		holder = saririds_11
+	}
+}

@@ -251,6 +251,24 @@ d_khachen = { #
 	capital = c_khachen
 }
 
+d_nekor = { # Emirate of Nekor
+	color = { 220 160 10 }
+
+	capital = c_melilla
+}
+
+d_barghawata = { # Realm of the Barghawata
+	color = { 43 24 226 }
+
+	capital = c_asfi
+}
+
+k_sarir = { # Kingdom of Sarir
+	color = { 253 225 3 }
+
+	capital = c_samander
+}
+
 # Artifacts
 k_jeanne_banner = {
 	color = { 158 102 36 }

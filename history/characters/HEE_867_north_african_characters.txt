@@ -1,0 +1,650 @@
+﻿## Characters for North Africa - 867 ##
+additionalidrisids0001 = { # Isa, son of Idris II who rose in revolt against his older brother Muhammad but was defeated by another brother Umar
+	name = "Isa"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159502 # Idris II
+	813.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+additionalidrisids0002 = { # Dawud, son of Idris II who is attested as the ruler of Fes c. 877 based on an inscription at the al-Qarawiyyin mosque
+	name = "Dawud"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159502 # Idris II
+	814.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+additionalidrisids0003 = { # Yahya, son of Idris II who was given Hiṣn Daī (a site probably near modern Beni Mellal)
+	name = "Yahya"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159502 # Idris II
+	815.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+additionalidrisids0004 = { # Hamza, son of Idris II who was given Walili
+	name = "Hamza"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159502 # Idris II
+	816.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+additionalidrisids0005 = { # 'Abd Allah, son of Idris II who was given the south, including the territory of the Lamta tribes and a town named Tamdult.
+	name = "Abdallah"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159502 # Idris II
+	817.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+sulaymanid0001 = { # Sulyaman I ibn Abdullah - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Sulyaman"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "bedouin"
+	father = 33928
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	730.1.1 = { # circa 730
+		birth = yes
+	}
+	814.1.1 = {
+		death = yes
+	}
+}
+
+sulaymanid0002 = { # Muhammad I ibn Sulayman - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Muhammad"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "bedouin"
+	father = sulaymanid0001
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	760.1.1 = { # Unknown
+		birth = yes
+	}
+	828.1.1 = {
+		death = yes
+	}
+}
+
+sulaymanid0003 = { # Isa I ibn Muhammad, Emir of Arshkul - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Isa"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0002
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	785.1.1 = { # Unknown
+		birth = yes
+	}
+	840.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0004 = { # Ahmad I ibn Muhammad, Emir of Tlemcen - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ahmad"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0002
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	787.1.1 = { # Unknown
+		birth = yes
+	}
+	855.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0005 = { # Muhammad II ibn Ahmad, Emir of Tlemcen - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Muhammad"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0004
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	815.1.1 = { # Unknown
+		birth = yes
+	}
+	895.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0006 = { # Al-Qasim I ibn Muhammad, Emir of Tlemcen - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Al-Qasim"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0005
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	855.1.1 = { # Unknown
+		birth = yes
+	}
+	931.1.1 = {
+		death = yes
+	}
+}
+
+sulaymanid0007 = { # Idris I ibn Muhammad, Emir of Jarava - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Idris"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0002
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	790.1.1 = { # Unknown
+		birth = yes
+	}
+	845.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0008 = { # Isa II ibn Idris, Emir of Jarava - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Isa"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0007
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	820.1.1 = { # Unknown
+		birth = yes
+	}
+	880.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0009 = { # Hasan ibn Isa, Emir of Jarava - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Hasan"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0008
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	855.1.1 = { # Unknown
+		birth = yes
+	}
+	935.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0010 = { # Ibrahim I ibn Idris, Emir of Arshkul - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ibrahim"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0007
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	822.1.1 = { # Unknown
+		birth = yes
+	}
+	870.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0011 = { # Yahya I ibn Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Yahya"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0010
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	860.1.1 = { # Unknown
+		birth = yes
+	}
+	910.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0012 = { # Ibrahim ibn Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ibrahim"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0010
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	864.1.1 = { # Unknown
+		birth = yes
+	}
+	914.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0013 = { # Idris II ibn Ibrahim, Emir of Arshkul - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Idris"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0010
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	867.1.1 = { # Unknown
+		birth = yes
+	}
+	935.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0014 = { # Ibrahim II ibn Muhammad, Emir of Tenes and Suk-Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ibrahim"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0002
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	792.1.1 = { # Unknown
+		birth = yes
+	}
+	850.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0015 = { # Isa III ibn Ibrahim, Emir of Suk-Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Isa"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0014
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	830.1.1 = { # Unknown
+		birth = yes
+	}
+	890.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0016 = { # Al-Qasim II ibn Isa, Emir of Suk-Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Al-Qasim"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0015
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	863.1.1 = { # Unknown
+		birth = yes
+	}
+	920.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0017 = { # Ahmad II ibn Isa, Emir of Suk-Ibrahim - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ahmad"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0015
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	865.1.1 = { # Unknown
+		birth = yes
+	}
+	935.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0018 = { # Muhammad III ibn Ibrahim, Emir of Tenes - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Muhammad"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0014
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	838.1.1 = { # Unknown
+		birth = yes
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0019 = { # Yahya II ibn Muhammad, Emir of Tenes - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Yahya"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0018
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	864.1.1 = { # Unknown
+		birth = yes
+	}
+	915.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0020 = { # Ali ibn Yahya, Emir of Tenes who was defeated by the Zirids during the reign of Ziri ibn Manad in 953 and took refuge with the Maghrawas - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Ali"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0019
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	895.1.1 = { # Unknown
+		birth = yes
+	}
+	960.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0021 = { # Hamza ibn Ali, crossed to the Iberian Peninsula following the defeat of their father - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Hamza"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0020
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	920.1.1 = { # Unknown
+		birth = yes
+	}
+	960.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0022 = { # Yahya ibn Ali, crossed to the Iberian Peninsula following the defeat of their father - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Yahya"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0020
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	922.1.1 = { # Unknown
+		birth = yes
+	}
+	960.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sulaymanid0023 = { # Abd Allah ibn Muhammad, Emir of Tenes - https://en.wikipedia.org/wiki/Sulaymanid_dynasty
+	name = "Abd Allah"
+	dynasty = sulaymanidsoftlemcen # Emirs of Tlemcen
+	religion = "ismaili"
+	culture = "maghrebi"
+	father = sulaymanid0018
+	
+	#Skills
+	
+	#Education
+	
+	#Personality Traits
+	
+	#Other Traits
+	trait = sayyid
+
+	# disallow_random_traits = yes
+	867.1.1 = { # Unknown
+		birth = yes
+	}
+	925.1.1 = { # Unknown
+		death = yes
+	}
+}

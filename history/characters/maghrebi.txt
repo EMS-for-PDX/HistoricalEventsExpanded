@@ -287,6 +287,13 @@
 	religion = "ibadi"
 	culture = maghrebi
 	father = 210030 #added father
+	trait = education_diplomacy_4 # Through flexible diplomacy and generosity, he successfully asserted authority over the nomadic tribes in the region, consolidating his power
+	trait = generous # Through flexible diplomacy and generosity, he successfully asserted authority over the nomadic tribes in the region, consolidating his power
+	trait = zealous
+	trait = diligent # Aflah made significant contributions to improving agricultural infrastructure by constructing farm buildings and expanding irrigation systems extensively
+	trait = ambitious # In a religious sense, less so in regards to territorial expansion
+	trait = architect # Aflah made significant contributions to improving agricultural infrastructure by constructing farm buildings and expanding irrigation systems extensively
+	trait = theologian # In line with the Rustamids' reputation as the "house of knowledge" (bayt al-ʿilm), Aflah al-Wahhāb was considered a mufti and theologian, even gathering three study circles (halaqa) around him before reaching puberty
 	800.1.1 = {
 		birth = "800.1.1"
 	}

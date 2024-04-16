@@ -97,6 +97,11 @@ hee_mardaites = {
 }
 
 # Arabic
+sulaymanidsoftlemcen = {
+	name = "dynn_Sulaymanid"
+	culture = "bedouin"	
+}
+
 hee_numayrid = {
 	name = "dynn_Numayrid"
 	culture = "bedouin"

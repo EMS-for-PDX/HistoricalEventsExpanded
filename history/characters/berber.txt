@@ -5764,13 +5764,19 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_learning_5 # Of the Idrisid sultans Idris II was one of the best educated - The historian Rom Landau says at the age of four, Idris apparently could read, at five write, at eight he knew the Quran by heart, and by then is said to have mastered the wisdom of all the outstanding savants
+	trait = zealous
+	trait = diligent
+	trait = temperate
+	trait = ambitious
+	trait = strong # The historian Rom Landau says Idris II was of real physical strength as well, and when he became officially sovereign in 805 at the age of thirteen, he had already accomplished feats of endurance that men twice his age could not emulate
 	trait = sayyid
 	father = 159501
-	791.1.2 = {
-		birth = "791.1.2"
+	791.8.1 = { # Idris II was born on August 791, two months after the death—June 791—of Idris I
+		birth = "791.8.1"
 	}
-	828.12.16 = {
-		death = "828.12.16"
+	828.1.1 = {
+		death = "828.1.1"
 	}
 }
 159503 = {
@@ -5781,10 +5787,10 @@
 	trait = sayyid
 	father = 159502
 	810.1.2 = {
-		birth = "810.1.2"
+		birth = "810.1.1"
 	}
-	836.12.16 = {
-		death = "836.12.16"
+	836.1.1 = {
+		death = "836.1.1"
 	}
 }
 159504 = {
@@ -5792,13 +5798,17 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_diplomacy_3
+	trait = brave # He proved an able ruler, who managed to stabilize and pacify the Idrisid realm after the troubled reign of his father
+	trait = just # He proved an able ruler, who managed to stabilize and pacify the Idrisid realm after the troubled reign of his father
+	trait = diligent # He proved an able ruler, who managed to stabilize and pacify the Idrisid realm after the troubled reign of his father
 	trait = sayyid
 	father = 159503
-	827.1.2 = {
-		birth = "827.1.2"
+	827.1.1 = {
+		birth = "827.1.1"
 	}
-	848.12.16 = {
-		death = "848.12.16"
+	849.1.1 = {
+		death = "849.1.1" # Ali died in January 849 at Fes and was succeeded by his brother Yahya I
 	}
 }
 159505 = {
@@ -5806,13 +5816,18 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_stewardship_3
+	trait = generous # Yahya's reign is commonly regarded, in the words of historian Chafik T. Benchekroun, as "the very picture of prosperous and tranquil rule"
+	trait = calm # Yahya's reign is commonly regarded, in the words of historian Chafik T. Benchekroun, as "the very picture of prosperous and tranquil rule"
+	trait = temperate # Yahya's reign is commonly regarded, in the words of historian Chafik T. Benchekroun, as "the very picture of prosperous and tranquil rule"
+	trait = content # Yahya's reign is commonly regarded, in the words of historian Chafik T. Benchekroun, as "the very picture of prosperous and tranquil rule"
 	trait = sayyid
 	father = 159503
-	829.1.2 = {
-		birth = "829.1.2"
+	829.1.1 = {
+		birth = "829.1.1"
 	}
-	864.12.16 = {
-		death = "864.12.16"
+	863.1.1 = {
+		death = "863.1.1"
 	}
 }
 159506 = {
@@ -5820,13 +5835,18 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = gluttonous
+	trait = gregarious
+	trait = lazy
 	trait = sayyid
 	father = 159505
-	845.1.2 = {
-		birth = "845.1.2"
+	845.1.1 = {
+		birth = "845.1.1"
 	}
-	874.12.16 = {
-		death = "874.12.16"
+	866.6.1 = {
+		death = {
+			death_reason = death_mysterious # Yahya's dissolute life soon led to scandal, which forced him to flee the palace into the Andalusian quarter of Fes, where he died in unclear circumstances
+		}
 	}
 }
 159507 = {
@@ -5834,13 +5854,18 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_martial_4 # suppressed the revolts of two of his brothers, al-Qasim and Isa
+	trait = calm
+	trait = brave
+	trait = humble
+	trait = loyal # While his other brothers revolted, Umar not only remained loyal, but actively suppressed the revolts of two of his brothers
 	trait = sayyid
-	father = 159505
-	846.1.2 = {
-		birth = "846.1.2"
+	father = 159502 # Umar was a younger son of the second Idrisid ruler of Morocco, Idris II
+	811.1.2 = {
+		birth = "811.1.2"
 	}
-	863.12.16 = {
-		death = "863.12.16"
+	835.9.20 = {
+		death = "835.9.20" # Umar died in September/October 835, and Ali was confirmed in full possession of his father's domains by Emir Muhammad ibn Idris
 	}
 }
 159508 = {
@@ -5850,8 +5875,8 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159507
-	860.1.2 = {
-		birth = "860.1.2"
+	828.1.2 = {
+		birth = "830.1.2"
 	}
 	883.12.16 = {
 		death = "883.12.16"
@@ -5862,27 +5887,38 @@
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_intrigue_2
+	trait = cynical
+	trait = temperate
+	trait = patient
+	trait = disloyal # When another brother, Isa, rose in revolt, al-Qasim refused to support Muhammad
 	trait = sayyid
-	father = 159506
-	860.1.2 = {
-		birth = "860.1.2"
+	father = 159502 # Al-Qasim was a younger son of the second Idrisid ruler of Morocco, Idris II
+	812.1.1 = {
+		birth = "812.1.1"
 	}
 	880.12.16 = {
 		death = "880.12.16"
 	}
 }
-159510 = {
+159510 = { # https://en.wikipedia.org/wiki/Yahya_ibn_al-Qasim
 	name = "Yahya"
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
+	trait = education_martial_2 # Known by the sobriquet al-Miqdam
+	trait = brave
+	triat = zealous
+	trait = impatient
 	trait = sayyid
 	father = 159509
-	875.1.2 = {
-		birth = "875.1.2"
+	851.1.1 = {
+		birth = "851.1.1"
 	}
-	904.12.16 = {
-		death = "904.12.16"
+	905.1.1 = {
+		death = {
+			death_reason = death_battle # Yahya fell in battle in 905 against the forces of a cousin from a different branch of the dynasty, Yahya IV
+		}
 	}
 }
 159511 = {
@@ -5892,25 +5928,25 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159507
-	862.1.1 = {
-		birth = "862.1.1"
+	834.1.1 = {
+		birth = "834.1.1"
 	}
 	900.12.16 = {
 		death = "900.12.16"
 	}
 }
-159512 = {
+159512 = { # https://en.wikipedia.org/wiki/Yahya_ibn_Idris_ibn_Umar
 	name = "Yahya"
 	dynasty = 1029055
 	religion = "zayidi"
 	culture = maghrebi
 	trait = sayyid
 	father = 159511
-	880.1.2 = {
+	880.1.1 = {
 		birth = "880.1.2"
 	}
-	917.12.16 = {
-		death = "917.12.16"
+	946.1.1 = {
+		death = "946.1.1" # Died while in exile in the 943 at the Fatimid capital, al-Mahdiya
 	}
 }
 159513 = {
@@ -5920,11 +5956,11 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159509
-	885.1.2 = {
-		birth = "885.1.2"
+	850.1.1 = {
+		birth = "850.1.1"
 	}
-	927.12.16 = {
-		death = "927.12.16"
+	927.1.1 = {
+		death = "927.1.1"
 	}
 }
 159514 = {
@@ -5934,25 +5970,11 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159513
-	900.1.2 = {
-		birth = "900.1.2"
+	900.1.1 = {
+		birth = "900.1.1"
 	}
-	944.12.16 = {
-		death = "944.12.16"
-	}
-}
-159515 = {
-	name = "Ibrahim"
-	dynasty = 1029055
-	religion = "zayidi"
-	culture = maghrebi
-	trait = sayyid
-	father = 159513
-	900.1.2 = {
-		birth = "900.1.2"
-	}
-	942.12.16 = {
-		death = "942.12.16"
+	944.1.1 = {
+		death = "944.1.1"
 	}
 }
 159516 = {
@@ -5961,12 +5983,12 @@
 	religion = "zayidi"
 	culture = maghrebi
 	trait = sayyid
-	father = 159515
-	920.1.2 = {
-		birth = "920.1.2"
+	father = 159513
+	902.1.1 = {
+		birth = "902.1.1"
 	}
-	948.12.16 = {
-		death = "948.12.16"
+	949.1.1 = {
+		death = "949.1.1"
 	}
 }
 159517 = {
@@ -5976,11 +5998,11 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159516
-	935.1.2 = {
-		birth = "935.1.2"
+	933.1.1 = {
+		birth = "933.1.1"
 	}
-	954.12.16 = {
-		death = "954.12.16"
+	954.1.1 = {
+		death = "954.1.1"
 	}
 }
 159518 = {
@@ -5990,11 +6012,11 @@
 	culture = maghrebi
 	trait = sayyid
 	father = 159516
-	935.1.2 = {
-		birth = "935.1.2"
+	935.1.1 = {
+		birth = "935.1.1"
 	}
-	985.12.16 = {
-		death = "985.12.16"
+	985.1.1 = {
+		death = "985.1.1"
 	}
 }
 
@@ -6167,7 +6189,7 @@
 	name = "Mansur"
 	dynasty = 9575
 	religion = "muwalladi"
-	culture = baranis
+	culture = yemeni # It is widely accepted that he was a Himyarite immigrant from Yemen
 	660.1.1 = {
 		birth = "660.1.1"
 	}
@@ -6180,8 +6202,13 @@
 	name = "Salih"
 	dynasty = 9575
 	religion = "muwalladi"
-	culture = baranis
+	culture = yemeni # It is widely accepted that he was a Himyarite immigrant from Yemen
 	father = 168253
+	trait = education_diplomacy_4 # His dynasty was responsible for converting the local Berber tribes to Islam, probably from words
+	trait = zealous # His dynasty was responsible for converting the local Berber tribes to Islam
+	trait = just # he was later asked to return and assume power again, so assuming he was liked
+	trait = humble # Did not impose his rule, but was asked to rule over his lands (supposedly)
+	trait = theologian
 	690.1.1 = {
 		birth = "690.1.1"
 	}
@@ -6196,6 +6223,8 @@
 	religion = "muwalladi"
 	culture = baranis
 	father = 168254
+	trait = education_learning_4 # said to have been very pious
+	trait = zealous # said to have been very pious
 	710.1.1 = {
 		birth = "710.1.1"
 	}
@@ -6210,6 +6239,7 @@
 	religion = "muwalladi"
 	culture = baranis
 	father = 168255
+	trait = architect # founded Nekor
 	728.1.1 = {
 		birth = "728.1.1"
 	}
@@ -6253,8 +6283,10 @@
 	religion = "muwalladi"
 	culture = baranis
 	father = 168258
-	830.1.1 = {
-		birth = "830.1.1"
+	trait = stubborn
+	trait = unyielding_defender # successfully defeated both his uncle and older brother who rebelled against him
+	835.1.1 = {
+		birth = "835.1.1"
 	}
 	916.1.1 = {
 		death = "916.1.1"
@@ -6393,8 +6425,9 @@
 	religion = "muwalladi"
 	culture = baranis
 	father = 168258
-	835.1.1 = {
-		birth = "835.1.1"
+	trait = ambitious # Rebelled against his younger brother in an attempt to take control of the Emirate
+	830.1.1 = {
+		birth = "830.1.1"
 	}
 	885.1.1 = {
 		death = "885.1.1"
@@ -6494,11 +6527,20 @@
 	religion = "ismaili" #changed religion
 	culture = baranis
 	father = 168275
+	trait = education_diplomacy_3 # Preacher means good oral skills
+	trait = arrogant # claimed that Isa (Jesus) would be his companion and pray behind him, and that after him would be no other prophet
+	trait = zealous # a prophet of a new abrahamic religion
+	trait = lustful # Had many wives, and his newfound faith allowed for unlimited number of wives a man allowed to have
+	trait = ambitious # Founded his own heresy
+	trait = lifestyle_mystic # Possibly claimed to be the final Mahdi; claimed to be able to speak with the dead and heal the sick
+	trait = heresiarch # Founded his own heresy
 	720.1.1 = {
 		birth = yes
 	}
 	792.1.1 = {
-		death = yes
+		death = { 
+			death_reason = death_disappearance # After reaching the age of 47 years, he headed east out of the kingdom, and promised to return in the reign of their seventh king.
+		}	
 	}
 }
 
@@ -6508,6 +6550,7 @@
 	religion = "najdat"
 	culture = baranis
 	father = 168276
+	trait = deceitful # professed Islām publicly but Ṣāliḥ's religion secretly
 	775.1.1 = {
 		birth = yes
 	}
@@ -6522,6 +6565,12 @@
 	religion = "najdat"
 	culture = baranis
 	father = 168277
+	trait = education_martial_2
+	trait = honest # made Ṣāliḥ's religion official, revealing his true faith
+	trait = zealous # fought those who would not convert (killing 7770 people, according to Ibn Khaldun's sources, some at a place called Tamlukeft)
+	trait = callous # fought those who would not convert (killing 7770 people, according to Ibn Khaldun's sources, some at a place called Tamlukeft)
+	trait = hajjaj # said to have performed the Hajj
+	trait = heresiarch # followed a syncretic religion inspired by Islam with elements of Sunni, Shi'a and Kharijite Islam, mixed with astrological and traditional Berber mythology 
 	820.1.1 = {
 		birth = yes
 	}

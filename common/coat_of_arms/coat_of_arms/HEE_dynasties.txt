@@ -1769,3 +1769,64 @@ house_oskyldr = {
 	}
 
 }
+
+
+1029055 = { # Idrisids
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=green
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_arabic_zayd.dds"
+		instance={
+			position={ 0.490000 0.480000 }
+			scale={ 0.510000 0.510000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_polylobe_angles.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.880000 0.880000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+sulaymanidsoftlemcen = { # Alt colors of the Idrisids considering their close relationship
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=green
+	color3=yellow
+	colored_emblem={
+		color1=black
+		color2=black
+		texture="ce_arabic_zayd.dds"
+		instance={
+			position={ 0.490000 0.480000 }
+			scale={ 0.510000 0.510000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=black
+		texture="ce_polylobe_angles.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.880000 0.880000 }
+			depth=1.010000
+		}
+
+	}
+
+}

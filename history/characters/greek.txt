@@ -17865,6 +17865,7 @@
 	}
 	867.1.1 = {
 		give_nickname = nick_the_eunuch
+		employer = 34017 # Al-Muwaffak, Munis first appears as a ghulam (military slave) of the future caliph al-Mu'tadid (r. 892–902) during the suppression of the Zanj Rebellion in 880/1
 	}
 	933.1.1 = {
 		death = "933.1.1"

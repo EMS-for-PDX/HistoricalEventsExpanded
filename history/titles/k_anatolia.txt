@@ -1,4 +1,3 @@
-
 k_anatolia = {
 	20.1.1 = {
 		change_development_level = 6
@@ -24,6 +23,7 @@ d_cilicia = {
 	}
 	786.1.1 = {
 		liege = "e_arabia"
+		government = clan_government
 		holder = 146040
 	}
 	805.1.1 = {

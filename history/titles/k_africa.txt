@@ -143,6 +143,9 @@ d_kairouan = {
 		government = tribal_government
 		holder = 155029
 	}
+	1090.1.1 = {
+		holder = 0
+	}
 }
 
 c_kairwan = {
@@ -207,7 +210,7 @@ c_kairwan = {
 		holder = 33012
 	}
 	1176.1.1 = {
-		holder = 33013
+		holder = 33015 # Ishaq
 	}
 	1186.1.1 = {
 		liege = "d_tripolitania"
@@ -486,7 +489,6 @@ c_tabassa = {
 d_tunis = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
-
 	1066.1.1 = {
 		liege = 0
 	holder = 155029
@@ -563,10 +565,7 @@ d_tunis = {
 	1318.1.1 = {
 		holder = 33032
 	}
-	
-
 }
-
 
 c_tunis = {
 	867.1.1 = {	change_development_level = 10 }
@@ -741,6 +740,9 @@ c_satfura = {
 	1176.1.1 = {
 		holder = 33013
 	}
+	1176.1.1 = {
+		holder = 73619 # Muhammad
+	}
 	1198.1.1 = {
 		holder = 32977
 	}
@@ -815,6 +817,9 @@ c_medjerda = {
 	}
 	1176.1.1 = {
 		holder = 33013
+	}
+	1176.1.1 = {
+		holder = 73619 # Muhammad
 	}
 	1186.1.1 = {
 		liege = "d_tripolitania"
@@ -936,7 +941,7 @@ c_mahdiya = {
 		holder = 33012
 	}
 	1176.1.1 = {
-		holder = 33013
+		holder = 33015 # Ishaq
 	}
 	1198.1.1 = {
 		liege = 0
@@ -1035,7 +1040,7 @@ c_constantine = {
 	}
 
 	1152.1.1 = {
-		liege = "d_alger"
+		liege = k_maghreb
 		holder = 155087
 	}
 	1190.1.1 = {
@@ -1326,6 +1331,10 @@ c_gabes = {
 	1172.1.1 = {
 		holder = 155113
 	}
+	1175.1.1 = {
+		holder = nuwaylid_1
+		government = tribal_government
+	}
 	1187.10.15 = {
 		liege = "d_tunis"
 	}
@@ -1507,6 +1516,9 @@ d_jerid = {
 		government = tribal_government
 		holder = 155138
 	}
+	1070.1.1 = {
+		holder = 0
+	}
 }
 
 c_souf = {
@@ -1573,6 +1585,9 @@ c_souf = {
 	}
 	1172.1.1 = {
 		holder = 155113
+	}
+	1175.1.1 = {
+		holder = nuwaylid_1
 	}
 	1187.10.15 = {
 		liege = "d_tunis"
@@ -1700,6 +1715,9 @@ c_bir_amir = {
 	}
 	1172.1.1 = {
 		holder = 155113
+	}
+	1177.1.1 = {
+		holder = dabbabid_1 # Hamid
 	}
 	1187.10.15 = {
 		liege = "d_tunis"
@@ -1832,6 +1850,9 @@ c_ghadames = {
 	1172.1.1 = {
 		holder = 155113
 	}
+	1178.1.1 = {
+		holder = dabbabid_1 # Hamid
+	}
 	1187.10.15 = {
 		liege = "d_tunis"
 	}
@@ -1942,6 +1963,7 @@ d_tripolitania = {
 	1172.1.1 = {
 		liege = "k_egypt"
 		holder = 155113
+		government = clan_government
 	}
 	1187.10.15 = {
 		liege = "k_maghreb"
@@ -2116,6 +2138,9 @@ c_djerba = {
 	1172.1.1 = {
 		holder = 155113
 	}
+	1177.1.1 = {
+		holder = dabbabid_1 # Hamid
+	}
 	1195.1.1 = {
 		holder = 32977
 	}
@@ -2194,6 +2219,10 @@ c_jafara = {
 	}
 	1172.1.1 = {
 		holder = 155113
+	}
+	1177.1.1 = {
+		holder = dabbabid_1 # Hamid
+		liege = d_tripolitania
 	}
 	1195.1.1 = {
 		holder = 32977
@@ -2342,7 +2371,7 @@ c_labda = {
 		holder = 33013
 	}
 	1172.1.1 = {
-		holder = 155113
+		holder = 155113 # Qaraqush
 	}
 	1195.1.1 = {
 		holder = 32977
@@ -2412,14 +2441,11 @@ c_waddan = {
 	1129.1.1 = {
 		holder = 155188
 	}
-	1146.1.1 = {
-		holder = 155136
+	1135.1.1 = {
+		holder = 155227
 	}
-	1160.1.22 = {
-		holder = 33013
-	}
-	1172.1.1 = {
-		holder = 155113
+	1165.1.1 = {
+		holder = 155228 # Ahmad
 	}
 	1195.1.1 = {
 		holder = 32977

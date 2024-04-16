@@ -6263,13 +6263,20 @@
 	dynasty = 1029055
 	religion = "ismaili"
 	culture = "bedouin"
+	trait = education_martial_3 # conquered large parts of northern Morocco
+	trait = ambitious # Idris I conquered large parts of northern Morocco and founded the city of Fez; credited with founding the dynasty that established Moroccan statehood
+	trait = stubborn # Persisted in his push for power, even after the defeat at the battle of Fakhkh
+	trait = diligent
+	trait = architect # founded the city of Fez
 	trait = sayyid
 	father = 33928
 	745.1.2 = {
 		birth = "745.1.2"
 	}
-	791.12.16 = {
-		death = "791.12.16"
+	791.6.16 = {
+		death = {
+			death_reason = death_poison # allegedly poisoned by the caliph's agents
+		}
 	}
 }
 

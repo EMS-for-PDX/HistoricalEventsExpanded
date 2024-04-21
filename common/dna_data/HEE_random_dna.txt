@@ -144,7 +144,8 @@ hee_ashina_dna = {
 	type=male
 	id=0
 	age=0.250000
-	genes={ 		hair_color={ 1 253 18 250 }
+	genes={ 		
+		hair_color={ 1 253 18 250 }
  		skin_color={ 137 37 137 37 }
  		eye_color={ 144 155 35 253 }
  		gene_chin_forward={ "chin_forward_pos" 147 "chin_forward_pos" 147 }

@@ -1333,6 +1333,7 @@
 #
 302717 = {
 	name = "Yavdi"
+	dna = 302717_yavdi_aqton
 	dynasty = 2001110	#Aqton
 	religion = tengri_pagan
 	culture = pecheneg

@@ -4269,8 +4269,9 @@
 	}
 }
 
-6811 = {
+6811 = { #Dyre the Stranger
 	name = "Dyre" # Ruler of Kiev (Askold/Hoskuldr)
+	dna = 6811_dyre_the_stranger
 	dynasty_house = house_oskyldr
 	religion = "norse_pagan"
 	culture = norse

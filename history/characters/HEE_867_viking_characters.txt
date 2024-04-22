@@ -285,6 +285,7 @@ HEE_efanda = {
 
 HEE_askold = { # https://en.wikipedia.org/wiki/Askold_and_Dir
 	name = "HO_skuldr"
+	dna = HEE_askold_askold_of_kyiv
 	# female = yes
 	dynasty = hee_kievichi # Though likely unreliable and incorrect (using name as reference not as endorsement), going to go with a name based on this interpretation of Askold/Dir's origins - https://en.wikipedia.org/wiki/Kyi_dynasty
 	religion = "norse_pagan"

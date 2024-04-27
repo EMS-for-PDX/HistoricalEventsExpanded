@@ -117,7 +117,7 @@
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 60 "lower_lip_profile" 60 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 1 "eye_outer_width" 1 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_8" 112 "head_asymmetry_8" 41 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 24 "mouth_center_curve_max" 24 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 29 "eyebrow_straight" 163 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 61 }
@@ -260,7 +260,7 @@
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 65 "lower_lip_profile" 65 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 30 "eye_outer_width" 1 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_8" 0 "head_asymmetry_8" 0 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 30 "mouth_center_curve_max" 30 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 22 "eyebrow_straight" 22 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -403,7 +403,7 @@
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 113 "lower_lip_profile" 61 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 37 "eye_outer_width" 37 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 37 "head_asymmetry_5" 141 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 71 "eyebrow_straight" 71 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -547,7 +547,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 89 "lower_lip_profile" 89 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 50 "eye_outer_width" 50 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_4" 17 "head_asymmetry_4" 17 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 23 "mouth_center_curve_max" 23 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 32 "eyebrow_straight" 38 }
 			gene_bs_head_round_shape={ "head_round_shape" 57 "head_round_shape" 57 }

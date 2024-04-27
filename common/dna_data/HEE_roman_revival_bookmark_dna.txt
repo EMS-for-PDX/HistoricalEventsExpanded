@@ -117,7 +117,7 @@ HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 98 "lower_lip_profile" 13 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 3 "eye_outer_width" 3 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 34 "head_asymmetry_6" 34 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 23 "mouth_center_curve_min" 23 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 26 "eyebrow_straight" 26 }
 			gene_bs_head_round_shape={ "head_round_shape" 55 "head_round_shape" 55 }
@@ -259,7 +259,7 @@ HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 14 "lower_lip_profile" 14 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 12 "eye_outer_width" 12 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 10 "head_asymmetry_3" 10 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
 			gene_bs_head_round_shape={ "head_round_shape" 16 "head_round_shape" 16 }

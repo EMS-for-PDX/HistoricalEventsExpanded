@@ -117,7 +117,7 @@ HEE_al_mudabbir_dna = { # Al-Mudabbir, fiscal supervisor of Egypt
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 69 "lower_lip_profile" 27 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 12 "eye_outer_width" 2 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 9 "head_asymmetry_6" 0 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_min" 8 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 3 "eyebrow_straight" 69 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 50 }
@@ -256,7 +256,7 @@ HEE_shukayr_dna = { # Shukayr, postmaster/spymaster of Egypt
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 108 "lower_lip_profile" 108 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 8 "eye_outer_width" 8 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_8" 80 "head_asymmetry_8" 80 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 3 "mouth_center_curve_min" 3 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 54 "eyebrow_straight" 54 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }

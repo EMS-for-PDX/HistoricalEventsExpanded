@@ -116,7 +116,7 @@
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 11 "lower_lip_profile" 11 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 15 "eye_outer_width" 15 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 42 "head_asymmetry_3" 42 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 10 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 62 "eyebrow_straight" 62 }
 			gene_bs_head_round_shape={ "head_round_shape" 50 "head_round_shape" 50 }
@@ -256,7 +256,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 11 "lower_lip_profile" 12 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 15 "eye_outer_width" 31 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 42 "head_asymmetry_6" 36 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 22 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 50 "eyebrow_straight" 62 }
 			gene_bs_head_round_shape={ "head_round_shape" 86 "head_round_shape" 50 }
@@ -398,7 +398,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 147 "lower_lip_profile" 147 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 15 "eye_outer_width" 15 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 42 "head_asymmetry_3" 42 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 10 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 62 "eyebrow_straight" 62 }
 			gene_bs_head_round_shape={ "head_round_shape" 50 "head_round_shape" 50 }
@@ -540,7 +540,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 14 "lower_lip_profile" 14 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 15 "eye_outer_width" 15 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 0 "head_asymmetry_2" 0 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 4 "eyebrow_straight" 1 }
 			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -683,7 +683,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 136 "lower_lip_profile" 14 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 1 "eye_outer_width" 15 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 0 "head_asymmetry_2" 154 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 17 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 16 "eyebrow_straight" 4 }
 			gene_bs_head_round_shape={ "head_round_shape" 39 "head_round_shape" 0 }
@@ -827,7 +827,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 13 "lower_lip_profile" 0 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 32 "eye_outer_width" 4 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 188 "head_asymmetry_3" 49 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 19 "vanilla_eyebrow_straight" 0 }
 			gene_bs_head_round_shape={ "head_round_shape" 2 "head_round_shape" 250 }
@@ -971,7 +971,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 0 "lower_lip_profile" 18 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 32 "eye_outer_width" 6 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_6" 188 "head_asymmetry_10" 0 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 8 "eyebrow_straight" 19 }
 			gene_bs_head_round_shape={ "head_round_shape" 38 "head_round_shape" 2 }
@@ -1115,7 +1115,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 32 "lower_lip_profile" 13 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 4 "eye_outer_width" 5 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_3" 0 "head_asymmetry_3" 0 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 188 "eyebrow_straight" 188 }
 			gene_bs_head_round_shape={ "head_round_shape" 2 "head_round_shape" 14 }

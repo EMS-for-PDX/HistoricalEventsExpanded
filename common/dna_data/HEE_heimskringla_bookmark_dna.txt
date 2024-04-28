@@ -690,7 +690,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 31 "lower_lip_profile" 31 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 5 "vanilla_eye_outer_width" 3 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_5" 19 "head_asymmetry_5" 19 }
-			gene_bs_eye_fold_2={ "eye_fold_2" 0 "vanilla_eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 111 "eyebrow_straight" 44 }
 			gene_bs_head_round_shape={ "head_round_shape" 51 "head_round_shape" 51 }
@@ -833,7 +833,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 			gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 31 "lower_lip_profile" 108 }
 			gene_bs_eye_outer_width={ "eye_outer_width" 5 "eye_outer_width" 3 }
 			gene_bs_head_asymmetry_1={ "head_asymmetry_5" 19 "head_asymmetry_7" 20 }
-			gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_max" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 70 "eyebrow_straight" 111 }
 			gene_bs_head_round_shape={ "head_round_shape" 52 "head_round_shape" 51 }

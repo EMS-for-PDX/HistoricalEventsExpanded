@@ -118,7 +118,7 @@ hee_karling_girl = { # Karling Girl DNA by Celticus
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 0 "lower_lip_profile" 79 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 77 "eye_outer_width" 52 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_8" 0 "head_asymmetry_8" 0 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -260,7 +260,7 @@ hee_ashina_dna = {
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 0 "lower_lip_profile" 102 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 130 "eye_outer_width" 56 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_3" 24 "head_asymmetry_3" 24 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 36 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 22 "mouth_center_curve_max" 9 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 255 "eyebrow_straight" 48 }
  		gene_bs_head_round_shape={ "head_round_shape" 93 "head_round_shape" 93 }
@@ -401,7 +401,7 @@ random_character_amir = {
 			gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 124 "lower_lip_profile" 23 }
 			gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 13 "eye_outer_width" 13 }
 			gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 0 "head_asymmetry_4" 49 }
-			gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 0 "eye_fold_2" 0 }
+
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "mouth_center_curve_min" 23 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 188 "eyebrow_straight" 188 }
 			gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "head_round_shape" 27 }
@@ -738,7 +738,7 @@ dna_zoe_zaoutzaina = {
  		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
  		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 0 "vanilla_eye_outer_width" 0 }
  		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 0 "vanilla_head_asymmetry_1" 0 }
- 		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 0 "vanilla_eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
@@ -875,7 +875,7 @@ dna_random_italian_woman = {
  		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
  		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 127 "vanilla_eye_outer_width" 127 }
  		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 127 "vanilla_head_asymmetry_1" 127 }
- 		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 127 "vanilla_eye_fold_2" 127 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
  		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
@@ -900,7 +900,7 @@ dna_random_italian_woman = {
 		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
 		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 127 "vanilla_eye_outer_width" 127 }
 		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 127 "vanilla_head_asymmetry_1" 127 }
-		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 127 "vanilla_eye_fold_2" 127 }
+
 		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
@@ -1041,7 +1041,7 @@ dna_random_italian_woman_2 = {
  		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
  		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 0 "vanilla_eye_outer_width" 0 }
  		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 0 "vanilla_head_asymmetry_1" 0 }
- 		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 0 "vanilla_eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
@@ -1180,7 +1180,7 @@ dna_random_italian_woman_3 = {
 		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
 		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 127 "vanilla_eye_outer_width" 127 }
 		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 127 "vanilla_head_asymmetry_1" 127 }
-		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 127 "vanilla_eye_fold_2" 127 }
+
 		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
@@ -1320,7 +1320,7 @@ dna_random_italian_woman_4 = {
  		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "lower_lip_profile" 127 }
  		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 127 "vanilla_eye_outer_width" 0 }
  		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 0 "vanilla_head_asymmetry_1" 0 }
- 		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 127 "vanilla_eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 104 "vanilla_mouth_center_curve" 104 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "eyebrow_straight" 40 }
  		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 127 }
@@ -1596,7 +1596,7 @@ HEE_phokas_founder_dna = {
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 0 "lower_lip_profile" 0 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 26 "eye_outer_width" 26 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_7" 22 "head_asymmetry_7" 22 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 37 "eyebrow_straight" 37 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -1738,7 +1738,7 @@ HEE_gyda_dna= {
  		gene_bs_mouth_lower_lip_profile={ "vanilla_lower_lip_profile" 127 "vanilla_lower_lip_profile" 127 }
  		gene_bs_eye_outer_width={ "vanilla_eye_outer_width" 127 "vanilla_eye_outer_width" 127 }
  		gene_bs_head_asymmetry_1={ "vanilla_head_asymmetry_1" 127 "vanilla_head_asymmetry_1" 127 }
- 		gene_bs_eye_fold_2={ "vanilla_eye_fold_2" 127 "vanilla_eye_fold_2" 127 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
  		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
@@ -1880,7 +1880,7 @@ HEE_frigg_dna = {
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 105 "lower_lip_profile" 105 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 4 "eye_outer_width" 4 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_8" 0 "head_asymmetry_8" 0 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
@@ -2270,7 +2270,7 @@ HEE_eir_dna = {
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 105 "lower_lip_profile" 105 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 4 "eye_outer_width" 4 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_8" 0 "head_asymmetry_8" 0 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }

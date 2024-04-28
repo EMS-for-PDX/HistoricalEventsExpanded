@@ -122,7 +122,7 @@ bookmark_hee_byzantine_niketas_ooryphas={
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 48 "lower_lip_profile" 48 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 6 "eye_outer_width" 6 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_1" 72 "head_asymmetry_1" 72 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "mouth_center_curve_max" 54 "mouth_center_curve_max" 54 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 249 "eyebrow_straight" 249 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }

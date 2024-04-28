@@ -122,7 +122,7 @@ bookmark_hee_byzantine_leon_phokas={
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 0 "lower_lip_profile" 0 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 26 "eye_outer_width" 26 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_7" 22 "head_asymmetry_7" 22 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 37 "eyebrow_straight" 37 }
  		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }

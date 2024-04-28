@@ -122,7 +122,7 @@ bookmark_hee_byzantine_chrysocheir={
  		gene_bs_mouth_lower_lip_profile={ "lower_lip_profile" 67 "lower_lip_profile" 67 }
  		gene_bs_eye_outer_width={ "eye_outer_width" 33 "eye_outer_width" 33 }
  		gene_bs_head_asymmetry_1={ "head_asymmetry_3" 0 "head_asymmetry_3" 0 }
- 		gene_bs_eye_fold_2={ "eye_fold_2" 0 "eye_fold_2" 0 }
+
  		gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
  		gene_bs_head_round_shape={ "head_round_shape" 6 "head_round_shape" 6 }

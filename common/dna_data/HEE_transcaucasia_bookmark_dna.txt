@@ -119,7 +119,7 @@
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 10 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 62 "eyebrow_straight" 62 }
-			gene_bs_head_round_shape={ "head_round_shape" 50 "head_round_shape" 50 }
+			gene_bs_head_shape={ "head_round_shape" 50 "head_round_shape" 50 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 62 "nose_septum_height" 62 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 9 "head_lower_height_min" 9 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 11 "nose_flared_nostril" 11 }
@@ -259,7 +259,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 22 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 50 "eyebrow_straight" 62 }
-			gene_bs_head_round_shape={ "head_round_shape" 86 "head_round_shape" 50 }
+			gene_bs_head_shape={ "head_round_shape" 86 "head_round_shape" 50 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 62 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 9 "head_lower_height_min" 3 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 11 "nose_flared_nostril" 0 }
@@ -401,7 +401,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 10 "mouth_center_curve_max" 10 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 62 "eyebrow_straight" 62 }
-			gene_bs_head_round_shape={ "head_round_shape" 50 "head_round_shape" 50 }
+			gene_bs_head_shape={ "head_round_shape" 50 "head_round_shape" 50 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 62 "nose_septum_height" 62 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 3 "head_lower_height_min" 9 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 1 }
@@ -543,7 +543,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 4 "eyebrow_straight" 1 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 4 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 13 "head_lower_height_max" 13 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 22 "nose_flared_nostril" 22 }
@@ -686,7 +686,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 17 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 16 "eyebrow_straight" 4 }
-			gene_bs_head_round_shape={ "head_round_shape" 39 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 39 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 13 "head_lower_height_min" 2 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 22 "nose_flared_nostril" 0 }
@@ -830,7 +830,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 19 "vanilla_eyebrow_straight" 0 }
-			gene_bs_head_round_shape={ "head_round_shape" 2 "head_round_shape" 250 }
+			gene_bs_head_shape={ "head_round_shape" 2 "head_round_shape" 250 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 12 "head_lower_height_min" 12 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -974,7 +974,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 8 "eyebrow_straight" 19 }
-			gene_bs_head_round_shape={ "head_round_shape" 38 "head_round_shape" 2 }
+			gene_bs_head_shape={ "head_round_shape" 38 "head_round_shape" 2 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 0 "head_lower_height_min" 12 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -1118,7 +1118,7 @@ HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 188 "eyebrow_straight" 188 }
-			gene_bs_head_round_shape={ "head_round_shape" 2 "head_round_shape" 14 }
+			gene_bs_head_shape={ "head_round_shape" 2 "head_round_shape" 14 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "nose_septum_height" 8 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 1 "head_lower_height_max" 0 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }

@@ -120,7 +120,7 @@ HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 23 "mouth_center_curve_min" 23 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 26 "eyebrow_straight" 26 }
-			gene_bs_head_round_shape={ "head_round_shape" 55 "head_round_shape" 55 }
+			gene_bs_head_shape={ "head_round_shape" 55 "head_round_shape" 55 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 14 "nose_septum_height" 14 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 11 "head_lower_height_min" 11 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -262,7 +262,7 @@ HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
-			gene_bs_head_round_shape={ "head_round_shape" 16 "head_round_shape" 16 }
+			gene_bs_head_shape={ "head_round_shape" 16 "head_round_shape" 16 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 229 "nose_septum_height" 229 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 12 "head_lower_height_min" 12 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 47 "nose_flared_nostril" 47 }
@@ -403,7 +403,7 @@ HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 37 "eyebrow_straight" 37 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_min" 21 "head_lower_height_min" 21 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }

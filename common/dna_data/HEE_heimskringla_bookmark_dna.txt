@@ -120,7 +120,7 @@
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 24 "mouth_center_curve_max" 24 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 29 "eyebrow_straight" 163 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 61 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 61 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 24 "head_lower_height_max" 24 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 52 "nose_flared_nostril" 0 }
@@ -263,7 +263,7 @@
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 30 "mouth_center_curve_max" 30 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 22 "eyebrow_straight" 22 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 4 "head_lower_height_max" 4 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -406,7 +406,7 @@
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 71 "eyebrow_straight" 71 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 5 "head_lower_height_max" 0 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 85 }
@@ -550,7 +550,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 23 "mouth_center_curve_max" 23 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 32 "eyebrow_straight" 38 }
-			gene_bs_head_round_shape={ "head_round_shape" 57 "head_round_shape" 57 }
+			gene_bs_head_shape={ "head_round_shape" 57 "head_round_shape" 57 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 76 "nose_septum_height" 76 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 5 "head_lower_height_min" 24 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -693,7 +693,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 111 "eyebrow_straight" 44 }
-			gene_bs_head_round_shape={ "head_round_shape" 51 "head_round_shape" 51 }
+			gene_bs_head_shape={ "head_round_shape" 51 "head_round_shape" 51 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 55 "nose_septum_height" 55 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 58 "head_lower_height_min" 58 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 121 "nose_flared_nostril" 121 }
@@ -836,7 +836,7 @@ HEE_asa_hakondottir_dna = { # Asa, Daughter of Hakon
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_max" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 70 "eyebrow_straight" 111 }
-			gene_bs_head_round_shape={ "head_round_shape" 52 "head_round_shape" 51 }
+			gene_bs_head_shape={ "head_round_shape" 52 "head_round_shape" 51 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 55 "nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_min" 2 "head_lower_height_min" 58 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 121 }

@@ -120,7 +120,7 @@ HEE_al_mudabbir_dna = { # Al-Mudabbir, fiscal supervisor of Egypt
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_min" 8 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 3 "eyebrow_straight" 69 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 50 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 50 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 11 "head_lower_height_min" 10 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -259,7 +259,7 @@ HEE_shukayr_dna = { # Shukayr, postmaster/spymaster of Egypt
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_min" 3 "mouth_center_curve_min" 3 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 54 "eyebrow_straight" 54 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 22 "head_lower_height_max" 22 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 49 "nose_flared_nostril" 49 }

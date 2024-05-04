@@ -125,7 +125,7 @@ bookmark_hee_byzantine_nikephoros_phokas={
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 36 "eyebrow_straight" 36 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_min" 20 "head_lower_height_min" 20 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }

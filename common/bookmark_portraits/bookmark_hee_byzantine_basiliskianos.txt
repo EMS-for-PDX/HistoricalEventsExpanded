@@ -123,7 +123,7 @@ bookmark_hee_byzantine_basiliskianos={
 
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 31 "mouth_center_curve_min" 31 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 8 "eyebrow_straight" 8 }
- 		gene_bs_head_round_shape={ "head_round_shape" 29 "head_round_shape" 29 }
+ 		gene_bs_head_shape={ "head_round_shape" 29 "head_round_shape" 29 }
  		gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_max" 0 "head_lower_height_max" 0 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 17 "nose_flared_nostril" 17 }

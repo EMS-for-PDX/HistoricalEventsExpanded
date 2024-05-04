@@ -121,7 +121,7 @@ hee_karling_girl = { # Karling Girl DNA by Celticus
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_min" 12 "head_lower_height_min" 12 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 23 "nose_flared_nostril" 23 }
@@ -263,7 +263,7 @@ hee_ashina_dna = {
 
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 22 "mouth_center_curve_max" 9 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 255 "eyebrow_straight" 48 }
- 		gene_bs_head_round_shape={ "head_round_shape" 93 "head_round_shape" 93 }
+ 		gene_bs_head_shape={ "head_round_shape" 93 "head_round_shape" 93 }
  		gene_bs_nose_septum_height={ "nose_septum_height" 38 "nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_max" 12 "head_lower_height_max" 12 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 48 "nose_flared_nostril" 63 }
@@ -404,7 +404,7 @@ random_character_amir = {
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "mouth_center_curve_min" 23 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 188 "eyebrow_straight" 188 }
-			gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "head_round_shape" 27 }
+			gene_bs_head_shape={ "vanilla_head_round_shape" 0 "head_round_shape" 27 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "vanilla_head_lower_height" 0 "head_lower_height_max" 38 }
 			gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 0 "nose_flared_nostril" 33 }
@@ -434,7 +434,7 @@ random_character_amir = {
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
-			gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+			gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
 			gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
 			gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -572,7 +572,7 @@ random_byzantine_empress = {
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 0 "eyebrow_straight" 0 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 0 "head_lower_height_max" 0 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -600,7 +600,7 @@ random_byzantine_empress = {
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
-			gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+			gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
 			gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
 			gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -741,7 +741,7 @@ dna_zoe_zaoutzaina = {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
- 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
+ 		gene_bs_head_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "vanilla_head_lower_height" 0 "vanilla_head_lower_height" 0 }
  		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 0 "vanilla_nose_flared_nostril" 0 }
@@ -878,7 +878,7 @@ dna_random_italian_woman = {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
- 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+ 		gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
  		gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
  		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -903,7 +903,7 @@ dna_random_italian_woman = {
 
 		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
-		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+		gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
 		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
 		gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
 		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -1044,7 +1044,7 @@ dna_random_italian_woman_2 = {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
- 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
+ 		gene_bs_head_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "vanilla_head_lower_height" 0 "vanilla_head_lower_height" 0 }
  		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 0 "vanilla_nose_flared_nostril" 0 }
@@ -1183,7 +1183,7 @@ dna_random_italian_woman_3 = {
 
 		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
-		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+		gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
 		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
 		gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
 		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -1323,7 +1323,7 @@ dna_random_italian_woman_4 = {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 104 "vanilla_mouth_center_curve" 104 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "eyebrow_straight" 40 }
- 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 127 }
+ 		gene_bs_head_shape={ "vanilla_head_round_shape" 0 "vanilla_head_round_shape" 127 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
  		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 104 "vanilla_nose_flared_nostril" 104 }
@@ -1459,7 +1459,7 @@ dna_random_italian_villain_1 = {
 
 			gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
 			gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
-			gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+			gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
 			gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
 			gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
 			gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -1599,7 +1599,7 @@ HEE_phokas_founder_dna = {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 0 "vanilla_mouth_center_curve" 0 }
  		gene_bs_eyebrow_straight={ "eyebrow_straight" 37 "eyebrow_straight" 37 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 0 "vanilla_nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_min" 21 "head_lower_height_min" 21 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -1741,7 +1741,7 @@ HEE_gyda_dna= {
 
  		gene_bs_mouth_center_curve={ "vanilla_mouth_center_curve" 127 "vanilla_mouth_center_curve" 127 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 127 "vanilla_eyebrow_straight" 127 }
- 		gene_bs_head_round_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
+ 		gene_bs_head_shape={ "vanilla_head_round_shape" 127 "vanilla_head_round_shape" 127 }
  		gene_bs_nose_septum_height={ "vanilla_nose_septum_height" 127 "vanilla_nose_septum_height" 127 }
  		gene_bs_head_lower_height={ "vanilla_head_lower_height" 127 "vanilla_head_lower_height" 127 }
  		gene_bs_nose_flared_nostril={ "vanilla_nose_flared_nostril" 127 "vanilla_nose_flared_nostril" 127 }
@@ -1883,7 +1883,7 @@ HEE_frigg_dna = {
 
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_max" 10 "head_lower_height_max" 10 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -2273,7 +2273,7 @@ HEE_eir_dna = {
 
  		gene_bs_mouth_center_curve={ "mouth_center_curve_min" 0 "mouth_center_curve_min" 0 }
  		gene_bs_eyebrow_straight={ "vanilla_eyebrow_straight" 0 "vanilla_eyebrow_straight" 0 }
- 		gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+ 		gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
  		gene_bs_nose_septum_height={ "nose_septum_height" 0 "nose_septum_height" 0 }
  		gene_bs_head_lower_height={ "head_lower_height_max" 10 "head_lower_height_max" 10 }
  		gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }
@@ -2413,7 +2413,7 @@ HEE_ray_stevenson = {
 
 			gene_bs_mouth_center_curve={ "mouth_center_curve_max" 0 "mouth_center_curve_max" 0 }
 			gene_bs_eyebrow_straight={ "eyebrow_straight" 74 "eyebrow_straight" 74 }
-			gene_bs_head_round_shape={ "head_round_shape" 0 "head_round_shape" 0 }
+			gene_bs_head_shape={ "head_round_shape" 0 "head_round_shape" 0 }
 			gene_bs_nose_septum_height={ "nose_septum_height" 103 "nose_septum_height" 103 }
 			gene_bs_head_lower_height={ "head_lower_height_max" 0 "head_lower_height_max" 0 }
 			gene_bs_nose_flared_nostril={ "nose_flared_nostril" 0 "nose_flared_nostril" 0 }

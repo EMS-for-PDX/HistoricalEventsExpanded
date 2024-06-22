@@ -73,33 +73,34 @@
 		
 		custom_tooltip = realm_is_ravaged_by_raiders
 		hidden_effect = {
+			scope:defender = {
+				every_sub_realm_county = {
+					limit = {
+						county_controller = scope:attacker
+					}
+					add_to_list = raided_counties
+				}
+			}
+			
 			every_in_list = {
-				list = target_titles
+				list = raided_counties
 
-				every_in_de_jure_hierarchy = {
-					limit = { 
-						tier = tier_county
-						holder.top_liege = scope:defender
-					}
-					save_scope_as = raid_county
+				# Set raided province modifier
+				add_county_modifier = {
+					modifier = recently_looted_modifier
+					years = 5
+				}
 
-					# Set raided province modifier
-					add_county_modifier = {
-						modifier = recently_looted_modifier
-						years = 5
-					}
+				# Control and Dev loss
+				fp2_border_raid_damage_effect = yes
 
-					# Control and Dev loss
-					fp2_border_raid_damage_effect = yes
-
-					# Possible building destruction
-					random = {
-						chance = 25
-						modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
-						modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
-						custom_tooltip = destroy_random_building_tt
-						destroy_random_building_effect = yes
-					}
+				# Possible building destruction
+				random = {
+					chance = 25
+					modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
+					modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
+					custom_tooltip = destroy_random_building_tt
+					destroy_random_building_effect = yes
 				}
 			}
 		}

@@ -94,13 +94,19 @@
 				# Control and Dev loss
 				fp2_border_raid_damage_effect = yes
 
-				# Possible building destruction
-				random = {
-					chance = 25
-					modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
-					modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
-					custom_tooltip = destroy_random_building_tt
-					destroy_random_building_effect = yes
+				every_in_list = {
+					list = target_titles
+					any_in_de_jure_hierarchy = {
+						tier = tier_barony
+						# Possible building destruction
+						random = {
+							chance = 25
+							modifier = { factor = destroy_building_soldier_multiplier_value } # chance increases with more soldiers
+							modifier = { add = destroy_building_development_multiplier_value } # chance increases with development
+							custom_tooltip = destroy_random_building_tt
+							destroy_random_building_effect = yes
+						}
+					}
 				}
 			}
 		}

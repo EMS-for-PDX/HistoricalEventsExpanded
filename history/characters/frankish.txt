@@ -1086,8 +1086,8 @@
 	dynasty = 100217
 	religion = "catholic"
 	culture = "frankish"
-	740.1.1 = {
-		birth = "740.1.1"
+	730.1.1 = {
+		birth = "730.1.1"
 	}
 	760.1.1 = {
 		add_spouse = 168128

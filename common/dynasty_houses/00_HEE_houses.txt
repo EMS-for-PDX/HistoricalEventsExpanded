@@ -51,3 +51,13 @@ house_al_shii = {
 	name = "dynn_al_Shii"
 	dynasty = hee_al_shii
 }
+
+house_katakalon = {
+	name = "dynn_Katakalon"
+	dynasty = 8642 # Amorios
+}
+
+house_aaronios = { # https://en.wikipedia.org/wiki/Aaronios
+	name = "dynn_Aaronios"
+	dynasty = 702 # Balgarsko	
+}

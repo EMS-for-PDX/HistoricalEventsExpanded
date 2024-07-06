@@ -3706,7 +3706,7 @@ c_saimara = {
 	
 	866.1.1={
 		liege = d_kermanshah
-		holder = HEE_muflih_al_turki # Musa ibn Bugha al-Kabir's chief lieutenant
+		holder = alturki0001 # Musa ibn Bugha al-Kabir's chief lieutenant
 	}
 	869.1.1 = {
 		liege = 0

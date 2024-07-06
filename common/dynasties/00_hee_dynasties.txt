@@ -1,29 +1,64 @@
 ﻿## These are really not in numeric order... sorry...
 
 # Byzantine
-hee_dekapolitissa = {
+dynasty_dekapolitissa = {
 	name = "dynn_Dekapolitissa"
 	culture = "greek"
 }
 
-hee_patras = {
+dynasty_patras = {
 	prefix = "dynnp_of"
 	name = "dynn_Patras"
 	culture = "greek"
 }
 
-hee_kurramites = {
+dynasty_kurramites = {
 	name = "dynn_HEEKhurramites"
 	culture = "persian"
 }
 
-hee_baboutzikos = {
+dynasty_baboutzikos = {
 	name = "dynn_Baboutzikos"
 	culture = "greek"
 }
 
-hee_peganes = {
+dynasty_peganes = {
 	name = "dynn_Peganes"
+	culture = "greek"
+}
+
+dynasty_tzifinarites = {
+	name = "dynn_Tzifinarites"
+	culture = "greek"
+}
+
+dynasty_paspalas = {
+	name = "dynn_Paspalas"
+	culture = "greek"
+}
+
+dynasty_rendakios = {
+	name = "dynn_Rendakios"
+	culture = "greek"
+}
+
+dynasty_ioubes = {
+	name = "dynn_Ioubes"
+	culture = "egyptian"	
+}
+
+dynasty_betalekes = {
+	name = "dynn_Betalekes"
+	culture = "greek"
+}
+
+dynasty_alypios = {
+	name = "dynn_Alypios"
+	culture = "greek"
+}
+
+dynasty_konstantinakios = {
+	name = "dynn_Konstantinakios"
 	culture = "greek"
 }
 
@@ -37,7 +72,7 @@ hee_martinakoi = {
 	culture = "greek"
 }
 
-hee_constantinopoli = { # Representative of noble family from Constantinople
+dynasty_constantinopoli = { # Representative of noble family from Constantinople
 	name = "dynn_Constantinopoli"
 	culture = "greek"
 }
@@ -47,32 +82,90 @@ hee_magistros = {
 	culture = "greek"
 }
 
-hee_asbestas = {
+dynasty_asbestas = {
 	name = "dynn_Asbestas"
 	culture = "greek"
 }
 
-hee_gambros = {
+dynasty_gambros = {
 	name = "dynn_Gambros"
 	culture = "greek"
 }
 
-hee_kapnogenes = {
+dynasty_baiana = {
+	name = "dynn_Baiana"
+	culture = "greek"	
+}
+
+dynasty_kapnogenes = {
 	name = "dynn_Kapnogenes"
 	culture = "greek"
 }
 
-hee_maniakes = {
-	name = "dynn_Maniakes"
+dynasty_apostyppes = {
+	name = "dynn_Apostyppes"
+	culture = "greek"
+}
+
+dynasty_oiniates = {
+	name = "dynn_Oiniates"
+	culture = "greek"
+}
+
+dynasty_koxes = {
+	name = "dynn_Koxes"
+	culture = "greek"
+}
+
+dynasty_kretikos = {
+	name = "dynn_Kretikos"
+	culture = "greek"
+}
+
+dynasty_androsalitai = {
+	name = "dynn_Androsalitai"
+	culture = "greek"
+}
+
+dynasty_skythopoulos = {
+	name = "dynn_Skythopoulos"
+	culture = "greek"
+	motto = "dynn_Skythopoulos_motto"
+}
+
+dynasty_adralestina = {
+	name = "dynn_Adralestina"
+	culture = "greek"
+}
+
+dynasty_lydiates = {
+	name = "dynn_Lydiates"
+	culture = "greek"
+}
+
+dynasty_larissa = {
+	prefix = "dynnp_of"
+	name = "dynn_Larissa"
 	culture = "armenian"
 }
 
-hee_marikonian = {
+dynasty_chryselios = {
+	name = "dynn_Chryselios"
+	culture = "greek"	
+}
+
+dynasty_mosele = {
+	name = "dynn_Mosele"
+	culture = "armenian"
+}
+
+dynasty_marikonian = {
 	name = "dynn_Marikonian"
 	culture = "armenian"
+	motto = "dynn_Marikonian_motto"
 }
 
-hee_tephrice = {
+dynasty_tephrice = {
 	prefix = "dynnp_of"
 	name = "dynn_Tephrice"
 	culture = "armenian"
@@ -85,18 +178,34 @@ hee_khachen_princes = {
 	culture = "armenian"
 }
 
-hee_zaoutzes = {
+dynasty_zaoutzes = {
 	name = "dynn_Zaoutzes"
 	culture = "armenian"
 }
 
-hee_mardaites = {
+dynasty_pheronymos = {
+	name = "dynn_Pheronymos"
+	culture = "armenian"
+}
+
+dynasty_maniakies = {
+	name = "dynn_Maniakies"
+	culture = "armenian"
+}
+
+dynasty_mardaites = {
 	name = "dynn_Mardaites"
 	culture = "assyrian"
 	motto = "dynn_Mardaites_motto"
 }
 
+
 # Arabic
+dynasty_julanda = {
+	name = "dynn_Julanda"
+	culture = "bedouin"	
+}
+
 sulaymanidsoftlemcen = {
 	name = "dynn_Sulaymanid"
 	culture = "bedouin"	
@@ -218,6 +327,11 @@ hee_kent = {
 	culture = "anglo_saxon"
 }
 
+dynasty_hornbreaker = {
+	name = "dynn_Hornbreaker"
+	culture = "norse"
+}
+
 hee_tikling = {
 	name = "dynn_Tikling"
 	culture = "norse"
@@ -266,6 +380,17 @@ hee_braganza = {
 hee_loire = {
 	prefix = "dynnp_of"
 	name = "dynn_Loire"
+	culture = "french"
+}
+
+dostrevent = {
+	prefix = "dynnp_of"
+	name = "dynn_Ostrevent"
+	culture = "french"
+}
+
+dynvuifredingi = {
+	name = "dynn_Vuifredingi"
 	culture = "french"
 }
 
@@ -339,12 +464,38 @@ hee_al_shii = {
 }
 
 # Bulgarians
-hee_sursuvul = {
+dynasty_sursuvul = {
 	name = "dynn_Sursuvul"
 	culture = "bulgarian"	
 }
 
-hee_sigritsa = {
+dynasty_sigritsa = {
 	name = "dynn_Sigritsa"
 	culture = "bulgarian"	
+}
+
+dynasty_alateo = {
+	name = "dynn_Alateo"
+	culture = "italian"
+}
+
+dynasty_visevic = {
+	name = "dynn_Visevic"
+	culture = "serbian"
+}
+
+dynasty_kharsianon = {
+	prefix = "dynnp_of"
+	name = "dynn_Kharsianon"
+	culture = "norse"
+}
+
+dynasty_parsakoutenos = {
+	name = "dynn_Parsakoutenos"
+	culture = "greek"
+}
+
+dynasty_saronites = {
+	name = "dynn_Saronites"
+	culture = "greek"
 }

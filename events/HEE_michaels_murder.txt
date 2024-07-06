@@ -10,12 +10,12 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 		animation = stress
 	}
 	right_portrait = {
-		character = character:HEE_basiliskianos
+		character = character:kapnogenes0002
 		animation = personality_content
 	}
 
 	trigger = {
-		character:HEE_basiliskianos = { is_alive = yes }
+		character:kapnogenes0002 = { is_alive = yes }
 		character:1700 = { is_alive = yes }
 		is_alive = yes
 		is_landed = yes
@@ -35,7 +35,7 @@ hee_basil_rise_michael_falls.0001 = { #Michael and Basiliskianos go out drinking
 	}
 
 	immediate = {
-		character:HEE_basiliskianos = { save_scope_as = basiliskianos }
+		character:kapnogenes0002 = { save_scope_as = basiliskianos }
 		
 		character:1700 = { save_scope_as = basil }
 		
@@ -137,10 +137,10 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 	immediate = {
 		character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
 		character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
-		character:HEE_basiliskianos = { save_scope_as = basiliskianos } # https://en.wikipedia.org/wiki/Basiliskianos
+		character:kapnogenes0002 = { save_scope_as = basiliskianos } # https://en.wikipedia.org/wiki/Basiliskianos
 
 		character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
-		character:HEE_eudokia_dekapolitissa = { save_scope_as = eudokia_dekapolitissa } #
+		character:dekapolitissa0001 = { save_scope_as = eudokia_dekapolitissa } #
 
 		every_held_title = {
 			add_to_list = michael_current_titles

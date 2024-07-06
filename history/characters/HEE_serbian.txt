@@ -1,0 +1,34 @@
+﻿###############################################################
+#  HEE Serbian characters
+###############################################################
+# Dynasties: 
+# Characters: 
+##############################################################################################
+
+zahumlje0001 = { # De administrando imperio, ascribed to Byzantine Emperor Constantine Porphyrogenitus, notes that Michael was a son of Busebutze
+	name = "Borubutze"
+	dynasty = dynasty_visevic # Višević
+	religion = "catholic"
+	culture = "polish" # his family was not of Serbian origin since they reportedly belonged to the Litziki, an unbaptized people on the river Vistula in Lesser Poland
+
+	843.1.1 = {
+		birth = yes
+	}
+	913.1.1 = {
+		death = yes
+	}
+}
+
+zahumlje0002 = { # Michael of Zahumlje - https://en.wikipedia.org/wiki/Michael_of_Zahumlje
+	name = "Mihajlo"
+	dynasty = dynasty_visevic
+	religion = "catholic"
+	culture = "polish"
+	father = zahumlje0001
+	878.1.1 = {
+		birth = yes
+	}
+	926.1.1 = { # Michael does not appear in the sources for events after 925, but has been theorized to have reigned into the 940s
+		death = yes
+	}
+}

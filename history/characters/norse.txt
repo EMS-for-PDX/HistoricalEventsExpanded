@@ -537,43 +537,14 @@
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
-			# Sort his perk tree out.
-			if = {
-				limit = { NOT = { has_perk = anatomical_studies_perk } }
-				add_perk = anatomical_studies_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = restraint_perk } }
-				add_perk = restraint_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = know_thyself_perk } }
-				add_perk = know_thyself_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = wash_your_hands_perk } }
-				add_perk = wash_your_hands_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = iron_constitution_perk } }
-				add_perk = iron_constitution_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = healthy_perk } }
-				add_perk = healthy_perk
-			}
-			if = {
-				limit = { NOT = { has_perk = whole_of_body_perk } }
-				add_perk = whole_of_body_perk
-			}
 		}	
 	}
 	865.1.1 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:163108 } #Björn Ironside, they went raiding together and Haesteinn could be his foster dad?
 			add_gold = 500
-			add_prestige = 2000 # Rich and prestigious from raiding
-			add_prestige_experience = 5000 # So that we have enough prestige to use an invasion CB
+			add_prestige = 1500 # Rich and prestigious from raiding
+			add_prestige_experience = 5500 # So that we have enough prestige to use an invasion CB
 
 			# Personal retinue of Hæsteinn who basically followed him around because they thought he was awesome.
 			## Can be used for multiple wars, but will disband upon his death.
@@ -582,10 +553,10 @@
 				limit = { has_fp1_dlc_trigger = yes }
 				spawn_army = {
 					name = event_troop_default_name
-					levies = 1200
+					levies = 600
 					men_at_arms = {
 						type = huscarl
-						stacks = 2
+						stacks = 3
 					}
 					men_at_arms = {
 						type = varangian_veterans
@@ -597,10 +568,10 @@
 				}
 				spawn_army = {
 					name = event_troop_default_name
-					levies = 1200
+					levies = 600
 					men_at_arms = {
 						type = huscarl
-						stacks = 2
+						stacks = 3
 					}
 					men_at_arms = {
 						type = varangian_veterans
@@ -615,10 +586,10 @@
 			else = {
 				spawn_army = {
 					name = event_troop_default_name
-					levies = 1200
+					levies = 600
 					men_at_arms = {
 						type = huscarl
-						stacks = 3
+						stacks = 4
 					}
 					location = province:2152
 					origin = province:2152
@@ -626,10 +597,10 @@
 				}
 				spawn_army = {
 					name = event_troop_default_name
-					levies = 1200
+					levies = 600
 					men_at_arms = {
 						type = huscarl
-						stacks = 3
+						stacks = 4
 					}
 					location = province:2152
 					origin = province:2152
@@ -643,7 +614,7 @@
 	}
 	867.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:90104 reason = rival_historical } #Charles the Bald, raided his lands and went to war with him
+			set_relation_potential_rival = { target = character:90104 reason = rival_historical } #Charles the Bald, raided his lands and went to war with him
 		}
 	}
 	896.1.1 = {
@@ -5365,7 +5336,7 @@
 	}
 }
 
-1761 = {
+1761 = { # Mistress of Michael III and second wife of Basil I - https://www.degruyter.com/database/PMBZ/entry/PMBZ23907/html
 	name = "Eudokia"
 	# AKA: Eudocia
 	female = yes
@@ -5375,17 +5346,37 @@
 	intrigue = 7
 	stewardship = 5
 	religion = "orthodox"
-	culture = "norse"
-	father = hee_inger
-	mother = hee_melisenna_martinakia
+	culture = "greek" # Raised in Constantinople by a Roman mother, probably more Roman than Norse
+	father = inger0001
+	mother = martinakoi0012
+	trait = generous # A (likely legendary) Jewish chronicle mentions that Eudokia gave Rabbi Shefatia her earrings and belt as a gift for his two daughters, which are said to have weighed a pound of gold each.
+	trait = stubborn
 	trait = lustful
-	trait = greedy
 	trait = education_diplomacy_1
+	trait = beauty_good_3 # Skylitzes writes Eudokia "exceeded all other women of her age in physical elegance, beauty and sobriety"
 	sexuality = bisexual
 	840.1.1 = {
 		birth = "840.1.1"
 	}
-	882.1.1 = {
+	866.9.29 = {
+		effect = {
+			add_secret = { #Set up the secret of Leon's father
+				type = secret_disputed_heritage
+				target = character:1702
+			}
+			every_secret = { # Make sure Basil and Michael know about their historical relationships
+				reveal_to = character:70490
+				reveal_to = character:1700
+			}
+			every_secret = { # Make sure Basil can not blackmail Eudokia since he "consented" to the arrangement
+				limit = {
+					is_known_by = character:1700
+				}
+				disable_exposure_by = character:1700
+			}
+		}
+	}
+	882.1.1 = { # In 882, she selected Theophano as wife for her son Leo, and died shortly afterwards
 		death = "882.1.1"
 	}
 }

@@ -6819,6 +6819,11 @@
 	culture = swabian
 	religion = "catholic"
 	father = 161482
+	trait = education_diplomacy_3 # appointed by Charlemagne as ambassador to Constantinople
+	trait = forgiving
+	trait = zealous
+	trait = humble
+	trait = diplomat # appointed by Charlemagne as ambassador to Constantinople
 	780.1.1 = {
 		birth = yes
 	}
@@ -6993,11 +6998,8 @@
 	840.1.1 = {
 		birth = "840.1.1"
 	}
-	865.1.1 = {
-		add_spouse = 168065
-	}
-	890.1.1 = {
-		death = "890.1.1"
+	867.1.1 = {
+		death = "890.1.1" # An agreement dated 6 Mar 870 between Charles II "le Chauve" King of the West Franks and his brother Ludwig II "der Deutsche" King of the East Franks names "Leutfridus comes" as representative of the latter, so going with an idea Hupold died very early to permit historical inheritence
 	}
 }
 ## End of Etichonen

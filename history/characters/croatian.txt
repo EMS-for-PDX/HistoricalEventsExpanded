@@ -2001,8 +2001,8 @@
 	}
 }
 
-74046 = {
-	name = "Ljutomisl"
+74046 = { # Renamed to Laborec to reflect the (perhaps fictional) Slavic ruler in the 9th century - https://en.wikipedia.org/wiki/Laborec_(ruler)
+	name = "Laborec"
 	dynasty = 12284
 	religion = "slavic_pagan"
 	culture = "croatian"

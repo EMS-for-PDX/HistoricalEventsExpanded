@@ -14,6 +14,21 @@ war = {
 	defenders = { 163105 }
 }
 
+# Lambert of Spoleto's Siege of Capua
+war = {
+	name = "war_867_Siege_of_Capua"
+	start_date = 866.1.1
+	end_date = 867.11.13
+	targeted_titles={
+		d_capua
+		c_capua
+	}
+	casus_belli = claim_cb
+	attackers = { 71908 }
+	defenders = { 163079 }
+	claimant = 71908
+}
+
 # Abbasid Punitive Campaigns against the Dulafids
 war = {
 	name = "war_867_Abbasid_Dulafid_Campaign"
@@ -28,7 +43,7 @@ war = {
 	claimant = 163132
 }
 
-# Abbasid Punitive Campaigns against the Dulafids
+# Isa's Capture of the Province of Damascus
 war = {
 	name = "war_867_Isa_Seizure_of_Damascus"
 	start_date = 867.1.1
@@ -43,7 +58,8 @@ war = {
 	defenders = { HEE_damascus_governor }
 }
 
- war = {
+# Paulician Raid into Anatolia
+war = {
  	name = "war_867_Paulician_Grand_Raid"
  	start_date = 867.1.1
  	end_date = 867.6.1
@@ -52,6 +68,6 @@ war = {
 		k_pontus
  	}
  	casus_belli = grand_raid_cb
- 	attackers = { HEE_chrysocheir }
+ 	attackers = { paulician0004 }
 	defenders = { 70490 }
 }

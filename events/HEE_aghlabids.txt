@@ -159,10 +159,6 @@ HEE_aghlabids_questline.1000 = { # Crowds uplift Ibrahim as Emir
 		character = root
 		animation = personality_honorable
 	}
-	# right_portrait = {
-		# character = character:HEE_basiliskianos
-		# animation = personality_content
-	# }
 
 	trigger = {
 		is_alive = yes

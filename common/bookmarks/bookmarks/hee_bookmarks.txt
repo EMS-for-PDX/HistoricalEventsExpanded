@@ -39,16 +39,16 @@ bm_867_hee_byzantines = {
 			animation = disapproval
 		}
 		
-		# Basiliskianos, friend, ID: HEE_basiliskianos
+		# Basiliskianos, friend, ID: kapnogenes0002
 		character = {
 			name = "bookmark_hee_byzantine_basiliskianos"
 			relation = "BOOKMARK_RELATION_FRIEND"
-			dynasty = hee_kapnogenes
+			dynasty = dynasty_kapnogenes
 			type = male
 			birth = 840.1.1
 			culture = greek
 			religion = orthodox
-			history_id = HEE_basiliskianos
+			history_id = kapnogenes0002
 
 			animation = personality_greedy
 		}
@@ -76,8 +76,8 @@ bm_867_hee_byzantines = {
 	# Chrysocheir
 	character = {
 		name = "bookmark_hee_byzantine_chrysocheir"
-		history_id = HEE_chrysocheir
-		dynasty = hee_tephrice
+		history_id = paulician0004
+		dynasty = dynasty_tephrice
 		dynasty_splendor_level = 1
 		type = male
 		birth = 835.1.1

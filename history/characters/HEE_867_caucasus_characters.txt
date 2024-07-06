@@ -3,12 +3,8 @@
 HEE_george_of_abkhazia_wife = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	name = "Ekaterine"
 	female = yes
-	#dynasty = 0
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
 	
 	#Skills
 	# diplomacy = 6
@@ -29,7 +25,6 @@ HEE_george_of_abkhazia_wife = { # https://en.wikipedia.org/wiki/Grigol_of_Kakhet
 	#Other Traits
 	
 	sexuality = heterosexual
-	
 	#disallow_random_traits = yes
 	830.1.1 = {
 		birth = yes
@@ -53,16 +48,6 @@ HEE_tinen_of_tchikha = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	religion = "orthodox"
 	culture = "georgian"
 	father = 70471
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 7
-	# learning = 6
-	# prowess = 0
 	
 	#Education
 	trait = education_diplomacy_1
@@ -71,12 +56,7 @@ HEE_tinen_of_tchikha = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	trait = craven
 	trait = lazy
 	trait = gluttonous
-	
-	#Other Traits
-	
-	sexuality = heterosexual
-	
-	disallow_random_traits = yes
+
 	827.1.1 = {
 		birth = yes
 	}
@@ -95,21 +75,6 @@ HEE_guaram_mampali_daughter = { # https://en.wikipedia.org/wiki/Bagrat_I_of_Abkh
 	religion = "orthodox"
 	culture = "georgian"
 	father = 160032
-	# mother =
-	#health = 5.0
-	
-	#Skills
-
-	
-	#Education
-
-	
-	#Personality Traits
-
-	
-	#Other Traits
-	
-	# disallow_random_traits = yes
 	855.1.1 = {
 		birth = yes
 	}
@@ -126,36 +91,8 @@ HEE_guaram_mampali_daughter = { # https://en.wikipedia.org/wiki/Bagrat_I_of_Abkh
 
 HEE_grigol_of_kakheti = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	name = "Grigol"
-	#female = yes
-	#dynasty = 0
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	760.1.1 = {
 		birth = yes
 	}
@@ -166,36 +103,9 @@ HEE_grigol_of_kakheti = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 
 HEE_vache_of_kakheti = { # https://en.wikipedia.org/wiki/Vache_of_Kakheti
 	name = "Vache"
-	#female = yes
 	dynasty = hee_kvabulidze
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	775.1.1 = {
 		birth = yes
 	}
@@ -206,36 +116,9 @@ HEE_vache_of_kakheti = { # https://en.wikipedia.org/wiki/Vache_of_Kakheti
 
 HEE_samuel_of_kakheti = { # https://en.wikipedia.org/wiki/Samuel_of_Kakheti
 	name = "Samuel"
-	#female = yes
 	dynasty = hee_donauri
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	800.1.1 = {
 		birth = yes
 	}
@@ -246,36 +129,9 @@ HEE_samuel_of_kakheti = { # https://en.wikipedia.org/wiki/Samuel_of_Kakheti
 
 HEE_gabriel_of_kakheti = { # https://en.wikipedia.org/wiki/Gabriel_of_Kakheti
 	name = "Gabriel"
-	#female = yes
 	dynasty = hee_donauri
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	820.1.1 = {
 		birth = yes
 	}
@@ -286,12 +142,8 @@ HEE_gabriel_of_kakheti = { # https://en.wikipedia.org/wiki/Gabriel_of_Kakheti
 
 HEE_hilarion_the_iberian = { # https://en.wikipedia.org/wiki/Hilarion_the_Iberian
 	name = "Hilarion"
-	#female = yes
-	#dynasty = hee_donauri
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
 	health = 4.8
 	
 	#Skills
@@ -312,16 +164,12 @@ HEE_hilarion_the_iberian = { # https://en.wikipedia.org/wiki/Hilarion_the_Iberia
 	
 	#Other Traits
 	trait = devoted
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
+
 	822.1.1 = {
 		birth = yes
 	}
 	866.1.1 = {
-		employer = 145186 # In 864, he founded a monastery on Mount Olympus, possibly identified as "Lavra of Krania", which was housing largely his Georgian compatriots.
+		employer = b_servia.holder # In 864, he founded a monastery on Mount Olympus, possibly identified as "Lavra of Krania", which was housing largely his Georgian compatriots.
 	}
 	875.1.1 = {
 		death = yes
@@ -330,36 +178,9 @@ HEE_hilarion_the_iberian = { # https://en.wikipedia.org/wiki/Hilarion_the_Iberia
 
 HEE_padla_i_of_kakheti = { # https://en.wikipedia.org/wiki/Padla_I_of_Kakheti
 	name = "Padla"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	830.1.1 = {
 		birth = yes
 	}
@@ -370,36 +191,10 @@ HEE_padla_i_of_kakheti = { # https://en.wikipedia.org/wiki/Padla_I_of_Kakheti
 
 HEE_kvirike_i_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_I_of_Kakheti
 	name = "Kvirike"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_padla_i_of_kakheti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	850.1.1 = {
 		birth = yes
 	}
@@ -410,36 +205,10 @@ HEE_kvirike_i_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_I_of_Kakhet
 
 HEE_padla_ii_of_kakheti = { # https://en.wikipedia.org/wiki/Padla_II_of_Kakheti
 	name = "Padla"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_kvirike_i_of_kakheti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	870.1.1 = {
 		birth = yes
 	}
@@ -450,36 +219,10 @@ HEE_padla_ii_of_kakheti = { # https://en.wikipedia.org/wiki/Padla_II_of_Kakheti
 
 HEE_kvirike_ii_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_II_of_Kakheti
 	name = "Kvirike"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_padla_ii_of_kakheti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	910.1.1 = {
 		birth = yes
 	}
@@ -490,36 +233,10 @@ HEE_kvirike_ii_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_II_of_Kakh
 
 HEE_david_of_kakheti = { # https://en.wikipedia.org/wiki/David_of_Kakheti
 	name = "David"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_kvirike_ii_of_kakheti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	910.1.1 = {
 		birth = yes
 	}
@@ -530,36 +247,10 @@ HEE_david_of_kakheti = { # https://en.wikipedia.org/wiki/David_of_Kakheti
 
 HEE_kvirike_iii_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_III_of_Kakheti
 	name = "Kvirike"
-	#female = yes
 	dynasty = hee_arevmaneli
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_david_of_kakheti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	990.1.1 = {
 		birth = yes
 	}
@@ -573,36 +264,10 @@ HEE_kvirike_iii_of_kakheti = { # https://en.wikipedia.org/wiki/Kvirike_III_of_Ka
 
 HEE_adarnase_of_hereti = { # https://en.wikipedia.org/wiki/Adarnase_of_Hereti
 	name = "Adarnase"
-	#female = yes
 	dynasty = 1029025
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 159976
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	859.1.1 = {
 		birth = yes
 	}
@@ -613,36 +278,10 @@ HEE_adarnase_of_hereti = { # https://en.wikipedia.org/wiki/Adarnase_of_Hereti
 
 HEE_ishkhanik_of_hereti = { # https://en.wikipedia.org/wiki/Ishkhanik_of_Hereti
 	name = "Ishkhanik"
-	#female = yes
 	dynasty = 1029025
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = HEE_adarnase_of_hereti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	905.1.1 = {
 		birth = yes
 	}
@@ -656,36 +295,10 @@ HEE_ishkhanik_of_hereti = { # https://en.wikipedia.org/wiki/Ishkhanik_of_Hereti
 
 HEE_john_of_hereti = { # https://en.wikipedia.org/wiki/John_of_Hereti
 	name = "Ioane"
-	#female = yes
 	dynasty = 1029025
 	religion = "orthodox"
 	culture = "armenian"
 	father = HEE_adarnase_of_hereti
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	#trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	928.1.1 = {
 		birth = yes
 	}
@@ -702,18 +315,6 @@ HEE_ashot_iv_unnamed_daughter = { # https://en.wikipedia.org/wiki/Ashot_Msaker
 	culture = "armenian"
 	father = 41502
 	mother = 159882
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-	
-	# Personality Traits
-	
-	# Other Traits
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	800.1.1 = {
 		birth = yes
 	}
@@ -732,19 +333,6 @@ HEE_artsruni_unnamed_princess = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41560
-	# mother = 
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-	
-	# Personality Traits
-	
-	# Other Traits
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	848.1.1 = {
 		birth = yes
 	}
@@ -788,37 +376,12 @@ HEE_ashot_second_daughter = {
 
 HEE_gourgen_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 	name = "Gourgen"
-	#female = yes
 	dynasty = 101736
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41559
 	mother = 41503
-	# health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	# trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
 	trait = loyal
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	818.1.1 = {
 		birth = yes
 	}
@@ -829,36 +392,11 @@ HEE_gourgen_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7roun
 
 HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 	name = "Grigor"
-	# female = yes
 	dynasty = 101736
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41559
 	mother = 41503
-	# health = 5.0
-	
-	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 6
-	# learning = 6
-	# prowess = 0
-	
-	#Education
-	# trait = education_learning_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = chaste
-	
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	820.1.1 = {
 		birth = yes
 	}
@@ -867,15 +405,12 @@ HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 	}
 }
 
-HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
-	name = "al-Ala"
-	#female = yes
+HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armenia in 866 also governor of Azerbaijan ?-874
+	name = "al-'Alá"
 	dynasty = hee_azdi
 	religion = "ashari"
 	culture = "levantine"
 	father = HEE_867_armenian_governor_father
-	#mother =
-	#health = 5.0
 	
 	# Skills
 	diplomacy = 7
@@ -896,11 +431,7 @@ HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Arme
 	# Other Traits
 	trait = reaver
 	trait = loyal
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
+
 	820.1.1 = {
 		birth = yes
 		effect = {
@@ -924,43 +455,18 @@ HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Arme
 			set_relation_friend = { reason = friend_generic_history target = character:163131 } #Bugha al-Sharabi - The one who appointed him Governor in Bugha's stead, collected taxes and admin estates in his name
 		}
 	}
-	874.1.1 = {
-		death = yes
+	874.7.1 = { #killed in battle against Abu al-Rudayni Umar b. Ali b. Murr, newly appointed governor of Azerbaijan
+		death = { 
+			death_reason = death_battle
+		}
 	}
 }
 
 HEE_867_armenian_governor_father = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
 	name = "Ahmad"
-	#female = yes
 	dynasty = hee_azdi
 	religion = "ashari"
 	culture = "levantine"
-	#father = 
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	796.1.1 = {
 		birth = yes
 	}
@@ -971,36 +477,10 @@ HEE_867_armenian_governor_father = { # al-Ala ibn Ahmad al-Azdi - Arab Governor 
 
 HEE_gregor_naren = { # Gregor Naren - Prince of Khachen
 	name = "Grigor_Naren"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = HEE_atrnerseh_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	835.1.1 = {
 		birth = yes
 	}
@@ -1011,36 +491,10 @@ HEE_gregor_naren = { # Gregor Naren - Prince of Khachen
 
 HEE_atrnerseh_of_khachen = { # Gregor Naren - Prince of Khachen
 	name = "Atrnerseh"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = HEE_issac_ii_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	800.1.1 = {
 		birth = yes
 	}
@@ -1051,36 +505,10 @@ HEE_atrnerseh_of_khachen = { # Gregor Naren - Prince of Khachen
 
 HEE_issac_ii_of_khachen = { # Gregor Naren - Prince of Khachen
 	name = "Issac"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
-	father = HEE_vasak_iii_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
+	father = HEE_vasak_iii_of_khachen	
 	787.1.1 = {
 		birth = yes
 	}
@@ -1091,36 +519,10 @@ HEE_issac_ii_of_khachen = { # Gregor Naren - Prince of Khachen
 
 HEE_vasak_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 	name = "Vasak"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = HEE_kourd_ii_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	760.1.1 = {
 		birth = yes
 	}
@@ -1131,36 +533,10 @@ HEE_vasak_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 
 HEE_kourd_ii_of_khachen = { # Gregor Naren - Prince of Khachen
 	name = "Kourd"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
-	father = HEE_babgen_iii_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
+	father = HEE_babgen_iii_of_khachen	
 	715.1.1 = {
 		birth = yes
 	}
@@ -1171,36 +547,9 @@ HEE_kourd_ii_of_khachen = { # Gregor Naren - Prince of Khachen
 
 HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 	name = "Babgen"
-	#female = yes
 	dynasty = hee_khachen_princes
 	religion = "armenian_apostolic"
 	culture = "armenian"
-	#father = HEE_babgen_iii_of_khachen
-	#mother =
-	#health = 
-	
-	# Skills
-	#diplomacy = 
-	#martial = 
-	#stewardship = 
-	#intrigue = 
-	#learning = 
-	#prowess = 
-	
-	# Education
-	#trait = 
-	
-	# Personality Traits
-	#trait = 
-	#trait = 
-	#trait = 
-	
-	# Other Traits
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	670.1.1 = {
 		birth = yes
 	}

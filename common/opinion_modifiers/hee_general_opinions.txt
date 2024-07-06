@@ -6,6 +6,12 @@ elopement_non_imprisionment_opinion = {
 	years = 30
 }
 
+exiled_character_opinion = {
+	opinion = -100
+	decaying = yes
+	years = 50
+}
+
 unable_to_defend_realm = {
 	opinion = -50
 	decaying = yes

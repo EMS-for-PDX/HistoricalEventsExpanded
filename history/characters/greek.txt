@@ -3,9 +3,9 @@
 	dynasty = 644
 	martial = 6
 	diplomacy = 8
-	intrigue = 10
-	stewardship = 6
-	learning = 5
+	intrigue = 10 # Concieved and executed the murder of both Bardas (the emperor Mikhael III's maternal uncle and chief adviser) and the Emperor Mikhael III 
+	stewardship = 8 # In administrative affairs, he conceived a project to rewrite the legal codes of Justinian which, although never finalised, formed the basis for his son's subsequent legislative work
+	learning = 8 # In administrative affairs, he conceived a project to rewrite the legal codes of Justinian which, although never finalised, formed the basis for his son's subsequent legislative work
 	prowess = 10
 	religion = "orthodox"
 	culture = "greek"
@@ -18,30 +18,64 @@
 	trait = lifestyle_hunter
 	sexuality = bisexual
 	father = 145129
+	mother = makedon0003
 	disallow_random_traits = yes
-	830.5.25 = {
-		birth = "830.5.25"
+	836.5.25 = { # Symeon Magister records that "Basilius genere Macedo" was 25 years old when he is first introduced into the narrative.  It is not possible to date this text with any accuracy, but, on the assumption that Basileios arrived at the royal palace in the early 850s, he must have been born mid 830s
+		birth = "836.5.25"
+		give_nickname = nick_the_macedonian
+		effect = { learn_language_of_culture = culture:armenian	}
 	}
-	860.1.1 = {
+	855.1.1 = {
 		add_spouse = 145131
 	}
-	861.1.1 = {
+	861.1.1 = { #  Basileios went to Constantinople where he was a groom in the imperial stables and became the favourite of Emperor Mikhael III
 		employer = 70490 # Michael III
 		set_relation_friend = { reason = friend_generic_history target = character:70490 } # Soon after entering the Emperor's service, Basil became the Byzantine Emperor's companion, confidant, and bodyguard 
 	}
-	864.12.31 = {
+	864.12.31 = { # Symeon Magister records that "Basilium" repudiated "Mariam coniugem" in the eleventh year of the reign of Emperor Mikhael III, and that she was sent back with gold to her country of origin
 		remove_spouse = 145131
 	}
-	865.1.1 = {
+	865.1.1 = { # Symeon Magister records that "Basilium" married "Eudocia Ingerina" in the eleventh year of the reign of Emperor Mikhael III
 		add_spouse = 1761
 	}
-	866.5.26 = {
+	866.1.1 = {
+		effect = {
+			set_relation_lover = character:amorios0010	# Allegedly Thekla was given as a mistress by Michael to Basil
+			every_secret = { # Make sure Michael is aware of him having given Thekla to Basil
+				reveal_to = character:70490
+			}
+			every_secret = { # Make sure Michael can not blackmail Basil over this since Michael started it
+				limit = {
+					is_known_by = character:70490
+				}
+				disable_exposure_by = character:70490
+			}
+		}
+	}
+	866.5.26 = { # Basil was crowned co-emperor 26 May 866
 		effect = {
 			add_character_modifier = byzantine_coemperor_modifier
 		}
 		add_pressed_claim = title:e_byzantium
 	}
-	886.8.29 = {
+	866.11.1 = { # Represent Basil's anger and jealousy at Michael III who was beginning to favor another courtier Basiliskianos
+		add_opinion = {
+			target = character:70490
+			modifier = insulted_opinion
+			opinion = -25
+		}
+		add_opinion = {
+			target = character:70490
+			modifier = spurned_opinion
+			opinion = -50
+		}
+		add_opinion = {
+			target = character:70490
+			modifier = envy_opinion
+			opinion = -50
+		}
+	}
+	886.8.29 = { # He was mortally wounded in a hunting accident
 		death = {
 			death_reason = death_deer
 		}
@@ -937,14 +971,15 @@
 	}
 }
 
-1701 = {
+1701 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ22583/html
 	name = "Anna"
 	female = yes
 	dynasty = 644
 	religion = "orthodox"
 	culture = "greek"
 	father = 1702
-	893.1.1 = {
+	mother = zaoutzes0005
+	895.1.1 = { # # Unknown; A. was probably elevated to Augusta in 900, as Leon was not married at that time and court ceremonies supposedly required an empress. At that time she was Leon's only living child and certainly no older than seven years old.
 		birth = yes
 	}
 	918.1.1 = {
@@ -952,14 +987,14 @@
 	}
 }
 
-1702 = {
+1702 = { # Byzantine Emperor from 886 to 912; The second ruler of the Macedonian dynasty - https://www.degruyter.com/database/PMBZ/entry/PMBZ26465/html
 	name = "Leon"
 	# AKA: Leo
 	dynasty = 644
 	religion = "orthodox"
 	culture = "greek"
 	trait = born_in_the_purple
-	trait = education_learning_3
+	trait = education_learning_4
 	trait = disputed_heritage
 	father = 1700
 	mother = 1761
@@ -970,13 +1005,24 @@
         }
 	}
 	882.9.29 = {
+		add_spouse = martinakoi0008 # Byzantine empress as the first wife of the Byzantine emperor Leo VI the Wise
+		give_nickname = nick_the_wise
 		trait = scholar	#Add adult trait
+		trait = just # Bishop Liutprand of Cremona gives an account similar to those about Caliph Harun al-Rashid, to the effect that Leo would sometimes disguise himself and go about Constantinople looking for injustice or corruption
+		trait = diligent # Leo VI was a prolific writer, and he produced works on many different topics and in many styles, including political orations, liturgical poems, and theological treatises
+		trait = patient
+	}
+	897.11.10 = {
+		add_spouse = zaoutzes0005 # Zoe Zaoutzaina; Byzantine empress consort as the second wife of the Byzantine emperor Leo VI the Wise
 	}
 	906.1.9 = {
 		add_spouse = 1703
 	}
-	912.5.1 = {
-		death = "912.5.1"
+	900.4.1 = {
+		add_spouse = baiana0001 # Eudokia Baïana; Byzantine empress consort as the third wife of Leo VI the Wise
+	}
+	912.5.11 = {
+		death = "912.5.11"
 	}
 }
 
@@ -994,26 +1040,28 @@
 	}
 }
 
-1704 = {
+1704 = { # Byzantine emperor from 912 to 913, and the third emperor of the Macedonian dynasty - https://www.degruyter.com/database/PMBZ/entry/PMBZ22381/html
 	name = "Alexandros"
 	dynasty = 644
 	religion = "orthodox"
 	culture = "greek"
-	trait = greedy
+	trait = gluttonous
 	trait = arrogant
+	trait = vengeful # immediately after taking office, A. is said to have taken action against everyone who had taken sides against him or done anything bad to him, regardless of their rank
 	trait = education_diplomacy_2
 	trait = born_in_the_purple
+	trait = lifestyle_reveler
 	father = 1700
 	mother = 1761
-	872.11.1 = {
-		birth = "872.11.1"
+	871.11.20 = { # Ps.-Symeon gives the specific date of birth as November 23rd of the fifth year of Basil, i.e. November 23rd, 871
+		birth = "871.11.1"
 	}
-	913.6.6 = {
+	913.6.6 = { # A. died on June 6, 913, allegedly from stomach problems caused by excess food and alcohol
 		death = "913.6.6"
 	}
 }
 
-1706 = {
+1706 = { # Byzantine emperor from 920 until his deposition in 944, serving as regent for and senior co-ruler of the young Constantine VII - https://www.degruyter.com/database/PMBZ/entry/PMBZ28987/html
 	name = "Romanos"
 	dynasty = 642
 	religion = "orthodox"
@@ -1023,7 +1071,21 @@
 	867.1.1 = {
 		birth = "867.1.1"
 	}
-	944.1.1 = {
+	873.1.1 = { # Traits for Adulthood
+		trait = just
+		trait = temperate
+		trait = ambitious
+	}
+	892.1.1 = {
+		add_spouse = gambros0002 # Theorized first wife, whose name was Christophoros; potentially the same as the Domestikos of the Scholen who defeated the Paulikians in the 870s
+	}
+	906.1.1 = {
+		add_spouse = lekapenos0001 # Romanos I's only named wife, who died in 922
+	}
+	931.8.1 = { # Romanos' later reign was marked by the old emperor's heightened interest in divine judgment and his increasing sense of guilt for his role in the usurpation of the throne from Constantine VII, possibly brought on by the death of his favorite son Christophoros
+		trait = zealous
+	}
+	944.12.20 = { # On December 20, 944, Emperor Romanos I Lakapenos was overthrown, taken to the island of Prote and made a monk there 
 		trait = devoted
 	}
 	948.6.15 = {
@@ -1031,7 +1093,7 @@
 	}
 }
 
-1708 = {
+1708 = { # the fourth Byzantine emperor of the Macedonian dynasty, reigning from 6 June 913 to 9 November 959 - https://www.degruyter.com/database/PMBZ/entry/PMBZ25888/html
 	name = "Konstantinos"
 	dynasty = 644
 	religion = "orthodox"
@@ -1040,8 +1102,8 @@
 	trait = born_in_the_purple
 	father = 1702
 	mother = 1703
-	905.9.2 = {
-		birth = "905.9.2"
+	905.5.17 = { # K. was probably born in May 905, probably on May 17th or 18th.
+		birth = "905.5.17"
 	}
 	919.4.1 = {
 		add_spouse = 1709
@@ -1051,7 +1113,7 @@
 	}
 }
 
-1709 = {
+1709 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ24727/html
 	name = "Helene"
 	# AKA: Helena
 	female = yes
@@ -1059,11 +1121,22 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 1706
-	910.1.1 = {
-		birth = "910.1.1"
+	mother = lekapenos0001
+	trait = greedy # she, together with Parakoimomenos Basileios, was responsible for ensuring that positions were not awarded based on performance, but were sold
+	trait = just # A nice reason Helene may have acted against her brothers
+	trait = ambitious # Helene is described as "energetic"; also not so nice reason why Helene may have acted against her brothers
+	trait = intellect_good_1 # praised for her beauty and her intelligence
+	trait = beauty_good_2 # praised for her beauty and her intelligence
+	907.1.1 = { # V: Daughter of Romanos I Lakapenos and his second wife Theodora, probably born around 907 as their eldest child
+		birth = "907.1.1"
 	}
-	961.9.19 = {
-		death = "961.9.19"
+	961.1.1 = { # According to Skylitzes, who dates this measure around 961, Helene was shorn and forced to enter a monastery. However, Romanos II allowed himself to be softened by her pleas, so that she was allowed to stay in the palace herself 
+		trait = devoted
+	}
+	961.9.19 = { # She died after a long illness on September 19th, probably in the year 961 (Skylitzes: fifth indication), according to Skylitzes out of pain over the loss of her daughters
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -1073,6 +1146,10 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = born_in_the_purple
+	trait = gregarious # Described as a pleasure-loving sovereign
+	trait = arbitrary # married Theophano against his father's wishes
+	trait = lazy
+	trait = lifestyle_hunter
 	father = 1708
 	mother = 1709
 	938.1.1 = {
@@ -1087,7 +1164,7 @@
 }
 
 1711 = {
-	name = "Theophano"
+	name = "Anastasia"
 	# AKA: Theofano
 	female = yes
 	religion = "orthodox"
@@ -1097,12 +1174,15 @@
 	941.1.1 = {
 		birth = "941.1.1"
 	}
+	957.1.1 = { # Following her marriage to Romanos II, she changed her name to Theophano
+		name = "Theophano"
+	}
 	976.1.1 = {
 		death = "976.1.1"
 	}
 }
 
-1712 = {
+1712 = { # Nikephoros II Phokas, Byzantine emperor from 963 to 969
 	name = "Nikephoros"
 	dynasty = 641
 	martial = 9
@@ -1112,9 +1192,14 @@
 	trait = zealous
 	trait = arrogant
 	trait = brave
+	trait = holy_warrior
 	father = 41317
+	mother = maleinos0001
 	912.1.1 = {
 		birth = "912.1.1"
+	}
+	927.1.1 = { # Early in his life Nikephoros had married a woman named Stephano. She had died before he rose to fame, and after her death he took an oath of chastity
+		trait = celibate
 	}
 	963.8.16 = {
 		add_spouse = 1711
@@ -1132,8 +1217,14 @@
 	culture = "greek"
 	father = 1708
 	mother = 1709
-	946.1.1 = {
-		birth = "946.1.1"
+	943.1.1 = {
+		birth = "943.1.1"
+	}
+	959.1.1 = { # After Romanos II assumed sole rule after his father's death in November 959, he had his sisters brought to the monastery of ta Kanikleiu and become nuns there
+		trait = devoted
+	}
+	971.11.1 = { # Taken out of the monastery by John I Tzimiskes in order to marry him
+		remove_trait = devoted
 	}
 	1000.1.1 = {
 		death = "1000.1.1"
@@ -1176,6 +1267,7 @@
 	culture = "greek"
 	trait = born_in_the_purple
 	father = 1718
+	mother = alypios0002
 	978.1.1 = {
 		birth = "978.1.1"
 	}
@@ -1218,6 +1310,7 @@
 	culture = "greek"
 	trait = born_in_the_purple
 	father = 1718
+	mother = alypios0002
 	980.1.1 = {
 		birth = "980.1.1"
 	}
@@ -1343,7 +1436,7 @@
 	}
 }
 
-1732 = {
+1732 = { # Roman Emperor Konstantinos X - https://pbw2016.kdl.kcl.ac.uk/person/107528/
 	name = "Konstantinos"
 	dynasty = 633
 	martial = 3
@@ -1353,10 +1446,10 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = arbitrary
-	trait = gluttonous
+	trait = stubborn # Konstantinos was an academic, addicted to endless debates about philosophy and theology
 	trait = clubfooted
 	trait = lustful
-	trait = education_stewardship_1
+	trait = education_learning_3
 	father = 1744
 	1006.1.1 = {
 		birth = "1006.1.1"
@@ -1401,10 +1494,11 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = generous
-	trait = honest
-	trait = brave
-	trait = impatient
+	trait = generous # Described as courageous and generous, but also impetuous
+	trait = wrathful # Michael the Syrian described Romanos as "very harsh and violent in his judgments", and he once ordered the nose of a soldier to be cut off for stealing the donkey of a Muslim after the emperor had given his peace
+	trait = brave # was said to have been very brave, and would often go unarmed and without escort to fight with his enemies
+	trait = impatient # Described as courageous and generous, but also impetuous
+	trait = beauty_good_2 # according to Attaleiates, “The man not only surpassed others in his good qualities but he was also pleasant to look at in all respects.”
 	trait = education_martial_3
 	father = 20525
 	1030.1.1 = {
@@ -1435,14 +1529,16 @@
 		birth = "1046.1.1"
 	}
 	1070.1.1 = {
-		add_spouse = 4558
+		add_spouse = 4558 # married to Theodora, sister of Alexios I Komnenos
 	}
 	1072.8.1 = {
 		add_pressed_claim = title:e_byzantium
 		trait = ambitious
 	}	
-	1074.1.1 = {
-		death = "1074.1.1"
+	1074.1.1 = { # perished under the walls of Antioch in 1073 while serving with his brother-in-law Isaac Komnenos
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -1898,7 +1994,7 @@
 	}
 }
 
-1770 = {
+1770 = { # Patrikios who is mentioned as the head of an embassy to the Hungarians in 894 - https://www.degruyter.com/database/PMBZ/entry/PMBZ27871/html
 	name = "Niketas"
 	dynasty = 627
 	martial = 5
@@ -2561,6 +2657,7 @@
 20509 = {
 	name = "Konstantinos"
 	dynasty = 636
+	father = Monomachos0011 # Unknown connection to larger Monomachos family
 	martial = 4
 	diplomacy = 6
 	intrigue = 8
@@ -2569,8 +2666,8 @@
 	culture = "greek"
 	trait = humble
 	trait = education_martial_2
-	958.1.1 = {
-		birth = "958.1.1"
+	935.1.1 = {
+		birth = "935.1.1"
 	}
 	1000.1.1 = {
 		death = "1000.1.1"
@@ -2773,6 +2870,7 @@
 	trait = ill
 	trait = education_diplomacy_1
 	father = 41317
+	mother = maleinos0001
 	908.1.1 = {
 		birth = "908.1.1"
 	}
@@ -2809,13 +2907,21 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "greek"
-	trait = lazy
-	trait = education_intrigue_1
-	1001.1.1 = {
-		birth = "1001.1.1"
+	trait = diligent
+	trait = deceitful # Diogenes invited Sermon, the ruler of Sirmium, to a meeting at the estuary of the river Sava in the Danube. Diogenes had hidden his sword in the folds of his clothes, and struck Sermon down
+	trait = ambitious # Supposedly conspired twice to overthrow the Emperor
+	trait = education_martial_3
+	trait = reaver # In 1017, Diogenes and David Arianites led troops to plunder the fertile plain of Pelagonia, where they captured many prisoners and livestock
+	985.1.1 = { # In 1014, he participated in the decisive Byzantine victory at the Battle of Kleidion and he subsequently succeeded Theophylact Botaneiates as commander (doux) of Thessalonica. Thus must have been an adult at this time
+		birth = "985.1.1"
 	}
-	1074.1.1 = {
-		death = "1074.1.1"
+	1029.1.1 = { # in 1029 Konstantinos was accused, along with other prominent Balkan generals, of conspiring against the emperor and was imprisoned, beaten, publicly paraded, and later tonsured and forced to enter the Stoudios Monastery
+		trait = devoted
+	}
+	1032.1.1 = {
+		death = { # Arrested once more for conspiring against the Emperor, Romanos died by suicide, throwing himself off a wall, rather than confess under torture and implicate his fellow conspirators
+			death_reason = death_suicide
+		}
 	}
 }
 
@@ -3146,6 +3252,7 @@
 	culture = "greek"
 	trait = education_learning_2
 	father = 145178
+	mother = kometopoulos0003
 	1026.1.1 = {
 		birth = "1026.1.1"
 	}
@@ -3209,8 +3316,8 @@
 	culture = "greek"
 	trait = education_martial_2
 	father = 20509
-	985.1.1 = {
-		birth = "985.1.1"
+	980.1.1 = {
+		birth = "980.1.1"
 	}
 	1032.1.1 = {
 		death = "1032.1.1"
@@ -3231,7 +3338,7 @@
 	}
 }
 
-303452 = {
+303452 = { # https://en.wikipedia.org/wiki/Theodosios_Monomachos
 	name = "Theodosios"
 	#AKA "Monomachos the moron", who failed to seize the throne in 1056 and became a "figure of fun"
 	dynasty = 636	#Monomachos
@@ -3242,6 +3349,9 @@
 	intrigue = 1
 	stewardship = 2
 	trait = education_intrigue_1
+	trait = arrogant # When Theodosios Monomachos heard that Theodora was dying he assumed that he would be selected as the next emperor
+	trait = craven # When Monomachos saw resistance against him, he lost heart and headed for Hagia Sophia
+	trait = ambitious # sought to become Emperor, by force if need be
 	father = 303451
 	1022.1.1 = {
 		birth = yes
@@ -3316,7 +3426,7 @@
 	}
 }
 
-20564 = {
+20564 = { # older brother of Ioannes Kurkuas and the grandfather of the later Emperor Ioannes I Tzimiskes; Strategos of Chaldia and eventually strategos of the theme of Theodosiupolis - https://www.degruyter.com/database/PMBZ/entry/PMBZ30307/html
 	name = "Theophilos"
 	dynasty = 640
 	martial = 6
@@ -3331,8 +3441,8 @@
 	888.1.1 = {
 		birth = "888.1.1"
 	}
-	946.1.1 = {
-		death = "946.1.1"
+	955.1.1 = { # He was Phocas Magistros and Domestikos of the Scholen under Emperor Nikephoros II
+		death = "955.1.1"
 	}
 }
 
@@ -6305,7 +6415,7 @@
 	}
 }
 
-41303 = {
+41303 = { # Byzantine general and aristocrat, eventual Caesar and the Strategos of Thessalonica under Emperor Alexios I
 	name = "Nikephoros"
 	dynasty = 101399
 	martial = 6
@@ -6314,7 +6424,11 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_stewardship_2
+	trait = education_diplomacy_4 # Displayed his diplomatic skills in recruiting Turkish mercs and convincing cities to open their gates to him
+	trait = brave # Did not hesitate to fight, used as a centerpiece to Alexios' ruse de guerre
+	trait = cynical # seemingly no issues utilizing Turkish mercs
+	trait = humble # probably more concerned with safeguarding his Asian estates from the depredations of the Turks rather than claiming the throne
+	trait = loyal # remained loyal to Michael VII Doukas (r. 1071–1078) during the rebellion of Nikephoros Botaneiates and later remained loyal to Alexios following his rise to the throne
 	father = 145143
 	1040.1.1 = {
 		birth = "1040.1.1"
@@ -6322,8 +6436,8 @@
 	1066.7.1 = {
 		add_spouse = 4538
 	}
-	1107.2.1 = {
-		death = "1107.2.1"
+	1104.11.17 = {
+		death = "1104.11.17"
 	}
 }
 
@@ -6516,7 +6630,7 @@
 	}
 }
 
-41316 = {
+41316 = { # Nikephoros Phokas the Elder; Domestic of the Schools
 	name = "Nikephoros"
 	dna = 41316_nikephoros_dna
 	dynasty = 641
@@ -6527,7 +6641,7 @@
 	learning = 6
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_martial_3
+	trait = education_martial_4
 	father = 145147
 	trait = calm
 	trait = brave
@@ -6542,8 +6656,8 @@
 			add_character_flag = has_scripted_appearance
 		}
 	}
-	905.1.1 = {
-		death = "905.1.1"
+	896.1.1 = { # Symeon Logothetes reports that he died in 895/6
+		death = "896.1.1"
 	}
 }
 
@@ -6559,6 +6673,9 @@
 	father = 41316
 	880.1.1 = {
 		birth = "880.1.1"
+	}
+	905.1.1= {
+		add_spouse = maleinos0001
 	}
 	969.1.1 = {
 		death = "969.1.1"
@@ -6576,6 +6693,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 41317
+	mother = maleinos0001
 	912.1.1 = {
 		birth = "912.1.1"
 	}
@@ -8888,24 +9006,25 @@
 	name = "Michael"
 	# AKA: Mikhael 'the Drunkard'
 	dynasty = 8642
-	martial = 8
-	diplomacy = 7
-	intrigue = 5
+	diplomacy = 8
+	martial = 9
+	intrigue = 6
 	stewardship = 7
-	learning = 5
-	prowess = 6
+	learning = 6
+	prowess = 8
 	religion = "orthodox"
 	culture = "greek"
 	trait = gregarious # More generous interpretation of Michael's partying
 	trait = trusting # Reasoning behind Michael not seeing Basil's plots
-	trait = brave # The impression gained from Arab sources is one of Michael as an active and often successful military commander
-	trait = ambitious # Overthrew his Mother's regency to obtain sole control of the Empire, sough to expand Byz influence in Khazaria, Bulgaria, and Moravia
-	trait = lifestyle_reveler
+	trait = wrathful # Interpretation of Michael's actions against his mother, uncle, Basil, etc.
+	trait = brave # Michael III took an active part in the wars against the Abbasids and their vassals on the eastern frontier from 856 to 863, personally leading a siege on Samosata in 859
+	trait = lifestyle_reveler # A more balanced view on the accusations of the debauchery the Makedon sources accuse Michael of
+	trait = lifestyle_hunter # Skylitzes writes of Michael participating in several hunts 
 	trait = education_martial_3 # The impression gained from Arab sources is one of Michael as an active and often successful military commander
 	trait = flexible_leader # Lead wars in Bulgaria, the Peloponnese, Anatolia, and Syria
 	trait = born_in_the_purple
 	father = 70491
-	mother = HEE_theodora_wife_of_theophilos
+	mother = Mamikonian0005
 	sexuality = heterosexual
 	
 	840.1.9 = {
@@ -8939,6 +9058,7 @@
 	}
 	856.3.15 = { # Michael overthrows regency
 		effect = {
+			add_character_modifier = michael_administrative_indifference # Despite taking over as sole Emperor, Michael far prefers to leave administration issues to others
 			character:70490 = {
 				create_character_memory = { type = michael_overthrows_regency }
 			}
@@ -8972,6 +9092,15 @@
 			}
 		}
 	}
+	866.9.29 = {
+		effect = {
+			add_opinion = { # Michael loves his son Leon
+				target = character:1702
+				modifier = truly_of_my_blood_opinion
+				opinion = 100
+			}
+		}
+	}
 	867.9.24 = {
 		give_nickname = nick_the_drunkard
 		death = {
@@ -8995,6 +9124,7 @@
 	trait = brave
 	trait = education_martial_2
 	father = 70492
+	mother = Tourkos0001
 	
 	813.1.1 = {
 		birth = "813.1.1"
@@ -9008,6 +9138,7 @@
 	name = "Michael"
 	# AKA: Mikhael 'Psellos'
 	dynasty = 8642
+	father = amorios0003
 	martial = 7
 	diplomacy = 6
 	intrigue = 5
@@ -9051,7 +9182,8 @@
 	793.1.1 = {
 		add_spouse = 70495
 	}
-	813.1.1 = {
+	813.7.11 = {
+		name = "Athanasios"
 		trait = devoted
 	}
 	815.1.1 = {
@@ -9082,8 +9214,12 @@
 	775.1.1 = {
 		birth = "775.1.1"
 	}
-	813.1.1 = {
-		death = "813.1.1"
+	813.7.11 = { # Following Michael I Rangabe's abdication, him and his family were tonsured as monks and nuns
+		trait = devoted
+		trait = eunuch
+	} 
+	825.1.1 = { # Unknown
+		death = "825.1.1"
 	}
 }
 
@@ -9290,7 +9426,7 @@
 	trait = shy
 	trait = education_stewardship_1
 	father = 70499
-	
+	mother = Pheronymos0022
 	790.1.1 = {
 		birth = "790.1.1"
 	}
@@ -9796,15 +9932,19 @@
 	}
 }
 
-70548 = {
+70548 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ30347/html
 	name = "Theophylaktos"
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
-	trait = eunuch
 	father = 1706
-	903.1.1 = {
-		birth = "903.1.1"
+	mother = lekapenos0001
+	913.11.1 = { # second eldest son of the Emperor Romanos I Lakapenos, and the eldest son of Romanos from his second wife Theodora and was born between September 14th and December 25, 913
+		birth = "913.11.1"
+	}
+	923.12.25 = { # T. was castrated as a child and was probably ordained hypodiaconate on December 25, 923 or a little later by Patriarch Nikolaos I Mystikos
+		trait = eunuch
+		trait = devoted
 	}
 	956.2.27 = {
 		death = "956.2.27"
@@ -9952,7 +10092,7 @@
 }
 
 70555 = {
-	name = "Ignatios"
+	name = "Niketas"
 	dynasty = 8644
 	learning = 10
 	martial = 5
@@ -9968,11 +10108,13 @@
 	trait = humble
 	trait = education_learning_3
 	father = 70494
+	mother = 70495
 
 	797.1.1 = {
 		birth = "797.1.1"
 	}
-	813.1.1 = {
+	813.7.11 = {
+		name = "Ignatios"
 		trait = eunuch
 		trait = devoted
 	}
@@ -10951,9 +11093,9 @@
 	}
 }
 
-7241 = {
+7241 = { # an Eastern Roman general, governor of Edessa
 	name = "Basileios"
-	dynasty = 702
+	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi
 	martial = 6
 	diplomacy = 6
 	intrigue = 4
@@ -11573,7 +11715,7 @@
 
 85011 = {
 	name = "Ioannes"
-	dynasty = 702
+	dynasty_house = house_aaronios
 	martial = 7
 	diplomacy = 4
 	intrigue = 3
@@ -11592,8 +11734,9 @@
 }
 
 90033 = {
-	name = "Leon"
+	name = "Michael"
 	dynasty = 631
+	father = botaneiates0001
 	martial = 5
 	diplomacy = 5
 	intrigue = 5
@@ -11604,8 +11747,10 @@
 	984.1.1 = {
 		birth = "984.1.1"
 	}
-	1060.1.1 = {
-		death = "1060.1.1"
+	1014.8.1 = {
+		death = { # Theophylact's son Michael is not attested following the Battle of Strumica, so he may have perished as well in the ambush
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -11622,8 +11767,8 @@
 	trait = temperate
 	trait = education_stewardship_2
 	father = 90033
-	1033.1.1 = {
-		birth = "1033.1.1"
+	1014.1.1 = {
+		birth = "1014.1.1"
 	}
 	1078.1.1 = {
 		death = "1078.1.1"
@@ -11672,22 +11817,28 @@
 	}
 }
 
-90089 = {
-	name = "Andronikos"
+90089 = { # https://en.wikipedia.org/wiki/Nikephoros_Bryennios_(ethnarch)
+	name = "Nikephoros"
 	dynasty = 101079
+	father = Bryennios0008
 	martial = 7
 	diplomacy = 6
 	intrigue = 5
 	stewardship = 7
 	religion = "orthodox"
 	culture = "greek"
-	trait = content
-	trait = education_intrigue_2
+	trait = education_martial_3
+	trait = greedy # refused to hand over his confiscated estates and fortune
+	trait = brave
+	trait = ambitious
 	1009.1.1 = {
 		birth = "1009.1.1"
 	}
-	1057.1.1 = {
-		death = "1057.1.1"
+	1057.8.1 = {
+		trait = blind
+	}
+	1058.1.1 = {
+		death = "1058.1.1"
 	}
 }
 
@@ -11965,13 +12116,14 @@
 	}
 }
 
-145002 = {
+145002 = { # Eastern Orthodox patriarch of Constantinople (July 1143 – March 1146) who resigned in March 1146 to return to the monastery of Oxeia, most likely because of disillusion with the emperor - https://en.wikipedia.org/wiki/Michael_II_of_Constantinople
 	name = "Michael"
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_learning_2
 	father = 145179
+	trait = devoted
 	1080.1.1 = {
 		birth = "1080.1.1"
 	}
@@ -12527,13 +12679,14 @@
 	}
 }
 
-145042 = {
+145042 = { # Theodotus I of Constantinople, Ecumenical Patriarch of Constantinople from 1 April 815 to January 821 - https://www.degruyter.com/database/PMBZ/entry/PMBZ19206/html
 	name = "Theodotos"
 	dynasty = 101399
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_learning_3
 	father = 145134
+	mother = laloudios0001
 	760.1.1 = {
 		birth = "760.1.1"
 	}
@@ -12874,7 +13027,7 @@
 
 34265 = {
 	name = "Aron" #real name unknown
-	dynasty = 702
+	dynasty_house = house_aaronios
 	religion = "orthodox"
 	culture = "greek"
 	trait = legitimized_bastard
@@ -12917,7 +13070,7 @@
 
 34268 = {
 	name = "Konstantinos"
-	dynasty = 702
+	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi
 	religion = "orthodox"
 	culture = "greek"
 	father = 7242
@@ -13639,7 +13792,7 @@
 	}
 }
 
-1714 = {
+1714 = { # senior Byzantine emperor from 969 to 976 - https://www.degruyter.com/database/PMBZ/entry/PMBZ24932/html
 	name = "Ioannes"
 	# AKA: Ioannes Tzimisces
 	dynasty = 8637
@@ -16294,7 +16447,7 @@
 	}
 }
 
-145106 = {
+145106 = { # Representative of the Theban family of Leovachos, who played a decisive role in the construction of the Byzantine monastery of Osios Loukas in the mid-10th century
 	name = "Sisinnios" # C.Demetrias
 	dynasty = 1022141
 	religion = "orthodox"
@@ -16350,12 +16503,15 @@
 	}
 }
 
-145110 = {
+145110 = { # Theophylact the Unbearable (Theophylaktos Abastaktos) who, as a soldier, had rescued the Emperor Basil I from the enemy in battle at Tephrike and had been rewarded by a place in the Imperial Guard
 	name = "Theophylaktos" # C.Tyana
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
-
+	trait = education_martial_2 # traits should reflect a soldier
+	trait = honest
+	trait = arrogant
+	trait = brave
 	830.1.1 = {
 		birth = "830.1.1"
 	}
@@ -16364,17 +16520,36 @@
 	}
 }
 
-145111 = {
+145111 = { # Senior Byzantine aristocrat and official in the mid-860s - https://www.degruyter.com/database/PMBZ/entry/PMBZ18395/html
 	name = "Symvatios" # C.Nikaea
 	dynasty = 1022145
 	religion = "orthodox"
-	culture = "greek"
-
-	820.1.1 = {
-		birth = "820.1.1"
+	culture = "armenian"
+	diplomacy = 6
+	martial = 8
+	stewardship = 7
+	intrigue = 8
+	learning = 6
+	prowess = 7
+	trait = education_intrigue_2
+	trait = wrathful
+	trait = arrogant
+	trait = ambitious
+	trait = disloyal
+	830.1.1 = {
+		birth = yes
 	}
-	880.1.1 = {
-		death = "880.1.1"
+	855.1.1 = {
+		give_nickname = nick_the_own_culture # Known as "the Armenian"
+	}
+	865.1.1 = {
+		add_spouse = Mamikonian0009
+	}
+	866.10.1 = { # Following the defeat of his rebellion, Symbatios was mutilated - losing one eye and his right hand
+		trait = one_eyed
+	}
+	870.1.1 = {
+		death = yes
 	}
 }
 
@@ -16435,11 +16610,16 @@
 }
 
 145116 = {
-	name = "Alexandros" # D.Thrakesia/C.Laodikeia
+	name = "Alexandros" # As there appears to be no descendants of Lachanodrakon historically, but CK3 has some, going with an idea that Leon Drakon is a descendant based solely on similiar-esque surnames - https://www.degruyter.com/database/PMBZ/entry/PMBZ15692/html
 	dynasty = 1022148
 	religion = "orthodox"
 	culture = "greek"
 	father = 145842
+	intrigue = 11
+	trait = education_intrigue_4 # He is described by Photios in a letter dated around 866/867 as a wolf in sheep's clothing
+	trait = calm
+	trait = deceitful
+	trait = diligent
 
 	828.1.1 = {
 		birth = "828.1.1"
@@ -16549,7 +16729,7 @@
 
 145124 = {
 	name = "Thomas" # C.Dyrrachion
-	dynasty = 1022153
+	dynasty = 1022153 # As far as I can tell, the Gerontas are a family of the Athenian nobility of the late Byzantine and Ottoman years (https://en-academic.com/dic.nsf/enwiki/3477351). No idea why they are in 867
 	religion = "orthodox"
 	culture = "greek"
 
@@ -16621,8 +16801,10 @@
 }
 
 145129 = {
-	name = "Bardas"
+	name = "Bardas" # The name of the father of Emperor Basileios I is unknown
 	dynasty = 644
+	father = makedon0001
+	mother = makedon0002
 	religion = "orthodox"
 	culture = "greek"
 	trait = trusting
@@ -16632,8 +16814,8 @@
 	811.1.1 = {
 		birth = "811.1.1"
 	}
-	872.1.1 = {
-		death = "872.1.1"
+	846.1.1 = { # The Vita Basilii records that the father of "Basilius imperator" was a farmer but died when Basileios was approaching manhood
+		death = "846.1.1"
 	}
 }
 
@@ -16646,32 +16828,42 @@
 	trait = deceitful
 	trait = cynical
 	trait = education_martial_2
-		father = 145129
+	father = 145129
+	mother = makedon0003
 	838.1.1 = {
 		birth = "838.1.1"
+		effect = { learn_language_of_culture = culture:armenian	}
 	}
 	892.1.1 = {
 		death = "892.1.1"
 	}
 }
 
-145131 = {
+145131 = { # first wife of the future Emperor Basil I, who divorced her to marry Eudokia Ingerina - https://www.degruyter.com/database/PMBZ/entry/PMBZ15909/html
 	name = "Maria"
 	female = yes
+	dynasty = dynasty_maniakies # According to Genesios and other Byzantine chroniclers, Maniakes was related to the future emperor through an unknown connection; possibly by marriage
+	father = maniakies0001 # Could be a daughter of Constantine Maniakes, which would explain Constantine's support of Basil early on in Basil's career
 	religion = "orthodox"
 	culture = "greek"
 	trait = chaste
 	trait = content
+	trait = humble
 	trait = education_stewardship_2
 	834.1.1 = {
 		birth = "834.1.1"
+	}
+	864.12.31 = { # Symeon Magister records that "Basilium" repudiated "Mariam coniugem" in the eleventh year of the reign of Emperor Mikhael III, and that she was sent back with gold to her country of origin
+		effect = {
+			add_gold = 200
+		}
 	}
 	885.1.1 = {
 		death = "885.1.1"
 	}
 }
 
-145132 = {
+145132 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ22433/html
 	name = "Anastasia"
 	dynasty = 644
 	female = yes
@@ -16679,15 +16871,18 @@
 	culture = "greek"
 	father = 1700
 	mother = 145131
-	855.1.1 = {
-		birth = "855.1.1"
+	860.1.1 = { # considered by some to be the youngest child from the union between Basil I and Maria
+		birth = "860.1.1"
+	}
+	873.1.1 = { # Some time after his coronation, Basil I had his four daughters ordained as nuns in the Euphemia Monastery in Constantinople
+		trait = devoted
 	}
 	920.1.1 = {
 		death = "920.1.1"
 	}
 }
 
-145133 = {
+145133 = { # eldest son of the later Emperor Basil I and Basil's first wife Maria - https://www.degruyter.com/database/PMBZ/entry/PMBZ25896/html 
 	name = "Konstantinos"
 	dynasty = 644
 	religion = "orthodox"
@@ -16695,15 +16890,17 @@
 	trait = education_martial_3
 	father = 1700
 	mother = 145131
-	860.1.1 = {
-		birth = "860.1.1"
+	859.1.1 = { # He was born around 859 as the eldest son of the later Emperor Basil I and Maria
+		birth = "859.1.1"
 	}
-	879.9.3 = {
-		death = "879.9.3"
+	879.9.3 = { # In 879, K. was struck by a serious illness, to which he succumbed after a few days on September 3, 879, and was heavily mourned by his father
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
-145134 = {
+145134 = { # 8th century General Michael Melissenos - https://www.degruyter.com/database/PMBZ/entry/PMBZ16205/html
 	name = "Michael"
 	dynasty = 101399
 	religion = "iconoclast"
@@ -16717,13 +16914,18 @@
 	}
 }
 
-145135 = {
-	name = "Kallistos"
+145135 = { # Magistros Leo, son of Michael Melissenos, patrikios and relative of Emp. MICHAEL I RANGABE according to two questionable genealogies produced in the 16th and 17th centuries
+	name = "Leon"
 	dynasty = 101399
 	religion = "iconoclast"
 	culture = "greek"
-	trait = education_diplomacy_3
+	trait = education_learning_3 # If he is the father of Kallistos, he is described as having "distinguished himself for his hospitality, prudence and insight and after his death he healed many of unclean spirits and various diseases"
+	trait = gregarious
+	trait = temperate
+	trait = calm
+	trait = lifestyle_physician 
 	father = 145134
+	mother = laloudios0001
 	770.1.1 = {
 		birth = "770.1.1"
 	}
@@ -16732,7 +16934,7 @@
 	}
 }
 
-145136 = {
+145136 = { # Patrician and Strategos of the theme of Anatolikon during the period 843-852 - https://www.degruyter.com/database/PMBZ/entry/PMBZ19214/html
 	name = "Theodotos"
 	dynasty = 101399
 	religion = "orthodox"
@@ -16747,8 +16949,8 @@
 	}
 }
 
-145137 = {
-	name = "Kallistos" # D.Anatolia/c.Dorylaion
+145137 = { # tourmarches and subsequently duke of Kolonia
+	name = "Kallistos"
 	dynasty = 101399
 	religion = "orthodox"
 	culture = "greek"
@@ -16803,33 +17005,42 @@
 	}
 }
 
-145141 = {
+145141 = { # Joined the rebellion of Bardas Phokas and was captured by Basil II following the Battle at Abydos on April 13, 989. Later executed - https://www.degruyter.com/database/PMBZ/entry/PMBZ30181/html
 	name = "Theognostos"
 	dynasty = 101399
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_2
+	trait = honest
+	trait = arrogant
+	trait = impatient
 	father = 145140
 	955.1.1 = {
 		birth = "955.1.1"
 	}
 	990.1.1 = {
-		death = "990.1.1"
+		death = {
+			death_reason = death_execution
+			killer = 1716 # Basil II
+		}
 	}
 }
 
-145142 = {
+145142 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ26685/html
 	name = "Leon"
 	dynasty = 101399
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_martial_3
+	trait = education_martial_4 # Obviously Basil II believed in Leo’s military skills, as he appointed him domestic of the schools of the West and awarded him the title of magistros
+	trait = wrathful
+	trait = diligent
+	trait = humble # Told his brother not to insult the Emperor Basil II, and whipped his brother when his brother disobeyed him
 	father = 145140
-	960.1.1 = {
-		birth = "960.1.1"
+	950.1.1 = {
+		birth = "950.1.1"
 	}
-	1030.1.1 = {
-		death = "1030.1.1"
+	1010.1.1 = { # After the defeat at the battle on the Orontes on September 15, 994, nothing is known about Leon's further fate
+		death = "1010.1.1"
 	}
 }
 
@@ -16891,7 +17102,7 @@
 	}
 }
 
-145147 = {
+145147 = { # A soldier who caught Emperor Basil I's attention and was raised to the rank of tourmarches
 	name = "Leon" # C.Seleukeia
 	dna = 145147_leon_dna
 	dynasty = 641
@@ -16909,11 +17120,11 @@
 	}
 }
 
-145148 = {
+145148 = { # First known member of the Skleros who in 805 was a general of the Peloponnese issue - https://www.degruyter.com/database/PMBZ/entry/PMBZ15572/html
 	name = "Theodoros"
 	dynasty = 627
 	religion = "iconoclast"
-	culture = "greek"
+	culture = "greek" # came from “little Armenia”, possibly based in the border region between Byzantium and Armenia, “approximately in the later theme of Sebasteia”
 	trait = education_martial_3
 	father = 145806
 	760.1.1 = {
@@ -16930,7 +17141,7 @@
 	}
 }
 
-145149 = {
+145149 = { # Leon Skleros; general of the Peloponnese issue, who was appointed to this position after Michael I Ragave (811-813) took power and may have been the son or nephew of his predecessor in this office
 	name = "Leon"
 	dynasty = 627
 	religion = "iconoclast"
@@ -16945,12 +17156,13 @@
 	}
 }
 
-145150 = {
+145150 = { # Unknown member of the Skleros; possibly the Skleros temporarily in the service of the Arabs?
 	name = "Pantherios" # D.Athens/C.Atheniai
 	dynasty = 627
 	religion = "orthodox"
 	culture = "greek"
 	father = 145149
+	mother = Tourkos0002 #  Eirene, daughter of the Bardan Tourkos
 	trait = education_martial_2
 	810.1.1 = {
 		birth = "810.1.1"
@@ -16960,7 +17172,7 @@
 	}
 }
 
-145151 = {
+145151 = { # Magistros and anthypatos, and possibly the same Theodoros who took part in the council of 869/70 that condemned Patriarch Photios - https://www.degruyter.com/database/PMBZ/entry/PMBZ29286/html
 	name = "Theodoros" # C.Hellas
 	dynasty = 627
 	religion = "orthodox"
@@ -16975,7 +17187,7 @@
 	}
 }
 
-145152 = {
+145152 = { # Strategos of Hellas towards the end of the 9th century
 	name = "Antonios"
 	dynasty = 627
 	religion = "orthodox"
@@ -17029,16 +17241,16 @@
 	dynasty = 644
 	religion = "orthodox"
 	culture = "greek"
-		father = 145130
-	890.1.1 = {
-		birth = "890.1.1"
+	father = makedon0022
+	895.1.1 = {
+		birth = "895.1.1"
 	}
 	950.1.1 = {
 		death = "950.1.1"
 	}
 }
 
-145156 = {
+145156 = { # Byzantine aristocrat and general active in the middle of the 9th century, and the founder of the noble family of the Argyroi - https://en.wikipedia.org/wiki/Leo_Argyros_(9th_century)
 	name = "Leon" # D.Trebizond/C.Trapezous
 	dynasty = 639
 	religion = "orthodox"
@@ -17050,13 +17262,13 @@
 	trait = education_martial_3
 	
 	# Personality Traits
-	trait = zealous
+	trait = zealous # founded the monastery of Saint Elizabeth
 	trait = brave
 	
 	# Other Traits
 	trait = holy_warrior
 
-	810.1.1 = {
+	810.1.1 = { # He participated in the pogrom of 843 against the Paulicians, and distinguished himself in the border wars against the Arabs and their Paulician allies so must have been an adult by then
 		birth = "810.1.1"
 	}
 	870.1.1 = {
@@ -17064,7 +17276,7 @@
 	}
 }
 
-145157 = {
+145157 = { # Byzantine aristocrat and one of the most prominent generals under Emperor Leo VI the Wise - https://en.wikipedia.org/wiki/Eustathios_Argyros_(general_under_Leo_VI)
 	name = "Eustathios"
 	dynasty = 639
 	religion = "orthodox"
@@ -17080,6 +17292,7 @@
 	
 	# Education
 	trait = education_martial_3
+	trait = rowdy
 	
 	# Personality Traits
 	trait = just
@@ -17091,8 +17304,9 @@
 	trait = holy_warrior
 
 	father = 145156
-	850.1.1 = {
-		birth = "850.1.1"
+	disallow_random_traits = yes
+	855.1.1 = {
+		birth = "855.1.1"
 	}
 	910.1.1 = {
 		death = "910.1.1"
@@ -17177,15 +17391,20 @@
 	}
 }
 
-145163 = {
+145163 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ22321/html
 	name = "Agathe"
 	female = yes
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
 	father = 1706
-	912.1.1 = {
-		birth = "912.1.1"
+	mother = lekapenos0001
+	trait = compassionate
+	trait = forgiving
+	trait = temperate
+	trait = beauty_good_1 # On the occasion of her wedding, Theoph praises. cont. the beauty and virtues of the bride
+	908.1.1 = { # Vannier assumes that she was born around the year 908 
+		birth = "908.1.1"
 	}
 	970.1.1 = {
 		death = "970.1.1"
@@ -17299,12 +17518,15 @@
 	}
 }
 
-145171 = {
+145171 = { # Commander of the elite Hikanatoi tagma under Emperor Basil I, and later a leader of a conspiracy against the Emperor - https://www.degruyter.com/database/PMBZ/entry/PMBZ24978/html
 	name = "Ioannes" # D.Armeniakon/C.Amisos
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_3
+	trait = arrogant # Theophanes Continuatus describes him (though misnamed) as a wealthy and arrogant man
+	trait = zealous # Was pushed to become Emperor based on being proclaimed as such supposedly through Divine Inspiration
+	trait = ambitious # Lead a conspiracy to become Emperor
 	840.1.1 = {
 		birth = "840.1.1"
 	}
@@ -17313,8 +17535,8 @@
 	}
 }
 
-145172 = {
-	name = "Romanos"
+145172 = { # Unnamed son of the Domestikos of the Hikanatoi, Ioannes Kurkuas, and father of the Domestikos of the Scholen, Ioannes Kurkuas - https://www.degruyter.com/database/PMBZ/entry/PMBZ28990/html
+	name = "Romanos" # The name of Romanos is not strictly used, but can be assumed with some probability based on the naming of Kurkuas family members
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
@@ -17328,7 +17550,7 @@
 	}
 }
 
-145173 = {
+145173 = { # Famous Roman general who was said to have conquered more than 1,000 cities for Rhomaean rule and was hailed as a second Trajan or Belisarius - https://www.degruyter.com/database/PMBZ/entry/PMBZ25071/html
 	name = "Ioannes"
 	dynasty = 640
 	religion = "orthodox"
@@ -17339,23 +17561,32 @@
 	trait = diligent
 	trait = brave
 	trait = ambitious
-	trait = loyal
+	trait = loyal # Reports highlight his loyalty to Emperor Romanos I Lakapenos, and it is that synergy with the Emperor that allowed Ioannes to successfully expand
+	trait = strategist
 	father = 145172
 	890.1.1 = {
 		birth = "890.1.1"
 	}
-	950.1.1 = {
+	920.1.1 = {
+		add_spouse = kourkouasspouse0001
+	}
+	950.1.1 = { # Likely dead by 952 AD because he is described as “blessed” 
 		death = "950.1.1"
 	}
 }
 
-145174 = {
+145174 = { # Son of Ioannes Kurkuas and Maria; Magistros, Patrikios, Strategos (probably the Armeniakon), and Domestikos of the Scholen of the West - https://www.degruyter.com/database/PMBZ/entry/PMBZ29006/html
 	name = "Romanos"
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_3
+	trait = brave # Described as “very excellent and brave” 
+	trait = zealous # suffered from fever and was healed through the intervention of the Mother of God. In gratitude for the healing, R. served as depository (church servant) during the celebration of the liturgy in the Pege monastery
+	trait = content # Did not seek the throne for himself, but pushed Nikephoros II to ascend
+	trait = loyal # received a letter from Joseph Bringas in 963, in which Bringas asked him to take Bringas' side against Nikephoros Phokas. In return, Bringas promised the office of Domestikos of the West. Romanos instead showed his letters to Nikephoros
 	father = 145173
+	mother = kourkouasspouse0001
 	910.1.1 = {
 		birth = "910.1.1"
 	}
@@ -17369,13 +17600,18 @@
 	dynasty = 640
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_martial_2
+	trait = education_martial_1 # In contrast to his father, Ioannes is characterized as inexperienced and incompetent, which encouraged the Rus to intensify their attacks
+	trait = brave # Leon Diakonos considers I. to be brave
+	trait = gregarious # Leon Diakonos emphasizes that he was tired and sleepy during the fight where Ioannes lost his life because he drank too much wine
+	trait = cynical # Leon Diakonos explains that I's death was punishment for the crimes he had committed. Because he desecrated many churches in Bulgaria and profaned the sacred objects.
 	father = 145174
 	935.1.1 = {
 		birth = "935.1.1"
 	}
-	971.1.1 = {
-		death = "971.1.1"
+	971.1.1 = { # Perished in battle against the Rus in the summer of 971
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -17394,7 +17630,7 @@
 	}
 }
 
-145177 = {
+145177 = { # there are references to a John Kourkouas living in 1008, who held the titles of patrikios and anthypatos, as well as the title of katepano of Italy
 	name = "Ioannes"
 	dynasty = 640
 	religion = "orthodox"
@@ -17404,8 +17640,8 @@
 	975.1.1 = {
 		birth = "975.1.1"
 	}
-	1030.1.1 = {
-		death = "1030.1.1"
+	1010.1.1 = { # Lupus Protospatharios and Anonymus Barensis report the death of I in 1010 and the assumption of office by Basileios Mesardonites.
+		death = "1010.1.1"
 	}
 }
 
@@ -17419,7 +17655,10 @@
 	995.1.1 = {
 		birth = "995.1.1"
 	}
-	1027.1.1 = {
+	1025.1.1 = {
+		add_spouse = kometopoulos0003 # Daughter of Ivan Vladislav & sister to Presian
+	}
+	1027.1.1 = { # accused of conspiring against emperor Constantine VIII (1025-1028) and was blinded
 		trait = blind
 	}
 	1055.1.1 = {
@@ -17455,12 +17694,17 @@
 	}
 }
 
-145181 = {
-	name = "Konstantios" # C.Cephalonia
+145181 = { # A Illustrios, later promoted to Patrikios, and Empress Theophano's father - https://www.degruyter.com/database/PMBZ/entry/PMBZ15146/html
+	name = "Konstantinos" # C.Cephalonia
 	dynasty = 1022160
+	father = martinakoi0006
 	religion = "orthodox"
 	culture = "greek"
-	840.1.1 = {
+	trait = education_stewardship_3
+	trait = trusting
+	trait = zealous # According to the Vita Theophanus, Konstantinos and his wife were initially childless and therefore prayed. Then one night they were told in a dream that a daughter would be born
+	trait = patient
+	840.1.1 = { # Likely born between 835-845
 		birth = "840.1.1"
 	}
 	900.1.1 = {
@@ -17494,20 +17738,25 @@
 	}
 }
 
-145184 = {
+145184 = { # Follower of the later Emperor Basil I (867–886) who was involved in the murder of caesar Bardas and Emperor Michael III - https://www.degruyter.com/database/PMBZ/entry/PMBZ25898/html?lang=en
 	name = "Konstantinos" # C.Methone
 	dynasty = 1022163
+	father = toxaras0001
 	religion = "orthodox"
 	culture = "greek"
-	846.1.1 = {
-		birth = "846.1.1"
+	trait = education_martial_2
+	trait = brave # maybe died in battle
+	trait = ambitious
+	trait = callous # was involved in several murders, possibly killed by his own people
+	842.1.1 = {
+		birth = "842.1.1"
 	}
-	902.1.1 = {
-		death = "902.1.1"
+	884.1.1 = { # The Logothetic Chronicle states he was killed by the sword during the reign of Basil I in the area of ​​the theme of Kibyrrhaioton ((although it remains unclear whether he died in battle or was murdered by his own people))
+		death = "884.1.1"
 	}
 }
 
-145185 = {
+145185 = { # Fictional version of Ioannes Aplakes, Patrikios and Strategos of Macedonia who perished in a 813 battle against the Bulgarians? - https://www.degruyter.com/database/PMBZ/entry/PMBZ14336/html
 	name = "Ioannes" # D.Thessalonika/C.Thessalonike
 	dynasty = 1022164
 	religion = "orthodox"
@@ -17520,13 +17769,20 @@
 	}
 }
 
-145186 = {
+145186 = { # Belonged to the Macedonians who had been deported to the Danube by the Bulgarians after the capture of Adrianople, Leon later returned to Byzantium and eventuially became Hetaireiarches - https://www.degruyter.com/database/PMBZ/entry/PMBZ15615/html
 	name = "Leon" # C.Thessalia
 	dynasty = 1022165
 	religion = "orthodox"
 	culture = "greek"
-	846.1.1 = {
-		birth = "846.1.1"
+	trait = education_martial_2
+	trait = brave
+	trait = stubborn
+	trait = patient
+	828.1.1 = { # In 837, as a very young man (νεώτερος), he fought successfully with other Macedonians for their liberation from the Bulgarians
+		birth = "828.1.1"
+	}
+	867.1.1 = {
+		employer = 70490 # Michael II; there as Hetaireiarches
 	}
 	904.1.1 = {
 		death = "904.1.1"
@@ -17643,20 +17899,28 @@
 	}
 }
 
-145194 = {
+145194 = { # Made to represent Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme, regarded as the leader of the 42 Martyrs of Amorium - https://www.degruyter.com/database/PMBZ/entry/PMBZ18925/html	
 	name = "Theodoros" # D.Samos/C.Ephesos
 	dynasty = 101348
 	religion = "iconoclast"
 	culture = "greek"
-	father = 145831
-	832.1.1 = {
-		birth = "832.1.1"
+	father = krateros0001
+	trait = education_martial_3
+	trait = brave # victorious in a cavalry battle over a captured Saracen in the Hippodrome
+	trait = zealous # Refused to convert to Islam on the pain of death
+	trait = stubborn # Refused to convert to Islam on the pain of death
+	trait = eunuch
+	805.1.1 = {
+		birth = "805.1.1"
 	}
-	842.2.19 = {
+	843.3.11 = { # Feast of Orthodoxy
 		religion = "orthodox"
 	}
-	898.1.1 = {
-		death = "898.1.1"
+	845.3.6 = {
+		death = {
+			death_reason = death_execution
+			killer = 34009 # Caliph al-Wathiq
+		}
 	}
 }
 
@@ -17673,7 +17937,7 @@
 	}
 }
 
-145196 = {
+145196 = { # A fictional reference to Sisinnius, bishop of Perga, also known as Pastillas, who took part in the iconoclast Council of Hieria?
 	name = "Sisinnios" # D.Cibyrrhaeot/C.Attaleia
 	dynasty = 1022173
 	religion = "orthodox"
@@ -17865,28 +18129,29 @@
 	}
 	867.1.1 = {
 		give_nickname = nick_the_eunuch
-		employer = 34017 # Al-Muwaffak, Munis first appears as a ghulam (military slave) of the future caliph al-Mu'tadid (r. 892–902) during the suppression of the Zanj Rebellion in 880/1
+		# employer = 34017 # Al-Muwaffak, Munis first appears as a ghulam (military slave) of the future caliph al-Mu'tadid (r. 892–902) during the suppression of the Zanj Rebellion in 880/1
 	}
 	933.1.1 = {
 		death = "933.1.1"
 	}
 }
 
-145222 = {
+145222 = { # eldest son of Emperor Romanos I Lekapenos (r. 920–944) and co-emperor of the Byzantine Empire from 921 until his death in 931 - https://www.degruyter.com/database/PMBZ/entry/PMBZ23428/html
 	name = "Christophoros"
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
 	father = 1706
-	893.1.1 = {
+	mother = gambros0002
+	893.1.1 = { # probably born between the years 890 & 900 
 		birth = "893.1.1"
 	}
-	931.8.1 = {
+	931.8.1 = { # died in August of the 4th Indication (931), heavily mourned by his father Romanos
 		death = "931.8.1"
 	}
 }
 
-145223 = {
+145223 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ29405/html
 	name = "Stephanos"
 	dynasty = 642
 	religion = "orthodox"
@@ -17896,15 +18161,21 @@
 	trait = greedy
 	trait = education_diplomacy_1
 	father = 1706
-	896.1.1 = {
-		birth = "896.1.1"
+	mother = lekapenos0001
+	921.1.1 = { # He was probably born around the end of 920/beginning of 921. Stephanos and Konstantinos were referred to as Porphyrogennetoi, meaning they were born after the coronation of their father Romanos (920)
+		birth = "921.1.1"
 	}
-	963.4.18 = {
-		death = "963.4.18"
+	945.1.27 = { # On 27 January 945, at the urging of their sister, the Augusta Helena, another coup removed Stephanos and Konstantinos from power and restored the sole imperial authority to Constantine VII
+		trait = devoted
+	}
+	963.4.18 = { # He died on April 18, 963 (Easter Saturday), allegedly (attributed by hostile sources) poisoned on the orders of Theophanos, the widow of Romanos II
+		death = {
+			death_reason = death_poison
+		}
 	}
 }
 
-145224 = {
+145224 = { # https://www.degruyter.com/database/PMBZ/entry/PMBZ25985/html
 	name = "Konstantinos"
 	dynasty = 642
 	religion = "orthodox"
@@ -17912,11 +18183,17 @@
 	trait = trusting
 	trait = greedy
 	father = 1706
-	899.1.1 = {
-		birth = "899.1.1"
+	mother = lekapenos0001
+	922.2.20 = { # Stephanos and Konstantinos were referred to as Porphyrogennetoi, meaning they were born after the coronation of their father Romanos (920). Kresten–Müller speculate that his mother Theodora, who died on February 20, 922, may have died in childbirth, which would date his birth to shortly before February 20, 922
+		birth = "922.2.20"
 	}
-	947.1.1 = {
-		death = "947.1.1"
+	945.1.27 = { # On 27 January 945, at the urging of their sister, the Augusta Helena, another coup removed Stephanos and Konstantinos from power and restored the sole imperial authority to Constantine VII
+		trait = devoted
+	}
+	947.1.1 = { # killed while attempting to escape the island of Samothrace. The exact date is unknown, but since Theophanes Continuatus claims that the exiled Romanos I had a nightmare featuring his son's descent to Hell at the time of Constantine's death, it can be placed between 946 and Romanos's own death in 948
+		death = {
+			death_reason = death_scuffle_with_soldiers
+		}
 	}
 }
 
@@ -19110,6 +19387,7 @@
 	trait = humble
 	trait = zealous
 	trait = education_learning_3
+	trait = saint
 	father = 70501
 	mother = 145788
 	757.1.1 = {
@@ -19797,13 +20075,14 @@
 	}
 }
 
-145831 = {
+145831 = { # Unnamed possible member of the Krateros family, strategos of the Cibyrrhaeot Theme who was killed by Arabs following a failed expedition to Crete - https://www.degruyter.com/database/PMBZ/entry/PMBZ15314/html
 	name = "Niketas"
 	dynasty = 101348
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145830
-
+	trait = education_martial_3
+	trait = arrogant # overconfidence lead to the Roman defeat
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -19813,11 +20092,11 @@
 	815.1.1 = {
 		religion = "iconoclast"
 	}
-	842.2.19 = {
-		religion = "orthodox"
-	}
-	847.1.1 = {
-		death = "847.1.1"
+	829.1.1 = { # Captured by the Arabs and crucified; probably around 829
+		death = {
+			death_reason = death_execution
+			killer = 159525 # Emir of Crete to represent the Cretan Arabs
+		}
 	}
 }
 
@@ -19975,7 +20254,7 @@
 	}
 }
 
-145841 = {
+145841 = { # Distinguished Byzantine general and fanatical supporter of Byzantine Iconoclasm under Emperor Constantine V (r. 741–775) - https://www.degruyter.com/database/PMBZ/entry/PMBZ16204/html
 	name = "Michael"
 	dynasty = 1022148
 	religion = "iconoclast"
@@ -19988,11 +20267,16 @@
 	735.1.1 = {
 		birth = "735.1.1"
 	}
+	763.1.1 = { # some refer to him solely as ho Drakon (ὁ Δράκων, "the Dragon", alluding to his surname and the Biblical Beast)
+		give_nickname = nick_the_dragon_greek
+	}
 	787.10.23 = {
 		religion = "orthodox"
 	}
-	792.7.20 = {
-		death = "792.7.20"
+	792.7.20 = { # According to Theophanes he fell in the battle of Markellai against the Bulgarians in 792
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -20308,18 +20592,30 @@
 	}
 }
 
-145860 = {
+145860 = { # Bardanes, nicknamed Tourkos ("the Turk"); Byzantine general who launched an unsuccessful rebellion against Emperor Nikephoros I (r. 802–811) in 803 - https://www.degruyter.com/database/PMBZ/entry/PMBZ11854/html
 	name = "Bardanes"
 	dynasty = 1022310
 	religion = "iconoclast"
 	culture = "greek"
 	trait = education_martial_3
+	trait = ambitious # Launched a revolt against Emperor Nikephoros I
+	trait = generous # Bardanes had a good reputation in paying his soldiers, fairly dividing the booty won from the campaigns against the Arabs amongst the soldiers. Left a portion of his fortune to the poor in his will
+	trait = cynical # According to one story, before his revolt, Bardanes visited a holy man at Philomelion to learn of the prospects for the uprising. The monk correctly prophesied that his rebellion would fail which Bardanes refused to believe
+	father = Tourkosfather
+	mother = Tourkosmother
 
-	740.1.1 = {
-		birth = "740.1.1"
+	750.1.1 = {
+		birth = "750.1.1"
 	}
 	787.10.23 = {
 		religion = "orthodox"
+	}
+	803.9.8 = { # After the failure of a revolt against Emperor Nikephoros I in 803, Bardanes was forced to become a monk and took the monastic name Sabbas.
+		trait = devoted
+		name = "Sabbas"
+	}
+	804.1.1 = {
+		trait = blind # In December 803 (Treadgold puts it in 804), however, a group of "Lycaonian" soldiers disembarked at Prote and blinded Bardanes
 	}
 	805.1.1 = {
 		death = "805.1.1"
@@ -20952,12 +21248,18 @@
 	}
 }
 
-145930 = {
-	name = "Romanos"
+145930 = { # Strategos of Kibyrrhaiotai who succeeded in restricting the piratical activities of the Arabs of Crete - https://pbe.kcl.ac.uk/data/D60/F30.htm
+	name = "Romanos" # First name unknown
 	dynasty = 1022275
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145819
+	trait = education_martial_3
+	trait = generous
+	trait = diligent
+	trait = calm
+	trait = forder
+	trait = shrewd # He was a prudent and clever man, experienced in warfare (ἀνήρ τις στρατιωτικῆς πείρας, πρὸς δὲ καὶ φρονήσεως καὶ ἀγχινοίας οὐκ ἄμοιρος)
 	780.1.1 = {
 		birth = "780.1.1"
 	}
@@ -21006,7 +21308,7 @@
 	}
 }
 
-145932 = {
+145932 = { #  first strategos of Cherson - https://www.degruyter.com/database/PMBZ/entry/PMBZ17122/html
 	name = "Petronas"
 	dynasty = 101099
 	religion = "orthodox"

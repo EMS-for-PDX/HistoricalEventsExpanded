@@ -96,7 +96,7 @@ HEE_jeanne_darc.0001 = {
 				add_character_flag = is_jeanne_the_maid
 				add_character_flag = special_marshal
 
-				copy_inheritable_appearance_from = character:HEE_random_italian_woman
+				# copy_inheritable_appearance_from = character:HEE_random_italian_woman
 				add_character_flag = has_scripted_appearance
 
 				# Perks

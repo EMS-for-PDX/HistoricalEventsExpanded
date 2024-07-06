@@ -675,3 +675,88 @@ haki_the_beserker = { #
 		}
 	}
 }
+
+#Herjedalen
+hornbreaker0001 = { 
+	name = "Heriulfuer" # Härjulf Hornbreaker
+    dynasty = dynasty_hornbreaker # Hornbreaker
+	religion = "norse_pagan"
+	culture = "norse"
+	825.1.1 = {
+		birth = yes
+	}
+	863.1.1 = {
+		add_spouse = munsodaughter0001 # Helga daughter(or close kin) of Anud(in this case Björn) in Uppsala
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+munsodaughter0001 = {
+	name = "Helga"
+	female = yes
+    dynasty_house = house_munso # Munsö
+	father = 163108 # Should be Anud, but since PI wants to replace Anud with Bjørn...
+
+	religion = "norse_pagan"
+	culture = norse
+	
+	842.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+
+hornbreaker0002 = { 
+	name = "Hakon" #
+    dynasty = dynasty_hornbreaker # Hornbreaker
+	religion = "norse_pagan"
+	culture = "norse"
+	
+	father = hornbreaker0001
+	
+	850.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+hornbreaker0003 = { 
+	name = "Hucker" 
+    dynasty = dynasty_hornbreaker # Hornbreaker
+
+	religion = "norse_pagan"
+	culture = "norse"
+	
+	father = hornbreaker0001
+	
+	853.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+hornbreaker0004 = { 
+	name = "Enfast" 
+    dynasty = dynasty_hornbreaker # Hornbreaker
+	father = hornbreaker0001
+
+	religion = "norse_pagan"
+	culture = "norse"
+	
+	855.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+

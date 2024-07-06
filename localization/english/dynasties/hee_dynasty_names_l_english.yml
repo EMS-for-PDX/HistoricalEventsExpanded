@@ -17,7 +17,25 @@
  dynn_Baboutzikos: "Baboutzikos"
  
  dynn_Peganes: "Peganes"
+
+ dynn_Tzifinarites: "Tzifinarites"
  
+ dynn_Paspalas: "Paspalas"
+
+ dynn_Rendakios: "Rendakios"
+
+ dynn_Alypios: "Alypios"
+
+ dynn_Maniakies: "Maniakies"
+
+ dynn_Apostyppes: "Apostyppes"
+
+ dynn_Mosele: "Mosele"
+
+ dynn_Betalekes: "Betalekes"
+
+ dynn_Katakalon: "Katakalon"
+
  dynn_Martinakioi: "Martinakioi"
  
  dynn_Martinakoi: "Martinakoi"
@@ -28,8 +46,6 @@
  
  dynn_Magistros: "Magistros"
  
- dynn_Maniakes: "Maniakes"
- 
  dynn_Asbestas: "Asbestas"
 
  dynn_Kapnogenes: "Kapnogenes"
@@ -37,6 +53,8 @@
  dynn_Zaoutzes: "Zaoutzes"
 
  dynn_Mardaites: "Mardaites"
+
+ dynn_Julanda: "Banu al-Julanda"
 
  dynn_Numayrid: "Numayrid"
  
@@ -86,6 +104,8 @@
 
  dynn_Kent: "Kent"
 
+ dynn_Hornbreaker: "Hornbrjótr"
+
  dynn_Tikling: "Tikling"
 
  dynn_Knudlings: "Knudlings"
@@ -101,6 +121,10 @@
  dynn_Nantes: "Nantes"
 
  dynn_Loire: "Loire"
+
+ dynn_Ostrevent: "Ostrevent"
+
+ dynn_Vuifredingi: "Vuifredingi"
 
  dynn_Worms: "Worms"
 
@@ -133,3 +157,41 @@
  dynn_Granraude: "Granraude"
 
  dynn_Gullskjegg: "Gullskjegg"
+
+ dynn_Sigritsa: "Sigritsa"
+
+ dynn_Pheronymos: "Pheronymos"
+
+ dynn_Alateo: "Alateo"
+
+ dynn_Konstantinakios: "Konstantinakios"
+
+ dynn_Ioubes: "Ioubes"
+
+ dynn_Oiniates: "Oiniates"
+
+ dynn_Koxes: "Koxes"
+
+ dynn_Androsalitai: "Androsalitai"
+
+ dynn_Skythopoulos: "Skythópoulos"
+
+ dynn_Larissa: "Larissa"
+
+ dynn_Chryselios: "Chryselios"
+
+ dynn_Adralestina: "Adralestina"
+
+ dynn_Lydiates: "Lydiates"
+
+ dynn_Baiana: "Baiana"
+
+ dynn_Visevic: "Višević"
+
+ dynn_Kharsianon: "Kharsianon"
+
+ dynn_Aaronios: "Aaronios"
+
+ dynn_Parsakoutenos: "Parsakoutenos"
+
+ dynn_Saronites: "Saronites"

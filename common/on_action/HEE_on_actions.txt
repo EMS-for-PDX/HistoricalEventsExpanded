@@ -26,17 +26,17 @@ HEE_carolingian_dissolution = {
 		AND = {
 			game_start_date <= 867.1.1
 			NOT = { has_global_variable = carolingian_empire_has_dissolved }
-			exists = title:e_hre.holder
-			title:e_hre.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
+			exists = title:e_france.holder
+			title:e_france.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
 			OR = {
-				title:e_hre.holder = { has_trait = excommunicated }
-				title:e_hre.holder = { legitimacy_level <= 2 }
-				title:e_hre.holder = {	
+				title:e_france.holder = { has_trait = excommunicated }
+				title:e_france.holder = { legitimacy_level <= 2 }
+				title:e_france.holder = {	
 					any_vassal = {
 						count >= 4 # 4 Powerful vassals need to dislike you
 						is_powerful_vassal = yes
 						opinion = {
-							target = title:e_hre.holder
+							target = title:e_france.holder
 							value <= medium_negative_opinion
 						}
 					}
@@ -45,7 +45,7 @@ HEE_carolingian_dissolution = {
 		}
 	}
 	effect = {
-		title:e_hre.holder = {
+		title:e_france.holder = {
 			trigger_event = {
 				id = HEE_carolingian_dissolution.9999
 				days = { 1 365 }

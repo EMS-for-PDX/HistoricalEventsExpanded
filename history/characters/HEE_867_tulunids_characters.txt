@@ -385,9 +385,6 @@ HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - r
 	#Other Traits
 	trait = sayyid # Alid who revolted against the Abbasids in Barca
 
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
 	831.4.7 = { # Unknown
 		birth = yes
 	}

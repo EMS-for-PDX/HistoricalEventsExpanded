@@ -6,7 +6,10 @@ d_opsikion = {
 		holder = 145826
 	}
 	855.1.1 = {
-		holder = 145111
+		holder = peganes0001
+	}
+	867.1.1 = {
+		holder = skythopoulos0001
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -76,7 +79,10 @@ c_nikaea = {
 		holder = 145826
 	}
 	855.1.1 = {
-		holder = 145111
+		holder = peganes0001
+	}
+	867.1.1 = {
+		holder = skythopoulos0001
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -153,7 +159,10 @@ c_mysia = {
 		holder = 145826
 	}
 	855.1.1 = {
-		holder = 145111
+		holder = peganes0001
+	}
+	867.1.1 = {
+		holder = skythopoulos0001
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -390,7 +399,10 @@ d_ephese = {
 		holder = 145831
 	}
 	847.1.1 = {
-		holder = 145194
+		holder = 145137
+	}
+	867.1.1 = {
+		holder = paspalas0001 # Konstantinos Paspalas, strategos of Samos in 889
 	}
 	1060.1.1 = {
 		holder = 42003
@@ -453,7 +465,10 @@ c_ionia = {
 		holder=145831
 	}
 	847.1.1={
-		holder=145194
+		holder=145137
+	}
+	867.1.1 = {
+		holder = paspalas0001 # Konstantinos Paspalas, strategos of Samos in 889
 	}
 	1060.1.1={
 		holder=42003
@@ -569,8 +584,17 @@ d_thracesia = {
 	792.7.20 = {
 		holder = 145842
 	}
+	796.1.1 = {
+		holder = 145860 # # Bardanes Tourkos, who in 797, as strategos of the Thracesian Theme, supported the Empress-mother Irene of Athens when she usurped the throne from her son
+	}
 	847.1.1 = {
-		holder = 145116
+		holder = Mamikonian0007
+	}
+	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
+		holder = 145111
+	}
+	867.1.1 = {
+		holder = rendakios0009
 	}
 	1060.1.1 = {
 		holder = 20526
@@ -664,7 +688,13 @@ c_lydia = {
 		holder=145842
 	}
 	847.1.1={
-		holder=145116
+		holder=Mamikonian0007
+	}
+	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
+		holder = 145111
+	}
+	867.1.1 = {
+		holder = rendakios0009
 	}
 	1066.1.1={
 		holder=20526
@@ -740,7 +770,13 @@ c_thyatira = {
 		holder=145842
 	}
 	847.1.1={
-		holder=145116
+		holder=Mamikonian0007
+	}
+	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
+		holder = 145111
+	}
+	867.1.1 = {
+		holder = rendakios0009
 	}
 	1066.1.1={
 		holder=20526
@@ -816,7 +852,13 @@ c_hadrianeia = {
 		holder=145842
 	}
 	847.1.1={
-		holder=145116
+		holder=Mamikonian0007
+	}
+	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
+		holder = 145111
+	}
+	867.1.1 = {
+		holder = rendakios0009
 	}
 	1066.1.1={
 		holder=20526
@@ -895,7 +937,13 @@ c_chonae = {
 		holder = 145842
 	}
 	847.1.1 = {
-		holder = 145116
+		holder = Mamikonian0007
+	}
+	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
+		holder = 145111
+	}
+	867.1.1 = {
+		holder = rendakios0009
 	}
 	1066.1.1 = {
 		holder = 20489
@@ -1166,8 +1214,11 @@ d_bucellaria = {
 		liege = "e_byzantium"
 		holder=145839
 	}
+	835.1.1 = {
+		holder = 145194 # Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme
+	}
 	855.1.1={
-		holder=HEE_nasar
+		holder=nasar0002
 	}
 	1060.1.1= {
 		holder=1742
@@ -1189,8 +1240,11 @@ c_honorias = {
 	753.1.1={
 		holder=145839
 	}
+	835.1.1 = {
+		holder = 145194 # Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme
+	}
 	855.1.1={
-		holder=HEE_nasar
+		holder=nasar0002
 	}
 	1060.1.1= {
 		holder=1742
@@ -1281,8 +1335,11 @@ c_galatia = {
 	753.1.1 = {
 		holder = 145839
 	}
+	835.1.1 = {
+		holder = 145194 # Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme
+	}
 	855.1.1 = {
-		holder = HEE_nasar
+		holder = nasar0002
 	}
 	1060.1.1 = {
 		holder = 1742
@@ -1367,8 +1424,11 @@ c_hadrianopolis = {
 	753.1.1={
 		holder=145839
 	}
+	835.1.1 = {
+		holder = 145194 # Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme
+	}
 	855.1.1={
-		holder=HEE_nasar
+		holder=nasar0002
 	}
 	1060.1.1= {
 		holder=1742

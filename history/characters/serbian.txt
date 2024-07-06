@@ -376,7 +376,7 @@
 	}
 }
 
-40530 = {
+40530 = { # Prince of Zeta who was captured by Tsar Samuel but freed due to Samuel's relative Kosara falling in love with Vladimir and requesting his hand in marriage - https://www.degruyter.com/database/PMBZ/entry/PMBZ30589/html
 	name = "Jovan_Vladimir"
 	# AKA: Jovan Vladimir
 	dynasty = 101682
@@ -387,14 +387,22 @@
 	religion = "orthodox"
 	culture = "serbian"
 	father = 20496
+	trait = forgiving # Skylitzes describes him as temperate, peaceful and virtuous
+	trait = honest # Skylitzes describes him as temperate, peaceful and virtuous
+	trait = just # Skylitzes describes him as temperate, peaceful and virtuous
+	trait = temperate # Skylitzes describes him as temperate, peaceful and virtuous
 	978.1.1 = {
 		birth = "978.1.1"
 	}
 	1010.1.1 = {
 		add_spouse = 40531
 	}
-	1016.5.22 = {
-		death = "1016.5.22"
+	1016.5.22 = { # Vladimir was invited to Prespa by Ivan Vladislav, where he died on May 22, 1016 on Ivan's orders
+		trait = saint
+		death = {
+			death_reason = death_murder_known
+			killer = 722 # Tsar Ivan Vladislav
+		}
 	}
 }
 
@@ -2287,23 +2295,41 @@
 	father = 167861
 
 	#Skills
-	diplomacy = 6
-	martial = 6
-	stewardship = 6
-	intrigue = 5
-	learning = 5
-	prowess = 5
+	diplomacy = 8
+	martial = 8
+	stewardship = 7
+	intrigue = 7
+	learning = 6
+	prowess = 7
 	
 	#Education
-	trait = education_martial_2
+	trait = education_martial_3
 	
 	#Personality Traits
 	trait = calm
 	trait = just
 	trait = cynical	
 
+	#Other Traits
+	trait = unyielding_defender
+
 	830.1.1 = {
 		birth = "830.1.1"
+	}
+	865.1.1 = {
+		effect = { # Opinion loss towards his brothers to represent his reaction to their powerplays (or Mutimir's attempts at centralization of power)
+			add_opinion = {
+				target = character:167862
+				modifier = plotting_against_me_opinion
+				opinion = -100
+			}
+
+			add_opinion = {
+				target = character:167863
+				modifier = plotting_against_me_opinion
+				opinion = -100
+			}
+		}
 	}
 	870.1.1 = {
 		religion = orthodox
@@ -2391,6 +2417,12 @@
 	865.1.1 = {
 		set_relation_potential_rival = character:163116 #His brother Mutimir, who banished him after an attempted rebellion against Mutimir
 		employer = 70382 #Boris I, whose court he was exiled to after rebelling against his brother
+		effect = { # Opinion loss towards Mutimir to represent his distaste for his brother
+			add_opinion = {
+				target = character:163116
+				modifier = exiled_character_opinion
+			}
+		}
 	}
 	870.1.1 = {
 		religion = orthodox
@@ -2415,6 +2447,12 @@
 	865.1.1 = {
 		set_relation_potential_rival = character:163116 #His brother Mutimir, who banished him after an attempted rebellion against Mutimir
 		employer = 70382 #Boris I, whose court he was exiled to after rebelling against his brother
+		effect = { # Opinion loss towards Mutimir to represent his distaste for his brother
+			add_opinion = {
+				target = character:163116
+				modifier = exiled_character_opinion
+			}
+		}
 	}
 	870.1.1 = {
 		religion = orthodox

@@ -1,30 +1,144 @@
 ﻿## Characters for the Bulgarians - 867 ##
 
-HEE_george_sursuvul_father = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
+### Additional Krum's/Balgarsko Members (dynasty = 8636) ###
+balgarsko0001 = { # Oldest son of the Bulgarian Tsar Symeon from his first marriage - https://www.degruyter.com/database/PMBZ/entry/PMBZ27305/html
+	name = "Mihail"
+	dynasty = 8636
+	father = 712 # Simeon of Bulgaria
+	religion = "orthodox"
+	culture = "bulgarian"
+	trait = ambitious # Despite Simeon's intentions for succession, Mihail sought to overthrow his brother and become Tsar
+	895.1.1 = { # He was probably born in the 90s of the 9th century or around 900, at least before his brother Petăr, who was probably born in 903
+		birth = yes
+	}
+	920.1.1 = { # On the occasion of Symeon's death in 927, the chronicles report that he had previously made M. a monk, while he had appointed Petăr as his successor 
+		trait = devoted
+	}
+	930.1.1 = { # Around the year 929/30, M. rebelled against Petăr, but soon died 
+		death = yes
+	}
+}
+
+balgarsko0002 = { # From the suggestion of Patriarch Nikolaos Mystikos in a letter to Simeon on the subject of a marriage alliance between Bulgaria and Eastern Rome, it appears Simeon had atleast one daughter - https://www.degruyter.com/database/PMBZ/entry/PMBZ29622/html
+	name = "Anna"
+	female = yes
+	dynasty = 8636
+	father = 712 # Simeon of Bulgaria
+	mother = sursuvul0004 # Unnamed sister of George Sursuvul
+	religion = "orthodox"
+	culture = "bulgarian"
+	904.1.1 = { # Unknown
+		birth = yes
+	}
+	957.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+balgarsko0003 = { # Second son of the Bulgarian Tsar Symeon from his second marriage - https://www.degruyter.com/database/PMBZ/entry/PMBZ25057/html
+	name = "Ioannes"
+	dynasty = 8636
+	father = 712 # Simeon of Bulgaria
+	mother = sursuvul0004 # Unnamed sister of George Sursuvul
+	religion = "orthodox"
+	culture = "bulgarian"
+	905.1.1 = { # Unknown;  He was probably born some time after 903, the probable date of birth of his brother Petăr.
+		birth = yes
+	}
+	955.1.1 = { # Unknown; The chronicles unanimously report that after Symeon's death and Petăr's accession to the throne, his brothers I and Beniamin were still dressed in “Bulgarian costume”
+		death = yes
+	}
+}
+
+balgarsko0004 = { # Youngest son of the Bulgarian Tsar Symeon from his second marriage - https://www.degruyter.com/database/PMBZ/entry/PMBZ23297/html
+	name = "Beniamin"
+	dynasty = 8636
+	father = 712 # Simeon of Bulgaria
+	mother = sursuvul0004 # Unnamed sister of George Sursuvul
+	religion = "orthodox"
+	culture = "bulgarian"
+	trait = lifestyle_mystic # Liudprand of Cremona recounts a rumor - which he probably picked up in Constantinople - according to which B. was a magician who could transform himself from a human into a wolf or another wild animal
+	907.1.1 = { # Unknown;  He was probably born some time after 903, the probable date of birth of his brother Petăr.
+		birth = yes
+	}
+	961.1.1 = { # Unknown; The chronicles unanimously report that after Symeon's death and Petăr's accession to the throne, his brothers I and Beniamin were still dressed in “Bulgarian costume”
+		death = yes
+	}
+}
+
+balgarsko0005 = { # Unnamed daughter of Petar and Maria-Eirene Lekapenos, who traveled to Constantinople with her mother between 931 and around 933 to visit Maria-Eirene's father and grandfather
+	name = "Anna"
+	female = yes
+	dynasty = 8636
+	father = 714 # Petar of Bulgaria
+	mother = lekapenos0002
+	religion = "orthodox"
+	culture = "bulgarian"
+	929.1.1 = { # Unknown; likely born between 928 and 931
+		birth = yes
+	}
+	1010.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+balgarsko0006 = { # Unnamed daughter of Petar and Maria-Eirene Lekapenos, who traveled to Constantinople with her mother between 931 and around 933 to visit Maria-Eirene's father and grandfather
+	name = "Vasilka"
+	female = yes
+	dynasty = 8636
+	father = 714 # Petar of Bulgaria
+	mother = lekapenos0002
+	religion = "orthodox"
+	culture = "bulgarian"
+	930.1.1 = { # Unknown; likely born between 928 and 931
+		birth = yes
+	}
+	1010.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+balgarsko0007 = { # Unknown daughter of Boris II of Bulgaria, captured by Emperor John I Tzimisces along with their father, mother, and siblings - https://www.degruyter.com/database/PMBZ/entry/PMBZ23351/html / https://en.wikipedia.org/wiki/Boris_II_of_Bulgaria#Family
+	name = "Anna"
+	female = yes
+	dynasty = 8636
+	father = 716 # Boris II of Bulgaria
+	religion = "orthodox"
+	culture = "bulgarian"
+	972.1.1 = { # Unknown; born when Boris II spent 971-977 as a captive of the Byzantines
+		birth = yes
+	}
+	1015.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+balgarsko0008 = { # Unknown daughter of Boris II of Bulgaria, captured by Emperor John I Tzimisces along with their father, mother, and siblings - https://www.degruyter.com/database/PMBZ/entry/PMBZ23351/html / https://en.wikipedia.org/wiki/Boris_II_of_Bulgaria#Family
+	name = "Maria"
+	female = yes
+	dynasty = 8636
+	father = 716 # Boris II of Bulgaria
+	religion = "orthodox"
+	culture = "bulgarian"
+	975.1.1 = { # Unknown; born when Boris II spent 971-977 as a captive of the Byzantines
+		birth = yes
+	}
+	1010.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+### Family of George Sursuvul ###
+sursuvul0001 = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
 	name = "Kresimir"
-	dynasty = hee_sursuvul
+	dynasty = dynasty_sursuvul
 	religion = "tengri_pagan"
 	culture = "bulgarian"
-	# father = marinos
-	# mother =
-	# health = 5.0
-	
-	#Skills
-	
-	#Education
-	
-	#Personality Traits
-	
-	#Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
 	825.1.1 = { # Fictional
 		birth = yes
 	}
 	864.1.1 = {
-		add_spouse = HEE_george_sursuvul_mother
+		add_spouse = sursuvul0002
 		religion = "orthodox"
 	}
 	897.1.1 = { # Fictional
@@ -32,27 +146,11 @@ HEE_george_sursuvul_father = { # Family of George Sursuvul (essentially fictiona
 	}
 }
 
-HEE_george_sursuvul_mother = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
+sursuvul0002 = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
 	name = "Vasilka"
 	female = yes
-	# dynasty = hee_sursuvul
 	religion = "tengri_pagan"
 	culture = "bulgarian"
-	# father = marinos
-	# mother =
-	# health = 5.0
-	
-	#Skills
-	
-	#Education
-	
-	#Personality Traits
-	
-	#Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
 	833.1.1 = { # Fictional
 		birth = yes
 	}
@@ -64,31 +162,53 @@ HEE_george_sursuvul_mother = { # Family of George Sursuvul (essentially fictiona
 	}
 }
 
-HEE_theodore_sigritsa_father = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+sursuvul0003 = { # Georgi was the brother of the second wife of the Bulgarian Tsar Symeon and likely a close confidante of the Tsar - https://www.degruyter.com/database/PMBZ/entry/PMBZ24290/html
+	name = "Georgi"
+	dynasty = dynasty_sursuvul
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = sursuvul0001
+	mother = sursuvul0002
+	trait = shrewd
+	874.1.1 = {
+		birth = yes
+	}
+	950.1.1 = {
+		death = yes
+	}
+}
+
+sursuvul0004 = { # Unnamed second wife of the Bulgarian Tsar Symeon and the mother of his heir Petar
+	name = "Maria"
+	dynasty = dynasty_sursuvul
+	female = yes
+	father = "sursuvul0001"
+	mother = "sursuvul0002"
+	religion = orthodox
+	culture = bulgarian
+	886.1.1 = {
+		birth = yes
+	}
+	902.1.1 = {
+		add_spouse = 712
+	}
+	951.1.1 = {
+		death = yes
+	}
+}
+
+
+### Family of Theodore Sigritsa (essentially fictional) ###
+sigritsa0001 = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
 	name = "Symeon"
-	dynasty = hee_sigritsa
+	dynasty = dynasty_sigritsa
 	religion = "tengri_pagan"
 	culture = "bulgarian"
-	# father = marinos
-	# mother =
-	# health = 5.0
-	
-	#Skills
-	
-	#Education
-	
-	#Personality Traits
-	
-	#Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
 	829.1.1 = { # Fictional
 		birth = yes
 	}
 	864.1.1 = {
-		add_spouse = HEE_theodore_sigritsa_mother
+		add_spouse = sigritsa0002
 		religion = "orthodox"
 	}
 	892.1.1 = { # Fictional
@@ -96,26 +216,11 @@ HEE_theodore_sigritsa_father = { # Family of Theodore Sigritsa (essentially fict
 	}
 }
 
-HEE_theodore_sigritsa_mother = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+sigritsa0002 = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
 	name = "Vasilka"
 	female = yes
 	religion = "tengri_pagan"
 	culture = "bulgarian"
-	# father = marinos
-	# mother =
-	# health = 5.0
-	
-	#Skills
-	
-	#Education
-	
-	#Personality Traits
-	
-	#Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
 	831.1.1 = { # Fictional
 		birth = yes
 	}
@@ -127,25 +232,13 @@ HEE_theodore_sigritsa_mother = { # Family of Theodore Sigritsa (essentially fict
 	}
 }
 
-HEE_theodore_sigritsa = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+sigritsa0003 = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
 	name = "Theodore"
-	dynasty = hee_sigritsa
+	dynasty = dynasty_sigritsa
 	religion = "orthodox"
 	culture = "bulgarian"
-	father = HEE_theodore_sigritsa_father
-	mother = HEE_theodore_sigritsa_mother
-	# health = 5.0
-	
-	#Skills
-	
-	#Education
-	
-	#Personality Traits
-	
-	#Other Traits
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
+	father = sigritsa0001
+	mother = sigritsa0002
 	866.1.1 = { # Fictional
 		birth = yes
 	}
@@ -153,5 +246,524 @@ HEE_theodore_sigritsa = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Th
 		death = {
 			death_reason = death_battle
 		}
+	}
+}
+
+
+
+
+### Additional Kometopoulos Family ###
+### (dynasty = 702) ###
+### https://en.wikipedia.org/wiki/Cometopuli_dynasty ###
+kometopoulos_spouse0001 = { # wife of Komes Nikolaos and mother of the four Kometopuloi - https://www.degruyter.com/database/PMBZ/entry/PMBZ24786/html
+	name = "Hripsimeh"
+	female = yes
+
+	religion = "orthodox"
+	culture = "armenian"
+
+	921.1.1 = {
+		birth = yes
+	}
+	973.1.1 = { # Died before 992/93
+		death = yes
+	}
+}
+
+kometopoulos_spouse0002 = { # Armenian noblewoman from the theme of Kharsianon who married Alusian of Bulgaria
+	name = "Hripsimeh"
+	female = yes
+	dynasty = dynasty_kharsianon # of Kharsianon
+	religion = "orthodox"
+	culture = "armenian"
+	1012.1.1 = { # Unknown
+		birth = yes
+	}
+	1075.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0001 = { # Bulgarian noble, brother of Emperor Samuel and eldest son of komes Nicholas, member of the Cometopuli dynasty - https://www.degruyter.com/database/PMBZ/entry/PMBZ23586/html
+	name = "David"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 70381
+	mother = kometopoulos_spouse0001
+	trait = brave # gained high respect from Tsar Roman thanks to their (referring to the Kometopoulos brothers) bravery
+	938.1.1 = {
+		birth = yes
+	}
+	976.6.1 = { # killed by vagrant Vlachs between Prespa and Kostur, perhaps while trying to requisition part of the Vlach herds “as war supplies”
+		death = { 
+			death_reason = death_murder
+		}
+	}
+}
+
+kometopoulos0002 = { # second oldest of the four Kometopuloi - https://www.degruyter.com/database/PMBZ/entry/PMBZ27579/html
+	name = "Moisei"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 70381
+	mother = kometopoulos_spouse0001
+	trait = brave # gained high respect from Tsar Roman thanks to their (referring to the Kometopoulos brothers) bravery
+	939.1.1 = {
+		birth = yes
+	}
+	976.6.1 = { # mortally hit by a stone during the siege of Serres; according to another tradition, he fell from his horse and was killed by one of the people of Dux Leon Melissenos
+		death = { 
+			death_reason = death_battle
+		}
+	}
+}
+
+kometopoulos0003 = { # unnamed daughter of Ivan Vladislav who is recorded to have married Romanos Kourkouas, who was said to have conspired with his brother-in-law Presian against Konstantinos VIII leading to his first exile
+	name = "Aleksandra" 
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1000.1.1 = {
+		birth = yes
+	}
+	1059.1.1 = {
+		death = yes
+	}
+}
+
+kometopoulos0004 = { # presumably a younger son of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Radomir"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1014.1.1 = { # Unknown
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1066.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0005 = { # presumably a younger son of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Klimen"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1016.1.1 = { # Unknown
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1066.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0006 = { # Son of Aron, younger son of the Bulgarian Tsar Ivan Vladislav. Served as governor of Taron, but was killed in battle with the Turks in 1055
+	name = "Theodore"
+	dynasty_house = house_aaronios
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 20486
+	1030.1.1 = { # Unknown
+		birth = yes
+	}
+	1055.1.1 = { # killed in battle with the Turks in 1055
+		death = { 
+			death_reason = death_battle
+		}
+	}
+}
+
+kometopoulos0007 = { # Son of Radomir Aaronios who conspired against Alexios I Komnenos in 1107
+	name = "Aaron"
+	dynasty_house = house_aaronios
+	martial = 5
+	diplomacy = 4
+	intrigue = 4
+	stewardship = 5
+	religion = "orthodox"
+	culture = "greek"
+	father = 20479
+	1058.1.1 = {
+		birth = yes
+	}
+	1107.1.1 = {
+		death = yes
+	}
+}
+
+kometopoulos0008 = { # Unnamed daughter of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Anastazya"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1002.1.1 = {
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1065.1.1 = {
+		death = yes
+	}
+}
+
+kometopoulos0009 = { # Unnamed daughter of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Ana"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1005.1.1 = {
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1065.1.1 = {
+		death = yes
+	}
+}
+
+kometopoulos0010 = { # Unnamed daughter of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Kosara"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1008.1.1 = {
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1065.1.1 = {
+		death = yes
+	}
+}
+
+kometopoulos0011 = { # Unnamed daughter of the Bulgarian Tsar Ivan Vladislav, of which almost nothing is known
+	name = "Miroslava"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 722
+	mother = balgarsko0008
+	1011.1.1 = { # Unknown
+		birth = yes
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
+	}
+	1065.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0012 = { # Fictional child of Aron to represent his kin that were executed by Aron's brother Samuel
+	name = "David"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 720
+	979.1.1 = { # Fictional
+		birth = yes
+	}
+	988.7.14 = {
+		death = { # Aron together with all of his kin were executed by Aron's brother Samuel because of the secret negotiations between Aron and the Roman Emperor Basil II
+			death_reason = death_execution
+			killer = 728 # Samuel of Bulgaria
+		}
+	}
+}
+
+kometopoulos0013 = { # Fictional child of Aron to represent his kin that were executed by Aron's brother Samuel
+	name = "Miroslava"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 720
+	980.1.1 = { # Fictional
+		birth = yes
+	}
+	988.7.14 = {
+		death = { # Aron together with all of his kin were executed by Aron's brother Samuel because of the secret negotiations between Aron and the Roman Emperor Basil II
+			death_reason = death_execution
+			killer = 728 # Samuel of Bulgaria
+		}
+	}
+}
+
+kometopoulos0014 = { # Fictional child of Aron to represent his kin that were executed by Aron's brother Samuel
+	name = "Ekaterina"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 720
+	981.1.1 = { # Fictional
+		birth = yes
+	}
+	988.7.14 = {
+		death = { # Aron together with all of his kin were executed by Aron's brother Samuel because of the secret negotiations between Aron and the Roman Emperor Basil II
+			death_reason = death_murder_known
+			killer = 728 # Samuel of Bulgaria
+		}
+	}
+}
+
+kometopoulos0015 = { # Unnamed son of tsar Gavril Radomir of Bulgaria and Irene of Larissa; mutilated on the order of Ivan Vladislav
+	name = "Samuil"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1002.1.1 = { # Unknown
+		birth = yes
+	}
+	1015.10.1 = { # Skylitzes reports that Ivan Vladislav, who seized the throne in 1015, took steps to ensure his position and ordered the mutilation of Gavril Radomir's eldest son
+		trait = blind
+	}
+	1020.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include five sons of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0016 = { # Unnamed daughter of tsar Gavril Radomir of Bulgaria and Irene of Larissa
+	name = "Anastazya"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1005.1.1 = { # Unknown
+		birth = yes
+	}
+	1060.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include two daughters of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0017 = { # Unnamed son of tsar Gavril Radomir of Bulgaria and Irene of Larissa
+	name = "Nikola"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1007.1.1 = { # Unknown
+		birth = yes
+	}
+	1055.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include two daughters of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0018 = { # Unnamed son of tsar Gavril Radomir of Bulgaria and Irene of Larissa
+	name = "David"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1009.1.1 = { # Unknown
+		birth = yes
+	}
+	1058.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include two daughters of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0019 = { # Unnamed son of tsar Gavril Radomir of Bulgaria and Irene of Larissa
+	name = "Moisei"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1011.1.1 = { # Unknown
+		birth = yes
+	}
+	1063.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include two daughters of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0020 = { # Unnamed son of tsar Gavril Radomir of Bulgaria and Irene of Larissa
+	name = "Presian"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 730
+	mother = larissa0001
+	1013.1.1 = { # Unknown
+		birth = yes
+	}
+	1066.1.1 = { # Unknown, but when the Bulgarian resistance collapsed after the death of Ivan Vladislav in 1018, Maria, Ivan Vladislav's wife, went to Emperor Basil II together with her children and numerous other relatives. These relatives also include two daughters of Gavril
+		death = yes
+	}
+}
+
+kometopoulos0021 = { # Unnamed daughter of Samuel mentioned after the Bulgarian surrender in 1018. Reported in some places that she was called Anastazya and that she was married to Vazul of Hungary
+	name = "Anastazya"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 728
+	mother = chryselios0002
+	trait = wrathful # While Basil II was in Kastoria, two of Samuil's daughters saw the honors the Emperor was paying to Ivan Vladislav's widow Maria and rushed at her to kill her
+	984.1.1 = { # Unknown
+		birth = yes
+	}
+	1031.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0022 = { # Unnamed daughter of Samuel mentioned after the Bulgarian surrender in 1018
+	name = "Aleksandra"
+	female = yes
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 728
+	mother = chryselios0002
+	trait = vengeful # While Basil II was in Kastoria, two of Samuil's daughters saw the honors the Emperor was paying to Ivan Vladislav's widow Maria and rushed at her to kill her
+	985.1.1 = { # Unknown
+		birth = yes
+	}
+	1040.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kometopoulos0023 = { # When the Bulgarian resistance collapsed after the death of Tsar Ivan Vladislav in 1018, Ivan Vladislav's widow, Maria, also went to Basil II with her children and other relatives. Among these relatives An illegitimate son of Samuil is mentioned
+	name = "Petar"
+	dynasty = 702
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = 728
+	trait = bastard
+	1000.1.1 = { # Unknown, but going with the idea it was after Samuil's wife's death
+		birth = yes
+	}
+	1066.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+### MISC CHARACTERS ### 
+ichirguboil0001 = { # Stazis, recorded as Ichirgu-boil (High official title in the early-medieval Bulgarian state, governor of its “interior region”) during the council of Constantinople in 870
+	name = "Stazis"
+	dynasty = 1000101424	
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	830.1.1 = {
+		birth = yes
+	}
+	879.1.1 = {
+		death = yes
+	}
+}
+
+bagatur0001 = { # Sundika, recorded as Bagatur (literally “brave man”. A title from the ruling system from the time of the First Bulgarian state. Given mainly for military merits.) during the council of Constantinople in 870
+	name = "Sundika"
+	dynasty = 1000101428	
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	831.1.1 = {
+		birth = yes
+	}
+	883.1.1 = {
+		death = yes
+	}
+}
+
+tarkan0001 = { # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
+	name = "Iliya"
+	dynasty = 1000101426	
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	834.1.1 = {
+		birth = yes
+	}
+	889.1.1 = {
+		death = yes
+	}
+}
+
+tarkan0002 = { # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
+	name = "Boris"
+	dynasty = 1000101427
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	845.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+}
+
+tarkan0003 = { # Taridin, recorded in Theophylact's Historia Martyrii story as the local "count" in the Tiberioupolis (Strumica) area. Runciman is quoting this book. A bit fuzzy Chronology, but it is either late 880'ies or early 890'ies.
+	name = "Taridin"
+	dynasty = 1000101425
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	848.1.1 = {
+		birth = yes
+	}
+	903.1.1 = {
+		death = yes
+	}
+}
+
+sampsis0001 = { # Alexios Hunol, recorded as Sampsis during the council of Constantinople in 870
+	name="Aleksii"
+	dynasty = dynasty_hunol	
+	religion = "orthodox"
+	culture = "bulgarian"
+
+	836.1.1 = {
+		birth = yes
+	}
+	890.1.1 = {
+		death = yes
 	}
 }

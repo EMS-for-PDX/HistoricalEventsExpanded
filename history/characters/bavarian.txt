@@ -3460,7 +3460,7 @@
 	}
 }
 
-144974 = {
+144974 = { # https://en.wikipedia.org/wiki/Rudolph,_Count_of_Ponthieu
 	name = "Rudolf"
 	dynasty = 650
 	religion = "catholic"

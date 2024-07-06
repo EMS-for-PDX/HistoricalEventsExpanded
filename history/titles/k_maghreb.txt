@@ -163,8 +163,11 @@ c_marrakesh = {
 	848.1.1 = {
 		holder = 159505
 	}
+	863.1.1 = {
+		holder = 159506
+	}
 	864.1.1 = {
-		holder = 159508 # Ali
+		holder = idrisid0006 # Yahya ibn Yahya's uncle Husayn who received much land to the south of the capital
 	}
 	1055.1.1 = {
 		holder = 32958
@@ -258,14 +261,8 @@ c_tadla = {
 	828.1.1 = {
 		holder = 159503
 	}
-	836.1.1 = {
-		holder = 159504
-	}
-	848.1.1 = {
-		holder = 159505
-	}
-	864.1.1 = {
-		holder = 159508 # Ali
+	830.1.1 = {
+		holder = idrisid0004
 	}
 
 	1055.1.1 = {
@@ -362,14 +359,8 @@ c_fazaz = {
 	828.1.1 = {
 		holder = 159503
 	}
-	836.1.1 = {
-		holder = 159504
-	}
-	848.1.1 = {
-		holder = 159505
-	}
-	864.1.1 = {
-		holder = 159508 # Ali
+	830.1.1 = {
+		holder = idrisid0004
 	}
 	1055.1.1 = {
 		holder = 32958
@@ -690,6 +681,12 @@ c_tinmallal = {
 	848.1.1 = {
 		holder = 159505
 	}
+	863.1.1 = {
+		holder = 159506
+	}
+	864.1.1 = {
+		holder = idrisid0006 # Yahya ibn Yahya's uncle Husayn who received much land to the south of the capital
+	}
 	864.1.1 = {
 		holder = 159508 # Ali
 	}
@@ -772,12 +769,16 @@ d_sous = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
 
+	830.1.1 = {
+		liege = k_maghreb
+		holder = idrisid0005 # Under Muhammad (828–836) the kingdom was divided amongst seven of his brothers, with 'Ubayd Allah (or 'Abd Allah) being given the south, including the territory of the Lamta tribes
+	}
+
 }
 
 c_sous = {
-	842.1.1 = {
-		government = tribal_government
-		holder = butr0007
+	830.1.1 = {
+		holder = idrisid0005 # Under Muhammad (828–836) the kingdom was divided amongst seven of his brothers, with 'Ubayd Allah (or 'Abd Allah) being given the south, including the territory of the Lamta tribes
 	}
 	888.1.1 = {
 		holder = butr0012
@@ -882,12 +883,14 @@ c_agadir = {
 		holder = 273107
 		government = tribal_government
 	}
-	812.1.1 = {
-		#liege = "k_maghreb"
-		holder = 273106
+	825.1.1 = {
+		holder = 159502 # When Idris II died in 828, the Idrisid state spanned from western Algeria to the Sous in southern Morocco and had become the leading state of Morocco
 	}
-	850.1.1 = {
-		holder = 273097
+	828.1.1 = {
+		holder = 159503
+	}
+	830.1.1 = {
+		holder = idrisid0005 # Under Muhammad (828–836) the kingdom was divided amongst seven of his brothers, with 'Ubayd Allah (or 'Abd Allah) being given the south, including the territory of the Lamta tribes
 	}
 	882.1.1 = {
 		holder = 273080
@@ -998,8 +1001,14 @@ c_ifni = {
 		#liege = "k_maghreb"
 		holder = 273106
 	}
-	850.1.1 = {
-		holder = 273097
+	825.1.1 = {
+		holder = 159502 # When Idris II died in 828, the Idrisid state spanned from western Algeria to the Sous in southern Morocco and had become the leading state of Morocco
+	}
+	828.1.1 = {
+		holder = 159503
+	}
+	830.1.1 = {
+		holder = idrisid0005 # Under Muhammad (828–836) the kingdom was divided amongst seven of his brothers, with 'Ubayd Allah (or 'Abd Allah) being given the south, including the territory of the Lamta tribes
 	}
 	882.1.1 = {
 		holder = 273080
@@ -1767,9 +1776,11 @@ c_muluya = {
 	848.1.1 = {
 		holder = 159505
 	}
-	866.1.1 = {
-		liege = "d_fes"
+	863.1.1 = {
 		holder = 159506 # Yahya II
+	}
+	866.6.1 = {
+		holder = idrisid0002 # Al-Qasim ibn Idris; in the reign of Yahya II, his family received governance of the western half of the Idrisid capital, Fes, along with the eastern frontier provinces
 	}
 	1015.1.1 = {
 		holder = 155001
@@ -1869,9 +1880,11 @@ c_taza = {
 	848.1.1 = {
 		holder = 159505
 	}
-	866.1.1 = {
-		liege = "d_fes"
+	863.1.1 = {
 		holder = 159506 # Yahya II
+	}
+	866.6.1 = {
+		holder = idrisid0002 # Al-Qasim ibn Idris; in the reign of Yahya II, his family received governance of the western half of the Idrisid capital, Fes, along with the eastern frontier provinces
 	}
 
 	1015.1.1 = {
@@ -1968,15 +1981,8 @@ c_meknes = {
 	828.1.1 = {
 		holder = 159503
 	}
-	836.1.1 = {
-		holder = 159504
-	}
-	848.1.1 = {
-		holder = 159505
-	}
-	866.1.1 = {
-		liege = "d_fes"
-		holder = 159506 # Yahya II
+	830.1.1 = {
+		holder = idrisid0004 # Under Muhammad (828–836) the kingdom was divided amongst seven of his brothers, with Hamza recieving Walili
 	}
 	1001.1.1 = {
 		holder = 155008

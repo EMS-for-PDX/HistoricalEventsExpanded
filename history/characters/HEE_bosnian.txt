@@ -1,0 +1,34 @@
+﻿###############################################################
+#  HEE Bosnian characters
+###############################################################
+# Dynasties: 
+# Characters: 
+##############################################################################################
+
+bosnian0001 = { # Based on semi-mythical Chronicle of the Priest of Duklja (13th century), according to some scholars the earliest known ruler of Bosnia was Ratimir in 838 AD
+	name = "Ratimir"
+	dynasty = dynasty_bosnian
+	religion = "slavic_pagan"
+	culture = "bosnian"
+	800.1.1 = {
+		birth = yes
+	}
+	856.1.1 = {
+		death = yes
+	}
+}
+
+bosnian0002 = { # According to later Annales Ragusini (14-17th century), the death of childless Stiepan in 871 was followed by 17 years war which was ended by Croatian ruler Bereslav's conquest of Bosnia
+	name = "Stiepan"
+	dynasty = dynasty_bosnian
+	religion = "bosnian_church"
+	culture = "bosnian"
+	father = bosnian0001
+    trait = infertile
+	830.1.1 = {
+		birth = yes
+	}
+	871.1.1 = {
+		death = yes
+	}
+}

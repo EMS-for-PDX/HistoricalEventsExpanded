@@ -223,7 +223,7 @@ HEE_carolingian_dissolution.9999 = {
 		
 		# custom_tooltip = Provide Historical Context?
 
-		destroy_title = title:e_hre # Actually dissolve the Empire
+		destroy_title = title:e_france # Actually dissolve the Empire
 
 		# EAST FRANCIA
 		if = {

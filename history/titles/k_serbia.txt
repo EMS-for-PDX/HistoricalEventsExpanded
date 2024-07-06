@@ -474,14 +474,8 @@ c_hvosno = {
 	843.1.1 = {
 		liege = "d_dyrrachion"
 	}
-	852.1.1 = {
-		holder = 70382 #Boris
-	}
-	860.1.1 = {
-		holder = 168067
-	}
-	863.1.1 = {
-		liege = "e_bulgarian_principality"
+	850.1.1 = {
+		holder = 163116 # Mutimir of Serbia
 	}
 	1066.1.1 = {
 		holder = 20482
@@ -553,20 +547,9 @@ d_macva = {
 	610.1.1 = {
 		liege = 0
 	}
-	768.1.1 = {
-		holder = 167858
-	}
-	814.1.1 = {
-		holder = 167859
-	}
-	822.1.1 = {
-		holder = 167860
-	}
-	836.1.1 = {
-		holder = 167861
-	}
-	850.1.1 = {
-		holder = 163116
+	865.1.1 = {
+		holder = tarkan0002 # # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
+		liege = "e_bulgarian_principality"
 	}
 	891.1.1 = {
 		holder = 167869
@@ -659,11 +642,12 @@ c_macva = {
 	539.1.1 = {
 		liege = "d_rashka"
 	}
-	768.1.1 = {
-		holder = 167858
+	852.1.1 = {
+		holder = 70382 #Boris
 	}
-	850.1.1 = {
-		holder = 163116
+	865.1.1 = {
+		holder = tarkan0002 # # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
+		liege = "e_bulgarian_principality"
 	}
 	1060.1.1 = {
 		liege = "d_vidin"
@@ -751,16 +735,11 @@ c_beograd = {
 	768.1.1 = {
 		holder = 167859
 	}
-	805.1.1 = {
-		liege = "k_bulgaria"
-	}
 	852.1.1 = {
 		holder = 70382 #Boris
 	}
-	860.1.1 = {
-		holder = 168067
-	}
-	863.1.1 = {
+	865.1.1 = {
+		holder = tarkan0002 # # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
 		liege = "e_bulgarian_principality"
 	}
 	1060.1.1 = {
@@ -957,9 +936,8 @@ c_duklja = {
 	#768.1.1 = {
 	#	holder = 167858
 	#}
-	865.1.1 = {
-		liege = 0
-		holder = 303450	#fictional serbian Miroslav
+	850.1.1 = {
+		holder = 163116 # Mutimir of Serbia
 	}
 	1060.1.1 = {
 		liege = d_duklja
@@ -1118,12 +1096,24 @@ c_travunia = {
 	#330.1.1 = {
 	#	liege = "d_duklja"
 	#}
-	#768.1.1 = {
-	#	holder = 167858
-	#}
-	865.1.1 = {
-		liege = 0
-		holder = 303449	#fictional serbian Uros
+	757.1.1 = { # Travunian dynasty
+		holder = 146010
+	}
+	786.1.1 = { # Travunian dynasty
+		holder = 146009
+	}
+	813.1.1 = { # Travunian dynasty
+		holder = 167865
+	}
+	841.1.1 = { # Travunian dynasty
+		liege = "d_rashka"
+		holder = 167866
+	}
+	848.1.1 = { # Travunian dynasty
+		holder = 167867
+	}
+	892.1.1 = { # Travunian dynasty
+		holder = 167868
 	}
 	1060.1.1 = {
 		liege = d_duklja

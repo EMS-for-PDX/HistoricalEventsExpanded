@@ -1,5 +1,5 @@
 # Auto generated file, do not edit manually. Created using console command dump_bookmark_portraits
-# History database id:HEE_basiliskianos
+# History database id:kapnogenes0002
 bookmark_hee_byzantine_basiliskianos={
 	type=male
 	id=7712

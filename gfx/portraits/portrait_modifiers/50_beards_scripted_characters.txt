@@ -19,8 +19,8 @@ beards_scripted_characters = {
             modifier = {
                 add = 999
                 exists = this
-                exists = character:HEE_nasar
-                this = character:HEE_nasar
+                exists = character:nasar0002
+                this = character:nasar0002
             }
         }
     }
@@ -41,32 +41,6 @@ beards_scripted_characters = {
 				exists = this
 				exists = character:41316 #Nikephoros Phokas the Elder
 				this = character:41316 #Nikephoros Phokas the Elder
-            }
-        }
-    }
-
-    male_beard_mena_04 = { # Short stylish
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = beards
-                template = scripted_character_beards_01
-                value = 0.45 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_digenes_akritas 
-                this = character:HEE_digenes_akritas 
-            }
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:HEE_random_italian_villain_1
-                this = character:HEE_random_italian_villain_1
             }
         }
     }

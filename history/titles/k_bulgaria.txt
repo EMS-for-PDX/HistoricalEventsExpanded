@@ -2268,8 +2268,8 @@ c_pirin = {
 		liege = "k_bulgaria"
 	}
 	860.1.1 = {
-		holder = 70383
-		liege = "d_vidin"
+		holder = tarkan0003 # # Taridin, recorded in Theophylact's Historia Martyrii story as the local "count" in the Tiberioupolis (Strumica) area. Runciman is quoting this book. A bit fuzzy Chronology, but it is either late 880'ies or early 890'ies.
+		liege = "d_bulgaria"
 	}
 	1060.1.1 = {
 		holder = 20484
@@ -2351,8 +2351,8 @@ c_strumica = {
 		liege = "k_bulgaria"
 	}
 	860.1.1 = {
-		holder = 70383
-		liege = "d_vidin"
+		holder = tarkan0003 # # Taridin, recorded in Theophylact's Historia Martyrii story as the local "count" in the Tiberioupolis (Strumica) area. Runciman is quoting this book. A bit fuzzy Chronology, but it is either late 880'ies or early 890'ies.
+		liege = "d_bulgaria"
 	}
 	1060.1.1 = {
 		holder = 20484
@@ -2667,6 +2667,10 @@ d_philippopolis = {
 	852.1.1 = {
 		holder = 70382
 	}
+	864.1.1 = {
+		holder = apostyppes0001 # Leo Apostyppes; appears in 880 as Strategos of the themes of Macedonia and Thrace
+		liege = "e_byzantium"
+	}
 	893.1.1 = {
 		holder = 712
 	}
@@ -2764,12 +2768,11 @@ c_philippopolis = {
 	842.1.20 = {
 		holder = 70490
 	}
-	866.9.24 = {
-		#holder = 1700
+	864.11.22 = {
 		holder = 70382
 	}
-	867.1.1 = {
-		holder = HEE_theodore_sigritsa_father
+	865.1.1 = {
+		holder = tarkan0001 # # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
 		liege = e_bulgarian_principality
 	}
 	
@@ -2904,8 +2907,8 @@ c_kran = {
 	852.1.1 = {
 		holder = 70382 #Boris
 	}
-	867.1.1 = {
-		holder = HEE_theodore_sigritsa_father
+	865.1.1 = {
+		holder = tarkan0001 # # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
 	}
 	1066.1.1 = {
 		holder = 1748
@@ -3009,12 +3012,12 @@ c_beroe = {
 	842.1.20 = {
 		holder = 70490
 	}
-	866.9.24 = {
-		#holder = 1700
+	864.11.22 = {
 		holder = 70382
 	}
-	867.1.1 = {
-		holder = HEE_theodore_sigritsa_father
+	865.1.1 = {
+		holder = tarkan0001 # # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
+		liege = e_bulgarian_principality
 	}
 	
 	1064.1.1 = {
@@ -3189,11 +3192,8 @@ c_adrianopolis = {
 	842.1.20 = {
 		holder = 70490
 	}
-	# 866.9.24 = {
-		# holder = 1700
-	# }
-	867.9.24 = {
-		holder = 1700
+	864.1.1 = {
+		holder = apostyppes0001 # Leo Apostyppes; appears in 880 as Strategos of the themes of Macedonia and Thrace
 	}
 	1064.1.1 = {
 		holder = 1736
@@ -3263,13 +3263,8 @@ c_zherkovo = {
 	842.1.20 = {
 		holder = 70490
 	}
-	866.9.24 = {
-		#holder = 1700
-		holder = 70382
-	}
-	867.1.1 = {
-		holder = HEE_george_sursuvul_father
-		liege = e_bulgarian_principality
+	864.1.1 = {
+		holder = apostyppes0001 # Leo Apostyppes; appears in 880 as Strategos of the themes of Macedonia and Thrace
 	}
 	
 	1064.1.1 = {
@@ -3352,12 +3347,12 @@ c_rhodopes = {
 	842.1.20 = {
 		holder = 70490
 	}
-	866.9.24 = {
-		#holder = 1700
+	864.11.22 = {
 		holder = 70382
 	}
-	867.1.1 = {
-		holder = HEE_george_sursuvul_father
+	865.1.1 = {
+		holder = bagatur0001 # Sundika, recorded as Bagatur (literally “brave man”. A title from the ruling system from the time of the First Bulgarian state. Given mainly for military merits.) during the council of Constantinople in 870
+		liege = e_bulgarian_principality
 	}
 	
 	1064.1.1 = {

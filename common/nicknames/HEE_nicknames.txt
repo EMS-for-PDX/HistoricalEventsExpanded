@@ -19,3 +19,7 @@ nick_the_bloodshedder = {}
 nick_darc = {}
 nick_the_maid = {}
 nick_la_pucelle = {}
+nick_the_dragon_greek = {}
+nick_the_bastard_greek = {}
+nick_the_macedonian = {}
+nick_the_cretan = {}

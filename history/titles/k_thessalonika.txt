@@ -624,6 +624,9 @@ c_kalliopolis = {
 	# 866.9.24 = { # The PDX prefered date
 		# holder = 1700
 	# }
+	864.1.1 = {
+		holder = apostyppes0001 # Leo Apostyppes; appears in 880 as Strategos of the themes of Macedonia and Thrace
+	}
 	867.9.24 = { # Historical
 		holder = 1700
 	}
@@ -798,7 +801,7 @@ d_strymon = {
 		holder = 145796
 	}
 	866.9.24 = {
-		holder = 145185 # Character who controls all the land
+		holder = 145108 # Character who controls all the land
 	}
 	
 	1066.1.1 = {
@@ -861,7 +864,9 @@ c_mosynopolis = {
 	855.1.1 = {
 		holder = 145108
 	}
-	
+	864.1.1 = {
+		holder = apostyppes0001 # Leo Apostyppes; appears in 880 as Strategos of the themes of Macedonia and Thrace
+	}
 	1066.1.1 = {
 		liege = "d_strymon"
 	}
@@ -1017,9 +1022,6 @@ d_aegean_islands = {
 	762.1.1 = {
 		holder = 145819
 	}
-	801.1.1 = {
-		holder = 145930
-	}
 	842.1.1 = {
 		holder = 145931
 	}
@@ -1132,9 +1134,6 @@ c_abydos = {
 	}
 	762.1.1 = {
 		holder = 145819
-	}
-	801.1.1 = {
-		holder = 145930
 	}
 	842.1.1 = {
 		holder = 145931
@@ -1456,8 +1455,8 @@ d_thessalonika = {
 	754.1.1 = {
 		holder = 145814
 	}
-	855.1.1 = {
-		holder = 145185
+	855.1.1 = { # Merging Konstantinos Maniakies with an unknown Konstantinos who was Strategos of Thessalonike (according to seal dateable to the ninth century) - https://pbe.kcl.ac.uk/data/D43/F95.htm
+		holder = maniakies0001
 	}
 	1030.1.1 = {
 		holder = 1744
@@ -1557,8 +1556,8 @@ c_thessalonika = {
 	754.1.1 = {
 		holder = 145814
 	}
-	855.1.1 = {
-		holder = 145185
+	855.1.1 = { # Merging Konstantinos Maniakies with an unknown Konstantinos who was Strategos of Thessalonike (according to seal dateable to the ninth century) - https://pbe.kcl.ac.uk/data/D43/F95.htm
+		holder = maniakies0001
 	}
 	1050.1.1 = {
 		holder = 1732
@@ -1643,8 +1642,8 @@ c_chalkidike = {
 	756.1.1 = {
 		holder = 145815
 	}
-	855.1.1 = {
-		holder = 145108
+	855.1.1 = { # Merging Konstantinos Maniakies with an unknown Konstantinos who was Strategos of Thessalonike (according to seal dateable to the ninth century) - https://pbe.kcl.ac.uk/data/D43/F95.htm
+		holder = maniakies0001
 	}	
 	1060.1.1 = {
 		holder = 41308	#Nikephoros Basiliakos, strategos of Thessalonika
@@ -1719,8 +1718,8 @@ c_veria = {
 	754.1.1 = {
 		holder = 145814
 	}
-	855.1.1 = {
-		holder = 145185
+	855.1.1 = { # Merging Konstantinos Maniakies with an unknown Konstantinos who was Strategos of Thessalonike (according to seal dateable to the ninth century) - https://pbe.kcl.ac.uk/data/D43/F95.htm
+		holder = maniakies0001
 	}
 	1050.1.1 = {
 		holder = 1732
@@ -1817,6 +1816,9 @@ d_thessaly = {
 	845.1.1 = {
 		holder = 145150
 	}
+	866.1.1 = {
+		holder = koxes0002
+	}
 	1060.1.1 = {
 		holder = 41303
 	}
@@ -1883,9 +1885,11 @@ c_thessalia = {
 		holder = 145816
 	}
 	865.1.1 = {
-		holder = 145186
+		liege = "d_athens"
+		holder = 145151
 	}
 	1060.1.1 = {
+		liege = "d_thessalonika"
 		holder = 41308
 	}
 	1079.1.1 = {
@@ -1965,7 +1969,7 @@ c_demetrias = {
 		holder = 145805
 	}
 	865.1.1 = {
-		holder = 145106
+		holder = koxes0002
 	}
 	1060.1.1 = {
 		holder = 20517
@@ -2031,7 +2035,7 @@ c_neopatras = {
 		holder = 145805
 	}
 	865.1.1 = {
-		holder = 145106
+		holder = koxes0002
 	}
 	1060.1.1 = {
 		holder = 20517
@@ -2097,9 +2101,11 @@ c_thessaliotis = {
 		holder = 145816
 	}
 	865.1.1 = {
-		holder = 145186
+		liege = "d_athens"
+		holder = 145151
 	}
 	1060.1.1 = {
+		liege = "d_thessalonika"
 		holder = 41308
 	}
 	1079.1.1 = {

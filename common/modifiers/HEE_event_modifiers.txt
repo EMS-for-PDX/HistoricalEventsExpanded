@@ -136,6 +136,13 @@ armies_engaged_in_the_south_modifier = {
 
 
 ## County ##
+867_ragusan_siege_preparations = {
+	icon = martial_positive
+	fort_level = 3
+	defender_holding_advantage = 5
+	garrison_size = 0.5
+}
+
 1202_syria_earthquake_epicenter_modifier = {
 	icon = county_modifier_development_negative
 	additional_fort_level = -8
@@ -145,6 +152,7 @@ armies_engaged_in_the_south_modifier = {
 	garrison_size = -0.4
 	tax_mult = -0.5
 	development_growth_factor = -0.5
+	supply_limit_mult = -0.5
 	travel_danger = 25
 }
 

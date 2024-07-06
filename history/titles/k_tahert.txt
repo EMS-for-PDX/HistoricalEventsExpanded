@@ -227,10 +227,11 @@ c_wajda = {
 	864.1.1 = {
 		holder = 159506
 	}
-	866.1.1 = {
-		government = clan_government
-		#liege = "d_fes"
-		holder = 159508
+	863.1.1 = {
+		holder = 159506 # Yahya II
+	}
+	866.6.1 = {
+		holder = idrisid0002 # Al-Qasim ibn Idris; in the reign of Yahya II, his family received governance of the western half of the Idrisid capital, Fes, along with the eastern frontier provinces
 	}
 
 	1015.1.1 = {

@@ -1,6 +1,6 @@
 ﻿20479 = {
 	name = "Radomir"
-	dynasty = 702
+	dynasty_house = house_aaronios
 	martial = 5
 	diplomacy = 4
 	intrigue = 4
@@ -17,24 +17,26 @@
 	}
 }
 
-20486 = {
+20486 = { # younger son of the Bulgarian Tsar Ivan Vladislav; a high-ranking general and governor of important provinces on the Empire's eastern frontier in the 1040s and 1050s - https://www.degruyter.com/database/PMBZ/entry/PMBZ22157/html / https://en.wikipedia.org/wiki/Aaron_(son_of_Ivan_Vladislav)
 	name = "Aron"
-	dynasty = 702
+	dynasty_house = house_aaronios
 	martial = 7
 	diplomacy = 5
 	intrigue = 6
 	stewardship = 6
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = craven
-	trait = deceitful
-	trait = wrathful
-	trait = education_intrigue_2
+	trait = calm
+	trait = temperate
+	trait = patient
+	trait = education_martial_2
+	trait = cautious_leader # According to the historian John Skylitzes, when confronted with a large Turkish expedition lead by Ibrahim Inal, Aaron favoured a more defensive stance contrary to Katakalon Kekaumenos (the katepano of Ani), withdrawing behind their fortifications and conserving their forces
 	father = 722
+	mother = balgarsko0008
 	1012.1.1 = {
 		birth = "1012.1.1"
 	}
-	1060.1.1 = {
+	1060.1.1 = { # Unknown; after 1059
 		death = "1060.1.1"
 	}
 }
@@ -751,26 +753,33 @@
 	}
 }
 
-40531 = {
+40531 = { # Wife of Vladimir, the ruler of Zeta (Diokleia) - https://www.degruyter.com/database/PMBZ/entry/PMBZ26249/html
 	name = "Kosara"
 	female = yes
-	dynasty = 702
+	dynasty = dynasty_chryselios  # Going with the interpretation Kosara was a relative of Samuel not his daughter
 	martial = 4
 	diplomacy = 6
 	intrigue = 7
 	stewardship = 5
 	religion = "orthodox"
 	culture = "bulgarian"
-	father = 728
+	father = chryselios0003  # Going with the interpretation Kosara was a relative of Samuel not his daughter
+	trait = compassionate
+	trait = honest
+	trait = zealous
+	trait = loyal
 	982.1.2 = {
 		birth = "982.1.2"
+	}
+	1016.5.22 = { # After the death of her husband, Kosara said to have then become a nun in the church in which Vladimir was buried
+		trait = devoted
 	}
 	1025.1.2 = {
 		death = "1025.1.2"
 	}
 }
 
-41323 = {
+41323 = { # daughter of the Bulgarian Tsar Samuel who fell in love with Ašot Taronites and eventually fled to the Romans with him - https://www.degruyter.com/database/PMBZ/entry/PMBZ27562/html
 	name = "Miroslava"
 	female = yes
 	dynasty = 702
@@ -780,7 +789,12 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "bulgarian"
-	father = 720
+	father = 728
+	mother = chryselios0002
+	trait = honest # After falling in love with the captive Ashot Taronites, did not hide her love but openly requested her father's permission to marry
+	trait = brave # I would say it takes a good amount of bravery to ask your father to marry a captive of your enemy
+	trait = stubborn # threatened suicide if she could not marry Ashot Taronites
+	trait = loyal
 	980.1.1 = {
 		birth = "980.1.1"
 	}
@@ -801,8 +815,9 @@
 	culture = "bulgarian"
 	trait = education_stewardship_2
 	father = 730
-	999.1.1 = {
-		birth = "999.1.1"
+	mother = larissa0001
+	1001.1.1 = {
+		birth = "1001.1.1"
 	}
 	1060.1.1 = {
 		death = "1060.1.1"
@@ -1457,7 +1472,7 @@
 	}
 }
 
-70380 = {
+70380 = { #  oldest son of the last tsar of the First Bulgarian Empire, Ivan Vladislav - https://www.degruyter.com/database/PMBZ/entry/PMBZ28929/html
 	name = "Presian"
 	dynasty = 702
 	martial = 4
@@ -1466,23 +1481,28 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "bulgarian"
+	trait = wrathful # got into a heated argument with Basileios Skleros, which escalated so much that there was even an open fight between the two
 	trait = diligent
-	trait = content
+	trait = ambitious # accused of plotting to overthrow the Emperor
 	trait = education_diplomacy_3
 	father = 722
-	1008.1.1 = {
-		birth = "1008.1.1"
+	mother = balgarsko0008
+	997.1.1 = { # The disputed gravestone of Presian gives his date of birth as 6505 AM (996/97 CE)
+		birth = "997.1.1"
 	}
-	1028.1.1 = {
+	1020.1.1 = {
+		add_spouse = kourkouas0005 # Presian married into the Byzantine aristocracy himself, wedding the sister of Romanos Kourkouas
+	}
+	1028.1.1 = { # Under Emperor Romanos III Argyros, Presian was accused of plotting to overthrow the Emperor. He was banished to the Monastery of Manuel, where he was later blinded and eventually tonsured as a monk
 		trait = blind
 		trait = devoted
 	}
-	1061.1.1 = {
+	1061.1.1 = { # His subsequent fate is unknown, but the gravestone of a certain "Prince Presian" found in Michalovce, Slovakia (then part of the Kingdom of Hungary), may indicate that he could have emigrated to Hungary, where he died in 1060/61 CE
 		death = yes
 	}
 }
 
-70381 = {
+70381 = { # Father of four Kometopuloi brothers, most notably Samuel of Bulgaria - https://www.degruyter.com/database/PMBZ/entry/PMBZ28192/html
 	name = "Nikola"
 	dynasty = 702
 	martial = 6
@@ -1490,7 +1510,7 @@
 	intrigue = 5
 	stewardship = 6
 	religion = "orthodox"
-	culture = "bulgarian"
+	culture = "armenian" # Nothing further is known about N.'s life apart from the fact that he was the father of the four Kometopuloi and probably came from Armenia
 	trait = ambitious
 	trait = arrogant
 	trait = education_martial_2
@@ -1573,9 +1593,7 @@
 	}
 	864.1.1 = {
 		religion = "orthodox"
-		effect = {
-			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:tengri_pagan } # Remained a follower of Tengrism
-		}
+		effect = { make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:tengri_pagan } } # Remained a follower of Tengrism
 	}
 	893.1.1 = {
 		trait = blind
@@ -1662,7 +1680,7 @@
 	}
 }
 
-714 = {
+714 = { # Son and successor of Tsar Simeon I
 	name = "Petar"
 	dynasty = 8636
 	martial = 7
@@ -1676,11 +1694,17 @@
 	trait = honest
 	trait = education_intrigue_2
 	father = 712
-	912.1.1 = {
-		birth = "912.1.1"
+	mother = sursuvul0004 # Unnamed sister of George Sursuvul
+	903.1.1 = { # P. was born around 903 as the eldest son of the Bulgarian ruler Symeon from his second marriage
+		birth = "903.1.1"
+	}
+	927.10.8 = { # In October 927 Peter arrived near Constantinople to meet Romanos and signed the peace treaty, marrying Romanos' grandaughter Maria on October 8th in the church of the Zoödochos Pege
+		add_spouse = lekapenos0002
 	}
 	969.1.30 = {
-		death = "969.1.30"
+		death = { # As Leon Diakonos reports, Petar was so dismayed by the idea of a Rus invasion that he fell ill with epilepsy (ἐπιληψίας πάθος) and died a short time later
+			death_reason = death_stress
+		}
 	}
 }
 
@@ -1696,11 +1720,14 @@
 	trait = deceitful
 	trait = education_intrigue_1
 	father = 714
-	940.1.1 = {
-		birth = "940.1.1"
+	mother = lekapenos0002
+	928.1.1 = { # had been born by 931, when he had visited Constantinople together with his mother
+		birth = "928.1.1"
 	}
-	986.1.1 = {
-		death = "986.1.1"
+	977.1.1 = { # Shot by a Bulgarian border guard who mistook Boris for a Roman 
+		death = {
+			death_reason = death_accident
+		}
 	}
 }
 
@@ -1713,19 +1740,23 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = celibate
-	trait = gluttonous
-	trait = education_martial_3
+	trait = zealous # Roman devoted the end of his life to church deeds, much as his father Peter had
+	trait = content # Seemed perfectly willing to leave matters of state of Samuel
+	trait = education_learning_3
 	father = 714
-	945.1.1 = {
-		birth = "945.1.1"
+	mother = lekapenos0002
+	933.1.1 = { # He was probably born between 928 and 931 or 933 
+		birth = "933.1.1"
 	}
-	998.1.1 = {
-		death = "998.1.1"
+	971.1.1 = { # After Emperor John I Tzimiskes’ victory in 971, Roman was taken to Constantinople together with his brother’s family. To ensure that the Bulgarian dynasty would die out, the Byzantine emperor had Roman castrated
+		trait = eunuch
+	}
+	997.1.1 = {
+		death = "997.1.1"
 	}
 }
 
-720 = {
+720 = { # Bulgarian noble, brother of Emperor Samuel of Bulgaria and third son of komes Nicholas - https://www.degruyter.com/database/PMBZ/entry/PMBZ22156/html
 	name = "Aron"
 	dynasty = 702
 	martial = 7
@@ -1734,19 +1765,24 @@
 	stewardship = 8
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = chaste
+	trait = brave # gained high respect from Tsar Roman thanks to their (referring to the Kometopoulos brothers) bravery
+	trait = ambitious # sought to rule Bulgaria alone
 	trait = hunchbacked
 	trait = education_intrigue_2
 	father = 70381
+	mother = kometopoulos_spouse0001
 	940.1.1 = {
 		birth = "940.1.1"
 	}
 	988.7.14 = {
-		death = "988.7.14"
+		death = { # Aron together with all of his kin were executed by Aron's brother Samuel because of the secret negotiations between Aron and the Roman Emperor Basil II
+			death_reason = death_execution
+			killer = 728 # Samuel of Bulgaria
+		}
 	}
 }
 
-722 = {
+722 = { # emperor (tsar) of the First Bulgarian Empire from approximately August or September 1015 until February 1018 - https://www.degruyter.com/database/PMBZ/entry/PMBZ25736/html
 	name = "Ivan_Vladislav"
 	# AKA: Ivan Vladislav
 	dynasty = 702
@@ -1756,41 +1792,60 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = zealous
+	trait = ambitious
+	trait = deceitful # sent a letter to Emperor Basil II offering Bulgarian submission, which was in fact a ruse 
+	trait = vengeful # avenged the death of his family by murdering Tsar Gabriel-Radomir during a hunt
 	trait = education_martial_2
 	father = 720
 	977.1.1 = {
 		birth = "977.1.1"
 	}
-	1018.2.1 = {
+	996.1.1 = {
+		add_spouse = balgarsko0008 # Maria (wife of Ivan Vladislav); possibly the daughter of Boris II
+	}
+	1018.2.1 = { # Fell in February 1018 during a Bulgarian attack on Dyrrhachion
 		death = "1018.2.1"
 	}
 }
 
-724 = {
+724 = { # Bulgarian and Roman noble who ruled as tsar of Bulgaria for a short time in 1041 - https://www.degruyter.com/database/PMBZ/entry/PMBZ22416/html
 	name = "Alusian"
-	dynasty = 702
+	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi, continued to prosper in the ranks of the Roman aristocracy until the 14th century
 	martial = 8
 	diplomacy = 5
 	intrigue = 4
 	stewardship = 4
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = gluttonous
-	trait = honest
-	trait = education_martial_2
+	trait = fickle # Constantly swapped between Bulgarians and Romans depending on what suited Alusian best
+	trait = craven # After being proclaimed Tsar, as the Bulgarian and Roman troops were preparing for battle, Alusian deserted to the Romans and surrendered the blinded Peter Delyan to the emperor
+	trait = deceitful # Paid homage to the Bulgarian rebel Peter Delyan, but later cut off his nose, and blinded him with a kitchen knife
+	trait = ambitious # Seems to have constantly sought his own advancement
+	trait = education_intrigue_3
 	father = 722
-	1010.1.1 = {
-		birth = "1010.1.1"
+	mother = balgarsko0008
+	1003.1.1 = {
+		birth = "1003.1.1"
+	}
+	1028.1.1 = { # Alusian increased his wealth by marrying a wealthy member of the Armenian nobility
+		add_spouse = kometopoulos_spouse0002
+		effect = { # Representing the increased wealth of Alusian
+			add_gold = 800
+		} 
+	}
+	1037.1.1 = { # Alusian was deprived of certain estates and fined a hefty amount for alleged misdeeds by Emperor Michael IV the Paphlagonian and his brother, the powerful parakoimomenos John the Orphanotrophos
+		effect = {
+			remove_short_term_gold = 700
+		}
 	}
 	1071.8.26 = {
 		death = "1071.8.26"
 	}
 }
 
-7242 = {
+7242 = { # an Eastern Roman officer in the Armeniac theme
 	name = "Samuil"
-	dynasty = 702
+	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi
 	martial = 7
 	diplomacy = 5
 	intrigue = 5
@@ -1811,10 +1866,10 @@
 	}
 }
 
-725 = {
+725 = { # married the future Eastern Roman Emperor Romanos IV Diogenes
 	name = "Anna"
 	female = yes
-	dynasty = 702
+	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi
 	martial = 4
 	diplomacy = 4
 	intrigue = 6
@@ -1832,7 +1887,7 @@
 	}
 }
 
-726 = {
+726 = { # a younger son of the Bulgarian Tsar Ivan Vladislav 
 	name = "Trajan"
 	dynasty = 702
 	martial = 5
@@ -1841,12 +1896,13 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = diligent
-	trait = wrathful
-	trait = education_martial_2
 	father = 722
+	mother = balgarsko0008
 	1013.1.1 = {
 		birth = "1013.1.1"
+	}
+	1018.1.1 = {
+		employer = 1716 # in 1018, after their father's death, they surrendered to the Emperor Basil II together with their mother and brothers and finally had to take up residence in Constantinople.
 	}
 	1066.5.19 = {
 		death = "1066.5.19"
@@ -1880,7 +1936,7 @@
 	}
 }
 
-728 = {
+728 = { # Tsar of the First Bulgarian Empire from 997 to 6 October 1014 - https://www.degruyter.com/database/PMBZ/entry/PMBZ29137/html
 	name = "Samuil"
 	dynasty = 702
 	martial = 8
@@ -1889,18 +1945,23 @@
 	stewardship = 8
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = just
+	trait = diligent
+	trait = zealous
+	trait = ambitious
 	trait = education_martial_3
 	father = 70381
 	945.1.1 = {
 		birth = "945.1.1"
+	}
+	968.1.1 = {
+		add_spouse = chryselios0002 # Agatha
 	}
 	1014.10.6 = {
 		death = "1014.10.6"
 	}
 }
 
-729 = {
+729 = { # Catherine of Bulgaria; daughter of Ivan Vladislav, empress consort to Roman emperor Isaac I Komnenos, and later co-regent of Constantine X 
 	name = "Ekaterina"
 	female = yes
 	dynasty = 702
@@ -1912,11 +1973,16 @@
 	culture = "bulgarian"
 	trait = education_learning_3
 	father = 722
+	mother = balgarsko0008
 	1015.1.1 = {
 		birth = "1015.1.1"
 	}
-	1061.1.1 = {
-		death = "1061.1.1"
+	1061.1.1 = { # retired to the Myrelaion monastery under the monastic name of Xene
+		trait = devoted
+		name = "Xene"
+	}
+	1065.1.1 = { # Unknown
+		death = "1065.1.1"
 	}
 }
 
@@ -1928,21 +1994,27 @@
 	diplomacy = 5
 	intrigue = 4
 	stewardship = 6
+	prowess = 10 # According to Skylitzes, Gavril surpassed his father in willpower and physical strength, but was far inferior to him in intelligence and insight
 	religion = "orthodox"
 	culture = "bulgarian"
+	trait = compassionate # During his father's reign, his cousin Ivan Vladislav and Ivan's entire family were all sentenced by Samuel to death for treason. Gavril's intervention saved at least his cousin
 	trait = brave
-	trait = wrathful
-	trait = education_martial_3
+	trait = trusting # Gavril brought Ivan Vladislav into his confidence, only to be murdered by him 
+	trait = education_martial_2
+	trait = reaver # Having inherited Samuel's war with the Byzantine Empire, Gavril Radomir raided Byzantine territory, reaching as far as Constantinople
 	trait = lifestyle_hunter
+	trait = gallant # He is said to have saved his father's life in the disastrous defeat of the Battle of Spercheios, and he was described as a gallant fighter
 	father = 728
+	mother = chryselios0002
 	969.1.2 = {
 		birth = "969.1.2"
 	}
 	987.1.1 = {
 		add_spouse = 492
 	}
-	988.1.1 = {
+	999.1.1 = { # Gavril Radomir married Eirene of Larissa around 999 after he had expelled his first Hungarian wife, who was pregnant at this time
 		remove_spouse = 492
+		add_spouse = larissa0001
 	}
 	1015.10.1 = {
 		death = {
@@ -1967,11 +2039,18 @@
 	trait = education_martial_2
 	father = 730
 	mother = 492
-	989.1.1 = {
-		birth = "989.1.1"
+	999.9.1 = { # Petar is possibly the child born from Gavril Radomir's first wife who was sent away while pregnant
+		birth = "999.9.1"
 	}
-	1041.1.1 = {
-		death = "1041.1.1"
+	1041.1.1 = { # In 1041, one night during dinner, while Delyan was drunk, Alusian cut off his nose and blinded him with a kitchen knife
+		trait = blind
+		trait = disfigured
+	}
+	1041.4.1 = { # In an obscure battle of Ostrovo, the Byzantines defeated the Bulgarian troops and, depending on what source you read, Petar II Delyan was either captured and taken to Constantinople, exiled to a monastery in Iskar Gorge, or slain by future Norwegian King Harald Hardrada, who allegedly cut down Petar II in the field of battle as a member of the Varangian Guard
+		death = {
+			death_reason = death_battle
+			killer = 102531 # Harald Hardrada (Rule of cool)
+		}
 	}
 }
 
@@ -2016,7 +2095,7 @@
 
 159126 = {
 	name = "Zvinica" #father of Presian I
-	dynasty = 591
+	dynasty = 8636
 	religion = "tengri_pagan"
 	culture = "bulgarian"
 	father = 159124

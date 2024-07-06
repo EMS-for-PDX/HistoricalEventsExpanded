@@ -412,10 +412,10 @@ d_sawad = {
 
 d_paulician_principality = {
 	850.1.1 = {
-		holder = HEE_karbeas
+		holder = paulician0002
 	}
 	863.9.3 = {
-		holder = HEE_chrysocheir
+		holder = paulician0004
 	}
 }
 

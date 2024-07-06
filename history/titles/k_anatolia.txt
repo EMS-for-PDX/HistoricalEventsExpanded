@@ -334,11 +334,11 @@ c_lycandus = {
 		holder = 159724
 	}
 	850.1.1 = {
-		holder = HEE_karbeas
+		holder = paulician0002
 		liege = 0
 	}
 	863.9.3 = {
-		holder = HEE_chrysocheir
+		holder = paulician0004
 		liege = 0
 	}
 	# 845.1.1 = {
@@ -610,8 +610,14 @@ d_cibyrrhaeot = {
 	813.7.11 = {
 		holder = 0
 	}
+	820.1.1 = {
+		holder = 145831 # Unnamed possible member of the Krateros family, strategos of the Cibyrrhaeot Theme who was killed by Arabs following a failed expedition to Crete
+	}
+	830.1.1 = {
+		holder = 145930 # Unnamed possible member of the Ooryphas family, strategos of the Cibyrrhaeot Theme who succeeded in restricting the piratical activities of the Arabs of Crete
+	}
 	860.1.1 = {
-		holder = 145196
+		holder = mosele0005 # Fictional/Unknown member of the Mosele Dynasty. Placed as strategos of the Cibyrrhaeot Theme to reference their future members' role as Drungarios ton ploïmon (Admiral)
 	}
 	1060.1.1 = {
 		holder = 20502
@@ -879,8 +885,14 @@ c_pamphylia = {
 	766.1.1 = {
 		holder = 145836
 	}
+	820.1.1 = {
+		holder = 145831 # Unnamed possible member of the Krateros family, strategos of the Cibyrrhaeot Theme who was killed by Arabs following a failed expedition to Crete
+	}
+	830.1.1 = {
+		holder = 145930 # Unnamed possible member of the Ooryphas family, strategos of the Cibyrrhaeot Theme who succeeded in restricting the piratical activities of the Arabs of Crete
+	}
 	860.1.1 = {
-		holder = 145196
+		holder = mosele0005 # Fictional/Unknown member of the Mosele Dynasty. Placed as strategos of the Cibyrrhaeot Theme to reference their future members' role as Drungarios ton ploïmon (Admiral)
 	}
 	1060.1.1 = {
 		holder = 20502
@@ -957,11 +969,23 @@ d_anatolia = {
 	790.1.1 = {
 		holder = 145135
 	}
-	840.1.1 = {
-		holder = 145136
+	803.1.1 = {
+		holder = 145860 # Bardanes Tourkos, who was transferred to command the powerful Anatolic Theme by Nikephoros I soon after Nikephoros' ascension
+	}
+	811.1.1 = {
+		holder = 70493 # Recalled by Michael I Rangabe in 811, Leo became governor of the Anatolic theme
+	}
+	813.1.1 = {
+		holder = Mamikonian0012 # following Michael I's deposition by Leo the Armenian, Manuel was promoted to the rank of patrikios and entrusted with the post of strategos (military governor) of the Armeniac or the Anatolic Theme
+	}
+	816.1.1 = {
+		holder = krateros0001 # # Unnamed possible member of the Krateros family who was Strategos of the Anatolikon theme circa. 816
+	}
+	843.1.1 = {
+		holder = 145136 # # Patrician and Strategos of the theme of Anatolikon during the period 843-852
 	}
 	860.1.1 = {
-		holder = 145137
+		holder = krateros0003
 	}
 	1060.1.1 = {
 		holder = 1734
@@ -1079,7 +1103,7 @@ c_pacatiana = {
 		holder=145134
 	}
 	867.1.1={
-		holder=145137
+		holder=krateros0003
 	}
 	1060.1.1={
 		holder=20546
@@ -1169,7 +1193,7 @@ c_pisidia = {
 		holder=145134
 	}
 	867.1.1={
-		holder=145137
+		holder=krateros0003
 	}
 	1060.1.1={
 		holder=20546
@@ -1260,7 +1284,7 @@ c_selge = {
 		holder=145134
 	}
 	867.1.1={
-		holder=145137
+		holder=krateros0003
 	}
 	1060.1.1={
 		holder=20525
@@ -1351,7 +1375,7 @@ c_galatia_salutaris = {
 		holder=145134
 	}
 	867.1.1={
-		holder=145137
+		holder=krateros0003
 	}
 	1060.1.1={
 		holder=1734

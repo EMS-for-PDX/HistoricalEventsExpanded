@@ -2893,7 +2893,7 @@ c_guines = {
 
 c_lille = {
 	862.1.1 = {
-		holder = 168064
+		holder = ostrevent0001 # Should belong to one of the sons of Eberhard of Friuli, but in lieu of CK3 inheritance, border gore, and inability to effectively hold different titles under different lieges, will give to HUCBALD to represent the county of Ostrevent
 	}
 	865.1.1 = {
 		liege = d_flanders

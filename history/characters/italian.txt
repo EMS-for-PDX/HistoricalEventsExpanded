@@ -73,9 +73,11 @@
 	female = yes
 	dynasty_house = house_canossa
 	martial = 6
-	diplomacy = 7
-	intrigue = 8
+	diplomacy = 9
+	intrigue = 9
 	stewardship = 10
+	learning = 12
+	prowess = 6
 	disallow_random_traits = yes
 	religion = "catholic"
 	culture = "italian"
@@ -98,9 +100,34 @@
 	}
 	1065.1.1 = {
 		effect = {
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_learning_lifestyle_perk_points = -10
+			add_perk = faithful_perk
+			add_perk = zealous_proselytizer_perk
+			add_perk = religious_icon_perk
+			add_perk = prophet_perk
+			add_perk = clerical_justifications_perk
+			add_perk = church_and_state_perk
+			add_perk = radiant_perk
+			add_perk = defender_of_the_faith_perk
+			add_perk = theologian_perk
+			add_trait = theologian
+			add_perk = pedagogy_perk
+			add_perk = open_minded_perk
+			add_piety = 750
+			add_piety_level = 1
 			add_character_modifier = {
 				modifier = matilda_of_canossa_modifier
 			}
+			create_alliance = {
+				target = character:11030
+				allied_through_owner = this
+				allied_through_target = character:20248
+			}
+			learn_language = language_latin
+			learn_language = language_french
+			learn_language = language_high_german
 		}
 	}
 	1115.7.24 = {
@@ -4221,7 +4248,7 @@
 }
 
 70841 = {
-	name = "Giacinto"
+	name = "Giancinto"
 	dynasty = 2
 	martial = 6
 	diplomacy = 5
@@ -4231,25 +4258,20 @@
 	culture = "italian"
 	trait = diligent
 	trait = just
-	trait = family_first
+	trait = humble
+	trait = trusting
 	trait = ambitious
 	trait = education_learning_3
 	father = 70840
-	1106.1.1 = {
-		birth = yes
-	}
-	1126.1.1 = {
-		add_trait = devoted
-	}
-	1164.1.1 = {
-		employer = 71810 # Pope Alexander III
+	1110.1.1 = {
+		birth = "1110.1.1"
 	}
 	1191.3.20 = {
 		name = Caelestinus
 	# AKA: Giancinto
 	}
 	1198.1.8 = {
-		death = yes
+		death = "1198.1.8"
 	}
 }
 
@@ -5564,7 +5586,7 @@
 
 71810 = {
 	name = "Orlando"
-	dynasty = italian_bandinelli
+	dynasty = 100330
 	martial = 3
 	diplomacy = 8
 	intrigue = 5
@@ -6053,6 +6075,10 @@
 	}
 	867.1.1 = {
 		add_spouse = 7816 # Judith, daughter of Eberhard of Friuli
+		effect = {
+			add_unpressed_claim = title:c_capua # Granted the county of Capua by Emperor Louis, though Capua was still under Siege 
+			add_unpressed_claim = title:d_capua # Granted the county of Capua by Emperor Louis, though Capua was still under Siege 
+		}
 	}
 	880.7.8 = {
 		death = "880.7.8"
@@ -6107,7 +6133,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
-	mother = HEE_berta_of_piacenza
+	mother = vuifredingi0002
 	855.1.1 = {
 		birth = "855.1.1"
 	}
@@ -6122,7 +6148,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
-	mother = HEE_berta_of_piacenza
+	mother = vuifredingi0002
 	860.1.1 = {
 		birth = "860.1.1"
 	}
@@ -6137,7 +6163,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
-	mother = HEE_berta_of_piacenza
+	mother = vuifredingi0002
 	862.1.1 = {
 		birth = "862.1.1"
 	}
@@ -6152,7 +6178,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167882
-	mother = HEE_berta_of_piacenza
+	mother = vuifredingi0002
 	864.1.1 = {
 		birth = yes
 	}
@@ -7110,12 +7136,12 @@
 		birth = "800.1.1"
 	}
 	858.4.17 = {
-	name = "Nicolaus"
-	# AKA: Martin
-		effect = {
-			add_character_modifier = court_7040_ascetic_practices # led a pious personal life guided by a spirit of Christian asceticism
+		name = "Nicolaus"
+		# AKA: Martin
+			effect = {
+				add_character_modifier = court_7040_ascetic_practices # led a pious personal life guided by a spirit of Christian asceticism
+			}
 		}
-	}
 	867.11.13 = {
 		death = "867.11.13"
 	}
@@ -7824,7 +7850,7 @@
 }
 
 7936 = {
-	name = "Gregorio"
+	name = "Gergory"
 	# AKA: Gregory
 	dynasty = 100349
 	martial = 6
@@ -7873,7 +7899,7 @@
 }
 
 7938 = {
-	name = "Gregorio"
+	name = "Gergory"
 	# AKA: Gregory
 	dynasty = 100349
 	martial = 6
@@ -7894,7 +7920,6 @@
 		death = "1108.1.1"
 	}
 }
-
 7939 = {
 	name = "Giovanni" #Benedictus X
 	dynasty = 100349
@@ -17924,6 +17949,7 @@
 	name = "Berta"
 	# wife of Tedice I
 	female = yes
+	dynasty = 1042000
 	religion = "catholic"
 	culture = "italian"
 	967.1.1 = {
@@ -18587,6 +18613,7 @@
 	name = "Candida"	# fictional placeholder
 	# wife of Guido II della Gherardesca
 	female = yes
+	dynasty = 1042027
 	religion = "catholic"
 	culture = "italian"
 	1047.1.1 = {
@@ -20021,7 +20048,7 @@
 		birth = yes
 	}
 	1160.1.1 = {
-		add_spouse = sicilian0011
+		add_spouse = sicilian0009
 	}
 	1168.1.1 = {
 		death = yes
@@ -20180,6 +20207,7 @@
    name = "Guisiana"   # fictional placeholder
    # daughter of Count Guido Guerra III Guidi, second wife of William I of Cagliari
    female = yes
+   dynasty = 1042027
    religion = "catholic"
    culture = "italian"
    1176.1.1 = {
@@ -23010,8 +23038,10 @@ italian0034 = {
 	female = yes
 	religion = "catholic"
 	culture = "italian"
+
 	father = 7756
 	mother = 7755
+
 	1041.1.1 = {
 		birth = yes
 	}

@@ -652,7 +652,9 @@ d_sebasteia = {
 		liege = e_byzantium
 	}
 	
-	#867 - Theme of Sebasteia does not exist; created in the early 10th century
+	866.1.1 = { # While the Theme of Sebasteia does not exist in 867 (likely being created in the early 10th century), it will be in because its absence will lead to stranger stuff
+		holder = gambros0001 # Christophoros, future Domestikos of the Scholen who defeated the Paulikians in the 70s of the 9th century
+	}
 	
 	#Senekerim-Hovhannes Artsruni
 	1022.1.1 = {
@@ -677,12 +679,8 @@ c_sebasteia = {
 	1066.1.1 = { change_development_level = 10 }
 	
 	#867
-	830.5.10 = {
-		liege = d_charsianon # Until it was raised to a Theme, it was probably subordinate of the theme of Charsianon
-		holder = 302353	#fictional Gerasimos Kardias
-	}
-	861.6.16 = {
-		holder = 302355	#fictional Leontios Kardias
+	866.1.1 = { # While the Theme of Sebasteia does not exist in 867 (likely being created in the early 10th century), it will be in because its absence will lead to stranger stuff
+		holder = gambros0001 # Christophoros, future Domestikos of the Scholen who defeated the Paulikians in the 70s of the 9th century
 	}
 	
 	#Senekerim-Hovhannes Artsruni
@@ -787,11 +785,11 @@ c_azysia = {
 		holder = 302353	#fictional Gerasimos Kardias
 	}
 	850.1.1 = {
-		holder = HEE_karbeas
+		holder = paulician0002
 		liege = 0
 	}
 	863.9.3 = {
-		holder = HEE_chrysocheir
+		holder = paulician0004
 		liege = 0
 	}
 	# 861.6.16 = {
@@ -1358,8 +1356,15 @@ d_chaldia = {
 	}
 	
 	#860
-	844.1.1 = {
+	835.1.1 = {
+		holder = melissenos0001 # Kallistos Melissenos; technically doux of Koloneia but Koloneia is not in CK3
+	}
+	846.1.1 = {
 		holder = 145123
+	}
+
+	867.1.1 = {
+		holder = tzifinarites0002 # Ioannes the Chaldaean; technically didnt recieve this post till after Basil I's ascension but moved up a year in lieu of a clearly more accurate option
 	}
 	
 	#Byz
@@ -1457,10 +1462,14 @@ d_chaldia = {
 c_cerasus = {
 	867.1.1 = {	change_development_level = 7 }
 	1066.1.1 = { change_development_level = 10 }
-	
+
 	855.1.1 = {
 		holder = 145123
 		liege = d_chaldia
+	}
+
+	867.1.1 = {
+		holder = tzifinarites0002 # Ioannes the Chaldaean; technically didnt recieve this post till after Basil I's ascension but moved up a year in lieu of a clearly more accurate option
 	}
 	
 	#Gavras
@@ -1541,6 +1550,10 @@ c_trebizond = {
 		liege = d_chaldia
 	}
 	
+	867.1.1 = {
+		holder = tzifinarites0002 # Ioannes the Chaldaean; technically didnt recieve this post till after Basil I's ascension but moved up a year in lieu of a clearly more accurate option
+	}
+
 	#Gavras
 	1060.1.1 = {
 		holder = 20544
@@ -1611,6 +1624,10 @@ c_trebizond = {
 
 
 c_colonea = {
+	835.1.1 = {
+		holder = melissenos0001 # Kallistos Melissenos; technically doux of Koloneia but Koloneia is not in CK3
+	}
+
 	855.1.1 = {
 		holder = 145156
 		liege = d_chaldia
@@ -1675,11 +1692,11 @@ c_satala = {
 		liege = d_chaldia
 	}
 	850.1.1 = {
-		holder = HEE_karbeas
+		holder = paulician0002
 		liege = 0
 	}
 	863.9.3 = {
-		holder = HEE_chrysocheir
+		holder = paulician0004
 		liege = 0
 	}
 	1060.1.1 = {
@@ -1735,7 +1752,7 @@ c_satala = {
 
 b_tephrice = {
 	850.1.1 = {
-		holder = HEE_karbeas
+		holder = paulician0002
 		effect = { set_capital_barony = yes } # Capital of the Paulician Principality
 	}
 }

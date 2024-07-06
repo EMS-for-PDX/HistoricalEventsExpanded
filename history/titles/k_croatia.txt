@@ -172,7 +172,7 @@ d_dalmatia = {
 		holder = 145849
 	}
 	856.1.1 = {
-		holder = 145120
+		holder = Bryennios0003
 	}
 	923.1.1 = {
 		holder = 8604
@@ -273,7 +273,7 @@ c_zadar = {
 		holder = 145849
 	}
 	856.1.1 = {
-		holder = 145120
+		holder = Bryennios0003
 	}
 	1066.1.2 = {
 		holder = 32591
@@ -329,7 +329,6 @@ c_knin = {
 		holder = 145849
 	}
 	856.1.1 = {
-		#holder = 145120
 		holder = 167855
 	}
 	1066.1.2 = {
@@ -384,13 +383,8 @@ c_cetina = {
 	}
 	
 	
-	760.1.1 = {
-		holder = 145850
-	}
-	
-	
-	857.1.1 = {
-		holder = 145199
+	864.6.1 = { # While the city of Spalato remained a de jure possession of the Byzantine Empire as a Byzantine duchy, administered by Jadera (Zadar), its hinterland was home to the Duchy of the Croats
+		holder = 167855
 	}
 	
 	
@@ -741,7 +735,6 @@ c_gacka = {
 		holder = 145849
 	}
 	856.1.1 = {
-		#holder = 145120
 		holder = 167856
 	}
 	1066.1.2 = {
@@ -800,7 +793,6 @@ c_lika = {
 		holder = 145849
 	}
 	856.1.1 = {
-		#holder = 145120
 		holder = 167855
 	}
 	1066.1.2 = {
@@ -862,7 +854,7 @@ c_cherso = {
 		holder = 145849
 	}
 	856.1.1 = {
-		holder = 145120
+		holder = Bryennios0003
 	}
 	1060.1.1 = {
 		holder = 7800
@@ -1057,7 +1049,6 @@ c_modrus = {
 		holder = 145849
 	}
 	856.1.1 = {
-		#holder = 145120
 		holder = 167856
 	}
 	1066.1.2 = {
@@ -1654,27 +1645,11 @@ c_pozega = {
 
 
 c_vodica = {
-	760.1.1 = {
-		liege = "d_slavonia"
-	holder = 168292
+	845.1.1 = {
+		holder = 167855
 	}
-	790.1.1 = {
-		holder = 168293
-	}
-	796.1.1 = {
-		holder = 168294
-	}
-	810.1.1 = {
-		holder = 168295
-	}
-	823.1.1 = {
-		holder = 168296
-	}
-	829.1.1 = {
-		holder = 168298
-	}
-	838.1.1 = {
-		holder = 168299
+	864.1.1 = {
+		holder = 167857
 	}
 	1066.1.1 = {
 		liege = "d_slavonia"
@@ -1770,22 +1745,12 @@ c_vodica = {
 
 
 c_vrbas = {
-	760.1.1 = {
-		liege = "d_slavonia"
-		holder = 168292
+	845.1.1 = {
+		holder = 167855
 	}
-	766.1.1 = {
-		holder = 168293
+	864.1.1 = {
+		holder = 167857
 	}
-	796.1.1 = {
-		holder = 168296
-	}
-	829.1.1 = {
-		holder = 168299
-	}
-	# 864.1.1 = {
-		# holder = 8601
-	# }
 	1060.1.1 = {
 		holder = 8628
 	}
@@ -1930,23 +1895,12 @@ c_rama = {
 	539.1.1 = {
 		liege = "d_rashka"
 	}
-	757.1.1 = {
-		holder = 146010
+	838.1.1 = {
+		liege = "d_croatia" # Likely semi-independent or independent region of Croatia in the 9th century
+		holder = bosnian0001 # Based on semi-mythical Chronicle of the Priest of Duklja (13th century), according to some scholars the earliest known ruler of Bosnia was Ratimir in 838 AD
 	}
-	786.1.1 = {
-		holder = 146009
-	}
-	813.1.1 = {
-		holder = 167865
-	}
-	841.1.1 = {
-		holder = 167866
-	}
-	848.1.1 = {
-		holder = 167867
-	}
-	892.1.1 = {
-		holder = 167868
+	856.1.1 = {
+		holder = bosnian0002 # # According to later Annales Ragusini (14-17th century), the ruler of Bosnia was the childless Stiepan
 	}
 	1066.1.1 = {
 		liege = "k_croatia"
@@ -2002,7 +1956,6 @@ c_zavrsje = {
 		holder = 145849
 	}
 	856.1.1 = {
-		#holder = 145120
 		holder = 167855
 	}
 	1066.1.1 = {
@@ -2118,23 +2071,12 @@ c_vhrbosna = {
 	539.1.1 = {
 		liege = "d_rashka"
 	}
-	757.1.1 = {
-		holder = 146010
+	838.1.1 = {
+		liege = "d_croatia" # Likely semi-independent or independent region of Croatia in the 9th century
+		holder = bosnian0001 # Based on semi-mythical Chronicle of the Priest of Duklja (13th century), according to some scholars the earliest known ruler of Bosnia was Ratimir in 838 AD
 	}
-	786.1.1 = {
-		holder = 146009
-	}
-	813.1.1 = {
-		holder = 167865
-	}
-	841.1.1 = {
-		holder = 167866
-	}
-	848.1.1 = {
-		holder = 167867
-	}
-	892.1.1 = {
-		holder = 167868
+	856.1.1 = {
+		holder = bosnian0002 # # According to later Annales Ragusini (14-17th century), the ruler of Bosnia was the childless Stiepan
 	}
 	1066.1.1 = {
 		liege = "k_croatia"
@@ -2183,11 +2125,13 @@ c_vhrbosna = {
 
 
 c_zachlumia = {
-	867.1.1 = {
-		liege = 0
-		holder = 303447	#Fictional Pavel
+	865.1.1 = {
+		liege = "d_rashka" # semi-independent or independent
+		holder = zahumlje0001 # 
 	}
-	
+	910.1.1 = {
+		holder = zahumlje0002 # Michael of Zahumlje
+	}
 	1042.1.1 = {
 		holder = 20490	#Stefan Voislav
 		liege = d_duklja
@@ -2252,11 +2196,13 @@ c_zachlumia = {
 }
 
 c_zelengora = {
-	867.1.1 = {
-		liege = 0
-		holder = 303447	#Fictional Pavel
+	865.1.1 = {
+		liege = "d_rashka" # semi-independent or independent
+		holder = zahumlje0001 # 
 	}
-	
+	910.1.1 = {
+		holder = zahumlje0002 # Michael of Zahumlje
+	}
 	1042.1.1 = {
 		holder = 20490	#Stefan Voislav
 		liege = d_duklja

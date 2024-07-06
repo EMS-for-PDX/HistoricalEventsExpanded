@@ -255,23 +255,17 @@ HEE_bernarius = { # http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc
 	}
 }
 
-HEE_girart_wife = { # https://en.wikipedia.org/wiki/Girart_de_Roussillon
+etichonen0001 = { # https://en.wikipedia.org/wiki/Girart_de_Roussillon
 	name = "Bertha"
 	female = yes
-	# dynasty = 669
+	dynasty = 664
 	religion = "catholic"
-	culture = "franconian"
-	# father = 7959
-	# mother = 167765
+	culture = "swabian"
+	father = 161483 # Possibly the daughter of Hugo of Tours
+	mother = 306000
 	# health = 5.0
 	
 	#Skills
-	# diplomacy = 6
-	# martial = 5
-	# stewardship = 6
-	# intrigue = 4
-	# learning = 6
-	# prowess = 6
 	
 	#Education
 	trait = education_martial_2
@@ -285,7 +279,6 @@ HEE_girart_wife = { # https://en.wikipedia.org/wiki/Girart_de_Roussillon
 	trait = unyielding_defender
 	
 	# sexuality = heterosexual
-	
 	disallow_random_traits = yes
 	812.1.1 = {
 		birth = yes
@@ -294,6 +287,24 @@ HEE_girart_wife = { # https://en.wikipedia.org/wiki/Girart_de_Roussillon
 		add_spouse = 163062
 	}
 	883.1.1 = {
+		death = yes
+	}
+}
+
+etichonen0002 = { # Eve of Tours, wife of Unroch III de Friuli
+	name = "Ava"
+	female = yes
+	dynasty = 664
+	religion = "catholic"
+	culture = "swabian"
+	father = 163055 # This affiliation is suggested presumably only for onomastic reasons, her name being the same as that of her supposed paternal grandmother.
+	841.1.1 = { # Unknown
+		birth = yes
+	}
+	857.1.1 = {
+		add_spouse = 163057 # Unroch III of Friuli
+	}
+	900.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -661,16 +672,18 @@ HEE_dominicus_of_treviso = { # Dominicus of Treviso
 	}
 }
 
-HEE_vifredo_of_piacenza = { # Vifredo of Piacenza - https://it.wikipedia.org/wiki/Vifredo_I
+vuifredingi0001 = { # Vifredo of Piacenza - https://it.wikipedia.org/wiki/Vifredo_I
 	name = "Vifredo"
+	dynasty = dynvuifredingi # Vuifredingi
 	religion = "catholic"
 	culture = "french" # After her husband's death, in one document Berta calls herself filia b. mem. Vvifredi comiti ex genere francorum, living according to the law of the Sali Franks, what determines an automatic placement of her father among the lineages of Sali Franks introduced by the Carolingians as governmental officials in the newly created Cisalpine political environment. 
 	diplomacy = 7
 	stewardship = 8
-	trait = education_stewardship_4 # Under his leadership, the county is administered efficiently
+	trait = education_stewardship_3
 	trait = just # Oversaw several disputes, with the Emperor Louis only intervening in one
 	trait = diligent # Under his leadership, the county is administered efficiently
 	trait = content # Complementary third trait
+	trait = administrator # Under his leadership, the county is administered efficiently
 	810.1.1 = { # Unknown
 		birth = yes
 	}
@@ -679,10 +692,11 @@ HEE_vifredo_of_piacenza = { # Vifredo of Piacenza - https://it.wikipedia.org/wik
 	}
 }
 
-HEE_berta_of_piacenza = { # Berta of Piacenza, wife of Suppo II
+vuifredingi0002 = { # Berta of Piacenza, wife of Suppo II
 	name = "Berta"
 	female = yes
-	father = HEE_vifredo_of_piacenza
+	dynasty = dynvuifredingi # Vuifredingi
+	father = vuifredingi0001
 	religion = "catholic"
 	culture = "french"
 	trait = generous # after her husband's death she would donate to the church of Sant'Antonino those goods received as an inheritance from her father in Piacenza and the surrounding area
@@ -693,6 +707,20 @@ HEE_berta_of_piacenza = { # Berta of Piacenza, wife of Suppo II
 		add_spouse = 167882 # Suppo II
 	}
 	895.1.1 = { # Unknown, though she did survive her husband
+		death = yes
+	}
+}
+
+vuifredingi0003 = { # Richardus of Piacenza, possible Count of Placentiae
+	name = "Richardus"
+	dynasty = dynvuifredingi # Vuifredingi
+	father = vuifredingi0001
+	religion = "catholic"
+	culture = "french"
+	833.1.1 = { # Unknown
+		birth = yes
+	}
+	900.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -760,7 +788,7 @@ additional_aldobrandeschi_0002 = { # Father of Eriprando Aldobrandeschi and the 
 alateo_0002 = { # Ferilapa, daughter of Ferualdo of the late Alateo, wife of Ildebrando I Aldobrandeschi
 	name = "Ferilapa"
 	female = yes
-	dynasty = HEE_alateo # Alateo
+	dynasty = dynasty_alateo # Alateo
 	father = alateo_0001
 	religion = catholic
 	culture = italian
@@ -774,7 +802,7 @@ alateo_0002 = { # Ferilapa, daughter of Ferualdo of the late Alateo, wife of Ild
 
 alateo_0001 = {
 	name = "Ferualdo"
-	dynasty = HEE_alateo # Alateo
+	dynasty = dynasty_alateo # Alateo
 	religion = catholic
 	culture = italian
 	trait = ambitious
@@ -923,6 +951,22 @@ additional_aldobrandeschi_0011 = { # Lamberto Aldobrandeschi - https://it.wikipe
 		birth = yes
 	}
 	973.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+ostrevent0001 = { # https://fmg.ac/Projects/MedLands/nfracado.htm#HucbaldOstervantMHeilwigFriulia
+	name = "Hucbald"
+	dynasty = dostrevent # COMTES d’OSTREVENT
+	religion = catholic
+	culture = "french"
+	840.1.1 = { # Unknown
+		birth = yes
+	}
+	864.1.1 = {
+		add_spouse = 168065 # HEILWIG [of Friulia]
+	}
+	890.1.1 = { # Sometime after 890
 		death = yes
 	}
 }

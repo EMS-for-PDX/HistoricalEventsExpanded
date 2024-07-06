@@ -22,7 +22,7 @@ hee_karling_867_effect = {
 	character:6877 = { save_scope_as = teutberga } # https://en.wikipedia.org/wiki/Teutberga
 	character:7853 = { save_scope_as = pope_nicholas } # https://en.wikipedia.org/wiki/Pope_Nicholas_I
 	character:7852 = { save_scope_as = pope_hadrian } # https://en.wikipedia.org/wiki/Pope_Adrian_II
-	
+
 	character:90102 = { save_scope_as = hugh } # https://en.wikipedia.org/wiki/Hugh,_Duke_of_Alsace
 	character:7920 = { save_scope_as = bertha } # https://en.wikipedia.org/wiki/Bertha,_daughter_of_Lothair_II
 	character:163174 = { save_scope_as = irmgard } # Ermengarde (d. 90?)
@@ -71,7 +71,7 @@ hee_karling_867_effect = {
 
 	character:163105 = { save_scope_as = salomon } # https://en.wikipedia.org/wiki/Salomon,_King_of_Brittany
 
-	title:e_hre = { save_scope_as = e_carolingian_empire }
+	title:e_france = { save_scope_as = e_carolingian_empire }
 	title:k_italy = { save_scope_as = k_italy }
 	title:k_east_francia = { save_scope_as = k_east_francia }
 	title:k_lotharingia = { save_scope_as = k_lotharingia }
@@ -79,12 +79,12 @@ hee_karling_867_effect = {
 	title:k_france = { save_scope_as = k_france }
 
 	# House-keeping #
- 	title:e_france = {
+ 	title:e_germany = {
  		every_in_de_jure_hierarchy = {
  			limit = {
  				tier = tier_kingdom
  			}
- 			set_de_jure_liege_title = title:e_hre
+ 			set_de_jure_liege_title = title:e_france
  		}
  	}
 
@@ -134,8 +134,15 @@ hee_karling_867_effect = {
 
 	# Italy #
 
-	character:30228 = { # Louis the Younger is the current Western Roman Emperor
-		add_character_modifier = western_roman_emperor_modifier
+	if = { # In the event Louis the Younger does not hold an Imperial title on game start, will recieve a modifier to symbolize his status as the current Western Roman Emperor
+		limit = { 
+			character:30228 = { 
+				highest_held_title_tier < tier_empire
+			}
+		}
+		character:30228 = {
+			add_character_modifier = western_roman_emperor_modifier
+		}
 	}
 
 	character:30228 = { # Capital of Italy is Pavia
@@ -362,6 +369,7 @@ hee_byzantine_bulgaria_867_effect = {
 	# Scopes
 	character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
 	character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
+	character:amorios0010 = { save_scope_as = thekla }
 	
 	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
 	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
@@ -377,13 +385,13 @@ hee_byzantine_bulgaria_867_effect = {
 	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
 	character:712 = { save_scope_as = simeon_i } # https://en.wikipedia.org/wiki/Simeon_I_of_Bulgaria
 
-	character:HEE_chrysocheir = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
+	character:paulician0004 = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
 
 	character:163147 = { save_scope_as = ibrahim_ii } # https://en.wikipedia.org/wiki/Ibrahim_II_of_Ifriqiya
 
-	character:HEE_danielis = { save_scope_as = danielis_of_patras } # https://en.wikipedia.org/wiki/Danielis
+	character:patras0001 = { save_scope_as = danielis_of_patras } # https://en.wikipedia.org/wiki/Danielis
 
-	character:HEE_gregory_asbestas = { save_scope_as = gregory_asbestas } # https://en.wikipedia.org/wiki/Gregory_Asbestas
+	character:asbestas0001 = { save_scope_as = gregory_asbestas } # https://en.wikipedia.org/wiki/Gregory_Asbestas
 
 	character:168291 = { save_scope_as = petar_the_diplomat } # https://en.wikipedia.org/wiki/Peter_(diplomat)
 
@@ -617,43 +625,25 @@ hee_byzantine_bulgaria_867_effect = {
 		LIEGE = character:70490
 	}
 
-	character:70490 = { # Michael III
-		add_character_modifier = michael_administrative_indifference
-	}
-
-	# When Michael III started to favour another courtier, Basiliskianos, Basil decided that his position was being undermined. Michael threatened to invest Basiliskianos with the Imperial title 
-	character:1700 = {
-		add_opinion = {
-			target = character:70490
-			modifier = insulted_opinion
-			opinion = -25
-		}
-		add_opinion = {
-			target = character:70490
-			modifier = spurned_opinion
-			opinion = -50
-		}
-		add_opinion = {
-			target = character:70490
-			modifier = envy_opinion
-			opinion = -50
-		}
-	}
-	
-	scope:michael_iii = {
-		add_opinion = {
-			target = scope:leon
-			modifier = truly_of_my_blood_opinion
-			opinion = 100
+	scope:eudokia_ingerina = { # Chance for a Stephen of Constantinople
+		make_pregnant = {
+			father = scope:michael_iii
 		}
 	}
 
-	scope:michael_iii = {
-		had_sex_with_effect = {
-			CHARACTER = scope:eudokia_ingerina
-			PREGNANCY_CHANCE = pregnancy_chance
+	scope:basil = {
+		set_variable = {
+			name = ongoing_confrontation
+			value = yes
 		}
 	}
+
+
+
+
+
+
+
 
 	scope:danielis_of_patras = {
 		get_title = title:b_vostitsa
@@ -714,6 +704,14 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	province:468 = { save_scope_as = b_ragusa }
+	scope:b_ragusa = {
+		add_province_modifier = {
+			modifier = 867_ragusan_siege_preparations
+			years = 1
+		}
+	}
+
 
 	# Magyar's in 867 won't invade until we fire it 
 
@@ -730,6 +728,8 @@ hee_byzantine_bulgaria_867_effect = {
 		add_building = hill_forts_02
 	}
 	scope:b_sambalut.barony = { set_capital_barony = yes }
+
+
 }
 
 
@@ -1691,7 +1691,7 @@ hee_paulicians_867_effect = {
 	character:70383 = { save_scope_as = vladimir_raste } # https://en.wikipedia.org/wiki/Vladimir_of_Bulgaria
 	character:712 = { save_scope_as = simeon_i } # https://en.wikipedia.org/wiki/Simeon_I_of_Bulgaria
 
-	character:HEE_chrysocheir = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
+	character:paulician0004 = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
 
 
 	title:c_satala = {

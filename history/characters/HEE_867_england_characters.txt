@@ -1193,3 +1193,41 @@ hee_aethelwold_aetheling = { # https://en.wikipedia.org/wiki/%C3%86thelwold_%C3%
 		}
 	}
 }
+
+sherbornebishop0001 = { # https://en.wikipedia.org/wiki/Heahmund
+	name = "Heahmund"
+	religion = "catholic"
+	culture = anglo_saxon
+
+	#Skills
+	martial = 9
+	learning = 8
+	prowess = 8
+
+	#Education
+	trait = education_learning_3
+
+	#Personality Traits
+	trait = brave
+	trait = zealous
+	trait = chaste
+
+	#Other Traits
+	trait = devoted
+	trait = holy_warrior # Classified as a "warrior-bishop" so traits should convey that feeling
+	trait = gallant
+
+	837.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 306016 # as Bishop of Sherborne
+		give_council_position = councillor_court_chaplain #Bishop of Sherborne
+	}
+	871.3.22 = { 
+		trait = saint
+		death = { # died at the Battle of Meretun in 871
+			death_reason = death_battle
+		}
+	}
+}

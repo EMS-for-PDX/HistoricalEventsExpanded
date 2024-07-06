@@ -794,7 +794,7 @@
 
 159123 = {
 	name = "Krum"
-	dynasty = 591
+	dynasty = 8636 # Balgarsko seems to represent Krum's Dynasty, thus the Dynasty should start with Krum
 	religion = "tengri_pagan"
 	culture = "bolghar"
 	father = 145939
@@ -816,7 +816,7 @@
 
 159124 = {
 	name = "Omortag"
-	dynasty = 591
+	dynasty = 8636
 	religion = "tengri_pagan"
 	culture = "bolghar"
 	father = 159123
@@ -830,7 +830,7 @@
 
 159125 = {
 	name = "Malamir"
-	dynasty = 591
+	dynasty = 8636
 	religion = "tengri_pagan"
 	culture = "bolghar"
 	father = 159124

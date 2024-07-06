@@ -5636,10 +5636,8 @@ c_szerem = {
 	852.1.1 = {
 		holder = 70382 #Boris
 	}
-	860.1.1 = {
-		holder = 168067
-	}
-	863.1.1 = {
+	865.1.1 = {
+		holder = tarkan0002 # # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
 		liege = "e_bulgarian_principality"
 	}
 	1066.1.1 = {

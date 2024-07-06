@@ -2952,8 +2952,9 @@ d_alsace = {
 	739.1.1 = {
 		holder = 0
 	}
-	875.1.1 = {
+	867.1.1 = {
 		holder = 90102 #Hugues Karling
+		liege = "k_lotharingia"
 	}
 	895.1.2 = {
 		holder = 0
@@ -2992,6 +2993,9 @@ c_strassburg = {
 	}
 	842.1.1 = {
 		liege = "k_lotharingia"
+	}
+	867.1.1 = {
+		liege = "d_alsace"
 	}
 	898.1.1 = {
 		holder = 1326
@@ -3158,7 +3162,7 @@ c_colmar = {
 		holder = 144998 #Lothair II
 	}
 	867.1.1 = {
-		holder = 163095 #Count Luitfried
+		holder = 90102 #Hugh, Lothaire II's Bastard
 		liege = k_lotharingia
 	}
 	869.8.8 = {
@@ -3285,7 +3289,11 @@ c_sundgau = {
 		holder = 163055
 	}
 	864.1.1 = {
+		holder = 168064
+	}
+	867.1.1 = {
 		holder = 163095
+		liege = "d_alsace"
 	}
 	925.1.1 = {
 		liege = "d_swabia"

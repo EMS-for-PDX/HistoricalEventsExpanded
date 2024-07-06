@@ -3656,11 +3656,11 @@
 	dynasty = 7184
 	religion = catholic
 	culture = lombard
+	trait = arbitrary
+	trait = ambitious
 	trait = cynical
 	trait = devoted
-	trait = theologian
-	trait = architect
-	trait = lifestyle_mystic
+	trait = lifestyle_mystic # Landolf is portrayed as a person who dabbled with mysticism and black magic, an ally of the Saracens and the enemy of Christianity
 	trait = education_learning_3
 
 	father = 163075

@@ -3311,7 +3311,7 @@ extra_karluks_3 = {
 	}
 }
 
-extra_karluks_4 = {
+extra_karluks_4 = { # Muzahim ibn Khaqan; Abbasid Turkic military commander who was appointed governor of Egypt in 867
 	name = "Muzahim"
 	dynasty = karluk_urtujid
 	religion = ashari
@@ -3337,7 +3337,7 @@ extra_karluks_4 = {
 	}
 }
 
-extra_karluks_5 = {
+extra_karluks_5 = { # Ahmad ibn Muzahim ibn Khaqan; military governor of Egypt for the Abbasid dynasty for a part of 868
 	name = "Ahmad"
 	dynasty = karluk_urtujid
 	religion = ashari 

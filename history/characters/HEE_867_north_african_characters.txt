@@ -1,5 +1,5 @@
 ﻿## Characters for North Africa - 867 ##
-additionalidrisids0001 = { # Isa, son of Idris II who rose in revolt against his older brother Muhammad but was defeated by another brother Umar
+idrisid0001 = { # Isa, son of Idris II who rose in revolt against his older brother Muhammad but was defeated by another brother Umar
 	name = "Isa"
 	dynasty = 1029055
 	religion = "zayidi"
@@ -14,7 +14,7 @@ additionalidrisids0001 = { # Isa, son of Idris II who rose in revolt against his
 	}
 }
 
-additionalidrisids0002 = { # Dawud, son of Idris II who is attested as the ruler of Fes c. 877 based on an inscription at the al-Qarawiyyin mosque
+idrisid0002 = { # Dawud, son of Idris II who recieved the country of the Hawwāra, to the east of Tāzā from Muhammad's partition. Attested as the ruler of Fes c. 877 based on an inscription at the al-Qarawiyyin mosque
 	name = "Dawud"
 	dynasty = 1029055
 	religion = "zayidi"
@@ -29,7 +29,7 @@ additionalidrisids0002 = { # Dawud, son of Idris II who is attested as the ruler
 	}
 }
 
-additionalidrisids0003 = { # Yahya, son of Idris II who was given Hiṣn Daī (a site probably near modern Beni Mellal)
+idrisid0003 = { # Yahya, son of Idris II who was given Hiṣn Daī (a site probably near modern Beni Mellal)
 	name = "Yahya"
 	dynasty = 1029055
 	religion = "zayidi"
@@ -44,7 +44,7 @@ additionalidrisids0003 = { # Yahya, son of Idris II who was given Hiṣn Daī (a
 	}
 }
 
-additionalidrisids0004 = { # Hamza, son of Idris II who was given Walili
+idrisid0004 = { # Hamza, son of Idris II who was given Walili
 	name = "Hamza"
 	dynasty = 1029055
 	religion = "zayidi"
@@ -59,7 +59,7 @@ additionalidrisids0004 = { # Hamza, son of Idris II who was given Walili
 	}
 }
 
-additionalidrisids0005 = { # 'Abd Allah, son of Idris II who was given the south, including the territory of the Lamta tribes and a town named Tamdult.
+idrisid0005 = { # 'Abd Allah, son of Idris II who was given the south, including the territory of the Lamta tribes and a town named Tamdult.
 	name = "Abdallah"
 	dynasty = 1029055
 	religion = "zayidi"
@@ -70,6 +70,21 @@ additionalidrisids0005 = { # 'Abd Allah, son of Idris II who was given the south
 		birth = yes
 	}
 	880.1.1 = {
+		death = yes
+	}
+}
+
+idrisid0006 = { # Yahya ibn Yahya's uncle Husayn who received much land to the south of the capital
+	name = "Husayn"
+	dynasty = 1029055
+	religion = "zayidi"
+	culture = maghrebi
+	trait = sayyid
+	father = 159503 # Muhammad; could be an uncle from the mother's side, but probably from Father's
+	832.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
 		death = yes
 	}
 }
@@ -646,5 +661,23 @@ sulaymanid0023 = { # Abd Allah ibn Muhammad, Emir of Tenes - https://en.wikipedi
 	}
 	925.1.1 = { # Unknown
 		death = yes
+	}
+}
+
+rustamid0001 = {
+	name = "Arwa" #AKA al-Rustamíya, daughter of Abd al-Rahman b. Rustam
+	female = yes
+	dynasty = 808
+	religion = "ibadi"
+	culture = "maghrebi"
+	father = 210029
+	783.1.1 = {
+		birth = "783.1.1"
+	}
+	824.1.1 = {
+		add_spouse = 1228835
+	}
+	840.1.1 = {
+		death = "840.1.1"
 	}
 }

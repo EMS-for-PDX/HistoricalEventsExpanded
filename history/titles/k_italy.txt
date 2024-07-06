@@ -3047,7 +3047,7 @@ c_parma = {
 
 b_piacenza = {
 	850.1.1 = {
-		holder = HEE_vifredo_of_piacenza
+		holder = vuifredingi0001
 	}
 }
 

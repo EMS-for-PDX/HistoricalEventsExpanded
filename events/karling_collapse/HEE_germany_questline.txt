@@ -58,7 +58,7 @@ HEE_germany_questline.0100 = {
                         limit = {
                             exists = global_var:CE_is_loaded
                         }
-                        set_de_jure_liege_title = title:e_hre
+                        set_de_jure_liege_title = title:e_france
                     }
                     else = {
                         set_de_jure_liege_title = title:e_germany
@@ -708,7 +708,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 
 		cp:councillor_court_chaplain = { save_scope_as = carloman_bishop }
 
-        title:e_hre = { save_scope_as = e_carolingian_empire }
+        title:e_france = { save_scope_as = e_carolingian_empire }
 		title:k_bavaria = { save_scope_as = k_bavaria }
 		title:k_italy = { save_scope_as = k_italy }
 		title:k_burgundy = { save_scope_as = k_burgundy }

@@ -66,8 +66,8 @@ hairstyles_scripted_characters = {
             modifier = {
                 add = 999
                 exists = this
-                exists = character:HEE_nasar
-                this = character:HEE_nasar
+                exists = character:nasar0002
+                this = character:nasar0002
             }
         }
     }
@@ -87,34 +87,11 @@ hairstyles_scripted_characters = {
             modifier = {
                 add = 999
 				exists = this
-				exists = character:HEE_chrysocheir
-				this = character:HEE_chrysocheir
+				exists = character:paulician0004
+				this = character:paulician0004
             }
         }
     }
-
-
-    male_hair_indian_02 = { # Pompadour with curled neck hair
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.57 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:HEE_random_italian_villain_1
-                this = character:HEE_random_italian_villain_1
-            }
-        }
-    }
-
-
 
     male_hair_northern_03 = { # Norman style short with shaved back and sides
         dna_modifiers = {
@@ -130,31 +107,9 @@ hairstyles_scripted_characters = {
             modifier = {
                 add = 999
 				exists = this
-				exists = character:HEE_nasar #Nasar
-				this = character:HEE_nasar #Nasar
+				exists = character:nasar0002 #Nasar
+				this = character:nasar0002 #Nasar
             }
-        }
-    }
-
-    male_hair_fp2_iberian_muslim_02 = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_03
-                value = 0.2 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-
-              modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_digenes_akritas
-                this = character:HEE_digenes_akritas
-            }
-
         }
     }
 
@@ -178,26 +133,6 @@ hairstyles_scripted_characters = {
         }
     }
 
-     male_hair_fp2_iberian_christian_01 = {
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_03
-                value = 0.6# For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-             modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_Frigg
-                this = character:HEE_Frigg
-            }
-        }
-    }
-
 
 ##############################################################################################################################################
 ##############################################################################################################################################
@@ -207,65 +142,6 @@ hairstyles_scripted_characters = {
 ##############################################################################################################################################
 ##############################################################################################################################################
 
-    female_hair_western_07 = { # Twin tails with ribbons
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.18 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_second_random_italian_woman_3
-                this = character:HEE_second_random_italian_woman_3
-            }
-        }
-    }
-
-    female_hair_western_10 = { # Big tail with ribbons
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.26 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:HEE_Eir
-                this = character:HEE_Eir
-            }
-        }
-    }
-
-    female_hair_mena_02 = { # Behind head long curly
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.31 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:HEE_second_random_italian_woman
-                this = character:HEE_second_random_italian_woman
-            }
-        }
-    }
 
     female_hair_byzantine_01 = { # Twin tails with spiral ribbons
         dna_modifiers = {
@@ -281,116 +157,13 @@ hairstyles_scripted_characters = {
             modifier = {
                 add = 999
 				exists = this
-                exists = character:HEE_zoe_zoutzaina 
-                this = character:HEE_zoe_zoutzaina 
-            }
-        }
-    }
-
-    female_hair_byzantine_02 = { # Curly updo with earrings
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.37 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-				exists = this
-                exists = character:HEE_random_roman_woman 
-                this = character:HEE_random_roman_woman 
+                exists = character:zaoutzes0005 
+                this = character:zaoutzes0005 
             }
         }
     }
 
     ### FP2 Hair ###
-
-    female_hair_fp2_iberian_muslim_01 = { # Let out but with smaller braids braided in
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_03
-                value = 0.1 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-				add = 999
-				exists = this
-				exists = character:HEE_random_italian_woman
-				this = character:HEE_random_italian_woman
-            }	
-        }
-    }
-
-    female_hair_fp2_iberian_christian_01 = { # Let out but with smaller braids braided in
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_03
-                value = 0.6 # For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-             modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_second_random_italian_woman_4
-                this = character:HEE_second_random_italian_woman_4
-            }
-        }
-    }
-
-    female_hair_fp2_iberian_christian_02 = { # Let out but with smaller braids braided in
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_03
-                value = 0.83 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-            modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_Freyja
-                this = character:HEE_Freyja
-            }
-        }
-    }
-
-    ### FP1 Hair ###
-
-    female_hair_fp1_01 = { # Let out but with smaller braids braided in
-        dna_modifiers = {
-            accessory = {
-                mode = add
-                gene = hairstyles
-                template = scripted_character_hairstyles_01
-                value = 0.83 # For the randomness to work correctly
-            }
-        }   
-        weight = {
-            base = 0
-
-             modifier = {
-                add = 999
-                exists = this
-                exists = character:HEE_Sif
-                this = character:HEE_Sif
-            }		
-        }
-    }
 
     female_hair_fp1_02 = { # Very big loose braid on one shoulder
         dna_modifiers = {

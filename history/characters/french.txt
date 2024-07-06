@@ -25648,14 +25648,21 @@
 	stewardship = 6
 	religion = "catholic"
 	culture = french
-	trait = education_intrigue_2
+	trait = education_learning_4 # Well-educated for a woman of the period, thx Charlemagne
+	trait = generous # renowned for her piety and virtue, much like her namesake, Gisela (the sister of Charlemagne), who had chosen the religious life from girlhood. 
+	trait = temperate
+	trait = chaste
+	trait = humble
 	father = 90095
 	mother = 7986
 	821.1.1 = {
 		birth = "821.1.1"
 	}
-	866.1.1 = {
-		death = "866.1.1"
+	867.1.1 = {
+		trait = devoted # Following the death of her husband, became a Nun
+	}
+	874.1.1 = { # Sometime after 874
+		death = "874.1.1"
 	}
 }
 
@@ -25853,7 +25860,7 @@
 	trait = gregarious
 	trait = ambitious
 	trait = diligent
-	trait = patient
+	trait = callous # Possibly poisoned his first wife in order to marry Ermengarde
 	trait = education_diplomacy_5
 	father = 7979
 	mother = 7978
@@ -26918,10 +26925,6 @@
 	855.12.1 = {
 		birth = yes
 	}
-	867.1.1 = {
-		get_title = title:c_colmar
-		get_title = title:d_alsace
-	}
 	885.1.1 = {
 		trait = blind
 	}
@@ -27479,8 +27482,8 @@
 	culture = french
 	trait = legitimized_bastard
 	father = 90128
-	875.1.1 = {
-		birth = "875.1.1"
+	867.1.1 = {
+		birth = "867.1.1"
 	}
 	934.1.1 = {
 		death = "934.1.1"
@@ -40756,6 +40759,16 @@
 		add_spouse = 6877 # Teutberga
 		effect = {
 			set_relation_soulmate = character:168314 # Waldrada
+			every_known_secret = { # Lothaire's continued relationship with Waldrada is not a secret
+				limit = {
+					secret_owner = character:144998
+				}
+				expose_secret = character:144998
+			}
+			consume_all_criminal_reasons_effect = { # Lothaire's continued relationship with Waldrada is not a crime
+				LIEGE = character:144998
+				CRIMINAL = character:168314
+			}
 		}
 	}
 	869.5.1 = {
@@ -44305,7 +44318,7 @@
 	religion = "catholic"
 	culture = french
 	father = 167882
-	mother = HEE_berta_of_piacenza
+	mother = vuifredingi0002
 	857.1.1 = {
 		birth = "857.1.1"
 	}
@@ -44577,8 +44590,8 @@
 	culture = french
 	father = 168020
 	mother = 168026
-	810.1.1 = {
-		birth = "810.1.1"
+	817.1.1 = {
+		birth = "817.1.1"
 	}
 	860.1.1 = {
 		death = "860.1.1"
@@ -45138,8 +45151,8 @@
 	religion = "catholic"
 	culture = french
 	father = 90128
-	860.1.1 = {
-		birth = "860.1.1"
+	877.1.1 = {
+		birth = "877.1.1"
 	}
 	
 	901.1.1 = {

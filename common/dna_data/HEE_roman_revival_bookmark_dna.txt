@@ -1,5 +1,5 @@
 ﻿#Bookmark Characters
-HEE_chrysocheir_dna = { # Chrysocheir, Leader of the Paulicians
+paulician_leader_dna = { # Chrysocheir, Leader of the Paulicians
 	portrait_info = {
 		genes={ 		
 			hair_color={ 127 243 127 243 }

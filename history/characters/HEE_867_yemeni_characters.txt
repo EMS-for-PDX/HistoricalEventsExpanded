@@ -1,0 +1,1076 @@
+﻿## Characters for Yemen - 867 ##
+
+# Yahmadí imáms in Oman
+yahmadi0001 = {
+	name = "Yahmad" #fictional founder of the Yahmad branch of Azd tribes
+	dynasty = 1042182
+
+	religion = "ibadi"
+	culture = "omani"
+
+	630.1.1 = {
+		birth = yes
+	}
+	679.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0002 = {
+	name = "Kharus" #fictional
+	dynasty = 1042182
+	father = yahmadi0001
+
+	culture = "omani"
+	religion = "ashari"
+
+	668.1.1 = {
+		birth = "668.1.1"
+	}
+	716.1.1 = {
+		death = "716.1.1"
+	}
+}
+
+yahmadi0003 = {
+	name = "Abu-Qasim" #fictional
+	dynasty = 1042182
+	father = yahmadi0002
+
+	culture = "omani"
+	religion = "ibadi"
+
+	709.1.1 = {
+		birth = "709.1.1"
+	}
+	764.1.1 = {
+		death="764.1.1"
+	}
+}
+
+yahmadi0004 = {
+	name = "Mansur" #fictional
+	dynasty = 1042182
+	father = yahmadi0003
+
+	culture = "omani"
+	religion = "ibadi"
+
+	740.1.1 = {
+		birth = yes
+	}
+	799.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0005 = {
+	name = "Ali" #fictional
+	dynasty = 1042182
+	father = yahmadi0004
+
+	culture = "omani"
+	religion = "ibadi"
+
+	775.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death=yes
+	}
+}
+
+yahmadi0006 = {
+	name = "MA_lik" #fictional
+	dynasty = 1042182
+	father = yahmadi0005
+
+	culture = "omani"
+	religion = "ibadi"
+
+	800.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0007 = {
+	name = "Khalil" #fictional
+	dynasty = 1042182
+	father = yahmadi0006
+
+	culture = "omani"
+	religion = "ibadi"
+
+	830.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0008 = {
+	name = "Yahya" #fictional
+	dynasty = 1042182
+	father = yahmadi0007
+
+	culture = "omani"
+	religion = "ibadi"
+
+	860.1.1 = {
+		birth = yes
+	}
+	915.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0009 = {
+	name = "Abu'l-Qasim" #fictional
+	dynasty = 1042182
+	father = yahmadi0008
+
+	culture = "omani"
+	religion = "ibadi"
+
+	890.1.1 = {
+		birth = yes
+	}
+	933.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0010 = {
+	name = "Abu-Muhammad" #fictional
+	dynasty = 1042182
+	father = yahmadi0009
+
+	culture = "omani"
+	religion = "ibadi"
+
+	923.1.1={
+		birth = yes
+	}
+	988.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0011 = {
+	name = "Abdallah" #fictional
+	dynasty = 1042182
+	father = yahmadi0010
+
+	culture = "omani"
+	religion = "ibadi"
+
+	954.1.1 = {
+		birth = yes
+	}
+	1005.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0012 = {
+	name = "Sa'íd"
+	dynasty = 1042182
+	father = yahmadi0011 #fictional relation
+
+	religion = "ibadi"
+	culture = "omani"
+
+	980.1.1 = {
+		birth = yes
+	}
+	1034.1.1 = {
+		death = yes
+	}
+}
+yahmadi0013 = {
+	name = "Ráshid"	#Abu Ghassan; imam since 1032, 1050-1051 drove Banú Makran out of Oman
+	dynasty = 1042182 #Yahmadi, possibly of Kharusi extraction
+	father = yahmadi0012
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1002.1.1 = {
+		birth = yes
+	}
+	1053.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0014 = {
+	name="Ali"
+	dynasty=1042182
+	religion="ibadi"
+	culture="omani"
+	father = yahmadi0013
+	1029.1.1={
+		birth=yes
+	}
+	1100.1.1={
+		death=yes
+	}
+}
+
+yahmadi0015 = {
+	name="Rashid"	#imam until 1130 (1119?)
+	dynasty=1042182
+	religion="ibadi"
+	culture="omani"
+	father = yahmadi0014
+	1042.1.1={
+		birth=yes
+	}
+	1119.1.1 = {
+		death = { 
+			death_reason = death_battle 
+		}
+	}
+}
+
+yahmadi0016 = {
+	name = "Muhammad" #b. Abi Ghassan (possibly Rashid b. Sa'id) al-Kharusi, imam of Oman ca. 1105
+	dynasty = 1042182
+	father = yahmadi0013
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1045.1.1 = { #?
+		birth = yes
+	}
+	1115.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0017 = {
+	name = "Khanbash"	#Father of Muhammad ibn Hanbish, possibly an imam himself?
+	dynasty = 1042182
+	father = yahmadi0016
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1093.1.1 = {
+		birth = yes
+	}
+	1140.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0018 = {
+	name = "Muhammad"	#imam until 1161 (1141?). His death caused the vacuum that led to the Nabhanid takeover
+	dynasty = 1042182
+	father = yahmadi0017
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1114.1.1 = {
+		birth = yes
+	}
+	1161.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0019 = {
+	name = "Walid"
+	dynasty = 1042182
+	religion = "ibadi"
+	culture = "omani"
+	father = yahmadi0010 #fictional relation
+	970.1.1 = { #?
+		birth = yes
+	}
+	1020.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0020 = {
+	name = "Rashid"
+	dynasty = 1042182
+	father = yahmadi0019
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1000.1.1 = { #?
+		birth = yes
+	}
+	1052.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0021 = {
+	name = "'Amir" #b. Rashid b. Walid al-Kharusi, elected imam of Oman in 1083
+	dynasty = 1042182 #Yahmadi-Kharusi
+	father = yahmadi0020
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1035.1.1 = { #?
+		birth = yes
+	}
+	1099.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0022 = {
+	name = "Shadhan" #fictional
+	dynasty = 1042182
+	father = yahmadi0021
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1011.1.1 = { #?
+		birth = yes
+	}
+	1068.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0023 = {
+	name = "Tamím"
+	dynasty = 1042182
+	father = yahmadi0005 #fictional relation
+
+	culture = "omani"
+	religion = "ibadi"
+
+	805.1.1 = {
+		birth = "805.1.1"
+	}
+	858.1.1 = {
+		death = "858.1.1"
+	}
+}
+
+yahmadi0024 = {
+	name = "'Azzán"
+	dynasty = 1042182 # Yahmadi-Kharus
+	father = yahmadi0023
+
+	culture = "omani"
+	religion = "ibadi"
+
+	832.1.1 = {
+		birth = "832.1.1"
+	}
+	900.1.1 = { # overthrown by the Abbasid governor of Bahrayn Muhammad b. Nur
+		death = { death_reason = death_murder } # Likely killed after the Abbasid invasion
+	}
+}
+
+yahmadi0025 = {
+	name = "Shadhan" #b. al-Salt
+	dynasty = 1042182
+	father = 74037
+
+	culture = "omani"
+	religion = "ibadi"
+
+	840.1.1 = { #?
+		birth = "840.1.1"
+	}
+	895.1.1 = { #?
+		death = "895.1.1"
+	}
+}
+
+yahmadi0026 = {
+	name = "Abu-Muslim" #fictional
+	dynasty = 1042182
+	father = yahmadi0025 #somewhat fictional
+
+	culture = "omani"
+	religion = "ibadi"
+
+	890.1.1={
+		birth=yes
+	}
+	944.1.1={
+		death=yes
+	}
+}
+
+yahmadi0027 = {
+	name = "al-Husayn" #fictional
+	dynasty = 1042182
+	father = yahmadi0026
+
+	culture = "omani"
+	religion = "ibadi"
+
+	923.1.1 = {
+		birth = yes
+	}
+	977.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0028 = {
+	name = "Shadhan"
+	dynasty = 1042182
+	father = yahmadi0027
+
+	religion = "ibadi"
+	culture = "omani"
+
+	955.1.1 = {
+		birth = yes
+	}
+	999.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0029 = {
+	name = "Al-Khalil" #possibly great-grandson of al-Salt b. Malik
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0028
+
+	religion = "ibadi"
+	culture = "omani"
+	
+	977.1.1 = {
+		birth = yes
+	}
+	1032.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0030 = {
+	name = "Muhammad"
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0029
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1006.1.1 = { #?
+		birth = yes
+	}
+	1046.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0031 = {
+	name = "Umar"
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0030
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1035.1.1 = { #?
+		birth = yes
+	}
+	1084.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0032 = {
+	name = "Abdallah"
+	dynasty = 1042182 #Yahmad-Kharus
+	religion = "ibadi"
+	culture = "omani"
+	father = yahmadi0031	
+	1068.1.1 = { #?
+		birth = yes
+	}
+	1132.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0033 = {
+	name = "Al-Khalil" #supposedly the last Omani imam according to one account
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0032
+
+	religion = "ibadi"
+	culture = "omani"
+	
+	1103.1.1 = { #?
+		birth = yes
+	}
+	1165.1.1 = { #? Killed by the Nabhanids
+		death = {
+			death_reason = death_battle
+			killer = 144145
+		}
+	}
+}
+
+yahmadi0034 = {
+	name = "Ghassan"
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0032 #a certain Abdallah
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1105.1.1 = { #?
+		birth = yes
+	}
+	1161.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0035 = {
+	name = "Muhammad" #b. Ghassan b. Abdallah, Omani Imam ca. 1170s?
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0032 #a certain Abdallah
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1130.1.1 = { #?
+		birth = yes
+	}
+	1212.1.1 = { #?
+		death = yes
+	}
+}
+
+yahmadi0036 = {
+	name = "Nijad"
+	dynasty = 1042182
+	father = yahmadi0028
+
+	religion = "ibadi"
+	culture = "omani"
+
+	988.1.1={
+		birth=yes
+	}
+	1031.1.1={
+		death=yes
+	}
+}
+
+yahmadi0037 = {
+	name = "Musa"
+	dynasty = 1042182
+	father = yahmadi0036
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1022.1.1 = {
+		birth = yes
+	}
+	1083.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0038 = {
+	name = "Abi-al-Mu'ali"
+	dynasty = 1042182
+	father = yahmadi0037
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1056.1.1 = {
+		birth = yes
+	}
+	1112.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0039 = {
+	name = "Musa"	#imam until 1154
+	dynasty = 1042182
+	religion = "ibadi"
+	culture = "omani"
+	father = yahmadi0038
+	1091.1.1 = {
+		birth = yes
+	}
+	1154.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0040 = {
+	name = "al-Qasim" #fictional
+	dynasty = 1042182
+	father = yahmadi0027
+
+	religion = "ibadi"
+	culture = "omani"
+
+	960.1.1 = {
+		birth = yes
+	}
+	1013.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0041 = {
+	name = "Walid" #fictional
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0040
+
+	religion = "ibadi"
+	culture = "omani"
+	
+	993.1.1 = {
+		birth = yes
+	}
+	1051.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0042 = {
+	name = "Jabir" #fictional
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0041
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1023.1.1 = {
+		birth = yes
+	}
+	1083.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0043 = {
+	name = "Sa'id" #fictional
+	dynasty = 1042182 #Yahmad-Kharus
+	father = yahmadi0040
+
+	religion = "ibadi"
+	culture = "omani"
+
+	1003.1.1 = {
+		birth = yes
+	}
+	1059.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0044 = {
+	name = "Humayid" #fictional
+	dynasty = 1042182
+
+	culture = "omani"
+	religion = "ibadi"
+	father = yahmadi0003
+
+	745.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = "794.1.1"
+	}
+}
+
+yahmadi0045 = { # Abd al-Malik bin Humayd; fifth imam of the Imamate of Oman
+	name = "MA_lik" #b. Humayd?
+	dynasty = 1042182
+	father = yahmadi0044
+
+	culture = "omani"
+	religion = "ibadi"
+
+	trait = education_learning_3
+	trait = just
+	trait = honest
+	trait = content
+
+	768.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		trait = infirm # Grew infirm and paralyzed in his old age
+	}
+	841.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0046 = {
+	name = "Fajh" #fictional
+	dynasty = 1042182
+	father = yahmadi0001
+
+	religion = "ibadi"
+	culture = "omani"
+
+	670.1.1={
+		birth=yes
+	}
+	720.1.1={
+		death=yes
+	}
+}
+
+yahmadi0047 = {
+	name = "Abu-Affan"
+	dynasty = 1042182
+
+	culture = "omani"
+	religion = "ibadi"
+	father = yahmadi0046 #fictional relation
+
+	700.1.1 = {
+		birth = "700.1.1"
+	}
+	748.1.1 = {
+		death = "858.1.1"
+	}
+}
+
+yahmadi0048 = {
+	name = "Uthman" #fictional
+	dynasty = 1042182
+	father = yahmadi0047
+
+	religion = "ibadi"
+	culture = "omani"
+
+	733.1.1={
+		birth=yes
+	}
+	788.1.1={
+		death=yes
+	}
+}
+
+yahmadi0049 = {
+	name = "Abdalláh" #fictional
+	dynasty = 1042182
+	father = yahmadi0048
+
+	culture = "omani"
+	religion = "ibadi"
+
+	768.1.1 = {
+		birth = "768.1.1"
+	}
+	821.1.1 = {
+		death = "821.1.1"
+	}
+}
+
+yahmadi0050 = {
+	name = "Al-Nadhar"
+	dynasty = 1042182
+	father = yahmadi0049 #fictional relation
+
+	culture = "omani"
+	religion = "ibadi"
+
+	804.1.1 = {
+		birth = "804.1.1"
+	}
+	860.1.1 = {
+		death = "860.1.1"
+	}
+}
+
+yahmadi0051 = {
+	name = "Rashid" #Rashid b. al-Nadhar al-Fajhi, Ibadi imam of Oman 886-893
+	dynasty = 1042182 #Yahmad-Fajh
+	father = yahmadi0050
+
+	culture = "omani"
+	religion = "ibadi"
+
+	837.1.1 = {
+		birth = "837.1.1"
+	}
+	899.1.1 = {
+		death = "899.1.1"
+	}
+}
+
+yahmadi0052 = {
+	name = "Abdalláh" #fictional
+	dynasty = 1042182
+	father = yahmadi0047 #fictional relation
+
+	culture = "omani"
+	religion = "ibadi"
+
+	730.1.1 = {
+		birth = yes
+	}
+	792.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0053 = { # Ghassan bin Abdullah; fourth Imam of the Imamate of Oman
+	name = "Ghassán"
+	dynasty = 1042182
+	father = yahmadi0052
+
+	culture = "omani"
+	religion = "ibadi"
+
+	trait = education_martial_3
+	trait = honest
+	trait = just
+	trait = temperate
+
+	765.1.1 = {
+		birth = yes
+	}
+	823.1.1 = { # Died of an illness
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+yahmadi0054 = {
+	name = "Jayfar"
+	dynasty = 1042182
+	father = 188764 # fictional relation
+
+	culture = "omani"
+	religion = "ibadi"
+
+	766.1.1 = {
+		birth = yes
+	}
+	823.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0055 = { # Al-Muhanna bin Jayfar; sixth imam of the Imamate of Oman
+	name = "al-Muhannā"
+	dynasty = 1042182
+	father = yahmadi0054
+
+	culture = "omani"
+	religion = "ibadi"
+
+	trait = education_martial_3
+	trait = wrathful
+	trait = arbitrary
+	trait = stubborn
+	trait = ambitious
+	trait = overseer
+	trait = scholar
+
+	795.1.1 = {
+		birth = yes
+	}
+	851.1.1 = {
+		death = yes
+	}
+}
+
+yahmadi0056 = { # Father of Al-Salt bin Malik
+	name = "MA_lik"
+	dynasty = 1042182
+	father = bedouin0144
+
+	culture = "omani"
+	religion = "ibadi"
+
+	775.1.1 = {
+		birth = yes
+	}
+	831.1.1 = {
+		death = yes
+	}
+}
+
+
+### Banu Al-Julanda ###
+julanda0001 = {
+	name = "al-Julanda"
+	dynasty = dynasty_julanda
+
+	culture = "bedouin"
+	religion = "pagan"
+
+	570.1.1 = {
+		birth = yes
+	}
+	625.1.1 = {
+		death = yes
+	}	
+}
+
+julanda0002 = { # Co-King of Oman during the onset of Islam alongside his brother
+	name = "Jayfar"
+	dynasty = dynasty_julanda
+	father = julanda0001
+
+	culture = "bedouin"
+	religion = "pagan"
+
+	595.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		religion = ashari
+	}
+	660.1.1 = {
+		death = yes
+	}	
+}
+
+julanda0003 = { # Co-King of Oman during the onset of Islam alongside his brother
+	name = "Abd"
+	dynasty = dynasty_julanda
+	father = julanda0001
+
+	culture = "bedouin"
+	religion = "pagan"
+
+	598.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		religion = ashari
+	}
+	658.1.1 = {
+		death = yes
+	}	
+}
+
+julanda0004 = {
+	name = "Masud"
+	dynasty = dynasty_julanda
+	father = julanda0002
+
+	culture = "bedouin"
+	religion = "ashari"
+
+	640.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		death = yes
+	}	
+}
+
+julanda0005 = { # Al-Julanda bin Masud; Ibadi religious leader who was elected the first Ibadi imam of Oman, ruling from 749 until his death defending against an Abbasid invasion in 751 CE
+	name = "al-Julanda"
+	dynasty = dynasty_julanda
+	father = julanda0004
+
+	culture = "bedouin"
+	religion = "ibadi"
+
+	695.1.1 = {
+		birth = yes
+	}
+	751.1.1 = {
+		death = { 
+			death_reason = death_battle 
+		}
+	}	
+}
+
+julanda0006 = {
+	name = "Sa'id"
+	dynasty = dynasty_julanda
+	father = julanda0003
+
+	culture = "bedouin"
+	religion = "ashari"
+
+	645.1.1 = {
+		birth = yes
+	}
+	710.1.1 = {
+		death = yes
+	}	
+}
+
+julanda0007 = { # Ja'far bin Sa'id al-Julandi; roused the non-Ibadi tribes against Al-Julanda bin Masud and attempted to undermine Al-Julanda bin Masud's authority in the Omani interior
+	name = "Ja'far"
+	dynasty = dynasty_julanda
+	father = julanda0006
+
+	culture = "bedouin"
+	religion = "ashari"
+
+	696.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = { # The strife culminated in al-Julanda ordering the execution of his familial opponents, including Ja'far and his sons
+			death_reason = death_execution
+			killer = julanda0005 # Al-Julanda bin Masud
+		}
+	}	
+}
+
+julanda0008 = { # Son of Ja'far bin Sa'id al-Julandi who was executed alongside their father
+	name = "Abd"
+	dynasty = dynasty_julanda
+	father = julanda0007
+
+	culture = "bedouin"
+	religion = "ashari"
+
+	725.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = { # The strife culminated in al-Julanda ordering the execution of his familial opponents, including Ja'far and his sons
+			death_reason = death_execution
+			killer = julanda0005 # Al-Julanda bin Masud
+		}
+	}	
+}
+
+julanda0009 = { # Son of Ja'far bin Sa'id al-Julandi who was executed alongside their father
+	name = "Muhammad"
+	dynasty = dynasty_julanda
+	father = julanda0007
+
+	culture = "bedouin"
+	religion = "ashari"
+
+	727.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = { # The strife culminated in al-Julanda ordering the execution of his familial opponents, including Ja'far and his sons
+			death_reason = death_execution
+			killer = julanda0005 # Al-Julanda bin Masud
+		}
+	}	
+}

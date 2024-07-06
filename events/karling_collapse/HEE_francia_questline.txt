@@ -1123,7 +1123,7 @@ HEE_francia_questline.1002 = { #
 		# House-keeping for custom title
 		title:k_provence = {
 			set_capital_county = scope:capital_county_effect
-			set_de_jure_liege_title = title:e_hre
+			set_de_jure_liege_title = title:e_france
 			set_coa = title:c_venaissin
 		}
 

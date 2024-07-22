@@ -405,12 +405,12 @@ HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 	}
 }
 
-HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armenia in 866 also governor of Azerbaijan ?-874
+azdi0001 = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armenia in 866 also governor of Azerbaijan ?-874
 	name = "al-'Alá"
 	dynasty = hee_azdi
 	religion = "ashari"
 	culture = "levantine"
-	father = HEE_867_armenian_governor_father
+	father = azdi0002
 	
 	# Skills
 	diplomacy = 7
@@ -423,9 +423,9 @@ HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armen
 	# Education
 	trait = education_martial_3
 	
-	# Personality Traits - nothing known about him, added for consistency and story-telling
+	# Personality Traits - nothing much about his character is known, added for consistency and story-telling
+	trait = arrogant # Seemingly refused to step down from his governorship peacefully even after suffering a major stroke
 	trait = zealous
-	trait = just
 	trait = impatient
 	
 	# Other Traits
@@ -455,14 +455,14 @@ HEE_867_armenian_governor = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armen
 			set_relation_friend = { reason = friend_generic_history target = character:163131 } #Bugha al-Sharabi - The one who appointed him Governor in Bugha's stead, collected taxes and admin estates in his name
 		}
 	}
-	874.7.1 = { #killed in battle against Abu al-Rudayni Umar b. Ali b. Murr, newly appointed governor of Azerbaijan
+	874.7.1 = { # killed in battle against Abu al-Rudayni Umar b. Ali b. Murr, newly appointed governor of Azerbaijan, sometime during the period of Ramadan (June 20-July 19, 874)
 		death = { 
 			death_reason = death_battle
 		}
 	}
 }
 
-HEE_867_armenian_governor_father = { # al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
+azdi0002 = { # Father of al-Ala ibn Ahmad al-Azdi
 	name = "Ahmad"
 	dynasty = hee_azdi
 	religion = "ashari"

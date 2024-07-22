@@ -241,7 +241,7 @@ hee_al_sufi = {
 	culture = "egyptian"
 }
 
-hee_al_mudabbir = {
+dynasty_al_mudabbir = {
 	name = "dynn_al_Mudabbir"
 	culture = "persian"
 }
@@ -498,4 +498,29 @@ dynasty_parsakoutenos = {
 dynasty_saronites = {
 	name = "dynn_Saronites"
 	culture = "greek"
+}
+
+dynasty_khujistani = {
+	name = "dynn_Khujistani"
+	culture = "tajik"
+}
+
+dynasty_madanid = {
+	name = "dynn_Madanid"
+	culture = "baloch"	
+}
+
+dynasty_qusi = {
+	name = "dynn_Qusi"
+	culture = "levantine"	
+}
+
+dynasty_mazghanna = {
+	name = "dynn_Mazghanna"
+	culture = "baranis"	
+}
+
+dynasty_aljarrah = {
+	name = "dynn_Aljarrah"
+	culture = "assyrian"	
 }

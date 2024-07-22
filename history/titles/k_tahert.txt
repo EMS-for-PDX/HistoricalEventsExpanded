@@ -1,6 +1,39 @@
 k_tahert = {
 	867.1.1 = {	change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
+
+	# Rustamid Kingdom
+	777.1.1 = { # in 777, ʻAbd ar-Rahmān ibn Rustam, an Ifriqiyan-born convert to the Ibāḍī movement of Persian origin and one of the four founders of the Ibāḍī imamate, was elected Imām
+		holder = 210029
+	}
+	784.1.1 = {
+		holder = 210030
+	}
+	823.1.1 = {
+		government = clan_government
+		holder = 163097
+	}
+	872.1.1 = {
+		holder = 163148
+	}
+	874.1.1 = {
+		holder = 163149
+	}
+	894.1.1 = {
+		holder = rustamid0003
+	}
+	895.1.1 = {
+		holder = 163150
+	}
+	899.1.1 = {
+		holder = rustamid0003
+	}
+	906.1.1 = {
+		holder = rustamid0002
+	}
+	909.1.1 = { # The Rustamid Kingdom is defeated by the Ismali Fatimid Caliphate
+		holder = 0 
+	}
 }
 
 d_tlemcen = {
@@ -483,26 +516,8 @@ c_hunyan = {
 
 }
 
-#d_tahert = {
-#	800.1.1 = {
-#		change_development_level = 4
-#	}
-#	
-#	1001.1.1 = {
-#		change_development_level = 7
-#	}
-#	
-#	1101.1.1 = {
-#		change_development_level = 11
-#	}
-#
-#}
-
-c_tahert = {
-	867.1.1 = {	change_development_level = 10 }
-	1066.1.1 = { change_development_level = 16 }
-
-	768.1.1 = {
+d_tahert = {
+	777.1.1 = { # in 777, ʻAbd ar-Rahmān ibn Rustam, an Ifriqiyan-born convert to the Ibāḍī movement of Persian origin and one of the four founders of the Ibāḍī imamate, was elected Imām
 		holder = 210029
 	}
 	784.1.1 = {
@@ -510,7 +525,40 @@ c_tahert = {
 	}
 	823.1.1 = {
 		government = clan_government
-		liege = "d_alger"
+		holder = 163097
+	}
+	872.1.1 = {
+		holder = 163148
+	}
+	874.1.1 = {
+		holder = 163149
+	}
+	894.1.1 = {
+		holder = 1300143
+	}
+	895.1.1 = {
+		holder = 163150
+	}
+	899.1.1 = {
+		holder = 1300143
+	}
+	906.1.1 = {
+		holder = 1300142
+	}
+}
+
+c_tahert = {
+	867.1.1 = {	change_development_level = 10 }
+	1066.1.1 = { change_development_level = 16 }
+
+	777.1.1 = { # in 777, ʻAbd ar-Rahmān ibn Rustam, an Ifriqiyan-born convert to the Ibāḍī movement of Persian origin and one of the four founders of the Ibāḍī imamate, was elected Imām
+		holder = 210029
+	}
+	784.1.1 = {
+		holder = 210030
+	}
+	823.1.1 = {
+		government = clan_government
 		holder = 163097
 	}
 	877.1.1 = {
@@ -650,15 +698,12 @@ c_yalala = {
 
 
 c_ashir = {
-	768.1.1 = {
+	777.1.1 = {
 		government = clan_government
 		holder = 210029
 	}
 	784.1.1 = {
 		holder = 210030
-	}
-	823.1.1 = {
-		liege = "d_alger"
 	}
 	823.1.1 = {
 		holder = 163097
@@ -706,7 +751,7 @@ c_ashir = {
 
 
 c_figuig = {
-	768.1.1 = {
+	777.1.1 = {
 		government = tribal_government
 		holder = 210029
 	}
@@ -714,7 +759,6 @@ c_figuig = {
 		holder = 210030
 	}
 	823.1.1 = {
-		liege = "d_alger"
 		holder = 163097
 	}
 	877.1.1 = {
@@ -763,13 +807,6 @@ d_alger = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
 
-	832.1.1 = {
-		holder = 163097
-		government = clan_government
-	}
-	871.1.1 = {
-		holder = 0
-	}
 }
 
 
@@ -778,13 +815,10 @@ c_algier = {
 		liege = "d_alger"
 		holder = 210035
 	}
-	823.1.1 = {
+	850.1.1 = {
 		government = clan_government
-		liege = "d_alger"
-		holder = 163097
-	}
-	866.1.1 = {
-		holder = 163149
+		liege = 0
+		holder = mazghanna0001
 	}
 	877.1.1 = {
 		liege = "d_alger"
@@ -1570,7 +1604,8 @@ d_mzab = {
 		government = tribal_government
 		holder = butr0014
 	}
-	845.1.1 = {	
+	845.1.1 = {
+		liege = k_tahert
 		holder = 1228238
 	}
 	871.1.1 = {	
@@ -1686,7 +1721,7 @@ c_laghwat = {
 		government = tribal_government
 	}
 	864.1.1 = {	
-		liege = 0
+		liege = k_tahert
 		holder = 1228830
 	}
 
@@ -1789,7 +1824,7 @@ c_ghardaia = {
 		government = tribal_government
 	}
 	864.1.1 = {	
-		liege = 0
+		liege = k_tahert
 		holder = 1228830
 	}
 

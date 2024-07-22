@@ -1706,10 +1706,11 @@
 	learning = 4
 	prowess = 13
 
-	trait = zealous
-	trait = brave 
-	trait = stubborn 
-	trait = ambitious
+	trait = brave
+	trait = stubborn
+	trait = cynical # Ya'qub's faith/zeal is highly debated. While sources portray Ya'qub as a religious rascal or a volunteer Sunni warrior, but Kharijism prospered in Sistan longer than anywhere else in eastern Iran and Ya'qub incorperated Kharijites into his army and realm
+					# Going with the ideas of C.E. Bosworth that the early Saffarid emirs did not appear to have significant religious beliefs, and thus were likely more malleable on the subject of faith
+	trait = ambitious # No one could doubt Ya'qub's ambition
 
 	trait = education_martial_4
 
@@ -2193,7 +2194,7 @@ extra_saffarids_21 = {
 	}
 }
 
-#Start of the Main/First Saffarid Branch
+#Start of the Main/First Saffarid Branch - https://iranicaonline.org/articles/saffarids
 
 163163 = {
 	name = "Layth"

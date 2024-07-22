@@ -283,8 +283,8 @@ c_qumisha = {
 	840.1.1 = {
 		holder = 163098
 	}
-	866.1.1 = {
-		holder = 163151
+	860.1.1 = {
+		holder = 1000230509
 	}
 	
 	1066.1.1 = {
@@ -394,6 +394,12 @@ d_kirman = {
 	}
 	780.1.1 = {
 		holder = 0
+	}
+
+	861.1.1 = {
+		liege = 0 # Broken away due Fifth Fitna/Easier for Saffarids to conquer
+		holder = 6897 # Unknown/Fictional Abbasid Governor of Kirman
+		government = clan_government
 	}
 	
 	1066.1.1 = {
@@ -505,10 +511,11 @@ c_kirman = {
 	}
 	
 	861.1.1 = {
-		liege = "d_sistan"
-		holder = 6896
+		holder = 6897 # Unknown/Fictional Abbasid Governor of Kirman
 	}
-	865.1.1 = {
+
+	870.1.1 = {
+		liege = "d_sistan"
 		holder = extra_turks_0001 #historical, but only confirmable a couple of years later
 	}
 	
@@ -609,10 +616,11 @@ c_behabad = {
 	}
 	
 	861.1.1 = {
-		liege = "d_sistan"
-		holder = 6896
+		holder = 6897 # Unknown/Fictional Abbasid Governor of Kirman
 	}
-	865.1.1 = {
+
+	870.1.1 = {
+		liege = "d_sistan"
 		holder = extra_turks_0001 #historical, but only confirmable a couple of years later
 	}
 	
@@ -912,7 +920,7 @@ c_jiruft = {
 	}
 	
 	861.1.1 = {
-		liege = "d_sistan"
+		liege = "d_kirman"
 		holder = 6896
 	}
 	
@@ -1015,11 +1023,8 @@ c_yazd = {
 	768.1.1 = {
 		holder = 188730
 	}
-	862.1.1 = {
-		holder = 163162
-	}
-	867.1.1 = {
-		liege = k_makran
+	860.1.1 = {
+		holder = 1000230509
 	}
 	1050.1.1 = {
 		liege = "d_isfahan"
@@ -1093,9 +1098,7 @@ c_mafaza = {
 	
 	862.1.1 = {
 		holder = 163162
-	}
-	867.1.1 = {
-		liege = d_fars
+		liege = "k_khorasan"
 	}
 	
 	1063.9.4 = {
@@ -1185,11 +1188,8 @@ c_shahre-babak = {
 	768.1.1 = {
 		holder = 188730
 	}
-	867.1.1 = {
-		#liege = k_makran
-	}
-	862.1.1 = {
-		holder = 163162
+	860.1.1 = {
+		holder = 1000230509
 	}
 	1063.9.4 = {
 		liege = "d_isfahan"
@@ -1381,13 +1381,14 @@ c_khuwar = {
 	768.1.1 = {
 		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
 	}
-	
-	867.1.1 = {
-		liege = "d_tabaristan"
-		holder = 163166
+
+	862.1.1 = {
+		liege = "k_khorasan"
+		holder = 163162
 	}
 	
 	1063.9.4 = {
+		liege = "d_tabaristan"
 		holder = 3040
 	}
 	1072.11.1 = {
@@ -2600,11 +2601,7 @@ c_irahistan = {
 	
 	862.1.1 = {
 		liege = "d_fars"
-		holder = 163100
-	}
-	867.1.1 = {		#Kinda placeholder
 		holder = 302701
-		liege = d_fars	#Saffarid
 	}
 	
 	1066.1.1 = {
@@ -2684,12 +2681,9 @@ c_hormuz = {
 	765.1.1 = {
 		holder = 188664
 	}
-	
+
 	861.1.1 = {
-		liege = "d_sistan"
-	}
-	861.1.1 = {
-		holder = 163101
+		holder = 6896
 	}
 	1066.1.1 = {
 		liege = "d_kirman"
@@ -2788,12 +2782,9 @@ c_sif-i-umara = {
 	765.1.1 = {
 		holder = 188664
 	}
-	
-	861.1.1 = {
-		liege = "d_sistan"
-	}
-	861.1.1 = {
-		holder = 163101
+
+	862.1.1 = {
+		holder = 302701
 	}
 	1066.1.1 = {
 		liege = "d_kirman"
@@ -2888,7 +2879,7 @@ c_sif-i-umara = {
 d_khuzestan = {
 	866.1.1 = {
 		liege = e_arabia
-		holder = sogdian0008 
+		holder = ahwazgovernor0001 # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion
 	}
 
 	1066.1.1 = {
@@ -3135,7 +3126,7 @@ c_tustar = {
 		holder = 163101
 	}
 	862.1.1 = {
-		holder = sogdian0008 
+		holder = ahwazgovernor0001 # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion 
 		liege = "d_fars"
 	}
 	1066.1.1 = {
@@ -3244,7 +3235,7 @@ c_ahvaz = {
 		liege = "d_merv"
 	}
 	862.1.1 = {
-		holder = sogdian0008 
+		holder = ahwazgovernor0001 # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion 
 		liege = "d_fars"
 	}
 	
@@ -3324,7 +3315,7 @@ c_abbadan = {
 		liege = "d_merv"
 	}
 	862.1.1 = {
-		holder = sogdian0008 
+		holder = ahwazgovernor0001 # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion 
 		liege = "d_fars"
 	}
 	
@@ -3392,7 +3383,7 @@ c_dawraq = {
 		liege = "d_merv"
 	}
 	862.1.1 = {
-		holder = sogdian0008 
+		holder = ahwazgovernor0001 # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion 
 		liege = "d_fars"
 	}
 	

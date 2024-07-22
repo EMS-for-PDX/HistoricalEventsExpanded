@@ -1790,7 +1790,7 @@ c_ghadames = {
 		government = tribal_government
 	}
 	864.1.1 = {	
-		#liege = d_tunis
+		liege = d_mzab
 		holder = 1228833
 	}
 	1062.1.1 = {

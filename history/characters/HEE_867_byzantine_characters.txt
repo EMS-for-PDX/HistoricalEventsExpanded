@@ -4794,14 +4794,12 @@ gambros0001 = { # Christopher, gambros to the emperor (the husband of a daughter
 	
 	#Other Traits
 	trait = cautious_leader # C. did not engage in open combat, but rather pursued the Paulikians and thereby prevented them from further devastation and looting
-	trait = holy_warrior
 	
 	disallow_random_traits = yes
 	840.1.1 = { # Unknown
 		birth = yes
 	}
 	866.1.1 = {
-		employer = 70490 # Michael III
 		add_spouse = makedon0023 # Considering Basil confined all his daughter to a monastery, likely that the marriage connection between Basil and Christophoros was through a sister of Basil
 	}
 	895.1.1 = { # Unknown

@@ -537,3 +537,230 @@ banumalik0006 = {
 		death = yes
 	}
 }
+
+basragovernor0001 = { # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
+	name = "Muhammad"
+	culture = "tajik"
+	religion = "ashari"
+	father = basragovernor0002
+	trait = education_martial_2 # Formerly a commander of Muhammad ibn Abdallah ibn Tahir so should have a martial background
+	trait = wrathful # On that occasion, `Ali b. Yahya b. Abi Mansur al-Munajjim reportedly spoke to Muhammad b. `Abdallah in a coarse manner. As a result Muhammad b. Abi `Awn pounced upon him, reviling him and abusing him physically.
+	trait = brave
+	trait = callous
+	trait = loyal
+	832.1.1 = { # Unknown
+		birth = yes
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+basragovernor0002 = {
+	name = "Abi Awn"
+	culture = "tajik"
+	religion = "ashari"
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	855.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+wasitgovernor0001 = { # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
+	name = "Mansur"
+	culture = "bedouin"
+	religion = "ashari"
+	father = wasitgovernor0002
+	818.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+wasitgovernor0002 = { # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered 
+	name = "Nasr"
+	culture = "bedouin"
+	religion = "ashari"
+	father = wasitgovernor0003
+	790.1.1 = { # Unknown
+		birth = yes
+	}
+	843.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+wasitgovernor0003 = { # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered 
+	name = "Hamzah"
+	culture = "bedouin"
+	religion = "ashari"
+	775.1.1 = { # Unknown
+		birth = yes
+	}
+	829.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+ahwazgovernor0001 = { # Sa'id b. Yaksin; Governor of al-Ahwaz in 870 during the start of the Zanj Rebellion
+	name = "Sa_id"
+	culture = "turkish"
+	religion = "ashari"
+	father = ahwazgovernor0002
+	trait = education_martial_2 # Also in charge of defense matters so should have a martial background
+	827.1.1 = { # Unknown
+		birth = yes
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+ahwazgovernor0002 = { # Sa'id b. Yaksin's father
+	name = "Yaksin"
+	culture = "turkish"
+	religion = "ashari"
+	810.1.1 = { # Unknown
+		birth = yes
+	}
+	864.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+khujistani0001 = { # Ahmad ibn Abdallah al-Khujistani, a former Tahirid soldier who formed an anti-Saffarid faction and seized Nishapur was seized in 875 following the Saffarid occupation - https://iranicaonline.org/articles/ahmad-b-18
+	name = "Ahmad"
+	dynasty = dynasty_khujistani
+	father = khujistani0002
+	culture = "tajik"
+	religion = "ashari"
+	trait = education_martial_3
+	trait = brave
+	trait = deceitful
+	trait = ambitious
+	832.1.1 = { # Unknown
+		birth = yes
+	}
+	882.1.1 = { # Murdered in 882
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+khujistani0002 = { # 
+	name = "Abdallah"
+	dynasty = dynasty_khujistani
+	culture = "tajik"
+	religion = "ashari"
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	858.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sharabi0001 = { # Son of Bugha al-Sharabi
+	name = "Abu-Nasr Muhammad"
+	dynasty = 7517
+	father = 163131
+	culture = "turkish"
+	religion = "ashari"
+	835.1.1 = {
+		birth = yes
+	}
+	870.6.1 = {
+		death = {
+			death_reason = death_dungeon
+			killer = 34015
+		}
+	}
+}
+
+sharabi0002 = { # Son of Bugha al-Sharabi
+	name = "Habshun"
+	dynasty = 7517
+	father = 163131
+	culture = "turkish"
+	religion = "ashari"
+	840.1.1 = {
+		birth = yes
+	}
+	880.1.1 = { #?
+		death = yes
+	}
+}
+
+sharabi0003 = { # Daughter of Bugha al-Sharabi who married Salih ibn Wasif on Nov. 5 868
+	name = "Jum'ah"
+	female = yes
+	dynasty = 7517
+	father = 163131
+	culture = "turkish"
+	religion = "ashari"
+	850.1.1 = {
+		birth = yes
+	}
+	868.11.5 = {
+		add_spouse = turkish000008 # Salih ibn Wasif
+	}
+	890.1.1 = { #?
+		death = yes	
+	}
+}
+
+jarrah0001 = { # Al-Hasan ibn Makhlad ibn al-Jarrah; senior official of the Abbasid Caliphate who served as secretary under Caliph al-Mutawakkil and as vizier twice under Caliph al-Mu'tamid
+	name = "Al-Hasan"
+	dynasty = dynasty_aljarrah
+	father = jarrah0003
+	culture = "assyrian"
+	religion = "nestorian"
+	diplomacy = 9
+	stewardship = 10
+	learning = 9
+	trait = education_stewardship_3
+	trait = calm
+	trait = diligent
+	trait = cynical
+	825.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		religion = ashari
+	}
+	882.1.1 = { #?
+		death = yes
+	}
+}
+
+jarrah0002 = { # Sulayman ibn al-Hasan ibn Makhlad; occupied the office of vizier three times, in 930–931, 936, and lastly in 940–941, under the amir al-umara Bajkam
+	name = "Sulayman"
+	dynasty = dynasty_aljarrah
+	father = jarrah0001
+	culture = "assyrian"
+	religion = "ashari"
+	875.1.1 = {
+		birth = yes
+	}
+	941.1.1 = { #?
+		death = yes
+	}
+}
+
+jarrah0003 = { # Al-Hasan ibn Makhlad ibn al-Jarrah; senior official of the Abbasid Caliphate who served as secretary under Caliph al-Mutawakkil and as vizier twice under Caliph al-Mu'tamid
+	name = "Makhlad"
+	dynasty = dynasty_aljarrah
+	culture = "assyrian"
+	religion = "nestorian"
+	795.1.1 = {
+		birth = yes
+	}
+	855.1.1 = { #?
+		death = yes
+	}
+}

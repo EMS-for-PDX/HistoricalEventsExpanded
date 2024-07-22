@@ -687,9 +687,6 @@ c_tinmallal = {
 	864.1.1 = {
 		holder = idrisid0006 # Yahya ibn Yahya's uncle Husayn who received much land to the south of the capital
 	}
-	864.1.1 = {
-		holder = 159508 # Ali
-	}
 	1055.1.1 = {
 		holder = 32958
 	}

@@ -13,6 +13,7 @@
  war_867_Abbasid_Dulafid_Campaign: "Abbasid Punitive Campaign"
  war_867_Isa_Seizure_of_Damascus: "Isa's Seizure of Damascus"
  war_867_Paulician_Grand_Raid: "Paulician Raids into Asia Minor"
+ war_867_Zunbil_Rebellion: "Zunbil Rebellion"
 
  ruler_is_shamed_by_vassals: "Unable to defend the borders of [defender.GetPrimaryTitle.GetNameNoTier], [defender.GetShortUINamePossessive] prestige will be greatly injured and [defender.GetHerHis] ability to lead called into question"
  realm_is_ravaged_by_raiders: "With the armies of [defender.GetPrimaryTitle.GetNameNoTier] defeated, the lands within [defender.GetPrimaryTitle.GetNameNoTier] will be ravaged by the [attacker.GetPrimaryTitle.GetAdjective] raiding parties"

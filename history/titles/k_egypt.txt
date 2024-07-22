@@ -142,8 +142,8 @@ d_cyrenaica = {
 	}
 
 	866.1.1 = {
-		liege = "k_egypt"
-		holder = HEE_ibn_al_faraj
+		liege = "e_arabia" # Barqa did not fall under Egypt's jusidiction at this time
+		holder = barqagovernor0001 # # Muhammad b. Hartama b. Ay'an, governor of Barqa who was ousted by its populace in 870/871
 	}
 
 	#Suleimid
@@ -204,9 +204,9 @@ c_barqa = {
 		holder = 210034
 		liege = "d_cyrenaica"
 	}
-	859.1.1 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka
-		liege = 0
-		holder = HEE_bugha_al_asghar
+	866.1.1 = {
+		liege = "e_arabia" # Barqa did not fall under Egypt's jusidiction at this time
+		holder = barqagovernor0001 # # Muhammad b. Hartama b. Ay'an, governor of Barqa who was ousted by its populace in 870/871
 	}
 	869.1.1 = {
 		liege = "k_egypt"
@@ -258,7 +258,7 @@ c_awjila = {
 	}
 	859.1.1 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka
 		liege = 0
-		holder = HEE_bugha_al_asghar
+		holder = tabataba0001
 	}
 	869.1.1 = {
 		liege = "k_egypt"
@@ -308,8 +308,8 @@ c_derna = {
 		liege = "d_cyrenaica"
 	}
 	866.1.1 = {
-		liege = "k_egypt"
-		holder = HEE_ibn_al_faraj
+		liege = "e_arabia" # Barqa did not fall under Egypt's jusidiction at this time
+		holder = barqagovernor0001 # # Muhammad b. Hartama b. Ay'an, governor of Barqa who was ousted by its populace in 870/871
 	}
 	1050.1.1 = {
 		government = tribal_government
@@ -353,9 +353,9 @@ c_tobruk = {
 		holder = 210034
 		liege = "d_cyrenaica"
 	}
-	866.1.1 = {
-		liege = "k_egypt"
-		holder = HEE_ibn_al_faraj
+	859.1.1 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka
+		liege = 0
+		holder = tabataba0001
 	}
 	1066.1.1 = {
 		liege = "d_cyrenaica"
@@ -549,8 +549,9 @@ c_sullum = {
 	762.1.1 = {
 		holder = 210023
 	}
-	865.1.1 = {
-		holder = HEE_shukayr
+	859.1.1 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka
+		liege = 0
+		holder = tabataba0001
 	}
 	872.1.1 = {
 		holder = 163115
@@ -621,8 +622,9 @@ c_siwa = {
 	762.1.1 = {
 		holder = 210023
 	}
-	865.1.1 = {
-		holder = HEE_shukayr
+	859.1.1 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka
+		liege = 0
+		holder = tabataba0001
 	}
 	872.1.1 = {
 		holder = 163115
@@ -1283,7 +1285,7 @@ c_giza = {
 		liege = "d_alexandria"
 	}
 	866.1.1 = {
-		holder = 163138
+		holder = HEE_shukayr
 	}
 	1066.1.1 = {
 		holder = 3098
@@ -1354,7 +1356,7 @@ c_fayyum = {
 		liege = "d_alexandria"
 	}
 	866.1.1 = {
-		holder = 163138
+		holder = HEE_shukayr
 	}
 	1066.1.1 = {
 		holder = 3098
@@ -1772,7 +1774,7 @@ d_al-said = {
 		holder = 0
 	}
 	859.1.1 = {
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	1220.1.1 = {
 		holder = 32925
@@ -1798,7 +1800,7 @@ c_qus = {
 	}
 	859.1.1 = {
 		liege = "k_egypt"
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	996.10.13 = {
 		holder = 3092
@@ -1928,7 +1930,7 @@ c_bahnasa = {
 	}
 	859.1.1 = {
 		liege = "k_egypt"
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	996.10.13 = {
 		holder = 3092
@@ -2058,7 +2060,7 @@ c_ushmun = {
 	}
 	859.1.1 = {
 		liege = "k_egypt"
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	996.10.13 = {
 		holder = 3092
@@ -2175,7 +2177,7 @@ c_asyut = {
 	}
 	859.1.1 = {
 		liege = "k_egypt"
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	996.10.13 = {
 		holder = 3092
@@ -2305,7 +2307,7 @@ c_aswan = {
 	}
 	859.1.1 = {
 		liege = "k_egypt"
-		holder = HEE_al_mudabbir
+		holder = mudabbir0002
 	}
 	996.10.13 = {
 		holder = 3092

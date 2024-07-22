@@ -5295,18 +5295,30 @@
 	}
 }
 
-163025 = {
+163025 = { # Ali al-Hadi; tenth Imam in Twelver Shia
 	name = "Ali"
 	dynasty = 589
 	religion = "imami"
 	culture = "bedouin"
 	father = 163024
 	trait = sayyid
-	828.1.1 = {
-		birth = "828.1.1"
+	learning = 10 # Said to be naturally gifted
+	# His image in Twelver sources is that of a pacifist, persecuted Imam who endured numerous attempts by members of the Abbasid court to humiliate and dishonor him
+	trait = education_learning_4
+	trait = zealous
+	trait = calm
+	trait = stubborn
+	trait = patient
+	trait = lifestyle_mystic # Some miracles are also attributed to al-Hadi in Twelver sources, which often emphasize his precognition about various incidents
+	trait = poet # 
+	828.3.7 = {
+		birth = "828.3.7"
 	}
-	868.1.1 = {
-		death = "868.1.1"
+	867.1.1 = {
+		employer = 34014 # Ali was summoned around 848 from Medina to the capital Samarra by the Abbasid caliph al-Mutawakkil and would remain there until his death in 868
+	}
+	868.6.21 = {
+		death = "868.6.21"
 	}
 }
 
@@ -5316,9 +5328,15 @@
 	religion = "imami"
 	culture = "bedouin"
 	father = 163025
+	mother = fatimid0003
 	trait = sayyid
-	846.12.1 = {
-		birth = "846.12.1"
+	trait = education_learning_3
+	trait = honest
+	trait = zealous
+	trait = just
+	trait = humble
+	844.11.1 = { # Most Shia sources state that Hasan ibn Ali was born in Rabi' al-Awwal 230 AH (November 844)
+		birth = "844.11.1"
 	}
 	874.1.1 = {
 		death = "874.1.1"
@@ -5331,6 +5349,7 @@
 	religion = "imami"
 	culture = "bedouin"
 	father = 163026
+	mother = fatimid0002
 	trait = sayyid
 	869.7.29 = {
 		birth = "869.7.29"
@@ -5602,6 +5621,7 @@
 	religion = "imami"
 	culture = "bedouin"
 	father = 163025
+	mother = fatimid0003
 	trait = sayyid
 	848.1.1 = {
 		birth = yes

@@ -874,23 +874,11 @@ c_hewes = {
 }
 
 d_somogy = {
-	805.1.1 = {
-		liege = "k_bulgaria"
-		holder = 146172
+	846.1.10 = { # On January 10, 846, at the request of his followers, Louis the German granted Pribina lands near Lake Balaton on the river Zala where he was to rule as the king's faithful dux ("duke")
+		liege = "k_east_francia"
+		holder = 187011
 	}
-	808.1.1 = {
-		holder = 146173
-	}
-	813.1.1 = {
-		holder = 194000
-	}
-	830.1.1 = {
-		holder = 168071
-	}
-	858.1.1 = {
-		holder = 168072
-	}
-	867.1.1 = {
+	861.1.1 = { # Louis the German installed Kocel as a ruler in Lower Pannonia in 864, but possibly as early as 861
 		holder = 187012 #Kocel
 		liege = 0
 	}
@@ -1445,12 +1433,29 @@ c_baranya = {
 d_nyitra = {
 	867.1.1 = { change_development_level = 4 }
 	1066.1.1 = { change_development_level = 8 }
-	
-	830.1.1 = {
+
+	# The location of Pribina's allodial lands has been identified, although not unanimously, with modern Nitra in Slovakia, Pribina is considered to have ruled the large early medieval fortress excavated at that town
+	# Whether Pribina held Nitrava as a lieutenant of Mojmir I, the first known ruler of Moravia, or he was – maybe the second or third – prince of an independent Slavic principality is still debated by modern historians
+	# For story purposes, it might be better to go with the "prince of an independent Slavic principality" theory
+	775.1.1 = {
+		holder = 273018
+		government = tribal_government
+	}
+	793.1.1 = {
+		holder = 273017
+	}
+	820.1.1 = {
+		holder = 187011 # Pribina
+	}
+
+	833.1.1 = { # according to the Conversion of the Bavarians and the Carantanians (a historical work written in 870), Pribina was "driven across the Danube by Mojmir, duke of the Moravians" shortly after the defense of the eastern marches in East Francia had been taken over by Ratpot in around 833
 		de_jure_liege = "k_moravia"
 		liege = "k_moravia"
-		holder = 187010
+		holder = 187002
 	}
+	840.1.1 = {
+		holder = 187010
+	}	
 	850.1.1 = {
 		holder = 187003 #Svatopluk
 	}
@@ -1531,24 +1536,29 @@ c_nyitra = {
 	867.1.1 = { change_development_level = 6 }
 	1066.1.1 = { change_development_level = 10 }
 	
-	741.1.1 = {
-		liege = "d_moravia"
-		holder = 187000
+	# The location of Pribina's allodial lands has been identified, although not unanimously, with modern Nitra in Slovakia, Pribina is considered to have ruled the large early medieval fortress excavated at that town
+	# Whether Pribina held Nitrava as a lieutenant of Mojmir I, the first known ruler of Moravia, or he was – maybe the second or third – prince of an independent Slavic principality is still debated by modern historians
+	# For story purposes, it might be better to go with the "prince of an independent Slavic principality" theory
+	775.1.1 = {
+		holder = 273018
+		government = tribal_government
 	}
-	764.1.1 = {
-		holder = 146176
+	793.1.1 = {
+		holder = 273017
 	}
-	801.1.1 = {
-		holder = 146177
+	820.1.1 = {
+		holder = 187011 # Pribina
 	}
-	809.1.1 = {
-		holder = 187001
+
+	833.1.1 = { # according to the Conversion of the Bavarians and the Carantanians (a historical work written in 870), Pribina was "driven across the Danube by Mojmir, duke of the Moravians" shortly after the defense of the eastern marches in East Francia had been taken over by Ratpot in around 833
+		de_jure_liege = "k_moravia"
+		liege = "k_moravia"
+		holder = 187002
 	}
-	830.1.1 = {
-		holder = 168071
-	}
+	840.1.1 = {
+		holder = 187010
+	}	
 	850.1.1 = {
-		liege = "d_nyitra"
 		holder = 187003 #Svatopluk
 	}
 	871.12.1 = {
@@ -1729,28 +1739,30 @@ c_orava = {
 }
 
 c_trenscen = {
-	741.1.1 = {
-		liege = "d_moravia"
-		holder = 187000
+	# The location of Pribina's allodial lands has been identified, although not unanimously, with modern Nitra in Slovakia, Pribina is considered to have ruled the large early medieval fortress excavated at that town
+	# Whether Pribina held Nitrava as a lieutenant of Mojmir I, the first known ruler of Moravia, or he was – maybe the second or third – prince of an independent Slavic principality is still debated by modern historians
+	# For story purposes, it might be better to go with the "prince of an independent Slavic principality" theory
+	775.1.1 = {
+		holder = 273018
 		government = tribal_government
 	}
-	764.1.1 = {
-		holder = 146176
+	793.1.1 = {
+		holder = 273017
 	}
-	801.1.1 = {
-		holder = 146177
+	820.1.1 = {
+		holder = 187011 # Pribina
 	}
-	809.1.1 = {
-		holder = 187001
-	}
-	830.1.1 = {
+
+	833.1.1 = { # according to the Conversion of the Bavarians and the Carantanians (a historical work written in 870), Pribina was "driven across the Danube by Mojmir, duke of the Moravians" shortly after the defense of the eastern marches in East Francia had been taken over by Ratpot in around 833
+		de_jure_liege = "k_moravia"
 		liege = "k_moravia"
-	}
-	846.8.15 = {
 		holder = 187002
 	}
-	869.1.1 = {
-		holder = 187003
+	840.1.1 = {
+		holder = 187010
+	}	
+	850.1.1 = {
+		holder = 187003 #Svatopluk
 	}
 	871.1.1 = {
 		holder = 187004
@@ -1927,25 +1939,30 @@ c_zolyom = {
 }
 
 c_bars = {
-	741.1.1 = {
-		liege = "d_moravia"
-		holder = 187000
+	# The location of Pribina's allodial lands has been identified, although not unanimously, with modern Nitra in Slovakia, Pribina is considered to have ruled the large early medieval fortress excavated at that town
+	# Whether Pribina held Nitrava as a lieutenant of Mojmir I, the first known ruler of Moravia, or he was – maybe the second or third – prince of an independent Slavic principality is still debated by modern historians
+	# For story purposes, it might be better to go with the "prince of an independent Slavic principality" theory
+	775.1.1 = {
+		holder = 273018
+		government = tribal_government
 	}
-	764.1.1 = {
-		holder = 146176
+	793.1.1 = {
+		holder = 273017
 	}
-	801.1.1 = {
-		holder = 146177
+	820.1.1 = {
+		holder = 187011 # Pribina
 	}
-	809.1.1 = {
-		holder = 187001
+
+	833.1.1 = { # according to the Conversion of the Bavarians and the Carantanians (a historical work written in 870), Pribina was "driven across the Danube by Mojmir, duke of the Moravians" shortly after the defense of the eastern marches in East Francia had been taken over by Ratpot in around 833
+		de_jure_liege = "k_moravia"
+		liege = "k_moravia"
+		holder = 187002
 	}
-	830.1.1 = {
-		liege = "d_nyitra"
+	840.1.1 = {
 		holder = 187010
-	}
+	}	
 	850.1.1 = {
-		holder = 187003
+		holder = 187003 #Svatopluk
 	}
 	871.12.1 = {
 		holder = 187006
@@ -2124,61 +2141,29 @@ c_poszony = {
 	867.1.1 = { change_development_level = 6 }
 	1066.1.1 = { change_development_level = 12 }
 	
-	685.1.1 = {
-		liege = "k_hungary"
-		holder = 146154
+	# The location of Pribina's allodial lands has been identified, although not unanimously, with modern Nitra in Slovakia, Pribina is considered to have ruled the large early medieval fortress excavated at that town
+	# Whether Pribina held Nitrava as a lieutenant of Mojmir I, the first known ruler of Moravia, or he was – maybe the second or third – prince of an independent Slavic principality is still debated by modern historians
+	# For story purposes, it might be better to go with the "prince of an independent Slavic principality" theory
+	775.1.1 = {
+		holder = 273018
 	}
-	701.1.1 = {
-		holder = 146155
+	793.1.1 = {
+		holder = 273017
 	}
-	707.1.1 = {
-		holder = 146156
+	820.1.1 = {
+		holder = 187011 # Pribina
 	}
-	714.1.1 = {
-		holder = 146157
-	}
-	718.1.1 = {
-		holder = 146158
-	}
-	721.1.1 = {
-		holder = 146159
-	}
-	731.1.1 = {
-		holder = 146160
-	}
-	733.1.1 = {
-		holder = 146161
-	}
-	743.1.1 = {
-		holder = 146162
-	}
-	748.1.1 = {
-		holder = 146163
-	}
-	756.1.1 = {
-		holder = 146165
-	}
-	757.1.1 = {
-		holder = 146171
-	}
-	805.1.1 = {
-		liege = "d_visegrad"
-		holder = 146172
-	}
-	808.1.1 = {
-		holder = 146173
-	}
-	813.1.1 = {
-		holder = 194000
-	}
-	830.1.1 = {
+
+	833.1.1 = { # according to the Conversion of the Bavarians and the Carantanians (a historical work written in 870), Pribina was "driven across the Danube by Mojmir, duke of the Moravians" shortly after the defense of the eastern marches in East Francia had been taken over by Ratpot in around 833
+		de_jure_liege = "k_moravia"
 		liege = "k_moravia"
-	}
-	846.8.15 = {
 		holder = 187002
 	}
-	869.1.1 = {
-		holder = 187003
+	840.1.1 = {
+		holder = 187010
+	}	
+	850.1.1 = {
+		holder = 187003 #Svatopluk
 	}
 	871.1.1 = {
 		holder = 187004

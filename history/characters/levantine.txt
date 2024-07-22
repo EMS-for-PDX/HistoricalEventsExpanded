@@ -8652,10 +8652,10 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	trait = sayyid
 	trait = poet
 	trait = arbitrary
-	trait = calm
 	trait = diligent
+	trait = vengeful
 	trait = callous
-	trait = education_intrigue_3
+	trait = education_intrigue_2
 
 	847.1.1 = {
 		birth = yes

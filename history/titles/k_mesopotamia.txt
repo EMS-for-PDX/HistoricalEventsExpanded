@@ -153,7 +153,7 @@ c_hulwan = {
 		holder = 188659
 	}
 	866.1.1 = {
-		holder = 34016
+		holder = 1000230509
 		liege = e_arabia
 	}
 	
@@ -521,7 +521,7 @@ d_wasit = {
 	}
 	
 	866.1.1 = {
-		holder = 34015
+		holder = wasitgovernor0001 # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
 	}
 	869.1.1 = {
 		liege = 0
@@ -536,8 +536,7 @@ c_wasit = {
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
 	866.1.1 = {
-		liege = d_wasit
-		holder = 34015
+		holder = wasitgovernor0001 # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
 	}
 	1066.1.1 = {
 		liege = d_baghdad
@@ -626,7 +625,7 @@ c_tib = {
 	
 	866.1.1 = {
 		liege = "d_wasit"
-		holder = 34015
+		holder = wasitgovernor0001 # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
 	}
 	869.1.1 = {
 		liege = 0
@@ -699,6 +698,10 @@ c_tib = {
 }
 
 d_kufa = {
+	866.2.13 = { 
+		liege = e_arabia
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
+	}
 	1012.1.1 = {
 		holder = 159482 # Ali Mayzadid
 	}
@@ -725,9 +728,8 @@ c_kufa = {
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
 	
-	866.1.1 = {
-		liege = d_basra
-		holder = 34017
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	1012.1.1 = {
 		liege = d_kufa
@@ -813,9 +815,8 @@ c_safata = {
 		liege = e_arabia
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
-	866.1.1 = {
-		liege = e_arabia
-		holder = 34017
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	1012.1.1 = {
 		liege = d_kufa
@@ -902,9 +903,8 @@ c_qadisiya = {
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
 	
-	866.1.1 = {
-		liege = d_basra
-		holder = 34017
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	
 	1066.1.1 = {
@@ -992,7 +992,7 @@ c_batiha = {
 	}
 	
 	866.1.1 = {
-		holder = 34015
+		holder = wasitgovernor0001 # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
 	}
 	869.1.1 = {
 		liege = 0
@@ -1081,9 +1081,8 @@ c_akhadid = {
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
 	
-	866.1.1 = {
-		liege = d_basra
-		holder = 34017
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	
 	1066.1.1 = {
@@ -1167,9 +1166,8 @@ c_waqisa = {
 		holder = 188609 # Muhammad b Sulayman b Ali
 	}
 	
-	866.1.1 = {
-		liege = d_basra
-		holder = 34017
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	
 	1066.1.1 = {
@@ -1255,7 +1253,7 @@ d_basra = {
 		liege = "e_arabia"
 	}
 	866.1.1 = {
-		holder = 34017
+		holder = basragovernor0001 # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 	}
 	978.1.1 = {
 		liege = "k_persia"
@@ -1349,7 +1347,7 @@ c_basra = {
 	
 	866.1.1 = {
 		liege = d_basra
-		holder = 34017
+		holder = basragovernor0001 # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 	}
 	1066.1.1 = {
 		holder = 93319
@@ -1434,7 +1432,7 @@ c_ubulla = {
 	
 	866.1.1 = {
 		liege = d_basra
-		holder = 34017
+		holder = basragovernor0001 # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 	}
 	
 	1066.1.1 = {
@@ -1525,7 +1523,7 @@ c_rusafa = {
 		liege = "d_wasit"
 	}
 	866.1.1 = {
-		holder = 34015
+		holder = wasitgovernor0001 # Mansur b. Nasr b. Hamzah, the governor of Wasit in late 866 when al-Mustain was taken from Wasit and murdered under the orders of al-Mutazz
 	}
 	869.1.1 = {
 		liege = 0
@@ -1946,7 +1944,7 @@ c_iskaf = {
 		holder = 34013
 	}
 	866.1.1 = {
-		holder = 34016
+		holder = 1000230509
 	}
 	892.10.1 = {
 		holder = 34018
@@ -2216,8 +2214,8 @@ c_karbala = {
 	862.6.7 = {
 		holder = 34013
 	}
-	866.1.1 = {
-		holder = 34014
+	866.2.13 = { 
+		holder = sogdian0008 # Abu al-Saj Diwdad b. Diwdast came to Baghdad on the twenty-third of Muharram, 252 (February 13, 866). Muhammad b. `Abdallah then appointed him to supervise all the land irrigated by the Euphrates.
 	}
 	869.1.1 = {
 		holder = 34015
@@ -2360,7 +2358,7 @@ c_badaraya = {
 		holder = 34013
 	}
 	866.1.1 = {
-		holder = 34016
+		holder = 1000230509
 	}
 	892.10.1 = {
 		holder = 34018

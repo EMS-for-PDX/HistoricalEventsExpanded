@@ -1551,7 +1551,7 @@ c_dvin = {
 		liege = e_arabia # On January 6, 642 the Arabs stormed and took the city, with many deaths. Dvin became the center of the Muslim province of Arminiya. 
 	}
 	866.1.1 = {
-		holder = HEE_867_armenian_governor
+		holder = azdi0001
 	}
 	890.1.1 = {
 		holder = 41506

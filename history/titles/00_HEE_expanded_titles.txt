@@ -496,7 +496,7 @@ k_arminiya = {
 		holder = 163135 # Ali ibn Yahya al-Armani 
 	}
 	866.1.1 = {
-		holder = HEE_867_armenian_governor
+		holder = azdi0001
 	}
 	867.1.1 = {
 		liege = 0 # Essentially independent as a result of the Fifth Fitna

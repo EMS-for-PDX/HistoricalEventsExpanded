@@ -132,3 +132,212 @@ HEE_muhammad_ibn_vasif = { # https://en.wikipedia.org/wiki/Ya%27qub_ibn_al-Layth
 		death = yes
 	}
 }
+
+# Ma'danid dynasty which ruled ruled Makran from the late 9th or early 10th century until around the 11th century
+madanid0001 = { # Maʿdān, father of ʿIsā b. Maʿdān who used the Sanskrit title of Mahraj. Nothing is known of Maʿdān so his character will be essentially fictional
+	name = "Maʿdān"
+	dynasty = dynasty_madanid
+	religion = "azariqa"
+	culture = "baloch"
+	
+	# Skills
+	diplomacy = 9
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	
+	# Education - As someone who I say seized power in a turbulent time, likely a martially-inclined man
+	trait = education_martial_3
+	
+	# Personality Traits - I want to portray a warrior who wants to rise above others, but also knows not to overstrech; Maʿdān should be content to be a small-time ruler who will not challenge the larger powers around him
+	trait = calm
+	trait = ambitious
+	trait = temperate
+	
+	# Other Traits
+	trait = organizer # My conception of Ma'dan is as a more charismatic warrior who draws people to him and might explain why he rises above his fellow Kharijites
+
+	847.1.1 = { # should be young as his son ʿIsā b. Maʿdān remains in power there near the mid-10th century
+		birth = yes
+	}
+	901.1.1 = {
+		death = yes
+	}
+}
+
+# The Province of Makran was largely overrun by lawless Kharijites following the death of Abbasid governor 'Imran al-Barmaki in 842 which lead to a collapse in central authority in the region
+makrankharijite0001 = { # Fictional Kharijite to populate Makran. Representative of the numerous lawless Kharijites that had overrun Makran during the mid to late 9th century
+	name = "Qaṭari"
+	religion = "azariqa"
+	culture = "bedouin"
+	trait = education_martial_2
+	trait = zealous
+	trait = arrogant
+	trait = trusting
+	trait = desert_warrior
+	830.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+makrankharijite0002 = { # Fictional Kharijite to populate Makran. Representative of the numerous lawless Kharijites that had overrun Makran during the mid to late 9th century
+	name = "Abdallāh"
+	religion = "azariqa"
+	culture = "bedouin"
+	trait = education_intrigue_2
+	trait = diligent
+	trait = brave
+	trait = lustful
+	826.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+makrankharijite0003 = { # Fictional Kharijite to populate Makran. Representative of the numerous lawless Kharijites that had overrun Makran during the mid to late 9th century
+	name = "Abbas"
+	religion = "azariqa"
+	culture = "bedouin"
+	trait = education_martial_2
+	trait = zealous
+	trait = impatient
+	trait = stubborn
+	trait = holy_warrior
+	833.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+mashykey0001 = { # Placeholder reference to the petty principality of Mashkey
+	name = "Mubarak"
+	religion = "azariqa"
+	culture = "sindhi"
+	823.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+}
+
+makrankharijite0004 = { # ʿAmmār b. Yāser; leader of the Kharijites in northern Sistān who were particularly strong around Joveyn and Uq 
+	name = "ʿAmmār"
+	father = makrankharijite0005
+	religion = "azariqa"
+	culture = "levantine"
+	trait =	education_martial_2
+	828.1.1 = {
+		birth = yes
+	}
+	865.10.1 = { # Exact date unknown, but was killed in 865 by Ya'qub ibn al-Layth al-Saffar
+		death = {
+			death_reason = death_battle
+			killer = 163101
+		}
+	}
+}
+
+makrankharijite0005 = { # Father of ʿAmmār b. Yāser
+	name = "Yāser"
+	religion = "azariqa"
+	culture = "levantine"
+	800.1.1 = {
+		birth = yes
+	}
+	854.1.1 = { # Exact date unknown, but was killed in 865
+		death = yes
+	}
+}
+
+sistangovernor0001 = { # Ebrāhim b. Ḥożayn Qusi/Ibrahim ibn al-Hudain; governor of Sistan under the Tahirids who was driven out by local Sistan ʿayyārs
+	name = "Ibrahim"
+	dynasty = dynasty_qusi
+	father = sistangovernor0002
+	religion = "ashari"
+	culture = "levantine"
+	trait = temperate
+	trait = lazy
+	trait = content
+	810.1.1 = { # Unknown
+		birth = yes
+	}
+	865.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sistangovernor0002 = { # Father of Ebrāhim b. Ḥożayn Qusi/Ibrahim ibn al-Hudain
+	name = "al-Hudain"
+	dynasty = dynasty_qusi
+	religion = "ashari"
+	culture = "levantine"
+	780.1.1 = { # Unknown
+		birth = yes
+	}
+	832.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# ʿayyār leaders who Ya'qub Saffarid fought under early in his career. These commanders pushed out the Tahirids and after fighting amongst themselves were displaced by the Saffarids. Made brothers considering the shared name of the father
+sistanayyar0001 = { # Ṣāleḥ b. Nazr (or Naṣr), leader of a local ayyar band who drove out the essentially powerless Tahirid governor from Zaranj
+	name = "Ṣāleḥ"
+	father = sistanayyar0003
+	religion = "ashari"
+	culture = "tajik"
+	trait = education_martial_2
+	trait = generous
+	trait = zealous
+	trait = ambitious
+	trait = lifestyle_blademaster
+	trait = peasant_leader
+	823.1.1 = { # Unknown
+		birth = yes
+	}
+	865.5.4 = { # Unknown
+		death = { # In 249-50/864, two years after his elevation to power, Yaʿqub led an expedition to Bost against his former master Ṣāleḥ and killed him (Ṣāleḥ possibly had allied/sought protection from the Zunbil King and was slain in the same battle as the Zunbil)
+			death_reason = death_battle
+			killer = 163101
+		}
+	}	
+}
+
+sistanayyar0002 = { # Derham b. Nazr (or Naṣr), another ʿayyār leader who emerged in Sistan during the internecine fighting of rival commanders
+	name = "Derham"
+	father = sistanayyar0003
+	religion = "ashari"
+	culture = "tajik"
+	trait = education_martial_3
+	trait = trusting
+	trait = brave
+	trait = ambitious
+	trait = lifestyle_blademaster
+	trait = peasant_leader
+	825.1.1 = { # Unknown
+		birth = yes
+	}
+	863.1.1 = { # Unknown; fate is unclear after he was supplanted by Ya'qub (if he survived being supplanted at all)
+		death = yes
+	}
+}
+
+sistanayyar0003 = { # Nazr (or Naṣr); father of the ayyar commanders Ṣāleḥ b. Nazr and Derham b. Nazr
+	name = "Nazr"
+	religion = "ashari"
+	culture = "tajik"
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	855.1.1 = { # Unknown
+		death = yes
+	}
+}

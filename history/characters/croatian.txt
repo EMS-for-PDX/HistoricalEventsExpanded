@@ -2206,16 +2206,22 @@
 	}
 }
 
-168299 = {
+168299 = { # Braslav, Duke of Lower Pannonia at the end of the 9th century
 	name = "Braslav"
 	dynasty = 9586
 	religion = "catholic"
 	culture = "croatian"
 	father = 168296
+	trait = education_stewardship_3 # Probably could be martial, but for diversity I will make stewardship. Going with a architect/overseer interpretation of Braslav being entrusted with strengthening the defense of Arnulf's southeastern frontier
+	trait = diligent
+	trait = brave
+	trait = content
+	trait = pilgrim # He undertook a pilgrimage to Cividale as his name is found in the Evangelistary of Cividale together with the name of his wife Ventescela
+	trait = loyal # has been described as an "ardent Frankish loyalist"
 	825.1.1 = {
 		birth = "825.1.1"
 	}
-	898.1.1 = {
+	898.1.1 = { #  Braslav was last mentioned in a source dating to 898, at which time the Hungarians with a great army had breached into Italy for the first time, having crossed the Slavic lands
 		death = "898.1.1"
 	}
 }
@@ -2226,6 +2232,7 @@
 	religion = "catholic"
 	culture = "croatian"
 	father = 168299
+	mother = slavonia0001
 	850.1.1 = {
 		birth = "850.1.1"
 	}

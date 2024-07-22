@@ -925,7 +925,7 @@ hee_samarra_relations_867_effect = {
 				limit = {
 					OR = {
 						this = character:HEE_shukayr
-						this = character:HEE_al_mudabbir
+						this = character:mudabbir0002
 					}
 					vassal_contract_has_modifiable_obligations = yes
 				}

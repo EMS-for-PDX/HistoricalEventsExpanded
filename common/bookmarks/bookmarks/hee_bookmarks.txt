@@ -184,7 +184,7 @@ bm_867_hee_transcaucasia = {
 	# al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
 	character = {
 		name = "bookmark_hee_armenian_ibn_ahmad"
-		history_id = HEE_867_armenian_governor
+		history_id = azdi0001
 		dynasty = hee_azdi
 		dynasty_splendor_level = 1
 		type = male
@@ -493,8 +493,8 @@ bm_867_hee_egypt = {
 	# ibn al-Mudabbir
 	character = {
 		name = "bookmark_hee_egypt_al_mudabbir"
-		history_id = HEE_al_mudabbir
-		dynasty = hee_al_mudabbir
+		history_id = mudabbir0002
+		dynasty = dynasty_al_mudabbir
 		dynasty_splendor_level = 1
 		type = male
 		birth = 836.3.6
@@ -510,12 +510,12 @@ bm_867_hee_egypt = {
 		character = {
 			name = "bookmark_hee_egypt_abu_ishaq"
 			relation = "BOOKMARK_RELATION_BROTHER"
-			dynasty = hee_al_mudabbir
+			dynasty = dynasty_al_mudabbir
 			type = male
 			birth = 839.9.9
 			culture = persian
 			religion = ashari
-			history_id = HEE_al_mudabbir_brother
+			history_id = mudabbir0003
 
 			animation = personality_content
 		}

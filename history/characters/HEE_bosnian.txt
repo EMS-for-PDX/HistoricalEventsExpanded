@@ -32,3 +32,19 @@ bosnian0002 = { # According to later Annales Ragusini (14-17th century), the dea
 		death = yes
 	}
 }
+
+slavonia0001 = { # Wife of Braslav, Duke of Lower Pannonia. whose name is found in the Evangelistary of Cividale together with the name of her husband
+	name = "Ventescela"
+	female = yes
+	religion = "catholic"
+	culture = "croatian"
+	828.1.1 = {
+		birth = yes
+	}
+	848.1.1 = {
+		add_spouse = 168299
+	}
+	900.1.1 = {
+		death = yes
+	}	
+}

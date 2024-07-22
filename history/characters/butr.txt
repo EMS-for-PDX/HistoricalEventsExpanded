@@ -489,12 +489,18 @@
 
 #Banu Khattab in Fezzan
 248790 = {
-	name = "Al-Khattab" #semi-historical
+	name = "Al-Khattab" #semi-historical, possibly had spouse of Hawwara tribe, related to Mazáta tribe 
 	dynasty = 1059963
 	religion = ibadi
 	culture = butr
 	850.1.1 = {
 		birth = yes
+	}
+	866.1.1 = {
+		add_spouse = mazata0003
+	}
+	866.6.1 = {
+		add_spouse = 273138
 	}
 	905.1.1 = {
 		death = yes
@@ -506,6 +512,7 @@
 	religion = ibadi
 	culture = butr
 	father = 248790
+	mother = 273138
 	880.1.1 = {
 		birth = yes
 	}

@@ -1,0 +1,34 @@
+﻿###############################################################
+#  HEE Hungarian/Magyar characters
+###############################################################
+# Dynasties: 
+# Characters: 
+##############################################################################################
+
+kende0001 = { # Kurszán or Kusál; Magyar chieftain at the turn of the 9th and 10th centuries who served as kende of the Magyars in the dual leadership with Árpád during the Hungarian conquest of the Carpathian Basin - https://en.wikipedia.org/wiki/Kursz%C3%A1n
+	name = "Kurszán"
+	dynasty = dynasty_kartal # After Kurszán's death, they lived under the name Kartal
+	religion = "magyar_pagan"
+	culture = "mogyer"
+	diplomacy = 10
+	martial = 9
+	stewardship = 7
+	intrigue = 6
+	learning = 8
+	prowess = 8
+	trait = brave
+	trait = trusting
+	trait = calm
+	trait = diligent
+	trait = education_martial_4
+	trait = organizer
+	847.1.1 = {
+		birth = yes
+	}
+	904.7.1 = { # In the summer of 904, Louis the Child invited Kurszán and his entourage to negotiate at the river Fischa where Louis had them all murdered
+		death = {
+			death_reason = death_murder
+			killer = 7949 #Louis III the Child
+		}
+	}
+}

@@ -7190,6 +7190,7 @@
 	trait = greedy
 	trait = ambitious
 	trait = deceitful
+	trait = impatient # A large reason for his eventual death is his impatience to find al-Mutazz when the Caliph fled
 	
 	trait = schemer
 	
@@ -12220,13 +12221,9 @@ extra_turks_0001 = {
 		}	
 	}
 	865.1.1 = {
+		employer = 163101
 		effect = {
 			learn_language_of_culture = culture:persian
-			reverse_add_opinion = {
-				target = character:163101
-				opinion = 20 
-				modifier = favored_vassal_opinion
-			}
 		}
 	}
 	912.1.1 = {

@@ -71,3 +71,16 @@ war = {
  	attackers = { paulician0004 }
 	defenders = { 70490 }
 }
+
+# Zunbil Rebellion
+war = {
+ 	name = "war_867_Zunbil_Rebellion"
+ 	start_date = 867.1.1
+ 	end_date = 868.1.1
+	targeted_titles = {
+		c_rukhaj c_zamindawar c_zabulistan c_ghazna
+	}
+	casus_belli = independence_faction_war
+ 	attackers = { extra_afghanis_6 }
+	defenders = { 163101 }
+}

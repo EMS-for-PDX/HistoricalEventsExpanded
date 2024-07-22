@@ -681,3 +681,172 @@ rustamid0001 = {
 		death = "840.1.1"
 	}
 }
+
+rustamid0002 = {
+	name = "Yusuf"
+	dynasty = 808
+	religion = "ibadi"
+	culture = "maghrebi"
+	father = 163149
+	857.1.1 = { #?
+		birth = "857.1.1"
+	}
+	912.1.1 = { #?
+		death = "912.1.1"
+	}
+}
+
+rustamid0003 = {
+	name = "Yaqzan"
+	dynasty = 808
+	religion = "ibadi"
+	culture = "maghrebi"
+	father = 163149
+	864.1.1 = { #?
+		birth = "864.1.1"
+	}
+	918.1.1 = { #?
+		death = "918.1.1"
+	}
+}
+
+#Mazáta in Waddán and Syrte
+mazata0001 = {
+	name = "Lant"  #placeholder
+	dynasty = 1069090
+	religion = "ibadi"
+	culture = "butr"
+	830.1.1 = {
+		birth = "830.1.1"
+	}
+	878.1.1 = {
+		death = "878.1.1"
+	}
+}
+
+mazata0002 = {
+	name = "Hiyán"  #placeholder
+	dynasty = 1069090
+	religion = "ibadi"
+	culture = "butr"
+	father = mazata0001
+	848.1.1 = {
+		birth = "848.1.1"
+	}
+	900.1.1 = {
+		death = "900.1.1"
+	}
+}
+
+mazata0003 = {
+	name = "Kenwa"  #placeholder
+  	female = yes
+	dynasty = 1069090
+	religion = "ibadi"
+	culture = "butr"
+	father = mazata0001
+	849.1.1 = {
+		birth = "849.1.1"
+	}
+	903.1.1 = {
+		death="903.1.1"
+	}
+}
+
+# Fictional members of the Banu Mazghanna, supposedly a Berber tribe that lends its name to Algiers' older name Jazaʾir Banī Mazghanna ("The Islands of the Banu Mazghanna"), used by early medieval geographers such as al-Idrisi and Yaqut al-Hamawi
+mazghanna0001 = {
+	name = "Maziba" #fictional
+	dynasty = dynasty_mazghanna
+	religion = "ashari"
+	culture = baranis
+	825.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+}
+
+mazghanna0002 = {
+	name = "Firhun" #fictional
+	dynasty = dynasty_mazghanna
+	father = mazghanna0001
+	religion = "ashari"
+	culture = baranis
+	846.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+mazghanna0003 = {
+	name = "Tawenza" #fictional
+	female = yes
+	dynasty = dynasty_mazghanna
+	father = mazghanna0002
+	religion = "ashari"
+	culture = baranis
+	866.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+}
+
+fatimid0001 = { # Ja'far ibn Ali al-Hadi
+	name = "Ja'far"
+	dynasty = 589
+	religion = "imami"
+	culture = "bedouin"
+	father = 163025
+	mother = fatimid0003
+	trait = sayyid
+	trait = honest
+	trait = greedy
+	trait = ambitious
+	846.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = yes
+	}	
+}
+
+fatimid0002 = { # Byzantine concubine to Hasan al-Askari, named Narjis - https://en.wikipedia.org/wiki/Narjis
+	name = "Narjis"
+	female = yes
+	religion = "imami"
+	culture = "greek"
+	trait = zealous
+	trait = temperate
+	trait = humble
+	trait = beauty_good_1
+	847.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		add_spouse = 163026
+	}
+	885.1.1 = {
+		death = yes
+	}	
+}
+
+fatimid0003 = { # Hasan al-Askari's mother Hadith
+	name = "Hadith"
+	female = yes
+	religion = "imami"
+	culture = "bedouin"
+	827.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		add_spouse = 163025
+	}
+	880.1.1 = {
+		death = yes
+	}	
+}

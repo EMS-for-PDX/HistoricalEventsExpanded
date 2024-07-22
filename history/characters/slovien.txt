@@ -262,10 +262,15 @@
 	religion = "slavic_pagan"
 	culture = "slovien"
 	father = 273017
+	trait = education_stewardship_3
+	trait = zealous
+	trait = generous
+	trait = diligent
+	trait = architect # Pribina undertook to Christianize the local population and built churches in the region. Constructed an extremely well fortified castle that became known as Blatnohrad (Blatnograd)
 	800.1.1 = {
 		birth = "800.1.1"
 	}
-	831.1.1 = {
+	833.1.1 = { # Having been expelled from his lands by Mojmir, duke of the Moravians, Pribina fled to Ratpot (one of the border lords in East Francia) who presented him to Louis the German who ordered that Pribina be baptized
 		religion = "catholic"
 	}
 	861.1.1 = {
@@ -273,18 +278,24 @@
 	}
 }
 
-187012 = {
+187012 = { # Ruler of the Slavs in Lower Pannonia. He was an East Frankish vassal titled comes (count), and is believed to have ruled between 861 or 864 and 876
 	name = "Kocel"
 	# AKA: Kocel z Nitrava
 	dynasty = 7509
 	religion = "catholic"
 	culture = "slovien"
 	father = 187011
-	833.1.1 = {
-		birth = "833.1.1"
+	trait = education_diplomacy_3
+	trait = generous # Kocel made a significant donation to the Freising monastery in 861
+	trait = zealous # Much of what we know about Kocel is in reference to religious matters
+	trait = content # Did not seem to be a troublesome vassal nor do anything major
+	820.1.1 = { # historian Charles Bowlus believes a birth year around 820. Kocel is first mentioned in his father's escape to Bulgaria (likely sometime after 833 )
+		birth = "820.1.1"
 	}
-	876.1.1 = {
-		death = "876.1.1"
+	874.1.1 = { # Kocel disappears from sources after 874, and was either dead or removed from his office c. 876, certainly dead by 880
+		death = { # Some historians consider that Kocel can be identified with Frankish military commander Kotzil mentioned in De Administrando Imperio, in which case he was killed in an armed revolt by the Croats most probably in 874 which coincides with Kocel's disappearance from the sources
+			death_reason = death_battle
+		}
 	}
 }
 

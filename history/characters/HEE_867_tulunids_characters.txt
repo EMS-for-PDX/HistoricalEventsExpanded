@@ -254,9 +254,9 @@ HEE_shukayr = {
 }
 
 
-HEE_al_mudabbir_father = { # al-Mudabbir's father, apparently was of Persian origin
+mudabbir0001 = { # al-Mudabbir's father, apparently was of Persian origin
 	name = "Muhammad" # ibn Muhammad 
-	dynasty = hee_al_mudabbir
+	dynasty = dynasty_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
 	# Unknown
@@ -268,12 +268,12 @@ HEE_al_mudabbir_father = { # al-Mudabbir's father, apparently was of Persian ori
 	}
 }
 
-HEE_al_mudabbir = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-Hasan_Ahmad_ibn_Muhammad_ibn_Abdallah_ibn_al-Mudabbir
+mudabbir0002 = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-Hasan_Ahmad_ibn_Muhammad_ibn_Abdallah_ibn_al-Mudabbir
 	name = "Abdul-Hasan"
-	dynasty = hee_al_mudabbir
+	dynasty = dynasty_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
-	father = HEE_al_mudabbir_father
+	father = mudabbir0001
 
 	#Skills
 	diplomacy = 7
@@ -318,12 +318,12 @@ HEE_al_mudabbir = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27
 	}
 }
 
-HEE_al_mudabbir_brother = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
+mudabbir0003 = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 	name = "Abu_Ishaq"
-	dynasty = hee_al_mudabbir
+	dynasty = dynasty_al_mudabbir
 	religion = "ashari"
 	culture = "persian"
-	father = HEE_al_mudabbir_father
+	father = mudabbir0001
 
 	#Skills
 	diplomacy = 8
@@ -353,14 +353,14 @@ HEE_al_mudabbir_brother = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 		birth = yes
 	}
 	867.1.1 = {
-		employer = sogdian0008 # Owner of Ahwaz, where Abu Ishaq was appointed tax-collector
+		employer = ahwazgovernor0001 # Owner of Ahwaz, where Abu Ishaq was appointed tax-collector
 	}
 	892.1.1 = { # Died in prison
 		death = yes
 	}
 }
 
-HEE_bugha_al_asghar = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka, proclaiming himself caliph
+tabataba0001 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka, proclaiming himself caliph
 	name = "bugha_al_asghar"
 	dynasty = hee_al_tabataba
 	religion = "ashari" # THE CAMBRIDGE HISTORY OF EGYPT says he proclaimed himself Caliph, so Ashari? If Shia would be Imam?
@@ -463,7 +463,7 @@ HEE_abu_ruh_sukun = { # Abu Ruh Sukun / Former partisan of al-Sufi in the oases 
 	}
 }
 
-HEE_ibn_al_faraj = { # Muhammad ibn al-Faraj al-Farghani / Governor of Barca who declared rebellion in 874-875
+faraj0001 = { # Muhammad ibn al-Faraj al-Farghani / Governor of Barca who declared rebellion in 874-875
 	name = "Muhammad"
 	dynasty = hee_al_farghani
 	religion = "ashari"
@@ -846,5 +846,18 @@ HEE_yusuf_al_daya_thirdborn = { # Yusuf's other son al-Hasan
 	}
 	922.2.22 = { # Unknown
 		death = yes
+	}
+}
+
+barqagovernor0001 = { # Muhammad b. Hartama b. Ay'an, governor of Barqa ousted by its populace in 870/871
+	name="Muhammad"
+	religion="ashari"
+	culture="levantine" #Likely sent from the east
+
+	835.1.1 = { #?
+		birth=yes
+	}	
+	889.1.1 = { #?
+		death=yes
 	}
 }

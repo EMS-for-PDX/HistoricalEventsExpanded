@@ -827,7 +827,7 @@ hee_elden_norse = { # https://www.reddit.com/r/CKHeraldry/comments/157cla3/elden
 }
 
 
-hee_al_mudabbir = {
+dynasty_al_mudabbir = {
 	pattern="pattern_solid.dds"
 	color1=red
 	color2=green

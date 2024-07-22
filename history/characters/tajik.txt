@@ -684,7 +684,7 @@ extra_samanids_27 = {
 	}
 }
 
-#Tahirids
+#Tahirids - https://www.iranicaonline.org/articles/taherid-dynasty
 163100 = {
 	name = "Muhammad"
 	dna = 163100_muhammad_tahirid_king
@@ -698,21 +698,22 @@ extra_samanids_27 = {
 			add_character_flag = has_scripted_appearance
 		}	
 	}
-	martial = 8
-	diplomacy = 3
-	intrigue = 11
-	stewardship = 6
-	learning = 9
-	prowess = 11
 
-	trait = arrogant # Muhammad refused to flee his capital and was captured by the Saffarids
-	trait = stubborn # Muhammad refused to flee his capital and was captured by the Saffarids
-	trait = diligent # Did not shy away from constant efforts to advance his agenda
-	trait = education_martial_2
-	trait = desert_warrior
+	# Supposedly, Tahirid rule began to seriously deteriorate after Muhammad ibn Tahir became governor, due to his carelessness with the affairs of the state and lack of experience with politics - sp skills and traits should reflect this 
+	martial = 6
+	diplomacy = 6
+	intrigue = 7
+	stewardship = 7
+	learning = 8
+	prowess = 7
+
+	trait = generous
+	trait = calm
+	trait = patient
+	trait = education_diplomacy_2
 
 	disallow_random_traits = yes
-	866.1.1 = {
+	867.1.1 = {
 		effect = {
 			set_relation_potential_friend =  character:34014 #the Caliph Mu'tazz	
 			set_relation_potential_rival = character:163160 #Ubaudalla, his uncle
@@ -737,16 +738,22 @@ extra_samanids_27 = {
 	}
 }
 
-163158 = {
+163158 = { # Abdallah ibn Tahir al-Khurasani; military leader annd governor of Khorasan for the ʿAbbasid caliphs (213-30/828-45) and perhaps the most outstanding of the line of Taherid governors in the province - https://iranicaonline.org/articles/abdallah-b-taher-governor
 	name = "Abdallah"
 	dynasty = 811
 	religion = "ashari"
 	culture = "tajik"
 	father = 188686
+	trait = generous # Culturally, ʿAbdallāh shared to the full in the Arab-Islamic society of his time, and he was a munificent patron of literature; his court in Nīšāpūr became a mecca for Arabic literary men and scholars
+	trait = zealous # Constitutionally, ʿAbdallāh remained a devoted servant of the ʿAbbasids and an upholder of Sunnism within the eastern lands of the caliphate, hostile to all manifestations of sectarian and heretical activity
+	trait = just # In later Islamic adab literature, ʿAbdallāh is erected into the ideal of a wise and just Islamic ruler
+	trait = diligent # it does appear that ʿAbdallāh had a particular concern for the economic and agricultural welfare of the provinces under his control
 	trait = brave
-	trait = education_martial_3
-	trait = faith_warrior
-	trait = poet 
+	trait = education_martial_4
+	trait = holy_warrior
+	trait = poet # ʿAbdallāh was himself an accomplished scholar, with a particular interest in music and singing and also in composing
+	trait = scholar # ʿAbdallāh was himself an accomplished scholar, with a particular interest in music and singing and also in composing
+	trait = loyal
 	798.3.19 = {
 		birth = yes
 	}
@@ -761,6 +768,11 @@ extra_samanids_27 = {
 	religion = "ashari"
 	culture = "tajik"
 	father = 163158
+	trait = education_stewardship_3 # There is, however, little to say about his governorship beyond the observation of Yaʿqubi (Boldān, p. 307) that “he governed [the province] firmly for 18 years.”
+	trait = just
+	trait = diligent
+	trait = callous
+	trait = reaver # Ṭāher b. ʿAbdallāh led a brief but successful raid on behalf of his father into the lands of the Toḡuz-Oḡuz Turks
 	815.6.4 = {
 		birth = yes
 	}
@@ -846,20 +858,29 @@ extra_samanids_27 = {
 	}
 }
 
-188686 = {
+188686 = { # Tahir ibn Husayn; general and later governor during the Abbasid Caliphate which marked the beginning of the Tahirids
 	name = "Tahir"
 	dynasty = 811 # Tahirid
 	religion = "ashari"
 	culture = "tajik"
 	father = 188687
 	trait = poet
-	trait = brave
+	trait = wrathful # Tahir seems to have been quickly offended if someone picked him about his eye, even threatening a poet, who had humiliated him about his lost eye in a poem
+	trait = brave # During the Great Abbasid Civil War, Tahir was sent to confront Ali ibn Isa (who had been appointed governor of Khurasan by al-Amin) and his army, which was widely regarded as almost a suicide mission
+	trait = diligent
 	trait = education_martial_4
+	trait = strategist # Somehow managed to lead his army of 5,000 to victory against a force of 50,000 at the Battle of Ray (811)
+	trait = one_eyed # During the rebellion of Rafi ibn al-Layth in 808, Tahir lost an eye after an accident, which gained him the nickname al-A'war ("the one-eyed")
 	775.12.3 = {
 		birth = yes
 	}
+	808.1.1 = {
+		give_nickname = nick_one_eye
+	}
 	822.11.4 = {
-		death = yes # Most likely did not actually revolt and died a natural death
+		death = {
+			death_reason = death_mysterious # While entirely possible Tahir died of natural causes, but according to some sources, he was poisoned by the orders of al-Ma'mun under suspicions Tahir was considering declaring independence
+		}
 	}
 }
 
@@ -916,18 +937,27 @@ extra_samanids_27 = {
 
 #some Tahirids orininaly forgotten
 
-1000230508 = {
+1000230508 = { # Ḥosayn b. Ṭāher; brother of Moḥammad b. Ṭāher b. ʿAbdallāh who made an attempt to reclaim Nishapur and bring about a Taherid restoration but was driven out by Aḥmad b. ʿAbdallāh Ḵojestāni, a former Taherid military officer, and went to live in Marv
 	name = "al-Husain" #last Tahirid to hold a title - Merv
 	dynasty = 811
 	religion = "ashari"
 	culture = "tajik"
 	father = 163159
+	trait = education_stewardship_3
+	trait = just
+	trait = brave
+	trait = stubborn
 	845.1.1 = {
 		birth = yes
 	}
-	866.1.1 = {
+	867.1.1 = {
 		effect = {
+			set_relation_potential_rival = character:163101 #Ya'qub, the Saffarid emir
 			learn_language_of_culture = culture:bedouin
+			if = {
+				limit = { has_fp3_dlc_trigger = yes }
+				add_trait = fp3_struggle_supporter
+			}
 		}
 	}
 	880.1.1 = {
@@ -980,6 +1010,26 @@ extra_samanids_27 = {
 				limit = { has_fp3_dlc_trigger = yes }
 				add_trait = fp3_struggle_supporter
 			}
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_learning_lifestyle_perk_points = -10
+			add_perk = faithful_perk
+			add_perk = zealous_proselytizer_perk
+			add_perk = pedagogy_perk
+			add_perk = open_minded_perk
+			add_perk = apostate_perk
+			add_perk = scientific_perk
+			add_perk = planned_cultivation_perk
+			add_perk = scholarly_circles_perk
+			add_perk = learn_on_the_job_perk
+			add_perk = sanctioned_loopholes_perk
+			add_perk = scholar_perk
+			add_trait = scholar
+			add_prestige = 500
+			add_prestige_level = 2
+			add_piety = 750
+			add_piety_level = 2
+
 		}
 	}
 	867.10.10 = {

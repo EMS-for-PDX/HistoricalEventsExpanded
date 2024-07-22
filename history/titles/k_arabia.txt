@@ -15,7 +15,7 @@ c_al_jawf = {
 	
 	860.1.1 = {
 		holder = bedouin0074
-		liege = 0 # Abbasid authority in Syria and Iraq eroded considerably after the beginning of the "Anarchy at Samarra" in 861, which left the vast expanse of the Syrian and Arabian deserts without governmental oversight
+		liege = d_najd # Abbasid authority in Syria and Iraq eroded considerably after the beginning of the "Anarchy at Samarra" in 861, which left the vast expanse of the Syrian and Arabian deserts without governmental oversight
 	}
 	897.1.1 = {
 		liege = 0
@@ -129,7 +129,7 @@ c_sirhan = {
 	}
 
 	860.1.1 = {
-		liege = 0
+		liege = d_najd
 		holder = bedouin0074
 	}
 	897.1.1 = {
@@ -2284,6 +2284,7 @@ c_al-hasa = {
 	
 	867.1.1 = {
 		holder = banumalik0004
+		liege = 0
 	}
 	886.1.1 = {
 		liege = "d_bahrain"
@@ -2356,7 +2357,7 @@ c_dhafra = {
 	}
 	
 	860.1.1 = {
-		liege = "d_bahrain"
+		liege = 0
 		holder = 74038
 	}
 	978.1.1 = {
@@ -2427,9 +2428,11 @@ c_uqayr = {
 	
 	860.1.1 = {
 		holder = 74038
+		liege = 0
 	}
 	
 	1066.1.1 = {
+		liege = d_bahrain
 		holder = 20900
 	}
 	1126.1.1 = {
@@ -2496,7 +2499,7 @@ c_yabrin = {
 	
 	867.1.1 = {
 		holder = banumalik0004
-		liege = "d_bahrain"
+		liege = 0
 	}
 	886.1.1 = {
 		liege = "d_bahrain"
@@ -2569,11 +2572,8 @@ d_bahrain = {
 		holder = 0
 	}
 	
-	860.1.1 = {
-		holder = banumalik0003
-	}
 	866.1.1 = {
-		liege = 0 # Broke away due to the Fifth Fitna
+		holder = basragovernor0001 # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 	}
 
 	886.1.1 = {
@@ -2645,13 +2645,11 @@ c_qatif = {
 		holder = 188626 # Sulayman b Hakim
 	}
 	
-	860.1.1 = {
-		holder = banumalik0003
+	866.1.1 = {
+		holder = basragovernor0001 # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 		liege = e_arabia
 	}
-	866.1.1 = {
-		liege = 0 # Broke away due to the Fifth Fitna
-	}
+
 	886.1.1 = {
 		liege = "d_bahrain"
 		holder = 74040
@@ -2721,8 +2719,8 @@ c_uwal = {
 		holder = 188626 # Sulayman b Hakim
 	}
 	
-	860.1.1 = {
-		holder = banumalik0003
+	866.1.1 = {
+		holder = basragovernor0001 # # Muhammad ibn Abi Awn; Formerly a commander of Muhammad ibn Abdallah ibn Tahir who was appointed governor of al-Basrah, Yamamah, and al-Bahrayn in 866
 		liege = e_arabia
 	}
 	886.1.1 = {
@@ -2785,8 +2783,8 @@ c_samman = {
 	836.1.1 = {
 		holder = bedouin0059
 	}
-	863.1.1 = {
-		holder = bedouin0060
+	866.1.1 = {
+		holder = basragovernor0001
 	}
 	902.1.1 = {
 		holder = bedouin0061

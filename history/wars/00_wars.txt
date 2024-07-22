@@ -128,7 +128,7 @@ war = {
 	end_date = 873.1.1
 	targeted_titles = {
 		d_herat
-		d_nishapur
+		d_kohestan
 	}
 	casus_belli = invasion_war
 	attackers = { 163101 }

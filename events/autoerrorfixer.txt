@@ -58,5 +58,6 @@ autoerrorfixer.1 = {
 		fix_variable_error = {ERROR = HEE_fairhair_1_Fairhair_said_yes}
 		fix_variable_error = {ERROR = SeljukTughril}
 		fix_variable_error = {ERROR = free_seljuk_cb}
+		fix_variable_error = {ERROR = HEE_is_loaded}
 	}
 }

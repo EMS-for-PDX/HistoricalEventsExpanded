@@ -2,6 +2,7 @@
 # Root does not exist
 on_game_start = {
 	on_actions = {
+		HEE_global_var
 		hee_buildings_setup
 		hee_great_summer_army
 		hee_siege_of_ragusa
@@ -12,6 +13,15 @@ on_game_start = {
 		HEE_travels_of_constantine_and_methodius
 		hee_girart_de_roussillon_retirement
 		hee_brittany_salomon_peace
+	}
+}
+
+HEE_global_var = {
+	effect = {
+		set_global_variable = {
+			name = HEE_is_loaded
+			value = yes
+		}
 	}
 }
 

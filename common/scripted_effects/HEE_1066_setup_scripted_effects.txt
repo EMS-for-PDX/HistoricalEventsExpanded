@@ -146,6 +146,15 @@ hee_byzantine_1066_effect = {
 
 }
 
+hee_france_1066_effect = {	
+
+	#Color Change for France so it doesnt match Empire of Francia
+	title:k_france = {
+		set_color_from_title = title:c_valois
+	}	
+
+}
+
 # Seljuk Politics
 hee_seljuk_1066_effect = {	
 

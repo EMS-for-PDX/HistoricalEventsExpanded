@@ -18,6 +18,7 @@
 		# 1066
 		hee_byzantine_1066_effect_setup
 		hee_seljuk_1066_effect_setup
+        hee_france_1066_effect_setup
     }
 }
 
@@ -175,5 +176,14 @@ hee_seljuk_1066_effect_setup = {
     }
     effect = {
         hee_seljuk_1066_effect = yes
+    }
+}
+
+hee_france_1066_effect_setup = {
+    trigger = {
+        game_start_date = 1066.9.15
+    }
+    effect = {
+        hee_france_1066_effect = yes
     }
 }

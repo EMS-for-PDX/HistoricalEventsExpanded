@@ -418,7 +418,7 @@ story_qarmatian_invasion = {
 		}
 	}
 
-	#Start a new war if none is ongoing, AFTER they own bahrain
+	#Start a new war if none is ongoing, BEFORE they own bahrain, THEN DECLARE FOR bahrain
 	effect_group = {
 		days = { 100 200 }
 
@@ -1033,6 +1033,82 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 	}
 
 
+	#Start a new war if none is ongoing, BEFORE they own hungary, THEN DECLARE FOR hungary
+	effect_group = {
+		days = { 50 150 }
+
+		trigger = {
+			story_owner = {
+				is_at_war = no
+				prestige > 100
+				gold > 50
+				NOT = { completely_controls_region = custom_hungary }
+				any_held_title = {
+					this = title:k_hungary
+				}
+			}
+		}
+
+		triggered_effect = {
+			trigger = {
+				story_owner = {
+					is_ai = yes
+				}
+			}
+			effect = {
+				random_county_in_region = {
+					region = custom_hungary
+					limit = { 
+						NOT = { 
+							county.holder = title:k_hungary.holder 
+							county.holder.liege = title:k_hungary.holder 
+							county.holder.top_liege = title:k_hungary.holder 
+						} 
+					}
+					duchy = { save_scope_as = next_invasion_title_target }
+					holder = {
+						if = {
+							limit = {
+								NOT = {
+									this = title:k_hungary.holder 
+									liege = title:k_hungary.holder 
+									top_liege = title:k_hungary.holder 
+								}
+							}
+							save_scope_as = ruler_to_declare_on
+						}
+					}
+					if = {
+						limit = {
+							AND = {
+								exists = scope:ruler_to_declare_on
+								scope:ruler_to_declare_on = {
+									NOT = {
+										this = title:k_hungary.holder 
+										liege = title:k_hungary.holder 
+										top_liege = title:k_hungary.holder 
+									}
+								}
+							}
+						}
+						title:k_hungary.holder = {
+							start_war = {
+								cb = ducal_conquest_cb
+								target = scope:ruler_to_declare_on
+								target_title = scope:next_invasion_title_target
+							}
+						}
+					}
+				}
+				debug_log = "The story started a new war for the lead_qarmatians"
+				debug_log_date = yes
+				story_owner = {
+					save_scope_as = owner
+				}
+				debug_log_scopes = yes
+			}
+		}
+	}
 
 	#Start a Grand Raid if none is ongoing, AFTER they completely control Hungary
 	effect_group = {
@@ -1044,7 +1120,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				prestige > 0
 				gold > 0
 				realm_size <= 60
-				#completely_controls_region = custom_hungary
+				completely_controls_region = custom_hungary
 				any_held_title = {
 					this = title:k_hungary
 				}
@@ -1082,8 +1158,8 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				gold > 0
 				current_military_strength <= 6000
 				NOR = {
-					current_year >= 975 # After this, it is fine for Qarmatians to decline in strength
-					#completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
+					current_year >= 975 # After this, it is fine for Magyars to decline in strength
+					#completely_controls_region = max_magyar_invasion_region # No need for added strength when they reach a great extent
 				}
 				any_held_title = {
 					this = title:k_hungary

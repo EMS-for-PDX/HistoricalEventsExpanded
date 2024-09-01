@@ -512,7 +512,7 @@ story_qarmatian_invasion = {
 				is_at_war = no
 				prestige > 0
 				gold > 0
-				current_military_strength <= 6000
+				current_military_strength <= 4000
 				NOR = {
 					current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
 					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent

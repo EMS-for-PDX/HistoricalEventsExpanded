@@ -816,18 +816,14 @@ spawn_qarmatian_reinforcements_effect = {
 			stacks = 5
 		}
 		men_at_arms = {
-			type = mubarizun
-			stacks = 5
-		}
-		men_at_arms = {
 			type = camel_rider
 			stacks = 5
 		}
 		men_at_arms = {
 			type = mangonel
-			stacks = 5
+			stacks = 2
 		}
-		levies = 1450
+		levies = 1480
 		location = global_var:qarmatian_founder.location
 	}
 }
@@ -984,7 +980,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 			}
 		}
 		start_war = {
-			cb = religious_war
+			cb = tribal_subjugation_cb
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}
@@ -997,7 +993,7 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 			}
 		}
 		start_war = {
-			cb = religious_war
+			cb = tribal_subjugation_cb
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}

@@ -1,5 +1,5 @@
 ﻿hee_alhanzali_uprising_scripted_effect = {
-	character:HEE_muhammad_ibn_wasil = { save_scope_as = al_hanzali } # https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
+	character:azariqa_0003 = { save_scope_as = al_hanzali } # https://en.wikipedia.org/wiki/Muhammad_ibn_Wasil
 	
 	scope:al_hanzali = {
 		#Give the adventurer a dynamic title to tide them over.
@@ -36,6 +36,7 @@
 	resolve_title_and_vassal_change = scope:change
 	
 	scope:new_title = {
+		set_color_from_title = title:c_shiraz
 		generate_coa = yes
 		set_variable = {
 			name = temporary_title
@@ -106,7 +107,7 @@
 			# Do nothing.
 		}
 		# Loan a little gold in case they're in debt/to keep them going.
- 		scope:al_hanzali = { add_gold = 100 }
+		scope:al_hanzali = { add_gold = 100 }
 	}
 	
 }

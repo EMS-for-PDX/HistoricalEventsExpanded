@@ -4,7 +4,7 @@
 @never_primary_score = -1000
 
 e_bulgarian_principality = { # From the country's Christianization in 864 and the assumption of the imperial title by its rulers in 913, the country is also referred to as the Principality of Bulgaria
-	color = { 113 88 101 }
+	color = { 108 78 110 }
 	
 	definite_form = yes
 	
@@ -30,7 +30,7 @@ e_bulgarian_principality = { # From the country's Christianization in 864 and th
 }
 
 e_bulgarian_khanate = { # Between 681 and 864 the country is also called by modern historians as the Bulgarian Khanate, or the Bulgar Khaganate, from the Turkic title of khan/khagan borne by its rulers
-	color = { 113 88 101 }
+	color = { 108 78 110 }
 	
 	definite_form = yes
 	

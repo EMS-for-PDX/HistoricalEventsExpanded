@@ -968,18 +968,18 @@ hee_samarra_relations_867_effect = {
 
 
 	# Large Shia Presence in Syria
-	title:c_homs = {
-		set_county_faith = faith:imami
-	}
-	title:c_hama = {
-		set_county_faith = faith:imami
-	}
+	# title:c_homs = {
+	# 	set_county_faith = faith:imami
+	# }
+	# title:c_hama = {
+	# 	set_county_faith = faith:imami
+	# }
 	title:c_suriya = {
 		set_county_faith = faith:imami
 	}
-	title:c_aleppo = {
-		set_county_faith = faith:imami
-	}
+	# title:c_aleppo = {
+	# 	set_county_faith = faith:imami
+	# }
 	title:c_syrrusafa = {
 		set_county_faith = faith:imami
 	}
@@ -1001,9 +1001,9 @@ hee_samarra_relations_867_effect = {
 	title:c_juwair = {
 		set_county_faith = faith:imami
 	}
-	title:c_damascus = {
-		set_county_faith = faith:imami
-	}
+	# title:c_damascus = {
+	# 	set_county_faith = faith:imami
+	# }
 
 
 

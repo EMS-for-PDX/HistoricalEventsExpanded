@@ -3,6 +3,18 @@
  d_test_empire: "Test"
  d_test_empire_adj: "Tester"
 
+ e_first_turkic_khanate_article: "the "
+ e_first_turkic_khanate: "Göktürk Khaganate"
+ e_first_turkic_khanate_adj: "Turk"
+
+ e_western_turkic_khanate_article: "the "
+ e_western_turkic_khanate: "Western Göktürk Khaganate"
+ e_western_turkic_khanate_adj: "Turk"
+
+ e_eastern_turkic_khanate_article: "the "
+ e_eastern_turkic_khanate: "Eastern Göktürk Khaganate"
+ e_eastern_turkic_khanate_adj: "Turk"
+
  e_bulgarian_principality_article: "the Principality of "
  e_bulgarian_principality: "Bulgaria"
  e_bulgarian_principality_adj: "Bulgarian"

@@ -1,0 +1,1324 @@
+﻿# Ashina Tribe
+
+## First Turkic Khaganate ##
+ashina0001 = { # Ashina (阿史那) - Youngest child of Neduliu shad, semi-legendary ancestor of Ashina clan
+	name = "Ashina"
+	dynasty = 12269
+
+	culture = "tiele"
+	religion = "tengri_pagan"
+
+	420.1.1 = {
+		birth = yes
+	}
+	480.1.1 = {
+		death = yes
+	}
+}
+
+ashina0002 = { # Submitted to Rouran Khaganate
+	name = "Axian"
+	dynasty = 12269
+	father = ashina0001
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+	
+
+	460.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+
+ashina0003 = { # Ashina Tuwu (Chinese: 吐務) was an early Tujue chief and ancestor of Göktürk khagans. Besides carrying title of Da Yehu (大葉護 Grand Yabgu) nothing is known about him.
+	name = "Tuwu"
+	dynasty = 12269
+	father = ashina0002
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	490.1.1 = {
+		birth = yes
+	}
+	552.1.1 = {
+		death = yes
+	}
+}
+
+ashina0004 = { # Bumin Qaghan was the founder of the Turkic Khaganate. He was the eldest son of Ashina Tuwu (吐務 / 吐务). He was the chieftain of the Turks under the sovereignty of Rouran Khaganate. He is also mentioned as Tumen (土門, 吐門, commander of ten thousand) of the Rouran Khaganate - https://en.wikipedia.org/wiki/Bumin_Qaghan
+	name = "Bumin"
+	dynasty = 12269
+	father = ashina0003
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = wrathful # The Rouran khagan, Anagui, sent a message refusing this request and adding: "You are my blacksmith slave. How dare you utter these words?" Bumin got angry, killed Anagui's emissary, and severed relations with the Rouran Khaganate
+	trait = just # According to the Bilge Qaghan's memorial complex and the Kul Tigin's memorial complex, Bumin and Istemi ruled people by Turkic laws and they developed them
+	trait = brave # Rose against the Rouran khagan and defeated them
+	trait = ambitious # He eventually united the local Turkic tribes and threw off the yoke of the Rouran domination. With the Rouran's defeat Bumin proclaimed himself "Illig Qaghan"
+
+	500.1.1 = {
+		birth = yes
+	}
+	552.6.1 = { # Bumin died within several months after proclaiming himself Illig Qaghan
+		death = yes
+	}
+}
+
+ashina0005 = { # Istämi was the ruler of the western part of the Göktürks, which became the Western Turkic Khaganate and dominated the Sogdians. He was the yabgu (vassal) of his brother Bumin Qaghan in 552 AD. He was posthumously referred to as khagan in Turkic sources. His son was Tardu. 
+	name = "Istemi"
+	dynasty = 12269
+	father = ashina0003
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	505.1.1 = {
+		birth = yes
+	}
+	575.1.1 = {
+		death = yes
+	}
+}
+
+ashina0006 = { # Tardu or Tardush Yabghu was the second yabghu of the Western Turkic Khaganate (c. 575–603), and ninth Khagan of the First Turkic Khaganate (599–603). He was the son of Istämi.
+	name = "Tardu"
+	dynasty = 12269
+	father = ashina0005
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	535.1.1 = {
+		birth = yes
+	}
+	603.1.1 = { # After a rebellion of his subjects, he disappeared (was likely killed) in 603 or 604. 
+		death = {
+			death_reason = death_disappearance 
+		}
+	}
+}
+
+ashina0007 = { # Tumgan (also known as Turkshad, Turxanthos) was a shad (governor prince) of the Turkic Empire (also called Göktürk) in the late 6th century. According to Edward Gibbon his name may be a title rather than a proper name.
+	name = "Tamgan"
+	dynasty = 12269
+	father = ashina0005
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	540.1.1 = {
+		birth = yes
+	}
+	584.1.1 = {
+		death = yes
+	}
+}
+
+ashina0008 = { # Külüg Sibir or Baghatur Khagan (r. 630) was a ruler of the Western Turkic Khaganate (empire) in the 7th century. He was probably Tardu's son and the governor of the northern provinces of the empire during the reigns of his nephews.
+	name = "Kulug"
+	dynasty = 12269
+	father = ashina0006
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_intrigue_3
+	trait = ambitious # Külüg Sibir murdered Tong (who was his nephew) and declared himself as the khagan with the support of the Dulo clan. According to S. G. Klyashtorny and T. I. Sultanov, he was trying to end the tension between the khagan and the vassal tribes
+
+	565.1.1 = {
+		birth = yes
+	}
+	631.1.1 = { # After being forced to abdicate, Külüg Sibir fled to the Altay Mountains where he was killed by Nushibi partisans
+		death = yes
+	}
+}
+
+ashina0009 = { # Issik Qaghan (Chinese: 乙息記可汗; pinyin: Yǐxījì kěhàn) was the second ruler of the Turkic Khaganate
+	name = "Issik"
+	dynasty = 12269
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+	father = ashina0004
+
+	522.1.1 = {
+		birth = yes
+	}
+	553.12.1 = { # He died the same year after an illness and was succeeded by his younger brother Yandou
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+ashina0010 = { # Muqan Qaghan was the second son of Bumin Qaghan and the third khagan of the Göktürks who expanded their khaganate and secured the borders against the Hephthalites. 
+	name = "Muqan"
+	dynasty = 12269
+	father = ashina0004
+
+	culture = "sogdian" # Muqan's reign marked the pinnacle of Sogdian cultural influence in the Göktürk Empire
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = brave # He was characterized as being "tough and fierce", and he was regarded as brave and knowledgeable by the historians.
+	trait = stubborn # He was characterized as being "tough and fierce", and he was regarded as brave and knowledgeable by the historians.
+	trait = cynical # (Should be tolerant but until CK3 makes it a trait Cynical is its stand-in) Muqan Qaghan was friendly to Buddhist people, and is credited with being the first to introduce Buddhism to the Türks. He promoted the construction of a Türkic Buddhist temple in the Chinese capital city of Chang'an.
+	trait = ambitious # His reign saw large land expansion
+
+	trait = intellect_good_1 # He was characterized as being "tough and fierce", and he was regarded as brave and knowledgeable by the historians.
+
+	525.1.1 = {
+		birth = yes
+	}
+	572.1.1 = {
+		death = yes
+	}
+}
+
+ashina0011 = { # Taspar Qaghan was the third son of Bumin Qaghan and Wei Changle (長樂公主), and the fourth khagan of the Turkic Khaganate (572–581).
+	name = "Tapar"
+	dynasty = 12269
+	father = ashina0004
+
+	culture = "han" # Unlike his father and older brothers he embraced Chinese culture, especially Buddhism. He was converted to Buddhism by the Qi monk Huilin, for whom he built a pagoda.
+	religion = "mahayana" # Unlike his father and older brothers he embraced Chinese culture, especially Buddhism. He was converted to Buddhism by the Qi monk Huilin, for whom he built a pagoda.
+
+	trait = arrogant # Taspar Qaghan's reign saw further rise of Turkic power even to the point calling both Zhou and Qi emperors his sons. Taspar Qaghan attempted to subvert the traditional succession of his people
+	trait = zealous # Seemingly deeply devoted to Buddhism
+	trait = ambitious # Continued to enhance Gokturk power and influence
+
+	535.1.1 = {
+		birth = yes
+	}
+	581.1.1 = {
+		death = { # Taspar died in 581 from illness, leaving throne to his nephew Talopien.
+			death_reason = death_ill
+		}
+	}
+}
+
+ashina0012 = { # Ditou Qaghan (appointed by Muqan Qaghan to be lesser khagan of eastern wing of Turkic Empire)
+	name = "Ditou"
+	dynasty = 12269
+	father = ashina0004
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+	
+	540.1.1 = {
+		birth = yes
+	}
+	585.1.1 = {
+		death = yes
+	}
+}
+
+ashina0013 = { # Lesser khagan appointed by Taspar Qaghan
+	name = "Tigin"
+	dynasty = 12269
+	father = ashina0004
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+	
+	545.1.1 = {
+		birth = yes
+	}
+	593.1.1 = {
+		death = yes
+	}
+}
+
+ashina0014 = { # 
+	name = "Rudan"
+	dynasty = 12269
+	father = ashina0004
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+	
+	550.1.1 = {
+		birth = yes
+	}
+	602.1.1 = {
+		death = yes
+	}
+}
+
+ashina0015 = { # Ishbara Qaghan (c. 540 – 587) was the first son of Issik Qaghan, grandson of Bumin Qaghan, and the sixth khagan of the Turkic Khaganate (581–587).
+	name = "Ishbara"
+	dynasty = 12269
+	father = ashina0009
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_2
+	trait = paranoid # According to Zhangsun Sheng's report, "Chuluohou, Shetu's brother, though cunning, is weak in power. He has earned the hearts of the people, which has made Shetu jealous and uneasy, despite outward appearances suggesting otherwise. In reality, he harbors deep suspicions and fears
+	trait = callous # Ishbara attacked Apa's camp and killed his mother during the raid in 583
+
+	545.1.1 = {
+		birth = yes
+	}
+	587.1.1 = {
+		death = { # He died in 587 after a long illness
+			death_reason = death_ill
+		}
+	}
+}
+
+ashina0016 = { # Bagha Qaghan was the seventh Khagan (587–588) of the Eastern Wing of Göktürks during the turmoil inside the khaganate.
+	name = "Bagha" # His personal name was recorded as Ashina Chuluohou
+	dynasty = 12269
+	father = ashina0009
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = just # He was appointed heir by his brother Ishbara sometime before 587 in his will. When the Khagan died, a messenger was sent by Ashina Yongyulü to his uncle, to fulfill the will and invite him to ascend the throne. However, Chuluohou stated that in recent generations, the Göktürks had not adhered to the lateral succession system, and it would not be in accordance with tradition for him to take the throne while Ishbara Khagan's son was still alive. He requested Yongyulü to ascend the throne instead and declared his allegiance to him
+	trait = brave # 
+	trait = humble # He was appointed heir by his brother Ishbara sometime before 587 in his will. When the Khagan died, a messenger was sent by Ashina Yongyulü to his uncle, to fulfill the will and invite him to ascend the throne. However, Chuluohou stated that in recent generations, the Göktürks had not adhered to the lateral succession system, and it would not be in accordance with tradition for him to take the throne while Ishbara Khagan's son was still alive. He requested Yongyulü to ascend the throne instead and declared his allegiance to him
+
+	trait = shrewd # During this time, Emperor Wen of Sui used Zhangsun Sheng, a companion of Princess to sow discord among Turks. According to his report, Chuluohou was cunning
+
+	548.1.1 = {
+		birth = yes
+	}
+	588.1.1 = {
+		death = { # he may have been the 'great kaghan' that was killed with an arrow by Persian commander Bahrām Chobin during the First Perso-Turkic War / several sources state he died the previous year in a battle with Tardush Yabgu in 588 AD
+			death_reason = death_battle
+		}
+	}
+}
+
+ashina0017 = { # Tulan Qaghan was the seventh qaghan (Khaqan) of the Turkic Khaganate and the son of Ishbara Qaghan
+	name = "Tulan"
+	dynasty = 12269
+	father = ashina0015
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	570.1.1 = {
+		birth = yes
+	}
+	599.1.1 = { # Tulan Qaghan combined his forces with Tardu in 599 and launched an invasion on Sui, but he was assassinated by his own men in 599
+		death = {	
+			death_reason = death_court_intrigue
+		}
+	}
+}
+
+ashina0018 = { # Yami Qaghan was the first qaghan of the Eastern Turkic Khaganate - https://en.wikipedia.org/wiki/Yami_Qaghan
+	name = "Yami" # also known as Ashina Rangan and Tolis Qaghan
+	dynasty = 12269
+	father = ashina0015 # His parentage is uncertain as he was either son of Bagha Qaghan or Ishbara Qaghan.
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_intrigue_4
+	trait = ambitious # Tolis' ambitious behaviour caused outrage to khagan
+	trait = deceitful
+	trait = callous
+
+	572.1.1 = {
+		birth = yes
+	}
+	609.7.1 = { # In spring 609, Qimin made another visit to Emperor Yang and was rewarded with much treasure. He died later from an illness. 
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+ashina0019 = { # Ambassador to China in 585
+	name = "Kuhezhen"
+	dynasty = 12269
+	father = ashina0015
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	575.1.1 = {
+		birth = yes
+	}
+	612.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+ashina0020 = { # Ambassador to China in 593
+	name = "Rudan"
+	dynasty = 12269
+	father = ashina0015
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	577.1.1 = {
+		birth = yes
+	}
+	615.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+ashina0021 = { # Ashina Anluo (Chinese: 阿史那菴羅) was the fifth ruler of the Turkic Khaganate in the sixth century and abdicated circa. 581
+	name = "Anluo"
+	dynasty = 12269
+	father = ashina0011
+
+	culture = "han" # Taken from father
+	religion = "mahayana" # Taken from father
+	
+
+	555.1.1 = {
+		birth = yes
+	}
+	611.1.1 = {
+		death = yes
+	}
+}
+
+ashina0035 = { # Apa Qaghan was a son of Muqan Qaghan and a claimant to the Turkic Khaganate
+	name = "Apa" # born Ashina Daluobian or Talopien
+	dynasty = 12269
+	father = ashina0010
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_diplomacy_3
+	trait = ambitious # He claimed the title of Khaqan
+	trait = craven # According to Zhangsun Sheng's report, "Apa Khagan is timid and positioned between the Ashina factions. He somewhat fears Shetu and follows his lead, but his loyalty is uncertain." Eventually fled west to seek refuge with Tardu
+	trait = stubborn # Despite resistance, Talopien harassed Anluo and sent few emissaries to force him to abdicate
+
+	548.1.1 = { # He was born Ashina Daluobian or Talopien (Chinese: 阿史那大逻便) to Muqan Qaghan and a concubine, probably around 551
+		birth = yes
+	}
+	587.1.1 = { # There is no information in the sources about what happened to Apa Khagan after 587. He might have lived in Chinese court for the rest of his life.
+		death = {
+			death_reason = death_disappearance 
+		}
+	}
+}
+
+ashina0022 = { # Yangsu Tegin was a Gökturk prince. According to Lev Gumilyov, he was a son of Tardu, however Takeshi Osawa suggested that he was a son of Muqan Qaghan and father of Niri Qaghan.
+	name = "Yangsu"
+	dynasty = 12269
+	father = ashina0010
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	550.1.1 = {
+		birth = yes
+	}
+	589.1.1 = { # 589?
+		death = yes
+	}
+}
+
+ashina0023 = { # Niri Qaghan was a ruler of the Western Turkic Khaganate
+	name = "Niri"
+	dynasty = 12269
+	father = ashina0022
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	568.1.1 = { 
+		birth = yes
+	}
+	598.5.1 = { # According to some scholars, Niri died in spring or summer of 598 during a battle against the Tiele and his second funeral ceremony could be held in autumn or winter of the year of 599 at the latest.
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ashina0024 = { # Poshi Tegin, brother to Niri Qaghan who was sent by Heshana Khagan as ambassador to China during end of the Kaiyuan era
+	name = "Poshi"
+	dynasty = 12269
+	father = ashina0022
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	570.1.1 = { 
+		birth = yes
+	}
+	634.1.1 = {
+		death = yes
+	}
+}
+
+ashina0025 = { # Heshana Qaghan - or Heshana Khagan - was the second khagan of the Western Turkic Khaganate. He was the son of Niri Qaghan. He appeared as Čôl χâɣân in The Provincial Capitals of Iran.
+	name = "Heshana"
+	dynasty = 12269
+	father = ashina0023
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = greedy # He was said to be collecting excessive taxes from the Tiele, leading to resentment among the tribes of the Tiele
+	trait = deceitful
+	trait = paranoid # Khagan thus suspected the Tiele chieftains and, on one occasion, gathered some 100 Tiele chieftains and slaughtered them
+
+	591.1.1 = { 
+		birth = yes
+	}
+	619.1.1 = { # By 619, he was no longer in control of his khaganate and was at Chang'an, the capital of China's Tang dynasty, when Emperor Gaozu of Tang, giving in to Shibi khagan's pressure, had him delivered to Eastern Turk emissaries to be executed.
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+# Heshana Qaghan was survived by two sons who were in service of the Tang dynasty thereafter. The sons are seemingly unimportant with little known about them and thus due to China not being in CK3 they will not be included
+
+ashina0038 = { # Kuta Shad, son of Niri Qaghan
+	name = "Kuta"
+	dynasty = 12269
+	father = ashina0023
+	
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	593.1.1 = { 
+		birth = yes
+	}
+	645.1.1 = {
+		death = yes
+	}
+}
+
+ashina0026 = { # Shibi Khagan (r. 609 or 611 – c.April 619 AD) succeeded Yami Qaghan as the second khagan of the Eastern Turkic Khaganate. 
+	name = "Shibi"
+	dynasty = 12269
+	father = ashina0018 # Yami Qaghan/Tolis Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = generous # During the turmoil of the later years of Yangdi's reign, he supported various local warlords in northwestern China
+	trait = trusting # Princess Yicheng, who was directing military affairs at the Turkic capital in her husband's absence, falsely informed Shibi Khagan that the Turks were under attack from the north, and so the khagan lifted the siege of Daixian
+	trait = ambitious # 
+
+	590.1.1 = {
+		birth = yes
+	}
+	619.4.1 = { # c.April 619 
+		death = yes
+	}
+}
+
+ashina0027 = { # Ashina Xichun, also known as Chuluo Khagan, was the khagan of the Eastern Turkic Khaganate, and second son of Yami Qaghan. He succeeded his elder brother Shibi and ruled for 18 months. 
+	name = "Chuluo"
+	dynasty = 12269
+	father = ashina0018 # Yami Qaghan/Tolis Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	593.1.1 = {
+		birth = yes
+	}
+	620.12.1 = { # c.December 620. He died from illness, possibly poisoned by the Minister of Ceremonies Zheng Yuanshu
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+# Chuluo Khagan's three children, while notable, are heavily involved in China and not the current CK3 map - thus not included atm https://en.wikipedia.org/wiki/Ashina_Xichun
+
+ashina0028 = { # Illig Qaghan, posthumous name Prince Huang of Guiyi (歸義荒王), was the last qaghan of the Eastern Turkic Khaganate. 
+	name = "Illig"
+	dynasty = 12269
+	father = ashina0018 # Yami Qaghan/Tolis Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_2
+	trait = ambitious
+
+	596.1.1 = {
+		birth = yes
+	}
+	634.2.1 = { # He died in February 634 and was created Prince of Guiyi (歸義王) and posthumously named Huang (荒) by Taizong
+		death = yes
+	}
+}
+
+ashina0029 = { # Ashina Shibobi (603 - c.November 631) was a lesser khagan (or Qaghan equivalent to Emperor), who ruled the eastern wing of Eastern Turkic Khaganate - https://en.wikipedia.org/wiki/Ashina_Shibobi
+	name = "Tölis"
+	dynasty = 12269
+	father = ashina0026 # Ashina Shibobi was born to Shibi Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	607.1.1 = { # c. 603
+		birth = yes
+	}
+	631.11.1 = { # He died in c.November 631, while on his way to Chang'an, near Bingzhou
+		death = yes
+	}
+}
+
+ashina0030 = { # Ashina Jiesheshuai was a member of the Ashina clan of the Eastern Turkic Khaganate and general (Zhonglangjiang) of the Tang dynasty - https://en.wikipedia.org/wiki/Ashina_Jiesheshuai
+	name = "Jiesheshuai"
+	dynasty = 12269
+	father = ashina0026 # Ashina Shibobi was born to Shibi Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	608.1.1 = {
+		birth = yes
+	}
+	639.5.19 = { # 19 May 639 Near Yellow River
+		death = { # Killed while attempting to flee after a failed assassination attempt on Emperor Taizong
+			death_reason = death_court_intrigue
+		}
+	}
+}
+
+ashina0031 = { # Ashina Shibobi's son Ashina Hexiangu who took part in Ashina Jiesheshuai's failed assassination attempt on Emperor Taizong
+	name = "Hexiangu"
+	dynasty = 12269
+	father = ashina0026 # Ashina Shibobi was born to Shibi Qaghan
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	624.1.1 = {
+		birth = yes
+	}
+	670.1.1 = { # Ashina Hexiangu was exiled to Lingbiao after a failed assassination attempt on Emperor Taizong
+		death = yes # 
+	}
+}
+
+ashina0032 = { # Yukuk Shad (r. 638–642, died 653) reigned in the final days of the Western Turkic Khaganate. His name Yukuk means "owl", according to Gumilyov, or means "venerable", according to Gabain. His full title was 乙毗咄陆可汗 or Yipi Duolu Kehan (Zuev's reconstructed Old Turkic: *Yelbi Turuk Qaghan).
+	name = "Yukuk"
+	dynasty = 12269
+	father = ashina0028 # He was the son of Illig Qaghan, ruler of the Eastern Turkic Khaganate and spent his early years there
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = greedy # In 642, he began to suffer dissent within, as he was said to have hoarded the spoils from attacks on the Sogdian states of Kangju and Maymurgh and refused to divide them with his subordinates
+	trait = wrathful
+	trait = callous # when one of his generals, Ashina Nishou nevertheless seized some spoils, Ashina Yugu executed him
+	trait = reaver
+
+	614.1.1 = {
+		birth = yes
+	}
+	653.1.1 = { # c. 653
+		death = yes
+	}
+}
+
+ashina0033 = { # Zhenzhu Yabgu was a claimant to throne of Western Turkic Khaganate
+	name = "Zhenzhu"
+	dynasty = 12269
+	father = ashina0032 # He was Yukuk Shad's son and Illig Khagan's grandson
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	630.1.1 = {
+		birth = yes
+	}
+	659.3.1 = { # His territory was also invaded during conquest of the Western Turks and Zhenzhu was killed by Ashina Mishe near Shuanghe in March, 659
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ashina0034 = { # Empress Ashina (阿史那皇后) (551 – 30 May 582) was a Göktürk princess, who became an empress of the Xianbei-led Chinese Northern Zhou dynasty. She was the daughter of Göktürk's third khagan Muqan Qaghan, and her husband was Emperor Wu
+	name = "Ashina"
+	female = yes
+	dynasty = 12269
+	father = ashina0010
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	551.1.1 = {
+		birth = yes
+	}
+	582.5.30 = { # May 30, 582 (aged 30–31)
+		death = yes
+	}
+}
+
+ashina0036 = { # Shekui Kaghan (r. 611–619 or possibly 610–617) was the third khagan of the Western Turkic Khaganate. He was the grandson of Tardu (575–603) through his son Tulu (都六). 
+	name = "Shekui"
+	dynasty = 12269
+	father = 74000
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = just # When Taman partisans arrested a Chinese ambassador to Sheguy, Sheguy revolted and Taman had to flee to Sui China
+	trait = brave
+	trait = diligent # Sheguy maintained order in his empire and provided security of the silk road. His term marks the beginning of Nushibi supremacy
+	trait = overseer # Sheguy maintained order in his empire and provided security of the silk road
+
+	574.1.1 = {
+		birth = yes
+	}
+	618.1.1 = { # c. 618
+		death = yes
+	}
+}
+
+ashina0037 = { # Tong Yabghu Qaghan (r. 618–628 or 630) was khagan of the Western Turkic Khaganate from 618 to 628 AD. Tong Yanghu was the brother of Sheguy (r. 611–618), the previous khagan of the western Göktürks, and was a member of the Ashina clan; his reign is generally regarded as the zenith of the Western Göktürk Khaganate
+	name = "Tong Yabghu"
+	dynasty = 12269
+	father = 74000
+
+	culture = "khazar" # Possibly mahayana, received Xuanzang
+	religion = "tengri_pagan"
+
+	diplomacy = 10
+	martial = 10
+	stewardship = 10
+	intrigue = 8
+	learning = 9
+
+	trait = education_martial_4 # Good at war
+	trait = intellect_good_1
+	trait = just
+	trait = diligent
+	trait = brave
+	trait = temperate # Tolerant
+	trait = organizer
+	trait = overseer
+	trait = gallant
+
+	577.1.1 = {
+		birth = yes
+	}
+	630.1.1 = { # In ca. 630 Tong Yabghu Qaghan was murdered by Külüg Sibir, his uncle and a partisan of the Dulu faction
+		death = {
+			death_reason = death_murder_known
+			killer = ashina0008 # Külüg Sibir
+		}
+	}
+}
+
+ashina0040 = { # Sy Yabghu Qaghan was a khagan in the Western Turkic Khaganate between 631–633 or 630–632
+	name = "Sy Yabghu"
+	dynasty = 12269
+	father = ashina0037
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_2
+	trait = wrathful # He couldn't control Syr-Tardush tribes and he executed so many people that even his former partisan Nishu planned to escape
+	trait = brave
+	trait = callous
+
+	599.1.1 = {
+		birth = yes
+	}
+	633.6.15 = { # After losing his supporters and prestige he escaped to south in 633 where he later tried to raid the city of Balkh (now in north Afghanistan), but was killed in the clash circa. 633
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ashina0041 = { # Tardush Shad (Chinese: 達頭设; pinyin: Dátóu Shè) — was a Yabghu of Tokharistan. He was a son of Tong Yabgu Qaghan
+	name = "Tardush"
+	dynasty = 12269
+	father = ashina0037
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	600.1.1 = {
+		birth = yes
+	}
+	630.1.1 = { # It was Tardu to advise him to make a trip westward to Balkh (modern Afghanistan), to see the Buddhist sites and relics. Xuanzang also witnessed a palace scandal when Tardu's firstborn son Ishbara Tegin fallen in love with his new step-mother (also aunt) and poisoned Tardu in 630
+		death = {
+			death_reason = death_poison
+			killer = ashina0042
+		}
+	}
+}
+
+ashina0042 = { # Tardu's firstborn son Ishbara Tegin who in love with his new step-mother (also aunt) and poisoned Tardu in 630
+	name = "Ishbara"
+	dynasty = 12269
+	father = ashina0041
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_intrigue_2
+	trait = lustful
+
+	616.1.1 = {
+		birth = yes
+	}
+	640.1.1 = {
+		death = yes
+	}
+}
+
+ashina0043 = { # Duolu Qaghan was a ruler of the Western Turkic Khaganate during 632–634 or 633–634
+	name = "Duolu"
+	dynasty = 12269
+	father = 74002 # Bagha Shad
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	600.1.1 = {
+		birth = yes
+	}
+	634.1.1 = { # In 634 after a year of rule he died and left his throne to his brother Tong Shad (later Ishbara Tolis).
+		death = yes
+	}
+}
+
+ashina0044 = { # Ishbara Tolis was the ruler of Western Turkic Khaganate (empire) between 634–639. His full title was Shābōluō xìlìshī. 
+	name = "Ishbara"
+	dynasty = 12269
+	father = 74002 # Bagha Shad
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_diplomacy_3 # In 635, he sent arrows to ten tribes which meant legitimatizing them as shads (semi independent governor princes), but he was careful to keep the delicate balance between the two rival factions by appointing five from Duolu and five from Nushibi
+	trait = calm
+	trait = temperate
+	trait = diligent
+
+	602.1.1 = {
+		birth = yes
+	}
+	639.1.1 = { # After the Duolu–Nushibi split, Ishbara spent rest of his life among his former Nushibi subjects, east to Ili River. He was killed by one of his own men in 639, on orders of Yukuk Shad
+		death = {
+			death_reason = death_murder_known
+			killer = ashina0032
+		}
+	}
+}
+
+ashina0045 = { # El Külüg Shad Irbis Qağan was Khagan of the Western Turkic Kaghanate.
+	name = "El Külüg Shad Irbis"
+	dynasty = 12269
+	father = ashina0044
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	620.1.1 = {
+		birth = yes
+	}
+	640.1.1 = { # He was ruling south of Ili River, which was populated mostly by Nushibi tribes, after his father was murdered. He soon died, leaving the throne to his nephew Irbis Ishbara Yabgu Qaghan
+		death = yes
+	}
+}
+
+ashina0046 = { # Genna Shad, brother of El Kulug Shad
+	name = "Genna"
+	dynasty = 12269
+	father = ashina0044
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	618.1.1 = {
+		birth = yes
+	}
+	655.1.1 = {
+		death = yes
+	}
+}
+
+ashina0047 = { # Irbis Ishbara Yabgu Qaghan was a Qaghan of Nushibi faction in Western Turkic Khaganate. 
+	name = "Irbis Ishbara Yabgu"
+	dynasty = 12269
+	father = ashina0046
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	634.1.1 = {
+		birth = yes
+	}
+	641.1.1 = { # he was soon killed by men following orders of Yukuk Shad in 641
+		death = {
+			death_reason = death_murder_known
+			killer = ashina0032
+		}
+	}
+}
+
+ashina0048 = { # Ishbara Khagan (ruled 651–658) was the last khagan of the Western Turkic Khaganate. 
+	name = "Ishbara" # Born	Ashina Helu 
+	dynasty = 12269
+	father = 74003 # Uncertain parentage; could be son of Böri Shad or Irbis Seguy
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_2
+	trait = ambitious
+	trait = brave
+	trait = humble
+	trait = organizer
+
+	621.1.1 = {
+		birth = yes
+	}
+	659.1.1 = { # In 659, following his capture by Emperor Gaozong, Ishbara Khagan was spared and lived out his days at the Tang capital Chang'an
+		death = {
+			death_reason = death_disappearance 
+		}
+	}
+}
+
+ashina0066 = { # Ashina Xiyun, Son of Ishbara Khagan (ruled 651–658)
+	name = "Xiyun" 
+	dynasty = 12269
+	father = ashina0048
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	645.1.1 = {
+		birth = yes
+	}
+	659.1.1 = { # In 659, following his capture by Emperor Gaozong, Ishbara Khagan was spared and lived out his days at the Tang capital Chang'an
+		death = {
+			death_reason = death_disappearance 
+		}
+	}
+}
+
+ashina0067 = { # Tugruq Shad; son of Taspar and father to Qilibi Khan
+	name = "Tugruq"
+	dynasty = 12269
+	father = ashina0011
+
+	culture = "han" # Taken from father
+	religion = "mahayana" # Taken from father
+
+	557.1.1 = {
+		birth = yes
+	}
+	615.1.1 = {
+		death = yes
+	}
+}
+
+ashina0068 = { # Qilibi Khan, personal name Ashina Simo, Chinese name Li Simo, full regal title Yiminishuqilibi Khagan, Tang noble title Prince of Huaihua, was a member of the Eastern Tujue (Göktürk) royal house who was given the title of Khan of Eastern Tujue for several years, as a vassal of the Chinese Tang dynasty.
+	name = "Qilibi" # personal name Ashina Simo/Chinese name Li Simo
+	dynasty = 12269
+	father = ashina0011
+
+	culture = "sogdian" # Despite Ashina Simo's royal lineage, it was said that on account of his appearance, which appeared more Sogdian than Tujue, Ashina Duojishi and Ashina Chuluo both suspected him of being born out of an adulterous relationship, and therefore did not entrust him with great authorities
+	religion = "mahayana" # Taken from father
+
+	583.1.1 = { # He was born in 583 (source?)
+		birth = yes
+	}
+	647.5.16 = {
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Second Turkic Khaganate ##
+ashina0049 = { # Etmish Beg; a distant relative of Illig Qaghan (the final qaghan of the Eastern Turkic Khaganate)
+	name = "Etmish"
+	dynasty = 12269
+	# father = He was a distant relative of Illig Qaghan who ruled as the final qaghan of the Eastern Turkic Khaganate
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	634.1.1 = {
+		birth = yes
+	}
+	670.1.1 = {
+		death = yes
+	}
+}
+
+ashina0050 = { # Ilterish Qaghan was the founder of the Second Turkic Khaganate (reigning 682–691)
+	name = "Ilterish"
+	dynasty = 12269
+	father = ashina0049
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = brave # Lead an uprising against the Tang and fought in many battles
+	trait = trusting # Put great faith in ministers like Tonyukuk
+	trait = stubborn # Never surrender despite many defeats
+	trait = ambitious # Sought to restore the Turkic Khaganate
+	trait = organizer
+	trait = raider
+
+	655.1.1 = {
+		birth = yes
+	}
+	691.1.1 = { # circa. 691
+		death = yes
+	}
+}
+
+ashina0051 = { # Qapaghan or Qapghan Qaghan was the second khagan of the Second Turkic Khaganate during Wu Zetian's reign and was the younger brother of the first kaghan, Ilterish Qaghan.
+	name = "Qapaghan"
+	dynasty = 12269
+	father = ashina0049
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = arrogant # Qapaghan demanded a Tang dynasty prince for marriage to his daughter, part of a plot to join his family with the Tang, displace the Zhou, and restore Tang rule over China under his influence
+	trait = diligent # 
+	trait = callous # due to his cruelty, some his men and a number of tribes, including his Korean son-in-law Gao Wenjian and Ashide son-in-law Ashide Hulu submitted to Tang. Rebellions of tribes followed later. 
+	trait = ambitious # Aggressively expanded the Khaganate
+	trait = raider
+
+	664.1.1 = { # He was born around 664 (source?)
+		birth = yes
+	}
+	716.7.22 = { # Khagan was on his way back from suppressing the revolting Tiele tribes of Huihe, Tongluo, Baixi, Bayegu and Xueyantuo, was ambushed killed by a Bayegu tribesman named Xiezhilue (颉质略) on July 22, 716 while passing through a forest. His severed head was sent to Changan
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+# Qapghan Qaghan had several issues not added to HEE, but none that were relevant or of any note - https://en.wikipedia.org/wiki/Qapaghan_Qaghan#Family
+
+ashina0052 = { # Ashina Duoxifu was a younger brother of Elteriš Qaγan and Qapγan Qaγan in Turkic Empire
+	name = "Duoxifu"
+	dynasty = 12269
+	father = ashina0049
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	666.1.1 = {
+		birth = yes
+	}
+	716.11.1 = { # He was killed by Kol Tegin as a part of coup against Inäl Qaγan in 716
+		death = {
+			death_reason = death_murder_known
+			killer = ashina0054
+		}
+	}
+}
+
+# Ashina Duoxifu had several issues, but none that were relevant or of any note - https://en.wikipedia.org/wiki/Ashina_Duoxifu#Family
+
+ashina0053 = { # Bilge Qaghan was the fourth Qaghan of the Second Turkic Khaganate. His accomplishments were described in the Orkhon inscriptions. 
+	name = "Bilge" # Ashina Mojilian 
+	dynasty = 12269
+	father = ashina0050
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = brave
+	trait = diligent
+	trait = cynical # At some point in his life, he thought about converting to Buddhism and settling in cities. However, Tonyukuk discouraged him from this, citing the Turks' few numbers and vulnerability to Chinese attacks
+
+	683.1.1 = {
+		birth = yes
+	}
+	734.11.25 = { # Just after sending an emissary to Xuanzong to gain heqin alliance, he was poisoned by Buyruk Chor. He did not die immediately and he had time to punish the family of Buyruk Chor with death. He died on 25 November 734, his burial ceremony took place on 22 June 735
+		death = {
+			death_reason = death_poison
+		}
+	}
+}
+
+ashina0054 = { # Kul Tigin was a general and a prince of the Second Turkic Khaganate.
+	name = "Kül"
+	dynasty = 12269
+	father = ashina0050
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_4
+
+	trait = ambitious
+	trait = diligent
+	trait = callous
+
+	684.1.1 = {
+		birth = yes
+	}
+	731.2.27 = { # He died suddenly on 27 February 731
+		death = yes
+	}
+}
+
+ashina0055 = { # Toŋa Tegin; Son of Qapaghan Qaghan who died during the Siege of Beiting in 714
+	name = "Toŋa"
+	dynasty = 12269
+	father = ashina0051
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	687.1.1 = {
+		birth = yes
+	}
+	714.1.1 = { # died during the Siege of Beiting in 714
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ashina0056 = { # Inel Qaγan was (briefly) the third khagan of Second Turkic Khaganate. 
+	name = "Inel"
+	dynasty = 12269
+	father = ashina0051
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	685.1.1 = {
+		birth = yes
+	}
+	717.2.1 = { # Inel and his supporters was killed by Kul Tigin
+		death = {
+			death_reason = death_murder_known
+			killer = ashina0054
+		}
+	}
+}
+
+ashina0057 = { # Yollıg Khagan was the fifth ruler of the Second Turkic Khaganate
+	name = "Yollıg"
+	dynasty = 12269
+	father = ashina0053
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	715.1.1 = {
+		birth = yes
+	}
+	739.1.1 = { 
+		death = yes
+	}
+}
+
+ashina0058 = { # Tengri Qaghan (734 or 739 or 740 – 741) was the sixth ruler of the Second Turkic Khaganate
+	name = "Tengri"
+	dynasty = 12269
+	father = ashina0053 # He was the second son of the fourth ruler, Bilge Khagan, and was preceded by his elder brother Yollig Khagan. Tengri was a minor and dominated by his mother Po Beg
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	725.1.1 = {
+		birth = yes
+	}
+	741.1.1 = { # circa. 741
+		death = { # the eastern shad Pan Kul Tigin rebelled and marched on the capital. He captured Tengri and executed him, causing his mother and regent El Bilge Khatun to flee. 
+			death_reason = death_execution
+			killer = ashina0059
+		}
+	}
+}
+
+ashina0059 = { #  Pan Kul Tigin
+	name = "Pan"
+	dynasty = 12269
+	father = ashina0054 # Exact connection unknown
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = ambitious
+	trait = brave
+
+	705.1.1 = {
+		birth = yes
+	}
+	731.2.27 = { # Although Pan Kül Tigin had staged a successful coup against Kutluk Bilge, he was killed during a battle against Ashina Shi and his Basmyls
+		death = {
+			death_reason = death_battle
+			killer = ashina0061
+		}
+	}
+}
+
+ashina0060 = { #  Özmiş Khagan was the last penultimate khagan of the Second Turkic Khaganate (Göktürks)
+	name = "Ozmish"
+	dynasty = 12269
+	father = ashina0059 # Exact connection unknown
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	722.1.1 = {
+		birth = yes
+	}
+	744.1.6 = { # Although Özmiş escaped he was soon defeated for the second time and was killed in 744 by Ashina Shi
+		death = {
+			death_reason = death_battle
+			killer = ashina0061
+		}
+	}
+}
+
+ashina0061 = { #  Kulun Beg was a Turkic (Göktürk) ruler who tried to sustain the Second Turkic Khaganate in vain
+	name = "Kulun"
+	dynasty = 12269
+	father = ashina0059 # Sources mention he is Özmiş Khagan's son, but I dont know how age-wise that works. Some sources list him as Özmiş Khagan's brother which is what I will go with
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	725.1.1 = {
+		birth = yes
+	}
+	745.1.1 = { # Although Kulun Beg tried to escape, he was arrested by the Uighurs and was beheaded just like his father/brother in 745
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+
+ashina0062 = { # Uti beg, son of Ashina Duoxifu
+	name = "Uti"
+	dynasty = 12269
+	father = ashina0052
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	690.1.1 = {
+		birth = yes
+	}
+	742.1.1 = {
+		death = yes
+	}
+}
+
+ashina0063 = { # Alp Bilge Qağan was a Basmyl chief who rebelled and brought Second Turkic Khaganate to an end. 
+	name = "Alp Bilge" # Ashina Shi
+	dynasty = 12269
+	father = ashina0062
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	710.1.1 = {
+		birth = yes
+	}
+	742.1.1 = { # he was deposed by Uyghurs, which signalled beginning of Uyghur Empire. 
+		death = yes
+	}
+}
+
+ashina0064 = { # Son of Ashina Duoxifu who laid claim to the Khaganate in the 740s - 750s
+	name = "Eletmish"
+	dynasty = 12269
+	father = ashina0052
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	692.1.1 = {
+		birth = yes
+	}
+	759.1.1 = {
+		death = yes
+	}
+}
+
+ashina0065 = { # During the interregnum after Pan Kül Tigin's death, Kutluk Yabgu, enthroned a son of Bilge Khagan as the new Khagan, but soon he changed sides and declared himself as the Khagan in 741. This character represents the unnamed son of Bilge
+	name = "Tengri"
+	dynasty = 12269
+	father = ashina0053 # He was the second son of the fourth ruler, Bilge Khagan, and was preceded by his elder brother Yollig Khagan. Tengri was a minor and dominated by his mother Po Beg
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	727.1.1 = {
+		birth = yes
+	}
+	741.6.1 = {
+		death = { # Not sure what to do with this character
+			death_reason = death_execution
+			killer = yabgu0001
+		}
+	}
+}
+
+yabgu0001 = { # Kutluk Yabgu Khagan was one of the last yabghus (rulers) of the Second Turkic Khaganate. He briefly served as regent to an unnamed son of Bilge Khagan then declared himself Khagan
+	name = "Kutluk"
+
+	culture = "khazar"
+	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = fickle
+	trait = callous
+	trait = ambitious
+
+	690.1.1 = {
+		birth = yes
+	}
+	742.3.1 = { # In 742, the Tang emperor Xuanzong organized a secret alliance within the Turkic Khaganate. Basmyls, Uighurs and Karluks, the three Turkic tribes attacked capital. Kutluk Yabgu was killed
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

@@ -3,6 +3,81 @@
 @always_primary_score = 1000
 @never_primary_score = -1000
 
+e_first_turkic_khanate = { # The First Turkic Khaganate, also referred to as the First Turkic Empire, Göktürk Khaganate, or the Turkic Khaganate, was a Turkic khaganate established by the Ashina clan of the Göktürks in medieval Inner Asia under the leadership of Bumin Qaghan (d. 552) and his brother Istämi. The First Turkic Khaganate succeeded the Rouran Khaganate as the hegemonic power of the Mongolian Plateau and rapidly expanded their territories in Central Asia. The khaganate became the first Central Asian transcontinental empire from Manchuria to the Black Sea.
+	color = { 45 135 220 }
+	
+	definite_form = yes
+	
+	capital = c_karakorum
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_turkic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+e_western_turkic_khanate = { # The Western Turkic Khaganate, or Onoq Khaganate, was a Turkic khaganate in Eurasia, formed as a result of the wars in the beginning of the 7th century (593–603 CE) after the split of the First Turkic Khaganate (founded in the 6th century on the Mongolian Plateau by the Ashina clan), into a western and an eastern Khaganate.
+	color = { 3 124 232 }
+	
+	definite_form = yes
+	
+	capital = c_suyab
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_turkic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+e_eastern_turkic_khanate = { # The Eastern Turkic Khaganate was a Turkic khaganate formed as a result of the internecine wars in the beginning of the 7th century (AD 581–603) after the First Turkic Khaganate (founded in the 6th century in the Mongolian Plateau by the Ashina clan) had splintered into two polities – one in the east and the other in the west. Finally, the Eastern Turkic Khaganate was defeated and absorbed by the Tang dynasty, and Xueyantuo occupied the territory of the former Turkic Khaganate.
+	color = { 245 245 255 }
+	
+	definite_form = yes
+	
+	capital = c_karakorum
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_turkic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
 e_bulgarian_principality = { # From the country's Christianization in 864 and the assumption of the imperial title by its rulers in 913, the country is also referred to as the Principality of Bulgaria
 	color = { 108 78 110 }
 	

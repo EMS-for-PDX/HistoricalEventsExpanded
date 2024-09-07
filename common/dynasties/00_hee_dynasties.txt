@@ -524,3 +524,28 @@ dynasty_aljarrah = {
 	name = "dynn_Aljarrah"
 	culture = "assyrian"	
 }
+
+
+
+
+# Seven Hungarian Tribes
+
+dynasty_tarjan = {
+	name = "dynn_Tarjan"
+	culture = "hungarian"
+}
+
+dynasty_keszi = {
+	name = "dynn_Keszi"
+	culture = "hungarian"
+}
+
+dynasty_gyula = {
+	name = "dynn_Gyula"
+	culture = "hungarian"
+}
+
+dynasty_gyarmat = {
+	name = "dynn_Gyarmat"
+	culture = "hungarian"
+}

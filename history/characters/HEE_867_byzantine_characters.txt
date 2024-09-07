@@ -6897,7 +6897,24 @@ peganes0001 = { # patrikios and komes of the Opsikion who rebelled against Basil
 	}
 }
 
-
+## 	Heraclian ##
+heraclian0001 = { # Tiberius, sometimes enumerated as Tiberius IV, was the son of Emperor Justinian II and Theodora of Khazaria
+	name = "Tiberius"
+	dynasty = 1022137
+	father = 70506
+	mother = 146185
+	religion = "orthodox"
+	culture = "greek"
+	705.1.1 = {
+		birth = yes
+	}
+	711.1.1 = {
+		death = { # Upon hearing the news of Justinian II's death, Anastasia, his mother, took Tiberius, at this time six years old, to St. Mary's Church in Blachernae for sanctuary. He was pursued by men sent by Bardanes, who dragged him from the altar and murdered him outside of the church
+			death_reason = death_execution
+			killer = 145068
+		}
+	}
+}
 
 
 

@@ -1,18 +1,20 @@
-﻿74000 = {
-	name = "Muhan"
+﻿74000 = { # Tulu, son of Tardush Yabghu and father of Sheguy and Tong Yabghu
+	name = "Tulu"
 	dynasty = 12269
+	father = ashina0006
 
 	culture = "khazar"
 	religion = "tengri_pagan"
 
-	560.1.1 = {
-		birth = "560.1.1"
+	555.1.1 = {
+		birth = yes
 	}
-	611.1.1 = {
-		death = "611.1.1"
+	582.5.30 = { # May 30, 582 (aged 30–31)
+		death = yes
 	}
 }
-74001 = {
+
+74001 = { # No idea who this is
 	name = "Tun-Yagbu"
 	dynasty = 12269
 	father = 74000
@@ -27,27 +29,36 @@
 	}
 }
 
-74002 = {
+74002 = { # Bagha Shad was a Göktürk shad or general of the early 7th century CE. He was a close kinsman and subject of the Western Göktürk khagan, Tong Yabghu. Bagha Shad was probably the father of Böri Shad and may have been the yabghu or prince of the Khazars
 	name = "Bagha-Shad"
 	dynasty = 12269
 	father = 74000
 	culture = "khazar"
 	religion = "tengri_pagan"
 
+	trait = education_martial_3 # Göktürk shad or general of the early 7th century CE
+
 	582.1.1 = {
 		birth = "582.1.1"
 	}
-	626.1.1 = {
-		death = "626.1.1"
+	626.1.1 = { # He is referred to in Chinese sources as having sojourned in China in 618–626, possibly as Tong Yabghu's emissary to the Tang emperor. Thereafter he disappears from the historical record
+		death = { 
+			death_reason = death_disappearance 
+		}
 	}
 }
 
-74003 = {
+74003 = { # Böri Shad was a Turkic prince or general who fought the Persians south of the Caucasus during the Third Perso-Turkic War. In this war the Western Turkic Khaganate was allied with Byzantium against Persia during the last great Byzantine-Persian war before the Arab conquests. 
 	name = "BO_ri-Shad"
 	dynasty = 12269
 	father = 74002
 	culture = "khazar"
 	religion = "tengri_pagan"
+
+	trait = education_martial_3
+	trait = forgiving
+	trait = arrogant
+	trait = brave
 
 	603.1.1 = {
 		birth = "603.1.1"
@@ -57,15 +68,15 @@
 	}
 }
 
-74004 = {
+74004 = { # Associated/Possibly the same as Irbis Shekui Khagan (r. 642–651) was the penultimate ruler of the Western Turkic Khaganate. He was linked to the Nushibi faction and was son of El Kulug Shad. 
 	name = "Irbis"
 	dynasty = 12269
-	father = 74003
+	father = ashina0043 # El Kulug Shad
 	culture = "khazar"
 	religion = "tengri_pagan"
 
-	621.1.1 = {
-		birth = "621.1.1"
+	637.1.1 = {
+		birth = "637.1.1"
 	}
 	682.1.1 = {
 		death = "682.1.1"
@@ -326,6 +337,14 @@
 	father = 146186
 	culture = "khazar"
 	religion = "tengri_pagan"
+
+	trait = education_learning_4
+	trait = generous # brought in Jewish scholars, and rewarded them with gold and silver
+	trait = zealous # The King was a man who revered and loved the Torah. He was one of the true servants of God
+	trait = diligent
+	trait = administrator # reorganized the kingdom and established the Jewish religion properly and correctly
+	trait = architect # He built synagogues and yeshivot
+
 	768.1.1 = {
 		birth = "768.1.1"
 	}
@@ -374,18 +393,18 @@
 74022 = {
 	name = "Hanukkah"
 	dynasty = 12269
-	father = 74019
+	father = 146186 # considered to be the brother of Obadiah , which is confirmed by the letter by King Joseph
 	culture = "khazar"
 	religion = "tengri_pagan"
-	787.1.1 = {
-		birth = "787.1.1"
+	770.1.1 = {
+		birth = "770.1.1"
 	}
 	794.1.1 = {
 		religion = "kabarism"
 		dynasty = 12270
 	}
-	847.1.1 = {
-		death = "847.1.1"
+	840.1.1 = {
+		death = "840.1.1"
 	}
 }
 

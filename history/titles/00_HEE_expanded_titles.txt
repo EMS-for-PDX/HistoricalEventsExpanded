@@ -1,4 +1,138 @@
 ### HEE Titles ###
+e_first_turkic_khanate = {
+	552.1.1 = {
+		government = tribal_government
+		holder = ashina0004 #Bumin Qaghan
+	}
+	552.6.1 = {
+		holder = ashina0009 #Issik Qaghan
+	}
+	553.12.1 = {
+		holder = ashina0010 #Muqan Qaghan
+	}
+	572.1.1 = {
+		holder = ashina0011 #Taspar Qaghan
+	}
+	581.1.1 = {
+		holder = ashina0021 #Amrak Khagan; held the title briefly before abdicating
+	}
+	582.1.1 = {
+		holder = ashina0015 #Ishbara Qaghan; technically the Empire is divided in three but Ishbara holds the center and capital as well as has been traditionally considered the sixth khagan of the Turkic Khaganate
+	}
+	587.1.1 = {
+		holder = ashina0016 #Bagha Qaghan
+	}
+	588.1.1 = {
+		holder = ashina0017 #Tulan Qaghan
+	}
+	599.1.1 = {
+		holder = ashina0006 #Tardu Khagan
+	}
+	603.1.1 = {
+		holder = 0 #From 603 the east and west were definitely split
+	}
+	682.7.12 = {
+		holder = ashina0050 #Ilterish Qaghan - Founder of the Second Turkic Khaganate. Possibly could make a different title for the Second Turkic Khaganate, but I will consider the Second Turkic Khaganate a revival and therefore extention of the first especially considering the Ashina still ruled
+	}
+	691.1.1 = {
+		holder = ashina0051 #Qapaghan Qaghan
+	}
+	716.7.22 = {
+		holder = ashina0056 #Inel Qaghan
+	}
+	717.2.1 = {
+		holder = ashina0053 #Bilge Qaghan
+	}
+	734.11.25 = {
+		holder = ashina0057 #Yollıg Khagan
+	}
+	739.1.1 = {
+		holder = ashina0058 #Tengri Qaghan
+	}
+	741.1.1 = {
+		holder = ashina0065 #Unnamed son of Bilge raised to the throne by Kutluk Yabgu Khagan for a few months
+	}
+	741.6.1 = {
+		holder = yabgu0001 #Kutluk Yabgu Khagan
+	}
+	742.3.1 = {
+		holder = ashina0060 #Özmiş Khagan
+	}
+	744.1.6 = {
+		holder = ashina0061 #Kulun Beg
+	}
+	745.1.1 = {
+		holder = 0 #Dissolution of the Khaganate
+	}
+}
+
+e_western_turkic_khanate = {
+	581.1.1 = {
+		government = tribal_government
+		holder = ashina0035 #Apa Qaghan
+	}
+	587.1.1 = {
+		holder = ashina0023 #Niri Qaghan
+	}
+	598.5.1 = {
+		holder = ashina0025 #Heshana Qaghan
+	}
+	611.1.1 = {
+		holder = ashina0036 #Shekui Qaghan 
+	}
+	618.1.1 = {
+		holder = ashina0037 #Tong Yabgu Qaghan
+	}
+	630.1.1 = {
+		holder = ashina0008 #Külüg Sibir/Baghatur Khagan
+	}
+	631.1.1 = {
+		holder = ashina0040 #Sy Yabghu Khagan
+	}
+	633.1.1 = {
+		holder = ashina0043 #Duolu Qaghan
+	}
+	634.1.1 = {
+		holder = ashina0044 #Ishbara Tolis
+	}
+	639.1.1 = {
+		holder = ashina0038 #Yukuk Shad
+	}
+	642.1.1 = {
+		holder = 74004 #Irbis Seguy
+	}
+	651.1.1 = {
+		holder = ashina0048 #Ashina Helu
+	}
+	658.1.1 = {
+		holder = 0 # the khaganate was annexed after General Su Dingfang's defeat of Qaghan Ashina Helu c.657
+	}
+}
+
+e_eastern_turkic_khanate = {
+	599.12.1 = { # In winter 599, Ashina Rangan was named Qimin Khagan by Emperor Wen
+		government = tribal_government
+		holder = ashina0018 #Yami Qaghan
+	}
+	609.7.1 = {
+		holder = ashina0026 #Shibi Khan
+	}
+	619.4.1 = {
+		holder = ashina0027 #Chuluo Khagan
+	}
+	620.12.1 = {
+		holder = ashina0028 #Illig Qaghan
+	}
+	630.3.29 = {
+		holder = 0 #Illig Qaghan is captured and spared by the Tang
+	}
+	639.8.13 = {
+		holder = ashina0068 #Qilibi Khan, as a vassal of the Chinese Tang dynasty
+	}
+	645.1.1 = {
+		holder = 0 #Around the new year 645, Ashina Simo's people, apparently under the Xueyantuo pressure, collapsed and abandoned Ashina Simo
+	}
+}
 
 e_bulgarian_principality = {
 	864.1.1 = {

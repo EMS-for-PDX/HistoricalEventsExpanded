@@ -371,7 +371,6 @@
 	religion = "catholic"
 	culture = saxon
 	trait = chaste
-	trait = ill
 	trait = education_intrigue_2
 	father = 1280
 	mother = 1281
@@ -381,8 +380,10 @@
 	925.1.1 = {
 		add_spouse = 10096
 	}
-	955.1.2 = {
-		death = "955.1.2"
+	955.11.1 = { # While his brother gained a victory over the Hungarians in the Battle of Lechfeld, Henry fell ill in 955 and died on 1 November in Pöhlde Abbey
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 

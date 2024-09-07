@@ -9760,7 +9760,7 @@
 	}
 }
 
-146218 = {
+146218 = { # Keszi was one of the seven ancient Hungarian tribes
 	name = "Keszi"
 	dynasty = 1022388
 	culture = "mogyer"
@@ -9942,12 +9942,13 @@
 	}
 }
 
-146231 = {
+146231 = { # Tuhutum, father of Horca, whose sons were Gyyla [Gyula] and Zombor, from whom the Maglout [Maglód] kindred descend.
 	name = "TO_hO_tO_m"
 	dynasty = 1022386
 	culture = "mogyer"
 	religion = "magyar_pagan"
 	father = 146230
+	trait = shrewd # The anonymous writer of the Gesta Hungarorum describes Tuhutum/Tétény as a "shrewd man"
 	809.1.1 = {
 		birth = yes
 	}
@@ -9956,7 +9957,7 @@
 	}
 }
 194367 = {
-	name = "Csaba"
+	name = "Horca"
 	dynasty = 1022386
 	culture = "mogyer"
 	religion = "magyar_pagan"

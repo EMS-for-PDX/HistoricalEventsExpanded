@@ -4,6 +4,117 @@
 @smLysY = 0.26
 @smCross = 0.22
 
+e_first_turkic_khanate = {
+	pattern="pattern_solid.dds"
+	color1=rgb { 24 89 149 }
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=rgb { 8 84 16 }
+		color2=white
+		color3=white
+		texture="ce_wolf_head.dds"
+		instance={
+			position={ 0.580000 0.520000 }
+			scale={ -0.570000 0.570000 }
+			rotation=17
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_crescent_mask_02.dds"
+		instance={
+			position={ 0.400000 0.490000 }
+			scale={ -1.000000 1.000000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+e_western_turkic_khanate = {
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_arrow.dds"
+		instance={
+			position={ 0.500000 0.770000 }
+			scale={ -1.000000 1.000000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=blue_light
+		texture="ce_winged_arrow.dds"
+		instance={
+			position={ 0.470000 0.460000 }
+			scale={ 0.640000 0.640000 }
+			rotation=46
+		}
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		texture="ce_arrow.dds"
+		instance={
+			position={ 0.500000 0.130000 }
+			depth=2.010000
+		}
+	}
+}
+
+e_eastern_turkic_khanate = {
+	pattern="pattern_solid.dds"
+	color1=rgb { 9 83 17 }
+	color2=white
+	colored_emblem={
+		color1=rgb { 0 118 229 }
+		texture="ce_bow_single.dds"
+		instance={
+			position={ 0.370000 0.680000 }
+			scale={ 0.690000 -0.690000 }
+			depth=1.010000
+			rotation=38
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 200 120 0 }
+		texture="ce_crescent_random.dds"
+		instance={
+			position={ 0.770000 0.140000 }
+			scale={ 0.300000 0.300000 }
+			rotation=268
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=black
+		color3=black
+		texture="ce_horse_rampant.dds"
+		instance={
+			position={ 0.510000 0.420000 }
+			scale={ 0.700000 0.700000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+
 b_pomposa = {
 	pattern="pattern_vertical_split_01.dds"
 	color1=blue
@@ -310,7 +421,6 @@ e_bulgarian_khanate = {
 			position={ 0.500000 0.120000 }
 			scale={ 0.610000 0.610000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -321,9 +431,7 @@ e_bulgarian_khanate = {
 			position={ 0.500000 0.560000 }
 			depth=1.010000
 		}
-
 	}
-
 }
 
 
@@ -384,9 +492,7 @@ k_kakheti-hereti = {
 			scale={ 0.900000 0.900000 }
 			depth=2.010000
 		}
-
 	}
-
 }
 
 k_tashir-dzoraget = {
@@ -407,7 +513,6 @@ k_tashir-dzoraget = {
 			scale={ -0.480000 0.480000 }
 			depth=2.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -418,9 +523,7 @@ k_tashir-dzoraget = {
 			scale={ 0.540000 0.540000 }
 			depth=1.010000
 		}
-
 	}
-
 }
 
 
@@ -435,7 +538,6 @@ k_artsakh = {
 		instance={
 			depth=4.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -464,9 +566,7 @@ k_artsakh = {
 			scale={ 0.380000 0.380000 }
 			depth=3.010000
 		}
-
 	}
-
 }
 
 k_syunik = {
@@ -493,9 +593,7 @@ k_syunik = {
 			scale={ 0.550000 0.550000 }
 			depth=2.010000
 		}
-
 	}
-
 }
 
 d_muslim_tbilisi = {
@@ -511,7 +609,6 @@ d_muslim_tbilisi = {
 			position={ 0.500000 0.480000 }
 			scale={ 0.650000 0.650000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -523,7 +620,6 @@ d_muslim_tbilisi = {
 			scale={ 0.750000 0.750000 }
 			depth=1.010000
 		}
-
 	}
 }
 
@@ -539,7 +635,6 @@ d_paulician_principality = {
 			position={ 0.500000 0.460000 }
 			scale={ 0.800000 0.800000 }
 		}
-
 	}
 }
 
@@ -565,9 +660,7 @@ d_suenik = {
 			position={ 0.500000 0.640000 }
 			scale={ 0.550000 0.550000 }
 		}
-
 	}
-
 }
 
 k_arminiya = {
@@ -583,7 +676,6 @@ k_arminiya = {
 			scale={ 0.750000 0.750000 }
 			depth=2.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -595,7 +687,6 @@ k_arminiya = {
 			scale={ 0.650000 0.650000 }
 			depth=1.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -607,7 +698,6 @@ k_arminiya = {
 			scale={ 0.700000 0.700000 }
 			depth=3.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -618,7 +708,6 @@ k_arminiya = {
 			position={ 0.480000 0.480000 }
 			scale={ 0.290000 0.290000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -628,9 +717,7 @@ k_arminiya = {
 		instance={
 			depth=4.010000
 		}
-
 	}
-
 }
 
 d_khachen = {
@@ -644,7 +731,6 @@ d_khachen = {
 		instance={
 			scale={ 0.850000 0.850000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -653,9 +739,7 @@ d_khachen = {
 		instance={
 			depth=1.010000
 		}
-
 	}
-
 }
 
 d_kaysite = {
@@ -671,7 +755,6 @@ d_kaysite = {
 			scale={ 0.600000 0.600000 }
 			rotation=-45
 		}
-
 	}
 
 	colored_emblem={
@@ -679,7 +762,6 @@ d_kaysite = {
 		color2=yellow
 		texture="ce_border_circle.dds"
 	}
-
 }
 
 d_shirvan = {
@@ -695,7 +777,6 @@ d_shirvan = {
 			position={ 0.500000 0.320000 }
 			scale={ 0.660000 0.660000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -706,9 +787,7 @@ d_shirvan = {
 			position={ 0.500000 0.665000 }
 			scale={ 1.000000 0.500000 }
 		}
-
 	}
-
 }
 
 c_seleucia = {
@@ -724,7 +803,6 @@ c_seleucia = {
 			position={ 0.500000 0.156000 }
 			scale={ 1.000000 0.312000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -745,9 +823,7 @@ c_seleucia = {
 			position={ 0.740000 0.165000 }
 			scale={ 0.280000 0.280000 }
 		}
-
 	}
-
 }
 
 # Artifacts
@@ -766,7 +842,6 @@ k_jeanne_banner={
 			scale={ 0.250000 0.250000 }
 			depth=6.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -779,7 +854,6 @@ k_jeanne_banner={
 			scale={ 1.3 1.3 }
 			depth=7.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -798,7 +872,6 @@ k_jeanne_banner={
 			scale={ 0.400000 0.400000 }
 			depth=2.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -808,7 +881,6 @@ k_jeanne_banner={
 			position={ 0.500000 0.210000 }
 			scale={ 0.220000 0.220000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -820,7 +892,6 @@ k_jeanne_banner={
 			scale={ 0.520000 0.520000 }
 			depth=8.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1023,7 +1094,6 @@ k_jeanne_banner={
 			scale={ 0.200000 0.200000 }
 			depth=40.010002
 		}
-
 	}
 
 	colored_emblem={
@@ -1034,7 +1104,6 @@ k_jeanne_banner={
 			scale={ 0.540000 0.540000 }
 			depth=9.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1045,7 +1114,5 @@ k_jeanne_banner={
 			scale={ -1.000000 1.000000 }
 			depth=5.010000
 		}
-
 	}
-
 }

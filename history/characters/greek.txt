@@ -9092,6 +9092,19 @@
 			}
 		}
 	}
+	866.1.1 = {
+		effect = {
+			every_secret = { # Make sure Basil is aware of his current situation with Michael and Eudokia
+				reveal_to = character:1700
+			}
+			every_secret = { # Make sure Basil can not blackmail Michael over this since Basil "agreed" to the arangement
+				limit = {
+					is_known_by = character:1700
+				}
+				disable_exposure_by = character:1700
+			}
+		}
+	}
 	866.9.29 = {
 		effect = {
 			add_opinion = { # Michael loves his son Leon

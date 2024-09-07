@@ -125,7 +125,7 @@ c_iasi = {
 	#Dridu tribe under Magyar rule
 	867.1.1 = {
 		holder = 302124	#Bajan Dridusi
-		liege = d_moldova
+		liege = "k_magyar"
 		government = tribal_government
 	}
 	935.1.1 = {
@@ -143,15 +143,10 @@ c_iasi = {
 }
 
 c_orhei = {
-	860.1.1 = {
-		holder = 256043 #Fictional mstislav
-		liege = 0
-		government = tribal_government
-	}
-	#Magyar rule
-	870.1.1 = {
-		holder = 302134
-		liege = k_magyar
+	#Magyar Rule
+	862.1.1 = {
+		holder = nyek0002
+		liege = "k_magyar"
 	}
 	897.10.16 = {
 		holder = 302135
@@ -167,15 +162,10 @@ c_orhei = {
 }
 
 c_soroca = {
-	860.1.1 = {
-		holder = 256043 #Fictional mstislav
-		liege = 0
-		government = tribal_government
-	}
-	#Magyar rule
-	870.1.1 = {
-		holder = 302134
-		liege = k_magyar
+	#Magyar Rule
+	862.1.1 = {
+		holder = nyek0002
+		liege = "k_magyar"
 	}
 	897.10.16 = {
 		holder = 302135
@@ -288,12 +278,12 @@ c_tigheci = {
 }
 
 c_cetatea_alba = {
-	#Tigheci Republic
-	867.1.1 = {
-		holder = 302117
-		liege = "e_bulgarian_principality"
-		government = tribal_government
+	#Magyar Rule
+	862.1.1 = {
+		holder = keszi0001
+		liege = "k_magyar"
 	}
+
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
 	}
@@ -306,12 +296,12 @@ c_cetatea_alba = {
 }
 
 c_chilia = {
-	#Tigheci Republic
-	867.1.1 = {
-		holder = 302117
-		liege = "e_bulgarian_principality"
-		government = tribal_government
+	#Magyar Rule
+	862.1.1 = {
+		holder = keszi0001
+		liege = "k_magyar"
 	}
+
 	#Pecheneg rule
 	1066.1.1 = {
 		holder = 20635
@@ -320,16 +310,12 @@ c_chilia = {
 }
 
 c_lapusna = {
-	860.1.1 = {
-		holder = 256043 #Fictional mstislav
-		liege = 0
-		government = tribal_government
+	#Magyar Rule
+	862.1.1 = {
+		holder = keszi0001
+		liege = "k_magyar"
 	}
-	#Magyar rule
-	870.1.1 = {
-		holder = 302134
-		liege = k_magyar
-	}
+
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
 	}

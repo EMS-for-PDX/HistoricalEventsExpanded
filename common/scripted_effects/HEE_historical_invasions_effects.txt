@@ -1,4 +1,701 @@
-﻿#GHAZNAVIDS
+﻿spawn_seljuks_character_effect = {
+	## CULTURE SELECTION
+	# Look for a random culture in the region, weight up Oghuz with it also as a fallback
+	random_county_in_region = {
+		region = dlc_fp3_seljuk_birth_region
+		limit = {
+			exists = culture
+		}
+		weight = {
+			base = 1
+			modifier = {
+				culture = culture:turkish
+				add = 100
+			}
+			modifier = {
+				culture = { has_cultural_pillar = heritage_turkic }
+				add = 50
+			}
+		}
+		culture = { save_scope_as = seljuk_birth_culture }
+	}
+
+	## FAITH SELECTION
+	# Create a list of possible faiths
+	every_county_in_region = {
+		region = world_steppe_west
+		title_province.faith = { add_to_list = seljuk_faith_selection_list }
+	}
+	random_list = {
+		35 = { 
+			# Find a religion in the wider region. weight it up if a county with the culture has that religion
+			random_in_list = {
+				list = seljuk_faith_selection_list
+				weight = {
+					base = 1
+					# Upweight the faith of the culture if it is in their historical birth place
+					modifier = {
+						add = 50
+						save_temporary_scope_as = temp_faith
+						scope:seljuk_birth_culture = {
+							any_culture_county = {
+								faith = scope:temp_faith
+								title_province = { geographical_region = dlc_fp3_seljuk_birth_region }
+							}
+						}
+					}
+					# Upweight Islamic faiths since it's historical (Maturidi)
+					modifier = {
+						religion_tag = islam_religion
+						add = 50
+					}
+					# Exclude pagan faiths
+					modifier = {
+						has_doctrine_parameter = unreformed
+						factor = 0 
+					}
+				}
+				save_scope_as = seljuk_birth_faith
+			}
+		}
+		55 = {
+			faith:maturidi = {
+				save_scope_as = seljuk_birth_faith
+			}
+		}
+		5 = {
+			religion:islam_religion = {
+				random_faith = {
+					limit = {
+						has_doctrine = muhammad_succession_sunni_doctrine
+						num_county_followers > 0 # Must be on the map.
+					}
+					save_scope_as = seljuk_birth_faith
+				}
+			}
+		}
+		5 = {
+			religion:islam_religion = {
+				random_faith = {
+					limit = {
+						has_doctrine = muhammad_succession_shia_doctrine
+						num_county_followers > 0 # Must be on the map.
+					}
+					save_scope_as = seljuk_birth_faith
+				}
+			}
+		}
+	}
+
+	random_county_in_region = {
+		region = dlc_fp3_seljuk_birth_region
+		weight = {
+			base = 1
+			modifier = {
+				culture = scope:seljuk_birth_culture
+				add = 2
+			}
+			modifier = {
+				faith = scope:seljuk_birth_faith
+				add = 2
+			}
+			modifier = {
+				county = title:c_jend
+				add = 2
+			}
+		}
+		random_county_province = { save_scope_as = seljuk_birthplace }
+	}
+
+	# SELJUK Seljuk
+	create_character = {
+		name = "Seljuk"
+		age = 75
+
+		dynasty_house = house:house_seljuk
+		martial = 8
+		diplomacy = 4
+		stewardship = 5
+		intrigue = 4
+		learning = 3
+		location = scope:seljuk_birthplace
+		culture = scope:seljuk_birth_culture
+		faith = scope:seljuk_birth_faith
+
+		trait = education_martial_4
+		trait = wrathful
+		trait = callous
+		trait = arrogant
+		trait = zealous
+		trait = ambitious
+		
+		save_scope_as = seljukseljuk
+
+		after_creation = {
+			death = { death_reason = death_natural_causes }
+		}
+	}
+
+	# AKA: Mikail
+	create_character = {
+		name = "Mikail"
+		dynasty_house = house:house_seljuk
+
+		age = 55
+
+		martial = 6
+		diplomacy = 8
+		intrigue = 7
+		stewardship = 5
+
+		father = scope:seljukseljuk
+
+		location = scope:seljuk_birthplace
+		culture = scope:seljuk_birth_culture
+		faith = scope:seljuk_birth_faith
+
+		trait = just
+		trait = education_learning_3
+
+		save_scope_as = mikail
+		after_creation = {
+			death = { death_reason = death_natural_causes }
+		}
+	}
+
+	# AKA: Chagri
+	create_character = {
+		name = "Chagri-Beg"
+		age = { 30 40 }
+
+		dynasty_house = house:house_seljuk
+		location = scope:seljuk_birthplace
+		culture = scope:seljuk_birth_culture
+		faith = scope:seljuk_birth_faith
+		dynasty_house = house:house_seljuk
+		father = scope:mikail	
+		martial = 7
+		diplomacy = 8
+		intrigue = 4
+		stewardship = 6
+		trait = chaste
+		trait = education_learning_2
+		save_scope_as = chagri
+	}
+
+	# SELJUK Tughril I
+	create_character = {
+		age = { 30 40 }
+		name = "Tughril-Beg"
+		location = scope:seljuk_birthplace
+		culture = scope:seljuk_birth_culture
+		faith = scope:seljuk_birth_faith
+		father = scope:mikail		
+		
+		disallow_random_traits = yes
+		trait = brave
+		trait = ambitious
+		trait = gregarious
+		trait = education_martial_5
+		trait = open_terrain_expert
+		trait = warlike_court_2
+
+		martial = { 16 21 }
+		stewardship = { 12 15 }
+		diplomacy = { 11 14 }
+		intrigue = { 10 13 }
+		learning = { 9 11 }
+		prowess	 = { 18 24 }
+
+		dynasty_house = house:house_seljuk
+
+		after_creation = {
+			set_variable = {
+				name = seljuk_birthplace
+				value = scope:seljuk_birthplace
+			}
+			give_seljuk_title_effect = yes
+			add_gold =  { medium_gold_min_value major_gold_max_value }
+			add_prestige = { medium_prestige_value massive_prestige_value }
+			add_piety = { medium_piety_value massive_piety_value }
+			add_martial_lifestyle_xp = 10000
+			random = {
+				chance = 25
+				add_trait = athletic
+			}
+
+			add_character_flag = is_seljuk
+			#game_rule_create_spouse_and_children = { CHARACTER = this } #to make sure there is someone to continue the invasions
+		}
+		save_scope_as = lead_seljuk
+	}
+
+	set_global_variable = {
+		name = seljuks_dynasty
+		value = scope:lead_seljuk.dynasty
+	}
+	set_global_variable = {
+		name = seljuks_founder
+		value = scope:lead_seljuk
+	}
+
+	# We don't want them to die so easy
+	scope:chagri = {
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 15
+		}
+	}
+	scope:lead_seljuk = {
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 15
+		}
+	}
+}
+
+spawn_seljuks_troops_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 10
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 20
+		}
+		levies = 100
+		location = scope:lead_seljuk.location
+	}
+	
+}
+
+seljuks_war_target_evaluation_and_declaration_effect = {
+	# Set the seljuks Emperor as reference point
+	save_scope_as = seljuks_emperor
+	add_character_flag = {
+		flag = free_seljuks_cb
+		days = 14
+	}
+	# Select a new target
+	random_neighboring_top_liege_realm_owner = {
+		limit = {
+			NOT = { is_allied_to = scope:seljuks_emperor }
+			NOT = { this = scope:seljuks_emperor }
+			NOT = { top_liege = scope:seljuks_emperor }
+			save_temporary_scope_as = truce_check
+			NOT = {
+				scope:seljuks_emperor = {
+					any_truce_target = {
+						this = scope:truce_check
+					}
+				}
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = seljuks_invasion_target_character_weight
+				always = yes
+			}
+		}
+		save_temporary_scope_as = next_invasion_target
+
+		if = {
+			limit = {
+				highest_held_title_tier <= tier_kingdom
+				NOT = { has_title = title:k_transoxiana }
+			}
+			primary_title = {
+				save_temporary_scope_as = next_invasion_title_target
+			}
+		}
+		if = {
+			limit = {
+				highest_held_title_tier <= tier_kingdom
+				has_title = title:k_transoxiana
+			}
+			scope:seljuks_emperor = {
+				random_realm_province = {
+					county = {
+						random_neighboring_county = {
+							limit = {
+								any_in_de_jure_hierarchy = {
+									tier = tier_kingdom
+									exists = holder
+									holder = {
+										top_liege = scope:next_invasion_target
+									}
+								}
+							}
+							random_in_de_jure_hierarchy = {
+								limit = { 
+									tier = tier_kingdom
+									holder = {
+										top_liege = scope:next_invasion_target
+									}
+									NOT = { holder = scope:seljuks_emperor }
+									NOT = { holder.top_liege = scope:seljuks_emperor }
+
+								}
+								save_temporary_scope_as = next_invasion_title_target
+								debug_log = "seljuks: scoped random neighboring kingdom"
+							}
+						}	
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					highest_held_title_tier = tier_empire
+				}
+
+				scope:seljuks_emperor.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+								exists = holder
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_kingdom
+								holder = {
+									top_liege = scope:next_invasion_target
+								}
+								NOT = { holder = scope:seljuks_emperor }
+								NOT = { holder.top_liege = scope:seljuks_emperor } 
+							}
+							save_temporary_scope_as = next_invasion_title_target
+							debug_log = "seljuks_emperor: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	if = {
+		limit = {
+			exists = scope:next_invasion_target
+		}
+		if = {
+			limit = { # Declare war on every same-tier count or duke in same empire
+				scope:next_invasion_target = {
+					OR = {
+						highest_held_title_tier = tier_county
+						highest_held_title_tier = tier_duchy
+					}
+				}
+			}
+			scope:next_invasion_title_target = {
+				add_to_temporary_list = all_titles_to_declare_on
+				kingdom = { #Changed from Empire
+					every_in_de_jure_hierarchy = { # Find all other same-tier titles in same de jure empire
+						continue = {
+							tier > tier_county
+							# Stop searching if you hit the seljuk Emperor's territory at any point
+							trigger_if = {
+								limit = { exists = holder }
+								NOT = { holder = scope:seljuks_emperor }
+								NOT = { holder.top_liege = scope:seljuks_emperor }
+							}
+						}
+						limit = {
+							exists = this
+							OR = {
+								tier = tier_county
+								tier = tier_duchy
+							}
+							exists = holder
+							holder = {
+								is_independent_ruler = yes
+								NOT = { this = scope:seljuks_emperor }
+								NOT = { top_liege = scope:seljuks_emperor }
+								NOT = { is_at_war_with = scope:seljuks_emperor }
+								NOT = { is_allied_to = scope:seljuks_emperor }
+								save_temporary_scope_as = truce_check
+								NOT = {
+									scope:seljuks_emperor = {
+										any_truce_target = {
+											this = scope:truce_check
+										}
+									}
+								}
+							}
+						}
+						add_to_temporary_list = all_titles_to_declare_on
+					}
+				}
+			}
+			every_in_list = {
+				list = all_titles_to_declare_on
+				limit = {
+					holder = {
+						# An extra check to make sure we haven't snuck any seljuk territory in
+						NOT = { this = scope:seljuks_emperor }
+						NOT = { top_liege = scope:seljuks_emperor }
+
+						# Standard conditions
+						NOT = { is_at_war_with = scope:seljuks_emperor }
+						NOT = {
+							is_in_list = has_been_sent_subjugation_offer
+						}
+						save_temporary_scope_as = truce_check
+					}
+					NOT = {
+						scope:seljuks_emperor = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+				}
+
+				holder = {
+					add_to_temporary_list = has_been_sent_subjugation_offer
+					send_seljuks_subjugation_demand_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				scope:next_invasion_target = {
+					highest_held_title_tier < tier_empire
+				}
+			}
+			scope:next_invasion_target = {
+				send_seljuks_subjugation_demand_effect = yes
+			}
+		}
+		else = { # Emperors are not offered ways out
+			start_war = {
+				cb = seljuk_invasion_war
+				target = scope:next_invasion_target
+				target_title = scope:next_invasion_title_target.empire
+			}
+		}
+	}
+}
+
+send_seljuks_subjugation_demand_effect = {
+	if = {
+		limit = {
+			NOT = { is_allied_to = scope:seljuks_emperor }
+		}
+		#AHHHHH
+		trigger_event = {
+			id = HEE_seljuks.5001
+			days = { 3 12 }
+		}
+
+		save_temporary_scope_as = subjugation_offer_recipient
+		scope:seljuks_emperor = {
+			add_to_variable_list = {
+				name = subjugation_offer_under_consideration
+				target = scope:subjugation_offer_recipient
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				highest_held_title_tier >= tier_empire
+			}
+			trigger_event = {
+				id = HEE_seljuks.2111
+				days = { 3 12 }
+			}
+		}
+		else = {
+			trigger_event = {
+				id = HEE_seljuks.2101
+				days = { 3 12 }
+			}
+		}
+	}
+}
+
+spawn_seljuks_reinforcements_effect = {
+	spawn_army = {
+		uses_supply = no
+		inheritable = yes
+		name = seljuk_event_troops
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		men_at_arms = {
+			type = horse_archers
+			stacks = 5
+		}
+		levies = 1000
+		location = capital_province
+	}
+}
+
+
+#GHAZNAVIDS
 
 give_ghaznavid_land_effect = {
 	save_scope_as = ghaznavid

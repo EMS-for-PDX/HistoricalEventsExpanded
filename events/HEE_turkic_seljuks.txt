@@ -1,31 +1,28 @@
-﻿namespace = HEE_ghaznavids 
+﻿namespace = HEE_seljuks 
 
-### Spawn Ghaznavids
-HEE_ghaznavids.0001 = {
+### Spawn seljuks
+HEE_seljuks.0001 = {
 	scope = none
 	hidden = yes
 
 	immediate = {
-		debug_log = "Spawning the ghaznavids before 1066 start date"
+		debug_log = "Spawning the seljuks before 1066 start date"
 		debug_log_date = yes
-		spawn_ghaznavids_character_effect = yes
-		global_var:ghaznavidfounder = {
-			trigger_event = {
-				id = HEE_ghaznavids.00112
-				days = 5
-			}
+		spawn_seljuks_character_effect = yes
+		global_var:seljuks_founder = {
+			create_story = story_hee_seljuk_invasion
 		}
 	}
 }
 
-HEE_ghaznavids.00112 = {
+# FIRE THIS WHEN YOU WANT TO SPAWN THE EMPIRE
+HEE_seljuks.00112 = {
 	scope = none
 	hidden = yes
 
 	immediate = {
-		global_var:ghaznavidfounder = {
-			give_ghaznavid_land_effect = yes
-			spawn_ghaznavid_troops_effect = yes
+		global_var:seljuks_founder = {
+			spawn_seljuks_troops_effect = yes
 			add_gold = 2000
 			add_pressed_claim = title:d_kabul 
 			add_pressed_claim = title:d_zabulistan
@@ -36,7 +33,7 @@ HEE_ghaznavids.00112 = {
 			add_pressed_claim = title:k_kabulistan
 
 			trigger_event = {
-				id = HEE_ghaznavids.0011
+				id = HEE_seljuks.0011
 				days = { 30 100 }
 			}
 		}
@@ -44,16 +41,16 @@ HEE_ghaznavids.00112 = {
 }
 
 ### Spawn Empire 
-HEE_ghaznavids.0011 = {
+HEE_seljuks.0011 = {
 	scope = none
 	hidden = yes
 
 	immediate = {
-		global_var:ghaznavidfounder = {
-			add_character_flag = is_ghaznavid
+		global_var:seljuks_founder = {
+			add_character_flag = is_seljuks
 			create_dynamic_title = {
 				tier = empire
-				name = "Ghaznavid_Empire"
+				name = "seljuks_Empire"
 			}
 			create_title_and_vassal_change = {
 				type = created
@@ -65,7 +62,7 @@ HEE_ghaznavids.0011 = {
 				set_definitive_form = yes
 				set_can_be_named_after_dynasty = yes
 				change_title_holder = {
-					holder = global_var:ghaznavidfounder
+					holder = global_var:seljuks_founder
 					change = scope:change
 				}
 				set_capital_county = title:c_ghazna
@@ -74,35 +71,35 @@ HEE_ghaznavids.0011 = {
 			resolve_title_and_vassal_change = scope:change
 		
 			scope:new_title = { 
-				set_coa = global_var:ghaznavidfounder.house
+				set_coa = global_var:seljuks_founder.house
 				set_color_from_title = title:k_kabulistan
 			}
 			
-			add_realm_law_skip_effects = high_partition_succession_law
+			#add_realm_law_skip_effects = high_partition_succession_law
 		
 			set_global_variable = {
-				name = GhaznavidEmpireTitle
+				name = seljuksEmpireTitle
 				value = scope:new_title
 			}
 			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
-			create_story = story_ghaznavid_invasion
+			create_story = story_seljuks_invasion
 		}
 	}
 }
 
-# The Ghaznavids demands subjugation
-HEE_ghaznavids.5001 = {
+# The seljuks demands subjugation
+HEE_seljuks.5001 = {
 	type = letter_event
-	opening = HEE_ghaznavids.5001.opening
-	desc = HEE_ghaznavids.5001.desc
+	opening = HEE_seljuks.5001.opening
+	desc = HEE_seljuks.5001.desc
 	sender = {
-		character = scope:ghaznavid_emperor
+		character = scope:seljuks_emperor
 		animation = personality_bold
 	}
 
 	trigger = {
-		NOT = { is_at_war_with = scope:ghaznavid_emperor }
-		NOT = { root = scope:ghaznavid_emperor }
+		NOT = { is_at_war_with = scope:seljuks_emperor }
+		NOT = { root = scope:seljuks_emperor }
 	}
 
 	immediate = {
@@ -110,11 +107,11 @@ HEE_ghaznavids.5001 = {
 	}
 
 	option = { # Submit
-		name = HEE_ghaznavids.5001.a
-		custom_tooltip = HEE_ghaznavids.5001.a.tt
+		name = HEE_seljuks.5001.a
+		custom_tooltip = HEE_seljuks.5001.a.tt
 		hidden_effect = {
-			scope:ghaznavid_emperor = {
-				trigger_event = HEE_ghaznavids.2002
+			scope:seljuks_emperor = {
+				trigger_event = HEE_seljuks.2002
 			}
 		}
 		ai_chance = {
@@ -163,13 +160,13 @@ HEE_ghaznavids.5001 = {
 	}
 
 	option = { # Resist
-		name = HEE_ghaznavids.5001.b
-		custom_tooltip = HEE_ghaznavids.2001.b.tt
+		name = HEE_seljuks.5001.b
+		custom_tooltip = HEE_seljuks.2001.b.tt
 		add_internal_flag = dangerous
 		hidden_effect = {
-			scope:ghaznavid_emperor = {
+			scope:seljuks_emperor = {
 				trigger_event = {
-					id = HEE_ghaznavids.2003
+					id = HEE_seljuks.2003
 					days = 10
 				}
 			}
@@ -181,10 +178,10 @@ HEE_ghaznavids.5001 = {
 }
 
 # Subjugation accepted
-HEE_ghaznavids.2002 = {
+HEE_seljuks.2002 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2002.opening
-	desc = HEE_ghaznavids.2002.desc
+	opening = HEE_seljuks.2002.opening
+	desc = HEE_seljuks.2002.desc
 	sender = scope:demand_recipient
 
 	immediate = {
@@ -211,15 +208,15 @@ HEE_ghaznavids.2002 = {
 	}
 
 	option = { # Wise choice
-		name = HEE_ghaznavids.2002.a
+		name = HEE_seljuks.2002.a
 	}
 }
 
 # Subjugation refused
-HEE_ghaznavids.2003 = {
+HEE_seljuks.2003 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2003.opening
-	desc = HEE_ghaznavids.2003.desc
+	opening = HEE_seljuks.2003.opening
+	desc = HEE_seljuks.2003.desc
 	sender = {
 		character = scope:demand_recipient
 		animation = personality_bold
@@ -242,7 +239,7 @@ HEE_ghaznavids.2003 = {
 	}
 
 	option = { # War it is
-		name = HEE_ghaznavids.2003.a
+		name = HEE_seljuks.2003.a
 		if = {
 			limit = {
 				exists = scope:target_title.kingdom
@@ -267,17 +264,17 @@ HEE_ghaznavids.2003 = {
 }
 
 # The Khan demands subjugation - Empire
-HEE_ghaznavids.2111 = {
+HEE_seljuks.2111 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2001.opening
-	desc = HEE_ghaznavids.2101.desc
+	opening = HEE_seljuks.2001.opening
+	desc = HEE_seljuks.2101.desc
 	sender = {
-		character = scope:ghaznavid_emperor
+		character = scope:seljuks_emperor
 		animation = personality_bold
 	}
 
 	trigger = {
-		NOT = { root = scope:ghaznavid_emperor }
+		NOT = { root = scope:seljuks_emperor }
 	}
 
 	immediate = {
@@ -286,21 +283,21 @@ HEE_ghaznavids.2111 = {
 
 	# Outrageous!
 	option = {
-		name = HEE_ghaznavids.2111.b
-		custom_tooltip = HEE_ghaznavids.2111.b.tt
+		name = HEE_seljuks.2111.b
+		custom_tooltip = HEE_seljuks.2111.b.tt
 		hidden_effect = {
-			scope:ghaznavid_emperor = {
-				trigger_event = HEE_ghaznavids.2112
+			scope:seljuks_emperor = {
+				trigger_event = HEE_seljuks.2112
 			}
 		}
 	}
 }
 
 # Subjugation refused
-HEE_ghaznavids.2112 = {
+HEE_seljuks.2112 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2003.opening
-	desc = HEE_ghaznavids.2112.desc
+	opening = HEE_seljuks.2003.opening
+	desc = HEE_seljuks.2112.desc
 	sender = scope:demand_recipient
 
 	immediate = {
@@ -315,22 +312,22 @@ HEE_ghaznavids.2112 = {
 	}
 
 	option = { # Our alliance is over
-		name = HEE_ghaznavids.2112.a
+		name = HEE_seljuks.2112.a
 		break_alliance = scope:demand_recipient
 	}
 }
 
-HEE_ghaznavids.2101 = { #king
+HEE_seljuks.2101 = { #king
 	type = letter_event
-	opening = HEE_ghaznavids.2001.opening
-	desc = HEE_ghaznavids.2101.desc
+	opening = HEE_seljuks.2001.opening
+	desc = HEE_seljuks.2101.desc
 	sender = {
-		character = scope:ghaznavid_emperor
+		character = scope:seljuks_emperor
 		animation = personality_bold
 	}
 
 	trigger = {
-		NOT = { root = scope:ghaznavid_emperor }
+		NOT = { root = scope:seljuks_emperor }
 	}
 
 	immediate = {
@@ -338,11 +335,11 @@ HEE_ghaznavids.2101 = { #king
 	}
 
 	option = { # Submit
-		name = HEE_ghaznavids.2101.a
-		custom_tooltip = HEE_ghaznavids.2001.a.tt
+		name = HEE_seljuks.2101.a
+		custom_tooltip = HEE_seljuks.2001.a.tt
 		hidden_effect = {
-			scope:ghaznavid_emperor = {
-				trigger_event = HEE_ghaznavids.2102
+			scope:seljuks_emperor = {
+				trigger_event = HEE_seljuks.2102
 			}
 		}
 		ai_chance = {
@@ -391,12 +388,12 @@ HEE_ghaznavids.2101 = { #king
 	}
 
 	option = {
-		name = HEE_ghaznavids.2101.b
+		name = HEE_seljuks.2101.b
 		add_internal_flag = dangerous
-		custom_tooltip = HEE_ghaznavids.2101.b.tt
+		custom_tooltip = HEE_seljuks.2101.b.tt
 		hidden_effect = {
-			scope:ghaznavid_emperor = {
-				trigger_event = HEE_ghaznavids.2103
+			scope:seljuks_emperor = {
+				trigger_event = HEE_seljuks.2103
 			}
 		}
 		ai_chance = {
@@ -406,10 +403,10 @@ HEE_ghaznavids.2101 = { #king
 }
 
 # Subjugation accepted
-HEE_ghaznavids.2102 = {
+HEE_seljuks.2102 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2002.opening
-	desc = HEE_ghaznavids.2002.desc
+	opening = HEE_seljuks.2002.opening
+	desc = HEE_seljuks.2002.desc
 	sender = scope:demand_recipient
 
 	immediate = {
@@ -436,15 +433,15 @@ HEE_ghaznavids.2102 = {
 	}
 
 	option = { # Wise choice
-		name = HEE_ghaznavids.2002.a
+		name = HEE_seljuks.2002.a
 	}
 }
 
 # Subjugation refused
-HEE_ghaznavids.2103 = {
+HEE_seljuks.2103 = {
 	type = letter_event
-	opening = HEE_ghaznavids.2003.opening
-	desc = HEE_ghaznavids.2003.desc
+	opening = HEE_seljuks.2003.opening
+	desc = HEE_seljuks.2003.desc
 	sender = {
 		character = scope:demand_recipient
 		animation = personality_bold
@@ -464,7 +461,7 @@ HEE_ghaznavids.2103 = {
 
 	# War it is
 	option = {
-		name = HEE_ghaznavids.2103.a
+		name = HEE_seljuks.2103.a
 		start_war = {
 			cb = seljuk_invasion_war
 			target = scope:target_title.holder
@@ -477,7 +474,7 @@ HEE_ghaznavids.2103 = {
 
 	# Just you wait...
 	option = {
-		name = HEE_ghaznavids.2103.b
+		name = HEE_seljuks.2103.b
 		ai_chance = {
 			base = 0
 		}

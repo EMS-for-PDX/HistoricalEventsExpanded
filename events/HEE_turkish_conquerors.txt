@@ -4,53 +4,6 @@
 #1-199 = Pre-Pechenegs
 #200-299 = Pechenegs
 
-# HEE_turkic_conquerors.1 = { #Kimiks Unite
-# 	type = character_event
-# 	title = HEE_turkic_conquerors.1.t
-# 	desc = HEE_turkic_conquerors.1.desc
-# 	theme = faith
-
-# 	immediate = {
-# 		title:c_aqtobe.holder = {
-# 			save_scope_as = aqtobe
-# 		}
-# 		title:c_pecheneg.holder = {
-# 			save_scope_as = pecheneg
-# 		}
-# 	}
-
-# 	option = { 
-# 		name = HEE_turkic_conquerors.1.a
-
-# 		scope:aqtobe = {
-# 			create_title_and_vassal_change = {
-# 				type = conquest
-# 				save_scope_as = event1lands
-# 				add_claim_on_loss = no
-# 			}
-			
-# 			title:k_pechenegs = {
-# 				change_title_holder = {
-# 					holder = scope:aqtobe
-# 					change = scope:event1lands
-# 				}
-# 			}
-# 			resolve_title_and_vassal_change = scope:event1lands
-# 		}
-
-# 		scope:pecheneg = {
-# 			trigger_event = {
-# 				id = HEE_turkic_conquerors.101
-# 				days = { 5 10 }
-# 			}
-# 		}
-
-# 	}
-# }
-
-
-
-
 HEE_turkic_conquerors.200 = { #Pechenegs Unite
 	type = character_event
 	title = HEE_turkic_conquerors.200.t

@@ -10131,12 +10131,22 @@ fictional_khwarezmian_turks_7 = {
 
 #Semi-fictional ancient chronology of the Oghuz (based on names of their clans, dates totaly imaginary)
 
-1000230100 = {
+1000230100 = { # Oghuz Kaghan or Oghuz Khan is the ancestor of Turks in Turkish and Altai mythology / Legendary khan of the Turkic people and an eponymous ancestor of Oghuz Turks
 	name = "Oghuz"
 	dynasty = 7327
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	830.1.1 = {
+
+	trait = education_martial_5 # Swedish geographer and cartographer of the 17th-18th centuries Philip Johan von Strahlenberg, based on the Ancient Greek historian Diodorus Siculus and other historians, concludes that Oghuz Khan was the leader of the ancient Scythian peoples, under whose leadership they conquered vast territories in the Middle East, Southeast Europe and Egypt in ancient times
+	trait = brave # At the time of his birth, the lands of the Turkic people were preyed upon by a dragon named Kiyant. Oghuz armed himself and went to kill the dragon
+	trait = arrogant # he sent letters to the Kings of the Four Directions, saying: "I am the Khan of the Turks. And I will be Khan of the Four Corners of the Earth. I want your obedience." 
+	trait = gregarious # After his sons were born, Oghuz Khan gave a great toy (feast) and invited all of his begs (lords)
+	trait = zealous # After Oghuz became the khan, he went to the steppes by himself to praise and pray to Tengri
+	trait = ambitious
+
+	trait = strong # he grew up supernaturally fast and in only forty days he became a young adult
+
+	830.1.1 = { # If he existed at all, Oghuz Khagan likely lived centuries if not millennium ago (has been identified with Modu Chanyu who lived c. 234 – c. 174 BCE), but to avoid generations of fictional/fluff characters and keep the tribal relations clearer I will have Oghuz exist closer to CK3's start
 		birth = yes
 	}
 	862.1.1 = {
@@ -10215,7 +10225,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230106 = {
 	name = "Qayi"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
@@ -10228,7 +10238,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230107 = {
 	name = "Bayat"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_bayat_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
@@ -10241,7 +10251,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230108 = {
 	name = "Alqa_Evli"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_alkaevli_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
@@ -10254,7 +10264,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230109 = {
 	name = "Qara_Evli"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_karaevli_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
@@ -10267,7 +10277,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230110 = {
 	name = "Yazir"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_yazır_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
@@ -10280,7 +10290,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230111 = {
 	name = "Do_ger"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_döğer_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
@@ -10293,7 +10303,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230112 = {
 	name = "Dudurgha"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_dodurga_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
@@ -10306,7 +10316,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230113 = {
 	name = "Yaparli"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_yaparlı_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
@@ -10319,7 +10329,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230114 = {
 	name = "Avshar"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_afşar_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
@@ -10332,7 +10342,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230115 = {
 	name = "Qiziq"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_kızık_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
@@ -10345,7 +10355,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230116 = {
 	name = "Begdili"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_beğdili_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
@@ -10358,7 +10368,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230117 = {
 	name = "Qarqin"
-	dynasty_house = house_il_arslanid
+	dynasty_house = house_karkın_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
@@ -10413,7 +10423,7 @@ fictional_khwarezmian_turks_7 = {
 
 1000230121 = {
 	name = "Bayundur"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_bayındır_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
@@ -10426,7 +10436,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230122 = {
 	name = "Bechene"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_beçenek_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
@@ -10439,7 +10449,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230123 = {
 	name = "Chavuldur"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_cavuldur_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
@@ -10452,7 +10462,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230124 = {
 	name = "Chepni"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_cepniler_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
@@ -10465,7 +10475,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230125 = {
 	name = "Salur"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_salur_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
@@ -10478,7 +10488,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230126 = {
 	name = "Imu_r"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_eymür_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
@@ -10491,7 +10501,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230127 = {
 	name = "Ala_Yontli"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_alayuntlu_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
@@ -10504,7 +10514,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230128 = {
 	name = "U_regir"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_yüreğir_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
@@ -10517,7 +10527,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230129 = {
 	name = "Yigdir"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_iğdir_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
@@ -10530,7 +10540,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230130 = {
 	name = "Bu_gdu_z"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_büğdüz_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
@@ -10543,7 +10553,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230131 = {
 	name = "Yiwa"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_yıva_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
@@ -10556,7 +10566,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1000230132 = {
 	name = "Qiniq"
-	dynasty_house = house_inaltiginid
+	dynasty_house = house_kınık_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120

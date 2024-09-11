@@ -61,3 +61,126 @@ house_aaronios = { # https://en.wikipedia.org/wiki/Aaronios
 	name = "dynn_Aaronios"
 	dynasty = 702 # Balgarsko	
 }
+
+
+
+## Oghuz Tribes ##
+house_kayi_tribe = {
+	name = "dynn_Kayi"
+	dynasty = 7327 # Oghuz
+}
+
+house_bayat_tribe = {
+	name = "dynn_Bayat"
+	dynasty = 7327 # Oghuz
+}
+
+house_alkaevli_tribe = {
+	name = "dynn_Alkaevli"
+	dynasty = 7327 # Oghuz
+}
+
+house_karaevli_tribe = {
+	name = "dynn_Karaevli"
+	dynasty = 7327 # Oghuz
+}
+
+house_yazır_tribe = {
+	name = "dynn_Yazır"
+	dynasty = 7327 # Oghuz
+}
+
+house_döğer_tribe = {
+	name = "dynn_Döğer"
+	dynasty = 7327 # Oghuz
+}
+
+house_dodurga_tribe = {
+	name = "dynn_Dodurga"
+	dynasty = 7327 # Oghuz
+}
+
+house_yaparlı_tribe = {
+	name = "dynn_Yaparlı"
+	dynasty = 7327 # Oghuz
+}
+
+house_afşar_tribe = {
+	name = "dynn_Afşar"
+	dynasty = 7327 # Oghuz
+}
+
+house_kızık_tribe = {
+	name = "dynn_Kızık"
+	dynasty = 7327 # Oghuz
+}
+
+house_beğdili_tribe = {
+	name = "dynn_Beğdili"
+	dynasty = 7327 # Oghuz
+}
+
+house_karkın_tribe = {
+	name = "dynn_Karkın"
+	dynasty = 7327 # Oghuz
+}
+
+house_bayındır_tribe = {
+	name = "dynn_Bayındır"
+	dynasty = 7327 # Oghuz
+}
+
+house_beçenek_tribe = {
+	name = "dynn_Beçenek"
+	dynasty = 7327 # Oghuz
+}
+
+house_cavuldur_tribe = {
+	name = "dynn_Cavuldur"
+	dynasty = 7327 # Oghuz
+}
+
+house_cepniler_tribe = {
+	name = "dynn_Cepniler"
+	dynasty = 7327 # Oghuz
+}
+
+house_salur_tribe = {
+	name = "dynn_Salur"
+	dynasty = 7327 # Oghuz
+}
+
+house_eymür_tribe = {
+	name = "dynn_Eymür"
+	dynasty = 7327 # Oghuz
+}
+
+house_alayuntlu_tribe = {
+	name = "dynn_Alayuntlu"
+	dynasty = 7327 # Oghuz
+}
+
+house_yüreğir_tribe = {
+	name = "dynn_Yüreğir"
+	dynasty = 7327 # Oghuz
+}
+
+house_iğdir_tribe = {
+	name = "dynn_Iğdir"
+	dynasty = 7327 # Oghuz
+}
+
+house_büğdüz_tribe = {
+	name = "dynn_Büğdüz"
+	dynasty = 7327 # Oghuz
+}
+
+house_yıva_tribe = {
+	name = "dynn_Yıva"
+	dynasty = 7327 # Oghuz
+}
+
+house_kınık_tribe = {
+	name = "dynn_Kınık"
+	dynasty = 7327 # Oghuz
+}

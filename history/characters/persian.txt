@@ -415,7 +415,6 @@
 	trait = education_diplomacy_5
 	trait = overseer
 	trait = administrator
-	trait = scholar
 	1018.4.10 = {
 		birth = yes
 	}

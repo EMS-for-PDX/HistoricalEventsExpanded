@@ -100,6 +100,54 @@
 
 }
 
+dynasty_marikonian = {
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=red
+		texture="ce_cross_armenian.dds"
+		instance={
+			scale={ 0.810000 0.810000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=red
+		texture="ce_border_circle_fimbriated.dds"
+		instance={
+			scale={ 0.770000 0.770000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_letter_alpha.dds"
+		instance={
+			position={ 0.190000 0.140000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_letter_omega.dds"
+		instance={
+			position={ 0.790000 0.140000 }
+			scale={ 0.300000 0.300000 }
+		}
+	}
+}
+
+
 dynasty_tephrice = { # Leaders of the Paulician principality of Tephrike
 	pattern="pattern_solid.dds"
 	color1=red

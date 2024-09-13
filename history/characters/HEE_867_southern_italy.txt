@@ -122,9 +122,6 @@ HEE_ageltrude = { # https://en.wikipedia.org/wiki/Ageltrude
 	860.1.1 = {
 		birth = yes
 	}
-	865.1.1 = {
-		create_betrothal = character:71903
-	}
 	875.1.1 = {
 		add_spouse = character:71903
 	}

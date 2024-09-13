@@ -339,10 +339,10 @@ yahmadi0022 = {
 	religion = "ibadi"
 	culture = "bedouin"
 
-	1011.1.1 = { #?
+	1060.1.1 = { #?
 		birth = yes
 	}
-	1068.1.1 = { #?
+	1089.1.1 = { #?
 		death = yes
 	}
 }

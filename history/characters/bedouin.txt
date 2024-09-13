@@ -6492,7 +6492,7 @@
 	trait = greedy
 	trait = wrathful # Muhammad's rule has been described as an oppressive one, traits should reflect this
 	trait = callous
-	trait = raider # Muhammad began stirring up trouble by harassing the Darb Zubaydah
+	trait = reaver # Muhammad began stirring up trouble by harassing the Darb Zubaydah
 	trait = sayyid
 	father = 163130
 	846.1.1 = {

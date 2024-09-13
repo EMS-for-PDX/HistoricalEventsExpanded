@@ -168,9 +168,9 @@ HEE_hilarion_the_iberian = { # https://en.wikipedia.org/wiki/Hilarion_the_Iberia
 	822.1.1 = {
 		birth = yes
 	}
-	866.1.1 = {
-		employer = b_servia.holder # In 864, he founded a monastery on Mount Olympus, possibly identified as "Lavra of Krania", which was housing largely his Georgian compatriots.
-	}
+	#866.1.1 = {
+		#employer = b_servia.holder # In 864, he founded a monastery on Mount Olympus, possibly identified as "Lavra of Krania", which was housing largely his Georgian compatriots.
+	#}
 	875.1.1 = {
 		death = yes
 	}
@@ -237,7 +237,7 @@ HEE_david_of_kakheti = { # https://en.wikipedia.org/wiki/David_of_Kakheti
 	religion = "orthodox"
 	culture = "georgian"
 	father = HEE_kvirike_ii_of_kakheti
-	910.1.1 = {
+	940.1.1 = {
 		birth = yes
 	}
 	1010.1.1 = {

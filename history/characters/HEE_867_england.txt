@@ -273,13 +273,9 @@ tlk_ragnar_the_younger = {
 		birth = yes
 		give_nickname = nick_the_younger
 	}
-	875.1.1 = {
-		add_spouse = 700003
-	}
 	892.10.8 = {
 		death = {
-			death_reason = death_murder_known
-			killer = 700005
+			death_reason = death_murder
 		}
 	}
 }
@@ -475,9 +471,6 @@ tlk_alfred_bastard = {
 		trait = calm
 		trait = humble
 		trait = brave
-	}
-	887.1.1 = {
-		employer = 900100
 	}
 	934.1.1 = {
 		death = yes
@@ -756,7 +749,7 @@ tlk_sigebriht  = {
 	trait = calm
 	trait = vengeful
 	trait = ambitious
-	trait = rowdy
+	trait = charming
 
 	#Other Traits
 

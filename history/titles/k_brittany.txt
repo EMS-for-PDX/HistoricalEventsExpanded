@@ -214,7 +214,7 @@ c_nantes = {
 		liege = d_brittany
 	}
 	870.1.1 = {
-		holder = 159695 # Pascweten of Vannes
+		holder = 50009 # Pascweten of Vannes
 	}
 	877.1.1 = {
 		holder = 50008 #Alain I, the Great

@@ -1,0 +1,5438 @@
+﻿## Turkish Characters Pechenegs/Oghuz/etc. - 867 ##
+
+######################################
+#oghuz Characters
+######################################
+
+#Semi-imaginary ancient chronology of the oghuz (based on names of their clans, dates totaly imaginary but the 24 tribes are present by 769)
+oghuz0001 = { # Kara Khan; Father to Oghuz Kaghan
+	name = "Kara" # Kara has two meaning in Turkish and it is not clear which was intended with this name meaning Black or Terra (Earth) - probably Terra because Oghuz’s Mother has a name which means Moon and Terra would be a symbolic mirror to that
+	dynasty = 7327
+	religion = "tengri_pagan"
+	culture = "turkish"
+
+	655.1.1 = {
+		birth = yes
+	}
+	700.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 1000230100
+		}
+	}
+}
+
+oghuz0002 = { # Ay Kaghan; Mother to Oghuz Kaghan
+	name = "Ay" # means Moon
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+
+	660.1.1 = {
+		birth = yes
+	}
+	691.1.1 = {
+		death = yes
+	}
+}
+
+oghuz0003 = { # While he was hunting, he finds an island in the middle of a lake. In the bucket of a tree, in the middle of this island, a very beautiful girl is sitting, radiating lights ( Yer-sub - Wikipedia "Yer-Su" is symbolized by this girl). Her hair is blue like streams and her teeth are like pearls. He marries her and has three sons.
+	name = "Yer-Su" # means Moon
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+
+	trait = beauty_good_3
+
+	690.1.1 = {
+		birth = yes
+	}
+	738.1.1 = {
+		death = yes
+	}
+}
+
+oghuz0004 = { # Years pass, a strong blue light falls from the sky one day and he found a beautiful girl in the middle (Gök-Kal - Vikipedi "Gök-Hava" is symbolized by this girl). This incredibly beautiful girl has a beam of light like a pole star on her head. He married with this girl and has three children.
+	name = "Gök-Kal" # means Moon
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+
+	trait = beauty_good_3
+
+	690.1.1 = {
+		birth = yes
+	}
+	738.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+# The Beçenek Tribe - Descended from Gök
+
+
+
+
+# The Bayındır Tribe - Descended from Gök
+bayindir0001 = {
+	name = "Gök"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230121
+	793.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+} 
+bayindir0002 = {
+	name = "Doğukan"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0001
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		death = yes
+	}
+} 
+bayindir0003 = {
+	name = "Baris"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0002
+	847.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+} 
+bayindir0004 = {
+	name = "Pars"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0003
+	878.1.1 = {
+		birth = yes
+	}
+	937.1.1 = {
+		death = yes
+	}
+} 
+bayindir0005 = {
+	name = "Gökhan"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0004
+	900.1.1 = {
+		birth = yes
+	}
+	974.1.1 = {
+		death = yes
+	}
+} 
+bayindir0006 = {
+	name = "Alp"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0005
+	966.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+}
+bayindir0007 = {
+	name = "Alp"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0006
+	999.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+bayindir0008 = {
+	name = "Alp"
+	dynasty_house = house_bayındır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayindir0007
+	1020.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+bayindir0009 = {
+	name = "Ali"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+bayindir0010 = {
+	name = "Ahmet"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0009
+	1072.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+bayindir0011 = {
+	name = "Zeki"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1149.1.1 = {
+		death = yes
+	}
+}
+bayindir0012 = {
+	name = "Samet"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0011
+	1130.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+bayindir0013 = {
+	name = "Samet"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0012
+	1170.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = yes
+	}
+}
+bayindir0014 = {
+	name = "İdris"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0013
+	1209.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		death = yes
+	}
+}
+bayindir0015 = {
+	name = "Pehlivan"   #father_of_akkoyunlu
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0014
+	1250.1.1 = {
+		birth = yes
+	}
+	1320.1.1 = {
+		death = yes
+	}
+}
+bayindir0016 = {
+	name = "Gök"
+	dynasty_house = house_bayındır_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bayindir0015
+	1308.1.1 = {
+		birth = yes
+	}
+	1378.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Çavuldur Tribe - Descended from Gök
+cavuldur0001 = {
+	name = "Aytekin" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230123
+	800.1.1 = {
+		birth="800.1.1"
+	}
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+cavuldur0002 = {
+	name = "Barış" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cavuldur0001
+	850.1.1 = {
+		birth="850.1.1"
+	}
+	945.1.1 = {
+		death="945.1.1"
+	}
+}
+cavuldur0003 = {
+	name = "Enis" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cavuldur0002
+	900.1.1 = {
+		birth="900.1.1"
+	}
+	985.1.1 = {
+		death="985.1.1"
+	}
+}
+cavuldur0004 = {
+	name = "Günalp" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0003
+	941.1.1 = {
+		birth="941.1.1"
+	}
+	1020.1.1 = {
+		death="1020.1.1"
+	}
+}
+cavuldur0005 = {
+	name = "Gök" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0004
+	978.1.1 = {
+		birth="978.1.1"
+	}
+	1060.1.1 = {
+		death="1060.1.1"
+	}
+}
+cavuldur0006 = {
+	name = "Gündüz" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = 34264
+	1100.1.1 = {
+		birth="1100.1.1"
+	}
+	1160.1.1 = {
+		death="1160.1.1"
+	}
+}
+cavuldur0007 = {
+	name = "Can" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0006
+	1140.1.1 = {
+		birth="1140.1.1"
+	}
+	1205.1.1 = {
+		death="1205.1.1"
+	}
+}
+cavuldur0008 = {
+	name = "Börü" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0007
+	1160.1.1 = {
+		birth="1160.1.1"
+	}
+	1225.1.1 = {
+		death="1225.1.1"
+	}
+}
+cavuldur0009 = {
+	name = "Çaka" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0008
+	1200.1.1 = {
+		birth="1200.1.1"
+	}
+	1275.1.1 = {
+		death="1275.1.1"
+	}
+}
+cavuldur0010 = {
+	name = "Savaş" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0009
+	1240.1.1 = {
+		birth="1240.1.1"
+	}
+	1315.1.1 = {
+		death="1315.1.1"
+	}
+}
+cavuldur0011 = {
+	name = "Çaka" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0010
+	1300.1.1 = {
+		birth="1300.1.1"
+	}
+	1375.1.1 = {
+		death="1375.1.1"
+	}
+}
+cavuldur0012 = {
+	name = "Çaka" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0011
+	1335.1.1 = {
+		birth="1335.1.1"
+	}
+	1400.1.1 = {
+		death="1400.1.1"
+	}
+}
+cavuldur0013 = {
+	name = "Çaka" #fictional
+	dynasty_house = house_cavuldur_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cavuldur0012
+	1355.1.1 = {
+		birth="1355.1.1"
+	}
+	1425.1.1 = {
+		death="1425.1.1"
+	}
+}
+
+
+# The Çepni Tribe - Descended from Chepni
+cepni0001 = {
+	name = "Gün" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230124
+	811.1.1 = {
+		birth="811.1.1"
+	}
+	855.1.1 = {
+		death="855.1.1"
+	}
+}
+cepni0002 = {
+	name = "Barış" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cepni0001
+	841.1.1 = {
+		birth="841.1.1"
+	}
+	895.1.1 = {
+		death="895.1.1"
+	}
+}
+cepni0003 = {
+	name = "Aytekin" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cepni0002
+	877.1.1 = {
+		birth="877.1.1"
+	}
+	935.1.1 = {
+		death="935.1.1"
+	}
+}
+cepni0004 = {
+	name = "Ayhan" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cepni0003
+	910.1.1 = {
+		birth="910.1.1"
+	}
+	968.1.1 = {
+		death="968.1.1"
+	}
+}
+cepni0005 = {
+	name = "Gökyürek" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cepni0004
+	950.1.1 = {
+		birth="950.1.1"
+	}
+	998.1.1 = {
+		death="998.1.1"
+	}
+}
+cepni0006 = {
+	name = "Yürek" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = cepni0005
+	976.1.1 = {
+		birth="976.1.1"
+	}
+	1032.1.1 = {
+		death="1032.1.1"
+	}
+}
+cepni0007 = {
+	name = "Hasan" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0006
+	1000.1.1 = {
+		birth="1000.1.1"
+	}
+	1060.1.1 = {
+		death="1060.1.1"
+	}
+}
+cepni0008 = {
+	name = "Gökalp" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0007
+	1030.1.1 = {
+		birth="1030.1.1"
+	}
+	1090.1.1 = {
+		death="1090.1.1"
+	}
+}
+cepni0009 = {
+	name = "Chepni" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0008
+	1070.1.1 = {
+		birth="1070.1.1"
+	}
+	1140.1.1 = {
+		death="1140.1.1"
+	}
+}
+cepni0010 = {
+	name = "Acarbey" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0009
+	1100.1.1 = {
+		birth="1100.1.1"
+	}
+	1180.1.1 = {
+		death="1180.1.1"
+	}
+}
+cepni0011 = {
+	name = "Erdeniz" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0010
+	1130.1.1 = {
+		birth="1130.1.1"
+	}
+	1180.1.1 = {
+		death="1210.1.1"
+	}
+}
+cepni0012 = {
+	name = "Enis" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0011
+	1155.1.1 = {
+		birth="1155.1.1"
+	}
+	1201.1.1 = {
+		death="1201.1.1"
+	}
+}
+cepni0013 = {
+	name = "Ertaş" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0012
+	1199.1.1 = {
+		birth="1199.1.1"
+	}
+	1270.1.1 = {
+		death="1270.1.1"
+	}
+}
+cepni0014 = {
+	name = "Çağatay" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0013
+	1238.1.1 = {
+		birth="1238.1.1"
+	}
+	1320.1.1 = {
+		death="1320.1.1"
+	}
+}
+cepni0015 = {
+	name = "Zeki" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0014
+	1300.1.1 = {
+		birth="1300.1.1"
+	}
+	1360.1.1 = {
+		death="1360.1.1"
+	}
+}
+cepni0016 = {
+	name = "Ejder" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0015
+	1319.1.1 = {
+		birth="1319.1.1"
+	}
+	1368.1.1 = {
+		death="1368.1.1"
+	}
+}
+cepni0017 = {
+	name = "Canik" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0016
+	1350.1.1 = {
+		birth="1350.1.1"
+	}
+	1410.1.1 = {
+		death="1410.1.1"
+	}
+}
+cepni0018 = {
+	name = "Can" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0017
+	1370.1.1 = {
+		birth="1370.1.1"
+	}
+	1425.1.1 = {
+		death="1425.1.1"
+	}
+}
+cepni0019 = {
+	name = "Barış" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0018
+	1310.1.1 = {
+		birth="1310.1.1"
+	}
+	1360.1.1 = {
+		death="1360.1.1"
+	}
+}
+cepni0020 = {
+	name = "Çağlar" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0019
+	1335.1.1 = {
+		birth="1335.1.1"
+	}
+	1389.1.1 = {
+		death="1389.1.1"
+	}
+}
+cepni0021 = {
+	name = "Çağ" #fictional
+	dynasty_house = house_cepniler_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = cepni0020
+	1367.1.1 = {
+		birth="1367.1.1"
+	}
+	1424.1.1 = {
+		death="1424.1.1"
+	}
+}
+
+
+# The Salur Tribe - Descended from Dağ
+salur0001 = {
+	name = "Tekish" #fictional
+	dynasty_house = house_salur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230125
+	780.1.1 = {
+		birth="780.1.1"
+	}
+	830.1.1 = {
+		death="830.1.1"
+	}
+}
+salur0002 = {
+	name = "Berkan" #fictional
+	dynasty_house = house_salur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = salur0001
+	805.1.1 = {
+		birth="805.1.1"
+	}
+	855.1.1 = {
+		death="855.1.1"
+	}
+}
+salur0003 = {
+	name = "Gunduz" #fictional
+	dynasty_house = house_salur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = salur0002
+	832.1.1 = {
+		birth="832.1.1"
+	}
+	885.1.1 = {
+		death="885.1.1"
+	}
+}
+salur0004 = {
+	name = "Baytas" #fictional
+	dynasty_house = house_salur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = salur0003
+	857.1.1 = {
+		birth="857.1.1"
+	}
+	911.1.1 = {
+		death="911.1.1"
+	}
+}
+
+salur0005 = { 
+	name = "Salghur" 
+	dynasty_house = house_salur_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = salur0004
+	890.1.1 = {
+		birth = yes
+	}
+	960.1.1 = {
+		death = yes
+	}
+}
+salur0006 = { 
+	name = "Dilber"
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+	904.1.1 = {
+		birth = yes
+	}
+	926.1.1 = {
+		add_spouse=salur0005
+	}
+	970.1.1 = {
+		death = yes
+	}
+}
+salur0007 = { 
+	name = "Hizir" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0005
+    mother = salur0006
+	930.1.1 = {
+		birth = yes
+	}
+	950.1.1 = {
+		add_spouse=salur0008
+	}
+	999.1.1 = {
+		death = yes
+	}
+}
+salur0008 = {  
+	name = "Canan"
+    female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+	932.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+salur0009 = { 
+	name = "Bulend" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0007
+    mother = salur0008
+	955.1.1 = {
+		birth = yes
+	}
+	978.1.1 = {
+		add_spouse=salur0010
+	}
+	1026.1.1 = {
+		death = yes
+	}
+}
+salur0010 = {  
+	name = "Dunya" 
+	religion = "tengri_pagan"
+	culture = "turkish"
+    female = yes
+	956.1.1 = {
+		birth = yes
+	}
+	1031.1.1 = {
+		death = yes
+	}
+}
+salur0011 = { 
+	name = "Kurboga" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0009
+    mother = salur0010
+	980.1.1 = {
+		birth = yes
+	}
+	1013.1.1 = {
+		add_spouse=salur0012
+	}
+	1042.1.1 = {
+		death = yes
+	}
+}
+salur0012 = {  
+	name = "Hatice" 
+	religion = "tengri_pagan"
+	culture = "turkish"
+    female = yes
+	982.1.1 = {
+		birth = yes
+	}
+	1039.1.1 = {
+		death = yes
+	}
+}
+
+salur0013 = { 
+	name = "Ertekin" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0011
+    mother = salur0012
+	1016.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+salur0014 = { 
+	name = "Umur" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0013
+	1045.1.1 = {
+		birth = yes
+	}
+	1099.1.1 = {
+		death = yes
+	}
+}
+salur0015 = { 
+	name = "Böri" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0014
+	1074.1.1 = {
+		birth = yes
+	}
+	1125.1.1 = {
+		death = yes
+	}
+}
+salur0016 = { 
+	name = "Baturay" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0015
+	1103.1.1 = {
+		birth = yes
+	}
+	1161.1.1 = {
+		death = yes
+	}
+}
+salur0017 = { 
+	name = "Tugrul" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0016
+	1133.1.1 = {
+		birth = yes
+	}
+	1170.1.1 = {
+		religion = "maturidi"
+	}
+	1189.1.1 = {
+		death = yes
+	}
+}
+salur0018 = { 
+	name = "Inal" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "tengri_pagan"
+	culture = "turkish"
+    father = salur0017
+	1163.1.1 = {
+		birth = yes
+	}
+	1170.1.1 = {
+		religion = "maturidi"
+	}
+	1217.1.1 = {
+		death = yes
+	}
+}
+salur0019 = { 
+	name = "Tugrul" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkish"
+    father = salur0018
+	1194.1.1 = {
+		birth = yes
+	}
+	1259.1.1 = {
+		death = yes
+	}
+}
+
+salur0020 = { 
+	name = "Baturay" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkish"
+    father = salur0019
+	1215.1.1 = {
+		birth = yes
+	}
+	1304.1.2={
+		death = yes
+	}
+}
+
+salur0021 = { 
+	name = "Ertekin" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkish"
+    father = salur0020
+	1240.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		culture=turkmeni
+	}
+	1310.1.1 = {
+		death = yes
+	}
+}
+
+salur0022 = { 
+	name = "Korkut" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkish"
+    father = salur0021
+	1269.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		culture=turkmeni
+	}
+	1320.1.1 = {
+		death = yes
+	}
+}
+
+salur0023 = { 
+	name = "Barutay" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkish"
+    father = salur0021
+	1288.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		culture=turkmeni
+	}
+	1330.1.1 = {
+		death = yes
+	}
+}
+
+salur0024 = { 
+	name = "Tugrul" 
+	dynasty_house = house_salur_tribe # Salghur
+	religion = "maturidi"
+	culture = "turkmeni"
+    father = salur0023
+	1300.1.1 = {
+		birth = yes
+	}
+	1370.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Eymür Tribe - Descended from Dağ
+eymür0001 = {
+	name = "Gökalp"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230126
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+eymür0002 = {
+	name = "Turkan"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = eymür0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+eymür0003 = {
+	name = "Alp"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = eymür0002
+	851.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+eymür0004 = {
+	name = "Alp"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = eymür0003
+	869.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+eymür0005 = {
+	name = "Alp"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = eymür0004
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+eymür0006 = {
+	name = "Baris"
+	dynasty_house = house_eymür_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = eymür0005
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+eymür0007 = {
+	name = "Aziz"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0006
+	970.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+eymür0008 = {
+	name = "Doğukan"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0007
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+eymür0009 = {
+	name = "Doğukan"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+eymür0010 = {
+	name = "Zeki"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0009
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+eymür0011 = {
+	name = "Pars"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+eymür0012 = {
+	name = "Pars"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = eymür0011
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+eymür0013 = {
+	name = "Mehmed"
+	dynasty_house = house_eymür_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = eymür0012
+	1178.1.1 = {
+		birth = "1178.1.1"
+	}
+	1220.1.1 = {
+		death = "1220.1.1"
+	}
+}
+
+eymür0014 = {
+	name = "Ahmet"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = eymür0012
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+eymür0015 = {
+	name = "Rıza"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = eymür0014
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+eymür0016 = {
+	name = "Ali"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = eymür0015
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+eymür0017 = {
+	name = "Mehmet"
+	dynasty_house = house_eymür_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = eymür0016
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Ulayundluğ Tribe - Descended from Dağ
+ulayundluğ0001 = {
+	name = "Gökalp"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230127
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+ulayundluğ0002 = {
+	name = "Turkan"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = ulayundluğ0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+ulayundluğ0003 = {
+	name = "Alp"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = ulayundluğ0002
+	849.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0004 = {
+	name = "Alp"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = ulayundluğ0003
+	871.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+ulayundluğ0005 = {
+	name = "Alp"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = ulayundluğ0004
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0006 = {
+	name = "Baris"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = ulayundluğ0005
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0007 = {
+	name = "Aziz"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0006
+	970.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0008 = {
+	name = "Doğukan"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0007
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0009 = {
+	name = "Doğukan"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0010 = {
+	name = "Zeki"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0009
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0011 = {
+	name = "Pars"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0012 = {
+	name = "Pars"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = ulayundluğ0011
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0013 = {
+	name = "Ahmet"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = ulayundluğ0012
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0014 = {
+	name = "Rıza"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = ulayundluğ0013
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0015 = {
+	name = "Ali"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = ulayundluğ0014
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+ulayundluğ0016 = {
+	name = "Mehmet"
+	dynasty_house = house_alayuntlu_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = ulayundluğ0015
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Yüreğir Tribe - Descended from Dağ
+yüreğir0001 = {
+	name = "Gökalp"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230128
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+yüreğir0002 = {
+	name = "Turkan"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yüreğir0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+yüreğir0003 = {
+	name = "Alp"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yüreğir0002
+	850.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+}
+yüreğir0004 = {
+	name = "Alp"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yüreğir0003
+	870.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+yüreğir0005 = {
+	name = "Alp"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yüreğir0004
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+yüreğir0006 = {
+	name = "Baris"
+	dynasty_house = house_yüreğir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yüreğir0005
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+yüreğir0007 = {
+	name = "Aziz"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0006
+	970.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+yüreğir0008 = {
+	name = "Doğukan"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0007
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+yüreğir0009 = {
+	name = "Doğukan"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+yüreğir0010 = {
+	name = "Zeki"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0009
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+yüreğir0011 = {
+	name = "Pars"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+yüreğir0012 = {
+	name = "Pars"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0011
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+yüreğir0013 = {
+	name = "Ahmet"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0012
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+yüreğir0014 = {
+	name = "Rıza"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0013
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+yüreğir0015 = {
+	name = "Ali"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0014
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+yüreğir0016 = {
+	name = "Mehmet"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0015
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+yüreğir0017 = {
+	name = "Ramazan"
+	dynasty_house = house_yüreğir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yüreğir0016
+	1320.1.1 = {
+		birth = yes
+	}
+	1370.1.1 = {
+		death = yes
+	}
+}
+
+
+
+# The İğdir Tribe - Descended from Deniz
+yigdir0001 = {
+	name = "Gökalp"
+	dynasty_house = house_iğdir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230129
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+yigdir0002 = {
+	name = "Turkan"
+	dynasty_house = house_iğdir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yigdir0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+yigdir0003 = {
+	name = "Alp"
+	dynasty_house = house_iğdir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yigdir0002
+	863.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+yigdir0004 = {
+	name = "Alp"
+	dynasty_house = house_iğdir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yigdir0003
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+yigdir0005 = {
+	name = "Baris"
+	dynasty_house = house_iğdir_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yigdir0004
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+yigdir0006 = {
+	name = "Aziz"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0005
+	970.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+yigdir0007 = {
+	name = "Doğukan"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0006
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+yigdir0008 = {
+	name = "Doğukan"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0007
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+yigdir0009 = {
+	name = "Zeki"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0008
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+yigdir0010 = {
+	name = "Pars"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0009
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+yigdir0011 = {
+	name = "Pars"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0010
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+yigdir0012 = {
+	name = "Ahmet"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0011
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+yigdir0013 = {
+	name = "Rıza"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0012
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+yigdir0014 = {
+	name = "Ali"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0013
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+yigdir0015 = {
+	name = "Mehmet"
+	dynasty_house = house_iğdir_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yigdir0014
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Yıva Tribe - Descended from Deniz's son Yıwa
+yıva0001 = {
+	name = "Gökalp"
+	dynasty_house = house_yıva_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230131
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+yıva0002 = {
+	name = "Turkan"
+	dynasty_house = house_yıva_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yıva0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+yıva0003 = {
+	name = "Alp"
+	dynasty_house = house_yıva_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yıva0002
+	863.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+yıva0004 = {
+	name = "Alp"
+	dynasty_house = house_yıva_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yıva0003
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+yıva0005 = {
+	name = "Baris"
+	dynasty_house = house_yıva_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yıva0004
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+yıva0006 = {
+	name = "Aziz"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yıva0005
+	970.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+yıva0007 = {
+	name = "Doğukan"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yıva0006
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+yıva0008 = {
+	name = "Doğukan"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yıva0007
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+yıva0009 = {
+	name = "Zeki"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yıva0008
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+yıva0010 = {
+	name = "Pars"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yıva0009
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+yıva0011 = {
+	name = "Pars"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = yıva0010
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+yıva0012 = {
+	name = "Ahmet"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = yıva0011
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+yıva0013 = {
+	name = "Rıza"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = yıva0012
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+yıva0014 = {
+	name = "Ali"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = yıva0013
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+yıva0015 = {
+	name = "Mehmet"
+	dynasty_house = house_yıva_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = yıva0014
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Büğdüz Tribe - Descended from Deniz
+bügdüz0001 = {
+	name = "Gökalp"
+	dynasty_house = house_büğdüz_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230130
+	800.1.1 = {
+		birth = yes
+	}
+	843.1.1 = {
+		death = yes
+	}
+} 
+bügdüz0002 = {
+	name = "Turkan"
+	dynasty_house = house_büğdüz_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bügdüz0001
+	830.1.1 = {
+		birth = yes
+	}
+	884.1.1 = {
+		death = yes
+	}
+} 
+bügdüz0003 = {
+	name = "Alp"
+	dynasty_house = house_büğdüz_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bügdüz0002
+	863.1.1 = {
+		birth = yes
+	}
+	910.1.1 = {
+		death = yes
+	}
+} 
+bügdüz0004 = {
+	name = "Alp"
+	dynasty_house = house_büğdüz_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bügdüz0003
+	889.1.1 = {
+		birth = yes
+	}
+	952.1.1 = {
+		death = yes
+	}
+}
+bügdüz0005 = {
+	name = "Baris"
+	dynasty_house = house_büğdüz_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bügdüz0004
+	930.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+bügdüz0006 = {
+	name = "Aziz"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bügdüz0005
+	953.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+bügdüz0007 = {
+	name = "Doğukan"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bügdüz0006
+	994.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+bügdüz0008 = {
+	name = "Doğukan"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bügdüz0007
+	1045.1.1 = {
+		birth = yes
+	}
+	1088.1.1 = {
+		death = yes
+	}
+}
+bügdüz0009 = {
+	name = "Zeki"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bügdüz0008
+	1063.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+bügdüz0010 = {
+	name = "Pars"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = bügdüz0009
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+bügdüz0011 = {
+	name = "Pars"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0010
+	1155.1.1 = {
+		birth = yes
+	}
+	1209.1.1 = {
+		death = yes
+	}
+}
+bügdüz0012 = {
+	name = "Ahmet"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0011
+	1200.1.1 = {
+		birth = yes
+	}
+	1251.1.1 = {
+		death = yes
+	}
+}
+bügdüz0013 = {
+	name = "Rıza"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0012
+	1245.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+bügdüz0014 = {
+	name = "Ali"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0013
+	1289.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+bügdüz0015 = {
+	name = "Mehmet"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0014
+	1317.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+} 
+bügdüz0016 = {
+	name = "Süleyman"
+	dynasty_house = house_büğdüz_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = bügdüz0015
+	1319.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Qiniq clan - Descended from Deniz's son Qiniq
+qiniq0001 = {
+	name = "Turgut"
+	dynasty_house = house_kınık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230132
+	796.1.1 = {
+		birth = yes
+	}
+	852.1.1 = {
+		death = yes
+	}
+}
+qiniq0002 = {
+	name = "Demir"
+	dynasty_house = house_kınık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = qiniq0001
+	826.1.1 = {
+		birth = yes
+	}
+	875.1.1 = {
+		death = yes
+	}
+}
+qiniq0003 = {
+	name = "Umur"
+	dynasty_house = house_kınık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = qiniq0002
+	851.1.1 = {
+		birth = yes
+	}
+	903.1.1 = {
+		death = yes
+	}
+}
+qiniq0004 = {
+	name = "Duqaq"
+	dynasty_house = house_kınık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = qiniq0003
+	880.1.1 = {
+		birth = yes
+	}
+	934.1.1 = {
+		death = yes
+	}
+}
+qiniq0005 = {
+	name = "Qiniq"
+	dynasty_house = house_kınık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = qiniq0004
+	906.1.1 = {
+		birth = yes
+	}
+	954.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# The Kayı Tribe - Descended from Gün's son Qayi
+kayi0001 = {
+	name = "C_aka"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230106
+	775.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+kayi0002 = {
+	name = "Ertekin"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0001
+	800.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+kayi0003 = {
+	name = "Ridvan"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0002
+	818.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+kayi0004 = {
+	name = "Aytekin"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0003
+	838.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+kayi0005 = {
+	name = "Tonyukuk"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0004
+	858.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+}
+
+kayi0006 = {
+	name = "Dursun"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0005
+	880.1.1 = {
+		birth = yes
+	}
+	940.1.1 = {
+		death = yes
+	}
+}
+
+kayi0007 = {
+	name = "Cemaleddin"
+	dynasty_house = house_kayi_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kayi0006
+	900.1.1 = {
+		birth = yes
+	}
+	975.1.1 = {
+		death = yes
+	}
+}
+
+kayi0008 = {
+	name = "Yakub"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0007
+	925.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+} 
+
+kayi0009 = {
+	name = "Girgen"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0008
+	950.1.1 = {
+		birth = yes
+	}
+	1025.1.1 = {
+		death = yes
+	}
+}
+
+kayi0010 = {
+	name = "Pulad"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0009
+	975.1.1 = {
+		birth = yes
+	}
+	1050.1.1 = {
+		death = yes
+	}
+}
+
+kayi0011 = {
+	name = "Mesud"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0010
+	1000.1.1 = {
+		birth = yes
+	}
+	1075.1.1 = {
+		death = yes
+	}
+}
+
+kayi0012 = {
+	name = "KiliC_Arslan"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0011
+	1025.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+
+kayi0013 = {
+	name = "Meliksah"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0012
+	1050.1.1 = {
+		birth = yes
+	}
+	1125.1.1 = {
+		death = yes
+	}
+}
+
+kayi0014 = {
+	name = "BO_ru"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0013
+	1075.1.1 = {
+		birth = yes
+	}
+	1150.1.1 = {
+		death = yes
+	}
+}
+
+kayi0015 = {
+	name = "So_kmen"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0014
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+
+kayi0016 = {
+	name = "Ku_rbog_a"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0015
+	1125.1.1 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		death = yes
+	}
+}
+
+kayi0017 = {
+	name = "Alaeddin"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0016
+	1150.1.1 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		death = yes
+	}
+}
+
+kayi0018 = {
+	name = "Bo_ritigin"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0017
+	1175.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = yes
+	}
+}
+
+kayi0019 = {
+	name = "Bonyak"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0018
+	1200.1.1 = {
+		birth = yes
+	}
+	1275.1.1 = {
+		death = yes
+	}
+}
+
+kayi0020 = {
+	name = "Ridvan"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0019
+	1225.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+
+kayi0021 = {
+	name = "Togtekin"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0020
+	1250.1.1 = {
+		birth = yes
+	}
+	1325.1.1 = {
+		death = yes
+	}
+}
+
+kayi0022 = {
+	name = "Ertas_"
+	dynasty_house = house_kayi_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = kayi0021
+	1275.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Bayat Tribe - Descended from Gün
+bayat0001 = {
+	name = "C_aka"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230107
+	775.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+bayat0002 = {
+	name = "Ertekin"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0001
+	800.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+}
+
+bayat0003 = {
+	name = "Ridvan"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0002
+	820.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+bayat0004 = {
+	name = "Aytekin"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0003
+	840.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+bayat0005 = {
+	name = "Tonyukuk"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0004
+	860.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+}
+
+bayat0006 = {
+	name = "Dursun"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0005
+	877.1.1 = {
+		birth = yes
+	}
+	940.1.1 = {
+		death = yes
+	}
+}
+
+bayat0007 = {
+	name = "Cemaleddin"
+	dynasty_house = house_bayat_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = bayat0006
+	900.1.1 = {
+		birth = yes
+	}
+	975.1.1 = {
+		death = yes
+	}
+}
+
+bayat0008 = {
+	name = "Yakub"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0007
+	925.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+} 
+
+bayat0009 = {
+	name = "Girgen"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0008
+	950.1.1 = {
+		birth = yes
+	}
+	1025.1.1 = {
+		death = yes
+	}
+}
+
+bayat0010 = {
+	name = "Pulad"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0009
+	975.1.1 = {
+		birth = yes
+	}
+	1050.1.1 = {
+		death = yes
+	}
+}
+
+bayat0011 = {
+	name = "Mesud"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0010
+	1000.1.1 = {
+		birth = yes
+	}
+	1075.1.1 = {
+		death = yes
+	}
+}
+
+bayat0012 = {
+	name = "KiliC_Arslan"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0011
+	1025.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+
+bayat0013 = {
+	name = "Meliksah"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0012
+	1050.1.1 = {
+		birth = yes
+	}
+	1125.1.1 = {
+		death = yes
+	}
+}
+
+bayat0014 = {
+	name = "BO_ru"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0013
+	1075.1.1 = {
+		birth = yes
+	}
+	1150.1.1 = {
+		death = yes
+	}
+}
+
+bayat0015 = {
+	name = "So_kmen"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0014
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+}
+
+bayat0016 = {
+	name = "Ku_rbog_a"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0015
+	1125.1.1 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		death = yes
+	}
+}
+
+bayat0017 = {
+	name = "Alaeddin"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0016
+	1150.1.1 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		death = yes
+	}
+}
+
+bayat0018 = {
+	name = "Bo_ritigin"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0017
+	1175.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = yes
+	}
+}
+
+bayat0019 = {
+	name = "Kahraman"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0018
+	1200.1.1 = {
+		birth = yes
+	}
+	1275.1.1 = {
+		death = yes
+	}
+}
+
+bayat0020 = {
+	name = "Su_leyman"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0019
+	1225.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+
+bayat0021 = {
+	name = "Kavurd"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0020
+	1250.1.1 = {
+		birth = yes
+	}
+	1325.1.1 = {
+		death = yes
+	}
+}
+
+bayat0022 = {
+	name = "Alaeddin"
+	dynasty_house = house_bayat_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = bayat0021
+	1275.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Alkaevli Tribe - Descended from Gün
+alkaevli0001 = {
+	name = "Zafer"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230108
+	788.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0002 = {
+	name = "Alp"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = alkaevli0001
+	815.1.1 = {
+		birth = yes
+	}
+	877.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0003 = {
+	name = "Bahadır"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = alkaevli0002
+	840.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0004 = {
+	name = "Alp"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = alkaevli0003
+	860.1.1 = {
+		birth = yes
+	}
+	927.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0005 = {
+	name = "Korkmaz"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = alkaevli0004
+	900.1.1 = {
+		birth = yes
+	}
+	978.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0006 = {
+	name = "Kuzgun"
+	dynasty_house = house_alkaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = alkaevli0005
+	945.1.1 = {
+		birth = yes
+	}
+	975.1.1 = {
+		religion = "ashari"
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0007 = {
+	name = "Orhan"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0006
+	975.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0008 = {
+	name = "Ahmet"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0007
+	1000.1.1 = {
+		birth = yes
+	}
+	1077.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0009 = {
+	name = "Zeki"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0008
+	1041.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0010 = {
+	name = "Orhan"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0009
+	1070.1.1 = {
+		birth = yes
+	}
+	1165.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0011 = {
+	name = "Barıs"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0010
+	1122.1.1 = {
+		birth = yes
+	}
+	1199.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0012 = {
+	name = "Barıs"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0011
+	1150.1.1 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0013 = {
+	name = "Ali"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0012
+	1200.1.1 = {
+		birth = yes
+	}
+	1268.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0014 = {
+	name = "Zeki"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0013
+	1200.1.1 = {
+		birth = yes
+	}
+	1268.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0015 = {
+	name = "Osman"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0014
+	1300.1.1 = {
+		birth = yes
+	}
+	1388.1.1 = {
+		death = yes
+	}
+}
+
+alkaevli0016 = {
+	name = "Mehmet"
+	dynasty_house = house_alkaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = alkaevli0015
+	1320.1.1 = {
+		birth = yes
+	}
+	1400.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Karaevli Tribe - Descended from Gün
+karaevli0001 = {
+	name = "Barıs"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230109
+	775.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0002 = {
+	name = "Arslan"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0001
+	810.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0003 = {
+	name = "Yunus"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0002
+	839.1.1 = {
+		birth = yes
+	}
+	877.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0004 = {
+	name = "Alp"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0003
+	860.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0005 = {
+	name = "Alp"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0004
+	900.1.1 = {
+		birth = yes
+	}
+	970.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0006 = {
+	name = "Kayra"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0005
+	960.1.1 = {
+		birth = yes
+	}
+	1020.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0007 = {
+	name = "Barıs"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0006
+	1000.1.1 = {
+		birth = yes
+	}
+	1055.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0008 = {
+	name = "Oguz"
+	dynasty_house = house_karaevli_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karaevli0007
+	1040.1.1 = {
+		birth = yes
+	}
+	1061.1.1 = {
+		religion = "ashari"
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0009 = {
+	name = "Ali"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karaevli0008
+	1065.1.1 = {
+		birth = yes
+	}
+	1112.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0010 = {
+	name = "Ahmet"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karaevli0009
+	1100.1.1 = {
+		birth = yes
+	}
+	1189.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0011 = {
+	name = "Zeki"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karaevli0010
+	1165.1.1 = {
+		birth = yes
+	}
+	1256.1.1 = {
+		culture = "turkmen"
+	}
+	1257.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0012 = {
+	name = "Barıs"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karaevli0010
+	1228.1.1 = {
+		birth = yes
+	}
+	1256.1.1 = {
+		culture = "turkmen"
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0013 = {
+	name = "Barıs"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = karaevli0012
+	1256.1.1 = {
+		birth = yes
+	}
+	1349.1.1 = {
+		death = yes
+	}
+}
+
+karaevli0014 = {
+	name = "Zeki"
+	dynasty_house = house_karaevli_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = karaevli0013
+	1300.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Yazır Tribe - Descended from Ay
+yazır0001 = {
+	name = "Togtekin"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230110
+	775.1.1 = {
+		birth = yes
+	}
+	825.1.1 = {
+		death = yes
+	}
+}
+
+yazır0002 = {
+	name = "Tolun"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0001
+	805.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		death = yes
+	}
+}
+
+yazır0003 = {
+	name = "Böri"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0002
+	835.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = yes
+	}
+}
+
+yazır0004 = {
+	name = "Tutush"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0003
+	865.1.1 = {
+		birth = yes
+	}
+	915.1.1 = {
+		death = yes
+	}
+}
+
+yazır0005 = {
+	name = "Inal"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0004
+	896.1.1 = {
+		birth = yes
+	}
+	948.1.1 = {
+		death = yes
+	}
+}
+
+yazır0006 = {
+	name = "Burak"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0005
+	924.1.1 = {
+		birth = yes
+	}
+	979.1.1 = {
+		death = yes
+	}
+}
+
+yazır0007 = {
+	name = "Artuk"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0006
+	952.1.1 = {
+		birth = yes
+	}
+	1006.1.1 = {
+		death = yes
+	}
+}
+
+yazır0008 = {
+	name = "Ayaz"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0007
+	983.1.1 = {
+		birth = yes
+	}
+	1036.1.1 = {
+		death = yes
+	}
+}
+
+yazır0009 = {
+	name = "Barıs"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0008
+	1000.1.1 = {
+		birth = yes
+	}
+	1055.1.1 = {
+		death = yes
+	}
+}
+
+yazır0010 = {
+	name = "Burak"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0009
+	1021.1.1 = {
+		birth = yes
+	}
+	1080.1.1 = {
+		death = yes
+	}
+}
+
+yazır0011 = {
+	name = "Inal"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0010
+	1040.1.1 = {
+		birth = yes
+	}
+	1080.1.1 = {
+		death = yes
+	}
+}
+
+yazır0012 = {
+	name = "Barıs"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0011
+	1060.1.1 = {
+		birth = yes
+	}
+	1115.1.1 = {
+		death = yes
+	}
+}
+
+yazır0013 = {
+	name = "Gökhan"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0012
+	1100.1.1 = {
+		birth = yes
+	}
+	1185.1.1 = {
+		death = yes
+	}
+}
+
+yazır0014 = {
+	name = "Gökhan"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0013
+	1135.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+
+yazır0015 = {
+	name = "Burak"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0014
+	1160.1.1 = {
+		birth = yes
+	}
+	1210.1.1 = {
+		death = yes
+	}
+}
+
+yazır0016 = {
+	name = "Barıs"
+	dynasty_house = house_yazır_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yazır0015
+	1200.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = yes
+	}
+}
+
+yazır0017 = {
+	name = "Ahmet"
+	dynasty_house = house_yazır_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = yazır0016
+	1220.1.1 = {
+		birth = yes
+	}
+	1280.1.1 = {
+		death = yes
+	}
+}
+
+yazır0018 = {
+	name = "Zeki"
+	dynasty_house = house_yazır_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = yazır0017
+	1250.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+
+yazır0019 = {
+	name = "Mehmet"
+	dynasty_house = house_yazır_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = yazır0018
+	1272.1.1 = {
+		birth = yes
+	}
+	1320.1.1 = {
+		death = yes
+	}
+}
+
+yazır0020 = {
+	name = "Ramazan"
+	dynasty_house = house_yazır_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = yazır0019
+	1292.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		death = yes
+	}
+}
+
+yazır0021 = {
+	name = "Egehan"
+	dynasty_house = house_yazır_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = yazır0020
+	1320.1.1 = {
+		birth = yes
+	}
+	1377.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Döğer Tribe - Descended from Ay
+döğer0001 = {
+	name = "Atsiz"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = 1000230111
+	774.1.1 = {
+		birth = yes
+	}
+	831.1.1 = {
+		death = yes
+	}
+}
+
+döğer0002 = {
+	name = "Amajur"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0001
+	815.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+döğer0003 = {
+	name = "Ayaz"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0002
+	869.1.1 = {
+		birth = yes
+	}
+	926.1.1 = {
+		death = yes
+	}
+}
+
+döğer0004 = {
+	name = "Daulab"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0003
+	900.1.1 = {
+		birth = yes
+	}
+	977.1.1 = {
+		death = yes
+	}
+}
+
+döğer0005 = {
+	name = "Atsiz"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0004
+	962.1.1 = {
+		birth = yes
+	}
+	1031.1.1 = {
+		death = yes
+	}
+}
+
+döğer0006 = {
+	name = "Eksük"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0005
+	1014.1.2={
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+
+döğer0007 = {
+	name = "Ali"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0006
+	1039.1.1 = {
+		birth = yes
+	}
+	1080.1.1 = {
+		death = yes
+	}
+}
+
+döğer0008 = {
+	name = "Zeki"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0007
+	1059.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+
+döğer0009 = {
+	name = "Zeki"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0008
+	1089.1.1 = {
+		birth = yes
+	}
+	1151.1.1 = {
+		death = yes
+	}
+}
+
+döğer0010 = {
+	name = "Mehmet"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0009
+	1109.1.1 = {
+		birth = yes
+	}
+	1150.1.1 = {
+		death = yes
+	}
+}
+
+döğer0011 = {
+	name = "Mehmet"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = döğer0010
+	1131.1.1 = {
+		birth = yes
+	}
+	1188.1.1 = {
+		death = yes
+	}
+}
+
+döğer0012 = {
+	name = "Mehmet"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0011
+	1171.1.1 = {
+		birth = yes
+	}
+	1230.1.1 = {
+		death = yes
+	}
+}
+
+döğer0013 = {
+	name = "Ali"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0012
+	1200.1.1 = {
+		birth = yes
+	}
+	1255.1.1 = {
+		death = yes
+	}
+}
+
+döğer0014 = {
+	name = "Mahmut"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0013
+	1230.1.1 = {
+		birth = yes
+	}
+	1288.1.1 = {
+		death = yes
+	}
+}
+
+döğer0015 = {
+	name = "İbrahim"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0014
+	1256.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+}
+
+döğer0016 = {
+	name = "Süleyman"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0015
+	1280.1.1 = {
+		birth = yes
+	}
+	1329.1.1 = {
+		death = yes
+	}
+}
+
+döğer0017 = {
+	name = "Murad"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0016
+	1315.1.1 = {
+		birth = yes
+	}
+	1366.1.1 = {
+		death = yes
+	}
+}
+
+döğer0018 = {
+	name = "Kasım"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0017
+	1334.1.1 = {
+		birth = yes
+	}
+	1388.1.1 = {
+		death = yes
+	}
+}
+
+döğer0019 = {
+	name = "Ali"
+	dynasty_house = house_döğer_tribe
+	religion = "maturidi"
+	culture = "turkmen"
+	father = döğer0018
+	1335.1.1 = {
+		birth = yes
+	}
+	1388.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Dodurga Tribe - Descended from Ay
+dudurgha0001 = {
+	name = "Gök"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230112
+	793.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0002 = {
+	name = "Doğukan"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0001
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0003 = {
+	name = "Baris"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0002
+	847.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0004 = {
+	name = "Pars"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0003
+	878.1.1 = {
+		birth = yes
+	}
+	937.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0005 = {
+	name = "Gökhan"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0004
+	900.1.1 = {
+		birth = yes
+	}
+	974.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0006 = {
+	name = "Alp"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0005
+	966.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0007 = {
+	name = "Alp"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0006
+	999.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0008 = {
+	name = "Alp"
+	dynasty_house = house_dodurga_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = dudurgha0007
+	1020.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0009 = {
+	name = "Ali"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0010 = {
+	name = "Ahmet"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0009
+	1072.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0011 = {
+	name = "Zeki"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1149.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0012 = {
+	name = "Samet"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0011
+	1130.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0013 = {
+	name = "Samet"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0012
+	1170.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0014 = {
+	name = "Ali"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0013
+	1200.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0015 = {
+	name = "Rıza"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0014
+	1250.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		death = yes
+	}
+}
+
+dudurgha0016 = {
+	name = "Gökhan"
+	dynasty_house = house_dodurga_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = dudurgha0015
+	1308.1.1 = {
+		birth = yes
+	}
+	1378.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Yaparlı Tribe - Descended from Ay
+yaparlı0001 = {
+	name = "Gök"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230113
+	793.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+} 
+yaparlı0002 = {
+	name = "Doğukan"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0001
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		death = yes
+	}
+} 
+yaparlı0003 = {
+	name = "Baris"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0002
+	847.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+} 
+yaparlı0004 = {
+	name = "Pars"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0003
+	878.1.1 = {
+		birth = yes
+	}
+	937.1.1 = {
+		death = yes
+	}
+} 
+yaparlı0005 = {
+	name = "Gökhan"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0004
+	900.1.1 = {
+		birth = yes
+	}
+	974.1.1 = {
+		death = yes
+	}
+} 
+yaparlı0006 = {
+	name = "Alp"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0005
+	966.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+}
+yaparlı0007 = {
+	name = "Alp"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0006
+	999.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+yaparlı0008 = {
+	name = "Alp"
+	dynasty_house = house_yaparlı_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = yaparlı0007
+	1020.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+yaparlı0009 = {
+	name = "Ali"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+yaparlı0010 = {
+	name = "Ahmet"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0009
+	1072.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+yaparlı0011 = {
+	name = "Zeki"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1149.1.1 = {
+		death = yes
+	}
+}
+yaparlı0012 = {
+	name = "Samet"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0011
+	1130.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+yaparlı0013 = {
+	name = "Samet"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0012
+	1170.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = yes
+	}
+}
+yaparlı0014 = {
+	name = "Ali"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0013
+	1200.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		death = yes
+	}
+}
+yaparlı0015 = {
+	name = "Rıza"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0014
+	1250.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		death = yes
+	}
+}
+yaparlı0016 = {
+	name = "Gökhan"
+	dynasty_house = house_yaparlı_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = yaparlı0015
+	1308.1.1 = {
+		birth = yes
+	}
+	1378.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Afşar Tribe - Descended from Yıldız
+afsar0001 = {
+	name = "C_aka"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230114
+	775.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		death = yes
+	}
+} 
+afsar0002 = {
+	name = "Ertekin"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0001
+	800.1.1 = {
+		birth = yes
+	}
+	870.1.1 = {
+		death = yes
+	}
+} 
+afsar0003 = {
+	name = "Ridvan"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0002
+	820.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+} 
+afsar0004 = {
+	name = "Aytekin"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0003
+	840.1.1 = {
+		birth = yes
+	}
+	900.1.1 = {
+		death = yes
+	}
+} 
+afsar0005 = {
+	name = "Tonyukuk"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0004
+	860.1.1 = {
+		birth = yes
+	}
+	930.1.1 = {
+		death = yes
+	}
+} 
+afsar0006 = {
+	name = "Dursun"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0005
+	877.1.1 = {
+		birth = yes
+	}
+	940.1.1 = {
+		death = yes
+	}
+} 
+afsar0007 = {
+	name = "Cemaleddin"
+	dynasty_house = house_afşar_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = afsar0006
+	900.1.1 = {
+		birth = yes
+	}
+	975.1.1 = {
+		death = yes
+	}
+} 
+afsar0008 = {
+	name = "Yakub"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0007
+	925.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+} 
+
+afsar0009 = {
+	name = "Girgen"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0008
+	950.1.1 = {
+		birth = yes
+	}
+	1025.1.1 = {
+		death = yes
+	}
+} 
+afsar0010 = {
+	name = "Pulad"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0009
+	975.1.1 = {
+		birth = yes
+	}
+	1050.1.1 = {
+		death = yes
+	}
+} 
+afsar0011 = {
+	name = "Mesud"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0010
+	1000.1.1 = {
+		birth = yes
+	}
+	1075.1.1 = {
+		death = yes
+	}
+} 
+afsar0012 = {
+	name = "KiliC_Arslan"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0011
+	1025.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+} 
+afsar0013 = {
+	name = "Meliksah"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0012
+	1050.1.1 = {
+		birth = yes
+	}
+	1125.1.1 = {
+		death = yes
+	}
+} 
+afsar0014 = {
+	name = "BO_ru"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0013
+	1075.1.1 = {
+		birth = yes
+	}
+	1150.1.1 = {
+		death = yes
+	}
+} 
+afsar0015 = {
+	name = "So_kmen"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0014
+	1100.1.1 = {
+		birth = yes
+	}
+	1175.1.1 = {
+		death = yes
+	}
+} 
+afsar0016 = {
+	name = "Ku_rbog_a"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0015
+	1125.1.1 = {
+		birth = yes
+	}
+	1200.1.1 = {
+		death = yes
+	}
+} 
+afsar0017 = {
+	name = "Alaeddin"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0016
+	1150.1.1 = {
+		birth = yes
+	}
+	1225.1.1 = {
+		death = yes
+	}
+} 
+afsar0018 = {
+	name = "Alitigin"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0017
+	1175.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		death = yes
+	}
+} 
+afsar0019 = {
+	name = "Gu_ntekin"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0018
+	1200.1.1 = {
+		birth = yes
+	}
+	1275.1.1 = {
+		death = yes
+	}
+}
+afsar0023 = {
+	name = "Gündüz"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0019
+	1230.1.1 = {
+		birth = yes
+	}
+	1280.1.1 = {
+		death = yes
+	}
+}  
+afsar0020 = {
+	name = "SO_buk"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0019
+	1225.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		death = yes
+	}
+} 
+afsar0021 = {
+	name = "Alp_Yurek"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0020
+	1250.1.1 = {
+		birth = yes
+	}
+	1325.1.1 = {
+		death = yes
+	}
+} 
+afsar0022 = {
+	name = "Orhan"
+	dynasty_house = house_afşar_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = afsar0021
+	1275.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		death = yes
+	}
+} 
+
+
+# The Kızık Tribe - Descended from Yıldız
+kızık0001 = {
+	name = "Gök"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230115
+	793.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+} 
+kızık0002 = {
+	name = "Doğukan"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0001
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		death = yes
+	}
+} 
+kızık0003 = {
+	name = "Baris"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0002
+	839.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+} 
+kızık0004 = {
+	name = "Pars"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0003
+	878.1.1 = {
+		birth = yes
+	}
+	937.1.1 = {
+		death = yes
+	}
+} 
+kızık0005 = {
+	name = "Gökhan"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0004
+	900.1.1 = {
+		birth = yes
+	}
+	974.1.1 = {
+		death = yes
+	}
+} 
+kızık0006 = {
+	name = "Alp"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0005
+	966.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+}
+kızık0007 = {
+	name = "Alp"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0006
+	999.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+kızık0008 = {
+	name = "Alp"
+	dynasty_house = house_kızık_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = kızık0007
+	1020.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+kızık0009 = {
+	name = "Ali"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+kızık0010 = {
+	name = "Ahmet"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0009
+	1072.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+kızık0011 = {
+	name = "Zeki"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1149.1.1 = {
+		death = yes
+	}
+}
+kızık0012 = {
+	name = "Samet"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0011
+	1130.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+kızık0013 = {
+	name = "Samet"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0012
+	1170.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = yes
+	}
+}
+kızık0014 = {
+	name = "Ali"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0013
+	1200.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		death = yes
+	}
+}
+kızık0015 = {
+	name = "Rıza"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0014
+	1250.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		death = yes
+	}
+}
+kızık0016 = {
+	name = "Gökhan"
+	dynasty_house = house_kızık_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = kızık0015
+	1308.1.1 = {
+		birth = yes
+	}
+	1378.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Beğdili Tribe - Descended from Yıldız
+beğdili0001 = {
+	name = "Aksonqor"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230116
+	784.1.1 = {
+		birth = yes
+	}
+	855.1.1 = {
+		death = yes
+	}
+} 
+
+beğdili0002 = {
+	name = "Dogan"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = beğdili0001
+	848.1.1 = {
+		birth = yes
+	}
+	911.1.1 = {
+		death = yes
+	}
+} 
+
+beğdili0003 = {
+	name = "Shabaz"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = beğdili0002
+	901.1.1 = {
+		birth = yes
+	}
+	961.1.1 = {
+		death = yes
+	}
+} 
+
+beğdili0004 = {
+	name = "Baytas"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = beğdili0003
+	949.1.1 = {
+		birth = yes
+	}
+	1018.1.1 = {
+		death = yes
+	}
+} 
+
+beğdili0005 = {
+	name = "Tunga"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = beğdili0004
+	1000.1.1 = {
+		birth = yes
+	}
+	1055.1.1 = {
+		death = yes
+	}
+} 
+
+beğdili0006 = {
+	name = "Gökhan"
+	dynasty_house = house_beğdili_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = beğdili0005
+	1030.1.1 = {
+		birth = yes
+	}
+	1090.1.1 = {
+		death = yes
+	}
+} 
+beğdili0007 = {
+	name = "Mehmet"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0006
+	1060.1.1 = {
+		birth = yes
+	}
+	1110.1.1 = {
+		death = yes
+	}
+} 
+beğdili0008 = {
+	name = "Ali"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0007
+	1080.1.1 = {
+		birth = yes
+	}
+	1120.1.1 = {
+		death = yes
+	}
+} 
+beğdili0009 = {
+	name = "Rıza"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0008
+	1100.1.1 = {
+		birth = yes
+	}
+	1165.1.1 = {
+		death = yes
+	}
+}
+beğdili0010 = {
+	name = "Rıza"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0009
+	1142.1.1 = {
+		birth = yes
+	}
+	1207.1.1 = {
+		death = yes
+	}
+}
+beğdili0011 = {
+	name = "Zeki"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0010
+	1170.1.1 = {
+		birth = yes
+	}
+	1230.1.1 = {
+		death = yes
+	}
+}
+beğdili0012 = {
+	name = "Melih"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0011
+	1200.1.1 = {
+		birth = yes
+	}
+	1257.1.1 = {
+		death = yes
+	}
+}
+beğdili0013 = {
+	name = "Melih"
+	dynasty_house = house_beğdili_tribe
+	religion = "maturidi"
+	culture = "turkish"
+	father = beğdili0012
+	1240.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		religion = "ashari"
+	}
+	1289.1.1 = {
+		death = yes
+	}
+}
+beğdili0014 = {
+	name = "Mete"
+	dynasty_house = house_beğdili_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = beğdili0013
+	1265.1.1 = {
+		birth = yes
+	}
+	1286.1.1 = {
+		culture = "turkmen"
+	}
+	1321.1.1 = {
+		death = yes
+	}
+}
+beğdili0015 = {
+	name = "Barıs"
+	dynasty_house = house_beğdili_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = beğdili0014
+	1300.1.1 = {
+		birth = yes
+	}
+	1355.1.1 = {
+		death = yes
+	}
+}
+beğdili0016 = {
+	name = "Ahmet"
+	dynasty_house = house_beğdili_tribe
+	religion = "ashari"
+	culture = "turkmen"
+	father = beğdili0015
+	1319.1.1 = {
+		birth = yes
+	}
+	1388.1.1 = {
+		death = yes
+	}
+}
+
+
+# The Karkın Tribe - Descended from Yıldız
+karkın0001 = {
+	name = "Gök"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = 1000230117
+	793.1.1 = {
+		birth = yes
+	}
+	845.1.1 = {
+		death = yes
+	}
+} 
+karkın0002 = {
+	name = "Doğukan"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0001
+	821.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		death = yes
+	}
+} 
+karkın0003 = {
+	name = "Baris"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0002
+	847.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+} 
+karkın0004 = {
+	name = "Pars"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0003
+	878.1.1 = {
+		birth = yes
+	}
+	937.1.1 = {
+		death = yes
+	}
+} 
+karkın0005 = {
+	name = "Gökhan"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0004
+	900.1.1 = {
+		birth = yes
+	}
+	974.1.1 = {
+		death = yes
+	}
+} 
+karkın0006 = {
+	name = "Alp"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0005
+	966.1.1 = {
+		birth = yes
+	}
+	1010.1.1 = {
+		death = yes
+	}
+}
+karkın0007 = {
+	name = "Alp"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0006
+	999.1.1 = {
+		birth = yes
+	}
+	1040.1.1 = {
+		death = yes
+	}
+}
+karkın0008 = {
+	name = "Alp"
+	dynasty_house = house_karkın_tribe
+	religion = "tengri_pagan"
+	culture = "turkish"
+	father = karkın0007
+	1020.1.1 = {
+		birth = yes
+	}
+	1067.1.1 = {
+		death = yes
+	}
+}
+karkın0009 = {
+	name = "Ali"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0008
+	1045.1.1 = {
+		birth = yes
+	}
+	1100.1.1 = {
+		death = yes
+	}
+}
+karkın0010 = {
+	name = "Ahmet"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0009
+	1072.1.1 = {
+		birth = yes
+	}
+	1121.1.1 = {
+		death = yes
+	}
+}
+karkın0011 = {
+	name = "Zeki"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0010
+	1100.1.1 = {
+		birth = yes
+	}
+	1149.1.1 = {
+		death = yes
+	}
+}
+karkın0012 = {
+	name = "Samet"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0011
+	1130.1.1 = {
+		birth = yes
+	}
+	1190.1.1 = {
+		death = yes
+	}
+}
+karkın0013 = {
+	name = "Samet"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0012
+	1170.1.1 = {
+		birth = yes
+	}
+	1240.1.1 = {
+		death = yes
+	}
+}
+karkın0014 = {
+	name = "Ali"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0013
+	1200.1.1 = {
+		birth = yes
+	}
+	1270.1.1 = {
+		death = yes
+	}
+}
+karkın0015 = {
+	name = "Rıza"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0014
+	1250.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		death = yes
+	}
+}
+karkın0016 = {
+	name = "Gökhan"
+	dynasty_house = house_karkın_tribe
+	religion = "ashari"
+	culture = "turkish"
+	father = karkın0015
+	1308.1.1 = {
+		birth = yes
+	}
+	1378.1.1 = {
+		death = yes
+	}
+}

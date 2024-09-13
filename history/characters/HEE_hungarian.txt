@@ -163,7 +163,7 @@ gyula0003 = { # The chieftain Tosu [Tas], father of Lel
 	955.9.1 = { # Following the Magyar defeat at the Battle of Lechfeld, Lehel was arrested, handed over to King Otto's brother, Duke Henry of Bavaria, and hanged at his residence in Regensburg
 		death = {
 			death_reason = death_execution
-			killer = character:1292 # Duke Henry of Bavaria
+			killer = 1292 # Duke Henry of Bavaria
 		}
 	}
 }

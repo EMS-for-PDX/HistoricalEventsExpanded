@@ -979,7 +979,7 @@
 	culture = "greek"
 	father = 1702
 	mother = zaoutzes0005
-	895.1.1 = { # # Unknown; A. was probably elevated to Augusta in 900, as Leon was not married at that time and court ceremonies supposedly required an empress. At that time she was Leon's only living child and certainly no older than seven years old.
+	894.1.1 = { # # Unknown; A. was probably elevated to Augusta in 900, as Leon was not married at that time and court ceremonies supposedly required an empress. At that time she was Leon's only living child and certainly no older than seven years old.
 		birth = yes
 	}
 	918.1.1 = {

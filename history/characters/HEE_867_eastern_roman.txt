@@ -3322,6 +3322,7 @@ betalekes0001 = {
 
 betalekes0002 = {
     name = Helene # wife of a Rendakios in 1055, possibly Rendakios Helladikas
+	female = yes
     dynasty = dynasty_betalekes # Betalekes
     religion = "orthodox"
     culture = "greek" #
@@ -3534,7 +3535,7 @@ lekapenos0011 = { # He was the son of Stephanos Lakapenos, born between 935 and 
 	}	
 }
 
-lekapenos0011 = { # He was the son of Konstantinos Lakapenos, castrated but later appointed patrikios and praipositos - https://www.degruyter.com/database/PMBZ/entry/PMBZ28995/html
+lekapenos0012 = { # He was the son of Konstantinos Lakapenos, castrated but later appointed patrikios and praipositos - https://www.degruyter.com/database/PMBZ/entry/PMBZ28995/html
 	name = "Romanos"
 	dynasty = 642
 	father = 145224
@@ -3866,8 +3867,8 @@ euforbenos0002 = {
 	religion = "orthodox"
 	culture = "greek" # 
 	father = euforbenos0001
-	1034.1.1 = {
-		birth = "1034.1.1" # 
+	1032.1.1 = {
+		birth = "1032.1.1" # 
 	}
 	1049.1.1 = {
 		add_spouse = Katakalon12 # 
@@ -4809,6 +4810,7 @@ gambros0001 = { # Christopher, gambros to the emperor (the husband of a daughter
 
 gambros0002 = { # Potential first wife of Romanos I Lekapenos - https://www.degruyter.com/database/PMBZ/entry/PMBZ28987/html (see bottom section)
 	name = "Maria" # Unknown
+	female = yes
 	dynasty = dynasty_gambros
 	father = gambros0001
 	mother = makedon0023
@@ -5458,7 +5460,6 @@ maleinos0005 = {
 maleinos0006 = {
 	name = "Nikephoros" # Unnamed child of Eudokimos Maleinos and Anastaso Adralestina
 	dynasty = 100753
-	female = yes
 	religion = "orthodox"
 	culture = "greek"
 	father = 145146
@@ -5934,7 +5935,7 @@ botaneiates0005 = {
 	dynasty = 631
 	religion = "orthodox"
 	culture = "greek"
-	father = 1232409	
+	father = botaneiates0004	
 	
 	1034.1.1 = {
 		birth = yes
@@ -6032,8 +6033,8 @@ dekapolitissa0001 = { # Lawful wife to Michael III; discounted in favour of his 
 			}
 		}
 	}
-	867.1.1 = {
-		trait = widow # Eudokia was not harmed by Basil, and returned as a widow to her family
+	867.9.24 = {
+		trait = widowed # Eudokia was not harmed by Basil, and returned as a widow to her family
 	}
 	900.1.1 = { # She does not resurface in historical records after returning to her family
 		death = yes

@@ -700,7 +700,7 @@ ichirguboil0001 = { # Stazis, recorded as Ichirgu-boil (High official title in t
 
 bagatur0001 = { # Sundika, recorded as Bagatur (literally “brave man”. A title from the ruling system from the time of the First Bulgarian state. Given mainly for military merits.) during the council of Constantinople in 870
 	name = "Sundika"
-	dynasty = 1000101428	
+	
 	religion = "orthodox"
 	culture = "bulgarian"
 
@@ -714,7 +714,7 @@ bagatur0001 = { # Sundika, recorded as Bagatur (literally “brave man”. A tit
 
 tarkan0001 = { # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
 	name = "Iliya"
-	dynasty = 1000101426	
+	
 	religion = "orthodox"
 	culture = "bulgarian"
 
@@ -728,7 +728,7 @@ tarkan0001 = { # Iliya, recorded as Tarkan (High official title in the early-med
 
 tarkan0002 = { # Boris, recorded Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) of Belgrade in 885 by Runciman
 	name = "Boris"
-	dynasty = 1000101427
+
 	religion = "orthodox"
 	culture = "bulgarian"
 
@@ -742,7 +742,7 @@ tarkan0002 = { # Boris, recorded Tarkan (High official title in the early-mediev
 
 tarkan0003 = { # Taridin, recorded in Theophylact's Historia Martyrii story as the local "count" in the Tiberioupolis (Strumica) area. Runciman is quoting this book. A bit fuzzy Chronology, but it is either late 880'ies or early 890'ies.
 	name = "Taridin"
-	dynasty = 1000101425
+
 	religion = "orthodox"
 	culture = "bulgarian"
 
@@ -756,7 +756,7 @@ tarkan0003 = { # Taridin, recorded in Theophylact's Historia Martyrii story as t
 
 sampsis0001 = { # Alexios Hunol, recorded as Sampsis during the council of Constantinople in 870
 	name="Aleksii"
-	dynasty = dynasty_hunol	
+	# dynasty = dynasty_hunol	
 	religion = "orthodox"
 	culture = "bulgarian"
 

@@ -5,7 +5,7 @@ ashina0001 = { # Ashina (阿史那) - Youngest child of Neduliu shad, semi-legen
 	name = "Ashina"
 	dynasty = 12269
 
-	culture = "tiele"
+	culture = "turkish"
 	religion = "tengri_pagan"
 
 	420.1.1 = {
@@ -41,10 +41,10 @@ ashina0003 = { # Ashina Tuwu (Chinese: 吐務) was an early Tujue chief and ance
 	culture = "khazar"
 	religion = "tengri_pagan"
 
-	490.1.1 = {
+	480.1.1 = {
 		birth = yes
 	}
-	552.1.1 = {
+	532.1.1 = {
 		death = yes
 	}
 }
@@ -1000,7 +1000,7 @@ ashina0050 = { # Ilterish Qaghan was the founder of the Second Turkic Khaganate 
 	trait = stubborn # Never surrender despite many defeats
 	trait = ambitious # Sought to restore the Turkic Khaganate
 	trait = organizer
-	trait = raider
+	trait = reaver
 
 	655.1.1 = {
 		birth = yes
@@ -1023,7 +1023,7 @@ ashina0051 = { # Qapaghan or Qapghan Qaghan was the second khagan of the Second 
 	trait = diligent # 
 	trait = callous # due to his cruelty, some his men and a number of tribes, including his Korean son-in-law Gao Wenjian and Ashide son-in-law Ashide Hulu submitted to Tang. Rebellions of tribes followed later. 
 	trait = ambitious # Aggressively expanded the Khaganate
-	trait = raider
+	trait = reaver
 
 	664.1.1 = { # He was born around 664 (source?)
 		birth = yes

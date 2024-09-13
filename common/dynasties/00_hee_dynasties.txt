@@ -525,7 +525,10 @@ dynasty_aljarrah = {
 	culture = "assyrian"	
 }
 
-
+dynasty_bosnian = {
+	name = "dynn_Bosnian"
+	culture = "bosnian"	
+}
 
 
 # Seven Hungarian Tribes

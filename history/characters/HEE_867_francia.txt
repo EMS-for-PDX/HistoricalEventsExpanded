@@ -65,7 +65,7 @@ HEE_gisele_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/L
 	885.1.1 = {
 		add_spouse = 303420 # Robert I of Troyes
 	}
-	884.1.1 = {
+	886.1.1 = {
 		death = yes
 	}
 }

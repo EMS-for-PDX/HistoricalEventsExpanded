@@ -5315,7 +5315,8 @@
 
 34262 = {
 	name = "Chaka"
-	dynasty = 7301
+	dynasty_house = house_cavuldur_tribe
+	father = cavuldur0005
 	religion = "ashari"
 	culture = "turkish"
 	1040.1.1 = {
@@ -5329,7 +5330,7 @@
 34263 = {
 	name = "Fatma"
 	female = yes
-	dynasty = 7301
+	dynasty_house = house_cavuldur_tribe
 	religion = "ashari"
 	culture = "turkish"
 	father = 34262
@@ -5343,7 +5344,7 @@
 
 34264 = {
 	name = "Chaka"
-	dynasty = 7301
+	dynasty_house = house_cavuldur_tribe
 	religion = "ashari"
 	culture = "turkish"
 	father = 34262
@@ -10134,6 +10135,8 @@ fictional_khwarezmian_turks_7 = {
 1000230100 = { # Oghuz Kaghan or Oghuz Khan is the ancestor of Turks in Turkish and Altai mythology / Legendary khan of the Turkic people and an eponymous ancestor of Oghuz Turks
 	name = "Oghuz"
 	dynasty = 7327
+	father = oghuz0001
+	mother = oghuz0002
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 
@@ -10146,26 +10149,29 @@ fictional_khwarezmian_turks_7 = {
 
 	trait = strong # he grew up supernaturally fast and in only forty days he became a young adult
 
-	830.1.1 = { # If he existed at all, Oghuz Khagan likely lived centuries if not millennium ago (has been identified with Modu Chanyu who lived c. 234 – c. 174 BCE), but to avoid generations of fictional/fluff characters and keep the tribal relations clearer I will have Oghuz exist closer to CK3's start
+	690.1.1 = { # If he existed at all, Oghuz Khagan likely lived centuries if not millennium ago (has been identified with Modu Chanyu who lived c. 234 – c. 174 BCE), but to avoid generations of fictional/fluff characters and keep the tribal relations clearer I will have Oghuz exist closer to CK3's start
 		birth = yes
 	}
-	862.1.1 = {
+	720.1.1 = {
+		add_spouse = oghuz0003
+	}
+	725.1.1 = {
+		add_spouse = oghuz0004
+	}
+	738.1.1={
 		death = yes
 	}
 }
 1000230101 = {
 	name = "Bozoq"
-	dynasty = 7327
+	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230100
-	848.1.1 = {
+	708.1.1={
 		birth = yes
 	}
-	880.1.1 = {
-		dynasty_house = house_il_arslanid
-	}
-	900.1.1 = {
+	763.1.1={
 		death = yes
 	}
 }
@@ -10175,51 +10181,51 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230100
-	860.1.1 = {
+	709.1.1 = {
 		birth = yes
 	}
-	910.1.1 = {
+	766.1.1 = {
 		death = yes
 	}
 }
 #####################################
 #"Fathers founders" of Oghuz clans - names according to legends, dates counted from age of the Seljuks
-1000230103 = {
+1000230103 = { # # Gün Han - Sun Khagan in Turkish and Altai mythology. He is the son of Oğuz Khan, born of his second heavenly mate. The most well-known among the tribes of the Sun Han is Kayı and established the Ottoman Empire.
 	name = "Ku_n"
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230101
-	866.1.1 = {
+	728.1.1 = {
 		birth = yes
 	}
-	912.1.1 = {
+	773.1.1 = {
 		death = yes
 	}
 }
-1000230104 = {
+1000230104 = { # Ay Han - Moon Khagan in Turkish and Altai mythology. Mongolian is also known as Sara Khan or Hara Khan. He is the son of Oğuz Khan, born of his second heavenly mate.
 	name = "Ay"
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230101
-	867.1.1 = {
+	733.1.1 = {
 		birth = yes
 	}
-	921.1.1 = {
+	786.1.1 = {
 		death = yes
 	}
 }
-1000230105 = {
+1000230105 = { # Yıldız Han - Stars in Turkish and Altai mythology. He is the son of Oğuz Khan, born of his second heavenly mate.
 	name = "Yulduz"
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230101
-	872.1.1 = {
+	737.1.1 = {
 		birth = yes
 	}
-	916.1.1 = {
+	781.1.1 = {
 		death = yes
 	}
 }
@@ -10229,10 +10235,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	888.1.1 = {
+	750.1.1 = {
 		birth = yes
 	}
-	929.1.1 = {
+	791.1.1 = {
 		death = yes
 	}
 }
@@ -10242,10 +10248,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	890.1.1 = {
+	752.1.1 = {
 		birth = yes
 	}
-	927.1.1 = {
+	789.1.1 = {
 		death = yes
 	}
 }
@@ -10255,10 +10261,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	891.1.1 = {
+	753.1.1 = {
 		birth = yes
 	}
-	935.1.1 = {
+	797.1.1 = {
 		death = yes
 	}
 }
@@ -10268,10 +10274,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	892.1.1 = {
+	754.1.1 = {
 		birth = yes
 	}
-	930.1.1 = {
+	792.1.1 = {
 		death = yes
 	}
 }
@@ -10281,10 +10287,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	887.1.1 = {
+	752.1.1 = {
 		birth = yes
 	}
-	915.1.1 = {
+	780.1.1 = {
 		death = yes
 	}
 }
@@ -10294,10 +10300,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	889.1.1 = {
+	754.1.1 = {
 		birth = yes
 	}
-	940.1.1 = {
+	805.1.1 = {
 		death = yes
 	}
 }
@@ -10307,10 +10313,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	892.1.1 = {
+	757.1.1 = {
 		birth = yes
 	}
-	946.1.1 = {
+	811.1.1 = {
 		death = yes
 	}
 }
@@ -10320,10 +10326,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	895.1.1 = {
+	760.1.1 = {
 		birth = yes
 	}
-	953.1.1 = {
+	818.1.1 = {
 		death = yes
 	}
 }
@@ -10333,10 +10339,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	892.1.1 = {
+	757.1.1 = {
 		birth = yes
 	}
-	955.1.1 = {
+	821.1.1 = {
 		death = yes
 	}
 }
@@ -10346,10 +10352,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	894.1.1 = {
+	759.1.1 = {
 		birth = yes
 	}
-	943.1.1 = {
+	808.1.1 = {
 		death = yes
 	}
 }
@@ -10359,10 +10365,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	897.1.1 = {
+	762.1.1 = {
 		birth = yes
 	}
-	955.1.1 = {
+	822.1.1 = {
 		death = yes
 	}
 }
@@ -10372,51 +10378,51 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	901.1.1 = {
+	766.1.1 = {
 		birth = yes
 	}
-	945.1.1 = {
+	810.1.1 = {
 		death = yes
 	}
 }
 ######################################
 # Fathers founders of the ܨoq subconfederation
-1000230118 = {
+1000230118 = { # # Sky Khagan in Turkish and Altai mythology. It is also known as the Root Khan. He was the son of Oğuz Khan, born of his first wife. It symbolizes the limitlessness and vastness of the Turkish dormitory
 	name = "Go_k"
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230102
-	880.1.1 = {
+	723.1.1 = {
 		birth = yes
 	}
-	928.1.1 = {
+	778.1.1 = {
 		death = yes
 	}
 }
-1000230119 = {
+1000230119 = { # He is one of the sons of Oğuz Khagan, who was one of the first mates of Khagan. It symbolizes the greatness of the Turkish State
 	name = "Taq"
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230102
-	886.1.1 = {
+	736.1.1 = {
 		birth = yes
 	}
-	930.1.1 = {
+	780.1.1 = {
 		death = yes
 	}
 }
-1000230120 = {
+1000230120 = { # He is one of the sons of Oğuz Khagan, who was one of the first mates of Khagan. It symbolizes the sovereignty and vastness of the Turkish State in the seas
 	name = "Tengiz"
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230102
-	893.1.1 = {
+	740.1.1 = {
 		birth = yes
 	}
-	945.1.1 = {
+	795.1.1 = {
 		death = yes
 	}
 }
@@ -10427,10 +10433,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	902.1.1 = {
+	752.1.1 = {
 		birth = yes
 	}
-	970.1.1 = {
+	820.1.1 = {
 		death = yes
 	}
 }
@@ -10440,10 +10446,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	905.1.1 = {
+	736.1.1 = {
 		birth = yes
 	}
-	962.1.1 = {
+	812.1.1 = {
 		death = yes
 	}
 }
@@ -10453,10 +10459,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	908.1.1 = {
+	758.1.1 = {
 		birth = yes
 	}
-	958.1.1 = {
+	808.1.1 = {
 		death = yes
 	}
 }
@@ -10466,10 +10472,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	912.1.1 = {
+	762.1.1 = {
 		birth = yes
 	}
-	971.1.1 = {
+	821.1.1 = {
 		death = yes
 	}
 }
@@ -10479,10 +10485,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	906.1.1 = {
+	756.1.1 = {
 		birth = yes
 	}
-	960.1.1 = {
+	815.1.1 = {
 		death = yes
 	}
 }
@@ -10492,10 +10498,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	909.1.1 = {
+	759.1.1 = {
 		birth = yes
 	}
-	957.1.1 = {
+	807.1.1 = {
 		death = yes
 	}
 }
@@ -10505,10 +10511,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	911.1.1 = {
+	761.1.1 = {
 		birth = yes
 	}
-	976.1.1 = {
+	826.1.1 = {
 		death = yes
 	}
 }
@@ -10518,10 +10524,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	916.1.1 = {
+	766.1.1 = {
 		birth = yes
 	}
-	978.1.1 = {
+	828.1.1 = {
 		death = yes
 	}
 }
@@ -10531,10 +10537,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	912.1.1 = {
+	759.1.1 = {
 		birth = yes
 	}
-	971.1.1 = {
+	811.1.1 = {
 		death = yes
 	}
 }
@@ -10544,10 +10550,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	915.1.1 = {
+	762.1.1 = {
 		birth = yes
 	}
-	978.1.1 = {
+	828.1.1 = {
 		death = yes
 	}
 }
@@ -10557,10 +10563,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	918.1.1 = {
+	761.1.1 = {
 		birth = yes
 	}
-	975.1.1 = {
+	825.1.1 = {
 		death = yes
 	}
 }
@@ -10570,10 +10576,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	921.1.1 = {
+	764.1.1 = {
 		birth = yes
 	}
-	983.1.1 = {
+	833.1.1 = {
 		death = yes
 	}
 }
@@ -11763,7 +11769,8 @@ fictional_khwarezmian_turks_7 = {
 
 1231978 = {
 	name = "Barutay"
-	dynasty = 1000101726
+	dynasty = house_kayi_tribe
+	father = 1000230106
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	785.1.1 = {
@@ -11775,7 +11782,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231979 = {
 	name = "Kurboga"
-	dynasty = 1000101726
+	dynasty = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231978
@@ -11788,7 +11795,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231980 = {
 	name = "Alkan"
-	dynasty = 1000101726
+	dynasty = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231979
@@ -11801,7 +11808,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231981 = {
 	name = "Qayi"
-	dynasty = 1000101726
+	dynasty = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231980

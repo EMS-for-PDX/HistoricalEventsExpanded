@@ -46108,7 +46108,7 @@
 	trait = education_martial_3
 	father = 1164
 	mother = 1701
-	906.1.1 = {
+	910.1.1 = {
 		birth = yes
 	}
 	962.1.1 = {

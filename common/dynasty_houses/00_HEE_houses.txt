@@ -184,3 +184,52 @@ house_kınık_tribe = {
 	name = "dynn_Kınık"
 	dynasty = 7327 # Oghuz
 }
+
+# Qangar Pecheneg tribes #
+
+house_qangar = {
+	name = "dynn_Qangar"
+	dynasty = 7327 # Oghuz
+}
+
+house_yawdiertim = {
+	name = "dynn_Yawdiertim"
+	dynasty = 7327 # Oghuz
+}
+
+house_kuerchichur = {
+	name = "dynn_Kuerchichur"
+	dynasty = 7327 # Oghuz
+}
+
+house_qabuqyula = {
+	name = "dynn_Qabuqyula"
+	dynasty = 7327 # Oghuz
+}
+
+# Non Qangar pecheng tribes #
+
+house_surukulbej = {
+	name = "dynn_Surukulbej"
+	dynasty = 7327 # Oghuz
+}
+
+house_qarabay = {
+	name = "dynn_Qarabay"
+	dynasty = 7327 # Oghuz
+}
+
+house_yaziqapan = {
+	name = "dynn_Yaziqapan"
+	dynasty = 7327 # Oghuz
+}
+
+house_borutolmach = {
+	name = "dynn_Borutolmach"
+	dynasty = 7327 # Oghuz
+}
+
+house_bulpacopan = {
+	name = "dynn_Bulpacopan"
+	dynasty = 7327 # Oghuz
+}

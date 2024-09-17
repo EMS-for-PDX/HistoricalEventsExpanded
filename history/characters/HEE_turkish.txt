@@ -99,16 +99,34 @@ bayindir0002 = {
 	821.1.1 = {
 		birth = yes
 	}
-	867.1.1 = {
+	845.1.1 = {
+		add_spouse = bayindirwife0001
+	}
+	888.1.1 = {
 		death = yes
 	}
-} 
+}
+
+bayindirwife0001 = {
+	name = "C_iltanesi"
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+	823.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}	
+}
+
 bayindir0003 = {
 	name = "Baris"
 	dynasty_house = house_bayındır_tribe
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = bayindir0002
+	mother = bayindirwife0001
 	847.1.1 = {
 		birth = yes
 	}
@@ -469,16 +487,34 @@ cepni0001 = {
 	811.1.1 = {
 		birth="811.1.1"
 	}
-	855.1.1 = {
-		death="855.1.1"
+	840.1.1 = {
+		add_spouse = cepniwife0001
+	}
+	870.1.1 = {
+		death="870.1.1"
 	}
 }
+
+cepniwife0001 = {
+	name="Sibel" #fictional
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+	815.1.1 = {
+		birth="815.1.1"
+	}
+	872.1.1 = {
+		death="872.1.1"
+	}
+}
+
 cepni0002 = {
 	name = "Barış" #fictional
 	dynasty_house = house_cepniler_tribe
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = cepni0001
+	mother = cepniwife0001
 	841.1.1 = {
 		birth="841.1.1"
 	}
@@ -486,6 +522,7 @@ cepni0002 = {
 		death="895.1.1"
 	}
 }
+
 cepni0003 = {
 	name = "Aytekin" #fictional
 	dynasty_house = house_cepniler_tribe
@@ -758,8 +795,8 @@ salur0002 = {
 	805.1.1 = {
 		birth="805.1.1"
 	}
-	855.1.1 = {
-		death="855.1.1"
+	862.1.1 = {
+		death="862.1.1"
 	}
 }
 salur0003 = {
@@ -1104,19 +1141,36 @@ eymür0002 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = eymür0001
-	830.1.1 = {
+	823.1.1 = {
 		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = eymürwife0001
 	}
 	884.1.1 = {
 		death = yes
 	}
-} 
+}
+
+eymürwife0001 = {
+	name = "Alara"	
+	religion = "tengri_pagan"
+	culture = "turkish"
+	825.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = yes
+	}	
+}
+
 eymür0003 = {
 	name = "Alp"
 	dynasty_house = house_eymür_tribe
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = eymür0002
+	mother = eymürwife0001
 	851.1.1 = {
 		birth = yes
 	}
@@ -1540,7 +1594,7 @@ yüreğir0002 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = yüreğir0001
-	830.1.1 = {
+	835.1.1 = {
 		birth = yes
 	}
 	884.1.1 = {
@@ -1553,7 +1607,7 @@ yüreğir0003 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = yüreğir0002
-	850.1.1 = {
+	853.1.1 = {
 		birth = yes
 	}
 	910.1.1 = {
@@ -1966,23 +2020,42 @@ yıva0002 = {
 	830.1.1 = {
 		birth = yes
 	}
+	860.1.1 = {
+		add_spouse = yıvawife0002
+	}
 	884.1.1 = {
 		death = yes
 	}
-} 
+}
+
+yıvawife0002 = {
+	name = "Altan"
+	female = yes
+	religion = "tengri_pagan"
+	culture = "turkish"
+	835.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = yes
+	}	
+}
+
 yıva0003 = {
 	name = "Alp"
 	dynasty_house = house_yıva_tribe
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = yıva0002
+	mother = yıvawife0002
 	863.1.1 = {
 		birth = yes
 	}
 	910.1.1 = {
 		death = yes
 	}
-} 
+}
+
 yıva0004 = {
 	name = "Alp"
 	dynasty_house = house_yıva_tribe
@@ -2458,9 +2531,24 @@ kayi0002 = {
 	800.1.1 = {
 		birth = yes
 	}
+	820.1.1 = {
+		add_spouse = kayiwife0001
+	}
 	870.1.1 = {
 		death = yes
 	}
+}
+
+kayiwife0001 = {
+	name = "C_iC_ek"
+	religion = "tengri_pagan"
+	culture = "turkish"
+	805.1.1 = {
+		birth = yes
+	}
+	871.1.1 = {
+		death = yes
+	}	
 }
 
 kayi0003 = {
@@ -2469,12 +2557,28 @@ kayi0003 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = kayi0002
-	818.1.1 = {
+	mother = kayiwife0001
+	821.1.1 = {
 		birth = yes
 	}
-	900.1.1 = {
+	840.1.1 = {
+		add_spouse = kayiwife0002
+	}
+	880.1.1 = {
 		death = yes
 	}
+}
+
+kayiwife0002 = {
+	name = "Fulin"
+	religion = "tengri_pagan"
+	culture = "turkish"
+	819.1.1 = {
+		birth = yes
+	}
+	881.1.1 = {
+		death = yes
+	}	
 }
 
 kayi0004 = {
@@ -2483,12 +2587,28 @@ kayi0004 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = kayi0003
-	838.1.1 = {
+	mother = kayiwife0002
+	840.1.1 = {
 		birth = yes
+	}
+	860.1.1 = {
+		add_spouse = kayiwife0003
 	}
 	900.1.1 = {
 		death = yes
 	}
+}
+
+kayiwife0003 = {
+	name = "Esin"
+	religion = "tengri_pagan"
+	culture = "turkish"
+	842.1.1 = {
+		birth = yes
+	}
+	885.1.1 = {
+		death = yes
+	}	
 }
 
 kayi0005 = {
@@ -2497,7 +2617,8 @@ kayi0005 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = kayi0004
-	858.1.1 = {
+	mother = kayiwife0003
+	862.1.1 = {
 		birth = yes
 	}
 	930.1.1 = {
@@ -2511,7 +2632,7 @@ kayi0006 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = kayi0005
-	880.1.1 = {
+	885.1.1 = {
 		birth = yes
 	}
 	940.1.1 = {
@@ -2525,7 +2646,7 @@ kayi0007 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = kayi0006
-	900.1.1 = {
+	905.1.1 = {
 		birth = yes
 	}
 	975.1.1 = {

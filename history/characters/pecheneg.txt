@@ -1335,6 +1335,8 @@
 	name = "Yavdi"
 	dna = 302717_yavdi_aqton
 	dynasty = 2001110	#Aqton
+	father = qangar0004
+	mother = qangar0005
 	religion = tengri_pagan
 	culture = pecheneg
 
@@ -1361,6 +1363,12 @@
 
 	836.2.12 = {
 		birth = yes
+	}
+	850.1.1={
+		add_spouse = yawdi_ertim0001
+	}
+	867.1.1 = {
+		dynasty_house = house_yawdiertim # Yawdi-Ertim
 	}
 	885.9.5 = {
 		death = yes

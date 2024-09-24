@@ -208,6 +208,7 @@
 
  dynn_Bosnian: "Bosna"
 
+ dynn_Zygii: "Zygii"
 
 
 
@@ -220,6 +221,18 @@
  dynn_Gyula: "Gyula"
 
  dynn_Gyarmat: "Gyarmat"
+
+
+
+ dynn_Lanikaz: "Lanikaz"
+ dynn_Ajlad: "Ajlad"
+ dynn_Tatars: "Tatars"
+
+
+
+ # Ughyur Khaganate
+ dynn_Yaglakar: "Yaglakar"
+ dynn_Adiz: "Ädiz"
 
 
 

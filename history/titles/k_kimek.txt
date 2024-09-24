@@ -66,9 +66,9 @@ d_mugodzhar_hills = {
 
 c_mugodzhar_hills = {
 	#867
-	850.1.1 = {
-		holder = eymür0002 # The Eymür Tribe
-		liege = k_oghuz_il
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = yaziqapan0013
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	875.2.8 = {
@@ -112,9 +112,9 @@ c_mugodzhar_hills = {
 
 c_jitikul = {
 	#867
-	847.5.10 = {
-		holder = 302702	#Tugor Imak
-		liege = d_mugodzhar_hills
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 180229
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	875.2.8 = {
@@ -158,9 +158,9 @@ c_jitikul = {
 
 c_kos_uba = {
 	#867
-	850.1.1 = {
-		holder = eymür0002 # The Eymür Tribe
-		liege = k_oghuz_il
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = yaziqapan0013
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	875.2.8 = {
@@ -204,9 +204,9 @@ c_kos_uba = {
 
 c_aqtobe = {
 	#867
-	856.5.6 = {
-		holder = 302717	#fictional Yavdi Aqton
-		liege = 0
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = surukulbej0013
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	
@@ -241,9 +241,9 @@ c_aqtobe = {
 
 c_orenburg = {
 	#867
-	856.5.6 = {
-		holder = 302717	#fictional Yavdi Aqton
-		liege = 0
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 180174
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	
@@ -278,9 +278,9 @@ c_orenburg = {
 
 c_atamansku = {
 	#867
-	847.5.10 = {
-		holder = 302702	#Tugor Imak
-		liege = d_mugodzhar_hills
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 180229
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	875.2.8 = {
@@ -388,11 +388,9 @@ c_atyrau = {
 	847.1.1 = {
 		holder = 74023
 	}
-	852.1.1 = {
-		holder = 74024
-	}
-	864.1.1 = {
-		holder = 74025
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = borutolmach0012
+		liege = k_pechenegs_custom
 	}
 	888.1.1 = {
 		holder = 74026
@@ -447,12 +445,9 @@ c_atyrau = {
 
 c_sagiz = {
 	#867
-	833.3.16 = {
-		holder = 302710	#Kobyak Yimaek
-		government = tribal_government
-	}
-	869.12.4 = {
-		holder = 302712	#TO_rtogul Yimaek
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = borutolmach0012
+		liege = k_pechenegs_custom
 	}
 	880.10.2 = {
 		liege = k_kimek
@@ -486,8 +481,9 @@ c_sagiz = {
 
 c_manatau = {
 	#867
-	833.3.16 = {
-		holder = 302710	#Kobyak Yimaek
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 180174
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
 	869.12.4 = {
@@ -525,11 +521,12 @@ c_manatau = {
 
 c_baisary = {
 	#867
-	833.3.16 = {
-		holder = 302710	#Kobyak Yimaek
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 188811
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
-	869.12.4 = {
+	893.12.4 = {
 		holder = 302712	#TO_rtogul Yimaek
 	}
 	880.10.2 = {
@@ -564,11 +561,12 @@ c_baisary = {
 
 c_basagha = {
 	#867
-	833.3.16 = {
-		holder = 302710	#Kobyak Yimaek
+	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+		holder = 188811
+		liege = k_pechenegs_custom
 		government = tribal_government
 	}
-	869.12.4 = {
+	893.12.4 = {
 		holder = 302712	#TO_rtogul Yimaek
 	}
 	880.10.2 = {

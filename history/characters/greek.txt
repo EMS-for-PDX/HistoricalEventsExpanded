@@ -20108,7 +20108,7 @@
 	829.1.1 = { # Captured by the Arabs and crucified; probably around 829
 		death = {
 			death_reason = death_execution
-			killer = 159525 # Emir of Crete to represent the Cretan Arabs
+			killer = 159524 # Emir of Crete to represent the Cretan Arabs
 		}
 	}
 }

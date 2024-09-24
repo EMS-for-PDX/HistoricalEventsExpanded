@@ -110,7 +110,7 @@ HEE_abkhazian_usurpation.0002 = {
 		scope:tinen_of_tchikha = {
 			death = {
 				death_reason = death_execution
-				killer = scope:john_of_abkhazia # Sultan Muhammad I of Andalusia
+				killer = scope:john_of_abkhazia # 
 			}
 		}
 

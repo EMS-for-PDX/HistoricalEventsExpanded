@@ -26,10 +26,10 @@ qangar0001 = { # fictional forfather.
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	755.1.1 = {
+	495.1.1 = {
 		birth = yes
 	}
-	800.1.1 = {
+	550.1.1 = {
 		death = yes
 	}
 }
@@ -40,81 +40,181 @@ qangar0002 = {
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     father = qangar0001
-	763.1.1 = {
+	520.1.1 = {
 		birth = yes
 	}
-	839.1.1 = {
+	570.1.1 = {
 		death = yes
 	}
 }
 
-qangar0003 = {  #fictional.
-	name = "Bayça"
+qangar0003 = { 
+	name = "Kügel" #fictional.
 	dynasty_house = house_qangar # Qangar
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     father = qangar0002
-	776.1.1 = {
+	546.1.1 = {
 		birth = yes
 	}
-	848.1.1 = {
+	589.1.1 = {
 		death = yes
 	}
 }
 
-qangar0004 = {  #fictional.
-	name = "Qorqutay"
+qangar0004 = { 
+	name = "Kügel" #fictional.
 	dynasty_house = house_qangar # Qangar
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     father = qangar0003
-	805.1.1 = {
+	572.1.1 = {
 		birth = yes
 	}
-	835.1.1 = {
-		add_spouse = qangar0005
-	}
-	870.1.1 = {
+	628.1.1 = {
 		death = yes
 	}
 }
 
-qangar0005 = { #fictional.
-	name = "Ipek"
-	female = yes
+qangar0005 = { 
+	name = "Bayça" #fictional.
+	dynasty_house = house_qangar # Qangar
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-	815.1.1 = {
+    father = qangar0004
+	600.1.1 = {
 		birth = yes
 	}
-	869.1.1 = {
+	660.1.1 = {
+		death = yes
+	}
+}
+
+qangar0006 = {  #fictional.
+	name = "Qorqutay"
+	dynasty_house = house_qangar # Qangar
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = qangar0005
+	630.1.1 = {
+		birth = yes
+	}
+	685.1.1 = {
 		death = yes
 	}
 }
 
 ###############
-#Yawdi-Ertim aka Shining horses. Controlled Podolia/Yedisan/Khortitsa.
+#Yawdi-Ertim aka Tribe of the Erdem (bravery, virtue) with brilliant, shining horses. Controlled Podolia/Yedisan/Khortitsa.
 ###############
-yawdi_ertim0001 = { # fictional wife
-	name = "Ayten"
+yawdi_ertim0001 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    female = yes
-	840.1.1 = {
+	father = qangar0006
+	659.1.1 = { # Linked arbitrarily to the formation of the Kangar Union
 		birth = yes
 	}
-	900.1.1 = {
+	715.1.1 = {
 		death = yes
 	}
 }
-yawdi_ertim0002 = { # Was chief of Yawdi-Ertim at the time of the 893 expulsion from Yaik/Volga.
+
+yawdi_ertim0002 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0001
+	686.1.1 = {
+		birth = yes
+	}
+	730.1.1 = {
+		death = yes
+	}
+}
+
+yawdi_ertim0003 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0002
+	712.1.1 = {
+		birth = yes
+	}
+	765.1.1 = {
+		death = yes
+	}
+}
+
+yawdi_ertim0004 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0003
+	740.1.1 = {
+		birth = yes
+	}
+	794.1.1 = {
+		death = yes
+	}
+}
+
+yawdi_ertim0005 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0004
+	766.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+yawdi_ertim0006 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0005
+	793.1.1 = {
+		birth = yes
+	}
+	848.1.1 = { # Fictional Backstory - Fell in the battle near the Lake Aral against the Oghuz-Karluks-Kimaks alliance that occured before 850
+		death = {
+			death_reason = death_battle
+			killer = 163101
+		}
+	}
+}
+
+yawdi_ertim0007 = {
+	name = "Yavdı" # fictional
+	dynasty_house = house_yawdiertim # Yawdi-Ertim
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = yawdi_ertim0006
+	820.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+yawdi_ertim0008 = { # Was chief of Yawdi-Ertim at the time of the 893 expulsion from Yaik/Volga.
 	name = "Bayça"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = 302717
-	mother = yawdi_ertim0001
-	851.1.1 = {
+    father = yawdi_ertim0007
+	850.1.1 = {
 		birth = yes
 	}
 	905.1.1 = {
@@ -122,55 +222,54 @@ yawdi_ertim0002 = { # Was chief of Yawdi-Ertim at the time of the 893 expulsion 
 	}
 }
 
-yawdi_ertim0003 = {
+yawdi_ertim0009 = {
 	name = "Küre" # Ficitional
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = 302717
-	mother = yawdi_ertim0002
-	861.1.1 = {
+    father = yawdi_ertim0007
+	855.1.1 = {
 		birth = yes
 	}
 	910.1.1 = {
 		death = yes
 	}
 }
-yawdi_ertim0004 = {
+
+yawdi_ertim0010 = {
 	name = "Metigay" # Fictional
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = yawdi_ertim0002 # Bayça
-	866.1.1 = {
+    father = yawdi_ertim0008 # Bayça
+	868.1.1 = {
 		birth = yes
 	}
 	922.1.1 = {
 		death = yes
 	}
 }
-yawdi_ertim0005 = { # Fictional.
+
+yawdi_ertim0011 = { # Fictional.
 	name = "Küre"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = yawdi_ertim0004
+    father = yawdi_ertim0010
 	895.1.1 = {
 		birth = yes
-	}
-	918.1.1 = {
-		add_spouse=1231715
 	}
 	960.1.1 = {
 		death = yes
 	}
 }
-yawdi_ertim0006 = { # Fictional.
+
+yawdi_ertim0012 = { # Fictional.
 	name = "Bayça"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = yawdi_ertim0005
+    father = yawdi_ertim0011
 	919.1.1 = {
 		birth = yes
 	}
@@ -178,7 +277,8 @@ yawdi_ertim0006 = { # Fictional.
 		death = yes
 	}
 }
-yawdi_ertim0007 = {
+
+yawdi_ertim0013 = {
 	name = "Metigay" # Metiga/Metigay
 	dynasty_house = house_yawdiertim # Yawdi-Ertim, was chief of one of the neighbouring tribes to the Rus in 988, so has to be Küerchi-Chur or Yawdi-Ertim
 	martial=6
@@ -187,7 +287,7 @@ yawdi_ertim0007 = {
 	stewardship=5
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = yawdi_ertim0006
+    father = yawdi_ertim0012
 	949.1.1 = {
 		birth = yes
 	}
@@ -198,13 +298,13 @@ yawdi_ertim0007 = {
 		death = yes
 	}
 }
-yawdi_ertim0008 = { # Fictional.
+
+yawdi_ertim0014 = { # Fictional.
 	name = "Bayça"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-        father = yawdi_ertim0007
-        mother = 1231719
+    father = yawdi_ertim0013
 	976.1.1 = {
 		birth = yes
 	}
@@ -215,23 +315,25 @@ yawdi_ertim0008 = { # Fictional.
 		death = yes
 	}
 }
-yawdi_ertim0009 = { # Fictional.
+
+yawdi_ertim0015 = { # Fictional.
 	name = "Metigay"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0008
+    father = yawdi_ertim0014
 	1011.1.1 = {
 		birth = yes
 	}
 	1050.1.1 = {
-		add_spouse = yawdi_ertim0010
+		add_spouse = yawdi_ertim0016
 	}
 	1087.6.1 = {
 		death = yes
 	}
 }
-yawdi_ertim0010 = { # Fictional wife
+
+yawdi_ertim0016 = { # Fictional wife
 	name = "Esin"
     female = yes
 	religion = "tengri_pagan"
@@ -243,14 +345,15 @@ yawdi_ertim0010 = { # Fictional wife
 		death = yes
 	}
 }
-yawdi_ertim0011 = { # Fictional daughter
+
+yawdi_ertim0017 = { # Fictional daughter
 	name = "Sati"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
     female = yes
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0009
-    mother = yawdi_ertim0010
+    father = yawdi_ertim0015
+    mother = yawdi_ertim0016
 
 	1051.1.1 = {
 		birth = yes
@@ -259,13 +362,14 @@ yawdi_ertim0011 = { # Fictional daughter
 		death = yes
 	}
 }
-yawdi_ertim0012 = { 
+
+yawdi_ertim0018 = { 
 	name = "Bayça"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0009
-    mother = yawdi_ertim0010
+    father = yawdi_ertim0015
+    mother = yawdi_ertim0016
 	1060.1.1 = {
 		birth = yes
 	}
@@ -273,12 +377,13 @@ yawdi_ertim0012 = {
 		death = yes
 	}
 }
-yawdi_ertim0013 = { 
+
+yawdi_ertim0019 = { 
 	name = "Tatus"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0012
+    father = yawdi_ertim0018
 	1106.1.1 = {
 		birth = yes
 	}
@@ -286,12 +391,13 @@ yawdi_ertim0013 = {
 		death = yes
 	}
 }
-yawdi_ertim0014 = { 
+
+yawdi_ertim0020 = { 
 	name = "Metigay"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0013
+    father = yawdi_ertim0019
 	1132.1.1 = {
 		birth = yes
 	}
@@ -299,12 +405,13 @@ yawdi_ertim0014 = {
 		death = yes
 	}
 }
-yawdi_ertim0015 = { 
+
+yawdi_ertim0021 = { 
 	name = "Bayça"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = yawdi_ertim0014
+    father = yawdi_ertim0020
 	1166.1.1 = {
 		birth = yes
 	}
@@ -315,51 +422,46 @@ yawdi_ertim0015 = {
 
 
 #######################
-#Küerchi-Chur aka blue horses. # Controlled roughly the Zaphorie area.
+#Küerchi-Chur aka Tribe of the Čur with bluish horses. Controlled roughly the Zaphorie area.
 ###############
 kuerchi_chur0001 = {
 	name = "Tatus" # fictional
-	dynasty_house = house_qangar # Qangar
+	dynasty_house = house_kuerchichur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-	father = qangar0004
-	mother = qangar0005
-	834.1.1 = {
+	father = qangar0006
+	659.1.1 = { # Linked arbitrarily to the formation of the Kangar Union
 		birth = yes
 	}
-	853.1.1 = {
-		add_spouse=kuerchi_chur0002
-		dynasty_house = house_kuerchichur # Küerchi-Chur
-	}
-	886.1.1 = {
+	711.1.1 = {
 		death = yes
 	}
 }
 
-kuerchi_chur0002 = { # Fictional wife
-	name = "Sati"
+kuerchi_chur0002 = {
+	name = "Bayça" # fictional
+	dynasty_house = house_kuerchichur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    female = yes
-	835.1.1 = {
+	father = kuerchi_chur0001
+	687.1.1 = {
 		birth = yes
 	}
-	902.1.1 = {
+	732.1.1 = {
 		death = yes
 	}
 }
 
 kuerchi_chur0003 = {
-	name = "Kügel" # Was chief of Küerchi-Chur at the time of the 893 expulsion from Yaik/Volga.
+	name = "Kügel"
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = kuerchi_chur0001
-    mother = kuerchi_chur0002
-	854.1.1 = {
+    father = kuerchi_chur0002
+	713.1.1 = {
 		birth = yes
 	}
-	910.1.1 = {
+	769.1.1 = {
 		death = yes
 	}
 }
@@ -369,40 +471,39 @@ kuerchi_chur0004 = {
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = kuerchi_chur0001
-    mother = kuerchi_chur0002
-	873.1.1 = {
+    father = kuerchi_chur0003
+	738.1.1 = {
 		birth = yes
 	}
-	940.1.1 = {
+	787.1.1 = {
 		death = yes
 	}
 }
+
 kuerchi_chur0005 = {
 	name = "Kügel" # fictional
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    trait="chaste"
     father = kuerchi_chur0004
-	900.1.1 = {
+	767.1.1 = {
 		birth = yes
 	}
-	918.1.1 = {
+	812.1.1 = {
 		death = yes
 	}
 }
+
 kuerchi_chur0006 = {
-	name = "Küchück" # fictional brother
+	name = "Kügel" # fictional
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     father = kuerchi_chur0005
-	905.1.1 = {
+	794.1.1 = {
 		birth = yes
 	}
-
-	969.1.1 = {
+	856.1.1 = {
 		death = yes
 	}
 }
@@ -413,6 +514,62 @@ kuerchi_chur0007 = {
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     father = kuerchi_chur0006
+	820.1.1 = {
+		birth = yes
+	}
+	878.1.1 = {
+		death = yes
+	}
+}
+
+kuerchi_chur0008 = {
+	name = "Kügel" # Was chief of Küerchi-Chur at the time of the 893 expulsion from Yaik/Volga.
+	dynasty_house = house_kuerchichur # Küerchi-Chur
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = kuerchi_chur0007
+	848.1.1 = {
+		birth = yes
+	}
+	907.1.1 = {
+		death = yes
+	}
+}
+
+kuerchi_chur0009 = {
+	name = "Kügel" # fictional
+	dynasty_house = house_kuerchichur # Küerchi-Chur
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = kuerchi_chur0008
+	875.1.1 = {
+		birth = yes
+	}
+	920.1.1 = {
+		death = yes
+	}
+}
+
+kuerchi_chur0010 = {
+	name = "Küchück" # fictional brother
+	dynasty_house = house_kuerchichur # Küerchi-Chur
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = kuerchi_chur0009
+	905.1.1 = {
+		birth = yes
+	}
+	969.1.1 = {
+		death = yes
+	}
+}
+
+kuerchi_chur0011 = {
+	name = "Kügel" # fictional
+	dynasty_house = house_kuerchichur # Küerchi-Chur
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = kuerchi_chur0010
 	934.1.1 = {
 		birth = yes
 	}
@@ -421,12 +578,12 @@ kuerchi_chur0007 = {
 	}
 }
 
-kuerchi_chur0008 = {
+kuerchi_chur0012 = {
 	name = "Küchük" # Kuchug/Küchük chief of one of the neighbouring tribes to the Rus in 991, so has to be Küerchi-Chur or Yawdi-Ertim
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = kuerchi_chur0007
+    father = kuerchi_chur0011
 	960.1.1 = {
 		birth = yes
 	}
@@ -437,23 +594,25 @@ kuerchi_chur0008 = {
 		death = yes
 	}
 }
-kuerchi_chur0009 = {
+
+kuerchi_chur0013 = {
 	name = "Kügel" # fictional
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = kuerchi_chur0008
+    father = kuerchi_chur0012
 	992.1.1 = {
 		birth = yes
 	}
 	1026.1.1 = {
-		add_spouse=kuerchi_chur0010
+		add_spouse=kuerchi_chur0014
 	}
 	1059.1.1 = {
 		death = yes
 	}
 }
-kuerchi_chur0010 = { # Fictional wife
+
+kuerchi_chur0014 = { # Fictional wife
 	name = "Yildiz"
 	female = yes
 	religion = "tengri_pagan"
@@ -465,13 +624,14 @@ kuerchi_chur0010 = { # Fictional wife
 		death = yes
 	}
 }
-kuerchi_chur0011 = {
+
+kuerchi_chur0015 = {
 	name = "Küchük" # fictional
 	dynasty_house = house_kuerchichur # Küerchi-Chur
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = kuerchi_chur0009
-    mother = kuerchi_chur0010
+    father = kuerchi_chur0013
+    mother = kuerchi_chur0014
 	1029.1.1 = {
 		birth = yes
 	}
@@ -479,31 +639,129 @@ kuerchi_chur0011 = {
 		death = yes
 	}
 }
+
+
 #######################
 #Qabuqsin-Yula aka bark colored horses. # Controlled the Licomorie and north Crimea.
 ###############
 qabuqsin_yula0001 = {
-	name = "Qorqutay" # aka Qorqut-tay, was chief of Qabuqsin-Yula at the time of the 893 expulsion from Yaik/Volga.
-	dynasty_house = house_qangar # Qangar
+	name = "Qorqutay"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	trait="education_martial_3"
-	father = qangar0004
-	mother = qangar0005
+	father = qangar0006
+	659.1.1 = { # Linked arbitrarily to the formation of the Kangar Union
+		birth = yes
+	}
+	717.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0002 = {
+	name = "Küre"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0001
+	687.1.1 = {
+		birth = yes
+	}
+	739.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0003 = {
+	name = "Qorqutay"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0002
+	714.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0004 = {
+	name = "Küre"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0003
+	740.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0005 = {
+	name = "Qorqutay"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0004
+	766.1.1 = {
+		birth = yes
+	}
+	813.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0006 = {
+	name = "Küre"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0005
+	791.1.1 = {
+		birth = yes
+	}
+	833.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0007 = {
+	name = "Qorqutay"
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qabuqsin_yula0006
+	815.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+
+qabuqsin_yula0008 = {
+	name = "Qorqutay" # aka Qorqut-tay, was chief of Qabuqsin-Yula at the time of the 893 expulsion from Yaik/Volga.
+	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	trait="education_martial_3"
+	father = qabuqsin_yula0007
 	842.1.1 = {
 		birth = yes
 	}
 	864.1.1 = {
-		add_spouse=1231741
-	}
-	867.1.1 = {
-		dynasty_house = house_qabuqyula # Qabuqsin-Yula
+		add_spouse = qabuqsin_yula0009
 	}
 	914.1.1 = {
 		death = yes
 	}
 }
-qabuqsin_yula0002 = { # Fictional wife
+
+qabuqsin_yula0009 = { # Fictional wife
 	name = "Yildiz"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -515,13 +773,14 @@ qabuqsin_yula0002 = { # Fictional wife
 		death = yes
 	}
 }
-qabuqsin_yula0003 = {
+
+qabuqsin_yula0010 = {
 	name = "Küre" # fictional
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
     religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0001
-    mother = qabuqsin_yula0002
+    father = qabuqsin_yula0008
+    mother = qabuqsin_yula0009
 	866.1.1 = {
 		birth = yes
 	}
@@ -531,12 +790,12 @@ qabuqsin_yula0003 = {
 	}
 }
 
-qabuqsin_yula0004 = {
+qabuqsin_yula0011 = {
 	name = "Qorqutay" # fictional
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
     religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0003
+    father = qabuqsin_yula0010
 	898.1.1 = {
 		birth = yes
 	}
@@ -545,12 +804,12 @@ qabuqsin_yula0004 = {
 	}
 }
 
-qabuqsin_yula0005 = {
+qabuqsin_yula0012 = {
 	name = "Kegen" # fictional brother
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
     religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0004
+    father = qabuqsin_yula0011
 	910.1.1 = {
 		birth = yes
 	}	
@@ -559,7 +818,7 @@ qabuqsin_yula0005 = {
 	}
 }
 
-qabuqsin_yula0006 = {
+qabuqsin_yula0013 = {
 	name = "Küre" # Kurya/Küre "Khan" 970, going by his demense he had to have been a Qangar.
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	trait="deceitful"
@@ -568,7 +827,7 @@ qabuqsin_yula0006 = {
 	trait="education_martial_3"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0005
+    father = qabuqsin_yula0012
 	940.1.1 = {
 		birth = yes
 	}
@@ -577,12 +836,12 @@ qabuqsin_yula0006 = {
 	}
 }
 
-qabuqsin_yula0007 = {
+qabuqsin_yula0014 = {
 	name = "Qorqutay" # fictional
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
     religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0006
+    father = qabuqsin_yula0013
 	968.1.1 = {
 		birth = yes
 	}
@@ -591,7 +850,7 @@ qabuqsin_yula0007 = {
 	}
 }
 
-qabuqsin_yula0008 = {
+qabuqsin_yula0015 = {
 	name = "Küre" # fictional
 	dynasty_house = house_qabuqyula
 	religion = "tengri_pagan"
@@ -599,24 +858,25 @@ qabuqsin_yula0008 = {
 	trait="arrogant"
 	trait="brave"
 	trait="education_martial_3"
-    father = qabuqsin_yula0007
+    father = qabuqsin_yula0014
 	1005.1.1 = {
 		birth = yes
 	}
 	1029.1.1 = {
-		add_spouse=qabuqsin_yula0010
+		add_spouse=qabuqsin_yula0017
 	}
 	1046.1.1 = {
 		death = yes
 	}
 }
-qabuqsin_yula0009 = { # Fictional sister
+
+qabuqsin_yula0016 = { # Fictional sister
 	name = "Mala"
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     female = yes
-    father = qabuqsin_yula0007
+    father = qabuqsin_yula0014
 	1007.1.1 = {
 		birth = yes
 	}
@@ -624,7 +884,8 @@ qabuqsin_yula0009 = { # Fictional sister
 		death = yes
 	}
 }
-qabuqsin_yula0010 = {
+
+qabuqsin_yula0017 = {
 	name = "Dilek" # Fictional wife
 	religion = "manichean"
 	culture = "pecheneg"
@@ -636,13 +897,14 @@ qabuqsin_yula0010 = {
 		death = yes
 	}
 }
-qabuqsin_yula0011 = {
+
+qabuqsin_yula0018 = {
 	name = "Küre" # fictional
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0008
-    mother = qabuqsin_yula0010
+    father = qabuqsin_yula0015
+    mother = qabuqsin_yula0017
 	1030.1.1 = {
 		birth = yes
 	}
@@ -650,13 +912,14 @@ qabuqsin_yula0011 = {
 		death = yes
 	}
 }
-qabuqsin_yula0012 = {
+
+qabuqsin_yula0019 = {
 	name = "Soultzous" # chieftan attested 1047-1049, RL tribal relation unknown.
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qabuqsin_yula0008
-    mother = qabuqsin_yula0010
+    father = qabuqsin_yula0015
+    mother = qabuqsin_yula0017
 	1031.1.1 = {
 		birth = yes
 	}
@@ -667,14 +930,15 @@ qabuqsin_yula0012 = {
 		death = yes
 	}
 }
-qabuqsin_yula0013 = {
+
+qabuqsin_yula0020 = {
 	name = "Irge" # fictional sister
+    female = yes
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
+    father = qabuqsin_yula0015
+    mother = qabuqsin_yula0017
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = qabuqsin_yula0008
-    mother = qabuqsin_yula0010
-    female = yes
 	1036.1.1 = {
 		birth = yes
 	}
@@ -683,12 +947,12 @@ qabuqsin_yula0013 = {
 	}
 }
 
-qabuqsin_yula0013 = {
+qabuqsin_yula0021 = {
 	name = "Küre" # fictional
 	dynasty_house = house_qabuqyula # Qabuqsin-Yula
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = qabuqsin_yula0012 
+    father = qabuqsin_yula0018 
 	1070.1.1 = {
 		birth = yes
 	}
@@ -725,31 +989,187 @@ surukulbej0001 = { # Fictional
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	758.1.1 = {
+	496.1.1 = {
 		birth = yes
 	}
-	846.1.1 = {
+	550.1.1 = {
 		death = yes
 	}
 }
+
 surukulbej0002 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0001
+	524.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0003 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0002
+	550.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0004 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0003
+	578.1.1 = {
+		birth = yes
+	}
+	621.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0005 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0004
+	605.1.1 = {
+		birth = yes
+	}
+	666.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0006 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0005
+	630.1.1 = {
+		birth = yes
+	}
+	690.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0007 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0006
+	657.1.1 = {
+		birth = yes
+	}
+	705.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0008 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0007
+	685.1.1 = {
+		birth = yes
+	}
+	739.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0009 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0008
+	712.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0010 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0009
+	740.1.1 = {
+		birth = yes
+	}
+	768.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0011 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0010
+	765.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0012 = { # Fictional
+	name = "Tatus"
+	dynasty_house = house_surukulbej # Suru-Külbej 
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = surukulbej0011
+	790.1.1 = {
+		birth = yes
+	}
+	852.1.1 = {
+		death = yes
+	}
+}
+
+surukulbej0013 = { # Fictional
 	name = "Tiraq"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	trait="education_martial_3"
-	father = surukulbej0001
+	father = surukulbej0012
 	830.1.1 = {
 		birth = yes
 	}
 	856.1.1 = {
-		add_spouse=surukulbej0003
+		add_spouse = surukulbej0014
 	}
 	892.1.1 = {
 		death = yes
 	}
 }
-surukulbej0003 = { # Fictional wife
+
+surukulbej0014 = { # Fictional wife
 	name = "Mala"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -761,31 +1181,32 @@ surukulbej0003 = { # Fictional wife
 		death = yes
 	}
 }
-surukulbej0004 = { # Was chief of Suru-Külbej at the time of the 893 expulsion from Yaik/Volga.
+
+surukulbej0015 = { # Was chief of Suru-Külbej at the time of the 893 expulsion from Yaik/Volga.
 	name = "Ipoch"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0002
-    mother = surukulbej0003
+    father = surukulbej0013
+    mother = surukulbej0014
 	857.1.1 = {
 		birth = yes
 	}
 	884.1.1 = {
-		add_spouse=surukulbej0006
+		add_spouse = surukulbej0017
 	}
 	923.1.1 = {
 		death = yes
 	}
 }
-surukulbej0005 = { # Fictional sister
+surukulbej0016 = { # Fictional sister
 	name = "Mala"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
     female = yes
-    father = surukulbej0002
-    mother = surukulbej0003
+    father = surukulbej0013
+    mother = surukulbej0014
 	859.1.1 = {
 		birth = yes
 	}
@@ -793,7 +1214,7 @@ surukulbej0005 = { # Fictional sister
 		death = yes
 	}
 }
-surukulbej0006 = { # Fictional wife
+surukulbej0017 = { # Fictional wife
 	name = "Irge"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -805,13 +1226,13 @@ surukulbej0006 = { # Fictional wife
 		death = yes
 	}
 }
-surukulbej0007 = { # Fictional
+surukulbej0018 = { # Fictional
 	name = "Tiraq"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0004
-    mother = surukulbej0006
+    father = surukulbej0015
+    mother = surukulbej0017
 	889.1.1 = {
 		birth = yes
 	}
@@ -820,12 +1241,12 @@ surukulbej0007 = { # Fictional
 	}
 }
 
-surukulbej0008 = { # fictional
+surukulbej0019 = { # fictional
 	name = "Tatus"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0007
+    father = surukulbej0018
 	914.1.1 = {
 		birth = yes
 	}
@@ -834,12 +1255,12 @@ surukulbej0008 = { # fictional
 	}
 }
 
-surukulbej0009 = { # fictional
+surukulbej0020 = { # fictional
 	name = "Tatus"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0008
+    father = surukulbej0019
 	940.1.1 = {
 		birth = yes
 	}
@@ -848,12 +1269,12 @@ surukulbej0009 = { # fictional
 	}
 }
 
-surukulbej0010 = { # fictional
+surukulbej0021 = { # fictional
 	name = "Tiraq"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0009
+    father = surukulbej0020
 	971.1.1 = {
 		birth = yes
 	}
@@ -862,12 +1283,12 @@ surukulbej0010 = { # fictional
 	}
 }
 
-surukulbej0011 = { # father of Tiraq
+surukulbej0022 = { # father of Tiraq
 	name = "Bilter"
 	dynasty_house = house_surukulbej # Suru-Külbej 
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-        father = surukulbej0010
+        father = surukulbej0021
 	991.1.1 = {
 		birth = yes
 	}
@@ -876,7 +1297,7 @@ surukulbej0011 = { # father of Tiraq
 	}
 }
 
-surukulbej0012 = { # https://en.wikipedia.org/wiki/Tyrach
+surukulbej0023 = { # https://en.wikipedia.org/wiki/Tyrach
 	name = "Tiraq" #Tyrach/Tirakha/Tiraq Khan from 1030ish, 
 	dynasty_house = house_surukulbej # Suru-Külbej # since he converted to Islam he must have belonged to one of the easternmost tribes.
 	martial=3
@@ -889,12 +1310,12 @@ surukulbej0012 = { # https://en.wikipedia.org/wiki/Tyrach
 	trait="education_martial_3"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = surukulbej0011
+    father = surukulbej0022
 	1015.1.1 = {
 		birth = yes
 	}
 	1035.1.1 = {
-		add_spouse=surukulbej0013
+		add_spouse = surukulbej0024
 	}
 	1035.1.1 = {
 		religion = "maturidi"
@@ -906,7 +1327,8 @@ surukulbej0012 = { # https://en.wikipedia.org/wiki/Tyrach
 		death = yes
 	}
 }
-surukulbej0013 = { # Fictional wife
+
+surukulbej0024 = { # Fictional wife
 	name = "Irge"
 	religion = "maturidi"
 	culture = "pecheneg"
@@ -918,13 +1340,14 @@ surukulbej0013 = { # Fictional wife
 		death = yes
 	}
 }
-surukulbej0014 = {
+
+surukulbej0025 = {
 	name = "Tzegul" # Tzegul # Controlled Paristrion in 1086.
 	dynasty_house = house_surukulbej # Suru-Külbej
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = surukulbej0012
-    mother = surukulbej0013
+    father = surukulbej0023
+    mother = surukulbej0024
 	trait="brave"
 	trait="just" # the byzzies(Anna Commenus) were surprisingly fond of Tzegul depsite being invaded by him. Very out of character that she decribes "babarians" in the manner she does with him.
 	trait="education_martial_3"
@@ -938,7 +1361,8 @@ surukulbej0014 = {
 		death = yes
 	}
 }
-surukulbej0015 = {
+
+surukulbej0026 = {
 	name = "Tatus" # Tatus/Tatos/Tatrys
 	dynasty_house = house_surukulbej # Suru-Külbej
 	martial=7
@@ -950,7 +1374,7 @@ surukulbej0015 = {
 	trait="generous"
 	trait="gluttonous"
 	trait="education_martial_2"
-    father = surukulbej0014 #Tyrach/Tirakha/Tiraq # Almost have to be related given the location of Tatrys personal demense in Paristion.
+    father = surukulbej0023 #Tyrach/Tirakha/Tiraq # Almost have to be related given the location of Tatrys personal demense in Paristion.
 	1039.1.1 = {
 		birth="1039.1.1"
 	}
@@ -958,13 +1382,14 @@ surukulbej0015 = {
 		religion = "orthodox"
 	}
 	1064.1.1 = {
-		add_spouse=surukulbej0016
+		add_spouse = surukulbej0027
 	}
 	1091.4.29 = { # battle of Levounion
 		death = yes
 	}
 }
-surukulbej0016 = { # Fictional wife
+
+surukulbej0027 = { # Fictional wife
 	name = "Irge"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -979,13 +1404,14 @@ surukulbej0016 = { # Fictional wife
 		death = yes
 	}
 }
-surukulbej0017 = {
+
+surukulbej0028 = {
 	name = "Chalis" # might have been same person as Tatrys.
 	dynasty_house = house_surukulbej # Suru-Külbej
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = surukulbej0015 # Tatus/Tatos/Tatrys
-    mother = surukulbej0016
+    father = surukulbej0026 # Tatus/Tatos/Tatrys
+    mother = surukulbej0027
 	1065.1.1 = {
 		birth = yes
 	}
@@ -993,13 +1419,14 @@ surukulbej0017 = {
 		death = yes
 	}
 }
-surukulbej0018 = {
+
+surukulbej0029 = {
 	name = "Tatus" # 
 	dynasty_house = house_surukulbej # Suru-Külbej
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = surukulbej0015 # Tatus/Tatos/Tatrys
-    mother = surukulbej0016
+    father = surukulbej0026 # Tatus/Tatos/Tatrys
+    mother = surukulbej0027
 	1088.1.1 = {
 		birth = yes
 	}
@@ -1008,13 +1435,13 @@ surukulbej0018 = {
 	}
 }
 
-surukulbej0019 = {
+surukulbej0030 = {
 	name = "Tura" # Fictional sister of Tzegul, second wife of Traulos is mentioned as the daughter of a Pecheneg leader
 	female = yes
 	dynasty_house = house_surukulbej # Suru-Külbej
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = surukulbej0014
+    father = surukulbej0025
 	1050.1.1 = {
 		birth = yes
 	}
@@ -1025,7 +1452,7 @@ surukulbej0019 = {
 
 
 ###########################
-#Qara-Bay # Black horses Controlled Bassarabia.
+#Qara-Bay aka Tribe of the Bey with black horses. Controlled Bassarabia.
 ###############
 qarabay0001 = {
 	name = "Kajdan" # fictional
@@ -1033,30 +1460,172 @@ qarabay0001 = {
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	761.1.1 = {
+	497.1.1 = {
 		birth = yes
 	}
-	844.1.1 = {
+	560.1.1 = {
 		death = yes
 	}
 }
+
 qarabay0002 = {
-	name = "Küchük" # fictional
+	name = "Kajdan" # fictional
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = qarabay0001
+	523.1.1 = {
+		birth = yes
+	}
+	570.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0003 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0002
+	550.1.1 = {
+		birth = yes
+	}
+	605.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0004 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0003
+	575.1.1 = {
+		birth = yes
+	}
+	630.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0005 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0004
+	603.1.1 = {
+		birth = yes
+	}
+	660.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0006 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0005
+	630.1.1 = {
+		birth = yes
+	}
+	677.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0007 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0006
+	658.1.1 = {
+		birth = yes
+	}
+	702.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0008 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0007
+	686.1.1 = {
+		birth = yes
+	}
+	737.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0009 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0008
+	717.1.1 = {
+		birth = yes
+	}
+	762.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0010 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0009
+	744.1.1 = {
+		birth = yes
+	}
+	785.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0011 = {
+	name = "Kajdan" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0010
+	780.1.1 = {
+		birth = yes
+	}
+	840.1.1 = {
+		death = yes
+	}
+}
+
+qarabay0012 = {
+	name = "Küchük" # fictional
+	dynasty_house = house_qarabay # Qara-Bay
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = qarabay0011
 	808.1.1 = {
 		birth = yes
 	}
 	849.1.1 = {
-		add_spouse=qarabay0003
+		add_spouse = qarabay0013
 	}
 	890.1.1 = {
 		death = yes
 	}
 }
-qarabay0003 = { # Fictional wife
+
+qarabay0013 = { # Fictional wife
 	name = "Tekçe"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -1068,13 +1637,14 @@ qarabay0003 = { # Fictional wife
 		death = yes
 	}
 }
-qarabay0004 = {
+
+qarabay0014 = {
 	name = "Kajdan" # Was chief of Qara-Bay at the time of the 893 expulsion from Yaik/Volga.
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-	father = qarabay0002
-	mother = qarabay0003
+	father = qarabay0012
+	mother = qarabay0013
 	851.1.1 = {
 		birth = yes
 	}
@@ -1082,12 +1652,13 @@ qarabay0004 = {
 		death = yes
 	}
 }
-qarabay0005 = {
+
+qarabay0015 = {
 	name = "Kazar" # fictional. 
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0004
+    father = qarabay0014
 	888.1.1 = {
 		birth = yes
 	}
@@ -1095,12 +1666,12 @@ qarabay0005 = {
 		death = yes
 	}
 }
-qarabay0006 = {
+qarabay0016 = {
 	name = "Kajdan" # fictional
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0005
+    father = qarabay0015
 	917.1.1 = {
 		birth = yes
 	}
@@ -1109,12 +1680,12 @@ qarabay0006 = {
 	}
 }
 
-qarabay0007 = {
+qarabay0017 = {
 	name = "Kazar" # fictional
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0006
+    father = qarabay0016
 	950.1.1 = {
 		birth = yes
 	}
@@ -1123,12 +1694,12 @@ qarabay0007 = {
 	}
 }
 
-qarabay0008 = {
+qarabay0018 = {
 	name = "Kajdan" # fictional
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0007
+    father = qarabay0017
 	973.1.1 = {
 		birth = yes
 	}
@@ -1137,12 +1708,12 @@ qarabay0008 = {
 	}
 }
 
-qarabay0009 = {
+qarabay0019 = {
 	name = "Kazar" # fictional
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0008
+    father = qarabay0018
 	1001.1.1 = {
 		birth = yes
 	}
@@ -1151,12 +1722,12 @@ qarabay0009 = {
 	}
 }
 
-qarabay0010 = {
+qarabay0020 = {
 	name = "Selte" # chieftan attested 1047-1049, RL tribal relation unknown.
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = qarabay0009
+    father = qarabay0019
 	1029.1.1 = {
 		birth = yes
 	}
@@ -1164,17 +1735,18 @@ qarabay0010 = {
 		religion = "orthodox" # was baptised after his defeat
 	}
 	1060.1.1 = {
-		add_spouse=qarabay0011
+		add_spouse = qarabay0021
 	}
 	1068.1.1 = {
 		death=yes # Ozuls campaign
 	}
 }
-qarabay0011 = { # Fictional wife
+
+qarabay0021 = { # Fictional wife
 	name = "Özgul"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-        female = yes
+    female = yes
 	1039.1.1 = {
 		birth = yes
 	}
@@ -1185,13 +1757,14 @@ qarabay0011 = { # Fictional wife
 		death = yes
 	}
 }
-qarabay0012 = {
+
+qarabay0022 = {
 	name = "Kazar" # Pecheng cheif last half of 11th century, invaded Transylvania.
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = qarabay0010
-    mother = qarabay0011
+    father = qarabay0020
+    mother = qarabay0021
 	1061.1.1 = {
 		birth = yes
 	}
@@ -1200,18 +1773,18 @@ qarabay0012 = {
 	}
 }
 
-qarabay0013 = {
+qarabay0023 = {
 	name = "Kajdan" #fictional son
 	dynasty_house = house_qarabay # Qara-Bay
 	religion = "orthodox"
 	culture = "pecheneg"
-    father = qarabay0012
+    father = qarabay0022
 	1080.1.1 = {
 		birth = yes
 	}
-	1100.1.1 = {
-		add_spouse=1231838
-	}
+	# 1100.1.1 = {
+	# 	add_spouse = 1231838
+	# }
 	1123.1.1 = {
 		death=yes # last invasion of the byzzies
 	}
@@ -1227,7 +1800,7 @@ yaziqapan0001 = {
 	religion = "manichean"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	768.1.1 = {
+	498.1.1 = {
 		birth = yes
 	}
 	838.1.1 = {
@@ -1235,25 +1808,165 @@ yaziqapan0001 = {
 	}
 }
 
-yaziqapan0002 = {
+yaziqapan0003 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0001
+	525.1.1 = {
+		birth = yes
+	}
+	580.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0004 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0003
+	552.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0005 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0004
+	580.1.1 = {
+		birth = yes
+	}
+	626.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0006 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0005
+	608.1.1 = {
+		birth = yes
+	}
+	663.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0007 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0006
+	634.1.1 = {
+		birth = yes
+	}
+	693.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0008 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0007
+	661.1.1 = {
+		birth = yes
+	}
+	663.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0009 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0008
+	690.1.1 = {
+		birth = yes
+	}
+	663.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0010 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0009
+	720.1.1 = {
+		birth = yes
+	}
+	779.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0011 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0010
+	747.1.1 = {
+		birth = yes
+	}
+	800.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0012 = {
+	name = "Osul" # fictional
+	dynasty_house = house_yaziqapan # Yazi-Qapan
+	religion = "manichean"
+	culture = "pecheneg"
+	father = yaziqapan0011
+	774.1.1 = {
+		birth = yes
+	}
+	841.1.1 = {
+		death = yes
+	}
+}
+
+yaziqapan0013 = {
 	name = "Balgor" # fictional
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
 	trait="education_martial_3"
-	father = yaziqapan0001
+	father = yaziqapan0012
 	803.1.1 = {
 		birth = yes
 	}
 	849.1.1 = {
-		add_spouse = yaziqapan0003
+		add_spouse = yaziqapan0014
 	}
 	878.1.1 = {
 		death = yes
 	}
 }
 
-yaziqapan0003 = { # Fictional wife
+yaziqapan0014 = { # Fictional wife
 	name = "Sati"
 	religion = "tengri_pagan"
 	culture = "pecheneg"
@@ -1266,13 +1979,13 @@ yaziqapan0003 = { # Fictional wife
 	}
 }
 
-yaziqapan0004 = {
+yaziqapan0015 = {
 	name = "Yazi" # Was chief of Yazi-Qapan at the time of the 893 expulsion from Yaik/Volga.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-	father = yaziqapan0002
-	mother = yaziqapan0003
+	father = yaziqapan0013
+	mother = yaziqapan0014
 	852.1.1 = {
 		birth = yes
 	}
@@ -1281,12 +1994,12 @@ yaziqapan0004 = {
 	}
 }
 
-yaziqapan0005 = {
+yaziqapan0016 = {
 	name = "Osul" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0004
+    father = yaziqapan0015
 	880.1.1 = {
 		birth = yes
 	}
@@ -1295,12 +2008,12 @@ yaziqapan0005 = {
 	}
 }
 
-yaziqapan0006 = {
+yaziqapan0017 = {
 	name = "Yazi" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0005
+    father = yaziqapan0016
 	909.1.1 = {
 		birth = yes
 	}
@@ -1309,12 +2022,12 @@ yaziqapan0006 = {
 	}
 }
 
-yaziqapan0007 = {
+yaziqapan0018 = {
 	name = "Osul" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0006
+    father = yaziqapan0017
 	934.1.1 = {
 		birth = yes
 	}
@@ -1323,12 +2036,12 @@ yaziqapan0007 = {
 	}
 }
 
-yaziqapan0008 = {
+yaziqapan0019 = {
 	name = "Yazi" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0007
+    father = yaziqapan0018
 	962.1.1 = {
 		birth = yes
 	}
@@ -1337,12 +2050,12 @@ yaziqapan0008 = {
 	}
 }
 
-yaziqapan0009 = {
+yaziqapan0020 = {
 	name = "Osul" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0008
+    father = yaziqapan0019
 	991.1.1 = {
 		birth = yes
 	}
@@ -1351,12 +2064,12 @@ yaziqapan0009 = {
 	}
 }
 
-yaziqapan0010 = {
+yaziqapan0021 = {
 	name = "Yazi" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0009
+    father = yaziqapan0020
 	1012.1.1 = {
 		birth = yes
 	}
@@ -1365,23 +2078,24 @@ yaziqapan0010 = {
 	}
 }
 
-yaziqapan0011 = {
+yaziqapan0022 = {
 	name = "Osul" # Ruled Wallachia in 1086
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0010
+    father = yaziqapan0021
 	1047.1.1 = {
 		birth = yes
 	}
 	1067.1.1 = {
-		add_spouse = yaziqapan0012
+		add_spouse = yaziqapan0023
 	}
 	1094.1.1 = {
 		death = yes
 	}
 }
-yaziqapan0012 = { # Fictional wife
+
+yaziqapan0023 = { # Fictional wife
 	name = "Gunduz"
 	religion = "manichean"
 	culture = "pecheneg"
@@ -1393,13 +2107,14 @@ yaziqapan0012 = { # Fictional wife
 		death = yes
 	}
 }
-yaziqapan0013 = {
+
+yaziqapan0024 = {
 	name = "Yazi" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0011
-    mother = yaziqapan0012
+    father = yaziqapan0022
+    mother = yaziqapan0023
 	1073.1.1 = {
 		birth = yes
 	}
@@ -1408,14 +2123,14 @@ yaziqapan0013 = {
 	}
 }
 
-yaziqapan0014 = { # Fictional sister
+yaziqapan0025 = { # Fictional sister
 	name = "Gunduz"
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
     female = yes
-    father = yaziqapan0011
-    mother = yaziqapan0012
+    father = yaziqapan0022
+    mother = yaziqapan0023
 	1080.1.1 = {
 		birth = yes
 	}
@@ -1424,12 +2139,12 @@ yaziqapan0014 = { # Fictional sister
 	}
 }
 
-yaziqapan0015 = {
+yaziqapan0026 = {
 	name = "Osul" # fictional.
 	dynasty_house = house_yaziqapan # Yazi-Qapan
 	religion = "manichean"
 	culture = "pecheneg"
-    father = yaziqapan0013
+    father = yaziqapan0025
 	1105.1.1 = {
 		birth = yes
 	}
@@ -1448,38 +2163,192 @@ borutolmach0001 = {
 	religion = "manichean"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	780.1.1 = {
+	499.1.1 = {
 		birth = yes
 	}
-	860.1.1 = {
+	555.1.1 = {
 		death = yes
 	}
 }
 
 borutolmach0002 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0001
+	526.1.1 = {
+		birth = yes
+	}
+	579.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0003 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0002
+	553.1.1 = {
+		birth = yes
+	}
+	600.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0004 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0003
+	579.1.1 = {
+		birth = yes
+	}
+	623.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0005 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0004
+	608.1.1 = {
+		birth = yes
+	}
+	579.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0006 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0005
+	637.1.1 = {
+		birth = yes
+	}
+	688.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0007 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0006
+	665.1.1 = {
+		birth = yes
+	}
+	722.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0008 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0007
+	692.1.1 = {
+		birth = yes
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0009 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0008
+	720.1.1 = {
+		birth = yes
+	}
+	781.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0010 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0009
+	747.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0011 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0010
+	780.1.1 = {
+		birth = yes
+	}
+	824.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0012 = {
+	name = "Satza" 
+	dynasty_house = house_borutolmach # Boru-Tolmach
+	religion = "manichean"
+	culture = "pecheneg"
+	father = borutolmach0011
+	809.1.1 = {
+		birth = yes
+	}
+	868.1.1 = {
+		death = yes
+	}
+}
+
+borutolmach0013 = {
 	name = "Sagay" # Was chief of Boru-Tolmach at the time of the 893 expulsion from Yaik/Volga.
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
 	trait="education_martial_3"
-	father = borutolmach0001
-	838.1.1 = {
+	father = borutolmach0012
+	840.1.1 = {
 		birth = yes
 	}
-	874.1.1 = {
-		add_spouse=borutolmach0003
+	867.1.1 = {
+		add_spouse = borutolmach0014
 	}
 	896.1.1 = {
 		death = yes
 	}
 }
 
-borutolmach0003 = { # Fictional wife
+borutolmach0014 = { # Fictional wife
 	name = "Gunduz"
 	religion = "manichean"
 	culture = "pecheneg"
-        female = yes
-	853.1.1 = {
+    female = yes
+	845.1.1 = {
 		birth = yes
 	}
 	929.1.1 = {
@@ -1487,13 +2356,13 @@ borutolmach0003 = { # Fictional wife
 	}
 }
 
-borutolmach0004 = {
+borutolmach0015 = {
 	name = "Satza" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0002
-    mother = borutolmach0003
+    father = borutolmach0013
+    mother = borutolmach0014
 	876.1.1 = {
 		birth = yes
 	}
@@ -1502,12 +2371,12 @@ borutolmach0004 = {
 	}
 }
 
-borutolmach0005 = {
+borutolmach0016 = {
 	name = "Sagay" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0004
+    father = borutolmach0015
 	903.1.1 = {
 		birth = yes
 	}
@@ -1516,12 +2385,12 @@ borutolmach0005 = {
 	}
 }
 
-borutolmach0006 = {
+borutolmach0017 = {
 	name = "Satza" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0005
+    father = borutolmach0016
 	925.1.1 = {
 		birth = yes
 	}
@@ -1530,12 +2399,12 @@ borutolmach0006 = {
 	}
 }
 
-borutolmach0007 = {
+borutolmach0018 = {
 	name = "Sagay" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0006
+    father = borutolmach0017
 	954.1.1 = {
 		birth = yes
 	}
@@ -1544,12 +2413,12 @@ borutolmach0007 = {
 	}
 }
 
-borutolmach0008 = {
+borutolmach0019 = {
 	name = "Satza" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0007
+    father = borutolmach0018
 	976.1.1 = {
 		birth = yes
 	}
@@ -1558,12 +2427,12 @@ borutolmach0008 = {
 	}
 }
 
-borutolmach0009 = {
+borutolmach0020 = {
 	name = "Sagay" # fictional
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0008
+    father = borutolmach0019
 	1000.1.1 = {
 		birth = yes
 	}
@@ -1572,24 +2441,24 @@ borutolmach0009 = {
 	}
 }
 
-borutolmach0010 = {
+borutolmach0021 = {
 	name = "Sagay" # fictional brother
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0009
+    father = borutolmach0020
 	1024.1.1 = {
 		birth = yes
 	}
 	1049.1.1 = {
-		add_spouse = borutolmach0011
+		add_spouse = borutolmach0022
 	}
 	1065.1.1 = {
 		death = yes
 	}
 }
 
-borutolmach0011 = { # Fictional wife
+borutolmach0022 = { # Fictional wife
 	name = "Tekçe"
 	religion = "manichean"
 	culture = "pecheneg"
@@ -1602,13 +2471,13 @@ borutolmach0011 = { # Fictional wife
 	}
 }
 
-borutolmach0012 = {
+borutolmach0023 = {
 	name = "Satza" # was one of two chiefs in Dobruja in 1091
 	dynasty_house = house_borutolmach # Boru-Tolmach
 	religion = "manichean"
 	culture = "pecheneg"
-    father = borutolmach0010
-    mother = borutolmach0011
+    father = borutolmach0021
+    mother = borutolmach0022
 	1050.1.1 = {
 		birth = yes
 	}
@@ -1627,57 +2496,52 @@ bulachopan0001 = {
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = 1000230122 #To connect to the Oghuz. In truth this split likely occured hundreds of years earlier but I'd rather just use the 24 tribe characters HIP added and not change a ton of dates
-	785.1.1 = {
+	500.1.1 = {
 		birth = yes
 	}
-	845.1.1 = {
+	561.1.1 = {
 		death = yes
 	}
 }
 
 bulachopan0002 = {
-	name = "Sagay" # fictional
+	name = "Sethlav" # fictional
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-	trait="education_martial_3"
 	father = bulachopan0001
-	830.1.1 = {
+	524.1.1 = {
 		birth = yes
 	}
-	850.1.1 = {
-		add_spouse=bulachopan0003
-	}
-	882.1.1 = {
+	580.1.1 = {
 		death = yes
 	}
 }
 
-bulachopan0003 = { # Fictional wife
-	name = "C_iltanesi"
+bulachopan0003 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-        female = yes
-	832.1.1 = {
+	father = bulachopan0002
+	551.1.1 = {
 		birth = yes
 	}
-	893.1.1 = {
+	600.1.1 = {
 		death = yes
 	}
 }
 
 bulachopan0004 = {
-	name = "Bota" # Was chief of Bula-Chopan at the time of the 893 expulsion from Yaik/Volga.
+	name = "Sethlav" # fictional
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-	trait="education_martial_3"
-	father = bulachopan0002
-	mother = bulachopan0003
-	851.1.1 = {
+	father = bulachopan0003
+	576.1.1 = {
 		birth = yes
 	}
-	911.1.1 = {
+	615.1.1 = {
 		death = yes
 	}
 }
@@ -1687,25 +2551,25 @@ bulachopan0005 = {
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0004
-	876.1.1 = {
+	father = bulachopan0004
+	602.1.1 = {
 		birth = yes
 	}
-	934.1.1 = {
+	658.1.1 = {
 		death = yes
 	}
 }
 
 bulachopan0006 = {
-	name = "Bota" # fictional
+	name = "Sethlav" # fictional
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0005
-	902.1.1 = {
+	father = bulachopan0005
+	629.1.1 = {
 		birth = yes
 	}
-	956.1.1 = {
+	685.1.1 = {
 		death = yes
 	}
 }
@@ -1715,25 +2579,25 @@ bulachopan0007 = {
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0006
-	925.1.1 = {
+	father = bulachopan0006
+	655.1.1 = {
 		birth = yes
 	}
-	993.1.1 = {
+	702.1.1 = {
 		death = yes
 	}
 }
 
 bulachopan0008 = {
-	name = "Bota" # fictional
+	name = "Sethlav" # fictional
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0007
-	951.1.1 = {
+	father = bulachopan0007
+	678.1.1 = {
 		birth = yes
 	}
-	1006.1.1 = {
+	732.1.1 = {
 		death = yes
 	}
 }
@@ -1743,7 +2607,180 @@ bulachopan0009 = {
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0008
+	father = bulachopan0008
+	703.1.1 = {
+		birth = yes
+	}
+	761.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0010 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = bulachopan0009
+	727.1.1 = {
+		birth = yes
+	}
+	790.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0011 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = bulachopan0010
+	753.1.1 = {
+		birth = yes
+	}
+	795.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0012 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = bulachopan0011
+	778.1.1 = {
+		birth = yes
+	}
+	833.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0013 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	father = bulachopan0012
+	802.1.1 = {
+		birth = yes
+	}
+	858.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0014 = {
+	name = "Sagay" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	trait = "education_martial_3"
+	father = bulachopan0013
+	830.1.1 = {
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = bulachopan0015
+	}
+	882.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0015 = { # Fictional wife
+	name = "C_iltanesi"
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    female = yes
+	832.1.1 = {
+		birth = yes
+	}
+	893.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0016 = {
+	name = "Bota" # Was chief of Bula-Chopan at the time of the 893 expulsion from Yaik/Volga.
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+	trait="education_martial_3"
+	father = bulachopan0014
+	mother = bulachopan0015
+	851.1.1 = {
+		birth = yes
+	}
+	911.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0017 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = bulachopan0016
+	876.1.1 = {
+		birth = yes
+	}
+	934.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0018 = {
+	name = "Bota" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = bulachopan0017
+	902.1.1 = {
+		birth = yes
+	}
+	956.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0019 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = bulachopan0018
+	925.1.1 = {
+		birth = yes
+	}
+	993.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0020 = {
+	name = "Bota" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = bulachopan0019
+	951.1.1 = {
+		birth = yes
+	}
+	1006.1.1 = {
+		death = yes
+	}
+}
+
+bulachopan0021 = {
+	name = "Sethlav" # fictional
+	dynasty_house = house_bulpacopan #Bula-Chopan
+	religion = "tengri_pagan"
+	culture = "pecheneg"
+    father = bulachopan0020
 	974.1.1 = {
 		birth = yes
 	}
@@ -1752,12 +2789,12 @@ bulachopan0009 = {
 	}
 }
 
-bulachopan0010 = {
+bulachopan0022 = {
 	name = "Bota" # fictional
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0009
+    father = bulachopan0021
 	1010.1.1 = {
 		birth = yes
 	}
@@ -1766,12 +2803,12 @@ bulachopan0010 = {
 	}
 }
 
-bulachopan0011 = {
+bulachopan0023 = {
 	name = "Sethlav"
 	dynasty_house = house_bulpacopan #Bula-Chopan
 	religion = "tengri_pagan"
 	culture = "pecheneg"
-    father = bulachopan0010
+    father = bulachopan0022
 	1044.1.1 = {
 		birth = yes
 	}

@@ -2896,7 +2896,7 @@ c_uzboy = {
 	}
 	
 	850.1.1 = {
-		holder = bayindir0002 # The Bayındır Tribe
+		holder = yigdir0002 # The Igdir Tribe
 		liege = k_oghuz_il
 	}
 

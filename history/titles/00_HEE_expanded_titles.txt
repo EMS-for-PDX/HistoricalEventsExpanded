@@ -134,6 +134,59 @@ e_eastern_turkic_khanate = {
 	}
 }
 
+e_uyghur_khanate = { # The Uyghur Khaganate (also Uyghur Empire or Uighur Khaganate, self defined as Toquz-Oghuz country; romanized: Toquz Oγuz budun, lit. 'Nine clan people') was a Turkic empire that existed for about a century between the mid 8th and 9th centuries. It was a tribal confederation under the Orkhon Uyghur nobility
+	744.1.1 = { # An alliance of Basmyls, Uyghurs and Karluks overthrew Göktürks and in the spring of 745 killed the last Ozmish Qaghan. At first, the Basmyl chief was elected a Kaghan titled Eletmish Kaghan (742—744), but he was soon overthrown by the allies, who elected Kutlug Boyla as Kutlug Bilge Kaghan
+		government = tribal_government
+		holder = 188783 #Kutlug I Bilge Kagan
+	}
+	747.1.1 = {
+		holder = 188784 #Bayanchur Khan; who began his reign essentially in a civil war with his brother and the intended heir Tay Bilge Tutuq who Bayanchur would later capture and execute
+	}
+	759.5.1 = {
+		holder = 188785 #Bögü Qaghan/Tengri Qaghan
+	}
+	780.1.1 = {
+		holder = 188786 #Tun Baga Tarkhan
+	}
+	789.12.1 = {
+		holder = 188787 #Külüg Bilge Qaghan
+	}
+	790.4.1 = {
+		holder = 188788 #Qutluq Bilge Qaghan
+	}
+	795.1.1 = {
+		holder = 194191 #Alp Qutluq Külüg Bilge Qaghan
+	}
+	808.1.1 = {
+		holder = 166758 #Baoyi Qaghan/Alp Bilge Qaghan
+	}
+	821.1.1 = {
+		holder = 166759 #Chongde Qaghan/Küçlüg Bilge Qaghan
+	}
+	824.1.1 = {
+		holder = 166760 # Qasar Qaghan/Zhaoli Qaghan
+	}
+	832.1.1 = {
+		holder = 166761 #Zhangxin Qaghan/Alp Külüg Bilge Qaghan
+	}
+	839.1.1 = {
+		holder = 166763 #Küräbir/Jueluowu; Uyghur minister whose rebellion lead to the death of Tegin Qaghan (r. 832–839) and subsequent enthronement of a puppet Uyghur qaghan
+	}
+	840.1.1 = {
+		holder = 0 # Külüg Bagha and 100000 Kyrgyz forces invaded Ordu-Baliq and burned the city. Qasar and Jueluowu were killed by a Kyrgyz leader titled Ā-rè, who would take the title Qaghan. The Uyghur clans fled the region in search of refuge, and though there would be several Uyghur khans, none commanded the prestige and power of a Khaganate
+	}
+}
+
+k_kimek_khaganate = {
+	842.1.1 = { # After the breakup of the Uyghur Khaganate in 840, the Central Asian tribes found themselves unattached. Of all the numerous tribes, the Kimaks were ready to head a new political tribal union. They created a new Kimak Kaganate state, a federation of seven tribes, seven Khanlyks.
+		government = tribal_government
+		holder = 302702 #Yami Qaghan
+	}
+	1035.1.1 = {
+		holder = 0 #Around this time, the Kipchaks suplanted the Kimek as the primary power in the Khaganate
+	}
+}
+
 e_bulgarian_principality = {
 	864.1.1 = {
 		government = tribal_government
@@ -247,6 +300,16 @@ e_bulgarian_khanate = {
 	}
 }
 
+k_pechenegs_custom = { # To avoid Dynastic Naming tbf
+	##Pechenegs post Oghuz-Kimek-Karluk Alliance Defeat
+	850.1.1 = {
+		holder = yawdi_ertim0007
+	}
+	892.1.1 = { # Migration; Swap to Vanilla title
+		holder = 0
+	}
+}
+
 k_abkhazia = { # https://en.wikipedia.org/wiki/Kingdom_of_Abkhazia
 	767.1.1 = {
 		holder = 70472
@@ -305,6 +368,9 @@ k_kakheti-hereti = {
 	}
 	1058.1.1 = {
 		holder = 41515
+	}
+	1084.1.1 = { # # History Fix Required
+		holder = 0
 	}
 }
 
@@ -417,6 +483,9 @@ k_tashir-dzoraget = {
 	1048.1.1 = {
 		holder = 41513
 	}
+	1070.1.1 = { # # History Fix Required
+		holder = 0
+	}
 }
 
 k_artsakh = {
@@ -426,6 +495,9 @@ k_artsakh = {
 	}
 	1030.1.1 = {
 		holder = 159239
+	}
+	1080.1.1 = { # History Fix Required
+		holder = 0
 	}
 }
 
@@ -439,6 +511,9 @@ k_syunik = {
 	}
 	1060.1.1 = {
 		holder = 41556
+	}
+	1080.1.1 = { # History Fix Required
+		holder = 0
 	}
 }
 
@@ -511,6 +586,9 @@ d_muslim_tbilisi = {
 	1088.1.1 = {
 		holder = 41608	#Placeholder for city council
 	}
+	1100.1.1 = { # History Fix Required
+		holder = 0
+	}
 }
 
 d_ganja = {
@@ -536,11 +614,17 @@ d_ganja = {
 	1049.3.1 = {
 		holder = 41600
 	}
+	1100 = { # History Fix Required
+		holder = 0
+	}
 }
 
 d_sawad = {
 	851.10.1 = {
 		holder = 1000230509
+	}
+	1100.1.1 = { # History Fix Required
+		holder = 0
 	}
 }
 
@@ -551,6 +635,9 @@ d_paulician_principality = {
 	863.9.3 = {
 		holder = paulician0004
 	}
+	872.1.1 = { # Basil's general, Christopher, defeated the Paulicians in 872, and the death of their leader, Chrysocheir, led to the definite subjection of their state
+		holder = 0
+	}
 }
 
 d_byzantine_sicily = {
@@ -558,6 +645,9 @@ d_byzantine_sicily = {
 		holder = 145190
 		liege = "e_byzantium"
 	}
+	878.5.21 = { # fell to the Aghlabids after another siege on 20/21 May 878
+		holder = 0
+	}	
 }
 
 d_kaysite = {
@@ -567,6 +657,9 @@ d_kaysite = {
 	}
 	867.1.1 = {
 		liege = 0 # Broken away as a result of the Fifth Fitna 
+	}
+	964.1.1 = { # In 964 the last Kaysite Emir was probably murdered by a ghulam of Sayf al-Daula named Nadja who had risen in revolt
+		holder = 0
 	}
 }
 
@@ -579,6 +672,9 @@ d_melitene = {
 	}
 	863.9.3 = {
 		holder = 159725
+	}
+	934.5.1 = { # After successively accepting and renouncing vassal status, Melitene was finally taken in May 934, its Muslim inhabitants driven out or forced to convert, and replaced by Greek and Armenian settlers
+		holder = 0
 	}
 }
 

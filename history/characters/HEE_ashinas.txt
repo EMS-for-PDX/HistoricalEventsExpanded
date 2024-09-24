@@ -1193,7 +1193,7 @@ ashina0059 = { #  Pan Kul Tigin
 	731.2.27 = { # Although Pan Kül Tigin had staged a successful coup against Kutluk Bilge, he was killed during a battle against Ashina Shi and his Basmyls
 		death = {
 			death_reason = death_battle
-			killer = ashina0061
+			killer = ashina0063
 		}
 	}
 }
@@ -1212,7 +1212,7 @@ ashina0060 = { #  Özmiş Khagan was the last penultimate khagan of the Second T
 	744.1.6 = { # Although Özmiş escaped he was soon defeated for the second time and was killed in 744 by Ashina Shi
 		death = {
 			death_reason = death_battle
-			killer = ashina0061
+			killer = ashina0063
 		}
 	}
 }
@@ -1231,6 +1231,7 @@ ashina0061 = { #  Kulun Beg was a Turkic (Göktürk) ruler who tried to sustain 
 	745.1.1 = { # Although Kulun Beg tried to escape, he was arrested by the Uighurs and was beheaded just like his father/brother in 745
 		death = {
 			death_reason = death_execution
+			killer = 188783 # Kutlug I Bilge Kagan; First Khagan of the Uyghurs
 		}
 	}
 }
@@ -1259,11 +1260,19 @@ ashina0063 = { # Alp Bilge Qağan was a Basmyl chief who rebelled and brought Se
 	culture = "khazar"
 	religion = "tengri_pagan"
 
+	trait = education_martial_3
+	trait = ambitious
+	trait = stubborn
+	trait = callous
+
 	710.1.1 = {
 		birth = yes
 	}
-	742.1.1 = { # he was deposed by Uyghurs, which signalled beginning of Uyghur Empire. 
-		death = yes
+	742.1.1 = { # he was deposed by Uyghurs, which signalled beginning of Uyghur Empire
+		death = {
+			death_reason = death_execution
+			killer = 188783 # Kutlug I Bilge Kagan; First Khagan of the Uyghurs
+		}
 	}
 }
 

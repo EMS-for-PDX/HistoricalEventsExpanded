@@ -1075,7 +1075,8 @@ c_bejaia = {
 		holder = 163097
 	}
 	866.1.1 = {
-		holder = 163149
+		holder = baranis0026
+		liege = "k_africa"
 	}
 	1062.1.1 = {
 		liege = "d_bejaia"
@@ -1181,7 +1182,8 @@ c_satif = {
 		holder = 163097
 	}
 	866.1.1 = {
-		holder = 163149
+		liege = "k_africa"
+		holder = baranis0026
 	}
 	1062.1.1 = {
 		liege = "d_bejaia"
@@ -1276,6 +1278,7 @@ c_satif = {
 
 d_zab = {
 	867.1.1 = {
+		liege = "k_africa"
 		government = clan_government
 		holder = 6882	#Just to keep him from tribalifying bits of Algeria unecessarily.
 	}

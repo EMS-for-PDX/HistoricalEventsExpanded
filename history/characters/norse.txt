@@ -5600,14 +5600,14 @@
 	
 	#Personality Traits
 	trait = generous # He was said to be generous in gold but would starve his men of food
-	trait = temperate # He was said to be generous in gold but would starve his men of food
+	trait = gluttonous # He was said to be generous in gold but would starve his men of food
 	trait = brave # He was a great warrior who often pillaged and gathered great amounts of loot. 
 	
 	#Other Traits
 	trait = reaver # He was a great warrior who often pillaged and gathered great amounts of loot. 
 
-	775.1.1 = {
-		birth = "775.1.1"
+	760.1.1 = {
+		birth = "760.1.1"
 	}
 	833.1.1 = {
 		death = {

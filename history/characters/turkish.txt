@@ -10149,42 +10149,44 @@ fictional_khwarezmian_turks_7 = {
 
 	trait = strong # he grew up supernaturally fast and in only forty days he became a young adult
 
-	690.1.1 = { # If he existed at all, Oghuz Khagan likely lived centuries if not millennium ago (has been identified with Modu Chanyu who lived c. 234 – c. 174 BCE), but to avoid generations of fictional/fluff characters and keep the tribal relations clearer I will have Oghuz exist closer to CK3's start
+	425.1.1 = { # If he existed at all, Oghuz Khagan likely lived centuries if not millennium ago (has been identified with Modu Chanyu who lived c. 234 – c. 174 BCE), but to avoid generations of fictional/fluff characters and keep the tribal relations clearer I will have Oghuz exist closer to CK3's start
 		birth = yes
 	}
-	720.1.1 = {
-		add_spouse = oghuz0003
+	442.1.1 = {
+		add_spouse = 1000230101
 	}
-	725.1.1 = {
-		add_spouse = oghuz0004
+	445.1.1 = {
+		add_spouse = 1000230102
 	}
-	738.1.1={
+	475.1.1={
 		death = yes
 	}
 }
-1000230101 = {
-	name = "Bozoq"
-	dynasty_house = house_il_arslanid
+1000230101 = { # While Oghuz was hunting, he finds an island in the middle of a lake. In the bucket of a tree, in the middle of this island, a very beautiful girl is sitting, radiating lights ( Yer-sub - "Yer-Su" is symbolized by this girl). Her hair is blue like streams and her teeth are like pearls. He marries her and has three sons.
+	name = "Yer-Su" # means Moon
+	# dynasty_house = house_inaltiginid # Üçoks (Three Arrows)
+	female = yes
 	religion = "tengri_pagan"
-	culture = turkish #oghuz
-	father = 1000230100
-	708.1.1={
+	culture = "turkish"
+	trait = beauty_good_3
+	426.1.1 = {
 		birth = yes
 	}
-	763.1.1={
+	485.1.1 = {
 		death = yes
 	}
 }
-1000230102 = {
-	name = "U_choq"
-	dynasty_house = house_inaltiginid
+1000230102 = { # # Years pass, a strong blue light falls from the sky one day and Oghuz found a beautiful girl in the middle (Gök-Kal - "Gök-Hava" is symbolized by this girl). This incredibly beautiful girl has a beam of light like a pole star on her head. He married with this girl and has three children.
+	name = "Gök-Kal" # means Moon
+	# dynasty_house = house_il_arslanid # Bozoks (Gray Arrows)
+	female = yes
 	religion = "tengri_pagan"
-	culture = turkish #oghuz
-	father = 1000230100
-	709.1.1 = {
+	culture = "turkish"
+	trait = beauty_good_3
+	429.1.1 = {
 		birth = yes
 	}
-	766.1.1 = {
+	485.1.1 = {
 		death = yes
 	}
 }
@@ -10195,11 +10197,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230101
-	728.1.1 = {
+	father = 1000230100
+	mother = 1000230102
+	446.1.1 = {
 		birth = yes
 	}
-	773.1.1 = {
+	496.1.1 = {
 		death = yes
 	}
 }
@@ -10208,11 +10211,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230101
-	733.1.1 = {
+	father = 1000230100
+	mother = 1000230102
+	447.1.1 = {
 		birth = yes
 	}
-	786.1.1 = {
+	500.1.1 = {
 		death = yes
 	}
 }
@@ -10221,11 +10225,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_il_arslanid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230101
-	737.1.1 = {
+	father = 1000230100
+	mother = 1000230102
+	448.1.1 = {
 		birth = yes
 	}
-	781.1.1 = {
+	497.1.1 = {
 		death = yes
 	}
 }
@@ -10235,10 +10240,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	750.1.1 = {
+	465.1.1 = {
 		birth = yes
 	}
-	791.1.1 = {
+	515.1.1 = {
 		death = yes
 	}
 }
@@ -10248,10 +10253,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	752.1.1 = {
+	466.1.1 = {
 		birth = yes
 	}
-	789.1.1 = {
+	517.1.1 = {
 		death = yes
 	}
 }
@@ -10261,10 +10266,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	753.1.1 = {
+	467.1.1 = {
 		birth = yes
 	}
-	797.1.1 = {
+	516.1.1 = {
 		death = yes
 	}
 }
@@ -10274,10 +10279,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230103
-	754.1.1 = {
+	468.1.1 = {
 		birth = yes
 	}
-	792.1.1 = {
+	505.1.1 = {
 		death = yes
 	}
 }
@@ -10287,10 +10292,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	752.1.1 = {
+	467.1.1 = {
 		birth = yes
 	}
-	780.1.1 = {
+	512.1.1 = {
 		death = yes
 	}
 }
@@ -10300,10 +10305,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	754.1.1 = {
+	468.1.1 = {
 		birth = yes
 	}
-	805.1.1 = {
+	510.1.1 = {
 		death = yes
 	}
 }
@@ -10313,10 +10318,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	757.1.1 = {
+	469.1.1 = {
 		birth = yes
 	}
-	811.1.1 = {
+	514.1.1 = {
 		death = yes
 	}
 }
@@ -10326,10 +10331,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230104
-	760.1.1 = {
+	470.1.1 = {
 		birth = yes
 	}
-	818.1.1 = {
+	520.1.1 = {
 		death = yes
 	}
 }
@@ -10339,10 +10344,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	757.1.1 = {
+	468.1.1 = {
 		birth = yes
 	}
-	821.1.1 = {
+	520.1.1 = {
 		death = yes
 	}
 }
@@ -10352,10 +10357,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	759.1.1 = {
+	469.1.1 = {
 		birth = yes
 	}
-	808.1.1 = {
+	524.1.1 = {
 		death = yes
 	}
 }
@@ -10365,10 +10370,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	762.1.1 = {
+	470.1.1 = {
 		birth = yes
 	}
-	822.1.1 = {
+	525.1.1 = {
 		death = yes
 	}
 }
@@ -10378,10 +10383,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230105
-	766.1.1 = {
+	471.1.1 = {
 		birth = yes
 	}
-	810.1.1 = {
+	522.1.1 = {
 		death = yes
 	}
 }
@@ -10392,11 +10397,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230102
-	723.1.1 = {
+	father = 1000230100
+	mother = 1000230101
+	443.1.1 = {
 		birth = yes
 	}
-	778.1.1 = {
+	492.1.1 = {
 		death = yes
 	}
 }
@@ -10405,11 +10411,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230102
-	736.1.1 = {
+	father = 1000230100
+	mother = 1000230101
+	444.1.1 = {
 		birth = yes
 	}
-	780.1.1 = {
+	493.1.1 = {
 		death = yes
 	}
 }
@@ -10418,11 +10425,12 @@ fictional_khwarezmian_turks_7 = {
 	dynasty_house = house_inaltiginid
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
-	father = 1000230102
-	740.1.1 = {
+	father = 1000230100
+	mother = 1000230101
+	445.1.1 = {
 		birth = yes
 	}
-	795.1.1 = {
+	495.1.1 = {
 		death = yes
 	}
 }
@@ -10433,10 +10441,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	752.1.1 = {
+	463.1.1 = {
 		birth = yes
 	}
-	820.1.1 = {
+	509.1.1 = {
 		death = yes
 	}
 }
@@ -10446,10 +10454,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	736.1.1 = {
+	464.1.1 = {
 		birth = yes
 	}
-	812.1.1 = {
+	512.1.1 = {
 		death = yes
 	}
 }
@@ -10459,10 +10467,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	758.1.1 = {
+	465.1.1 = {
 		birth = yes
 	}
-	808.1.1 = {
+	516.1.1 = {
 		death = yes
 	}
 }
@@ -10472,10 +10480,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230118
-	762.1.1 = {
+	466.1.1 = {
 		birth = yes
 	}
-	821.1.1 = {
+	518.1.1 = {
 		death = yes
 	}
 }
@@ -10485,10 +10493,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	756.1.1 = {
+	464.1.1 = {
 		birth = yes
 	}
-	815.1.1 = {
+	514.1.1 = {
 		death = yes
 	}
 }
@@ -10498,10 +10506,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	759.1.1 = {
+	465.1.1 = {
 		birth = yes
 	}
-	807.1.1 = {
+	513.1.1 = {
 		death = yes
 	}
 }
@@ -10511,10 +10519,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	761.1.1 = {
+	466.1.1 = {
 		birth = yes
 	}
-	826.1.1 = {
+	517.1.1 = {
 		death = yes
 	}
 }
@@ -10524,10 +10532,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230119
-	766.1.1 = {
+	467.1.1 = {
 		birth = yes
 	}
-	828.1.1 = {
+	519.1.1 = {
 		death = yes
 	}
 }
@@ -10537,10 +10545,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	759.1.1 = {
+	465.1.1 = {
 		birth = yes
 	}
-	811.1.1 = {
+	515.1.1 = {
 		death = yes
 	}
 }
@@ -10550,10 +10558,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	762.1.1 = {
+	466.1.1 = {
 		birth = yes
 	}
-	828.1.1 = {
+	522.1.1 = {
 		death = yes
 	}
 }
@@ -10563,10 +10571,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	761.1.1 = {
+	467.1.1 = {
 		birth = yes
 	}
-	825.1.1 = {
+	524.1.1 = {
 		death = yes
 	}
 }
@@ -10576,10 +10584,10 @@ fictional_khwarezmian_turks_7 = {
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1000230120
-	764.1.1 = {
+	468.1.1 = {
 		birth = yes
 	}
-	833.1.1 = {
+	523.1.1 = {
 		death = yes
 	}
 }
@@ -11770,7 +11778,7 @@ fictional_khwarezmian_turks_7 = {
 1231978 = {
 	name = "Barutay"
 	dynasty = house_kayi_tribe
-	father = 1000230106
+	father = additionalkayi0011
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	785.1.1 = {

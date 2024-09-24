@@ -552,3 +552,41 @@ dynasty_gyarmat = {
 	name = "dynn_Gyarmat"
 	culture = "hungarian"
 }
+
+dynasty_zygii = {
+	name = "dynn_Zygii"
+	culture = "georgian"
+}
+
+# Kimek-Kipchak confederation
+dynasty_kimek_lanikaz = {
+	name = "dynn_Lanikaz"
+	culture = "kimek"
+}
+
+dynasty_kimek_ajlad = {
+	name = "dynn_Ajlad"
+	culture = "kimek"
+}
+
+dynasty_kimek_tatars = {
+	name = "dynn_Tatars"
+	culture = "kimek"
+}
+
+
+
+
+
+
+
+# Ughyur Khaganate
+dynasty_yaglakar = {
+	name = "dynn_Yaglakar"
+	culture = "ughyur"
+}
+
+dynasty_adiz = {
+	name = "dynn_Adiz"
+	culture = "ughyur"
+}

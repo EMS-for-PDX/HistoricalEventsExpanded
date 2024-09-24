@@ -8,7 +8,7 @@ e_first_turkic_khanate = { # The First Turkic Khaganate, also referred to as the
 	
 	definite_form = yes
 	
-	capital = c_karakorum
+	capital = c_karabalgasun
 
 	can_create = {
 
@@ -58,7 +58,7 @@ e_eastern_turkic_khanate = { # The Eastern Turkic Khaganate was a Turkic khagana
 	
 	definite_form = yes
 	
-	capital = c_karakorum
+	capital = c_karabalgasun
 
 	can_create = {
 
@@ -72,6 +72,31 @@ e_eastern_turkic_khanate = { # The Eastern Turkic Khaganate was a Turkic khagana
 		if = {
 			limit = {
 				culture = { has_cultural_pillar = heritage_turkic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_kimek_khaganate = { # The Kimek–Kipchak confederation[a] was a medieval Turkic state formed by seven peoples, including the Yemeks and Kipchaks, in the area between the Ob and Irtysh rivers.
+	color = { 179 161 55 }
+	
+	definite_form = yes
+	
+	capital = c_pavlodar
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:kimek
 			}
 			add = @better_than_the_alternatives_score
 		}
@@ -147,7 +172,19 @@ k_pechenegs_custom = {
 	color = { 132 108 72}
 	ignore_titularity_for_title_weighting = yes
 
-	capital = c_odessa # Odessa
+	capital = c_pecheneg
+
+	# definite_form = yes
+	can_be_named_after_dynasty = no
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:pecheneg
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
 }
 
 k_alemania = { # https://en.wikipedia.org/wiki/Alamannia#Carolingian_regnum

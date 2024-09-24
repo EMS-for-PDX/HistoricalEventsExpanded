@@ -1,0 +1,178 @@
+﻿## Characters for the Ughyurs ##
+# Thanks to Oxford Research - https://oxfordre.com/asianhistory/display/10.1093/acrefore/9780190277727.001.0001/acrefore-9780190277727-e-53?p=emailAc3OTCtvKTbek&d=/10.1093/acrefore/9780190277727.001.0001/acrefore-9780190277727-e-53 #
+additionalughyurs0001 = { # Tay Bilge Tutuq; First son of Kutlug Bilge who challenged Bayanchur Khan to the Khaganate with the support of the Karluks, Basmyls, and Khitans
+	name = "Tay Bilge Tutuq"
+	dynasty = 1042190 # Yaghlakar
+	religion = "tengri_pagan"
+	culture = "uyghur"
+	father = 188783
+	711.1.1 = {
+		birth = yes
+	}
+	750.1.1 = { # Executed by his brother Bayanchur in 750
+		death = {
+			death_reason = death_execution
+			killer = 188785
+		}
+	}
+}
+
+additionalughyurs0002 = { # commander of western part of the empire, who was commanding officer of Uyghurs in An Lushan rebellion, thought to be executed by his father in 759
+	name = "Ulu Bilge Tardush"
+	dynasty = 1042190 # Yaghlakar
+	religion = "tengri_pagan"
+	culture = "uyghur"
+	father = 188784
+	730.1.1 = {
+		birth = yes
+	}
+	759.1.1 = { # thought to be executed by his father in 759
+		death = {
+			death_reason = death_execution
+			killer = 188785
+		}
+	}
+}
+
+additionalughyurs0003 = { # Unknown father of Alp Qutlugh Bilge, who was the fourth leader of Uyghur Khaganate
+	name = "Chabush Tegin"
+	dynasty = 1042190 # Yaghlakar
+	religion = "tengri_pagan"
+	culture = "uyghur"
+	father = 188783 # Kutlug I Bilge Boyla Khagan
+	716.1.1 = { # Unknown
+		birth = yes
+	}
+	750.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionalughyurs0004 = { # Prince Gechuai (or Qari Chor) - born in 776, died in 795 in Chang'an.
+	name = "Gechuai"
+	dynasty = 1042190 # Yaghlakar
+	religion = "tengri_pagan"
+	culture = "uyghur"
+	father = additionalughyurs0003
+	776.1.1 = { # Unknown
+		birth = yes
+	}
+	795.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionalughyurs0005 = { # Apa Chor (was alive in 795)
+	name = "Apa Chor"
+	dynasty = 1042190 # Yaghlakar
+	religion = "tengri_pagan"
+	culture = "uyghur"
+	father = additionalughyurs0003
+	778.1.1 = { # Unknown
+		birth = yes
+	}
+	800.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+uyghurkhan0014 = { # Enian Qaghan was the last effective ruler (khagan) of the Uyghur Khaganate
+	name = "Enian"
+	dynasty = 1045083 # Ediz
+	religion = "manichean"
+	culture = "uyghur"
+	father = 166758 # He was a younger brother of Chongde and a son of Baoyi Qaghan
+
+	804.1.1 = { # Unknown; younger brother of Wujie Qaghan
+		birth = yes
+	}
+	848.1.1 = { 
+		death = { # Enian fled westward with his wife, son, and 12 bodyguards when he heard the Chinese had ordered his death. His subsequent fate is unknown
+			death_reason = death_disappearance
+		}
+	}
+}
+
+additionalughyurs0006 = { # Womosi Tegin; Son of Chongde Qaghan who submitted to Tang China following the collapse of the Ughyur Khaganate
+	name = "Womosi"
+	dynasty = 1045083 # Ediz
+	religion = "manichean"
+	culture = "uyghur"
+	father = 166759 # Chongde Qaghan
+
+	812.1.1 = { # Unknown
+		birth = yes
+	}
+	842.6.1 = { # in summer 842, Emperor Wuzong bestowed the Tang imperial clan name of Li on Wamosi and changed his name to Li Sizhong. (Wamosi's brothers Alizhi, Xiwuchuo, and Wuluosi were given the names of Li Sizhen, Li Siyi, and Li Sili, respectively.)
+		name = "Sizhong"
+		dynasty_house = house_ughyur_li
+	}
+	843.4.1 = { 
+		death = { # the last reference to Li Sizhong (Womosi Tegin) in Chinese historical records is in Spring 843. His subsequent fate is unknown
+			death_reason = death_disappearance
+		}
+	}
+}
+
+additionalughyurs0007 = { # Alizhi; Son of Chongde Qaghan who submitted to Tang China following the collapse of the Ughyur Khaganate
+	name = "Alizhi"
+	dynasty = 1045083 # Ediz
+	religion = "manichean"
+	culture = "uyghur"
+	father = 166759 # Chongde Qaghan
+
+	813.1.1 = { # Unknown
+		birth = yes
+	}
+	842.6.1 = { # in summer 842, Emperor Wuzong bestowed the Tang imperial clan name of Li on Wamosi and changed his name to Li Sizhong. (Wamosi's brothers Alizhi, Xiwuchuo, and Wuluosi were given the names of Li Sizhen, Li Siyi, and Li Sili, respectively.)
+		name = "Sizhen"
+		dynasty_house = house_ughyur_li
+	}
+	843.4.1 = { 
+		death = { # the last reference to Li Sizhong (Womosi Tegin) in Chinese historical records is in Spring 843. His subsequent fate is unknown
+			death_reason = death_disappearance
+		}
+	}
+}
+
+additionalughyurs0008 = { # Xiwuchuo; Son of Chongde Qaghan who submitted to Tang China following the collapse of the Ughyur Khaganate
+	name = "Xiwuchuo"
+	dynasty = 1045083 # Ediz
+	religion = "manichean"
+	culture = "uyghur"
+	father = 166759 # Chongde Qaghan
+
+	814.1.1 = { # Unknown
+		birth = yes
+	}
+	842.6.1 = { # in summer 842, Emperor Wuzong bestowed the Tang imperial clan name of Li on Wamosi and changed his name to Li Sizhong. (Wamosi's brothers Alizhi, Xiwuchuo, and Wuluosi were given the names of Li Sizhen, Li Siyi, and Li Sili, respectively.)
+		name = "Siyi"
+		dynasty_house = house_ughyur_li
+	}
+	843.4.1 = { 
+		death = { # the last reference to Li Sizhong (Womosi Tegin) in Chinese historical records is in Spring 843. His subsequent fate is unknown
+			death_reason = death_disappearance
+		}
+	}
+}
+
+additionalughyurs0009 = { # Wuluosi; Son of Chongde Qaghan who submitted to Tang China following the collapse of the Ughyur Khaganate
+	name = "Wuluosi"
+	dynasty = 1045083 # Ediz
+	religion = "manichean"
+	culture = "uyghur"
+	father = 166759 # Chongde Qaghan
+
+	815.1.1 = { # Unknown
+		birth = yes
+	}
+	842.6.1 = { # in summer 842, Emperor Wuzong bestowed the Tang imperial clan name of Li on Wamosi and changed his name to Li Sizhong. (Wamosi's brothers Alizhi, Xiwuchuo, and Wuluosi were given the names of Li Sizhen, Li Siyi, and Li Sili, respectively.)
+		name = "Sili"
+		dynasty_house = house_ughyur_li
+	}
+	843.4.1 = { 
+		death = { # the last reference to Li Sizhong (Womosi Tegin) in Chinese historical records is in Spring 843. His subsequent fate is unknown
+			death_reason = death_disappearance
+		}
+	}
+}

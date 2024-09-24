@@ -233,3 +233,8 @@ house_bulpacopan = {
 	name = "dynn_Bulpacopan"
 	dynasty = 7327 # Oghuz
 }
+
+house_ughyur_li = {
+	name = "dynn_Li"
+	dynasty = 1045083 # Ädiz clan
+}

@@ -1,7 +1,7 @@
-﻿
-k_kabulistan = {
+﻿k_kabulistan = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 24 }
 
 	977.1.1 = {
 		holder = 144123 # Sabuktigin
@@ -192,6 +192,7 @@ d_kabul = {
 c_kabul = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 14 }
 	
 	750.1.1 = {
 		liege = d_kabul
@@ -352,7 +353,9 @@ c_bamian = {
 	1149.1.1 = {
 		holder = 93150
 	}
-	
+	1163.1.1 = {
+		holder = 93147 # Shams ad-Din Muhammad of Bamiyan
+	}
 	1180.1.1 = {
 		holder = 93151
 	}
@@ -450,6 +453,7 @@ b_panjhir = {
 c_chitral = {
 	867.1.1 = {	change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
+	1178.1.1 = { change_development_level = 8 }
 	
 	750.1.1 = {
 		liege = d_kabul
@@ -680,6 +684,7 @@ d_zabulistan = {
 c_ghazna = {
 	867.1.1 = {	change_development_level = 7 }
 	1066.1.1 = { change_development_level = 10 }
+	1178.1.1 = { change_development_level = 34 }
 
 	680.1.1 = {
 		liege = d_sistan
@@ -792,6 +797,7 @@ b_gardiz = {
 c_zamindawar = {
 	867.1.1 = {	change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
+	1178.1.1 = { change_development_level = 8 }
 	
 	680.1.1 = {
 		liege = d_sistan
@@ -888,6 +894,10 @@ c_zamindawar = {
 	}
 	1173.1.1 = {
 		holder = 144142
+	}
+	1175.1.1 = {
+		holder = timrani_1 # Real person, placeholder in the absence of historical title holders
+		liege = d_kabul
 	}
 	1206.3.15 = {
 		holder = 170302
@@ -998,6 +1008,10 @@ c_rukhaj = {
 	1173.1.1 = {
 		holder = 144142
 	}
+	1175.1.1 = {
+		holder = timrani_1 # Real person, placeholder in the absence of historical title holders
+		liege = d_kabul
+	}
 	1206.3.15 = {
 		holder = 170302
 	}
@@ -1040,6 +1054,7 @@ c_zabulistan = {
 	865.5.4 = {
 		liege = d_sistan
 		holder = extra_afghanis_6
+		government = clan_government	#Ahistorical, just for ease of bookmarks.
 	}
 	977.1.1 = {
 		holder = 144123 # Sabuktigin Ghaznavid
@@ -1102,7 +1117,11 @@ c_zabulistan = {
 		holder = 144141 # Ghiyath Ghurid
 	}
 	1173.1.1 = {
-		liege = k_kabulistan
+		holder = 144142 # Mu'izz Ghurid
+	}
+	1175.1.1 = {
+		holder = timrani_1 # Real person, placeholder in the absence of historical title holders
+		liege = d_kabul
 	}
 	1186.1.1 = {
 		liege = k_sindh

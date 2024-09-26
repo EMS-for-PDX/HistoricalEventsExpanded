@@ -1,7 +1,8 @@
-
 k_persia = {
 	867.1.1 = {	change_development_level = 7 }
 	1066.1.1 = { change_development_level = 10 }
+	1178.1.1 = { change_development_level = 14 }
+
 	1037.1.1 = {
 		holder = 3038
 	}
@@ -24,6 +25,19 @@ k_persia = {
 			}
 		}
 	}
+	1066.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { exists = global_var:seljuk_invasion_happened }
+				}
+				set_global_variable = {
+					name = seljuk_invasion_happened
+					value = yes
+				}
+			}
+		}
+	}
 	1072.11.1 = {
 		holder = 3042
 	}
@@ -37,10 +51,22 @@ k_persia = {
 		holder = 144014
 	}
 	1118.4.18 = {
-		holder = 144015
+		holder = 144043
 	}
-	1157.5.8 = {
-		holder = 0 # End of the Seljuk Turks
+	1133.1.1 = {
+		holder = 144049 # Ghiyath ad-Din Mas'ud
+	}
+	1152.1.1 = {
+		holder = 144053 # Malik-Shah III
+	}
+	1153.1.1 = {
+		holder = 144054 # Muhammad II ibn Mahmud
+	}
+	1160.9.1 = {
+		holder = 144055 # Arslan Shah
+	}
+	1175.12.31 = {
+		holder = 144056 # Toghrul III
 	}
 	1194.3.1 = {
 		holder = 230000
@@ -57,6 +83,7 @@ k_persia = {
 d_isfahan = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 18 }
 
 	801.1.1 = {
 		change_development_level = 7
@@ -67,8 +94,6 @@ d_isfahan = {
 	1100.1.1 = {
 		change_development_level = 17
 	}
-
-
 	1041.1.1 = {
 		holder = 1231053
 	}
@@ -150,6 +175,7 @@ d_isfahan = {
 c_isfahan = {
 	867.1.1 = {	change_development_level = 15 }
 	1066.1.1 = { change_development_level = 20 }
+	1178.1.1 = { change_development_level = 46 }
 
 	750.1.1 = {
 		liege = d_hamadan
@@ -189,6 +215,9 @@ c_isfahan = {
 	}
 	1161.1.1 = {
 		holder = 93201
+	}
+	1175.12.31= {
+		holder = 144056 # Togrul
 	}
 	1230.1.1 = {
 		holder = 93202
@@ -244,6 +273,9 @@ c_ardestan = {
 	}
 	1161.1.1 = {
 		holder = 93201
+	}
+	1175.12.31= {
+		holder = 144056 # Togrul
 	}
 	1230.1.1 = {
 		holder = 93202
@@ -301,6 +333,9 @@ c_qumisha = {
 	}
 	1161.1.1 = {
 		holder = 93201
+	}
+	1175.12.31= {
+		holder = 144056 # Togrul
 	}
 	1230.1.1 = {
 		holder = 93202
@@ -440,6 +475,7 @@ d_kirman = {
 	}
 	1176.1.1 = {
 		holder = 144039
+		liege = "k_persia"
 	}
 	1183.1.1 = {
 		holder = 144040
@@ -501,6 +537,7 @@ d_kirman = {
 c_kirman = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 18 }
 
 	644.1.1 = {
 		liege = d_sistan
@@ -567,8 +604,20 @@ c_kirman = {
 	1118.1.1 = {
 		holder = 144137
 	}
-	1150.1.1 = {
-		holder = 144141
+	1156.1.1 = {
+		holder = 144036
+	}
+	1157.5.8 = {
+		liege = 0
+	}
+	1169.1.1 = {
+		holder = 144037
+	}
+	1174.1.1 = {
+		holder = 144038
+	}
+	1176.1.1 = {
+		holder = 144039
 	}
 	1186.1.1 = {
 		holder = 93147
@@ -606,6 +655,7 @@ c_kirman = {
 c_behabad = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 20 }
 	
 	644.1.1 = {
 		liege = d_sistan
@@ -674,6 +724,12 @@ c_behabad = {
 	}
 	1150.1.1 = {
 		holder = 144141
+	}
+	1174.1.1 = {
+		holder = 144038
+	}
+	1176.1.1 = {
+		holder = 144039 # Turanshah of Kirman
 	}
 	1186.1.1 = {
 		holder = 93147
@@ -774,8 +830,20 @@ c_bam = {
 	1118.1.1 = {
 		holder = 144137
 	}
-	1150.1.1 = {
-		holder = 144141
+	1156.1.1 = {
+		holder = 144036
+	}
+	1157.5.8 = {
+		liege = 0
+	}
+	1169.1.1 = {
+		holder = 144037
+	}
+	1174.1.1 = {
+		holder = 144038
+	}
+	1176.1.1 = {
+		holder = 144039 # Turanshah of Kirman
 	}
 	1186.1.1 = {
 		holder = 93147
@@ -972,8 +1040,20 @@ c_jiruft = {
 	1118.1.1 = {
 		holder = 144137
 	}
-	1150.1.1 = {
-		holder = 144141
+	1156.1.1 = {
+		holder = 144036
+	}
+	1157.5.8 = {
+		liege = 0
+	}
+	1169.1.1 = {
+		holder = 144037
+	}
+	1174.1.1 = {
+		holder = 144038
+	}
+	1176.1.1 = {
+		holder = 144039 # Turanshah of Kirman
 	}
 	1186.1.1 = {
 		holder = 93147
@@ -1004,13 +1084,17 @@ c_jiruft = {
 	1320.1.1 = {
 		holder = 93292
 	}
-
 }
-
 
 d_yazd = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 24 }
+
+	1141.1.1 = {
+		holder = 248561 # Sam b. Langar
+		liege = "k_persia"
+	}
 }
 
 c_yazd = {
@@ -1037,19 +1121,7 @@ c_yazd = {
 		holder = 1231057
 	}
 	1141.1.1 = {
-		holder = 144049
-	}
-	1152.10.2 = {
-		holder = 144053
-	}
-	1153.1.1 = {
-		holder = 144054
-	}
-	1159.1.1 = {
-		holder = 144055
-	}
-	1175.12.31 = {
-		holder = 144056
+		holder = 248561 # Sam b. Langar
 	}
 	1194.3.1 = {
 		holder = 230000
@@ -1134,17 +1206,8 @@ c_mafaza = {
 	1133.1.1 = {
 		holder = 144049
 	}
-	1152.10.2 = {
-		holder = 144053
-	}
-	1153.1.1 = {
-		holder = 144054
-	}
-	1159.1.1 = {
-		holder = 144055
-	}
-	1175.12.31 = {
-		holder = 144056
+	1141.1.1 = {
+		holder = 248561 # Sam b. Langar
 	}
 	1194.3.1 = {
 		holder = 230000
@@ -1192,8 +1255,8 @@ c_shahre-babak = {
 		holder = 1000230509
 	}
 	1063.9.4 = {
-		liege = "d_isfahan"
-		holder = 3050
+		#liege = "d_isfahan"
+		#holder = 3050
 	}
 	1066.1.1 = {
 		holder = 1231053
@@ -1225,17 +1288,8 @@ c_shahre-babak = {
 	1133.1.1 = {
 		holder = 144049
 	}
-	1152.10.2 = {
-		holder = 144053
-	}
-	1153.1.1 = {
-		holder = 144054
-	}
-	1159.1.1 = {
-		holder = 144055
-	}
-	1175.12.31 = {
-		holder = 144056
+	1141.1.1 = {
+		holder = 248561 # Sam b. Langar
 	}
 	1194.3.1 = {
 		holder = 230000
@@ -1270,10 +1324,10 @@ c_shahre-babak = {
 	}
 }
 
-
 c_rayy = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 43 }
 	
 	661.2.28 = {
 		liege = d_hamadan
@@ -1324,8 +1378,12 @@ c_rayy = {
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_1 # Omar
+		liege = d_azerbaijan
 	}
 	1194.3.1 = {
 		
@@ -1381,7 +1439,7 @@ c_khuwar = {
 	768.1.1 = {
 		holder = 188648 # al-Hadi Abbasid (actually 800 AD)
 	}
-
+	
 	862.1.1 = {
 		liege = "k_khorasan"
 		holder = 163162
@@ -1424,8 +1482,12 @@ c_khuwar = {
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_1 # Omar
+		liege = d_azerbaijan
 	}
 	1194.3.1 = {
 		
@@ -1466,14 +1528,11 @@ c_khuwar = {
 	1328.1.1 = {
 		holder = 478035
 	}
-	
-	
-	
-
 }
 
-
 c_qom = {
+	1178.1.1 = { change_development_level = 36 }
+
 	750.1.1 = {
 		liege = d_hamadan
 		holder = 188699 # Edris Dulafid
@@ -1514,8 +1573,12 @@ c_qom = {
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_1 # Omar
+		liege = d_azerbaijan
 	}
 	1194.3.1 = {
 		
@@ -1567,13 +1630,11 @@ c_qom = {
 	1336.7.24 = {
 		holder = 34432
 	}
-	
-	
-
 }
 
-
 d_hamadan = {
+	1178.1.1 = { change_development_level = 21 }
+
 	661.2.28 = {
 		liege = e_arabia
 	}
@@ -1625,14 +1686,11 @@ d_hamadan = {
 	1153.1.1 = {
 		holder = 144054
 	}
-	1157.5.8 = {
-		liege = 0
-	}
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
 	}
 	1194.3.1 = {
 		liege = "k_persia"
@@ -1693,6 +1751,7 @@ d_hamadan = {
 c_hamadan = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 34 }
 	
 	750.1.1 = {
 		liege = d_hamadan
@@ -1746,8 +1805,12 @@ c_hamadan = {
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
+		liege = d_azerbaijan
 	}
 	1194.3.1 = {
 		
@@ -1805,6 +1868,7 @@ c_hamadan = {
 c_nihawand = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 20 }
 	
 	750.1.1 = {
 		liege = d_hamadan
@@ -1854,8 +1918,11 @@ c_nihawand = {
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 144052 # Muhammad Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
 	}
 	1194.3.1 = {
 		
@@ -1972,8 +2039,11 @@ c_dinawar = {
 	1170.9.16 = {
 		holder = 144041
 	}
-	1180.1.1 = {
-		holder = 144042
+	1175.1.1 = {
+		holder = 144052 # Muhamamd Jahan-Pahlavan
+	}
+	1178.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
 	}
 	1193.1.1 = {
 		holder = 93311
@@ -2034,6 +2104,7 @@ c_dinawar = {
 
 d_fars = {
 	661.2.28 = {
+		government = clan_government
 		liege = e_arabia
 	}
 	769.1.1 = {
@@ -2043,12 +2114,10 @@ d_fars = {
 		holder = 0
 	}
 	860.1.1 = {
-		liege = e_arabia
 		holder = 1000230509
 	}
 	
 	1066.1.1 = {
-		government = tribal_government
 		liege = "k_persia"
 		holder = 3854
 	}
@@ -2061,19 +2130,14 @@ d_fars = {
 	1110.1.1 = {
 		holder = 93231
 	}
-	
 	1157.5.8 = {
-		liege = 0
-	}
-	1157.5.8 = {
-		government = clan_government
 		holder = 144054
 	}
 	1159.1.1 = {
 		holder = 144055
 	}
-	1175.12.31 = {
-		holder = 144056
+	1175.1.1 = {
+		holder = 93244 # Dakla
 	}
 	1194.3.1 = {
 		holder = 93233
@@ -2114,6 +2178,7 @@ d_fars = {
 c_shiraz = {
 	867.1.1 = {	change_development_level = 12 }
 	1066.1.1 = { change_development_level = 18 }
+	1178.1.1 = { change_development_level = 37 }
 	
 	644.1.1 = {
 		liege = d_fars
@@ -2590,6 +2655,7 @@ c_mandestan = {
 c_irahistan = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 18 }
 	
 	644.1.1 = {
 		liege = d_fars
@@ -2669,11 +2735,13 @@ c_irahistan = {
 d_hormuz = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 17 }
 }
 
 c_hormuz = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 18 }
 	
 	644.1.1 = {
 		liege = "d_kirman"
@@ -2886,12 +2954,16 @@ d_khuzestan = {
 		liege = k_persia
 		holder = 93160
 	}
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
+	}
 }
 
 
 c_sardan = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 20 }
 	
 	644.1.1 = {
 		liege = "d_kirman"
@@ -2943,8 +3015,8 @@ c_sardan = {
 	1174.1.1 = {
 		holder = 144038
 	}
-	1176.1.1 = {
-		holder = 144039
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
 	}
 	1183.1.1 = {
 		holder = 144040
@@ -3051,8 +3123,8 @@ c_ramhurmuz = {
 	1174.1.1 = {
 		holder = 144038
 	}
-	1176.1.1 = {
-		holder = 144039
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
 	}
 	1183.1.1 = {
 		holder = 144040
@@ -3111,6 +3183,7 @@ c_ramhurmuz = {
 c_tustar = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 20 }
 	
 	644.1.1 = {
 		liege = "d_kirman"
@@ -3162,8 +3235,8 @@ c_tustar = {
 	1174.1.1 = {
 		holder = 144038
 	}
-	1176.1.1 = {
-		holder = 144039
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
 	}
 	1183.1.1 = {
 		holder = 144040
@@ -3222,6 +3295,7 @@ c_tustar = {
 c_ahvaz = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 14 }
 	
 	750.1.1 = {
 		liege = d_wasit
@@ -3261,7 +3335,7 @@ c_ahvaz = {
 		holder = 93243
 	}
 	1175.1.1 = {
-		holder = 93244
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
 	}
 	1193.1.1 = {
 		holder = 93245
@@ -3335,6 +3409,9 @@ c_abbadan = {
 	1160.1.1 = {
 		holder = 93232
 	}
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
+	}
 	1190.1.1 = {
 		holder = 93233
 	}
@@ -3404,6 +3481,9 @@ c_dawraq = {
 	}
 	1160.1.1 = {
 		holder = 93232
+	}
+	1175.1.1 = {
+		holder = qush_toganid_3 # Amiran b. Il-Toghdi
 	}
 	1190.1.1 = {
 		holder = 93233
@@ -3500,7 +3580,7 @@ d_kermanshah = {
 		holder = 144055
 	}
 	1175.12.31= {
-		holder = 144056
+		holder = 144056 # Togrul
 	}
 	1194.3.1= {
 		liege="k_persia"
@@ -3561,6 +3641,7 @@ d_kermanshah = {
 c_kermanshah = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 14 }
 	
 	750.1.1 = {
 		liege = d_hamadan
@@ -3595,6 +3676,10 @@ c_kermanshah = {
 	}
 	1148.1.1 = {
 		holder = 144058
+	}
+	1175.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
+		liege = d_azerbaijan
 	}
 	1190.1.1 = {
 		holder = 93201
@@ -3657,6 +3742,9 @@ c_masabadhan = {
 	1148.1.1 = {
 		holder = 144058
 	}
+	1175.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
+	}
 	1190.1.1 = {
 		holder = 93201
 	}
@@ -3678,14 +3766,12 @@ c_masabadhan = {
 	1333.1.1 = {
 		holder = 93207
 	}
-	
-
 }
-
 
 c_saimara = {
 	867.1.1 = {	change_development_level = 5 }
 	1066.1.1 = { change_development_level = 8 }
+	1178.1.1 = { change_development_level = 20 }
 	
 	661.2.28 = {
 		liege = e_arabia
@@ -3732,6 +3818,9 @@ c_saimara = {
 	}
 	1170.1.1 = {
 		holder = 144064
+	}
+	1175.1.1 = {
+		holder = ildeguzid_3 # Ozbeg
 	}
 	1180.1.1 = {
 		holder = 227000

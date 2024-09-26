@@ -1072,6 +1072,9 @@ c_balachev = {
 	865.1.2 = { # Breakaway due to Khazar's weakening influence - likely still a tributary?
 		liege = 0
 	}
+	#866.1.1 = {
+	#	holder = 258082
+	#}
 	965.1.2 = {
 		liege = 0
 	}
@@ -1222,6 +1225,9 @@ c_durovka = {
 	865.1.2 = { # Breakaway due to Khazar's weakening influence - likely still a tributary?
 		liege = 0
 	}
+	#866.1.1 = {
+	#	holder = 258082
+	#}
 	965.1.2 = {
 		liege = 0
 	}

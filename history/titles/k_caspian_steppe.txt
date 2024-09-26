@@ -392,6 +392,7 @@ c_uzen = {
 	#	holder = 0
 	}
 	850.1.1 = { # The Oghuz made an alliance with the Karluks and Kimaks and defeated the Pechenegs and their allies in a battle near the Lake Aral before 850, according to the 10th-century scholar, Al-Masudi. Most Pechenegs launched a new migration towards the Volga River
+	#	holder = 180240
 		holder = 180236
 		liege = k_pechenegs_custom
 	}
@@ -647,6 +648,7 @@ c_yaitsk = {
 		holder = yawdi_ertim0007
 		liege = k_pechenegs_custom
 	}
+	#
 	1060.1.1 = {
 		liege = k_cuman
 		holder = 806

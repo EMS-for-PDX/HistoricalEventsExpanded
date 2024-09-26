@@ -114,11 +114,17 @@ war = {
 	start_date = 867.1.1
 	end_date = 871.2.1
 	targeted_titles = {
-		c_siracusa
+		d_sicily
 	}
-	casus_belli = county_conquest_cb
-	attackers = { 163096 maghrebi0001 }
-	defenders = { 70490 145190 } # Altered to reflect Michael III being alive
+	casus_belli = ducal_conquest_cb
+	attackers = { 163096 maghrebi0001 6885 }
+	defenders = { 70490 145190 greek0002 } # Altered to reflect Michael III being alive
+
+	163096 = {
+		867.1.1 = {
+			location = 2636
+		}
+	}
 }
 
 #Saffarid-Tahirid War
@@ -273,5 +279,15 @@ war = {
 	}
 }
 
-
+war = {
+	start_date = 1177.6.1
+	end_date = 1184.6.15
+	targeted_titles={
+		k_norway
+	}
+	casus_belli = claim_cb
+	attackers = { 202500 }
+	defenders = { 202051 }
+	claimant = 202500
+}
 

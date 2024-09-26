@@ -1,6 +1,7 @@
 k_tahert = {
 	867.1.1 = {	change_development_level = 3 }
 	1066.1.1 = { change_development_level = 6 }
+	1178.1.1 = { change_development_level = 20 }
 
 	# Rustamid Kingdom
 	777.1.1 = { # in 777, ʻAbd ar-Rahmān ibn Rustam, an Ifriqiyan-born convert to the Ibāḍī movement of Persian origin and one of the four founders of the Ibāḍī imamate, was elected Imām
@@ -39,6 +40,7 @@ k_tahert = {
 d_tlemcen = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 17 }
 
 	741.1.1 = {
 		government = clan_government
@@ -100,6 +102,9 @@ d_tlemcen = {
 	1156.1.1 = {
 		holder = 155086
 	}
+	1175.1.1 = {
+		holder = almohad_8 # Ali
+	}
 	1196.1.1 = {
 		holder = 32988
 	}
@@ -139,10 +144,10 @@ d_tlemcen = {
 
 }
 
-
 c_tlemcen = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 31 }
 
 	741.1.1 = {
 		holder = 210032
@@ -198,6 +203,9 @@ c_tlemcen = {
 	}
 	1156.1.1 = {
 		holder = 155086
+	}
+	1175.1.1 = {
+		holder = almohad_8 # Ali
 	}
 	1196.1.1 = {
 		holder = 32988
@@ -298,6 +306,9 @@ c_wajda = {
 	1163.1.1 = {
 		holder = 155085
 	}
+	1175.1.1 = {
+		holder = almohad_8 # Ali
+	}
 	1191.1.1 = {
 		holder = 32983
 	}
@@ -347,6 +358,7 @@ c_wajda = {
 c_orania = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 18 }
 	
 	741.1.1 = {
 		government = clan_government
@@ -480,6 +492,9 @@ c_hunyan = {
 	1156.1.1 = {
 		holder = 155086
 	}
+	1175.1.1 = {
+		holder = almohad_8 # Ali
+	}
 	1196.1.1 = {
 		holder = 32988
 	}
@@ -550,6 +565,7 @@ d_tahert = {
 c_tahert = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 18 }
 
 	777.1.1 = { # in 777, ʻAbd ar-Rahmān ibn Rustam, an Ifriqiyan-born convert to the Ibāḍī movement of Persian origin and one of the four founders of the Ibāḍī imamate, was elected Imām
 		holder = 210029
@@ -559,6 +575,7 @@ c_tahert = {
 	}
 	823.1.1 = {
 		government = clan_government
+		liege = "d_alger"
 		holder = 163097
 	}
 	877.1.1 = {
@@ -776,6 +793,9 @@ c_figuig = {
 	1152.1.1 = {
 		holder = 155104
 	}
+	1178.1.1 = {
+		holder = marinid_1 # Mihyu
+	}
 	1182.1.1 = {
 		holder = 155105
 	}
@@ -806,6 +826,7 @@ c_figuig = {
 d_alger = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 17 }
 
 }
 
@@ -1045,6 +1066,7 @@ c_tanas = {
 d_bejaia = {
 	867.1.1 = {	change_development_level = 8 }
 	1066.1.1 = { change_development_level = 12 }
+	1178.1.1 = { change_development_level = 17 }
 
 	1062.1.1 = {
 		government = clan_government
@@ -1058,10 +1080,10 @@ d_bejaia = {
 	}
 }
 
-
 c_bejaia = {
 	867.1.1 = {	change_development_level = 10 }
 	1066.1.1 = { change_development_level = 16 }
+	1178.1.1 = { change_development_level = 36 }
 	
 	767.1.1 = {
 		government = clan_government
@@ -1093,6 +1115,9 @@ c_bejaia = {
 	}
 	1152.1.1 = {
 		holder = 155091
+	}
+	1175.1.1 = {
+		holder = almohad_19 # Sulayman
 	}
 	1180.1.1 = {
 		holder = 155092
@@ -1288,6 +1313,9 @@ d_zab = {
 	}
 	1080.1.1 = {
 		holder = 155175	#Masud Athbejid
+	}
+	1110.1.1 = {
+		holder = 0
 	}
 }
 
@@ -1616,6 +1644,9 @@ d_mzab = {
 	}
 	1066.1.1 = {
 		holder = 1144671
+	}
+	1100.10.10 = {
+		holder = 0
 	}
 }
 

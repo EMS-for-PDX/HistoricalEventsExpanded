@@ -2006,8 +2006,8 @@
 	858.2.1 = {
 		add_spouse = 90110 #(Judith of Flanders)
 	}
-	860.12.20 = {
-		death = "860.12.20"
+	860.12.21 = {
+		death = "860.12.21"
 	}
 }
 
@@ -2021,7 +2021,7 @@
 	836.1.1 = {
 		birth = "836.1.1"
 	}
-	865.9.1 = {
+	865.9.1 = { # Æthelberht died of unknown causes in the autumn of 865
 		death = "865.9.1"
 	}
 }

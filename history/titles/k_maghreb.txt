@@ -10,7 +10,7 @@ k_maghreb = {
 	791.6.16 = {
 		holder = 159502 # Idris II
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503 # Muhammad ibn Idris
 	}
 	836.1.1 = {
@@ -154,7 +154,7 @@ c_marrakesh = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	836.1.1 = {
@@ -258,7 +258,7 @@ c_tadla = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	830.1.1 = {
@@ -356,7 +356,7 @@ c_fazaz = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	830.1.1 = {
@@ -672,7 +672,7 @@ c_tinmallal = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	836.1.1 = {
@@ -883,7 +883,7 @@ c_agadir = {
 	825.1.1 = {
 		holder = 159502 # When Idris II died in 828, the Idrisid state spanned from western Algeria to the Sous in southern Morocco and had become the leading state of Morocco
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	830.1.1 = {
@@ -1001,7 +1001,7 @@ c_ifni = {
 	825.1.1 = {
 		holder = 159502 # When Idris II died in 828, the Idrisid state spanned from western Algeria to the Sous in southern Morocco and had become the leading state of Morocco
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	830.1.1 = {
@@ -1640,7 +1640,7 @@ c_fes = {
 	791.6.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	836.1.1 = {
@@ -1764,7 +1764,7 @@ c_muluya = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	836.1.1 = {
@@ -1868,7 +1868,7 @@ c_taza = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	836.1.1 = {
@@ -1975,7 +1975,7 @@ c_meknes = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159503
 	}
 	830.1.1 = {
@@ -2076,7 +2076,7 @@ c_gharb = {
 	791.12.16 = {
 		holder = 159502
 	}
-	828.1.1 = {
+	828.12.16 = {
 		holder = 159509 # Upon the death of Idris II, al-Qasim's oldest brother Muhammad succeeded to the throne, but divided much of the country among his younger brothers. Thus al-Qasim received rule over Tangier and Basra in the north.
 	}
 	830.1.1 = {
@@ -2192,7 +2192,7 @@ c_tangiers = {
 	791.6.16 = {
 		holder = 159502 # Idris II
 	}
-	828.1.1 = { # During the division of the sultanate that occurred on the death of Idris II, Tangier fell to his son Qasim 
+	828.12.16 = { # During the division of the sultanate that occurred on the death of Idris II, Tangier fell to his son Qasim 
 		holder = 159509 # Al-Qasim ibn Idris
 		liege = k_maghreb
 	}

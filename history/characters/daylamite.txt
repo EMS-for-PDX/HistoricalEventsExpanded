@@ -506,7 +506,7 @@
 		} 
 	}
 	865.1.1 = {
-		trait = cancer
+		add_trait = cancer
 	}
 	867.5.4 = {
 		death = {
@@ -768,9 +768,6 @@
 	}
 }
 
-
-
-
 93166 = {
 	name = "Hassan"
 	dynasty_house = house_bavandid
@@ -785,14 +782,14 @@
 	}
 }
 
-
-
-
 93167 = {
 	name = "Ardashir"
 	dynasty_house = house_bavandid
 	religion = "ismaili"
 	culture = daylamite
+	stewardship = 6
+	trait = ambitious
+	trait = diligent
 	father = 93166
 	1156.1.1 = {
 		birth = yes
@@ -801,9 +798,6 @@
 		death = yes
 	}
 }
-
-
-
 
 93168 = {
 	name = "Ghazi_Rustam"
@@ -1086,7 +1080,7 @@
 	name = "Justan"
 	# Justan II of Gilan
 	dynasty = 7513
-	religion = "zayidi"
+	religion = "zayidi" 
 	culture = daylamite
 	father = 180751
 	805.1.1 = {
@@ -1165,7 +1159,7 @@
 	name = "Ali"
 	# Abbasid governor of Rayy
 	dynasty = 7513
-	religion = "zayidi"
+	religion = "zayidi" 
 	culture = daylamite
 	father = 41605
 	mother = 180763
@@ -1420,6 +1414,7 @@
 		death = yes
 	}
 }
+
 1231054 = {
 	name = "Garsha_sp" #AKA Abu Kalijar, Hamadán and Igharayn 1042-1047 (1047 to Seljuk Ibrahim Inal), then Buyid governor of Khuzestan
 	dynasty = 1029009
@@ -1436,6 +1431,7 @@
 		death = yes
 	}
 }
+
 1231055 = {
 	name = "Abu_Harb" #in Natanz
 	dynasty = 1029009
@@ -1449,6 +1445,7 @@
 		death = yes
 	}
 }
+
 1231056 = {
 	name = "_Ali" # Yazd
 	dynasty = 1029009
@@ -1459,12 +1456,13 @@
 		birth = yes
 	}
 	1075.1.1 = {
-		add_spouse = 1229910
+		add_spouse = 1000229910
 	}
 	1095.1.1 = {
 		death = yes
 	}
 }
+
 1231057 = {
 	name = "Garsha_sp" #Yazd
 	dynasty = 1029009
@@ -1478,7 +1476,6 @@
 		death = yes
 	}
 }
-
 
 #Buyids
 1231060 = {
@@ -1629,6 +1626,9 @@
 	953.1.1 = {
 		birth = yes
 	}
+	982.1.1 = {
+		give_nickname = nick_samsam_al_dawla
+	}
 	983.3.3 = {
 		death = yes
 	}
@@ -1641,6 +1641,9 @@
 	father = 1231065
 	955.1.1 = {
 		birth = yes
+	}
+	988.1.1 = {
+		give_nickname = nick_sharaf_al_dawla
 	}
 	989.6.9 = {
 		death = yes
@@ -1655,6 +1658,9 @@
 	966.1.1 = {
 		birth = yes
 	}
+	1011.1.1 = {
+		give_nickname = nick_baha_al_dawla
+	}
 	1012.12.22 = {
 		death = yes
 	}
@@ -1668,6 +1674,9 @@
 	985.1.1 = {
 		birth = yes
 	}
+	1023.1.1 = {
+		give_nickname = nick_sultan_al_dawla
+	}
 	1024.12.12 = {
 		death = yes
 	}
@@ -1680,6 +1689,9 @@
 	father = 1231072
 	987.1.1 = {
 		birth = yes
+	}
+	1043.1.1 = {
+		give_nickname = nick_jalal_al_dawla
 	}
 	1044.3.3 = {
 		death = yes
@@ -1707,6 +1719,9 @@
 	993.1.1 = {
 		birth = yes
 	}
+	1024.1.1 = {
+		give_nickname = nick_musharraf_al_dawla
+	}
 	1025.5.5 = {
 		death = yes
 	}
@@ -1719,6 +1734,9 @@
 	father = 1231072
 	993.1.1 = {
 		birth = yes
+	}
+	1027.1.1 = {
+		give_nickname = nick_ala_al_dawla
 	}
 	1028.12.12 = {
 		death = yes
@@ -2369,7 +2387,7 @@ persian_scholars_2 = { #Bahmanyar
 	1066.1.1 = {
 		employer = 3042 #Malik Shah 
 		effect = {
-	 		learn_language_of_culture = culture:sogdian 
+	 		learn_language_of_culture = culture:sogdian
 	 		set_relation_ward = character:persian_scholars_1
 		}	
 	}

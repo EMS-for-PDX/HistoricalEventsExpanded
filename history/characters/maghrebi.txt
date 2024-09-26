@@ -687,6 +687,7 @@ maghrebi0015 = {
 
 20829 = {
 	name = "Ali"
+	dna = "20829_ali_siracusa"
 	dynasty = 12237
 	martial = 8
 	diplomacy = 6
@@ -695,6 +696,9 @@ maghrebi0015 = {
 	religion = "ashari"
 	culture = maghrebi
 	trait = education_intrigue_1
+	trait = brave
+	trait = zealous
+	trait = impatient
 	1025.1.1 = {
 		birth = "1025.1.1"
 	}

@@ -1229,15 +1229,33 @@
 	stewardship = 7
 	religion = "catholic"
 	culture = "occitan"
-	trait = beauty_good_1
+	trait = beauty_good_2
 	trait = diligent
-	trait = calm
+	trait = patient
 	trait = brave
 	trait = education_diplomacy_3
 	father = 205731
 	mother = 205732
 	1122.1.1 = {
 		birth = "1122.1.1"
+	}
+	1157.9.8 = {
+		effect = {
+			assign_favourite_child_effect = {
+				ACTOR = character:205730
+				RECIPIENT = character:204510
+			}
+			add_opinion = {
+				target = character:204510
+				modifier = love_opinion
+				opinion = 100
+			}
+			reverse_add_opinion = {
+				target = character:204510
+				modifier = love_opinion
+				opinion = 100
+			}
+		}
 	}
 	1204.4.1 = {
 		death = "1204.4.1"
@@ -5501,20 +5519,20 @@
 	stewardship = 2
 	intrigue = 2
 	learning = 4
-	trait = education_stewardship_2
+	trait = education_martial_2
 	trait = vengeful
 	trait = stubborn
 	trait = cynical
 	father = 205571
 	#wrong mother = 205575
 	1149.1.1 = {
-		birth = "1149.1.1"
+		birth = yes
 	}
 	1176.1.1 = {
 		add_spouse = 205534
 	}
-	1194.1.1 = {
-		death = "1194.1.1"
+	1194.3.19 = {
+		death = yes
 	}
 }
 
@@ -5530,7 +5548,9 @@
 	}
 	#maried 1136.1.1
 	1167.10.15 = {
-		death = "1167.10.15"
+		death = {
+			death_reason = death_murder
+		}
 	}
 }
 
@@ -5593,6 +5613,7 @@
 	dynasty = 40021
 	religion = "catholic"
 	culture = "occitan"
+	father = trencavel_3
 	980.1.2 = {
 		birth = "980.1.2"
 	}
@@ -12270,6 +12291,12 @@
 	father = 93809
 	1120.1.1 = {
 		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	1178.6.1 = {
+		effect = {
+			set_landless_government_effect = yes
+		}
 	}
 	1183.8.10 = {
 		death = yes
@@ -17769,6 +17796,219 @@ aubusson_1 = {
 		birth = yes
 	}
 	1201.1.1 = {
+		death = yes
+	}
+}
+
+st_amand_1 = {
+	name = "Eudes"
+	dynasty = occitan_saint_amand
+	religion = catholic
+	culture = occitan
+	1110.1.1 = {
+		birth = yes
+	}
+	1180.10.1 = {
+		death = yes
+	}
+}
+
+trencavel_1 = {
+	name = "Raimond"
+	dynasty = 40021
+	religion = "catholic"
+	culture = "occitan"
+	father = 205571
+	1154.1.1 = {
+		birth = yes
+	}
+	1211.1.1 = {
+		death = yes
+	}
+}
+
+trencavel_2 = {
+	name = "AdalaI_da"
+	female = yes
+	dynasty = 40021
+	religion = "catholic"
+	culture = "occitan"
+	father = 205571
+	1156.1.1 = {
+		birth = yes
+	}
+	1196.1.1 = {
+		death = yes
+	}
+}
+
+trencavel_3 = {
+	name = "Bernat"
+	dynasty = 40021
+	religion = "catholic"
+	culture = "occitan"
+	father = trencavel_4
+	944.1.1 = {
+		birth = yes
+	}
+	1000.1.1 = {
+		death = yes
+	}
+}
+
+trencavel_4 = {
+	name = "Aton"
+	dynasty = 40021
+	religion = "catholic"
+	culture = "occitan"
+	father = trencavel_5
+	899.1.1 = {
+		birth = yes
+	}
+	942.1.1 = {
+		death = yes
+	}
+}
+
+trencavel_5 = {
+	name = "Bernat"
+	dynasty = 40021
+	religion = "catholic"
+	culture = "occitan"
+	871.1.1 = {
+		birth = yes
+	}
+	918.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_1 = {
+	name = "Sicard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = trencavel_5
+	910.1.1 = {
+		birth = yes
+	}
+	972.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_2 = {
+	name = "Isarn"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_1
+	940.1.1 = {
+		birth = yes
+	}
+	989.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_3 = {
+	name = "Sicard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_2
+	970.1.1 = {
+		birth = yes
+	}
+	1038.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_4 = {
+	name = "Isarn"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_3
+	1020.1.1 = {
+		birth = yes
+	}
+	1072.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_5 = {
+	name = "Sicard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_4
+	1040.1.1 = {
+		birth = yes
+	}
+	1073.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_6 = {
+	name = "Isarn"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_5
+	1070.1.1 = {
+		birth = yes
+	}
+	1138.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_7 = {
+	name = "Sicard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_6
+	1100.1.1 = {
+		birth = yes
+	}
+	1158.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_8 = {
+	name = "Sicard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_7
+	1140.1.1 = {
+		birth = yes
+	}
+	1176.1.1 = {
+		add_spouse = trencavel_2
+	}
+	1196.1.1 = {
+		death = yes
+	}
+}
+
+lautrec_9 = {
+	name = "Frotard"
+	dynasty_house = house_lautrec
+	culture = "occitan"
+	religion = "catholic"
+	father = lautrec_8
+	mother = trencavel_2
+	1176.1.1 = {
+		birth = yes
+	}
+	1219.1.1 = {
 		death = yes
 	}
 }

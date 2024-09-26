@@ -1087,13 +1087,13 @@
 	religion = "catholic"
 	culture = "frankish"
 	730.1.1 = {
-		birth = "730.1.1"
+		birth = yes
 	}
 	760.1.1 = {
 		add_spouse = 168128
 	}
 	804.1.1 = {
-		death = "804.1.1"
+		death = yes
 	}
 }
 190512 = {
@@ -3999,10 +3999,17 @@
 	culture = "frankish"
 	father = 190511
 	mother = 168128
+	trait = zealous
+	trait = brave
+	trait = temperate
+	trait = holy_warrior
 	766.1.1 = {
 		birth = "766.1.1"
 	}
-	
+	806.1.1 = {
+		add_trait = devoted
+	}
+
 	815.5.21 = {
 		death = "815.5.21"
 	}
@@ -4143,7 +4150,6 @@
 	culture = french
 	father = 91383
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
-	
 	trait = education_diplomacy_2
 	trait = trusting
 	trait = ambitious
@@ -4368,10 +4374,10 @@
 	dynasty = 9566
 	religion = catholic
 	culture = french
+	
 	trait = education_stewardship_3 # In a relationship of fidelitas with Lothair, he became comes sacri palacii of Louis II in 851, an office with important judicial functions (an office that required a high degree of jurisprudential competence)
 	trait = just
 	trait = ambitious
-
 	830.1.1 = {
 		birth = yes
 	}

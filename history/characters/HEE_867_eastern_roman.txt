@@ -2791,7 +2791,9 @@ mosele0006 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakap
 		add_spouse = lekapenos0008 # Possibly married a daughter of future Emperor Romanos I from his first marriage prior to Romanos' ascension to the throne and while both were serving in the Navy
 	}
 	922.4.5 = { # In the fifth week of Lent (first week of April 922) the Bulgarians defeated the Romans near Pegai after which Alexios fled in full armor and tried to reach a ship. However, he did not manage to get on the ship, but fell into the sea and drowned
-		death = yes
+		death = {
+			death_reason = death_drowned
+		}
 	}
 }
 

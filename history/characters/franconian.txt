@@ -12,7 +12,7 @@
 	stewardship = 5
 	religion = "catholic"
 	culture = franconian
-	trait = education_martial_3
+	trait = education_martial_2
 	trait = ambitious
 	trait = stubborn
 	trait = trusting
@@ -31,7 +31,8 @@
 	}
 	827.1.1 = {
 		add_spouse = 7987 #Hemma
-		give_nickname = nick_the_german
+		# give_nickname = nick_the_german # Louis was only nicknamed "the German" in the 18th century
+		give_nickname = nick_the_pious # Contemporaries gave Louis the epithet pius (pious) or piissimus (very pious). The contemporary coinage called him HLUDOVICUS PIUS REX
 	}
 	876.1.29 = {
 		death = yes
@@ -44,20 +45,20 @@
 	dna = 42018_karlmann
 	dynasty = 25061
 	martial = 8
-	diplomacy = 8
+	diplomacy = 9 # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "He was charming in speech, humble, and endowed with great cleverness for managing the business of the realm"
 	intrigue = 3
 	stewardship = 6
-	learning = 8
-	prowess = 8
+	learning = 8 # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "learned in letters, devoted to the Christian religion, just, peaceful, and morally upright"
+	prowess = 10 # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "The beauty of his body was exceptional, and his physical strength was a wonder to behold"
 	religion = "catholic"
 	culture = franconian
 	trait = education_martial_4
-	trait = just
-	trait = zealous
-	trait = brave
-	trait = humble
-	trait = beauty_good_2
-	trait = strong
+	trait = just # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "learned in letters, devoted to the Christian religion, just, peaceful, and morally upright"
+	trait = zealous # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "learned in letters, devoted to the Christian religion, just, peaceful, and morally upright"
+	trait = brave # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "He possessed a very warlike spirit. He waged numerous wars against the Slavic kingdoms with his father, and even more without him"
+	trait = humble # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "He was charming in speech, humble, and endowed with great cleverness for managing the business of the realm"
+	trait = beauty_good_2 # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "The beauty of his body was exceptional, and his physical strength was a wonder to behold"
+	trait = strong # Regino of Prüm, writing in his chronicle for the year 880, recalls that Karlmann was "The beauty of his body was exceptional, and his physical strength was a wonder to behold"
 	sexuality = heterosexual
 	fertility = 0.05 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90107 #(Ludwig the German)
@@ -727,7 +728,7 @@
 	}	
 	867.1.1 = {		
 		employer = 31702 # Owner of Trier
-	}		
+	}	
 	879.1.1 = {		
 		death = "879.1.1"	
 	}
@@ -1417,9 +1418,19 @@
 
 161555 = {
 	name = "Werner"
+	dna = 161555_werner_worms
 	dynasty_house = house_salian
 	religion = "catholic"
 	culture = franconian
+	diplomacy = 4
+	martial = 2
+	stewardship = 6
+	intrigue = 4
+	learning = 3
+	trait = education_diplomacy_2
+	trait = lazy
+	trait = content
+	trait = patient
 	father = 161554
 	mother = 161557
 	831.1.1 = {
@@ -2386,6 +2397,7 @@
 	}
 	1136.1.31 = {
 		death = "1136.1.31"
+		give_nickname = nick_the_good
 	}
 }
 
@@ -2410,6 +2422,7 @@
 	}
 	1095.10.12 = {
 		death = "1095.10.12"
+		give_nickname = nick_the_fair
 	}
 }
 
@@ -2615,8 +2628,12 @@
 	1052.1.2 = {
 		add_spouse = 7201
 	}
+	1066.1.1 = {
+		effect = { add_character_flag = margrave_flag }
+	}
 	1081.6.10 = {
 		death = "1081.6.10"
+		give_nickname = nick_the_brave
 	}
 }
 
@@ -2741,6 +2758,7 @@
 	}
 	1141.10.18 = {
 		death = "1141.10.18"
+		give_nickname = nick_the_generous
 	}
 }
 
@@ -4678,13 +4696,10 @@
 	culture = franconian
 	father = 30418
 	1200.1.1 = {
-		birth = "1200.1.1"
-	}
-	1225.1.1 = {
-		capital = c_malbork
+		birth = yes
 	}
 	1249.7.15 = {
-		death = "1249.7.15"
+		death = yes
 	}
 }
 
@@ -4708,13 +4723,27 @@
 30418 = {
 	name = "Heinrich" # Heinrich I
 	dynasty = 7138 #von Hohenlohe
-	religion = "catholic"
+	religion = catholic
 	culture = franconian
+	father = hohenlohe_1
 	1160.1.1 = {
-		birth = "1160.1.1"
+		birth = yes
 	}
 	1207.1.1 = {
-		death = "1207.1.1"
+		death = yes
+	}
+}
+
+hohenlohe_1 = {
+	name = "Konrad"
+	dynasty = 7138 # von Hohenlohe
+	religion = catholic
+	culture = franconian
+	1130.1.1 = {
+		birth = yes
+	}
+	1183.1.1 = {
+		death = yes
 	}
 }
 
@@ -6551,7 +6580,7 @@
 		birth = "1111.1.1"
 	}
 	1153.1.1 = {
-		add_spouse = 212592
+		add_spouse = 129015
 	}
 	1167.8.19 = {
 		death = "1167.8.19"
@@ -7905,7 +7934,9 @@
 		add_spouse = 7911
 	}
 	886.8.28 = {
-		death = "886.1.1"
+		death = { # In 886, Henry led an advance guard to relieve the siege of Paris where Henry's horse fell into a trap near Quierzy and he was cut off from his men and killed on 28 August
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -8528,6 +8559,9 @@
 	}
 	1066.1.1 = {
 		contract_disease_effect = { DISEASE = ill TREATMENT_EVENT = yes }
+		effect = {
+			add_character_flag = margrave_flag
+		}
 	}
 	1067.1.1 = {
 		death = "1067.1.1"
@@ -9719,20 +9753,30 @@
 	name = "Gottfried"
 	# AKA: Godefroi 'le Bossu'
 	dynasty_house = house_wigeriche
+	dna = gottfried_the_hunchback
 	martial = 5
 	diplomacy = 5
 	intrigue = 5
 	stewardship = 5
+	health = 2
 	religion = "catholic"
 	culture = franconian
 	trait = calm
 	trait = honest
+	trait = chaste
 	trait = education_intrigue_1
 	trait = hunchbacked
+	trait = beauty_bad_1
 	father = 11030
 	mother = 11031
 	1040.1.1 = {
 		birth = "1040.1.1"
+	}
+	1065.1.1 = {
+		effect = {
+			give_nickname = nick_the_hunchback
+			create_betrothal = character:7757
+		}
 	}
 	1069.1.1 = {
 		add_spouse = 7757
@@ -9741,7 +9785,9 @@
 		remove_spouse = 7757
 	}	
 	1076.2.27 = {
-		death = "1076.2.27"
+		death = { # He was assassinated by spear in Vlaardingen while "answering the call of nature"
+			death_reason = death_assassination
+		}
 	}
 }
 
@@ -10405,14 +10451,14 @@
 	trait = education_martial_2
 	father = 212590
 	mother = 205955
-	1129.1.1 = {
-		birth = "1129.1.1"
+	1137.1.1 = {
+		birth = yes
 	}
 	1147.1.1 = {
 		add_spouse = 205850
 	}
 	1173.1.5 = {
-		death = "1173.1.5"
+		death = yes
 	}
 }
 
@@ -10426,7 +10472,7 @@
 	intrigue = 6
 	stewardship = 4
 	religion = "catholic"
-	culture = franconian
+	culture = french
 	trait = education_stewardship_2
 	father = 212590
 	mother = 205955
@@ -10456,6 +10502,9 @@
 	}
 	1128.1.1 = {
 		add_spouse = 205955
+	}
+	1148.7.24 = {
+		add_trait = faith_warrior # Siege of Damascus
 	}
 	1168.1.4 = {
 		death = "1168.1.4"
@@ -10497,7 +10546,9 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = franconian
-	trait = education_learning_3
+	trait = education_learning_2
+	trait = devoted
+	trait = bastard
 	father = 212590
 	mother = 205955
 	1147.1.2 = {
@@ -10522,6 +10573,9 @@
 	mother = 6643
 	1057.1.1 = {
 		birth = "1057.1.1"
+	}
+	1070.4.14 = {
+		dynasty_house = house_vaudemont
 	}
 	1080.1.1 = {
 		add_spouse = 161460
@@ -10803,7 +10857,7 @@
 
 33680 = {
 	name = "Ulrich"
-	dynasty = 667
+	dynasty_house = house_vaudemont
 	religion = "catholic"
 	culture = franconian
 	father = 40711
@@ -10819,7 +10873,7 @@
 33681 = {
 	name = "Judith"
 	female = yes
-	dynasty = 667
+	dynasty_house = house_vaudemont
 	religion = "catholic"
 	culture = franconian
 	father = 40711
@@ -10835,7 +10889,7 @@
 33682 = {
 	name = "Gisela"
 	female = yes
-	dynasty = 667
+	dynasty_house = house_vaudemont
 	religion = "catholic"
 	culture = franconian
 	father = 40711
@@ -10911,22 +10965,17 @@
 	}
 }
 
-163062 = {
+163062 = { # Girart de Roussillon - https://en.wikipedia.org/wiki/Girart_de_Roussillon
 	name = "Gerhard"
 	dynasty = 667
 	religion = "catholic"
 	culture = franconian
 	father = 31701
-	#Education
 	trait = education_martial_4
-	
-	#Personality Traits
 	trait = honest
 	trait = brave
 	trait = ambitious
 	trait = humble
-
-	#Other Traits
 	trait = poet
 	809.1.1 = {
 		birth = "809.1.1"
@@ -11456,7 +11505,7 @@
 	}
 }
 
-7909 = {
+7909 = { # Eberhard of Friuli
 	name = "Eberhard"
 	dynasty = 12110
 	martial = 8
@@ -11484,20 +11533,17 @@
 	}
 }
 
-71901 = {
+71901 = { # Berengar I of Italy
 	name = "Berengar"
 	dynasty = 12110
 	religion = "catholic"
 	culture = franconian
 	father = 7909
 	mother = 7907
-	
 	trait = education_martial_1
-	
 	trait = generous
 	trait = ambitious
 	trait = stubborn
-	
 	841.1.1 = {
 		birth = "841.1.1"
 	}
@@ -15523,7 +15569,7 @@
 	}
 }
 260464 = {
-	name = "Fredrich"
+	name = "Friedrich"
 	religion = catholic
 	culture = franconian
 	dynasty = 1062187
@@ -18422,6 +18468,11 @@
 	# AKA: Christain
 	religion = "catholic"
 	culture = franconian
+	trait = education_martial_2
+	trait = lustful # "kept a harem of beautiful girls"
+	trait = profligate # "the asses in his army were more luxuriously cared for than the servants of the Emperor"
+	trait = brave # "swinging the battle axe with which he shattered the helmet and head of many an enemy"
+	trait = gallant # "remained a jovial knight until his death"
 	1130.1.1 = {
 		birth = "1130.1.1"
 	}
@@ -19676,5 +19727,185 @@ franconian0002 = {
 	}
 	1094.1.1 = {
 		death = "1094.1.1"
+	}
+}
+
+saarbrucken_1 = {
+	name = "Heinrich"
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1152.1.1 = {
+		birth = yes
+	}
+	1228.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_2 = {
+	name = "Friedrich"
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1154.1.1 = {
+		birth = yes
+	}
+	1187.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_3 = {
+	name = "Gottfried"
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1155.1.1 = {
+		birth = yes
+	}
+	1203.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_4 = {
+	name = "Adalbert"
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1157.1.1 = {
+		birth = yes
+	}
+	1210.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_5 = {
+	name = "Jutta"
+	female = yes
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1158.1.1 = {
+		birth = yes
+	}
+	1223.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_6 = {
+	name = "Sophie"
+	female = yes
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1160.1.1 = {
+		birth = yes
+	}
+	1215.1.1 = {
+		death = yes
+	}
+}
+
+saarbrucken_7 = {
+	name = "Agnes"
+	female = yes
+	dynasty = 1062187
+	religion = catholic
+	culture = franconian
+	father = 260465
+	1161.1.1 = {
+		birth = yes
+	}
+	1180.1.1 = {
+		death = yes
+	}
+}
+
+sternberg_1 = {
+	name = "Konrad"
+	dynasty = franconian_sternberg
+	religion = catholic
+	culture = franconian
+	trait = devoted
+	1137.1.1 = {
+		birth = yes
+	}
+	1192.1.18 = {
+		death = yes
+	}
+}
+
+fulda_abbot_1 = {
+	name = "Konrad"
+	religion = catholic
+	culture = franconian
+	1131.1.1 = {
+		birth = yes
+	}
+	1192.1.1 = {
+		death = yes
+	}
+}
+
+wartha_1 = {
+	name = "Hugo"
+	dynasty = franconian_wartha
+	religion = catholic
+	culture = franconian
+	1135.1.1 = {
+		birth = yes
+	}
+	1184.1.1 = {
+		death = yes
+	}
+}
+
+abenberg_1 = {
+	name = "Reginhard"
+	dynasty = franconian_abenberg
+	religion = catholic
+	culture = franconian
+	1120.1.1 = {
+		birth = yes
+	}
+	1186.6.15 = {
+		death = yes
+	}
+}
+
+durn_1 = {
+	name = "Ruprecht"
+	dynasty = franconian_durn
+	religion = catholic
+	culture = franconian
+	1143.1.1 = {
+		birth = yes
+	}
+	1197.1.1 = {
+		death = yes
+	}
+}
+
+durn_2 = {
+	name = "Ulrich"
+	dynasty = franconian_durn
+	religion = catholic
+	culture = franconian
+	father = durn_1
+	1161.1.1 = {
+		birth = yes
+	}
+	1201.1.1 = {
+		death = yes
 	}
 }

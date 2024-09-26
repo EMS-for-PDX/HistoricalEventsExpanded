@@ -1394,9 +1394,6 @@
 	stewardship = 6
 	religion = "catholic"
 	culture = "italian"
-	trait = diligent
-	trait = humble
-	trait = education_martial_3
 	father = 213052
 	1166.1.1 = {
 		birth = "1166.1.1"
@@ -4248,7 +4245,7 @@
 }
 
 70841 = {
-	name = "Giancinto"
+	name = "Giacinto"
 	dynasty = 2
 	martial = 6
 	diplomacy = 5
@@ -4258,20 +4255,25 @@
 	culture = "italian"
 	trait = diligent
 	trait = just
-	trait = humble
-	trait = trusting
+	trait = family_first
 	trait = ambitious
 	trait = education_learning_3
 	father = 70840
-	1110.1.1 = {
-		birth = "1110.1.1"
+	1106.1.1 = {
+		birth = yes
+	}
+	1126.1.1 = {
+		add_trait = devoted
+	}
+	1164.1.1 = {
+		employer = 71810 # Pope Alexander III
 	}
 	1191.3.20 = {
 		name = Caelestinus
 	# AKA: Giancinto
 	}
 	1198.1.8 = {
-		death = "1198.1.8"
+		death = yes
 	}
 }
 
@@ -5586,7 +5588,7 @@
 
 71810 = {
 	name = "Orlando"
-	dynasty = 100330
+	dynasty = italian_bandinelli
 	martial = 3
 	diplomacy = 8
 	intrigue = 5
@@ -7850,7 +7852,7 @@
 }
 
 7936 = {
-	name = "Gergory"
+	name = "Gregorio"
 	# AKA: Gregory
 	dynasty = 100349
 	martial = 6
@@ -7899,7 +7901,7 @@
 }
 
 7938 = {
-	name = "Gergory"
+	name = "Gregorio"
 	# AKA: Gregory
 	dynasty = 100349
 	martial = 6
@@ -7920,6 +7922,7 @@
 		death = "1108.1.1"
 	}
 }
+
 7939 = {
 	name = "Giovanni" #Benedictus X
 	dynasty = 100349
@@ -17949,7 +17952,6 @@
 	name = "Berta"
 	# wife of Tedice I
 	female = yes
-	dynasty = 1042000
 	religion = "catholic"
 	culture = "italian"
 	967.1.1 = {
@@ -18613,7 +18615,6 @@
 	name = "Candida"	# fictional placeholder
 	# wife of Guido II della Gherardesca
 	female = yes
-	dynasty = 1042027
 	religion = "catholic"
 	culture = "italian"
 	1047.1.1 = {
@@ -20048,7 +20049,7 @@
 		birth = yes
 	}
 	1160.1.1 = {
-		add_spouse = sicilian0009
+		add_spouse = sicilian0011
 	}
 	1168.1.1 = {
 		death = yes
@@ -20207,7 +20208,6 @@
    name = "Guisiana"   # fictional placeholder
    # daughter of Count Guido Guerra III Guidi, second wife of William I of Cagliari
    female = yes
-   dynasty = 1042027
    religion = "catholic"
    culture = "italian"
    1176.1.1 = {
@@ -23038,10 +23038,8 @@ italian0034 = {
 	female = yes
 	religion = "catholic"
 	culture = "italian"
-
 	father = 7756
 	mother = 7755
-
 	1041.1.1 = {
 		birth = yes
 	}

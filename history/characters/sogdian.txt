@@ -932,7 +932,7 @@ sogdian0008 = {
 	trait = wrathful # reportedly remonstrated Ya'qub after the battle for his bad tactics. Following the death of his son-in-law, deviated course to place of death to avenge him while leaving capital exposed 
 	trait = brave # fought multiple battles over the years
 	trait = diligent # Over the several decades he served the caliphs in various provinces
-	
+
 	812.3.1 = {
 		birth = yes
 	}
@@ -960,7 +960,7 @@ sogdian0009 = {
 	culture = "sogdian"
 	father = sogdian0008
 	mother = sogdian0116
-
+	
 	#Education
 	trait = education_martial_3
 	

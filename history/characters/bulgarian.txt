@@ -51,6 +51,8 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "bulgarian"
+	disallow_random_traits = yes
+	trait = bossy
 	trait = lustful
 	trait = diligent
 	trait = education_martial_2
@@ -109,7 +111,7 @@
 }
 
 217501 = {
-	name = "Petar" #Petar IV
+	name = "Todor" #born Theodore, later Petar IV
 	dynasty = 185
 	martial = 5
 	diplomacy = 4
@@ -124,12 +126,76 @@
 	father = 217503
 	1156.1.1 = {
 		birth = "1156.1.1"
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	1178.10.1 = {
+		effect = {
+			add_character_modifier = ep3_master_todor_modifier
+			add_prestige = 4000 #Giving him prestige to get him on the way for Separatist Uprising
+			add_gold = 200
+			if = {
+				limit = {
+					has_dlc_feature = roads_to_power
+				}
+				change_government = landless_adventurer_government
+				spawn_army = {
+					name = culture_separatists
+					levies = 2500
+					men_at_arms = {
+						type = handpicked_faithful
+						stacks = 4
+					}
+					location = province:499
+					origin = province:499
+					inheritable = yes
+				}
+				spawn_army = {
+					name = culture_separatists
+					levies = 2500
+					men_at_arms = {
+						type = handpicked_faithful
+						stacks = 4
+					}
+					location = province:499
+					origin = province:499
+					inheritable = yes
+				}
+				spawn_army = {
+					name = culture_separatists
+					levies = 2500
+					men_at_arms = {
+						type = handpicked_faithful
+						stacks = 4
+					}
+					location = province:499
+					origin = province:499
+					inheritable = yes
+				}
+				spawn_army = {
+					name = culture_separatists
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 10
+					}
+					men_at_arms = {
+						type = trebuchet
+						stacks = 8
+					}
+					men_at_arms = {
+						type = crossbowmen
+						stacks = 8
+					}
+					location = province:499
+					origin = province:499
+					inheritable = yes
+				}
+			}
+		}
 	}
 	1197.1.1 = {
 		death = "1197.1.1"
 	}
 }
-
 
 217502 = {
 	name = "Kaloyan" #Kaloyan I
@@ -166,14 +232,14 @@
 	intrigue = 6
 	stewardship = 7
 	religion = "orthodox"
-	culture = "bulgarian"
+	culture = "vlach"
 	trait = cynical
 	trait = education_martial_3
 	1120.1.1 = {
-		birth = "1120.1.1"
+		birth = yes
 	}
-	1179.1.1 = {
-		death = "1179.1.1"
+	1177.1.1 = {
+		death = yes
 	}
 }
 
@@ -187,9 +253,6 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "bulgarian"
-	trait = temperate
-	trait = arbitrary
-	trait = education_intrigue_1
 	father = 217503
 	1165.1.1 = {
 		birth = "1165.1.1"
@@ -1810,6 +1873,7 @@
 
 724 = { # Bulgarian and Roman noble who ruled as tsar of Bulgaria for a short time in 1041 - https://www.degruyter.com/database/PMBZ/entry/PMBZ22416/html
 	name = "Alusian"
+	dna = "724_alusian_vidin"
 	dynasty_house = house_alousianoi # Alusian's descendants, the Alousianoi, continued to prosper in the ranks of the Roman aristocracy until the 14th century
 	martial = 8
 	diplomacy = 5
@@ -1896,6 +1960,9 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "bulgarian"
+	trait = diligent
+	trait = wrathful
+	trait = education_martial_2
 	father = 722
 	mother = balgarsko0008
 	1013.1.1 = {
@@ -2065,6 +2132,7 @@
 	culture = "bulgarian"
 	1035.1.1 = {
 		birth = "1035.1.1"
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}	
 	1078.1.1 = {
 		death = "1078.1.1"

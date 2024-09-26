@@ -25,7 +25,15 @@
 		trait = viking
 	}
 	867.1.1 = {
-		employer = HEE_sygtrygg
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_dlc_feature = roads_to_power }
+				}
+				set_employer = character:HEE_sygtrygg
+			}
+			add_character_flag = do_not_generate_starting_family
+		}
 	}
 	886.1.1 = {
 		add_spouse = 241
@@ -49,7 +57,7 @@
 	culture = norse
 	father = 40605
 	mother = HEE_efanda
-	867.1.1 = { # 875, moved forward as of now - FIX/REMOVE FOR RELEASE
+	875.1.1 = {
 		birth = yes
 	}
 	903.1.1 = {
@@ -334,7 +342,7 @@
 	}
 }
 
-6862 = {
+6862 = { # Semi-legendary later wife of Harald Fairhair and daughter of a Jutish King
 	name = "RO_gnhildr"
 	female = yes
 	religion = "norse_pagan"
@@ -544,7 +552,7 @@
 			set_relation_friend = { reason = friend_generic_history target = character:163108 } #Björn Ironside, they went raiding together and Haesteinn could be his foster dad?
 			add_gold = 500
 			add_prestige = 1500 # Rich and prestigious from raiding
-			add_prestige_experience = 5500 # So that we have enough prestige to use an invasion CB
+			add_prestige_experience = 5000 # So that we have enough prestige to use an invasion CB
 
 			# Personal retinue of Hæsteinn who basically followed him around because they thought he was awesome.
 			## Can be used for multiple wars, but will disband upon his death.
@@ -741,6 +749,7 @@
 		# add_spouse = 6863 # Fictional wife with no basis in history
 
 		effect = {
+			add_character_flag = do_not_generate_starting_family
 			give_nickname = nick_troublemaker
 			add_gold = 500
 		}
@@ -3022,6 +3031,7 @@
 		}
 	}
 	867.1.1 = {
+		# add_spouse = 6862 (If this marriage happened at all, it would be later post-conquest)
 		effect = {
 			add_prestige = 400
 		}
@@ -3665,15 +3675,15 @@
 		effect = {
 			add_trait = lifestyle_mystic
 			add_trait_xp = {
-                trait = lifestyle_mystic
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	888.1.1 = {
 		death = yes
@@ -3764,15 +3774,15 @@
 		effect = {
 			add_trait = lifestyle_mystic
 			add_trait_xp = {
-                trait = lifestyle_mystic
-                value = {
-                    integer_range = {
-                        min = small_lifestyle_random_xp_low
-                        max = small_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_mystic
+				value = {
+					integer_range = {
+						min = small_lifestyle_random_xp_low
+						max = small_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	875.1.1 = {
 		death = yes
@@ -3922,18 +3932,18 @@
 	}
 	866.1.1 = {
 		add_spouse = 306011 #Fictional
-			effect = {
+		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = {
-                    integer_range = {
-                        min = medium_lifestyle_random_xp_low
-                        max = medium_lifestyle_random_xp_high
-                    }
-                }
-            }
-        }
+				trait = lifestyle_blademaster
+				value = {
+					integer_range = {
+						min = medium_lifestyle_random_xp_low
+						max = medium_lifestyle_random_xp_high
+					}
+				}
+			}
+		}
 	}
 	838.1.1 = {
 		give_nickname = nick_the_boneless
@@ -4010,12 +4020,18 @@
 	father = 163111 #Ivar the Boneless
 	mother = 306011 #Fictional wife of Ivar
 	trait = gregarious
+	trait = charming
 	trait = arrogant
 	trait = patient
 	trait = education_diplomacy_2
 	trait = beauty_good_1
 	858.1.1 = {
 		birth = yes
+	}
+	874.1.1 = {
+		effect = {
+			remove_trait = charming
+		}
 	}
 	881.1.1 = {
 		death = yes
@@ -4029,11 +4045,18 @@
 	culture = norse
 	father = 163111 #Ivar the Boneless
 	mother = 306011 #Fictional wife of Ivar
+
+	trait = bossy
 	trait = wrathful
 	trait = brave
 	trait = honest
 	862.1.1 = {
 		birth = yes
+	}
+	878.1.1 = {
+		effect = {
+			remove_trait = bossy
+		}
 	}
 	888.1.1 = {
 		death = yes
@@ -4048,9 +4071,14 @@
 	father = 163111 #Ivar the Boneless
 	mother = 306011 #Fictional wife of Ivar
 	trait = beauty_good_2
-	trait = gregarious
+	trait = charming
 	864.1.1 = {
 		birth = yes
+	}
+	880.1.1 = {
+		effect = {
+			remove_trait = charming
+		}
 	}
 	896.1.1 = {
 		death = yes
@@ -4220,6 +4248,7 @@
 	
 	827.1.1 = {
 		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	866.11.1 = {
 		employer = 163112
@@ -4242,13 +4271,15 @@
 
 6811 = { #Dyre the Stranger
 	name = "Dyre" # Ruler of Kiev (Askold/Hoskuldr)
-	dna = 6811_dyre_the_stranger
+	dna = "6811_dyre_kiev"
 	dynasty_house = house_oskyldr
 	religion = "norse_pagan"
 	culture = norse
-	martial = 9
 	diplomacy = 9
+	martial = 9
 	stewardship = 6
+	intrigue = 3
+	learning = 3
 	trait = cynical
 	trait = greedy
 	trait = gregarious
@@ -4558,9 +4589,6 @@
 
 	819.1.1 = {
 		birth = "819.1.1"
-		effect = {
-			add_character_flag = has_scripted_appearance
-		}
 	}
 	870.1.1 = {
 		death = "870.1.1"
@@ -4597,9 +4625,6 @@
 	sexuality = heterosexual
 	851.1.1 = {
 		birth = "851.1.1"
-		effect = {
-			add_character_flag = has_scripted_appearance
-		}
 	}
 	935.1.1 = {
 		death = "935.1.1"
@@ -5095,17 +5120,10 @@
 	father = 186002
 	religion = "norse_pagan"
 	culture = "norse"
-
-	#Education
 	trait = education_martial_2
-	
-	#Personality Traits
 	trait = brave
 	trait = ambitious # Håkon sought to extend his kingdom southwards
 	trait = temperate # Håkon and Harald entered a union of joint forces - Hakon submitted to Harald so a more reasonable ruler 
-	
-	#Other Traits
-
 	835.1.1 = {
 			birth = "835.1.1"
 			effect = {
@@ -5202,20 +5220,17 @@
 	trait = avaricious
 
 	812.1.1 = {
-		birth = "812.1.1"
-		effect = {
-			add_character_flag = has_scripted_appearance
-		}
-	}
+			birth = "812.1.1"
+			}
 	867.1.1 = {
 		effect = {
 			add_gold = 500
 			give_nickname = nick_the_rich 
 		}
-	}
+			}
 	872.1.1 = {
-		death = "872.1.1"
-	}
+			death = "872.1.1"
+			}
 }
 
 186012 = {
@@ -5248,9 +5263,6 @@
 
 	842.1.1 = {
 			birth = "842.1.1"
-			effect = {
-				add_character_flag = has_scripted_appearance
-			}
 			}
 	872.1.1 = {
 			death = "872.1.1"
@@ -5594,18 +5606,11 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168317
-
-	#Education
 	trait = education_martial_3 # He was a great warrior who often pillaged and gathered great amounts of loot. 
-	
-	#Personality Traits
 	trait = generous # He was said to be generous in gold but would starve his men of food
 	trait = gluttonous # He was said to be generous in gold but would starve his men of food
 	trait = brave # He was a great warrior who often pillaged and gathered great amounts of loot. 
-	
-	#Other Traits
 	trait = reaver # He was a great warrior who often pillaged and gathered great amounts of loot. 
-
 	760.1.1 = {
 		birth = "760.1.1"
 	}
@@ -5622,19 +5627,12 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168319
-
-	#Education
 	trait = education_martial_2
-	
-	#Personality Traits
 	trait = gregarious
 	trait = arrogant
 	trait = lustful
 	trait = callous
-	
-	#Other Traits
 	trait = lifestyle_hunter # Known as the Hunter
-
 	785.1.1 = {
 		birth = "785.1.1"
 		give_nickname = nick_the_magnificent
@@ -6664,6 +6662,7 @@
 	
 	839.1.1 = {
 		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	866.1.1 = {
 		employer = 144000 # Fairhair

@@ -3493,6 +3493,9 @@ e_hre = {
 	20.1.1 = {
 		change_development_level = 4
 	}
+	918.12.23 = { # NOT HREmperor, but needed for numbering in relation to Heinrichs
+		holder = 1280 #Heinrich I  #King of Germany
+	}
 	962.2.2 = {
 		holder = 1282 #Otto I
 		#The Ottonian Restoration

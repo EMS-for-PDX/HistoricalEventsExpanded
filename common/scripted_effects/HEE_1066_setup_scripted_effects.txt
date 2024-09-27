@@ -72,27 +72,6 @@ hee_byzantine_1066_effect = {
 	# Muslims
 	character:20738 = { save_scope_as = marwanids } # https://en.wikipedia.org/wiki/Marwanids
 
-	title:c_constanta = { save_scope_as = c_constanta }
-
-	title:c_alexandretta = { save_scope_as = c_alexandretta }
-	title:c_antiocheia = { save_scope_as = c_antiocheia }
-	title:c_shayzar = { save_scope_as = c_shayzar }
-	title:d_antioch = { save_scope_as = d_antioch }
-
-	title:d_edessa = { save_scope_as = d_edessa }
-	title:c_marash = { save_scope_as = c_marash }
-	title:c_aintab = { save_scope_as = c_antiocheia }
-	title:c_edessa = { save_scope_as = c_aintab }
-	title:c_samosata = { save_scope_as = c_samosata }
-	
-	title:c_bakriya = { save_scope_as = c_bakriya }
-	title:c_mayyafariqin = { save_scope_as = c_mayyafariqin }
-	title:c_tall_basma = { save_scope_as = c_tall_basma }
-	
-	title:d_bulgaria = { save_scope_as = d_bulgaria }
-	title:c_skopje = { save_scope_as = c_skopje }
-	title:c_ohrid = { save_scope_as = c_ohrid }
-
 	# Relations #
 
 	character:1742 = { # Alexios I
@@ -102,46 +81,12 @@ hee_byzantine_1066_effect = {
 		}
 	}
 	
-
-	
 	character:1734 = { # Emperor Romanos IV Diogenes
 		add_trait = unwed
 	}
 
 	character:1740 = { # Emperor Nikephoros III Botaneiates
 		add_trait = unwed
-		
-		# His historical position
-		get_title = title:d_antioch
-		get_title = title:c_alexandretta
-		get_title = title:c_antiocheia
-		get_title = title:c_shayzar
-	}
-	
-	character:34464 = { # Nikephoros Karantenos
-		get_title = title:d_bulgaria
-		get_title = title:c_skopje
-		get_title = title:c_ohrid
-	}
-
-	# character:85001 = { # Philaretos Brachamios / Vahram Varajnuni
-		# # His historical position
-		# get_title = title:d_edessa
-		# get_title = title:c_marash
-		# get_title = title:c_aintab
-		# get_title = title:c_edessa
-		# get_title = title:c_samosata
-	# }
-	
-	character:20738 = { # Marwanids
-		# His historical position
-		#get_title = title:c_bakriya
-		get_title = title:c_mayyafariqin
-		get_title = title:c_tall_basma
-	}
-
-	character:20511 = { # John Kantakouzenos
-		get_title = title:c_constanta
 	}
 
 }

@@ -134,49 +134,6 @@ e_eastern_turkic_khanate = {
 	}
 }
 
-e_uyghur_khanate = { # The Uyghur Khaganate (also Uyghur Empire or Uighur Khaganate, self defined as Toquz-Oghuz country; romanized: Toquz Oγuz budun, lit. 'Nine clan people') was a Turkic empire that existed for about a century between the mid 8th and 9th centuries. It was a tribal confederation under the Orkhon Uyghur nobility
-	744.1.1 = { # An alliance of Basmyls, Uyghurs and Karluks overthrew Göktürks and in the spring of 745 killed the last Ozmish Qaghan. At first, the Basmyl chief was elected a Kaghan titled Eletmish Kaghan (742—744), but he was soon overthrown by the allies, who elected Kutlug Boyla as Kutlug Bilge Kaghan
-		government = tribal_government
-		holder = 188783 #Kutlug I Bilge Kagan
-	}
-	747.1.1 = {
-		holder = 188784 #Bayanchur Khan; who began his reign essentially in a civil war with his brother and the intended heir Tay Bilge Tutuq who Bayanchur would later capture and execute
-	}
-	759.5.1 = {
-		holder = 188785 #Bögü Qaghan/Tengri Qaghan
-	}
-	780.1.1 = {
-		holder = 188786 #Tun Baga Tarkhan
-	}
-	789.12.1 = {
-		holder = 188787 #Külüg Bilge Qaghan
-	}
-	790.4.1 = {
-		holder = 188788 #Qutluq Bilge Qaghan
-	}
-	795.1.1 = {
-		holder = 194191 #Alp Qutluq Külüg Bilge Qaghan
-	}
-	808.1.1 = {
-		holder = 166758 #Baoyi Qaghan/Alp Bilge Qaghan
-	}
-	821.1.1 = {
-		holder = 166759 #Chongde Qaghan/Küçlüg Bilge Qaghan
-	}
-	824.1.1 = {
-		holder = 166760 # Qasar Qaghan/Zhaoli Qaghan
-	}
-	832.1.1 = {
-		holder = 166761 #Zhangxin Qaghan/Alp Külüg Bilge Qaghan
-	}
-	839.1.1 = {
-		holder = 166763 #Küräbir/Jueluowu; Uyghur minister whose rebellion lead to the death of Tegin Qaghan (r. 832–839) and subsequent enthronement of a puppet Uyghur qaghan
-	}
-	840.1.1 = {
-		holder = 0 # Külüg Bagha and 100000 Kyrgyz forces invaded Ordu-Baliq and burned the city. Qasar and Jueluowu were killed by a Kyrgyz leader titled Ā-rè, who would take the title Qaghan. The Uyghur clans fled the region in search of refuge, and though there would be several Uyghur khans, none commanded the prestige and power of a Khaganate
-	}
-}
-
 k_kimek_khaganate = {
 	842.1.1 = { # After the breakup of the Uyghur Khaganate in 840, the Central Asian tribes found themselves unattached. Of all the numerous tribes, the Kimaks were ready to head a new political tribal union. They created a new Kimak Kaganate state, a federation of seven tribes, seven Khanlyks.
 		government = tribal_government

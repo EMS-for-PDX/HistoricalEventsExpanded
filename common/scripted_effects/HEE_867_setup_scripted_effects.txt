@@ -598,18 +598,23 @@ hee_byzantine_bulgaria_867_effect = {
 		change_development_level = 3
 	}
 
-	title:c_constanta = { save_scope_as = c_constanta }
-	title:d_dobrudja = { save_scope_as = d_dobrudja }
-
-	scope:petar_the_diplomat = {
-		get_title = title:d_dobrudja
-		get_title = title:c_constanta
+	## Michael III & Basil I.
+	character:70490 = {
+		if = {
+			limit = { has_ep3_dlc_trigger = yes }
+			start_diarchy = co_emperorship
+			set_diarch = character:1700
+			set_designated_heir = character:1700
+		}
 	}
 
 	# Relations
 	if = { #If SE is loaded, give Basil Co-Emperor position
 		limit = {
-			exists = global_var:SE_is_loaded
+			AND = {
+				has_ep3_dlc_trigger = no
+				exists = global_var:SE_is_loaded
+			}	
 		}
 		character:70490 = {
 			appoint_court_position = {
@@ -617,17 +622,20 @@ hee_byzantine_bulgaria_867_effect = {
 				court_position = succ_exp_co_emperor_court_position
 			}
 		}
-		character:1700 = {
-			remove_character_modifier = byzantine_coemperor_modifier
-		}
 	}
 
-	# Set up Basil as Diarch as he is CoEmperor
-	character:70490 = { designate_diarch = character:1700 }
+	if = { #If Player doesnt have RtP, set up a normal Diarchy and give modifier
+		limit = { has_ep3_dlc_trigger = no }
 
-	remove_generated_diarch_consequences_effect = {
-		NEW_DIARCH = character:1700
-		LIEGE = character:70490
+		# Set up Basil as Diarch as he is CoEmperor
+		character:70490 = { designate_diarch = character:1700 }
+
+		remove_generated_diarch_consequences_effect = {
+			NEW_DIARCH = character:1700
+			LIEGE = character:70490
+		}
+
+		character:1700 = { add_character_modifier = byzantine_coemperor_modifier }
 	}
 
 	scope:eudokia_ingerina = { # Chance for a Stephen of Constantinople

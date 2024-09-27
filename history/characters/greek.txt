@@ -69,9 +69,6 @@
 		}
 	}
 	866.5.26 = { # Basil was crowned co-emperor 26 May 866
-		effect = {
-			add_character_modifier = byzantine_coemperor_modifier
-		}
 		add_pressed_claim = title:e_byzantium
 	}
 	866.11.1 = { # Represent Basil's anger and jealousy at Michael III who was beginning to favor another courtier Basiliskianos

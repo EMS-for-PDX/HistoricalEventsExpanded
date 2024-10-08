@@ -144,7 +144,7 @@ seljuk_armenia_cb = {
 						has_trait = incapable
 						has_trait = blind
 						has_trait = disfigured
-						has_trait = eunuch
+						has_trait = eunuch_1
 						has_trait = maimed
 						has_trait = one_eyed
 						has_trait = one_legged
@@ -165,7 +165,7 @@ seljuk_armenia_cb = {
 					text = "byzantine_claimant_is_celibate"
 					object = scope:claimant
 					NOR = {
-						has_trait = eunuch
+						has_trait = eunuch_1
 						has_trait = devoted
 						has_trait = celibate
 					}

@@ -254,7 +254,7 @@ HEE_great_summer_army.0007 = {
 		character:163064 = {
 			death = {
 				death_reason = death_execution
-				killer = character:168650 # Sultan Muhammad I of Andalusia
+				killer = character:168650 # Guttorm
 			}
 		}
 	}

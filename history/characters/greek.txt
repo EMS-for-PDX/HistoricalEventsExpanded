@@ -5083,11 +5083,13 @@
 	culture = "greek"
 	trait = generous # had a reputation for generosity and magnificence
 	trait = brave # showed a superhuman spirit beyond bravery
-	trait = arrogant
 	trait = calm # known to act calmly and without passion
+	trait = ambitious # Eager to restore his empire to its past glories as the great power of the Mediterranean world, Manuel pursued an energetic and ambitious foreign policy
 	trait = education_martial_2 # instructed in military affairs by his father
 	trait = beauty_good_2 # handsome, with an attractive face and a winning smile
 	trait = born_in_the_purple
+	trait = holy_warrior # Manuel wished to be seen in the West as actively espousing the crusading ideal
+	trait = aggressive_attacker
 	father = 223023
 	mother = 231060
 	1118.11.28 = {
@@ -5097,6 +5099,7 @@
 		add_spouse = 125800
 	}
 	1161.1.1 = {
+		give_nickname = nick_the_great_greek
 		add_spouse = 223743
 	}
 	1180.9.24 = {
@@ -5567,15 +5570,23 @@
 223023 = {
 	name = "Ioannes"
 	dynasty = 634
-	martial = 7
-	diplomacy = 7
+	martial = 10
+	diplomacy = 10
 	intrigue = 6
-	stewardship = 6
+	stewardship = 8
+	learning = 9
 	religion = "orthodox"
 	culture = "greek"
-	trait = zealous
+	trait = education_martial_4 # Descriptions of him and his actions indicate that he had great self-control and personal courage, and was an excellent strategist and general
+	trait = generous # It is said during his reign charity was dispensed lavishly
+	trait = zealous # It is said both of John's parents were unusually pious - yet John surpassed them
+	trait = temperate # The food served at the emperor's table was very frugal and John lectured courtiers who lived in excessive luxury
+	trait = diligent # George Ostrogorsky in his influential book, History of the Byzantine State, where John is described as a ruler who, "... combined clever prudence with purposeful energy ... and [was] high principled beyond his day
 	trait = beauty_good_1
 	trait = born_in_the_purple
+	trait = strategist # Descriptions of him and his actions indicate that he had great self-control and personal courage, and was an excellent strategist and general
+	trait = organizer # John's strategy was to launch annual campaigns with limited, realistic objectives - requiring a great deal of organization
+	trait = military_engineer # In The Development of the Komnenian Army 1081–1180, Historian John Birkenmeier stresses the wisdom of John's approach to warfare, which focused on sieges rather than risking pitched battles
 	father = 1742
 	mother = 1743
 	1087.9.13 = {
@@ -5585,6 +5596,7 @@
 		add_spouse = 231060
 	}
 	1143.4.8 = {
+		give_nickname = nick_the_good
 		death = yes
 	}
 }
@@ -9424,6 +9436,7 @@
 	
 	840.1.9 = {
 		birth = "840.1.9"
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	840.5.16 = { # Michael is crowned co-emperor
 		effect = {
@@ -9628,7 +9641,7 @@
 	}
 	813.7.11 = { # Following Michael I Rangabe's abdication, him and his family were tonsured as monks and nuns
 		trait = devoted
-		trait = eunuch
+		trait = eunuch_1
 	} 
 	825.1.1 = { # Unknown
 		death = "825.1.1"
@@ -10355,7 +10368,7 @@
 		birth = "913.11.1"
 	}
 	923.12.25 = { # T. was castrated as a child and was probably ordained hypodiaconate on December 25, 923 or a little later by Patriarch Nikolaos I Mystikos
-		trait = eunuch
+		trait = eunuch_1
 		trait = devoted
 	}
 	956.2.27 = {
@@ -18057,7 +18070,7 @@
 	840.1.1 = {
 		birth = "840.1.1"
 	}
-	900.1.1 = {
+	900.1.1 = { # In the aftermath of their failed conspiracy against Emperor Basil, Ioannes along with his conspirators were banished and their property confiscated. Nothing more is known
 		death = "900.1.1"
 	}
 }
@@ -18090,6 +18103,7 @@
 	trait = ambitious
 	trait = loyal # Reports highlight his loyalty to Emperor Romanos I Lakapenos, and it is that synergy with the Emperor that allowed Ioannes to successfully expand
 	trait = strategist
+	trait = holy_warrior # Most of his notable campaigns were against the Arabs on the Eastern Frontier
 	father = 145172
 	890.1.1 = {
 		birth = "890.1.1"
@@ -18131,6 +18145,7 @@
 	trait = brave # Leon Diakonos considers I. to be brave
 	trait = gregarious # Leon Diakonos emphasizes that he was tired and sleepy during the fight where Ioannes lost his life because he drank too much wine
 	trait = cynical # Leon Diakonos explains that I's death was punishment for the crimes he had committed. Because he desecrated many churches in Bulgaria and profaned the sacred objects.
+	trait = lifestyle_reveler # Leon Diakonos emphasizes that he was tired and sleepy during the fight where Ioannes lost his life because he drank too much wine
 	father = 145174
 	935.1.1 = {
 		birth = "935.1.1"
@@ -18152,8 +18167,8 @@
 	955.1.1 = {
 		birth = "955.1.1"
 	}
-	1015.1.1 = {
-		death = "1015.1.1"
+	1006.1.1 = {
+		death = "1006.1.1"
 	}
 }
 
@@ -18436,7 +18451,7 @@
 	trait = brave # victorious in a cavalry battle over a captured Saracen in the Hippodrome
 	trait = zealous # Refused to convert to Islam on the pain of death
 	trait = stubborn # Refused to convert to Islam on the pain of death
-	trait = eunuch_1
+	trait = beardless_eunuch
 	805.1.1 = {
 		birth = "805.1.1"
 	}

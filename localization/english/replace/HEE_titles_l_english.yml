@@ -76,9 +76,6 @@
 
  d_paulician_principality: "Paulician Principality"
  d_paulician_principality_adj: "Paulician"
- 
- d_byzantine_sicily: "Sicily"
- d_byzantine_sicily_adj: "Sicilian"
 
  d_kaysite: "Kaysite"
  d_kaysite_adj: "Kaysite"
@@ -122,5 +119,22 @@
  kurdish_local_event_troops: "Kurdish Rebels"
 
  #Artifacts
- k_jeanne_banner:0 "Jeanne's Banner"
- k_jeanne_banner_adj:0 "Jeanne's"
+ k_jeanne_banner: "Jeanne's Banner"
+ k_jeanne_banner_adj: "Jeanne's"
+
+ # Noble families
+ d_nf_marikonian: "$dynn_Marikonian$ Family"
+ d_nf_marikonian_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_nf_mosele: "$dynn_Mosele$ Family"
+ d_nf_mosele_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_nf_rendakios: "$dynn_Rendakios$ Family"
+ d_nf_rendakios_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ #LAAMPs
+ d_laamp_trpimirovic: "Sons of Trpimir"
+ d_laamp_trpimirovic_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_laamp_hanzali: "Dissenters of Arbitration"
+ d_laamp_hanzali_article: "$DEFAULT_TITLE_NAME_ARTICLE$"

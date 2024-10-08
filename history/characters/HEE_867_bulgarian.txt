@@ -686,7 +686,7 @@ kometopoulos0023 = { # When the Bulgarian resistance collapsed after the death o
 ### MISC CHARACTERS ### 
 ichirguboil0001 = { # Stazis, recorded as Ichirgu-boil (High official title in the early-medieval Bulgarian state, governor of its “interior region”) during the council of Constantinople in 870
 	name = "Stazis"
-	dynasty = 1000101424	
+
 	religion = "orthodox"
 	culture = "bulgarian"
 

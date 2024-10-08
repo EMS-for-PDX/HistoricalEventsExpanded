@@ -27,7 +27,7 @@ HEE_nikephoritzes_01 = { # https://en.wikipedia.org/wiki/Nikephoritzes
 	
 	#Other Traits
 	trait = administrator
-	trait = eunuch
+	trait = beardless_eunuch
 	
 	sexuality = heterosexual
 	disallow_random_traits = yes

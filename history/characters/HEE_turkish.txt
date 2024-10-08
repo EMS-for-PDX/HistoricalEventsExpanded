@@ -1210,7 +1210,7 @@ salur0021 = {
 		birth = yes
 	}
 	1300.1.1 = {
-		culture=turkmeni
+		culture=turkmen
 	}
 	1310.1.1 = {
 		death = yes
@@ -1227,7 +1227,7 @@ salur0022 = {
 		birth = yes
 	}
 	1300.1.1 = {
-		culture=turkmeni
+		culture=turkmen
 	}
 	1320.1.1 = {
 		death = yes
@@ -1244,7 +1244,7 @@ salur0023 = {
 		birth = yes
 	}
 	1300.1.1 = {
-		culture=turkmeni
+		culture=turkmen
 	}
 	1330.1.1 = {
 		death = yes
@@ -1255,7 +1255,7 @@ salur0024 = {
 	name = "Tugrul" 
 	dynasty_house = house_salur_tribe # Salghur
 	religion = "maturidi"
-	culture = "turkmeni"
+	culture = "turkmen"
     father = salur0023
 	1300.1.1 = {
 		birth = yes
@@ -4439,21 +4439,7 @@ additionalyazır0005 = {
 	religion = "tengri_pagan"
 	culture = "turkish"
 	father = additionalyazır0004
-	601.1.1 = {
-		birth = yes
-	}
-	645.1.1 = {
-		death = yes
-	}
-}
-
-additionalyazır0005 = {
-	name = "Togtekin"
-	dynasty_house = house_yazır_tribe
-	religion = "tengri_pagan"
-	culture = "turkish"
-	father = additionalyazır0004
-	629.1.1 = {
+	603.1.1 = {
 		birth = yes
 	}
 	666.1.1 = {

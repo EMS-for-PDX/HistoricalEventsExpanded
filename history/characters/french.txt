@@ -22185,7 +22185,7 @@
 	}
 	866.7.2 = {
 		effect = {
-			set_relation_potential_rival = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
+			set_relation_grudge = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
 			add_opinion = {
 				target = character:6878 #Hastein killed Odo's father
 				modifier = hate_opinion

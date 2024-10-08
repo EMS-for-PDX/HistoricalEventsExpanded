@@ -218,7 +218,7 @@ HEE_fatimid_founder_confidant_template = {
 	trait = diligent
 	trait = stubborn
 	trait = loyal
-	trait = eunuch
+	trait = eunuch_1
 	random_traits = no
 }
 

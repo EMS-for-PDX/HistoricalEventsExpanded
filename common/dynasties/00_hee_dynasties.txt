@@ -583,10 +583,10 @@ dynasty_kimek_tatars = {
 # Ughyur Khaganate
 dynasty_yaglakar = {
 	name = "dynn_Yaglakar"
-	culture = "ughyur"
+	culture = "uyghur"
 }
 
 dynasty_adiz = {
 	name = "dynn_Adiz"
-	culture = "ughyur"
+	culture = "uyghur"
 }

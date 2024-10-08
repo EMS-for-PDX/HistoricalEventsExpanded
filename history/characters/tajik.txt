@@ -2277,7 +2277,7 @@ fictional_ghurids_6 = { #to make a vassal for the Ghurids
 	838.1.1 = {
 		birth = yes
 	}
-	860.1.1 = {
+	866.1.1 = {
 		employer = 163100
 	}
 	882.10.10 = {

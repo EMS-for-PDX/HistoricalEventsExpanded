@@ -1,0 +1,125 @@
+﻿# 867
+d_nf_marikonian = { # Marikonian
+	812.1.1 = {
+		liege = e_byzantium
+		holder = Mamikonian0012 # Manuel the Armenian
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	860.1.1 = {
+		holder = Mamikonian0002 # Bardas, Michael III's uncle and brother to Empress Theodora
+	}
+	866.4.21 = {
+		holder = Mamikonian0008 # Bardas' son Marinos
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	868.1.1 = {
+		holder = 0
+	}
+}
+
+d_nf_mosele = { # Mosele
+	785.1.1 = {
+		liege = e_byzantium
+		holder = mosele0001 # Late 8th-century Byzantine general Alexios Mosele
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	795.1.1 = {
+		holder = mosele0002 # 
+	}
+	835.4.21 = {
+		holder = mosele0003 # Byzantine aristocrat and general, chosen by Emperor Theophilos for a time as his heir, betrothed to his daughter Maria and raised to the supreme dignity of Caesar
+	}
+	855.1.1 = {
+		holder = mosele0004 # Brother of Caesar Alexios Mosele who held the high court title of patrikios
+	}
+	865.1.1 = {
+		holder = mosele0005
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	890.1.1 = {
+		holder = mosele0006 # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos
+	}
+	922.4.5 = {
+		holder = mosele0007
+	}
+	975.1.1 = {
+		holder = mosele0008
+	}
+	990.1.1 = {
+		holder = mosele0009
+	}
+	1000.1.1 = {
+		holder = 0
+	}
+}
+
+d_nf_rendakios = { # Rendakios
+	705.1.1 = {
+		liege = e_byzantium
+		holder = rendakios0001 # 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	719.1.1 = {
+		holder = rendakios0002 # 
+	}
+	752.1.1 = {
+		holder = rendakios0003 # 
+	}
+	765.1.1 = {
+		holder = rendakios0004 #
+	}
+	795.1.1 = {
+		holder = rendakios0005 #
+	}
+	839.1.1 = {
+		holder = rendakios0006 #
+	}
+	862.1.1 = {
+		holder = rendakios0009 #
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	920.1.1 = {
+		holder = rendakios0011 #
+	}
+	949.1.1 = {
+		holder = rendakios0020 #
+	}
+	1003.1.1 = {
+		holder = rendakios0021 #
+	}
+	1029.1.1 = {
+		holder = rendakios0022 #
+	}
+	1053.1.1 = {
+		holder = rendakios0027 #
+	}
+	1063.1.1 = {
+		holder = rendakios0029 #
+	}
+	1066.9.15 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 1066.9.15 }
+		}
+	}
+	1087.1.1 = {
+		holder = rendakios0030 #
+	}
+	1106.1.1 = {
+		holder = 0
+	}
+}

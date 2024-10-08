@@ -1,0 +1,48 @@
+﻿l_english:
+ 
+ HEE_byzantine_croatia.0001.t: "A Path Home?"
+ HEE_byzantine_croatia.0001.desc: "You sit in silence, a missive clenched in your hand. [domagoj_of_croatia.GetFirstName], the usurper, is dead. The man who usurped your position and exiled you and your family from your homeland has breathed his last. The news, while welcomed, is a tad bittersweet. After all, justice had not been delivered by your own hand, but by fate itself; and [domagoj_of_croatia.GetFirstNamePossessive] sons continue to rule over Croatia - a right still denied to you.\n\nNow you find your thoughts wandering towards the future. You have heard how [domagoj_of_croatia.GetFirstNamePossessive] reign strained relations with the Venetians, Franks, and even the Papacy, so perhaps the time may be right for you to return home and press your claim.\n\nA question remains though - how? Your resources are limited, but there are powers, such as the Roman Empire, which may possess the resources and willingness to assist you."
+ HEE_byzantine_croatia.0001.a: "Roman aid will be vital."
+ HEE_byzantine_croatia.0001.b: "My home is mine to secure."
+
+ ask_the_eremperor_for_help: "You shall travel to Constantinople, the Queen of Cities, and request the aid of the Emperor of New Rome. With luck, and a bit of diplomacy, your interests may allign..."
+ refuse_to_ask_the_eremperor_for_help: "Your successes and your failures shall be yours alone. You will not stoop to ask for help from others in your quest to return home."
+
+ HEE_byzantine_croatia.0002.t: "A Path Home?"
+ HEE_byzantine_croatia.0002.desc: "The grand halls of the Imperial Palace buzz with activity, but a hush falls over the court as my chamberlain announces the arrival of a petitioner. Before the throne steps [croatian_claimant.GetTitledFirstName], a scion of the once-proud Trpimirović dynasty, now reduced to exile in the heart of Constantinople. Clad in his finest garments despite the wear of travel, [croatian_claimant.GetFirstName] kneels, his head bowed low as was custom, but his voice is firm when he speaks.\n\n"[eremperor.GetTitledFirstNameNoTooltip], I come to you, my lord, not as a stranger, but as a servant of Rome. For it was your city that opened it's gates to me in my time of need, and though it pains me to ask for more, I find myself once more asking for your aid. My lands in Croatia were usurped by Domagoj, a tyrant who knew no honor. But he is dead now, and the time has come for me to reclaim what is mine by right. I offer my life, my loyalty, and my lands. With your blessing and aid, I will restore order in my homeland.""
+ HEE_byzantine_croatia.0002.a: ""You speak well. You shall have our aid!""
+ HEE_byzantine_croatia.0002.b: ""I can offer no assistance at this time.""
+
+ support_the_trpimirovic_dynasty: "You find the exile speaks well. You shall provide him the resources he needs - men, coin, and supplies - to take back his birthright."
+ do_not_support_the_trpimirovic_dynasty: "Whatever your reasons, the dynastic struggles of Croatia are not yours to meddle in at this time. The exile will have to seek help elsewhere."
+
+ HEE_byzantine_croatia.0004.t: "In Bulgaria's Footsteps"
+ HEE_byzantine_croatia.0004.desc: "You pace the halls of the Lateran Palace, a look of deep concern etched across your face. News had just arrived that [croatian_claimant.GetTitledFirstName], a former exile, has reclaimed his position as Duke of Croatia with the support of the Emperor in Constantinople. The implications of this alliance weigh heavily on your mind, for you know well the dangers that such a victory posed not only to the autonomy of the Croatian duchy but also to the authority of the Latin Church over its western flock.\n\nThe recent turn of events in Bulgaria remain fresh in your memory, a wound that has yet to heal. After all it was not so long ago the Bulgarian ruler Boris had declared his allegiance to the spiritual authority of Constantinople, rejecting Rome and its rites. The influence of the Eastern Church had spread across Bulgaria like wildfire, largely severing the West from its followers in the Balkans. And now, with Croatia seemingly falling into the same pattern, you can only fear that the Balkans will slip further from Rome’s grasp and embrace the Orthodoxy of the East.\n\nBut there remains loyal Catholic servants in Croatia. One such man is [branimir_of_croatia.GetTitledFirstName], who with our support may be the one to return Croatia to the Catholic fold."
+ HEE_byzantine_croatia.0004.a: ""You speak well. You shall have our aid!""
+ HEE_byzantine_croatia.0004.b: ""I can offer no assistance at this time.""
+
+ reach_out_to_branimir_of_croatia: "Branimir of Croatia may be receptive to our words. We shall seek his assistance in how to handle the issue of Croatia and its leadership."
+ do_not_reach_out_to_branimir_of_croatia: "Whatever your reasons, you will not seek the aid of Branimir. Croatia will be handled through other means - or not at all."
+
+ HEE_byzantine_croatia.0005.opening: "To the Church's loyal ally, [branimir_of_croatia.GetTitledFirstNameNoTooltip]"
+ HEE_byzantine_croatia.0005.desc: "The recent upheaval in Croatia has greatly distressed the Church. We fear the new duke may lead Croatia away from the Catholic fold, and we would reward any who saw fit to correct this indignity. Indeed our blessing would fall on you, your authority, and the whole Croatian people and country should you return Croatia to papal jurisdiction."
+ HEE_byzantine_croatia.0005.a: "There is much to consider..."
+
+ HEE_byzantine_croatia.0006.t: "A Matter of Faith"
+ HEE_byzantine_croatia.0006.desc: "The letter from Rome lay before me, its seal broken and its words spreading a shadow across the quiet of my chambers. I read through it again, slowly, letting each phrase sink in, feeling the weight of the Pope’s careful, deliberate words. The tone was clear enough for any man of sense to understand even if his words fell short of direct command: the Holy Father wished for action - swift and decisive - to keep Croatia aligned with Rome.\n\nAnd the benefits of such action were made apparent as well. To act now, to take hold of the duchy, would secure me the favor of the Church, of the Pope - and perhaps a degree of recognition within the wider Christian world. But a question remains - How? The Holy Father spoke nothing on the means by which he would like to see Croatia returned to the fold, so it falls to me to choose the method - if any - to see the Papacy's wishes fulfilled."
+ HEE_byzantine_croatia.0006.a: ""I shall commit to any action to fulfill Papal wishes.""
+ HEE_byzantine_croatia.0006.b: ""Perhaps [duke_of_croatia.GetTitledFirstNameNoTooltip] will respond to words.""
+ HEE_byzantine_croatia.0006.c: ""This struggle does not concern me.""
+
+ HEE_byzantine_croatia.0007.opening: "To the Church's loyal ally, [duke_of_croatia.GetTitledFirstNameNoTooltip]"
+ HEE_byzantine_croatia.0007.desc: "Soon a papal legate will pass through your lands on his way to the lands of the Bulgarians. It would calm our anxious soul if you were to meet with our legate personally on your border and provide both an armed escort and gurantee of protection to ensure his safety as he travels through your lands."
+ HEE_byzantine_croatia.0007.a: "Agree to the Pope's request"
+ HEE_byzantine_croatia.0007.b: "Refuse the Pope's request"
+
+ HEE_byzantine_croatia.0008.t: "A Matter of Faith"
+ HEE_byzantine_croatia.0008.desc: "I arrived at the border expecting to meet a papal legate, as promised, to grant safe passage through my lands. The sun hung low in the sky, casting long shadows over the quiet woods that lined the road. My guard, though wary, remained calm — until the first arrow flew.\n\nIt struck one of my men clean in the throat. Before I could react, more arrows rained down from the treeline, and shouts echoed from the woods. My guard fell, one after another, cut down by unseen archers.\n\nThen I see him — Branimir, standing a short distance away, his face a mask of grim resolve. My mind raced, a whirlwind of anger and calculation. Branimir must have known about the meeting and had come to ensure that I would not leave alive.\n\nI have little time and even fewer choices left. What shall I do?"
+ HEE_byzantine_croatia.0008.a: ""Please, have mercy on a fellow christian!""
+ HEE_byzantine_croatia.0008.b: ""To arms men!""
+
+ you_plead_for_your_life: "You plead for your life - relying on the mercy and compassion of others in the hope you might live to see another day..."
+ you_fight_for_your_life: "You decide not to go down quietly. No matter the odds, you will fight for your right to live!"

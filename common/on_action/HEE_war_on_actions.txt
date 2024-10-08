@@ -1,7 +1,14 @@
 ﻿on_war_won_attacker = {
 	on_actions = {
+		aghlabid_victory_in_sicily
 		hee_louis_bari_victory
 		hee_great_summer_army_victory
+	}
+}
+
+aghlabid_victory_in_sicily = {
+	events = {
+		historical_alerts.0001
 	}
 }
 

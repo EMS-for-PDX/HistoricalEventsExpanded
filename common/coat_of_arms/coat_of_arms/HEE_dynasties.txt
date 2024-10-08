@@ -3099,3 +3099,40 @@ house_bulpacopan = { # Bula-Chopan aka Tribe of the Čopan with piebald horses. 
 	}
 
 }
+
+1042110 = { # Zunbils - A Sun to reflect their solar deity worship and a fish as a reference to the Temple of the Zun's large fish skeleton on display and the Zunbils' crown with a golden fish head
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=red
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_mena_sun.dds"
+		instance={
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_jumping_fish.dds"
+		instance={
+			scale={ -0.320000 0.320000 }
+			rotation=304
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_tamgha_roundel_frame.dds"
+		instance={
+			scale={ 0.450000 0.450000 }
+			depth=1.010000
+		}
+
+	}
+
+}

@@ -217,12 +217,6 @@ d_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Her
 	capital = c_hereti
 }
 
-d_byzantine_sicily = { # https://en.wikipedia.org/wiki/Sicily_(theme)
-	color = { 131 90 158 }
-
-	capital = c_siracusa
-}
-
 k_hereti = { # https://en.wikipedia.org/wiki/List_of_monarchs_of_Kakheti_and_Hereti#Kings_of_Kakheti_and_Hereti
 	color = { 200 215 200 }
 
@@ -389,4 +383,83 @@ k_jeanne_banner = {
 	capital = c_orleans # Orleans
 	
 	can_create = { always = no }
+}
+
+
+
+# NOBLE FAMILIES
+
+# 867
+d_nf_marikonian = { # The Dynasty for the relatives of Empress Theodora, the Ceasar Bardas, etc.
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_mosele = { # The Dynasty for the Caesar Alexios Mosele and his descendant the Admiral Alexios Mosele
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_rendakios = { # 
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+### LAAMPs ###
+d_laamp_trpimirovic = { # Trpimir's sons in exile
+	color = { 100 100 100 }
+	capital = c_byzantion # Trpimir's sons found themselves in Constantinople after their exile
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_hanzali = { # Muhammad ibn Wasil
+	color = { 100 100 100 }
+	capital = c_shiraz # Province of Fars
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
 }

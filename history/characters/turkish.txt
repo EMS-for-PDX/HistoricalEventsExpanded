@@ -11856,7 +11856,7 @@ fictional_khwarezmian_turks_7 = {
 
 1231978 = {
 	name = "Barutay"
-	dynasty = house_kayi_tribe
+	dynasty_house = house_kayi_tribe
 	father = additionalkayi0011
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
@@ -11869,7 +11869,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231979 = {
 	name = "Kurboga"
-	dynasty = house_kayi_tribe
+	dynasty_house = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231978
@@ -11882,7 +11882,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231980 = {
 	name = "Alkan"
-	dynasty = house_kayi_tribe
+	dynasty_house = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231979
@@ -11895,7 +11895,7 @@ fictional_khwarezmian_turks_7 = {
 }
 1231981 = {
 	name = "Qayi"
-	dynasty = house_kayi_tribe
+	dynasty_house = house_kayi_tribe
 	religion = "tengri_pagan"
 	culture = turkish #oghuz
 	father = 1231980

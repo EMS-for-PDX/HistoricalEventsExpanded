@@ -2115,6 +2115,7 @@ d_fars = {
 	}
 	860.1.1 = {
 		holder = 1000230509
+		liege = e_arabia
 	}
 	
 	1066.1.1 = {
@@ -2352,7 +2353,7 @@ c_darabjerd = {
 		holder = 163100
 	}
 	867.1.1 = {		
-		holder = azariqa_0003 #Muhammad ibn Wasid, notorious Azariqa who took the governorship of Fars in 870. IRL he probably wasn't a formal ruler in the area at this point, but he was based in the area.  
+		holder = 302701 #Placeholder
 		liege = d_fars	#Tahirid governor under Abbasids 
 	}
 	

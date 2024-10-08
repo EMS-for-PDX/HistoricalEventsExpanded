@@ -3,8 +3,8 @@
 # The return of the Trpimirovic dynasty
 HEE_byzantine_croatia.0001 = { # After the death of the usurper Domagoj, a Trpimirovic dynasty member ponders if asking the EREmperor for support is wise
 	type = character_event
-	title = HEE_italy_questline.0001.t
-	desc = HEE_italy_questline.0001.desc
+	title = HEE_byzantine_croatia.0001.t
+	desc = HEE_byzantine_croatia.0001.desc
 	theme = crown # Change
 	left_portrait = {
 		character = root
@@ -133,16 +133,56 @@ HEE_byzantine_croatia.0002 = { # The EREmperor hears a petition from a member of
 		custom_tooltip = support_the_trpimirovic_dynasty
 		
 		hidden_effect = {
-			scope:eremperor = {
-				add_character_flag = supported_the_trpimirovic_dynasty
+			scope:eremperor = { add_character_flag = supported_the_trpimirovic_dynasty }
+			scope:croatian_claimant = {
+				add_character_flag = recieved_imperial_support
+				add_gold = 250
 				start_war = {
 					casus_belli = croatianreconquest
 					target = scope:duke_of_croatia
 					target_title = title:d_croatia
 					claimant = scope:croatian_claimant
 				}
+
+				# Provide the Claimant with a small personal force
+				spawn_army = {
+					uses_supply = no
+					inheritable = no
+					war_keep_on_attacker_victory = no # Imagine these as Roman forces on loan
+					name = event_troop_default_name
+					men_at_arms = {
+						type = bowmen
+						stacks = 2
+					}
+					men_at_arms = {
+						type = pikemen_unit
+						stacks = 1
+					}
+					men_at_arms = {
+						type = mangonel
+						stacks = 1
+					}
+					levies = 300
+					location = scope:croatian_claimant.location
+				}
+
+				# Have the ERE join as Allies
+				every_character_war = {
+					add_to_list = actor_wars
+				}
+				every_in_list = {
+					list = actor_wars
+					limit = {
+						primary_attacker = scope:croatian_claimant
+					}
+					add_to_list = join_as_attacker
+					remove_from_list = actor_wars
+				}
+				every_in_list = {
+					list = join_as_attacker
+					add_attacker = scope:eremperor
+				}
 			}
-			scope:croatian_claimant = { add_character_flag = recieved_imperial_support }
 		}
 		
 
@@ -180,7 +220,7 @@ HEE_byzantine_croatia.0003 = { # Croatian reconquest trigger
 			limit = { exists = title:k_papal_state }
 			title:k_papal_state.holder = { save_scope_as = pope }
 		}
-		# Emperor Louis's choice to garrison Southern Italy
+
 		scope:attacker = {
 			add_character_flag = reclaimed_croatia_for_the_trpimirovic_dynasty
 		}
@@ -340,6 +380,14 @@ HEE_byzantine_croatia.0007 = { # Croatian Duke recieves letter from Pope asking 
 	option = {
 		name = HEE_byzantine_croatia.0007.a
 
+		scope:pope = {
+			add_opinion = {
+				target = scope:duke_of_croatia
+				modifier = helpful_opinion
+				opinion = 25
+			}
+		}
+
 		trigger_event = {
 			id = HEE_byzantine_croatia.0008
 		}
@@ -350,7 +398,15 @@ HEE_byzantine_croatia.0007 = { # Croatian Duke recieves letter from Pope asking 
 	}
 
 	option = {
-		name = HEE_byzantine_croatia.0007.a
+		name = HEE_byzantine_croatia.0007.b
+
+		scope:pope = {
+			add_opinion = {
+				target = scope:duke_of_croatia
+				modifier = disrespect_opinion
+				opinion = -50
+			}
+		}
 	}
 }
 	
@@ -376,7 +432,7 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 	option = {
 		name = HEE_byzantine_croatia.0008.a
 
-		custom_tooltip = michael_pleads_for_his_life
+		custom_tooltip = you_plead_for_your_life
 
 		hidden_effect = {
 			# Branimir becomes Duke
@@ -389,20 +445,20 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 				EXPOSER = scope:branimir_of_croatia
 			}
 
-			# Branimir breaks from Byzantium
-			create_title_and_vassal_change = {
-				type = independency
-				save_scope_as = going_independent
-				add_claim_on_loss = no
-			}
-
-			scope:branimir_of_croatia = {
-				becomes_independent = {
-					change = scope:going_independent
+			if = { # Branimir breaks from Byzantium if a vassal
+				limit = { scope:branimir_of_croatia.top_liege = title:e_byzantium.holder }
+				create_title_and_vassal_change = {
+					type = independency
+					save_scope_as = going_independent
+					add_claim_on_loss = no
 				}
-			}
-			
-			resolve_title_and_vassal_change = scope:going_independent	
+				scope:branimir_of_croatia = {
+					becomes_independent = {
+						change = scope:going_independent
+					}
+				}
+				resolve_title_and_vassal_change = scope:going_independent
+			}	
 		}
 
 		ai_chance = {
@@ -412,6 +468,57 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 
 	option = {
 		name = HEE_byzantine_croatia.0008.b
+
+		custom_tooltip = you_fight_for_your_life
+
+		hidden_effect = {
+			duel = {
+				skill = prowess
+				value = 15
+				85 = { #Kill them
+					
+					# Branimir becomes Duke
+					set_designated_heir = scope:branimir_of_croatia
+
+					# Branimir is known for the murder
+					known_murder_effect = {
+						VICTIM = scope:duke_of_croatia
+						MURDERER = scope:branimir_of_croatia
+						EXPOSER = scope:branimir_of_croatia
+					}
+
+					if = { # Branimir breaks from Byzantium if a vassal
+						limit = { scope:branimir_of_croatia.top_liege = title:e_byzantium.holder }
+						create_title_and_vassal_change = {
+							type = independency
+							save_scope_as = going_independent
+							add_claim_on_loss = no
+						}
+						scope:branimir_of_croatia = {
+							becomes_independent = {
+								change = scope:going_independent
+							}
+						}
+						resolve_title_and_vassal_change = scope:going_independent
+					}
+
+				}
+
+				15 = { #Miss!
+					scope:duke_of_croatia = {
+						set_relation_rival = scope:branimir_of_croatia
+						add_opinion = {
+							target = scope:branimir_of_croatia
+							modifier = attempted_murder_opinion
+						}
+						add_opinion = {
+							target = scope:branimir_of_croatia
+							modifier = orchestrated_coup_opinion
+						}
+					}
+				}
+			}
+		}
 
 		ai_chance = {
 			base = 0

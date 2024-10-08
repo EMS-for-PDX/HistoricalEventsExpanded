@@ -503,7 +503,7 @@ Mamikonian0002 = { # https://en.wikipedia.org/wiki/Bardas
 	866.4.21 = {
 		death = {
 			death_reason = death_murder_known
-			killer = 1700 # Basil "the_Macedonian"
+			killer = 1700 # Basil "the Macedonian"
 		}
 	}
 }
@@ -541,7 +541,6 @@ Mamikonian0008 = { # https://en.wikipedia.org/wiki/Bardas
 	culture = "armenian"
 	father = Mamikonian0002
 	mother = HEE_bardas_first_wife
-	# health = 5.0
 	
 	#Skills
 	diplomacy = 8
@@ -572,7 +571,7 @@ Mamikonian0008 = { # https://en.wikipedia.org/wiki/Bardas
 	}
 	866.4.21 = {
 		effect = {
-			set_relation_potential_rival = character:1700 # Basil assassinated Marinos' father
+			set_relation_grudge = character:1700 # Basil assassinated Marinos' father
 			add_opinion = {
 				target = character:34014
 				modifier = murdered_someone_close_to_me_crime
@@ -598,7 +597,7 @@ Mamikonian0009 = { # https://en.wikipedia.org/wiki/Bardas#Family
 	}
 	866.4.21 = {
 		effect = {
-			set_relation_potential_rival = character:1700 # Basil assassinated Irene's father
+			set_relation_grudge = character:1700 # Basil assassinated Irene's father
 			add_opinion = {
 				target = character:34014
 				modifier = murdered_someone_close_to_me_crime
@@ -701,7 +700,7 @@ Mamikonian0005 = { # Byzantine empress as the wife of Byzantine emperor Theophil
 	
 	# Personality Traits
 	trait = calm # According to Warren Treadgold, Theodora was "sensible and adaptable"
-	trait = zealous # Played a leading role in the restoration of Icons and the end of the second Byzantine Iconoclasm. Shortly after restoring the icons, Theodora ordered the army to either forcefully convert, or execute, the Paulicians of the empire
+	trait = zealous # Played a leading role in the restoration of Icons and the end of the second Byzantine Iconoclasm. Shortly after restoring the icons, Theodora ordered the army to either forcefully convert, or execute, the Paulicians of the empire - though perhaps likely a decision taken for political reasons rather than personal religious values
 	trait = brave # Later chronicles, probably fancifully, claimed that Theodora had threatened Boris that she would lead the Byzantine army in person against him if he invaded the empire, and that she had stated that Boris achieving victory over a female head of state would hardly be considered a great achievement
 	trait = diligent # Proved extremely capable of running the Empire as Regent (perhaps even Empress Regnant)
 	
@@ -2091,11 +2090,29 @@ Bryennios0003 = { # Patrikios, perhaps identical to Bryennios Strategos of Dalma
 	religion = "orthodox"
 	culture = "greek" #
 	father = Bryennios0001 # Connection unknown
-	820.1.1 = {
+	trait = education_martial_2
+	trait = calm
+	trait = brave
+	trait = diligent
+	trait = unyielding_defender
+	818.1.1 = {
 		birth = "812.1.1" # Unknown, adult in 840s based on the seal of the strategos of Dalmatia, Bryennios, that was dated to that period, if we take him to indeed be identical to Bryennios Strategos of Dalmatia
 	}
-	878.1 = {
-		death = "878.1.1" # Unknown
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 3
+				}
+			}
+		}
+	}
+	876.1 = {
+		death = "876.1.1" # Unknown
 	}
 }
 
@@ -2242,7 +2259,7 @@ Monomachos0002= { # https://en.wikipedia.org/wiki/Nicetas_the_Patrician - Eunuch
 	trait = diligent
 	trait = brave
 	trait = humble
-	trait = eunuch # he was castrated by his parents
+	trait = beardless_eunuch # he was castrated by his parents
 	trait = saint # He is honoured as a saint and a Confessor of the Faith by the Eastern Orthodox Church. His feast day is on 13 October
 	father = Monomachos0001
 	#mother = Rufiusprobianus17
@@ -2369,6 +2386,13 @@ Monomachos0009= {
 	father = Monomachos0007
 	809.1.1 = {
 		birth = "809.1.1" # Unknown
+	}
+	860.1.1 = {
+		religion = "orthodox"
+	}
+	867.1.1 = {
+		employer = 145191 # as bishop of Nicomedia
+		give_council_position = councillor_court_chaplain #bishop of Nicomedia
 	}
 	873.1.1 = {
 		death = "873.1.1" # Unknown
@@ -2704,7 +2728,7 @@ mosele0001 = { # Late 8th-century Byzantine general and first known member of th
 		birth = yes
 	}
 	792.1.1 = {
-		trait = devoted # When Empress Eirene was reinstated as co-empress in January 792, the subject of Armeniakon refused to accept this and demanded Alexios return as strategos. For this reason, and also because Alexios allegedly aspired to the Emperor, Constantine VI. whip him, shave him and imprison him
+		trait = devoted # When Empress Eirene was reinstated as co-empress in January 792, the subject of Armeniakon refused to accept this and demanded Alexios return as strategos. For this reason, and also because Alexios allegedly aspired to the Emperor, Constantine VI whip him, shave him and imprison him
 		trait = blind # When the Tagmata attempted a coup in Constantinople after the defeat at Marcellae in 792, Alexios was also blinded in response because - according to Theophanes - Staurakios and Eirene had convinced the emperor that otherwise Alexios would be elected emperor
 	}
 	795.1.1 = { # Unknown
@@ -2718,10 +2742,10 @@ mosele0002 = { # Fictional/Unknown member of the Mosele Dynasty to connect Alexi
 	father = mosele0001
 	religion ="orthodox"
 	culture = "greek"
-	790.1.1 = { # Fictional
+	780.1.1 = { # Fictional
 		birth = yes
 	}
-	840.1.1 = { # Fictional
+	835.1.1 = { # Fictional
 		death = yes
 	}
 }
@@ -2770,10 +2794,28 @@ mosele0005 = { # Fictional/Unknown member of the Mosele Dynasty to connect early
 	father = mosele0004 # Unknown if there is a direct link, but considering Caesar Alexios is never recorded as having children with Maria nor remarrying, any descendants must be through Theodosios
 	religion ="orthodox"
 	culture = "greek"
+	trait = education_stewardship_2
+	trait = generous
+	trait = zealous
+	trait = chaste
+	trait = forder
 	832.1.1 = { # Fictional
 		birth = yes
 	}
-	900.1.1 = { # Fictional
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 5
+				}
+			}
+		}
+	}
+	890.1.1 = { # Fictional
 		death = yes
 	}
 }
@@ -2821,7 +2863,7 @@ mosele0008 = { # Unnamed child of Romanos Mosele to connect Romanos to his grand
 	935.1.1 = { # Unknown
 		birth = yes
 	}
-	990.1.1 = { # Unknown. Last mention of Romanos is in the year 961/62 when a bodyguard of Romanos is mentioned in the Chronicle of Skylitz as having distinguished himself through equestrian feats in the hippodrome
+	990.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -2859,11 +2901,11 @@ mosele0010 = { # Unnamed grandchildren of Romanos who owned huge estates near Ph
 ### A family of Slavic origin with several members holding important positions and a member even married into Emperor Romanos Lekapenos' family ###
 ### https://en.wikipedia.org/wiki/Rendakis ###
 
-rendakios0001 = { # Strategos of Anatolikon - https://www.degruyter.com/database/PMBZ/entry/PMBZ17965/html
+rendakios0001 = { # Possibly a Strategos of Anatolikon under Justinian II - https://www.degruyter.com/database/PMBZ/entry/PMBZ17965/html
     name = "Sisinnios"
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
-    culture = "bulgarian" #
+    culture = "bulgarian" # Slavic origin
     679.1.1 = {
         birth = "679.1.1" # Unknown
     }
@@ -2884,8 +2926,8 @@ rendakios0002 = {
     700.1.1 = {
         birth = "700.1.1" # Fictional
     }
-    765.1.1 = {
-        death = "765.1.1" # Fictional
+    752.1.1 = {
+        death = "752.1.1" # Fictional
     }
 }
 
@@ -2964,7 +3006,7 @@ rendakios0008 = {
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
     culture = "greek" #
-    trait = eunuch # As protobestiaros, was most likely a eunuch
+    trait = beardless_eunuch # As protobestiaros, was most likely a eunuch
     father = rendakios0006
     840.1.1 = {
         birth = "840.1.1" #
@@ -2980,11 +3022,29 @@ rendakios0009 = { # Unnamed Father of Patrician Niketas; combining him with the 
     religion = "orthodox"
     culture = "greek" #
     father = rendakios0006
+	# Hate random traits 
+	trait = education_diplomacy_2
+	trait = diligent
+	trait = temperate
+	trait = content
     837.1.1 = {
-        birth = "870.1.1" # Unknown
+        birth = "837.1.1" # Unknown
     }
-    925.1.1 = {
-        death = "925.1.1" # Died before 928
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 1
+				}
+			}
+		}
+	}
+    920.1.1 = {
+        death = "920.1.1" # He is mentioned as already deceased in the winter of 927/28 in a letter from his son N. to the Protasekretis Gregorios (# 22393).
     }
 }
 
@@ -2994,8 +3054,8 @@ rendakios0010 = {
     religion = "orthodox"
     culture = "greek" #
     father = rendakios0009
-    865.1.1 = {
-        birth = "865.1.1" # Unknown
+    870.1.1 = {
+        birth = "870.1.1" # Unknown
     }
     945.1.1 = {
         death = "945.1.1" # Died in 944/945
@@ -3168,7 +3228,7 @@ rendakios0021 = {
     religion = "orthodox"
     culture = "greek" #
     father = rendakios0020 #
-    trait = eunuch # Because he is Protobestiaros
+    trait = eunuch_1 # Because he is Protobestiaros
     961.1.1 = {
         birth = "961.1.1" # Unknown
     }
@@ -3253,11 +3313,11 @@ rendakios0027 = {
     religion = "orthodox"
     culture = "greek" #
     father = rendakios0022
-    1002.1.1 = {
-        birth = "1002.1.1" #
+    1010.1.1 = {
+        birth = "1010.1.1" #
     }
-    1066.1.1 = {
-        death = "1066.1.1" #
+    1063.1.1 = {
+        death = "1063.1.1" #
     }
 }
 
@@ -3512,7 +3572,7 @@ lekapenos0010 = { # Illegitimate son of Emperor Romanos I Lakapenos with a concu
 	trait = loyal # The contemporary Theophanes Continuatus reports that Basil was a loyal and dedicated servant of Constantine VII
 	925.1.1 = { # Unknown; Apparently he was emasculated relatively shortly after his birth, the exact date of which cannot be determined 
 		birth = yes
-		trait = eunuch
+		trait = beardless_eunuch
 		give_nickname = nick_the_bastard_greek
 	}
 	987.1.1 = { # Unknown; Probably in 985, or at the latest in 986, B. was removed from his office by Basil II and died shortly after
@@ -3530,7 +3590,7 @@ lekapenos0011 = { # He was the son of Stephanos Lakapenos, born between 935 and 
 		birth = yes
 	}
 	945.1.1 = { # After Constantinos VII Porphyrogennetos came to power in January 945, he was emasculated
-		trait = eunuch
+		trait = eunuch_1
 	}
 	975.1.1 = { # Unknown
 		death = yes
@@ -3547,7 +3607,7 @@ lekapenos0012 = { # He was the son of Konstantinos Lakapenos, castrated but late
 		birth = yes
 	}
 	945.1.1 = { # After Constantinos VII Porphyrogennetos came to power in January 945, he was emasculated
-		trait = eunuch
+		trait = eunuch_1
 	}
 	971.1.1 = { # Unknown
 		death = yes
@@ -4046,6 +4106,19 @@ paspalas0001 = { # Strategos of the Theme of Samos circa. 890, noted for having 
 	842.1.1 = {
 		birth = yes
 	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 5
+				}
+			}
+		}
+	}
 	893.1.1 = { # Unknown what happened to the Strategos following his capture; likely killed
 		death = yes
 	}
@@ -4272,11 +4345,12 @@ patras0001 = { # (Note: Very likely a fictional creation of pro-Macedonian propa
 		birth = yes
 	}
 	850.1.1 = { # Danielis was an extremely wealthy landowner, owning a significant part of the Peloponnese, as well as a flourishing carpet and textile industry
-		add_gold = 1500
+		add_gold = 700
 	}
 	855.1.1 = {
 		effect = {
 			set_relation_friend = character:1700 # The (likely fictional) woman gave Basil lavish gifts, land property, and a place in her household
+			character:1700 = { add_gold = 600 }
 		}
 	}
 	866.1.1 = {
@@ -4774,7 +4848,7 @@ martinakoi0012 = {
 
 
 
-gambros0001 = { # Christopher, gambros to the emperor (the husband of a daughter or, more probably, a sister of Basil) who rose to Domestikos of the Scholen; defeated the Paulikians in the 70s of the 9th century - https://www.degruyter.com/database/PMBZ/entry/PMBZ23411/html
+gambros0001 = { # Christopher, gambros to the emperor (the husband of a daughter or, more probably, a sister of Basil) who rose to Domestikos of the Scholen; defeated the Paulikians in the 870s - https://www.degruyter.com/database/PMBZ/entry/PMBZ23411/html
 	name = "Christophoros"
 	dynasty = dynasty_gambros # No family name is associated, thus it will be based on his relationship to Basil I
 	religion = "orthodox"
@@ -4804,6 +4878,19 @@ gambros0001 = { # Christopher, gambros to the emperor (the husband of a daughter
 	}
 	866.1.1 = {
 		add_spouse = makedon0023 # Considering Basil confined all his daughter to a monastery, likely that the marriage connection between Basil and Christophoros was through a sister of Basil
+	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 3
+				}
+			}
+		}
 	}
 	895.1.1 = { # Unknown
 		death = yes
@@ -4945,10 +5032,7 @@ krateros0001 = { # Unnamed possible member of the Krateros family who was Strate
 	775.1.1 = { # Unknown
 		birth = yes
 	}
-	842.2.19 = {
-		religion = "orthodox"
-	}
-	845.3.6 = { # Unknown
+	828.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -4994,7 +5078,20 @@ krateros0003 = { # Leon Krateros, Strategos of the Anatolikon theme circa. 867 a
 	833.1.1 = { # Unknown
 		birth = yes
 	}
-	885.1.1 = { # Unknown
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 2
+				}
+			}
+		}
+	}
+	888.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -5003,8 +5100,8 @@ krateros0003 = { # Leon Krateros, Strategos of the Anatolikon theme circa. 867 a
 ### Additional Kourkouas Family ###
 ### (Dynasty = 640) ###
 ### https://www.degruyter.com/database/pmbz/search?query=*&documentTypeFacet=databaseEntry&keywordTypesAndValues=dbPerson~Kurkuas%20%28Familienname%29 / https://en.wikipedia.org/wiki/Kourkouas ###
-kourkouas0001 = { # Based on naming, Romanos is likely the father of 
-	name = "Euphrosyne" 
+kourkouas0001 = { # Based on Eastern Roman tradition of the firstborn son being named for their Grandfather, Romanos is possibly the name of John Kourkouas (First notable member of the Kourkouras family) 
+	name = "Romanos" 
 	# Will be lowborn to have the Dynasty start with his son
 	religion = "orthodox"
 	culture = "armenian" # the Kourkouas family are theorized to have Armenian origins
@@ -5079,24 +5176,23 @@ kourkouas0005 = { # sister of Romanos Kourkouas who married Presian (son of Ivan
 	female = yes
 	religion = "orthodox"
 	culture = "greek"
-	father = 145178
-	mother= kometopoulos0003	
-	1028.1.1 = {
+	father = 145177 # Sister of Romanos
+	998.1.1 = { # Unknown
 		birth = yes
 	}
-	1090.1.1 = {
+	1065.1.1 = { # Unknown
 		death = yes
 	}
 }
 
-kourkouas0006 = { # Daughter of Romanos Kourkouas, who married the daughter of the last Bulgarian tsar and later blinded
+kourkouas0006 = { # Daughter of Romanos Kourkouas (Romanos married the daughter of the last Bulgarian tsar and was later blinded)
 	name = "Helene"
 	dynasty = 640
 	female = yes
 	religion = "orthodox"
 	culture = "greek"
 	father = 145178
-	mother= kometopoulos0003	
+	mother = kometopoulos0003	
 	1028.1.1 = {
 		birth = yes
 	}
@@ -5645,7 +5741,7 @@ rhangabe0002 = { # https://en.wikipedia.org/wiki/Theophylact_(son_of_Michael_I)
 	813.7.11 = { # Following Michael I Rangabe's abdication, him and his family were tonsured as monks and nuns
 		name = "Eustratius"
 		trait = devoted
-		trait = eunuch
+		trait = eunuch_1
 	} 
 	849.1.15 = { # Unknown
 		death = yes
@@ -5751,6 +5847,19 @@ nasar0002 = { # Distinguished Byzantine military leader in the Byzantine–Arab 
 			add_prestige_experience = 2000
 			character:nasar0002 = {
 				create_character_memory = { type = lalakaon_roman_triumph }
+			}
+		}
+	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 2
+				}
 			}
 		}
 	}
@@ -6090,6 +6199,19 @@ skythopoulos0001 = { # Andrew the Scythian; served as Strategos of the Opsikion 
 		culture = "greek"
 		give_nickname = nick_the_scythian
 	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 1
+				}
+			}
+		}
+	}
 	886.1.1 = {
 		effect = {
 			set_relation_friend = character:1702 # When Leo succeeded his father, Andrew quickly emerged as the new emperor's right-hand man
@@ -6281,6 +6403,19 @@ kretikos0001 = { # Strategos of the theme of Peloponnesos in 880 - https://www.d
 	858.1.1 = {
 		give_nickname = nick_the_cretan
 	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 1
+				}
+			}
+		}
+	}
 	881.1.1 = { # Unknown
 		death = yes
 	}
@@ -6316,6 +6451,19 @@ koxes0002 = { # Basilikos Protospatharios and Strategos of Hellas (at some point
 	861.1.1 = {
 		effect = {
 			set_relation_potential_rival = character:70555 # said to have stopped the deposed Patriarch Ignatios at the church of Gregorios Theologos on behalf of Emperor Michael III and announced to him that he would face the death penalty if he did not wear the simple monk's robe in the future 
+		}
+	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 1
+				}
+			}
 		}
 	}
 	890.1.1 = { # Unknown

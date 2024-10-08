@@ -14,7 +14,7 @@ hee_byzantine_1066_effect = {
 	character:71901 = { save_scope_as = coempperor_andronikos_doukas } # https://en.wikipedia.org/wiki/Konstantios_Doukas
 	character:9809 = { save_scope_as = zoe_doukaina } # married Adrianos Komnenos, a brother of Emperor Alexios I Komnenos
 	
-	character:41305 = { save_scope_as = michael_psellos } #https://en.wikipedia.org/wiki/Michael_Psellos
+	# character:41305 = { save_scope_as = michael_psellos } #https://en.wikipedia.org/wiki/Michael_Psellos - Moved to historical character spawn system
 
 	character:1746 = { save_scope_as = john_doukas } # https://en.wikipedia.org/wiki/John_Doukas_(Caesar)
 	character:1748 = { save_scope_as = andronikos_doukas } # https://en.wikipedia.org/wiki/Andronikos_Doukas_(cousin_of_Michael_VII)

@@ -332,6 +332,13 @@ HEE_rise_of_simeon.0003 = { #Simeon is installed
 				}
 			}
 			resolve_title_and_vassal_change = scope:change
+
+			if = {
+				limit = {
+					has_trait = devoted
+				}
+				remove_trait = devoted
+			}
 			
 			# trigger_event = {
 				# id = HEE_rise_of_simeon.0004

@@ -1,0 +1,120 @@
+﻿namespace = historical_alerts
+
+##################################################
+# Medieval Warm Period & Little Ice Age
+# by EmrysValdr
+##################################################
+
+historical_alerts.0001 = { # Fall of Syracuse trigger
+	scope = none
+	hidden = yes
+
+	trigger = {
+		NOT = { has_global_variable = syracuse_has_fallen }
+		scope:attacker = { religion = religion:islam_religion }	
+		scope:attacker = title:k_africa.holder
+		scope:attacker = {
+			any_character_war = {
+				casus_belli = {
+					any_target_title = {
+						this = {
+							OR = {
+								title:d_sicily
+								tittle:c_siracusa
+							}
+						}
+					}
+				}
+			}
+		}
+		scope:defender = title:e_byzantium.holder
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = syracuse_has_fallen
+			value = yes
+		}
+		every_ruler = { # Notify appropriate rulers of the event
+			if = {
+				limit = {
+					AND = {
+						is_ai = no
+						capital_province = { geographical_region = world_europe_south_italy }
+					}
+				}
+				trigger_event = historical_alerts.0002 # Alert rulers of the implications of the Fall of Syracuse
+			}
+			if = {
+				limit = {
+					AND = {
+						is_ai = yes
+						capital_province = { geographical_region = world_europe_south_italy }
+						NOT = {
+							OR = {
+								has_trait = arrogant
+								has_trait = brave
+								has_trait = zealous
+							}
+						}
+					}
+				}
+				add_stress = 50
+			}
+		}
+	}
+}
+
+historical_alerts.0002 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = historical_alerts.0002.t
+	desc = historical_alerts.0002.desc
+	theme = realm
+	override_background = { reference = fp3_fullscreen_sunder }
+	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						has_trait = arrogant
+						has_trait = brave
+						has_trait = zealous
+					}
+				}
+			}
+			add_stress = 50
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0201.a
+
+		trigger = {
+			OR = {
+				has_trait = arrogant
+				has_trait = brave
+				has_trait = zealous
+			}
+		}
+
+		custom_tooltip = you_can_use_your_skill_to_rally_the_people
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = HEE_environmental.0201.b
+
+		custom_tooltip = you_can_use_your_skill_to_organize_the_people
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}

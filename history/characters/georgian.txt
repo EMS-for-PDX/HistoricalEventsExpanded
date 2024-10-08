@@ -1426,6 +1426,7 @@
 	culture = "georgian"
 	trait = arrogant
 	trait = ambitious
+	trait = bossy
 	trait = education_martial_3
 	disallow_random_traits = yes
 	father = 70470

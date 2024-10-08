@@ -5885,7 +5885,7 @@
 	culture = maghrebi
 	trait = education_martial_2 # Known by the sobriquet al-Miqdam
 	trait = brave
-	triat = zealous
+	trait = zealous
 	trait = impatient
 	trait = sayyid
 	father = 159509

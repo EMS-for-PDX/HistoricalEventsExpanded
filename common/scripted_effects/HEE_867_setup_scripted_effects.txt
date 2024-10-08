@@ -1,5 +1,48 @@
 ﻿
-
+hee_laamp_867_effect = {
+	## Trpimir's sons in exile
+	character:8601 ?= {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landless_adventurer = yes
+			}
+			add_realm_law_skip_effects = camp_purpose_legitimists # The goal should be to restore your rule in Croatia
+			if = {
+				limit = {
+					character:8602 = {
+						NOT = { is_courtier_of = character:8601 }
+					}
+				}
+				add_courtier = character:8602
+			}
+			if = {
+				limit = {
+					character:8603 = {
+						NOT = { is_courtier_of = character:8601 }
+					}
+				}
+				add_courtier = character:8603
+			}
+			if = {
+				limit = {
+					character:8604 = {
+						NOT = { is_courtier_of = character:8601 }
+					}
+				}
+				add_courtier = character:8604
+			}
+			if = {
+				limit = {
+					character:8605 = {
+						NOT = { is_courtier_of = character:8601 }
+					}
+				}
+				add_courtier = character:8605
+			}
+		}
+	}
+}
 
 # Karling Collapse
 hee_karling_867_effect = {	
@@ -376,7 +419,7 @@ hee_byzantine_bulgaria_867_effect = {
 	character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
 	character:amorios0010 = { save_scope_as = thekla }
 	
-	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
+	character:1700 = { save_scope_as = basil_i } # https://en.wikipedia.org/wiki/Basil_I
 	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
 	
 	character:70554 = { save_scope_as = patriarch_photios } # https://en.wikipedia.org/wiki/Photios_I_of_Constantinople
@@ -598,7 +641,21 @@ hee_byzantine_bulgaria_867_effect = {
 		change_development_level = 3
 	}
 
+	title:e_byzantium = { save_scope_as = EREmpire }
+
 	## Michael III & Basil I.
+	scope:EREmpire = {
+		change_appointment_investment = {
+			target = scope:basil_i
+			investor = scope:basil_i
+			value = appointment_major_influence_cost
+		}
+		if = {
+			limit = { appointment_interactions_recipient_is_suitable_co_emperor_trigger = yes }
+			diarch_promoted_as_administrative_candidate_get_best_tooltip_effect = yes
+		}
+	}
+
 	character:70490 = {
 		if = {
 			limit = { has_ep3_dlc_trigger = yes }
@@ -618,7 +675,7 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 		character:70490 = {
 			appoint_court_position = {
-				recipient = scope:basil
+				recipient = scope:basil_i
 				court_position = succ_exp_co_emperor_court_position
 			}
 		}
@@ -644,10 +701,10 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
-	scope:basil = {
+	scope:basil_i = {
 		set_variable = {
 			name = ongoing_confrontation
-			value = yes
+			value = no
 		}
 	}
 
@@ -705,13 +762,25 @@ hee_byzantine_bulgaria_867_effect = {
 
 	# Bulgaria in 867 is more akin to Tribal than Feudal or Admin
 	character:70382 = { # Boris I
-		change_government = tribal_government
+		if = {
+			limit = { 
+				NOT = {
+					government = tribal government
+				}
+			 }
+			change_government = tribal_government
+		}
 	}
 
 	if = {
 		limit = { exists = title:e_bulgarian_principality.holder }
 		title:e_bulgarian_principality.holder = {
 		 	every_vassal = {
+				limit = { 
+					NOT = {
+						government = tribal government
+					}
+				}
 				change_government = tribal_government
 			}
 		}
@@ -1032,6 +1101,8 @@ hee_iranian_intermezzo_effect = {
 	character:163099 = { save_scope_as = nasr_i } # https://en.wikipedia.org/wiki/Nasr_I
 	character:163157 = { save_scope_as = ismail_samani } # https://en.wikipedia.org/wiki/Ismail_Samani
 
+	character:163101 = { save_scope_as = yaqub_saffarid } # https://en.wikipedia.org/wiki/Ya%27qub_ibn_al-Layth_al-Saffar
+
 	character:163100 = { save_scope_as = muhammad_ibn_tahir } # https://en.wikipedia.org/wiki/Muhammad_ibn_Tahir
 	character:1000230509 = { save_scope_as = muhammad_ibn_abdallah } # https://en.wikipedia.org/wiki/Muhammad_ibn_Abdallah_ibn_Tahir
 	character:163160 = { save_scope_as = ubaydallah_ibn_abdallah } # https://en.wikipedia.org/wiki/Ubaydallah_ibn_Abdallah_ibn_Tahir
@@ -1049,6 +1120,27 @@ hee_iranian_intermezzo_effect = {
 
 	character:163161 = { # Troops provided by Muhammad ibn Tahir as reinforcements to take back Tabaristan
 		spawn_tahirid_troops_effect = yes
+	}
+
+	scope:yaqub_saffarid = { # Yaʿqub Saffarid, depending on your conception of the trait, fits the ideal of a Conqueror and allows for a vanilla-esque way of expansion without a traditional HEE story cycle
+		if = {
+			limit = { is_ai = yes }
+			trigger_event = {
+				id = conqueror.0001
+			}
+		}
+	}
+
+	if = { # Land Muhammad ibn Wasil if RTP (and thus LAAMPs) is not unlocked
+		limit = {
+			AND = {
+				has_ep3_dlc_trigger = no
+				character:azariqa_0003 = { is_landed = no }
+			}
+		}
+		character:azariqa_0003 = {
+			get_title = title:c_darabjerd
+		}
 	}
 
 }
@@ -1690,7 +1782,7 @@ hee_paulicians_867_effect = {
 	character:70490 = { save_scope_as = michael_iii } # https://en.wikipedia.org/wiki/Michael_III
 	character:1761 = { save_scope_as = eudokia_ingerina } # https://en.wikipedia.org/wiki/Eudokia_Ingerina
 	
-	character:1700 = { save_scope_as = basil } # https://en.wikipedia.org/wiki/Basil_I
+	character:1700 = { save_scope_as = basil_i } # https://en.wikipedia.org/wiki/Basil_I
 	character:1702 = { save_scope_as = leon } # https://en.wikipedia.org/wiki/Leo_VI_the_Wise
 	
 	character:70554 = { save_scope_as = patriarch_photios } # https://en.wikipedia.org/wiki/Photios_I_of_Constantinople

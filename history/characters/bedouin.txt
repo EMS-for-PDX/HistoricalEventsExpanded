@@ -6725,7 +6725,7 @@
 		birth = "840.1.1"
 	}
 	866.1.1 = {
-		give_nickname = nick_the_bloodshedder
+		give_nickname = nick_the_bloodshedder_arabic
 	}
 	866.4.1 = {
 		death = "866.1.1"

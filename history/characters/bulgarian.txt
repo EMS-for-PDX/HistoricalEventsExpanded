@@ -1728,12 +1728,16 @@
 	mother = 168075
 	864.1.1 = {
 		birth = yes
+		trait = devoted # Boris intended Simeon to become a high-ranking cleric, possibly a Bulgarian archbishop 
 	}
 	880.1.1 = {
 		trait = ambitious
 		trait = zealous
 		trait = diligent
 		trait = education_learning_3
+	}
+	893.1.1 = {
+		remove_trait = devoted # Follwoing Vladimir's attempts to return Bulgaria to paganism, Boris had Vladimir imprisoned and blinded, and then appointed Simeon as the new ruler.
 	}
 	914.1.1 = {
 		give_nickname = nick_the_great
@@ -1812,7 +1816,7 @@
 		birth = "933.1.1"
 	}
 	971.1.1 = { # After Emperor John I Tzimiskes’ victory in 971, Roman was taken to Constantinople together with his brother’s family. To ensure that the Bulgarian dynasty would die out, the Byzantine emperor had Roman castrated
-		trait = eunuch
+		trait = eunuch_1
 	}
 	997.1.1 = {
 		death = "997.1.1"

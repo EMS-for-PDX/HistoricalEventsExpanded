@@ -1028,6 +1028,9 @@ d_anatolia = {
 			}
 		}
 	}
+	705.1.1 = {
+		holder = rendakios0001 # a Patrikios Sisinnios as strategos of the theme of Anatolikon, under whom Leon III is said to have begun his military career - identified by Giannopulos as Sisinnios Rendakios
+	}	
 	750.1.1 = {
 		holder = 145134
 	}

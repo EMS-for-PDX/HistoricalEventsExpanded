@@ -348,7 +348,7 @@ HEE_ashot_second_daughter = {
 	religion = "armenian_apostolic"
 	culture = "armenian"
 	father = 41505
-	mother = armenian.000082
+	mother = armenian_000082
 	martial = 6
 	diplomacy = 6
 	intrigue = 6
@@ -580,7 +580,7 @@ zygii0001 = { # Weche (Khazar vassal). Symbolic Leader of Western Circassia - ht
 	name = "Weche"
 	dynasty = dynasty_zygii
 	religion = "orthodox" # Maybe Jewish?
-	culture = "circassian" # Cultures Expanded has a circassian culture, but what to do with Vanilla? Georgian will have to be a substitute and will reflect how between the 10th and 13th centuries Georgia had influence on the Adyghe Circassian peoples.
+	culture = "georgian" # Cultures Expanded has a circassian culture, but what to do with Vanilla? Georgian will have to be a substitute and will reflect how between the 10th and 13th centuries Georgia had influence on the Adyghe Circassian peoples.
 	842.1.1 = { # Unknown. Ruled circa. 800s–900s
 		birth = yes
 	}

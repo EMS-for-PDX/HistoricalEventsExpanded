@@ -4636,6 +4636,9 @@ e_france = { # Representative of the Carolignian Empire/Empire of Francia
 	}
 	800.12.25 = {
 		holder = 6392 #Charles the Great
+		succession_laws = {
+			male_only_law
+		}
 	}
 	814.1.28 = {
 		holder = 90095 #Louis the Pious

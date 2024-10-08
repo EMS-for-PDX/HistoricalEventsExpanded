@@ -228,6 +228,7 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 
 				50 = { #Miss!
 					scope:michael_iii = {
+						set_relation_rival = scope:basil
 						add_opinion = {
 							target = scope:basil
 							modifier = attempted_murder_opinion

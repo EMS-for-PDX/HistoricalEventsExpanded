@@ -159,7 +159,7 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 		custom_tooltip = michael_pleads_for_his_life
 
 		hidden_effect = {
-			set_designated_heir = scope:basil
+			set_designated_heir_unsafe = scope:basil
 
 			known_murder_effect = {
 				VICTIM = scope:michael_iii
@@ -200,7 +200,7 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 				value = 15
 				50 = { #Kill them
 					
-					set_designated_heir = scope:basil
+					set_designated_heir_unsafe = scope:basil
 					
 					known_murder_effect = {
 						VICTIM = scope:michael_iii

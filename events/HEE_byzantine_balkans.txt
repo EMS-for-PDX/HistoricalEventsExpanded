@@ -436,7 +436,7 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 
 		hidden_effect = {
 			# Branimir becomes Duke
-			set_designated_heir = scope:branimir_of_croatia
+			set_designated_heir_unsafe = scope:branimir_of_croatia
 
 			# Branimir is known for the murder
 			known_murder_effect = {
@@ -478,7 +478,7 @@ HEE_byzantine_croatia.0008 = { # Croatian Duke is ambushed
 				85 = { #Kill them
 					
 					# Branimir becomes Duke
-					set_designated_heir = scope:branimir_of_croatia
+					set_designated_heir_unsafe = scope:branimir_of_croatia
 
 					# Branimir is known for the murder
 					known_murder_effect = {

@@ -46,7 +46,7 @@ HEE_burgundy_questline.0001 = { #Girart's historical retirement
 		
 		custom_tooltip = girart_retires_to_avignon
 		
-		set_designated_heir = character:7981
+		set_designated_heir_unsafe = character:7981
 		
 		depose = yes
 		

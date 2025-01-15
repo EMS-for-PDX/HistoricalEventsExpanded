@@ -85,7 +85,7 @@ HEE_kiev_rus.0002 = { # Rurik considers succession
 	option = { 
 		name = HEE_kiev_rus.0002.a
 		
-		set_designated_heir = character:40606 # Oleg
+		set_designated_heir_unsafe = character:40606 # Oleg
 
 		hidden_effect = {
 			character:40606 = {
@@ -112,7 +112,7 @@ HEE_kiev_rus.0002 = { # Rurik considers succession
 			}
 		}
 
-		set_designated_heir = scope:child
+		set_designated_heir_unsafe = scope:child
 
 		hidden_effect = {
 			scope:child = {
@@ -135,7 +135,7 @@ HEE_kiev_rus.0002 = { # Rurik considers succession
 			}
 		}
 
-		set_designated_heir = scope:child
+		set_designated_heir_unsafe = scope:child
 
 		hidden_effect = {
 			scope:child = {
@@ -282,7 +282,7 @@ HEE_kiev_rus.0005 = { # Oleg considers the oath he swore to Rurik, and what that
 
 		hidden_effect = {
 			add_trait = unwed
-			set_designated_heir = scope:child
+			set_designated_heir_unsafe = scope:child
 		}
 
 		ai_chance = {

@@ -597,7 +597,7 @@ HEE_germany_questline.0100 = {
                 resolve_title_and_vassal_change = scope:change_two
             }
         }
-		set_designated_heir = scope:karl_stand_in
+		set_designated_heir_unsafe = scope:karl_stand_in
     }
 }
 
@@ -1038,7 +1038,7 @@ HEE_germany_questline.0201 = { #incapacitated due to his stroke/illness, Carloma
 			set_player_character = scope:arnulf
 
 			# In the event of any lingering titles not covered
-            set_designated_heir = scope:ludwig_the_younger
+            set_designated_heir_unsafe = scope:ludwig_the_younger
 			depose = yes
 		
 			#Arnulf loses opinion of Carloman and Ludwig

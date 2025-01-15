@@ -256,7 +256,7 @@ hee_karling_867_effect = {
 	
 	character:168246 = { # Despite being Robert's opponent during his life, after his death Hugh became the guardian of Robert's children.
 		give_nickname = nick_the_abbot
-		set_designated_heir = scope:odo_of_france
+		set_designated_heir_unsafe = scope:odo_of_france
 		set_relation_ward = scope:odo_of_france
 		set_relation_ward = scope:robert_of_france
 	}
@@ -727,7 +727,7 @@ hee_byzantine_bulgaria_867_effect = {
 			limit = { has_ep3_dlc_trigger = yes }
 			start_diarchy = co_emperorship
 			set_diarch = character:1700
-			set_designated_heir = character:1700
+			set_designated_heir_unsafe = character:1700
 		}
 	}
 
@@ -2115,7 +2115,7 @@ hee_north_sea_867_effect = {
 
 
 	character:33358 = { #
-		set_designated_heir = character:7627
+		set_designated_heir_unsafe = character:7627
 	}
 
 

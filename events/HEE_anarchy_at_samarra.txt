@@ -253,7 +253,7 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 
 		custom_tooltip = plead_with_salih
 		
-		set_designated_heir = character:34015
+		set_designated_heir_unsafe = character:34015
 		
 		if = {
 			limit = {
@@ -298,7 +298,7 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 		
 		custom_tooltip = curse_salih 
 		
-		set_designated_heir = character:34015
+		set_designated_heir_unsafe = character:34015
 		
 		depose = yes
 
@@ -421,7 +421,7 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 			resolve_title_and_vassal_change = scope:change
 		}
 		
-		set_designated_heir = character:34017 # Al-Muwaffaq
+		set_designated_heir_unsafe = character:34017 # Al-Muwaffaq
 
 		if = {
 			limit = {
@@ -481,7 +481,7 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 			resolve_title_and_vassal_change = scope:change
 		}
 		
-		set_designated_heir = character:34017 # Al-Muwaffaq
+		set_designated_heir_unsafe = character:34017 # Al-Muwaffaq
 
 		known_murder_effect = {
 			VICTIM = character:34015

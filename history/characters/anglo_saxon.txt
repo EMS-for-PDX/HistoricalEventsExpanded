@@ -1226,6 +1226,7 @@
 5640 = {
 	name = "Leofric"
 	dynasty = 560
+	father = hwicce0005 # To connect to the supposed ancestry of Leofwine Ealdorman of Mercia 
 	martial = 6
 	diplomacy = 5
 	intrigue = 8
@@ -1456,15 +1457,15 @@
 	prowess = 11
 	religion = catholic
 	culture = anglo_saxon
+	# Alfred had a reputation as a learned and merciful man of a gracious and level-headed nature 
 	trait = calm
 	trait = just
 	trait = zealous
 	trait = diligent
 	trait = intellect_good_2
-	trait = lifestyle_hunter
-	trait = organizer
-	trait = unyielding_defender
-	trait = education_martial_4
+	trait = beauty_good_1 # Asser wrote of Alfred in his Life of King Alfred: [He] was seen to be more comely in appearance than his other brothers
+	trait = lifestyle_hunter # An excellent hunter in every branch of the sport, Alfred is remembered as an enthusiastic huntsman against whom nobody's skills could compare
+	trait = education_stewardship_5 # Under Alfred's rule, considerable administrative and military reforms were introduced, prompting lasting change in England. His work as an administrator laid the foundation for his successors, and the traits synergy with Learning fits Alfred's personality
 	sexuality = heterosexual
 	father = 33355 #(?helwulf, King of Wessex)
 	mother = 306023 #Osburh
@@ -1474,7 +1475,7 @@
 			add_character_flag = has_scripted_appearance
 		}	
 	}
-	859.1.1 = {
+	853.1.1 = { #  in 853 Alfred (along with his brother Aethelred) was sent by his father to Rome and was consecrated by the Pope as king
 		trait = pilgrim
 		effect = {
 			add_character_modifier = alfred_annointed_by_the_pope
@@ -1490,6 +1491,10 @@
 		effect = {
 			add_character_modifier = alfred_lifelong_illness
 		}
+	}
+	878.5.7 = { # Alfred's gathering of a West Saxon army at Egbert's Stone
+		trait = organizer
+		trait = unyielding_defender
 	}
 	890.1.1 = {
 		give_nickname = nick_the_great
@@ -1935,12 +1940,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205189
+	trait = education_stewardship_4
+	trait = ambitious
+	trait = diligent
+	trait = brave
+	trait = avaricious # Ecgberht's wealth, acquired through conquest, was no doubt one reason for his ability to purchase the support of the southeastern church establishment; the thriftiness of his will indicates he understood the importance of personal wealth to a king
+	trait = administrator
+	trait = organizer
 	769.1.1 = {
 		birth = "769.1.1"
 	}
 	839.1.1 = {
 		death = "839.1.1"
-		dynasty_house = house_british_isles_wessex	}
+		dynasty_house = house_british_isles_wessex	
+	}
 }
 
 306022 = {
@@ -1960,7 +1973,7 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 306022
-	809.1.1 = {
+	805.1.1 = {
 		birth = yes
 	}
 	855.6.1  = {
@@ -1976,11 +1989,21 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 33354
+	trait = education_diplomacy_4
+	trait = generous
+	trait = zealous # In the 20th century, Æthelwulf's reputation among historians was poor: he was seen as excessively pious and impractical, and his pilgrimage was viewed as a desertion of his duties
+	trait = diligent # Historians in the 21st century see him very differently, as a king who consolidated and extended the power of his dynasty
+	trait = content
+	trait = diplomat # according to the historian Simon Keynes, "...for it was he, more than any other, who secured the political fortune of his people in the ninth century, and who opened up channels of communication which led through Frankish realms and across the Alps to Rome".
+	trait = august # According to Story: "Æthelwulf acquired and cultivated a reputation both in Francia and Rome which is unparalleled in the sources since the height of Offa's and Coenwulf's power at the turn of the ninth century".
 	795.1.1 = {
 		birth = "795.1.1"
 	}
 	832.1.1 = {
 		add_spouse = 306023 #Osburh, mother of his children
+	}
+	855.9.1 = {
+		trait = pilgrim # Pilgrimage to Rome
 	}
 	856.10.1 = {
 		add_spouse = 90110 #(Judith of Flanders)
@@ -2000,6 +2023,9 @@
 	culture = anglo_saxon
 	father = 33355 #(?helwulf, King of Wessex)
 	mother = 306023 #Osburh
+	trait = arbitrary
+	trait = arrogant
+	trait = stubborn
 	834.1.1 = {
 		birth = "834.1.1"
 	}
@@ -2018,6 +2044,10 @@
 	culture = anglo_saxon
 	father = 33355 #(?helwulf, King of Wessex)
 	mother = 306023 #Osburh
+	trait = compassionate # According to the Anglo-Saxon Chronicle, Æthelberht reigned "in good harmony and in great peace" and "in peace, love and honour"
+	trait = just
+	trait = diligent # William of Malmesbury described him as "a vigorous but kindly ruler" 
+	trait = humble # Believed to have given up the Kingdom fo Kent to his father after his brother rebelled
 	836.1.1 = {
 		birth = "836.1.1"
 	}
@@ -2034,19 +2064,27 @@
 	culture = anglo_saxon
 	father = 33355 #(?helwulf, King of Wessex)
 	mother = 306023 #Osburh
-	stewardship = 8
-	trait = education_stewardship_3
-	trait = diligent
+	diplomacy = 7
+	martial = 7
+	stewardship = 7
+	intrigue = 5
+	learning = 6
+	trait = education_martial_3 # He played a role in leading West Saxon armies during the opening years of the Northmen invasions post-866
+	trait = cautious_leader
+	trait = zealous # According to Asser, when Wessex met the Vikings in what would become the Battle of Ashdown, Æthelred would not cut short his devotions to fight the vikings (Note: Likely a biased accounting to give much credit for the victory to Alfred)
 	trait = brave
-	trait = just
+	trait = stubborn
 	fertility = 0.3 #Reduce chance of children before death so Alfred is more likely to inherit
-	840.1.1 = {
-		birth = "840.1.1"
+	845.1.1 = {
+		birth = "845.1.1"
+	}
+	853.1.1 = { #  in 853 Alfred (along with his brother Aethelred) was sent by his father to Rome and was consecrated by the Pope as king
+		trait = pilgrim
 	}
 	866.1.1 = {
 		add_spouse = 306015 #Wulfthryth
 	}
-	871.1.1 = {
+	871.4.20 = { # Shortly after Easter 871, which fell on 15 April in that year, Æthelred died
 		death = "871.1.1"
 	}
 }
@@ -2615,12 +2653,11 @@
 	prowess = 6
 	
 	#Education
-	trait = education_martial_2
+	trait = education_diplomacy_2 # Bought off the vikings
 	
 	#Personality Traits
 	trait = generous
 	trait = zealous
-	trait = just
 	trait = patient
 
 	#Other Traits
@@ -2640,6 +2677,10 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205100
+	trait = education_stewardship_2
+	trait = craven # Driven from his kingdom by the Vikings, refused to fight without his West Saxon allies
+	trait = trusting
+	trait = content
 	830.1.1 = {
 		birth = yes
 	}
@@ -2732,10 +2773,10 @@
 	stewardship = 7
 	intrigue = 6
 	learning = 5
-	trait = deceitful
-	trait = callous
-	trait = arbitrary
-	trait = education_intrigue_3
+	trait = gluttonous
+	trait = arrogant
+	trait = sadistic
+	trait = education_intrigue_2
 	824.1.1 = {
 		birth = yes
 	}
@@ -2743,9 +2784,30 @@
 	840.1.1 = {
 		add_spouse = 6890
 	}
+
+	860.1.1 = { # Based on The Tale of Ragnar's Sons, Aella seems quite the torturer
+		effect = {
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_intrigue_lifestyle_perk_points = -10
+			add_perk = dark_insights_perk
+			add_perk = divine_retribution_perk
+			add_perk = dreadful_perk
+			add_perk = thriving_in_chaos_perk
+			add_perk = malice_implicit_perk
+			add_perk = fear_tax_perk
+			add_perk = forever_infamous_perk
+			add_perk = prison_feudal_complex_perk
+			add_perk = torturer_perk
+			add_trait = torturer
+		}
+	}
 	
 	867.3.21 = {
-		death = yes
+		death = { # Symeon's Historia Regum Anglorum gives this account of the battle on 21 March 867 where Osberht and Ælla met their deaths at the hands of the Vikings
+			death_reason = death_battle
+			killer = 163112 # Halfdan
+		}
 	}
 }
 
@@ -3228,10 +3290,16 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205025
-	425.1.1 = {
-		birth = "425.1.1"
+	trait = education_martial_4
+	trait = ambitious
+	trait = deceitful
+	trait = brave
+	trait = disloyal
+	trait = aggressive_attacker
+	420.1.1 = {
+		birth = "420.1.1"
 	}
-	500.1.1 = {
+	488.1.1 = { # the year 473 is the final entry in the Chronicle mentioning Hengist or Horsa, so Hengist likely died after
 		death = "500.1.1"
 	}
 }
@@ -3241,11 +3309,15 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205025
-	426.1.1 = {
-		birth = "426.1.1"
+	trait = education_martial_2
+	trait = brave
+	422.1.1 = {
+		birth = "422.1.1"
 	}
-	500.1.1 = {
-		death = "500.1.1"
+	455.1.1 = {
+		death = { # In the entry for the year 455 the Chronicle details that Hengist and Horsa fought against Vortigern at Aylesford and that Horsa died there
+			death_reason = death_battle
+		}
 	}
 }
 205028 = {
@@ -3257,8 +3329,8 @@
 	450.1.1 = {
 		birth = "450.1.1"
 	}
-	516.1.1 = {
-		death = "516.1.1"
+	512.1.1 = {
+		death = "512.1.1"
 	}
 }
 205029 = {
@@ -3293,6 +3365,12 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205030
+	trait = education_martial_3
+	trait = just # Æthelberht's law for Kent, the earliest written code in any Germanic language, instituted a complex system of fines
+	trait = brave
+	trait = diligent
+	trait = ambitious
+	trait = administrator #  Kent was rich, with strong trade ties to the Continent, and Æthelberht may have instituted royal control over trade. Coinage probably began circulating in Kent during his reign for the first time since the Anglo-Saxon settlement
 	560.1.1 = {
 		birth = "560.1.1"
 	}
@@ -3300,6 +3378,7 @@
 		religion = "catholic"
 	}
 	616.2.24 = {
+		trait = saint # came to be regarded as a saint for his role in establishing Christianity among the Anglo-Saxons
 		death = "616.2.24"
 	}
 }
@@ -3309,15 +3388,20 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205031
-	#mother = Bertha Meroving
+	mother = additionalmerovingians0001 # Bertha Meroving
+	trait = fickle
+	trait = cynical
+	trait = diligent
+	trait = possessed_1 # According to Bede, Eadbald was punished for his faithlessness by "frequent fits of insanity", and possession by an "evil spirit" (perhaps referring to epileptic fits)
 	590.1.1 = {
 		birth = "590.1.1"
 	}
 	620.1.1 = {
 		religion = "catholic"
-		#add_spouse = Emma Meroving
+		add_spouse = additionalmerovingians0002 # Emma Meroving
 	}
-	640.1.1 = {
+
+	640.1.20 = {
 		death = "640.1.1"
 	}
 }
@@ -3327,7 +3411,7 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205031
-	#mother = Bertha Meroving
+	mother = additionalmerovingians0001 # Bertha Meroving
 	591.1.1 = {
 		birth = "591.1.1"
 	}
@@ -3342,7 +3426,7 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205031
-	#mother = Bertha Meroving
+	mother = additionalmerovingians0001 # Bertha Meroving
 	592.1.1 = {
 		birth = "592.1.1"
 	}
@@ -3359,9 +3443,9 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205032
-	#mother = Emma Meroving
-	610.1.1 = {
-		birth = "610.1.1"
+	mother = additionalmerovingians0002 # Emma Meroving
+	621.1.1 = {
+		birth = "621.1.1"
 	}
 	665.1.1 = {
 		death = "665.1.1"
@@ -3373,9 +3457,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205032
-	#mother = Emma Meroving
-	612.1.1 = {
-		birth = "612.1.1"
+	mother = additionalmerovingians0002 # Emma Meroving
+	trait = just
+	trait = zealous # Eorcenberht was the first king in Britain to command that pagan "idols" (cult images) be destroyed and that Lent be observed
+	trait = diligent
+	625.1.1 = {
+		birth = "625.1.1"
+	}
+	650.1.1 = {
+		add_spouse = additionalwuffing0003 # Eorcenberht married Seaxburh of Ely, daughter of king Anna of East Anglia
 	}
 	664.6.14 = {
 		death = "664.6.14"
@@ -3387,11 +3477,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205035
-	630.1.1 = {
-		birth = "630.1.1"
+	640.1.1 = {
+		birth = "640.1.1"
 	}
 	669.1.1 = {
-		death = "669.1.1"
+		trait = saint # subsequently venerated as saintly martyrs
+		death = { # The various versions of the Kentish Royal Legend state that, spurred on by his adviser Thunor, King Ecgberht had his cousins Æthelred and Æthelberht (sons of his uncle Eormenred) killed
+			death_reason = death_execution
+			killer = 205039 # King Ecgberht of Kent
+		}
 	}
 }
 205038 = {
@@ -3400,11 +3494,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205035
-	632.1.1 = {
-		birth = "632.1.1"
+	642.1.1 = {
+		birth = "642.1.1"
 	}
 	669.1.1 = {
-		death = "669.1.1"
+		trait = saint # subsequently venerated as saintly martyrs
+		death = { # The various versions of the Kentish Royal Legend state that, spurred on by his adviser Thunor, King Ecgberht had his cousins Æthelred and Æthelberht (sons of his uncle Eormenred) killed
+			death_reason = death_execution
+			killer = 205039 # King Ecgberht of Kent
+		}
 	}
 }
 205039 = {
@@ -3413,10 +3511,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205036
-	630.1.1 = {
-		birth = "630.1.1"
+	mother = additionalwuffing0003
+	trait = education_diplomacy_3 # Ecgberht's court seems to have had many diplomatic and ecclesiastic contacts
+	trait = gregarious
+	trait = trusting # The various versions of the Kentish Royal Legend state that, spurred on by his adviser Thunor, he had his cousins Æthelred and Æthelberht (sons of his uncle Eormenred) killed
+	trait = callous # The various versions of the Kentish Royal Legend state that, spurred on by his adviser Thunor, he had his cousins Æthelred and Æthelberht (sons of his uncle Eormenred) killed
+	652.1.1 = { # may have still been a child when he became king following his father's death on 14 July 664, because his mother Seaxburh was recorded as having been regent
+		birth = "652.1.1"
 	}
-	673.1.1 = {
+	673.7.4 = {
 		death = "673.1.1"
 	}
 }
@@ -3426,11 +3529,16 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205036
-	635.1.1 = {
-		birth = "635.1.1"
+	mother = additionalwuffing0003
+	trait = education_stewardship_2
+	trait = just # Issued a law code
+	654.1.1 = {
+		birth = "654.1.1"
 	}
 	685.1.1 = {
-		death = "685.1.1"
+		death = { # Defeated in battle by his rebellious nephew Eadric and died of wounds shortly after (circa. 685)
+			death_reason = death_wounds
+		}
 	}
 }
 205041 = {
@@ -3439,11 +3547,19 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205039
-	650.1.1 = {
-		birth = "650.1.1"
+	trait = education_martial_2
+	trait = brave
+	trait = arrogant
+	trait = ambitious
+	trait = unyielding_defender
+	668.1.1 = {
+		birth = "668.1.1"
 	}
-	686.8.1 = {
-		death = "686.8.1"
+	686.8.31 = { # There is a discussion on the actual date of Eadric's death - one of the Kent annals suggest that he was buried on 31 August 686 and another 31 August 687
+		death = { # Cause of death is unknown (?) but considering Caedwalla of Wessex's invasion it makes sense
+			death_reason = death_battle
+			killer = 205161 # Caedwalla of Wessex
+		}
 	}
 }
 205042 = {
@@ -3455,8 +3571,8 @@
 	661.1.1 = {
 		birth = "661.1.1"
 	}
-	690.1.1 = {
-		death = "690.1.1"
+	690.10.1 = { # Wihtred likely ascended in late 690
+		death = "690.10.1"
 	}
 }
 205043 = {
@@ -3465,8 +3581,12 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205039
-	655.1.1 = {
-		birth = "655.1.1"
+	trait = education_stewardship_3
+	trait = just
+	trait = zealous
+	trait = diligent
+	669.1.1 = {
+		birth = "669.1.1"
 	}
 	725.4.23 = {
 		death = "725.4.23"
@@ -3491,8 +3611,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205043
-	680.1.1 = {
-		birth = "680.1.1"
+	682.1.1 = {
+		birth = "682.1.1"
 	}
 	748.1.1 = {
 		death = "748.1.1"
@@ -3504,11 +3624,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205043
-	679.1.1 = {
-		birth = "679.1.1"
+	680.1.1 = {
+		birth = "680.1.1"
 	}
-	725.1.1 = {
-		death = "725.1.1"
+	730.1.1 = { # Kelly, S observed that the reign of 762 to 796 attributed to him by William of Malmesbury “is evidently fantasy, inspired by a desire to account neatly for all the brothers mentioned by Bede”
+		death = "730.1.1"
 	}
 }
 205047 = {
@@ -3520,8 +3640,8 @@
 	700.1.1 = {
 		birth = "700.1.1"
 	}
-	762.1.1 = {
-		death = "762.1.1"
+	765.1.1 = {
+		death = "765.1.1"
 	}
 }
 205048 = {
@@ -3533,8 +3653,8 @@
 	710.1.1 = {
 		birth = "710.1.1"
 	}
-	765.1.1 = {
-		death = "765.1.1"
+	764.1.1 = {
+		death = "764.1.1"
 	}
 }
 205049 = {
@@ -3556,11 +3676,23 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205049
+	trait = populist_leader # His brief reign was the result of a rebellion against the hegemony of Mercia
+	trait = education_martial_2
+	trait = brave
+	trait = ambitious
+	trait = trusting # Possibly Eadberht's revolt was backed by the Frankish nobility, which may have given Eadberht the push to revolt
 	755.1.1 = {
 		birth = "755.1.1"
 	}
 	798.1.1 = {
-		death = "798.1.1"
+		trait = excommunicated # Supposedly excommunicated by Pope Leo III on account of Eadberht being a former priest who had renounced all rights to the throne
+		trait = blind # The Mercians captured Eadberht, put out his eyes and cut off his hands
+		trait = maimed # The Mercians captured Eadberht, put out his eyes and cut off his hands
+	}
+	799.1.1 = {
+		death = {
+			death_reason = death_wounds # Death is unknown, nothing is known about Eadberht post-deposition
+		}
 	}
 }
 205000 = {
@@ -3597,8 +3729,8 @@
 	550.1.1 = {
 		birth = "550.1.1"
 	}
-	616.1.1 = {
-		death = "616.1.1"
+	599.1.1 = {
+		death = "599.1.1"
 	}
 }
 205003 = {
@@ -3607,11 +3739,18 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205002
+	trait = education_martial_4
+	trait = ambitious
+	trait = cynical
+	trait = temperate
 	570.1.1 = {
 		birth = "570.1.1"
 	}
-	627.1.1 = {
-		death = "627.1.1"
+	604.1.1 = {
+		religion = "catholic" # 
+	}
+	624.1.1 = {
+		death = "624.1.1"
 	}
 }
 205004 = {
@@ -3619,13 +3758,19 @@
 	dynasty = 1047000
 	religion = "norse_pagan"
 	culture = anglo_saxon
-	father = 205002
+	father = 205003
 	590.1.1 = {
 		birth = "590.1.1"
 	}
-	630.1.1 = {
-		death = "630.1.1"
+	627.1.1 = {
 		religion = "catholic"
+	}
+	627.6.1 = { # Unknown; it was "soon after" Eorpwald's conversion that he was assassinated
+		trait = saint # He was the first early English king to suffer death as a consequence of his Christian faith and was subsequently venerated by the Church as a saint and martyr
+		death = {
+			death_reason = death_assassination
+			killer = eastangliacanusurper0001 # Ricberht of East Anglia
+		}
 	}
 }
 205005 = {
@@ -3633,12 +3778,30 @@
 	dynasty = 1047000
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205002
+	father = 205003
+	trait = disputed_heritage # Possibly a step-son of Rædwald
+	trait = education_learning_4 # Whilst living in Gaul as an exile, Sigeberht was converted and baptized and became a devout Christian and a man of learning
+	trait = zealous # Very pious, so much so it is said his dedication to God lead to his death
+	trait = diligent # established a school in his kingdom so that boys could be taught reading and writing in Latin, on the model that he had witnessed in Gaul
+	trait = brave # It was believed his presence and the memory of his former military exploits would encourage the army and make them less likely to flee
+	trait = stubborn # Sigeberht refused, saying that he had renounced his worldly kingdom and now lived only for the heavenly kingdom
+	trait = holy_warrior
+	trait = theologian
 	591.1.1 = {
 		birth = "591.1.1"
 	}
+	620.1.1 = {
+		religion = "catholic" # Whilst living in Gaul as an exile, Sigeberht was converted and baptized and became a devout Christian and a man of learning
+	}
 	634.1.1 = {
-		death = "634.1.1"
+		trait = devoted # Abdicated and became a monk
+	}
+	636.1.1 = {
+		trait = saint
+		death = {
+			death_reason = death_battle # Supposedly slain by a Mercian army after being forced to fight by the East Anglicans with only a staff
+			killer = 205057 # King Penda of Mercia, who led the Mercian army
+		}
 	}
 }
 205006 = {
@@ -3660,11 +3823,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205006
-	590.1.1 = {
-		birth = "590.1.1"
+	trait = education_martial_3
+	trait = holy_warrior
+	trait = generous
+	trait = zealous
+	trait = compassionate
+	trait = brave
+	592.1.1 = {
+		birth = "592.1.1"
 	}
 	654.1.1 = {
-		death = "654.1.1"
+		death = {
+			death_reason = death_battle # Slain by a Mercian army near Blythburgh in Suffolk
+			killer = 205057 # King Penda of Mercia, who led the Mercian army
+		}
 	}
 }
 205008 = {
@@ -3673,11 +3845,19 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205006
-	592.1.1 = {
-		birth = "592.1.1"
+	trait = education_martial_2
+	trait = military_engineer
+	trait = cynical
+	trait = deceitful # Possibly accepted his subjugation by Mercia to deflect Mercia's attention away from East Anglia
+	trait = content
+	595.1.1 = {
+		birth = "595.1.1"
 	}
 	655.11.15 = {
-		death = "655.11.15"
+		death = { # Fell in a battle against the Northumbrians where Penda and nearly all his warlords, including Æthelhere, were killed.
+			death_reason = death_battle # 
+			# killer = MISSING # Oswiu, King of Northumbria
+		}
 	}
 }
 205009 = {
@@ -3686,8 +3866,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205006
-	595.1.1 = {
-		birth = "595.1.1"
+	600.1.1 = {
+		birth = "600.1.1"
 	}
 	664.1.1 = {
 		death = "664.1.1"
@@ -3699,11 +3879,19 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205006
-	600.1.1 = {
-		birth = "600.1.1"
+	trait = unyielding_defender
+	trait = education_martial_2
+	trait = brave
+	trait = temperate
+	trait = humble
+	590.1.1 = {
+		birth = "590.1.1"
 	}
 	636.1.1 = {
-		death = "636.1.1"
+		death = {
+			death_reason = death_battle # Slain in battle against a Mercian Army
+			killer = 205057 # King Penda of Mercia, who led the Mercian army
+		}
 	}
 }
 205011 = {
@@ -3712,6 +3900,7 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205010
+	mother = additionalyffing0008
 	635.1.1 = {
 		birth = "635.1.1"
 	}
@@ -3725,6 +3914,13 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205011
+	trait = education_learning_4 # He was a literate and devoutly Christian king
+	trait = diligent
+	trait = zealous
+	trait = temperate
+	trait = content
+	trait = administrator # The coinage of Anglo-Saxon sceattas expanded in Ælfwald's time: evidence of East Anglian mints, markets, and industry are suggested where concentrations of such coins have been discovered
+	trait = diplomat # his letter written to Boniface in around 747 reveals his diplomatic skills
 	675.1.1 = {
 		birth = "675.1.1"
 	}
@@ -3767,8 +3963,8 @@
 	725.1.1 = {
 		birth = "725.1.1"
 	}
-	779.1.1 = {
-		death = "779.1.1"
+	793.1.1 = {
+		death = "793.1.1"
 	}
 }
 205016 = {
@@ -3777,11 +3973,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205015
-	750.1.1 = {
-		birth = "750.1.1"
+	trait = compassionate
+	trait = trusting
+	trait = humble
+	trait = curious
+	disallow_random_traits = yes
+	775.1.1 = { # c. 775; Possibly earlier (East Anglican history is essentially non-existant)
+		birth = "775.1.1"
 	}
-	794.1.1 = {
-		death = "794.1.1"
+	794.5.20 = {
+		trait = saint
+		death = { # Murdered (or executed) by Offa of Mercia in 794
+			death_reason = death_execution # Executed/murdered by Offa, then his lifeless body was decapitated
+			killer = 205072 # Offa of Mercia
+		}
 	}
 }
 205017 = {
@@ -3803,11 +4008,19 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205017
+	trait = populist_leader # Assumedly rose against Mercian supremacy over East Anglia
+	trait = education_martial_2
+	trait = ambitious
+	trait = brave
+	trait = impatient
 	751.1.1 = {
 		birth = "751.1.1"
 	}
 	800.1.1 = {
-		death = "800.1.1"
+		death = { # Unknown when or how Ealdwald died, but for environmental storytelling to help convey Mercia's reconquest of East Anglia, I will have Ealdwald die in battle
+			death_reason = death_battle # Invented
+			killer = 205107 # Invented, to help show the Mercian reconquest of East Anglia
+		}
 	}
 }
 205019 = {
@@ -3829,6 +4042,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205019
+	trait = populist_leader # Assumedly the leader of the East Anglican rebellion that finally overthrew Mercian supremacy
+	trait = education_martial_3 # Just giving him archetypal rebel traits considering next to nothing is known about him
+	trait = brave
+	trait = just
+	trait = ambitious
 	790.1.1 = {
 		birth = "790.1.1"
 	}
@@ -3960,8 +4178,8 @@
 	560.1.1 = {
 		birth = "560.1.1"
 	}
-	626.1.1 = {
-		death = "626.1.1"
+	606.1.1 = {
+		death = "606.1.1"
 	}
 }
 205057 = {
@@ -3970,12 +4188,20 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205056
+	trait = education_martial_4
 	trait = zealous
+	trait = brave
+	trait = temperate
+	trait = diligent
+	trait = aggressive_attacker
 	600.1.1 = {
 		birth = "600.1.1"
 	}
 	655.11.15 = {
-		death = "655.11.15"
+		death = { # suffered a crushing defeat by Oswiu of Northumbria  and was killed at the Battle of the Winwaed in the course of a final campaign against the Bernicians
+			death_reason = death_battle # Killed at the Battle of the Winwaed
+			killer = 205213 # Oswiu of Northumbria 
+		}
 	}
 }
 205058 = {
@@ -3988,11 +4214,13 @@
 		birth = "601.1.1"
 	}
 	642.8.5 = {
-		death = "642.8.5"
+		death = {
+			death_reason = death_battle # Killed at the Battle of Maserfield
+		}
 	}
 }
 205059 = {
-	name = "Coenwalh" #
+	name = "Coenwalh" # Possibly identical to King Coenwalh of Wessex (ID:205148), based on the idea that Coenwalh's status as brother to Penda & Eowa was in fact a brotherhood via marriage
 	dynasty = 1047003
 	religion = "norse_pagan"
 	culture = anglo_saxon
@@ -4017,7 +4245,10 @@
 		religion = "catholic"
 	}
 	656.4.17 = {
-		death = "656.4.17"
+		death = { # Bede also reports that Peada was "very wickedly killed" through his wife's treachery "during the very time of celebrating Easter" in 656
+			death_reason = death_murder_known # Bede also gives the name of Peada’s wife: Ealhflæd, the daughter of Oswiu
+			killer = additionalaethelfrithing0004 # Ealhflæd, the daughter of Oswiu
+		}
 	}
 }
 205061 = {
@@ -4026,6 +4257,11 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205057
+	trait = education_martial_4
+	trait = brave
+	trait = arrogant
+	trait = cynical
+	trait = ambitious
 	640.1.1 = {
 		birth = "640.1.1"
 	}
@@ -4033,7 +4269,9 @@
 		religion = "catholic"
 	}
 	675.1.1 = {
-		death = "675.1.1"
+		death = {
+			death_reason = death_ill # The cause of death, according to Henry of Huntingdon, was disease
+		}
 	}
 }
 205062 = {
@@ -4042,14 +4280,22 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205057
+	trait = education_martial_3
+	trait = generous
+	trait = zealous
+	trait = diligent
+	trait = humble
 	645.1.1 = {
 		birth = "645.1.1"
 	}
 	655.11.15 = {
 		religion = "catholic"
 	}
-	704.1.1 = {
-		death = "704.1.1"
+	705.1.1 = {
+		trait = devoted # In 704, Æthelred abdicated to become a monk and abbot at Bardney, leaving the kingship to his nephew Coenred
+	}
+	709.1.1 = { # The date of Æthelred's death is not recorded; though it is known that he was buried at Bardney
+		death = "709.1.1"
 	}
 }
 205063 = {
@@ -4058,8 +4304,17 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205061
+	mother = additionalwihtgilsing0003
+	trait = honest
+	trait = just
+	trait = humble
+	trait = gallant # In the view of his contemporary, Bede, Coenred "who had ruled the kingdom of Mercia for some time and very nobly, with still greater nobility renounced the throne of his kingdom"
 	670.1.1 = {
 		birth = "670.1.1"
+	}
+	709.1.1 = { # In 709, Coenred abdicated and went on pilgrimage to Rome, where he remained as a monk until his death
+		trait = devoted
+		trait = pilgrim
 	}
 	716.1.1 = {
 		death = "716.1.1"
@@ -4071,11 +4326,18 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205062
+	mother = additionalaethelfrithing0008
+	trait = arbitrary
+	trait = gluttonous
+	trait = lustful
+	trait = possessed_1
 	671.1.1 = {
 		birth = "671.1.1"
 	}
 	716.6.1 = {
-		death = "716.6.1"
+		death = { # Saint Boniface later described him as dying in a crazed frenzy at a banquet, "gibbering with demons and cursing the priests of God"
+			death_reason = death_possessed
+		}
 	}
 }
 205065 = {
@@ -4084,6 +4346,7 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205062
+	mother = additionalaethelfrithing0008
 	671.1.1 = {
 		birth = "671.1.1"
 	}
@@ -4110,11 +4373,18 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205066
+	trait = education_martial_4
+	trait = greedy
+	trait = diligent
+	trait = lustful
+	trait = ambitious
 	680.1.1 = {
 		birth = "680.1.1"
 	}
 	757.1.1 = {
-		death = "757.1.1"
+		death = { # In 757, Æthelbald was killed at Seckington, Warwickshire, near the royal seat of Tamworth
+			death_reason = death_assassinated_by_soldiers # According to a later continuation of Bede's Ecclesiastical History, he was "treacherously murdered at night by his own bodyguards", though the reason is unrecorded
+		}
 	}
 }
 205068 = {
@@ -4176,6 +4446,15 @@
 	culture = anglo_saxon
 	father = 205071
 	#mother = Marcellina
+	trait = education_martial_4
+	trait = ambitious # in the words of historian Simon Keynes, "Offa was driven by a lust for power, not a vision of English unity; and what he left was a reputation, not a legacy."
+	trait = generous # Offa was a generous patron of the church, founding several churches and monasteries, often dedicated to St Peter
+	trait = just # Had law codes promulgated
+	trait = cynical # Believed to have a policy of treating religious houses as worldly possessions
+	trait = diligent
+	trait = overseer
+	trait = administrator
+	trait = architect # Offa's Dyke
 	730.1.1 = {
 		birth = "730.1.1"
 	}
@@ -4183,7 +4462,9 @@
 		add_spouse = 205074
 	}
 	796.7.29 = {
-		death = "796.7.29"
+		death = {
+			death_reason = death_old_age
+		}
 	}
 }
 205073 = {
@@ -4225,11 +4506,23 @@
 	culture = anglo_saxon
 	father = 205072
 	mother = 205074
+	trait = education_intrigue_2
+	trait = arrogant # According to Asser, Eadburh became all powerful, and often demanded the executions or exile of her enemies
+	trait = vengeful
+	trait = callous
+	trait = lustful
+	trait = beauty_good_1 # Upon fleeing to Francia, Asser relates that Charlemagne was smitten by the former queen
 	761.1.1 = {
 		birth = "761.1.1"
 	}
 	802.1.1 = {
-		death = "802.1.1"
+		trait = devoted
+	}
+	803.1.1 = { # Soon though she was caught in a sexual affair with another Saxon man and, after being duly convicted, was expelled on the direct orders of Charlemagne, penniless, into the streets
+		remove_trait = devoted
+	}
+	808.1.1 = {
+		death = "808.1.1"
 	}
 }
 205076 = {
@@ -4255,6 +4548,7 @@
 	culture = anglo_saxon
 	father = 205072
 	mother = 205074
+	trait = devoted # Abbess
 	763.1.1 = {
 		birth = "763.1.1"
 	}
@@ -4361,9 +4655,9 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205085
-	#mother = Aelfflaed of Mercia
-	812.1.1 = {
-		birth = "812.1.1"
+	mother = additionalcoenwalhing0001 # Aelfflaed of Mercia
+	821.1.1 = {
+		birth = "821.1.1"
 	}
 	840.1.1 = {
 		death = "840.1.1"
@@ -4375,12 +4669,22 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205085
-	#mother = Aelfflaed of Mercia
-	813.1.1 = {
-		birth = "813.1.1"
+	mother = additionalcoenwalhing0001 # Aelfflaed of Mercia
+	# when Wiglaf died c.839, Wigstan declined the kingship preferring religious life and monastic orders instead
+	trait = education_learning_3
+	trait = zealous
+	trait = temperate
+	trait = content
+	trait = humble
+	822.1.1 = {
+		birth = "822.1.1"
 	}
 	840.6.1 = {
-		death = "840.6.1"
+		trait = saint
+		death = {
+			death_reason = death_murder
+			killer = 205095 # Beorhtfrith
+		}
 	}
 }
 205087 = {
@@ -4389,9 +4693,9 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205085
-	#mother = Aelfflaed of Mercia
-	815.1.1 = {
-		birth = "815.1.1"
+	mother = additionalcoenwalhing0001 # Aelfflaed of Mercia
+	823.1.1 = {
+		birth = "823.1.1"
 	}
 	870.1.1 = {
 		death = "870.1.1"
@@ -4403,6 +4707,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205087
+	# From the limited source material on Aethelred & his character, we see a courageous soldier & a capable ruler.
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 6
+	learning = 6
+	prowess = 8
+	trait = education_martial_3
+	trait = unyielding_defender
+	trait = zealous # In 909, Edward sent a joint Mercian-West Saxon army to Viking-ruled Lincolnshire to retrieve the remains of St Oswald from Bardney Abbey
+	trait = brave # Lead Mercia against the Vikings on multiple occasions
+	trait = diligent # Worked diligently alongside Wessex and his wife to repel the Northmen and secure Mercia
+	trait = humble # Recognized the need for Wessex's aid. Submitted to Alfred and stayed loyal throughout his life.
+	trait = loyal # Aethelred, remaining stoutly loyal to his commitments to Wessex even after Alfred's death, played a leading role in the English defence of the Viking invasion.
 	850.1.1 = {
 		birth = "850.1.1"
 	}
@@ -4429,6 +4747,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205080
+	# According to Ingulf, an 11th-century Benedictine abbot, Beornred was regarded as a tyrant, while Roger of Wendover, a thirteenth-century chronicler, states that he was an unjust king and that the people of Mercia rose in rebellion against him
+	trait = arbitrary
+	trait = ambitious
+	trait = callous
+	trait = disloyal # He was possibly involved in his predecessor's death
 	720.1.1 = {
 		birth = "720.1.1"
 	}
@@ -4472,7 +4795,10 @@
 		birth = "782.1.1"
 	}
 	826.1.1 = {
-		death = "826.1.1"
+		death = { # Supposedly killed in a failed attempt to subjugate the rebellious East Angles
+			death_reason = death_battle
+			killer = 205020 # Æthelstan of East Anglia - Assumedly the leader of the rebellious East Angles; helps to convey the situation of Beornwulf's death
+		}
 	}
 }
 205093 = {
@@ -4493,9 +4819,9 @@
 	dynasty = 1047005
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205093
-	820.1.1 = {
-		birth = "820.1.1"
+	father = 205092
+	801.1.1 = { # Earlier birth so the stories of his son Beorhtfrith make sense
+		birth = "801.1.1"
 	}
 	852.1.1 = {
 		death = "852.1.1"
@@ -4508,7 +4834,12 @@
 	culture = anglo_saxon
 	father = 205094
 	#mother = Saethryth
-	850.1.1 = {
+	# Sought the hand of  the royal heiress Ælfflæd, King Ceolwulf's daughter, widow of Wiglaf's son Wigmund and mother of Wigstan, then killed Wigstan when he refused to permit the marriage
+	trait = education_intrigue_2
+	trait = arrogant
+	trait = deceitful # As revenge Beorhtfrith went to visit the young King ostensibly in peace but, when the two greeted each other, he struck Wigstan on the head with the shaft of his dagger and his servant ran him through with his sword
+	trait = vengeful # Did not take the refusal to marry Ælfflæd well at all
+	818.1.1 = {
 		birth = "850.1.1"
 	}
 	901.1.1 = {
@@ -4522,11 +4853,11 @@
 	culture = anglo_saxon
 	father = 205094
 	#mother = Saethryth
-	851.1.1 = {
-		birth = "851.1.1"
+	820.1.1 = {
+		birth = "820.1.1"
 	}
-	905.1.1 = {
-		death = "905.1.1"
+	850.1.1 = { # Beorhtric is known from witnessing his father's charters, but he ceased to do so before the end of Beorhtwulf's reign - implying he died before his father
+		death = "850.1.1"
 	}
 }
 205097 = {
@@ -4665,6 +4996,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205105
+	trait = education_martial_3
+	trait = zealous # Coenwulf was unwilling to take military action in Kent without acknowledgement from Pope Leo III that Eadberht was a pretender
 	765.1.1 = {
 		birth = "765.1.1"
 	}
@@ -4695,6 +5028,7 @@
 		birth = "785.1.1"
 	}
 	812.1.1 = {
+		trait = saint # Saint Kenelm
 		death = "812.1.1"
 	}
 }
@@ -4782,8 +5116,8 @@
 	520.1.1 = {
 		birth = "520.1.1"
 	}
-	591.1.1 = {
-		death = "591.1.1"
+	593.1.1 = {
+		death = "593.1.1"
 	}
 }
 205144 = {
@@ -4834,8 +5168,8 @@
 	575.1.1 = {
 		birth = "575.1.1"
 	}
-	643.1.1 = {
-		death = "643.1.1"
+	642.1.1 = { # Many texts follow Dumville (1985), assuming that these variations both represent scribal deviations from 642, which would conform with the stated reign length of 31 years
+		death = "642.1.1"
 	}
 }
 205148 = {
@@ -4847,8 +5181,8 @@
 	595.1.1 = {
 		birth = "595.1.1"
 	}
-	648.1.1 = {
-		death = "648.1.1"
+	672.1.1 = {
+		death = "672.1.1"
 	}
 }
 205149 = {
@@ -4883,11 +5217,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205147
-	610.1.1 = {
-		birth = "610.1.1"
+	trait = education_martial_3
+	trait = brave
+	trait = zealous
+	trait = humble
+	trait = aggressive_attacker
+	615.1.1 = {
+		birth = "615.1.1"
 	}
-	686.1.1 = {
-		death = "686.1.1"
+	# Chapter 40 of Eddius Stephanus's Life of Wilfrid records that Centwine was married to a sister of Queen Iurminburh, second wife of King Ecgfrith of Northumbria
+	686.1.1 = { # Centwine is reported to have abdicated and become a monk
+		trait = devoted
+	}
+	690.1.1 = { # Unknown
+		death = "690.1.1"
 	}
 }
 205152 = {
@@ -4987,8 +5330,8 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205157
-	610.1.1 = {
-		birth = "610.1.1"
+	620.1.1 = {
+		birth = "620.1.1"
 	}
 	661.1.1 = {
 		death = "661.1.1"
@@ -5000,11 +5343,18 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205159
-	626.1.1 = {
-		birth = "626.1.1"
+	trait = education_martial_2
+	trait = reaver # The Anglo-Saxon Chronicle relates that in 686, "Caedwalla and Mul, his brother, ravaged Kent and Wight."
+	trait = brave
+	trait = arbitrary
+	trait = callous
+	660.1.1 = {
+		birth = "660.1.1"
 	}
-	687.1.1 = {
-		death = "687.1.1"
+	687.1.1 = { # Mul seems to have only ruled a year before the local population rose up in revolt against him in 687
+		death = { # Chased with his followers by the kentish people into a building near the local church - which was set on fire, burning them to death
+			death_reason = death_burned_by_mob
+		}
 	}
 }
 205161 = {
@@ -5013,11 +5363,25 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205159
-	630.1.1 = {
-		birth = "630.1.1"
+	trait = education_martial_3
+	trait = zealous
+	trait = generous # He stopped in Francia at Samer, near Calais, where he gave money for the foundation of a church
+	trait = ambitious
+	659.1.1 = { # Bede states that Cædwalla was a "daring young man of the royal house of the Gewissæ", and gives his age at his death in 689 as about thirty, making the year of his birth about 659
+		birth = "659.1.1"
 	}
-	688.1.1 = {
-		death = "688.1.1"
+	688.1.1 = { # In 688, Cædwalla abdicated and went on a pilgrimage to Rome, possibly because he was dying of the wounds he had suffered while fighting on the Isle of Wight
+		trait = wounded_1
+		trait = devoted
+	}
+	689.4.10 = {
+		name = "Peter" # he was baptised by Pope Sergius I on the Saturday before Easter (according to Bede) taking the baptismal name Peter
+		trait = pilgrim # Traveled to Rome
+	}
+	689.4.20 = { # Bede's Ecclesiastical History and the Anglo-Saxon Chronicle agree that Cædwalla died on 20 April
+		death = {
+			death_reason = death_wounded_1
+		}
 	}
 }
 205162 = {
@@ -5026,11 +5390,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205156
-	620.1.1 = {
-		birth = "620.1.1"
+	600.1.1 = {
+		birth = "600.1.1"
 	}
-	675.1.1 = {
-		death = "675.1.1"
+	660.1.1 = {
+		death = "660.1.1"
 	}
 }
 205163 = {
@@ -5039,11 +5403,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205162
-	637.1.1 = {
-		birth = "637.1.1"
+	630.1.1 = {
+		birth = "630.1.1"
 	}
-	685.1.1 = {
-		death = "685.1.1"
+	700.1.1 = { # Ine acknowledges his father's help in his code of laws so was still alive into Ine's reign
+		death = "700.1.1"
 	}
 }
 205164 = {
@@ -5051,12 +5415,22 @@
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205162
-	655.1.1 = {
-		birth = "655.1.1"
+	father = 205163
+	trait = education_martial_4
+	trait = ambitious
+	trait = just # Issued add_realm_law_skip_effects
+	trait = zealous # Ine was a Christian king, who ruled as a patron and protector of the church
+	trait = diligent
+	trait = administrator #  It may have been Ine who divided Wessex into something approximating the modern counties of Hampshire, Wiltshire, Somerset, Devon, and Dorset
+	667.1.1 = { # c. 670
+		birth = "667.1.1"
 	}
-	726.1.1 = {
-		death = "726.1.1"
+	726.1.1 = { # In 726, Ine abdicated, with no obvious heir and, according to Bede, left his kingdom to "younger men" in order to travel, with his wife Æthelburg, to Rome where they both died
+		trait = devoted # Unclear if he became a monk
+		trait = pilgrim
+	}
+	740.1.1 = { # Unknown, possibly circa. 740, little is known of Ine and his wife following his abdication
+		death = yes
 	}
 }
 205165 = {
@@ -5064,9 +5438,9 @@
 	dynasty = 1047006
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205162
-	650.1.1 = {
-		birth = "650.1.1"
+	father = 205163
+	665.1.1 = {
+		birth = "665.1.1"
 	}
 	718.1.1 = {
 		death = "718.1.1"
@@ -5221,11 +5595,19 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205176
+	# After ruling a year he was accused of unlawful acts and removed from power by the witan or council of nobles
+	trait = arbitrary
+	trait = sadistic
+	trait = craven
+	trait = disloyal # he slew the alderman who remained the longest with him
 	700.1.1 = {
 		birth = "700.1.1"
 	}
-	757.1.1 = {
-		death = "757.1.1"
+	758.1.1 = {
+		trait = murderer
+		death = { # he was accused of murder, driven out and ultimately killed
+			death_reason = death_punishment
+		}
 	}
 }
 205178 = {
@@ -5234,11 +5616,18 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205176
+	trait = generous # promised the king's guards their own choice of money and land, if they would grant him the kingdom
+	trait = ambitious # Sought the king's title after his murder
+	trait = craven # Waited till Cynewulf was thinnly defended to murder him
+	trait = vengeful 
 	705.1.1 = {
 		birth = "705.1.1"
 	}
 	786.1.1 = {
-		death = "786.1.1"
+		trait = murderer
+		death = {
+			death_reason = death_revenge # killed by Cynewulf's thanes in retribution for the King's murder
+		}
 	}
 }
 205179 = {
@@ -5260,11 +5649,18 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205179
+	trait = education_martial_3
+	trait = just # The witan/council of nobles that removed the unjust Sigeberht was led by Cynewulf
+	trait = brave # When faced with the ambush by Cyneheard, he defended himself with courage
+	trait = lustful # was the victim of a surprise attack at his mistress's house in Merton
 	720.1.1 = {
 		birth = "720.1.1"
 	}
-	796.1.1 = {
-		death = "796.1.1"
+	786.1.1 = {
+		death = {
+			death_reason = death_murder_known
+			killer = 205178 # Cyneheard, brother to Sigeberht
+		}
 	}
 }
 205181 = {
@@ -5273,11 +5669,21 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205180
+	trait = education_stewardship_2
+	trait = craven
+	trait = trusting
+	trait = content # Seemingly content to be a subordinate to King Offa and Mercia
 	750.1.1 = {
 		birth = "750.1.1"
 	}
+	789.1.1 = { # in 789, he married one of Offa's daughters, Eadburh
+		add_spouse = 205075
+	}
 	802.1.1 = {
-		death = "802.1.1"
+		death = { # In later years, Asser, a scholar at Alfred the Great's court, recorded the story that Beorhtric had died from being accidentally poisoned by his wife, Eadburh
+			death_reason = death_poison # poisoned by accident when Eadburh was attempting to poison another.
+			killer = 205075
+		}
 	}
 }
 205182 = {
@@ -5286,8 +5692,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205171
-	641.1.1 = {
-		birth = "641.1.1"
+	620.1.1 = {
+		birth = "620.1.1"
 	}
 	685.1.1 = {
 		death = "685.1.1"
@@ -5299,8 +5705,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205182
-	665.1.1 = {
-		birth = "665.1.1"
+	652.1.1 = {
+		birth = "652.1.1"
 	}
 	725.1.1 = {
 		death = "725.1.1"
@@ -5325,11 +5731,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205183
+	trait = education_martial_3
+	trait = forgiving # Seemingly forgave Æthelhun for his rebellion?
+	trait = ambitious # Sought to free Wessex from Merican control
+	trait = stubborn
 	690.1.1 = {
 		birth = "690.1.1"
 	}
-	740.1.1 = {
-		death = "740.1.1"
+	756.1.1 = {
+		death = "756.1.1"
 	}
 }
 205186 = {
@@ -5342,7 +5752,9 @@
 		birth = "720.1.1"
 	}
 	748.1.1 = {
-		death = "748.1.1"
+		death = {
+			death_reason = death_battle # In 748, the Ætheling Cynric, son of Cuthred, attempted to depose his father but he was killed
+		}
 	}
 }
 205187 = {
@@ -5381,8 +5793,8 @@
 	750.1.1 = {
 		birth = "750.1.1"
 	}
-	784.1.1 = {
-		death = "784.1.1"
+	785.1.1 = {
+		death = "785.1.1"
 	}
 }
 
@@ -5780,8 +6192,15 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 194094
-	490.1.1 = {
-		birth = "490.1.1"
+	# According to tradition, he is remembered for having rebelled against Octa, King of Kent, he defeated him in battle in 527
+	trait = populist_leader
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = just
+	trait = organizer
+	500.1.1 = {
+		birth = "500.1.1"
 	}
 	587.1.1 = {
 		death = "587.1.1"
@@ -5793,9 +6212,12 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 194095
-	520.1.1 = {
-		birth = "520.1.1"
+	535.1.1 = {
+		birth = "535.1.1"
 	}
+	555.1.1 = {
+		add_spouse = additionalwihtgilsing0001 # married Ricula, sister of King Æthelberht of Kent
+	} 
 	604.1.1 = {
 		death = "604.1.1"
 	}
@@ -5803,14 +6225,21 @@
 194097 = {
 	name = "SE_berht"
 	dynasty = 1047012
-	religion = "catholic"
+	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 194096
-	535.1.1 = {
+	mother = additionalwihtgilsing0001
+	trait = cynical # Was baptized, likely for political reasons considering his sons remained unbaptized
+	trait = temperate
+	trait = content
+	560.1.1 = {
 		birth = yes
 	}
-	615.1.1 = {
-		death = "615.1.1"
+	604.1.1 = {
+		religion = "catholic" # Bede tells that Sæberht converted to Christianity in 604
+	}
+	616.1.1 = {
+		death = "616.1.1"
 	}
 }
 194098 = {
@@ -5819,11 +6248,18 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 194097
-	550.1.1 = {
+	trait = education_martial_2
+	trait = arbitrary
+	trait = wrathful
+	trait = arrogant
+	580.1.1 = {
 		birth = yes
 	}
-	616.1.1 = {
-		death = "616.1.1"
+	623.1.1 = {
+		death = { # killed in battle against the West Saxons
+			death_reason = death_battle
+			killer = 205147 # battle was fought against Cynegils and Cwichelm of Wessex
+		}
 	}
 }
 194099 = {
@@ -5831,48 +6267,78 @@
 	dynasty = 1047012
 	religion = "norse_pagan"
 	culture = anglo_saxon
-	father = 194098
-	574.1.1 = {
+	father = 194097
+	trait = education_martial_2
+	trait = zealous
+	trait = gluttonous
+	trait = impatient
+	585.1.1 = {
 		birth = yes
 	}
-	616.1.1 = {
-		death = "616.1.1"
+	623.1.1 = {
+		death = { # killed in battle against the West Saxons
+			death_reason = death_battle
+			killer = 205147 # battle was fought against Cynegils and Cwichelm of Wessex
+		}
 	}
 }
-194100 = {
+194100 = { # Sigeberht the Little
 	name = "Sigeberht"
 	dynasty = 1047012
 	religion = "norse_pagan"
 	culture = anglo_saxon
-	father = 194099
-	590.1.1 = {
+	father = 194098
+	600.1.1 = {
 		birth = yes
+		give_nickname = nick_the_little
 	}
 	653.1.1 = {
 		death = "653.1.1"
 	}
 }
-194101 = {
+194101 = { # Sigeberht the Good
 	name = "Sigeberht"
 	dynasty = 1047012
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 194100
-	605.1.1 = {
-		birth = "605.1.1"
+	father = 194099
+	trait = education_diplomacy_2
+	trait = forgiving #	Bede relates how Sigeberht had become a pious king practising Christian forgiveness
+	trait = zealous # Bede's concluding verdict is that "the death of this religious king was such that it not only atoned for his offence but even increased his merit; for it came about as a result of his piety and his observance of Christ's command."
+	trait = trusting # Sigeberht accepted an invitation from brothers who were excommunicated to enjoy hospitality at their house, disregarding the words of a bishop that warned of the dangers
+	trait = humble # When Sigeberht happened to meet Cedd on the road, he prostrated before him and asked forgiveness
+	610.1.1 = {
+		birth = "610.1.1"
+	}
+	653.1.1 = {
+		religion = "catholic" # Like Peada, Sigeberht and his followers were baptised by Bishop Finan at one of Oswiu's estates called Ad Murum
 	}
 	660.1.1 = {
-		death = "660.1.1"
+		give_nickname = nick_the_good
+		death = { # The date of Sigeberht's death is unknown, though at the very least, it must have occurred sometime before 664, by which time Swithhelm was dead
+			death_reason = death_murder # murdered by two unnamed brothers who were angry with the king "because he was too ready to pardon his enemies"
+			killer = 194102 # Swithhelm of Essex
+		}
 	}
 }
 194102 = {
 	name = "Swithhelm"
 	dynasty = 1047012
-	religion = "catholic"
+	religion = "norse_pagan"
 	culture = anglo_saxon
-	father = 194101
-	620.1.1 = {
-		birth = "620.1.1"
+	father = additionaloffing0002
+	trait = education_intrigue_3
+	trait = wrathful
+	trait = deceitful
+	trait = cynical
+	615.1.1 = {
+		birth = "625.1.1"
+	}
+	660.1.1 = {
+		trait = murderer
+	}
+	662.1.1 = {
+		religion = "catholic" #  In 662, however, he was persuaded to convert to Christianity by Aethelwald, king of East Anglia
 	}
 	664.1.1 = {
 		death = "664.1.1"
@@ -5881,14 +6347,17 @@
 194103 = {
 	name = "Sighere"
 	dynasty = 1047012
-	religion = "norse_pagan"
+	religion = "catholic"
 	culture = anglo_saxon
-	father = 194102
-	637.1.1 = {
+	father = 194101
+	630.1.1 = {
 		birth = "630.1.1"
 	}
-	683.1.1 = {
-		death = "683.1.1"
+	665.1.1 = {
+		religion = "norse_pagan" # In 665 Sighere apostatized and fell back into paganism
+	}
+	688.1.1 = {
+		death = "688.1.1"
 	}
 }
 205256 = {
@@ -5896,12 +6365,22 @@
 	dynasty = 1047012
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 194102
-	635.1.1 = {
-		birth = "635.1.1"
+	father = 194098 # Sexred
+	trait = education_martial_2
+	trait = holy_warrior
+	trait = generous
+	trait = zealous
+	trait = humble
+	625.1.1 = { # before c. 626
+		birth = "625.1.1"
 	}
 	694.1.1 = {
-		death = "694.1.1"
+		trait = devoted # Sæbbi is believed to have abdicated in 694 in order to enter a monastery
+	}
+	695.1.1 = { # Sæbbi died in 695 and was buried in Old St Paul's Cathedral in the City of London where he was revered as a saint
+		death = {
+			death_reason = death_ill # When he had been thirty years a king, and a soldier of the heavenly kingdom, he fell into a violent sickness, of which he died
+		}
 	}
 }
 205257 = {
@@ -5913,8 +6392,8 @@
 	660.1.1 = {
 		birth = "660.1.1"
 	}
-	708.1.1 = {
-		death = "708.1.1"
+	709.1.1 = {
+		death = "709.1.1"
 	}
 }
 205258 = {
@@ -5926,8 +6405,8 @@
 	655.1.1 = {
 		birth = "655.1.1"
 	}
-	708.1.1 = {
-		death = "708.1.1"
+	705.1.1 = { # Giving an earlier death date to provide context for Offa's rule
+		death = "705.1.1"
 	}
 }
 205259 = {
@@ -5935,12 +6414,22 @@
 	dynasty = 1047012
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205257
-	676.1.1 = {
-		birth = "676.1.1"
+	father = 194103
+	mother = frith0002
+	trait = education_learning_3
+	trait = zealous
+	trait = diligent
+	trait = humble
+	trait = beauty_good_1
+	670.1.1 = {
+		birth = "670.1.1"
 	}
-	709.1.1 = {
-		death = "709.1.1"
+	709.4.16 = { # went on a pilgrimage to Rome, where he died as a monk, along with Cenred, King of Mercia
+		trait = pilgrim
+		trait = devoted
+	}
+	715.1.1 = { # Unknown, his fate after reaching Rome is unknown
+		death = "715.1.1"
 	}
 }
 205260 = {
@@ -6013,12 +6502,19 @@
 	dynasty = 1047012
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205264
+	father = 205262
+	trait = zealous
+	trait = diligent # visited 23 churches in Rome
+	trait = humble
 	745.1.1 = {
 		birth = "745.1.1"
 	}
-	830.1.1 = {
-		death = "830.1.1"
+	798.1.1 = { # abdicated and went on pilgrimage to Rome in 798
+		trait = pilgrim
+		trait = devoted
+	}
+	810.1.1 = { # Unknown
+		death = "810.1.1"
 	}
 }
 205266 = {
@@ -6027,8 +6523,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205265
-	765.1.1 = {
-		birth = "765.1.1"
+	770.1.1 = {
+		birth = "770.1.1"
 	}
 	835.1.1 = {
 		death = "835.1.1"
@@ -6078,11 +6574,18 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205194
+	# The year in which he and Eanfrith ruled was subsequently deemed so abhorrent because of their paganism
+	trait = greedy
+	trait = arbitrary
+	trait = gluttonous
 	565.1.1 = {
 		birth = "565.1.1"
 	}
-	634.1.1 = {
-		death = "634.1.1"
+	634.6.1 = { # Killed in summer of 633/634
+		death = { # Bede says that Osric besieged Cadwallon "in a strong town", but Cadwallon successfully "sallied out on a sudden with all his forces, by surprise, and destroyed him [Osric] and all his army
+			death_reason = death_battle
+			killer = 159018 # Cadwallon ap Cadfan of Gwynedd
+		}
 	}
 }
 205196 = {
@@ -6091,11 +6594,20 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205195
+	trait = education_diplomacy_3
+	trait = generous # "He was generous to high and low alike and soon won the affection of all by his kingly qualities of mind and body"
+	trait = trusting # Trusted his "friend" Ealdorman Hunwald to keep him safe but Hunwald betrayed Oswine to Oswiu
+	trait = just
+	trait = zealous
+	trait = beauty_good_1 # According to Bede, Oswin was "a man of handsome appearance and great stature, pleasant in speech and courteous in manner"
 	585.1.1 = {
 		birth = "585.1.1"
 	}
-	651.1.1 = {
-		death = "651.1.1"
+	651.8.20 = {
+		death = { # Oswiu sent his soldiers to the manor, on 20th August, and King Oswin was cut down where he stood
+			death_reason = death_execution # How would this be classified?
+			killer = 205213 # Oswiu of Northumbria
+		}
 	}
 }
 205197 = {
@@ -6104,27 +6616,47 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205193
-	580.1.1 = {
-		birth = "580.1.1"
+	577.1.1 = {
+		birth = "577.1.1"
 	}
 	604.1.1 = {
-		death = "604.1.1"
+		death = { # According to Bede, Deira was invaded and taken over by Æthelfrith of Bernicia in about the year 604
+			death_reason = death_battle # suggested that Deira may have been conquered by Æthelfrith, and in this case Æthelric may have been killed during warfare
+			killer = 205209 # Æthelfrith of Bernicia
+		}
 	}
 }
 205198 = {
 	name = "Eadwine"
 	dynasty = 1047009
-	religion = "catholic"
+	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205193
+	trait = education_martial_3
+	trait = holy_warrior
+	trait = reaver # The routine of kingship in Edwin's time involved regular, probably annual, wars with neighbours to obtain tribute, submission, and slaves
+	trait = fickle # the general character of Bede's account is one of an indecisive king, unwilling to take risks, unable to decide whether to convert or not
+	trait = just
+	trait = zealous # Noted for his devotion to his pagan ideals and Christianity
+	trait = overseer # The peace he managed over his lands was noted as extraordinary
 	585.1.1 = {
 		birth = "585.1.1"
 	}
-	620.1.1 = {
+	610.1.1 = {
+		add_spouse = additionaliceling0004 # Cwenburh (Quenberga), daughter of "Cearl, king of the Mercians"
+	}
+	625.7.1 = { # marriage-alliance with Kent, concluded at Canterbury in the summer of 625
 		add_spouse = 205034
 	}
+	627.4.12 = { # # In 627, King Edwin was baptised on Easter Day, 12 April, along with his entire court under the influence of his wife, Æthelburh of Kent, and the Roman missionary Paulinus
+		religion = "catholic"
+	}
 	633.10.12 = {
-		death = "633.10.12"
+		trait = saint # After his death, Edwin came to be venerated as a saint by some, although his cult was eventually overshadowed
+		death = { # Edwin faced Penda and Cadwallon at the Battle of Hatfield Chase in the autumn of 632 or 633 and was defeated and killed
+			death_reason = death_battle # Battle of Hatfield Chase
+			killer = 205057 # King Penda of Mercia
+		}
 	}
 }
 205199 = {
@@ -6227,7 +6759,9 @@
 		birth = "528.1.1"
 	}
 	579.1.1 = {
-		death = "579.1.1"
+		death = { # Theodric has been identified with an Anglian ruler nicknamed Fflamddwyn in Welsh, who, according to medieval Welsh poetry such as Gweith Argoed Llwyfain, was killed in battle by Urien's son, Owain mab Urien
+			death_reason = death_battle
+		}
 	}
 }
 205207 = {
@@ -6262,14 +6796,27 @@
 	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205205
+	trait = education_martial_4
+	trait = reaver # Bede tells of Æthelfrith "ravaged the Britons more than all the great men of the English, insomuch that he might be compared to Saul, once king of the Israelites"
+	trait = ambitious # Bede tells of Æthelfrith "conquered more territories from the Britons, either making them tributary, or driving the inhabitants clean out, and planting English in their places, than any other king or tribune."
+	trait = wrathful # Æthelfrith sent messengers to bribe Rædwald with "a great sum of money" into killing Edwin, and when this failed Æthelfrith threatened war
+	trait = brave
+	trait = callous # massacred the monks of Bangor-Is-Coed who were assembled to aid the Britons by their prayers
+	trait = viking # Raider
 	555.1.1 = {
 		birth = "555.1.1"
 	}
-	590.1.1 = {
+	575.1.1 = {
+		add_spouse = aethelfrithingspouse0001 # Bebba
+	}
+	600.1.1 = {
 		add_spouse = 205210
 	}
 	616.1.1 = {
-		death = "616.1.1"
+		death = { # Battle of the River Idle
+			death_reason = death_battle
+			killer = 205003 # Rædwald of East Anglia
+		}
 	}
 }
 205210 = {
@@ -6292,49 +6839,91 @@
 205211 = {
 	name = "Eanfrith"
 	dynasty = 1047010
-	religion = "catholic"
+	religion = "norse_pagan"
 	culture = anglo_saxon
 	father = 205209
-	mother = 205210
+	mother = aethelfrithingspouse0001 # Possibly a child of Æthelfrith's wife Bebba
+	trait = education_diplomacy_2
+	trait = trusting
+	trait = deceitful
+	trait = callous
 	590.1.1 = {
 		birth = "590.1.1"
 	}
 	617.1.1 = {
+		religion = "insular_celtic" # Baptized during his time in exile among the Scots or Picts 
 		add_spouse = 166558
 	}
-	634.1.1 = {
-		death = "634.1.1"
+	634.1.1 = { # Bede tells us that as soon as Eanfrith became king, he "renounced and lost" his faith and returned to the "abominations" of his "former idols"
+		religion = "norse_pagan"
+	}
+	634.7.1 = { # circa. 634
+		death = { # Bede reports that Eanfrith went to Cadwallon "with only twelve chosen soldiers" in an attempt to negotiate peace, but Cadwallon ap Cadfan of Gwynedd had him killed
+			death_reason = death_murder_known
+			killer = 159018 # Cadwallon ap Cadfan of Gwynedd
+		}
 	}
 }
 205212 = {
 	name = "Oswald"
 	dynasty = 1047010
-	religion = "catholic"
+	religion = "norse_pagan" # Born a pagan
 	culture = anglo_saxon
 	father = 205209
 	mother = 205210
+	trait = education_martial_3
+	trait = holy_warrior # Used his victory over Cadwallon to push the Christianization of his counci and army
+	trait = generous # Bede recounts Oswald's generosity to the poor and to strangers
+	trait = zealous
+	trait = just
+	trait = temperate
+	trait = diligent
 	604.1.1 = {
 		birth = "604.1.1"
 	}
+	617.1.1 = {
+		religion = "insular_celtic" # Baptized during his time in exile among the Scots or Picts. allied himself with the Celtic Christian faith centred around the monastery of Iona
+	}
 	642.8.5 = {
-		death = "642.8.5"
+		trait = saint # Oswald soon came to be regarded as a saint
+		death = { # He was killed in 642, by the Mercians at the Battle of Maserfield
+			death_reason = death_battle
+			killer = 205057 # Penda of Mercia
+		}
 	}
 }
 205213 = {
 	name = "Oswiu"
 	dynasty = 1047010
-	religion = "catholic"
+	religion = "norse_pagan" # Born a pagan
 	culture = anglo_saxon
 	father = 205209
 	mother = 205210
+	# Alcuin, writing about a century after Oswiu's death, describes him as "very just, with equitable laws, unconquered in battle but trustworthy in peace, generous in gifts to the wretched, pious, equitable to all"
+	trait = education_martial_4
+	trait = organizer
+	trait = just
+	trait = generous
+	trait = ambitious
+	trait = brave
+	trait = zealous
+	trait = overseer
 	612.1.1 = {
 		birth = "612.1.1"
+	}
+	620.1.1 = {
+		religion = "insular_celtic" # raised in the Celtic Christian tradition of much of the Irish world during his exile in Western Scotland
 	}
 	642.1.1 = {
 		add_spouse = 205214
 	}
-	670.2.15 = {
-		death = "670.2.15"
+	664.1.1 = {
+		religion = "catholic" # In 664, Oswiu presided over the Synod of Whitby, where clerics decreed that Northumbria would follow the Roman style of Christianity
+	}
+	670.2.15 = { # he fell ill and died, aged 58, on 15 February 670
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 205214 = {
@@ -6345,14 +6934,22 @@
 	culture = anglo_saxon
 	father = 205198
 	mother = 205034
+	trait = education_learning_3
+	trait = zealous
+	trait = compassionate
+	trait = humble
 	626.4.19 = {
 		birth = "626.4.19"
 	}
 	642.1.1 = {
 		add_spouse = 205213
 	}
-	686.1.1 = {
-		death = "686.1.1"
+	670.2.15 = {
+		trait = devoted # After Oswiu's death in 670, she retired to Whitby Abbey, which had been founded by Hilda of Whitby
+	}
+	686.11.24 = {
+		trait = saint
+		death = "686.11.24"
 	}
 }
 205215 = {
@@ -6439,10 +7036,16 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205219
+	# William of Malmesbury calls him "a draught from the same cup" as Osred, which is to say a young man, vigorous, dissolute, cruel and bold
+	trait = education_intrigue_2
+	trait = brave
+	trait = gluttonous
+	trait = callous
+	trait = arrogant
 	690.1.1 = {
 		birth = "690.1.1"
 	}
-	718.1.1 = {
+	718.1.1 = { # The manner of his death is unknown. The Annals of Ulster record the death of the son of Cuidine (Cuthwine), king of the Saxons, in 718, and this almost certainly refers to Coenred
 		death = "718.1.1"
 	}
 }
@@ -6452,23 +7055,42 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205219
+	trait = education_learning_3 # Ceolwulf was a man with deep monastic interests and perhaps little suited to affairs of state
+	trait = zealous
+	trait = generous # As king, he had endowed the monastery at Lindisfarne with many gifts
+	trait = just
+	trait = humble
 	695.1.1 = {
 		birth = "695.1.1"
 	}
-	765.1.1 = {
+	737.1.1 = {
+		trait = devoted # In 737, Ceolwulf abdicated in favor of his first cousin Eadberht, to retire to Lindisfarne
+	}
+	765.1.15 = { # His death is recorded in the winter of 764–765
+		trait = saint # His feast day is 15 January
 		death = "765.1.1"
 	}
 }
-205223 = {
+205223 = { # Ecgbert of York; 8th-century cleric who established the archdiocese of York in 735
 	name = "Ecgberht"
 	dynasty = 1047021
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205220
+	trait = education_learning_5
+	trait = just # Ecgbert was a correspondent of Bede and Boniface and the author of a legal code for his clergy
+	trait = zealous
+	trait = diligent # The school Ecgbert founded at York is held by the modern historian Peter Hunter Blair to have equalled or surpassed the famous monasteries at Wearmouth and Jarrow
+	trait = theologian # The school Ecgbert founded at York is held by the modern historian Peter Hunter Blair to have equalled or surpassed the famous monasteries at Wearmouth and Jarrow
 	685.1.1 = {
 		birth = "685.1.1"
 	}
+	705.1.1 = { # Ecgbert went to Rome with another brother, and was ordained deacon while still there
+		trait = devoted
+		trait = pilgrim
+	}
 	766.11.19 = {
+		trait = saint # Ecgbert is venerated in the Catholic Church and the Eastern Orthodox Church on 19 November
 		death = "766.11.19"
 	}
 }
@@ -6478,8 +7100,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205220
+	trait = education_stewardship_3 # Eadberht's reign saw major reforms to the Northumbrian coinage, and some coins name King Eadberht and Archbishop Ecgberht
+	trait = ambitious # Kirby suggests that "a revival of seventh-century northern imperial ambitions had evidently occurred among the Northumbrians at the court of Eadberht"
+	trait = diligent # Kirby concludes that "the indications are that Eadberht was bringing new prosperity to his kingdom."
+	trait = callous # Ordered the killing of rival claimants
 	690.1.1 = {
 		birth = "690.1.1"
+	}
+	758.12.25 = {
+		trait = devoted # Eadberht abdicated in 758, entering the monastery attached to the cathedral of York
 	}
 	768.8.20 = {
 		death = "768.8.20"
@@ -6495,20 +7124,32 @@
 		birth = "720.1.1"
 	}
 	759.7.24 = {
-		death = "759.7.24"
+		death = { # He was murdered within a year of coming to power, by members of his household, by his servants or bodyguards, at Market Weighton, on 24 July 759
+			death_reason = death_assassinated_by_soldiers
+			# The regicide was a crime in which Oswulf's successor Æthelwald may very well have been involved.
+		}
 	}
 }
-205226 = {
-	name = "Oswulf"
+205226 = { # A possible second son, Oswine, was killed in battle on 6 August 761 leading a rebellion against King Æthelwald Moll; Marsden, pp. 232–233
+	name = "Oswine"
 	dynasty = 1047021
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205224
+	# The Anglo-Saxon Chronicle and Symeon of Durham's Historia Regum supply more details, recording that Oswine, "a most noble ætheling"
+	trait = education_martial_2
+	trait = honest
+	trait = just
+	trait = brave
+	trait = gallant
 	725.1.1 = {
 		birth = "725.1.1"
 	}
 	761.8.1 = {
-		death = "761.8.1"
+		death = {
+			death_reason = death_battle
+			killer = 205243 # Æthelwald Moll
+		}
 	}
 }
 205227 = {
@@ -6537,8 +7178,11 @@
 	745.1.1 = {
 		birth = "745.1.1"
 	}
-	788.9.23 = {
-		death = "788.9.23"
+	788.9.23 = { # He was murdered, probably at Chesters, by ealdorman Sicga on 23 September 788
+		trait = saint # He was buried at Hexham Abbey where he was considered a saint. 
+		death = {
+			death_reason = death_murder
+		}
 	}
 }
 205228 = {
@@ -6547,10 +7191,17 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205226
+	trait = education_intrigue_2
+	trait = greedy # Alcuin criticised his greedy behaviour, luxurious dress and his pagan hair style
+	trait = wrathful # Osbald was a violent man and most likely a murderer as modern records suggest
+	trait = arrogant # Alcuin criticised his greedy behaviour, luxurious dress and his pagan hair style
+	trait = sadistic # Burned the aetheling Bearn alive
+	trait = murderer # Osbald was a violent man and most likely a murderer as modern records suggest
 	750.1.1 = {
 		birth = "750.1.1"
 	}
-	799.1.1 = {
+	799.1.1 = { # Osbald died in AD 799 and was buried in an unmarked grave in York Minster
+		trait = devoted # Alcuin's arguments appear to have succeeded, since Osbald is known to have become an abbot by 799
 		death = "799.1.1"
 	}
 }
@@ -6559,12 +7210,15 @@
 	dynasty = 1047021
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205228
-	766.1.1 = {
-		birth = "766.1.1"
+	father = 194104 # Ælfwald of Northumbria
+	764.1.1 = {
+		birth = "764.1.1"
 	}
 	791.1.1 = {
-		death = "791.1.1"
+		death = { # Ælfwald's sons Ælf and Ælfwine were killed in 791 on the orders of King Æthelred
+			death_reason = death_execution # drowned
+			killer = 205244 # King Æthelred
+		}
 	}
 }
 205230 = {
@@ -6572,12 +7226,15 @@
 	dynasty = 1047021
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205228
-	767.1.1 = {
-		birth = "767.1.1"
+	father = 194104 # Ælfwald of Northumbria
+	765.1.1 = {
+		birth = "765.1.1"
 	}
 	791.1.1 = {
-		death = "791.1.1"
+		death = { # Ælfwald's sons Ælf and Ælfwine were killed in 791 on the orders of King Æthelred
+			death_reason = death_execution # drowned
+			killer = 205244 # King Æthelred
+		}
 	}
 }
 205231 = {
@@ -6585,12 +7242,15 @@
 	dynasty = 1047021
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205228
-	765.1.1 = {
-		birth = "765.1.1"
+	father = 194104 # Ælfwald of Northumbria
+	766.1.1 = {
+		birth = "766.1.1"
 	}
 	780.1.1 = {
-		death = "780.1.1"
+		death = { # On 9 January AD 780, Osbald killed Bearn, the son of King Ælfwald by burning him to death at Selectune (possibly Silton, North Yorkshire)
+			death_reason = death_murder_known # Burned to death, but the CK3 death reason for burning mentions a feast
+			killer = 205228 # Osbald of Northumbria
+		}
 	}
 }
 205232 = {
@@ -6664,14 +7324,15 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205236
+	# Little is said of his reign in the Anglo-Saxon Chronicle other than the bare facts that he became king, and was then deposed and exiled in 774
 	725.1.1 = {
 		birth = "725.1.1"
 	}
 	750.1.1 = {
 		add_spouse = 205227
 	}
-	774.1.1 = {
-		death = "774.1.1"
+	790.1.1 = {
+		death = "790.1.1"
 	}
 }
 205238 = {
@@ -6684,8 +7345,14 @@
 	750.1.1 = {
 		birth = "750.1.1"
 	}
-	792.1.1 = {
-		death = "792.1.1"
+	790.1.1 = { # was king for only a year before being deposed in favour of the previously deposed Æthelred son of Æthelwald Moll. Osred was then forcibly tonsured and exiled
+		trait = devoted
+	}
+	792.9.13 = { # The Anglo-Saxon Chronicle reports that he was "apprehended and slain on the eighteenth day before the calends of October
+		death = { # He returned from exile in 792, but was abandoned by his soldiers and murdered on order of King Æthelred
+			death_reason = death_execution
+			killer = 205244 # King Æthelred
+		}
 	}
 }
 205239 = {
@@ -6695,11 +7362,18 @@
 	culture = anglo_saxon
 	father = 205237
 	mother = 205227
-	751.1.1 = {
-		birth = "751.1.1"
+	trait = generous
+	trait = brave
+	trait = humble
+	770.1.1 = {
+		birth = "770.1.1"
 	}
-	800.1.1 = {
-		death = "800.1.1"
+	800.3.19 = {
+		trait = saint # His feast day is 19 March
+		death = { # Returned around 800 AD with a large army, but was soon killed, for which King Eardwulf of Northumbria was held responsible
+			death_reason = death_murder_known
+			killer = 205246 # King Eardwulf of Northumbria
+		}
 	}
 }
 205240 = {
@@ -6707,11 +7381,14 @@
 	dynasty = 1047022
 	religion = "catholic"
 	culture = anglo_saxon
-	631.1.1 = {
-		birth = "631.1.1"
+	trait = arbitrary
+	trait = ambitious
+	trait = stubborn
+	655.1.1 = { # Why was he made so old?
+		birth = "655.1.1"
 	}
-	705.3.1 = {
-		death = "705.3.1"
+	717.1.1 = { # Eadwulf I appears to have been exiled to either Dál Riata or Pictland as his death is reported by the Annals of Ulster in 717
+		death = "717.3.1"
 	}
 }
 205241 = {
@@ -6720,11 +7397,14 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205240
-	665.1.1 = {
-		birth = "665.1.1"
+	690.1.1 = { # Why was he made so old?
+		birth = "690.1.1"
 	}
-	740.1.1 = {
-		death = "740.1.1"
+	740.1.1 = { # killed on the orders of Eadberht of Northumbria in 740
+		death = {
+			death_reason = death_execution
+			killer = 205224 # Eadberht of Northumbria
+		}
 	}
 }
 205242 = {
@@ -6733,8 +7413,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205240
-	680.1.1 = {
-		birth = "680.1.1"
+	695.1.1 = { # Why was he made so old?
+		birth = "695.1.1"
 	}
 	743.1.1 = {
 		death = "743.1.1"
@@ -6746,11 +7426,17 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205242
+	trait = education_intrigue_3
+	trait = ambitious
 	730.1.1 = {
 		birth = "730.1.1"
 	}
-	765.10.30 = {
-		death = "765.10.30"
+	# Æthelwald's marriage with one Æthelthryth is recorded in 762 at Catterick by Symeon of Durham
+	765.10.30 = { # Æthelwald was deposed on 30 October 765, apparently by a council of noblemen and prelates held at Pincanheale, an important site used for two later Northumbrian church councils
+		trait = devoted # According to the Irish Annals of Tigernach, Æthelwald was tonsured
+	}
+	788.1.1 = { # Unknown
+		death = yes
 	}
 }
 205244 = {
@@ -6759,11 +7445,22 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205243
+	# Lindisfarne was sacked by the Vikings with Alcuin's letters to Æthelred blaming this event on the sins of Æthelred and his nobility
+	trait = education_intrigue_3
+	trait = greedy
+	trait = ambitious 
+	trait = callous
 	762.1.1 = {
 		birth = "762.1.1"
 	}
+	792.9.29 = { # On 29 September 792 Æthelred married Ælfflæd the daughter of Offa of Mercia at Catterick
+		add_spouse = 205076 # Ælfflæd the daughter of Offa of Mercia
+	}
 	796.4.18 = {
-		death = "796.4.18"
+		death = { # While Æthelred was in Corbridge a group of conspiring nobles murdered him on 18 April 796
+			death_reason = death_murder_known
+			killer = 205228 # Osbald of Northumbria; his involvement is not certain, but his bloody reputation and quick ascension to the throne suggests he was (atleast to me)
+		}
 	}
 }
 205245 = {
@@ -6771,12 +7468,12 @@
 	dynasty = 1047022
 	religion = "catholic"
 	culture = anglo_saxon
-	father = 205241
-	700.1.1 = {
+	father = additionaleadwulfing0001
+	730.1.1 = {
 		birth = "700.1.1"
 	}
-	741.1.1 = {
-		death = "741.1.1"
+	775.1.1 = { # Eardwulf's father may have been one of the two Eardwulfs whose deaths are recorded by Symeon of Durham in 774 and 775
+		death = "775.1.1"
 	}
 }
 205246 = {
@@ -6785,11 +7482,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205245
-	730.1.1 = {
-		birth = "730.1.1"
+	750.1.1 = {
+		birth = "750.1.1"
 	}
-	806.1.1 = {
-		death = "806.1.1"
+	810.1.1 = {
+		death = "810.1.1"
 	}
 }
 205247 = {
@@ -6798,11 +7495,11 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205246
-	760.1.1 = {
+	785.1.1 = {
 		birth = "760.1.1"
 	}
-	850.1.1 = {
-		death = "850.1.1"
+	840.1.1 = {
+		death = "840.1.1"
 	}
 }
 205248 = {
@@ -6811,8 +7508,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205246
-	761.1.1 = {
-		birth = "761.1.1"
+	787.1.1 = {
+		birth = "787.1.1"
 	}
 	840.1.1 = {
 		death = "840.1.1"
@@ -6824,8 +7521,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205245
-	735.1.1 = {
-		birth = "735.1.1"
+	755.1.1 = {
+		birth = "755.1.1"
 	}
 	805.1.1 = {
 		death = "805.1.1"
@@ -6837,8 +7534,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205245
-	740.1.1 = {
-		birth = "740.1.1"
+	760.1.1 = {
+		birth = "760.1.1"
 	}
 	805.1.1 = {
 		death = "805.1.1"
@@ -6850,8 +7547,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205249
-	770.1.1 = {
-		birth = "770.1.1"
+	780.1.1 = {
+		birth = "780.1.1"
 	}
 	835.1.1 = {
 		death = "835.1.1"
@@ -6863,8 +7560,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205250
-	775.1.1 = {
-		birth = "775.1.1"
+	780.1.1 = {
+		birth = "780.1.1"
 	}
 	836.1.1 = {
 		death = "836.1.1"
@@ -6876,11 +7573,14 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205252
-	805.1.1 = {
-		birth = "805.1.1"
+	820.1.1 = {
+		birth = "820.1.1"
 	}
-	866.1.1 = {
-		death = "866.1.1"
+	867.3.21 = {
+		death = { # Symeon's Historia Regum Anglorum gives this account of the battle on 21 March 867 where Osberht and Ælla met their deaths at the hands of the Vikings
+			death_reason = death_battle
+			killer = 163112 # Halfdan
+		}
 	}
 }
 205254 = {
@@ -6892,8 +7592,10 @@
 	800.1.1 = {
 		birth = "800.1.1"
 	}
-	844.1.1 = {
-		death = "844.1.1"
+	844.8.1 = {
+		death = { # Usurped the throne but died within the year fighting vikings
+			death_reason = death_battle
+		}
 	}
 }
 205255 = {
@@ -6902,11 +7604,13 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205247
-	800.1.1 = {
-		birth = "800.1.1"
+	805.1.1 = {
+		birth = "805.1.1"
 	}
-	860.1.1 = {
-		death = "860.1.1"
+	849.1.1 = {
+		death = { # assassinated a few years after he was restored to the throne, but no further details are known of his murder
+			death_reason = death_assassination
+		}
 	}
 }
 205267 = {

@@ -7405,13 +7405,13 @@
 	}
 }
 
-144994 = {
+144994 = { # Seperating him from his unproven brother Reginar
 	name = "Richwin"
-	dynasty = 7198
+	dynasty = dynasty_verdun
 	religion = "catholic"
-	culture = "dutch"
-	father = 7815
-	mother = 7814
+	culture = "french"
+	father = verduncount0001
+	mother = verdunwife0001
 	851.1.1 = {
 		birth = "851.1.1"
 	}
@@ -8120,7 +8120,10 @@
 	}
 	855.8.23 = {
 		employer = 144998 # Lothair II of Burgundy
-	}	
+	}
+	866.2.2 = { # Pope Nicholas pronounced Waldrada's excommunication on 2 February 866
+		trait = excommunicated
+	}
 	890.1.1 = {
 		death = "890.1.1"
 	}

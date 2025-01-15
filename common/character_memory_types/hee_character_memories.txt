@@ -75,8 +75,8 @@ michael_invasion_of_bulguria = {
 }
 
 michael_conversion_of_bulguria = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive major learning faith }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = michael_conversion_of_bulguria_desc }
 	}
@@ -95,8 +95,8 @@ michael_conversion_of_bulguria = {
 }
 
 michael_missionary_expedition_khazars = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive learning faith }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = michael_missionary_expedition_khazars_desc }
 	}
@@ -115,8 +115,8 @@ michael_missionary_expedition_khazars = {
 }
 
 michael_missionary_expedition_great_moravia = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive learning faith }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = michael_missionary_expedition_great_moravia_desc }
 	}
@@ -135,7 +135,7 @@ michael_missionary_expedition_great_moravia = {
 }
 
 michael_overthrows_regency = {
-	categories = { positive }
+	categories = { positive major }
 	icon = "_default.dds"
 	description = {
 		random_valid = { desc = michael_overthrows_regency_desc }
@@ -155,7 +155,7 @@ michael_overthrows_regency = {
 }
 
 michael_crowned_coemperor = {
-	categories = { positive title }
+	categories = { positive title major }
 	icon = "title.dds"
 	description = {
 		random_valid = { desc = michael_crowned_coemperor_desc }
@@ -175,7 +175,7 @@ michael_crowned_coemperor = {
 }
 
 michael_crowned_emperor = {
-	categories = { positive title }
+	categories = { positive title major }
 	icon = "title.dds"
 	description = {
 		random_valid = { desc = michael_crowned_emperor_desc }
@@ -195,8 +195,8 @@ michael_crowned_emperor = {
 }
 
 michael_brideshow = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { negative marriage }
+	icon = "marriage.dds"
 	description = {
 		random_valid = { desc = michael_brideshow_desc }
 	}
@@ -215,7 +215,7 @@ michael_brideshow = {
 }
 
 nasar_battle_of_lalakaon = {
-	categories = { positive war martial war_started }
+	categories = { positive war martial war_started major }
 	icon = "war_started.dds"
 	description = {
 		random_valid = { desc = nasar_battle_of_lalakaon_desc }
@@ -276,7 +276,7 @@ michael_confines_family_to_convent = {
 
 # Salomon of Brittany
 murder_of_erispoe = {
-	categories = { positive death murder intrigue }
+	categories = { positive death murder intrigue major }
 	icon = "murder.dds"
 	description = {
 		random_valid = {
@@ -363,7 +363,7 @@ salomon_862_hired_vikings = {
 
 salomon_charles_863_treaty = {
 	categories = { positive }
-	icon = "_default.dds"
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = salomon_charles_863_treaty_desc }
 	}
@@ -382,8 +382,8 @@ salomon_charles_863_treaty = {
 }
 
 salomon_866_haesteinn_alliance = {
-	categories = { positive war martial war_started }
-	icon = "war_started.dds"
+	categories = { positive war martial war_started major }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = salomon_866_haesteinn_alliance_desc }
 	}
@@ -402,7 +402,7 @@ salomon_866_haesteinn_alliance = {
 }
 
 salomon_battle_of_brissarthe = {
-	categories = { positive war martial battle }
+	categories = { positive war martial battle major }
 	icon = "battle.dds"
 	description = {
 		random_valid = { desc = salomon_battle_of_brissarthe_desc }
@@ -423,8 +423,8 @@ salomon_battle_of_brissarthe = {
 
 # Charles the Bald
 837_diet_of_aachen = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive major }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = 837_diet_of_aachen_desc }
 	}
@@ -483,7 +483,7 @@ charles_carolingian_civil_war_start = {
 }
 
 charles_battle_of_fontenoy = {
-	categories = { positive war martial battle }
+	categories = { positive war martial battle major }
 	icon = "battle.dds"
 	description = {
 		random_valid = { desc = charles_battle_of_fontenoy_desc }
@@ -504,7 +504,7 @@ charles_battle_of_fontenoy = {
 
 charles_oaths_of_strasbourg = {
 	categories = { positive }
-	icon = "_default.dds"
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = charles_oaths_of_strasbourg_desc }
 	}
@@ -523,8 +523,8 @@ charles_oaths_of_strasbourg = {
 }
 
 charles_treaty_of_verdun = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive major }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = charles_treaty_of_verdun_desc }
 	}
@@ -544,7 +544,7 @@ charles_treaty_of_verdun = {
 
 treaty_of_coulaines = {
 	categories = { positive }
-	icon = "_default.dds"
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = treaty_of_coulaines_desc }
 	}
@@ -603,8 +603,8 @@ battle_of_jengland = {
 }
 
 treaty_of_angers = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive major }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = treaty_of_angers_desc }
 	}
@@ -615,6 +615,26 @@ treaty_of_angers = {
 
 	third_perspective_description = {
 		random_valid = { desc = treaty_of_angers_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+charles_aethelwulf_arranged_marriage = {
+	categories = { positive major family } 
+	icon = "activity_wedding.dds"
+	description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_desc_third_perspective_1 }
 	}
 	
 	duration = {
@@ -642,8 +662,28 @@ frankish_breton_improved_relations = {
 	}
 }
 
+charles_aethelwulf_arranged_marriage_ceremony = {
+	categories = { positive major family } 
+	icon = "activity_wedding.dds"
+	description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_ceremony_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_ceremony_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_aethelwulf_arranged_marriage_ceremony_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
 845_siege_of_paris = {
-	categories = { negative war martial battle }
+	categories = { negative war martial battle major }
 	icon = "battle.dds"
 	description = {
 		random_valid = { desc = 845_siege_of_paris_desc }
@@ -663,7 +703,7 @@ frankish_breton_improved_relations = {
 }
 
 charles_invasion_of_west_francia = {
-	categories = { negative war martial battle }
+	categories = { negative war martial battle major }
 	icon = "war_started.dds"
 	description = {
 		random_valid = { desc = charles_invasion_of_west_francia_desc }
@@ -683,8 +723,8 @@ charles_invasion_of_west_francia = {
 }
 
 charles_treaty_of_koblenz = {
-	categories = { positive }
-	icon = "_default.dds"
+	categories = { positive major }
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = charles_treaty_of_koblenz_desc }
 	}
@@ -722,6 +762,26 @@ charles_payment_veland = {
 	}
 }
 
+charles_meeting_at_savonnieres = {
+	categories = { positive }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = charles_meeting_at_savonnieres_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = charles_meeting_at_savonnieres_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = charles_meeting_at_savonnieres_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
 edict_of_pitres = {
 	categories = { positive }
 	icon = "_default.dds"
@@ -744,7 +804,7 @@ edict_of_pitres = {
 
 charles_diplomacy_with_cordoba = {
 	categories = { positive }
-	icon = "_default.dds"
+	icon = "diplomacy.dds"
 	description = {
 		random_valid = { desc = charles_diplomacy_with_cordoba_desc }
 	}
@@ -783,7 +843,7 @@ charles_danegeld_866 = {
 }
 
 860_raid_on_constantinople = {
-	categories = { positive war martial battle }
+	categories = { positive war martial battle major }
 	icon = "battle.dds"
 	description = {
 		random_valid = { desc = 860_raid_on_constantinople_desc }
@@ -795,6 +855,252 @@ charles_danegeld_866 = {
 
 	third_perspective_description = {
 		random_valid = { desc = 860_raid_on_constantinople_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+marriage_to_teutberga = {
+	categories = { negative }
+	icon = "marriage.dds"
+	description = {
+		random_valid = { desc = marriage_to_teutberga_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = marriage_to_teutberga_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = marriage_to_teutberga_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+treaty_of_prum = {
+	categories = { positive major }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = treaty_of_prum_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = treaty_of_prum_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = treaty_of_prum_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+imprisonment_of_teutberga = {
+	categories = { negative marriage }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = imprisonment_of_teutberga_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = imprisonment_of_teutberga_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = imprisonment_of_teutberga_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+teutberga_trial_by_ordeal = {
+	categories = { negative marriage }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = teutberga_trial_by_ordeal_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = teutberga_trial_by_ordeal_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = teutberga_trial_by_ordeal_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+lothaire_land_bribe_to_louis = {
+	categories = { positive }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = lothaire_land_bribe_to_louis_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = lothaire_land_bribe_to_louis_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = lothaire_land_bribe_to_louis_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+teutberga_confession = {
+	categories = { positive }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = teutberga_confession_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = teutberga_confession_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = teutberga_confession_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+second_council_of_aachen = {
+	categories = { positive }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = second_council_of_aachen_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = second_council_of_aachen_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = second_council_of_aachen_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+
+
+
+
+
+
+teutberga_reinstated_as_queen = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = teutberga_reinstated_as_queen_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = teutberga_reinstated_as_queen_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = teutberga_reinstated_as_queen_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+waldrada_excommunication = {
+	categories = { negative }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = waldrada_excommunication_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = waldrada_excommunication_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = waldrada_excommunication_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+lothaire_payment_for_teutberga_support = {
+	categories = { positive }
+	icon = "_default.dds"
+	description = {
+		random_valid = { desc = lothaire_payment_for_teutberga_support_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = lothaire_payment_for_teutberga_support_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = lothaire_payment_for_teutberga_support_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+lothaire_teutberga_joint_appeal = {
+	categories = { positive }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = lothaire_teutberga_joint_appeal_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = lothaire_teutberga_joint_appeal_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = lothaire_teutberga_joint_appeal_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+pope_response_to_lothaire_866 = {
+	categories = { negative }
+	icon = "diplomacy.dds"
+	description = {
+		random_valid = { desc = pope_response_to_lothaire_866_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = pope_response_to_lothaire_866_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = pope_response_to_lothaire_866_desc_third_perspective_1 }
 	}
 	
 	duration = {

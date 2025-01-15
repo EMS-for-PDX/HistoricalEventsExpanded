@@ -305,9 +305,6 @@ HEE_lotharingia_questline.0006 = { #pope gives lothaire the good news
 		character = scope:pope
 		animation = personality_compassionate
 	}
-	# lower_left_portrait = scope:teutberga
-	# lower_center_portrait = scope:ruler_2
-	# lower_right_portrait = scope:teutberga
 
 	trigger = {
 		character:6877 = { is_alive = yes }
@@ -344,13 +341,6 @@ HEE_lotharingia_questline.0007 = { #Lothaire sets off to return home
 		character = root
 		animation = happiness
 	}
-	# right_portrait = {
-	# 	character = scope:pope
-	# 	animation = personality_callous
-	# }
-	# lower_left_portrait = scope:teutberga
-	# lower_center_portrait = scope:ruler_2
-	# lower_right_portrait = scope:teutberga
 
 	trigger = {
 		character:6877 = { is_alive = yes }
@@ -392,13 +382,6 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
 		character = root
 		animation = sick
 	}
-	# right_portrait = {
-		# character = scope:pope
-		# animation = personality_callous
-	# }
-	# lower_left_portrait = scope:teutberga
-	# lower_center_portrait = scope:ruler_2
-	# lower_right_portrait = scope:teutberga
 
 	trigger = {
 		character:144998 = { has_character_flag = lothaire_has_visited_rome }
@@ -409,7 +392,6 @@ HEE_lotharingia_questline.0008 = { #Lothaire falls ill
                 travel_plan_owner = root
             }
         }
-        location = province:2488 # Piacenza
 		character:6877 = { is_alive = yes }
 		character:168314 = { is_alive = yes }
 		is_alive = yes

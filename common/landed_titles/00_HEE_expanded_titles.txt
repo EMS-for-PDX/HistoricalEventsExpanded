@@ -168,6 +168,23 @@ k_provence = { # https://en.wikipedia.org/wiki/Lower_Burgundy
 	capital = c_venaissin # Venaissin
 }
 
+k_ostrogoths = { # https://en.wikipedia.org/wiki/Ostrogothic_Kingdom
+	color = { 116 135 65 }
+
+	definite_form = yes
+
+	capital = c_ravenna
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:german
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
 k_pechenegs_custom = {
 	color = { 132 108 72}
 	ignore_titularity_for_title_weighting = yes
@@ -240,6 +257,127 @@ k_syunik = { # https://en.wikipedia.org/wiki/Kingdom_of_Syunik
 
 	capital = c_suenik
 }
+
+k_mercia = { # https://en.wikipedia.org/wiki/Mercia
+	color = { 200 30 0 }
+
+	capital = c_warwickshire # Warwick
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_wessex = { # https://en.wikipedia.org/wiki/Wessex
+	color = hsv{ 1 0.9 0.9 }
+
+	capital = c_hampton # Winchester
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_east_anglia = { # https://en.wikipedia.org/wiki/Kingdom_of_East_Anglia
+	color = { 200 90 0 }
+
+	capital = c_norfolk # Norwich
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_bernicia = {
+	color = hsv{ 0.98 0.9 0.9 }
+
+	capital = c_northumberland # Bamburgh, Bernicia
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_deira = {
+	color = { 255 90 15 }
+
+	capital = c_north_riding # York
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_northumbria = {
+	color = hsv{ 0.98 0.9 0.9 }
+
+	capital = c_north_riding # York
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_essex = {
+	color = { 241 15 15 }
+
+	capital = c_middlesex
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
+k_kent = {
+	color = { 241 100 15 }
+
+	capital = c_kent # Dover
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:anglo_saxon
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
 
 d_muslim_tbilisi = { # https://en.wikipedia.org/wiki/Emirate_of_Tbilisi
 	color = { 20 100 30 }
@@ -375,10 +513,12 @@ k_sarir = { # Kingdom of Sarir
 	capital = c_samander
 }
 
+
+
+
 # Artifacts
 k_jeanne_banner = {
 	color = { 158 102 36 }
-	color2 = { 200 0 0 }
 
 	capital = c_orleans # Orleans
 	
@@ -435,6 +575,21 @@ d_nf_rendakios = { #
 	ai_primary_priority = { add = @never_primary_score }
 }
 
+d_nf_monomachos = { # 
+	color = { 100 100 100 }
+	capital = c_paphlagonia
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
 ### LAAMPs ###
 d_laamp_trpimirovic = { # Trpimir's sons in exile
 	color = { 100 100 100 }
@@ -453,6 +608,20 @@ d_laamp_trpimirovic = { # Trpimir's sons in exile
 d_laamp_hanzali = { # Muhammad ibn Wasil
 	color = { 100 100 100 }
 	capital = c_shiraz # Province of Fars
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_hastein = { # Hastein
+	color = { 100 100 100 }
+	capital = c_montaigu # Hastein had a base on the island of Noirmoutier
 
 	definite_form = yes
 	landless = yes

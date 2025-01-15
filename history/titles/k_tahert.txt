@@ -1308,6 +1308,7 @@ d_zab = {
 		holder = 6882	#Just to keep him from tribalifying bits of Algeria unecessarily.
 	}
 	1066.1.1 = {
+		liege = 0
 		government = tribal_government
 		holder = 155173	#Hassan b. Serhan Athbejid
 	}

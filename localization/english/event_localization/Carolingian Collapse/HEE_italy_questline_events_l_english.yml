@@ -1,7 +1,8 @@
 ﻿l_english:
 
+# Louis II of Italy
  HEE_italy_questline.0101.t: "Security in the South"
- HEE_italy_questline.0101.desc: "Despite my recent victory over the Muslims with my successful capture of Bari, Southern Italy remains unsecured. Whispers of a possible Muslim military response echo throughout the land, the defeated [sawdan.GetTitledFirstName] remnants still hold great support among the populace, and even the Lombard princes who invited me South for protection now view my presence as an irritation. Even so, the city of Bari, a prize that has long eluded me, now belongs to me; the question now becomes how best to hold it.\n\nWhile perhaps it could be a potential provocation, I could deploy a number of my troops to garrison key Christian-controlled forts in Southern Italy - which would serve both as a stabilizing force to the populace and a deterrent to my enemies."
+ HEE_italy_questline.0101.desc: "Despite my recent victory over the Muslims with the capture of Bari, Southern Italy remains unsecured. Whispers of a possible Muslim military response echo throughout the land and the defeated [sawdan.GetTitledFirstName] still hold great support among the populace - even the Lombard princes who invited me South for protection already begin to view my presence as an irritation.\n\nStill, I now possess the city of Bari - a prize that has long eluded me - though the question now becomes how best to secure it.\n\nWhile it could be a potential provocation, I could deploy a number of my troops to garrison key Christian-controlled forts in Southern Italy - which would serve both as a stabilizing force to the populace and a deterrent to my enemies."
  HEE_italy_questline.0101.a: "The South must remain secure."
  HEE_italy_questline.0101.b: "This would be a step too far."
 
@@ -34,7 +35,7 @@
  HEE_italy_questline.0153.b: "The risk is too great."
 
  HEE_italy_questline.0171.t: "A Dangerous Proposition"
- HEE_italy_questline.0171.desc: "A relatively mundane day is made far more interesting when a messenger enters your hall with a letter bearing the seal of [adelchis.GetTitledFirstName]. Inside, you find yourself presented with a delicate proposition: a plea for assistance from [adelchis.GetTitledFirstName], who seeks your aid against [louis_the_younger.GetTitledFirstName]. It seems the Prince fears that with the fall of Bari, [louis_the_younger.GetTitledFirstName] will seek to impose his rule over all of Southern Italy - Muslim and Christian alike.\n\nYou retire to the solitude of your chambers to ponder the weighty decision that this missive brings before you. Thoughts swirl in your mind as you consider the implications of aligning yourself with Adelchis. On one hand, the opportunity to challenge the authority of a ruler whose ambitions may threaten the autonomy of your Principality resonates deeply with you. On the other hand, there is no small amount of risk. Foremost among them is can Adelchis be trusted as an ally or does he plan to merely use you towards some unknown purpose?"
+ HEE_italy_questline.0171.desc: "A relatively mundane day is made far more interesting when a messenger enters your hall with a letter bearing the seal of [adelchis.GetTitledFirstName]. Inside, you find yourself presented with a delicate proposition: a plea for aid from [adelchis.GetTitledFirstName], who seeks your support against [louis_the_younger.GetTitledFirstName]. It seems the Prince fears that with the fall of Bari, the Emperor will seek to impose his rule over all of Southern Italy - Muslim and Christian alike.\n\nYou retire to the solitude of your chambers to ponder the weighty decision that this missive brings before you. Thoughts swirl in your mind as you consider the implications of aligning yourself with Adelchis. On one hand, the opportunity to challenge the authority of a ruler whose ambitions may threaten the autonomy of your Principality resonates deeply with you. On the other hand, there is no small amount of risk. Foremost among them is can Adelchis be trusted as an ally or does he plan to merely use you towards some unknown purpose?"
  HEE_italy_questline.0171.a: ""[louis_the_younger.GetTitledFirstName] is indeed a threat, once best faced alongside allies.""
  HEE_italy_questline.0171.b: ""[louis_the_younger.GetTitledFirstName] has yet to prove himself my enemy.""
 
@@ -67,7 +68,7 @@
  HEE_italy_questline.0157.c: ""Silence! I will hear NO more on this subject!""
 
  HEE_italy_questline.0103.t: "The Price of Freedom"
- HEE_italy_questline.0103.desc: "Some time has passed since your capture, and you continue to remain confined to the boundaries of this chamber, the modest decor doing little to mask the fact that while this room contains neither bars nor chains - it remains a prison all the same. The days have stretched on, each passing moment a testament to both the injustice and indignity of your captivity.\n\nSuddenly, the heavy wooden door creaks open, admitting a shaft of dim light that pierces the gloom of your solitude. [adelchis.GetTitledFirstName] enters, flanked by a retinue of guards, as the sight of him fills you with equal parts anticipation and apprehension as you ponder why he has come. With a voice like ice, Adelchis demands that you swear an oath on the Book never to return to Benevento nor seek revenge for your imprisonment if you wish to secure freedom for yourself and your family. The audacity of his demands leaves you reeling, a bitter taste of indignation rising in your throat as you contemplate the choice before you."
+ HEE_italy_questline.0103.desc: "Some time has passed since your capture, and you continue to remain confined to the boundaries of this chamber. The room's modest decor does little to mask the fact that - while this room contains neither bars nor chains - it remains a prison all the same. The days have stretched on, each passing moment a testament to both the injustice and indignity of your captivity.\n\nSuddenly, the heavy wooden door creaks open, admitting a shaft of dim light that pierces the gloom of your solitude. [adelchis.GetTitledFirstName] enters, flanked by a retinue of guards, as the sight of him fills you with equal parts anticipation and apprehension as you ponder why he has come. With a voice like ice, Adelchis demands that you swear an oath on the Book never to return to Benevento nor seek revenge for your imprisonment if you wish to secure freedom for yourself and your family. The audacity of his demands leaves you reeling, a bitter taste of indignation rising in your throat as you contemplate the choice before you."
  HEE_italy_questline.0103.a: ""I shall swear [adelchis.GetFirstName], but never forgive nor forget.""
  HEE_italy_questline.0103.b: ""I will never agree to these terms [adelchis.GetFirstName].""
 
@@ -138,3 +139,81 @@
  louis_refuses_the_pope: "Whatever your reasonings, you refuse the Pope's offer. As such, you are still beholden to your oath to [adelchis.GetTitledFirstName] and burdened by the disgrace you suffered by virtue of your imprisonment."
 
  louis_is_crowned_again: "As the weight of your shame is lifted from your shoulders, you rise for a second time as Emperor of the Romans, head of the Christian Empire, and successor to Charlemagne."
+
+
+
+
+
+
+
+
+# Siege of Salerno
+ HEE_siege_of_salerno.0001.t: "Hat's off to You"
+ HEE_siege_of_salerno.0001.desc: "The midday sun cast its golden glow over the bustling forum as I made my way back to the palace, the scent of spices and fresh bread mingling in the warm air. My hair was still damp from the baths, and I adjusted the cap atop my head, a finely embroidered piece gifted to me by a local artisan. The crowd parted respectfully, though I caught the occasional curious glance. Among them, a man—an Arab merchant, by his garb and the richness of his wares—stepped forward, his expression polite but intrigued.\n\n“Your Excellency,” he said in a lilting voice, his words accented but clear, “that cap of yours—such craftsmanship! It speaks of refinement and taste. A prince’s adornment, truly.” His compliment was genuine, his tone warm. I paused, struck by his candor, and found myself smiling. In this moment, he was not an emissary of a foreign land or a reminder of the struggles that beset our borders, but simply a man admiring the beauty of another’s possession."
+ HEE_siege_of_salerno.0001.a: ""If it pleases you so, then it is yours!""
+ HEE_siege_of_salerno.0001.b: ""Your comment warms my heart.""
+ HEE_siege_of_salerno.0001.c: ""Go about your business.""
+
+ HEE_siege_of_salerno.0002.t: "The Gift of Generosity"
+ HEE_siege_of_salerno.0002.desc: "An Amalfitan merchant is brought before me, his weathered face conveying both urgency and unease. It seems he has returned from Ifrīqiya not with the usual cargo of spices and silks, but with words he claimed could save this city. When he speaks, it is of a great Muslim fleet preparing to descend upon Southern Italy in retaliation for the recent loss of Bari - with Salerno as their first target. This knowledge, he said, came from an unexpected source: an Arab merchant who wore a princely cap.\n\nThe weight of the news was staggering. My mind raced with the implications. Yet, amid the threat, I could not help but feel a flicker of gratitude. A single act of generosity had sown the seeds of goodwill across distant waters, delivering a chance to prepare where none might have existed - that is, if this merchant does indeed speaks the truth..."
+ HEE_siege_of_salerno.0002.a: ""We must make haste to prepare the city!""
+ HEE_siege_of_salerno.0002.b: ""My Spymaster shall see if you speak true.""
+ HEE_siege_of_salerno.0002.c: ""The tales you spin are quite grand!""
+
+ HEE_siege_of_salerno.0003.t: "A Question of Aid"
+ HEE_siege_of_salerno.0003.desc: "The weight of the Amalfitan merchant’s warning hung heavy on my mind as I sat in the quiet of my chamber, staring out over the bustling streets of Salerno. The threat from Ifrīqiya loomed like a storm on the horizon, and though my men were brave and my walls strong, I knew the might of the Muslim fleet was not to be underestimated. Salerno could not stand alone against such an onslaught. My people’s lives, their homes, their future—it was all at stake, and the weight of responsibility pressed down on me like iron.\n\nI turned my thoughts to the lords of Southern Italy. We were a land divided, our rivalries often more bitter than any foreign foe, yet this threat was no petty squabble. The flames of Ifrīqiyan wrath would consume more than just Salerno if left unchecked. Could I bring them to my cause? Could ancient grudges be set aside to face this common enemy? To call on their aid was to risk appearing weak, but to face this alone might mean ruin."
+ HEE_siege_of_salerno.0003.a: "Seek the aid of your fellow Christian Princes of Southern Italy"
+ HEE_siege_of_salerno.0003.b: "Grit yourself to face the oncoming threat alone"
+
+ HEE_siege_of_salerno.0005.t: "A Greater Threat?"
+ HEE_siege_of_salerno.0005.desc: ""
+ HEE_siege_of_salerno.0005.a: "We shall ask the Emperor for aid"
+ HEE_siege_of_salerno.0005.b: "The Emperor should stay in the North"
+
+ HEE_siege_of_salerno.0007.t: "A Request for Aid"
+ HEE_siege_of_salerno.0007.desc: "The envoy arrives at my court under a darkened sky, their cloaks damp from the journey and their faces tense with urgency. At their head was Guaimar, the son of Prince Guaifer of Salerno, whose presence signals the importance of his message. His arrival was not unexpected - I had been informed of the boy's journey north some days ago - but the words he spoke were.\n\nHis words painted a grim picture: a great Muslim army had been gathered and would soon fall on Salerno - their banners advancing in retaliation for my conquest of Bari. The fall of Bari had been a victory for Christendom, a testament to the strength of my reign and my duty as Emperor. Yet, the price of that victory had become clear - and whose cost now fell to Salerno. As Guaimar falls silent, the whole court awaits my response. All know my next words will echo far beyond these walls..."
+ HEE_siege_of_salerno.0007.a: ""Salerno will have my full support.""
+ HEE_siege_of_salerno.0007.b: ""You may have my coin - but not my men""
+ HEE_siege_of_salerno.0007.c: ""Your problems are your concern.""
+ HEE_siege_of_salerno.0007.d: ""I have not forgotten your father's transgressions against me.""
+
+
+
+ HEE_siege_of_salerno.0100.t: "The Fall of Bari"
+ HEE_siege_of_salerno.0100.desc: "The messenger’s words struck like a dagger. Bari, the stronghold of Islam in Italy, had fallen to the Christians. I sat in silence for a moment, letting the weight of the news settle. Around me, the murmurs of my council grew louder, outrage and disbelief filling the chamber. Some called it a humiliation, others an affront to our faith. All demanded retribution. Their voices rose like a storm, urging swift vengeance against the infidels who dared to defy us.\n\nIt does not take long for all eyes in the room to seek my reaction. I take a moment to settle my thought before announcing how we shall respond to the Christian agression..."
+ HEE_siege_of_salerno.0100.a: ""Bari shall not go unanswered.""
+ HEE_siege_of_salerno.0100.b: ""The time is not right to strike at Southern Italy.""
+
+ HEE_siege_of_salerno.0101.t: "A Targeted Strike"
+ HEE_siege_of_salerno.0101.desc: "The air in the council chamber was tense as my marshal unfurled the map of Southern Italy, his finger tracing the jagged coastline. “Salerno, Benevento, Naples—each a ripe target, Emir,” he said, his voice calm but heavy with purpose. “The Christians celebrate their victory at Bari, but their unity is fragile. A swift strike by sea will shatter their illusion of strength and remind them of our power.”\n\nI studied the map, the names of those cities carrying the weight of opportunity and risk. Salerno stood defiant, its prince foolishly bold; Benevento, a landlocked prize, relied on its neighbors for strength; and Naples, ever a thorn, lay exposed by the sea. “A naval strike,” I murmured, considering the marshal’s plan. The fleet of Ifrīqiya had long been our sharpest blade, and to wield it now would be to strike fear into their hearts. Yet I knew this campaign would demand precision—choose poorly, and we would squander what remained of our momentum."
+ HEE_siege_of_salerno.0101.a: ""Salerno shall suffer our wrath.""
+ HEE_siege_of_salerno.0101.b: ""Naples' wealth will soon be ours.""
+ HEE_siege_of_salerno.0101.c: ""Benevento is the key to the South.""
+ HEE_siege_of_salerno.0101.d: ""Sadly, I must renege on my promise of vengence...""
+
+ give_your_cap_to_the_arab: "Moved by his appreciation or perhaps simply due to your generous nature, you shall gift the merchant the cap he so admires. Perhaps in this city so often divided by trade, culture, and faith, a simple gesture such as this will bridge the distance - if only for a fleeting moment."
+ thank_the_arab_for_his_compliment: "The Arab's comment is appreciated and has earned your thanks - nothing more and nothing less."
+ dismiss_the_arab: "For one such as this - whether it be his station or faith - to address you so directly can only be an affront. It is best to publicly dismiss him before others begin to exhibit the same improper familiarity."
+
+ believe_the_warning_and_prepare_salerno: "This warning is too great to ignore or delay. Salerno must be ready for this invasion - the city must be fortified, provisions must be gathered, the garrison must be strengthened, and the people must be warned!"
+ ask_your_spymaster_to_confirm_the_rumors: "While the merchant's warning is indeed grave, that does not mean it is true. His words could be false, or himself decieved. To act in haste is to invite disaster, and thus it is only right to first confirm such a threat before acting on it."
+ dismiss_the_merchant_rumors: "The Merchant's words begets disbelief. A surprise Muslim attack betrayed by the giving of a single cap? Even the greatest of playwrights would struggle to come up with such a tale!"
+
+ request_aid_from_southern_italian_lords: "The Muslim fleet is a threat not only to you, but to all Christians in the South of Italy. As such, it is only right to call on all Christian lords to confront the threat. United - and by the grace of God - you will repel all who threaten your city."
+ face_the_threat_to_salerno_alone: "Whether from confidence or arrogance, you will face the oncoming Muslim threat with what allies - if any - you have gathered already. The glory shall be yours, as shall the blame."
+
+ we_must_ask_for_louis_aid: ""
+ we_do_not_need_the_emperor_help: ""
+
+ salerno_shall_have_my_full_support: "As Emperor over all Christendom - and one who holds ambitions for Southern Italy - a Muslim conquest of Salerno is unacceptable. Salerno will have your full support for the defense of the city and in repelling this new Islamic offensive."
+ salerno_can_have_some_monetary_support: "You shall not fully ignore the pleas of Salerno. While you may not offer military aid, your gold may be just as useful - perhaps Salerno may buy some swords to compensate for the ones you shall withhold?"
+ salerno_is_not_my_problem: "Whatever your reasons, you will not fulfill your duty as a Christian ruler. While you hope people will accept your refusal, you can not but fear many will speak ill of your inaction in defending the faith."
+ i_remember_salerno_intrigues: "The words of Salerno's envoy fall on deaf ears. You still remember your imprisonment at the hands of Adelchis and the complicity of Guaifer in that act of treachery. And now with his son and heir in your court, you may exact some small retributation for the indignities you have suffered."
+
+ we_must_respond_to_bari_fall: "The loss of a city such as Bari can not be met with silence - not while we still hold ambitions for Southern Italy. While the form of our retaliation remains unclear for now, I shall make clear we will soon take steps to avenge the losses at Bari."
+ italy_is_lost_to_us: "Whatever my reasonings, I will not respond to the loss of Bari - atleast not yet. While many of my people may think less of me, they will come to understand I take this action for the betterment of my realm."
+
+ send_the_navy_to_attack_salerno: "Salerno is the most easily accessable port from our bases in Ifrīqiya and Sicily. If we were to conquer the city, it could become a vital staging ground for further campaigns into Southern Italy and beyond."
+ send_the_navy_to_attack_naples: "Naples, along with the nearby city of Amalfi, are rich trade centers. If they were to be brought into the fold, their wealth would be key in the further expansion of Islam into Italy."
+ send_the_navy_to_attack_benevento: "Benevento has long been the most significant polity in Southern Italy and its central location would make it a key staging ground for further campaigns. Such a vital target should be our first goal."
+ actually_do_nothing: "On second thought, perhaps a renewned offensive in Southern Italy is not the correct course of action. Even if I must go back on my word, it is better to take more time and consider what would be the most effective next step."

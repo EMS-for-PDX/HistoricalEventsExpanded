@@ -1,0 +1,69 @@
+﻿
+ostrogothking0001 = { # Ildibad; nephew of Theudis, an Ostrogoth king of the Visigoths in Spain - https://en.wikipedia.org/wiki/Ildibad
+	name = "Ildibad"
+	# dynasty = nephew of Theudis (ID: 200280)
+	religion = "catholic"
+	culture = "visigothic" # An Ostrogoth
+	505.1.1 = {
+		birth = yes
+	}
+	541.5.1 = { # in May 541, Ildibad was murdered at a royal banquet by his Gepid bodyguard Velas whose Gothic lover was married off to someone else
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+ostrogothking0002 = { # Eraric; elected as the most distinguished among the Rugians in the confederation of the Ostrogoths - https://en.wikipedia.org/wiki/Eraric
+	name = "Eraric"
+	# dynasty = A relative of Theudis (ID: 200280) and cousin of Totila  
+	religion = "catholic"
+	culture = "visigothic" # An Ostrogoth
+	510.1.1 = {
+		birth = yes
+	}
+	541.10.1 = { # After a reign of only 5 months, Eraric was killed at Totila's request so that Totila might ascend to the throne 
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+ostrogothking0003 = { # Totila, original name Baduila, was the penultimate King of the Ostrogoths, reigning from 541 to 552 AD - https://en.wikipedia.org/wiki/Totila
+	name = "Totila"
+	# dynasty = A relative of Theudis (ID: 200280), nephew of Ildibad, and cousin of Eraric 
+	religion = "catholic"
+	culture = "visigothic" # An Ostrogoth
+	trait = education_martial_4
+	trait = compassionate # Historian Peter Heather explains that Totila's success was partly attributable to Totila's lenient treatment of prisoners—especially other barbarian troops. Totila did not plunder the countryside for supplies like other barbarians had done. Also freed slaves
+	trait = brave # historian Thomas Burns claims that Totila was a gifted warrior and governor, and as an Ostrogoth ranks only second to Theodoric the Great himself
+	trait = temperate # On a couple of occasions, Procopius even praises Totilla for having restrained his soldiers from raping captured women, which won him renown for his moderation
+	trait = diligent # historian Thomas Burns claims that Totila was a gifted warrior and governor, and as an Ostrogoth ranks only second to Theodoric the Great himself
+	517.1.1 = { # Like Alaric I, Totila was quite young when he became king
+		birth = yes
+	}
+	552.7.1 = { # Battle of Taginae, where Totila died
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+ostrogothking0004 = { # Teia was the last Ostrogothic King of Italy - https://en.wikipedia.org/wiki/Teia
+	name = "Teia"
+	# dynasty = A relative of Theudis (ID: 200280) and cousin of Totila  
+	religion = "catholic"
+	culture = "visigothic" # An Ostrogoth
+	trait = education_martial_2
+	trait = callous # He also had some 300 Roman children slaughtered, whom Totila had held hostage
+	trait = brave
+	trait = vengeful # In an act of revenge for the losses at Busta Gallorum, Teia ordered the death of all the Roman senators in Campania
+	515.1.1 = {
+		birth = yes
+	}
+	553.3.15 = { # Battle of Mons Lactarius
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

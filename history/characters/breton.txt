@@ -3169,12 +3169,12 @@
 	martial = 6
 	intrigue = 8
 	culture = breton
-	trait = ambitious
+	trait = ambitious # Sought power and a kingly title
 	trait = arrogant # Called himself King, despite not infact being one
-	trait = deceitful # 
+	trait = deceitful # Murdered his liege, forged treaties and alliances with others than broke them when it suited his interests
 	trait = cynical # Often allied/used vikings against France, usurped his cousin by killing him in a church
-	trait = education_intrigue_3
-	father = 303401	#Riwallon, brother of NominoE_
+	trait = education_diplomacy_3 # Seemingly skilled at forging alliances. Also will serve to not give him insane intrigue skill as his traits allow that already
+	father = 303401	#Riwallon, brother of Nominoe
 	822.1.1 = {
 		birth = yes
 	}

@@ -26,6 +26,12 @@
 	768.9.24 = {
 		add_pressed_claim = title:k_lotharingia
 	}
+	770.1.1 = { # Charlemagne's mother, Bertrada, went on his behalf to Lombardy in 770 and brokered a marriage alliance before returning to Francia with his new bride
+		add_spouse = 190348
+	}
+	771.1.1 = { # Charlemagne repudiated (a medieval form of divorce) his Lobard wife in 771, likely at the urging of Pope Stephen who was against an alliance between Charlemagne and the Lombards
+		remove_spouse = 190348
+	}
 	772.1.1 = {
 		add_spouse = 167827
 	}
@@ -498,6 +504,7 @@
 	dynasty = 667
 
 	father = 168079
+	mother = 168080
 
 	religion = catholic
 	culture = frankish
@@ -2127,8 +2134,8 @@
 	father = 91503 #Rothgar
 	mother = 91504 #Rothgar's wife
 	trait = education_learning_2
-
-	725.1.1 = {
+	trait = devoted # Bishop
+	744.1.1 = { # The chronology suggests that Gauslin was considerably younger than his brother
 		birth = yes
 	}
 	812.1.1 = {
@@ -3916,10 +3923,10 @@
 
 163092 = { # https://en.wikipedia.org/wiki/Matfrid
 	name = "Matfried"
-	dynasty = 667
+	dynasty = dynasty_matfriede
 	religion = "catholic"
 	culture = "frankish"
-	father = 31700
+	father = matfriede0001 # No evidence I can find connecting Matfried to Gerhard. Father changed to an invented Father of Matfrid to connect Matfrid, Count of Orleans, to his suspected sister Ava
 	765.1.2 = {
 		birth = "765.1.2"
 	}
@@ -4073,24 +4080,7 @@
 	}
 }
 
-#71910 = {
-#	name = "Warner"
-#	dynasty = 7389
-#	religion = "catholic"
-#	culture = frankish
-#
-#	father = 71906
-#	mother = 71907
-#
-#	820.1.1 = {
-#		birth = yes
-#	}
-#	853.1.1 = {
-#		death = {
-#			death_reason = death_execution
-#		}
-#	}
-#}
+#71910 was moved to french file
 
 262155 = {
 	name = "Ide" # Itta Guideschi, wife of Guaimar I of Salerno
@@ -4101,7 +4091,7 @@
 
 	father = frankish0001
 
-	868.1.1 = {
+	865.1.1 = { # Her estimated birth date follows from her assumed marriage date
 		birth = yes
 	}
 	888.1.13 = {
@@ -4540,8 +4530,11 @@ frankish0006 = {
 		name = "GuilhE_m"
 		culture = occitan
 	}
-	850.1.1 = {
-		death = yes
+	850.1.1 = { # Following a retreat to Barcelona after a lost battle, he was captured and executed by royal nobles loyal to Charles the Bald (possibly on the orders of Charles)
+		death = {
+			death_reason = death_execution
+			killer = 90104 # Charles the Bald
+		}
 	}
 }
 
@@ -4564,8 +4557,11 @@ frankish0006 = {
 		name = "Bernat"
 		culture = occitan
 	}
-	844.5.1 = {
-		death = yes
+	844.5.1 = { # On the side of Pippin against Charles the Bald, Bernard was captured and brought before Charles the Bald - who then had him beheaded
+		death = {
+			death_reason = death_execution
+			killer = 90104 # Charles the Bald
+		}
 	}
 }
 

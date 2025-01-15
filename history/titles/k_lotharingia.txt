@@ -1399,7 +1399,7 @@ c_trier = {
 		holder = 7979
 	}
 	850.1.1 = {
-		holder = HEE_theotgaud_archbishop_of_trier
+		holder = trierarchbishop0001
 		government = theocracy_government
 	}
 	903.1.1 = {
@@ -1481,6 +1481,9 @@ c_nancy = {
 	}
 	855.8.23 = {
 		holder = 144998 #Lothair II
+	}
+	864.1.1 = {
+		holder = 31702 # Adalard the Senechal, whose son is known as the Count of Metz
 	}
 	869.8.8 = {
 		holder = 90104 #Charles I the Bald
@@ -1574,7 +1577,7 @@ c_metz = {
 		holder = 144998 #Lothair II
 	}
 	864.1.1 = {
-		holder = 31702
+		holder = 31702 # Adalard the Senechal, whose son is known as the Count of Metz
 	}
 	870.1.2 = {
 		holder = 31703
@@ -1953,12 +1956,9 @@ c_neufchateau = {
 	796.1.1 = {
 		holder = 7985 #Welf
 	}
-	817.1.1 = {
+	860.1.1 = {
 		liege = "k_lotharingia"
-		holder = 30227 #Lothair I
-	}
-	855.8.23 = {
-		holder = 144998 #Lothair II
+		holder = charpeigne0001 #BERNARIUS, Comte de Charpeigne
 	}
 	869.8.8 = {
 		holder = 90104 #Charles I the Bald

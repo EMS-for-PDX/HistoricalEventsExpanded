@@ -3,37 +3,6 @@ k_georgia = {
 	1066.1.1 = { change_development_level = 8 }
 	1178.1.1 = { change_development_level = 24 }
 	
-	#809.1.1 = {
-		#holder = 41540
-	#}
-	#826.1.29 = {
-		#holder = 41541
-	#}
-	#876.1.1 = {
-		#holder = 41542
-	#}
-	#881.1.1 = {
-		#holder = 70461
-	#}
-	#891.1.1 = {
-		#holder = 41543
-	#}
-	#923.1.1 = {
-		#holder = 161200
-	#}
-	#937.1.1 = {
-		#holder = 41544
-	#}
-	#958.1.1 = {
-		#holder = 41545
-	#}
-	#986.1.1 = {
-		#holder = 161203
-	#}
-	#1000.1.1 = {
-		#holder = 41546
-	#}
-	
 	#Unificiation of Georgia
 	1008.1.1 = {
 		holder = 41547
@@ -43,6 +12,12 @@ k_georgia = {
 	}
 	1027.8.16 = {
 		holder = 9952
+	}
+	1052.1.1 = { # crowned by the rebellious Georgian feudal lord Liparit, who succeeded in temporarily driving Bagrat into the Byzantine Empire
+		holder = 9954 # George II of Georgia
+	}
+	1060.1.1 = {
+		holder = 9952 # Bagrat IV (Restored)
 	}
 	1072.11.24 = {
 		holder = 9954
@@ -151,7 +126,7 @@ d_tao-klarjeti = {
 		liege = k_georgia
 	}
 	1064.1.1 = {
-		holder = 9957
+		holder = 85012 # Ivane I of Kldekari
 	}
 	1102.1.1 = {
 		holder = 41550
@@ -232,9 +207,11 @@ c_tao = {
 	
 	#1008 Unification of Georgia, k_georgia created
 	1064.1.1 = {
-		holder = 9957
+		liege = "d_vaspurakan" # Tao is under Byzantine control as part of the Theme of Iberia 
+		holder = 41585
 	}
 	1102.1.1 = {
+		liege = "d_tao-klarjeti"
 		holder = 41550
 	}
 	1122.1.1 = {
@@ -312,7 +289,7 @@ c_klarjeti = {
 	
 	#1008 Unification of Georgia, k_georgia created
 	1064.1.1 = {
-		holder = 9957
+		holder = 85012 # Ivane I of Kldekari
 	}
 	1102.1.1 = {
 		holder = 41550
@@ -396,7 +373,7 @@ c_kartli = {
 	
 	#1008 Unification of Georgia, k_georgia created
 	1064.1.1 = {
-		holder = 41553
+		holder = 85012 # Ivane I of Kldekari
 	}
 	1102.1.1 = {
 		holder = 41550
@@ -437,51 +414,21 @@ c_kartli = {
 
 
 c_acampse = {
-	646.1.1 = {
-		liege = "d_greater_armenia"
+	855.1.1 = {
+		liege = d_chaldia
+		holder = 145123
 	}
-	646.1.1 = {
-		holder = 159918
+	867.1.1 = {
+		holder = tzifinarites0002 # Ioannes the Chaldaean; technically didnt recieve this post till after Basil I's ascension but moved up a year in lieu of a clearly more accurate option
 	}
-	673.1.1 = {
-		holder = 70448
-	}
-	690.1.1 = {
-		holder = 70447
-	}
-	726.1.1 = {
-		holder = 41500
-	}
-	749.1.1 = {
-		holder = 41538
-	}
-	765.1.1 = {
-		holder = 41539
-	}
-	780.1.1 = {
-		liege = "d_tao-klarjeti"
-	}
-	809.1.1 = {
-		holder = 41540
-	}
-	826.1.29 = {
-		holder = 41541
-	}
-	# 827.1.1 = {
-		# holder = 41530
-	# }
-	# 851.1.1 = {
-		# holder = 41531
-	# }
-	
+
 	#1008 Unification of Georgia, k_georgia created
+
 	1064.1.1 = {
-		liege = "d_tao-klarjeti"
-	}
-	1064.1.1 = {
-		holder = 9957
+		holder = 20544
 	}
 	1102.1.1 = {
+		liege = "d_tao-klarjeti"
 		holder = 41550
 	}
 	1122.1.1 = {
@@ -1126,7 +1073,11 @@ c_guria = {
 	
 	#1008 Unification of Georgia, k_georgia created
 	1027.8.6 = {
+		liege = "k_georgia"
 		holder = 9952
+	}
+	1060.1.1 = {
+		holder = kalmakheli0001 # Sula Kalmakheli who arrested Liparit IV in 1058. For that, he received Tsikhisdjvari (Tsikhisdziri) and Udzrakhe (Odzrkhe)
 	}
 	1072.11.24 = {
 		holder = 9954

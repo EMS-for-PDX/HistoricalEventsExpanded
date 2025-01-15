@@ -27,6 +27,7 @@ bosnian0002 = { # According to later Annales Ragusini (14-17th century), the dea
     trait = infertile
 	830.1.1 = {
 		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	871.1.1 = {
 		death = yes

@@ -282,3 +282,47 @@ jeanne_darc_character_template = {
 
 	random_traits = no
 }
+
+umar_ibn_hafsun_template = { # Umar ibn Hafsun ibn Ja'far ibn Salim; a 9th-century political and military leader who contested Umayyad power in Iberia
+	age = 33 # Born circa. 850, Umar had become the leader of the rebels around 883
+	gender = male
+	faith = faith:muwalladi
+	culture = culture:andalusian
+
+	#Skills
+	diplomacy = { # Good at rallying the common folk against the Umayyads
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	martial = { # Fared well against the Umayyads despite a lack of military support
+		min_template_high_skill
+		max_template_high_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	learning = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+	prowess = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+
+	trait = education_martial_3
+	trait = wrathful # In his wild youth, he had a very violent temper and was involved in a number of disputes, including a homicide around the year 879
+	trait = ambitious # sought to contest Umayyad power in Iberia
+	trait = cynical # renounced Islam and converted to Christianity, most likely in the hope of obtaining military support from Alfonso III of Asturias
+	trait = murderer # In his wild youth, he had a very violent temper and was involved in a number of disputes, including a homicide around the year 879
+	trait = gallowsbait
+	trait = rough_terrain_expert
+	trait = organizer
+	trait = peasant_leader # rallied disaffected Muwallads and Mozarabs to the cause by playing off resentment towards the unfair heavy taxation and the humiliating treatment they were receiving at the hands of Abd ar-Rahman and his successors
+	random_traits = no
+}

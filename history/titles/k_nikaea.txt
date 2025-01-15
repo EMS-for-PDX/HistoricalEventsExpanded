@@ -24,6 +24,16 @@ d_opsikion = {
 	}
 	867.1.1 = {
 		holder = skythopoulos0001
+		effect = {
+			holder = { # Opsikion was a lower level cavalry Theme
+				create_maa_regiment = {
+					type = cataphract
+					check_can_recruit = no 
+					title = title:d_opsikion
+					size = 1
+				}
+			}
+		}
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -668,16 +678,35 @@ d_thracesia = {
 		holder = 145842
 	}
 	796.1.1 = {
-		holder = 145860 # # Bardanes Tourkos, who in 797, as strategos of the Thracesian Theme, supported the Empress-mother Irene of Athens when she usurped the throne from her son
+		holder = 145860 # Bardanes Tourkos, who in 797, as strategos of the Thracesian Theme, supported the Empress-mother Irene of Athens when she usurped the throne from her son
+	}
+	840.1.1 = {
+		holder = 145190 # Constantine Kontomytes, as the strategos of the Thracesian Theme, inflicted a severe defeat on the Cretan Saracens in 841 when they raided the rich monastic community of Mount Latros
 	}
 	847.1.1 = {
-		holder = Mamikonian0007
+		holder = Mamikonian0007 # Petronas, the uncle of Michael III (r. 842–867) and brother of Empress Theodora who served as the Empire's leading general
 	}
 	866.1.1 = { # When Symbatios was not subsequently promoted to Caesar and the later emperor Basil I ascended instead, Symbatios left the court and had himself appointed strategos of the Thrakesion theme
 		holder = 145111
 	}
 	867.1.1 = {
 		holder = rendakios0009
+		effect = {
+			holder = { # Opsikion was a lower level cavalry Theme
+				create_maa_regiment = {
+					type = skoutatoi
+					check_can_recruit = no 
+					title = title:d_thracesia
+					size = 2
+				}
+				create_maa_regiment = {
+					type = ballistrai
+					check_can_recruit = no 
+					title = title:d_thracesia
+					size = 1
+				}
+			}
+		}
 	}
 	1060.1.1 = {
 		holder = 20526
@@ -1135,6 +1164,16 @@ d_optimatoi = {
 	}
 	855.1.1={
 		holder=145191
+		effect = {
+			holder = { # unlike the other themata, the Optimatoi did not provide armed troops, but formed a corps of 4,000 mule-drivers with their animals, which provided the baggage train (touldon) of the imperial tagmata in Constantinople
+				create_maa_regiment = {
+					type = ballistrai
+					check_can_recruit = no 
+					title = title:d_optimatoi
+					size = 1
+				}
+			}
+		}
 	}
 	1060.1.1= {
 		holder=1746
@@ -1353,8 +1392,24 @@ d_bucellaria = {
 	835.1.1 = {
 		holder = 145194 # Theodore Krateros, a court eunuch and possibly strategos of the Bucellarian Theme
 	}
-	855.1.1={
-		holder=nasar0002
+	855.1.1 = {
+		holder = nasar0002
+		effect = {
+			holder = {
+				create_maa_regiment = {
+					type = skoutatoi
+					check_can_recruit = no 
+					title = title:d_bucellaria
+					size = 2
+				}
+				create_maa_regiment = {
+					type = ballistrai
+					check_can_recruit = no 
+					title = title:d_bucellaria
+					size = 1
+				}
+			}
+		}
 	}
 	1060.1.1= {
 		holder=1742

@@ -448,6 +448,7 @@
 	religion = "catholic"
 	culture = "occitan"
 	father = 127021
+	mother = auvergnespouse0001
 	846.1.1 = {
 		birth = "846.1.1"
 	}
@@ -456,7 +457,7 @@
 	}
 }
 
-127021 = {
+127021 = { # BERNARD, Comte d'Auvergne - https://fmg.ac/Projects/MedLands/AUVERGNE.htm#BernardAuvergneMLiegardis
 	name = "Bernat"
 	dynasty = 9571
 	martial = 6
@@ -10381,6 +10382,7 @@
 	father = 40230
 	845.1.1 = {
 		birth = "845.1.1"
+		give_nickname = nick_the_calf
 	}
 	874.8.1 = {
 		death = "874.8.1"
@@ -12928,7 +12930,10 @@
 		add_spouse = 168028
 	}
 	844.2.1 = {
-		death = "844.2.1"
+		death = { # defeated and killed by Lambert II and his Breton allies in February 844
+			death_reason = death_battle
+			killer = additionalguideschi0001 # Lambert II
+		}
 	}
 }
 

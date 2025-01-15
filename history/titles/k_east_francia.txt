@@ -4129,6 +4129,7 @@ c_bremen = {
 	#	holder = 0
 	#}
 	865.2.3 = {
+		liege = d_angria
 		government = theocracy_government
 		holder = 163117
 	}

@@ -1,4 +1,4 @@
-﻿## Characters for the Byzantine Event Chain - 867 ##
+﻿## Characters for Anglo-Saxons - 867 ##
 
 tlk_asser = { # 9th-century Welsh scholar and bishop who chronicled much of Alfred's life https://en.wikipedia.org/wiki/Asser
 	name = "Asser"
@@ -1135,58 +1135,6 @@ hee_ealdred = { # https://fmg.ac/Projects/MedLands/ENGLAND,%20AngloSaxon%20nobil
 	}
 }
 
-hee_aethelhelm_aetheling = { # https://en.wikipedia.org/wiki/%C3%86thelhelm
-	name = "E_thelhelm"
-	dynasty_house = house_british_isles_wessex
-	religion = "catholic"
-	culture = anglo_saxon
-	father = 33358
-	mother = 306015
-	# health =
-
-	#Skills
-
-	#Education
-
-	#Personality Traits
-
-	#Other Traits
-
-	866.1.1 = {
-		birth = yes
-	}
-	895.1.1 = { # Estimated to have died during the 890s
-		death = yes
-	}
-}
-
-hee_aethelwold_aetheling = { # https://en.wikipedia.org/wiki/%C3%86thelwold_%C3%A6theling
-	name = "E_thelwold"
-	dynasty_house = house_british_isles_wessex
-	religion = "catholic"
-	culture = anglo_saxon
-	father = 33358
-	mother = 306015
-	# health =
-
-	#Skills
-
-	#Education
-
-	#Personality Traits
-
-	#Other Traits
-
-	867.1.1 = {
-		birth = yes
-	}
-	902.12.13 = {
-		death = {
-			death_reason = death_battle # Died at the Battle of the Holme
-		}
-	}
-}
-
 sherbornebishop0001 = { # https://en.wikipedia.org/wiki/Heahmund
 	name = "Heahmund"
 	religion = "catholic"
@@ -1222,5 +1170,1849 @@ sherbornebishop0001 = { # https://en.wikipedia.org/wiki/Heahmund
 		death = { # died at the Battle of Meretun in 871
 			death_reason = death_battle
 		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+## Additional Hwicce Dynasty Members (dynasty = 560) ##
+# the family appears to have originated in the East Midlands
+# The following supposed ancestry of Leofwine Ealdorman of Mercia is taken from the Genealogia Fundatoris of Coventry Monastery (This alleged ancestry should be treated with considerable caution)
+hwicce0001 = { # The Genealogia Fundatoris of Coventry Monastery names “Leofricus comes Leicestriæ, tempore Ethelbaldi regis Merciorum” (716-757)
+	name = "Leofric"
+	dynasty = 560
+	religion = "catholic"
+	culture = "anglo_saxon"
+	700.1.1 = {
+		birth = yes
+	}
+	756.1.1 = { # before [757]
+		death = yes
+	}
+}
+
+hwicce0002 = { # The Genealogia Fundatoris of Coventry Monastery records that “Algarum…comes Lincoln, dictus…Egga” was the son of “Leofricus comes Leicestriæ, tempore Ethelbaldi regis Merciorum”, lived “tempore Offæ, Kenulfi et Withlafi regum” (757-839), and was buried in Croyland abbey
+	name = "E_lfgar"
+	# AKA: aelfgar
+	dynasty = 560
+	father = hwicce0001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	750.1.1 = {
+		birth = yes
+	}
+	820.1.1 = { # (-before 839, bur Croyland Abbey, Lincolnshire)
+		death = yes
+	}
+}
+
+hwicce0003 = { # The Genealogia Fundatoris of Coventry Monastery records that “Algarum…comes Lincoln, dictus…Egga” was the son of “Leofricus comes Leicestriæ, tempore Ethelbaldi regis Merciorum”, lived “tempore Offæ, Kenulfi et Withlafi regum” (757-839), and was buried in Croyland abbey
+	name = "E_lfgar"
+	# AKA: aelfgar
+	dynasty = 560
+	father = hwicce0002
+	religion = "catholic"
+	culture = "anglo_saxon"
+	# Died in combat, so will add martial traits
+	trait = education_martial_2
+	trait = brave
+	trait = trusting
+	trait = impatient
+	trait = rough_terrain_expert # Family is from the marshlands of the East Midlands
+	810.1.1 = {
+		birth = yes
+	}
+	870.1.1 = { # -killed in battle Strekingham, Kesteven [before 874]
+		death = {
+			death_reason = death_battle # killed by the Danes “Ungar et Ubba” at “Kesteven apud Strekingham” and was buried at Croyland abbey
+		}
+	}
+}
+
+hwicce0004 = { # The Genealogia Fundatoris of Coventry Monastery records that “Leofricus secundus” was the son of “Algarus secundus” and lived “tempore Alfredi et Edwardi primi” (871-924)
+	name = "Leofric"
+	dynasty = 560
+	father = hwicce0003
+	religion = "catholic"
+	culture = "anglo_saxon"
+	855.1.1 = {
+		birth = yes
+	}
+	920.1.1 = { # (-before [924])
+		death = yes
+	}
+}
+
+hwicce0005 = { # Leofwine was the son of Ælfwine, who is otherwise unknown, but the family appears to have originated in the East Midlands
+	name = "E_lfwine"
+	dynasty = 560
+	father = hwicce0004
+	religion = "catholic"
+	culture = "anglo_saxon"
+	900.1.1 = { # Unknown
+		birth = yes
+	}
+	965.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+hwicce0006 = { # Leofwine (died in or after 1023) was appointed Ealdorman of the Hwicce by King Æthelred the Unready of England in 994
+	name = "Leofwine"
+	dynasty = 560
+	father = hwicce0005
+	religion = "catholic"
+	culture = "anglo_saxon"
+	955.1.1 = {
+		birth = yes
+	}
+	1023.1.1 = { # (-1023)
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+# Missing Mercian Kings
+mercianking0001 = { # Cearl of Mercia; an early king of Mercia who ruled during the early part of the 7th century, until about 626
+	name = "Cearl"
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	575.1.1 = { # Unknown
+		birth = yes
+	}
+	626.1.1 = {
+		death = yes
+	}	
+}
+
+mercianking0002 = { # 
+	name = "Ludeca"
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_martial_2
+	trait = vengeful # Fought the East Angles to avenge the loss of their king the previous year
+	trait = brave
+	trait = impatient # Mustered an army within a year to avenge the death of king Beornulf - perhaps he could have waited a bit to improve his odds?
+	780.1.1 = { # Unknown
+		birth = yes
+	}
+	827.1.1 = {
+		death = { # Supposedly he too was killed in another failed attempt to subjugate the rebellious East Angles in the following year
+			death_reason = death_battle
+			killer = 205020 # Æthelstan of East Anglia - Assumedly the leader of the rebellious East Angles; helps to convey the situation of Ludeca's death
+		}
+	}	
+}
+
+
+
+
+
+# Additional Members of the Iceling Dynasty
+additionaliceling0001 = { # King Pybba's unnamed daughter. Possibly the first wife of Cenwalh, King of Wessex (648–674)
+	name = "Cwene" # Unnamed
+	female = yes
+	dynasty = 1047002
+	father = 205056 # King Pybba of Mercia
+	religion = "catholic" # Maybe?
+	culture = "anglo_saxon"
+	603.1.1 = { # Unknown
+		birth = yes
+	}
+	625.1.1 = { # Unclear when the marriage between Cenwalh and King Pybba's unnamed daughter occured
+		add_spouse = 205148 # Cenwalh, King of Wessex
+	}
+	645.1.1 = { # Dated to around Cenwalh being forced out of Wessex, as setting aside the sister of Penda was the casus belli for Penda to invade
+		remove_spouse = 205148 # Cenwalh, King of Wessex
+	}
+	665.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionaliceling0002 = { # Ælfthryth of Crowland - https://en.wikipedia.org/wiki/%C3%86lfthryth_of_Crowland
+	name = "E_lfthryth" # Ælfthryth
+	female = yes
+	dynasty = 1047002
+	father = 205072 # King Offa of Mercia
+	mother = 205074 # 
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_learning_3
+	trait = compassionate
+	trait = humble
+	trait = chaste
+	768.1.1 = { # Unknown
+		birth = yes
+	}
+	793.5.20 = { # Supposedly, Ælfthryth was horrified by the murder of Æthelberht II, the king of the East Angles, so she departed the court and retired to the Crowland Abbey in the Fens of Crowland
+		trait = devoted
+		trait = reclusive
+	}
+	835.1.1 = { # Unknown; believed c.835
+		death = yes
+	}
+}
+
+additionaliceling0003 = { # Fictional daughter of Creoda of Mercia to allow a connection between Pybba of Mercia & Cearl of Mercia, who was said to be a kinsman to Pybba
+	name = "Cwene"
+	female = yes
+	dynasty = 1047002
+	father = 205055 # King Offa of Mercia
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	562.1.1 = { # Unknown
+		birth = yes
+	}
+	580.1.1 = {
+		add_spouse = mercianking0001
+	}
+	620.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionaliceling0004 = { # Cwenburh (Quenberga), daughter of "Cearl, king of the Mercians"; first wife of Edwin of Northumbria
+	name = "Cwenburh"
+	female = yes
+	father = mercianking0001 # Cearl of Mercia
+	mother = additionaliceling0003
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	590.1.1 = { # Unknown
+		birth = yes
+	}
+	620.1.1 = { # Unknown; must have passed before Edwin's second marriage
+		death = yes
+	}
+}
+
+additionaliceling0005 = { # Cyneburh, eldest daughter of Penda & wife of Alhfrith of Deira, co-regent of Northumbria
+	name = "Cyneburh" # Kyneburga
+	female = yes
+	dynasty = 1047002
+	father = 205057 # King Penda of Mercia
+	religion = "catholic" # Maybe?
+	culture = "anglo_saxon"
+	trait = generous # The author of her life in Capgrave says, that she lived here a mirror of all sanctity, and that no words can express the bowels of charity with which she cherished the souls which served God under her care
+	trait = diligent # "and how watchful she was over their comportment"
+	trait = zealous # and how zealous in instructing and exhorting them
+	trait = compassionate # She had a wonderful compassion for the poor, and strongly exhorted her royal brothers to alms-giving and works of mercy
+	632.1.1 = { # Unknown
+		birth = yes
+	}
+	664.1.1 = {
+		trait = devoted # Became an abbess later in life, assumedly following the death of her husband
+	}
+	680.9.15 = { # died on 15 September AD 680
+		trait = saint
+		death = yes
+	}
+}
+
+additionaliceling0006 = { # Wilburh, a little mentioned sister of Wulfhere of Mercia, who married Frithuwold of Chertsey
+	name = "Wilburh" # 
+	female = yes
+	dynasty = 1047002
+	father = 205057 # King Penda of Mercia
+	religion = "catholic" #
+	culture = "anglo_saxon"
+	635.1.1 = { # Unknown
+		birth = yes
+	}
+	695.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionaliceling0007 = { # Kyneswide, daughter of Penda
+	name = "Cyneswith" # Kyneswide
+	female = yes
+	dynasty = 1047002
+	father = 205057 # King Penda of Mercia
+	religion = "catholic" # Maybe?
+	culture = "anglo_saxon"
+	trait = zealous
+	trait = humble
+	trait = chaste
+	638.1.1 = { # Unknown
+		birth = yes
+	}
+	653.1.1 = {
+		trait = devoted # Became a nun
+	}
+	686.3.6 = { # Unknown
+		trait = saint
+		death = yes
+	}
+}
+
+additionaliceling0008 = { # Werburgh, an Anglo-Saxon princess who became the patron saint of the city of Chester in Cheshire
+	name = "Werburgh" # 
+	female = yes
+	dynasty = 1047002
+	father = 205061 # King Wulfhere of Mercia
+	mother = additionalwihtgilsing0003
+	religion = "catholic" #
+	culture = "anglo_saxon"
+	trait = zealous
+	trait = temperate
+	trait = generous
+	trait = chaste
+	trait = devoted # obtained her father's consent to enter the Abbey of Ely, which had been founded by her great-aunt Etheldreda (or Audrey), the first Abbess of Ely and former queen of Northumbria, whose fame was widespread
+	668.1.1 = { #
+		birth = yes
+	}
+	700.2.3 = { # 3 February 700
+		trait = saint
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+additionalcoenwalhing0001 = { # Ælfflæd of Mercia (II); daughter of King Ceolwulf I of Mercia, wife of King Wiglaf's son Wigmund, and mother of Wigstan
+	name = "E_lfflE_d" # Ælfflæd / Alhflaed
+	female = yes
+	dynasty = 1047003 # 
+	father = 205108 # Coelwulf I of Mercia
+	religion = "catholic"
+	culture = "anglo_saxon"
+	805.1.1 = { # Unknown
+		birth = yes
+	}
+	822.1.1 = { # Married Wiglaf's son Wigmund
+		add_spouse = 205085 # Wiglaf's son Wigmund
+	}
+	855.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionalcoenwalhing0002 = { # Cuthred of Kent; the King of Kent from 798 to 807
+	name = "Cuthred" #
+	dynasty = 1047003 # 
+	father = 205105 # In two charters issued by Cœnwulf, King of Mercia, he is described as brother of that king
+	religion = "catholic"
+	culture = "anglo_saxon"
+	771.1.1 = { # Unknown
+		birth = yes
+	}
+	807.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+## The possible Frith family may also have included the eighth-century figures Saint Frithuswith, and Frithugyth, wife of King Æthelheard of Wessex
+
+frith0001 = { # Frithuwold of Chertsey - https://en.wikipedia.org/wiki/Frithuwold_of_Chertsey
+	name = "Frithuwold" # 
+	dynasty = dynasty_frith
+	religion = "catholic" #
+	culture = "anglo_saxon"
+	630.1.1 = { # Unknown
+		birth = yes
+	}
+	651.1.1 = {
+		add_spouse = additionaliceling0007 # According to late hagiographical materials, he was a brother-in-law of Wulfhere
+	}
+	675.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+frith0002 = { # Osgyth; a Mercian noblewoman and prioress, venerated as an English saint since the 8th century, from soon after her death
+	name = "Osgyth" #
+	female = yes
+	dynasty = dynasty_frith
+	religion = "catholic" #
+	culture = "anglo_saxon"
+	father = frith0001
+	mother = additionaliceling0007
+	652.1.1 = { # Unknown
+		birth = yes
+	}
+	668.1.1 = { # King Wulfhere of Mercia established himself as overlord of Essex, and induced Sighere to marry Wulfhere's niece Osgyth, daughter of Frithuwold
+		add_spouse = 194103 # Sighere of Essex
+	}
+	673.1.1 = {
+		trait = devoted # In 673, Sighere separated from Osgyth, who then fled to the protection of Bishop Beaduwine of North Elmham
+	}
+	700.10.7 = { # Unknown
+		death = yes
+	}	
+}
+
+
+
+
+
+
+
+
+wessexqueen0001 = { # Seaxburh of Wessex, who ruled in her own right for between one and two years after the death of her husband, Cenwalh
+	name = "Seaxburh" #
+	female = yes
+	religion = "catholic"
+	culture = "anglo_saxon"
+	620.1.1 = { # Unknown
+		birth = yes
+	}
+	645.1.1 = { # Dated to around Cenwalh being forced out of Wessex, as setting aside the sister of Penda was the casus belli for Penda to invade
+		add_spouse = 205148 # Cenwalh, King of Wessex
+	}
+	674.1.1 = { # died c. 674
+		death = yes
+	}
+}
+
+wessexqueen0002 = { # Æthelburg of Wessex by marriage to King Ine of Wessex
+	name = "E_thelburg" # Æthelburg
+	female = yes
+	dynasty = 1047006
+	father = 205183 # If the unreliable record of Æthelheard having been the brother-in-law of his predecessor - King Ine - is to be believed (as Æthelheard is in CK3 as ID:205184)
+	religion = "catholic"
+	culture = "anglo_saxon"
+	# Æthelburg is considered by some historians to be one of the few Anglo-Saxon women warriors
+	trait = education_martial_3
+	trait = brave
+	trait = ambitious
+	trait = impatient
+	672.1.1 = { # c. 673
+		birth = yes
+	}
+	688.1.1 = {
+		add_spouse = 205164 # King Ine of Wessex
+	}
+	726.1.1 = { # In 726, Ine abdicated, with no obvious heir and, according to Bede, left his kingdom to "younger men" in order to travel, with his wife Æthelburg, to Rome where they both died
+		trait = devoted # Unclear if she became a nun
+		trait = pilgrim
+	}
+	740.1.1 = { # Unknown, possibly circa. 740, little is known of Ine and his wife following his abdication
+		death = yes
+	}
+}
+
+wessexqueen0003 = { # Frithugyth; wife of King Æthelheard of Wessex (died 740)
+	name = "Frithugyth"
+	female = yes
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = generous 
+	trait = zealous # Frithugyth is reported by the Anglo-Saxon Chronicle to have made a pilgrimage to Rome in 737 along with Forthhere, Bishop of Sherborne
+	trait = chaste # No known descendants
+	690.1.1 = { # Unknown
+		birth = yes
+	}
+	715.1.1 = { # Frithugyth married Æthelheard at some point in 729 or before for she is identified as "Queen Frithugyth" in Æthelheard's charter dated 729
+		add_spouse = 205184 # King Æthelheard of Wessex
+	}
+	737.1.1 = {
+		trait = pilgrim # Frithugyth is reported by the Anglo-Saxon Chronicle to have made a pilgrimage to Rome in 737 along with Forthhere, Bishop of Sherborne
+	}
+	740.1.1 = { # Frithugyth's husband Æthelheard died in 740 and was succeeded by Cuthred. It is not known if Frithugyth survived her husband
+		death = yes
+	}
+}
+
+additionalcerdicing0001 = { # https://en.wikipedia.org/wiki/Edburga_of_Minster-in-Thanet
+	name = "Edburga"
+	female = yes
+	dynasty = 1047006
+	father = 205151 # daughter of King Centwine
+	mother = additionalwihtgilsing0006 # Possibly incorrect, as one source has a Queen Engyth of Wessex, sister of Queen Iurminburh who was the second wife of King Ecgfrith of Northumbria, as the mother
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_learning_4
+	trait = zealous # She was reputed to be zealous in the pursuit of knowledge
+	trait = generous # She is known chiefly from Saint Boniface's (f.d. June 5) letters to her, in which he thanks her for books, altar vestments, and other 'tokens of affection' she had sent him and for the 'spiritual light' conveyed in her letters
+	trait = diligent # She was reputed to be zealous in the pursuit of knowledge
+	676.1.1 = { # Unknown?
+		birth = yes
+	}
+	716.1.1 = { #  In 716, Edburga became a Benedictine nun at the abbey. She corresponded with Saint Boniface and Lullus
+		trait = devoted
+	}
+	759.12.13 = {
+		trait = saint # She is regarded as a saint with a feast day on Dec. 12
+		death = yes
+	}	
+}
+
+additionalcerdicing0002 = { # the first Abbess of Wimborne Minster. She was the sister of Ine, King of Wessex and was married to the Northumbrian king Aldfrith - https://en.wikipedia.org/wiki/Cuthburh
+	name = "Cuthburh"
+	female = yes
+	dynasty = 1047006
+	father = 205163 # daughter of Cenred of Wessex
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_learning_4
+	trait = temperate # She is described as austere, and she communicated with prelates through a little hatch in the nunnery at Wimborne
+	trait = zealous
+	trait = chaste
+	669.1.1 = { # Unknown?
+		birth = yes
+	}
+	# married to the Northumbrian king Aldfrith
+	700.1.1 = { # According to a report by Florence of Worcester, written long afterwards, at some time before Aldfrith's death in 705 he and Cuthburh "renounced connubial intercourse for the love of God"
+		trait = celibate
+		trait = devoted # Cuthburh entered Abbess Hildelith's nunnery at Barking Abbey
+	}
+	725.8.31 = {
+		trait = saint # She is regarded as a saint with a feast day on Aug. 31
+		death = yes
+	}	
+}
+
+additionalcerdicing0003 = { # 8th-century Anglo-Saxon saint, a sister of King Ine of Wessex and of Saint Cuthburh - https://en.wikipedia.org/wiki/Cwenburh
+	name = "Cwenburh"
+	female = yes
+	dynasty = 1047006
+	father = 205163 # daughter of Cenred of Wessex
+	religion = "catholic"
+	culture = "anglo_saxon"
+	# Almost nothing is known of her, so lets assign traits that might explain that rather than have random generation
+	trait = education_learning_3
+	trait = content
+	trait = humble
+	trait = shy
+	670.1.1 = { # Unknown?
+		birth = yes
+	}
+	725.8.31 = { # Succeeded her sister as abbess
+		trait = devoted
+	}
+	735.1.1 = { # Death date after 726.
+		trait = saint # She is regarded as a saint
+		death = yes
+	}	
+}
+
+additionalcerdicing0004 = { # Kyneburga of Wessex, wife to Oswald of Northumbria
+	name = "Cyneburg" # Kyneburga
+	female = yes
+	dynasty = 1047006
+	father = 205147 # Cynegils of Wessex
+	religion = "catholic"
+	culture = "anglo_saxon"
+	608.1.1 = { # Unknown
+		birth = yes
+	}
+	634.1.1 = { # In the 630s, as their marriage supposedly took place along with Cynegils' baptism
+		add_spouse = 205212
+	}
+	670.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+additionalcerdicing0005 = { # Æthelstan, eldest son of King Æthelwulf of Wessex, who was appointed sub-king of Kent, Essex, Surrey, and Sussex
+	name = "E_thelstan"
+	dynasty = 1047006
+	father = 33355 #(?helwulf, King of Wessex)
+	mother = 306023 #Osburh
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_martial_3
+	trait = forder # Æthelstan and Ealdorman Ealhhere defeated a Viking fleet and army off Sandwich, Kent, described by Frank Stenton as "the first naval battle in recorded English history"
+	# I hate random traits
+	trait = brave
+	trait = diligent
+	trait = content
+	830.1.1 = { # Unknown? Appointed sub-king in 839 which implies he was old enough to hold such titles, but mother's dates dont allow for him to be old enough and Alfred's bith date to be correct...
+		birth = yes
+	}
+	852.1.1 = { # died c. 852
+		death = yes
+	}	
+}
+
+additionalcerdicing0006 = { # https://en.wikipedia.org/wiki/%C3%86thelhelm
+	name = "E_thelhelm"
+	dynasty_house = house_british_isles_wessex
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 33358
+	mother = 306015
+	866.1.1 = {
+		birth = yes
+	}
+	895.1.1 = { # Estimated to have died during the 890s
+		death = yes
+	}
+}
+
+additionalcerdicing0007 = { # https://en.wikipedia.org/wiki/%C3%86thelwold_%C3%A6theling
+	name = "E_thelwold"
+	dynasty_house = house_british_isles_wessex
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 33358
+	mother = 306015
+	867.1.1 = {
+		birth = yes
+	}
+	902.12.13 = {
+		death = {
+			death_reason = death_battle # Died at the Battle of the Holme
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+additionalwuffing0001 = { # Rægenhere, Son of Rædwald of East Anglia, who fell in the Battle of the River Idle
+	name = "RE_genhere" # Rægenhere
+	dynasty = 1047000 # Wuffingas
+	father = 205003 # Rædwald of East Anglia
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+
+	589.1.1 = { # Unknown?
+		birth = yes
+	}
+	604.1.1 = {
+		religion = catholic
+	}
+	616.1.1 = {
+		death = { # fell in the Battle of the River Idle
+			death_reason = death_battle
+		}
+	}	
+}
+
+additionalwuffing0002 = { # an Anglo-Saxon prince who was the son and heir of Anna of East Anglia
+	name = "Jurmin" # also known as Hiurmine of Blythburgh
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = education_martial_2
+	trait = holy_warrior
+	trait = forgiving
+	trait = zealous
+	trait = brave
+	630.2.24 = { # Unknown
+		birth = yes
+	}
+	654.1.1 = {
+		trait = saint # Jurmin was venerated as a saint: his feast day is 24 February
+		death = {
+			death_reason = death_battle # Slain alongside his father by a Mercian army near Blythburgh in Suffolk
+			killer = 205057 # King Penda of Mercia, who led the Mercian army
+		}
+	}
+}
+
+additionalwuffing0003 = { # Seaxburh of Ely
+	name = "Seaxburh"
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	# Described by the Liber Eliensis as a "pretiosa virago" (precious lady-warrior)
+	trait = education_stewardship_3
+	trait = zealous
+	trait = temperate
+	trait = brave
+	633.1.1 = { # Unknown
+		birth = yes
+	}
+	# Seaxburh was connected with the royal family of the Magonsætan by her marriage to Eorcenberht, who was king of Kent from 640 to 664
+	670.1.1 = { # Unclear of when exactly Seaxburh became a monk, but it was following her son reaching adulthood
+		trait = devoted
+	}
+	699.7.6 = {
+		trait = saint # The date of Seaxburh's death is not known, but when she died at Ely, she was at "a good, late age", according to the Liber Eliensis
+		death = yes
+	}
+}
+
+additionalwuffing0004 = { # Æthelthryth
+	name = "E_thelthryth" # Æthelthryth
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = celibate # Maintained vows of chastity through two marriages, for which she was highly praised 
+	635.1.1 = { # Unknown
+		birth = yes
+	}
+	# made an early first marriage in around 652 to Tondberct, chief or prince of the South Gyrwe
+	661.1.1 = {
+		add_spouse = additionalaethelfrithing0006
+	}
+	672.1.1 = { # Eventually, in about 672, Æthelthryth persuaded Ecgfrith to allow her to become a nun, and she entered the monastery of the Abbess Æbbe
+		trait = devoted
+	}
+	679.6.23 = { # According to Bede, Æthelfryth died of a neck tumour, which she interpreted as sent by God in his goodness to relieve her of guilt for her vanity in having worn heavy necklaces in her youth
+		trait = saint
+		death = yes
+	}
+}
+
+additionalwuffing0005 = { # Æthelburh of Faremoutiers
+	name = "E_thelburh" # Æthelburh, also known as Ethelburga
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	636.1.1 = { # Unknown
+		birth = yes
+	}
+	652.1.1 = { # Æthelburh and Saethryth were sent to the nunnery of Faremoutiers in France for their education where they became nuns
+		trait = devoted
+	}
+	664.7.6 = {
+		trait = saint # Her feast day is 7 July
+		death = yes
+	}
+}
+
+additionalwuffing0006 = { # Saint Wihtburh
+	name = "Wihtburh" # also Withburga or Withburge
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = disputed_heritage # the medievalist Virginia Blanton has suggested that the connection between Wihtburh and the family of Anna is likely to be a fabrication, invented to enhance the status of Ely Abbey
+	640.1.1 = { # Unknown
+		birth = yes
+	}
+	653.1.1 = { # After the death of her father in c. 653, Wihtburh built a convent in Dereham, Norfolk
+		trait = devoted
+	}
+	743.7.8 = { # Wihtburh died at a great age in 743, and was buried at Dereham
+		trait = saint # Her feast day is 8 July
+		death = yes
+	}
+}
+
+additionalwuffing0007 = { # Sæthryth; stepdaughter of king Anna of East Anglia
+	name = "SE_thryth" # Sæthryth
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205007 # Anna of East Anglia; her stepfather
+	mother = wuffingwife0001 # Name unknown; possibly Sæwara
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = disputed_heritage # A step-daughter
+	627.1.1 = { # Unknown; Born before Anna's marriage
+		birth = yes
+	}
+	652.1.1 = { # Æthelburh and Saethryth were sent to the nunnery of Faremoutiers in France for their education where they became nuns
+		trait = devoted
+	}
+	664.1.10 = { # Unknown
+		trait = saint # Her feast day is January 7, formerly January 10
+		death = yes
+	}
+}
+
+additionalwuffing0008 = { # Ecgburga, daughter of Ealdwulf of East Anglia, who became an abbess
+	name = "Ecgburga"
+	female = yes
+	dynasty = 1047000 # Wuffingas
+	father = 205011 # Ealdwulf of East Anglia
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = devoted
+	751.1.1 = { # Unknown
+		birth = yes
+	}
+	800.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+wuffingwife0001 = { # 
+	name = "SE_wara" # Sæwara
+	female = yes
+	religion = "catholic"
+	culture = "anglo_saxon"
+	600.1.1 = { # Unknown
+		birth = yes
+	}
+	629.1.1 = { # Unknown
+		add_spouse = 205007 # Anna of East Anglia
+	}
+	655.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+eastangliacanusurper0001 = { # Ricberht of East Anglia
+	name = "Ricberht"
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	trait = education_intrigue_3
+	trait = ambitious
+	trait = zealous
+	trait = vengeful
+	590.1.1 = { # Unknown
+		birth = yes
+	}
+	627.6.1 = {
+		trait = murderer
+	}
+	630.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+eastangliacanking0001 = { # Eohric the Dane
+	name = "Eirikr" # The name Eohric is the Old English form of the Old Norse Eiríkr
+	religion = "norse_pagan"
+	culture = "norse"
+	# Little is known of him
+	trait = education_martial_2
+	trait = ambitious
+	trait = brave
+	trait = callous
+	trait = bossy
+	disallow_random_traits = yes
+	855.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = {
+		employer = 168650 # Lets put him with Guthrum
+	}
+	871.1.1 = { 
+		#adulthood
+		remove_trait = bossy
+		trait = education_martial_2
+	}
+	881.1.1 = {
+		religion = "catholic" # Lets say he was baptized alongside Guthrum
+	}
+	902.12.13 = {
+		death = { # Battle of the Holme
+			death_reason = death_battle
+		}
+	}	
+}
+
+eastangliacanking0002 = { # Guthrum II
+	name = "Guttorm" #
+	religion = "norse_pagan"
+	culture = "norse"
+	# Little is known of him
+	870.1.1 = { # Unknown
+		birth = yes
+	}
+	890.1.1 = {
+		religion = "catholic" # Lets say he was baptized sometime after Guthrum
+	}
+	917.1.1 = {
+		death = { # Battle of Tempsford
+			death_reason = death_battle
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+additionalyffing0001 = { # Osfrith, son of King Edwin of Northumbria and Cwenburh of Mercia, who fell in the Battle of Hatfield Chase
+	name = "Osfrith"
+	dynasty = 1047009
+	father = 205198 # King Edwin of Northumbria
+	mother = additionaliceling0004 # Cwenburh of Mercia
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	611.1.1 = { # Unknown
+		birth = yes
+	}
+	627.1.1 = { # Assumedly converted alongside his father
+		religion = "catholic"
+	}
+	633.10.12 = {
+		death = { # Edwin faced Penda and Cadwallon at the Battle of Hatfield Chase in the autumn of 632 or 633 and was defeated and killed along with his son Osfrith
+			death_reason = death_battle # Battle of Hatfield Chase
+			killer = 205057 # King Penda of Mercia
+		}
+	}
+}
+
+additionalyffing0002 = { # Osfrith, son of King Edwin of Northumbria and Cwenburh of Mercia, who fell in the Battle of Hatfield Chase
+	name = "Osfrith"
+	dynasty = 1047009
+	father = 205198 # King Edwin of Northumbria
+	mother = additionaliceling0004 # Cwenburh of Mercia
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	611.1.1 = { # Unknown
+		birth = yes
+	}
+	627.1.1 = { # Assumedly converted alongside his father
+		religion = "catholic"
+	}
+	633.12.25 = { # Unknown the exact date
+		death = { # Captured by Penda at the Battle of Hatfield Chase and killed some time afterwards
+			death_reason = death_execution
+			killer = 205057 # King Penda of Mercia
+		}
+	}
+}
+
+additionalyffing0003 = { # Uscfrea, son of King Edwin of Northumbria and Æthelburg of Kent, who was sent to the court of Æthelburg's kinsman Dagobert I, king of the Franks, but died soon afterwards
+	name = "Uscfrea"
+	dynasty = 1047009
+	father = 205198 # King Edwin of Northumbria
+	mother = 205034 # Æthelburg of Kent
+	religion = "catholic"
+	culture = "anglo_saxon"
+	628.1.1 = { # Unknown; but must be after Edwin and Æthelburg's marriage
+		birth = yes
+	}
+	634.1.1 = { # Unknown the exact date, but post Battle of Hatfield Chase
+		death = yes
+	}
+}
+
+additionalyffing0004 = { # Athelhun, son of King Edwin of Northumbria and Æthelburg of Kent, who died young
+	name = "E_thelhun" # Æthelhun
+	dynasty = 1047009
+	father = 205198 # King Edwin of Northumbria
+	mother = 205034 # Æthelburg of Kent
+	religion = "catholic"
+	culture = "anglo_saxon"
+	629.1.1 = { # Unknown; but must be after Edwin and Æthelburg's marriage
+		birth = yes
+	}
+	630.1.1 = { # Unknown the exact date, but died young
+		death = yes
+	}
+}
+
+additionalyffing0005 = { # Athelthryth, daughter of King Edwin of Northumbria and Æthelburg of Kent, who died young
+	name = "E_lfthryth" # Athelthryth
+	female = yes
+	dynasty = 1047009
+	father = 205198 # King Edwin of Northumbria
+	mother = 205034 # Æthelburg of Kent
+	religion = "catholic"
+	culture = "anglo_saxon"
+	631.1.1 = { # Unknown; but must be after Edwin and Æthelburg's marriage
+		birth = yes
+	}
+	632.1.1 = { # Unknown the exact date, but died young
+		death = yes
+	}
+}
+
+additionalyffing0006 = { # Osfrith's son Yffi
+	name = "Yffi"
+	dynasty = 1047009
+	father = additionalyffing0002 # Osfrith, son of King Edwin of Northumbria and Cwenburh of Mercia
+	religion = "catholic"
+	culture = "anglo_saxon"
+	628.1.1 = { # Unknown; but must be after Edwin and Æthelburg's marriage
+		birth = yes
+	}
+	634.1.1 = { # Unknown the exact date, but post Battle of Hatfield Chase
+		death = yes
+	}
+}
+
+additionalyffing0007 = { # Hereric, nephew of Edwin, King of Deira
+	name = "Hereric"
+	dynasty = 1047009
+	father = 205197 # Hereric's parents are unknown. For simplicity, we will use the historically obscure Aethelric who CK3 makes Edwin's brother
+	religion = "catholic"
+	culture = "anglo_saxon"
+	597.1.1 = { # Unknown
+		birth = yes
+	}
+	615.1.1 = { # Unknown; When Hilda was still an infant, her father was poisoned while in exile at the court of the Brittonic king of Elmet in what is now West Yorkshire
+		death = {
+			death_reason = death_poison # Poisoned, likely on the orders of Æthelfrith
+		}
+	}
+}
+
+additionalyffing0008 = { # Hereswith; 7th-century Northumbrian saint. She married into the East Anglian royal dynasty and afterwards retired to Gaul to lead a religious life
+	name = "Hereswith"
+	female = yes
+	dynasty = 1047009
+	father = additionalyffing0007 # Hereric, nephew of Edwin, King of Deira
+	religion = "norse_pagan" # Born a pagan
+	culture = "anglo_saxon"
+	trait = education_learning_3
+	trait = zealous
+	trait = forgiving
+	trait = temperate
+	612.1.1 = { # Older sister of Hilda
+		birth = yes
+	}
+	627.4.12 = { # In 627, King Edwin was baptised on Easter Day, 12 April, along with his entire court, which likely included Hereswith
+		religion = "catholic"
+	}
+	630.1.1 = {
+		add_spouse = 205010 # Married into the East Anglican royal family
+	}
+	636.1.1 = { # Likely retired to a monastery after the death of her husband
+		trait = devoted
+	}
+	677.9.23 = { # Disputed
+		trait = saint
+		death = yes
+	}
+}
+
+additionalyffing0009 = { # Hilda of Whitby;  a saint of the early Church in Britain. She was the founder and first abbess of the monastery at Whitby which was chosen as the venue for the Synod of Whitby in 664 - https://en.wikipedia.org/wiki/Hilda_of_Whitby
+	name = "Hilda"
+	female = yes
+	dynasty = 1047009
+	father = additionalyffing0007 # Hereric, nephew of Edwin, King of Deira
+	religion = "norse_pagan" # Born a pagan
+	culture = "anglo_saxon"
+	trait = education_learning_5 # She gained such a reputation for wisdom that kings and princes sought her advice
+	trait = compassionate # Bede writes, "All who knew her called her mother because of her outstanding devotion and grace"
+	trait = zealous
+	trait = diligent # Bede describes Hilda as a woman of great energy, who was a skilled administrator and teacher
+	trait = humble # she also had a concern for ordinary folk
+	trait = theologian
+	trait = administrator
+	614.1.1 = { # According to Bede, Hilda was born in 614 into the Deiran royal household
+		birth = yes
+	}
+	627.4.12 = { # In 627, King Edwin was baptised on Easter Day, 12 April, along with his entire court, which included the 13-year-old Hilda
+		religion = "catholic"
+	}
+	647.1.1 = { # At the age of 33, Hilda decided instead to answer the call of Bishop Aidan of Lindisfarne and returned to Northumbria to live as a nun
+		trait = devoted
+	}
+	680.11.17 = {
+		trait = saint
+		death = { # Hilda suffered from a fever for the last seven years of her life, but she continued to work until her death on 17 November 680 AD
+			death_reason = death_ill
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aethelfrithingspouse0001 = { # Bebba, after whom it was named Bamburgh; probably Æthelfrith's first and most important wife
+	name = "Bebba"
+	female = yes
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	553.1.1 = { # Unknown
+		birth = yes
+	}
+	598.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0001 = { # Æbbe of Coldingham; an Anglian abbess and noblewoman
+	name = "A_bbe"
+	female = yes
+	dynasty = 1047010
+	father = 205209 # Æthelfrith, king of Bernicia
+	mother = 205210 # Acha of Deira
+	religion = "norse_pagan"
+	culture = "anglo_saxon"
+	trait = education_diplomacy_3
+	trait = zealous
+	trait = diligent
+	trait = chaste
+	615.1.1 = { # Unknown
+		birth = yes
+	}
+	620.1.1 = {
+		religion = "insular_celtic" # during the time of exile in western Scotland she and her brothers were converted to Christianity
+	}
+	683.1.1 = { # Unknown
+		trait = saint
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0002 = { # King Œthelwald of Deira, son of Oswald of Northumbria
+	name = "E_thelwald" # Œthelwald
+	dynasty = 1047010
+	father = 205212 # Oswald, king of Bernicia and Diera
+	mother = additionalcerdicing0004 # Unclear to who his mother was. If it was Oswald's only known wife, Cynegils’ daughter, then he seems too young to rule in 651 (beinng as young as 16). Possibly born during Oswald's exile in Scotland
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	# Œthelwald was a pious Christian and was remembered for his generosity towards St. Cedd, to whom he granted land for a monastery
+	trait = education_diplomacy_3
+	trait = generous
+	trait = craven # when the armies of Oswiu and Penda met on 15 November at the Battle of the Winwaed, Œthelwald withdrew his forces. The reason why is unknown (possibly Œthelwald was forced to assist Penda and abandoned him at first opportunity)
+	trait = zealous
+	635.1.1 = { # Unknown; Possibly born during Oswald's exile in Scotland
+		birth = yes
+	}
+	655.11.15 = { # Battle of the Winwaed
+		trait = devoted # Local tradition held that Œthelwald became a hermit in Kirkdale, North Yorkshire
+	}
+	690.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0003 = { # Alhfrith; King of Deira under his father Oswiu, King of Bernicia, from 655 until sometime after 664
+	name = "Alhfrith" #
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = additionalrheged0001 # Rhiainfellt; a British princess of the royal house of the kingdom of Rheged
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	trait = education_diplomacy_2
+	trait = zealous
+	trait = ambitious
+	trait = stubborn
+	630.1.1 = { # Unknown; c. 630
+		birth = yes
+	}
+	653.1.1 = { # when Alhfrith was a young man, Oswiu had him married to Cyneburh, daughter of Oswiu's great rival Penda of Mercia
+		add_spouse = additionaliceling0005
+	}
+	658.1.1 = {
+		religion = "catholic" # Around 658, Alhfrith's ally Cenwalh introduced him to Wilfrid, a Northumbrian churchman who had studied in Europe and strongly advocated the Roman customs
+	}
+	664.1.1 = { # Unknown; In the mid-660s, Alhfrith requested to go on pilgrimage to Rome with Benedict Biscop, which Oswiu forbade. Alhfrith subsequently vanishes from the historical record
+		death = { # In the Ecclesiastical History of the English People, Bede mentions that Alhfrith "attacked" his father
+			death_reason = death_battle #  David Kirby suggests that Alhfrith may have participated and died in a rebellion against Oswiu
+			killer = 205213 # Oswiu, King of Bernicia
+		}
+	}	
+}
+
+additionalaethelfrithing0004 = { # Ealhflæd (Alhflæd, Elfleda) was a seventh-century Mercian queen and the wife and murderer of Peada of Mercia
+	name = "EalhflE_d" # Alhflæd, Elfleda
+	female = yes
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = additionalrheged0001 # Rhiainfellt; a British princess of the royal house of the kingdom of Rheged
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	630.1.1 = { # Unknown; c. 630
+		birth = yes
+	}
+	653.1.1 = { # The conversion of Peada of Mercia is traditionally dated to 653, and conversion was a condition of the marriage
+		add_spouse = 205060
+	}
+	690.1.1 = { # Alhflid's fate after her husband's death is unknown
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0005 = { # a medieval infant saint in England, said to have lived for three days in 662
+	name = "Rumbold" #
+	dynasty = 1047010
+	father = additionalaethelfrithing0003 # Alhfrith;  King of Deira
+	mother = additionaliceling0005 # Cyneburh, daughter of Penda
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = zealous
+	662.10.31 = { # Unknown; c. 662
+		birth = yes
+	}
+	662.11.3 = { # Died 3 days after his birth
+		trait = saint
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0006 = { # Ecgfrith of Northumbria
+	name = "Ecgfrith" #
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = 205214 # Eanflæd; a Deiran princess and queen of Northumbria
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	trait = education_martial_3
+	trait = reaver
+	trait = arbitrary
+	trait = brave
+	trait = generous
+	trait = ambitious
+	645.1.1 = { # Ecgfrith was born in 645 or less likely 646 to king Oswiu of Northumbria and his wife Eanflæd
+		birth = yes
+	}
+	661.1.1 = { # To secure his hegemony over other English kingdoms Oswiu arranged a marriage between Ecgfrith and Æthelthryth, a daughter of Anna of East Anglia
+		add_spouse = additionalwuffing0004
+	}
+	664.1.1 = { # Synod of Whitby
+		religion = "catholic"
+	}
+	672.1.1 = { # Eventually, in about 672, Æthelthryth persuaded Ecgfrith to allow her to become a nun, and she entered the monastery of the Abbess Æbbe
+		remove_spouse = additionalwuffing0004
+		# add_spouse = Eormenburg
+	}
+	685.5.20 = { # On 20 May, Ecgfrith was slain at the age of 40, having been lured by a feigned flight to the mountains, at what is now called the Battle of Dun Nechtain
+		death = {
+			death_reason = death_battle # Battle of Dun Nechtain
+			killer = 166566 # his cousin Bridei mac Bili
+		}
+	}	
+}
+
+additionalaethelfrithing0007 = { # Ælfwine of Deira;  King of Deira from 670 to 679. He was a son of Oswiu of Northumbria and a brother of Ecgfrith of Northumbria
+	name = "E_lfwine" # Ælfwine
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = 205214 # Eanflæd; a Deiran princess and queen of Northumbria
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	661.1.1 = { # c. 661 AD
+		birth = yes
+	}
+	664.1.1 = { # Synod of Whitby
+		religion = "catholic"
+	}
+	679.1.1 = {
+		death = { # killed in battle against the Mercians at the Battle of the Trent in 679
+			death_reason = death_battle # Battle of the Trent
+			killer = 205062 # King Æthelred of Mercia, his brother-in-law
+		}
+	}	
+}
+
+additionalaethelfrithing0008 = { # Osthryth; queen of the Mercians, was the wife of King Æthelred and daughter of King Oswiu of Northumbria and his second wife Eanflæd
+	name = "Osthryth"
+	female = yes
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = 205214 # Eanflæd; a Deiran princess and queen of Northumbria
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	trait = education_diplomacy_2
+	trait = zealous
+	trait = calm
+	trait = humble
+	644.1.1 = { # Unknown
+		birth = yes
+	}
+	664.1.1 = { # Synod of Whitby
+		religion = "catholic"
+	}
+	670.1.1 = { # Æthelred's marriage, to Osthryth, is of unknown date but must have occurred before 679, since Bede mentions it in describing the Battle of the Trent, which took place that year
+		add_spouse = 205062 # Æthelred of Mercia
+	}
+	697.1.1 = {
+		death = { # The murder of Osthryth in 697 by Mercian nobles is unexplained in the sources that mention it
+			death_reason = death_murder
+		}
+	}	
+}
+
+additionalaethelfrithing0009 = { # Ælfflæd of Whitby; daughter of King Oswiu of Northumbria and Eanflæd
+	name = "E_lfflE_d" # Ælfflæd / Alhflaed
+	female = yes
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = 205214 # Eanflæd; a Deiran princess and queen of Northumbria / circumstantial evidence suggests that Rhiainfellt was her mother
+	religion = "insular_celtic"
+	culture = "anglo_saxon"
+	trait = education_diplomacy_4 # Her piety was praised by contemporaries such as Bede and Stephen of Ripon. Bede refers to her high degree of holiness and devotion, while Stephen calls her the consoler of the whole kingdom and the best counsellor
+	trait = zealous
+	trait = compassionate
+	trait = diligent
+	trait = humble
+	trait = lifestyle_physician # Ælfflæd was particularly known for her skills in surgery and her personal attention to patients, as was Hilda, who was known for her personalized medical care
+	654.1.1 = {
+		birth = yes
+	}
+	655.11.15 = {
+		trait = devoted # When she was about a year old, her father, King Oswiu of Northumbria, in thanksgiving for his victory over Penda of Mercia at the Battle of the Winwæd, handed her over to abbess Hilda to be brought up at Hartlepool Abbey
+	}
+	664.1.1 = { # Synod of Whitby
+		religion = "catholic"
+	}
+	714.2.8 = {
+		trait = saint # Ælfflæd was considered a saint and her feast day was celebrated on 8 February
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0010 = { # Aldfrith of Northumbria; king of Northumbria from 685 until his death
+	name = "Aldfrith" # 
+	dynasty = 1047010
+	father = 205213 # Oswiu, King of Bernicia
+	mother = additionalmacneil0004 # an Irish princess named Fín
+	religion = "insular_celtic" # Irish law made Fín's kin, the Cenél nEógain of the northern Uí Néill, responsible for his upbringing. His reign saw the flowering of Insular art in Northumbria
+	culture = "anglo_saxon"
+	trait = education_learning_5 # Bede described Aldfrith as a scholar, and his interest in learning distinguishes him from the earlier Anglo-Saxon warrior kings, such as Penda
+	trait = just # rish sources describe him as a sapiens, implies a degree of learning and wisdom that led historian Peter Hunter Blair to compare Aldfrith to the Platonic ideal of the philosopher king
+	trait = calm
+	trait = diligent
+	trait = temperate
+	trait = humble
+	trait = scholar
+	trait = administrator # Bede states that he "ably restored the shattered fortunes of the kingdom, though within smaller boundaries"
+	650.1.1 = { # Likely born during Oswiu's exile, but seems too old to marry Cuthburh
+		birth = yes
+	}
+	690.1.1 = {
+		add_spouse = additionalcerdicing0002 # Aldfrith was married to Cuthburh, sister of King Ine of Wessex, but the date is unknown
+	}
+	700.1.1 = { # According to a report by Florence of Worcester, written long afterwards, at some time before Aldfrith's death in 705 he and Cuthburh "renounced connubial intercourse for the love of God"
+		trait = celibate
+	}
+	704.12.14 = { # 14 December 704/705
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0011 = { # Osred I of Northumbria
+	name = "Osred" # 
+	dynasty = 1047010
+	father = additionalaethelfrithing0010 # Aldfrith of Northumbria
+	mother = additionalcerdicing0002 # Cuthburh, though this is not known for certain
+	religion = "catholic" # Northumbria trended towards Catholicism at this point
+	culture = "anglo_saxon"
+
+	trait = gregarious # Domestically, a variety of ecclesiastical sources portray Osred as a dissolute and debauched young man, and a seducer of nuns
+	trait = just # While Bede positively referred to Osred as a new Josiah
+	trait = lustful # Domestically, a variety of ecclesiastical sources portray Osred as a dissolute and debauched young man, and a seducer of nuns
+	trait = brave # Aethelwulf's early ninth-century poem De Abbatibus describes Osred as energetic in deeds and words, mighty in arms and bold in his own strength
+	697.1.1 = { # Likely born during Oswiu's exile, but seems too old to marry Cuthburh
+		birth = yes
+	}
+	716.1.1 = { # 716 (aged 18–19); Osred reached his majority in 715 or 716, and within a very short period he was killed
+		death = {
+			death_reason = death_battle # The manner of his death is unclear. The Anglo-Saxon Chronicle states that he was killed "south of the border"
+		}
+	}	
+}
+
+additionalaethelfrithing0012 = { # St. Osana; a Northumbrian princess, whose local following as a saint developed informally after her death, though she was never officially canonised
+	name = "Osric" #
+	female = yes
+	dynasty = 1047010
+	father = additionalaethelfrithing0010 # Aldfrith of Northumbria; Symeon of Durham calls him a son of Aldfrith of Northumbria, which would make him a brother, or perhaps a half-brother, of Osred
+	mother = additionalcerdicing0002 # Cuthburh, though this is not known for certain
+	religion = "catholic" # Northumbria trended towards Catholicism at this point
+	culture = "anglo_saxon"
+	trait = education_learning_3
+	trait = zealous
+	trait = wrathful # depicted by Giraldus as inflicting a miraculous flagellation from her grave in Howden, Yorkshire, upon a concubine of the priest of the collegiate church there
+	trait = chaste
+	698.1.1 = { #
+		birth = yes
+	}
+	750.1.1 = {
+		trait = saint # Note: never officially canonised
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0013 = { # Osric of Northumbria
+	name = "Osric" # 
+	dynasty = 1047010
+	father = additionalaethelfrithing0010 # Aldfrith of Northumbria; Symeon of Durham calls him a son of Aldfrith of Northumbria, which would make him a brother, or perhaps a half-brother, of Osred
+	mother = additionalcerdicing0002 # Cuthburh, though this is not known for certain
+	religion = "catholic" # Northumbria trended towards Catholicism at this point
+	culture = "anglo_saxon"
+	699.1.1 = { # Likely born during Oswiu's exile, but seems too old to marry Cuthburh
+		birth = yes
+	}
+	729.1.1 = { # Bede reports little of Osric's reign, but records that comets were seen at his death, a sign of ill omen
+		death = yes
+	}	
+}
+
+additionalaethelfrithing0014 = { # Offa of Northumbria; claimant who was presumed to have been killed after being taken from Lindisfarne in 750 on the orders of King Eadberht of Northumbria
+	name = "Osric" # 
+	dynasty = 1047010
+	father = additionalaethelfrithing0010 # Aldfrith of Northumbria; Symeon of Durham calls him a son of Aldfrith of Northumbria, which would make him a brother, or perhaps a half-brother, of Osred
+	mother = additionalcerdicing0002 # Cuthburh, though this is not known for certain
+	religion = "catholic" # Northumbria trended towards Catholicism at this point
+	culture = "anglo_saxon"
+	700.1.1 = { # Likely born during Oswiu's exile, but seems too old to marry Cuthburh
+		birth = yes
+	}
+	750.1.1 = { # presumed to have been killed after being taken from Lindisfarne in 750 on the orders of King Eadberht of Northumbria
+		death = {
+			death_reason = death_execution
+			killer = 205224 # Eadberht of Northumbria
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+additionalrheged0001 = { # Rhiainfellt; a British princess of the royal house of the kingdom of Rheged, a part of the Hen Ogledd
+	name = "Rhiainfellt"
+	female = yes
+	dynasty_house = house_british_isles_rheged #Rheged
+	father = 159955 # Rhun son of Urien Rheged
+	religion = "insular_celtic" # Cumbria likely leaned more towards Irish Christianity
+	culture = "cumbrian"
+	611.1.1 = { # Unknown
+		birth = yes
+	}
+	628.1.1 = { # Unknown when the marriage took place, but as Alhfrith - oldest son of Oswiu - is said to be hers the marriage must have been first
+		add_spouse = 205213 # Oswiu of Northumbria
+	}
+	665.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Ancestry of Fín, an irish princess who was wife/concubine to King Osmiu of Northumbria ##
+additionalmacneil0001 = { # Báetán mac Muirchertaig - https://en.wikipedia.org/wiki/B%C3%A1et%C3%A1n_mac_Muirchertaig
+	name = "BA_etA_n" # Báetán
+	dynasty_house = house_british_isles_neill
+	father = 7259
+	religion = "insular_celtic"
+	culture = "irish"
+	510.1.1 = { # Unknown
+		birth = yes
+	}
+	572.1.1 = { # died 572
+		death = yes
+	}		
+}
+
+additionalmacneil0002 = { # Colmán Rímid
+	name = "ColmA_n" # Báetán
+	dynasty_house = house_british_isles_neill
+	father = additionalmacneil0001
+	religion = "insular_celtic"
+	culture = "irish"
+	540.1.1 = { # Unknown
+		birth = yes
+	}
+	604.1.1 = { # died 604
+		death = yes
+	}		
+}
+
+additionalmacneil0003 = { # Fictional son of Colmán Rímid to make timeline sensable
+	name = "BA_etA_n" # Báetán
+	dynasty_house = house_british_isles_neill
+	father = additionalmacneil0002
+	religion = "insular_celtic"
+	culture = "irish"
+	575.1.1 = { # Fictional
+		birth = yes
+	}
+	604.1.1 = { # Fictional
+		death = yes
+	}		
+}
+
+additionalmacneil0004 = { # Fín was an Irish Princess, who lived during the 7th century. She was a daughter or granddaughter of Colmán Rímid (died 604) of Cenél nEógain
+	name = "FI_n" # Fín
+	female = yes
+	dynasty_house = house_british_isles_neill
+	father = additionalmacneil0003
+	religion = "insular_celtic"
+	culture = "irish"
+	610.1.1 = { # Unknown
+		birth = yes
+	}
+	630.1.1 = { # During Osmiu's time in exile, he married married a princess of the Uí Néill dynasty, probably Fín the daughter (or possibly granddaughter) of Colmán Rímid
+		add_spouse = 205213 # Oswiu of Northumbria
+	}
+	660.1.1 = { # 
+		death = yes
+	}		
+}
+
+
+
+
+
+## Additional members for the Eadwulfings Dynasty ##
+additionaleadwulfing0001 = { # Fictional member of the Eadwulfings to make ages reasonable
+	name = "Eanred" #
+	dynasty = 1047022
+	father = 205241 # Adding a generation to make ages reasonable
+	religion = "catholic"
+	culture = "anglo_saxon"
+	710.1.1 = { # Unknown
+		birth = yes
+	}
+	760.1.1 = { # 
+		death = yes
+	}		
+}
+
+additionaleadwulfing0002 = { # Ælfwald II of Northumbria. Nothing is known of the ruler, so based on names will have him be son of 205244
+	name = "Ælfwald" #
+	dynasty = 1047022
+	father = 205244 # Invented
+	# Will make this character a product of an earlier not mentioned marriage/concubine
+	religion = "catholic"
+	culture = "anglo_saxon"
+	780.1.1 = { # Unknown
+		birth = yes
+	}
+	808.1.1 = { # 
+		death = yes
+	}		
+}
+
+additionaleadwulfing0003 = { # Abbot Forthred; brother to Æthelwald Moll of Northumbria
+	name = "Forthred" #
+	dynasty = 1047022
+	father = 205242
+	religion = "catholic"
+	culture = "anglo_saxon"
+	trait = devoted
+	733.1.1 = { # Unknown
+		birth = yes
+	}
+	785.1.1 = { # 
+		death = yes
+	}		
+}
+
+additionaleadwulfing0004 = { # It is presumed, on onomastic grounds, that the Moll "slain by the urgent command of King Eardwulf" c. 799 was a kinsman of Æthelwald Moll
+	name = "Moll" #
+	dynasty = 1047022
+	father = 205243
+	religion = "catholic"
+	culture = "anglo_saxon"
+	765.1.1 = { # Unknown
+		birth = yes
+	}
+	799.1.1 = { # 
+		death = {
+			death_reason = death_murder_known
+			killer = 205246
+		}
+	}		
+}
+
+
+
+
+
+
+
+
+
+## Additional members for the Wihtgilsing Dynasty ##
+additionalwihtgilsing0001 = { # Ricole, who is recorded by both Bede and the Anglo-Saxon Chronicle as the mother of Sæberht, king of the East Saxons (i.e., Essex)
+	name = "Ricole" #
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205030
+	538.1.1 = { # Unknown
+		birth = yes
+	}
+	595.1.1 = { # Unknown
+		death = yes
+	}		
+}
+
+additionalwihtgilsing0002 = { # Saint Eanswith; an Anglo-Saxon princess, who is said to have founded Folkestone Priory, one of the first Christian monastic communities for women in Britain
+	name = "Eanswith" #
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205032
+	mother = additionalmerovingians0002 # Emma Meroving
+	trait = education_learning_3
+	trait = zealous
+	trait = diligent
+	trait = chaste
+	630.1.1 = { # "Although she could have been born at any time between 625-40, a date of birth around the year 630 is perhaps most likely"
+		birth = yes
+	}
+	650.1.1 = { # scientific examination of her bones and teeth has determined that her age at death was about 17-21
+		trait = saint
+		death = yes
+	}		
+}
+
+additionalwihtgilsing0003 = { # Ermenilda of Ely
+	name = "Ermenilda" #
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205036
+	mother = additionalwuffing0003
+	651.1.1 = { # 
+		birth = yes
+	}
+	667.1.1 = {
+		add_spouse = 205061 # King Wulfhere of Mercia
+	}
+	675.1.1 = {
+		trait = devoted # Eormenhild became a nun after her husband died in 675
+	}
+	703.1.1 = { # Her feast day is 13 February
+		trait = saint
+		death = yes
+	}		
+}
+
+additionalwihtgilsing0004 = { # Saint Eorcengota;  daughter of Erconbert, king of Kent, and his wife Sexburga, later abbess of Ely. She became a nun with her aunts Ethelburga of Faremoutier and Saethrith in the double monastery of Faremoutier-en-Brie
+	name = "Eorcengota" #
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205036
+	mother = additionalwuffing0003
+	trait = education_learning_3
+	trait = compassionate # Bede narrates traditions of her visions and prophecies: how she visited the aged nuns to say farewell and ask their prayers
+	trait = zealous
+	trait = chaste #  the balsam-like scent from her grave three days later was believed to attest to her sanctity
+	trait = devoted
+	653.1.1 = { # 
+		birth = yes
+	}
+	674.1.1 = { # died comparatively young
+		trait = saint
+		death = yes
+	}		
+}
+
+additionalwihtgilsing0005 = { # Domne Eafe; according to the Kentish royal legend, a granddaughter of King Eadbald of Kent and the foundress of the double monastery of Minster in Thanet Priory at Minster-in-Thanet during the reign of her cousin King Ecgberht of Kent
+	name = "Ermenburga" # There is great confusion over the name of Domne Eafe, considering Domne Eafe seems more akin to a title than a personal name. Eormenburg may be another individual but we will have them be the same for ease
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205035
+	trait = education_learning_4
+	trait = forgiving
+	trait = zealous
+	trait = temperate
+	trait = shrewd
+	634.1.1 = { # Unknown
+		birth = yes
+	}
+	699.1.1 = { # Unknown
+		trait = saint
+		death = yes
+	}		
+}
+
+additionalwihtgilsing0006 = { # Eormengyth, child of Eormenred and Oslafa who may have married King Centwine of Wessex
+	name = "Eormengyth" #
+	female = yes
+	dynasty = 1047001
+	religion = "catholic"
+	culture = "anglo_saxon"
+	father = 205035
+	trait = education_learning_3
+	trait = forgiving
+	trait = zealous
+	trait = chaste
+	637.1.1 = { # 
+		birth = yes
+	}
+	660.1.1 = {
+		add_spouse = 205151 # King Centwine of Wessex
+	}
+	690.1.1 = {
+		trait = devoted	# became abbess as a widow possibly back in Kent (c. 695–705) in succession to her sister
+	}
+	705.1.1 = {
+		trait = saint
+		death = yes
+	}		
+}
+
+
+
+
+
+
+## Additional members for the Offing Dynasty ##
+additionaloffing0001 = { # Seaxa, son of Sledd, whose descendants supplanted those of Sæberht in the mid-8th century
+	name = "Seaxa" #
+	dynasty = 1047012
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 194096
+	mother = additionalwihtgilsing0001
+	565.1.1 = { # Unknown
+		birth = yes
+	}
+	620.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionaloffing0002 = { # Unnamed third son of Sæberht of Essex
+	name = "Seaxbald" # Unnamed; possibly Sigebert or the unplaced Seaxbald, father of Swithhelm
+	dynasty = 1047012
+	religion = "norse_pagan"
+	culture = anglo_saxon
+	father = 194097
+	590.1.1 = { # Unknown
+		birth = yes
+	}
+	623.1.1 = {
+		death = { # killed in battle against the West Saxons
+			death_reason = death_battle
+			killer = 205147 # battle was fought against Cynegils and Cwichelm of Wessex
+		}
+	}
+}
+
+additionaloffing0003 = { # Swithfrith; brother to Swithhelm of Essex
+	name = "Swithfrith" # Unnamed; possibly Sigebert or the unplaced Seaxbald, father of Swithhelm
+	dynasty = 1047012
+	religion = "norse_pagan"
+	culture = anglo_saxon
+	father = additionaloffing0002
+	620.1.1 = { # Unknown
+		birth = yes
+	}
+	660.1.1 = {
+		trait = excommunicated # Bishop Cedd had excommunicated one of the brothers
+		trait = murderer
+	}
+	663.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+additionaloffing0004 = { # Swæfberht; unnamed (?) first son of Sebbi, and the grandson of King Sigeheard of Essex
+	name = "Swæfberht" # Unnamed; I am making him the co-ruler of Essex along with Saelred of Essex (709–746) who appointed him provisional king in 715
+	dynasty = 1047012
+	religion = "catholic"
+	culture = anglo_saxon
+	father = 205260 # Sebbi
+	690.1.1 = { # Unknown
+		birth = yes
+	}
+	738.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+kentishking0001 = { # Baldred of Kent; uncertain whether he was independent or a Mercian under-king
+	name = "Baldred"
+	religion = "catholic"
+	culture = anglo_saxon
+	785.1.1 = { # Unknown
+		birth = yes
+	}
+	840.1.1 = { # Unknown
+		death = yes
 	}
 }

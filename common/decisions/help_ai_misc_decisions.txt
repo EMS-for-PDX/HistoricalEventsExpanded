@@ -1,12 +1,18 @@
 ﻿ai_stress_loss_decision = { # Because the AI seems incapable of managing its own stress
-	picture = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_major_religion.dds"
+	}
 	ai_check_interval = 1
 
 	cooldown = { years = 3 }
 
 	is_shown = {
+		debug_only = yes
+	}	
+
+	is_valid = {
 		is_landed = yes
-		# is_ai = yes
+		is_ai = yes
 	}
 
 	desc = ai_stress_loss_decision_desc
@@ -14,8 +20,6 @@
 	effect = {
 		add_stress = -300
 	}
-
-	# cost = { gold = 1 }	
 
 	ai_potential = {
 

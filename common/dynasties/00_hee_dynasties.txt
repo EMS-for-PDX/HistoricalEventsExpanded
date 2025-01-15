@@ -40,6 +40,7 @@ dynasty_paspalas = {
 dynasty_rendakios = {
 	name = "dynn_Rendakios"
 	culture = "greek"
+	motto = "dynn_Rendakios_motto"
 }
 
 dynasty_ioubes = {
@@ -90,6 +91,7 @@ dynasty_asbestas = {
 dynasty_gambros = {
 	name = "dynn_Gambros"
 	culture = "greek"
+	motto = "dynn_Gambros_motto"
 }
 
 dynasty_baiana = {
@@ -157,6 +159,7 @@ dynasty_chryselios = {
 dynasty_mosele = {
 	name = "dynn_Mosele"
 	culture = "armenian"
+	motto = "dynn_Mosele_motto"
 }
 
 dynasty_marikonian = {
@@ -226,7 +229,7 @@ hee_akrites = {
 	culture = "levantine"
 }
 
-hee_azdi = {
+dynasty_azdi = {
 	name = "dynn_Azdi"
 	culture = "levantine"
 }
@@ -394,10 +397,27 @@ dynvuifredingi = {
 	culture = "french"
 }
 
+dynasty_matfriede = { # The elder Matfriede line which possibly originated with Matfried I, a count of Orleans in the time of Louis the Pious
+	name = "dynn_Matfriede"
+	culture = "french"
+}
+
+dynasty_engelram = {
+	prefix = "dynnp_of"
+	name = "dynn_Engelram"
+	culture = "french"
+}
+
 hee_of_worms = {
 	prefix = "dynnp_von"
 	name = "dynn_Worms"
 	culture = "franconian"
+}
+
+dynasty_verdun = {
+	prefix = "dynnp_of"
+	name = "dynn_Verdun"
+	culture = "dutch"
 }
 
 
@@ -530,6 +550,11 @@ dynasty_bosnian = {
 	culture = "bosnian"	
 }
 
+dynasty_kalmakheli = {
+	name = "dynn_Kalmakheli"
+	culture = "georgian"	
+}
+
 
 # Seven Hungarian Tribes
 
@@ -574,7 +599,10 @@ dynasty_kimek_tatars = {
 	culture = "kimek"
 }
 
-
+dynasty_frith = {
+	name = "dynn_Frith"
+	culture = "anglo_saxon"
+}
 
 
 

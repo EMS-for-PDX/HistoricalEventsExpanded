@@ -15,6 +15,7 @@ HEE_great_summer_army.0001 = { #Great Summer Army attacks
 			add_opinion = {
 				target = scope:guthrum
 				modifier = perk_negotiated_alliance_opinion
+				years = 5 # Should be a short-term alliance
 			}
 		}
 	}
@@ -44,6 +45,12 @@ HEE_great_summer_army.0002 = { # Victory in East Anglia trigger
 		
 		character:33358 = { save_scope_as = athelred_i_of_wessex }
 		character:7627 = { save_scope_as = alfred_the_great }
+
+		scope:guthrum = {
+			every_character_war = {
+				end_war = white_peace
+			}
+		}
 
 		if = {
 			limit = { character:163064 = { is_alive = yes } }
@@ -75,7 +82,7 @@ HEE_great_summer_army.0002 = { # Victory in East Anglia trigger
 	}
 }
 
-HEE_great_summer_army.0003 = {
+HEE_great_summer_army.0003 = { # Edmund's torture/death pt. 1
 	type = character_event
 	title = HEE_great_summer_army.0003.t
 	desc = HEE_great_summer_army.0003.desc
@@ -117,7 +124,7 @@ HEE_great_summer_army.0003 = {
 	}
 }
 
-HEE_great_summer_army.0004 = {
+HEE_great_summer_army.0004 = { # Edmund's torture/death pt. 2
 	type = character_event
 	title = HEE_great_summer_army.0004.t
 	desc = HEE_great_summer_army.0004.desc
@@ -154,7 +161,7 @@ HEE_great_summer_army.0004 = {
 	}
 }
 
-HEE_great_summer_army.0005 = {
+HEE_great_summer_army.0005 = { # Edmund's torture/death pt. 3
 	type = character_event
 	title = HEE_great_summer_army.0005.t
 	desc = HEE_great_summer_army.0005.desc
@@ -191,7 +198,7 @@ HEE_great_summer_army.0005 = {
 	}
 }
 
-HEE_great_summer_army.0006 = {
+HEE_great_summer_army.0006 = { # Edmund's torture/death pt. 4
 	type = character_event
 	title = HEE_great_summer_army.0006.t
 	desc = HEE_great_summer_army.0006.desc
@@ -228,7 +235,7 @@ HEE_great_summer_army.0006 = {
 	}
 }
 
-HEE_great_summer_army.0007 = {
+HEE_great_summer_army.0007 = { # Edmund's torture/death pt. 5
 	type = character_event
 	title = HEE_great_summer_army.0007.t
 	desc = HEE_great_summer_army.0007.desc
@@ -252,6 +259,7 @@ HEE_great_summer_army.0007 = {
 		character:7627 = { save_scope_as = alfred_the_great }
 
 		character:163064 = {
+			give_nickname = nick_the_martyr # Edmund the Martyr
 			death = {
 				death_reason = death_execution
 				killer = character:168650 # Guttorm
@@ -276,7 +284,7 @@ HEE_great_summer_army.0007 = {
 }
 
 
-HEE_great_summer_army.0008 = {
+HEE_great_summer_army.0008 = { # Guthrum lusts after Wessex
 	type = character_event
 	title = HEE_great_summer_army.0008.t
 	desc = HEE_great_summer_army.0008.desc
@@ -293,7 +301,15 @@ HEE_great_summer_army.0008 = {
 	immediate = {
 		character:168650 = { save_scope_as = guthrum }
 		
-		title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		if = {
+			limit = {
+				exists = title:k_wessex
+			}
+			title:k_wessex.holder = { save_scope_as = king_of_wessex }
+		}
+		else = {
+			title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		}
 	}
 
 	option = {
@@ -304,7 +320,7 @@ HEE_great_summer_army.0008 = {
 			start_war = {
 				casus_belli = invasion_war
 				target = scope:king_of_wessex
-				target_title = title:k_england
+				target_title = title:k_wessex
 			}
 		}
 
@@ -320,15 +336,12 @@ HEE_great_summer_army.0008 = {
 		}
 		else_if = {
 			limit = {
-				and = {
-					character:33358 = { is_alive = no }
-					character:7627 = title:d_somerset.holder
-				}
+				character:33358 = { is_alive = no }
 			}
-			character:7627 = {
+			scope:king_of_wessex = {
 				trigger_event = {
 					id = HEE_great_summer_army.0011
-					days = { 30 60 }
+					days = { 160 300 }
 				}
 			}
 		}
@@ -339,7 +352,7 @@ HEE_great_summer_army.0008 = {
 	}
 }
 
-HEE_great_summer_army.0009 = {
+HEE_great_summer_army.0009 = { # Æthelred DIES
 	type = character_event
 	hidden = yes
 	
@@ -438,9 +451,7 @@ HEE_great_summer_army.0010 = { # Alfred's coronation
 	}
 
 	immediate = {
-	
 		cp:councillor_court_chaplain = { save_scope_as = bishop_of_wessex }
-
 	}
 
 	option = {
@@ -461,7 +472,8 @@ HEE_great_summer_army.0011 = { # Alfred considers offering the Vikings a truce
 	type = character_event
 	title = HEE_great_summer_army.0011.t
 	desc = HEE_great_summer_army.0011.desc
-	theme = crown
+	theme = diplomacy
+	override_background = { reference = council_chamber } # Event takes place in a study
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -503,7 +515,8 @@ HEE_great_summer_army.0012 = { # Guthrum accepts to meet Alfred for a truce meet
 	type = character_event
 	title = HEE_great_summer_army.0012.t
 	desc = HEE_great_summer_army.0012.desc
-	theme = crown
+	theme = diplomacy
+	override_background = { reference = council_chamber } # Event takes place in a study
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -522,7 +535,15 @@ HEE_great_summer_army.0012 = { # Guthrum accepts to meet Alfred for a truce meet
 	}
 
 	immediate = {
-		title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		if = {
+			limit = {
+				exists = title:k_wessex
+			}
+			title:k_wessex.holder = { save_scope_as = king_of_wessex }
+		}
+		else = {
+			title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		}
 	}
 
 	option = {
@@ -539,13 +560,21 @@ HEE_great_summer_army.0012 = { # Guthrum accepts to meet Alfred for a truce meet
 			base = 1000
 		}
 	}
+
+	option = {
+		name = HEE_great_summer_army.0012.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
-HEE_great_summer_army.0013 = {
+HEE_great_summer_army.0013 = { # Treaty Meeting between the King of Wessex and Guthrum
 	type = character_event
 	title = HEE_great_summer_army.0013.t
 	desc = HEE_great_summer_army.0013.desc
-	theme = crown
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -564,7 +593,15 @@ HEE_great_summer_army.0013 = {
 	}
 
 	immediate = {
-		title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		if = {
+			limit = {
+				exists = title:k_wessex
+			}
+			title:k_wessex.holder = { save_scope_as = king_of_wessex }
+		}
+		else = {
+			title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		}
 		
 		character:168650 = { save_scope_as = guthrum }
 	}
@@ -591,120 +628,1010 @@ HEE_great_summer_army.0013 = {
 			}
 		}
 
+		# As a condition for peace, Guthrum recieves a sizable Danegeld from Wessex
+		scope:king_of_wessex = {
+			pay_short_term_gold = {
+				gold = medium_gold_value
+				target = scope:guthrum
+			}
+		}
+
 		# As a condition for peace, Guthrum recieves London and its surronding territories
-		if = {
-			limit = {
-				title:c_middlesex.holder = title:d_somerset.holder
+		title:c_middlesex = {
+			create_title_and_vassal_change = {
+				type = granted #or whatever
+				save_scope_as = change
 			}
-			title:c_middlesex = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_title_holder = {
-					holder = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
+			
+			change_title_holder = {
+				holder = scope:guthrum
+				change = scope:change
 			}
+			resolve_title_and_vassal_change = scope:change
 		}
-		else_if = {
-			limit = {
-				NOT = {
-					title:c_middlesex.holder = title:d_somerset.holder
-				}
-				title:c_middlesex.holder.top_liege = title:d_somerset.holder
+
+		title:c_hertfordshire = {
+			create_title_and_vassal_change = {
+				type = granted #or whatever
+				save_scope_as = change
 			}
-			title:c_middlesex.holder = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_liege = {
-					liege = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
+			
+			change_title_holder = {
+				holder = scope:guthrum
+				change = scope:change
 			}
+			resolve_title_and_vassal_change = scope:change
 		}
-		if = {
-			limit = {
-				title:c_hertfordshire.holder = title:d_somerset.holder
+
+		title:c_essex = {
+			create_title_and_vassal_change = {
+				type = granted #or whatever
+				save_scope_as = change
 			}
-			title:c_hertfordshire = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_title_holder = {
-					holder = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
+			
+			change_title_holder = {
+				holder = scope:guthrum
+				change = scope:change
 			}
+			resolve_title_and_vassal_change = scope:change
 		}
-		else_if = {
-			limit = {
-				NOT = {
-					title:c_hertfordshire.holder = title:d_somerset.holder
-				}
-				title:c_hertfordshire.holder.top_liege = title:d_somerset.holder
-			}
-			title:c_hertfordshire.holder = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_liege = {
-					liege = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
-			}
-		}
-		if = {
-			limit = {
-				title:c_essex.holder = title:d_somerset.holder
-			}
-			title:c_essex = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_title_holder = {
-					holder = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					title:c_essex.holder = title:d_somerset.holder
-				}
-				title:c_essex.holder.top_liege = title:d_somerset.holder
-			}
-			title:c_essex.holder = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_liege = {
-					liege = scope:guthrum
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
+
+		scope:guthrum = {
+			trigger_event = {
+				id = HEE_great_summer_army.0014
+				days = { 1000 1500 }
 			}
 		}
 
 		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0014 = { # Guthrum considers his next steps / Tries to sway Wessex's ealdorman
+	type = character_event
+	title = HEE_great_summer_army.0014.t
+	desc = HEE_great_summer_army.0014.desc
+	theme = intrigue
+	override_background = { reference = bp3_riverside }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0014
+			days = { 30 90 }
+		}
+	}
+
+	immediate = {
+		character:306016 = { save_scope_as = wulfhere }
+		
+	}
+
+	option = {
+		name = HEE_great_summer_army.0014.a
+
+		scope:wulfhere = {
+			trigger_event = {
+				id = HEE_great_summer_army.0015
+				days = { 7 30 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0015 = { # Wulfhere (or other disloyal vassal if Wulfhere is dead) considers negotiating with Guthrum
+	type = character_event
+	title = HEE_great_summer_army.0015.t
+	desc = HEE_great_summer_army.0015.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = schadenfreude
+	}
+
+	trigger = {
+		scope:wulfhere.top_liege = title:k_wessex.holder
+		is_alive = yes
+		is_landed = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0014
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = HEE_great_summer_army.0015.a
+
+		scope:wulfhere = {
+			add_character_flag = conspiring_with_guthrum
+			trigger_event = {
+				id = HEE_great_summer_army.0016
+				days = { 1 2 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0016 = { # Wulfhere plans his betrayal of Wessex
+	type = character_event
+	title = HEE_great_summer_army.0016.t
+	desc = HEE_great_summer_army.0016.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = schadenfreude
+	}
+
+	trigger = {
+		scope:wulfhere.top_liege = title:k_wessex.holder
+		is_alive = yes
+		is_landed = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0016
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				exists = title:k_wessex
+			}
+			title:k_wessex.holder = { save_scope_as = king_of_wessex }
+		}
+		else = {
+			title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		}
+		
+		character:168650 = { save_scope_as = guthrum }		
+	}
+
+	option = {
+		name = HEE_great_summer_army.0016.a
+
+		scope:king_of_wessex = {
+			trigger_event = {
+				id = HEE_great_summer_army.0017
+				days = { 7 30 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0017 = { # The King of Wessex recieves an invitation to Wulfhere's estate
+	type = letter_event
+	opening = {
+		desc = HEE_great_summer_army.0017.opening
+	}
+	desc = HEE_great_summer_army.0017.desc
+	sender = scope:wulfhere
+	
+	trigger = {
+		scope:wulfhere = { has_character_flag = conspiring_with_guthrum }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	option = {
+		name = HEE_great_summer_army.0017.a
+
+		scope:king_of_wessex = {
+			trigger_event = {
+				id = HEE_great_summer_army.0018
+				days = { 7 10 }
+			}
+		}
+	}
+
+	option = {
+		name = HEE_great_summer_army.0017.b
+
+		scope:wulfhere = {
+			add_opinion = {
+				target = root
+				modifier = insulted_opinion
+				years = 5
+				opinion = -25
+			}
+		}
+	}
+}
+
+HEE_great_summer_army.0018 = { # King of Wessex is ambushed by Guthrum (Perhaps rework into a Witan coup?)
+	window = duel_event
+	type = character_event
+	title = HEE_great_summer_army.0018.t
+	desc = HEE_great_summer_army.0018.desc
+	theme = intrigue
+	override_background = { reference = burning_building_west }
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = aggressive_sword
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0018
+			days = { 3 5 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_truce = scope:guthrum
+			}
+			cancel_truce_both_ways = scope:guthrum # Truce is clearly broken
+		}
+		
+		if = {
+			limit = {
+				exists = title:k_wessex
+			}
+			title:k_wessex.holder = { save_scope_as = king_of_wessex }
+		}
+		else = {
+			title:d_somerset.holder = { save_scope_as = king_of_wessex }
+		}
+		
+		character:168650 = { save_scope_as = guthrum }
+
+		every_held_title = {
+			add_to_list = wessex_current_titles
+		}		
+	}
+
+	option = {
+		name = HEE_great_summer_army.0018.a
+
+		scope:guthrum = { # Give titles to Guthrum
+			create_title_and_vassal_change = {
+				type = usurped 
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = wessex_current_titles
+				change_title_holder_include_vassals = {
+					holder = scope:guthrum
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		scope:king_of_wessex = {
+			create_landless_adventurer_title_effect = {
+				REASON = flag:deposition # Implicitly gives the "Expelled Me" opinion to the character deposed
+				FLAVOR_CHAR = scope:guthrum
+			}
+
+			spawn_army = { # Alfred's remaining guards/retinue
+				name = event_troop_default_name
+				men_at_arms = {
+					type = huscarl
+					stacks = 1
+				}
+				location = province:1562
+				origin = province:1562
+				inheritable = no
+			}
+
+			trigger_event = {
+				id = HEE_great_summer_army.0019
+				days = { 1 3 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			scope:king_of_wessex = {
+				remove_opinion = {
+					target = scope:guthrum
+					modifier = demanded_eviction_opinion
+				}
+			}
+		}
+	}
+}
+
+HEE_great_summer_army.0019 = { # After the Viking ambush, the King of Wessex must plan his next move
+	type = character_event
+	title = HEE_great_summer_army.0019.t
+	desc = HEE_great_summer_army.0019.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = worry
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = schadenfreude
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0019
+			days = { 3 5 }
+		}
+	}
+
+	immediate = {
+
+		character:168650 = { save_scope_as = guthrum }	
+	
+	}
+
+	option = { # We shall mount a resistance from the marshes
+		name = HEE_great_summer_army.0019.a
+
+		custom_tooltip = HEE_great_summer_army.0019.a.tt
+
+		every_character_active_contract = { invalidate_contract = yes }
+		add_character_flag = laamp_stay_same_kingdom
+
+		start_travel_plan = {
+			destination = province:1577 #the marshes of Somerset
+			players_use_planner = no
+			on_start_on_action = on_travel_relocation_start
+			on_arrival_on_action = on_travel_relocation_end
+			on_arrival_event = HEE_great_summer_army.0020
+			on_arrival_destinations = last
+			return_trip = no # One way
+			travel_with_domicile = yes
+		}
+
+		stress_impact = {
+			ambitious = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+
+	option = { #Exile is preferable to death!
+		name = ep3_laamps.6000.b
+
+		custom_tooltip = ep3_laamps.6000.b.tt
+
+		every_character_active_contract = { invalidate_contract = yes }
+		add_character_flag = laamp_stay_same_kingdom
+
+		start_travel_plan = {
+			destination = province:2333 #Frankia
+			players_use_planner = no
+			on_start_on_action = on_travel_relocation_start
+			on_arrival_on_action = on_travel_relocation_end
+			return_trip = no # One way
+			travel_with_domicile = yes
+		}
+
+		add_character_modifier = {
+			modifier = ep3_the_restful_modifier
+			years = 15
+		}
+		add_opinion = {
+			target = scope:guthrum
+			modifier = treacherous_invader_opinion
+		}
+
+		stress_impact = {
+			zealous = minor_stress_impact_gain
+			brave = minor_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			# AI should never choose this
+			base = 0
+		}
+	}
+}
+
+HEE_great_summer_army.0020 = { # In the marshes of Somerset, the King of Wessex plans his resistance campaign
+	type = character_event
+	title = HEE_great_summer_army.0020.t
+	desc = HEE_great_summer_army.0020.desc
+	theme = martial
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0020
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = HEE_great_summer_army.0020.a
+
+		if = {
+			limit = {
+				NOT = { has_trait = unyielding_defender }
+			}
+			add_trait = unyielding_defender
+		}
+
+		scope:king_of_wessex = {
+			trigger_event = {
+				id = HEE_great_summer_army.0021
+				days = { 30 45 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0021 = { # Legend of burnt cake
+	type = character_event
+	title = HEE_great_summer_army.0021.t
+	desc = HEE_great_summer_army.0021.desc
+	theme = martial
+	override_background = { reference = ep2_hunt_forest_hut }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0021
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = HEE_great_summer_army.0021.a
+
+		scope:king_of_wessex = {
+			trigger_event = {
+				id = HEE_great_summer_army.0022
+				days = { 25 40 }
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0022 = { # Preparing to leave the marshes
+	type = character_event
+	title = HEE_great_summer_army.0022.t
+	desc = HEE_great_summer_army.0022.desc
+	theme = martial
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = schadenfreude
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0022
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = { # The armies of Wessex shall gather at Egbert's Stone
+		name = HEE_great_summer_army.0022.a
+
+		custom_tooltip = HEE_great_summer_army.0022.a.tt
+
+		every_character_active_contract = { invalidate_contract = yes }
+		add_character_flag = laamp_stay_same_kingdom
+
+		start_travel_plan = {
+			destination = province:1562 #Egbert's Stone east of Selwood
+			players_use_planner = no
+			on_start_on_action = on_travel_relocation_start
+			on_arrival_on_action = on_travel_relocation_end
+			on_arrival_event = HEE_great_summer_army.0023
+			on_arrival_destinations = last
+			return_trip = no # One way
+			travel_with_domicile = yes
+		}
+
+		stress_impact = {
+			zealous = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+}
+
+
+HEE_great_summer_army.0023 = { # Arriving at Egbert's Stone, the King meets no one
+	type = character_event
+	title = HEE_great_summer_army.0023.t
+	desc = HEE_great_summer_army.0023.desc
+	theme = mental_break
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+		trigger_event = {
+			id = HEE_great_summer_army.0023
+			days = { 10 30 }
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = { # Despair!
+		name = HEE_great_summer_army.0023.a
+
+		custom_tooltip = HEE_great_summer_army.0023.a.tt
+
+		add_stress = medium_stress_gain
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+
+	after = {
+		trigger_event = {
+			id = HEE_great_summer_army.0024
+			days = 1
+		}
+	}
+}
+
+HEE_great_summer_army.0024 = { # The swords of Wessex arrive to Egbert's Stone, ready to fight for their King
+	type = character_event
+	title = HEE_great_summer_army.0024.t
+	desc = HEE_great_summer_army.0024.desc
+	theme = martial
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = disbelief
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		add_stress = major_stress_loss
+
+		spawn_army = {
+			name = event_troop_default_name
+			levies = 2500
+			men_at_arms = {
+				type = huscarl
+				stacks = 5
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 5
+			}
+			location = province:1562
+			origin = province:1562
+			inheritable = no
+		}
+	}
+
+	option = { # The King is enboldened - Give a speech
+		name = HEE_great_summer_army.0024.a
+
+		custom_tooltip = HEE_great_summer_army.0024.a.tt
+
+		trigger_event = {
+			id = HEE_great_summer_army.0025
+		}
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0025 = { # The King of Wessex gives a speech to his men, beginning the war against Guthrum
+	type = character_event
+	title = HEE_great_summer_army.0025.t
+	desc = HEE_great_summer_army.0025.desc
+	theme = crown
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = sword_coup_degrace
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landless_adventurer = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		add_stress = major_stress_loss
+
+		if = {
+			limit = {
+				title:c_devon.holder = {
+					AND = {
+						opinion = {
+							target = scope:guthrum
+							value <= medium_negative_opinion
+						}
+						opinion = {
+							target = scope:king_of_wessex
+							value >= medium_positive_opinion	
+						}
+					}
+				}
+			}
+			title:c_devon.holder = { save_scope_as = devonshire }
+		}
+
+		if = {
+			limit = {
+				title:c_somerset.holder = {
+					AND = {
+						opinion = {
+							target = scope:guthrum
+							value <= medium_negative_opinion
+						}
+						opinion = {
+							target = scope:king_of_wessex
+							value >= medium_positive_opinion	
+						}
+					}
+				}
+			}
+			title:c_somerset.holder = { save_scope_as = somersetshire }
+		}
+
+		if = {
+			limit = {
+				title:c_dorset.holder = {
+					AND = {
+						opinion = {
+							target = scope:guthrum
+							value <= medium_negative_opinion
+						}
+						opinion = {
+							target = scope:king_of_wessex
+							value >= medium_positive_opinion	
+						}
+					}
+				}
+			}
+			title:c_dorset.holder = { save_scope_as = dorsetshire }
+		}
+
+	}
+
+	option = { # The King is enboldened - Give a speech
+		name = HEE_great_summer_army.0025.a
+
+		custom_tooltip = HEE_great_summer_army.0025.a.tt
+
+		add_character_modifier = { # Giga buff Alfred for a short time
+			modifier = alfred_war_buff_modifier
+			years = 1
+		}
+
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { has_trait = organizer }
+				}
+				add_perk = organizer
+			}
+
+			if = {
+				limit = {
+					NOT = { has_perk = stalwart_leader_perk }
+				}
+				add_perk = stalwart_leader_perk
+			}
+
+			if = {
+				limit = {
+					NOT = { has_perk = chivalric_dominance_perk }
+				}
+				add_perk = chivalric_dominance_perk
+			}
+
+			if = {
+				limit = {
+					NOT = { has_perk = never_back_down_perk }
+				}
+				add_perk = never_back_down_perk
+			}
+		}
+
+
+		#Declare the war.
+		start_war = {
+			casus_belli = alfred_reclamation_cb
+			target = scope:guthrum
+			target_title = title:k_wessex
+			claimant = root
+		}
+
+		scope:guthrum = {
+			random_character_war = {
+				limit = {
+						primary_attacker = scope:king_of_wessex
+						primary_defender = scope:guthrum
+				}
+				save_scope_as = alfred_reclamation
+			}
+		}
+
+		scope:alfred_reclamation = {
+			if = {
+				limit = {
+					exists = scope:devonshire
+				}
+				add_attacker = scope:devonshire
+			}
+
+			if = {
+				limit = {
+					exists = scope:dorsetshire
+				}
+				add_attacker = scope:dorsetshire
+			}
+
+			if = {
+				limit = {
+					exists = scope:somersetshire
+				}
+				add_attacker = scope:somersetshire
+			}
+		}
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0026 = { # With Alfred's victory, he must now consider the next steps to securing peace and security
+	window = duel_event
+	type = character_event
+	title = HEE_great_summer_army.0026.t
+	desc = HEE_great_summer_army.0026.desc
+	theme = martial
+	override_background = { reference = terrain }
+	left_portrait = {
+		character = root
+		animation = sword_coup_degrace
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = prisondungeon
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_landless_adventurer = no
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:168650 = { save_scope_as = guthrum }	
+	}
+
+	option = { # A shared faith will bind us
+		name = HEE_great_summer_army.0026.a
+
+		custom_tooltip = HEE_great_summer_army.0026.a.tt
+
+		trigger_event = {
+			id = HEE_great_summer_army.0027
+			days = 3
+		}
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+
+	option = { # Guthrum's execution will serve as a message
+		name = HEE_great_summer_army.0026.b
+
+		custom_tooltip = HEE_great_summer_army.0026.b.tt
+
+		ai_chance = {
+			# AI should choose the historical path
+			base = 1000
+		}
+	}
+}
+
+HEE_great_summer_army.0027 = { # Guthrum's baptism
+	window = big_event_window
+	type = character_event
+	title = HEE_great_summer_army.0027.t
+	desc = HEE_great_summer_army.0027.desc
+	theme = learning
+	override_background = { reference = bp3_riverside }
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:guthrum
+		animation = personality_zealous
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_landless_adventurer = no
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		root.faith = { save_scope_as = alfred_faith }
+
+
+		scope:guthrum = {
+			release_from_prison = yes
+			change_first_name = E_thelstan
+			set_character_faith_with_conversion = scope:alfred_faith
+		}
+	}
+
+	option = { # End of the story
+		name = HEE_great_summer_army.0027.a
+
+		custom_tooltip = HEE_great_summer_army.0027.a.tt
+
+		ai_chance = {
+			# AI should choose the historical path
 			base = 1000
 		}
 	}

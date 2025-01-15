@@ -7,6 +7,9 @@
  alfred_lifelong_illness: "Weak of Body"
  alfred_lifelong_illness_desc: "Asser tells us in his Life of Alfred that after Alfred had married Ealhswith, he participated in a grand feast that had lasted for a day and a night he was struck without warning in the presence of the entire gathering by a sudden severe pain that was quite unknown to all physicians. And since that day he has been plagued continually with the savage attacks of some unknown disease, such that he does not have even a single hour of peace in which he does not either suffer from the disease itself or else, gloomily dreading it, is not driven almost to despair. But the fact he is not confined to his bed shows all that Alfred is strong in both will and faith."
 
+ alfred_war_buff_modifier: "Symbol to the Saxons"
+ alfred_war_buff_modifier_desc: "By defying the Northmen invaders and rallying their people, this character stands as an example to all that the Saxon people will not break to the foreign heathens so easily."
+
  michael_administrative_indifference: "Administrative Distain"
  michael_administrative_indifference_desc: "Michael distains the boring work of governance, prefering to leave the administration of his realm to powerful ministers while he personally leads the army against the enemies of the Empire."
 
@@ -35,7 +38,7 @@
  egyptian_spymaster_modifier_desc: "As the head of the postal service (barid) in Egypt, offically this character is responsible for all correspondence within the province - most importantly ones with the caliphal government - though this position serves largely as a cover for their true role as informant and spymaster"
 
  results_of_egyptian_heavy_taxes_modifier: "Implimented Harsh Taxes"
- results_of_egyptian_heavy_taxes_modifier_desc: "To boost the province's revenue, this character took a series of measures, including doubling the kharāj (Islamic tax on agricultural land and its produce) and the jizya (tax on non-muslims) as well as raising new taxes (mukūs)—a move widely denounced as un-Quranic, demanding the payment of taxes each lunar year (instead of the longer solar year), imposing a state monopoly on caustic soda, and depriving the Christian clergy of their traditional tax privileges and exemptions"
+ results_of_egyptian_heavy_taxes_modifier_desc: "To boost the province's revenue, this character took a series of measures, including doubling the kharāj (Islamic tax on agricultural land and its produce) and the jizya (tax on non-muslims) as well as raising new taxes (mukūs) — a move widely denounced as un-Quranic, demanding the payment of taxes each lunar year (instead of the longer solar year), imposing a state monopoly on caustic soda, and depriving the Christian clergy of their traditional tax privileges and exemptions"
 
  constantly_protected_by_bodyguards_modifier: "Constantly Protected"
  constantly_protected_by_bodyguards_modifier_desc: "To ensure their safety, this character is constantly escorted by a hundred bodyguards"
@@ -73,7 +76,10 @@
  
  hee_867_viking_raids_in_france_modifier: "Aftermath of Viking Raids"
  hee_867_viking_raids_in_france_modifier_desc: "The Frankish Empire was first attacked by Viking raiders in 799 CE, and throughout the 9th century, viking raids on the region of Francia (roughly modern-day France) increased in frequency - destabilizing the region and terrorizing the populace.\n\nDespite the resolute opposition offered by men such as Robert the Strong, vikings, allied to the Bretons in Brittany, continued to pillage with widespread success. Poitiers and Angoulême fell to the pirates during 862-864, with the raids even threatening Toulouse. In 865 Orleans was sacked and Poitiers ravaged again, while the vikings and the insurgent Bretons together plundered Le Mans; but the year closed with big victories for the Franks, and for one district at any rate, Aquitaine, the viking menace was ended. On the Seine, however, the year 865 was disastrous. A small viking fleet forced its way up the river; Paris suffered from a land raid and for the whole of twenty days the vikings plundered in and around St. Denis. At the beginning of 866 the pirates had got past Paris as far as Melun, eluding the Frankish troops who were pursuing them. Thereat King Charles weakened and gave in. Four thousand pounds of silver, together with large quantities of wine, was the price he paid the vikings to get rid of them."
- 
+
+ hee_867_great_heathen_army_aftermath_modifier: "Aftermath of the Great Heathen Army"
+ hee_867_great_heathen_army_aftermath_modifier_desc: "For the early part of the 9th century, Viking raids were unco-ordinated and would usually end in the Danes being paid to return to their homeland - a tribute that would become known as Danegeld. These raids were prevalent throughout the 800s, with sources reporting widespread pillaging, as well as some notable skirmishes. Every time, the Vikings would make land, raid and pillage, and would then depart with their coffers full.\n\nHowever in 865, usual custom was disrupted. A sizeable Viking force – estimated to be around some 3,000 men – landed on the Isle of Thanet in Kent with little intention of accepting a payment of Danegeld. Instead, these Vikings, who appeared to have organised themselves into a fleet of many ships, struck north from Thanet, cutting a swathe across East Anglia which was only halted when the local populace brokered a tentative alliance with the invaders that involved supplying them with horses.\n\nAfter wintering in East Anglia, they rode northwards on their new steeds to Northumbria, where the Danes conquered the great city of York in late 866. Their greed and ambition not yet quenched, the Danes look out and see a divided England ripe for the taking..."
+
  strengthened_salerno_defenses_modifier: "Strengthened Defenses"
  strengthened_salerno_defenses_modifier_desc: "In preparation for a siege, Salerno's defences have been strengthened and the garrison reinforced."
  

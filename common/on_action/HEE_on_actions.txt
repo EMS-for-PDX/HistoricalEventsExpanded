@@ -2,21 +2,24 @@
 # Root does not exist
 yearly_global_pulse = {
 	on_actions = {
-		#HEE_religious_spawns
-		#HEE_Hassassins
 		HEE_seljuk_spawn
 		HEE_seljuk_empire
 		HEE_seljuk_empire_invasion
 		HEE_ghaznavids
 		HEE_qarmatian_uprising
 		HEE_kutama_uprising
+		HEE_ibn_Hafsun_uprising
+
 		HEE_fairhair_feast
+
 		HEE_titular_title_make_primary
+
 		HEE_SN_1006
 		HEE_medieval_warm_period
 		HEE_medieval_warm_period_end
 		HEE_little_ice_age
 		#climate_volcanic_winter_yearly_global_pulse
+
 		HEE_carolingian_dissolution
 	}
 }
@@ -591,6 +594,69 @@ HEE_ghaznavids = {
 						id = HEE_ghaznavids.0001
 						days = { 2 240 }
 					}
+				}
+			}
+		}
+	}
+}
+
+HEE_ibn_Hafsun_uprising = {
+	effect = {
+		if = {
+			limit = {
+				current_date > 875.1.1
+				current_date <= 890.1.1 
+				NOT = { has_global_variable = ibn_hafsun_has_rebelled }
+				has_game_rule = turkic_invasions_historical
+			}
+			debug_log = "Checking for chance of spawning ibn Hafsun under historical settings"
+
+			random = {
+				chance = hee_generic_appearance_base_chance # Base chance of 1
+				modifier = {
+					add = 9 # 10% Total
+					current_date > 875.1.1
+				}
+				modifier = {
+					add = 10 # 20% Total
+					current_date > 877.1.1
+				}
+				modifier = {
+					add = 10 # 30% Total
+					current_date > 879.1.1
+				}
+				modifier = {
+					add = 10 # 40% Total
+					current_date > 881.1.1
+				}
+				modifier = {
+					add = 10 # 50% Total
+					current_date > 883.1.1
+				}
+				modifier = {
+					add = 10 # 60% Total
+					current_date > 885.1.1
+				}
+				modifier = {
+					add = 10 # 70% Total
+					current_date > 887.1.1
+				}
+				modifier = {
+					add = 10 # 80% Total
+					current_date > 889.1.1
+				}
+				modifier = {
+					add = 20 # 100% Total
+					current_date >= 890.1.1
+				}
+				set_global_variable = {
+					name = ibn_hafsun_has_rebelled
+					value = yes
+				}
+				debug_log = "Attempting to spawn the ibn Hafsun within 365 days"
+				trigger_event = {
+					id = HEE_ibn_hafsun_uprising.0001
+					days = { 1 365 }
 				}
 			}
 		}

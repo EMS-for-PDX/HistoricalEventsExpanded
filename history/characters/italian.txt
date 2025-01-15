@@ -22528,40 +22528,7 @@ italian0004 = {
 	}
 }
 
-italian0005 = {
-	name = "Corrado" # Corrado Guideschi, name unknown, father of Guy IV of Spoletto
-	dynasty = 7389
-	religion = catholic
-	culture = italian
-	trait = education_intrigue_1
-
-	father = 71906
-
-	830.1.1 = {
-		birth = yes
-	}
-	885.1.1 = {
-		death = yes
-	}
-}
-
-italian0006 = {
-	name = "Itta" # Itta Guideschi, wife of Siconulf of Salerno
-	female = yes
-	dynasty = 7389
-	religion = catholic
-	culture = italian
-	trait = education_diplomacy_1
-
-	father = 71906
-
-	829.1.1 = {
-		birth = yes
-	}
-	849.12.1 = {
-		death = yes
-	}
-}
+# italian0005 & italian0006 were removed as they were duplicates of frankish0001 & frankish0002
 
 italian0007 = {
 	name = "Nicroso" # Nicroso di Leca

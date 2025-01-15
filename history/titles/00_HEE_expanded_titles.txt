@@ -257,6 +257,39 @@ e_bulgarian_khanate = {
 	}
 }
 
+k_ostrogoths = { # https://en.wikipedia.org/wiki/Ostrogothic_Kingdom
+	493.3.15 = { # Theodoric's killing of Odoacer and his followers that established him as master over Italy
+		holder = 168775 # Theodoric the Great
+	}
+	526.8.30 = {
+		holder = 168786 # Athalaric; son of Eutharic and Amalasuntha, the youngest daughter of Theoderic the Great
+	}
+	534.10.2 = {
+		holder = 168784 # Amalasuintha; the youngest daughter of Theoderic the Great who initially served as regent for her son Athalaric then became queen after his premature death
+	}
+	535.4.30 = { # Amalasuintha's deposition by Theodahad
+		holder = 168778 # Theodahad; co-monarch of the Ostrogothic Kingdom with his cousin Amalasuintha in 534 and became the sole ruler from April 535 until his death in December 536
+	}
+	536.12.1 = { # Amalasuintha's deposition by Theodahad
+		holder = 214107 # Vitiges; husband of Queen Amalasuntha's only surviving child, Matasuntha, who overthrew Theodahad
+	}
+	540.5.1 = { # In May 540 Belisarius and his army entered Ravenna and captured Vitiges. Soon after,  the Goths chose Ildibad as their new king
+		holder = ostrogothking0001 # Ildibad; nephew of Theudis, an Ostrogoth king of the Visigoths in Spain
+	}
+	541.5.1 = { # in May 541, Ildibad was murdered at a royal banquet by his Gepid bodyguard Velas whose Gothic lover was married off to someone else
+		holder = ostrogothking0002 # Eraric; elected as the most distinguished among the Rugians in the confederation of the Ostrogoths
+	}
+	541.10.1 = { # After a reign of only 5 months, Eraric was killed at Totila's request so that Totila might ascend to the throne 
+		holder = ostrogothking0003 # Totila; A relative of Theudis, nephew of Ildibad, and cousin of Eraric 
+	}
+	552.7.1 = { # Battle of Taginae, where Totila died
+		holder = ostrogothking0004 # Teia; relative of Totila
+	}
+	553.3.15 = { # early 553; the Battle of Mons Lactarius where Teia was killed in the fighting, Ostrogothic power in Italy was eliminated, and many of the remaining Ostrogoths went north and (re)settled in south Austria
+		holder = 0 # Roman rule is restored, for a short time, over Italy
+	}
+}
+
 k_pechenegs_custom = { # To avoid Dynastic Naming tbf
 	##Pechenegs post Oghuz-Kimek-Karluk Alliance Defeat
 	850.1.1 = {
@@ -803,4 +836,657 @@ k_sarir = {
 		liege = 0 #Sarir seem to have been independent at this time, though more research wouldn't hurt 
 		holder = saririds_11
 	}
+}
+
+
+
+
+
+
+
+
+
+
+## Anglo-Saxon Kingdoms ##
+
+k_mercia = {
+	515.1.1 = {
+		holder = 205052 # Icel of Mercia
+		succession_laws = { saxon_elective_succession_law }
+	}
+	536.1.1 = {
+		holder = 205053 # Cnebba of Mercia
+	}
+	554.1.1 = {
+		holder = 205054 # Cynewald of Mercia
+	}
+	584.1.1 = {
+		holder = 205055 # Creoda of Mercia
+	}
+	593.1.1 = {
+		holder = 205056 # Pybba of Mercia
+	}
+	606.1.1 = {
+		holder = mercianking0001 # Cearl of Mercia (Dubious)
+	}
+	626.1.1 = {
+		holder = 205057 # Penda of Mercia
+	}
+	655.11.15 = {
+		holder = 205060 # Peada of Mercia who ruled Southern Mercia as the North was held by Oswiu of Northumbria
+	}
+
+	656.4.17 = {
+		holder = 0 # Oswiu of Northumbria came to control most of Mercia following the murder of Peada
+	}
+
+	658.1.1 = {
+		holder = 205061 # Wulfhere of Mercia
+	}
+	675.1.1 = {
+		holder = 205062 # Æthelred of Mercia
+	}
+	705.1.1 = {
+		holder = 205063 # Coenred of Mercia
+	}
+	709.1.1 = {
+		holder = 205064 # Ceolred of Mercia
+	}
+	716.6.1 = {
+		holder = 205065 # Ceolwald of Mercia
+	}
+	716.12.1 = {
+		holder = 205067 # Æthelbald of Mercia
+	}
+
+	757.1.1 = {
+		holder = 205089 # Beornred of Mercia
+	}
+
+	758.1.1 = { # It is possible that Offa did not gain the throne until 758, however, since a charter of 789 describes Offa as being in the thirty-first year of his reign
+		holder = 205072 # Offa of Mercia
+	}
+	796.7.29 = {
+		holder = 205073 # Ecgfrith of Mercia
+	}
+	796.12.17 = {
+		holder = 205107 # Coenwulf of Mercia
+	}
+	821.1.1 = {
+		holder = 205108 # Ceolwulf I of Mercia
+	}
+
+	823.1.1 = {
+		holder = 205092 # Beornwulf of Mercia
+	}
+
+	826.1.1 = {
+		holder = mercianking0002 # Ludeca
+	}
+
+	827.1.1 = {
+		holder = 205084 # Wiglaf of Mercia
+	}
+
+	829.1.1 = {
+		holder = 33354 # Ecgberht, King of Wessex
+	}
+
+	830.1.1 = {
+		holder = 205084 # Wiglaf of Mercia
+	}
+	# It is possible that Wigmund, the son of Wiglaf, was king briefly between Wiglaf and Beorhtwulf
+
+	839.1.1 = {
+		holder = 205094 # Beorhtwulf of Mercia
+	}
+	852.1.1 = {
+		holder = 163102 # Burgred of Mercia
+	}
+
+	874.1.1 = {
+		holder = 205112 # Ceolwulf II of Mercia
+	}
+	879.1.1 = {
+		holder = 0 # After Ceolwulf's disappearance from the sources in 879, Mercia began to fall under the hegemony of Wessex
+	}
+
+	# Having fallen under the hegemony of Wessex, Mercia will from now on be represented as Duke-tier beginning with Æthelred, Lord of the Mercians (ID: 205088)
+}
+
+k_wessex = {
+	519.1.1 = {
+		holder = 205141 # Cerdic of Wessex
+		succession_laws = { saxon_elective_succession_law }
+	}
+	534.1.1 = {
+		holder = 205142 # Cynric of Wessex
+	}
+	560.1.1 = {
+		holder = 205143 # Ceawlin of Wessex
+	}
+	592.1.1 = {
+		holder = 205145 # Ceol of Wessex; deposed Ceawlin
+	}
+	597.1.1 = {
+		holder = 205146 # Ceolwulf of Wessex
+	}
+	611.1.1 = {
+		holder = 205147 # Cynegils of Wessex
+	}
+	642.1.1 = {
+		holder = 205148 # Cenwalh of Wessex
+	}
+
+	645.1.1 = {
+		holder = 205057 # Penda of Mercia; expelled Cenwalh.
+	}
+
+	648.1.1 = {
+		holder = 205148 # Cenwalh of Wessex; restored (Historians are quite uncertain about the dates for Cenwalh's exile and restoration)
+	}
+	672.1.1 = {
+		holder = wessexqueen0001 # Seaxburh of Wessex
+	}
+	# Cenfus of Wessex; (Disputed) Perhaps reigned between Seaxburh and his son Æscwine. Also possibly an underking of Wessex in the troubled times following Cenwalh's death
+	674.1.1 = {
+		holder = 205155 # Æscwine of Wessex
+	}
+	676.1.1 = {
+		holder = 205151 # Centwine of Wessex
+	}
+	686.1.1 = {
+		holder = 205161 # Cædwalla of Wessex
+	}
+	688.1.1 = {
+		holder = 205164 # Ine of Wessex
+	}
+	726.1.1 = {
+		holder = 205184 # Æthelheard of Wessex
+	}
+	740.1.1 = {
+		holder = 205185 # Cuthred of Wessex
+	}
+	756.1.1 = {
+		holder = 205177 # Sigeberht of Wessex
+	}
+	757.1.1 = {
+		holder = 205180 # Cynewulf of Wessex
+	}
+	786.1.1 = {
+		holder = 205181 # Beorhtric of Wessex
+	}
+	802.1.1 = {
+		holder = 33354 # Ecgberht of Wessex
+	}
+	839.1.1 = {
+		holder = 33355 # Æthelwulf, King of Wessex
+	}
+
+	# circa late 856 to 857, Æthelwulf faced a revolt by Æthelbald, who attempted to prevent his father from recovering his throne
+	# In a compromise with Æthelbald, Æthelwulf effectively split Wessex and allowed Æthelbald to govern the Western half seemingly independently
+	
+	858.1.13 = {
+		holder = 33356 # Æthelbald, King of Wessex
+	}
+	860.12.21 = {
+		holder = 33357 # Æthelberht, King of Wessex
+	}
+	865.9.1 = {
+		holder = 33358 # Æthelred I of Wessex
+	}
+	871.4.20 = {	
+		holder = 7627 # Alfred "the Great", King of Wessex
+	}
+	899.10.26 = {
+		holder = 100 # Edward the Elder, King of Wessex
+	}
+
+	#Edward's son Ælfweard may have been recognised as king in Wessex, but died within three weeks of their father's death
+
+	924.7.17 = {
+		holder = 33350 # Æthelstan, King of the English
+	}
+	927.7.12 = {
+		holder = 0 # at Eamont, near Penrith, on 12 July 927, King Constantine II of Alba, King Hywel Dda of Deheubarth, Ealdred of Bamburgh, and King Owain of Strathclyde (or Morgan ap Owain of Gwent)[e] accepted Æthelstan's overlordship. Title transforms into the Kingdom of England
+	}
+
+	# In 927, he conquered the last remaining Viking kingdom, York, making him the first Anglo-Saxon ruler of the whole of England, and thus the title transforms into the Kingdom of England
+}
+
+k_east_anglia = {
+	550.1.1 = { # The date of the kingdom's formation is not known
+		holder = 205000 # Wehha of East Anglia
+		succession_laws = { saxon_elective_succession_law }
+	}
+	571.1.1 = {
+		holder = 205001 # Wuffa of East Anglia
+	}
+	578.1.1 = {
+		holder = 205002 # Tytila of East Anglia
+	}
+	599.1.1 = {
+		holder = 205003 # Rædwald of East Anglia
+	}
+	624.1.1 = {
+		holder = 205004 # Eorpwald of East Anglia
+	}
+	627.6.1 = {
+		holder = eastangliacanusurper0001 # Ricberht of East Anglia, though it is unclear if he actually ruled or if the Kingdom was leaderless
+	}
+	630.1.1 = {
+		holder = 205005 # Sigeberht of East Anglia (Possibly a joint rule with Ecgric of East Anglia)
+	}
+	634.1.1 = {
+		holder = 205010 # Ecgric of East Anglia (Sole Rule)
+	}
+	636.1.1 = {
+		holder = 205007 # Anna of East Anglia
+	}
+
+	651.1.1 = {
+		holder = 0 # Penda of Mercia (Unclear, as Anna is said to have been driven into exile but no King is mentioned in the interregium until Anna's return - Possibly East Anglia was under Penda's direct control?)
+	}
+
+	653.1.1 = {
+		holder = 205007 # Anna of East Anglia (Second Reign, having returned from exile)
+	}
+	654.1.1 = {
+		holder = 205008 # Æthelhere of East Anglia
+	}
+	655.11.15 = {
+		holder = 205009 # Æthelwold of East Anglia
+	}
+	664.1.1 = {
+		holder = 205011 # Ealdwulf of East Anglia
+	}
+	713.1.1 = {
+		holder = 205012 # Ælfwald of East Anglia
+	}
+
+	# After Ælfwald's death, according to mediaeval sources, East Anglia was divided among two (possibly three kings), under circumstances that are not clear
+
+	749.1.1 = {
+		holder = 205013 # Beonna of East Anglia; ruled jointly with Alberht and possibly Hun
+	}
+	760.1.1 = {
+		holder = 205015 # Æthelred I of East Anglia
+	}
+	793.1.1 = { # Date is very dubious, as a date of 779 has also been suggested
+		holder = 205016 # Æthelberht II of East Anglia
+	}
+
+	794.5.20 = {
+		holder = 0 # Following the execution of Æthelberht II by King Offa of Mercia, Mercia held dominion of East Anglia
+	}
+
+	796.7.29 = {
+		holder = 205018 # Eadwald of East Anglia; ruled East Anglia for a brief period after Offa's death before East Anglia was reconquered by King Coenwulf of Mercia 
+	}
+
+	800.1.1 = {
+		holder = 0 # PDX's supposed date for when East Anglia was reconquered by Mercia
+	}
+
+	827.1.1 = {
+		holder = 205020 # Æthelstan of East Anglia; Likely the leader of the East Anglican rebellion that finally overthrew Mercian control
+	}
+	845.1.1 = {
+		holder = 205021 # Æthelweard of East Anglia
+	}
+	855.1.1 = {
+		holder = 163064 # Edmund the Martyr
+	}
+	869.11.20 = {
+		holder = 205023 # Oswald of East Anglia (Cilent King for the Danes)
+	}
+	875.1.1 = {
+		holder = 205024 # Æthelred II of East Anglia (Cilent King for the Danes; Possible sub-king or joint king with Oswald)
+	}
+
+	878.1.1 = {
+		holder = 168650 # Guthrum the Dane
+	}
+	891.1.1 = {
+		holder = eastangliacanking0001 # Eohric the Dane
+	}
+	902.12.13 = {
+		holder = eastangliacanking0002 # Guthrum II
+	}
+	917.1.1 = {
+		holder = 0 # Battle of Tempsford
+	}
+
+	# Soon after the East Anglican defeat at Tempsford, East Anglia was absorbed into the Kingdom of Englandin circa. 918
+}
+
+k_bernicia = { # Kings of Bernicia
+	500.1.1 = { # The date of the kingdom's formation is not known
+		holder = 205200 # Esa of Bernica; Doubtful historicity as a king
+		succession_laws = { saxon_elective_succession_law }
+	}
+	510.1.1 = {
+		holder = 205201 # Eoppa of Bernicia; Doubtful historicity as a king
+	}
+	547.1.1 = {
+		holder = 205202 # Ida of Bernicia; first known king of the Anglian kingdom of Bernicia
+	}
+	559.1.1 = {
+		holder = 205203 # Glappa of Bernicia
+	}
+	560.1.1 = {
+		holder = 205204 # Adda of Bernicia
+	}
+	568.1.1 = {
+		holder = 205205 # Æthelric of Bernicia
+	}
+	572.1.1 = {
+		holder = 205206 # Theodric of Bernicia
+	}
+	579.1.1 = {
+		holder = 205207 # Frithuwald of Bernicia
+	}
+	585.1.1 = {
+		holder = 205208 # Hussa of Bernicia; Hussa's exact place in the Bernician genealogy is unclear
+	}
+	592.1.1 = {
+		holder = 205209 # Æthelfrith of Bernicia
+	}
+	616.1.1 = {
+		holder = 205198 # Edwin of Northumbria
+	}
+	633.10.12 = {
+		holder = 205211 # Eanfrith of Bernicia
+	}
+	634.7.1 = {
+		holder = 205212 # Oswald of Northumbria
+	}
+	642.8.5 = {
+		holder = 205213 # Oswiu of Bernicia
+	}
+	655.11.15 = { # Battle of the Winwaed
+		holder = 0 # Following the Battle, Oswiu emerges as master of Northumbria and installs his son in Deira, though as a clear sub-king. I will establish the Northumbrian Kingdom here
+	}
+}
+
+k_deira = { # Kings of Deira
+	560.1.1 = { # The date of the kingdom's formation is not known
+		holder = 205193 # Ælla of Deira; first known king of the Anglian kingdom of Deira
+		succession_laws = { saxon_elective_succession_law }
+	}
+	588.1.1 = {
+		holder = 205197 # Æthelric of Deira; historically obscure
+	}
+	604.1.1 = {
+		holder = 205209 # Æthelfrith of Bernicia
+	}
+	616.1.1 = {
+		holder = 205198 # Edwin of Northumbria
+	}
+	633.10.12 = {
+		holder = 205195 # Osric of Deira
+	}
+	634.6.1 = {
+		holder = 205212 # Oswald of Northumbria
+	}
+	642.8.5 = { # Tradition seems to date the start of Oswine's reign to 644, but there is no cause for an interregium given
+		holder = 205196 # Oswine of Deira
+	}
+	651.8.20 = { # After Oswine of Deira was killed by Oswiu of Bernicia in 651, Œthelwald became king - though it is unclear if Oswiu (who was Œthelwald's uncle) installed him as king or whether Œthelwald took the kingship in opposition to Oswiu
+		holder = additionalaethelfrithing0002 # Œthelwald of Deira, who was possibly a compromise candidate for Oswiu and the Derian nobility
+	}
+	655.11.15 = { # Battle of the Winwaed
+		holder = additionalaethelfrithing0003 # Alhfrith; King of Deira under his father Oswiu
+	}
+	664.1.1 = {
+		holder = additionalaethelfrithing0006
+	}
+	670.1.1 = {
+		holder = additionalaethelfrithing0007 # Ælfwine of Deira
+	}
+	679.1.1 = {
+		holder = 0 # Ælfwine was killed in battle against Mercia in 679, and there was not another separate king of Deira until the time of Norse rule
+	}
+}
+
+k_northumbria = {
+	655.11.15 = { # Battle of the Winwaed
+		holder = 205213 # Oswiu of Northumbria
+		succession_laws = { saxon_elective_succession_law }
+	}
+	670.2.15 = {
+		holder = additionalaethelfrithing0006 # Ecgfrith of Northumbria
+	}
+	685.5.20 = {
+		holder = additionalaethelfrithing0010 # Aldfrith of Northumbria
+	}
+	704.12.14 = {
+		holder = 205240 # Eadwulf I of Northumbria
+	}
+	705.3.1 = {
+		holder = additionalaethelfrithing0011 # Osred I of Northumbria
+	}
+	716.1.1 = {
+		holder = 205221 # Coenred of Northumbria
+	}
+	718.1.1 = {
+		holder = additionalaethelfrithing0013 # Osric of Northumbria
+	}
+	729.5.9 = {
+		holder = 205222 # Ceolwulf of Northumbria
+	}
+	# It seems the beginning of Ceolwulf's reign was troubled, as he was deposed and compelled to receive the monastic tonsure c. 731
+	# Considering Ceolwulf was quickly restored to the throne, we will not have a break in the history - especially considering the lack of a usurper available
+	737.1.1 = {
+		holder = 205224 # Eadberht of Northumbria
+	}
+	758.12.25 = {
+		holder = 205225 # Oswulf of Northumbria
+	}
+	759.7.24 = {
+		holder = 205243 # Æthelwald Moll of Northumbria
+	}
+	765.10.30 = {
+		holder = 205237 # Alhred of Northumbria
+	}
+	774.1.1 = {
+		holder = 205244 # Æthelred I of Northumbria
+	}
+	779.1.1 = {
+		holder = 194104 # Ælfwald I of Northumbria
+	}
+	788.9.23 = {
+		holder = 205238	# Osred II of Northumbria
+	}
+	790.1.1 = {
+		holder = 205244 # Æthelred I of Northumbria (Restored)
+	}
+	796.4.18 = {
+		holder = 205228 # Osbald of Northumbria
+	}
+	796.5.15 = {
+		holder = 205246 # Eardwulf of Northumbria
+	}
+	806.1.1 = {
+		holder = additionaleadwulfing0002 # Ælfwald II of Northumbria
+	}
+	808.1.1 = {
+		holder = 205246 # Eardwulf of Northumbria (Restored)
+	}
+	810.1.1 = {
+		holder = 205247 # Eanred of Northumbria
+	}
+	840.1.1 = {
+		holder = 205255 # Æthelred II of Northumbria
+	}
+	844.1.1 = {
+		holder = 205254 # Rædwulf of Northumbria
+	}
+	844.8.1 = {
+		holder = 205255 # Æthelred II of Northumbria
+	}
+	849.1.1 = {
+		holder = 205253 # Osberht of Northumbria
+	}
+	862.1.1 = {
+		holder = 163103 # Ælla of Northumbria
+	}
+	867.3.21 = {
+		holder = 0
+	}
+
+	# Following the death of Ælla, Northumbria is divided between the Vikings, puppet kings, and local lords. We feel it may be contentous, but also fitting to end the unified Kingdom with Ælla's death
+
+}
+
+
+
+k_kent = {
+	455.1.1 = { # In the entry for the year 455 the Chronicle details that Hengist and Horsa fought against Vortigern at Aylesford and that Horsa died there. Hengist took control of the kingdom with his son Esc
+		holder = 205026 # Hengist and Horsa
+	}
+	488.1.1 = {
+		holder = 205028 # Oisc of Kent
+	}
+	516.1.1 = {
+		holder = 205029 # Octa of Kent
+	}
+	540.1.1 = {
+		holder = 205030 # Eormenric of Kent
+	}
+	590.1.1 = {
+		holder = 205031 # Æthelberht of Kent (Perhaps jointly for a time with his son Æðelwald)
+	}
+	616.2.24 = {
+		holder = 205032 # Eadbald of Kent (Perhaps jointly with his brother Æðelwald)
+	}
+	640.1.20 = {
+		holder = 205036 # Eorcenberht of Kent (Perhaps jointly with his brother Eormenred of Kent)
+	}
+	664.7.1 = {
+		holder = 205039 # Ecgberht of Kent
+	}
+	673.7.4 = {
+		holder = 205040 # Hlothhere of Kent (appears for a time to have reigned jointly with his nephew Eadric, son of Ecgberht I)
+	}
+	685.1.1 = {
+		holder = 205041 # Eadric of Kent
+	}
+	686.8.31 = {
+		holder = 205160 # Mul of Kent (briefly ruled as King of the Kingdom of Kent following its conquest by Caedwalla in 686)
+	}
+	687.1.1 = {
+		holder = 205042 # Oswine of Kent (Ruled jointly with Swæfheard. Since Oswine controlled the East, historically the senior lands, he will have the Kingdom title while Swæfheard will have duchy)
+	}
+	690.10.1 = {
+		holder = 205043 # Wihtred of Kent (Initially ruled alongside Swæfheard)
+	}
+	# Wihtred left the Kingdom to all 3 of his sons to rule jointly - which they did. Will go with the brothers that predeceased the others first to ensure they are seen as Kings
+	725.1.1 = {
+		holder = 205046 # Alric of Kent
+	}
+	730.1.1 = {
+		holder = 205045 # Eadbert I of Kent
+	}
+	748.1.1 = {
+		holder = 205044 # Æthelbert II of Kent (seems to have outlived both of his brothers and later reigned jointly with his nephew Eardwulf)
+	}
+	# Kentish Kingship devolves into seemingly a mess after this
+	762.1.1 = {
+		holder = 205047 # Eardwulf of Kent
+	}
+	764.1.1 = {
+		holder = 205048 # Eadberht II
+	}
+	765.1.1 = {
+		holder = 205049 # Ecgberht II
+	}
+	779.1.1 = {
+		holder = 205189 # Ealhmund of Kent
+	}
+	785.1.1 = {
+		holder = 0 # Under the direct rule of Offa of Mercia (circa. 785–796)
+	}
+	796.1.1 = {
+		holder = 205050
+	}
+	# Following the deposition of Eadberht III Præn, Kent is reduced to a cilent kingdom of Mercia. It may be proper to have it cease to be a kingdom at this time.
+	798.12.25 = {
+		holder = additionalcoenwalhing0002 # Cuthred of Kent
+	}
+	807.1.1 = {
+		holder = 205107 # Coenwulf of Mercia, who styled himself "King of the Mercians and the Province of Kent" (rex Merciorum atque provincie Cancie) in a charter dated 809
+	}
+	821.1.1 = {
+		holder = 205108 # Ceolwulf I of Mercia; styled as "King of the Mercians and of the men of Kent"
+	}
+	823.1.1 = {
+		holder = kentishking0001 # Baldred of Kent
+	}
+	# Soon after 825, King Ecgberht of Wessex sent his son Æthelwulf with an army to Kent, where Æthelwulf expelled the Mercian sub-king and was himself appointed sub-king
+	827.1.1 = {
+		holder = 33355 # Æthelwulf, King of Wessex
+	}
+	855.1.1 = {
+		holder = 33357 # Æthelberht, King of Wessex (Appointed sub-king in Kent and the south-east of Wessex in preperation for his father's pilgrimage to Rome)
+	}
+	860.1.1 = {
+		holder = 0 # When Æthelbald died in 860, Æthelberht united both their territories under his rule. He did not appoint a sub-king and Wessex and Kent were fully united for the first time
+	}
+}
+
+k_essex = { # Kingdom of Essex
+	527.1.1 = { # On no known authority, Roger of Wendover and Matthew Paris state that Erkenwine founded the kingdom in 527
+		holder = 194095 # Æscwine of Essex
+	}
+	587.1.1 = {
+		holder = 194096 # Sledd of Essex
+	}
+	604.1.1 = {
+		holder = 194097 # Sæberht of Essex
+	}
+	616.1.1 = {
+		holder = 194098 # Sexræd of Essex (Joint king with his brother Saeward and a third unnamed brother)
+	}
+	623.1.1 = {
+		holder = 194100 # Sigeberht the Little
+	}
+	653.1.1 = {
+		holder = 194101 # Sigeberht the Good
+	}
+	660.1.1 = {
+		holder = 194102 # Swithhelm of Essex
+	}
+	664.1.1 = {
+		holder = 194103 # Sighere of Essex (Jointly with Sæbbi of Essex)
+	}
+	688.1.1 = {
+		holder = 205256 # Sæbbi of Essex (Sole Rule)
+	}
+	694.1.1 = {
+		holder = 205257 # Sigeheard of Essex (Jointly with Swæfred of Essex)
+	}
+	# It seems rule was also split with Offa of Essex circa. 705. Whether this was due to Swæfred's death or a three-way split is unknown
+	709.1.1 = {
+		holder = 205259 # Offa of Essex (Short Rule before abdication)
+	}
+	709.4.16 = { # Giving an arbitrary abdication date for Offa
+		holder = 205262 # Saelred of Essex
+	}
+	# For part of his reign he probably ruled jointly with Swaefbert, who, it is speculated, may have ruled the sub-kingdom of Middlesex
+	746.1.1 = {
+		holder = 205263 # Swithred of Essex
+	}
+	758.1.1 = {
+		holder = 205265 # Sigeric I of Essex
+	}
+	798.1.1 = {
+		holder = 205266 # Sigered of Essex
+	}
+	812.1.1 = {
+		holder = 0 # In 812 Sigered was reduced from king to duke by his Mercian overlords
+	}
+
+	# In 825 Sigered finally ceded the kingdom of Essex to Egbert of Wessex
+
 }

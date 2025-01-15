@@ -2,6 +2,172 @@
 @smLysX = 0.23
 @smLysY = 0.26
 
+1022195 = { # Constantine's Dynasty
+	pattern="pattern_solid.dds"
+	color1=rgb { 125 10 10 }
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		texture="ce_chi_rho.dds"
+	}
+}
+
+1022137 = { # Heraclius' Dynasty
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.320000 0.825000 }
+			scale={ 0.040000 0.070000 }
+		}
+
+		instance={
+			position={ 0.680000 0.825000 }
+			scale={ 0.040000 0.070000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.550000 0.645000 }
+			scale={ 0.040000 0.070000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.595000 0.705000 }
+			scale={ 0.040000 0.070000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.635000 0.765000 }
+			scale={ 0.040000 0.070000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.450000 0.645000 }
+			scale={ 0.040000 0.070000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.405000 0.705000 }
+			scale={ 0.040000 0.070000 }
+			depth=6.010000
+		}
+
+		instance={
+			position={ 0.365000 0.765000 }
+			scale={ 0.040000 0.070000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.415000 0.190000 }
+			scale={ 0.075000 0.075000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.585000 0.190000 }
+			scale={ 0.075000 0.075000 }
+			depth=9.010000
+		}
+
+		instance={
+			position={ 0.360000 0.285000 }
+			scale={ 0.075000 0.075000 }
+			depth=10.010000
+		}
+
+		instance={
+			position={ 0.360000 0.460000 }
+			scale={ 0.075000 0.075000 }
+			depth=11.010000
+		}
+
+		instance={
+			position={ 0.640000 0.460000 }
+			scale={ 0.075000 0.075000 }
+			depth=12.010000
+		}
+
+		instance={
+			position={ 0.640000 0.285000 }
+			scale={ 0.075000 0.075000 }
+			depth=13.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_block_05.dds"
+		instance={
+			position={ 0.500000 0.370000 }
+			scale={ 0.300000 0.800000 }
+			depth=14.010000
+		}
+
+		instance={
+			position={ 0.500000 0.825000 }
+			scale={ 0.400000 0.800000 }
+			depth=15.010000
+		}
+
+		instance={
+			position={ 0.500000 0.765000 }
+			scale={ 0.270000 0.800000 }
+			depth=16.010000
+		}
+
+		instance={
+			position={ 0.500000 0.705000 }
+			scale={ 0.200000 0.800000 }
+			depth=17.010000
+		}
+
+		instance={
+			position={ 0.500000 0.645000 }
+			scale={ 0.090000 0.800000 }
+			depth=18.010000
+		}
+
+		instance={
+			position={ 0.360000 0.370000 }
+			scale={ 0.800000 0.230000 }
+			depth=19.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.640000 0.370000 }
+			scale={ 0.800000 0.230000 }
+			depth=20.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.500000 0.400000 }
+			scale={ 0.800000 0.455000 }
+			depth=21.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.500000 0.190000 }
+			scale={ 0.230000 0.800000 }
+			depth=22.010000
+		}
+
+	}
+}
+
 8642 = { # Amorios
 	pattern="pattern_solid.dds"
 	color1=blue
@@ -255,7 +421,7 @@ dynasty_tephrice = { # Leaders of the Paulician principality of Tephrike
 }
 
 
-hee_azdi = {
+dynasty_azdi = {
 	pattern="pattern_solid.dds"
 	color1=red
 	color2=blue
@@ -269,22 +435,72 @@ hee_azdi = {
 			scale={ 0.750000 0.750000 }
 			depth=1.010000
 		}
+	}
+
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_zulfiqar_and_shield.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.610000 0.610000 }
+			rotation=271
+		}
+	}
+
+}
+
+1029120 = { # Emirs of Melitene
+	pattern="pattern__solid_designer.dds"
+	color1=yellow
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color2=black
+		texture="ce_doted_roundel_frame.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.810000 0.810000 }
+			depth=3.010000
+		}
 
 	}
 
 	colored_emblem={
-		color1=white
-		color2=white
-		texture="ce_zulfiqar.dds"
+		color1=yellow
+		texture="ce_tamgha_regular_circle_frame.dds"
 		instance={
 			position={ 0.500000 0.480000 }
-			scale={ 0.700000 0.700000 }
-			rotation=179
+			scale={ 0.720000 0.720000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_circle.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_arabic_ali.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.670000 0.670000 }
 		}
 
 	}
 
 }
+
+
 
 7520 = { # Armani
 	pattern="pattern_solid.dds"
@@ -1036,6 +1252,68 @@ house_ghaznavid = { # Ghaznavid # EE
 
 640 = { # Kourkouras
 	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_border_circle_fimbriated.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.850000 0.850000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=blue
+		texture="ce_block_02.dds"
+		instance={
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=black
+		color3=black
+		texture="ce_wolf_head.dds"
+		instance={
+			scale={ 0.440000 0.440000 }
+			rotation=323
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.770000 0.800000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_wreath_circle.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.630000 0.630000 }
+			depth=1.010000
+		}
+	}
+}
+
+
+dynasty_koxes = { # Kourkouras
+	pattern="pattern_solid.dds"
 	color1=red
 	color2=white
 	color3=red
@@ -1074,51 +1352,10 @@ house_ghaznavid = { # Ghaznavid # EE
 			scale={ 0.230000 0.230000 }
 			depth=4.010000
 		}
-
 	}
-
 }
 
 
-better_wessex = {
-	pattern="pattern_solid.dds"
-	color1=blue
-	color2=yellow
-	color3=black
-	colored_emblem={
-		color1=yellow
-		texture="ce_cross_08.dds"
-		instance={
-			position={ 0.680000 0.690000 }
-			scale={ 0.230000 0.230000 }
-		}
-
-		instance={
-			position={ 0.330000 0.700000 }
-			scale={ 0.230000 0.230000 }
-			depth=1.010000
-		}
-
-		instance={
-			position={ 0.680000 0.300000 }
-			scale={ 0.230000 0.230000 }
-			depth=2.010000
-		}
-
-		instance={
-			position={ 0.320000 0.310000 }
-			scale={ 0.230000 0.230000 }
-			depth=3.010000
-		}
-
-		instance={
-			scale={ 0.900000 0.900000 }
-			depth=4.010000
-		}
-
-	}
-
-}
 
 better_wessex_2 = { 
 	pattern="pattern_solid.dds"
@@ -1168,9 +1405,7 @@ better_wessex_2 = {
 			scale={ 0.250000 0.250000 }
 			depth=5.010000
 		}
-
 	}
-
 }
 
 12279 = { # Jannabids
@@ -3111,7 +3346,6 @@ house_bulpacopan = { # Bula-Chopan aka Tribe of the Čopan with piebald horses. 
 		instance={
 			depth=2.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -3121,7 +3355,6 @@ house_bulpacopan = { # Bula-Chopan aka Tribe of the Čopan with piebald horses. 
 			scale={ -0.320000 0.320000 }
 			rotation=304
 		}
-
 	}
 
 	colored_emblem={
@@ -3132,7 +3365,67 @@ house_bulpacopan = { # Bula-Chopan aka Tribe of the Čopan with piebald horses. 
 			scale={ 0.450000 0.450000 }
 			depth=1.010000
 		}
+	}
+}
 
+dynasty_matfriede = { # Taken from the County of Paris where the Dynasty founder made his name
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	colored_emblem={
+		color1=blue
+		color2=yellow
+		texture="ce_circle.dds"
+		instance={
+			position={ 0.500000 0.840000 }
+			scale={ 0.300000 0.300000 }
+		}
+
+		instance={
+			position={ 0.760000 0.640000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.640000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.240000 0.640000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.760000 0.440000 }
+			scale={ 0.300000 0.300000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.300000 0.300000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.240000 0.440000 }
+			scale={ 0.300000 0.300000 }
+			depth=6.010000
+		}
 	}
 
+	colored_emblem={
+		color1=blue
+		color2=yellow
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.156000 }
+			scale={ 1.000000 0.312000 }
+			depth=7.010000
+		}
+	}
 }

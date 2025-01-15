@@ -6825,7 +6825,7 @@
 
 
 
-161483 = {
+161483 = { # https://fr.wikipedia.org/wiki/Hugues_de_Tours
 	name = "Hugo" #Hugh of Tours
 	dynasty = 664
 	culture = swabian
@@ -6843,9 +6843,7 @@
 		add_spouse = 306000
 	}
 	827.1.1 = {
-		effect = {
-			give_nickname = nick_the_timid
-		}
+		give_nickname = nick_the_timid
 	}
 	837.10.27 = {
 		death = "837.10.27"
@@ -6854,10 +6852,12 @@
 
 306000 = {
 	name = "Ava"
-	culture = swabian
+	dynasty = dynasty_matfriede
+	culture = "frankish"
 	religion = "catholic"
 	female = yes
-	780.1.1 = {
+	father = matfriede0001 # Given that Engeltrude, Matfrid's daughter, was, according to Hincmar of Reims, a relative of King Lothaire II, we assume that Ava, Hugues' wife, was Matfrid's sister
+	777.1.1 = {
 		birth = yes
 	}
 	837.10.27 = {

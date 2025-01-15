@@ -4059,7 +4059,7 @@ e_byzantium = {
 	641.2.11 = {
 		holder = 70509
 	}
-	641.4.20 = {
+	641.5.25 = {
 			holder = 145070
 	}
 	641.10.1 = {
@@ -4136,6 +4136,28 @@ e_byzantium = {
 	# }
 	867.9.24 = { # The historical date, but we want the Macedonian dynasty in place at the bookmark start
 		holder = 1700
+		effect = { # Establish a sizable Imperial Tagmata
+			holder = {
+				create_maa_regiment = {
+					type = skoutatoi
+					check_can_recruit = no 
+					title = title:e_byzantium
+					size = 3
+				}
+				create_maa_regiment = {
+					type = skoutatoi
+					check_can_recruit = no 
+					title = title:e_byzantium
+					size = 3
+				}
+				create_maa_regiment = {
+					type = cataphract
+					check_can_recruit = no 
+					title = title:e_byzantium
+					size = 3
+				}
+			}
+		}
 	}
 	886.8.29 = {
 		holder = 1702

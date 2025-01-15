@@ -11,7 +11,12 @@
  HEE_memory_earthquake_1202_desc_second_perspective: "You experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on yourself"
  HEE_memory_earthquake_1202_desc_third_perspective: "[owner.GetName] experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on [owner.GetHerHim]"
 
- #Character Specific
+#Character Specific
+
+
+
+
+ # Michael III
  michael_invasion_of_bulguria: "Invasion of Bulgaria"
  michael_invasion_of_bulguria_desc: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, Caesar Bardas and I invaded Bulgaria"
  michael_invasion_of_bulguria_desc_second_perspective_1: "Fearing the potential conversion of Bulgaria to Christianity under Frankish influence, you and the Caesar Bardas invaded Bulgaria"
@@ -67,6 +72,10 @@
  michael_confines_family_to_convent_desc_second_perspective_1: "Because of your frayed relationship with the Emperor, you were expelled from the Imperial Palace by Michael III and confined to a monastery in Cyprus"
  michael_confines_family_to_convent_desc_third_perspective_1: "Because of his frayed relationship with his mother and sisters, Michael III expelled his mother and sisters from the Imperial Palace and confined them to a monastery in Cyprus"
 
+
+
+
+ # Salomon of Brittany
  murder_of_erispoe: "Assassination of Erispoe"
  murder_of_erispoe_desc_1: "Fearing the growing connection between my liege Erispoe and West Francia would weaken my political influence, I assassinated Erispoe and seized the Breton throne"
  murder_of_erispoe_desc_second_perspective_1: "Fearing the growing connection between your liege Erispoe and West Francia would weaken your political influence, you assassinated Erispoe and seized the Breton throne"
@@ -102,6 +111,11 @@
  salomon_battle_of_brissarthe_desc_second_perspective_1: "You lead the Breton portion of the joint Breton-Viking army against the Franks at the Battle of Brissarthe - a battle which saw the deaths of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine"
  salomon_battle_of_brissarthe_desc_third_perspective_1: "Salomon lead the Breton portion of the joint Breton-Viking army against the Franks at the Battle of Brissarthe - a battle which saw the deaths of Robert the Strong, the Neustrian margrave, and Ranulf I, the duke of Aquitaine"
 
+
+
+
+
+ # Charles the Bald
  837_diet_of_aachen: "Diet of Aachen"
  837_diet_of_aachen_desc: "At a diet in Aachen, my father Louis the Pious bade the Frankish nobility do homage to me as his heir of the entire land which was once Gaul"
  837_diet_of_aachen_desc_second_perspective_1: "At a diet in Aachen, your father Louis the Pious bade the Frankish nobility do homage to you as his heir of the entire land which was once Gaul"
@@ -152,10 +166,20 @@
  treaty_of_angers_desc_second_perspective_1: "Following your defeat in the Battle of Jengland, you met with Erispoe and concluded a peace treaty. You invested Erispoe with the counties of Rennes and Nantes as well as bestowed him with royal regalia and Erispoe in turn pledged himself to you with the giving of hands and an oath of fidelity. By the treaty, though Erispoe remained in principle subject to your authority, he could now also see himself as sovereign in his own realm"
  treaty_of_angers_desc_third_perspective_1: "Following Charles' defeat in the Battle of Jengland, he met with Erispoe and concluded a peace treaty. Charles invested Erispoe with the counties of Rennes and Nantes as well as bestowed him with royal regalia and Erispoe in turn pledged himself to the Frankish king with the giving of hands and an oath of fidelity. By the treaty, though Erispoe remained in principle subject to Charles' authority, he could now also see himself as sovereign in his own realm"
 
+ charles_aethelwulf_arranged_marriage: "Judith's Arranged Marriage"
+ charles_aethelwulf_arranged_marriage_desc: "While undergoing a pilgrimage to Rome with his youngest son Alfred, the widower Æthelwulf, King of Wessex, visited my court and negotiated for a marriage with my 12-year-old daughter Judith. Æthelwulf may have been looking for an ally against the Vikings, as both kingdoms had suffered from their attacks, though it has also possible he was sought a strategic coalition against his own sons"
+ charles_aethelwulf_arranged_marriage_desc_second_perspective_1: "While undergoing a pilgrimage to Rome with his youngest son Alfred, the widower Æthelwulf, King of Wessex, visited your court and negotiated for a marriage with your 12-year-old daughter Judith. Æthelwulf may have been looking for an ally against the Vikings, as both kingdoms had suffered from their attacks, though it has also possible he was sought a strategic coalition against his own sons"
+ charles_aethelwulf_arranged_marriage_desc_third_perspective_1: "While undergoing a pilgrimage to Rome with his youngest son Alfred, the widower Æthelwulf, King of Wessex, visited the court of Charles the Bald and negotiated for a marriage with Charles' 12-year-old daughter Judith. Æthelwulf may have been looking for an ally against the Vikings, as both kingdoms had suffered from their attacks, though it has also possible he was sought a strategic coalition against his own sons"
+
  frankish_breton_improved_relations: "Franco-Breton Relations"
  frankish_breton_improved_relations_desc: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, I stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to my young son Louis"
  frankish_breton_improved_relations_desc_second_perspective_1: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, you stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to your young son Louis"
  frankish_breton_improved_relations_desc_third_perspective_1: "To further solidify the peace that had existed between Bretons and Franks since Treaty of Angers, Charles stood as godfather at the baptism of Erispoe's infant son Conan (thereby creating a baptismal alliance) and Erispoe's daughter was betrothed to the King's young son Louis"
+
+ charles_aethelwulf_arranged_marriage_ceremony: "Judith's Marriage Ceremony"
+ charles_aethelwulf_arranged_marriage_ceremony_desc: "On the way back from Rome, King Æthelwulf stayed at my court once more and married Judith at the royal palace of Verberie-sur-Oise. And though according to the customs of Wessex the wife of a king could not be called queen or sit on the throne with her husband, I insisted on the coronation of my daughter - hoping to secure her position in her new home"
+ charles_aethelwulf_arranged_marriage_ceremony_desc_second_perspective_1: "On the way back from Rome, King Æthelwulf stayed at your court again and married Judith at the royal palace of Verberie-sur-Oise. And though according to the customs of Wessex the wife of a king could not be called queen or sit on the throne with her husband, you insisted on the coronation of your daughter - hoping to secure her position in her new home"
+ charles_aethelwulf_arranged_marriage_ceremony_desc_third_perspective_1: "On the way back from Rome, King Æthelwulf stayed at Charles' court again and married Judith at the royal palace of Verberie-sur-Oise. And though according to the customs of Wessex the wife of a king could not be called queen or sit on the throne with her husband, Charles insisted on the coronation of his daughter - probably wishing to secure her position in her new home"
 
  845_siege_of_paris: "845 Siege of Paris"
  845_siege_of_paris_desc: "A fleet of 120 Viking ships containing more than 5,000 men arrived in Paris on Easter Sunday, and having already defeated the smaller Frankish army I raised in defense of the city, entered the city and plundered it. Unable to assemble an effective defence, the Vikings withdrew only after I paid a ransom of 7,000 livres (French pounds) of silver and gold, amounting to approximately 2,570 kg"
@@ -163,7 +187,7 @@
  845_siege_of_paris_desc_third_perspective_1: "A fleet of 120 Viking ships containing more than 5,000 men arrived in Paris on Easter Sunday, and having already defeated the smaller Frankish army raised in defense of the city, entered the city and plundered it. Unable to assemble an effective defence, the Vikings withdrew only after Charles the Bald paid a ransom of 7,000 livres (French pounds) of silver and gold, amounting to approximately 2,570 kg"
 
  charles_invasion_of_west_francia: "Invasion of West Francia"
- charles_invasion_of_west_francia_desc: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, I was forced to flee to Burgundy"
+ charles_invasion_of_west_francia_desc: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Deserted by many in the West Frankish nobility, and thus unable to raise an effective army, I was forced to flee to Burgundy"
  charles_invasion_of_west_francia_desc_second_perspective_1: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, you were forced to flee to Burgundy"
  charles_invasion_of_west_francia_desc_third_perspective_1: "Encouraged by his nephews Pepin II and Charles of Provence, as well as the growing disaffection among the West Frankish nobility, Ludwig the German launched an invasion of West Francia. Unable to raise an army without the support of the nobility, Charles the Bald was forced to flee to Burgundy"
 
@@ -176,6 +200,11 @@
  charles_payment_veland_desc: "Plagued by Viking settlements in the Lower Siene region, I made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
  charles_payment_veland_desc_second_perspective_1: "Plagued by Viking settlements in the Lower Siene region, you made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
  charles_payment_veland_desc_third_perspective_1: "Plagued by Viking settlements in the Lower Siene region, King Charles made an agreement with the Viking Chieftain Veland for him to fight against other Viking bands in exchange for 3,000 pounds in silver after which Veland worked, with more or less success, to secure the lower Seine region"
+
+ charles_meeting_at_savonnieres: "Gathering at Savonnières"
+ charles_meeting_at_savonnieres_desc: "Louis the German, Lothar II, and I - attended by our respective great magnates - met at Savonnières in which the we solemnly promised to love one another as true brothers, uncles, and nephew. However I expressed my greviences with Lothair, as Lothair was harboring the runaway adulteress Engeltrude, had given asylum to the excommunicated Baldwin and Judith, and was ignoring the advice of my bishops and of Pope Nicholas on the matter of his own marriage"
+ charles_meeting_at_savonnieres_desc_second_perspective_1: "You, Louis the German, and Lothar II attended by your respective great magnates, met at Savonnières in which the you all solemnly promised to love one another as true brothers, uncles, and nephew. However you expressed your greviences with Lothair, as Lothair was harboring the runaway adulteress Engeltrude, had given asylum to the excommunicated Baldwin and Judith, and was ignoring the advice of your bishops and of Pope Nicholas on the matter of his own marriage"
+ charles_meeting_at_savonnieres_desc_third_perspective_1: "Charles the Bald, Louis the German, and Lothar II, each of them attended by his great magnates, met at Savonnières in which the kings solemnly promised to love one another as true brothers, uncles, and nephew. However Charles expressed his greviences with Lothair, as Lothair was harboring the runaway adulteress Engeltrude, had given asylum to the excommunicated Baldwin and Judith, and was ignoring the advice of Charles’ bishops and of Pope Nicholas on the matter of his own marriage"
 
  edict_of_pitres: "Edict of Pîtres"
  edict_of_pitres_desc: "I announced the Edict of Pîtres, which not only declared that fortified bridges should be built at all towns on rivers to prevent the dreaded longships from sailing into the interior, but also ordered all men who had horses or could afford horses to serve in the army as cavalrymen"
@@ -193,14 +222,98 @@
  charles_danegeld_866_desc_third_perspective_1: "In order to rid my realm of a Viking band that had ravaged places along the Siene and besieged Melun, King Charles paid the Norsemen 4,000 pounds of silver and a great quantity of wine"
 
  860_raid_on_constantinople: "Raid on Constantinople"
- 860_raid_on_constantinople_desc: "Alongside my friend, I lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, we plundered largely unopposed and, after many days, returned to our own lands in triumph"
- 860_raid_on_constantinople_desc_second_perspective_1: "Alongside your friend, you lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, you plundered largely unopposed and, after many days, returned to your own lands in triumph"
- 860_raid_on_constantinople_desc_third_perspective_1: "Haskuldr and Dyre lead a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, they plundered largely unopposed and, after many days, returned to their own lands in triumph"
+ 860_raid_on_constantinople_desc: "Alongside my friend, I led a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, we plundered largely unopposed and, after many days, returned to our own lands in triumph"
+ 860_raid_on_constantinople_desc_second_perspective_1: "Alongside your friend, you led a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, you plundered largely unopposed and, after many days, returned to your own lands in triumph"
+ 860_raid_on_constantinople_desc_third_perspective_1: "Haskuldr and Dyre led a fleet of about 200 Rus' vessels into the Bosporus and started pillaging the suburbs of Constantinople. With the Emperor, Imperial army, and Imperial Navy away from the city fighting the Arabs in Asia Minor, they plundered largely unopposed and, after many days, returned to their own lands in triumph"
+
+
+
+ # Lothair II
+ marriage_to_teutberga: "Marriage to Teutberga"
+ marriage_to_teutberga_desc: "I was forced by my father, Lothair I, to marry Theutberga, a sister of Hicbert, the lay abbot of St. Maurice. This was done to ensure the future security of my weak southern border, as Hucbert had control of several key alpine passes between Francia and Italy, which would help shield me against my brother Louis II"
+ marriage_to_teutberga_desc_second_perspective_1: "You were forced by your father, Lothair I, to marry Theutberga, a sister of Hicbert, the lay abbot of St. Maurice. This was done to ensure the future security of your weak southern border, as Hucbert had control of several key alpine passes between Francia and Italy, which would help shield you against your brother Louis II"
+ marriage_to_teutberga_desc_third_perspective_1: "Lothair II was forced by his father, Lothair I, to marry Theutberga, a sister of Hicbert, the lay abbot of St. Maurice. This was done to ensure the future security of his weak southern border, as Hucbert had control of several key alpine passes between Francia and Italy, which would help shield Lothair II against his brother Louis II"
+
+ treaty_of_prum: "Treaty of Prüm"
+ treaty_of_prum_desc: "My father, Lothair I, having grown seriously ill and knowing his time was near, concluded the Treaty of Prüm which divided his realm of Middle Francia between his sons. I was granted Frisia and parts of Austrasia, including the capital of Aachen, which would come to be known as Lotharingia"
+ treaty_of_prum_desc_second_perspective_1: "Your father, Lothair I, having grown seriously ill and knowing his time was near, concluded the Treaty of Prüm which divided his realm of Middle Francia between his sons. Louis II, the eldest son and co-emperor, was conferred sole ownership of the imperial crown and the Kingdom of Italy; Lothaire II was granted Frisia and parts of Austrasia, including the capital of Aachen, which would come to be known as Lotharingia; Charles became King of Provence and much of Burgundy"
+ treaty_of_prum_desc_third_perspective_1: "Carolingian Emperor Lothair I, having grown seriously ill and knowing his time was near, concluded the Treaty of Prüm which divided his realm of Middle Francia between his sons. Louis II, the eldest son and co-emperor, was conferred sole ownership of the imperial crown and the Kingdom of Italy; Lothaire II was granted Frisia and parts of Austrasia, including the capital of Aachen, which would come to be known as Lotharingia; Charles became King of Provence and much of Burgundy"
+
+ imprisonment_of_teutberga: "Imprisonment of Teutberga"
+ imprisonment_of_teutberga_desc: "Having accused my wife Teutberga of a number of crimes, including aborting a child, I imprisoned her while awaiting approval of a annulment to our marriage"
+ imprisonment_of_teutberga_desc_second_perspective_1: "Having accused your wife Teutberga of a number of crimes, including aborting a child, you imprisoned her while awaiting approval of a annulment to your marriage"
+ imprisonment_of_teutberga_desc_third_perspective_1: "Having accused his wife Teutberga of a number of crimes, including aborting a child, Lothaire II imprisoned Teutberga while awaiting approval of a annulment to his marriage"
+
+ teutberga_trial_by_ordeal: "Trial by Ordeal"
+ teutberga_trial_by_ordeal_desc: "In response to the allegations made against her, Teutberga nominated her brother Hucbert as her champion to undergo a trial by ordeal to prove her innocence. Hucbert pervailed in the ordeal by boiling water - affirming Teutberga innocence and forcing me to keep her as my lawful wife. I, however, did not accept the verdict and continued to imprison Teutberga"
+ teutberga_trial_by_ordeal_desc_second_perspective_1: "In response to the allegations made against her, Teutberga nominated her brother Hucbert as her champion to undergo a trial by ordeal to prove her innocence. Hucbert pervailed in the ordeal by boiling water - affirming Teutberga innocence and forcing you to keep her as you lawful wife. You, however, did not accept the verdict and continued to imprisoned your wife"
+ teutberga_trial_by_ordeal_desc_third_perspective_1: "In response to the allegations made against her, Teutberga nominated her brother Hucbert as her champion to undergo a trial by ordeal to prove her innocence. Hucbert pervailed in the ordeal by boiling water - affirming Teutberga innocence and forcing Lothaire to keep her as his lawful wife. Lothar, however, did not accept the verdict and continued to imprison his wife"
+
+ lothaire_land_bribe_to_louis: "Territorial Transfer"
+ lothaire_land_bribe_to_louis_desc: "Visiting my brother Louis II in Italy, I handed over territory beyond the Jura mountains - which both secured Louis’s favour and rid myself of a region dominated by Teutberga's brother Hubert"
+ lothaire_land_bribe_to_louis_desc_second_perspective_1: "Visiting your brother Louis II in Italy, you handed over territory beyond the Jura mountains - which both secured Louis’s favour and rid yourself of a region dominated by Teutberga's brother Hubert"
+ lothaire_land_bribe_to_louis_desc_third_perspective_1: "Visiting his brother Louis II in Italy, Lothaire handed over territory beyond the Jura mountains - which both secured Louis’s favour and rid himself of a region dominated by Teutberga's brother Hubert"
+
+ teutberga_confession: "Teutberga's Confession"
+ teutberga_confession_desc: "Whether due to the stress and coercion of imprisonment or a guilty conscience, Theutberga allegedly confessed to one or more bishops certain sinful actions with her brother Hubert, actions that she claimed made her unworthy to be my wife. Thus I began the procedures once again to attempt to annul my marriage"
+ teutberga_confession_desc_second_perspective_1: "Whether due to the stress and coercion of imprisonment or a guilty conscience, Theutberga allegedly confessed to one or more bishops certain sinful actions with her brother Hubert, actions that she claimed made her unworthy to be your wife. Thus you began the procedures once again to attempt to annul your marriage"
+ teutberga_confession_desc_third_perspective_1: "Whether due to the stress and coercion of imprisonment or a guilty conscience, Theutberga allegedly confessed to one or more bishops certain sinful actions with her brother Hubert, actions that she claimed made her unworthy to be my wife. Thus Lothaire began the procedures once again to attempt to annul his marriage"
+
+ second_council_of_aachen: "Second Council of Aachen"
+ second_council_of_aachen_desc: "At a synod held at Aachen a few bishops and abbots, under the leadership of Gunther, Archbishop of Cologne and uncle of my lover Waldrada, presented a written version of this confession, however, Theutberga refused to repeat her confession publicly. Nonetheless, acting under my influence, the bishops at this synod ordered her to retire to a convent to await the annulment of her marriage. At this point, I began to live with Waldrada."
+ second_council_of_aachen_desc_second_perspective_1: "At a synod held at Aachen a few bishops and abbots, under the leadership of Gunther, Archbishop of Cologne and uncle of your lover Waldrada, presented a written version of this confession, however, Theutberga refused to repeat her confession publicly. Nonetheless, acting under your influence, the bishops at this synod ordered her to retire to a convent to await the annulment of her marriage. At this point, you began to live with Waldrada."
+ second_council_of_aachen_desc_third_perspective_1: "At a synod held at Aachen a few bishops and abbots, under the leadership of Gunther, Archbishop of Cologne and uncle of Lothaire's lover Waldrada, presented a written version of this confession, however, Theutberga refused to repeat her confession publicly. Nonetheless, acting under Lothaire's influence, the bishops at this synod ordered her to retire to a convent to await the annulment of her marriage. At this point, Lothaire began to live with Waldrada."
+
+
+
+
+
+
+
+
+
+
+
+ teutberga_reinstated_as_queen: "Teutberga reinstated as Queen"
+ teutberga_reinstated_as_queen_desc: "Under the threat of excommunication, I had no alternative but to take Theutberga back. She was publicly received by me, with the swearing of weighty oaths, as queen and consort. Robed and crowned as a queen she accompanied me to mass, ate with me, and then, according to rumor, went to bed with me to discharge their conjugal duties. To ensure Teutberga's safety, twelve of my chief noblemen were required to take oaths guaranteeing that she would be well treated"
+ teutberga_reinstated_as_queen_desc_second_perspective_1: "Under the threat of excommunication, you had no alternative but to take Theutberga back. She was publicly received by you, with the swearing of weighty oaths, as queen and consort. Robed and crowned as a queen she accompanied you to mass, ate with you, and then, according to rumor, went to bed with you to discharge their conjugal duties. To ensure Teutberga's safety, twelve of your chief noblemen were required to take oaths guaranteeing that she would be well treated"
+ teutberga_reinstated_as_queen_desc_third_perspective_1: "Under the threat of excommunication, Lothar had no alternative but to take Theutberga back. She was publicly received by Lothar, with the swearing of weighty oaths, as queen and consort. Robed and crowned as a queen she accompanied Lothar to mass, ate with him, and then, according to rumor, went to bed with him to discharge their conjugal duties. To ensure Teutberga's safety, twelve of Lothair's chief noblemen were required to take oaths guaranteeing that she would be well treated"
+
+ waldrada_excommunication: "Waldrada's Excommunication"
+ waldrada_excommunication_desc: "Hearing I had yet to fully abandon Waldrada and incensed Waldrada has not traveled to Rome to ask his forgiveness, Pope Nicholas excommunicated her."
+ waldrada_excommunication_desc_second_perspective_1: "Hearing you had yet to fully abandon Waldrada and incensed Waldrada has not traveled to Rome to ask his forgiveness, Pope Nicholas excommunicated her."
+ waldrada_excommunication_desc_third_perspective_1: "Hearing Lothair had yet to fully abandon Waldrada and incensed Waldrada has not traveled to Rome to ask his forgiveness, Pope Nicholas excommunicated her."
+
+ lothaire_payment_for_teutberga_support: "Cost of Teutberga's Support"
+ lothaire_payment_for_teutberga_support_desc: "Perhaps tired of eleven years of wrangling as Lothar’s so-called wife, Teutberga approached me with demands in exchange for her support in seeking a divorce. She sought a large number of estates in unrestricted ownership, and in addition all the confiscated possessions of her brother Hucbert. Though costly, I acquiesced to all her demands"
+ lothaire_payment_for_teutberga_support_desc_second_perspective_1: "Perhaps tired of eleven years of wrangling as Lothar’s so-called wife, Teutberga approached you with demands in exchange for her support in seeking a divorce. She sought a large number of estates in unrestricted ownership, and in addition all the confiscated possessions of her brother Hucbert. Though costly, you acquiesced to all her demands"
+ lothaire_payment_for_teutberga_support_desc_third_perspective_1: "Perhaps tired of eleven years of wrangling as Lothar’s so-called wife, Teutberga approached Lothair with demands in exchange for her support in seeking a divorce. She sought a large number of estates in unrestricted ownership, and in addition all the confiscated possessions of her brother Hucbert. Though costly, Lothair acquiesced to all her demands"
+
+ lothaire_teutberga_joint_appeal: "Lothair & Teutberga's Joint Appeal"
+ lothaire_teutberga_joint_appeal_desc: "Teutberga and I made a joint appeal to Pope Nicholas for divorce, which looked very different from that of six years before. Naturally, there was no mention of the terrible charges I voiced against Theutberga in past years. The grounds for divorce cited were that my marriage to Waldrada had taken place prior to that with Theutberga, that Theutberga was incapable of bearing children, and that she wished to lead a celibate life"
+ lothaire_teutberga_joint_appeal_desc_second_perspective_1: "You and Teutberga made a joint appeal to Pope Nicholas for divorce, which looked very different from that of six years before. Naturally, there was no mention of the terrible charges you voiced against Theutberga in past years. The grounds for divorce cited were that your marriage to Waldrada had taken place prior to that with Theutberga, that Theutberga was incapable of bearing children, and that she wished to lead a celibate life"
+ lothaire_teutberga_joint_appeal_desc_third_perspective_1: "Lothair and Teutberga made a joint appeal to Pope Nicholas for divorce, which looked very different from that of six years before. Naturally, there was no mention of the terrible charges Lothair voiced against Theutberga in past years. The grounds for divorce cited were that Lothar’s marriage to Waldrada had taken place prior to that with Theutberga, that Theutberga was incapable of bearing children, and that she wished to lead a celibate life"
+
+ pope_response_to_lothaire_866: "Pope Nicholas' Response"
+ pope_response_to_lothaire_866_desc: "In response our joint appeal for divorce, Pope Nicholas replied that sterility was not grounds for divorce. Moreover, he said, Theutberga’s sterility was not caused by her body, but rather by my iniquity. Finally, even if she took religious vows, the Pope said, I would not be free to marry again - especially to Waldrada"
+ pope_response_to_lothaire_866_desc_second_perspective_1: "In response to your joint appeal for divorce, Pope Nicholas replied that sterility was not grounds for divorce. Moreover, he said, Theutberga’s sterility was not caused by her body, but rather by your iniquity. Finally, even if she took religious vows, the Pope said, you would not be free to marry again - especially to Waldrada"
+ pope_response_to_lothaire_866_desc_third_perspective_1: "In response to the joint appeal for divorce, Pope Nicholas replied that sterility was not grounds for divorce. Moreover, he said, Theutberga’s sterility was not caused by her body, but rather by Lothar’s iniquity. Finally, even if she took religious vows, the Pope said, Lothar would not be free to marry again - especially to Waldrada"
+
+
+
 
  #Relationships
  sulayman_and_hasan_rivalry_desc: "Sulayman ibn Abdallah ibn Tahir was appointed governor of Tabaristan in the early 850s, but by 864, his excessive taxation and tyranny caused the residents of the province to rise up in revolt. The rebels, who proclaimed the 'Alid al-Hasan ibn Zayd as their leader, quickly gained strength, drawing support from the people of Tabaristan as well as the Daylamites of neighboring Daylam. After defeating Sulayman's forces, the hated governor abandoned Tabaristan for Gurgan, leaving al-Hasan in control of the province."
  
- wulfad_and_carloman_friendship_desc: "Wullfadus served as a tutor to Carloman, a younger son of King Charles the Bald who was intended for an ecclesiastical career from an early age. In 860 Carloman was ordained a deacon and acquired the abbacy of Saint-Médard de Soissons, succeeding his old tutor Wulfad.""
+ wulfad_and_carloman_friendship_desc: "[CHARACTER.GetShortUIName] served as a tutor to [TARGET_CHARACTER.GetShortUIName|U], a younger son of King Charles the Bald who was intended for an ecclesiastical career from an early age. In 860 [TARGET_CHARACTER.GetShortUIName|U] was ordained a deacon and acquired the abbacy of Saint-Médard de Soissons, succeeding his old tutor and friend [CHARACTER.GetShortUIName]."
  bayakbak_and_ibn_tulun_friendship_desc: "According to the 10th-century author al-Balawi, after his father's death Ahmad came under the tutelage of the Turkish general Bayakbak, a close companion of Tulun, who had been taken captive alongside him. At his deathbed, Tulun urged his friend to take care of his wife and son, and Bayakbak thereafter treated the young Ahmad as his own son. Even after Ahmad had grown the two remained close, thus when al-Mu'tazz gave Bakbak charge of Egypt, Bakbak in turn sent his stepson Ahmad as his lieutenant and resident governor."
  yarjukh_and_ibn_tulun_friendship_desc: "After reaching adulthood, Ibn Tulun fought in the frontier wars with the Byzantine Empire. There he also met another senior Turkish leader, Yarjukh, with whom he became close with. This friendship lead to Ibn Tulun marrying Yarjukh's daughter, Khatun, who became his first wife and the mother of his eldest son, Abbas, and his daughter Fatimah."
  tulun_mudabbir_shukayr_power_struggle_desc: "The effective separation of powers, in medieval Islam, was in provincial administration - between the three divisions of military affairs, finance, and communications. Its purpose was to maintain the ultimate control of the imperial government, and prevent the emergence of provincial autonomies. When Ibn Tuliin arrived in Fustat as Egypt's newly appointed governor, he found two officials appointed by and responsible to Baghdad - the financial intendant, Ibn al-Mudabbir, and the postmaster, Shukayr. When both Ibn al-Mudabbir and Shukayr came out to meet him with a gift (bribe) of 10,000 dinars, Ibn Tulun refused to accept it - signaling his intention to be sole master of his province - and thus sparking a struggle for power between the three"
+
+ teutberga_and_charles_friendship_desc: "In providing [CHARACTER.GetShortUIName] safe haven in his court from her husband Lothaire, and by supporting her appeal to the Pope, [TARGET_CHARACTER.GetShortUIName|U] has proven himself a close friend and ally to Teutberga."
+ teutberga_and_nicholas_friendship_desc: "Pope Nicholas' stauch and unwavering support for the sanctity of Teutberga's marriage and his efforts to bring about a reconciliation between Lothair and his wife has shown himself to be a friend and ally to Teutberga."
+ teutberga_and_lothaire_rivalry_desc: "Lothaire's repeated attempts to recieve an annulment of his marriage to Teutberga - accusing her of incest, adultery, and undergoing an abortion among other charges - has bred a nigh insurmountable amount of enmity between the couple."
+
+ eudes_and_haesteinn_grudge: "Though he was a young boy, [CHARACTER.GetShortUIName] will never forget that it was [TARGET_CHARACTER.GetShortUIName|U] and his horde of vikings that slew his father at the Battle of Brissarthe - nor will he ever forgive."
+ bernard_and_toulouse_grudge_reason: "Not being resigned to being robbed of what he considers to be his paternal inheritance, [CHARACTER.GetShortUIName] bears a great amount of resentment and hatred for [TARGET_CHARACTER.GetShortUIName|U] and his family - as Fredelon, grandfather of [TARGET_CHARACTER.GetShortUIName|U], had been given the county of Toulouse following the execution of the Bernard's brother, William of Septimania."
+ boso_daughters_grudge: "For abandoning them and their father to run off with a lover, Engeltrude's daughters bear great anger towards their mother and show little evidence of ever forgiving her - not that their mother seems to mind."

@@ -291,9 +291,9 @@ HEE_rolv_nefia = { # Hrólfr nefja - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B
 	}
 }
 
-HEE_asa_hakondottir = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B3lfsd%C3%B3ttir
+lade0001 = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/Hildr_Hr%C3%B3lfsd%C3%B3ttir
 	name = "Asa"
-	dna = HEE_asa_hakondottir_dna
+	dna = "lade0001_dna"
 	female = yes
 	dynasty = 1043302
 	religion = "norse_pagan"
@@ -322,7 +322,7 @@ HEE_asa_hakondottir = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/H
 	}
 }
 
-HEE_asgautr_hakonsson = { # Ásgautr, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
+lade0002 = { # Ásgautr, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
 	name = "Ásgautr"
 	dynasty = 1043302
 	religion = "norse_pagan"
@@ -348,7 +348,7 @@ HEE_asgautr_hakonsson = { # Ásgautr, Son of Hakon (1st Jarl of Lade), Brother i
 	}
 }
 
-HEE_asbjorn_hakonsson = { # # Ásbjǫrn, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
+lade0003 = { # # Ásbjǫrn, Son of Hakon (1st Jarl of Lade), Brother in Law to Harald Fairhair who fell in battle against King Arnviðr
 	name = "Ásbjǫrn"
 	dynasty = 1043302
 	religion = "norse_pagan"
@@ -373,7 +373,7 @@ HEE_asbjorn_hakonsson = { # # Ásbjǫrn, Son of Hakon (1st Jarl of Lade), Brothe
 	}
 }
 
-HEE_haraldr_goldbeard = { # Harald Gullskjegg ("Goldbeard", father of Ragnhild, first wife of Halfdan the Black) - https://en.wikipedia.org/wiki/Sogn
+gullskjegg0001 = { # Harald Gullskjegg ("Goldbeard", father of Ragnhild, first wife of Halfdan the Black) - https://en.wikipedia.org/wiki/Sogn
 	name = "Haraldr"
 	dynasty = hee_gullskjegg
 	religion = "norse_pagan"
@@ -393,13 +393,13 @@ HEE_haraldr_goldbeard = { # Harald Gullskjegg ("Goldbeard", father of Ragnhild, 
 	}
 }
 
-HEE_rognhildr_goldbeard = { # Ragnhild, first wife of Halfdan the Black - https://en.wikipedia.org/wiki/Sogn
+gullskjegg0002 = { # Ragnhild, first wife of Halfdan the Black - https://en.wikipedia.org/wiki/Sogn
 	name = "RO_gnhildr"
 	female = yes
 	dynasty = hee_gullskjegg
 	religion = "norse_pagan"
 	culture = "norse"
-	father = HEE_haraldr_goldbeard
+	father = gullskjegg0001
 
 	#Skills
 
@@ -470,9 +470,6 @@ HEE_atli_the_slender = { # Atli the Slender - https://en.wikipedia.org/wiki/Atli
 	}
 	850.1.1 = {
 		give_nickname = nick_the_slender
-		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:168323 } #Halfdan the Black - He became friends with King Halfdan the Black of Vestfold and accompanied him on a number of his expeditions
-		}
 	}
 	890.1.1 = {
 		death = yes
@@ -595,27 +592,43 @@ HEE_atli_daughter = { # Solveig - https://en.wikipedia.org/wiki/Atli_the_Slender
 	}
 }
 
-HEE_eirikr_fictional_son = { # 
+hordalandi0001 = { # Fictional wife of Eirikr, Jarl of Hordaland, to ennhance his story
+	name = "Bodil"
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+
+
+	820.1.1 = {
+		birth = yes
+	}
+	838.1.1 = {
+		add_spouse = 166329 # Eirikr, Jarl of Hordaland
+	}
+	866.1.1 = {
+		trait = depressed_1 # Hugely impacted by the death of her sons
+	}
+	866.8.1 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+
+hordalandi0002 = { # Fictional child of Eirikr, Jarl of Hordaland, to ennhance his story
 	name = "Hrolfr"
-	# female = yes
 	dynasty = 1040004
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 166329
-	# mother =
-	# health = 5.0
+	mother = hordalandi0001
 
-	#Skills
+	trait = education_martial_2
+	trait = arbitrary
+	trait = brave
+	trait = stubborn
+	trait = reaver
 
-	#Education
-
-	#Personality Traits
-
-	#Other Traits
-
-	#sexuality = heterosexual
-
-	#disallow_random_traits = yes
 	839.1.1 = {
 		birth = yes
 	}
@@ -626,27 +639,20 @@ HEE_eirikr_fictional_son = { #
 	}
 }
 
-HEE_eirikr_fictional_second_son = { # 
+hordalandi0003 = { # Fictional child of Eirikr, Jarl of Hordaland, to ennhance his story
 	name = "Einarr"
-	# female = yes
 	dynasty = 1040004
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 166329
-	# mother =
-	# health = 5.0
+	mother = hordalandi0001
 
-	#Skills
+	trait = education_martial_2
+	trait = wrathful
+	trait = impatient
+	trait = lustful
+	trait = reaver
 
-	#Education
-
-	#Personality Traits
-
-	#Other Traits
-
-	#sexuality = heterosexual
-
-	#disallow_random_traits = yes
 	843.1.1 = {
 		birth = yes
 	}

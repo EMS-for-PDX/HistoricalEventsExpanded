@@ -99,12 +99,72 @@ d_bedford = {
 	1066.1.1 = { change_development_level = 9 }
 	1178.1.1 = { change_development_level = 13 }
 	
+	# For the Period in which the Kingdom of Essex existed, the Duchy will symbolize sub/joint Kings of Essex
+	527.1.1 = { # On no known authority, Roger of Wendover and Matthew Paris state that Erkenwine founded the kingdom in 527
+		holder = 194095 # Æscwine of Essex
+	}
+	587.1.1 = {
+		holder = 194096 # Sledd of Essex
+	}
+	604.1.1 = {
+		holder = 194097 # Sæberht of Essex
+	}
+	616.1.1 = {
+		holder = 194099 # Sæward of Essex (Joint king with his brother Sexræd and a third unnamed brother)
+	}
+	623.1.1 = {
+		holder = 194100 # Sigeberht the Little
+	}
+	653.1.1 = {
+		holder = 194101 # Sigeberht the Good
+	}
+	660.1.1 = {
+		holder = 194102 # Swithhelm of Essex
+	}
+	664.1.1 = {
+		holder = 205256 # Sæbbi of Essex (Jointly with Sighere of Essex)
+	}
+	694.1.1 = {
+		holder = 205258 # Swæfred of Essex (Jointly with Sigeheard of Essex)
+	}
+	# It seems rule was also split with Offa of Essex circa. 705. Whether this was due to Swæfred's death or a three-way split is unknown
+	705.1.1 = {
+		holder = 205259 # Offa of Essex (Jointly with Sigeheard of Essex, then a short rule before abdication)
+	}
+	709.4.16 = { # Giving an arbitrary abdication date for Offa
+		holder = 205262 # Saelred of Essex
+	}
+	715.1.1 = {
+		holder = additionaloffing0004 # Swaefbert of Essex (ruled jointly with Saelred of Essex)
+	}
+	738.4.16 = {
+		holder = 205262 # Saelred of Essex
+	}
+	746.1.1 = {
+		holder = 205263 # Swithred of Essex
+	}
 	758.1.1 = {
-		holder = 205265
+		holder = 205265 # Sigeric I of Essex
 	}
-	825.1.1 = {
-		holder = 0
+	798.1.1 = {
+		holder = 205266 # Sigered of Essex
 	}
+
+	# In 812 Sigered was reduced from king to duke by his Mercian overlords
+
+	825.1.1 = { # In 825 Sigered finally ceded the kingdom of Essex to Egbert of Wessex
+		holder = 33355 # Æthelwulf of Wessex, whose father Egbert set him up as sub-king of of Kent, and of Surrey, Sussex and Essex, which were then included in the sub-kingdom, until he inherited the throne of Wessex in 839
+	}
+	839.1.1 = {
+		holder = additionalcerdicing0005 # Æthelstan of Kent
+	}
+	855.1.1 = {
+		holder = 33357 # Æthelberht, King of Wessex
+	}
+	860.1.1 = {
+		holder = 0 # When Æthelbald died in 860, Æthelberht united both their territories under his rule. He did not appoint a sub-king and Wessex and Kent (along with the other sub-kingdoms of Essex, Sussex, and Surrey) were fully united for the first time
+	}
+
 	1066.1.1 = {
 		liege = "k_england"
 	}
@@ -316,6 +376,9 @@ c_bedford = {
 	}
 	852.1.1 = {
 		holder = 163102
+	}
+	865.1.1 = { # The family comes from the Eastern Marshes
+		holder = hwicce0003
 	}
 	1066.1.1 = {
 		liege = "k_england"
@@ -1048,8 +1111,11 @@ c_cheshire = {
 		liege = "d_hereford"
 		holder = 205081
 	}
+	800.1.1 = {
+		holder = 205111
+	}
 	852.1.1 = {
-		holder = 163102
+		holder = 205112
 	}
 	1066.1.1 = {
 		liege = "d_lancaster"
@@ -1117,11 +1183,11 @@ c_derby = {
 		liege = "d_hereford"
 		holder = 205081
 	}
-	839.1.1 = {
-		holder = 306018 #�thelred Mucel
+	800.1.1 = {
+		holder = 205111
 	}
-	879.1.1 = {
-		holder = 306021 #�thelwulf Mucel
+	852.1.1 = {
+		holder = 205112
 	}
 	1066.1.1 = {
 		liege = "d_lancaster"
@@ -1944,11 +2010,14 @@ c_staffordshire = {
 	758.1.1 = {
 		holder = 205072
 	}
+	800.1.1 = {
+		holder = 205111
+	}
 	852.1.1 = {
 		liege = "d_hereford"
 	}
 	852.1.1 = {
-		holder = 163102
+		holder = 205112
 	}
 	1066.1.1 = {
 		liege = "k_england"
@@ -2105,6 +2174,9 @@ c_huntingdonshire = {
 	}
 	852.1.1 = {
 		holder = 163102
+	}
+	865.1.1 = { # The family comes from the Eastern Marshes
+		holder = hwicce0003
 	}
 	1066.1.1 = {
 		liege = "k_england"
@@ -2360,8 +2432,11 @@ c_gloucestershire = {
 		holder = 205128
 	}
 	852.1.1 = {
-		liege = "k_england"
+		liege = "d_hereford"
 		holder = 163102
+	}
+	866.1.1 = { # Aethelred may be the same Aethelred who was recorded attending Burgred's court in the late 860s and was granted land at Lydney, Gloucestershire, by Burgred
+		holder = 205088
 	}
 	1066.1.1 = {
 		liege = "d_lancaster"
@@ -2660,47 +2735,93 @@ c_kent = {
 	1066.1.1 = { change_development_level = 9 }
 	1178.1.1 = { change_development_level = 19 }
 	
-	440.1.1 = {
-		holder = 205026
+	455.1.1 = { # In the entry for the year 455 the Chronicle details that Hengist and Horsa fought against Vortigern at Aylesford and that Horsa died there. Hengist took control of the kingdom with his son Esc
+		holder = 205026 # Hengist and Horsa
 	}
-	460.1.1 = {
-		holder = 205027
-	}
-	500.1.1 = {
-		holder = 205028
+	488.1.1 = {
+		holder = 205028 # Oisc of Kent
 	}
 	516.1.1 = {
-		holder = 205029
+		holder = 205029 # Octa of Kent
 	}
 	540.1.1 = {
-		holder = 205030
+		holder = 205030 # Eormenric of Kent
 	}
 	590.1.1 = {
-		holder = 205031
+		holder = 205031 # Æthelberht of Kent (Perhaps jointly for a time with his son Æðelwald)
 	}
 	616.2.24 = {
-		holder = 205032
+		holder = 205032 # Eadbald of Kent (Perhaps jointly with his brother Æðelwald)
 	}
-	640.1.28 = {
-		holder = 205036
+	640.1.20 = {
+		holder = 205036 # Eorcenberht of Kent (Perhaps jointly with his brother Eormenred of Kent)
 	}
 	664.7.1 = {
-		holder = 205039
+		holder = 205039 # Ecgberht of Kent
 	}
+	673.7.4 = {
+		holder = 205040 # Hlothhere of Kent (appears for a time to have reigned jointly with his nephew Eadric, son of Ecgberht I)
+	}
+	685.1.1 = {
+		holder = 205041 # Eadric of Kent
+	}
+	686.8.31 = {
+		holder = 205160 # Mul of Kent (briefly ruled as King of the Kingdom of Kent following its conquest by Caedwalla in 686)
+	}
+	687.1.1 = {
+		holder = 205042 # Oswine of Kent (Ruled jointly with Swæfheard. Since Oswine controlled the East, historically the senior lands, he will have the Kingdom title while Swæfheard will have duchy)
+	}
+	690.10.1 = {
+		holder = 205043 # Wihtred of Kent (Initially ruled alongside Swæfheard)
+	}
+	# Wihtred left the Kingdom to all 3 of his sons to rule jointly - which they did. Will go with the brothers that predeceased the others first to ensure they are seen as Kings
 	725.1.1 = {
-		holder = 205045
+		holder = 205046 # Alric of Kent
 	}
+	730.1.1 = {
+		holder = 205045 # Eadbert I of Kent
+	}
+	748.1.1 = {
+		holder = 205044 # Æthelbert II of Kent (seems to have outlived both of his brothers and later reigned jointly with his nephew Eardwulf)
+	}
+	# Kentish Kingship devolves into seemingly a mess after this
 	762.1.1 = {
-		holder = 205047
+		holder = 205047 # Eardwulf of Kent
 	}
-	763.1.1 = {
-		holder = 205048
+	764.1.1 = {
+		holder = 205048 # Eadberht II
 	}
 	765.1.1 = {
-		holder = 205049
+		holder = 205049 # Ecgberht II
+	}
+	779.1.1 = {
+		holder = 205189 # Ealhmund of Kent
+	}
+	785.1.1 = {
+		holder = 205072 # Under the direct rule of Offa of Mercia (circa. 785–796)
 	}
 	796.1.1 = {
 		holder = 205050
+	}
+	# Following the deposition of Eadberht III Præn, Kent is reduced to a cilent kingdom of Mercia. It may be proper to have it cease to be a kingdom at this time.
+	798.12.25 = {
+		holder = additionalcoenwalhing0002 # Cuthred of Kent
+	}
+	807.1.1 = {
+		holder = 205107 # Coenwulf of Mercia, who styled himself "King of the Mercians and the Province of Kent" (rex Merciorum atque provincie Cancie) in a charter dated 809
+	}
+	821.1.1 = {
+		holder = 205108 # Ceolwulf I of Mercia; styled as "King of the Mercians and of the men of Kent"
+	}
+	823.1.1 = {
+		holder = kentishking0001 # Baldred of Kent
+	}
+	# Soon after 825, King Ecgberht of Wessex sent his son Æthelwulf with an army to Kent, where Æthelwulf expelled the Mercian sub-king and was himself appointed sub-king
+	827.1.1 = {
+		holder = 33355 # Æthelwulf, King of Wessex
+	}
+	855.1.1 = {
+		holder = 33357 # Æthelberht, King of Wessex (Appointed sub-king in Kent and the south-east of Wessex in preperation for his father's pilgrimage to Rome)
 	}
 	865.1.1 = {
 		liege = d_somerset

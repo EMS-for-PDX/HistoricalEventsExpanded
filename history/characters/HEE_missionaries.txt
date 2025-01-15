@@ -181,46 +181,6 @@ HEE_missionary_03 = { # German missionary who supposedly converted Harald Blueto
 	}
 }
 
-HEE_wulfad_of_bourges = { # https://en.wikipedia.org/wiki/Wulfad
-	name = "Wullfadus"
-	#dynasty = 0
-	religion = "catholic"
-	culture = "french"
-	
-	#Skills
-	diplomacy = 8
-	martial = 7
-	stewardship = 6
-	intrigue = 5
-	learning = 8
-	prowess = 6
-	
-	#Education
-	trait = education_learning_4
-	
-	#Personality Traits
-	trait = brave # In 868 Charles convinced Pope Nicholas I that Wulfad's "prudence and vigour" were needed to counter the Vikings that threatened the region around Bourges
-	trait = temperate # In 868 Charles convinced Pope Nicholas I that Wulfad's "prudence and vigour" were needed to counter the Vikings that threatened the region around Bourges
-	trait = diligent
-	
-	#Other Traits
-	trait = theologian
-	trait = devoted
-
-	disallow_random_traits = yes
-	810.1.1 = {
-		birth = yes
-	}
-	854.1.1 = {
-		effect = {
-			set_relation_friend = { reason = wulfad_and_carloman_friendship_desc target = character:42021 } # He served as a tutor to Carloman, a younger son of King Charles the Bald. Carloman succeeded Wulfad as abbot of Soissons in 860.
-		}
-	}
-	876.1.1 = {
-		death = yes
-	}
-}
-
 HEE_giovanni_of_arezzo = { # Giovanni (vescovo di Arezzo) - https://it.wikipedia.org/wiki/Giovanni_(vescovo_di_Arezzo)
 	name = "Giovanni"
 	religion = "catholic"

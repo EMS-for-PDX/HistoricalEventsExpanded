@@ -276,7 +276,7 @@
 }
 74017 = { #Ashina descendent of the Gokturks
 	name = "Zachariah"
-	dna = 74017_zachariah_ashina
+	dna = "74017_zachariah_ashina"
 	dynasty = 12269
 
 	father = 74016
@@ -293,7 +293,7 @@
 }
 194369 = { #Sister of Zachariah, descendent of the Gokturks
 	name = "Yeldem"
-	dna = 194369_yeldem_ashina
+	dna = "194369_yeldem_ashina"
 	female = yes
 	dynasty = 12269
 
@@ -434,7 +434,7 @@
 
 74025 = { #Manasseh Bulanid 867 Starter
 	name = "Manasseh"
-	dna = 74025_manasseh_bulanid
+	dna = "74025_manasseh_bulanid"
 	dynasty = 12270
 	father = 74024
 	culture = khazar
@@ -488,7 +488,7 @@
 
 74026 = { #Son of Manasseh of Khazaria 867 Start
 	name = "Nisi"
-	dna = 74026_nisi_bulanid
+	dna = "74026_nisi_bulanid"
 	dynasty = 12270
 	father = 74025
 	mother = 173000
@@ -607,7 +607,7 @@
 
 173000 = { # Belet, Wife of Manasseh Bulanid 867
 	name = "Belet"
-	dna = 173000_belet_bulanid
+	dna = "173000_belet_bulanid"
 	female = yes
 	religion = kabarism
 	culture = khazar

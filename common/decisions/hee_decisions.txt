@@ -5,8 +5,10 @@
 #################################################
 
 anarchy_at_samarra_financial_straits_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 6
 
 	desc = anarchy_at_samarra_financial_straits_decision_desc 
@@ -60,8 +62,10 @@ anarchy_at_samarra_financial_straits_decision = {
 }
 
 anarchy_at_samarra_loss_of_central_authority_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 6
 
 	desc = anarchy_at_samarra_loss_of_central_authority_decision_desc 
@@ -127,8 +131,10 @@ anarchy_at_samarra_loss_of_central_authority_decision = {
 }
 
 anarchy_at_samarra_unpaid_soldiery_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
+	}
+	decision_group_type = major
 	ai_check_interval = 6
 
 	desc = anarchy_at_samarra_unpaid_soldiery_decision_desc 
@@ -192,8 +198,10 @@ anarchy_at_samarra_unpaid_soldiery_decision = {
 # by EmrysValdr						#
 #####################################
 launch_pecheneg_migration_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
 
 	ai_check_interval = 60
 
@@ -288,7 +296,11 @@ launch_pecheneg_migration_decision = {
 #	Jeanne d'Arc Decisions	#
 #############################
 jeanne_darc_manual_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	ai_check_interval = 0
+	desc = jeanne_darc_manual_decision_desc
 	
 	is_shown = {
 		is_ai = no
@@ -339,8 +351,6 @@ jeanne_darc_manual_decision = {
 	cost = {
 		piety = 250
 	}
-
-	ai_check_interval = 0
 
 	cooldown = { days = 1825 }
 }

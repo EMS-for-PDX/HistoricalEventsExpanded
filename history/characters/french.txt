@@ -5,12 +5,12 @@
 	dynasty = 7052
 	religion = catholic
 	culture = french
-	trait = honest
+	trait = brave
 	trait = zealous
 	trait = stubborn
 	trait = education_diplomacy_2
 	trait = infertile
-	fertility = 0.0 # Infertile should give no possibility
+	fertility = 0.0 # Infertile should give no possibility of childbirth
 	father = 7976 # Boso the Elder
 	831.1.1 = {
 		birth = yes
@@ -22,13 +22,13 @@
 	}
 	861.1.1 = {
 		effect = {
-			set_relation_rival = { target = character:144998 reason = rival_historical } # Husband Lothaire II, tries to annul marriage
+			set_relation_rival = { target = character:144998 reason = teutberga_and_lothaire_rivalry_desc } # Husband Lothaire II, tries to annul marriage
 		}
 	}
 	863.1.1 = {
 		effect = {
-			set_relation_friend = { reason = friend_generic_history target = character:90104 } #(King Charles the Bald), defended her marriage and gave shelter
-			set_relation_friend = { reason = friend_generic_history target = character:7853 } #(Pope Nicholas), defended her marriage and forced Lothaire to take her back
+			set_relation_friend = { reason = teutberga_and_charles_friendship_desc target = character:90104 } #(King Charles the Bald), defended her marriage and gave shelter
+			set_relation_friend = { reason = teutberga_and_nicholas_friendship_desc target = character:7853 } #(Pope Nicholas), defended her marriage and forced Lothaire to take her back
 		}
 	}
 	875.1.1 = {
@@ -644,6 +644,11 @@
 	religion = "catholic"
 	culture = french
 	trait = education_stewardship_2
+	trait = honest
+	trait = humble
+	trait = content
+	trait = loyal # Despite the insults and humiliations to which she was subjected by her husband, Bertha remained true to him
+	trait = beauty_good_1 # The Saxon chronicler Bruno of Merseburg describes her as "beautiful and noble"
 	father = 1180
 	mother = 1115
 	1048.9.21 = {
@@ -7377,11 +7382,21 @@
 	culture = french
 	father = 208 #Henri Ier de France
 	mother = 627 #Anne de Kiev
-	1052.1.1 = {
+	trait = stubborn # Refused the demand of the Pope to reunite with his wife Bertha.
+	trait = gregarious # A milder interpretation of the (likely biased) reported gluttonous nature of Philippe
+	trait = lustful # contemporary accounts (via Abbot Suger of Saint-Denis) link the abduction of Bertrade of Montfort was due to Philippe's insatiable lust, but historian Matthew Gabriele casts doubt on this narrative
+	trait = diligent # One area that Philippe I truly excelled in was administration, a talent he no doubt acquired from his mother and her commitment to education. Philippe I developed the French state more than any of his family’s predecessors
+	trait = bossy
+	disallow_random_traits = yes
+	1052.5.23 = { # Philippe I was born on 23 May 1052, a very low point in Capetian rule
 		birth = yes
 		effect = {
 			add_character_flag = has_scripted_appearance
 		}	
+	}
+	1068.5.23 = { # Adulthood
+		remove_trait = bossy
+		add_trait = education_stewardship_3
 	}
 	1072.1.1 = {
 		add_spouse = 106524 #Berthe de Hollande
@@ -14633,8 +14648,11 @@
 	847.1.2 = {
 		birth = "847.1.2"
 	}
-	866.1.30 = {
-		effect = { give_nickname = nick_the_child }
+	865.1.1 = {
+		trait = incapable # accidentally struck with a sword in the head by a member of his own hunting party in a mock combat, which left him mentally incapacitated
+	}
+	866.9.29 = { # died on 29 September 866 near Buzançais
+		give_nickname = nick_the_child
 		death = "866.1.30"
 	}
 }
@@ -22185,7 +22203,7 @@
 	}
 	866.7.2 = {
 		effect = {
-			set_relation_grudge = { target = character:6878 reason = rival_historical } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
+			set_relation_grudge = { target = character:6878 reason = eudes_and_haesteinn_grudge } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
 			add_opinion = {
 				target = character:6878 #Hastein killed Odo's father
 				modifier = hate_opinion
@@ -25897,10 +25915,13 @@
 	culture = french
 	trait = education_intrigue_3
 	trait = brave
+	trait = ambitious # Hincmar remarks on Ermengarde's ambition
 	trait = strong
+	trait = bossy
 
 	father = 30228 #(King Louis II of Italy)
 	mother = 167894
+	disallow_random_traits = yes
 	855.1.1 = {
 		birth = "855.1.1"
 	}
@@ -26882,6 +26903,9 @@
 	diplomacy = 5
 	intrigue = 3
 	stewardship = 5
+	trait = ambitious # Sought to defy his family by setting himself up in Aquitaine
+	trait = cynical # Possibly anti-Pepin propaganda, but supposed hired Vikings to ravage Aquitaine to assist in its subugation and possibly converted to ashot_kaysite_truce_desc
+	trait = stubborn # Despite being deposed he would escape and reignite the fight over Aquitaine 
 	religion = "catholic"
 	culture = french
 	father = 90096
@@ -26891,8 +26915,11 @@
 	838.1.1 = {
 		give_nickname = nick_the_young
 	}
-	864.1.2 = {
-		death = "864.1.2"
+	864.6.25 = { # Edict of Pîtres deposed Pepin, and considering his ultimate fate is unknown will serve as a cheeky death date
+		death = { #  captured in 864, and condemned to death, although the sentence was commuted to imprisonment which he served at Senlis. His ultimate fate is unknown
+			death_reason = death_prison
+			killer = 90104 #Charles the Bald
+		}
 	}
 }
 
@@ -26977,7 +27004,7 @@
 	stewardship = 8
 	learning = 8
 	trait = education_learning_3
-	trait = deceitful
+	trait = ambitious # Constantly sought to expand his own power (to middling success) - Invaded Lotharingia, Invaded East Francia, Went to Italy to be crowned Emperor
 	trait = impatient
 	trait = stubborn
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
@@ -27055,6 +27082,7 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = 845_siege_of_paris }
+				remove_short_term_gold = medium_gold_value
 			}
 		}
 	}
@@ -27072,10 +27100,24 @@
 			}
 		}
 	}
+	855.1.1 = { # Judith's arranged marriage to Æthelwulf, King of Wessex
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_aethelwulf_arranged_marriage }
+			}
+		}
+	}
 	856.2.1 = {
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = frankish_breton_improved_relations }
+			}
+		}
+	}
+	856.10.1 = { # Judith's marriage ceremony to Æthelwulf, King of Wessex
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_aethelwulf_arranged_marriage_ceremony }
 			}
 		}
 	}
@@ -27090,6 +27132,11 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = charles_treaty_of_koblenz }
+				add_truce_both_ways = {
+					character = character:90107 #Ludwig the German
+					days = 18250 # 50 years
+					name = treaty_of_koblenz_desc
+				}
 			}
 		}
 	}
@@ -27097,6 +27144,14 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = charles_payment_veland }
+				remove_short_term_gold = medium_gold_value
+			}
+		}
+	}
+	862.11.3 = { # Gathering at Savonnières 
+		effect = {
+			character:90104 = {
+				create_character_memory = { type = charles_meeting_at_savonnieres }
 			}
 		}
 	}
@@ -27104,6 +27159,15 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = edict_of_pitres }
+				spawn_army = { # Horsemen raised via the edict
+					name = event_troop_default_name
+					men_at_arms = {
+						type = light_horsemen
+						stacks = 4
+					}
+					location = capital_province
+					inheritable = no
+				}
 			}
 		}
 	}
@@ -27118,6 +27182,7 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = charles_danegeld_866 }
+				remove_short_term_gold = medium_gold_value
 			}
 		}
 	}
@@ -27145,8 +27210,8 @@
 	trait = brave
 	trait = ambitious
 	trait = cynical
-	844.1.2 = {
-		birth = "844.1.2"
+	844.1.1 = {
+		birth = "844.1.1"
 	}
 	871.1.2 = {
 		death = "871.1.2"
@@ -27417,7 +27482,7 @@
 	fertility = 0.25 # Reduce chance of children so historical Karling inheritence can occur
 	father = 90104 #(King Charles the Bald)
 	mother = 167830 #(Irminitrude of Orléans)
-	843.1.2 = {
+	846.11.1 = {
 		birth = yes
 	}
 	862.3.1 = {
@@ -27493,8 +27558,8 @@
 	culture = french
 	trait = legitimized_bastard
 	father = 90128
-	867.1.1 = {
-		birth = "867.1.1"
+	870.1.1 = {
+		birth = "870.1.1"
 	}
 	934.1.1 = {
 		death = "934.1.1"
@@ -40775,6 +40840,7 @@
 	trait = stubborn
 	trait = calm
 	trait = education_diplomacy_3
+	trait = loyal # Remained commited to Waldrada through 11 years of struggle, possible excommunication, and her own excommunication
 	sexuality = heterosexual
 	836.1.1 = {
 		birth = yes
@@ -40782,12 +40848,12 @@
 			add_character_flag = has_scripted_appearance
 		}
 	}
-	855.8.25 = {
-		set_primary_title_to = title:k_lotharingia
-	}
-	854.1.1 = {
+	855.1.1 = {
 		add_spouse = 6877 # Teutberga
 		effect = {
+			character:144998 = {
+				create_character_memory = { type = marriage_to_teutberga }
+			}
 			set_relation_soulmate = character:168314 # Waldrada
 			every_known_secret = { # Lothaire's continued relationship with Waldrada is not a secret
 				limit = {
@@ -40801,11 +40867,90 @@
 			}
 		}
 	}
+	855.9.19 = { # Treaty of Prüm
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = treaty_of_prum }
+			}
+		}
+	}
+	857.10.1 = { # Imprisonment of Teutberga
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = imprisonment_of_teutberga }
+			}
+		}
+	}
+	858.2.1 = { # Trial by Ordeal
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = teutberga_trial_by_ordeal }
+			}
+		}
+	}
+	859.11.1 = { # Visit to Louis II and transfer of Jura Mountain territory
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = lothaire_land_bribe_to_louis }
+			}
+		}
+	}
+	860.1.9 = { # Teutberga's alleged confession
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = teutberga_confession }
+			}
+		}
+	}
+	860.2.10 = { # the so-called Second council of Aachen
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = second_council_of_aachen }
+			}
+		}
+	}
+	865.7.1 = { # Teutberga was reinstated as Queen in 865 (exact date unknown?)
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = teutberga_reinstated_as_queen }
+			}
+		}
+	}
+	866.2.2 = { # Pope Nicholas pronounced Waldrada's excommunication on 2 February 866
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = waldrada_excommunication }
+			}
+		}
+	}
+	866.5.15 = { # Whatever her reasons, Teutberga eventually expressed a willingness to lend her support towards a divorce - with some conditions (exact date unknown)
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = lothaire_payment_for_teutberga_support }
+			}
+		}
+	}
+	866.5.15 = { # Lothair & Teutberga's Joint Appeal for Divorce (also supported by Charles the Bald but that confuses the narrative lol) (exact date unknown)
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = lothaire_teutberga_joint_appeal }
+			}
+		}
+	}
+	866.10.1 = { # Pope Nicholas' response to the joint appeal (exact date unknown)
+		effect = {
+			character:144998 = {
+				create_character_memory = { type = pope_response_to_lothaire_866 }
+			}
+		}
+	}
 	869.5.1 = {
 		remove_spouse = 6877 # Finally granted a divorce by Pope Adrian II
 	}
 	869.8.8 = {
-		death = yes
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -42166,7 +42311,7 @@
 	}
 }
 
-71906 = {
+71906 = { # Lambert I of Nantes (818-831) and Duke of Spoleto (834-836) - https://fmg.ac/Projects/MedLands/CENTRAL%20ITALY.htm#_Toc246900380
 	name = "Lambert"
 	dynasty = 7389
 	religion = "catholic"
@@ -42208,7 +42353,9 @@
 		birth = "820.1.1"
 	}
 	853.1.1 = {
-		death = "853.1.1"
+		death = {
+			death_reason = death_execution
+		}
 	}
 }
 
@@ -43180,9 +43327,9 @@
 	}
 }
 
-163093 = { # Son of https://en.wikipedia.org/wiki/Matfrid
+163093 = { # Son of https://en.wikipedia.org/wiki/Matfrid; active in Lotharingia during the reigns of Lothar and his son Lothar II, a frequent witness to their charters in the period from 843 to 860 (possibly identical to another Matfrid active in the period 867 to 878)
 	name = "Matfried"
-	dynasty = 667
+	dynasty = dynasty_matfriede
 	religion = "catholic"
 	culture = french
 	father = 163092
@@ -44503,14 +44650,25 @@
 	dynasty = 681
 	religion = "catholic"
 	culture = french
-	trait = education_learning_2
+	learning = 8
+	trait = education_learning_4
+	trait = ambitious # Upon the deposition of the Carolingian emperor Charles the Fat in 887, Fulk attempted to install his kinsman Guy III, Duke of Spoleto, as king of West Francia
+	trait = stubborn # Fulk continued to oppose Odo's rule in West Francia for over a decade and was a leading figure in the conflict between Odo and Charles the Simple
+	trait = diligent # As bishop, he corresponded with rulers, bishops and popes about a range of political and religious matters
+	trait = devoted # Member of the Clergy
+	trait = theologian # Competent enough to become archbishop of Reims
 	father = 167924
 	844.1.1 = {
 		birth = "844.1.1"
 	}
-	
+	867.1.1 = {
+		employer = 90104 # Was a palace cleric of Charles the Bald (When this happened is unknown to me, so better to have him there on start than not at all)
+	}	
 	900.6.17 = {
-		death = "900.6.17"
+		death = { # was assassinated on the orders of Count Baldwin of Flanders
+			death_reason = death_assassination
+			killer = 90108 # Baldwin of Flanders
+		}
 	}
 }
 
@@ -44637,8 +44795,11 @@
 	772.1.1 = {
 		birth = "772.1.1"
 	}
-	851.1.1 = {
-		death = "851.1.1"
+	853.1.1 = {
+		death = { # In 853, Gauzbert's overlord Charles the Bald accused him of making an alliance with the Bretons, who were in revolt against him, and, according to some reports, had him executed
+			death_reason = death_execution
+			killer = 90104 # Charles the Bald (Though Gauzbert is also reported as falling in battle)
+		}
 	}
 }
 
@@ -44761,8 +44922,13 @@
 	culture = french
 	father = 168020
 	mother = 168026
-	818.1.1 = {
-		birth = "818.1.1"
+	# When Charles the Bald gave the March of Neustria to Adalard the Sénéchal, Gauzfrid and his elder brother Rorgon II - who were established in the region - saw a threat to their power, revolted and allied themselves with Solomon of Brittany
+	trait = greedy
+	trait = ambitious
+	trait = cynical
+	trait = disloyal
+	824.1.1 = {
+		birth = "824.1.1"
 	}
 	878.1.1 = {
 		death = "878.1.1"
@@ -44824,12 +44990,14 @@
 	culture = french
 	father = 168020
 	mother = 168026
-	824.1.1 = {
-		birth = "824.1.1"
+	818.1.1 = {
+		birth = "818.1.1"
 	}
 	
 	865.1.1 = {
-		death = "865.1.1"
+		death = {
+			death_reason = death_battle # Died in battle against the vikings
+		}
 	}
 }
 
@@ -44903,8 +45071,11 @@
 	795.1.1 = {
 		birth = "795.1.1"
 	}
-	844.1.1 = {
-		death = "844.1.1"
+	843.5.24 = {
+		death = { # defeated and killed by Lambert II and his Breton allies at the Battle of Blain
+			death_reason = death_battle # Battle of Blain
+			killer = additionalguideschi0001 # Lambert II
+		}
 	}
 }
 
@@ -44917,8 +45088,11 @@
 	820.1.1 = {
 		birth = "820.1.1"
 	}
-	844.1.1 = {
-		death = "844.1.1"
+	844.1.1 = { # The Chronicle of Adémar de Chabannes records that "Bernardus comes Pictavinus et Arueus filius Rainoldi" were defeated and killed by "Lanberto comite" the year after Hervé's father was killed
+		death = { # defeated and killed by Lambert II and his Breton allies in 844
+			death_reason = death_battle
+			killer = additionalguideschi0001 # Lambert II
+		}
 	}
 }
 
@@ -45165,6 +45339,7 @@
 	religion = "catholic"
 	culture = french
 	father = 168055
+	mother = limousinspouse0001
 	850.1.1 = {
 		birth = "850.1.1"
 	}
@@ -45291,8 +45466,8 @@
 	culture = french
 	trait = bastard
 	father = 90095
-	794.1.1 = {
-		birth = "794.1.1"
+	793.1.1 = {
+		birth = "793.1.1"
 	}
 	852.7.23 = {
 		death = "852.7.23"
@@ -45356,8 +45531,9 @@
 	religion = "catholic"
 	culture = french
 	father = 168079
-	805.1.1 = {
-		birth = "805.1.1"
+	mother = 168080 # Alpis; Vulgrin's family relationship with the Carolingian kings was through his mother
+	809.1.1 = {
+		birth = "809.1.1"
 	}
 	
 	855.1.1 = {
@@ -45365,7 +45541,7 @@
 	}
 }
 
-168085 = {
+168085 = { # Vulfard - https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156048
 	name = "Wulfhard"
 	dynasty = 541
 	religion = "catholic"
@@ -45400,17 +45576,42 @@
 	}
 }
 
-168087 = {
+168087 = { # Wulfad; archbishop of Bourges - https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156048
 	name = "Wulfhard"
 	dynasty = 541
 	religion = "catholic"
 	culture = french
 	father = 168085
 	mother = 168084
-	828.1.1 = {
+	
+	#Skills
+	diplomacy = 8
+	martial = 7
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	prowess = 6
+	
+	#Education
+	trait = education_learning_3
+	
+	#Personality Traits
+	trait = brave # In 868 Charles convinced Pope Nicholas I that Wulfad's "prudence and vigour" were needed to counter the Vikings that threatened the region around Bourges
+	trait = temperate # In 868 Charles convinced Pope Nicholas I that Wulfad's "prudence and vigour" were needed to counter the Vikings that threatened the region around Bourges
+	trait = diligent
+	
+	#Other Traits
+	trait = theologian
+	trait = devoted
+
+	828.1.1 = { # circa. 830
 		birth = "828.1.1"
 	}
-	
+	854.1.1 = {
+		effect = {
+			set_relation_friend = { reason = wulfad_and_carloman_friendship_desc target = character:42021 } # He served as a tutor to Carloman, a younger son of King Charles the Bald. Carloman succeeded Wulfad as abbot of Soissons in 860.
+		}
+	}
 	878.1.1 = {
 		death = "878.1.1"
 	}
@@ -46757,12 +46958,16 @@
 	stewardship = 6
 	trait = education_intrigue_3
 	trait = ambitious
-	trait = deceitful
+	trait = vengeful
 	trait = callous
 	religion = catholic
 	culture = french
 	841.3.22 = {
 		birth = yes
+		give_nickname = nick_plantapilosa
+	}
+	850.1.1 = {
+		set_relation_grudge = { target = character:127007 reason = bernard_and_toulouse_grudge_reason }
 	}
 	864.1.1 = {
 		add_spouse = 127020
@@ -47088,11 +47293,15 @@
 	culture = french
 	father = 167829		
 	mother = HEE_engeltrude_of_fezensac
+	trait = disloyal # beheaded for betrayal on the orders of Charles the Bald
 	829.1.1 = {		
 		birth = yes
 	}
 	866.1.1 = {	#beheaded by order of Charles the Bald
-		death = yes
+		death = {
+			death_reason = death_decapitated
+			killer = 90104
+		}
 	}
 }
 ## End of d'Orleans family

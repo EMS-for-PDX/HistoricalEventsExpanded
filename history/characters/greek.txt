@@ -13,11 +13,11 @@
 	trait = education_martial_2
 	trait = physique_good_2 # Accomplishes the goal of both the beauty trait and strong
 	trait = brave
-	trait = deceitful
 	trait = ambitious
+	trait = vengeful
 	trait = diligent
 	trait = lifestyle_hunter
-	sexuality = bisexual
+	sexuality = bisexual # Probably should make straight - bisexuality is likely completely ficticious slander
 	father = 145129
 	mother = makedon0003
 	disallow_random_traits = yes
@@ -38,21 +38,6 @@
 	}
 	865.1.1 = { # Symeon Magister records that "Basilium" married "Eudocia Ingerina" in the eleventh year of the reign of Emperor Mikhael III
 		add_spouse = 1761
-		create_maa_regiment = {
-			type = cataphract
-			check_can_recruit = no
-			size = 2
-		}
-		create_maa_regiment = {
-			type = ballistrai
-			check_can_recruit = no
-			size = 2
-		}
-		create_maa_regiment = {
-			type = skoutatoi
-			check_can_recruit = no
-			size = 2
-		}
 	}
 	866.1.1 = {
 		effect = {
@@ -1057,7 +1042,9 @@
 		add_spouse = baiana0001 # Eudokia Baïana; Byzantine empress consort as the third wife of Leo VI the Wise
 	}
 	912.5.11 = {
-		death = "912.5.11"
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -1081,18 +1068,21 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = gluttonous
-	trait = arrogant
+	trait = arrogant # provoked a war with Simeon I of Bulgaria by refusing to send the traditional tribute on his accession
+	trait = lazy
 	trait = vengeful # immediately after taking office, A. is said to have taken action against everyone who had taken sides against him or done anything bad to him, regardless of their rank
 	trait = education_diplomacy_2
 	trait = born_in_the_purple
-	trait = lifestyle_reveler
+	trait = drunkard
 	father = 1700
 	mother = 1761
 	871.11.20 = { # Ps.-Symeon gives the specific date of birth as November 23rd of the fifth year of Basil, i.e. November 23rd, 871
 		birth = "871.11.1"
 	}
 	913.6.6 = { # A. died on June 6, 913, allegedly from stomach problems caused by excess food and alcohol
-		death = "913.6.6"
+		death = {
+			death_reason = death_ill # allegedly from a stomach disease
+		}
 	}
 }
 
@@ -1124,7 +1114,9 @@
 		trait = devoted
 	}
 	948.6.15 = {
-		death = "948.6.15"
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -1133,18 +1125,28 @@
 	dynasty = 644
 	religion = "orthodox"
 	culture = "greek"
+	trait = trusting
+	trait = diligent
+	trait = content
+	trait = intellect_good_1 # was a very intelligent young man with a large range of interests
+	trait = beauty_bad_1 # Constantine's youth had been a sad one due to his unpleasant appearance
 	trait = scholar
+	trait = diplomat # Constantine's youth had been a sad one due to his unpleasant appearance
 	trait = born_in_the_purple
+	trait = legitimized_bastard # an illegitimate son of Leo VI before an uncanonical fourth marriage
 	father = 1702
 	mother = 1703
 	905.5.17 = { # K. was probably born in May 905, probably on May 17th or 18th.
 		birth = "905.5.17"
+		give_nickname = nick_konstantinos_purple_born
 	}
 	919.4.1 = {
 		add_spouse = 1709
 	}
 	959.11.9 = {
-		death = "959.11.9"
+		death = {
+			death_reason = death_natural_causes # Though some sources claim he was poisoned by his daughter-in-law Theophano, this is likely simply slander against Theophano
+		}
 	}
 }
 
@@ -1183,7 +1185,7 @@
 	trait = born_in_the_purple
 	trait = gregarious # Described as a pleasure-loving sovereign
 	trait = arbitrary # married Theophano against his father's wishes
-	trait = lazy
+	trait = content # The pleasure-loving sovereign could also leave military matters in the adept hands of his generals
 	trait = lifestyle_hunter
 	father = 1708
 	mother = 1709
@@ -1194,7 +1196,9 @@
 		add_spouse = 1711
 	}
 	963.3.15 = {
-		death = "963.3.15"
+		death = {
+			death_reason = death_ill # After a lengthy hunting expedition Romanos II took ill and died on 15 March 963
+		}
 	}
 }
 
@@ -1273,16 +1277,22 @@
 	name = "Basileios"
 	dynasty = 644
 	martial = 10
-	diplomacy = 4
+	diplomacy = 4 # Psellos also states that Basil was not an articulate speaker
 	intrigue = 8
 	stewardship = 8
+	learning = 3 # Basil supposedly despised literary culture and affected scorn for the learned classes of Byzantium
 	religion = "orthodox"
 	culture = "greek"
-	trait = greedy
+	trait = ambitious
 	trait = diligent
 	trait = brave
 	trait = wrathful
+	trait = humble
 	trait = education_martial_4
+	trait = organizer
+	trait = strategist
+	trait = overseer
+	trait = administrator
 	trait = born_in_the_purple
 	father = 1710
 	mother = 1711
@@ -1293,7 +1303,10 @@
 		trait = celibate
 	}
 	1025.12.15 = {
-		death = "1025.12.15"
+		give_nickname = nick_the_bulgar_slayer # Technically too early to give the nickname as it is believed the epithet entered common usage among the Byzantines at the end of the 12th century
+		death = {
+			death_reason = death_old_age
+		}
 	}
 }
 
@@ -1304,13 +1317,16 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = born_in_the_purple
+	trait = beauty_good_3 # It is said that Zoe was stunningly beautiful
 	father = 1718
 	mother = alypios0002
 	978.1.1 = {
 		birth = yes
 	}
 	1050.6.1 = {
-		death = yes
+		death = {
+			death_reason = death_old_age # Zoe died in 1050, aged 72
+		}
 	}
 }
 
@@ -1323,8 +1339,10 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = arbitrary
-	trait = craven
+	trait = gregarious
+	trait = lazy
+	trait = callous
+	trait = content
 	trait = education_intrigue_1
 	trait = born_in_the_purple
 	father = 1710
@@ -1336,7 +1354,9 @@
 		trait = infirm
 	}
 	1028.11.15 = {
-		death = "1028.11.15"
+		death = {
+			death_reason = death_old_age
+		}
 	}
 }
 
@@ -1353,7 +1373,9 @@
 		birth = "980.1.1"
 	}
 	1056.8.31 = {
-		death = "1056.8.31"
+		death = {
+			death_reason = death_ill # an intestinal disorder 
+		}
 	}
 }
 
@@ -1391,6 +1413,7 @@
 		birth = "1010.1.1"
 	}
 	1034.4.11 = {
+		give_nickname = nick_the_paphlagonian
 		add_spouse = 1717
 	}
 	1041.12.10 = {
@@ -1417,7 +1440,9 @@
 		trait = eunuch_1
 	}
 	1042.8.24 = {
-		death = "1042.8.24"
+		death = {
+			death_reason = death_disappearance # Nothing is said of Michael after his banishment
+		}
 	}
 }
 
@@ -1436,7 +1461,9 @@
 		add_spouse = 1717
 	}
 	1055.1.11 = {
-		death = yes
+		death = {
+			death_reason = death_ill # fell ill and died on 11 January
+		}
 	}
 }
 
@@ -1476,8 +1503,10 @@
 	1057.8.31 = {
 		trait = devoted
 	}
-	1061.1.1 = {
-		death = "1061.1.1"
+	1061.6.1 = {
+		death = {
+			death_reason = death_natural_causes #  Isaac lived the remainder of his life as a simple monk in Stoudion, readily performing menial tasks until he died in 1060
+		}
 	}
 }
 
@@ -1492,9 +1521,9 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = arbitrary
+	trait = arrogant # final act was to demand that only his sons succeed him, forcing his wife Eudokia Makrembolitissa to take a vow not to remarry
 	trait = stubborn # Konstantinos was an academic, addicted to endless debates about philosophy and theology
 	trait = clubfooted
-	trait = lustful
 	trait = education_learning_3
 	father = 1744
 	1006.1.1 = {
@@ -1504,7 +1533,9 @@
 		add_spouse = 1733
 	}
 	1067.5.22 = {
-		death = "1067.5.22"
+		death = {
+			death_reason = death_natural_causes # Already old and unhealthy when he came to power, Constantine died on 23 May 1067
+		}
 	}
 }
 
@@ -1527,8 +1558,13 @@
 	1030.1.1 = {
 		birth = "1030.1.1"
 	}
+	1071.11.1 = {
+		trait = devoted # forced to retire to a monastery as a nun
+	}	
 	1096.1.1 = {
-		death = "1096.1.1"
+		death = {
+			death_reason = death_natural_causes # Her date and cause of death is unknown
+		}
 	}
 }
 
@@ -1574,7 +1610,9 @@
 		trait = blind
 	}
 	1072.8.1 = {
-		death = "1072.8.1"
+		death = {
+			death_reason = death_wounds # The wounds from his blinding became infected, and Romanos soon endured a painfully lingering death
+		}
 	}
 }
 
@@ -1613,10 +1651,10 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = arbitrary
-	trait = lazy
 	trait = craven
-	trait = greedy
-	trait = education_stewardship_1
+	trait = trusting #  reliant on his finance minister Nikephoritzes and surronded by sycophantic court officials
+	trait = content # the initiative to take power was taken by his uncle John Doukas and his tutor Michael Psellos
+	trait = education_learning_2 # The emperor's chief interests, shaped by Psellos, were in academic pursuits
 	father = 1732
 	mother = 1733
 	1050.1.1 = {
@@ -1640,11 +1678,15 @@
 			}
 		}
 	}
-	1078.1.1 = {
+	1078.3.31 = {
+		give_nickname = nick_parapinakes
 		remove_spouse = 41552
+		trait = devoted
 	}
 	1090.1.1 = {
-		death = "1090.1.1"
+		death = {
+			death_reason = death_natural_causes # After abdicating to Alexios, Michael retired into the Monastery of Stoudios. He later became metropolitan of Ephesus and died in Constantinople in c. 1090
+		}
 	}
 }
 
@@ -1706,9 +1748,12 @@
 	}
 	1081.4.1 = {
 		add_pressed_claim = title:e_byzantium
+		trait = devoted # Became a monk
 	}
 	1081.12.10 = {
-		death = "1081.12.10"
+		death = {
+			death_reason = death_old_age # After abdicating to Alexios, Nikephoros was escorted to the Monastery of Peribleptus and became a monk. He died later that year
+		}
 	}
 }
 
@@ -1750,7 +1795,9 @@
 		remove_claim = title:e_byzantium
 	}
 	1118.8.15 = {
-		death = yes
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -5587,6 +5634,7 @@
 	trait = strategist # Descriptions of him and his actions indicate that he had great self-control and personal courage, and was an excellent strategist and general
 	trait = organizer # John's strategy was to launch annual campaigns with limited, realistic objectives - requiring a great deal of organization
 	trait = military_engineer # In The Development of the Komnenian Army 1081–1180, Historian John Birkenmeier stresses the wisdom of John's approach to warfare, which focused on sieges rather than risking pitched battles
+	trait = lifestyle_hunter
 	father = 1742
 	mother = 1743
 	1087.9.13 = {
@@ -5597,7 +5645,9 @@
 	}
 	1143.4.8 = {
 		give_nickname = nick_the_good
-		death = yes
+		death = {
+			death_reason = death_hunting_mysterious # Was he murdered? Was it just an infection? Probably an infection but not making a custom death_reason for this
+		}
 	}
 }
 
@@ -6995,7 +7045,7 @@
 
 41316 = { # Nikephoros Phokas the Elder; Domestic of the Schools
 	name = "Nikephoros"
-	dna = 41316_nikephoros_dna
+	dna = "41316_nikephoros_dna"
 	dynasty = 641
 	martial = 8
 	diplomacy = 7
@@ -9322,10 +9372,13 @@
 		birth = "1009.1.1"
 	}
 	1057.8.31 = {
+		give_nickname = nick_stratiotikos
 		trait = devoted
 	}
 	1057.10.1 = {
-		death = "1057.10.1"
+		death = {
+			death_reason = death_natural_causes # followed the patriarch's advice and became a monk. He retired to his private home and died there shortly thereafter
+		}
 	}
 }
 
@@ -9521,6 +9574,17 @@
 				opinion = 100
 			}
 		}
+		create_maa_regiment = {
+			type = skoutatoi
+			check_can_recruit = no
+			size = 2
+		}
+		create_maa_regiment = {
+			type = cataphract
+			check_can_recruit = no
+			size = 3
+		}
+
 	}
 	867.9.24 = {
 		# (slanderous) Nickname re-applied via event in 867, but we do it here for future bookmarks where this is already decided.
@@ -9535,7 +9599,7 @@
 	}
 }
 
-70491 = {
+70491 = { # Byzantine Emperor from 829 until his death in 842
 	name = "Theophilos"
 	dynasty = 8642
 	martial = 5
@@ -9546,8 +9610,12 @@
 	culture = "greek"
 	trait = paranoid
 	trait = just
-	trait = brave
+	trait = diligent
+	trait = zealous # persecuted many clerics for refusing to submit to the imperial will
 	trait = education_martial_2
+	trait = holy_warrior
+	trait = administrator # Despite major defeats at the hands of the Abbasids, the Byzantines consolidated and gained a degree of economic stability, and was no longer facing an existential threat
+	trait = architect # Theophilos was a keen builder and administrator; through the construction of lavish palaces and exchange of precious goods and manuscripts, he intended to rival the court at Baghdad
 	father = 70492
 	mother = Tourkos0001
 	
@@ -9555,7 +9623,9 @@
 		birth = "813.1.1"
 	}
 	842.1.20 = {
-		death = "842.1.20"
+		death = {
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -9573,15 +9643,20 @@
 	trait = brave
 	trait = ambitious
 	trait = cynical
+	trait = temperate
 	trait = education_martial_4
+	trait = administrator
 	775.1.1 = {
 		birth = "775.1.1"
+		give_nickname = nick_the_amorian
 	}
 	823.1.1 = {
 		add_spouse = 70503
 	}
 	829.10.2 = {
-		death = "829.10.2"
+		death = {
+			death_reason = death_natural_causes # died from kidney failure
+		}
 	}
 }
 
@@ -9618,7 +9693,9 @@
 		religion = "orthodox"
 	}
 	844.1.11 = {
-		death = "844.1.11"
+		death = {
+			death_reason = death_old_age # died on 11 January 844
+		}
 	}
 }
 
@@ -9657,8 +9734,10 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
+	trait = stubborn # Hints from the Chronographia suggest that Staurakios was as strong-willed as his father
+	trait = brave
 	trait = lifestyle_reveler
-	trait = education_martial_2
+	trait = education_martial_2 # Hints from the Chronographia suggest that Staurakios wielded strategic understanding
 	father = 70497
 	
 	773.1.1 = {
@@ -9674,7 +9753,9 @@
 		trait = incapable
 	}
 	812.1.11 = {
-		death = "812.1.11"
+		death = {
+			death_reason = death_mysterious # There were allegations that he was poisoned by his sister Prokopia, rather than dying of gangrene
+		}
 	}
 }
 
@@ -9688,15 +9769,23 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = cynical
-	trait = arbitrary
-	trait = education_intrigue_3
+	trait = diligent
+	trait = stubborn
+	trait = arrogant
+	trait = ambitious
+	trait = education_stewardship_3 # Served as finance minister under Empress Irene
 	
 	750.1.1 = {
 		birth = "750.1.1"
 	}
+	802.10.31 = {
+		give_nickname = nick_the_logothete
+	}
 	811.7.26 = {
-		death = "811.7.26"
+		death = {
+			death_reason = death_battle # Perished at the Battle of Pliska and Krum is said to have had his head severed and used his skull as a drinking cup
+			killer = 159123 # Krum
+		}
 	}
 }
 
@@ -9725,7 +9814,9 @@
 		trait = kinslayer_3
 	}
 	803.8.9 = {
-		death = "803.8.9"
+		death = {
+			death_reason = death_natural_causes # Died in exile on the Island of Lesbos
+		}
 	}
 }
 
@@ -9738,9 +9829,11 @@
 	stewardship = 5
 	religion = "orthodox"
 	culture = "greek"
-	trait = craven
+	trait = arbitrary # Divorced his wife to marry his mistress
+	trait = craven # panicked and fled before the enemy on the battlefield
 	trait = paranoid
-	trait = education_intrigue_1
+	trait = sadistic # ordered the tongues of all four of his uncles to be torn out after Constantine's uncle Nikephoros attempted a coup. tattooed the word “traitor” on the faces of 1,000 of his soldiers
+	trait = education_stewardship_1
 	father = 70500
 	mother = 70498
 	
@@ -9751,7 +9844,10 @@
 		trait = blind
 	}
 	797.8.15 = {
-		death = "797.8.15"
+		death = { # Constantine died shortly after his blinding, almost certainly as a result of his injuries, which were possibly intended to kill not maim
+			death_reason = death_coup_successful
+			killer = 70498 # His mother Irene
+		}
 	}
 }
 
@@ -9767,8 +9863,9 @@
 	culture = "greek"
 	trait = born_in_the_purple
 	trait = weak
+	trait = forgiving
 	trait = honest
-	trait = trusting
+	trait = temperate
 	trait = education_diplomacy_3
 	father = 70501
 	mother = 145787
@@ -9780,7 +9877,9 @@
 		add_spouse = 70498
 	}
 	780.9.8 = {
-		death = "780.9.8"
+		death = { # Leo died of a violent fever, due to his tuberculosis, on 8 September 780
+			death_reason = death_pneumonic
+		}
 	}
 }
 
@@ -9799,10 +9898,14 @@
 	trait = diligent
 	trait = callous
 	trait = zealous
-	trait = education_martial_3
+	trait = education_martial_4
+	trait = holy_warrior # under Constantine the Empire had gone on the offensive against the Arabs after over a century of largely defensive warfare
+	trait = strategist
+	trait = administrator
 	father = 70502
 	718.9.1 = {
 		birth = "718.9.1"
+		give_nickname = nick_the_dung_named # allegedly defaecated during his baptism
 	}
 	735.1.1 = {
 		add_spouse = 145787
@@ -9811,12 +9914,14 @@
 		add_spouse = 145788
 	}
 	775.9.14 = {
-		death = "775.9.14"
+		death = { # Constantine set out on a new campaign against the Bulgarians, during which he developed carbuncles on his legs. He died during his return journey to Constantinople, on 14 September 775
+			death_reason = death_ill
+		}
 	}
 }
 
 70502 = {
-	name = "Leon"
+	name = "Konon"
 	# AKA: Leon 'the Isaurian'
 	dynasty = 8646
 	martial = 6
@@ -9825,15 +9930,27 @@
 	stewardship = 7
 	religion = "iconoclast"
 	culture = "greek"
-	trait = scholar
+	trait = zealous
+	trait = deceitful
 	trait = diligent
+	trait = arrogant
+	trait = stubborn
 	trait = education_stewardship_4
+	trait = unyielding_defender
+	trait = overseer
+	trait = administrator
 	
 	685.1.1 = {
 		birth = "685.1.1"
 	}
+	717.3.25 = { # On 25 March, abandoning his allegiance to Anastasius, Konon was crowned by Patriarch Germanus I of Constantinople as Emperor Leo III
+		name = "Leon"
+		give_nickname = nick_the_isaurian
+	}
 	741.6.18 = {
-		death = "741.6.18"
+		death = { # Leo III died of dropsy on 18 June 741 and was buried in the Church of the Holy Apostles
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -9860,8 +9977,8 @@
 	}
 }
 
-70504 = {
-	name = "Anastasios"
+70504 = { # Byzantine emperor from 713 to 715
+	name = "Artemios" # originally named Artemios (male form of Artemis)
 	dynasty = 1022180
 	martial = 4
 	diplomacy = 4
@@ -9869,6 +9986,7 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
+	trait = diligent
 	trait = deceitful
 	trait = sadistic
 	trait = education_diplomacy_2
@@ -9876,11 +9994,17 @@
 	685.1.1 = {
 		birth = "685.1.1"
 	}
+	713.6.3 = {
+		name = "Anastasios"
+	}
 	715.11.1 = {
 		trait = devoted
 	}
 	719.6.1 = {
-		death = "719.6.1"
+		death = { # Anastasius was executed follwoing a failed rebellion against Leo III the Isaurian
+			death_reason = death_execution
+			killer = 70502 # Leo III
+		}
 	}
 }
 
@@ -9893,12 +10017,17 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = arrogant
-	trait = deceitful
+	trait = ambitious
+	trait = temperate # adopted a moderate political stance
 	trait = callous
 	trait = education_martial_2
+	trait = cautious_leader
 	655.1.1 = {
 		birth = "655.1.1"
+	}
+	698.11.1 = { # After seizing Constantinople, Apsimar took the name Tiberius (III), and had Leontius' nose and tongue cut off before imprisoning him in the Monastery of Dalmatou
+		trait = disfigured
+		trait = devoted
 	}
 	706.2.1 = {
 		death = {
@@ -9919,23 +10048,31 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = arbitrary
-	trait = education_intrigue_2
+	trait = zealous # In domestic affairs, the Emperor's bloody persecution of the Manichaeans, and his suppression of the popular traditions of those who were not of Chalcedonian origin, caused dissension within the Church
+	trait = ambitious
+	trait = education_stewardship_3
+	trait = administrator # Though at times undermined by his own despotic tendencies, Justinian was a talented and perceptive ruler who succeeded in improving the standing of the Byzantine Empire
+	trait = architect
 	father = 70507
 	669.1.1 = {
 		birth = "669.1.1"
 	}
-	695.11.1 = {
-		trait = scarred
+	695.11.1 = { # In 695 the population rose under the leadership of Leontius, the strategos of Hellas, and proclaimed him Emperor. Justinian was deposed and his nose was cut off (later to be replaced by a solid gold replica of his original) to prevent his again seeking the throne
+		trait = disfigured
+		give_nickname = nick_the_slit_nosed
 	}
 	703.1.1 = {
 		add_spouse = 146185
 	}
 	705.08.21 = {
+		trait = vengeful
 		trait = callous
-		# trait = sadistic # can't be both callous and sadistic
 	}
 	711.11.24 = {
-		death = "711.11.24"
+		death = { # He was arrested and executed in November 711, his head being exhibited in Rome and Ravenna
+			death_reason = death_execution # Technicallyed beheaded
+			killer = 145068 # Philippicus
+		}
 	}
 }
 
@@ -9949,15 +10086,20 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "greek"
-	trait = content
 	trait = diligent
+	trait = stubborn
+	trait = paranoid # in late 681 Constantine had his brothers mutilated by slitting their noses so they would be considered ineligible to rule
 	trait = education_stewardship_2
+	trait = unyielding_defender # Best known for successfully fending off the Umayyads in the 5-year Siege of Constantinople (674–678)
 	father = 70508
 	648.1.1 = {
 		birth = "648.1.1"
+		give_nickname = nick_the_younger
 	}
 	685.9.14 = {
-		death = "685.9.14"
+		death = { # Constantine died of dysentery aged just 33 in 685 CE and was succeeded by his son and chosen heir Justinian II
+			death_reason = death_dysentery
+		}
 	}
 }
 
@@ -9972,14 +10114,18 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = arbitrary
-	trait = paranoid
+	trait = paranoid # Constans grew increasingly fearful that his younger brother, Theodosius, could oust him from the throne; he therefore obliged Theodosius to take holy orders and later had him killed in 660
+	trait = temperate # Constans attempted to steer a middle line in the church dispute between Orthodoxy and Monothelitism by refusing to persecute either and prohibiting further discussion of the natures of Jesus Christ by decree in 648
 	trait = education_diplomacy_1
 	father = 70509
 	630.11.7 = {
 		birth = "630.11.7"
 	}
 	668.7.15 = {
-		death = "668.7.15"
+		give_nickname = nick_the_bearded
+		death = { # On 15 July 668, he was assassinated in his bath by his chamberlain, either killed with a bucket or stabbed with a knife
+			death_reason = death_assassination
+		}
 	}
 }
 
@@ -9994,6 +10140,7 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = ill
+	trait = generous # sent a vast sum of money, more than two million solidi (gold coins), to Valentinus, an adjutant of Philagrius, to distribute to the soldiers to persuade them to secure the succession for his sons after his death
 	trait = content
 	trait = education_diplomacy_1
 	father = 145071
@@ -10001,29 +10148,40 @@
 	612.5.3 = {
 		birth = "612.5.3"
 	}
-	641.4.20 = {
-		death = "641.4.20"
+	641.5.25 = {
+		death = { # He died of tuberculosis after only three months, on 25 May, leaving Heraclonas sole emperor
+			death_reason = death_pneumonic
+		}
 	}
 }
 
 70510 = {
 	name = "Maurikios"
 	dynasty = 1022184
-	martial = 8
-	diplomacy = 7
+	martial = 9
+	diplomacy = 4
 	intrigue = 6
-	stewardship = 3
+	stewardship = 11
+	learning = 8
 	religion = "orthodox"
 	culture = "greek"
 	trait = brave
+	trait = arbitrary # His greatest weakness was his inability to judge how unpopular his decisions were
+	trait = diligent
+	trait = temperate # In religious matters, Maurice was tolerant towards Monophysitism, although he was a supporter of the Council of Chalcedon
+	trait = ambitious
+	trait = strategist
+	trait = administrator
 	trait = scholar
-	trait = greedy
-	trait = education_stewardship_3	
+	trait = education_stewardship_4
 	539.1.1 = {
 		birth = "539.1.1"
 	}
 	602.11.27 = {
-		death = "602.11.27"
+		death = { # Maurice was murdered at the harbor of Eutropius on 27 November 602. The deposed emperor was forced to watch his five younger sons executed before he was beheaded himself.
+			death_reason = death_execution
+			killer = 145072 # The usurper Phocas
+		}
 	}
 }
 
@@ -10036,15 +10194,21 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "greek"
+	trait = arrogant # In foreign affairs he took the attitude of the invincible, unbending Roman
+	trait = stubborn # In foreign affairs he took the attitude of the invincible, unbending Roman
+	trait = deceitful # It was foreign powers which he underrated and hoped to bluff by a lofty inflexibility
 	trait = lunatic_1
-	trait = education_intrigue_1
+	trait = education_diplomacy_2
 	mother = 70527
 	
 	520.1.1 = {
 		birth = "520.1.1"
 	}
 	578.10.5 = {
-		death = "578.10.5"
+		trait = reclusive
+		death = { # The last four years of Justin's life were spent in seclusion and relative tranquility, and upon his death he was succeeded as emperor by Tiberius
+			death_reason = death_old_age
+		}
 	}
 }
 
@@ -10055,15 +10219,20 @@
 	martial = 5
 	diplomacy = 6
 	intrigue = 5
-	stewardship = 8
+	stewardship = 10
 	religion = "orthodox"
-	culture = "greek"
+	culture = "roman" # born into an Illyro-Roman family
+	trait = diligent # He displayed great vigour and energy in administering the affairs of the empire
+	trait = just
 	trait = temperate
 	trait = trusting
-	trait = education_stewardship_3
+	trait = education_stewardship_4
+	trait = administrator
+	trait = avaricious # Anastasius left the Imperial treasury with 23,000,000 solidi, which is 320,000 pounds of gold or 420 long tons / Anastasius continued the practice of selling official positions
 	
 	431.1.1 = {
 		birth = "431.1.1"
+		give_nickname = nick_two_pupiled
 	}
 	491.5.1 = {
 		add_spouse = 70530
@@ -10072,12 +10241,14 @@
 		religion = "coptic"
 	}
 	518.7.9 = {
-		death = "518.7.9"
+		death = { # Anastasius died childless in Constantinople on 9 July 518 at the age of 88-90
+			death_reason = death_old_age
+		}
 	}
 }
 
 70515 = {
-	name = "Zenon"
+	name = "Tarasis"
 	dynasty = 1022187
 	martial = 7
 	diplomacy = 6
@@ -10085,18 +10256,23 @@
 	stewardship = 4
 	religion = "orthodox"
 	culture = "greek"
-	trait = honest
-	trait = calm
+	trait = deceitful
+	trait = gregarious
+	trait = diligent
+	trait = vengeful
 	trait = education_diplomacy_3
-	
+	trait = diplomat	
 	425.1.1 = {
 		birth = "425.1.1"
 	}
 	466.10.1 = {
 		add_spouse = 70530
+		name = "Zenon"
 	}
 	491.4.9 = {
-		death = "491.4.9"
+		death = { # Zeno died on 9 April 491, of dysentery or of epilepsy
+			death_reason = death_dysentery
+		}
 	}
 }
 
@@ -10117,9 +10293,12 @@
 	
 	467.1.1 = {
 		birth = "467.1.1"
+		give_nickname = nick_the_younger
 	}
 	474.11.17 = {
-		death = "474.11.17"
+		death = { # Leo II died in Constantinople shortly after 10 October 474. Though there are later theories of murder, this is not reflected in contemporary sources
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -10134,14 +10313,20 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = trusting
-	trait = content
+	trait = ambitious # During his 17-year rule, he oversaw a number of ambitious political and military plans, aimed mostly at aiding the faltering Western Roman Empire and recovering its former territories
+	trait = arrogant # Leo sometimes overestimated his abilities and made mistakes that threatened the internal order of the Empire
 	trait = education_diplomacy_1
 	
 	401.1.1 = {
 		birth = "401.1.1"
 	}
+	471.1.1 = {
+		give_nickname = nick_leo_the_butcher
+	}
 	474.1.18 = {
-		death = "474.1.18"
+		death = { # Leo died of dysentery at the age of 73 on 18 January 474
+			death_reason = death_dysentery
+		}
 	}
 }
 
@@ -10177,7 +10362,9 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "greek"
-	trait = humble
+	trait = lazy # Theodosius, whom Byzantine sources convey as being both unwilling and incapable, was viewed by many of his subjects as a puppet emperor of the troops of the Opsician Theme
+	trait = content # Theodosius was allegedly unwilling to be emperor
+	trait = humble # Theodosius was allegedly unwilling to be emperor
 	trait = education_stewardship_2
 	father = 145069
 	685.1.1 = {
@@ -10187,7 +10374,9 @@
 		trait = devoted
 	}
 	755.1.1 = {
-		death = "755.1.1"
+		death = {
+			death_reason = death_old_age # Theodosius retirede to a monastery where nothing else is definately know of him
+		}
 	}
 }
 
@@ -10551,6 +10740,7 @@
 	name = "Ioannes"
 	# AKA: Ioannes 'Grammatikos'
 	dynasty = 8654
+	father = morocharzanios0001
 	martial = 4
 	diplomacy = 5
 	intrigue = 9
@@ -10563,6 +10753,7 @@
 	
 	800.1.1 = {
 		birth = "800.1.1"
+		give_nickname = nick_grammatikos
 	}
 	867.1.1 = {
 		death = "867.1.1"
@@ -10767,13 +10958,16 @@
 	religion = "orthodox"
 	culture = "greek"
 	trait = ambitious
-	trait = disfigured
 	trait = education_learning_1
 	
 	655.1.1 = {
 		birth = "655.1.1"
 	}
+	705.8.21 = {
+		trait = blind # Upon Justinian's triumphant return to Constantinople and reinstatement as Emperor, Callinicus was arrested and blinded before being imprisoned in a monastery
+	}
 	712.1.1 = {
+		trait = saint # He is recognized as a saint by the Eastern Orthodox Church; his feast day is celebrated on 23 August
 		death = "712.1.1"
 	}
 }
@@ -13469,7 +13663,7 @@
 
 34266 = {
 	name = "Aron"
-	dynasty = 702
+	dynasty_house = house_aaronios
 	religion = "orthodox"
 	culture = "greek"
 	father = 34265
@@ -13483,7 +13677,7 @@
 
 34267 = {
 	name = "Theodoros"
-	dynasty = 702
+	dynasty_house = house_aaronios
 	religion = "orthodox"
 	culture = "greek"
 	father = 34265
@@ -14278,7 +14472,9 @@
 		add_spouse = 1715
 	}
 	976.1.10 = {
-		death = "976.1.10"
+		death = {
+			death_reason = death_mysterious # Tzimiskes died suddenly in 976 returning from his second campaign against the Abbasids. Some suspect Imperial chamberlain Basil Lekapenos
+		}
 	}
 }
 
@@ -16018,15 +16214,21 @@
 }
 
 145069 = {
-	name = "Tiberios"
+	name = "Apsimar"
 	dynasty = 1022179
 	religion = "orthodox"
 	culture = "greek"
+	trait = ambitious
+	trait = just # Head comments that although little is known of Tiberius, the evidence points to him being a "conscientious and effective ruler"
+	trait = diligent
 	trait = arrogant
-	trait = deceitful
-	trait = education_martial_2
+	trait = education_martial_3
+	trait = organizer
 	665.1.1 = {
 		birth = "665.1.1"
+	}
+	698.1.1 = { # Upon being declared Emperor, Apsimar took the regnal name Tiberius
+		name = "Tiberios"
 	}
 	706.2.1 = {
 		death = {
@@ -16046,11 +16248,13 @@
 	626.1.1 = {
 		birth = "626.1.1"
 	}
-	641.4.20 = {
+	642.1.20 = { # Heraclonas' nose cut off in January 642 after his deposition to signify that he could no longer hold political power
 		trait = disfigured
 	}
-	641.12.1 = {
-		death = "641.12.1"
+	642.5.1 = {
+		death = { # After his mutilation, nothing is known of Heraclonas, although it is believed that Heraclonas died in 642, likely in Rhodes - considering the closeness of his death to his disfigurement, likely death was a result of said disfigurement imo
+			death_reason = death_wounds
+		}
 	}
 }
 
@@ -16063,13 +16267,20 @@
 	 trait = brave
 	 trait = arrogant
 	 trait = just
+	 trait = stubborn
+	 trait = ambitious
 	 trait = education_martial_3
-	 trait = faith_warrior
+	 trait = strategist
+	 trait = overseer
+	 trait = holy_warrior
+	 trait = organizer
 	 575.1.1 = {
 		birth = "575.1.1"
 	 }
 	 641.2.11 = {
-		 death = "641.2.11"
+		death = { # Heraclius died of an illness on 11 February 641
+			death_reason = death_ill
+		}
 	 }
 }
 
@@ -16089,7 +16300,10 @@
 		birth = "547.1.1"
 	}
 	610.10.5 = {
-		death = "610.10.5"
+		death = { # When Heraclius captured Phocas, he asked him "Is this how you have ruled, wretch?" Phocas's reply—"And will you rule better?"—so enraged Heraclius that he beheaded Phocas on the spot
+			death_reason = death_execution
+			killer = 145071 # Heraclius
+		}
 	}
 }
 
@@ -16103,11 +16317,14 @@
 	trait = honest
 	trait = cynical
 	trait = education_stewardship_2
+	trait = beauty_good_1 # Tiberius reportedly was tall and handsome, with a regal bearing
 	535.1.1 = {
 		birth = "535.1.1"
 	}
 	582.8.14 = {
-		death = "582.8.14"
+		death = { # Tiberius died on 14 August 582, apparently having eaten some poorly prepared or possibly deliberately poisoned food
+			death_reason = death_ill
+		}
 	}
 }
 
@@ -17233,19 +17450,6 @@
 	824.1.1 = {
 		birth = "824.1.1"
 	}
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 3
-				}
-			}
-		}
-	}
 	884.1.1 = {
 		death = "884.1.1"
 	}
@@ -17654,11 +17858,19 @@
 
 145147 = { # A soldier who caught Emperor Basil I's attention and was raised to the rank of tourmarches
 	name = "Leon" # C.Seleukeia
-	dna = 145147_leon_dna
+	dna = "145147_leon_dna"
 	dynasty = 641
 	religion = "orthodox"
 	culture = "greek"
+	diplomacy = 9
+	martial = 7
+	prowess = 9
 	trait = education_martial_3
+	trait = brave
+	trait = diligent
+	trait = patient
+	trait = strong # Distinguishing quality (?)
+	trait = unyielding_defender
 	830.1.1 = {
 		birth = "830.1.1"
 	}
@@ -18410,6 +18622,19 @@
 	832.1.1 = {
 		birth = "832.1.1"
 	}
+	867.1.1 = {
+		effect = {
+			if = {
+				limit = {
+					government_allows = administrative
+				}
+				vassal_contract_set_obligation_level = {
+					type = administrative_themes
+					level = 1
+				}
+			}
+		}
+	}
 	908.1.1 = {
 		death = "908.1.1"
 	}
@@ -18486,19 +18711,6 @@
 	culture = "greek"
 	834.1.1 = {
 		birth = "834.1.1"
-	}
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 5
-				}
-			}
-		}
 	}
 	896.1.1 = {
 		death = "896.1.1"
@@ -18712,7 +18924,9 @@
 		birth = "893.1.1"
 	}
 	931.8.1 = { # died in August of the 4th Indication (931), heavily mourned by his father Romanos
-		death = "931.8.1"
+		death = {
+			death_reason = death_natural_causes
+		}
 	}
 }
 
@@ -18735,7 +18949,7 @@
 	}
 	963.4.18 = { # He died on April 18, 963 (Easter Saturday), allegedly (attributed by hostile sources) poisoned on the orders of Theophanos, the widow of Romanos II
 		death = {
-			death_reason = death_poison
+			death_reason = death_mysterious # Probably not poisoned by Theophano
 		}
 	}
 }
@@ -18775,7 +18989,10 @@
 		birth = "430.1.1"
 	}
 	477.1.1 = {
-		death = "477.1.1"
+		death = { # Zeno exiled Basiliskos to Limnae in Cappadocia, where Basiliskos was imprisoned in a dried-up cistern, and left to starve to death.
+			death_reason = death_starved
+			killer = 70515 # Emperor Zenon
+		}
 	}
 }
 
@@ -19898,7 +20115,7 @@
 	}
 }
 
-145789 = {
+145789 = { # https://en.wikipedia.org/wiki/Nikephoros_(Caesar)
 	name = "Christophoros"
 	dynasty = 8646
 	religion = "iconoclast"
@@ -22343,19 +22560,6 @@
 	855.4.16 = {
 		add_spouse = 302356
 	}
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 3
-				}
-			}
-		}
-	}
 	903.4.16 = {
 		death = yes
 	}
@@ -22461,13 +22665,16 @@
 	culture = greek
 	trait = trusting
 	trait = brave
+	trait = zealous
 	trait = education_learning_4
+	trait = lifestyle_traveler
 	
 	8.1.1 = {
 		birth = yes
 		give_nickname = nick_the_apostle
 	}
 	65.1.1 = {
+		trait = saint
 		death = yes
 	}
 }

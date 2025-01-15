@@ -1202,7 +1202,9 @@ d_spoleto = {
 	824.9.1 = {
 		holder = 167881
 	}
-	
+	834.1.1 = {
+		holder = 71906 # Lambert I; was sent to Italy where Lothar gave him land and installed him as LAMBERT I Marchese and Duke of Spoleto
+	}	
 	836.12.30 = {
 		holder = 71905
 	}
@@ -1557,6 +1559,7 @@ c_orvieto = {
 		liege = "k_papal_state" # Part of the Papal States
 	}
 	1066.1.1 = {
+		liege = "d_toscana"
 		holder = 20330
 	}
 	1095.1.1 = {

@@ -74,7 +74,7 @@
 
 6856 = {
 	name = "Sarica"
-	dna = 6856_sarica_dulo
+	dna = "6856_sarica_dulo"
 	female = yes
 	religion = "tengri_pagan"
 	culture = bolghar
@@ -419,7 +419,7 @@
 
 125600 = { #Almis Dulo, son of Shilki Dulo
 	name = "Almis"
-	dna = 125600_almis_dulo
+	dna = "125600_almis_dulo"
 	# AKA: Almis Djafar
 	dynasty = 591
 	religion = "tengri_pagan"
@@ -562,7 +562,7 @@
 
 159128 = { #Ruler of Volga Bulgaria in 867
 	name = "Shilki"
-	dna = 159128_shilki_dulo
+	dna = "159128_shilki_dulo"
 	dynasty = 591
 	religion = "tengri_pagan"
 	culture = bolghar

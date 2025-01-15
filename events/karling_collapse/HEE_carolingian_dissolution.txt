@@ -15,9 +15,6 @@ HEE_carolingian_dissolution.9999 = {
 		character = scope:arnulf
 		animation = personality_bold
 	}
-	# lower_left_portrait = scope:arnulf
-	# lower_center_portrait = scope:louis_the_younger
-	# lower_right_portrait = scope:ludwig_the_younger
 
 	trigger = {
 		is_alive = yes
@@ -692,4 +689,54 @@ HEE_carolingian_dissolution.9999 = {
  		}
 		
 	}
+
+	after = {
+		# Send the appropriate notification event to each player.
+		every_ruler = { # Notify appropriate rulers of the End of the Carolingian Empire
+			limit = {
+				AND = {
+					is_ai = no
+					OR = {
+						title_capital_county.title_province = { geographical_region = world_europe_west } # Iberia, Francia, Germania, Britannia
+						title_capital_county.title_province = { geographical_region = world_europe_south } # Italia, Sicily, Western ERE
+					}
+				}
+			}
+			trigger_event = HEE_fatimid_uprising.0103 # Notify nearby rulers of the start of aggressive Fatimid Expansion
+		}
+	}
+}
+
+HEE_carolingian_dissolution.10000 = { # Fullscreen Intro Event
+	type = character_event
+	window = fullscreen_event
+	title = HEE_carolingian_dissolution.10000.t
+	desc = HEE_carolingian_dissolution.10000.desc
+	theme = realm
+	override_background = { reference = fp3_fullscreen_sunder }
+	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
+
+	immediate = {
+		play_music_cue = "mx_cue_negative"
+
+		if = {
+			limit = {
+				dynasty = dynasty:25061 # Karlings
+			}
+			add_legitimacy = -250
+		}
+
+		add_stress = 100
+	}
+
+	option = {
+		name = HEE_carolingian_dissolution.10000.a
+
+		custom_tooltip = ponder_the_future_of_europe
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
 }

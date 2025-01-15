@@ -1014,8 +1014,13 @@
 	stewardship = 4
 	religion = "catholic"
 	culture = franconian
-	trait = cynical
-	trait = education_martial_3
+	trait = generous
+	trait = just # Supposedly gave laws to the lawless Saxon
+	trait = lustful # Rumours of Henry's immorality established his bad reputation for centuries
+	trait = zealous #  the Song of the Saxon War praised him as a "king second to none in his piety" who defended the widows and the poor and gave laws to the lawless Saxons
+	trait = education_martial_2
+	trait = reckless # Had a tendency to engage in pitched battles
+	trait = beauty_good_1 # Described as tall and handsome
 	father = 1314
 	mother = 237
 	1050.1.12 = {
@@ -10745,12 +10750,15 @@ hohenlohe_1 = {
 	}
 }
 
-31702 = {
+31702 = { # Adalard the Seneschal; served as warden of the Norman march from 861 to 865, and was Lord Chancellor of France under Louis the Pious
 	name = "Adalhard" #count of Metz
 	dynasty = 667
 	religion = "catholic"
 	culture = franconian
 	father = 31701
+	trait = education_stewardship_3
+	trait = generous
+	trait = trusting
 	810.1.2 = {
 		birth = "810.1.2"
 	}

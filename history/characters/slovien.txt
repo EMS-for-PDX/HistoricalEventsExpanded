@@ -73,6 +73,7 @@
 187002 = {
 	name = "Rostislav"
 	# AKA: Rostislav Mojmírovci
+	dna = "187002_dna"
 	dynasty = 7508
 	religion = "slavic_pagan"
 	culture = "slovien"
@@ -97,6 +98,7 @@
 187003 = {
 	name = "Svatopluk"
 	# AKA: Svatopluk Mojmírovci
+	dna = "187003_dna"
 	dynasty = 7508
 	religion = "catholic"
 	culture = "slovien"

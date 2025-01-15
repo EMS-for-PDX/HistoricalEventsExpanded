@@ -111,7 +111,7 @@
 	create_character = {
 		name = "Seljuk"
 		age = 75
-
+		gender = male
 		dynasty_house = house:house_seljuk
 		martial = 8
 		diplomacy = 4
@@ -142,6 +142,7 @@
 		dynasty_house = house:house_seljuk
 
 		age = 55
+		gender = male
 
 		martial = 6
 		diplomacy = 8
@@ -167,7 +168,7 @@
 	create_character = {
 		name = "Chagri-Beg"
 		age = { 30 40 }
-
+		gender = male
 		dynasty_house = house:house_seljuk
 		location = scope:seljuk_birthplace
 		culture = scope:seljuk_birth_culture
@@ -186,6 +187,7 @@
 	# SELJUK Tughril I
 	create_character = {
 		age = { 30 40 }
+		gender = male
 		name = "Tughril-Beg"
 		location = scope:seljuk_birthplace
 		culture = scope:seljuk_birth_culture
@@ -2920,5 +2922,76 @@ kalandozasok_war_target_evaluation_and_declaration_effect = {
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}
+	}
+}
+
+
+## Umar ibn Hafsun ##
+
+spawn_ibn_hafsun_character_effect = {
+	title:c_malaga.title_province = {
+		save_scope_as = ibn_hafsun_birth_location
+	}
+
+	create_character = { # The Hafsun in ibn Hafsun
+		name = "Hafsun"
+		location = scope:ibn_hafsun_birth_location
+		template = HEE_fatimid_founder_confidant_template
+		save_scope_as = fatimid_founder_confidant
+	}
+
+	create_character = {
+		name = "Hafsun"
+		age = { 65 70 }
+		dynasty = none
+
+		gender = male
+		faith = faith:muwalladi
+		culture = culture:andalusian
+
+		location = scope:ibn_hafsun_birth_location
+
+		random_traits = yes
+		
+		save_scope_as = hafsun
+
+		after_creation = {
+			death = { death_reason = death_natural_causes }
+		}
+	}
+
+	create_character = {
+		name = "Umar"
+		location = scope:ibn_hafsun_birth_location
+		template = umar_ibn_hafsun_template
+		dynasty = none # a man of pagan origin, of obscure and unknown ancestry
+		father = scope:hafsun
+		save_scope_as = Umar_ibn_Hafsun
+	}
+	
+	scope:Umar_ibn_Hafsun = {
+		add_character_flag = {
+			flag = no_headgear # Not a seeker of formal royality status and its associated regalia
+		}
+		# Make temporarily immune to disease
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 15
+		}
+		add_gold =  { medium_gold_max_value_static major_gold_max_value_static }
+		add_prestige = { medium_prestige_value massive_prestige_value }
+		add_piety = { medium_piety_value massive_piety_value }
+		add_martial_lifestyle_xp = 10000
+		add_trait_xp = {
+			trait = gallowsbait
+			track = bandit
+			value = {
+				integer_range = {
+					min = medium_lifestyle_random_xp_low
+					max = medium_lifestyle_random_xp_high
+				}
+			}
+		}
+
 	}
 }

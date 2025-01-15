@@ -5,7 +5,8 @@ HEE_siege_of_salerno.0001 = { #Prince Guaifer meets an Arab who compliments the 
 	type = character_event
 	title = HEE_siege_of_salerno.0001.t
 	desc = HEE_siege_of_salerno.0001.desc
-	theme = crown # Change
+	theme = realm # Change
+	override_background = { reference = market_west } # Event takes place in a marketplace
 	left_portrait = {
 		character = root
 		animation = personality_forgiving
@@ -150,7 +151,8 @@ HEE_siege_of_salerno.0100 = { #Aghlabid Emir hears of the fall of Bari
 	type = character_event
 	title = HEE_siege_of_salerno.0100.t
 	desc = HEE_siege_of_salerno.0100.desc
-	theme = crown # Change
+	theme = martial
+	override_background = { reference = council_chamber } # Event takes place in a courtroom/coucil chamber
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -233,7 +235,8 @@ HEE_siege_of_salerno.0101 = { #The Emir of Ifriqiya decides how to respond
 	type = character_event
 	title = HEE_siege_of_salerno.0101.t
 	desc = HEE_siege_of_salerno.0101.desc
-	theme = crown # Change
+	override_background = { reference = council_chamber } # Event takes place in a courtroom/coucil chamber
+	theme = martial
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -317,7 +320,7 @@ HEE_siege_of_salerno.0101 = { #The Emir of Ifriqiya decides how to respond
 			stewardship = 6
 			intrigue = 6
 			learning = 5
-			prowess = 8
+			prowess = 10
 			save_scope_as = ifriqiya_commander	
 		}
 	}
@@ -630,7 +633,7 @@ HEE_siege_of_salerno.0002 = { #An Amalfitan merchant warns Prince Guaifer
 	type = character_event
 	title = HEE_siege_of_salerno.0002.t
 	desc = HEE_siege_of_salerno.0002.desc
-	theme = crown # Change
+	theme = diplomacy # Change
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -757,7 +760,7 @@ HEE_siege_of_salerno.0003 = { #Ask the Southern Italian lords for aid
 	type = character_event
 	title = HEE_siege_of_salerno.0003.t
 	desc = HEE_siege_of_salerno.0003.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = stress
@@ -847,7 +850,7 @@ HEE_siege_of_salerno.0003 = { #Ask the Southern Italian lords for aid
 	option = {
 		name = HEE_siege_of_salerno.0003.b
 		
-		custom_tooltip = dismiss_the_merchant_rumors
+		custom_tooltip = face_the_threat_to_salerno_alone
 
 		# stress_impact = {
 
@@ -859,11 +862,11 @@ HEE_siege_of_salerno.0003 = { #Ask the Southern Italian lords for aid
 	}
 }
 
-HEE_siege_of_salerno.0004 = { #Ask the Southern Italian lords for aid
+HEE_siege_of_salerno.0004 = { #Southern Italian lords recieve the request for aid
 	type = character_event
 	title = HEE_siege_of_salerno.0004.t
 	desc = HEE_siege_of_salerno.0004.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_forgiving
@@ -994,7 +997,7 @@ HEE_siege_of_salerno.0005 = { #Salerno must decide if the help of Louis II of It
 	type = character_event
 	title = HEE_siege_of_salerno.0005.t
 	desc = HEE_siege_of_salerno.0005.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -1235,9 +1238,9 @@ HEE_siege_of_salerno.0006 = { #Salerno must decide who to send as their envoy
 
 HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 	type = character_event
-	title = HEE_siege_of_salerno.0006.t
-	desc = HEE_siege_of_salerno.0006.desc
-	theme = crown # Change
+	title = HEE_siege_of_salerno.0007.t
+	desc = HEE_siege_of_salerno.0007.desc
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -1306,9 +1309,11 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 			}
 		}
 
-		# stress_impact = {
-
-		# }
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			zealous = minor_stress_impact_loss
+			ambitious = minor_stress_impact_loss
+		}
 		
 		ai_chance = {
 			base = 100
@@ -1334,9 +1339,10 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 			}
 		}
 
-		# stress_impact = {
-
-		# }
+		stress_impact = {
+			generous = minor_stress_impact_loss
+			greedy = major_stress_impact_gain
+		}
 		
 		ai_chance = {
 			base = 0
@@ -1349,6 +1355,11 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 		custom_tooltip = salerno_is_not_my_problem
 
 		hidden_effect = {
+			# Your refusal to defend Christendom tarnishes your reputation
+			add_legitimacy = -500
+			add_prestige_level = -1
+			add_piety_level = -1
+
 			scope:salerno_envoy = {
 				trigger_event = {
 					id = HEE_siege_of_salerno.0879
@@ -1356,10 +1367,13 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 			}
 		}
 
-		# stress_impact = {
+		stress_impact = {
+			zealous = major_stress_impact_gain
+			brave = major_stress_impact_gain
+			ambitious = minor_stress_impact_gain
+			craven = major_stress_impact_loss
+		}
 
-		# }
-		
 		ai_chance = {
 			base = 0
 		}
@@ -1367,7 +1381,14 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 
 	option = {
 		name = HEE_siege_of_salerno.0007.d
-		trigger = { scope:ruler_of_salerno = { has_character_flag = joined_adelchis_conspiracy } }
+		trigger = { 
+			scope:louis_the_younger = {
+				has_opinion_modifier = {
+					modifier = schemed_against_me # Louis has experienced Salerno's betrayal and holds it against them
+					target = scope:ruler_of_salerno
+				}
+			}
+		}
 
 		custom_tooltip = i_remember_salerno_intrigues
 
@@ -1381,9 +1402,10 @@ HEE_siege_of_salerno.0007 = { #Louis recieves an envoy from Salerno
 			days = { 20 40 }
 		}
 
-		# stress_impact = {
-
-		# }
+		stress_impact = {
+			vengeful = minor_stress_impact_loss
+			forgiving = major_stress_impact_gain
+		}
 		
 		ai_chance = {
 			base = 1000

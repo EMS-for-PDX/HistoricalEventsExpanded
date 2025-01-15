@@ -219,7 +219,7 @@ hee_seljuk_1066_effect = {
 		
 		add_trait = faith_warrior
 		
-		add_trait = blademaster_2
+		add_trait = lifestyle_blademaster
 		
 		add_character_flag = {
 			flag = immune_to_disease

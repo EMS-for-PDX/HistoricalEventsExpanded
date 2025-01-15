@@ -1,5 +1,5 @@
 ﻿#Bookmark Characters
-41505_ashot_I_bagratuni = { #King of Armenia 867
+41505_ashot_I_bagratuni_dna = { #King of Armenia 867
 	portrait_info = {
 		genes={ 		
 			hair_color={ 235 253 235 253 }
@@ -565,7 +565,7 @@ armenian_000081_abas_dna = { # Abas, brother of Ashot
 	enabled=yes
 }
 
-HEE_kaysite_son_dna = { # 'Abd al-Hamid, son of Abul Ward
+extra_kaysites_0001_dna = { # 'Abd al-Hamid, son of Abul Ward
 	portrait_info = {
 		genes={	
 			hair_color={ 107 231 110 230 }

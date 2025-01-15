@@ -43,3 +43,25 @@ d_laamp_hanzali = { # Muhammad ibn Wasil's band of adventurers
 		holder = 0
 	}
 }
+
+d_laamp_hastein = { # Hastein's band of roaming Vikings
+	859.1.1 = { # In 837 he took command of a group of Kharijites at Bost, and revolted against the Abbasid authorities
+		liege = 0
+		holder = 6878 # Hastein
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	896.1.1 = { # Hastein disappeared from history in around 896
+		holder = 0
+	}
+}

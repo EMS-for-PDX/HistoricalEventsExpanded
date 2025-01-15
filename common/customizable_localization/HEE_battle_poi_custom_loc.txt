@@ -1,0 +1,293 @@
+﻿## For HEE's Historical Battles not included in Vanilla ##
+
+BattlePoiNameHistorical = {
+	type = province
+
+	text = { # Battle of Tours
+		trigger = {
+			this = province:2253
+		}
+		localization_key = BattlePoIHistoricalNameTours
+	}
+
+	text = { # Battle of Lechfeld
+		trigger = {
+			this = province:2778
+		}
+		localization_key = BattlePoIHistoricalNameLechfeld
+	}
+
+	text = { # Battle of Hastings
+		trigger = {
+			this = province:1509
+		}
+		localization_key = BattlePoIHistoricalNameHastings
+	}
+
+	text = { # Battle of Stamford Bridge
+		trigger = {
+			this = province:1595
+		}
+		localization_key = BattlePoIHistoricalNameStamfordBridge
+	}
+
+	text = { # Battle of Manzikert
+		trigger = {
+			this = province:701
+		}
+		localization_key = BattlePoIHistoricalNameManzikert
+	}
+
+	text = { # Battle of Yarmuk
+		trigger = {
+			this = province:5954
+		}
+		localization_key = BattlePoIHistoricalNameYarmuk
+	}
+
+	text = { # Battle of Dandanaqan
+		trigger = {
+			this = province:4008
+		}
+		localization_key = BattlePoIHistoricalNameDandanaqan
+	}
+
+	text = { # Battle of Aror
+		trigger = {
+			this = province:1175
+		}
+		localization_key = BattlePoIHistoricalNameAror
+	}
+
+	text = { # Battle of Svolder
+		trigger = {
+			this = province:2811
+		}
+		localization_key = BattlePoIHistoricalNameSvolder
+	}
+
+	text = { # Battle of Civitate
+		trigger = {
+			this = province:2605
+		}
+		localization_key = BattlePoIHistoricalNameCivitate
+	}
+
+	text = { # Battle of Talas
+		trigger = {
+			this = province:7132
+		}
+		localization_key = BattlePoIHistoricalNameTalas
+	}
+
+
+	## Custom ##
+	text = { # Battle of Adrianople (9 August 378)
+		trigger = {
+			this = province:494 # Near Adrianople (modern-day Edirne, Turkey)
+		}
+		localization_key = BattlePoIHistoricalNameAdrianople
+	}
+
+	text = { # Battle of the Catalaunian Plains (20 June 451 AD)
+		trigger = {
+			this = province:2371 # Montgueux just west of Troyes. The actual location of the Catalaunian Fields has long been considered unclear, but the ridge at Montgueux is currently the most thoroughly researched proposal for the battlefield location. 
+		}
+		localization_key = BattlePoIHistoricalNameCatalaunianPlains
+	}
+
+	text = { # Battle of Badr (13 March 624 CE (17 Ramadan 2 AH))
+		trigger = {
+			this = province:6210 # Badr 
+		}
+		localization_key = BattlePoIHistoricalNameBadr
+	}
+
+	text = { # Battle of Nahavand (642 AD)
+		trigger = {
+			this = province:4116 # Nahavand 
+		}
+		localization_key = BattlePoIHistoricalNameNahavand
+	}
+
+	text = { # Battle of Guadalete (July 711)
+		trigger = {
+			this = province:1842 # Tarifa; The exact location and date of battle is unknown. Most historians place the battle somewhere in the province of Cadiz
+		}
+		localization_key = BattlePoIHistoricalNameGuadalete
+	}
+
+	text = { # Battle of Covadonga (Summer of 722 AD)
+		trigger = {
+			this = province:1817 # Riano; Picos de Europa near Covadonga
+		}
+		localization_key = BattlePoIHistoricalNameCovadonga
+	}
+
+	text = { # Battle of Pliska (26 July 811)
+		trigger = {
+			this = province:3686 # Shumen; Pliska is around 20 km northeast of Shumen
+		}
+		localization_key = BattlePoIHistoricalNamePliska
+	}
+
+	text = { # Battle of Lalakaon (September 3, 863)
+		trigger = {
+			this = province:5593 # The two armies met on the borders between the themes of Armeniakon and Paphlagonia, more specifically at a site called Poson, close to the Lalakaon River - Though the region of Poson and the Lalakaon River can not be identified with certitude
+		}
+		localization_key = BattlePoIHistoricalNameLalakaon
+	}
+
+	text = { # The Battle of Legnano (May 29, 1176)
+		trigger = {
+			this = province:2480 # 
+		}
+		localization_key = BattlePoIHistoricalNameLegnano
+	}
+}
+
+BattlePoIDescriptionHistorical = {
+	type = province
+
+	text = { # Battle of Tours
+		trigger = {
+			this = province:2253
+		}
+		localization_key = BattlePoIHistoricalDescTours
+	}
+
+	text = { # Battle of Lechfeld
+		trigger = {
+			this = province:2778
+		}
+		localization_key = BattlePoIHistoricalDescLechfeld
+	}
+
+	text = { # Battle of Hastings
+		trigger = {
+			this = province:1509
+		}
+		localization_key = BattlePoIHistoricalDescHastings
+	}
+
+	text = { # Battle of Stamford Bridge
+		trigger = {
+			this = province:1595
+		}
+		localization_key = BattlePoIHistoricalDescStamfordBridge
+	}
+
+	text = { # Battle of Manzikert
+		trigger = {
+			this = province:701
+		}
+		localization_key = BattlePoIHistoricalDescManzikert
+	}
+
+	text = { # Battle of Yarmuk
+		trigger = {
+			this = province:5954
+		}
+		localization_key = BattlePoIHistoricalDescYarmuk
+	}
+
+	text = { # Battle of Dandanaqan
+		trigger = {
+			this = province:4008
+		}
+		localization_key = BattlePoIHistoricalDescDandanaqan
+	}
+
+	text = { # Battle of Aror
+		trigger = {
+			this = province:1175
+		}
+		localization_key = BattlePoIHistoricalDescAror
+	}
+
+	text = { # Battle of Svolder
+		trigger = {
+			this = province:2811
+		}
+		localization_key = BattlePoIHistoricalDescSvolder
+	}
+
+	text = { # Battle of Civitate
+		trigger = {
+			this = province:2605
+		}
+		localization_key = BattlePoIHistoricalDescCivitate
+	}
+
+	text = { # Battle of Talas
+		trigger = {
+			this = province:7132
+		}
+		localization_key = BattlePoIHistoricalDescTalas
+	}
+
+	## Custom ##
+
+	text = { # Battle of Adrianople (9 August 378)
+		trigger = {
+			this = province:494 # Near Adrianople (modern-day Edirne, Turkey)
+		}
+		localization_key = BattlePoIHistoricalNameAdrianople
+	}
+
+	text = { # Battle of the Catalaunian Plains (20 June 451 AD)
+		trigger = {
+			this = province:2371 # Montgueux just west of Troyes. The actual location of the Catalaunian Fields has long been considered unclear, but the ridge at Montgueux is currently the most thoroughly researched proposal for the battlefield location. 
+		}
+		localization_key = BattlePoIHistoricalNameCatalaunianPlains
+	}
+
+	text = { # Battle of Badr (13 March 624 CE (17 Ramadan 2 AH))
+		trigger = {
+			this = province:6210 # Badr 
+		}
+		localization_key = BattlePoIHistoricalNameBadr
+	}
+
+	text = { # Battle of Nahavand (642 AD)
+		trigger = {
+			this = province:4116 # Nahavand 
+		}
+		localization_key = BattlePoIHistoricalNameNahavand
+	}
+
+	text = { # Battle of Guadalete (July 711)
+		trigger = {
+			this = province:1844 # Tarifa; The exact location and date of battle is unknown. Most historians place the battle somewhere in the province of Cadiz
+		}
+		localization_key = BattlePoIHistoricalNameGuadalete
+	}
+
+	text = { # Battle of Covadonga (Summer of 722 AD)
+		trigger = {
+			this = province:1817 # Riano; Picos de Europa near Covadonga
+		}
+		localization_key = BattlePoIHistoricalNameCovadonga
+	}
+
+	text = { # Battle of Pliska (26 July 811)
+		trigger = {
+			this = province:3686 # Shumen; Pliska is around 20 km northeast of Shumen
+		}
+		localization_key = BattlePoIHistoricalNamePliska
+	}
+
+	text = { # Battle of Lalakaon (September 3, 863)
+		trigger = {
+			this = province:5593 # 
+		}
+		localization_key = BattlePoIHistoricalNameLalakaon
+	}
+
+	text = { # The Battle of Legnano (May 29, 1176)
+		trigger = {
+			this = province:2480 # 
+		}
+		localization_key = BattlePoIHistoricalNameLegnano
+	}
+}

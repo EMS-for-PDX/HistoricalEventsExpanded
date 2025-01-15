@@ -1341,32 +1341,9 @@
 
 302717 = {
 	name = "Yavdi"
-	dna = 302717_yavdi_aqton
 	dynasty = 2001110	#Aqton
 	religion = tengri_pagan
 	culture = pecheneg
-
-	#Skills
-	diplomacy = 10
-	martial = 9
-	stewardship = 7
-	intrigue = 5
-	learning = 5
-	prowess = 7
-	
-	#Education
-	trait = education_martial_4
-	
-	#Personality Traits
-	trait = gregarious
-	trait = brave
-	trait = vengeful
-	trait = ambitious
-	
-	#Other Traits
-	trait = organizer
-	trait = reaver
-
 	836.2.12 = {
 		birth = yes
 	}

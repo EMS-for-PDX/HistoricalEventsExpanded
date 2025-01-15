@@ -46,7 +46,7 @@ k_aquitaine = {
 	#	#Effectively part of West Francia
 	#}
 	
-	866.1.30 = {	#Workaround as we don't support vassalage of same tier title, so we have to go around that
+	866.9.29 = {	#Workaround as we don't support vassalage of same tier title, so we have to go around that
 		holder = 90104 #Charles II le Chauve
 	}	
 	877.1.1 = {
@@ -199,13 +199,13 @@ c_bordeaux = {
 	848.1.1 = {
 		#Asgeir, Viking chieftain(848-863)
 		liege = 0
-		holder = HEE_asgeir
+		holder = aquitaine_viking_0001
 		government = tribal_government
 	}
 	865.1.1 = {
 		#Sygtrygg, Asgeir's successor
 		liege = 0
-		holder = HEE_sygtrygg
+		holder = aquitaine_viking_0002
 		government = tribal_government
 	}
 	# 863.1.1 = {
@@ -322,12 +322,12 @@ c_labourd = {
 	858.1.1 = {
 		#Asgeir, Viking chieftain(848-863)
 		liege = 0
-		holder = HEE_asgeir
+		holder = aquitaine_viking_0001
 	}
 	865.1.1 = {
 		#Sygtrygg, Asgeir's successor
 		liege = 0
-		holder = HEE_sygtrygg
+		holder = aquitaine_viking_0002
 	}
 	# 846.1.1 = {
 		# #historically ruled by normans from 846 to 982
@@ -429,11 +429,11 @@ c_albret = { # Needs to create the Lords of Albret that ruled 820-1572
 	}
 	858.1.1 = {
 		#Asgeir, Viking chieftain(848-863)
-		holder = HEE_asgeir
+		holder = aquitaine_viking_0001
 	}
 	865.1.1 = {
 		#Sygtrygg, Asgeir's successor
-		holder = HEE_sygtrygg
+		holder = aquitaine_viking_0002
 	}
 	# 864.1.1 = {
 		# liege = "d_gascogne"
@@ -1063,7 +1063,7 @@ c_limousin = {
 	}
 	853.1.1 = {
 		liege = d_aquitaine
-		holder = 168055 #Gerhard II, Count of Limousin
+		holder = 168055 #Gerhard II, Count of Limousin/Aurillac
 	}
 	879.1.1 = {
 		holder = 40264	#Foucher/Foulques
@@ -3028,8 +3028,9 @@ c_bellac = {
 		holder = 90129	#Ramnulf I
 		liege = d_aquitaine
 	}
-	866.10.1 = {
-		holder = 90128	#Ramnulf II
+	853.1.1 = {
+		liege = d_aquitaine
+		holder = 168055 #Gerhard II, Count of Limousin/Aurillac
 	}
 	879.1.1 = {
 		holder = 90155
@@ -3193,9 +3194,9 @@ c_la_marche = {
 	839.1.1 = {
 		holder = 90129	#Ramnulf I
 	}
-	866.10.1 = {
-		holder = 90128	#Ramnulf II
-		liege = "d_aquitaine"
+	853.1.1 = {
+		liege = d_aquitaine
+		holder = 168055 #Gerhard II, Count of Limousin/Aurillac
 	}
 	879.1.1 = {
 		holder = 90155
@@ -3410,7 +3411,7 @@ c_poitiers = {
 	838.1.1 = {
 		holder = 168136	#Bernard II, Count of Poitiers
 	}
-	839.1.1 = {
+	854.1.1 = {
 		holder = 90129	#Ramnulf I
 		liege = d_aquitaine
 	}
@@ -3553,10 +3554,15 @@ c_lusignan = {
 }
 
 c_montaigu = {
-	865.1.1 = {
-		liege = 0
-		holder = 6878 # Hastein, the feared Viking chieftain
-		#Hastein had a base on the island of Noirmoutier
+	841.1.1 = {
+		holder = 168039 # Renaud d'Herbauges
+		liege = k_france
+	}
+	843.5.24 = {
+		holder = 168039 # Hervé d'Herbauges
+	}
+	844.1.1 = {
+		holder = 168041 # Ragenold of Neustria
 	}
 	876.1.1 = {
 		holder = 144964	#Geoffrey de Thouars

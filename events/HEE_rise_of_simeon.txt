@@ -339,6 +339,8 @@ HEE_rise_of_simeon.0003 = { #Simeon is installed
 				}
 				remove_trait = devoted
 			}
+
+			add_character_modifier = imperial_ambitions_modifier
 			
 			# trigger_event = {
 				# id = HEE_rise_of_simeon.0004
@@ -503,25 +505,25 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 
 				if = {
 					limit = {
-						diplomacy < 14
+						diplomacy < 20
 					}
 					add_diplomacy_skill = 5
 				}
 				if = {
 					limit = {
-						martial < 14
+						martial < 20
 					}
 					add_martial_skill = 5
 				}
 				if = {
 					limit = {
-						stewardship < 14
+						stewardship < 20
 					}
 					add_stewardship_skill = 5
 				}
 				if = {
 					limit = {
-						intrigue < 14
+						intrigue < 20
 					}
 					add_intrigue_skill = 5
 				}
@@ -538,7 +540,7 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 					add_prowess_skill = 5
 				}
 
-				add_trait = education_learning_5
+				add_trait = education_stewardship_5
 				add_trait = zealous
 				add_trait = diligent
 				add_trait = brave
@@ -546,8 +548,6 @@ HEE_rise_of_simeon.2000 = { #Simeon returns home
 
 				remove_trait = intellect_good_1
 				add_trait = intellect_good_2
-				
-				add_character_modifier = imperial_ambitions_modifier
 			}
 		}
 	}

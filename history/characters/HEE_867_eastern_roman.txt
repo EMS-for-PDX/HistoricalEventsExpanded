@@ -172,40 +172,49 @@ makedon0010 = { # Son of Leon VI by his third wife Eudokia Baïane. Mother and s
 	}
 }
 
-makedon0011 = { # Daughter of Leon VI. and probably the Zoe Karbonopsina - https://www.degruyter.com/database/PMBZ/entry/PMBZ24729/html
+makedon0011 = { # Daughter of Leon VI. and probably Zoe Karbonopsina - https://www.degruyter.com/database/PMBZ/entry/PMBZ24729/html
 	name = "Helene"
+	female = yes
 	dynasty = 644
 	father = 1702
 	mother = 1703
 	religion = "orthodox"
 	culture = "greek"
 	trait = twin
-	903.1.1 = { # Unknown 
+	902.1.1 = { # Unknown 
 		birth = yes
 	}
-	901.4.15 = { # Mother and child died during birth on April 12, 901, though because the child was named, it is possible he lived for atleast a time
+	912.1.1 = {
+		trait = devoted # Assuming she followed the path of many Makedon princesses and become a nun
+	}
+	955.1.1 = { # Unknown; She is mentioned together with her siblings Anna, Maria, Constantine VII, her father Leon VI and her uncle Alexandros in an inscription on the city wall of Constantinople near the Petrion, which was created between 905 and 912. Nothing else is known
 		death = yes
 	}
 }
 
-makedon0012 = { # Daughter of Leon VI. and probably the Zoe Karbonopsina - https://www.degruyter.com/database/PMBZ/entry/PMBZ27075/html
+makedon0012 = { # Daughter of Leon VI. and probably Zoe Karbonopsina - https://www.degruyter.com/database/PMBZ/entry/PMBZ27075/html
 	name = "Maria"
+	female = yes
 	dynasty = 644
 	father = 1702
 	mother = 1703
 	religion = "orthodox"
 	culture = "greek"
 	trait = twin
-	903.1.1 = { # Unknown; 
+	903.1.1 = { # Unknown; According to Kresten, she was the youngest daughter of Leon VI, so she was probably born in the first years of the 10th century.
 		birth = yes
 	}
-	901.4.15 = { # Unknown 
+	912.1.1 = {
+		trait = devoted # Assuming she followed the path of many Makedon princesses and become a nun
+	}
+	947.1.1 = { # Unknown; She is mentioned together with her siblings Anna, Maria, Constantine VII, her father Leon VI and her uncle Alexandros in an inscription on the city wall of Constantinople near the Petrion, which was created between 905 and 912. Nothing else is known
 		death = yes
 	}
 }
 
 makedon0013 = { # Eldest daughter of Konstantinos VII by his wife Helena Lekapene, the daughter of Emperor Romanos I - https://www.degruyter.com/database/PMBZ/entry/PMBZ30662/html
 	name = "Zoe"
+	female = yes
 	dynasty = 644
 	father = 1708
 	mother = 1709
@@ -224,6 +233,7 @@ makedon0013 = { # Eldest daughter of Konstantinos VII by his wife Helena Lekapen
 
 makedon0014 = { # Eldest daughter of Konstantinos VII by his wife Helena Lekapene, the daughter of Emperor Romanos I - https://www.degruyter.com/database/PMBZ/entry/PMBZ30662/html
 	name = "Agathe"
+	female = yes
 	dynasty = 644
 	father = 1708
 	mother = 1709
@@ -242,6 +252,7 @@ makedon0014 = { # Eldest daughter of Konstantinos VII by his wife Helena Lekapen
 
 makedon0015 = { # Daughter of Konstantinos VII Porphyrogennetos and Helene Lakapene - https://www.degruyter.com/database/PMBZ/entry/PMBZ30281/html
 	name = "Theophano"
+	female = yes
 	dynasty = 644
 	father = 1708
 	mother = 1709
@@ -260,6 +271,7 @@ makedon0015 = { # Daughter of Konstantinos VII Porphyrogennetos and Helene Lakap
 
 makedon0016 = { # Daughter of Konstantinos VII Porphyrogennetos and Helene Lakapene  - https://www.degruyter.com/database/PMBZ/entry/PMBZ30662/html
 	name = "Theophano"
+	female = yes
 	dynasty = 644
 	father = 1708
 	mother = 1709
@@ -278,6 +290,7 @@ makedon0016 = { # Daughter of Konstantinos VII Porphyrogennetos and Helene Lakap
 
 makedon0017 = { # Constantine VIII's daughter Eudokia, who became a nun after contracting smallpox  - https://www.degruyter.com/database/PMBZ/entry/PMBZ30662/html
 	name = "Eudokia"
+	female = yes
 	dynasty = 644
 	father = 1718
 	mother = alypios0002
@@ -796,49 +809,6 @@ Mamikonian0004 = { # https://en.wikipedia.org/wiki/Theoktiste
 	}
 }
 
-HEE_arsaber_husband_to_maria = { # https://en.wikipedia.org/wiki/Theoktiste
-	name = "Arsaber"
-	religion = "iconoclast"
-	culture = "greek"
-	807.1.1 = {
-		birth = yes
-	}
-	834.1.1 = {
-		add_spouse = Mamikonian0004
-	}
-	843.3.11 = { # Feast of Orthodoxy
-		religion = "orthodox"
-	}
-	866.1.1 = {
-		death = yes
-	}
-}
-
-HEE_stephen_son_of_maria = { # Son of Maria, the sister of Empress Theodora and sister-in-law of Emperor Theophilos. Appointed one of the guardians of the young Constantine VII - https://en.wikipedia.org/wiki/Stephen_(son_of_Kalomaria) / https://www.degruyter.com/database/PMBZ/entry/PMBZ29378/html
-	name = "Stephanos"
-	dynasty = hee_magistros # Representative of his position/nickname
-	religion = "orthodox"
-	culture = "greek"
-	father = HEE_arsaber_husband_to_maria
-	mother = Mamikonian0004
-	trait = education_stewardship_3
-	trait = just # Probably served as a judge, because he is said to have "administered justice"
-	trait = diligent
-	trait = temperate
-	845.1.1 = {
-		birth = yes
-	}
-	866.1.1 = {
-		employer = 70490 # Michael III
-	}
-	921.2.8 = {
-		trait = devoted # Accused of having himself designs on the throne, he was exiled to the island of Antigone, where he was forced to become a monk
-	}
-	922.1.1 = {
-		death = yes
-	}
-}
-
 Mamikonian0006 = { # https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)#Background_and_early_life
 	name = "Irene"
 	female = yes
@@ -1159,7 +1129,6 @@ amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
 	}
 	866.1.1 = {
 		effect = {
-			set_relation_lover = character:1700	# Allegedly Thekla was given as a mistress to Basil
 			every_secret = { # Make sure Michael is aware of him having given Thekla to Basil
 				reveal_to = character:70490
 			}
@@ -2331,7 +2300,7 @@ Monomachos0006= {
 	dynasty = 636 # Monomachos
 	religion = "iconoclast"
 	culture = "greek" # 
-	trait = devoted # Succeeded his unlce as abbot of a monastery
+	trait = devoted # Succeeded his uncle as abbot of a monastery
 	father = Monomachos0004
 	795.1.1 = {
 		birth = "790.1.1" # Unknown
@@ -2372,8 +2341,8 @@ Monomachos0008= {
 	843.3.11 = { # Feast of Orthodoxy
 		religion = "orthodox"
 	}
-	866.1.1 = {
-		death = "866.1.1" # Unknown
+	864.1.1 = {
+		death = "864.1.1" # Unknown
 	}
 }
 
@@ -2499,7 +2468,7 @@ Monomachos0016= {
 }
 
 Monomachos0017= {
-	name = Pothos # Protospatharios and judge of the Hippodrome in around 1010-1030
+	name = "Pothos" # Protospatharios and judge of the Hippodrome in around 1010-1030
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
 	culture = "greek" # 
@@ -2513,7 +2482,7 @@ Monomachos0017= {
 }
 
 Monomachos0018= {
-	name = Georgios # Duke of Dyrrachium 1078-1081
+	name = "Georgios" # Duke of Dyrrachium 1078-1081
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
 	culture = "greek" # 
@@ -3030,19 +2999,6 @@ rendakios0009 = { # Unnamed Father of Patrician Niketas; combining him with the 
     837.1.1 = {
         birth = "837.1.1" # Unknown
     }
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 1
-				}
-			}
-		}
-	}
     920.1.1 = {
         death = "920.1.1" # He is mentioned as already deceased in the winter of 927/28 in a letter from his son N. to the Protasekretis Gregorios (# 22393).
     }
@@ -6321,6 +6277,8 @@ androsalitai0002 = { # Nikolas of the Androsalitai family; became oekonomos and 
 	religion="orthodox"
 	culture="greek"
 	father = androsalitai0001
+	trait = education_learning_2
+	trait = devoted # hegoumenos of the monastery
 	823.1.1 = {
 		birth = yes
 	}
@@ -7067,6 +7025,66 @@ heraclian0001 = { # Tiberius, sometimes enumerated as Tiberius IV, was the son o
 	}
 }
 
+## Morocharzanios ##
+## an aristocratic family of Armenian descent whose members include John VII of Constantinople ##
+morocharzanios0001 = { # Pankratios Morocharzanios, member of an aristocratic family of Armenian descent and father to John VII of Constantinople and Arsaber
+	name = "Pankratios"
+	dynasty = 8654 # Morocharzanios
+	religion = "orthodox"
+	culture = "armenian" # Of Armenian descent
+	775.1.1 = { # Unknown
+		birth = yes
+	}
+	833.3.11 = { # Unknown
+		death = yes
+	}
+}
+
+morocharzanios0002 = { # https://en.wikipedia.org/wiki/Theoktiste / https://en.wikipedia.org/wiki/John_VII_of_Constantinople
+	name = "Arsaber"
+	dynasty = 8654 # Warren Treadgold identifies Arsaber (husband to Maria) as the same as Arsaber (brother of John VII of Constantinople)
+	father = morocharzanios0001
+	religion = "iconoclast"
+	culture = "greek"
+	807.1.1 = {
+		birth = yes
+	}
+	834.1.1 = {
+		add_spouse = Mamikonian0004
+	}
+	843.3.11 = { # Feast of Orthodoxy
+		religion = "orthodox"
+	}
+	866.1.1 = {
+		death = yes
+	}
+}
+
+morocharzanios0003 = { # Son of Maria, the sister of Empress Theodora and sister-in-law of Emperor Theophilos. Appointed one of the guardians of the young Constantine VII - https://en.wikipedia.org/wiki/Stephen_(son_of_Kalomaria) / https://www.degruyter.com/database/PMBZ/entry/PMBZ29378/html
+	name = "Stephanos"
+	dynasty = 8654
+	religion = "orthodox"
+	culture = "greek"
+	father = morocharzanios0002
+	mother = Mamikonian0004
+	trait = education_stewardship_3
+	trait = just # Probably served as a judge, because he is said to have "administered justice"
+	trait = diligent
+	trait = temperate
+	845.1.1 = {
+		birth = yes
+	}
+	866.1.1 = {
+		employer = 70490 # Michael III
+	}
+	921.2.8 = {
+		trait = devoted # Accused of having himself designs on the throne, he was exiled to the island of Antigone, where he was forced to become a monk
+	}
+	922.1.1 = {
+		death = yes
+	}
+}
+
 
 
 
@@ -7254,11 +7272,11 @@ paulician0004 = { # https://en.wikipedia.org/wiki/Chrysocheir
 				}
 				men_at_arms = {
 					type = armored_footmen
-					stacks = 2
+					stacks = 1
 				}
 				men_at_arms = {
 					type = cataphract
-					stacks = 2
+					stacks = 1
 				}
 				location = province:5705
 				origin = province:5705
@@ -7266,7 +7284,7 @@ paulician0004 = { # https://en.wikipedia.org/wiki/Chrysocheir
 			}
 			spawn_army = {
 				name = paulician_conscripted_levies_event_troops
-				levies = 700
+				levies = 500
 				men_at_arms = {
 					type = mangonel
 					stacks = 5

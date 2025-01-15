@@ -1380,10 +1380,16 @@
 	name = "Markos" #I
 	religion = "coptic"
 	culture = "egyptian"
+	trait = zealous
+	trait = diligent
+	trait = temperate
+	trait = lifestyle_traveler # According to Hippolytus, they all belonged to the "Seventy Disciples" who were sent out by Jesus to disseminate the gospel
+	trait = journaller # Major scribe for Peter
 	10.1.1 = {
 		birth = "10.1.1"
 	}
 	68.1.1 = {
+		trait = saint
 		death = "68.1.1"
 	}
 }
@@ -1463,7 +1469,7 @@
 
 163115 = {
 	name = "Ahmad"
-	dna = "163115_ahmad_egypt"
+	dna = "163115_dna"
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
@@ -1877,6 +1883,7 @@ extra_tulunids_4 = {
 
 extra_tulunids_5 = {
 	name = "Tulun" # Father of Ahmad ibn Tulun and source of the Tulunid name
+	dna = "extra_tulunids_5_dna"
 	dynasty = 820
 	religion = "ashari"
 	culture = "turkish"

@@ -407,7 +407,7 @@ HEE_grigor_arcruni = { # https://fr.wikipedia.org/wiki/Hamazasp_II_Ar%C3%A7rouni
 
 azdi0001 = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armenia in 866 also governor of Azerbaijan ?-874
 	name = "al-'Alá"
-	dynasty = hee_azdi
+	dynasty = dynasty_azdi
 	religion = "ashari"
 	culture = "levantine"
 	father = azdi0002
@@ -464,7 +464,7 @@ azdi0001 = { # al-Ala ibn Ahmad al-Azdi; Arab Governor of Armenia in 866 also go
 
 azdi0002 = { # Father of al-Ala ibn Ahmad al-Azdi
 	name = "Ahmad"
-	dynasty = hee_azdi
+	dynasty = dynasty_azdi
 	religion = "ashari"
 	culture = "levantine"
 	796.1.1 = {
@@ -558,9 +558,9 @@ HEE_babgen_iii_of_khachen = { # Gregor Naren - Prince of Khachen
 	}
 }
 
-HEE_kaysite_son = { # Abu'l-Ward's son and successor
+extra_kaysites_0001 = { # Abu'l-Ward's son and successor
 	name = "_Abd_al-Hamid"
-	dna = HEE_kaysite_son_dna
+	dna = extra_kaysites_0001_dna
 	religion = "ashari"
 	culture = "levantine"
 	dynasty = 1029119

@@ -323,8 +323,12 @@ c_brie_francaise = {
 		holder = 7988
 	}
 	862.1.1 = {
-		holder = 90104
+		liege = k_france
+		holder = melun0001
 	}
+	880.1.1 = {
+		holder = melun0002
+	}	
 	#Robertian ( = Capetians)
 	882.1.1 = {
 		holder = 6448 #Eudes I
@@ -693,7 +697,7 @@ c_beaumont = {
 c_clermont = {
 	#No data, placeholder
 	859.1.1 = {
-		holder = HEE_engelram	#Nelson identifies Engelram as a count “whose county lay in the northeast of the realm, near that of Charles’s son-in-law, Count Baldwin.”
+		holder = engelram0001	#Nelson identifies Engelram as a count “whose county lay in the northeast of the realm, near that of Charles’s son-in-law, Count Baldwin.”
 		liege = k_france
 	}
 	
@@ -727,6 +731,10 @@ c_berry = {
 	843.1.1 = {
 		liege = k_france
 		holder = 90104	#In 843, the County of Berry became part of the Royal domain or crown lands controlled by the king
+	}
+	853.1.1 = {
+		liege = d_aquitaine
+		holder = 168055 #Gerhard II, Count of Limousin/Aurillac - Possibly the "Gérard comte en Aquitaine" who was deposed in [872]
 	}
 	
 	#Barons of Ch�teauroux
@@ -880,7 +888,7 @@ c_blois = {
 	}
 	866.7.2 = {
 		liege = "d_anjou"
-		holder = 6448 #Eudes Robertine
+		holder = 168246	#Hugh the Abbot. who inherited all of Robert's possessions
 	}
 	1037.11.15 = {
 		liege = "d_champagne"
@@ -929,7 +937,7 @@ c_issoudun = {
 	866.1.1 = {
 		liege = k_france
 		government = theocracy_government # Archdiocese of Bourges
-		holder = HEE_wulfad_of_bourges
+		holder = 168087 #
 	}
 	
 	#Barons of Ch�teauroux
@@ -967,7 +975,7 @@ c_issoudun = {
 
 b_bourges = { # Archdiocese of Bourges
 	866.1.1 = {
-		holder = HEE_wulfad_of_bourges # https://en.wikipedia.org/wiki/Wulfad
+		holder = 168087 # https://en.wikipedia.org/wiki/Wulfad / https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156048
 		effect = { set_capital_barony = yes } # Seems more important for the time than Issoudun
 	}
 }
@@ -1399,11 +1407,14 @@ d_normandy = {
 	
 	#Not as the Duchy of Normandy, but placeholder for the March of Neustria against the Normands
 	#Note : there were 2 Marches of Neustria, the other one being the March against the Bretons
-	853.1.1 = {
+	861.1.1 = {
 		liege = "k_france"
 		holder = 90104 #Charles II le Chauve
 		#Technically split between 3 holders, but since it's a pain, and during a non-playable time, let's default to the current king of Western Francia
 	}	
+	861.1.1 = {
+		holder = 31702 #Adalard le Seneschal (also Udo and Berenger I, but Adalard as their senior will hold the title)
+	}
 	865.1.1 = {
 		holder = 168027	#Gauzfrid Rorgonide, marquis of Neustria
 	}
@@ -1534,7 +1545,7 @@ c_rouen = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168036
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	989.1.1 = {
@@ -1609,7 +1620,7 @@ c_evreux = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168036
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	989.1.1 = {
@@ -1682,7 +1693,7 @@ c_bayeux = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168037
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	
@@ -1759,7 +1770,7 @@ c_avranches = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168027
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	867.8.1 = {	#Treaty of Compi�gne
@@ -1840,7 +1851,7 @@ c_alencon = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168027
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	989.1.1 = {
@@ -1912,7 +1923,7 @@ c_lisieux = {
 		holder = 6440 #Robert le fort
 	}
 	866.7.2 = {
-		holder = 168041
+		holder = 168037
 		liege = "d_normandy"	#as March of Neustria against the Normands/Vikings
 	}
 	989.1.1 = {
@@ -2075,7 +2086,10 @@ c_orleans = {
 		holder = 303423	#Guillaume d'Orleans
 	}
 	866.1.1 = {
-		holder = 90104	#Charles the Bald /unknown holder, so we default to him
+		holder = 6440	#Robert "the Strong"
+	}
+	866.7.2 = {
+		holder = 168246	#Hugh the Abbot. who inherited all of Robert's possessions
 	}
 	#Robertian ( = Capetians)
 	882.1.1 = {
@@ -2313,7 +2327,7 @@ c_chartres = {
 
 c_sancerre = {
 	866.1.1 = {
-		holder = HEE_bernarius #BERNARIUS (-executed 883).  Comte de Charpeigne
+		holder = 90104
 		liege = "k_france"
 	}
 	
@@ -2347,25 +2361,10 @@ c_bar = {
 	817.1.1 = {
 		holder = 30227 #Lothair I
 	}
-	855.8.23 = {
-		holder = 144998
+	855.8.23 = { # Counts of Verdun
+		holder = verduncount0001
 	}
-	871.1.1 = {
-		holder = 90104 #Charles I the Bald
-	}
-	877.6.10 = {
-		holder = 42019 #Louis I the Younger
-	}
-	882.1.20 = {
-		holder = 90105 #Charles II the Fat
-	}
-	888.1.1 = {
-		holder = 7945 #Arnulf of Carinthia
-	}
-	895.1.1 = {
-		holder = 144997 #Zwentibold
-	}
-	895.8.14 = {
+	875.1.1 = {
 		holder = 144994
 	}
 	923.1.1 = {
@@ -2434,25 +2433,10 @@ c_briey = {
 	817.1.1 = {
 		holder = 30227 #Lothair I
 	}
-	855.8.23 = {
-		holder = 144998
+	855.8.23 = { # Counts of Verdun
+		holder = verduncount0001
 	}
-	871.1.1 = {
-		holder = 90104 #Charles I the Bald
-	}
-	877.6.10 = {
-		holder = 42019 #Louis I the Younger
-	}
-	882.1.20 = {
-		holder = 90105 #Charles II the Fat
-	}
-	888.1.1 = {
-		holder = 7945 #Arnulf of Carinthia
-	}
-	895.1.1 = {
-		holder = 144997 #Zwentibold
-	}
-	895.8.14 = {
+	875.1.1 = {
 		holder = 144994
 	}
 	923.1.1 = {
@@ -2550,12 +2534,9 @@ c_vaucouleurs = {
 	796.1.1 = {
 		holder = 7985 #Welf
 	}
-	817.1.1 = {
+	860.1.1 = {
 		liege = "k_lotharingia"
-		holder = 30227 #Lothair I
-	}
-	855.8.23 = {
-		holder = 144998 #Lothair II
+		holder = charpeigne0001 #BERNARIUS, Comte de Charpeigne
 	}
 	869.8.8 = {
 		holder = 90104 #Charles I the Bald
@@ -3329,8 +3310,8 @@ c_auxerre = {
 
 c_tonnerrois = {
 	#814-954 : bishops of Langres
-	867.1.1 = {	#Placeholder-ish to the king of France
-		holder = 90104	#king Charles the Bald
+	853.1.1 = {
+		holder = 303414	#Milo I Count de Tonnerre - Possibly the same as the Count of Langres, which is the identity HEE will go with for simplicity
 		liege = k_france
 	}
 	

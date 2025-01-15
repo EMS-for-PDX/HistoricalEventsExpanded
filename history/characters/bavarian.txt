@@ -3112,6 +3112,7 @@
 	trait = hunchbacked
 	trait = education_martial_3
 	father = 7989
+	mother = welfwife0001
 	859.1.1 = {
 		birth = "859.1.1"
 	}
@@ -3310,6 +3311,7 @@
 	trait = hunchbacked
 	trait = education_martial_3
 	father = 7989
+	mother = welfwife0001
 	860.1.1 = {
 		birth = "860.1.1"
 	}

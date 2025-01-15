@@ -1,6 +1,73 @@
 ﻿## Characters for the Francia area - 867 ##
 
-HEE_lothair_the_lame = { # https://en.wikipedia.org/wiki/Lothair_the_Lame
+carolingianchild0001 = { # Hildegard (abbess of Fraumünster)
+	name = "Hildegard"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 90107 # Ludwig the German
+	mother = 7987 #Hemma
+	trait = devoted # abbess of Fraumunster
+	828.1.1 = { # 	
+		birth = yes
+	}
+	856.12.23 = { # Hildegard died December 23, 856 (some sources say 859)
+		death = yes
+	}		
+}
+
+carolingianchild0002 = { # ERMENGARDIS; Abbess of Buchau am Federsee. Abbess of Chiemsee (Frauenwörth) 28 Apr 857 - https://fmg.ac/Projects/MedLands/GERMANY,%20Kings.htm#_Toc488734187
+	name = "Ermangardis"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 90107 # Ludwig the German
+	mother = 7987 #Hemma
+	trait = devoted # Abbess of Buchau am Federsee.  Abbess of Chiemsee (Frauenwörth) 28 Apr 857
+	832.1.1 = { # 	
+		birth = yes
+	}
+	866.7.16 = { # The Annales Formoselenses record the death in 866 of "Karoli regis soror Irmingard".  This is corroborated by the Annales Alamannicorum
+		death = yes
+	}		
+}
+
+carolingianchild0003 = { # Gisela, a dubious spurced child that possibly died in childhood - https://fmg.ac/Projects/MedLands/GERMANY,%20Kings.htm#_Toc488734187
+	name = "Gisela"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 90107 # Ludwig the German
+	mother = 7987 #Hemma
+	834.1.1 = { # Unknown	
+		birth = yes
+	}
+	836.1.1 = { # 
+		death = yes
+	}		
+}
+
+carolingianchild0004 = { # Bertha; Abbess of Schwarzach-am-Main in 853 & Abbess of Zurich 856 - https://fmg.ac/Projects/MedLands/GERMANY,%20Kings.htm#_Toc488734187
+	name = "Bertha"
+	female = yes
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 90107 # Ludwig the German
+	mother = 7987 #Hemma
+	trait = devoted # She succeeded her sister Hildegard as Abbess of Schwarzach-am-Main in 853. Abbess of Zurich 856.
+	837.1.1 = { # Unknown
+		birth = yes
+	}
+	877.3.26 = { # The Annales Alamannicorum record the death in 877 of "Berchta filia regis"
+		death = yes
+	}		
+}
+
+carolingianchild0005 = { # https://en.wikipedia.org/wiki/Lothair_the_Lame
 	name = "Lothaire"
 	dynasty = 25061
 	religion = "catholic"
@@ -10,6 +77,7 @@ HEE_lothair_the_lame = { # https://en.wikipedia.org/wiki/Lothair_the_Lame
 	trait = clubfooted # he was born disabled
 	848.1.1 = {
 		birth = yes
+		give_nickname = nick_the_lame
 	}
 	861.1.1 = {
 		trait = devoted
@@ -19,7 +87,7 @@ HEE_lothair_the_lame = { # https://en.wikipedia.org/wiki/Lothair_the_Lame
 	}
 }
 
-HEE_hildegard_daughter_of_the_bald = { # https://en.wikipedia.org/wiki/Charles_the_Bald#Marriages_and_children
+carolingianchild0006 = { # https://en.wikipedia.org/wiki/Charles_the_Bald#Marriages_and_children
 	name = "Godehilde"
 	female = yes
 	dynasty = 25061
@@ -35,7 +103,7 @@ HEE_hildegard_daughter_of_the_bald = { # https://en.wikipedia.org/wiki/Charles_t
 	}
 }
 
-HEE_hildegard_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
+carolingianchild0007 = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
 	name = "Hildegard"
 	female = yes
 	dynasty = 25061
@@ -51,7 +119,7 @@ HEE_hildegard_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wik
 	}
 }
 
-HEE_gisele_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
+carolingianchild0008 = { # https://en.wikipedia.org/wiki/Louis_the_Stammerer#Family
 	name = "Gisele"
 	female = yes
 	dynasty = 25061
@@ -70,7 +138,7 @@ HEE_gisele_daughter_of_louis_the_stammerer = { # https://en.wikipedia.org/wiki/L
 	}
 }
 
-HEE_charles_the_fat_bastard = { # https://en.wikipedia.org/wiki/Bernard_(son_of_Charles_the_Fat)
+carolingianchild0009 = { # https://en.wikipedia.org/wiki/Bernard_(son_of_Charles_the_Fat)
 	name = "Bernard"
 	# female = yes
 	dynasty = 25061
@@ -93,14 +161,16 @@ HEE_charles_the_fat_bastard = { # https://en.wikipedia.org/wiki/Bernard_(son_of_
 	867.1.1 = { # C. 870, included for the gameplay since its technically possible
 		birth = yes
 	}
-	891.1.1 = {
-		death = yes
+	891.1.1 = { # He was murdered by Rudolf Count of Rhetia. The Annales Alamannicorum record that "Perenhart filius Karoli" was killed by "Ruodulfo" in 891
+		death = {
+			death_reason = death_murder
+		}
 	}
 }
 
-HEE_engelram = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
+engelram0001 = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
 	name = "Engelram"
-	# dynasty = 
+	dynasty = dynasty_engelram
 	religion = "catholic"
 	culture = "french"
 	
@@ -134,7 +204,7 @@ HEE_engelram = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
 	}
 }
 
-HEE_friderada = { # https://en.wikipedia.org/wiki/Friderada
+extraludolfinger0001 = { # https://en.wikipedia.org/wiki/Friderada
 	name = "Friderada"
 	female = yes
 	dynasty = 669
@@ -170,10 +240,10 @@ HEE_friderada = { # https://en.wikipedia.org/wiki/Friderada
 		birth = yes
 	}
 	865.1.1 = {
-		add_spouse = HEE_engelram
+		add_spouse = engelram0001
 	}
 	880.1.1 = {
-		add_spouse = HEE_bernarius
+		add_spouse = charpeigne0001
 	}
 	883.1.1 = {
 		add_spouse = 90102
@@ -183,14 +253,14 @@ HEE_friderada = { # https://en.wikipedia.org/wiki/Friderada
 	}
 }
 
-HEE_engelram_daughter = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
+frankishnobility0002 = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_of_France
 	name = "Oda"
 	female = yes
-	# dynasty = 
+	dynasty = dynasty_engelram
 	religion = "catholic"
 	culture = "french"
-	father = HEE_engelram
-	mother = HEE_friderada
+	father = engelram0001
+	mother = extraludolfinger0001
 	
 	#Education
 	trait = charming
@@ -213,15 +283,10 @@ HEE_engelram_daughter = { # https://en.wikipedia.org/wiki/Engelram,_Chamberlain_
 	}
 }
 
-HEE_bernarius = { # http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156065
+charpeigne0001 = { # Comte de Charpeigne; http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156065
 	name = "Bernarius"
-	# female = yes
-	# dynasty = 669
 	religion = "catholic"
 	culture = "french"
-	# father = 7959
-	# mother = 167765
-	# health = 5.0
 	
 	#Skills
 	diplomacy = 6
@@ -235,23 +300,48 @@ HEE_bernarius = { # http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc
 	trait = education_stewardship_2
 	
 	#Personality Traits
-	trait = compassionate
+	trait = generous
 	trait = just
 	trait = content
 	
-	#Other Traits
-	
 	sexuality = heterosexual
-	
 	disallow_random_traits = yes
 	845.1.1 = {
 		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	883.1.1 = {
 		death = {
 			death_reason = death_murder_known
 			killer = 90102
 		}
+	}
+}
+
+melun0001 = { # Unknown father of Erchanger, who was possibly the Comte de Melun; http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156065
+	name = "Erchanger"
+	religion = "catholic"
+	culture = "french"
+
+	835.1.1 = {
+		birth = yes
+	}
+	880.1.1 = {
+		death = yes
+	}
+}
+
+melun0002 = { # Possibly the Comte de Melun; http://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#_Toc371156065
+	name = "Erchanger"
+	father = melun0001
+	religion = "catholic"
+	culture = "french"
+
+	865.1.1 = {
+		birth = yes
+	}
+	922.1.1 = { # after 7 Nov 921
+		death = yes
 	}
 }
 
@@ -412,7 +502,7 @@ HEE_unknown_wife_of_rastislav = { #
 	}
 }
 
-HEE_theotgaud_archbishop_of_trier = { # https://en.wikipedia.org/wiki/Theotgaud
+trierarchbishop0001 = { # https://en.wikipedia.org/wiki/Theotgaud
 	name = "Theotgaud"
 	dynasty = 246
 	religion = "catholic"
@@ -969,4 +1059,363 @@ ostrevent0001 = { # https://fmg.ac/Projects/MedLands/nfracado.htm#HucbaldOsterva
 	890.1.1 = { # Sometime after 890
 		death = yes
 	}
+}
+
+auvergnespouse0001 = { # Wife of Bernard, count of Auvergne, and mother of ERMENGARDE, who married BERNARD "Plantevelue"
+	name = "Liegardis"
+	female = yes
+	religion = catholic
+	culture = "french"
+	818.1.1 = { # Unknown
+		birth = yes
+	}
+	840.1.1 = {
+		add_spouse = 127021
+	}
+	880.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+limousinspouse0001 = { # Wife of Gérard, count of Limousin and Aurillac
+	name = "Adaltrude"
+	female = yes
+	religion = catholic
+	culture = "french"
+	821.1.1 = { # Unknown
+		birth = yes
+	}
+	845.1.1 = {
+		add_spouse = 168055
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+aquitainianspouse0001 = { # Wife of RAINULF II, possibly named Ermengarde 
+	name = "Ermengarde"
+	female = yes
+	religion = catholic
+	culture = "occitan"
+	851.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = {
+		add_spouse = 90128
+	}
+	900.1.1 = { # Unknown; -1 Jul after 890
+		death = yes
+	}	
+}
+
+aquitainianmistress0001 = { # Unknown Mistress of RAINULF II, mother of EBALUS
+	name = "Eufémia"
+	female = yes
+	religion = "catholic"
+	culture = "french"
+	trait = beauty_good_2 #Assumedly attractive
+	848.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = {
+		effect = {
+			set_relation_lover = { reason = lover_history target = character:90128 } #Ranulf II of Aquitaine
+		}
+	}
+	867.1.1 = {
+		employer = 90128
+	}
+	885.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+welfwife0001 = { # WALDRADA, daughter of ---, wife of Konrad Duke of Upper Burgundry/Transjurania 
+	name = "Waldrada"
+	female = yes
+	religion = "catholic"
+	culture = "french"
+	837.1.1 = { # Unknown
+		birth = yes
+	}
+	856.1.1 = {
+		add_spouse = 7989 # Konrad Welfen
+	}
+	880.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+matfriede0001 = { # Invented Father of Matfrid to connect Matfrid, Count of Orleans, to his suspected sister Ava
+	name = "Matfrid" # Dynasty will start with son
+	religion = "catholic"
+	culture = french
+	737.1.1 = { # Unknown
+		birth = yes
+	}
+	795.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+matfriede0002 = { # Adalarda; believed to be the daughter of Matfrida II, count of Ayfelgau.
+	name = "Adalarda"
+	female = yes
+	dynasty = dynasty_matfriede
+	religion = "catholic"
+	culture = french
+	father = 163093
+	843.1.1 = { # Unknown
+		birth = yes
+	}
+	865.1.1 = {
+		add_spouse = 31703 # Adalhard of Metz; the ancestor of the second line of Matfrieds
+	}
+	895.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+matfriede0003 = { # Engeltrude, daughter of Count Matfrid (an influential counselor of Lothar I) who married Boso the Elder - https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#EngeltrudisMBoso
+	name = "Engeltrude"
+	female = yes
+	dynasty = dynasty_matfriede
+	religion = "catholic"
+	culture = french
+	father = 163092
+	trait = arbitrary # Seemingly eloped and abandoned her old family to run off with a lover
+	trait = ambitious
+	trait = stubborn
+	828.1.1 = { # Unknown; circa 825/830
+		birth = yes
+	}
+	845.1.1 = {
+		add_spouse = 7561
+	}
+	858.1.1 = { # Engeltrude reportedly eloped with someone else
+		remove_spouse = 7561
+		add_spouse = matfriedelover0001 # her lover Wanger
+		add_trait = adulterer
+		employer = 144998 # Engeltrude took refugee with Lothaire
+	}
+	866.1.1 = {
+		add_trait = excommunicated # her high-profile adultery and flight from the marital home with her lover Wanger resulted in her excommunication
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+matfriedelover0001 = { # Wanger, Engeltrude's lover who she eloped with
+	name = "Wanger"
+	religion = "catholic"
+	culture = french
+	trait = education_intrigue_3
+	trait = gregarious
+	trait = ambitious
+	trait = stubborn
+	trait = seducer
+	825.1.1 = { # Unknown
+		birth = yes
+	}
+	858.1.1 = { # Engeltrude reportedly eloped with someone else
+		add_trait = fornicator
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+matfriede0004 = { # Wanger & Engeltrude's illegitimate child
+	name = "Godfried"
+	dynasty = dynasty_matfriede # Acording to CK3 rules, bastards born of a character with no dynasty and a dynasty always takes the dynasty
+	religion = "catholic"
+	culture = french
+	trait = bastard
+	father = matfriedelover0001
+	mother = matfriede0003
+	859.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+bosonid0001 = { # Boso and Engeltrude had 2 daughters who disputed their mother's inheritance with their illegitimate half-brother Godefroi - https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#EngeltrudisMBoso
+	name = "Richildis"
+	female = yes
+	dynasty = 7052
+	religion = "catholic"
+	culture = "french"
+	father = 7561 # Boso
+	mother = matfriede0003 # Engeltrude
+	848.1.1 = { # Unknown, but must be before their mother's elopement
+		birth = yes
+	}
+	858.1.1 = { # Daughters understandly dislike their mother's elopement
+		effect = {
+			set_relation_grudge = { target = character:matfriede0003 reason = boso_daughters_grudge } # Their mother abandoned their family
+			add_opinion = {
+				target = character:matfriede0003
+				modifier = hate_opinion
+				opinion = -50
+			}
+		}
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+bosonid0002 = { # Boso and Engeltrude had 2 daughters who disputed their mother's inheritance with their illegitimate half-brother Godefroi - https://fmg.ac/Projects/MedLands/FRANKISH%20NOBILITY.htm#EngeltrudisMBoso
+	name = "Teutberga"
+	female = yes
+	dynasty = 7052
+	religion = "catholic"
+	culture = "french"
+	father = 7561 # Boso
+	mother = matfriede0003 # Engeltrude
+	850.1.1 = { # Unknown, but must be before their mother's elopement
+		birth = yes
+	}
+	858.1.1 = { # Daughters understandly dislike their mother's elopement
+		effect = {
+			set_relation_grudge = { target = character:matfriede0003 reason = boso_daughters_grudge } # Their mother abandoned their family
+			add_opinion = {
+				target = character:matfriede0003
+				modifier = hate_opinion
+				opinion = -50
+			}
+		}
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+carolingianmistress0001 = { # Emperor Lothaire's mistress Doda
+	name = "Doda"
+	female = yes
+	religion = "catholic"
+	culture = "franconian"
+	trait = beauty_good_2 # Probably attractive?
+	828.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+carolingianbastard0001 = { # The Annales Bertiniani name "Karlomannum" as the son of "Lotharius imperator" and his mistress Doda
+	name = "Karlmann"
+	dynasty = 25061
+	religion = "catholic"
+	culture = "franconian"
+	father = 30227 # Emperor Lothaire I
+	mother = carolingianmistress0001 # Lothaire's Mistress Doda
+	trait = bastard
+	853.1.1 = { # Unknown
+		birth = yes
+	}
+	900.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+verduncount0001 = { # Taking the more traditional theory that Richwin, Count of Verdun, was not the brother of Reginar (as it remains unproven). Thus CK3's Ricwin requires a father
+	name = "Richwin"
+	dynasty = dynasty_verdun
+	religion = "catholic"
+	culture = "french"
+	828.1.1 = { # Unknown
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = verdunwife0001
+	}
+	875.1.1 = { # Unknown; Ricwin is recorded as Comte in Verdun in a charter dated 895 so if we want him there for that date his fictional father must be dead
+		death = yes
+	}		
+}
+
+verdunwife0001 = { # wife of verduncount0001
+	name = "Ermengarde"
+	female = yes
+	religion = "catholic"
+	culture = "french"
+	830.1.1 = { # Unknown
+		birth = yes
+	}
+	882.1.1 = { # Unknown
+		death = yes
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+additionalmerovingians0001 = { # Bertha of Kent; a Frankish princess who became queen of Kent. She enabled the 597 Gregorian mission, led by Augustine, which resulted in the conversion to Christianity of Anglo-Saxon England
+	name = "Bertha"
+	female = yes
+	dynasty = 542 # Merovingian
+	father = 168685 # 	Charibert I
+	religion = "catholic"
+	culture = "frankish"
+	trait = education_learning_4 # In 601, Pope Gregory addressed a letter to Bertha, in which he complimented her highly on her faith and knowledge of letters
+	trait = zealous
+	trait = generous # Pope Gregory, through his letter, describes what ‘great succour and what charity you have bestowed upon [Augustine]’.
+	trait = compassionate
+	trait = humble
+	trait = diplomat # retellings of Augustine’s mission almost always include Bertha, suggesting that she played a role in welcoming Augustine and convincing Æthelberht to convert
+	563.1.1 = { # seems to have been born in the early 560s
+		birth = yes
+	}
+	580.1.1 = {
+		add_spouse = 205031 # King Æthelberht of Kent
+	}
+	610.1.1 = { # Unknown; estimations for her date of her death range from 605 - 616
+		death = yes
+	}	
+}
+
+additionalmerovingians0002 = { # Emma of Austrasia; a Frankish woman, possibly a Merovingian, who married Eadbald of Kent
+	name = "Emma"
+	female = yes
+	dynasty = 542 # Merovingian
+	father = 168692 # 	Charibert I
+	religion = "catholic"
+	culture = "frankish"
+	603.1.1 = { # Unknown
+		birth = yes
+	}
+	642.1.1 = { # known to have died in 642, two years after her husband
+		death = yes
+	}	
+}
+
+additionalguideschi0001 = {
+	name = "Lambert"
+	dynasty = 7389 # Guideschi Dynasty
+	father = 71906 # 	Charibert I
+	mother = 71907 # Adelaide of Italy (possibly a woman named Itta?)
+	religion = "catholic"
+	culture = "french"
+	815.1.1 = { # Unknown
+		birth = yes
+	}
+	852.5.1 = { # killed on 1 May 852 in an ambush by Gauzbert of Maine
+		death = {
+			death_reason = death_battle # Died at the Battle of the Holme
+			killer = 168019
+		}
+	}		
 }

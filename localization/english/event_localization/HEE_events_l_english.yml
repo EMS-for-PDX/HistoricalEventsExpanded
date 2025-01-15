@@ -26,7 +26,7 @@
 
  # HEE Fairhair Storyline
 
- HEE_fairhair.2.t:0 "A feast and your daughter."
+ HEE_fairhair.2.opening:0 "To the Church's loyal ally, [character:144000.GetTitledFirstNameNoTooltip]"
  HEE_fairhair.2.desc:0 "As the feast starts into motion, my guests move to sit around the table or gather near the fire, although when starting to eat, I can't stop myself remembering that I had ordered my daughter, [gyda.GetName], to stay put in her room for the night. However I can clearly see her mingling with the guests and partaking in the festivities.\n\nI wonder if it would not be better for my daughter to retire for the night, after all, she is but a young girl surronded by increasingly drunken men. Then again, it does seem she is enjoying herself and the atmosphere..."
  HEE_fairhair.2.a:0 "Perhaps my guests wouldn't mind."
  HEE_fairhair.2.b:0 "My guests are a bunch of drunken men, she wouldn't be safe."
@@ -140,14 +140,35 @@
 
 
 
+ roman_army_acclaimation.0001.t: "Imperial Acclamation"
+ roman_army_acclaimation.0001.desc: "The shouts of my soldiers still echoed in my ears, their cries of “Basileus!” filling the air as they hoisted me onto their shields. I had fought alongside them, bled with them, and now, in the glow of victory, they sought to crown me Emperor. It was not a decision they had asked me to make; they had made it for me, driven by their loyalty and fervor. My heart swelled with pride, yet unease coiled within me.\n\nTo accept their acclamation would be to rise against Constantinople itself, to challenge the might of the reigning Emperor. Could I, a thematic governor, truly wear the purple and hold the empire together? Yet, to rebuke them now could stoke resentment, even rebellion, within my own ranks. They see a leader in me, a man worthy of the throne. I could seize this moment and perhaps secure a brighter future for the Empire—or temper their fire and risk being seen as weak. The weight of destiny pressed heavily upon my shoulders."
+ roman_army_acclaimation.0001.a: "Try and calm the troops"
+ roman_army_acclaimation.0001.b: "Accept the role thrust upon you"
 
 
+ hee_brittany.0001.t: "A Way Forward"
+ hee_brittany.0001.desc: "The war with [french_king.GetTitledFirstName] drags on, and the weight of it presses heavily upon my mind. I think back to the long history of struggle between Brittany and West Francia — a bitter dance of disputes and reconciliations. Time and again, the Frankish kings have sought to bring us to heel, and time and again, we have pushed them back. But at what cost? Lives lost, homes shattered, and a future uncertain for my people.\n\nI can not deny the current enmity has not been stoked by my actions. Indeed, some may say I am the one who has provoked this round of conflict, and once I might have reveled in that fact. But now, in perhaps a way that is hypocritical, I am growing tired of endless war and schemes. I have spent almost a decade struggling with the Franks, and now I consider perhaps [french_king.GetTitledFirstNameNoTooltip] feels the same. Could a true and enduring peace be forged between our people?"
+ hee_brittany.0001.a: "If peace is possible, it must begin with me."
+ hee_brittany.0001.b: "Peace is a fool's dream."
 
+ salomon_dispatches_his_chancellor_to_west_francia: "Any peace won through war will be fleeting. Our history reveals this truth well enough. For a lasting peace to be possible, it must be forged through oaths and diplomacy. I can send my chancellor to hopefully begin negotiations with the Franks and start down the path towards mending the rift between our peoples..."
+ salomon_refuses_to_dispatch_his_chancellor_to_west_francia: "To think that any true peace could exist between Bretons and Franks is a delusion. Peace will be won through blades and blood. I will defeat [french_king.GetTitledFirstNameNoTooltip] and force a peace once more - surely this new peace will last longer than the last!"
 
+ hee_brittany.0002.t: "An Offer of Truce"
+ hee_brittany.0002.desc: "The missive from Salomon lies open before me, its words carefully measured, offering a hand of peace amidst the bloodshed that has plagued our borders for too long. I know the man well enough to distrust him — Salomon has risen on treachery before, and his loyalty bends as the wind dictates. Yet I cannot deny the toll this conflict has taken. The Breton raids have bled my realm, and each campaign into their defiant lands has left scars on both our peoples. The thought of an end to this senseless cycle is tempting, but can Salomon’s word be trusted?\n\nIf I were to entertain his offer, what concessions would he demand? Autonomy? Territory? These are bitter prospects, yet the continuation of war is no less costly. Even if a treaty is forged, can it truly hold? The Bretons have never been an easy people to tame, their defiance as wild as their rugged hills. Still, I wonder if this is a rare opportunity—a chance to turn enmity into coexistence, however tenuous. Or will peace only delay the inevitable clash?"
+ hee_brittany.0002.a: "Peace is worth my consideration."
+ hee_brittany.0002.b: "This serpent shall not mislead me."
 
+ agree_to_salomon_peace_talks: "The conflict with [breton_duke.GetTitledFirstName] has long sapped both our realms and stemmed my expansionary ambitions. If [breton_duke.GetFirstNameNoTooltip]'s offer is genuine, then it may be worth a meeting to at least hear terms. If a lasting peace could be forged, it would secure a border that has long troubled my realm and one so close to home."
+ refuse_salomon_peace_talks: "Only a fool would believe [breton_duke.GetTitledFirstName] and his offer of peace. [breton_duke.GetFirstNameNoTooltip] has proven time and again through his deeds that he is a man who can not be trusted. Unlike Adam and Eve, I will not allow this serpant to decieve me."
 
+ hee_brittany.0003.t: "The Cost of Peace"
+ hee_brittany.0003.desc: "The Breton envoy sat across from me, his expression carefully neutral as we reached the crux of our negotiations. The terms we had painstakingly hammered out over hours of debate now hung between us like a fragile thread. Salomon, through his representative, would acknowledge me as his suzerain—though I know it is a gesture more nominal than genuine. He would break his alliance with the Norsemen, those marauders who have wreaked havoc upon my lands, and cease his hostilities against West Francia. More than that, he would pledge his aid should the Vikings darken our shores again.\n\nIn return, I offered what must have felt like a victory to the Bretons. Avranches, with its taxes, estates, and abbeys, would be transferred to Salomon’s rule. And I swore, reluctantly, to leave Brittany to its own governance. My heart burned at the thought of yielding such ground, but the prospect of ending this bloody feud outweighed my pride. As the envoy extended his hand, I took it with measured resolve. The ink was not yet dry, but a fragile peace had been struck. Only time would reveal if it would hold."
+ hee_brittany.0003.a: "No worthy peace is without concession."
+ hee_brittany.0003.b: "I renege! There shall be no peace!"
 
-
+ agree_to_the_treaty_of_compiegne: "The current terms are not as good as I hoped, but no lasting peace is forged without compromise. The terms are tough but arguably fair - after all, to gain an ally against the Vikings may be worth the small cessation of territory."
+ refuse_the_treaty_of_compiegne: "The current terms are simply unacceptable. It has become clear no true peace can be forged between Franks and Bretons. Thus, we must once again turn to the sword and continue our current conflict."
 
 
 

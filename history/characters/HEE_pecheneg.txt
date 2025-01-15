@@ -189,17 +189,38 @@ yawdi_ertim0006 = {
 	848.1.1 = { # Fictional Backstory - Fell in the battle near the Lake Aral against the Oghuz-Karluks-Kimaks alliance that occured before 850
 		death = {
 			death_reason = death_battle
-			killer = 163101
 		}
 	}
 }
 
 yawdi_ertim0007 = {
 	name = "Yavdı" # fictional
+	dna = "302717_yavdi_aqton"
 	dynasty_house = house_yawdiertim # Yawdi-Ertim
 	religion = "tengri_pagan"
 	culture = "pecheneg"
 	father = yawdi_ertim0006
+
+	#Skills
+	diplomacy = 10
+	martial = 9
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	prowess = 7
+	
+	#Education
+	trait = education_martial_3
+	
+	#Personality Traits
+	trait = gregarious
+	trait = vengeful
+	trait = ambitious
+	
+	#Other Traits
+	trait = organizer
+	trait = reaver
+
 	820.1.1 = {
 		birth = yes
 	}

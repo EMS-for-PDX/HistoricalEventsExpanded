@@ -1646,7 +1646,7 @@
 
 41505 = {
 	name = "Ashot"
-	dna = "41505_ashot_armenia"
+	dna = "41505_ashot_I_bagratuni_dna"
 	dynasty = 507
 	religion = "armenian_apostolic"
 	culture = "armenian"
@@ -3460,12 +3460,14 @@
 	diplomacy = 3
 	intrigue = 5
 	stewardship = 7
-	religion = "iconoclast"
+	religion = "orthodox"
 	culture = "armenian"
 	trait = ambitious
-	trait = deceitful
-	trait = cynical
-	trait = education_stewardship_3
+	trait = just # By later chroniclers, he was given the reputation of being populist and eager to both pursue justice and undo injustices carried out by the Byzantine bureacracy
+	trait = deceitful # agreed to negotiate in person with Krum but used the opportunity to attempt to have him assassinated
+	trait = cynical # Began the second period of Iconoclasm but was more interested in ecclesiastical unity rather than strict iconoclasm
+	trait = education_martial_3 # He was a particularly active military leader, going on campaign almost every year
+	trait = unyielding_defender # able to withhold the blockade of Constantinople by Krum of Bulgaria
 	
 	780.1.1 = {
 		birth = "780.1.1"
@@ -3473,8 +3475,16 @@
 	800.1.1 = {
 		give_nickname = nick_the_own_culture
 	}
+	815.1.1 = {
+		religion = iconoclast # Council of Constantinople (815)
+	}
 	820.12.27 = {
-		death = "820.12.27"
+		trait = maimed # During his assassination, a sword stroke severed Leo's arm and after his death his body was hewed into pieces
+		trait = wounded_3
+		death = {
+			death_reason = death_coup_successful
+			killer = 70492 # Michael II
+		}
 	}
 }
 
@@ -4642,23 +4652,29 @@
 }
 
 145068 = {
-	name = "Philippikos"
+	name = "Bardanes" 
 	dynasty = 1022181
-	religion = "armenian_apostolic"
-	culture = "armenian"
+	religion = "armenian_apostolic" # In reality a Monothelite
+	culture = "armenian" # Disputed
+	trait = zealous
 	trait = arrogant
-	trait = deceitful
-	trait = education_martial_2
+	trait = callous
+	trait = ambitious
+	trait = education_learning_3 # Contemporaneous sources attest to Bardanes' tutoring, scholarly interests, learning and eloquence, all of which were in Greek
 
 	670.1.1 = {
 		birth = "670.1.1"
 	}
-
+	711.11.4 = {
+		name = "Philippikos"
+	}
 	713.6.3 = {
 		trait = blind
 	}
-	714.1.20 = {
-		death = "714.1.20"
+	713.7.20 = {
+		death = { # died in the same year he was blinded, which would indicate cause of death may have stemmed from the blinding
+			death_reason = death_wounded_1
+		}
 	}
 }
 
@@ -8262,6 +8278,7 @@
 	culture = "armenian"
 	trait = greedy
 	trait = ambitious
+	trait = zealous
 	trait = education_martial_2
 
 	685.1.1 = {
@@ -8272,7 +8289,9 @@
 		trait = devoted
 	}
 	745.1.1 = {
-		death = "745.1.1"
+		death = { # Artabasdos and his sons were publicly blinded and relegated to the Chora Monastery on the outskirts of Constantinople
+			death_reason = death_old_age
+		}
 	}
 }
 

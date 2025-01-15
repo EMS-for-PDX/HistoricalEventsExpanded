@@ -1,11 +1,14 @@
 ﻿l_english:
 
+ nick_restorer_of_the_world: "Restitutor Orbis"
+ nick_restorer_of_the_world_desc: "For having reformed the #italic Rēs pūblica#!, [CHARACTER.GetShortUINameNoTooltipNoFormat] is hailed by all citizens of the Empire as Restitutor Orbis - Restorer of the World."
  nick_the_rich: "the Rich"
  nick_the_mighty: "the Mighty"
  nick_the_clever: "the Clever"
  nick_the_longsword: "Longsword"
  nick_the_abbot: "the Abbot"
  nick_the_seneschal: "the Seneschal"
+ nick_the_seneschal_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat]'s service as Seneschal under Emperor Louis the Pious has forever associated the position with his name."
  nick_the_iron: "the Iron"
  nick_the_armenian: "the Armenian"
  nick_the_scythian: "ho Skythas"
@@ -24,6 +27,58 @@
  nick_the_macedonian: "the Macedonian"
  nick_the_macedonian_desc: "From [CharYourHerHis(CHARACTER)] birth to a peasant family in Macedonia to a place of prominence in the imperial court, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history - one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
  nick_the_cretan: "the Cretan"
+ nick_plantapilosa: "Plantapilosa"
+ nick_plantapilosa_desc: "The nickname Plantapilosa, like that of Guifred the Hairy, comes from the Latin princeps pilitus or "furred prince". It is a reference to the custom of Visigothic princes to wear a fur headdress."
+ nick_the_calf: "the Calf"
+ nick_the_calf_desc: "Due to [CharYourHerHis(CHARACTER)] youth and loyalty to [CharYourHerHis(CHARACTER)] King, [CHARACTER.GetShortUINameNoTooltipNoFormat] has been associated by his detractors with young domesticated cattle."
 
  nick_the_great_greek: "ho Megas"
  nick_the_great_greek_desc: "Called ho Megas (translated as "the Great") by [CharYourHerHis(CHARACTER)] followers, [CHARACTER.GetShortUINameNoTooltipNoFormat] is known to inspire intense loyalty in those who served [CharYouHerHim(CHARACTER)]. Those around [CharYouHerHim(CHARACTER)] attribute every virtue to [CHARACTER.GetShortUINameNoTooltipNoFormat], and even many in the Latin world begrudgingly recognize [CharYouHerHim(CHARACTER)] as "the most blessed emperor of Constantinople"."
+
+ nick_grammatikos: "Grammatikos"
+ nick_grammatikos_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] was known for his learning and for his persuasive rhetoric in the endless debates that are a favorite subject of hagiographic sources reflecting the second period of the Iconoclasm."
+
+ nick_the_slit_nosed: "ho Rhīnótmētos"
+ nick_the_slit_nosed_desc: "In 695 the population of the Empire rose under the leadership of Leontius, the strategos of Hellas, and proclaimed him Emperor. [CHARACTER.GetShortUINameNoTooltipNoFormat] was deposed and his nose was cut off (later to be replaced by a solid gold replica of his original) to prevent his again seeking the throne. This disfigurement earned [CHARACTER.GetShortUINameNoTooltipNoFormat] the epithet "ho Rhīnótmētos" - or "the Slit-Nosed"."
+
+ nick_parapinakes: "Parapinakēs"
+ nick_parapinakes_desc: "Translated as 'minus a quarter', this epithet refers to the drastic devaluation of the Roman currency that occured under [CharYourHerHis(CHARACTER)] rule."
+
+ nick_stratiotikos: "Stratiotikos"
+ nick_stratiotikos_desc: "In perhaps an intentionally ironic twist, despite his nickname Stratiotikos (translated as "the military one" or "the warlike"), [CHARACTER.GetShortUINameNoTooltipNoFormat] was not an active army officer, but instead a logothetes - responsible for the pay and provisioning of the imperial soldiers."
+
+ nick_the_paphlagonian: "ho Paphlagōn"
+ nick_the_paphlagonian_desc: "From [CharYourHerHis(CHARACTER)] birth to a peasant family in Paphlagonia to donning the imperial purple, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history - one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
+
+ nick_the_amorian: "ho ex Amoríou"
+ nick_the_amorian_desc: "From [CharYourHerHis(CHARACTER)] birth to a Cappadocian family of professional peasant-soldiers in the city of Amorium to donning the imperial purple, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history - one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
+
+ nick_the_isaurian: "ho Isauros"
+ nick_the_isaurian_desc: "From [CharYourHerHis(CHARACTER)] birth to a peasant family in Germanikeia in northern Syria to donning the imperial purple, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history - one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
+
+ nick_the_bulgar_slayer: "ho Boulgaroktónos"
+ nick_the_bulgar_slayer_desc: "[CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] complete subjugation of the Bulgarian state has led later generations to refer to [CharYouHerHim(CHARACTER)] as 'ho Boulgaroktónos' - 'the Bulgar-Slayer'."
+
+ nick_konstantinos_purple_born: "Porphyrogennētos"
+ nick_konstantinos_purple_born_desc: "The epithet porphyrogenitus alludes to the Purple chamber of the imperial palace, decorated with porphyry, where legitimate children of reigning emperors were normally born. Konstantinos was also born in this room, although his mother Zoe had not been married to Leo at that time. Nevertheless, the epithet allowed Konstantinos to underline his position as the legitimate son, as opposed to all others who claimed the throne during his lifetime."
+
+ nick_the_logothete: "ho Logothétis"
+ nick_the_logothete_desc: "Despite having risen to the Imperial Purple, many still remember [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] previous role as General Logothete - or 'finance minister' - under Empress Irene."
+
+ nick_two_pupiled: "Dicorus"
+ nick_two_pupiled_desc: "Having been born with two different color eyes, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] is refered to by others with the nickname 'Dicorus' - or 'two-pupiled'."
+
+ nick_leo_the_butcher: "ho Kreopólis"
+ nick_leo_the_butcher_desc: "In reference to the murder of Aspar, an Eastern Roman patrician and magister militum ("master of soldiers") of Alanic-Gothic descent, and his son, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] is known by sobriquet 'ho Kreopólis' - 'the Butcher'."
+
+ nick_claudius_gothicus: "Gothicus"
+ nick_claudius_gothicus_desc: "At the Battle of Naissus, Claudius and his legions routed a huge Gothic army. Together with his cavalry commander, the future Emperor Aurelian, the Romans took thousands of prisoners and destroyed the Gothic cavalry as a force. The victory earned Claudius his surname of 'Gothicus' - 'Conqueror of the Goths'."
+
+ nick_diocletian_jovius: "Iovius"
+ nick_diocletian_jovius_desc: "After Diocletian raised his fellow-officer Maximian to the office of Caesar, the two rulers' relationship was re-defined in religious terms - with Diocletian assuming the title Iovius and Maximian Herculius. The titles were probably meant to convey certain characteristics of their associated leaders. Diocletian, in Jovian style, would take on the dominating roles of planning and commanding; Maximian, in Herculian mode, would fulfill the heroic role of completing assigned tasks."
+
+ nick_maximian_herculius: "Herculius"
+ nick_maximian_herculius_desc: "After Diocletian raised his fellow-officer Maximian to the office of Caesar, the two rulers' relationship was re-defined in religious terms - with Diocletian assuming the title Iovius (Jupiter) and Maximian Herculius (Hercules). The titles were probably meant to convey certain characteristics of their associated leaders. Diocletian, in Jovian style, would take on the dominating roles of planning and commanding; Maximian, in Herculian mode, would fulfill the heroic role of completing assigned tasks."
+
+ nick_chlorus: "Chlorus"
+ nick_chlorus_desc: "The famous addition of 'Chlorus' to [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] name comes from [CharYourHerHis(CHARACTER)] pale complexion, for its meaning is 'the pale'."

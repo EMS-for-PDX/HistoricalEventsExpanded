@@ -6076,6 +6076,7 @@
 	trait = zealous
 	trait = brave
 	trait = education_learning_4
+	trait = lifestyle_traveler # According to traditional accounts of the Saint Thomas Christians of modern-day state of Kerala in India, Saint Thomas travelled outside the Roman Empire to preach the Gospel, travelling as far as Kerala in South India
 	10.1.1 = {
 		birth = "10.1.1"
 	}
@@ -6083,6 +6084,7 @@
 		give_nickname = nick_the_apostle
 	}# AKA: Saint Thomas the Apostle
 	72.12.21 = {
+		trait = saint
 		death = "72.12.21"
 	}
 }
@@ -9626,6 +9628,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 
 73683 = {
 	name = "Muhammad" # Muhammad (I) ibn Abd al-Rahman, Sultan of Andalusia (852-886), Walih of Zaragoza (848-852) & Sheik of Albarracin, Calatayud, Fraga, Lleida, Tarragona & Zaragoza (848-852), Cabra & Cordoba (852-886), Calatrava (873-886), Almeria & Castelo Branco (875-886), Alarcon (876-886), Niebla (878-886) & Granada (883-884)
+	dna = 73683_sultan_muhammad
 	dynasty = 597 # Umayyad Dynasty
 	martial = 5
 	diplomacy = 3
@@ -9633,6 +9636,10 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	stewardship = 3
 	religion = ashari
 	culture = levantine
+	trait = wrathful # The Cordoban Martyr Movement led the Emir, Muhammad I, to establish a repressive and discriminatory policy that is marked by executions, the destruction of monasteries and the granting of public functions to Muslims
+	trait = zealous # Under the reign of Muhammad I, what became later known as the Cordoban Martyr Movement took place where 50 Christians were executed by the Umayyad government
+	trait = callous
+	trait = architect # Muhammad I is credited with some of the work done on the Great Mosque of Cordoba in the 9th century. ordered the construction of a series of fortresses in the border territory known as the Middle Mark.
 	trait = sayyid
 	trait = poet
 	trait = education_martial_1
@@ -9695,6 +9702,11 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	trait = twin
 	trait = sayyid
 	trait = education_stewardship_1
+	trait = zealous
+	trait = lazy
+	trait = content
+	trait = reclusive # showed very little interest in governing, becoming a neurotic recluse who was only interested in hunting and his faith
+	trait = lifestyle_hunter # showed very little interest in governing, becoming a neurotic recluse who was only interested in hunting and his faith
 
 	father = 73683 # Sultan Muhammad I of Andalusia
 	mother = 73927 # Sultana Ushar (andalusian.txt)

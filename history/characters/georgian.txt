@@ -1611,17 +1611,19 @@
 	}
 }
 
-85012 = {
+85012 = { # 11th-century Georgian general and duke of Kldekari, Argveti, and Orbeti-Samshvilde
 	name = "Ioane"
 	dynasty = 20021
-	martial = 5
+	martial = 7
 	diplomacy = 6
 	intrigue = 9
-	stewardship = 4
+	stewardship = 5
 	religion = "orthodox"
 	culture = "georgian"
-	trait = education_stewardship_2
-	trait = deceitful
+	trait = education_martial_3 # Served as a Georgian general
+	trait = greedy # expropriating much of the imperial treasury of towns when serving the Romans
+	trait = ambitious # Ivane capitalized on the withering Byzantine control of eastern Anatolia in the wake of Seljuk attacks and civil tumults to enlarge his fiefdom and occupied two fortresses
+	trait = deceitful # Swapped sides several times, betrayed oaths of loyalty to rulers
 	trait = arrogant
 	father = 90086
 	1040.1.1 = {
@@ -1632,7 +1634,7 @@
 	}
 }
 
-90086 = {
+90086 = { # Liparit IV of Kldekari; 11th-century Georgian general and political figure who was at times the most valuable support of King Bagrat IV of Georgia (1027–1072) and his most dangerous rival
 	name = "Liparit"
 	# AKA: Liparit Magistros
 	dynasty = 20021
@@ -1642,12 +1644,18 @@
 	stewardship = 7
 	religion = "orthodox"
 	culture = "georgian"
-	trait = diligent
+	trait = ambitious
 	trait = brave
-	trait = calm
+	trait = diligent
+	trait = vengeful # As a result of Bagrat thwarting his campaign against the emir of Tbilisi, Liparit turned into a sworn enemy of Bagrat and began actively cooperating with foreign powers for vengeance
 	trait = education_martial_4
+	trait = unyielding_defender # His successful resistance to the invading Byzantine troops in 1028 and a victorious campaign against the Shaddadid dynasty of Arran in 1034 made Liparit the most powerful noble in Georgia
 	999.1.1 = {
 		birth = "999.1.1"
+	}
+	1060.1.1 = { # Eventually, in 1060, he was arrested by his followers and surrendered to the king, who forced him into a monastery under the name of Anton
+		name = "Anton"
+		trait = devoted
 	}
 	1064.1.1 = {
 		death = "1064.1.1"
@@ -1756,11 +1764,11 @@
 	stewardship = 6
 	religion = "orthodox"
 	culture = "georgian"
+	trait = ambitious # By the time Bagrat became king, the Bagratids' drive to complete the unification of all Georgian lands had gained irreversible momentum
 	trait = honest
 	trait = just
 	trait = diligent
-	trait = brave
-	trait = education_martial_2
+	trait = education_diplomacy_3 # Despite his reign being consumed with constant military struggles, Bagrat seems to be portrayed more as a diplomatic rather than a military-minded ruler
 	father = 9950
 	mother = 9951
 	1018.1.1 = {
@@ -1784,13 +1792,15 @@
 	martial = 5
 	diplomacy = 6
 	intrigue = 5
-	stewardship = 9
+	stewardship = 4
 	religion = "orthodox"
 	culture = "georgian"
-	trait = cynical
+	trait = fickle # George II's wavering character was an issue of his reign
 	trait = brave
-	trait = wrathful
-	trait = education_diplomacy_2
+	trait = impatient # Tired with a protracted siege of the Kakhetian stronghold of Vezhini, George abandoned the campaign when snow fell
+	trait = education_martial_2 #
+	trait = unyielding_defender # George successfully repelled an invasion commanded by a Turkish general left by the sultan in charge of the Caucasus
+	trait = lifestyle_hunter # eased his disappointment by hunting
 	father = 9952
 	mother = 9953
 	1050.1.1 = {

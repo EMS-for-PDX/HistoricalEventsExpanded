@@ -1,0 +1,176 @@
+﻿# Missing Historical Characters for Romans - They dont add much, but "fun" to do 
+
+constantinian0001 = { # Helena, mother of Constantine I
+	name = "Helena"
+	female = yes
+	#dynasty = 0 # Information about her social background universally suggests that she came from the lower classes
+	religion = "orthodox"
+	culture = "greek"
+	trait = education_stewardship_1
+	trait = zealous
+	trait = calm
+	trait = diligent
+	247.1.1 = { # The bishop and historian Eusebius of Caesarea states that Helena was about 80 on her return from Palestine. Since that journey has been dated to 326–28, she was probably born around 246 to 249
+		birth = yes
+	}
+	330.1.1 = {
+		trait = saint
+		death = yes
+	}
+}
+
+constantinian0002 = { # Flavius Dalmatius (died 337), also known as Dalmatius the Censor
+	name = "Dalmatius"
+	dynasty = 1022195
+	father = 70524
+	mother = maximianus0001
+	religion = "catholic"
+	culture = "roman"
+	294.1.1 = { # after 293
+		birth = yes
+	}
+	337.6.1 = {
+		death = { # Flavius Dalmatius and his sons were killed in the purges that followed the Emperor's death in May 337
+			death_reason = death_execution # Executed as part of the purges ordered Constantius II
+			killer = 70521 # Constantius II
+		}
+	}
+}
+
+constantinian0003 = { # Hannibalianus, son of the Roman emperor Constantius Chlorus and his wife Flavia Maximiana Theodora, and younger half-brother of Constantine the Great
+	name = "Hannibalianus"
+	dynasty = 1022195
+	father = 70524
+	mother = maximianus0001
+	religion = "catholic"
+	culture = "roman"
+	295.1.1 = { # after 293
+		birth = yes
+	}
+	337.6.1 = {
+		death = { # Flavius Dalmatius and his sons were killed in the purges that followed the Emperor's death in May 337
+			death_reason = death_execution # Executed as part of the purges ordered Constantius II
+			killer = 70521 # Constantius II
+		}
+	}
+}
+
+constantinian0004 = { # Roman empress as the wife of Licinius. She was the daughter of the Roman emperor Constantius Chlorus and his wife Flavia Maximiana Theodora, and younger half-sister of Constantine the Great
+	name = "Constantia"
+	female = yes
+	dynasty = 1022195
+	father = 70524
+	mother = maximianus0001
+	religion = "hellenic_pagan"
+	culture = "roman"
+	296.1.1 = { # after 293
+		birth = yes
+	}
+	313.1.1 = { # In 313, the emperor Constantine gave her in marriage to his co-emperor Licinius, on occasion of their meeting in Mediolanum
+		add_spouse = 145238
+	}
+	325.1.1 = {
+		religion = "catholic"
+	}
+	330.1.1 = { # c. 330
+		death = yes
+	}
+}
+
+## Family of Emperor Maximian
+maximianus0001 = { # Flavia Maximiana Theodora
+	name = "Theodora"
+	female = yes
+	dynasty = 1022233
+	father = 145293 # Contested, possibly a stepdaughter
+	religion = "hellenic_pagan"
+	culture = "roman"
+	270.1.1 = { # if the biological daughter of Maximian, then likely from an earlier marriage
+		birth = yes
+	}
+	293.1.1 = { # In 293, Theodora married Constantius Chlorus, the junior co-emperor of Maximian, after he had set aside Helena, mother of his son Constantine, to strengthen his political position
+		add_spouse = 70524 # Constantius Chlorus
+	}
+	333.1.1 = { # Unknown; before 337
+		death = yes
+	}
+}
+
+maximianus0002 = { # Fausta, wife of Constantine the great - https://en.wikipedia.org/wiki/Fausta
+	name = "Fausta"
+	female = yes
+	dynasty = 1022233
+	father = 145293 #
+	religion = "hellenic_pagan"
+	culture = "roman"
+	289.1.1 = { # As her age is nowhere outright attested, scholarly estimates have ranged from 289/290
+		birth = yes
+	}
+	307.1.1 = { # To seal the alliance between them for control of the Tetrarchy, Maximian married her to Constantine I in 307
+		add_spouse = 70523 # Caesar Flavius Constantinus Valerius Augustus 'The Great'
+	}
+	326.6.1 = { 
+		death = { # In 326, Fausta was put to death by Constantine, following the execution of Crispus, his eldest son by Minervina
+			death_reason = death_execution
+			killer = 70523 # Constantine I 
+		}
+	}
+}
+
+
+## Family of Licinius ##
+licinius0001 = {
+	name = "Licinius"
+	# Caesar Gaius Valerius Licinianus Licinius Augustus
+	dynasty = 1022196
+	father = 145238
+	mother = constantinian0004
+	religion = "hellenic_pagan"
+	culture = "roman"
+	trait = just
+	trait = diligent
+	trait = cynical
+	trait = greedy
+	trait = education_diplomacy_3
+	315.7.20 = { # Licinius II, son of Licinius, grandson of Constantius I, and half-nephew of Constantine, was born to Flavia Julia Constantia in July or August 315
+		birth = yes
+	}
+	326.1.1 = {
+		death = { # The younger Licinius was executed by his uncle Constantine in 326
+			death_reason = death_execution
+			killer = 70523 # Constantine I 
+		}
+	}	
+}
+
+AeliaEudocia0001 = { #  Eastern Roman empress by marriage to Emperor Theodosius II (r. 408–450), and a prominent Greek historical figure in understanding the rise of Christianity during the beginning of the Byzantine Empire
+	name = "Athenais"
+	female = yes	
+	# father = Her father, a Greek philosopher named Leontius, taught rhetoric at the Academy of Athens
+	religion = "hellenic_pagan"
+	culture = "greek"
+	trait = diligent
+	trait = zealous
+	trait = generous
+	trait = temperate
+	trait = education_learning_5
+	trait = intellect_good_2
+	trait = beauty_good_2
+	trait = scholar
+	trait = architect # Helped to build several churches, and influenced her husband to found the University of Constantinople 
+	trait = poet
+	401.1.1 = { # Aelia Eudocia was born circa 400 in Athens into a family of Greek descent
+		birth = yes
+	}
+	421.6.7 = { # Athenais had been raised pagan, and upon her marriage to Theodosius II converted to Christianity and was renamed Eudocia. They were married on 7 June 421
+		add_spouse = 70533
+		religion = "orthodox"
+		name = "Eudocia"
+	}
+	460.10.20 = {
+		trait = saint # Eudocia is regarded as saint. Her feast day is 13 August
+		death = { # She died an Orthodox Christian in Jerusalem on 20 October 460, having devoted her last years to literature
+			death_reason = death_natural_causes
+		}
+	}	
+}

@@ -1002,7 +1002,10 @@
 		birth = yes
 	}
 	839.8.1 = {
-		death = yes
+		death = {
+			death_reason = death_murder_known
+			killer = 145216 # assassinated by Radelchis
+		}
 	}
 }
 

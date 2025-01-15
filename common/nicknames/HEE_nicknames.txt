@@ -3,6 +3,7 @@
 #############################################
 
 # Historical Event Expanded
+nick_restorer_of_the_world = {}
 nick_the_rich = {}
 nick_the_mighty = {}
 nick_the_elder = {}
@@ -24,3 +25,21 @@ nick_the_bastard_greek = {}
 nick_the_macedonian = {}
 nick_the_cretan = {}
 nick_the_great_greek = {}
+nick_the_calf = {}
+nick_plantapilosa = {}
+nick_grammatikos = {}
+nick_the_slit_nosed = {}
+nick_parapinakes = {}
+nick_stratiotikos = {}
+nick_the_paphlagonian = {}
+nick_the_amorian = {}
+nick_the_isaurian = {}
+nick_the_bulgar_slayer = {}
+nick_konstantinos_purple_born = {} # Specialized version of a purpleborn nickname just for Konstantinos VII
+nick_the_logothete = {}
+nick_two_pupiled = {}
+nick_claudius_gothicus = {}
+nick_diocletian_jovius = {}
+nick_maximian_herculius = {}
+nick_chlorus = {}
+nick_leo_the_butcher = {}

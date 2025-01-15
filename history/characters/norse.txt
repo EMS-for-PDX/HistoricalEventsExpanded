@@ -30,7 +30,7 @@
 				limit = {
 					NOT = { has_dlc_feature = roads_to_power }
 				}
-				set_employer = character:HEE_sygtrygg
+				set_employer = character:aquitaine_viking_0002
 			}
 			add_character_flag = do_not_generate_starting_family
 		}
@@ -56,7 +56,7 @@
 	religion = norse_pagan
 	culture = norse
 	father = 40605
-	mother = HEE_efanda
+	mother = volkhovnik0002
 	875.1.1 = {
 		birth = yes
 	}
@@ -344,6 +344,7 @@
 
 6862 = { # Semi-legendary later wife of Harald Fairhair and daughter of a Jutish King
 	name = "RO_gnhildr"
+	dna = "6862_dna"
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
@@ -797,10 +798,10 @@
 40606 = {
 	name = "Oleg"		#Oleg the Seer
 	dynasty = hee_volkhvs
-	dna = 40606_helgi_the_seer
+	dna = "40606_helgi_dna"
 	religion = norse_pagan
 	culture = norse
-	mother = HEE_efanda_mother # Some scholars think Oleg was the brother of Rurik's wife
+	mother = volkhovnik0001 # Some scholars think Oleg was the brother of Rurik's wife
 	health = 5.5 # Lived a good long life
 	diplomacy = 9
 	martial = 9
@@ -3185,6 +3186,7 @@
 
 161302 = {
 	name = "RO_gnvaldr"
+	dna = "161302_dna"
 	dynasty = 461
 	religion = "norse_pagan"
 	culture = norse
@@ -4271,7 +4273,7 @@
 
 6811 = { #Dyre the Stranger
 	name = "Dyre" # Ruler of Kiev (Askold/Hoskuldr)
-	dna = "6811_dyre_kiev"
+	dna = "6811_dyre_the_stranger_dna"
 	dynasty_house = house_oskyldr
 	religion = "norse_pagan"
 	culture = norse
@@ -4562,30 +4564,31 @@
 
 166329 = {
 	name = "Eirikr" #Eirik of Hordaland
-	dna = 166329_eirikr_dna
+	dna = "166329_eirikr_dna"
 	dynasty = 1040004
 	religion = "norse_pagan"
 	culture = norse
 
 	#Skills
-	diplomacy = 8
-	martial = 6
+	diplomacy = 7
+	martial = 7
 	stewardship = 6
 	intrigue = 5
 	learning = 5
-	prowess = 5
+	prowess = 6
 	
 	#Education
-	trait = education_diplomacy_2
+	trait = education_diplomacy_3
 	
 	#Personality Traits
 	trait = arrogant
 	trait = wrathful
-	trait = brave
+	trait = stubborn
+	trait = vengeful
 
 	#Other Traits
-	trait = reaver
 	trait = viking
+	trait = loyal
 
 	819.1.1 = {
 		birth = "819.1.1"
@@ -4597,12 +4600,13 @@
 
 166044 = {
 	name = "Gyda" #Gyda Eiriksdottir
-	dna = 146077_gyda_dna
+	dna = "166044_gyda_dna"
 	female = yes
 	dynasty = 1040004
 	religion = "norse_pagan"
 	culture = norse
 	father = 166329
+	mother = hordalandi0001
 	
 	#Skills
 	diplomacy = 8
@@ -5115,7 +5119,7 @@
 
 186003 = { # https://en.wikipedia.org/wiki/H%C3%A5kon_Grjotgardsson
 	name = "Hakon"
-	dna = 186003_hakon_dna
+	dna = "186003_hakon_dna"
 	dynasty = 1043302
 	father = 186002
 	religion = "norse_pagan"
@@ -5194,7 +5198,7 @@
 #Agder
 186011 = {
 	name = "KjO_tve"
-	dna = 186011_kjotve_dna
+	dna = "186011_kjotve_dna"
 	dynasty = 1043304
 	religion = "norse_pagan"
 	culture = "norse"
@@ -5235,7 +5239,7 @@
 
 186012 = {
 	name = "Tore"
-	dna = 186012_tore_dna
+	dna = "186012_tore_dna"
 	dynasty = 1043304
 	religion = "norse_pagan"
 	culture = "norse"
@@ -5711,7 +5715,7 @@
 		birth = "820.1.1" # Heimskringla states Halfdan was forty years old when he died
 	}
 	838.1.1 = {
-		add_spouse = HEE_rognhildr_goldbeard
+		add_spouse = gullskjegg0002
 	}
 	849.1.1 = {
 		add_spouse = 168649
@@ -5727,7 +5731,7 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 168323
-	mother = HEE_rognhildr_goldbeard
+	mother = gullskjegg0002
 	839.1.1 = {
 		birth = "839.1.1"
 	}
@@ -6630,8 +6634,9 @@
 	}
 }
 
-168650 = {
+168650 = { # One of the Leaders of the Great Summer Army and later King of East Anglia in the late 9th century - https://en.wikipedia.org/wiki/Guthrum
 	name = "Guttorm"
+	dna = "6862_dna"
 	dynasty = 9613
 	religion = "norse_pagan"
 	culture = "norse"
@@ -6664,7 +6669,7 @@
 		birth = yes
 		effect = { add_character_flag = do_not_generate_starting_family }
 	}
-	866.1.1 = {
+	866.1.1 = { # Since the Guthrum of Fairhair's story and the Great Summer army have be merged, he acted as regent for Fairhair when Fairhair was young
 		employer = 144000 # Fairhair
 	}
 	881.1.1 = {

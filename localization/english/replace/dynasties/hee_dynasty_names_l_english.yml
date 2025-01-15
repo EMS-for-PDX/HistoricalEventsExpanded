@@ -122,6 +122,12 @@
 
  dynn_Loire: "Loire"
 
+ dynn_Matfriede: "Matfriede"
+
+ dynn_Verdun: "Verdun"
+
+ dynn_Engelram: "Clermont" # Where I have landed Engelram
+
  dynn_Ostrevent: "Ostrevent"
 
  dynn_Vuifredingi: "Vuifredingi"
@@ -212,6 +218,9 @@
 
  dynn_Zygii: "Zygii"
 
+ dynn_Frith: "Frith"
+
+ dynn_Kalmakheli: "Kalmakheli"
 
 
  # Seven Hungarian Tribes

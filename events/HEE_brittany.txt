@@ -4,14 +4,15 @@ hee_brittany.0001 = { #Salomon considers peace with West Francia
 	type = character_event
 	title = hee_brittany.0001.t
 	desc = hee_brittany.0001.desc
-	theme = diplomacy # Change
+	theme = diplomacy # Change? Maybe Martial?
+	override_background = { reference = council_chamber } # Event takes place in a study, where Salomon can reflect
 	left_portrait = {
 		character = root
 		animation = stress
 	}
 	right_portrait = {
-		character = character:kapnogenes0002
-		animation = personality_content
+		character = scope:french_king
+		animation = personality_vengeful
 	}
 
 	trigger = {
@@ -86,7 +87,7 @@ hee_brittany.0002 = { #The French King recieves Salomon's Envoy
 	type = character_event
 	title = hee_brittany.0002.t
 	desc = hee_brittany.0002.desc
-	theme = intrigue # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_cynical
@@ -116,11 +117,11 @@ hee_brittany.0002 = { #The French King recieves Salomon's Envoy
 	# }
 
 	immediate = {
-
+		title:d_brittany.holder = { save_scope_as = breton_duke }
 	}
 
 	option = {
-		name = hee_basil_rise_michael_falls.0002.a
+		name = hee_brittany.0002.a
 
 		custom_tooltip = agree_to_salomon_peace_talks
 
@@ -137,7 +138,7 @@ hee_brittany.0002 = { #The French King recieves Salomon's Envoy
 	}
 
 	option = {
-		name = hee_basil_rise_michael_falls.0002.b
+		name = hee_brittany.0002.b
 		
 		custom_tooltip = refuse_salomon_peace_talks
 		
@@ -159,7 +160,7 @@ hee_brittany.0003 = { #Franco-Breton Peace Talks - https://en.wikipedia.org/wiki
 	type = character_event
 	title = hee_brittany.0003.t
 	desc = hee_brittany.0003.desc
-	theme = intrigue # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -197,7 +198,7 @@ hee_brittany.0003 = { #Franco-Breton Peace Talks - https://en.wikipedia.org/wiki
 	option = {
 		name = hee_brittany.0003.a
 
-		custom_tooltip = agree_to_salomon_peace_talks
+		custom_tooltip = agree_to_the_treaty_of_compiegne
 
 		hidden_effect = {
 
@@ -253,7 +254,7 @@ hee_brittany.0003 = { #Franco-Breton Peace Talks - https://en.wikipedia.org/wiki
 	option = {
 		name = hee_brittany.0003.b
 		
-		custom_tooltip = refuse_salomon_peace_talks
+		custom_tooltip = refuse_the_treaty_of_compiegne
 		
 		hidden_effect = {
 

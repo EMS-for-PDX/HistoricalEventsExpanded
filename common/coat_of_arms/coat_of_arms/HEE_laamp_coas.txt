@@ -1,2 +1,3 @@
 ﻿d_laamp_trpimirovic = 512 # Trpimirovic
 d_laamp_hanzali = 1042142 # Wasil
+d_laamp_hastein = 1059

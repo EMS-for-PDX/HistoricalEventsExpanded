@@ -662,8 +662,7 @@ hee_muhammad_ibn_wasil_startup = {
 					value = yes
 				}
 				debug_log = "Attempting to have al-Hanzali attack"
-				### 867 - Rise of Simeon ###
-				#Boris abdicates to become a Monk
+				### 867 - al-Hanzali's Uprising in Fars ###
 				hee_alhanzali_uprising_scripted_effect = yes
 			}
 		}

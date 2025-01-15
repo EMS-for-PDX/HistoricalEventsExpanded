@@ -185,7 +185,7 @@ bm_867_hee_transcaucasia = {
 	character = {
 		name = "bookmark_hee_armenian_ibn_ahmad"
 		history_id = azdi0001
-		dynasty = hee_azdi
+		dynasty = dynasty_azdi
 		dynasty_splendor_level = 1
 		type = male
 		birth = 820.1.1
@@ -226,7 +226,7 @@ bm_867_hee_transcaucasia = {
 			birth = 853.1.1
 			culture = levantine
 			religion = ashari
-			history_id = HEE_kaysite_son
+			history_id = extra_kaysites_0001
 
 			animation = personality_greedy
 		}
@@ -394,7 +394,7 @@ bm_867_hee_norway = {
 			birth = 851.1.1
 			culture = norse
 			religion = norse_pagan
-			history_id = HEE_asa_hakondottir
+			history_id = lade0001
 
 			animation = personality_content
 		}
@@ -427,7 +427,7 @@ bm_867_hee_norway = {
 			birth = 852.1.1
 			culture = norse
 			religion = norse_pagan
-			history_id = 146077
+			history_id = 166044
 
 			animation = personality_bold
 		}
@@ -642,7 +642,7 @@ bm_867_hee_khazaria = {
 			birth = 843.1.1
 			culture = norse
 			religion = orthodox
-			history_id = HEE_askold
+			history_id = askold0001
 
 			animation = personality_greedy
 		}

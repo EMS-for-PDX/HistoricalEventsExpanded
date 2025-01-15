@@ -11,22 +11,27 @@ HEE_remove_education_traits_effect = {
 	remove_trait = education_diplomacy_2
 	remove_trait = education_diplomacy_3
 	remove_trait = education_diplomacy_4
+	remove_trait = education_diplomacy_5
 	remove_trait = education_martial_1
 	remove_trait = education_martial_2
 	remove_trait = education_martial_3
 	remove_trait = education_martial_4
+	remove_trait = education_martial_5
 	remove_trait = education_stewardship_1
 	remove_trait = education_stewardship_2
 	remove_trait = education_stewardship_3
 	remove_trait = education_stewardship_4
+	remove_trait = education_stewardship_5
 	remove_trait = education_intrigue_1
 	remove_trait = education_intrigue_2
 	remove_trait = education_intrigue_3
 	remove_trait = education_intrigue_4
+	remove_trait = education_intrigue_5
 	remove_trait = education_learning_1
 	remove_trait = education_learning_2
 	remove_trait = education_learning_3
 	remove_trait = education_learning_4
+	remove_trait = education_learning_5
 }
 
 HEE_remove_personality_traits_effect = {
@@ -65,6 +70,7 @@ HEE_remove_personality_traits_effect = {
 	remove_trait = vengeful
 	remove_trait = wrathful
 	remove_trait = zealous
+	remove_trait = eccentric
 }
 
 HEE_remove_perks_effect = {

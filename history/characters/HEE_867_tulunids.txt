@@ -2,6 +2,7 @@
 
 HEE_ibn_tulun_mother = { # Qasim, ibn Tulun's mother
 	name = "Qasim"
+	dna = "ibn_tulun_mother_dna"
 	religion = "ashari"
 	culture = "turkish"
 	female = yes
@@ -99,6 +100,7 @@ HEE_yarjukh = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
 
 HEE_ibn_tulun_first_wife = { # ibn Tulun's wife and mother of his eldest son Abbas and his daughter Fatimah
 	name = "Khatun"
+	dna = "ibn_tulun_first_wife_dna"
 	female = yes
 	dynasty = hee_yarjukhid
 	religion = "ashari"
@@ -211,6 +213,7 @@ HEE_ibn_tulun_fifth_daughter = { # Daughter of Ibn Tulun
 # tried to outmaneuver each other in the Abbasid court. Eventually, Shukayr was dismissed c. 872 and died soon after
 HEE_shukayr = {
 	name = "Shukayr"
+	dna = "HEE_shukayr_dna"
 	dynasty = hee_shukayr
 	religion = "ashari"
 	culture = "egyptian"
@@ -270,6 +273,7 @@ mudabbir0001 = { # al-Mudabbir's father, apparently was of Persian origin
 
 mudabbir0002 = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-Hasan_Ahmad_ibn_Muhammad_ibn_Abdallah_ibn_al-Mudabbir
 	name = "Abdul-Hasan"
+	dna = "HEE_al_mudabbir_dna"
 	dynasty = dynasty_al_mudabbir
 	religion = "ashari"
 	culture = "persian"

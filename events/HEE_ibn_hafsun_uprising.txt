@@ -1,0 +1,176 @@
+﻿namespace = HEE_ibn_hafsun_uprising
+
+### Spawn ibn Hafsun
+HEE_ibn_hafsun_uprising.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning the Kutama Uprising before 1066 start date"
+		debug_log_date = yes
+		spawn_ibn_hafsun_character_effect = yes
+		global_var:Umar_ibn_Hafsun = {
+			trigger_event = {
+				id = HEE_ibn_hafsun_uprising.0002
+			}
+		}
+	}
+}
+
+HEE_ibn_hafsun_uprising.0002 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		scope:Umar_ibn_Hafsun = {
+			if = { # Make ibn Hafsun a LAAMP
+				limit = {
+					NOT = { is_landed = yes }
+				}
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = scope:Umar_ibn_Hafsun
+				}
+			}
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_brigands
+				trigger_event = HEE_ibn_hafsun_uprising.0003
+			}
+		}
+	}
+}
+
+HEE_ibn_hafsun_uprising.0003 = {
+	scope = none
+	hidden = yes
+
+	immediate = { # ibn Hafsun starts his rebellion in Southern Andalusia - utilizing the EP3 Landless Peasant Uprising CB
+		title:k_andalusia.holder = {
+			trigger_event = HEE_ibn_hafsun_uprising.0004 # Notification & Reaction Event
+		}
+		scope:Umar_ibn_Hafsun = {
+			if = { # Make ibn Hafsun a LAAMP
+				limit = {
+					NOT = { is_landed = yes }
+				}
+				title:c_cadiz = { add_to_list = war_target }
+				title:c_algeciras = { add_to_list = war_target }
+				title:c_malaga = { add_to_list = war_target }
+				title:c_cabra = { add_to_list = war_target }
+				title:c_granada = { add_to_list = war_target }
+				title:c_andujar = { add_to_list = war_target }
+			
+				every_in_list = {
+					list = war_target
+					root = {
+						add_to_variable_list = {
+							name = war_supported_counties_list
+							target = prev
+						}
+					}
+				}
+
+				start_war = {
+					casus_belli = ep3_laamp_peasant_war 
+					target = title:k_andalusia.holder
+				}
+			}
+		}
+	}
+}
+
+HEE_ibn_hafsun_uprising.0004 = {
+	type = character_event
+	title = HEE_ibn_hafsun_uprising.0004.t
+	desc = HEE_ibn_hafsun_uprising.0004.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:Umar_ibn_Hafsun
+		animation = personality_greedy
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_ibn_hafsun_uprising.0004
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		add_stress = medium_stress_impact_gain
+
+		progress_towards_rival_effect = {
+			REASON = rival_plotting_against_me
+			CHARACTER = scope:Umar_ibn_Hafsun
+			OPINION = default_rival_opinion
+		}
+	}
+
+	option = {
+		name = HEE_ibn_hafsun_uprising.0004.a
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = HEE_ibn_hafsun_uprising.0004.b
+		
+		custom_tooltip = michael_says_no_to_drinking #ahistorical option
+
+		hidden_effect = {
+			duel = {
+				skill = diplomacy
+				target = scope:recipient
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					scope:actor = {
+						add_gold = 50
+						random_courtier = { add_gold = 10 }
+					}
+					scope:recipient = { add_piety = 50 }
+				}
+				50 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					scope:actor = {
+						remove_short_term_gold = 50
+						random_courtier = { remove_short_term_gold = 10 }
+					}
+					scope:recipient = { add_piety = -50 }
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}

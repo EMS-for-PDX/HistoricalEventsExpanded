@@ -1,14 +1,11 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
 
-HEE_asgeir = { # https://en.wikipedia.org/wiki/Viking_incursions_into_Gascony
+aquitaine_viking_0001 = { # https://en.wikipedia.org/wiki/Viking_incursions_into_Gascony
 	name = "Asgeir"
 	#female = yes
 	#dynasty = 
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	# mother =
-	#health = 5.0
 	
 	#Skills
 	diplomacy = 8
@@ -53,15 +50,12 @@ HEE_asgeir = { # https://en.wikipedia.org/wiki/Viking_incursions_into_Gascony
 	}
 }
 
-HEE_sygtrygg = {
+aquitaine_viking_0002 = {
 	name = "Sygtrygg"
-	#female = yes
+	dna = "aquitaine_viking_dna"
 	#dynasty = 
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	# mother =
-	#health = 5.0
 	
 	#Skills
 	diplomacy = 6
@@ -82,10 +76,7 @@ HEE_sygtrygg = {
 	#Other Traits
 	trait = reaver
 	trait = viking
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
+
 	833.1.1 = {
 		birth = yes
 	}
@@ -204,27 +195,12 @@ HEE_refil_bjornsson = { # https://en.wikipedia.org/wiki/Refil_Bj%C3%B6rnsson
 	}
 }
 
-HEE_efanda_mother = { # Fictional so Igor and Efanda can be siblings
+volkhovnik0001 = { # Fictional so Igor and Efanda can be siblings
 	name = "Halla"
 	female = yes
 	dynasty = hee_volkhvs
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	
-	#Education
-
-	#Personality Traits
-
-	#Other Traits
-
-	#sexuality = heterosexual
-
-	#disallow_random_traits = yes
 	812.1.1 = {
 		birth = yes
 	}
@@ -233,15 +209,14 @@ HEE_efanda_mother = { # Fictional so Igor and Efanda can be siblings
 	}
 }
 
-HEE_efanda = {
+volkhovnik0002 = {
 	name = "Efanda"
+	dna = "efanda_dna"
 	female = yes
 	dynasty = hee_volkhvs
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	mother = HEE_efanda_mother
-	#health = 5.0
+	mother = volkhovnik0001
 	
 	#Skills
 	diplomacy = 7
@@ -259,11 +234,6 @@ HEE_efanda = {
 	trait = brave
 	trait = stubborn
 
-	#Other Traits
-	
-	#sexuality = heterosexual
-	
-	disallow_random_traits = yes
 	837.1.1 = {
 		birth = yes
 	}
@@ -283,16 +253,12 @@ HEE_efanda = {
 	}
 }
 
-HEE_askold = { # https://en.wikipedia.org/wiki/Askold_and_Dir
+askold0001 = { # https://en.wikipedia.org/wiki/Askold_and_Dir
 	name = "HO_skuldr"
-	dna = HEE_askold_askold_of_kyiv
-	# female = yes
+	dna = askold0001_dna
 	dynasty = hee_kievichi # Though likely unreliable and incorrect (using name as reference not as endorsement), going to go with a name based on this interpretation of Askold/Dir's origins - https://en.wikipedia.org/wiki/Kyi_dynasty
 	religion = "norse_pagan"
 	culture = "norse"
-	# father =
-	# mother = 
-	#health = 5.0
 	
 	#Skills
 	diplomacy = 8
@@ -313,8 +279,6 @@ HEE_askold = { # https://en.wikipedia.org/wiki/Askold_and_Dir
 	#Other Traits
 	trait = reaver
 	
-	#sexuality = heterosexual
-	
 	disallow_random_traits = yes
 	843.1.1 = {
 		birth = yes
@@ -329,7 +293,7 @@ HEE_askold = { # https://en.wikipedia.org/wiki/Askold_and_Dir
 		add_prestige = 400 
 		add_prestige_experience = 1000 # Rich and prestigious from raiding
 		effect = {
-			character:HEE_askold = {
+			character:askold0001 = {
 				create_character_memory = { type = 860_raid_on_constantinople }
 			}
 		}

@@ -46,7 +46,7 @@
 
  # Grand Raid 
  grand_raid_cb: "Grand Raid"
- GRAND_RAID_WAR_NAME: "[ATTACKER.GetPrimaryTitle.GetName|U] Grand Raid"
+ GRAND_RAID_WAR_NAME: "Grand Raid on [DEFENDER.GetPrimaryTitle.GetName]"
  GRAND_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
  GRAND_RAID_CB: "Grand Raid"
  grand_raid_war_warning_desc: "#X You may only attempt one grand raid every 5 years#!"
@@ -54,9 +54,13 @@
 
  
  # Truce Descriptions
+ treaty_of_koblenz_desc: "\nFollowing the failed conquest of West Francia by Ludwig the German, Charles the Bald, Lothaire II, and Ludwig met in Koblenz in 860 and concluded the Treaty of Koblenz in which the three kings made public vows to uphold the peace between their respective realms."
+
  louis_oath_desc: "\nEmperor Louis has been released from his unjust imprisonment by Adelchis of Benevento after having sworn to the Prince on holy relics that he would take no revenge for the injury, nor ever enter Benevento with an army."
 
  divisio_regni_desc: "\nPeace has been forged between King Ludwig and his sons through the Divisio regni - the division of the King's land among his sons with Carloman recieving Bavaria, Ludwig the Younger recieving Saxony with Franconia and Thuringia, and Karl recieving Swabia with Raetia."
+
+ edmund_viking_peace_desc: "\nIn the autumn of 865 a force probably numbering over 5,000 combatants - described by the Anglo-Saxon Chronicle as "a great heathen army" - came to East Anglia. King Edmund made peace with them and gave them horses and other supplies, and they stayed there until the summer of 866, when they moved on to York."
 
  unfavourable_peace_venice_croatia_desc: "\nWhen Orso I Participazio came to power as the new Doge of Venice in 864, he broke the long lasting peace treaty between Croatia and the Venetian Republic signed in 839 and attacked Croatia, which was still occupied with infighting over Trpimir's inheritance. After winning the civil war in 865, the usurper Domagoj was forced to make an unfavourable peace with Venice, giving hostages as a guarantee for safe passage of Venetian ships in the Adriatic."
 
@@ -68,9 +72,9 @@
 
  bulgarian_conversion_peace_desc: "\nIn the last months of 863 the Byzantines attacked Bulgaria, probably after having been informed that Boris was willing to accept Latin Christianity. Before any actual military engagements took place, Khan Boris was forced to sue for peace due to being unprepared for war because of Bulgaria being badly affected by crop failure and earthquakes that year. Negotiations were set up and Boris promised to convert to Eastern Orthodox Christianity along with his people, requesting missionaries to come to Bulgaria and begin the process. In exchange for Bulgaria's conversion to Eastern Orthodoxy, the two sides concluded a "deep peace" for a 30-year period along with the Byzantines returning the previously conquered border region of Zagora."
 
- dane_saxon_peace_desc: "\nWith neitther Saxon or Dane able to completely destroy the other, both sides have agreed to a temporary truce. Ceding the lands of Essex to the Great Summer Army, with no small amount of coin, both sides lick their wounds and prepare for the seemingly destined renewal of conflict."
+ dane_saxon_peace_desc: "\nWith neither Saxon or Dane able to completely destroy the other, both sides have agreed to a temporary truce. Ceding the lands of Essex to the Great Summer Army, with no small amount of coin, both sides lick their wounds and prepare for the seemingly destined renewal of conflict."
 
- franco_breton_peace_desc: "\nFor many years the alliance between the Bretons and Vikings has savaged West Francia, but now peace has finally been made between the French and Bretons. In exchange for King Charles recognizing Salomon as ruler over Brittany and ceding the land of Avranches to Brittany, Salomon has broken his ties with the Northmen and swore an oath of fealty to the French King."
+ franco_breton_peace_desc: "\nFor many years the alliance between the Bretons and Vikings has savaged West Francia, but now peace has finally been made between the French and Bretons. In exchange for King Charles recognizing Salomon as ruler over Brittany and ceding the land of Avranches to Brittany, Salomon has broken his ties with the Northmen and swore an oath of - nominal - fealty to the French King."
 
  treaty_of_orbe_truce_desc: "\nFollowing the death of the Emperor Lothaire, the sons of the Emperor - Louis II of Italy, Lothaire II of Lotharingia, and Charles of Provence - fought for a short time over the division of their father's land. However this conflict was brought to an end in October 856 at Orbe, where the three brothers reached a final settlement and agreed to make peace with one another. And though Charles has since passed, the remaining brothers continue to keep the peace between them."
 

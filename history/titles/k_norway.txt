@@ -952,7 +952,7 @@ c_sogn = {
 		government = tribal_government
 	}
 	810.1.1 = {
-		holder = HEE_haraldr_goldbeard
+		holder = gullskjegg0001
 	}
 	848.1.1 = {
 		holder = 168324 # Haraldr, Grandson of Goldbeard and son of Halfdan the Black

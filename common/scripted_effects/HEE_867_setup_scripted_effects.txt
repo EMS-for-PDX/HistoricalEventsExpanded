@@ -1,5 +1,17 @@
 ﻿
 hee_laamp_867_effect = {
+
+	# Wasil
+	character:azariqa_0003 ?= {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landless_adventurer = yes
+			}
+			add_realm_law_skip_effects = camp_purpose_brigands
+		}
+	}	
+
 	## Trpimir's sons in exile
 	character:8601 ?= {
 		if = {
@@ -42,6 +54,34 @@ hee_laamp_867_effect = {
 			}
 		}
 	}
+
+
+	## Hastein
+	character:6878 ?= {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landless_adventurer = yes
+			}
+			add_realm_law_skip_effects = camp_purpose_brigands # Raid, plunder, ravage!
+			if = {
+				limit = {
+					character:6879 = {
+						NOT = { is_courtier_of = character:6878 }
+					}
+				}
+				add_courtier = character:6879
+			}
+			if = {
+				limit = {
+					character:6880 = {
+						NOT = { is_courtier_of = character:6878 }
+					}
+				}
+				add_courtier = character:6880
+			}
+		}
+	}
 }
 
 # Karling Collapse
@@ -72,6 +112,7 @@ hee_karling_867_effect = {
 	character:168315 = { save_scope_as = gisela } # Gisela (c. 865–908), who in 883 married Godfrey, the Viking leader ruling in Frisia, who was murdered in 885
 	character:168336 = { save_scope_as = godfrid } # https://en.wikipedia.org/wiki/Godfrid,_Duke_of_Frisia
 	character:167704 = { save_scope_as = gunthar } # https://en.wikipedia.org/wiki/Gunther_(archbishop_of_Cologne)
+	character:trierarchbishop0001 = { save_scope_as = theotgaud } # https://en.wikipedia.org/wiki/Gunther_(archbishop_of_Cologne)
 	
 	character:90107 = { save_scope_as = ludwig_the_german } # https://en.wikipedia.org/wiki/Louis_the_German
 	character:7987 = { save_scope_as = hemma } # https://en.wikipedia.org/wiki/Hemma
@@ -170,9 +211,23 @@ hee_karling_867_effect = {
 	}
 
 	# Lotharingia #
-	consume_all_criminal_reasons_effect = {
+	consume_all_criminal_reasons_effect = { # Lothaire doesnt really recognize these excommunications
 		LIEGE = scope:lothaire
 		CRIMINAL = scope:gunthar
+	}
+
+	consume_all_criminal_reasons_effect = { # Lothaire doesnt really recognize these excommunications
+		LIEGE = scope:lothaire
+		CRIMINAL = scope:waldrada
+	}
+
+	consume_all_criminal_reasons_effect = { # Lothaire doesnt really recognize these excommunications
+		LIEGE = scope:lothaire
+		CRIMINAL = scope:theotgaud
+	}
+
+	character:163093  = { # Matfrid II, count of Ayfelgau - whose territory is unfortunately split between three baronies all in seperate counties so this will serve as a stop-gap measure
+		get_title = title:b_duren
 	}
 
 	# Italy #
@@ -213,6 +268,10 @@ hee_karling_867_effect = {
 	if = { # Gameplay impact of the Treaty of Coulaines (https://en.wikipedia.org/wiki/Treaty_of_Coulaines)
 		limit = { exists = title:k_france.holder }
 		title:k_france.holder = {
+			if = {
+				limit = { has_realm_law = crown_authority_1 }
+				add_realm_law = crown_authority_0
+			}
 			every_vassal = {
 				limit = {
 					vassal_contract_has_modifiable_obligations = yes
@@ -452,6 +511,13 @@ hee_byzantine_bulgaria_867_effect = {
 
 	faith:orthodox = { save_scope_as = orthodox }
 	faith:tengri_pagan = { save_scope_as = tengri }
+
+	if = {
+		limit = {
+			has_game_rule = romania_name_of_byzantium
+		}
+		set_title_name = e_romania
+	}
 
 	title:b_vostitsa = { save_scope_as = b_vostitsa }
 
@@ -765,7 +831,7 @@ hee_byzantine_bulgaria_867_effect = {
 		if = {
 			limit = { 
 				NOT = {
-					government = tribal government
+					has_government = tribal_government
 				}
 			 }
 			change_government = tribal_government
@@ -778,7 +844,7 @@ hee_byzantine_bulgaria_867_effect = {
 		 	every_vassal = {
 				limit = { 
 					NOT = {
-						government = tribal government
+						has_government = tribal_government
 					}
 				}
 				change_government = tribal_government
@@ -804,13 +870,173 @@ hee_byzantine_bulgaria_867_effect = {
 
 	province:5342 = { save_scope_as = b_sambalut }
 
-	# Capital of the Emirate of Nekor
+	# Capital of the Kingdom of Sarir
 	scope:b_sambalut = {
 		set_holding_type = castle_holding
 		add_building = hill_forts_02
 	}
 	scope:b_sambalut.barony = { set_capital_barony = yes }
 
+
+	scope:michael_iii = { # Attempt to end the stupid Basil/Eudokia confrontation since there should be no confrontation
+		random_owned_story = {
+			limit = {
+				story_type = story_cycle_infidelty_confronter
+			}
+			end_story = yes
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	# Arab-Byzantine frontier zone - Buff Defenses all around as this area has been a battleground for centuries
+	province:761 = { save_scope_as = b_tarsus }
+	province:762 = { save_scope_as = b_adana }
+	province:5624 = { save_scope_as = b_mallus }
+	province:5625 = { save_scope_as = b_anazaribus }
+	province:4895 = { save_scope_as = b_al-haruniya }
+	province:4896 = { save_scope_as = b_tall_hamid }
+	province:4897 = { save_scope_as = b_ayas }
+	province:5710 = { save_scope_as = b_camacha }
+	province:702 = { save_scope_as = b_tzimisca }
+	province:707 = { save_scope_as = b_melitene }
+	province:4893 = { save_scope_as = b_marash }
+	province:4894 = { save_scope_as = b_samosata }
+	province:4899 = { save_scope_as = b_duluk }
+
+	province:5705 = { save_scope_as = b_tephrike }
+	province:5703 = { save_scope_as = b_satala }
+	province:5604 = { save_scope_as = b_karnalis }
+	province:5610 = { save_scope_as = b_comana }
+	province:736 = { save_scope_as = b_lykandos }
+
+	province:758 = { save_scope_as = b_seleucia }
+	province:760 = { save_scope_as = b_tyana }
+	province:5628 = { save_scope_as = b_cybistra }
+	province:5623 = { save_scope_as = b_kyzistra }
+	province:737 = { save_scope_as = b_kaisereia }
+	province:5617 = { save_scope_as = b_charsianon }
+	province:5602 = { save_scope_as = b_sebasteia }
+	province:706 = { save_scope_as = b_colonea }
+
+	scope:b_tarsus = {
+		add_building = castle_02
+		add_building = farm_estates_01
+		add_building = curtain_walls_02
+		add_building = regimental_grounds_02
+	}
+
+	scope:b_adana = {
+		add_building = castle_02
+		add_building = curtain_walls_02
+		add_building = regimental_grounds_01
+	}
+
+	scope:b_anazaribus = {
+		set_holding_type = castle_holding
+		add_building = castle_02
+		add_building = curtain_walls_02
+		add_building = cereal_fields_01
+	}
+
+	scope:b_al-haruniya = {
+		set_holding_type = castle_holding
+		add_building = hill_forts_02
+		add_building = military_camps_01
+	}
+
+	scope:b_ayas = {
+		set_holding_type = city_holding
+		add_building = common_tradeport_02
+	}
+
+	scope:b_mallus = {
+		add_building = common_tradeport_02
+	}
+
+	scope:b_tall_hamid = {
+		add_building = curtain_walls_02
+		add_building = barracks_01
+		add_building = military_camps_01
+	}
+
+	scope:b_camacha = {
+		set_holding_type = castle_holding
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
+
+	scope:b_tzimisca = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
+
+	scope:b_melitene = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_02
+		add_building = hill_farms_01
+	}
+
+	scope:b_samosata = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+		add_building = hill_farms_01
+	}
+
+	scope:b_marash = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
+
+	scope:b_duluk = {
+		set_holding_type = castle_holding
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
+
+	scope:b_tephrike = {
+		add_building = barracks_02
+	}
+
+	scope:b_satala = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
+
+	scope:b_karnalis = {
+		add_building = castle_02
+		add_building = hill_forts_01
+		add_building = barracks_02
+	}
+
+	scope:b_comana = {
+		add_building = castle_02
+		add_building = hill_forts_01
+		add_building = barracks_02
+	}
+
+	scope:b_lykandos = {
+		add_building = castle_02
+		add_building = hill_forts_02
+		add_building = barracks_01
+	}
 
 }
 
@@ -1210,24 +1436,28 @@ hee_fairhair_867_effect = {
 		
 	character:166044 = { # Gyda Eiriksdatter
 
-		add_trait = unwed
+		add_trait = unwed # Dont want the AI marrying her off before Harald's content
 
-		add_character_flag = {
+		add_character_flag = { # Donnt want her to die early
 			flag = immune_to_disease
 			years = 10
 		}
 	}
 
-	character:6862 = { # Ragnhild the Mighty
+	character:6862 = { # Ragnhild the Mighty; Unwed so she can later be used for a Harald evvent
 		add_trait = unwed
 	}
 
-	# Set up Guttorm as Regent as he was Haraldr's guardian and regent growing up, and a great general in the battles to come
-	scope:haraldr_fairhair = { designate_diarch = scope:guttorm }
+	if = { 	# Set up Guttorm as Regent as he was Haraldr's guardian and regent growing up, and a great general in the battles to come
+		limit = {
+			NOT = { has_dlc_feature = roads_to_power }
+		}
+		scope:haraldr_fairhair = { designate_diarch = scope:guttorm }
 
-	remove_generated_diarch_consequences_effect = {
-		NEW_DIARCH = scope:guttorm
-		LIEGE = scope:haraldr_fairhair
+		remove_generated_diarch_consequences_effect = {
+			NEW_DIARCH = scope:guttorm
+			LIEGE = scope:haraldr_fairhair
+		}
 	}
 }
 
@@ -1712,6 +1942,184 @@ hee_north_sea_867_effect = {
 			days = 1825
 		}
 	}
+
+
+
+
+
+
+	# Aftermath of Viking raids in England
+	province:1503 = { save_scope_as = b_canterbury }
+
+	province:1523 = { save_scope_as = b_thetford }
+	province:1525 = { save_scope_as = b_lynn }
+
+	province:1537 = { save_scope_as = b_ely }
+	province:1584 = { save_scope_as = b_stamford }
+	province:1583 = { save_scope_as = b_lincoln }
+
+	province:1587 = { save_scope_as = b_grimsby }
+	province:1588 = { save_scope_as = b_pockington }
+
+	province:1595 = { save_scope_as = b_york }
+
+	scope:b_canterbury = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_thetford = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_lynn = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_ely = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_lincoln = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_lynn = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_grimsby = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_pockington = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+	scope:b_york = {
+		add_province_modifier = {
+			modifier = hee_867_great_heathen_army_aftermath_modifier
+			days = 1825
+		}
+	}
+
+	title:c_kent = { save_scope_as = c_kent }
+	title:c_norfolk = { save_scope_as = c_norfolk }
+	title:c_cambridgeshire = { save_scope_as = c_cambridgeshire }
+	title:c_lincolnshire = { save_scope_as = c_lincolnshire }
+	title:c_east_riding = { save_scope_as = c_east_riding }
+	title:c_north_riding = { save_scope_as = c_north_riding }
+
+	scope:c_kent = {
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_norfolk = {
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_cambridgeshire = {
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_lincolnshire = {
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_east_riding = {
+		change_county_control = medium_county_control_loss
+	}
+	scope:c_north_riding = {
+		change_county_control = massive_county_control_loss
+	}
+
+
+
+	title:c_lincolnshire = {
+ 		set_de_jure_liege_title = title:d_hereford
+ 	}
+
+	# Kingdom of Wessex
+	title:d_somerset = {
+ 		set_de_jure_liege_title = title:k_wessex
+ 	}
+	title:d_gloucester = {
+ 		set_de_jure_liege_title = title:k_wessex
+ 	}
+	title:d_canterbury = {
+ 		set_de_jure_liege_title = title:k_wessex
+ 	}
+	title:d_bedford = {
+ 		set_de_jure_liege_title = title:k_wessex
+ 	}
+	# Kingdom of East Anglia
+	title:d_norfolk = {
+ 		set_de_jure_liege_title = title:k_east_anglia
+ 	}
+	# Kingdom of Mercia
+	title:d_hereford = {
+ 		set_de_jure_liege_title = title:k_mercia
+ 	}
+	# Kingdom of Northumbria
+	title:d_york = {
+ 		set_de_jure_liege_title = title:k_northumbria
+ 	}
+	title:d_lancaster = {
+ 		set_de_jure_liege_title = title:k_northumbria
+ 	}
+	title:d_northumberland = {
+ 		set_de_jure_liege_title = title:k_northumbria
+ 	}
+	title:d_lothian = {
+ 		set_de_jure_liege_title = title:k_northumbria
+ 	}
+	# Empire De Jure
+	title:k_wessex = {
+ 		set_de_jure_liege_title = title:e_britannia
+ 	}
+	title:k_east_anglia = {
+ 		set_de_jure_liege_title = title:e_britannia
+ 	}
+	title:k_mercia = {
+ 		set_de_jure_liege_title = title:e_britannia
+ 	}
+	title:k_northumbria = {
+ 		set_de_jure_liege_title = title:e_britannia
+ 	}
+	# CONSIDER CHANGE
+	title:d_cornwall = {
+ 		set_de_jure_liege_title = title:k_wales
+ 	}
+
+	character:163064 = { save_scope_as = edmund_the_martyr } #
+
+	# Truces 
+	scope:edmund_the_martyr = { # In the autumn of 865 a force probably numbering over 5,000 combatants, described by the Anglo-Saxon Chronicle as "a great heathen army", came to East Anglia. Edmund made peace with them and gave them horses and other supplies
+		add_truce_both_ways = {
+			character = scope:halfdan
+			days = 730 # 2 years
+			name = edmund_viking_peace_desc
+		}
+	}
+
+
+	character:33358 = { #
+		set_designated_heir = character:7627
+	}
+
+
+
 }
 
 hee_brittany_867_effect = {
@@ -1747,9 +2155,14 @@ hee_brittany_867_effect = {
 		set_mother = scope:HEE_wembrit_of_brittany
 	}
 
-	# Hastein set to Tribal government
+
+	# Adventurer Hastein
 	character:6878 = {
-		change_government = tribal_government
+		if = {
+			limit = { has_ep3_dlc_trigger = no }
+			get_title = title:c_avranches
+			change_government = tribal_government
+		}
 	}
 
 	# Alliance between Hastein and Salomon
@@ -1871,6 +2284,7 @@ hee_north_africa_867_effect = {
 	scope:b_nakor = {
 		set_holding_type = castle_holding
 		add_building = common_tradeport_02
+		add_building = watchtowers_02
 	}
 	scope:b_nakor.barony = { set_capital_barony = yes }
 
@@ -1915,22 +2329,26 @@ hee_dynastic_changes_867_effect = {
 
 	scope:karling_dynasty = {
 		dynasty = {
-			add_dynasty_perk = glory_legacy_1
-			add_dynasty_perk = glory_legacy_2
+			add_dynasty_prestige = 500
+			add_dynasty_prestige_level = -1
+			add_dynasty_prestige = -1400
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = erudition_legacy_1
 		}
 	}
 
 	scope:cetchathach_dynasty = {
 		dynasty = {
-			add_dynasty_prestige_level = -3
 			add_dynasty_prestige = 50
+			add_dynasty_prestige_level = -4
 			add_dynasty_perk = kin_legacy_1
 		}
 	}
 
 	scope:balgarsko_dynasty = {
 		dynasty = {
-			add_dynasty_prestige = 50
+			add_dynasty_prestige = 255
+			add_dynasty_prestige_level = -1
 			add_dynasty_perk = warfare_legacy_1
 			add_dynasty_perk = guile_legacy_1
 		}
@@ -1939,14 +2357,15 @@ hee_dynastic_changes_867_effect = {
 	scope:abbasid_dynasty = {
 		dynasty = {
 			add_dynasty_perk = erudition_legacy_1
-			add_dynasty_perk = erudition_legacy_2
 		}
 	}
 
 	scope:umayyad_dynasty = {
 		dynasty = {
-			add_dynasty_perk = erudition_legacy_1
-			add_dynasty_perk = erudition_legacy_2
+			add_dynasty_prestige = 350
+			add_dynasty_prestige_level = -2
+			add_dynasty_perk = warfare_legacy_1
+			add_dynasty_perk = ep1_culture_legacy_1
 		}
 	}
 }

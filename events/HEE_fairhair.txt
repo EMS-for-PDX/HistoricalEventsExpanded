@@ -50,10 +50,10 @@ HEE_fairhair.1 = { # Eirikr hosts a feast
 
 HEE_fairhair.2 = { # Letter from Eirikr to harald
 	type = letter_event
-	title = HEE_fairhair.2.t
+	opening = { desc = HEE_fairhair.2.opening }
 	desc = HEE_fairhair.2.desc
-	theme = feast_activity
 	sender = scope:king_eirikr
+
 	immediate = {
 		character:166329 = {
 			save_scope_as = king_eirikr

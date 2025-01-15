@@ -3,6 +3,10 @@
  d_test_empire: "Test"
  d_test_empire_adj: "Tester"
 
+ e_romania: "Romanía"
+ e_romania_adj: "Roman"
+ e_romania_pre: "Romano"
+
  e_first_turkic_khanate_article: "the "
  e_first_turkic_khanate: "Göktürk Khaganate"
  e_first_turkic_khanate_adj: "Turk"
@@ -33,6 +37,10 @@
 
  k_provence: "Provence"
  k_provence_adj: "Provencian"
+
+ k_ostrogoths_article: "the "
+ k_ostrogoths: "Kingdom of the Ostrogoths"
+ k_ostrogoths_adh: "Ostrogothic"
 
  k_pechenegs_custom: "Pechenegs"
  k_pechenegs_custom_adj: "Pecheneg"
@@ -132,9 +140,15 @@
  d_nf_rendakios: "$dynn_Rendakios$ Family"
  d_nf_rendakios_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
 
+ d_nf_monomachos: "$dynn_Monomachos$ Family"
+ d_nf_monomachos_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
  #LAAMPs
  d_laamp_trpimirovic: "Sons of Trpimir"
  d_laamp_trpimirovic_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
 
  d_laamp_hanzali: "Dissenters of Arbitration"
  d_laamp_hanzali_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_laamp_hastein: "Ravagers of the World"
+ d_laamp_hastein_article: "$DEFAULT_TITLE_NAME_ARTICLE$"

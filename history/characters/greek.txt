@@ -2,7 +2,7 @@
 	name = "Basileios"
 	dynasty = 644
 	dna = 1700_basileios_makedon
-	martial = 6
+	martial = 7
 	diplomacy = 8
 	intrigue = 10 # Concieved and executed the murder of both Bardas (the emperor Mikhael III's maternal uncle and chief adviser) and the Emperor Mikhael III 
 	stewardship = 8 # In administrative affairs, he conceived a project to rewrite the legal codes of Justinian which, although never finalised, formed the basis for his son's subsequent legislative work
@@ -10,7 +10,7 @@
 	prowess = 10
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_martial_2
+	trait = education_stewardship_3 # Acted more as a surprisingly competent Administrator
 	trait = physique_good_2 # Accomplishes the goal of both the beauty trait and strong
 	trait = brave
 	trait = ambitious
@@ -71,6 +71,12 @@
 			target = character:70490
 			modifier = envy_opinion
 			opinion = -50
+		}
+	}
+	866.12.25 = { # Represent Basil's historical preference towards Konstantinos and distaste for Leon
+		effect = {
+			set_relation_potential_rival = character:1702 # Basil disliked the bookish Leo, on occasion physically beating him - possibly suspected Leo of being the son of Michael III
+			set_relation_potential_friend = character:145133 # his eldest and favourite son Konstantinos
 		}
 	}
 	867.9.24 = { # Murder of Michael III
@@ -9718,7 +9724,6 @@
 	}
 	813.7.11 = { # Following Michael I Rangabe's abdication, him and his family were tonsured as monks and nuns
 		trait = devoted
-		trait = eunuch_1
 	} 
 	825.1.1 = { # Unknown
 		death = "825.1.1"
@@ -16945,23 +16950,32 @@
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
-	trait = celibate
 	trait = education_learning_3
+	trait = ambitious # Deposed his brother, then involved himself in the wars over the throne of Capua
+	trait = diligent # He was a hellenophile who worked to preserve many Greek manuscripts and maintain good relations with Byzantium
+	trait = stubborn
 	father = 145201
 	848.1.1 = {
 		birth = "848.1.1"
+	}
+	875.1.1 = {
+		trait = devoted # elected Bishop of Naples in 875 after the death of his uncle Bishop Athanasius I
 	}
 	898.1.1 = {
 		death = "898.1.1"
 	}
 }
 
-163089 = {
+163089 = { # Sergius II of Naples; Duke of Naples from 870 to 877
 	name = "Sergios"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
 	father = 145201
+	trait = education_diplomacy_2
+	trait = arbitrary # It is written that Sergius made Naples "into another Palermo, another Africa," by his friendly relations with the Aghlabids. earned the opposition of his uncle, Bishop Athanasius I and exiled him to an island
+	trait = arrogant
+	trait = cynical # It is written that Sergius made Naples "into another Palermo, another Africa," by his friendly relations with the Aghlabids
 	846.1.1 = {
 		birth = "846.1.1"
 	}
@@ -16973,11 +16987,15 @@
 	}
 }
 
-163090 = {
+163090 = { # Sergius I of Naples; first duke of Naples of his dynasty, often dubbed the "Sergi," 
 	name = "Sergios"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
+	trait = education_diplomacy_3
+	trait = ambitious # Sought to make the Duke of Naples a hereditary position.  
+	trait = cynical # Swapped between allying the Muslims of Palermo and the Franks/Christians as it suited his needs
+	trait = diligent # began to mint his own coins with his own effigy on them. Able and energetic
 	800.1.1 = {
 		birth = "800.1.1"
 	}
@@ -18799,55 +18817,96 @@
 	learning = 7
 	trait = education_learning_3
 	trait = patient
+	trait = trusting # Put faith in his brothers' abilities and counsel
 	trait = diligent
 	trait = calm
 	father = 163090
+	mother = spartenos0001
 	826.1.1 = {
 		birth = "826.1.1"
 	}
+	866.1.1 = {
+		effect = {
+			learn_language = language_latin # He was recorded as a man of learning, fluent in both Greek and Latin
+		}
+	}
 	870.3.1 = {
-		death = "870.3.1"
+		death = { # Gregory fell seriously ill in January 870 and left the government to his son Sergius II. He would pass away that March
+			death_reason = death_ill
+		}
 	}
 }
 
-145202 = {
+145202 = { # Caesar of Naples; admiral of the fleet of the Duchy of Naples during the reigns (840 – 870 AD) of his father, Sergius I, and brother, Gregory III.
 	name = "Kaisarios"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
 	father = 163090
+	mother = spartenos0001
+	martial = 9 # High martial score to give good chance he is marshal of Naples. A soldier
+	prowess = 8 # Reinforce role as a lifelong soldier
+	trait = education_martial_3
+	trait = brave
+	trait = honest # Apparently was honest with his misgiving about his nephew's relationship with the Aghlabids
+	trait = zealous # Opposed his nephew's closeness with the Aghlabids
+	trait = forder # Admiral
 	828.1.1 = {
 		birth = "828.1.1"
 	}
+	849.1.1 = {
+		give_nickname = nick_the_brave # When an Arab fleet threatened to attack Rome in 849, Cesarius's fleet defeated it at Ostia, the event being commemorated in the early 16th century in one of the wall paintings in the papal chambers in the Vatican
+	}
 	875.3.1 = {
-		death = "875.3.1"
+		death = { # In 870 Caesar was imprisoned by his nephew, Sergius II, having opposed his closeness to the Aghlabids, and he died in prison
+			death_reason = death_prison
+			killer = 163089 # Sergius II
+		}
 	}
 }
 
-145203 = {
+145203 = { # Athanasius I (bishop of Naples); 
 	name = "Athanasios"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
-	trait = celibate
-	trait = education_learning_3
+	diplomacy = 8
+	stewardship = 7
+	learning = 9
+	trait = education_learning_4
+	trait = compassionate # established a hospice for pilgrims, and set up a process for ransoming prisoners captured by the Saracens
+	trait = zealous # devoted to his vows and church. opposed to the alliance with the Aghlabids of Sicily
+	trait = diligent # Athanasius led a life of austerity and prayer, and was particular concerned with the proper education and training of the clergy in his diocese
+	trait = temperate # Athanasius led a life of austerity and prayer, and was particular concerned with the proper education and training of the clergy in his diocese
 	father = 163090
-	830.1.1 = {
+	mother = spartenos0001
+	830.1.1 = { # Second Son of Sergius
 		birth = "830.1.1"
 	}
-	872.1.1 = {
+	849.1.1 = {
+		trait = devoted # became Bishop of Naples in 849 
+		trait = celibate
+	}
+	867.1.1 = { # Give Athanasius I his historical role as Bishop of Naples
+		employer = 145201
+		give_council_position = councillor_court_chaplain
+	}
+	872.7.15 = { # regarded among Roman Catholics as the co-patron saint of the city of Naples, and his feast day is 15 July
+		trait = saint
 		death = "872.1.1"
 	}
 }
 
-145204 = {
+145204 = { # Stephen of Naples; bishop of Sorrento
 	name = "Stephanos"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
+	trait = devoted
 	trait = celibate
 	trait = education_learning_3
 	father = 163090
+	mother = spartenos0001
 	832.1.1 = {
 		birth = "832.1.1"
 	}
@@ -18856,12 +18915,12 @@
 	}
 }
 
-145205 = {
+145205 = { # bishop of Sorrento and eventual 47th bishop of Naples. Possibly identical to 145204
 	name = "Stephanos"
 	dynasty = 101138
 	religion = "orthodox"
 	culture = "greek"
-	trait = celibate
+	trait = devoted
 	trait = education_learning_3
 	father = 145201
 	850.1.1 = {

@@ -508,6 +508,7 @@
 	383.8.25 = {
 		death = { # Gratian was pursued by Andragathius, Maximus' magister equitum and killed at Lugdunum (Lyon) on 25 August 383, supposedly against orders
 			death_reason = death_murder_known # Killed by Andragathius, who served under the Roman general and usurper Magnus Maximus
+			killer = 159807 # Emperor Magnus Maximus, pretender to the WRE (Technically killed by Andragathius, but as Andragathius served under Magnus Maximus we will have Maximus as the killer for clarity)
 		}
 	}
 }

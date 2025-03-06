@@ -2,10 +2,10 @@
 # Dissolution of the Carolingian Empire/Breakdown of Carolingian System in the HRE
 
 # Karl's Forced Abdication
-HEE_carolingian_dissolution.9999 = {
+HEE_carolingian_dissolution.999 = {
 	type = character_event
-	title = HEE_carolingian_dissolution.9999.t
-	desc = HEE_carolingian_dissolution.9999.desc
+	title = HEE_carolingian_dissolution.999.t
+	desc = HEE_carolingian_dissolution.999.desc
 	theme = mental_break
  	left_portrait = {
 		character = root
@@ -212,7 +212,7 @@ HEE_carolingian_dissolution.9999 = {
 	}
 
 	option = { #Accept your forced abdication
-		name = HEE_carolingian_dissolution.9999.a
+		name = HEE_carolingian_dissolution.999.a
 		
 		trigger = {
 
@@ -696,25 +696,26 @@ HEE_carolingian_dissolution.9999 = {
 			limit = {
 				AND = {
 					is_ai = no
-					OR = {
-						title_capital_county.title_province = { geographical_region = world_europe_west } # Iberia, Francia, Germania, Britannia
-						title_capital_county.title_province = { geographical_region = world_europe_south } # Italia, Sicily, Western ERE
+					capital_province = {
+						OR = {
+							geographical_region = world_europe_west # Iberia, Francia, Germania, Britannia
+							geographical_region = world_europe_south # Italia, Sicily, Western ERE
+						}
 					}
 				}
 			}
-			trigger_event = HEE_fatimid_uprising.0103 # Notify nearby rulers of the start of aggressive Fatimid Expansion
+			trigger_event = HEE_carolingian_dissolution.1000 # Notify nearby rulers of the start of aggressive Fatimid Expansion
 		}
 	}
 }
 
-HEE_carolingian_dissolution.10000 = { # Fullscreen Intro Event
+HEE_carolingian_dissolution.1000 = { # Fullscreen Intro Event
 	type = character_event
 	window = fullscreen_event
-	title = HEE_carolingian_dissolution.10000.t
-	desc = HEE_carolingian_dissolution.10000.desc
+	title = HEE_carolingian_dissolution.1000.t
+	desc = HEE_carolingian_dissolution.1000.desc
 	theme = realm
 	override_background = { reference = fp3_fullscreen_sunder }
-	#override_sound = { reference = "event:/DLC/FP2/SFX/UI/fp2_struggle_ui_intro_animate" }
 
 	immediate = {
 		play_music_cue = "mx_cue_negative"
@@ -730,7 +731,7 @@ HEE_carolingian_dissolution.10000 = { # Fullscreen Intro Event
 	}
 
 	option = {
-		name = HEE_carolingian_dissolution.10000.a
+		name = HEE_carolingian_dissolution.1000.a
 
 		custom_tooltip = ponder_the_future_of_europe
 

@@ -50,7 +50,7 @@ HEE_carolingian_dissolution = {
 	effect = {
 		title:e_france.holder = {
 			trigger_event = {
-				id = HEE_carolingian_dissolution.9999
+				id = HEE_carolingian_dissolution.999
 				days = { 1 365 }
 			}
 		}

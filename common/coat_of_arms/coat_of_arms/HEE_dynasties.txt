@@ -3429,3 +3429,162 @@ dynasty_matfriede = { # Taken from the County of Paris where the Dynasty founder
 		}
 	}
 }
+
+kurdish_al_bawazij = { # For bookmark
+	pattern="pattern_solid.dds"
+	color1=rgb { 101 62 42 }
+	color2=yellow
+	color3=green
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_tamgha_roundel_frame.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		texture="ce_religion_islam_iibadi.dds"
+		instance={
+			scale={ 0.620000 0.620000 }
+		}
+	}
+}
+
+7517 = { # al-Turki (for Bookmark)
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=red
+		texture="ce_tamgha_han.dds"
+		instance={
+			position={ 0.500000 0.340000 }
+			scale={ 0.550000 -0.550000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.500000 0.660000 }
+			scale={ 0.550000 0.550000 }
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+			depth=4.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_tamgha_carasdi.dds"
+		instance={
+			position={ 0.280000 0.500000 }
+			scale={ 0.460000 0.460000 }
+			rotation=270
+		}
+
+		instance={
+			position={ 0.720000 0.500000 }
+			scale={ 0.460000 0.460000 }
+			depth=1.010000
+			rotation=90
+		}
+	}
+}
+
+1102201 = { # Buyids
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=white
+	color3=green
+	colored_emblem={
+		color1=black
+		texture="ce_arabic_shahada.dds"
+		instance={
+			scale={ 1.000000 0.700000 }
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_block_01.dds"
+		instance={
+			scale={ 1.000000 0.410000 }
+			depth=1.010000
+		}
+
+		instance={
+			scale={ 1.000000 0.640000 }
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=rgb { 124 85 28 }
+		texture="ce_block_01.dds"
+		instance={
+			scale={ 1.000000 0.510000 }
+			depth=2.010000
+		}
+	}
+}
+
+101689 = { # Ziyarids
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=yellow
+		texture="ce_khvarenah.dds"
+		instance={
+			position={ 0.500000 0.260000 }
+			scale={ 0.560000 0.380000 }
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=rgb { 154 19 0 }
+		texture="ce_shahbaz.dds"
+		instance={
+			position={ 0.500000 0.520000 }
+			scale={ 0.560000 0.510000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		color2=yellow
+		color3=black
+		texture="ce_checkers_diagonal_6x6.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.710000 0.710000 }
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.580000 0.580000 }
+			depth=2.010000
+		}
+	}
+}

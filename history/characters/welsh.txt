@@ -5735,13 +5735,17 @@
 		death = "360.1.1"
 	}
 }
-159430 = {
+159430 = { # Saint Elen - https://en.wikipedia.org/wiki/Saint_Elen
 	name = "Elen"
 	female = yes
 	religion = "catholic"
 	culture = "welsh"
 	dynasty = 1029001 #Prydain
 	father = 159429
+	trait = zealous
+	trait = diligent
+	trait = temperate
+	trait = architect # acknowledged as the patron saint of British roadbuilders and the protectress of travellers
 	325.1.1 = {
 		birth = yes
 	}
@@ -5749,6 +5753,7 @@
 		add_spouse = 159807
 	}
 	400.1.1 = {
+		trait = saint # Although never formally canonized by Rome, Elen is traditionally considered a saint in the Welsh Church
 		death = "400.1.1"
 	}
 }
@@ -6040,14 +6045,22 @@
 	dynasty = 1029129 #Gwent
 	religion = "catholic"
 	culture = "roman"
+	trait = education_martial_4 # served in Theodosius the Elder's army in Britannia and would later become a distinguished general
+	trait = ambitious # Sought the Imperial title, pushed to invade Italy
+	trait = brave # Orosius wrote that Maximus was "an energetic and able man"
+	trait = zealous # Maximus was a stern persecutor of heretics
+	trait = diligent # issued coinage and a number of edicts reorganising Gaul's system of provinces
 	325.1.1 = {
 		birth = yes
 	}
 	360.1.1 = {
 		add_spouse = 159430
 	}
-	380.1.1 = {
-		death = "380.1.1"
+	388.8.28 = {
+		death = { # Following the Battle of Poetovio, Theodosius - following in swift pursuit - besieged Maximus in his refuge of Aquilia. The garrison soon surrendered, delivering Maximus to Theodosius who executed his rival on August 28th
+			death_reason = death_execution
+			killer = 70534 # Eastern Roman Emperor Theodosius I
+		}
 	}
 }
 159810 = {

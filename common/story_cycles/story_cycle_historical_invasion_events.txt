@@ -610,6 +610,92 @@ story_kutama_uprising = {
 	
 	on_setup = {
 		global_var:Abu_Abdallah_al_Shii = { spawn_fatimid_starting_troops_effect = yes }
+		if = {
+			limit = { 
+				AND = {
+					has_ep3_dlc_trigger = yes
+					global_var:Abu_Abdallah_al_Shii = { is_landed = no }
+				}
+				has_ep3_dlc_trigger = yes }
+
+			if = { # Check to see if the Kutamids (or their stand-in) are receptive to the Ismali mission
+				limit = {
+					title:c_satif.holder = {
+						AND = {
+							opinion = {
+								target = title:k_africa.holder
+								value <= medium_negative_opinion
+							}
+							NOT = { has_trait = zealous }
+						}
+					}
+				}
+				title:c_satif.holder = { save_scope_as = kutamids }
+			}
+
+			if = { # Check to see if the Berkanids (or their stand-in) are receptive to the Ismali mission
+				limit = {
+					title:c_hodna.holder = {
+						AND = {
+							opinion = {
+								target = title:k_africa.holder
+								value <= medium_negative_opinion
+							}
+							NOT = { has_trait = zealous }
+						}
+					}
+				}
+				title:c_hodna.holder = { save_scope_as = berkanids }
+			}
+
+			global_var:Abu_Abdallah_al_Shii = {
+				title:k_africa.holder = { # Counties that are upset have been receptive of the Ismali mission (which we pretend has been going around unnoticed)
+					every_sub_realm_county = {
+						limit = {
+							title_province = { geographical_region = custom_roman_mauretania }
+							county_opinion < 0
+						}
+						set_county_faith = faith:ismaili
+					}
+				}
+
+				start_war = { # Start the war for Africa
+					cb = ep3_laamp_adventurer_kingdom_invasion
+					target = title:k_africa.holder
+					claimant = root
+					target_title = title:k_africa
+					target_title = title:k_africa.title_capital_county
+				}
+			}
+
+			global_var:Abu_Abdallah_al_Shii = {
+				random_character_war = {
+					limit = {
+						primary_attacker = global_var:Abu_Abdallah_al_Shii
+						primary_defender = title:k_africa.holder
+					}
+					save_scope_as = kutama_uprising
+				}
+			}
+
+			scope:kutama_uprising = {
+				if = {
+					limit = {
+						exists = scope:kutamids
+					}
+					add_attacker = scope:kutamids
+					scope:kutamids = { set_character_faith_with_conversion = faith:ismaili }
+				}
+
+				if = {
+					limit = {
+						exists = scope:berkanids
+					}
+					add_attacker = scope:berkanids
+					scope:berkanids = { set_character_faith_with_conversion = faith:ismaili }
+				}
+			}
+		}
 	}
 
 	on_end = {

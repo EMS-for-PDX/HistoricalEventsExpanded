@@ -494,6 +494,11 @@ dynasty_sigritsa = {
 	culture = "bulgarian"	
 }
 
+dynasty_kavkhan = {
+	name = "dynn_Kavkhan"
+	culture = "bulgarian"	
+}
+
 dynasty_alateo = {
 	name = "dynn_Alateo"
 	culture = "italian"

@@ -1730,7 +1730,6 @@ spawn_ismali_missionary_character_effect = {
 		add_gold = 500
 		add_piety = 2000
 		dynasty = {
-			add_dynasty_prestige_level = 1
 			add_dynasty_prestige = 500
 			add_dynasty_perk = law_legacy_1
 			add_dynasty_perk = law_legacy_2
@@ -2935,13 +2934,6 @@ spawn_ibn_hafsun_character_effect = {
 
 	create_character = { # The Hafsun in ibn Hafsun
 		name = "Hafsun"
-		location = scope:ibn_hafsun_birth_location
-		template = HEE_fatimid_founder_confidant_template
-		save_scope_as = fatimid_founder_confidant
-	}
-
-	create_character = {
-		name = "Hafsun"
 		age = { 65 70 }
 		dynasty = none
 
@@ -2993,5 +2985,56 @@ spawn_ibn_hafsun_character_effect = {
 			}
 		}
 
+	}
+}
+
+
+
+## Mardavij ##
+
+spawn_ziyarid_character_effect = { # Spawning Mardavij and his brother
+	title:c_gilan.title_province = {
+		save_scope_as = ziyarids_birth_location
+	}
+
+	create_character = {
+		name = "Mardavij" # meaning "man assailant"
+		location = scope:ziyarids_birth_location
+		template = mardavij_template
+		father = character:166987 # Ziyar, who belonged to the Shahanshahvand, a royal clan that roamed around Dakhel
+		dynasty = inherit # Technically Mardavij is seen as the founder of the Ziyarids, but CK3 has the Ziyarids starting with his father
+		save_scope_as = Mardavij
+	}
+	
+	scope:Mardavij = {
+		# Make temporarily immune to disease (anti-climatic if he died soon after spawn)
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 10
+		}
+		add_gold =  { medium_gold_max_value_static major_gold_max_value_static }
+		add_prestige = { medium_prestige_value massive_prestige_value }
+		add_piety = { medium_piety_value massive_piety_value }
+		add_perk = bellum_justum_perk
+		add_perk = parthian_tactics_perk
+		add_perk = organized_retreat_perk
+		add_perk = engineered_for_destruction_perk
+		add_perk = living_off_the_land_perk
+		add_perk = serve_the_crown_perk
+		add_perk = strict_organization_perk
+		add_perk = hard_rule_perk
+		add_perk = stalwart_leader_perk
+		add_perk = chivalric_dominance_perk
+		add_perk = never_back_down_perk
+		add_perk = kingsguard_perk
+	}
+
+	create_character = {
+		name = "Vushmgir" # means "quail catcher" in the local Caspian Iranian dialects
+		location = scope:ziyarids_birth_location
+		template = vushmgir_template
+		father = character:166987 # Ziyar, who belonged to the Shahanshahvand, a royal clan that roamed around Dakhel
+		dynasty = inherit # Technically Mardavij is seen as the founder of the Ziyarids, but CK3 has the Ziyarids starting with his father
+		save_scope_as = Vushmgir
 	}
 }

@@ -3051,6 +3051,11 @@
 	religion = catholic
 	culture = lombard
 	trait = education_diplomacy_3
+	trait = ambitious
+	trait = arrogant
+	trait = diligent
+	trait = zealous
+	trait = holy_warrior
 
 	father = 163072
 	mother = 190294
@@ -8229,6 +8234,7 @@ lombard0065 = {
 	trait = education_diplomacy_2
 
 	father = lombard0064
+	mother = spartenos0002
 
 	851.1.1 = {
 		birth = yes

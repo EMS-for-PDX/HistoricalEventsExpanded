@@ -1,0 +1,68 @@
+﻿## Characters for the Byzantine Event Chain - 867 ##
+
+drengot0001 = { # Gilbert Buatère; one of the first Norman adventurers in the Mezzogiorno and member of the Drengot family
+	name = "Gilbert"
+	dynasty = 676 # Drengot
+	father = 30826 # a petty, but rich, lord of Carreaux, near Avesnes-en-Bray in the region of Rouen
+	religion = "catholic"
+	culture = "norman"
+	trait = education_martial_2
+	trait = brave
+	trait = greedy
+	trait = ambitious
+	trait = reaver
+	980.1.1 = { # Unknown; Eldest of the brothers
+		birth = yes
+	}
+	1016.1.1 = {
+		trait = murderer # In 1016, his brother Osmond, according to some sources, or Gilbert himself, according to others, killed one William Repostel, a relative of Duke Richard II of Normandy in revenge and the duke pardoned his life, but exiled him
+	}
+	1018.1.1 = {
+		death = { # In 1018, 250 Norman knights under Gilbert's command fought against the Greek general Basil Boioannes in the Battle of Cannae, a grave Norman defeat. Gilbert himself, along with Osmond, died in the battle: only ten knights survived
+			death_reason = death_battle
+		}
+	}
+}
+
+drengot0002 = { # Osmond Drengot; one of the first Norman adventurers in the Mezzogiorno and member of the Drengot family
+	name = "Osmond"
+	dynasty = 676 # Drengot
+	father = 30826 # a petty, but rich, lord of Carreaux, near Avesnes-en-Bray in the region of Rouen
+	religion = "catholic"
+	culture = "norman"
+	trait = education_martial_2
+	trait = brave
+	trait = ambitious
+	trait = vengeful # killed one William Repostel, a relative of the duke, in revenge for his sleeping with one of Osmond's daughters
+	trait = reaver
+	982.1.1 = { # Unknown
+		birth = yes
+	}
+	1016.1.1 = {
+		trait = murderer # In 1016, his brother Osmond, according to some sources, or Gilbert himself, according to others, killed one William Repostel, a relative of Duke Richard II of Normandy in revenge and the duke pardoned his life, but exiled him
+	}
+	1018.1.1 = {
+		death = { # In 1018, Osmond and Gilbert died in the Battle of Cannae, a grave Norman defeat at the hands of the Greek general Basil Boioannes
+			death_reason = death_battle
+		}
+	}
+}
+
+drengot0003 = { # Rudolph (Also Rodolphe, Lodolfe, Raulf, or Ralph) Drengot; one of the first Norman adventurers in the Mezzogiorno and member of the Drengot family
+	name = "Rudolph"
+	dynasty = 676 # Drengot
+	father = 30826 # a petty, but rich, lord of Carreaux, near Avesnes-en-Bray in the region of Rouen
+	religion = "catholic"
+	culture = "norman"
+	trait = education_martial_2
+	trait = brave
+	trait = zealous
+	trait = ambitious
+	trait = reaver
+	984.1.1 = { # Unknown; Following the disaster at Cannae, Rainulfo Drengot emerged as the undisputed head of the remaining Norman militias so I put him as the 3rd brother
+		birth = yes
+	}
+	1045.1.1 = { # Unknown; Rudolph would return to Normandy in the company of a group of some Normans sometime after Cannae but nothing else is known of him
+		death = yes
+	}
+}

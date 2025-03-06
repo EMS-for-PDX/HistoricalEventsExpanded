@@ -847,6 +847,44 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 			#Lothaire's Personal Domain
 			if = {
 				limit = {
+					title:c_maastricht.holder = title:k_italy.holder
+				}
+				title:c_maastricht = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_maastricht.holder = title:k_italy.holder
+					}
+					title:c_maastricht.holder.top_liege = title:k_italy.holder
+				}
+				title:c_maastricht.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_france
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+
+			if = {
+				limit = {
 					title:c_bar.holder = title:k_italy.holder
 				}
 				title:c_bar = {
@@ -1035,6 +1073,44 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 				}
 			}
 
+			if = {
+				limit = {
+					title:c_aachen.holder = title:k_italy.holder
+				}
+				title:c_aachen = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_title_holder = {
+						holder = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						title:c_aachen.holder = title:k_italy.holder
+					}
+					title:c_aachen.holder.top_liege = title:k_italy.holder
+				}
+				title:c_aachen.holder = {
+					create_title_and_vassal_change = {
+						type = granted #or whatever
+						save_scope_as = change
+					}
+					
+					change_liege = {
+						liege = scope:king_of_germany
+						change = scope:change
+					}
+					resolve_title_and_vassal_change = scope:change
+				}
+			}
+
 			#Go to France
 			title:c_zeeland.holder = {
 				create_title_and_vassal_change = {
@@ -1183,30 +1259,6 @@ HEE_lotharingia_questline.0013 = { #Treaty of Meerssen Prelude
 				resolve_title_and_vassal_change = scope:change
 			}
 			title:c_koblenz.holder = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_liege = {
-					liege = scope:king_of_germany
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
-			}
-			title:c_aachen.holder = {
-				create_title_and_vassal_change = {
-					type = granted #or whatever
-					save_scope_as = change
-				}
-				
-				change_liege = {
-					liege = scope:king_of_germany
-					change = scope:change
-				}
-				resolve_title_and_vassal_change = scope:change
-			}
-			title:c_maastricht.holder = {
 				create_title_and_vassal_change = {
 					type = granted #or whatever
 					save_scope_as = change

@@ -326,3 +326,87 @@ umar_ibn_hafsun_template = { # Umar ibn Hafsun ibn Ja'far ibn Salim; a 9th-centu
 	trait = peasant_leader # rallied disaffected Muwallads and Mozarabs to the cause by playing off resentment towards the unfair heavy taxation and the humiliating treatment they were receiving at the hands of Abd ar-Rahman and his successors
 	random_traits = no
 }
+
+### Mardavij's Uprising ###
+mardavij_template = { # Mardavij; An Iranian prince who established the Ziyarid dynasty and lead the last great attempt to restore Zoroastrianism and the Persian Empire
+	age = 40 # Born circa. 890, Mardavij emerged as ruler around 930
+	gender = male
+	faith = faith:mazdayasna # Afridunist is a good choice as well
+	culture = culture:persian # Should probably be daylamite?
+
+	#Skills
+	diplomacy = { # Should be decent for rallying the last embers of Zoroastrianism
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	martial = { # Fared well against the Umayyads despite a lack of military support
+		min_template_high_skill
+		max_template_high_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	learning = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+	prowess = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+
+	trait = education_martial_4
+	trait = zealous # sought to establish a native Iranian Zoroastrian empire
+	trait = arrogant # had a golden throne with jewels, a tunic, and a golden crown made. His crown was reportedly the same shape of the crown of the Sasanian king Khosrow I. Sought to establish himself as ruler of a restored Iranian Empire
+	trait = wrathful # Vanilla trait
+	trait = ambitious # planned to conquer Baghdad, remove the caliphate, be crowned in Ctesiphon and restore the Iranian empire
+	trait = holy_warrior # Last defender of Zoroastrianism
+	trait = disloyal # represent how he betrayed Asfar by revolting against him
+	random_traits = no
+}
+
+vushmgir_template = { # Vushmgir; second Ziyarid emir who ruled from 935 until his death in December 967. He was a son of Ziyar and brother to Mardavij
+	age = 35 # Unknown birth, but suborinate to Mardavij so will have him be a younger brother
+	gender = male
+	faith = faith:mazdayasna # The religion of Ziyar and his family is not exactly known. Zoroastrianism, including heterodox branches such as the Mazdakite, the Zurvanite and Gayomardian, was still popular at his time, and many Islamic sources describe the Daylamite and Gilite leaders of the time as "atheists".
+	culture = culture:persian # Should probably be daylamite?
+
+	#Skills
+	diplomacy = { # Had to be good at diplomacy to continue to get the Samanids to support him
+		min_template_high_skill
+		max_template_high_skill
+	}
+	martial = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	stewardship = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	intrigue = {
+		min_template_decent_skill
+		max_template_decent_skill
+	}
+	learning = {
+		min_template_low_skill
+		max_template_low_skill
+	}
+	prowess = {
+		min_template_high_skill
+		max_template_high_skill
+	}
+
+	trait = education_martial_2 # Faced multiple defeats and had to rely on Samanid assistance
+	trait = ambitious # Desired control of Tabaristan
+	trait = stubborn # Despite multiple failures, never stopped in his pursuit of Tabaristan
+	trait = cynical # Likely became a Zaydi Shiite later in life following the death of his brother
+	trait = cautious_leader #
+	trait = lifestyle_hunter # killed by a boar during a hunt in December 967
+	random_traits = no
+}

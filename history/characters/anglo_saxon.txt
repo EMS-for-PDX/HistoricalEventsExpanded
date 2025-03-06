@@ -3598,8 +3598,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205043
-	685.1.1 = {
-		birth = "685.1.1"
+	682.1.1 = {
+		birth = "682.1.1"
 	}
 	762.1.1 = {
 		death = "762.1.1"
@@ -3611,8 +3611,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205043
-	682.1.1 = {
-		birth = "682.1.1"
+	684.1.1 = {
+		birth = "684.1.1"
 	}
 	748.1.1 = {
 		death = "748.1.1"
@@ -3624,8 +3624,8 @@
 	religion = "catholic"
 	culture = anglo_saxon
 	father = 205043
-	680.1.1 = {
-		birth = "680.1.1"
+	700.1.1 = { # Child of Wihtred's 3rd wife Wærburh, so later than the other brothers
+		birth = "700.1.1"
 	}
 	730.1.1 = { # Kelly, S observed that the reign of 762 to 796 attributed to him by William of Malmesbury “is evidently fantasy, inspired by a desire to account neatly for all the brothers mentioned by Bede”
 		death = "730.1.1"

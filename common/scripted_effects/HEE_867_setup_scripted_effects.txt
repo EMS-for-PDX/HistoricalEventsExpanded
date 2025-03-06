@@ -210,6 +210,15 @@ hee_karling_867_effect = {
 		add_legitimacy = 500
 	}
 
+	scope:charles_the_bald = { # Best way to represent Louis the Stammerer as King of Aquitaine without making him seperate from his father/overlord
+		if = {
+			limit = { has_ep3_dlc_trigger = yes }
+			start_diarchy = co_monarchy
+			set_diarch = scope:louis_the_stammerer
+			set_designated_heir = scope:louis_the_stammerer
+		}
+	}
+
 	# Lotharingia #
 	consume_all_criminal_reasons_effect = { # Lothaire doesnt really recognize these excommunications
 		LIEGE = scope:lothaire
@@ -511,13 +520,6 @@ hee_byzantine_bulgaria_867_effect = {
 
 	faith:orthodox = { save_scope_as = orthodox }
 	faith:tengri_pagan = { save_scope_as = tengri }
-
-	if = {
-		limit = {
-			has_game_rule = romania_name_of_byzantium
-		}
-		set_title_name = e_romania
-	}
 
 	title:b_vostitsa = { save_scope_as = b_vostitsa }
 
@@ -895,7 +897,17 @@ hee_byzantine_bulgaria_867_effect = {
 
 
 
+	# Byzantine Silk Centers
+	province:3730 = { save_scope_as = b_thebes }
+	province:481 = { save_scope_as = b_corinth }
+	
+	scope:b_thebes = {
+		add_building = murex_farm_03
+	}
 
+	scope:b_corinth = {
+		add_building = murex_farm_03
+	}
 
 
 
@@ -929,8 +941,18 @@ hee_byzantine_bulgaria_867_effect = {
 	province:5602 = { save_scope_as = b_sebasteia }
 	province:706 = { save_scope_as = b_colonea }
 
+	province:480 = { save_scope_as = b_chandax }
+
+	scope:b_chandax = {
+		add_building = castle_02
+		add_building = march_01
+		add_building = hill_forts_02
+		add_building = common_tradeport_02
+	}
+
 	scope:b_tarsus = {
 		add_building = castle_02
+		add_building = march_01
 		add_building = farm_estates_01
 		add_building = curtain_walls_02
 		add_building = regimental_grounds_02
@@ -1088,18 +1110,18 @@ hee_samarra_relations_867_effect = {
 
 	# Set up al-Mutazz's historical Vizier
 	character:34014 = {
-		designate_diarch = character:HEE_mutazz_vizier
+		designate_diarch = character:anbari0002
 		# This is a vizierate as well, so start the diarchy manually.
 		start_diarchy = vizierate
 		# Tell Alp that he appointed Hassan so he remembers not to dismiss him.
 		set_variable = {
 			name = my_vizier
-			value = character:HEE_mutazz_vizier
+			value = character:anbari0002
 		}
 	}
 
 	remove_generated_diarch_consequences_effect = {
-		NEW_DIARCH = character:HEE_mutazz_vizier
+		NEW_DIARCH = character:anbari0002
 		LIEGE = character:34014
 	}
 
@@ -1367,6 +1389,18 @@ hee_iranian_intermezzo_effect = {
 		character:azariqa_0003 = {
 			get_title = title:c_darabjerd
 		}
+	}
+
+ 	title:k_mesopotamia = {
+ 		set_de_jure_liege_title = title:e_arabia
+ 	}
+
+ 	title:k_jazira = {
+ 		set_de_jure_liege_title = title:e_arabia
+ 	}
+
+	title:e_arabia = { # Capital of the Abbasid Caliphate is in Baghdad
+		set_capital_county = title:c_samarra
 	}
 
 }
@@ -2326,6 +2360,7 @@ hee_dynastic_changes_867_effect = {
 	character:70382 = { save_scope_as = balgarsko_dynasty }
 	character:34014 = { save_scope_as = abbasid_dynasty }
 	character:73683 = { save_scope_as = umayyad_dynasty }
+	character:163105 = { save_scope_as = prydain_dynasty }
 
 	scope:karling_dynasty = {
 		dynasty = {
@@ -2366,6 +2401,13 @@ hee_dynastic_changes_867_effect = {
 			add_dynasty_prestige_level = -2
 			add_dynasty_perk = warfare_legacy_1
 			add_dynasty_perk = ep1_culture_legacy_1
+		}
+	}
+
+	scope:prydain_dynasty = {
+		dynasty = {
+			add_dynasty_prestige_level = -1
+			add_dynasty_perk = warfare_legacy_1
 		}
 	}
 }

@@ -6,9 +6,6 @@ HEE_saba_of_taranto = { # https://en.wikipedia.org/wiki/Siege_of_Ragusa_(866%E2%
 	#dynasty = 
 	religion = "ashari"
 	culture = "baranis"
-	# father =
-	# mother =
-	#health = 5.0
 	
 	#Skills
 	diplomacy = 5
@@ -29,10 +26,6 @@ HEE_saba_of_taranto = { # https://en.wikipedia.org/wiki/Siege_of_Ragusa_(866%E2%
 	#Other Traits
 	trait = reaver
 	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	835.1.1 = {
 		birth = yes
 	}
@@ -47,33 +40,6 @@ HEE_adeltrude = { # https://en.wikipedia.org/wiki/Ageltrude
 	#dynasty = 
 	religion = "catholic"
 	culture = "lombard"
-	# father =
-	# mother =
-	#health = 5.0
-	
-	#Skills
-	# diplomacy = 5
-	# martial = 7
-	# stewardship = 5
-	# intrigue = 6
-	# learning = 5
-	# prowess = 6
-	
-	#Education
-	# trait = education_martial_2
-	
-	#Personality Traits
-	# trait = calm
-	# trait = humble
-	# trait = patient
-	
-	#Other Traits
-	# trait = reaver
-	
-	#sexuality = heterosexual
-	
-	#disallow_random_traits = yes
-	
 	822.1.1 = {
 		birth = yes
 	}
@@ -130,37 +96,30 @@ HEE_ageltrude = { # https://en.wikipedia.org/wiki/Ageltrude
 	}
 }
 
-HEE_landemarius = { # https://en.wikipedia.org/wiki/Siege_of_Salerno_(871%E2%80%93872)#Campaign
+HEE_landemarius = { # According to the Chronicon Salernitanum, during the Siege of Salerno, a certain Landemarius went over the walls and single-handedly destroyed it with an axe, killing many enemies in the process - https://en.wikipedia.org/wiki/Siege_of_Salerno_(871%E2%80%93872)#Campaign
 	name = "Landemarius"
-	# female = yes
-	# dynasty = 0
 	religion = "catholic"
 	culture = "italian"
-	# father = 163071
-	# mother = HEE_adeltrude
-	#health = 5.0
 	
 	#Skills
-	diplomacy = 6
-	martial = 7
-	stewardship = 6
-	intrigue = 5
-	learning = 6
-	prowess = 8
+	diplomacy = 5
+	martial = 5
+	stewardship = 4
+	intrigue = 3
+	learning = 2
+	prowess = 10
 	
 	#Education
 	trait = education_martial_2
 	
 	#Personality Traits
 	trait = brave
-	trait = honest
+	trait = zealous
 	trait = humble
 	
 	#Other Traits
 	trait = strong
 	trait = beauty_good_1
-	
-	#sexuality = heterosexual
 	
 	disallow_random_traits = yes
 	847.1.1 = {
@@ -170,6 +129,559 @@ HEE_landemarius = { # https://en.wikipedia.org/wiki/Siege_of_Salerno_(871%E2%80%
 		employer = 163091
 	}
 	901.8.27 = {
+		death = yes
+	}
+}
+
+## dynasty = 622 #Caetani / Dukes of Gaeta ##
+gaeta0001 = { # Docibilis I's wife Matrona
+	name = "Matrona"
+	female = yes
+	religion = "catholic"
+	culture = "italian"
+	841.1.1 = { # Unknown
+		birth = yes
+	}
+	910.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0002 = { # Megalu of Gaeta; a daughter of Dociblis I and Matrona who was married to Rodgipert of Aquino
+	name = "Megalu"
+	dynasty = 622 #Caetani
+	female = yes
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	862.1.1 = { # Unknown
+		birth = yes
+	}
+	935.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0003 = { # Euphemia of Gaeta; a daughter of Dociblis I and Matrona who was married to the prefect of Naples
+	name = "Euphemia"
+	dynasty = 622 #Caetani
+	female = yes
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	864.1.1 = { # Unknown
+		birth = yes
+	}
+	934.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0004 = { # Anatolio of Gaeta; a son of Dociblis I and Matrona who became duke of Terracina
+	name = "Anatolio"
+	dynasty = 622 #Caetani
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	866.1.1 = { # Unknown
+		birth = yes
+	}
+	927.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0005 = { # Bona of Gaeta; a daughter of Dociblis I and Matrona
+	name = "Bona"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	868.1.1 = { # Unknown
+		birth = yes
+	}
+	928.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0006 = { # Leo of Gaeta; a son of Dociblis I and Matrona who was sold the castle of Dragoncello
+	name = "Leo"
+	dynasty = 622 #Caetani
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	870.1.1 = { # Unknown
+		birth = yes
+	}
+	931.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0007 = { # Maria of Gaeta; a daughter of Dociblis I and Matrona
+	name = "Maria"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167472 # Dociblis I
+	mother = gaeta0001 # Matrona
+	religion = "catholic"
+	culture = "italian"
+
+	872.1.1 = { # Unknown
+		birth = yes
+	}
+	940.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0008 = { # Gemma of Gaeta; daughter of John I of Gaeta who was married to the Sorrentine prefect Marinus
+	name = "Gemma"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	882.1.1 = { # Unknown
+		birth = yes
+	}
+	950.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0009 = { # Orania; wife to Docibilis II of Gaeta who was of Neapolitan extraction
+	name = "Orania"
+	female = yes
+	religion = "catholic"
+	culture = "greek" # of Neapolitan extraction
+
+	882.1.1 = { # Unknown
+		birth = yes
+	}
+	951.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0010 = { # Maru of Gaeta; daughter of John I of Gaeta who was married to the Salernitan nobleman Guaifer
+	name = "Maru"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	884.1.1 = { # Unknown
+		birth = yes
+	}
+	951.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0011 = { # Matrona of Gaeta; daughter of John I of Gaeta who was married to Campolo, son of an important Gaetan family
+	name = "Matrona"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	886.1.1 = { # Unknown
+		birth = yes
+	}
+	950.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0012 = { # Leo of Gaeta; son of the hypatus John I
+	name = "Leo"
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	888.1.1 = { # Unknown
+		birth = yes
+	}
+	957.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0013 = { # Constantine of Gaeta; son of the hypatus John I
+	name = "Constantine"
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	890.1.1 = { # Unknown
+		birth = yes
+	}
+	958.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0014 = { # Petrus of Gaeta; son of the hypatus John I
+	name = "Petrus" # Peter
+	dynasty = 622 #Caetani
+	father = 167473 # John I of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	892.1.1 = { # Unknown
+		birth = yes
+	}
+	955.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0015 = { # Theodenand; wife of Giovanni (John) II of Gaeta who predeceased him
+	name = "Theodenand"
+	female = yes
+	religion = "catholic"
+	culture = "italian"
+
+	911.1.1 = { # Unknown
+		birth = yes
+	}
+	940.1.1 = { # Unknown; predeceased her husband based on donations made by her husband on her behalf
+		death = yes
+	}
+}
+
+gaeta0016 = { # Maria of Gaeta; daughter of Docibilis II of Gaeta who was married to the prince of Capua
+	name = "Maria"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	religion = "catholic"
+	culture = "italian"
+
+	905.1.1 = { # Unknown
+		birth = yes
+	}
+	960.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0017 = { # Anna of Gaeta; daughter of Docibilis II of Gaeta
+	name = "Anna"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	religion = "catholic"
+	culture = "italian"
+
+	908.1.1 = { # Unknown
+		birth = yes
+	}
+	960.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0018 = { # Gemma of Gaeta; daughter of Docibilis II of Gaeta
+	name = "Gemma"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	religion = "catholic"
+	culture = "italian"
+
+	912.1.1 = { # Unknown
+		birth = yes
+	}
+	964.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0019 = { # Drosu of Gaeta; daughter of Docibilis II of Gaeta
+	name = "Drosu"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	religion = "catholic"
+	culture = "italian"
+
+	916.1.1 = { # Unknown
+		birth = yes
+	}
+	964.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0020 = { # Megalu of Gaeta; daughter of Docibilis II of Gaeta
+	name = "Megalu"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	religion = "catholic"
+	culture = "italian"
+
+	920.1.1 = { # Unknown
+		birth = yes
+	}
+	970.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0021 = { # Unnamed daughter of John II of Gaeta and his wife Theodenand
+	name = "Orania"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167475 # John II
+	mother = gaeta0015 # Theodenand
+	religion = "catholic"
+	culture = "italian"
+
+	930.1.1 = { # Unknown
+		birth = yes
+	}
+	980.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0022 = { # Unnamed daughter of John II of Gaeta and his wife Theodenand
+	name = "Maria"
+	female = yes
+	dynasty = 622 #Caetani
+	father = 167475 # John II
+	mother = gaeta0015 # Theodenand
+	religion = "catholic"
+	culture = "italian"
+
+	933.1.1 = { # Unknown
+		birth = yes
+	}
+	978.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0023 = { # Landolf, son of Gregory of Gaeta, who is the ancestor of the Counts of Suio
+	name = "Landolf"
+	dynasty = 622 #Caetani
+	father = 167476 # Gregory of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	939.1.1 = { # Unknown
+		birth = yes
+	}
+	995.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0024 = { # Landolf's mistress Polyssena (Pulessene)
+	name = "Polyssena"
+	female = yes
+	religion = "catholic"
+	culture = "italian"
+	trait = beauty_good_2
+	940.1.1 = { # Unknown
+		birth = yes
+	}
+	1000.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0025 = { # Unnamed son of Gregory of Gaeta
+	name = "Giovanni"
+	dynasty = 622 #Caetani
+	father = 167476 # Gregory of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	942.1.1 = { # Unknown
+		birth = yes
+	}
+	981.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0026 = { # Unnamed son of Gregory of Gaeta
+	name = "Docibile"
+	dynasty = 622 #Caetani
+	father = 167476 # Gregory of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	944.1.1 = { # Unknown
+		birth = yes
+	}
+	981.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+gaeta0027 = { # Leo I of Gaeta; regent of the Duchy of Gaeta from 1017 until 1024
+	name = "Leone"
+	dynasty = 622 #Caetani
+	father = 167478 # Duke John III of Gaeta
+	mother = tusculani0001 # Duchess Emilia of Gaeta
+	religion = "catholic"
+	culture = "italian"
+
+	988.1.1 = { # Unknown; but must be younger than John IV
+		birth = yes
+	}
+	1017.1.1 = {
+		give_nickname = nick_the_usurper # After the death of his brother, John IV in 1008, his mother took over the regency for her grandson, Leo's nephew, John V. Leo challenged his mother for the regency, successfully displacing her by 1017
+	}
+	1024.1.1 = { # Unknown; Leo does not appear as regent of Gaeta after 1024, and it is possible that he died around that time
+		death = yes
+	}
+}
+
+gaeta0028 = { # Bernard (bishop of Gaeta); member of the Docibilan dynasty who acted as Bishop of Gaeta for fifty years from his appointment in 997 until his death
+	name = "Bernardo"
+	dynasty = 622 #Caetani
+	father = 167477 # Duke Marinus II
+	religion = "catholic"
+	culture = "italian"
+	965.1.1 = { # Unknown; but must be younger than Marinus II's existing sons
+		birth = yes
+	}
+	997.1.1 = {
+		trait = devoted # appointment as bishop
+	}
+	1048.1.1 = { # Unclear; Records are dubious and the date for a possible death range from 1032 to at most 1049
+		death = yes
+	}
+}
+
+gaeta0029 = { # Leo, Bishop of Gaeta; son of Duke Leo II of Gaeta. He attended the Roman synod of Pope Leo IX in May 1050. He was present at the dedication of the Church of S. Benedict at Montecassino in 1071
+	name = "Leone"
+	dynasty = 622 #Caetani
+	father = 167483 # Duke Leo II of Gaeta
+	religion = "catholic"
+	culture = "italian"
+	1015.1.1 = { # Unknown; but must be younger than Leo II's existing sons
+		birth = yes
+	}
+	1049.1.1 = {
+		trait = devoted # appointment as bishop
+	}
+	1089.1.1 = { # 
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tusculani0001 = { # Emilia of Gaeta; duchess of Gaeta first as consort of John III (984–1008) and then as the regent for her grandson John V (1012–1032) until at least 1029
+	name = "Emilia"
+	female = yes
+	dynasty = 100349 # At the time of her marriage, she bore the Roman title senatrix. She was probably, therefore, of Roman descent, a member of the powerful Crescenzi or Tusculani
+	father = 7932 # Gregory I, (Excellentissimus vir – Praefectus navalis) son of Alberic II
+	religion = "catholic"
+	culture = "italian"
+	965.1.1 = { # Unknown
+		birth = yes
+	}
+	1036.1.1 = { # Unknown; Likely she died early in 1036, when her son Leo donated a house to the monastery of S. Giovanni di Felline in her memory
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+spartenos0001 = { # Drusa, daughter of ---.  The Vita Athanasii Episcopi Neapolitani names "Drosu, principali propagine satam" as wife of Duke Sergius
+	name = "Drusa"
+	female = yes
+	religion = "orthodox"
+	culture = "greek"
+	802.1.1 = { # Unknown
+		birth = yes
+	}
+	825.1.1 = {
+		add_spouse = 163090
+	}
+	866.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+spartenos0002 = { # Unnamed daughter of Sergius I of Naples who married Landulf, gastald of Suessola, son of Lando I of Capua
+	name = "Euprassia" # Unnamed; given the name of Sergius' mother
+	female = yes
+	dynasty = 101138
+	religion = "orthodox"
+	culture = "greek"
+	father = 163090 # Sergius I of Naples
+	mother = spartenos0001
+	834.1.1 = { # Unknown
+		birth = yes
+	}
+	859.1.1 = {
+		add_spouse = lombard0064 # Landulf, gastald of Suessola, son of Lando I of Capua
+	}
+	895.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+spartenos0003 = { # Sichelgaita, daughter of John IV of Naples and sister of Sergius IV. married John IV of Gaeta and was mother to John V
+	name = "Sichelgaita"
+	female = yes
+	dynasty = 101138
+	religion = "orthodox"
+	culture = "greek"
+	father = 163081 # John IV of Naples
+	980.1.1 = { # Unknown
+		birth = yes
+	}
+	1013.1.1 = { # Unknown; Considering her lack of role in her son's regency (at least from what I can find), perhaps died during or soon after birth?
 		death = yes
 	}
 }

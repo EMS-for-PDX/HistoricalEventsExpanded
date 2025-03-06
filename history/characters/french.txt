@@ -26916,7 +26916,7 @@
 		give_nickname = nick_the_young
 	}
 	864.6.25 = { # Edict of Pîtres deposed Pepin, and considering his ultimate fate is unknown will serve as a cheeky death date
-		death = { #  captured in 864, and condemned to death, although the sentence was commuted to imprisonment which he served at Senlis. His ultimate fate is unknown
+		death = { # captured in 864, and condemned to death, although the sentence was commuted to imprisonment which he served at Senlis. His ultimate fate is unknown
 			death_reason = death_prison
 			killer = 90104 #Charles the Bald
 		}
@@ -45333,18 +45333,31 @@
 	}
 }
 
-168056 = {
+168056 = { # Saint Géraud d'Aurillac - https://fr.wikipedia.org/wiki/G%C3%A9raud_d%27Aurillac
 	name = "GE_raud"
 	dynasty = 413
 	religion = "catholic"
 	culture = french
 	father = 168055
 	mother = limousinspouse0001
-	850.1.1 = {
-		birth = "850.1.1"
+	trait = compassionate
+	trait = just # he held his plaid, refused to delegate his justice completely to officers, having made it known to all that complaints and petitions could be sent directly to him
+	trait = temperate
+	trait = chaste
+	trait = curious # Childhood trait
+	trait = beauty_good_1 # Tall, agile and handsome, he was in fragile health
+	trait = weak # Tall, agile and handsome, he was in fragile health
+	disallow_random_traits = yes
+	855.1.1 = {
+		birth = "855.1.1"
 	}
-	
+	872.1.1 = {
+		remove_trait = curious
+		trait = education_learning_4
+	}
 	909.1.1 = {
+		trait = blind # At the end of his life, Géraud d'Aurillac became blind
+		trait = saint # Geraud was declared a saint by the popular voice. This is one of the first examples of saints to have been canonized without suffering martyrdom or entering into orders
 		death = "909.1.1"
 	}
 }

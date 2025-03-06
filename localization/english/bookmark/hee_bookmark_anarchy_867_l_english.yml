@@ -1,0 +1,36 @@
+﻿l_english:
+
+ # Anarchy at Samarra Loc
+ bm_867_hee_anarchy: "Crisis in the Caliphate"
+ bm_867_hee_anarchy_desc: "The Roman Empire is a shell of its former self.\n\nThree centuries earlier, the grand ambitions of Emperor Justinian had created a Mediterranean juggernaut worthy of being spoken of in the same breath as the Empires of Augustus and and Trajan. But now, little of Justinian's legacy remains.\n\nBellicose Lombards pushed the Empire to the very fringes of Italy, constant migrations of Slavs and Bulgars along the Danube chipped away at the Empire's Balkan territories, all while the rise of a natal Islamic state permenantly deprived the Romans of Syria, Egypt, North Africa.\n\n#bold The Roman Empire looks to be a polity in terminal decline. And yet, all is not lost. Admist the near constant territorial retreat, a string of capable military-minded men would bring triumph to Byzantium and secure the long-time survival of the Empire for centuries to come. Can you walk in the footsteps of these great men?"
+
+ # al-Mu'tazz Loc
+ bookmark_hee_anarchy_caliph: "Caliph al-Mu'tazz"
+ bookmark_hee_anarchy_caliph_desc: "Originally named as the second in line of three heirs of his father al-Mutawakkil, al-Mu'tazz was forced to renounce his rights after the accession of his brother al-Muntasir, and was thrown in prison as a dangerous rival during the reign of his cousin al-Musta'in. He was released and raised to the caliphate in January 866, during the civil war between al-Musta'in and the Turkish military of Samarra. Al-Mu'tazz was determined to reassert the authority of the caliph over the Turkish army but had only limited success. Aided by the vizier Ahmad ibn Isra'il, he managed to remove and kill the leading Turkish generals, Wasif al-Turki and Bugha al-Saghir, but the decline of the Tahirids in Baghdad deprived him of their role as a counterweight to the Turks. Faced with the assertive Turkish commander Salih ibn Wasif, and unable to find money to satisfy the demands of his troops, he was deposed and died of ill-treatment a few days later, on 16 July 869.\n\n#bold His reign marks the apogee of the decline of the Caliphate's central authority, and the climax of centrifugal tendencies, expressed through the emergence of the autonomous dynasties of the Tulunids in Egypt and the Saffarids in the East, Alid uprisings in Hejaz and Tabaristan, and the first stirrings of the great Zanj Rebellion in lower Iraq.#!"
+
+ bookmark_hee_anarchy_caliphal_advisor: "Ahmad Bar Isra'il Anbari"
+ bookmark_hee_anarchy_caliphal_son: "Abdallah ibn al-Mutazz"
+
+ BOOKMARK_RELATION_VIZIER: "(Vizier)"
+
+ # Isa ibn al-Shaykh al-Shaybani Loc
+ bookmark_hee_anarchy_shaybani: "Isa ibn al-Shaykh"
+ bookmark_hee_anarchy_shaybani_desc: "Abu Musa Isa ibn al-Shaykh ibn al-Salil al-Dhuhli al-Shaybani was an Arab leader of the Shayban tribe. Taking advantage of the domestic turmoil of the Abbasid Caliphate, he created a semi-independent bedouin state in Palestine and southern Syria in ca. 867–870, before an Abbasid army forced him to exchange his domains with the governorship of Armenia and Diyar Bakr. In Armenia, he struggled to contain the rising power of the Christian princes, but after failing to suppress the revolt of one of his own subordinates, he abandoned the country and returned to his native Jazira. There he spent his last years until his death in a struggle with a rival strongman, the ruler of Mosul Ishaq ibn Kundajiq.\n\n#bold Going on to win several battles against Saracen fleets, Niketas would become known as perhaps the most successful Byzantine admiral of his age. Can you weather the storm and forge a new destiny of your making?"
+
+ bookmark_hee_anarchy_shaybani_son: "Ahmad ibn Isa"
+ bookmark_hee_anarchy_shaybani_lieutenant: "Abu Ja'far"
+
+ # Musawir ibn 'Abd al-Hamid Loc
+ bookmark_hee_anarchy_kharijite: "Musawir ibn 'Abd al-Hamid"
+ bookmark_hee_anarchy_kharijite_desc: "Once a dihqan of the town of al-Bawazij, Musawir ibn 'Abd al-Hamid responded angrily to the news of the imprisonment of his son by the authorities in the town of al-Haditha and gathered a number of supporters, who pledged allegiance to him. The group marched on al-Haditha and entered it; the chief of police there was forced to go into hiding, and Musawir's son was freed from prison.\n\nSupport for Musawir quickly grew, with Bedouin Arabs and Kurds of the region flocking to his side, as his local insurrection quickly evolved into what would become a thirty-year struggle over the province of al-Jazira.\n\n#bold Having succeeded Karbeas after his death in 863, the responsibility of leadership falls on you. Can you defy the odds and achieve both justice for your family and security for your people?"
+
+ bookmark_hee_anarchy_kharijite_son: "Abu Ja'far ibn Musawir"
+
+ # Musa ibn Bugha al-Kabir Loc
+ bookmark_hee_anarchy_turkish_elite: "Musa ibn Bugha"
+ bookmark_hee_anarchy_turkish_elite_desc: "Musa was the son of Bugha al-Kabir, one of the leading Turkish generals under Caliph al-Mu'tasim. His father came into the caliph's service as a slave (ghulam) in 819 or 820 CE alongside his son. He may have participated in or at least organized the assassination of Caliph al-Mutawakkil in 861. Upon Bugha's death in 862, Musa succeeded his father in his offices and played an important role in the troubles of the "Anarchy at Samarra". Finally, he emerged victorious, and through his close association with the vizier and regent al-Muwaffaq, he became the most powerful general of the Abbasid Caliphate from 870 until his own death in 877. His sons Ahmad, Muhammad and al-Fadl likewise became senior military figures of the Caliphate, especially against the Zanj Rebellion.\n\n#bold However Leon is but a soldier of humble origins. Can you achieve the historical greatness of this dynasty, and perhaps avoid its fall in the process? The destiny of this great house rests with you."
+ 
+ bookmark_hee_anarchy_turkish_elite_brother: "Muhammad ibn Bugha"
+ bookmark_hee_anarchy_turkish_lieutenant: "Muflih"
+
+ BOOKMARK_RELATION_LIEUTENANT: "(Lieutenant)"

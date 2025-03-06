@@ -4,14 +4,14 @@
  bm_867_hee_byzantines: "Roman Resurgence"
  bm_867_hee_byzantines_desc: "The Roman Empire is a shell of its former self.\n\nThree centuries earlier, the grand ambitions of Emperor Justinian had created a Mediterranean juggernaut worthy of being spoken of in the same breath as the Empires of Augustus and and Trajan. But now, little of Justinian's legacy remains.\n\nBellicose Lombards pushed the Empire to the very fringes of Italy, constant migrations of Slavs and Bulgars along the Danube chipped away at the Empire's Balkan territories, all while the rise of a natal Islamic state permenantly deprived the Romans of Syria, Egypt, North Africa.\n\n#bold The Roman Empire looks to be a polity in terminal decline. And yet, all is not lost. Admist the near constant territorial retreat, a string of capable military-minded men would bring triumph to Byzantium and secure the long-time survival of the Empire for centuries to come. Can you walk in the footsteps of these great men?"
 
- BOOKMARK_RELATION_COEMPEROR: "(Co-Emperor)"
-
  # Michael III Loc
  bookmark_hee_byzantine_michael_iii: "Emperor Michael III"
  bookmark_hee_byzantine_michael_iii_desc: "Michael III has sat on the throne for 25 years, yet for hardly any of the time he has reigned can it be said that he actually ruled. For it is one thing to reign, and another to rule. He was just two when his father died, but even as Michael matured he never grasped the full extent of his responsibilities - in truth, Michael distained the boring work of governance               \n\n#bold However in politics, your closest friend can become your deadliest enemy. Can you help Michael navigate through the intricacies that come with love, war, and intrigue?#!"
 
  bookmark_hee_byzantine_basil_i: "Basil"
  bookmark_hee_byzantine_basiliskianos: "Basiliskianos"
+
+ BOOKMARK_RELATION_COEMPEROR: "(Co-Emperor)"
 
  # Niketas Ooryphas Loc
  bookmark_hee_byzantine_niketas_ooryphas: "Doux Niketas"

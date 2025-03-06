@@ -1598,6 +1598,7 @@
 	culture = "bulgarian"
 	trait = ambitious	#Can't say he didn't aim high in all areas of his life.
 	trait = callous	#Blinded his own son, threatened to blind the others, ruthlessly broke pagan revolts throughout his reign. Rarely mean, but utterly pragmatic.
+	trait = diligent
 	trait = cynical	#Converted for political reasons.
 	trait = education_martial_4
 	trait = diplomat #Maneuvered shifting political alliances between East Francia and the Byzantines, and the Eastern and Western Churches to achieve his goals
@@ -1680,6 +1681,7 @@
 	culture = "bulgarian"
 	trait = brave
 	trait = arrogant
+	trait = ambitious
 	trait = education_martial_2
 	father = 159126
 	802.1.1 = {
@@ -2341,6 +2343,7 @@
 168288 = {
 	name = "Marmais"
 	dynasty = 9582
+	father = bagatur0001
 	trait = education_martial_3
 	trait = brave # He participated actively in the Byzantine–Bulgarian war of 913–927 but he is better known for his interference and campaigns against the Principality of Serbia
 	trait = deceitful # Convinced Petar Gojniković to meet him, then captured him and sent him to Preslav
@@ -2393,9 +2396,10 @@
 	}
 }
 
-168291 = {
+168291 = { # Peter; Bulgarian noble and relative of knyaz (khan) Boris I (r. 852–889) who was in charge of diplomatic missions during the Christianization of Bulgaria
 	name = "Petar"
-	#dynasty = 9585
+	dynasty = dynasty_kavkhan # The office of the kavhan was a hereditary title in the First Bulgarian Empire, monopolised by the members of the tentatively known "Kavhan family"
+	father = kavkhan0001
 	trait = education_diplomacy_3
 	diplomacy = 10
 	trait = diplomat
@@ -2404,8 +2408,8 @@
 	trait = temperate
 	religion = "orthodox"
 	culture = "bulgarian"
-	830.1.1 = {
-		birth = "830.1.1"
+	820.1.1 = {
+		birth = "820.1.1"
 	}
 	889.1.1 = {
 		death = "889.1.1"

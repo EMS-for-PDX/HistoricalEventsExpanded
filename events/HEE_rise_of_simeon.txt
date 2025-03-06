@@ -41,6 +41,7 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 			character:70383 = {
 				NOT = { 
 					OR = {
+						is_alive = no
 						has_relation_rival = character:70382
 						has_relation_nemesis = character:70382
 						has_trait = denounced
@@ -95,6 +96,7 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 		trigger = {
 			character:70383 = {
 				OR = {
+					is_alive = no
 					has_relation_rival = character:70382
 					has_relation_nemesis = character:70382
 					has_trait = denounced
@@ -125,7 +127,16 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 						change = scope:change
 					}
 				}
-				resolve_title_and_vassal_change = scope:change	
+				resolve_title_and_vassal_change = scope:change
+
+				if = {
+					limit = {
+						has_trait = devoted
+					}
+					remove_trait = devoted
+				}
+
+				add_character_modifier = imperial_ambitions_modifier
 			}
 
 			set_player_character = character:712 #Simeon

@@ -6,7 +6,7 @@ HEE_ibn_hafsun_uprising.0001 = {
 	hidden = yes
 
 	immediate = {
-		debug_log = "Spawning the Kutama Uprising before 1066 start date"
+		debug_log = "Spawning ibn Hafsun's Uprising before 1066 start date"
 		debug_log_date = yes
 		spawn_ibn_hafsun_character_effect = yes
 		global_var:Umar_ibn_Hafsun = {
@@ -28,7 +28,7 @@ HEE_ibn_hafsun_uprising.0002 = {
 					NOT = { is_landed = yes }
 				}
 				create_landless_adventurer_title_effect = {
-					REASON = flag:voluntary
+					REASON = flag:wanderer
 					FLAVOR_CHAR = scope:Umar_ibn_Hafsun
 				}
 			}

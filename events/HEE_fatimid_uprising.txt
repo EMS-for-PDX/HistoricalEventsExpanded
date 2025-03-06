@@ -27,9 +27,23 @@ HEE_fatimid_uprising.0002 = {
 			set_county_faith = faith:ismaili
 		}
 		global_var:Abu_Abdallah_al_Shii = { 
-			give_kutama_land_effect = yes
-			trigger_event = {
-				id = HEE_fatimid_uprising.0003 #trigger the actual war stuff
+			if = { # With EP3, use Adventurer mechanics
+				limit = { has_ep3_dlc_trigger = yes }
+				create_landless_adventurer_title_effect = {
+					REASON = flag:wanderer
+					FLAVOR_CHAR = scope:Abu_Abdallah_al_Shii
+				}
+				add_realm_law_skip_effects = camp_purpose_scholars
+				trigger_event = {
+					id = HEE_fatimid_uprising.0003 #trigger the actual war stuff
+				}
+			}
+			if = { # Without EP3, go the less refined method of just giving out land
+				limit = { has_ep3_dlc_trigger = no }
+				give_kutama_land_effect = yes
+				trigger_event = {
+					id = HEE_fatimid_uprising.0003 #trigger the actual war stuff
+				}
 			}
 		}
 	}
@@ -40,10 +54,11 @@ HEE_fatimid_uprising.0003 = {
 	hidden = yes
 
 	immediate = {
-		global_var:Abu_Abdallah_al_Shii = {
-			save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
-			create_story = story_kutama_uprising
-		}
+
+			global_var:Abu_Abdallah_al_Shii = {
+				save_scope_as = story_owner # Do I really need to do this? Isn't it set automatically?
+				create_story = story_kutama_uprising
+			}
 	}
 }
 

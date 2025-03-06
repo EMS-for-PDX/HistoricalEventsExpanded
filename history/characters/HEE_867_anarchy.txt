@@ -1,11 +1,25 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
-HEE_mutazz_vizier = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
+anbari0001 = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
+	name = "Isra_il"
+	# female = yes
+	dynasty = hee_anbari
+	culture = "assyrian"
+	religion = "nestorian"
+	800.1.1 = { # Unknown
+		birth = yes
+	}
+	865.9.8 = { # Unknown
+		death = yes
+	}
+}
+
+anbari0002 = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
 	name = "Ahmad"
 	# female = yes
 	dynasty = hee_anbari
 	culture = "assyrian"
 	religion = "nestorian"
-	father = HEE_mutazz_vizier_father
+	father = anbari0001
 	# mother = 
 	# health = 5.0
 	
@@ -35,36 +49,6 @@ HEE_mutazz_vizier = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anb
 		employer = 34014
 	}
 	869.9.8 = { # Unknown
-		death = yes
-	}
-}
-
-HEE_mutazz_vizier_father = { # https://en.wikipedia.org/wiki/Ahmad_ibn_Isra%27il_al-Anbari
-	name = "Isra_il"
-	# female = yes
-	dynasty = hee_anbari
-	culture = "assyrian"
-	religion = "nestorian"
-	# father = 
-	# mother = 
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-	
-	# sexuality = heterosexual
-	
-	# disallow_random_traits = yes
-	
-	800.1.1 = { # Unknown
-		birth = yes
-	}
-	865.9.8 = { # Unknown
 		death = yes
 	}
 }
@@ -233,17 +217,13 @@ alturki0002 = { # 'Abd al-Rahman ibn Muflih, chief lieutenant to the general Mus
 	}
 }
 
-HEE_muhammad_ibn_bugha = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
+alKabir0001 = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
 	name = "Muhammad"
 	# female = yes
 	dynasty = 7517
 	culture = "khazar"
 	religion = "ashari"
 	father = turkish000003
-	# mother = 
-	# health = 5.0
-	
-	# Skills
 	
 	# Education
 	trait = education_martial_2
@@ -255,9 +235,7 @@ HEE_muhammad_ibn_bugha = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
 
 	# Other Traits
 	trait = unyielding_defender # During the civil war of 865–866, he was responsible for seizing and defending the town of al-Anbar on behalf of al-Mu'tazz
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
+
 	830.1.1 = { # Unknown
 		birth = yes
 	}
@@ -269,26 +247,12 @@ HEE_muhammad_ibn_bugha = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
 	}
 }
 
-HEE_muhammad_ibn_bugha_son = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
+alKabir0002 = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugha
 	name = "Nasr"
-	# female = yes
 	dynasty = 7517
 	culture = "khazar"
 	religion = "ashari"
-	father = HEE_muhammad_ibn_bugha
-	# mother = 
-	# health = 5.0
-	
-	# Skills
-	
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-	
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
+	father = alKabir0001
 	848.1.1 = { # Unknown
 		birth = yes
 	}
@@ -297,26 +261,11 @@ HEE_muhammad_ibn_bugha_son = { # https://en.wikipedia.org/wiki/Muhammad_ibn_Bugh
 	}
 }
 
-hee_fictional_banu_kilab_0001 = {
+fictional_banukilab0001 = {
 	name = "Ali"
-	# female = yes
 	dynasty = 1042113
 	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
 	culture = levantine
-	# father = 
-	# mother = 
-	# health = 
-
-	# Skills
-
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	800.1.1 = { # Unknown
 		birth = yes
 	}
@@ -325,31 +274,15 @@ hee_fictional_banu_kilab_0001 = {
 	}
 }
 
-hee_fictional_banu_kilab_0002 = {
+fictional_banukilab0002 = { # Unknown wife of Isa ibn al-Shaykh al-Shaybani to represent his marriage ties to the Banu Kilab
 	name = "Alawiyya"
 	female = yes
 	dynasty = 1042113
 	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
 	culture = levantine
-	father = hee_fictional_banu_kilab_0001
-	# mother = 
-	# health = 
-
-	# Skills
-
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
+	father = fictional_banukilab0001
 	840.1.1 = { # Unknown
 		birth = yes
-	}
-	866.1.1 = { # Unknown
-		add_spouse = 159732 # Isa formed a marriage alliance with the Banu Kilab, marrying a Kilabi wife
 	}
 	890.1.1 = { # Unknown
 		death = yes
@@ -362,13 +295,6 @@ hee_muwaffaq_concubine = {
 	# dynasty = 1042113
 	religion = orthodox # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
 	culture = greek
-	# father = 
-	# mother = 
-	# health = 
-
-	# Skills
-
-	# Education
 
 	# Personality Traits
 	trait = brave
@@ -378,8 +304,6 @@ hee_muwaffaq_concubine = {
 	# Other Traits
 	trait = beauty_good_1
 
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	841.1.1 = { # Unknown
 		birth = yes
 	}
@@ -398,20 +322,6 @@ hee_mutamid_concubine_1 = {
 	# dynasty =
 	religion = ashari
 	culture = levantine
-	# father = 
-	# mother = 
-	# health = 
-
-	# Skills
-
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	843.1.1 = { # Unknown
 		birth = yes
 	}
@@ -429,20 +339,6 @@ hee_mutamid_concubine_2 = {
 	# dynasty =
 	religion = ashari
 	culture = levantine
-	# father = 
-	# mother = 
-	# health = 
-
-	# Skills
-
-	# Education
-
-	# Personality Traits
-
-	# Other Traits
-
-	# sexuality = heterosexual
-	# disallow_random_traits = yes
 	842.1.1 = { # Unknown
 		birth = yes
 	}

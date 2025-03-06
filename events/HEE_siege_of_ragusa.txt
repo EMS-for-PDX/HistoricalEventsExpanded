@@ -2,18 +2,17 @@
 
 
 HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
+	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0001.t
 	desc = HEE_siege_of_ragusa.0001.desc
-	theme = crown # Change
+	theme = diplomacy # The event centers around considering Diplomatic solutions to the Siege
+	override_background = { reference = corridor_day }
 	left_portrait = {
 		character = root
 		animation = stress
 	}
-	right_portrait = {
-		character = scope:roman_emperor
-		animation = personality_honorable
-	}
+
 
 	trigger = {
 		is_alive = yes
@@ -35,6 +34,7 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 
 	immediate = {
 		title:e_byzantium.holder = { save_scope_as = roman_emperor }
+		title:d_aghlabid_raiders.holder = { save_scope_as = aghlabid_raiders }
 	}
 
 	option = {
@@ -74,10 +74,11 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 }
 
 HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
+	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0002.t
 	desc = HEE_siege_of_ragusa.0002.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -145,10 +146,11 @@ HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
 }
 
 HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
+	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0003.t
 	desc = HEE_siege_of_ragusa.0003.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
 		animation = personality_rational
@@ -256,6 +258,7 @@ HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
 }
 
 HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
+	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0004.t
 	desc = HEE_siege_of_ragusa.0004.desc
@@ -473,10 +476,11 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 }
 
 HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREmperor
+	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0006.t
 	desc = HEE_siege_of_ragusa.0006.desc
-	theme = crown # Change
+	theme = faith
 	left_portrait = {
 		character = root
 		animation = personality_cynical

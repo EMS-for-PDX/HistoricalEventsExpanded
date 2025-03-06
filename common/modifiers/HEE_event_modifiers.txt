@@ -269,6 +269,7 @@ hee_865_mecca_raid_modifier = { # Modifier for 865 Sack of Mecca
 paulicians_levied_for_war = { # Modifier to represent negative effect of so many Paulicians levied for war
 	icon = prowess_negative
 	levy_size = 1
+	levy_reinforcement_rate = -2.5 # Since most of the Paulicians have been levied already, there are none available to replace them.
 	build_speed = 0.50
 	tax_mult = -0.35
 	development_growth_factor = -0.3

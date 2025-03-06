@@ -1,6 +1,6 @@
 ﻿namespace = HEE_abkhazian_usurpation
 
-HEE_abkhazian_usurpation.0001 = { # News of a plague outbreaks reaches the Emir
+HEE_abkhazian_usurpation.0001 = { # 
 	type = character_event
 	title = HEE_abkhazian_usurpation.0001.t
 	desc = HEE_abkhazian_usurpation.0001.desc
@@ -116,12 +116,30 @@ HEE_abkhazian_usurpation.0002 = {
 
 		scope:bagrat_i_of_abkhazia = {
 			release_from_prison = yes
+			if = {
+				limit = { has_ep3_dlc_trigger = yes }
+				create_landless_adventurer_title_effect = { # Landless Adventurer for gameplay purposes
+					REASON = flag:deposition # Implicitly gives the "Expelled Me" opinion to the character deposed
+					FLAVOR_CHAR = scope:john_of_abkhazia
+				}
+				start_travel_plan = {
+					destination = province:496 #Constantinople
+					players_use_planner = no
+					on_start_on_action = on_travel_relocation_start
+					on_arrival_on_action = on_travel_relocation_end
+					return_trip = no # One way
+					travel_with_domicile = yes
+				}
+			}
 		}
 
-		scope:roman_emperor = {
-			add_courtier = scope:bagrat_i_of_abkhazia
+		if = {
+			limit = { has_ep3_dlc_trigger = no }
+			scope:roman_emperor = {
+				add_courtier = scope:bagrat_i_of_abkhazia
+			}
 		}
-		
+	
 		ai_chance = {
 			base = 1000
 		}

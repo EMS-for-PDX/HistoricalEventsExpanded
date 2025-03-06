@@ -1056,14 +1056,14 @@ c_perigord = {
 	}
 }
 
-c_limousin = {
+c_limousin = { # http://fmg.ac/Projects/MedLands/LIMOUSIN.htm#_Toc29554666
 	841.1.1 = {
 		liege = d_toulouse
 		holder = 40230 #Raymond I, Count of Toulouse
 	}
 	853.1.1 = {
 		liege = d_aquitaine
-		holder = 168055 #Gerhard II, Count of Limousin/Aurillac
+		holder = 168055 #Gerhard II, Count/Earl of Aurillac who held interests around Limoges
 	}
 	879.1.1 = {
 		holder = 40264	#Foucher/Foulques

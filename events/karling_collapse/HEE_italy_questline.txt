@@ -239,9 +239,6 @@ HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Bene
 		character:163071 = { is_alive = yes }
 		character:30228 = { is_alive = yes }
 		is_alive = yes
-		is_landed = yes
-		is_independent_ruler = yes
-		#is_at_war = no
 		is_imprisoned = no
 	}
 

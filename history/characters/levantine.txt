@@ -5990,6 +5990,14 @@
 	}
 	866.1.1 = {
 		add_gold = 250 # Aquired great riches in Egypt, which Isa brought with him to Palestine
+		add_spouse = fictional_banukilab0002 # Isa forged a marriage alliance with the Banu Kilab through marrying a Kilab wife
+		effect = {
+			create_alliance = {
+				target = character:levantine000010
+				allied_through_owner = this
+				allied_through_target = character:fictional_banukilab0002
+			}
+		}
 	}
 	883.1.1 = {
 		death = "883.1.1"
@@ -8430,7 +8438,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	dynasty = 1042113
 	religion = imami # The Kilab of Syria, like most Aleppines, were Twelver Shia Muslims
 	culture = levantine
-	father = hee_fictional_banu_kilab_0001
+	father = fictional_banukilab0001
 
 	#Skills
 	diplomacy = 8
@@ -8756,7 +8764,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	trait = just
 	trait = diligent
 	trait = zealous
-	trait = education_diplomacy_4
+	trait = education_diplomacy_2 # In contrast to his brother, al-Mu'tamid appears to have lacked any experience of, and involvement in, politics, as well as a power base he could rely on
 	844.1.1 = {
 		birth = yes
 	}
@@ -8795,23 +8803,20 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	843.11.20 = {
 		birth = yes
 	}
-	860.1.1 = {
+	866.1.1 = {
 		effect = {
-			set_relation_best_friend = character:163132
-			create_alliance = character:163132
-			character:163132 = {
-				add_opinion = {
-					target = character:34017
-					modifier = perk_negotiated_alliance_opinion
-				}
-			}
-			set_relation_friend = { reason = friend_generic_history target = character:turkish000007 }
-			create_alliance = character:turkish000007
-			character:turkish000007 = {
-				add_opinion = {
-					target = character:34017
-					modifier = perk_negotiated_alliance_opinion
-				}
+			set_relation_best_friend = { reason = almuwaffaq_and_turkish_military_friendship_desc target = character:163132 } # Musa ibn Bugha
+			set_relation_friend = { reason = almuwaffaq_and_turkish_military_friendship_desc target = character:turkish000007 } # Wasif al-Turki
+		}
+	}
+	867.1.1 = {
+		employer = basragovernor0001 # exiled to Basra
+		effect = {
+			set_relation_grudge = { target = character:34014 reason = almuwaffaq_and_almutazz_grudge } # Hastein the Viking, killed his father. Made a potential rival to avoid early murder, and the fact Hastein has no idea who this kid is
+			add_opinion = {
+				target = character:34014 #Unlawfully imprisoned him and exiled him to Basra
+				modifier = plotting_against_me_opinion
+				opinion = -50
 			}
 		}
 	}

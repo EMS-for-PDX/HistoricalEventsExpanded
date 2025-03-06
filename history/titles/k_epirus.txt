@@ -611,7 +611,8 @@ c_arbanon = {
 		liege = "e_byzantium"
 	}
 	865.1.1 = {
-		holder = 145124
+		liege = "d_bulgaria"
+		holder = bagatur0001
 	}
 	989.1.1 = {
 		liege = "d_dyrrachion"
@@ -830,8 +831,8 @@ c_antipatreia = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145124
-		liege = e_byzantium
+		liege = "d_bulgaria"
+		holder = bagatur0001
 	}
 	
 	1060.1.1 = {
@@ -897,8 +898,8 @@ c_avlonas = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145124
-		liege = e_byzantium
+		liege = "d_bulgaria"
+		holder = bagatur0001
 	}
 	
 	1060.1.1 = {

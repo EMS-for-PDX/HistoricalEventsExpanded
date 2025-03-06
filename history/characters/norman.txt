@@ -369,7 +369,9 @@
 		add_spouse = 1129
 	}
 	1051.8.10 = {
-		death = "1051.8.10"
+		death = { # as he was returning from the meeting with the Pope, he was assassinated along with several of his followers on Saint Lawrence's Day (10 August) of 1051, while he was entering the chapel of his castle at Monte Ilario
+			death_reason = death_assassination
+		}
 	}
 }
 
@@ -828,7 +830,7 @@
 	}
 }
 
-1150 = {
+1150 = { # first count of Acerenza, one of the twelve leaders of the Norman mercenaries of Guaimar IV of Salerno who conquered much of Apulia between 1038 and 1042.
 	name = "Asclettin"
 	dynasty = 676
 	martial = 4
@@ -883,10 +885,13 @@
 	trait = cynical
 	trait = greedy
 	trait = ambitious
+	trait = brave # At the Battle of Civitate, he is said to have charged first that day and routed the Lombard contingent, pursuing them a long distance before turning back to assist Humphrey and Robert Guiscard
 	trait = education_stewardship_2
+	trait = beauty_good_2 # He was described as strikingly handsome, a young man of open countenance who by design rode a horse so small his feet nearly touched the ground
+	trait = reaver # Plundered and pillaged his fair share
 	father = 1150
-	1022.1.1 = {
-		birth = "1022.1.1"
+	1015.1.1 = { # Likely born before his father's voluntary exile to Southern Italy
+		birth = "1015.1.1"
 	}
 	1050.1.1 = {
 		add_spouse = 1153
@@ -1896,7 +1901,7 @@
 	}
 }
 
-190000 = {
+190000 = { # Ranulf I of Caiazzo; count of Caiazzo in the Principality of Capua from about 1078
 	name = "Rainulf"
 	dynasty = 676
 	martial = 7
@@ -2761,8 +2766,12 @@
 	religion = "catholic"
 	culture = "norman"
 	father = 30826
+
 	986.1.1 = {
 		birth = "986.1.1"
+	}
+	1030.1.1 = {
+		trait = trait_adventurer # In 1030, Duke Sergius IV of Naples gave him the former Byzantine stronghold of Aversa north of Naples, with the title of count and his sister in marriage
 	}
 	1035.1.1 = {
 		add_spouse = 168471

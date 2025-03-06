@@ -7336,7 +7336,7 @@
 	culture = "khazar"
 	religion = "ashari"
 
-	825.1.1 = {
+	817.1.1 = {
 		birth = "817.1.1"
 	}
 	866.1.1 = {

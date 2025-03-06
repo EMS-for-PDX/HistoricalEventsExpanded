@@ -126,7 +126,7 @@ bm_867_hee_byzantines = {
 	}
 }
 
-bm_867_hee_transcaucasia = {
+bm_867_hee_anarchy = { # Representative of the Anarchy at Samarra/general troubles in the Abbasid Caliphate
 	start_date = 867.1.1
 	is_playable = yes
 	group = bm_group_867
@@ -135,145 +135,174 @@ bm_867_hee_transcaucasia = {
 		value = 0
 	}
 
-	# Ashot I
+	# Al-Mutazz
 	character = {
-		name = "bookmark_hee_armenian_ashot_i"
-		history_id = 41505
-		dynasty = 507
+		name = "bookmark_hee_anarchy_caliph"
+		history_id = 34014
+		dynasty_house = house_abbasid
 		dynasty_splendor_level = 3
 		type = male
-		birth = 820.1.9
-		title = k_armenian_principality
-		government = feudal_government
-		culture = armenian
-		religion = armenian_apostolic
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		position = { 700 325 }
-
-		animation = personality_bold
-
-		# Smbat I, Son and eventual Successor
-		character = {
-			name = "bookmark_hee_armenian_smbat"
-			relation = "BOOKMARK_RELATION_SON"
-			dynasty = 507
-			type = male
-			birth = 850.1.1
-			culture = armenian
-			religion = armenian_apostolic
-			history_id = 41506
-
-			animation = disapproval
-		}
-		
-		# Abas, Brother and leading general 
-		character = {
-			name = "bookmark_hee_armenian_abas"
-			relation = "BOOKMARK_RELATION_BROTHER"
-			dynasty = 507
-			type = male
-			birth = 830.1.1
-			culture = armenian
-			religion = armenian_apostolic
-			history_id = armenian_000081
-
-			animation = personality_greedy
-		}
-	}
-
-	# al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
-	character = {
-		name = "bookmark_hee_armenian_ibn_ahmad"
-		history_id = azdi0001
-		dynasty = dynasty_azdi
-		dynasty_splendor_level = 1
-		type = male
-		birth = 820.1.1
-		title = k_arminiya
+		birth = 847.1.1
+		title = e_arabia
 		government = clan_government
 		culture = levantine
 		religion = ashari
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		position = { 920 520 }
-
-		animation = personality_rational
-
-	}
-
-	# The first Kaysite amir, Abu'l-Ward
-	character = {
-		name = "bookmark_hee_armenian_kaysite_founder"
-		history_id = 159722
-		dynasty = 1029119
-		dynasty_splendor_level = 1
-		type = male
-		birth = 835.1.1
-		title = d_kaysite
-		government = clan_government
-		culture = levantine
-		religion = ashari
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		position = { 480 620 }
-
-		animation = personality_vengeful
-
-		# Abu'l-Ward's son and successor
-		character = {
-			name = "bookmark_hee_armenian_kaysite_son"
-			relation = "BOOKMARK_RELATION_SON"
-			dynasty = 1029119
-			type = male
-			birth = 853.1.1
-			culture = levantine
-			religion = ashari
-			history_id = extra_kaysites_0001
-
-			animation = personality_greedy
-		}
-
-	}
-
-	# Haytham ibn Khalid
-	character = {
-		name = "bookmark_hee_armenian_haytham_ibn_khalid"
-		history_id = 159733
-		dynasty = 1029123
-		dynasty_splendor_level = 2
-		type = male
-		birth = 822.1.1
-		title = d_shirvan
-		government = clan_government
-		culture = levantine
-		religion = ashari
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		position = { 1150 300 }
+		position = { 990 500 }
 
 		animation = personality_bold
 
-		# Muhammad ibn Khalid al-Shaybani, brother
+		# Ahmad Bar Isra'il Anbari, Caliphial Advisor to Al-Mutazz, ID: anbari0002
 		character = {
-			name = "bookmark_hee_armenian_muhammad_ibn_khalid"
-			relation = "BOOKMARK_RELATION_BROTHER"
-			dynasty = 1029123
+			name = "bookmark_hee_anarchy_caliphal_advisor"
+			relation = "BOOKMARK_RELATION_VIZIER"
+			dynasty = hee_anbari
 			type = male
-			birth = 817.1.1
+			birth = 824.1.1
+			culture = assyrian
+			religion = nestorian
+			history_id = anbari0002
+
+			animation = personality_rational
+		}
+	
+		# Abdallah ibn al-Mu'tazz, ID: extra_abbasids_2
+		character = {
+			name = "bookmark_hee_anarchy_caliphal_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty_house = house_abbasid
+			type = male
+			birth = 861.1.1
 			culture = levantine
 			religion = ashari
-			history_id = 146077
+			history_id = extra_abbasids_2
 
 			animation = personality_content
 		}
 
-		# Yazid ibn Khalid, brother
+	}
+
+	# Isa ibn al-Shaykh al-Shaybani
+	character = {
+		name = "bookmark_hee_anarchy_shaybani"
+		history_id = 159732
+		dynasty = 1029123
+		dynasty_splendor_level = 2
+		type = male
+		birth = 820.1.1
+		title = d_palestine
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 480 620 }
+
+		animation = personality_bold
+
+		# Ahmad ibn Isa, son
 		character = {
-			name = "bookmark_hee_armenian_yazid_ibn_khalid"
-			relation = "BOOKMARK_RELATION_BROTHER"
+			name = "bookmark_hee_anarchy_shaybani_son"
+			relation = "BOOKMARK_RELATION_SON"
 			dynasty = 1029123
 			type = male
-			birth = 819.1.1
+			birth = 8411.1.1
 			culture = levantine
 			religion = ashari
-			history_id = 146078
+			history_id = 146080
+
+			animation = personality_bold
+		}
+
+		# Abu Ja'far, Turkish lieutenant, ID: extra_abbasids_2
+		character = {
+			name = "bookmark_hee_anarchy_shaybani_lieutenant"
+			relation = "BOOKMARK_RELATION_LIEUTENANT"
+			dynasty = 7521
+			type = male
+			birth = 839.1.1
+			culture = khazar
+			religion = ashari
+			history_id = 163136
+
+			animation = personality_content
+		}
+
+	}
+
+	# Musawir ibn 'Abd al-Hamid
+	character = {
+		name = "bookmark_hee_anarchy_kharijite"
+		history_id = extra_kurds_0010
+		dynasty = kurdish_al_bawazij
+		dynasty_splendor_level = 1
+		type = male
+		birth = 824.3.2
+		title = c_hadithat-ana
+		government = clan_government
+		culture = kurdish
+		religion = azariqa
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 700 325 }
+
+		animation = personality_vengeful
+
+		# Abu Ja'far, Turkish lieutenant, ID: extra_abbasids_2
+		character = {
+			name = "bookmark_hee_anarchy_kharijite_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = kurdish_al_bawazij
+			type = male
+			birth = 845.8.21
+			culture = kurdish
+			religion = azariqa
+			history_id = extra_kurds_0011
+
+			animation = personality_content
+		}
+
+	}
+
+	# Musa ibn Bugha al-Kabir
+	character = {
+		name = "bookmark_hee_anarchy_turkish_elite"
+		history_id = 163132
+		dynasty = 7517
+		dynasty_splendor_level = 1
+		type = male
+		birth = 817.1.1
+		title = d_kermanshah
+		government = clan_government
+		culture = khazar
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 1150 300 }
+
+		animation = personality_bold
+
+		# Muhammad ibn Bugha al-Kabir
+		character = {
+			name = "bookmark_hee_anarchy_turkish_elite_brother"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 7517
+			type = male
+			birth = 830.1.1
+			culture = khazar
+			religion = ashari
+			history_id = alKabir0001
+
+			animation = personality_content
+		}
+
+		# Muflih al-Turki
+		character = {
+			name = "bookmark_hee_anarchy_turkish_lieutenant"
+			relation = "BOOKMARK_RELATION_LIEUTENANT"
+			dynasty = hee_al_turki
+			type = male
+			birth = 828.1.1
+			culture = khazar
+			religion = ashari
+			history_id = alturki0001
 
 			animation = personality_content
 		}
@@ -430,6 +459,161 @@ bm_867_hee_norway = {
 			history_id = 166044
 
 			animation = personality_bold
+		}
+
+	}
+}
+
+bm_867_hee_transcaucasia = {
+	start_date = 867.1.1
+	is_playable = yes
+	group = bm_group_867
+
+	weight = {
+		value = 0
+	}
+
+	# Ashot I
+	character = {
+		name = "bookmark_hee_armenian_ashot_i"
+		history_id = 41505
+		dynasty = 507
+		dynasty_splendor_level = 3
+		type = male
+		birth = 820.1.9
+		title = k_armenian_principality
+		government = feudal_government
+		culture = armenian
+		religion = armenian_apostolic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		position = { 700 325 }
+
+		animation = personality_bold
+
+		# Smbat I, Son and eventual Successor
+		character = {
+			name = "bookmark_hee_armenian_smbat"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 507
+			type = male
+			birth = 850.1.1
+			culture = armenian
+			religion = armenian_apostolic
+			history_id = 41506
+
+			animation = disapproval
+		}
+		
+		# Abas, Brother and leading general 
+		character = {
+			name = "bookmark_hee_armenian_abas"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 507
+			type = male
+			birth = 830.1.1
+			culture = armenian
+			religion = armenian_apostolic
+			history_id = armenian_000081
+
+			animation = personality_greedy
+		}
+	}
+
+	# al-Ala ibn Ahmad al-Azdi - Arab Governor of Armenia in 866 according to Torn
+	character = {
+		name = "bookmark_hee_armenian_ibn_ahmad"
+		history_id = azdi0001
+		dynasty = dynasty_azdi
+		dynasty_splendor_level = 1
+		type = male
+		birth = 820.1.1
+		title = k_arminiya
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 920 520 }
+
+		animation = personality_rational
+
+	}
+
+	# The first Kaysite amir, Abu'l-Ward
+	character = {
+		name = "bookmark_hee_armenian_kaysite_founder"
+		history_id = 159722
+		dynasty = 1029119
+		dynasty_splendor_level = 1
+		type = male
+		birth = 835.1.1
+		title = d_kaysite
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		position = { 480 620 }
+
+		animation = personality_vengeful
+
+		# Abu'l-Ward's son and successor
+		character = {
+			name = "bookmark_hee_armenian_kaysite_son"
+			relation = "BOOKMARK_RELATION_SON"
+			dynasty = 1029119
+			type = male
+			birth = 853.1.1
+			culture = levantine
+			religion = ashari
+			history_id = extra_kaysites_0001
+
+			animation = personality_greedy
+		}
+
+	}
+
+	# Haytham ibn Khalid
+	character = {
+		name = "bookmark_hee_armenian_haytham_ibn_khalid"
+		history_id = 159733
+		dynasty = 1029123
+		dynasty_splendor_level = 2
+		type = male
+		birth = 822.1.1
+		title = d_shirvan
+		government = clan_government
+		culture = levantine
+		religion = ashari
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		position = { 1150 300 }
+
+		animation = personality_bold
+
+		# Muhammad ibn Khalid al-Shaybani, brother
+		character = {
+			name = "bookmark_hee_armenian_muhammad_ibn_khalid"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 1029123
+			type = male
+			birth = 817.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 146077
+
+			animation = personality_content
+		}
+
+		# Yazid ibn Khalid, brother
+		character = {
+			name = "bookmark_hee_armenian_yazid_ibn_khalid"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 1029123
+			type = male
+			birth = 819.1.1
+			culture = levantine
+			religion = ashari
+			history_id = 146078
+
+			animation = personality_content
 		}
 
 	}

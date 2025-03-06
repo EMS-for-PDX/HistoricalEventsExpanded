@@ -128,6 +128,30 @@ balgarsko0008 = { # Unknown daughter of Boris II of Bulgaria, captured by Empero
 	}
 }
 
+balgarsko0009 = { # Enravota; eldest son of Omurtag of Bulgaria and the first Bulgarian Christian martyr, as well as the earliest Bulgarian saint to be canonized
+	name = "Enravota"
+	dynasty = 8636
+	father = 159124 # Omurtag of Bulgaria
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	trait = education_diplomacy_3 # 11th-century chronicler Theophylact of Bulgaria claimed he delivered a prophetic speech before his death
+	trait = zealous
+	trait = stubborn
+	trait = content
+	783.1.1 = { # Unknown; Born in the early 9th century
+		birth = yes
+	}
+	832.1.1 = {
+		religion = "orthodox"
+	}
+	833.3.28 = { # In the Bulgarian Orthodox Church, Enravota's feast day is 28 March
+		death = {
+			death_reason = death_murder_known
+			killer = 159125 # Malamir attempted to make him renounce Christianity, but did not succeed. Enravota was killed on the order of Malamir, around 833
+		}
+	}
+}
+
 ### Family of George Sursuvul ###
 sursuvul0001 = { # Family of George Sursuvul (essentially fictional) - https://en.wikipedia.org/wiki/George_Sursuvul
 	name = "Kresimir"
@@ -196,60 +220,6 @@ sursuvul0004 = { # Unnamed second wife of the Bulgarian Tsar Symeon and the moth
 		death = yes
 	}
 }
-
-
-### Family of Theodore Sigritsa (essentially fictional) ###
-sigritsa0001 = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
-	name = "Symeon"
-	dynasty = dynasty_sigritsa
-	religion = "tengri_pagan"
-	culture = "bulgarian"
-	829.1.1 = { # Fictional
-		birth = yes
-	}
-	864.1.1 = {
-		add_spouse = sigritsa0002
-		religion = "orthodox"
-	}
-	892.1.1 = { # Fictional
-		death = yes
-	}
-}
-
-sigritsa0002 = { # Family of Theodore Sigritsa (essentially fictional) - https://en.wikipedia.org/wiki/Theodore_Sigritsa
-	name = "Vasilka"
-	female = yes
-	religion = "tengri_pagan"
-	culture = "bulgarian"
-	831.1.1 = { # Fictional
-		birth = yes
-	}
-	864.1.1 = {
-		religion = "orthodox"
-	}
-	897.1.1 = { # Fictional
-		death = yes
-	}
-}
-
-sigritsa0003 = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
-	name = "Theodore"
-	dynasty = dynasty_sigritsa
-	religion = "orthodox"
-	culture = "bulgarian"
-	father = sigritsa0001
-	mother = sigritsa0002
-	866.1.1 = { # Fictional
-		birth = yes
-	}
-	924.1.1 = { # in 924 he and Marmais, leading a small army, were ambushed by the Serbs and killed. Their deaths were followed by the Bulgarian annexation in the same year
-		death = {
-			death_reason = death_battle
-		}
-	}
-}
-
-
 
 
 ### Additional Kometopoulos Family ###
@@ -679,7 +649,38 @@ kometopoulos0023 = { # When the Bulgarian resistance collapsed after the death o
 }
 
 
+### Family of Theodore Sigritsa (essentially fictional) ###
+tarkan0001 = { # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
+	name = "Iliya"
+	dynasty = dynasty_sigritsa # Could be argued Theodore should be part of the Kavhan family, but I've chosen to link him with Ilya the mentioned border regional governor. Both have Slavic renditions of Christian names too. Suggest linking to Kavhans through a marriage to a fictional daughter of Isbul.
+	religion = "orthodox"
+	culture = "bulgarian"
+	trait =	education_martial_3 # Ilya the Tarkan. Ruled a border region. Mentioned as invading Serbia
 
+	829.1.1 = {
+		birth = yes
+	}
+	889.1.1 = {
+		death = yes
+	}
+}
+
+sigritsa0001 = { # Theodore Sigritsa - https://en.wikipedia.org/wiki/Theodore_Sigritsa
+	name = "Theodore"
+	dynasty = dynasty_sigritsa # Could be argued Theodore should be part of the Kavhan family, but I've chosen to link him with Ilya the mentioned border regional governor. Both have Slavic renditions of Christian names too. Suggest linking to Kavhans through a marriage to a fictional daughter of Isbul.
+	religion = "orthodox"
+	culture = "bulgarian"
+	father = tarkan0001
+	mother = kavkhan0002
+	866.1.1 = { # Fictional
+		birth = yes
+	}
+	924.1.1 = { # in 924 he and Marmais, leading a small army, were ambushed by the Serbs and killed. Their deaths were followed by the Bulgarian annexation in the same year
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
 
 
 
@@ -698,30 +699,34 @@ ichirguboil0001 = { # Stazis, recorded as Ichirgu-boil (High official title in t
 	}
 }
 
-bagatur0001 = { # Sundika, recorded as Bagatur (literally “brave man”. A title from the ruling system from the time of the First Bulgarian state. Given mainly for military merits.) during the council of Constantinople in 870
-	name = "Sundika"
-	
+ichirguboil0002 = { # Mostich (Ichirgu-boil); Mentioned as an elderly man who was a figure under Simeon and Peter - https://en.wikipedia.org/wiki/Mostich
+	name = "Mostich"
+
 	religion = "orthodox"
 	culture = "bulgarian"
+	father = ichirguboil0001
 
-	831.1.1 = {
+	860.1.1 = { 
 		birth = yes
 	}
-	883.1.1 = {
+	940.1.1 = {
+		trait = devoted
+	}
+	942.1.1 = {
 		death = yes
 	}
 }
 
-tarkan0001 = { # Iliya, recorded as Tarkan (High official title in the early-medieval Bulgarian state. Its bearer was usually a governor of a border region) during the council of Constantinople in 870
-	name = "Iliya"
-	
+bagatur0001 = { # Sundika, recorded as Bagatur (literally “brave man”. A title from the ruling system from the time of the First Bulgarian state. Given mainly for military merits.) during the council of Constantinople in 870
+	name = "Sundika"
+	dynasty = 9582 # It's mentioned that titles could often be hereditary, so I've tried to connect characters together in a way that makes sense 
 	religion = "orthodox"
 	culture = "bulgarian"
-
-	834.1.1 = {
+	trait =	education_martial_3 # Mentioned as a general
+	831.1.1 = {
 		birth = yes
 	}
-	889.1.1 = {
+	883.1.1 = {
 		death = yes
 	}
 }
@@ -763,7 +768,50 @@ sampsis0001 = { # Alexios Hunol, recorded as Sampsis during the council of Const
 	836.1.1 = {
 		birth = yes
 	}
+	867.1.1 = {
+		employer = 70382 # Boris I
+	}
 	890.1.1 = {
+		death = yes
+	}
+}
+
+kavkhan0001 = { # Isbul; Extremely influential Kavkhan who first appears under Krum and remains a looming force in politics into the reign of Presian (roughly 4 decades). Acts as regent twice. Leads many campaigns into Byzantine Macedonia. - https://en.wikipedia.org/wiki/Isbul
+	name = "Isbul"
+	dynasty = dynasty_kavkhan	
+	religion = "tengri_pagan"
+	culture = "bolghar"
+	trait = education_stewardship_5
+	trait = diligent
+	trait = generous # During his time as co-ruler and kavhan of Malamir, Isbul financed the construction of a water conduit (aqueduct) or fountain in Pliska, which he donated to Malamir
+	trait = arrogant
+	trait = ambitious
+	trait = administrator # In his biography of Isbul, Pavlov underlines his "extraordinary merits for the development of the Bulgarian state" and describes him as "one of the architects of medieval Bulgarian statehood during the years of its rise"
+	trait = overseer # Under Malamir and Presian, Isbul headed Bulgaria's successful campaigns against the Byzantines in southern Thrace and eastern Macedonia
+	trait = loyal
+	780.1.1 = { # Unknown; Historian Plamen Pavlov theorises that Isbul may have begun his career under the ruler Krum (r. 803–814), and by the time of Krum's son Omurtag (r. 815–831), Isbul was already an influential noble
+		birth = yes
+	}
+	840.1.1 = { # Following 837, Isbul disappears from the sources, and there is no information about the date and circumstances of his death
+		death = yes
+	}
+}
+
+kavkhan0002 = { # Fictional daughter of Isbul to connect the hereditary title of Kavkhan to Theodore Sigritsa
+	name = "Maria"
+	female = yes
+	dynasty = dynasty_kavkhan
+	father = kavkhan0001
+	religion = "tengri_pagan"
+	culture = "bulgarian"
+	826.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = {
+		add_spouse = tarkan0001
+		religion = "orthodox"
+	}
+	886.1.1 = { # Fictional
 		death = yes
 	}
 }

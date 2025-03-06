@@ -1476,6 +1476,16 @@ sogdian0109 = { #Abu Ishaq, the last native ruler of Bukhara. For gameplay reaso
 	856.1.1 = {
 		add_spouse = sogdian0110
 	}
+	864.1.1 = {
+		effect = {
+			set_relation_grudge = { target = character:163157 reason = abuishaq_and_ismail_grudge } # Is'mail Samanid, who replaced Abu Ishaq as ruler of Bukhara. (Imo makes more sense than a rivalry. Assumedly, Is'mail holds no special feelings towards or has a difficult past with Abu Ishaq yet)
+			add_opinion = {
+				target = character:163157
+				modifier = angry_opinion # Angry that Is'mail has replaced him
+				opinion = -50
+			}
+		}
+	}
 	867.1.1 = {
 		add_pressed_claim = title:d_soghd
 		add_pressed_claim = title:c_bukhara 

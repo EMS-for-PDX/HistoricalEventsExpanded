@@ -14337,45 +14337,74 @@
 
 
 
-167472 = {
+167472 = { # Docibilis I of Gaeta; hypatus of Gaeta from 867 until his death
 	name = "Docibile"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
+
+	#Skills
+	diplomacy = 8
+	martial = 8
+	stewardship = 8
+	intrigue = 9
+	learning = 7
+	prowess = 8
+	
+	#Education
+	trait = education_stewardship_4 # Seems to be a quality administrator - though a diplomacy or martial focus fit as well
+	
+	#Personality Traits
+	trait = brave # Fits the archtype of "a warrior-prince"
+	trait = generous # spent profusely on churches and ecclesiastic endowments for the sake of his soul
+	trait = ambitious # active and energetic ruler
+	trait = cynical # Allied with groups regardless of faith differences (i.e. use of Aghlabid mercenaries)
+	
+	#Other Traits
+	trait = gallant # reinforcement of the "warrior-prince" description
+	trait = architect # began construction on the great palace whose ruins still stand in the city
+
 	840.1.1 = {
 		birth = "840.1.1"
 	}
-	914.1.1 = {
-		death = "914.1.1"
+	860.1.1 = {
+		add_spouse = gaeta0001 # his wife Matrona
+	}
+	906.1.1 = {
+		death = "906.1.1"
 	}
 }
 
 
 
-167473 = {
+167473 = { # John I of Gaeta; second hypatos of Gaeta of his dynasty, a son of Dociblis I and Matrona
 	name = "Giovanni"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
 	father = 167472
+	mother = gaeta0001
 	860.1.1 = {
 		birth = "860.1.1"
 	}
-	934.1.1 = {
+	934.1.1 = { # likely 933 or 934
 		death = "934.1.1"
 	}
 }
 
 
 
-167474 = {
+167474 = { # Docibilis II of Gaeta; the ruler of Gaeta, in one capacity or another, from 906 until his death. He was the son of the hypatus John I, who made him co-ruler in 906 or thereabouts
 	name = "Docibile"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	father = 167472
+	father = 167473
 	880.1.1 = {
 		birth = "880.1.1"
+	}
+	900.1.1 = {
+		add_spouse = gaeta0009 # Orania; wife to Docibilis II of Gaeta who was of Neapolitan extraction
 	}
 	954.1.1 = {
 		death = "954.1.1"
@@ -14384,46 +14413,52 @@
 
 
 
-167475 = {
+167475 = { # Giovanni (John) II of Gaeta; duke of Gaeta, associated with his father Docibilis II and grandfather John I from 933 and sole ruler from the former's death in 954
 	name = "Giovanni"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	father = 167474
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
 	910.1.1 = {
 		birth = "910.1.1"
 	}
-	962.3.1 = {
+	930.1.1 = {
+		add_spouse = gaeta0015 # Theodenand; wife of Giovanni (John) II of Gaeta who predeceased him
+	}
+	962.3.1 = { # Unknown; succeeded by his brother Gregory in 962 or 963
 		death = "962.3.1"
 	}
 }
 
 
 
-167476 = {
+167476 = { # Gregory of Gaeta; Duke of Gaeta from 963 until his death. He was the second son of Docibilis II of Gaeta and his wife Orania. succeeded his brother John II, who had left only daughters
 	name = "Gregorio"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	father = 167474
-	933.1.1 = {
-		birth = "933.1.1"
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	922.1.1 = {
+		birth = "922.1.1"
 	}
-	981.2.1 = {
-		death = "981.2.1"
+	978.2.1 = { # disappeared from the annals in 978, when his younger brother Marinus de Fondi took power at the expense of Gregory's three sons
+		death = "978.2.1"
 	}
 }
 
 
 
-167477 = {
+167477 = { # Marinus II of Gaeta; Duke of Gaeta from 963 until his death. He was the second son of Docibilis II of Gaeta and his wife Orania. succeeded his brother John II, who had left only daughters
 	name = "Marino"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	father = 167474
-	930.1.1 = {
-		birth = "930.1.1"
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	925.1.1 = {
+		birth = "925.1.1"
 	}
 	984.10.1 = {
 		death = "984.10.1"
@@ -14432,7 +14467,7 @@
 
 
 
-167478 = {
+167478 = { # John III of Gaetal; consul and duke of Gaeta from some time between October 984 and January 986 until his death
 	name = "Giovanni"
 	dynasty = 622 #Caetani
 	religion = "catholic"
@@ -14441,6 +14476,9 @@
 	955.1.1 = {
 		birth = "955.1.1"
 	}
+	985.1.1 = {
+		add_spouse = tusculani0001 # Emilia of Gaeta
+	}
 	1008.1.1 = {
 		death = "1008.1.1"
 	}
@@ -14448,14 +14486,18 @@
 
 
 
-167479 = {
+167479 = { ## John IV of Gaeta; eldest son of John III of Gaeta and Emilia. succeeded his father in 1008 or 1009 and ruled for a brief four years
 	name = "Giovanni"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
 	father = 167478
-	980.1.1 = {
-		birth = "980.1.1"
+	mother = tusculani0001
+	985.1.1 = { # appointed co-duke in 991 while still young (he was a minor even in 994)
+		birth = "985.1.1"
+	}
+	1009.1.1 = {
+		add_spouse = spartenos0003
 	}
 	1012.1.1 = {
 		death = "1012.1.1"
@@ -14470,6 +14512,7 @@
 	religion = "catholic"
 	culture = "italian"
 	father = 167479
+	mother = spartenos0003
 	1010.1.1 = {
 		birth = "1010.1.1"
 	}
@@ -14480,14 +14523,15 @@
 
 
 
-167481 = {
+167481 = { # Son of Docibilis II who received the Church of San Erasmo at Formia from his brother John II
 	name = "Leone"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	father = 167474
-	935.1.1 = {
-		birth = "935.1.1"
+	father = 167474 # Docibilis II
+	mother = gaeta0009 # Orania
+	927.1.1 = {
+		birth = "927.1.1"
 	}
 	959.1.1 = {
 		death = "959.1.1"
@@ -14497,13 +14541,14 @@
 
 
 
-167482 = {
+167482 = { # the magnificus Docibilis, a grandson of Duke Gregory and probably a son of Landolf, son of Gregory, Duke of Gaeta, and Landolf's mistress Polyssena (Pulessene)
 	name = "Docibile"
 	dynasty = 622 #Caetani
 	religion = "catholic"
 	culture = "italian"
-	trait = legitimized_bastard
-	father = 167481
+	trait = legitimized_bastard # probably a son of Landolf, son of Gregory, Duke of Gaeta, and Landolf's mistress Polyssena (Pulessene)
+	father = gaeta0023 # Landolf, son of Gregory of Gaeta, who is the ancestor of the Counts of Suio
+	mother = gaeta0024 # Landolf's mistress Polyssena (Pulessene)
 	955.1.1 = {
 		birth = "955.1.1"
 	}
@@ -14514,7 +14559,7 @@
 
 
 
-167483 = {
+167483 = { # Leo II of Gaeta; Duke of Gaeta briefly in early 1042
 	name = "Leone"
 	dynasty = 622 #Caetani
 	religion = "catholic"

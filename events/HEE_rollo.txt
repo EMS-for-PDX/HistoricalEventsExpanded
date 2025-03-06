@@ -199,6 +199,11 @@ HEE_rollo.0002 = {
 		hidden_effect = {
 			scope:rollo = {
 				add_trait = adventurer
+				if = { # By aquiring land, Rollo's ambitions have largely been achieved
+					limit = { has_trait = ambitious }
+					remove_trait = ambitious
+					add_trait = content
+				}
 			}
 		}
 

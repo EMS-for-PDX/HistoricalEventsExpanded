@@ -247,6 +247,20 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 		#is_at_war = no
 		is_imprisoned = no
 	}
+
+	immediate = {
+		# Scopes
+		character:34014 = { save_scope_as = al_mutazz } # https://en.wikipedia.org/wiki/Al-Mu%27tazz
+		character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+		character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+		character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+		character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+		
+		character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+		character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
+		character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+		character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+	}
 	
 	option = {
 		name = hee_anarchy_at_samarra.1000.a
@@ -274,7 +288,7 @@ hee_anarchy_at_samarra.1000 = { # Al-Mu'tazz deposition
 				scope:al_mutazz = { has_character_modifier = anarchy_at_samarra_unpaid_soldiery }
 			}
 			character:34015 = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
-		}		
+		}
 		
 		depose = yes
 
@@ -403,7 +417,7 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 	option = {
 		name = hee_anarchy_at_samarra.2000.a
 
-		#Al-Mu'tamid recieves the title of Caliph, but nothing else
+		#Al-Mu'tamid recieves the title of Caliph and the "capital" of Samarra
 		scope:al_mutamid = {
 			create_title_and_vassal_change = {
 				type = granted
@@ -417,11 +431,18 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 					change = scope:change
 				}
 			}
+
+			title:c_samarra = {
+				change_title_holder = {
+					holder = scope:al_mutamid
+					change = scope:change
+				}
+			}
 			
 			resolve_title_and_vassal_change = scope:change
 		}
 		
-		set_designated_heir_unsafe = character:34017 # Al-Muwaffaq
+		set_designated_heir_unsafe = scope:al_mutamid
 
 		if = {
 			limit = {
@@ -450,10 +471,12 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 			EXPOSER = character:163132
 		}
 
-		# trigger_event = {
-			# id = hee_anarchy_at_samarra.0003
-			# days = { 10 15 }
-		# }
+		scope:al_mutamid = {
+			trigger_event = {
+				id = hee_anarchy_at_samarra.2001
+				days = { 10 15 }
+			}
+		}
 		
 		ai_chance = {
 			base = 1000
@@ -491,6 +514,147 @@ hee_anarchy_at_samarra.2000 = { # Al-Muhtadi murder
 		
 		ai_chance = {
 			base = 0
+		}
+	}
+}
+
+hee_anarchy_at_samarra.2001 = { # Al-Muhtadi has his power usurped by al-Muwaffaq due to al-Muwaffaq's Turkish support
+	type = character_event
+	title = hee_anarchy_at_samarra.2000.t
+	desc = hee_anarchy_at_samarra.2000.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = fear
+	}
+	right_portrait = {
+		character = scope:al_muwaffaq
+		animation = personality_rational
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		# Scopes
+		character:34015 = { save_scope_as = al_muhtadi } # https://en.wikipedia.org/wiki/Al-Muhtadi
+		character:34016 = { save_scope_as = al_mutamid } # https://en.wikipedia.org/wiki/Al-Mu%27tamid
+		character:34017 = { save_scope_as = al_muwaffaq } # https://en.wikipedia.org/wiki/Al-Muwaffaq
+		character:34018 = { save_scope_as = al_mutadid } # https://en.wikipedia.org/wiki/Al-Mu%27tadid
+		
+		character:turkish000007 = { save_scope_as = wasif_al_turki } # https://en.wikipedia.org/wiki/Wasif_al-Turki
+		character:turkish000008 = { save_scope_as = salih_ibn_wasif } # https://en.wikipedia.org/wiki/Salih_ibn_Wasif
+		character:163131 = { save_scope_as = bugha_al_sharabi } # https://en.wikipedia.org/wiki/Bugha_al-Sharabi
+		character:163132 = { save_scope_as = musa_bughoglu } # https://en.wikipedia.org/wiki/Musa_ibn_Bugha_al-Kabir
+
+	}
+	
+	option = {
+		name = hee_anarchy_at_samarra.2001.a
+
+		scope:al_mutamid = {
+			every_vassal = {
+				add_to_temporary_list = arabian_vassals
+			}
+		}
+
+		#Al-Muwaffak recieves Baghdad, the soon-to-be restored capital of the Abbasids
+		scope:al_muwaffaq = {
+			create_title_and_vassal_change = {
+				type = usurped
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+
+			title:e_arabia = {
+				change_title_holder = {
+					holder = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+
+			title:d_baghdad = {
+				change_title_holder = {
+					holder = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+
+			title:c_baghdad = {
+				change_title_holder = {
+					holder = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+
+			title:c_anbar = {
+				change_title_holder = {
+					holder = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		scope:al_muwaffaq = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = arabian_vassals
+				change_liege = {
+					liege = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+			scope:al_mutamid = {
+				change_liege = {
+					liege = scope:al_muwaffaq
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+		}
+
+		if = {
+			limit = {
+				scope:al_mutamid = { has_character_modifier = anarchy_at_samarra_financial_straits }
+			}
+			scope:al_mutamid = { remove_character_modifier = anarchy_at_samarra_financial_straits }
+			scope:al_muwaffaq = { add_character_modifier = anarchy_at_samarra_financial_straits }
+		}
+		
+		if = {
+			limit = {
+				scope:al_mutamid = { has_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+			}
+			scope:al_mutamid = { remove_character_modifier = anarchy_at_samarra_financial_straits }
+			scope:al_muwaffaq = { add_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+		}
+
+		if = {
+			limit = {
+				scope:al_mutamid = { has_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+			}
+			scope:al_mutamid = { remove_character_modifier = anarchy_at_samarra_financial_straits }
+			scope:al_muwaffaq = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+		}	
+
+		# trigger_event = {
+			# id = hee_anarchy_at_samarra.0003
+			# days = { 10 15 }
+		# }
+		
+		ai_chance = {
+			base = 1000
 		}
 	}
 }

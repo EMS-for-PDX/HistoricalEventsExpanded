@@ -1,0 +1,98 @@
+﻿namespace = HEE_mardavij_uprising
+
+### Spawn ibn Hafsun
+HEE_mardavij_uprising.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning Mardavij's Uprising before 1066 start date"
+		debug_log_date = yes
+		spawn_ziyarid_character_effect = yes
+		scope:Mardavij = {
+			trigger_event = {
+				id = HEE_mardavij_uprising.0002
+			}
+		}
+	}
+}
+
+HEE_mardavij_uprising.0002 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		scope:Mardavij = {
+			if = { # Make Mardavij a LAAMP
+				limit = {
+					NOT = { is_landed = yes }
+				}
+				create_landless_adventurer_title_effect = {
+					REASON = flag:wanderer
+					FLAVOR_CHAR = scope:Mardavij
+				}
+			}
+			if = {
+				limit = {
+					scope:Vushmgir = {
+						NOT = { is_courtier_of = scope:Mardavij }
+					}
+				}
+				add_courtier = scope:Vushmgir
+			}
+			if = {
+				limit = {
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_mercenaries # Mardavij was one of the many Gilaki leaders that entered into the service of the Alids, once they had established their rule over Tabaristan, Gilan, and Daylam
+				trigger_event = HEE_mardavij_uprising.0003
+			}
+		}
+	}
+}
+
+HEE_mardavij_uprising.0003 = {
+	scope = none
+	hidden = yes
+
+	immediate = { # Mardavij starts his Zoroastrian revival in Daylam - utilizing the ep3_laamp_adventurer_duchy_invasion CB
+		if = { # Ideally, Mardavij can gain an entire Duchy off the first war
+			limit = { exists = title:d_daylam } # Despite Tabaristan's association with the Ziyarids, the Daylamite cities of Zanjan and Qazvin were the first cities of Mardavij
+			title:d_daylam.holder = { save_scope_as = ideal_mardavij_target }
+			# scope:ideal_mardavij_target = { trigger_event = HEE_ibn_hafsun_uprising.0004 } # Notification & Reaction Event
+			scope:Mardavij = {
+				if = { # WAR!!
+					limit = {
+						NOT = { is_landed = yes }
+					}
+					start_war = { # Start the war for Daylam
+						cb = ep3_laamp_adventurer_duchy_invasion
+						target = title:d_daylam.holder
+						claimant = root
+						target_title = title:d_daylam
+						target_title = title:d_daylam.title_capital_county
+					}
+				}
+			}
+		}
+
+		if = { # As a backup, Mardavij will target the county of Gilan to begin his uprising
+			limit = { NOT = { exists = title:d_daylam } } # Despite Tabaristan's association with the Ziyarids, the Daylamite cities of Zanjan and Qazvin were the first cities of Mardavij
+			title:c_gilan.holder = { save_scope_as = backup_mardavij_target } # Without the context of Asfar ibn Shiruya's campaigns in Zanjan, the best single target for Mardavij's appearance is imo Gilan
+			# scope:backup_mardavij_target = { trigger_event = HEE_ibn_hafsun_uprising.0004 } # Notification & Reaction Event
+			scope:Mardavij = {
+				if = { # WAR!!
+					limit = {
+						NOT = { is_landed = yes }
+					}
+					start_war = { # Start the war for Daylam
+						cb = ep3_laamp_adventurer_county_invasion
+						target = title:c_gilan.holder
+						claimant = root
+						target_title = title:c_gilan
+					}
+				}
+			}
+		}
+	}
+}

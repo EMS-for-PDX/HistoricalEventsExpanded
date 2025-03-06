@@ -77,7 +77,7 @@ HEE_mardavij_uprising.0003 = {
 		}
 
 		if = { # As a backup, Mardavij will target the county of Gilan to begin his uprising
-			limit = { NOT = { exists = title:d_daylam } } # Despite Tabaristan's association with the Ziyarids, the Daylamite cities of Zanjan and Qazvin were the first cities of Mardavij
+			limit = { NOT = { exists = title:d_daylam.holder } } # Despite Tabaristan's association with the Ziyarids, the Daylamite cities of Zanjan and Qazvin were the first cities of Mardavij
 			title:c_gilan.holder = { save_scope_as = backup_mardavij_target } # Without the context of Asfar ibn Shiruya's campaigns in Zanjan, the best single target for Mardavij's appearance is imo Gilan
 			# scope:backup_mardavij_target = { trigger_event = HEE_ibn_hafsun_uprising.0004 } # Notification & Reaction Event
 			scope:Mardavij = {
@@ -90,6 +90,7 @@ HEE_mardavij_uprising.0003 = {
 						target = title:c_gilan.holder
 						claimant = root
 						target_title = title:c_gilan
+						target_title = title:c_gilan.title_capital_county
 					}
 				}
 			}

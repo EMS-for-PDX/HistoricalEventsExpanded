@@ -45,6 +45,33 @@ story_anarchy_at_samarra = {
 		}
 		if = {
 			limit = { exists = scope:new_story_owner }
+			if = {
+				limit = {
+					story_owner = {
+						has_character_modifier = anarchy_at_samarra_financial_straits
+					}
+				}
+				story_owner = { remove_character_modifier = anarchy_at_samarra_financial_straits }
+				scope:new_story_owner = { add_character_modifier = anarchy_at_samarra_financial_straits }
+			}
+			if = {
+				limit = {
+					story_owner = {
+						has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+					}
+				}
+				story_owner = { remove_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+				scope:new_story_owner = { add_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+			}
+			if = {
+				limit = {
+					story_owner = {
+						has_character_modifier = anarchy_at_samarra_unpaid_soldiery
+					}
+				}
+				story_owner = { remove_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+				scope:new_story_owner = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+			}
 			make_story_owner = scope:new_story_owner
 
 			debug_log = "Successfully replaced the Abbasid Leader"
@@ -53,8 +80,53 @@ story_anarchy_at_samarra = {
 		}
 	}
 
+	# Random Event Pool
+	effect_group = { # Minor Event Pool (Could impact the story)
+		days = { 365 600 }
+		chance = 30 # You can probably remove this
+
+		trigger = {
+			exists = story_owner
+		}
+
+		first_valid = {
+			triggered_effect = {
+				trigger = { always = yes }
+				effect = {
+					story_owner = {
+						trigger_event = {
+							on_action = HEE_anarchy_minor
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect_group = { #Major Event Pool (Could be death)
+		days = { 365 600 }
+		chance = 30 # You can probably remove this
+
+		trigger = {
+			exists = story_owner
+		}
+
+		first_valid = {
+			triggered_effect = {
+				trigger = { always = yes }
+				effect = {
+					story_owner = {
+						trigger_event = {
+							on_action = HEE_anarchy_major
+						}
+					}
+				}
+			}
+		}
+	}
+
 	effect_group = { # Story handling in case of succession weirdness
-		days = 180
+		days = 30
 
 		trigger = {
 			story_owner = {
@@ -69,9 +141,34 @@ story_anarchy_at_samarra = {
 		triggered_effect = {
 			trigger = { exists = title:e_arabia }
 			effect = {
-				title:e_arabia.holder = {
-					make_story_owner = title:e_arabia.holder
+				if = {
+					limit = {
+						story_owner = {
+							has_character_modifier = anarchy_at_samarra_financial_straits
+						}
+					}
+					story_owner = { remove_character_modifier = anarchy_at_samarra_financial_straits }
+					title:e_arabia.holder = { add_character_modifier = anarchy_at_samarra_financial_straits }
 				}
+				if = {
+					limit = {
+						story_owner = {
+							has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+						}
+					}
+					story_owner = { remove_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+					title:e_arabia.holder = { add_character_modifier = anarchy_at_samarra_loss_of_central_authority }
+				}
+				if = {
+					limit = {
+						story_owner = {
+							has_character_modifier = anarchy_at_samarra_unpaid_soldiery
+						}
+					}
+					story_owner = { remove_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+					title:e_arabia.holder = { add_character_modifier = anarchy_at_samarra_unpaid_soldiery }
+				}
+				make_story_owner = title:e_arabia.holder
 			}
 		}
 
@@ -86,5 +183,4 @@ story_anarchy_at_samarra = {
 			}
 		}
 	}
-
 }

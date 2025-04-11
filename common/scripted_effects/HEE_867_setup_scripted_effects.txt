@@ -1102,10 +1102,7 @@ hee_samarra_relations_867_effect = {
 	# Relations	
 	character:34014 = { # Al-Mutazz
 		add_trait = murderer
-		
-		add_character_modifier = anarchy_at_samarra_financial_straits
-		add_character_modifier = anarchy_at_samarra_loss_of_central_authority
-		add_character_modifier = anarchy_at_samarra_unpaid_soldiery
+		create_story = story_anarchy_at_samarra
 	}
 
 	# Set up al-Mutazz's historical Vizier

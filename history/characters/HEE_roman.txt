@@ -1,4 +1,4 @@
-﻿# Missing Historical Characters for Romans - They dont add much, but "fun" to do 
+﻿# Missing Historical Characters for Romans - They dont add much, but "fun" to do (OCD a bitch)
 
 constantinian0001 = { # Helena, mother of Constantine I
 	name = "Helena"
@@ -127,11 +127,6 @@ licinius0001 = {
 	mother = constantinian0004
 	religion = "hellenic_pagan"
 	culture = "roman"
-	trait = just
-	trait = diligent
-	trait = cynical
-	trait = greedy
-	trait = education_diplomacy_3
 	315.7.20 = { # Licinius II, son of Licinius, grandson of Constantius I, and half-nephew of Constantine, was born to Flavia Julia Constantia in July or August 315
 		birth = yes
 	}
@@ -173,4 +168,262 @@ AeliaEudocia0001 = { #  Eastern Roman empress by marriage to Emperor Theodosius 
 			death_reason = death_natural_causes
 		}
 	}	
+}
+
+
+
+
+
+
+
+### Missing Western Emperors ###
+westernromanemperor0003 = { # Flavius Valerius Severus, also called Severus II, was a Roman emperor from 306 to 307, and a member of the Tetrarchy
+	name = "Severus"
+	dynasty = dynasty_flavius
+	religion = "hellenic_pagan"
+	culture = "roman"
+	trait = gregarious
+	trait = trusting # An interpretation of the reasoning behind Severus accepting Maximian's offer to spare his life and treat him humanely if he surrendered peaceably, which he did around April 307
+	trait = diligent
+	trait = education_stewardship_3 # Assumedly a competent paymaster and purveyor of the army
+	trait = drunkard # According to Lactantius, Diocletian objected to Galerius's suggestion, saying in response, "What! That dancer, that habitual drunkard who turns night into day and day into night?"
+	trait = loyal # Galerius persisted in naming Severus Augustus, saying that Severus had served faithfully as paymaster and purveyor of the army
+	250.1.1 = { # Severus was of humble birth, born in Northern Illyria around the middle of the third century
+		birth = yes
+	}
+	307.10.1 = { # His death probably took place in September or October, as documents with his name were still issued in September, while news of his death already arrived in Egypt by December
+		death = { # One belief is that when Galerius himself invaded Italy to suppress Maxentius and Maximian, the former ordered Severus's death. Lactantius reports that he was permitted to kill himself by opening his veins.
+			death_reason = death_execution
+			killer = 145294 # Maxentius
+		}
+	}
+}
+
+westernromanemperor0009 = { # Magnus Magnentius was a Roman general and usurper against Constantius II. He served as Roman emperor in the West (unrecognized in the East) 
+	name = "Magnentius"
+	dynasty = dynasty_magnus
+	religion = "catholic" # Magnentius' religious beliefs remain a point of contention among scholars
+	culture = "roman" # Born in Samarobriva (Amiens), Gaul, Magnentius was purportedly the son of a British father and a Frankish mother
+	prowess = 9 # He served in the protectores, a prestigious bodyguard corps attached to the imperial retinue, and was promoted to comes of the Herculians and Jovians, the Imperial guard units.
+	trait = education_martial_2
+	trait = ambitious
+	trait = just # There is little evidence to suggest that Magnentius' rule was tyrannical or unjust. In a funeral oration for the emperor Julian, the orator Libanius concedes that Magnentius "governed [the empire] in accordance with the laws." 
+	trait = cynical
+	trait = impatient # Sought battle, possibly due to rising defections in his ranks
+	trait = aggressive_attacker # After failing to take the city of Mursa, Magnentius' force was approached by Constantius', and the Battle of Mursa Major ensued. Constantius won a Pyrrhic victory in one of the largest battles ever fought among Romans
+	303.1.1 = { # c. 303
+		birth = yes
+	}
+	353.8.10 = { # most sources agree that on 10 August 353 he died by suicide, falling on his sword
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+
+westernromanemperor0018 = { # Joannes or John (Latin: Iohannes; died 425) was Western Roman emperor from 423 to 425. (unrecognized in the East) 
+	name = "Joannes"
+	religion = "catholic" # Magnentius' religious beliefs remain a point of contention among scholars
+	culture = "roman" # Born in Samarobriva (Amiens), Gaul, Magnentius was purportedly the son of a British father and a Frankish mother
+	trait = education_stewardship_3 # Joannes was a primicerius notariorum or senior civil servant at the time of his elevation
+	trait = brave
+	trait = just
+	trait = temperate # Procopius praised him as "both gentle and well-endowed with sagacity and thoroughly capable of valorous deeds."
+	trait = shrewd # Procopius praised him as "both gentle and well-endowed with sagacity and thoroughly capable of valorous deeds."
+	375.1.1 = { # Unknown
+		birth = yes
+	}
+	425.5.5 = { # His death is sometimes dated to May or June, probably on the basis two laws in the Codex Theodosianus issued by Theodosius II on 5 May 425.
+		death = { # Joannes was finally decapitated in mid 425
+			death_reason = death_decapitated
+			killer = 70533 # Theodosius II
+		}
+	}
+}
+
+westernromanemperor0020 = { # Petronius Maximus (c. 397 – 31 May 455) was Roman emperor of the West for two and a half months in 455
+	name = "Maximus"
+	dynasty = dynasty_petronius
+	religion = "catholic" # Magnentius' religious beliefs remain a point of contention among scholars
+	culture = "roman" # Born in Samarobriva (Amiens), Gaul, Magnentius was purportedly the son of a British father and a Frankish mother
+	trait = education_intrigue_2
+	trait = generous # Spent laviously on games, secured the throne on 17 March by distributing money to the officials of the imperial palace
+	trait = ambitious
+	trait = vengeful # Maximus' actions against Valentinian is in part due to Valentinian's rape of Lucina, Maximus' wife
+	trait = craven # In the face of a Vandal attack on Rome, Maximus attempted to flee
+	trait = schemer # A wealthy senator and a prominent aristocrat, he was instrumental in the murders of the Western Roman magister militum, Aëtius, and the Western Roman emperor, Valentinian III
+	397.1.1 = { # Unknown
+		birth = yes
+	}
+	455.5.31 = { # As Maximus rode out of the city on his own on 31 May 455, he was set upon by an angry mob, which stoned him to death
+		death = { # (another account has it that he was killed by "a certain Roman soldier named Ursus")
+			death_reason = death_beaten_by_mob
+		}
+	}
+}
+
+westernromanemperor0021 = { # Eparchius Avitus (died 456/7) was Roman emperor of the Western Empire from July 455 to October 456
+	name = "Avitus"
+	dynasty = dynasty_eparchius # born in Clermont to a family of the Gallo-Roman nobility
+	religion = "catholic" # 
+	culture = "roman" # born in Clermont to a family of the Gallo-Roman nobility
+	trait = education_diplomacy_3
+	trait = trusting
+	trait = temperate
+	trait = patient
+	397.1.1 = { # Unknown
+		birth = yes
+	}
+	456.10.17 = { # In the immediate aftermath of Avitus' deposition, Ricimer spared his life but forced him to become Bishop of Piacenza
+		trait = devoted
+	}
+	456.12.25 = { # Unknown
+		death = { # the manner and date of Avitus' death is unknown, of which there are several versions
+			death_reason = death_mysterious 
+		}
+	}
+}
+
+westernromanemperor0022 = { # Majorian was Western Roman emperor from 457 to 461
+	name = "Majorian"
+	dynasty = dynasty_julius
+	religion = "catholic" # 
+	culture = "roman" # born in Clermont to a family of the Gallo-Roman nobility
+	trait = education_martial_4
+	trait = ambitious # Grand plans to restore the WRE
+	trait = brave # Would personally lead the army in war
+	trait = just # Concerned with laws
+	trait = diligent # Did not shy away from the tasks required to preserve the WRE
+	trait = humble # In his panegyric to Majorian, the poet Sidonius Apollinaris tells that Majorian initially refused the election
+	trait = aggressive_attacker # Majorian personally led the Roman army to a victory over the invaders near Sinuessa and followed the defeated Vandals, loaded with their booty, as far as their own ships, killing many of them including their commander.
+	trait = organizer # Organized many campaigns, included a planned one for Africa that failed to treachery
+	trait = strategist
+	trait = gallant # According to historian Edward Gibbon, Majorian "presents the welcome discovery of a great and heroic character, such as sometimes arise, in a degenerate age, to vindicate the honour of the human species"
+	425.1.1 = { # Unknown; Majorian was probably born after 420, as in 458 he was described as a iuvenis ('young man')
+		birth = yes
+	}
+	461.8.7 = { # on 7 August, Majorian was beheaded near the river Iria
+		death = {
+			death_reason = death_decapitated
+			# Killer = Ricimer
+		}
+	}
+}
+
+westernromanemperor0023 = { # Libius Severus, sometimes enumerated as Severus III, was Western Roman emperor from November 19, 461 to his death on November 14, 465
+	name = "Severus"
+	dynasty = dynasty_libius
+	religion = "catholic" # Almost nothing is known about the person of Severus
+	culture = "roman" # Almost nothing is known about the person of Severus
+	trait = education_stewardship_2
+	trait = zealous # One other source notes that Severus "lived religiously."
+	trait = just
+	trait = temperate
+	409.1.1 = { # Unknown; Majorian was probably born after 420, as in 458 he was described as a iuvenis ('young man')
+		birth = yes
+	}
+	465.11.14 = { # The details of Severus' death are obscure, and the ancient sources are in disagreement, but the majority of modern scholars contend that Severus died of natural causes
+		death = yes
+	}
+}
+
+westernromanemperor0024 = { # Procopius Anthemius was the Western Roman emperor from 467 to 472
+	name = "Anthemius"
+	dynasty = dynasty_procopii # Anthemius belonged to a noble family, the Procopii, which gave several high officers, both civil and military, to the Eastern Roman Empire
+	religion = "catholic" # 
+	culture = "greek" # From the Eastern territories
+	trait = education_learning_3 # Born in Constantinople, he went to Alexandria to study in the school of the Neoplatonic philosopher Proclus
+	trait = ambitious # Grand plans to restore the WRE
+	trait = just # Concerned with laws
+	trait = humble
+	trait = cynical # Possibly a secret friend / Had many pagan friends
+	trait = overseer
+	420.1.1 = { # Unknown
+		birth = yes
+	}
+	472.7.11 = { # The emperor was captured and beheaded by Gundobad or by Ricimer on 11 July 472
+		death = {
+			death_reason = death_decapitated
+			# Killer = Ricimer
+		}
+	}
+}
+
+westernromanemperor0025 = { # Anicius Olybrius (died 2 November 472) was Roman emperor from July 472 until his death later that same year
+	name = "Olybrius"
+	dynasty = dynasty_anicius # Olybrius was born in Rome, in the ancient and powerful gens Anicia, of Italian descent
+	religion = "catholic" # 
+	culture = "roman"
+	trait = education_learning_3 # It is also noteworthy that Olybrius is depicted on his coins without helm and spear, common symbols on his predecessors' coinage, suggesting he had little interest in military matters. Mainly showed interest in Religious matters
+	trait = zealous # Very little is known of Olybrius' policy; in his Vita Epifanius, Ennodius describes him as a pious man who acted accordingly
+	trait = just # Very little is known of Olybrius' policy; in his Vita Epifanius, Ennodius describes him as a pious man who acted accordingly
+	trait = humble # Very little is known of Olybrius' policy; in his Vita Epifanius, Ennodius describes him as a pious man who acted accordingly
+	423.1.1 = { # Unknown
+		birth = yes
+	}
+	472.11.2 = { # Olybrius died of dropsy after only seven months of rule, most likely on 2 November
+		death = {
+			death_reason = death_gout_ridden
+		}
+	}
+}
+
+westernromanemperor0026 = { # Glycerius (died after 474) was Roman emperor of the West from 473 to 474
+	name = "Glycerius"
+	#  His family is unknown, and may not have been aristocratic
+	religion = "orthodox" # 
+	culture = "greek" # From the Eastern territories
+	trait = education_diplomacy_3 # Under Glycerius, invasions by both the Visigoths and the Ostrogoths were repelled, through a mixture of diplomatic and military activities
+	trait = generous # Glycerius also prevented an invasion by the Ostrogoths through diplomacy, including a gift of 2,000 solidi
+	trait = just # 
+	trait = content
+	423.1.1 = { # Unknown; The historian Penny MacGeorge states the summary that "almost nothing is known of Glycerius"
+		birth = yes
+	}
+	474.6.24 = {
+		trait = devoted # After being deposed, Glycerius was promptly ordained as Bishop of Salona
+	}
+	481.1.1 = { # Glycerius died sometime after 474, possibly in 480
+		death = yes
+	}
+}
+
+westernromanemperor0027 = { # Julius Nepos (died 9 May 480), or simply Nepos, ruled as Roman emperor of the West from 24 June 474 to 28 August 475
+	name = "Julius"
+	dynasty = dynasty_nepos
+	religion = "catholic" # 
+	culture = "roman" # Julius Nepos was a native of the Roman province of Dalmatia
+	trait = education_diplomacy_3 # 
+	trait = ambitious # Nepos worked to restore the prestige and authority of the Western Empire, though mostly unsuccessfully
+	trait = arrogant
+	trait = stubborn # Nepos never renounced his claim to the Western Empire
+	trait = unyielding_defender # He may have repelled a Visigothic attack on Italy and managed to once more reduce the Burgundians into foederati
+	432.1.1 = { # Unknown
+		birth = yes
+	}
+	480.5.9 = { # Nepos was murdered on 9 May 480, at his villa near Salona, possibly the same building as Diocletian's Palace, by members of his retinue, the comites Ovida and Viator
+		death = {
+			death_reason = death_murder
+		}
+	}
+}
+
+westernromanemperor0028 = { # Romulus Augustus (c. 465 – after 511), nicknamed Augustulus, was Roman emperor of the West from 31 October 475 until 4 September 476
+	name = "Romulus" # Romulus Augustus' birth name was simply Romulus
+	dynasty = dynasty_augustus # Family name unknown; Augustus will work to include the full name as Romulus Augustus 
+	religion = "catholic" # 
+	culture = "roman"
+	trait = education_stewardship_1
+	trait = craven
+	trait = lazy
+	trait = content
+	465.1.1 = { # Unknown; circa. 465
+		birth = yes
+	}
+	475.10.31 = {
+		give_nickname = nick_augustulus # The nickname "Augustulus" means "little Augustus" and was a derisive reference to his young age
+	}
+	512.1.1 = { # Romulus may have been alive as late as 507 or 511, when Theodoric the Great, Odoacer's successor as king of Italy, wrote to a "Romulus" to confirm a grant made to him and his mother by Petrus Marcellinus Felix Liberius, the praetorian prefect of Italy, on Theoderic's authority
+		death = yes
+	}
 }

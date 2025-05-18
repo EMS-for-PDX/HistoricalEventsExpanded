@@ -5727,19 +5727,19 @@ e_uyghur_khanate = { # The Uyghur Khaganate (also Uyghur Empire or Uighur Khagan
 		holder = 188788 #Qutluq Bilge Qaghan
 	}
 	795.1.1 = {
-		holder = 194191 #Alp Qutluq Külüg Bilge Qaghan
+		holder = yaglakar_7 #Alp Qutluq Külüg Bilge Qaghan
 	}
 	808.1.1 = {
-		holder = 166758 #Baoyi Qaghan/Alp Bilge Qaghan
+		holder = yaglakar_5 #Baoyi Qaghan/Alp Bilge Qaghan
 	}
 	821.1.1 = {
-		holder = 166759 #Chongde Qaghan/Küçlüg Bilge Qaghan
+		holder = yaglakar_4 #Chongde Qaghan/Küçlüg Bilge Qaghan
 	}
 	824.1.1 = {
-		holder = 166760 # Qasar Qaghan/Zhaoli Qaghan
+		holder = yaglakar_3 # Qasar Qaghan/Zhaoli Qaghan
 	}
-	832.1.1 = {
-		holder = 166761 #Zhangxin Qaghan/Alp Külüg Bilge Qaghan
+	833.1.1 = {
+		holder = yaglakar_8 #Zhangxin Qaghan/Alp Külüg Bilge Qaghan
 	}
 	839.1.1 = {
 		holder = 166763 #Küräbir/Jueluowu; Uyghur minister whose rebellion lead to the death of Tegin Qaghan (r. 832–839) and subsequent enthronement of a puppet Uyghur qaghan

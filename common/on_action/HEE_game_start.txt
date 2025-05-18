@@ -2,6 +2,7 @@
 # Root does not exist
 on_game_start = {
 	on_actions = {
+		HEE_tributaries
 		HEE_global_var
 		hee_buildings_setup
 		hee_great_summer_army
@@ -13,6 +14,12 @@ on_game_start = {
 		HEE_travels_of_constantine_and_methodius
 		hee_girart_de_roussillon_retirement
 		hee_brittany_salomon_peace
+	}
+}
+
+HEE_tributaries = {
+	effect = {
+		hee_setup_tributaries_effect = yes # defined in hee_tributary_setup_effect.txt
 	}
 }
 

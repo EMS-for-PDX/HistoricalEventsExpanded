@@ -1,0 +1,93 @@
+﻿# This file contains the setup effects for the tributaries in the game.
+# The setup_tributaries_effect is invoked by on_game_start and should make calls to subsequent scripted effects.
+# Sections are organized by top-suzerain title.
+# Note that existing vassals (as established in title history) must be released and recreated into tributaries before
+# they can have their own tributaries.
+
+hee_setup_tributaries_effect = {
+	if = {
+		if = {
+    		limit = { current_date < 1066.9.15 } # so, 867
+    		hee_867_tributary_setup_effect = yes
+    	}
+    	else_if = {
+    		limit = { current_date = 1066.9.15 }
+        	hee_1066_tributary_setup_effect = yes
+    	}
+    	else_if = {
+    		limit = { current_date > 1066.9.15 } # so, 1178
+        	hee_1178_tributary_setup_effect = yes
+    	}
+    }
+}
+
+
+# 867 Tributary Set-up
+hee_867_tributary_setup_effect = {
+
+	title:e_byzantium.holder = { # Emperor Michael III of the ERE
+		save_scope_as = suzerain
+		character:145127 = { # Cyprus; A province administered by the ERE but pays taxes to both the ERE and Abbasid Caliphate equally
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+		}
+	}
+
+	title:e_arabia.holder = { # Caliph Al-Mutazz
+		save_scope_as = suzerain
+		character:145127 = { # Cyprus; A province administered by the ERE but pays taxes to both the ERE and Abbasid Caliphate equally
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+		}
+	}
+
+	character:90107 = { # King Ludiwg II of East Francia
+		save_scope_as = suzerain
+		character:187002 = { # King Rostislav of Great Moravia
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:187012 = { # Kocel, ruler of the Principality of Lower Pannonia (Should probably be a direct vassal, but PDX seems to dislike that setup)
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+		}
+		character:168299 = { # Braslav, Duke of Lower Pannonia (Should probably be a direct vassal, but PDX seems to dislike that setup)
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+		}
+		character:167855 = { # Duke Domagoj of Croatia (Should probably be a direct vassal, but PDX seems to dislike that setup)
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+		}
+	}
+
+	character:187002 = { # King Rostislav of Great Moravia
+		save_scope_as = suzerain
+		character:82313 = { # West Slavic tribe under Moravia
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:82304 = { # West Slavic tribe under Moravia
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+	}
+
+	character:33358 = { # King Aethelred of Wessex
+		save_scope_as = suzerain
+		character:159458 = { # King Donyarth of Cornwall (probably an under-king, paying tribute to the West Saxons)
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+	}
+
+}
+
+
+
+

@@ -1,6 +1,6 @@
 ﻿## Characters for the Byzantine Event Chain - 867 ##
 
-HEE_ibn_tulun_mother = { # Qasim, ibn Tulun's mother
+additional_tulunids_0001 = { # Qasim, ibn Tulun's mother
 	name = "Qasim"
 	dna = "ibn_tulun_mother_dna"
 	religion = "ashari"
@@ -21,7 +21,7 @@ HEE_ibn_tulun_mother = { # Qasim, ibn Tulun's mother
 	}
 }
 
-HEE_bayakbak = {
+HEE_bayakbak = { # Bayakbak al-Turki
 	name = "Bayakbak"
 	#female = yes
 	#dynasty = 
@@ -72,7 +72,7 @@ HEE_bayakbak = {
 	}
 }
 
-HEE_yarjukh = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
+yarjukhid0001 = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
 	name = "Yarjukh"
 	dynasty = hee_yarjukhid
 	religion = "ashari"
@@ -98,14 +98,14 @@ HEE_yarjukh = { # ibn Tulun's mentor, father of his wife, and Tulun's friend
 	}
 }
 
-HEE_ibn_tulun_first_wife = { # ibn Tulun's wife and mother of his eldest son Abbas and his daughter Fatimah
+yarjukhid0002 = { # ibn Tulun's wife and mother of his eldest son Abbas and his daughter Fatimah
 	name = "Khatun"
 	dna = "ibn_tulun_first_wife_dna"
 	female = yes
 	dynasty = hee_yarjukhid
 	religion = "ashari"
 	culture = "turkish"
-	father = HEE_yarjukh
+	father = yarjukhid0001
 	# Unknown
 	835.4.6 = {
 		birth = yes
@@ -118,7 +118,7 @@ HEE_ibn_tulun_first_wife = { # ibn Tulun's wife and mother of his eldest son Abb
 	}
 }
 
-HEE_ibn_tulun_second_wife = { # ibn Tulun's second wife, a slave gifted to him by Caliph al-Musta'in
+additional_tulunids_0002 = { # ibn Tulun's second wife, a slave gifted to him by Caliph al-Musta'in
 	name = "Miyas"
 	religion = "ashari"
 	culture = "levantine" # Unknown ethnicity, so I made her Levantine
@@ -135,14 +135,14 @@ HEE_ibn_tulun_second_wife = { # ibn Tulun's second wife, a slave gifted to him b
 	}
 }
 
-HEE_ibn_tulun_second_daughter = { # Daughter of Ibn Tulun
+additional_tulunids_0003 = { # Daughter of Ibn Tulun
 	name = "Lamis"
 	female=yes
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_second_wife
+	mother = additional_tulunids_0002
 
 	trait = beauty_good_1
 
@@ -154,14 +154,14 @@ HEE_ibn_tulun_second_daughter = { # Daughter of Ibn Tulun
 	}
 }
 
-HEE_ibn_tulun_third_daughter = { # Daughter of Ibn Tulun
+additional_tulunids_0004 = { # Daughter of Ibn Tulun
 	name = "Safiya"
 	female=yes
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_first_wife
+	mother = yarjukhid0002
 	
 	862.9.17 = { # Unknown
 		birth = yes
@@ -171,14 +171,14 @@ HEE_ibn_tulun_third_daughter = { # Daughter of Ibn Tulun
 	}
 }
 
-HEE_ibn_tulun_fourth_daughter = { # Daughter of Ibn Tulun
+additional_tulunids_0005 = { # Daughter of Ibn Tulun
 	name = "Khadija"
 	female=yes
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_second_wife
+	mother = additional_tulunids_0002
 
 	863.11.14 = { # Unknown
 		birth = yes
@@ -188,14 +188,14 @@ HEE_ibn_tulun_fourth_daughter = { # Daughter of Ibn Tulun
 	}
 }
 
-HEE_ibn_tulun_fifth_daughter = { # Daughter of Ibn Tulun
+additional_tulunids_0006 = { # Daughter of Ibn Tulun
 	name = "Maymunah"
 	female=yes
 	dynasty = 820
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_first_wife
+	mother = yarjukhid0002
 	
 	trait = beauty_good_1
 	
@@ -211,10 +211,10 @@ HEE_ibn_tulun_fifth_daughter = { # Daughter of Ibn Tulun
 # Together with al-Mudabbir, gave Ibn Tulun a large gift of money when Ibn Tulun first arrived as a gesture that his and al-Mudabbir would keep their autonomous power
 # However, Ibn Tulun refused the gift to assert his authority. There was later plenty of intrigue as Ibn Tulun and al-Mudabbir/Shukayr
 # tried to outmaneuver each other in the Abbasid court. Eventually, Shukayr was dismissed c. 872 and died soon after
-HEE_shukayr = {
+shukayr0001 = {
 	name = "Shukayr"
 	dna = "HEE_shukayr_dna"
-	dynasty = hee_shukayr
+	dynasty = dynasty_al_khadim
 	religion = "ashari"
 	culture = "egyptian"
 
@@ -314,7 +314,7 @@ mudabbir0002 = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-H
 			add_character_modifier = constantly_protected_by_bodyguards_modifier
 			add_gold = 350 # considering his position and large cash bribe to Ibn Tulun, quite a wealthy man
 			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:163115 }
-			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:HEE_shukayr }
+			set_relation_rival = { reason = tulun_mudabbir_shukayr_power_struggle_desc target = character:shukayr0001 }
 		}
 	}
 	883.1.1 = { # Died in prison
@@ -367,7 +367,7 @@ mudabbir0003 = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 tabataba0001 = { # Bugha al-Asghar Ahmad ibn Muhammad Ibn al-Tabataba - revolted during Jumada I 255/spring 859 in the territory between Alexandria and Barka, proclaiming himself caliph
 	name = "bugha_al_asghar"
 	dynasty = hee_al_tabataba
-	religion = "ashari" # THE CAMBRIDGE HISTORY OF EGYPT says he proclaimed himself Caliph, so Ashari? If Shia would be Imam?
+	religion = "mutazila" # THE CAMBRIDGE HISTORY OF EGYPT says he proclaimed himself Caliph, so Sunni? If Shia would be Imam?
 	culture = "bedouin"
 
 	#Skills
@@ -408,14 +408,14 @@ HEE_ibn_al_sufi = { # Ibn al-Sufi, Ibrahim ibn Muhammad - a descendant of Ali's 
 	
 	#Skills
 	diplomacy = 10 # Formented rebellions for many years, so must have been charismatic
-	martial = 8 # Had mild success against ibn Tulun, so buffed his martial to compensate for no martial education trait
+	martial = 8 # Had mild success against ibn Tulun
 	# stewardship = 5
 	# intrigue = 6
 	# learning = 5
 	# prowess = 6
 
 	#Education
-	trait = education_diplomacy_3 # Formented rebellions for many years, so must have been charismatic
+	trait = education_martial_2
 	
 	#Personality Traits
 	trait = wrathful # Massacred inhabitants of Esna, ravaged Aswan where he cut thouands of palm trees
@@ -659,7 +659,7 @@ HEE_al_madharai_second_grandchild = { # Ali al-Madhara'i's son, Muhammad, last p
 # al-Daya Family #
 
 # Yusuf al-Daya's father
-HEE_yusuf_al_daya_father = {
+al_daya0001 = {
 	name = "Ibrahim"
 	dynasty = hee_al_daya
 	religion = "ashari"
@@ -679,12 +679,12 @@ HEE_yusuf_al_daya_father = {
 # Had connections with the Abbasid court and was a prominent member of Abbasid scholarly circles but moved to Egypt for some reason
 # Became a major official but was suspected of cheating taxes
 # Father of the more famous Ahmad ibn Yusuf ibn al-Daya
-HEE_yusuf_al_daya = {
+al_daya0002 = {
 	name = "Yusuf"
 	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
-	father = HEE_yusuf_al_daya_father
+	father = al_daya0001
 
 	# Skills
 	stewardship = 8
@@ -706,17 +706,17 @@ HEE_yusuf_al_daya = {
 		birth = yes
 	}
 	830.1.1 = {
-		add_spouse = HEE_yusuf_al_daya_first_wife
+		add_spouse = al_daya0003
 	}
 	830.1.1 = {
-		add_spouse = HEE_yusuf_al_daya_second_wife
+		add_spouse = al_daya0004
 	}
 	880.8.8 = { # Estimated between 876 and 884
 		death = yes
 	}
 }
 
-HEE_yusuf_al_daya_first_wife = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
+al_daya0003 = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
 	name = "Sadiya"
 	#dynasty = hee_al_daya
 	religion = "ashari"
@@ -731,7 +731,7 @@ HEE_yusuf_al_daya_first_wife = { # Fictitious wife of Yusuf al-Daya - said to ha
 	}
 }
 
-HEE_yusuf_al_daya_second_wife = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
+al_daya0004 = { # Fictitious wife of Yusuf al-Daya - said to have multiple wives
 	name = "Nura"
 	#dynasty = hee_al_daya
 	religion = "ashari"
@@ -749,13 +749,13 @@ HEE_yusuf_al_daya_second_wife = { # Fictitious wife of Yusuf al-Daya - said to h
 # Ahmad ibn al-Daya
 # Important Tulunid secretary, mathematician, and historian
 # Also major landholder around Cairo
-HEE_ahmad_ibn_al_daya = {
+al_daya0005 = {
 	name = "Ahmad"
 	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
-	father = HEE_yusuf_al_daya
-	mother = HEE_yusuf_al_daya_first_wife
+	father = al_daya0002
+	mother = al_daya0003
 
 	# Skills
 	diplomacy = 8
@@ -786,13 +786,13 @@ HEE_ahmad_ibn_al_daya = {
 	}
 }
 
-HEE_yusuf_al_daya_secondborn = { # Yusuf's other son Yaqub
+al_daya0006 = { # Yusuf's other son Yaqub
 	name = "Yaqub"
 	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
-	father = HEE_yusuf_al_daya
-	mother = HEE_yusuf_al_daya_second_wife
+	father = al_daya0002
+	mother = al_daya0004
 
 	# Not much is known about him
 
@@ -805,13 +805,13 @@ HEE_yusuf_al_daya_secondborn = { # Yusuf's other son Yaqub
 	}
 }
 
-HEE_yusuf_al_daya_thirdborn = { # Yusuf's other son al-Hasan
+al_daya0007 = { # Yusuf's other son al-Hasan
 	name = "Al-Hasan"
 	dynasty = hee_al_daya
 	religion = "ashari"
 	culture = "egyptian"
-	father = HEE_yusuf_al_daya
-	mother = HEE_yusuf_al_daya_second_wife
+	father = al_daya0002
+	mother = al_daya0004
 
 	# Not much is known about him
 	
@@ -824,14 +824,126 @@ HEE_yusuf_al_daya_thirdborn = { # Yusuf's other son al-Hasan
 }
 
 barqagovernor0001 = { # Muhammad b. Hartama b. Ay'an, governor of Barqa ousted by its populace in 870/871
-	name="Muhammad"
-	religion="ashari"
-	culture="levantine" #Likely sent from the east
+	name = "Muhammad"
+	religion = "ashari"
+	culture = "levantine" #Likely sent from the east
 
-	835.1.1 = { #?
+	835.1.1 = { #Unknown
 		birth=yes
 	}	
-	889.1.1 = { #?
+	889.1.1 = { #Unknown
 		death=yes
+	}
+}
+
+banu_mudlij0001 = { # The al-Walid in Jabir ibn al-Walid;
+	name = "al-Walid"
+	dynasty = dynasty_banu_mudlij
+	religion = "zayidi" # Unknown, but many Alids during this period followed zayidism so lets go with that
+	culture = "bedouin"
+	trait = sayyid # Alid
+	810.1.1 = { # Unknown; Lets make him around 30 when the rebellion first began
+		birth = yes
+	}
+	861.1.1 = { # After being imprisoned by governor Muzahim ibn Khaqan, he was sent to Iraq after which nothing is known
+		death = yes
+	}
+}
+
+banu_mudlij0002 = { # Jabir ibn al-Walid; A member of the Banu Mudlij who lead a rebellion around Alexandria against the Abassid governor of Egypt 
+	name = "Jabir"
+	dynasty = dynasty_banu_mudlij
+	religion = "zayidi" # Unknown, but many Alids during this period followed zayidism so lets go with that
+	culture = "bedouin"
+	father = banu_mudlij0001
+
+	# Skills
+	diplomacy = 8 # Skilled in oratory
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = ambitious # Sought to rebel against Caliphal authority in Egypt
+	trait = vengeful # Rebellion began likely in response to punitive measures against Alids started by Caliph al-Muntasir
+	trait = cynical # Rebellion was comprised of both Christians and Muslims
+
+	#Other Traits
+	trait = sayyid # Alid
+	trait = populist_leader
+
+	832.1.1 = { # Unknown; Lets make him around 30 when the rebellion first began
+		birth = yes
+	}
+	870.1.1 = { # After being imprisoned by governor Muzahim ibn Khaqan, he was sent to Iraq after which nothing is known
+		death = yes
+	}
+}
+
+ibn_alarqat0001 = { # The al-Arqat in ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
+	name = "al-Arqat"
+	religion = "zayidi" # Unknown, but many Alids during this period followed zayidism so lets go with that
+	culture = "bedouin"
+
+	# Skills
+	diplomacy = 8 # Skilled in oratory
+	martial = 7
+	stewardship = 6
+	intrigue = 7
+	learning = 6
+
+	#Education
+	trait = education_diplomacy_3
+	
+	#Personality Traits
+	trait = brave # Sought to rebel against Caliphal authority in Egypt 
+	trait = vengeful # Rebellion began likely in response to punitive measures against Alids started by Caliph al-Muntasir
+	trait = cynical # Rebellion was comprised of both Christians and Muslims
+
+	#Other Traits
+	trait = sayyid # Alid
+	trait = populist_leader
+
+	805.1.1 = { # Unknown; Lets make him around 30 when the rebellion first began
+		birth = yes
+	}
+	859.1.1 = { # After being imprisoned by governor Muzahim ibn Khaqan, he was sent to Iraq after which nothing is known
+		death = yes
+	}
+}
+
+ibn_alarqat0002 = { # ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
+	name = "Muhammad"
+	religion = "zayidi" # Unknown, but many Alids during this period followed zayidism so lets go with that
+	culture = "bedouin"
+	father = ibn_alarqat0001
+
+	# Skills
+	diplomacy = 6
+	martial = 8
+	stewardship = 5
+	intrigue = 6
+	learning = 5
+
+	#Education
+	trait = education_martial_2
+	
+	#Personality Traits
+	trait = zealous # 
+	trait = just # 
+	trait = impatient #
+
+	#Other Traits
+	trait = sayyid # Alid
+
+	834.1.1 = { # Unknown
+		birth = yes
+	}
+	870.1.1 = { # Unknown?
+		death = yes
 	}
 }

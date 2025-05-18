@@ -1,0 +1,7 @@
+﻿l_english:
+
+reassert_roman_power_west_decision.completely_control_X_counties_from_the_west: "You must [completely_control|E] at least #bold 45%#! of the [counties|E] within [GetGeographicalRegion('roman_power_western_projection').GetName]"
+reassert_roman_power_west_decision.establish_good_relations_with_western_rulers: "All other [independent|E] [rulers|E] within [GetGeographicalRegion('roman_power_western_projection').GetName] have an [alliance|E] with you ([SCOPE.ScriptValue('reassert_roman_power_west_decision_restored_relations_counter_value')|0]/[SCOPE.ScriptValue('reassert_roman_power_west_decision_foreign_realm_total_value')|0])"
+
+mediterranean_foothold_decision.completely_control_X_counties_in_sicily: "You must [completely_control|E] at least #bold 55%#! of the [counties|E] within [GetGeographicalRegion('custom_sicily').GetName]"
+mediterranean_foothold_decision.completely_control_X_counties_from_the_western_med_islands: "You must [completely_control|E] at least #bold 80%#! of the [counties|E] within [GetGeographicalRegion('custom_western_mediterranean_islands').GetName]"

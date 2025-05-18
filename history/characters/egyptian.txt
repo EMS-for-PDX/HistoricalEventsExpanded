@@ -1492,7 +1492,7 @@
 	trait = diligent
 	trait = humble
 	father = extra_tulunids_5
-	mother = HEE_ibn_tulun_mother
+	mother = additional_tulunids_0001
 
 	#Other Traits
 	trait = organizer # Goes along with Administrator
@@ -1813,7 +1813,7 @@ extra_tulunids_1 = {
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_first_wife
+	mother = yarjukhid0002
 
 	trait = trusting # Easily manipulated by others
 	trait = fickle # Pliable of mind
@@ -1842,7 +1842,7 @@ extra_tulunids_2 = {
 	religion = "ashari"
 	culture = "egyptian"
 	father = 163115
-	mother = HEE_ibn_tulun_first_wife
+	mother = yarjukhid0002
 	858.1.1 = {
 		birth = yes
 	}

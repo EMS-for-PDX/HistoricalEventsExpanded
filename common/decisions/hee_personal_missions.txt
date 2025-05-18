@@ -1,0 +1,501 @@
+################################################
+# Reassert Imperial Power in the West     	   #
+# Personal Mission for Basil I                 #
+################################################
+
+reassert_roman_power_west_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_cerimonial_decision.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 36
+
+	desc = reassert_roman_power_west_decision_desc 
+	selection_tooltip = reassert_roman_power_west_decision_tooltip 
+
+	is_shown = {
+		has_title = title:e_byzantium # Roman Emperor
+		faith = { religion_tag = christianity_religion } # Christian
+		exists = capital_province
+		
+		NOT = {	#You can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reasserted_roman_power_in_west
+			}
+		}
+	}
+
+	is_valid = {
+		# You must be Roman Emperor
+		has_title = title:e_byzantium # Roman Emperor
+
+		# Must have specific level of prestige/influence
+		trigger_if = {
+			limit = { has_ep3_dlc_trigger = yes }
+            influence_level >= 3
+		}
+		trigger_if = {
+			limit = { has_ep3_dlc_trigger = no }
+			prestige_level >= 3
+		}
+
+		# You must completely control at least X counties from within the Western Roman territories.
+		custom_description = {
+			text = reassert_roman_power_west_decision.completely_control_X_counties_from_the_west
+			any_county_in_region = {
+				region = roman_power_western_projection
+				count >= 60 # Roughly 45% of the geographical region
+				save_temporary_scope_as = county_temp
+				root = { completely_controls = scope:county_temp }
+			}
+		}
+
+		# Every other independent ruler in the West has a positive relationship with the Roman Empire
+        custom_tooltip = {
+            text = reassert_roman_power_west_decision.establish_good_relations_with_western_rulers
+            any_rulers_for_basils_personal_mission = {
+                count = all
+                OR = {
+                    opinion = { # High opinion indicating at minimum respect for the Romans
+                        target = root
+                        value >= high_positive_opinion
+                    }
+                    is_allied_to = root # Roman Ally
+                    has_relation_lover = root # Lover
+                    has_relation_friend = root # Friend
+                    has_relation_best_friend = root # Best Friend
+                }
+            }
+        }
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = {
+			reassert_roman_power_west_decision_scripted_effect = yes # HAVE TO MAKE
+		}
+		trigger_event = {
+			id =  reassert_roman_power_west_decision_event.0001 # HAVE TO MAKE
+		}
+	}
+
+	cost = {
+		gold = 200
+		prestige = 300
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+
+
+################################################
+# Reassert Islamic Control over Arminiya	   #
+# Personal Mission for Governors of Arminiya   #
+################################################
+
+islamic_arminiya_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 36
+
+	desc = islamic_arminiya_decision_desc 
+	selection_tooltip = islamic_arminiya_decision_tooltip 
+
+	is_shown = {
+		has_title = title:k_arminiya # Governor of Arminiya
+		faith = { religion_tag = islam_religion } # Must be Muslim
+		exists = capital_province
+        capital_province = { geographical_region = maximum_islamic_arminiya_region }
+		
+		NOT = {	#You can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_islamic_arminiya
+			}
+		}
+	}
+
+	is_valid = {
+		#You must have sufficient clout (or be significantly feared)
+        OR = {
+            prestige_level >= high_prestige_level
+            dread >= high_dread
+        }
+        
+        #You must be of the Muslim Faith
+        faith = { religion_tag = islam_religion } # Must be Muslim
+
+		#You must control the kingdom's heartlands.
+		has_title = title:k_arminiya
+		completely_controls_region = minimum_islamic_arminiya_region
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = {
+			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+		}
+		trigger_event = {
+			id =  DE_decision_event.0001 # HAVE TO MAKE
+		}
+		hidden_effect = {
+			found_kingdom_of_oman_scripted_effect = yes
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+			}
+			set_global_variable = {
+				name = flag_founded_kingdom_of_oman
+				value = root
+			}
+		}
+	}
+
+	cost = {
+		gold = 200
+		prestige = 300
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+################################################
+# Secure a Mediterranean Foothold       	   #
+# Personal Mission for Starting Aghlabids      #
+################################################
+
+mediterranean_foothold_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 36
+
+	desc = mediterranean_foothold_decision_desc 
+	selection_tooltip = mediterranean_foothold_decision_tooltip 
+
+	is_shown = {
+		has_title = title:k_africa # Governor of Arminiya
+		faith = { religion_tag = islam_religion } # Must be Muslim
+		exists = capital_province
+		
+		NOT = {	#You can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_aghlabid_foothold_established
+			}
+		}
+	}
+
+	is_valid = {
+		#You must have sufficient clout
+		prestige_level >= high_prestige_level
+        
+        #You must be of the Muslim Faith
+        faith = { religion_tag = islam_religion } # Must be Muslim
+
+		OR = { # You must establish a sizable powerbase within the Western Mediterranean Islands/Sicily
+			custom_description = {
+				text = mediterranean_foothold_decision.completely_control_X_counties_in_sicily
+				any_county_in_region = {
+					region = custom_sicily
+					count >= 10 # Roughly d_sicily, d_calabria, and d_salerno
+					save_temporary_scope_as = county_temp
+					root = { completely_controls = scope:county_temp }
+				}
+			}
+
+			custom_description = {
+				text = mediterranean_foothold_decision.completely_control_X_counties_from_the_western_med_islands
+				any_county_in_region = {
+					region = custom_western_mediterranean_islands
+					count >= 13
+					save_temporary_scope_as = county_temp
+					root = { completely_controls = scope:county_temp }
+				}
+			}
+		}
+
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = {
+			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+		}
+		trigger_event = {
+			id =  DE_decision_event.0001 # HAVE TO MAKE
+		}
+		hidden_effect = {
+			found_kingdom_of_oman_scripted_effect = yes
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+			}
+			set_global_variable = {
+				name = flag_founded_kingdom_of_oman
+				value = root
+			}
+		}
+	}
+
+	cost = {
+		gold = 200
+		prestige = 300
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+
+
+#############################################################################
+# Unify England       	   													#
+# Personal Mission for Alfred of Wessex (annd other Anglo-saxon Kings)      #
+#############################################################################
+
+unify_england_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 36
+
+	desc = unify_england_decision_desc 
+	selection_tooltip = unify_england_decision_tooltip 
+
+	is_shown = {
+		OR = { # Must be one of the Heptarchy
+			primary_title = title:k_england
+			primary_title = title:k_wessex
+			primary_title = title:k_mercia
+			primary_title = title:k_east_anglia
+			primary_title = title:k_northumbria
+		}
+		
+		faith = { religion_tag = christianity_religion } # Must be Christian (Why? I dunno, ask Alfred)
+		exists = capital_province
+		
+		NOT = {	#You can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_england_unified
+			}
+		}
+	}
+
+	is_valid = {
+		#You must have sufficient clout
+		prestige_level >= high_prestige_level
+		legitimacy_level >= 4
+        
+        #You must be of the Christian Faith
+        faith = { religion_tag = christianity_religion }
+
+		completely_controls_region = custom_england
+
+		any_county_in_region = {
+			region = custom_england
+			count = all
+			faith = { religion_tag = christianity_religion }
+		}
+
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		save_scope_as = founder
+		show_as_tooltip = {
+			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+		}
+		trigger_event = {
+			id =  DE_decision_event.0001 # HAVE TO MAKE
+		}
+		hidden_effect = {
+			found_kingdom_of_oman_scripted_effect = yes
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+			}
+			set_global_variable = {
+				name = flag_founded_kingdom_of_oman
+				value = root
+			}
+		}
+	}
+
+	cost = {
+		gold = 200
+		prestige = 300
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}
+
+
+#####################################
+# Form the Bulgarian Empire	        #
+# by EmrysValdr					    # 
+#####################################
+
+form_bulgarian_empire_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 120
+
+	desc = form_bulgarian_empire_decision_desc # NEED TO LOCALIZE 
+	selection_tooltip = form_bulgarian_empire_decision_tooltip # NEED TO LOCALIZE
+
+	is_shown = {
+		is_ruler = yes
+		is_landed = yes
+		exists = dynasty # Everyone should have a dynasty, but in case they don't...
+		has_culture = culture:bulgarian	
+		exists = capital_province
+		capital_province = { geographical_region = custom_south_slavia } #Will not be visible unless you are based in South Slavia.
+		primary_title = title:e_bulgarian_principality
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_bulgarian_empire_decision
+			}
+		}			
+	}	
+
+	is_valid = {
+		#You must have sufficient clout.
+		is_independent_ruler = yes
+		prestige_level >= high_prestige_level
+		legitimacy_level >= 4
+
+        #You must be Christian
+
+		religion = religion:christianity_religion
+		
+		#You must rule Bulgaria
+
+		primary_title = title:e_bulgarian_principality
+		completely_controls = title:k_bulgaria
+
+		trigger_if = {
+			limit = { exists = title:e_byzantium }
+			OR = { 
+				title:e_byzantium.holder = { # And they have to actually like you enough to want to invest you.
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+				}
+				root = { has_strong_usable_hook = title:e_byzantium.holder }	# Or you have a strong hook on them that you can actually use.
+				root = { has_weak_hook = title:e_byzantium.holder }	# Or a regular hook, to be fair, provided you meet the other criteria.
+			}
+		}
+
+		trigger_if = {
+			limit = { exists = faith.religious_head }
+			OR = { 
+				faith.religious_head = { # And they have to actually like you enough to want to invest you.
+					opinion = {
+						target = root
+						value >= high_positive_opinion
+					}
+				}
+				root = { has_strong_usable_hook = faith.religious_head }	# Or you have a strong hook on them that you can actually use.
+				root = { has_weak_hook = faith.religious_head }	# Or a regular hook, to be fair, provided you meet the other criteria.
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+	
+	cost = {
+		gold = 500
+		prestige = 1000
+	}	
+
+	effect = {
+		show_as_tooltip = {
+			form_bulgarian_empire_decision_effect = yes # DO WE NEED TO MAKE?
+		}
+		trigger_event = {
+			id = DE_decision_event.0006 # NEED TO MAKE
+		}		
+		hidden_effect = {
+			form_bulgarian_empire_decision_effect = yes
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:form_bulgarian_empire_decision # DO WE NEED TO MAKE DIS?
+			}
+		}		
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

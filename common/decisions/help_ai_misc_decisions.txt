@@ -8,17 +8,99 @@
 
 	is_shown = {
 		debug_only = yes
+		is_ai = yes
 	}	
 
 	is_valid = {
 		is_landed = yes
 		is_ai = yes
+		stress >= 25 # Lets not have AI at 0 stress taking this decision
 	}
 
 	desc = ai_stress_loss_decision_desc
 
 	effect = {
-		add_stress = -300
+		add_stress = -300 # Pls revert to a stress-free life for the moment
+
+		# Chance for the AI to lose their (sometimes debilitating) Stress traits
+		# Currently no way to get rid of them and AI will normally default to gaining a trait during a stress break as opposed to players
+		if = {
+			limit = { has_trait = drunkard }
+			random = {
+				chance = 25
+				remove_trait = drunkard
+			}
+		}
+		if = {
+			limit = { has_trait = flagellant }
+			random = {
+				chance = 25
+				remove_trait = flagellant
+			}
+		}
+		if = {
+			limit = { has_trait = comfort_eater }
+			random = {
+				chance = 25
+				remove_trait = comfort_eater
+			}
+		}
+		if = {
+			limit = { has_trait = contrite }
+			random = {
+				chance = 25
+				remove_trait = contrite
+			}
+		}
+		if = {
+			limit = { has_trait = improvident }
+			random = {
+				chance = 25
+				remove_trait = improvident
+			}
+		}
+		if = {
+			limit = { has_trait = inappetetic }
+			random = {
+				chance = 25
+				remove_trait = inappetetic
+			}
+		}
+		if = {
+			limit = { has_trait = reclusive }
+			random = {
+				chance = 25
+				remove_trait = reclusive
+			}
+		}
+		if = {
+			limit = { has_trait = irritable }
+			random = {
+				chance = 25
+				remove_trait = irritable
+			}
+		}
+		if = {
+			limit = { has_trait = rakish }
+			random = {
+				chance = 25
+				remove_trait = rakish
+			}
+		}
+		if = {
+			limit = { has_trait = hashishiyah }
+			random = {
+				chance = 25
+				remove_trait = hashishiyah
+			}
+		}
+		if = {
+			limit = { has_trait = profligate }
+			random = {
+				chance = 25
+				remove_trait = profligate
+			}
+		}
 	}
 
 	ai_potential = {

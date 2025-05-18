@@ -1,0 +1,37 @@
+# Counts independent involved realms in Roman Western Power Projection, to compare
+reassert_roman_power_west_decision_foreign_realm_total_value = {
+	value = 0
+	every_ruler = {
+		limit = {
+			NOT = { this = root } # Don't count yourself
+			is_landed = yes # Do not want to involve Landless characters
+			is_independent_ruler = yes # We care about top realm rulers
+			capital_province = { geographical_region = roman_power_western_projection } # Based in the specified territory
+		}
+		add = 1
+	}
+}
+
+# Counter for allied Involved rulers
+reassert_roman_power_west_decision_restored_relations_counter_value = {
+	value = 0
+	every_ruler = {
+		limit = {
+			NOT = { this = root } # Don't count yourself
+			is_landed = yes # Do not want to involve Landless characters
+			is_independent_ruler = yes # We care about top realm rulers
+			capital_province = { geographical_region = roman_power_western_projection } # Based in the specified territory
+			OR = {
+				opinion = { # High opinion indicating at minimum respect for the Romans
+					target = root
+					value >= high_positive_opinion
+				}
+				is_allied_to = root # Roman Ally
+				has_relation_lover = root # Lover
+				has_relation_friend = root # Friend
+				has_relation_best_friend = root # Best Friend
+			}
+		}
+		add = 1
+	}
+}

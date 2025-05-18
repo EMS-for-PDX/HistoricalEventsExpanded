@@ -161,8 +161,10 @@
 	trait = brave
 	trait = zealous
 	trait = arrogant
+	trait = diligent
 	trait = intellect_good_1
 	trait = education_martial_3
+	trait = holy_warrior
 	father = 70017 # King Ordoño I of Asturias
 	mother = 70018 # Queen Nuña Ramírez (galician.txt)
 	848.1.1 = {

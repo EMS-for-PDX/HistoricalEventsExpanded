@@ -1952,8 +1952,7 @@
 	}
 	839.1.1 = {
 		death = "839.1.1"
-		dynasty_house = house_british_isles_wessex	
-	}
+		dynasty_house = house_british_isles_wessex	}
 }
 
 306022 = {
@@ -2085,7 +2084,7 @@
 		add_spouse = 306015 #Wulfthryth
 	}
 	871.4.20 = { # Shortly after Easter 871, which fell on 15 April in that year, Æthelred died
-		death = "871.1.1"
+		death = "871.4.20"
 	}
 }
 
@@ -2651,18 +2650,11 @@
 	intrigue = 5
 	learning = 5
 	prowess = 6
-	
-	#Education
 	trait = education_diplomacy_2 # Bought off the vikings
-	
-	#Personality Traits
 	trait = generous
 	trait = zealous
 	trait = patient
-
-	#Other Traits
 	trait = rough_terrain_expert
-
 	840.1.1 = {
 		birth = "840.1.1"
 	}

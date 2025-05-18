@@ -2704,7 +2704,7 @@
 }
 
 340 = {
-	name = "Conan" #Conan I le Tort
+	name = "Konan" #Conan I le Tort
 	# AKA: Conan
 	dynasty = hee_rennes #Rennes
 	religion = "catholic"

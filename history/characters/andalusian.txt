@@ -1460,6 +1460,7 @@
 
 73814 = {
 	name = "Ayab" # Ayab, wife of Walih Lubb ibn Musa of Toledo (73813 - basque.txt)
+	dna = 73814_emira_ayab
 	female = yes
 	religion = muwalladi
 	culture = andalusian

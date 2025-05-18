@@ -3333,12 +3333,19 @@
 	culture = "german"
 	father = 168775
 	mother = 168783
+	learning = 9
+	trait = education_learning_4 # Highly educated, Amalasuintha was praised by both Cassiodorus and Procopius for her wisdom and her ability to speak three languages (Greek, Gothic, and Latin)
+	trait = trusting # Amalasuintha believed making her cousin Theodahad co-ruler might make supporters from her harshest critics. Instead Theodahad fostered the disaffection of the Goths, and had Amalasuintha imprisoned on the island of Martana in Lake Bolsena
+	trait = diligent
+	trait = stubborn # Masculinity is the main characteristic attributed to Amalasuintha by Procopius and Cassiodorus, because she had a strong determination and temperament
 	496.1.1 = {
 		birth = yes
 	}
 	
 	535.4.30 = {
-		death = yes
+		death = { # While imprisoned by her co-regent Theodahad, Amalasuintha was murdered while bathing on 30 April 535. Theodahad is the obvious suspect, but there is some evidence to suggest that the Byzantine Empress Theodora arranged to have Amalasuintha murdered
+			death_reason = death_murder
+		}
 	}
 }
 

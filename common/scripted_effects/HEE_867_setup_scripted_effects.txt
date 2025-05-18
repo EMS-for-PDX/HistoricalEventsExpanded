@@ -1251,7 +1251,7 @@ hee_samarra_relations_867_effect = {
 		 	every_vassal = {
 				limit = {
 					OR = {
-						this = character:HEE_shukayr
+						this = character:shukayr0001
 						this = character:mudabbir0002
 					}
 					vassal_contract_has_modifiable_obligations = yes
@@ -1263,7 +1263,7 @@ hee_samarra_relations_867_effect = {
 		}
 	}
 
-	character:HEE_yusuf_al_daya = { save_scope_as = yusuf_al_daya }
+	character:al_daya0002 = { save_scope_as = yusuf_al_daya }
 	title:b_hulwan-cairo = { save_scope_as = b_hulwan-cairo }
 
 	scope:yusuf_al_daya = { get_title = title:b_hulwan-cairo }

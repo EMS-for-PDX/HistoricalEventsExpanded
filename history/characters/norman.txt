@@ -789,7 +789,6 @@
 	religion = "catholic"
 	culture = "norman"
 	trait = greedy
-	trait = hunchbacked
 	trait = education_stewardship_2
 	father = 1128
 	mother = 1123
@@ -1707,7 +1706,7 @@
 	}
 }
 
-171155 = {
+171155 = { # Geoffrey, Count of Conversano
 	name = "Geoffroy"
 	dynasty = 200080
 	religion = "catholic"
@@ -2771,7 +2770,7 @@
 		birth = "986.1.1"
 	}
 	1030.1.1 = {
-		trait = trait_adventurer # In 1030, Duke Sergius IV of Naples gave him the former Byzantine stronghold of Aversa north of Naples, with the title of count and his sister in marriage
+		trait = adventurer # In 1030, Duke Sergius IV of Naples gave him the former Byzantine stronghold of Aversa north of Naples, with the title of count and his sister in marriage
 	}
 	1035.1.1 = {
 		add_spouse = 168471

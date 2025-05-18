@@ -98,9 +98,10 @@
 	culture = "roman"
 	trait = zealous # His religious policies inflamed domestic conflicts that would continue after his death.  promoted Arianism, banned pagan sacrifices, and issued laws against Jews
 	trait = trusting # Eutropius wrote of him -  trusting too much to his friends and courtiers, and at last too much in the power of his wives
-	trait = just
-	trait = callous
-	trait = education_stewardship_3
+	trait = just # Concerned with legal issues
+	trait = callous # Believed to have masterminded the massacre of his relatives descended from the marriage of his paternal grandfather Constantius Chlorus to Flavia Maximiana Theodora
+	trait = education_martial_3
+	trait = unyielding_defender # Constantius repeatedly defended the eastern border against invasions by the Sassanid Empire under Shapur
 	father = 70523
 	
 	317.8.7 = {
@@ -161,7 +162,7 @@
 	trait = intellect_good_3
 	trait = overseer
 	trait = administrator
-	trait = organizer
+	trait = holy_warrior # Constantine acquired a mythic role as a hero and warrior against heathens. Constantine adopts the Greek letters Chi Rho for Christ's initials on his army's shields
 	trait = education_martial_4
 	father = 70524
 	mother = constantinian0001
@@ -461,13 +462,14 @@
 	trait = education_martial_3
 	trait = overseer
 	trait = administrator
+	trait = reaver
 	father = 145230
 	321.1.1 = {
 		birth = "321.1.1"
 	}
 	375.11.17 = {
 		death = { # Valentinian began yelling abuse at the envoys and suffered a fatal stroke
-			death_reason = death_ill # Stroke
+			death_reason = death_incapable # Stroke
 		}
 	}
 }
@@ -619,7 +621,7 @@
 	}
 	325.4.1 = {
 		death = { # While attempting to flee to the Goths, Licinius was apprehended at Thessalonica. Constantine had him hanged, accusing him of conspiring to raise troops among the barbarians
-			death_reason = death_execution
+			death_reason = death_execution # (could more specifically use death_hanged, but could not have a specificed killer then)
 			killer = 70523 # Constantine I 
 		}
 	}

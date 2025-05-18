@@ -55,7 +55,7 @@ HEE_great_summer_army.0002 = { # Victory in East Anglia trigger
 		if = {
 			limit = { character:163064 = { is_alive = yes } }
 			
-			imprison_character_effect = {
+			rightfully_imprison_character_effect = {
 				TARGET = scope:edmund_the_martyr
 				IMPRISONER = scope:guthrum
 			}
@@ -105,7 +105,7 @@ HEE_great_summer_army.0003 = { # Edmund's torture/death pt. 1
 		character:33358 = { save_scope_as = athelred_i_of_wessex }
 		character:7627 = { save_scope_as = alfred_the_great }
 		
-		imprison_character_effect = {
+		rightfully_imprison_character_effect = {
 			TARGET = scope:edmund_the_martyr
 			IMPRISONER = scope:guthrum
 		}

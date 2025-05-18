@@ -3,6 +3,31 @@
 @always_primary_score = 1000
 @never_primary_score = -1000
 
+e_western_roman_empire = { # Due to the existence of a "offical" Roman Empire title, and the jumbled nature of the ERE title history, best to make a seperate title for the Western half of the Roman Empire (Even though the Empire remained unified politically with the spilt being administrative)
+	color = { 200 0 0 }
+	
+	definite_form = yes
+	
+	capital = c_ravenna
+
+	can_create = {
+
+	}
+
+	can_create_on_partition = {
+
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_latin }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+
 e_first_turkic_khanate = { # The First Turkic Khaganate, also referred to as the First Turkic Empire, Göktürk Khaganate, or the Turkic Khaganate, was a Turkic khaganate established by the Ashina clan of the Göktürks in medieval Inner Asia under the leadership of Bumin Qaghan (d. 552) and his brother Istämi. The First Turkic Khaganate succeeded the Rouran Khaganate as the hegemonic power of the Mongolian Plateau and rapidly expanded their territories in Central Asia. The khaganate became the first Central Asian transcontinental empire from Manchuria to the Black Sea.
 	color = { 45 135 220 }
 	

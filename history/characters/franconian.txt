@@ -1241,6 +1241,7 @@
 	culture = franconian
 	trait = chaste
 	trait = education_learning_3
+	trait = devoted
 	father = 1314
 	mother = 237
 	1046.1.2 = {
@@ -1301,6 +1302,7 @@
 	female = yes
 	religion = "catholic"
 	culture = franconian
+	trait = devoted
 	father = 1314
 	mother = 101512
 	1037.7.1 = {
@@ -9481,7 +9483,8 @@ hohenlohe_1 = {
 	culture = franconian
 	trait = calm
 	trait = honest
-	trait = education_intrigue_1
+	trait = stubborn
+	trait = education_martial_3
 	father = 11032
 	mother = 11033
 	1003.1.1 = {
@@ -9872,11 +9875,16 @@ hohenlohe_1 = {
 	religion = "catholic"
 	culture = franconian
 	trait = diligent
-	trait = education_intrigue_2
+	trait = education_diplomacy_3
 	father = 11002
 	mother = 11003
 	1020.1.2 = {
 		birth = "1020.1.2"
+	}
+	1064.1.1 = {
+		effect = {
+			set_relation_friend = { reason = friend_generic_history target = character:2008 } # the pontiff particularly favored by Beatrice
+		}
 	}
 	1070.1.2 = {
 		death = "1070.1.2"

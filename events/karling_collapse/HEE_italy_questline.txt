@@ -253,7 +253,7 @@ HEE_italy_questline.0131 = { # Following Bari's fall, Sawdan is captured by Bene
 	# }
 
 	immediate = {
-		imprison_character_effect = {
+		rightfully_imprison_character_effect = {
 			TARGET = scope:sawdan
 			IMPRISONER = scope:adelchis
 		}

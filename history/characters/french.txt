@@ -7433,7 +7433,7 @@
 	}
 	1080.1.1 = {
 		add_spouse = 419 #Adélaïde de Vermandois
-		dynasty = 100113 #Capetian house of Vermandois
+		dynasty_house = house_vermandois #Capetian house of Vermandois
 	}
 	1096.8.15 = {
 		trait = faith_warrior
@@ -21676,7 +21676,7 @@
 550 = {
 	name = "Raoul" #Raoul Ier le Vaillant
 	# AKA: Ralph
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	trait = brave
@@ -21708,7 +21708,7 @@
 	name = "Isabelle" #Isabelle de Vermandois (1085-1131)
 	# AKA: Elizabeth
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues Ier le Grand de Vermandois
@@ -27938,7 +27938,7 @@
 	name = "Mahaut" #Mahaut (/Maud/Mathilde) de Vermandois, wife of Raoul Ier de Beaugency
 	# AKA: Mahaut de Vermandois
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues le Grand de Vermandois
@@ -27956,7 +27956,7 @@
 	name = "BE_atrice" #Béatrice de Vermandois, wife of Hugues III of Gournay
 	# AKA: Beatrice
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues le Grand de Vermandois
@@ -27973,7 +27973,7 @@
 91015 = {
 	name = "Constance" #Constance de Vermandois, wife of Godefroy de la Ferté-Gaucher
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues le Grand de Vermandois
@@ -27991,7 +27991,7 @@
 	name = "AgnE_s" #Agnès de Vermandois, wife of Boniface de Savone
 	# AKA: Agnes
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues le Grand de Vermandois
@@ -28008,7 +28008,7 @@
 91017 = {
 	name = "Henri" #Henri de Chaumont
 	# AKA: Henri de Chaumont
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 216 #Hugues Ier le Grand
@@ -28024,7 +28024,7 @@
 91018 = {
 	name = "Simon" #Simon de Vermandois, bishop of Noyon
 	# AKA: Simon de Vermandois
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	trait = education_learning_3
@@ -28041,7 +28041,7 @@
 91019 = {
 	name = "Guillaume" #Guillaume de Vermandois
 	# AKA: Guillaume de Vermandois
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	trait = ill
@@ -29095,7 +29095,7 @@
 91078 = {
 	name = "Hugues" #Hugues II de Vermandois
 	# AKA: Hugues II de Vermandois
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	trait = zealous
@@ -29115,7 +29115,7 @@
 	name = "E_lisabeth"
 	# AKA: Elisabeth de Vermandois
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 550 #Raoul I le Vaillant
@@ -29132,7 +29132,7 @@
 91080 = {
 	name = "Raoul" #Raoul II le Lépreux, count of Vermandois and Valois
 	# AKA: Raoul II le Lepreux
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 550 #Raoul I le Vaillant
@@ -29157,7 +29157,7 @@
 	name = "E_lE_onore" #Éléonore de Vermandois
 	# AKA: Eleonore de Vermandois
 	female = yes
-	dynasty = 100113 #Capetian house of Vermandois
+	dynasty_house = house_vermandois #Capetian house of Vermandois
 	religion = "catholic"
 	culture = french
 	father = 550 #Raoul I le Vaillant
@@ -40837,8 +40837,8 @@
 	father = 30227
 	mother = 161484
 	trait = cynical
+	trait = deceitful # Lied *alot* about Teutberga and the "crimes" she committed in order to recieve a annulment to his marriage
 	trait = stubborn
-	trait = calm
 	trait = education_diplomacy_3
 	trait = loyal # Remained commited to Waldrada through 11 years of struggle, possible excommunication, and her own excommunication
 	sexuality = heterosexual

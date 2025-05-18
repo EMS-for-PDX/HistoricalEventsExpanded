@@ -317,12 +317,13 @@ d_lanikaz = {
 	#Kirghiz khanate
 	840.1.2 = {
 		liege = e_kirghiz_khanate
+		government = nomad_government
 	}
 	
 	#867
 	823.1.2 = {
 		holder = 302425	#fictional Aepak Laktanid
-		government = tribal_government
+		government = nomad_government
 	}
 	844.1.22 = {
 		holder = 302426	#fictional Kozel Laktanid
@@ -363,7 +364,7 @@ c_omsk = {
 	823.1.2 = {
 		holder = 302425	#fictional Aepak Laktanid
 		liege = d_lanikaz
-		government = tribal_government
+		government = nomad_government
 	}
 	844.1.22 = {
 		holder = 302426	#fictional Kozel Laktanid
@@ -399,7 +400,7 @@ c_kainsk = {
 	823.1.2 = {
 		holder = 302425	#fictional Aepak Laktanid
 		liege = d_lanikaz
-		government = tribal_government
+		government = nomad_government
 	}
 	844.1.22 = {
 		holder = 302426	#fictional Kozel Laktanid
@@ -430,15 +431,16 @@ c_kainsk = {
 }
 
 
-c_pavlodar = {
+c_pavlodar = { # Imekia in-game
 	#867
 	842.1.1 = { # After breakup of Uigur Kaganate, Central Asian tribes found themselves unattached. Kimaks, of all the numerous tribes, were ready to head new political union of tribes, and they created new Kimak Kaganate state, a federation of seven tribes, seven Khanlyks
 		holder = 302702	#The Yemek, or Kimek, were a Turkic tribe constituting the Kimek-Kipchak confederation - probably among the first two clans (Īmī and Īmāk) of the federation
 		liege = 0
-		government = tribal_government
+		government = nomad_government
 	}
 	883.6.12 = {
 		holder = 302430	#fictional Aepak Laktanid
+		government = nomad_government
 	}
 	
 	#1066

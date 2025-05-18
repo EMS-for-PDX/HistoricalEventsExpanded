@@ -1260,8 +1260,13 @@ qasi.0006 = {
 	stewardship = 7
 	religion = catholic
 	culture = basque
-	trait = disfigured
+	trait = one_eyed # nicknamed the One-eyed
 	trait = education_diplomacy_4
+
+	trait = generous # often retired to the monastery of San Salvador de Leyre to which he made large donations
+	trait = craven
+	trait = temperate
+	trait = content # Fortún pursued a policy of coexistence with the Banu Qasi, more given to pious practices than to military companies, which produced the displeasure of their vassals
 
 	father = 70292 # King García I of Navarra
 	mother = basque0029 # Queen Urraca ibn Mutarrif
@@ -1271,6 +1276,7 @@ qasi.0006 = {
 	}
 	860.1.1 = {
 		employer = 73683 # Emir Muhammad I of Andalusia
+		give_nickname = nick_the_one_eyed # This nickname is assigned by Muslim sources
 	}
 	867.1.1 = {
 		add_spouse = 73783 # Awriyah ibn Lubb
@@ -5978,8 +5984,7 @@ qasi.0006 = {
 	religion = catholic
 	culture = basque
 	trait = education_intrigue_2
-
-	1051.1.1 = {
+	1038.1.1 = {
 		birth = yes
 	}
 	1054.9.1 = {

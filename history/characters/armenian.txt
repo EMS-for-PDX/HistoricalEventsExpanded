@@ -9315,21 +9315,22 @@ armenian_000084 = {
 	#Skills
 	diplomacy = 8
 	martial = 9
-	stewardship = 8
+	stewardship = 7
 	intrigue = 6
-	intrigue = 8
+	learning = 5
 	prowess = 8
 	
 	#Education
 	trait = education_martial_3
 
 	#Personality Traits
-	trait = honest
 	trait = just
 	trait = brave
+	trait = temperate
 
 	#Other Traits
-	trait = gallant # According to the 10th-century account of al-Mas'udi, his reputation was such that he was among the "illustrious Muslims" whose portraits were displayed in Byzantine churches in recognition of their valour. 
+	trait = gallant # According to the 10th-century account of al-Mas'udi, his reputation was such that he was among the "illustrious Muslims" whose portraits were displayed in Byzantine churches in recognition of their valour
+	trait = unyielding_defender
 	
 	842.1.1 = {
 		birth = yes #Fictionalised birth date.

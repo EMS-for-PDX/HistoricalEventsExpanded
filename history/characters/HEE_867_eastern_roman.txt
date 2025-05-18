@@ -2573,18 +2573,18 @@ maniakies0001 = { # One of the greatest supporters of Basil before he actually g
 	religion = "orthodox"
 	culture = "armenian" # probably of noble Armenian origin, allegedly came to Constantinople as a hostage with an Armenian embassy and soon earned the trust of the Emperor Theophilos (829–842) and quickly rose in the Byzantine hierarchy
 	trait = education_diplomacy_4 # His intelligence and physical qualities quickly won the confidence of Theophilos and allowed Konstantinos to raise in the court hierarchy
-	diplomacy = 11
-	martial = 10
+	diplomacy = 9
+	martial = 9
 	stewardship = 9
 	intrigue = 8
-	learning = 9
+	learning = 7
 	prowess = 10
 	trait = compassionate # After the fall of the Foreign Minister Theoktistus by Kasier Bardas in November 855, he tried in vain to save the life of Theoktistus. When Bardas was murdered in 866, he saved Michael III, who was almost killed in the ensuing tumult
 	trait = diligent # Diligently proved his capabilities to Emperor Theophilos to earn his confidence
 	trait = just # Came to the aid of deposed Patriarch Ignatios several times during his imprisonment and torture ordered by the Kasier Bardas
 	trait = brave # Served as commander of the imperial bodyguard and participated in chariot races (racing against the Emperor Michael III)
 	trait = intellect_good_1 # His intelligence and physical qualities quickly won the confidence of Theophilos and allowed Konstantinos to raise in the court hierarchy
-	trait = physique_good_2 # His intelligence and physical qualities quickly won the confidence of Theophilos and allowed Konstantinos to raise in the court hierarchy
+	trait = strong # His intelligence and physical qualities quickly won the confidence of Theophilos and allowed Konstantinos to raise in the court hierarchy
 	808.1.1 = { # Unknown
 		birth = yes
 	}
@@ -2641,8 +2641,8 @@ apostyppes0001 = { # Appears in 880, as military governor (strategos) of the the
 	dynasty = dynasty_apostyppes
 	religion ="orthodox"
 	culture = "greek"
-	martial = 8
-	intrigue = 9
+	martial = 7
+	intrigue = 8
 	trait = education_martial_2 # Commander of Themes and trusted as one of the commanders in the 880 campaign in southern Italy, but nothing speaks to any great ability in the field
 	trait = diligent
 	trait = ambitious # Possibly sought Prokopios' (theorized) position as commander of the Western Armies
@@ -5762,15 +5762,15 @@ nasar0002 = { # Distinguished Byzantine military leader in the Byzantine–Arab 
 	father = nasar0001
 	
 	# Skills
-	diplomacy = 9
-	martial = 10
-	stewardship = 8
-	intrigue = 7
-	learning = 6
+	diplomacy = 7
+	martial = 8
+	stewardship = 7
+	intrigue = 5
+	learning = 5
 	prowess = 8
 	
 	# Education
-	trait = education_martial_4
+	trait = education_martial_3
 	
 	# Personality Traits
 	trait = brave
@@ -5779,7 +5779,7 @@ nasar0002 = { # Distinguished Byzantine military leader in the Byzantine–Arab 
 	
 	# Other Traits
 	trait = strategist
-	trait = organizer
+	trait = unyielding_defender # Halted the Arab raid into Anatolia at the Battle of Lalakaon
 	trait = loyal # Despite being a successful general, never rose up against the Emperor
 
 	832.1.1 = { # Unknown
@@ -6135,13 +6135,13 @@ skythopoulos0001 = { # Andrew the Scythian; served as Strategos of the Opsikion 
 	dynasty = dynasty_skythopoulos # the Scythian
 	religion = "orthodox"
 	culture = "vlach" # According to the chronicler Genesios and the continuators of Georgios Monachos, Andrew descended from the "western Scythians", an archaizing Byzantine term for the Slavs.
-	diplomacy = 8
-	martial = 10
-	stewardship = 7
+	diplomacy = 6
+	martial = 8
+	stewardship = 6
 	intrigue = 7
-	learning = 7
+	learning = 4
 	prowess = 8
-	trait = education_martial_4
+	trait = education_martial_3
 	trait = diligent # he distinguished himself in the constant war of raids and counter-raids with the Muslim border emirates of Melitene and Tarsus
 	trait = temperate # Possibly incorrectly, Theophanes Continuatus reports that he was dismissed due to accusations of timidity, after failing to follow up on a decisive victory against the emir of Tarsus
 	trait = cynical # was instrumental in the downfall of the Patriarch Photios, who along with his protégé Theodore Santabarenos was accused by Andrew and the magistros Stephen of plotting to overthrow Leo
@@ -7271,20 +7271,13 @@ paulician0004 = { # https://en.wikipedia.org/wiki/Chrysocheir
 					stacks = 2
 				}
 				men_at_arms = {
-					type = armored_footmen
-					stacks = 1
+					type = bowmen
+					stacks = 2
 				}
 				men_at_arms = {
 					type = cataphract
 					stacks = 1
 				}
-				location = province:5705
-				origin = province:5705
-				inheritable = yes
-			}
-			spawn_army = {
-				name = paulician_conscripted_levies_event_troops
-				levies = 500
 				men_at_arms = {
 					type = mangonel
 					stacks = 5

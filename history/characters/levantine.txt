@@ -2707,6 +2707,10 @@
 		add_prestige_level = 2
 		add_piety_level = 2
 		add_gold = 400
+		effect = {
+			learn_language_of_culture = culture:kurdish
+			learn_language_of_culture = culture:turkish
+		}
 	}
 	1193.3.4 = {
 		death = "1193.3.4"
@@ -8037,7 +8041,7 @@ levantine000003 = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_
 	dynasty = 7503
 	religion = ashari
 	father = levantine000002
-	mother = HEE_ashot_iv_unnamed_daughter
+	mother = additional_bagratuni_0001
 	culture = levantine
 	
 	# Personality Traits

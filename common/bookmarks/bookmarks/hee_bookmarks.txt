@@ -709,8 +709,8 @@ bm_867_hee_egypt = {
 	# Shukayr, Head of the Egyptian Barid
 	character = {
 		name = "bookmark_hee_egypt_shukayr"
-		history_id = HEE_shukayr
-		dynasty = hee_shukayr
+		history_id = shukayr0001
+		dynasty = dynasty_al_khadim
 		dynasty_splendor_level = 1
 		type = male
 		birth = 820.1.1

@@ -9,6 +9,7 @@ yearly_global_pulse = {
 		HEE_qarmatian_uprising
 		HEE_kutama_uprising
 		HEE_ibn_Hafsun_uprising
+		HEE_mardavij_uprising
 
 		HEE_fairhair_feast
 
@@ -656,6 +657,69 @@ HEE_ibn_Hafsun_uprising = {
 				debug_log = "Attempting to spawn the ibn Hafsun within 365 days"
 				trigger_event = {
 					id = HEE_ibn_hafsun_uprising.0001
+					days = { 1 365 }
+				}
+			}
+		}
+	}
+}
+
+HEE_mardavij_uprising = {
+	effect = {
+		if = {
+			limit = {
+				current_date >= 915.1.1
+				current_date <= 945.1.1 
+				NOT = { has_global_variable = mardavij_has_appeared }
+				has_game_rule = turkic_invasions_historical
+			}
+			debug_log = "Checking for chance of spawning Mardavij under historical settings"
+
+			random = {
+				chance = hee_generic_appearance_base_chance # Base chance of 1
+				modifier = {
+					add = 9 # 10% Total
+					current_date > 918.1.1
+				}
+				modifier = {
+					add = 10 # 20% Total
+					current_date > 921.1.1
+				}
+				modifier = {
+					add = 10 # 30% Total
+					current_date > 924.1.1
+				}
+				modifier = {
+					add = 10 # 40% Total
+					current_date > 927.1.1
+				}
+				modifier = {
+					add = 10 # 50% Total
+					current_date > 930.1.1
+				}
+				modifier = {
+					add = 10 # 60% Total
+					current_date > 933.1.1
+				}
+				modifier = {
+					add = 10 # 70% Total
+					current_date > 936.1.1
+				}
+				modifier = {
+					add = 10 # 80% Total
+					current_date > 940.1.1
+				}
+				modifier = {
+					add = 20 # 100% Total
+					current_date >= 945.1.1
+				}
+				set_global_variable = {
+					name = mardavij_has_appeared
+					value = yes
+				}
+				debug_log = "Attempting to spawn Mardavij within 365 days"
+				trigger_event = {
+					id = HEE_mardavij_uprising.0001
 					days = { 1 365 }
 				}
 			}

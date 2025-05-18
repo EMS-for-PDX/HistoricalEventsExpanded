@@ -1,4 +1,4 @@
-﻿## Characters for the Caucasus - 867 ##
+## Characters for the Caucasus - 867 ##
 
 HEE_george_of_abkhazia_wife = { # https://en.wikipedia.org/wiki/Grigol_of_Kakheti
 	name = "Ekaterine"
@@ -307,7 +307,22 @@ HEE_john_of_hereti = { # https://en.wikipedia.org/wiki/John_of_Hereti
 	}
 }
 
-HEE_ashot_iv_unnamed_daughter = { # https://en.wikipedia.org/wiki/Ashot_Msaker
+HEE_artsruni_unnamed_princess = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_Zurara
+	name = "Dzoyk"
+	female = yes
+	dynasty = 101736
+	religion = "armenian_apostolic"
+	culture = "armenian"
+	father = 41560
+	848.1.1 = {
+		birth = yes
+	}
+	899.1.1 = {
+		death = yes
+	}
+}
+
+additional_bagratuni_0001 = { # https://en.wikipedia.org/wiki/Ashot_Msaker
 	name = "Katranide"
 	female = yes
 	dynasty = 507
@@ -326,22 +341,7 @@ HEE_ashot_iv_unnamed_daughter = { # https://en.wikipedia.org/wiki/Ashot_Msaker
 	}
 }
 
-HEE_artsruni_unnamed_princess = { # https://en.wikipedia.org/wiki/Abu%27l-Maghra_ibn_Musa_ibn_Zurara
-	name = "Dzoyk"
-	female = yes
-	dynasty = 101736
-	religion = "armenian_apostolic"
-	culture = "armenian"
-	father = 41560
-	848.1.1 = {
-		birth = yes
-	}
-	899.1.1 = {
-		death = yes
-	}
-}
-
-HEE_ashot_second_daughter = {
+additional_bagratuni_0002 = {
 	name = "Mariam"
 	female = yes
 	dynasty = 507
@@ -358,7 +358,7 @@ HEE_ashot_second_daughter = {
 	trait = generous
 	trait = curious
 	disallow_random_traits = yes
-	854.1.1 = {
+	854.1.1 = { # Unknown
 		birth = "860.1.1"
 	}
 	865.1.1 = {

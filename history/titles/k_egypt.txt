@@ -421,11 +421,12 @@ d_alexandria = {
 	780.1.1 = {
 		holder = 0
 	}
-	865.1.1 = {
-		liege = "k_egypt"
-		holder = HEE_shukayr
+	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+		liege = 0
+		holder = banu_mudlij0002
 	}
 	872.1.1 = {
+		liege = "k_egypt"
 		holder = 163115
 	}
 	1066.1.1 = {
@@ -499,8 +500,8 @@ c_alexandria = {
 	762.1.1 = {
 		holder = 210023
 	}
-	865.1.1 = {
-		holder = HEE_shukayr
+	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+		holder = banu_mudlij0002
 	}
 	872.1.1 = {
 		holder = 163115
@@ -724,7 +725,7 @@ d_delta = {
 		liege = "k_egypt"
 	}
 	866.1.1 = {
-		holder = 163139
+		holder = 163115
 	}
 	877.1.1 = {
 		holder = 0
@@ -751,7 +752,7 @@ c_damietta = {
 		liege = "d_delta"
 	}
 	866.1.1 = {
-		holder = 163139
+		holder = 163115
 	}
 	877.1.1 = {
 		liege = "k_egypt"
@@ -866,11 +867,9 @@ c_al-buhaira = {
 	762.1.1 = {
 		holder = 210009
 	}
-	866.1.1 = {
-		liege = "d_delta"
-	}
-	866.1.1 = {
-		holder = 163139
+	865.1.1 = {
+		liege = "d_alexandria" # A member of the Banu Mudlij's rebellion
+		holder = ibn_alarqat0002 # ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
 	}
 	877.1.1 = {
 		liege = "k_egypt"
@@ -988,11 +987,9 @@ c_al-gharbiya = {
 	762.1.1 = {
 		holder = 210009
 	}
-	866.1.1 = {
-		liege = "d_delta"
-	}
-	866.1.1 = {
-		holder = 163139
+	865.1.1 = {
+		liege = "d_alexandria" # A member of the Banu Mudlij's rebellion
+		holder = ibn_alarqat0002 # ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
 	}
 	877.1.1 = {
 		liege = "k_egypt"
@@ -1328,11 +1325,11 @@ c_giza = {
 	762.1.1 = {
 		holder = 210023
 	}
-	866.1.1 = {
-		liege = "d_alexandria"
+	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+		holder = banu_mudlij0002
 	}
 	866.1.1 = {
-		holder = HEE_shukayr
+		liege = "d_alexandria"
 	}
 	1066.1.1 = {
 		holder = 3098
@@ -1399,11 +1396,11 @@ c_fayyum = {
 	762.1.1 = {
 		holder = 210023
 	}
-	866.1.1 = {
-		liege = "d_alexandria"
+	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+		holder = banu_mudlij0002
 	}
 	866.1.1 = {
-		holder = HEE_shukayr
+		liege = "d_alexandria"
 	}
 	1066.1.1 = {
 		holder = 3098
@@ -2699,6 +2696,10 @@ d_sinai = {
 	
 	867.1.1 = {
 		liege = k_egypt
+		holder = shukayr0001 # Shukayr, Postmaster/head of intelligence in Egypt. Likely was not landed, but land = power in CK3 and there is no recorded governor of Sinai (that I can find) so lets put him here
+	}
+	872.1.1 = {
+		holder = 163115
 	}
 	879.1.1 = {
 		holder = 0
@@ -2724,8 +2725,9 @@ c_farama = {
 	}
 	866.1.1 = {
 		liege = "k_egypt"
+		holder = shukayr0001
 	}
-	866.1.1 = {
+	872.1.1 = {
 		holder = 163115
 	}
 	996.10.13 = {
@@ -2845,8 +2847,9 @@ c_sinai = {
 	}
 	866.1.1 = {
 		liege = "k_egypt"
+		holder = shukayr0001
 	}
-	866.1.1 = {
+	872.1.1 = {
 		holder = 163115
 	}
 	996.10.13 = {
@@ -2961,8 +2964,9 @@ c_firaun = {
 	}
 	866.1.1 = {
 		liege = "k_egypt"
+		holder = shukayr0001
 	}
-	866.1.1 = {
+	872.1.1 = {
 		holder = 163115
 	}
 	1066.1.1 = {

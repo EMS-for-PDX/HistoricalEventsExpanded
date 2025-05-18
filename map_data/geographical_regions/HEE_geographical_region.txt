@@ -265,3 +265,43 @@ kingdom_of_wessex_region = { # Area Alfred should reclaim from Guthrum
 		d_cornwall d_somerset d_canterbury d_gloucester
 	}
 }
+
+minimum_islamic_arminiya_region = { # Area minimumally required to claim a reassertation of Islamic control over Arminiya
+	duchies = {
+		d_vaspurakan d_greater_armenia d_georgia d_tao-klarjeti d_shirvan
+	}
+}
+
+maximum_islamic_arminiya_region = { # Area that solidifies Islamic control over Transcaucasia
+	duchies = {
+		d_vaspurakan d_greater_armenia d_georgia d_tao-klarjeti d_shirvan d_mesopotamia d_abkhazia
+	}
+}
+
+roman_power_western_projection = { # Western Territories that Basil I seeks to influence
+	duchies = {
+		#Epirus
+		d_dyrrachion d_cephalonia d_epirus 
+		#Crete
+		d_krete 
+		#Serbia
+		d_rashka d_macva d_duklja
+		#Croatia/South-Eastern tip of Bavaria
+		d_slavonia d_croatia d_dalmatia d_usora d_bosna d_lower_bosna d_krain d_istria d_ragusa
+		#Italia
+		d_verona d_lombardia d_genoa d_emilia d_romagna d_toscana d_pisa d_ancona d_spoleto d_latium d_corsica d_sardinia d_venice d_piedmonte d_friuli
+		#Sicily
+		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily
+	}
+}
+
+custom_western_mediterranean_islands = {
+	duchies = {
+		#Sardinia
+		d_sardinia d_corsica
+		#Sicily
+		d_sicily
+		#Balearics
+		d_mallorca
+	}
+}

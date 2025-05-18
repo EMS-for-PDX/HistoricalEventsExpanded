@@ -54,6 +54,8 @@
 
  dynn_Mardaites: "Mardaites"
 
+ dynn_Banu_Mudlij: "Banu Mudlij"
+
  dynn_Julanda: "Banu al-Julanda"
 
  dynn_Numayrid: "Numayrid"
@@ -64,7 +66,7 @@
 
  dynn_Azdi: "Azdi"
 
- dynn_Shukayr: "al-Khadim"
+ dynn_al_Khadim: "al-Khadim"
 
  dynn_al_Mudabbir: "al-Mudabbir"
 
@@ -247,6 +249,16 @@
  dynn_Yaglakar: "Yaglakar"
  dynn_Adiz: "Ädiz"
 
+ # Roman
+ dynn_Augustus: "Augustus"
+ dynn_Nepos: "Nepos"
+ dynn_Anicius: "Anicius"
+ dynn_Procopii: "Procopius"
+ dynn_Libius: "Libius"
+ dynn_Eparchius: "Eparchius"
+ dynn_Petronius: "Petronius"
+ dynn_Magnus: "Magnus"
+ dynn_Julius: "Julius"
 
 
 

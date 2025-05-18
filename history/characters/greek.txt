@@ -1458,8 +1458,14 @@
 	religion = "orthodox"
 	culture = "greek"
 	father = 20560
-	trait = beauty_good_2
-	trait = just
+	trait = beauty_good_3 # Constantine was said to rival Achilles and Nireus in terms of beauty
+	trait = education_diplomacy_3
+	trait = generous # distributed a large number of gifts, both in monetary forms and through donations of land or tax exemptions, especially for the religious world
+	trait = gregarious # Described by Norwich as "pleasure-loving"
+	trait = wrathful # Described by Finlay as "prone to violent outbursts on suspicion of conspiracy"
+	trait = just # In addition to his beauty, Constantine was praised for his justice and wisdom, the latter being displayed through his patronage of philosophy and rhetoric, as well as his legislation
+	trait = zealous
+	trait = improvident # Constantine's reign was marked by prodigality
 	1000.1.1 = {
 		birth = yes
 	}
@@ -17241,12 +17247,18 @@
 	dynasty = 642
 	religion = "orthodox"
 	culture = "greek"
+	diplomacy = 4
+	martial = 7
+	prowess = 9
 	trait = education_martial_2 # traits should reflect a soldier
-	trait = honest
 	trait = arrogant
 	trait = brave
+	trait = stubborn
 	830.1.1 = {
 		birth = "830.1.1"
+	}
+	866.1.1 = {
+		give_nickname = nick_the_unbearable_greek
 	}
 	885.1.1 = {
 		death = "885.1.1"

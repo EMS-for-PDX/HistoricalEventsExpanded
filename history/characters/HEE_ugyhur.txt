@@ -6,7 +6,7 @@ additionalughyurs0001 = { # Tay Bilge Tutuq; First son of Kutlug Bilge who chall
 	religion = "tengri_pagan"
 	culture = "uyghur"
 	father = 188783
-	711.1.1 = {
+	730.1.1 = {
 		birth = yes
 	}
 	750.1.1 = { # Executed by his brother Bayanchur in 750
@@ -40,10 +40,10 @@ additionalughyurs0003 = { # Unknown father of Alp Qutlugh Bilge, who was the fou
 	religion = "tengri_pagan"
 	culture = "uyghur"
 	father = 188783 # Kutlug I Bilge Boyla Khagan
-	716.1.1 = { # Unknown
+	725.1.1 = { # Unknown
 		birth = yes
 	}
-	750.1.1 = { # Unknown
+	791.1.1 = { # Unknown
 		death = yes
 	}
 }
@@ -81,7 +81,7 @@ uyghurkhan0014 = { # Enian Qaghan was the last effective ruler (khagan) of the U
 	dynasty = 1045083 # Ediz
 	religion = "manichean"
 	culture = "uyghur"
-	father = 166758 # He was a younger brother of Chongde and a son of Baoyi Qaghan
+	father = yaglakar_5 # He was a younger brother of Chongde and a son of Baoyi Qaghan
 
 	804.1.1 = { # Unknown; younger brother of Wujie Qaghan
 		birth = yes
@@ -98,7 +98,7 @@ additionalughyurs0006 = { # Womosi Tegin; Son of Chongde Qaghan who submitted to
 	dynasty = 1045083 # Ediz
 	religion = "manichean"
 	culture = "uyghur"
-	father = 166759 # Chongde Qaghan
+	father = yaglakar_4 # Chongde Qaghan
 
 	812.1.1 = { # Unknown
 		birth = yes
@@ -119,7 +119,7 @@ additionalughyurs0007 = { # Alizhi; Son of Chongde Qaghan who submitted to Tang 
 	dynasty = 1045083 # Ediz
 	religion = "manichean"
 	culture = "uyghur"
-	father = 166759 # Chongde Qaghan
+	father = yaglakar_4 # Chongde Qaghan
 
 	813.1.1 = { # Unknown
 		birth = yes
@@ -140,7 +140,7 @@ additionalughyurs0008 = { # Xiwuchuo; Son of Chongde Qaghan who submitted to Tan
 	dynasty = 1045083 # Ediz
 	religion = "manichean"
 	culture = "uyghur"
-	father = 166759 # Chongde Qaghan
+	father = yaglakar_4 # Chongde Qaghan
 
 	814.1.1 = { # Unknown
 		birth = yes
@@ -161,7 +161,7 @@ additionalughyurs0009 = { # Wuluosi; Son of Chongde Qaghan who submitted to Tang
 	dynasty = 1045083 # Ediz
 	religion = "manichean"
 	culture = "uyghur"
-	father = 166759 # Chongde Qaghan
+	father = yaglakar_4 # Chongde Qaghan
 
 	815.1.1 = { # Unknown
 		birth = yes

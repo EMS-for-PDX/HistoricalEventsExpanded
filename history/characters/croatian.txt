@@ -2218,6 +2218,7 @@
 	trait = content
 	trait = pilgrim # He undertook a pilgrimage to Cividale as his name is found in the Evangelistary of Cividale together with the name of his wife Ventescela
 	trait = loyal # has been described as an "ardent Frankish loyalist"
+	trait = unyielding_defender # entrusted Pannonia by Arnulf in order to secure the Frankish frontier against the Hungarians 
 	825.1.1 = {
 		birth = "825.1.1"
 	}

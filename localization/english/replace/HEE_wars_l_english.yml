@@ -68,7 +68,7 @@
 
  serbian_bulgarian_truce_desc: "\nIn 853 or 854, the Bulgar Army, led by Vladimir, the son of Boris I of Bulgaria, invaded Serbia in an attempt to exact vengeance for a previous defeat. The Serbian Army was led by Mutimir and his brothers, which defeated the Bulgars, capturing Vladimir and 12 boyars. Boris I and Mutimir agreed to cease hostilities (and perhaps an alliance), and Mutimir sent his sons Bran and Stefan to the border to escort the prisoners, where they exchanged items as a sign of peace.\n\nSoon after this in the 860s the younger brothers started a rebellion against Mutimir after he had given them less and less power. Mutimir crushes the rebellion and the two brothers are sent as prisoners, a guarantee of peace, to Tsar Boris I court at Pliska, the Bulgar capital."
 
- ashot_kaysite_truce_desc: "\nWith the help of his brother and sparapet (a title denoting the supreme commander of the army) Abas Bagratuni, Ashot I began a campaign againstthe Kaysites of Manazkert in 863. Although it ended with Ashot's victory, the campaign ended with no territorial gains for the Armenian ruler."
+ ashot_kaysite_truce_desc: "\nWith the help of his brother and sparapet (a title denoting the supreme commander of the army) Abas Bagratuni, Ashot I began a campaign against the Kaysites of Manazkert in 863. Although it ended with Ashot's victory, the campaign ended with no territorial gains for the Armenian ruler."
 
  bulgarian_conversion_peace_desc: "\nIn the last months of 863 the Byzantines attacked Bulgaria, probably after having been informed that Boris was willing to accept Latin Christianity. Before any actual military engagements took place, Khan Boris was forced to sue for peace due to being unprepared for war because of Bulgaria being badly affected by crop failure and earthquakes that year. Negotiations were set up and Boris promised to convert to Eastern Orthodox Christianity along with his people, requesting missionaries to come to Bulgaria and begin the process. In exchange for Bulgaria's conversion to Eastern Orthodoxy, the two sides concluded a "deep peace" for a 30-year period along with the Byzantines returning the previously conquered border region of Zagora."
 
@@ -104,3 +104,5 @@
  fatimid_event_troops: "Ismali Zealots"
  pecheneg_event_troops: "Pecheneg Riders"
  magyar_event_troops: "Hungarian Horsemen"
+
+ ziyarid_event_troops:"Zoroastrian Zealots"

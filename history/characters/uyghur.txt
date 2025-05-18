@@ -146,42 +146,18 @@
 		death = yes
 	}
 }
-194191 = { # Alp Qutluq Külüg Bilge Qaghan — seventh khagan of the Uyghur Khaganate and the first one from the Ädiz clan
-	name = "Qutlugh"
-	dynasty = 1045083 # Ediz; He was born in the Ädiz clan, was orphaned early in childhood and adopted by the Yaglakar clan. Though he didn't change his surname to original one but kept Yaglakar name, we will use the Adiz dynasty for him to reflect the dynastic shift
-	religion = "tengri_pagan"
-	culture = "uyghur"
-
-	#Skills
-	diplomacy = 12 # He quickly rose in the ranks thanks to his strategic thinking and rhetorical skill
-	martial = 11
-	stewardship = 9
-	intrigue = 8
-	learning = 8
-	prowess = 9
-	
-	#Education
-	trait = education_martial_5
-	
-	#Personality Traits
-	trait = brave
-	trait = ambitious # His reign saw territorial expansion of the khaganate, subjugation of Yenisei Kyrgyz, defeat of Karluk Yabgu State and Tibetan Empire in Tarim Basin, conquest of Beshbaliq in 790, Karashar and Kucha in 798
-	trait = diligent # His reign saw territorial expansion of the khaganate, subjugation of Yenisei Kyrgyz, defeat of Karluk Yabgu State and Tibetan Empire in Tarim Basin, conquest of Beshbaliq in 790, Karashar and Kucha in 798
-	
-	#Other Traits
-	trait = diplomat # He was the who met Chinese embassy bringing Tun Baga Tarkhan's uncle's body back. He was also present as the head of delegation to Chang'an in marriage ceremony for qaghan and Princess Xian'an in 788
-	trait = strategist # He quickly rose in the ranks thanks to his strategic thinking and rhetorical skill
-
-	758.1.1 = { # Unknown; He was appointed Grand Chancellor with the title Inanchu Bilge around 782 which implies he must have been an accomplished adult at this point
-		birth = yes
-	}
-	803.1.1 = {
-		religion = "manichean" # One of his first deeds was to adopt Manichaeism as the state religion again in 803, after a visit to Manichean temple in Qocho
-	}
-	808.1.1 = {
-		death = yes
-	}
-}
+#194191 = {
+#	name = "Qutlugh"
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	758.1.1 = {
+#		birth = yes
+#	}
+#	808.1.1 = {
+#		death = yes
+#	}
+#}
 
 217100 = {
 	name = "C_or" #fictional
@@ -937,94 +913,74 @@
 		death = yes
 	}
 }
-166757 = { # minister who betrayed the Uyghur Empire to the Kyrgyz in 840 / # Külüg Bagha; Uyghur general who fled to Yenisei Kyrgyz and appealed for help against the general Jueluowu which lead to the Kyrgyz Khan Külüg Bagha and 100000 Kyrgyz forces invading Ordu-Baliq - burning the city and killing Qasar Qaghan and Jueluowu. Afterwards given control of the Orkhon valley
+166757 = { # Külüg Bagha; Uyghur general who fled to Yenisei Kyrgyz and appealed for help against the general Jueluowu which lead to the Kyrgyz Khan Külüg Bagha and 100000 Kyrgyz forces invading Ordu-Baliq - burning the city and killing Qasar Qaghan and Jueluowu. Afterwards, was given control of the Orkhon valley
 	name = "Bagha"
 	dynasty = 1040062 # Kulug
 	religion = "manichean"
 	culture = "uyghur"
-
 	trait = education_martial_3
 	trait = ambitious
 	trait = stubborn
 	trait = vengeful
-
 	806.1.1 = { # Unknown; known as a Uyghur general when he fled to Yenisei Kyrgyz in 840 so logically an adult with some renown at that time
 		birth = yes
 	}
 	846.1.1 = { # Unknown, but would like him to be playable in 867
 		death = yes
 	}
-}
-166758 = { # Baoyi Qaghan or Alp Bilge Qaghan was the eighth ruler of Uyghurs. He was known as a zealous Manichean ruler and militarily active ruler
-	name = "Paoi"
-	dynasty = 1045083 # Ediz
-	religion = "tengri_pagan"
-	culture = "uyghur"
-	father = 194191
-
-	trait = education_martial_3
-	trait = zealous
-
-	778.1.1 = {
-		birth = yes
-	}
-	803.1.1 = {
-		religion = "manichean"
-	}
-	821.1.1 = {
-		death = yes
-	}
-}
-166759 = { # Chongde Qaghan/Küçlüg Bilge Qaghan was the ninth ruler of Uyghurs
-	name = "KU_chlU_g" #Chungte
-	dynasty = 1045083 # Ediz
-	religion = "tengri_pagan"
-	culture = "uyghur"
-	father = 166758
-
-	trait = education_martial_2
-	trait = generous # Upon his accession, he sent a delegation including a number of officials and two Uyghur princesses, along with a bride price of horses and camels to Muzong in order to seek a Tang Princess
-
-	795.1.1 = {
-		birth = yes
-	}
-	803.1.1 = {
-		religion = "manichean"
-	}
-	824.1.1 = {
-		death = yes
-	}
-}
-166760 = { # Qasar Qaghan/Zhaoli Qaghan was the tenth ruler of Uyghurs
-	name = "Qasar"
-	dynasty = 1045083 # Ediz
-	religion = "manichean"
-	culture = "uyghur"
-	father = 166758
-	798.1.1 = {
-		birth = yes
-	}
-	832.1.1 = {
-		death = { # He was murdered in 832/early 833 by his ministers, who made his nephew Hu Tegin, to succeed him as Zhangxin Qaghan
-			death_reason = death_court_intrigue
-		}
-	}
-}
-166761 = { # Hu Tegin/Zhangxin Qaghan/Alp Külüg Bilge Qaghan was the eleventh ruler of Uyghurs
-	name = "Hu"
-	dynasty = 1045083 # Ediz
-	religion = "manichean"
-	culture = "uyghur"
-	father = 166759
-	811.1.1 = {
-		birth = yes
-	}
-	839.1.1 = { 
-		death = { # Zhangxin died by suicide following a battle against another the Uyghur minister and general named Küräbir/Jueluowu
-			death_reason = death_suicide
-		}
-	}
-}
+}#minister who betrayed the Uyghur Empire to the Kyrgyz in 840
+#166758 = {
+#	name = "Paoi"
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	father = 194191
+#	778.1.1 = {
+#		birth = yes
+#	}
+#	821.1.1 = {
+#		death = yes
+#	}
+#}
+#166759 = {
+#	name = "KU_chlU_g" #Chungte
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	father = 166758
+#	795.1.1 = {
+#		birth = yes
+#	}
+#	824.1.1 = {
+#		death = yes
+#	}
+#}
+#166760 = {
+#	name = "Qasar"
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	father = 166758
+#	798.1.1 = {
+#		birth = yes
+#	}
+#	832.1.1 = {
+#		death = yes
+#	}
+#}
+#166761 = {
+#	name = "Hu"
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	father = 166759
+#	811.1.1 = {
+#		birth = yes
+#	}
+#	839.1.1 = {
+#		death = yes
+#	}
+#}
 166762 = {
 	name = "KO_l"
 	dynasty = 1040063 # Hosa
@@ -1047,7 +1003,10 @@
 		birth = yes
 	}
 	840.1.1 = {
-		death = yes
+		death = { # Külüg Bagha and 100000 Kyrgyz forces invaded Ordu-Baliq and burned the city. Qasar and Jueluowu were killed by a Kyrgyz leader titled Ā-rè, who would take the title Qaghan.
+			death_reason = death_battle
+			killer = 303238 # The representation of the Kyrgyz
+		}
 	}
 }
 166764 = {
@@ -1063,28 +1022,19 @@
 		death = yes
 	}
 }
-166765 = { # Üge Qaghan was the thirteenth ruler of Uyghurs
-	name = "O_ge"
-	dynasty = 1045083 # Ediz
-	religion = "manichean"
-	culture = "uyghur"
-	father = 166758
-
-	trait = education_martial_2
-	trait = arrogant
-	trait = brave
-	trait = reaver
-
-	802.1.1 = {
-		birth = yes
-	}
-	846.1.1 = { 
-		death = { # He later died in 846 in a battle near Altai Mountains or perhaps assassinated by one of Wamosi's men. He was succeeded by his younger brother Enian Qaghan
-			death_reason = death_battle
-		}
-	}
-}
-
+#166765 = {
+#	name = "O_ge"
+#	dynasty = 1045083 # Ediz
+#	religion = "manichean"
+#	culture = "uyghur"
+#	father = 166758
+#	802.1.1 = {
+#		birth = yes
+#	}
+#	847.1.1 = {
+#		death = yes
+#	}
+#}
 
 ##Uyghur Kingdom of Qocho
 #166774 = {
@@ -3842,7 +3792,7 @@ yaglakar_1 = {
 	}
 }
 
-yaglakar_2 = {
+yaglakar_2 = { # Üge Qaghan was the thirteenth ruler of Uyghurs
 	name = "Uge"
 	dynasty = uyghur_yaglakar
 	religion = manichean
@@ -3852,11 +3802,13 @@ yaglakar_2 = {
 		birth = yes
 	}
 	846.1.1 = {
-		death = yes
+		death = { # He later died in 846 in a battle near Altai Mountains or perhaps assassinated by one of Wamosi's men. He was succeeded by his younger brother Enian Qaghan
+			death_reason = death_battle
+		}
 	}
 }
 
-yaglakar_3 = {
+yaglakar_3 = { # Qasar Qaghan/Zhaoli Qaghan was the tenth ruler of Uyghurs
 	name = "Qasar"
 	dynasty = uyghur_yaglakar
 	religion = manichean
@@ -3866,34 +3818,45 @@ yaglakar_3 = {
 		birth = yes
 	}
 	833.1.1 = {
-		death = yes
+		death = { # He was murdered in 832/early 833 by his ministers, who made his nephew Hu Tegin, to succeed him as Zhangxin Qaghan
+			death_reason = death_court_intrigue
+		}
 	}
 }
 
-yaglakar_4 = {
+yaglakar_4 = { # Chongde Qaghan/Küçlüg Bilge Qaghan was the ninth ruler of Uyghurs
 	name = "Kuclug_Bilge"
 	dynasty = uyghur_yaglakar
 	religion = manichean
 	culture = uyghur
 	father = yaglakar_5
+	trait = education_martial_2
+	trait = generous # Upon his accession, he sent a delegation including a number of officials and two Uyghur princesses, along with a bride price of horses and camels to Muzong in order to seek a Tang Princess
 	800.1.1 = {
 		birth = yes
+	}
+	803.1.1 = {
+		religion = "manichean"
 	}
 	824.1.1 = {
 		death = yes
 	}
 }
 
-yaglakar_5 = {
+yaglakar_5 = { # Baoyi Qaghan or Alp Bilge Qaghan was the eighth ruler of Uyghurs. He was known as a zealous Manichean ruler and militarily active ruler
 	name = "Alp_Bilge"
 	dynasty = uyghur_yaglakar
-	religion = manichean
+	religion = tengri_pagan
 	culture = uyghur
 	trait = zealous
 	trait = ambitious
 	father = yaglakar_7
+	trait = education_martial_3
 	775.1.1 = {
 		birth = yes
+	}
+	803.1.1 = {
+		religion = "manichean"
 	}
 	821.1.1 = {
 		death = yes
@@ -3914,20 +3877,44 @@ yaglakar_6 = {
 	}
 }
 
-yaglakar_7 = {
+yaglakar_7 = { # Alp Qutluq Külüg Bilge Qaghan — seventh khagan of the Uyghur Khaganate and the first one from the Ädiz clan
 	name = "Alp_Qutluq"
 	dynasty = uyghur_yaglakar
-	religion = manichean
+	religion = tengri_pagan
 	culture = uyghur
-	754.1.1 = {
+
+	#Skills
+	diplomacy = 12 # He quickly rose in the ranks thanks to his strategic thinking and rhetorical skill
+	martial = 11
+	stewardship = 9
+	intrigue = 8
+	learning = 8
+	prowess = 9
+	
+	#Education
+	trait = education_martial_5
+	
+	#Personality Traits
+	trait = brave
+	trait = ambitious # His reign saw territorial expansion of the khaganate, subjugation of Yenisei Kyrgyz, defeat of Karluk Yabgu State and Tibetan Empire in Tarim Basin, conquest of Beshbaliq in 790, Karashar and Kucha in 798
+	trait = diligent # His reign saw territorial expansion of the khaganate, subjugation of Yenisei Kyrgyz, defeat of Karluk Yabgu State and Tibetan Empire in Tarim Basin, conquest of Beshbaliq in 790, Karashar and Kucha in 798
+	
+	#Other Traits
+	trait = diplomat # He was the who met Chinese embassy bringing Tun Baga Tarkhan's uncle's body back. He was also present as the head of delegation to Chang'an in marriage ceremony for qaghan and Princess Xian'an in 788
+	trait = strategist # He quickly rose in the ranks thanks to his strategic thinking and rhetorical skill
+
+	754.1.1 = { # Unknown; He was appointed Grand Chancellor with the title Inanchu Bilge around 782 which implies he must have been an accomplished adult at this point
 		birth = yes
+	}
+	803.1.1 = {
+		religion = "manichean" # One of his first deeds was to adopt Manichaeism as the state religion again in 803, after a visit to Manichean temple in Qocho
 	}
 	808.1.1 = {
 		death = yes
 	}
 }
 
-yaglakar_8 = {
+yaglakar_8 = { # Hu Tegin/Zhangxin Qaghan/Alp Külüg Bilge Qaghan was the eleventh ruler of Uyghurs
 	name = "Alp_Kulug"
 	dynasty = uyghur_yaglakar
 	religion = manichean
@@ -3936,8 +3923,10 @@ yaglakar_8 = {
 	816.1.1 = {
 		birth = yes
 	}
-	839.1.1 = {
-		death = yes
+	839.1.1 = { 
+		death = { # Zhangxin died by suicide following a battle against another the Uyghur minister and general named Küräbir/Jueluowu
+			death_reason = death_suicide
+		}
 	}
 }
 
@@ -3951,6 +3940,31 @@ yaglakar_9 = {
 		birth = yes
 	}
 	844.1.1 = {
+		death = yes
+	}
+}
+
+#MPO Fictional Uyghurs
+fictional_uyghurs_1 = {	#Uyghurs in Qocho 1066
+	name = "O_zmish"
+	religion = tengri_pagan
+	culture = kipchak
+	1023.4.14 = {
+		birth = yes
+	}
+	1080.1.1 = {
+		death = yes
+	}
+}
+
+fictional_uyghurs_2 = {	#Uyghurs in Qocho 1066
+	name = "Barchuq"
+	religion = tengri_pagan
+	culture = kipchak
+	1033.3.13 = {
+		birth = yes
+	}
+	1090.1.1 = {
 		death = yes
 	}
 }

@@ -82,3 +82,9 @@
 
  nick_chlorus: "Chlorus"
  nick_chlorus_desc: "The famous addition of 'Chlorus' to [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] name comes from [CharYourHerHis(CHARACTER)] pale complexion, for its meaning is 'the pale'."
+
+ nick_augustulus: "Augustulus"
+ nick_augustulus_desc: "The nickname "Augustulus" means "little Augustus" and was a derisive reference to [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] young age."
+
+ nick_the_unbearable_greek: "Abastaktos"
+ nick_the_unbearable_greek_desc: "Translated as "the Unbearable", [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] mere presence is said to be a burden on those around [CharYouHerHim(CHARACTER)]"

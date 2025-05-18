@@ -1,4 +1,105 @@
 ### HEE Titles ###
+e_western_roman_empire = { # Due to the existence of a "offical" Roman Empire title, and the jumbled nature of the ERE title history, best to make a seperate title for the Western half of the Roman Empire (Even though the Empire remained unified politically with the spilt being administrative)
+	286.4.1 = { # Initially Diocletian chose Maximian as his caesar in 285, but spurred by the crisis with Carausius, on 1 April 286, Maximian took the title of Augustus; Due to a latter agreement with Diocletian, Maximian was to govern the western provinces and Diocletian would administer the eastern ones
+		government = feudal_government
+		holder = 145293 # Maximian
+	}
+	305.5.1 = { # On 1 May 305, in separate ceremonies in Milan and Nicomedia, Diocletian and Maximian retired simultaneously. Before the assembled armies at Mediolanum, Maximian removed his purple cloak and handed it to Severus, the new caesar, and proclaimed Constantius as augustus
+		holder = 70524 # Constantius Chlorus
+	}
+	306.7.25 = { # When Constantius died in Britain in July 306, his son Constantine I was immediately acclaimed emperor by his soldiers. At the same time, Severus was promoted to augustus by Galerius
+		holder = westernromanemperor0003 # Flavius Valerius Severus, also called Severus II
+	}
+	# The position of Western augustus remained officially vacant until the Conference of Carnuntum of November 308, in which Licinius was appointed as new emperor (although his western domains only consisted of the Balkan Peninsula)
+	308.11.11 = { # Upon his return to the east Galerius elevated Licinius to the rank of Augustus in the West on 11 November 308, and under his immediate command were the Balkan provinces of Illyricum, Thrace, and Pannonia
+		holder = 145238 # Valerius Licinianus Licinius
+	}
+	# Given that Constantine had already crushed his rival Maxentius in 312, the two men decided to divide the Roman world between them. As a result of this settlement, the Tetrarchy was replaced by a system of two emperors, called Augusti: Licinius became Augustus of the East, while his brother-in-law, Constantine, became Augustus of the West
+	313.8.1 = { # Unclear when exactly Constantine was formally recognized as the legitimate Western Emperor (perhaps during the February 313 AD meeting between Licinius and Constantine), but for ease of title history will make it around Maximinus Daza's death and thereby Licinius' ascension to the Eastern Throne
+		holder = 70523 # Constantine the Great
+	}
+	# Following Constantine's victory over Licinius at the Battle of Chrysopolis, Constantine became the sole emperor of the Roman Empire; the first such since the elevation of Maximian to the status of Augustus by Diocletian in April 286. Despite this consolidation, the "unified" Roman Empire title will not be recreated for simplicity and the fact the empire was divided once more following Constantine's death
+	337.5.22 = { # Constantine was succeeded by his three sons born of Fausta: Constantine II, Constantius II, and Constans. His sons, along with his nephew Dalmatius, had already received one division of the empire each to administer as caesars; Constantine may have intended his successors to resume a structure akin to Diocletian's Tetrarchy. It is unclear which son, if any, held De Jure seniority over the others
+		holder = 70520 # Constantine II
+	}
+	340.4.1 = { # Constans came into conflict with his eldest brother Constantine II over the latter's presumed authority over Constans' territory. Constantine led his army into an invasion of Italy - however he was ambushed and killed by Constans' troops, and Constans then took control of his brother's territories
+		holder = 70522 # Constans
+	}
+	# Following the murder of Constans by the usurper Magnentius, the Western Empire was claimed by three different people: Magnentius, Vetranio, and Nepotianus
+	350.2.1 = { # In light of the political instability of his reign, modern and ancient historians tend to consider him a usurper rather than an emperor.
+		holder = westernromanemperor0009 # Magnentius
+	}
+	353.8.10 = { # After Constans was killed by the usurper Magnentius, Constantius laid claim to the Western Empire, and after defeating Magnentius took possession of it, becoming sole emperor
+		holder = 70521 # Constantius II
+	}
+	361.11.3 = { # In 360, Julian was proclaimed emperor by his soldiers at Lutetia (Paris), sparking a civil war with Constantius. However, Constantius died before the two could face each other in battle, having allegedly named Julian as his successor
+		holder = 145237 # Julian
+	}
+	363.6.26 = { # During the Battle of Samarra, Julian was mortally wounded. He was succeeded by Jovian, a senior officer in the imperial guard
+		holder = 145235 # Jovian
+	}
+	364.2.17 = { # Jovian died aged 33 and was succeeded by two brothers, Valentinian I and Valens, who subsequently divided the empire between them with Valentinian ruling the West
+		holder = 145231 # Valentinian I
+	}
+	375.11.17 = {
+		holder = 145233 # Gratian
+	}
+	383.8.25 = {
+		holder = 145234 # Valentinian II, who by default becomes sole Western Emperor (in contrast to the usurper Magnus Maximus) until 384 where Maximus was recognized as Augustus in the West
+	}
+	384.7.1 = { # Likely around Summer 384, Theodosius brokered a peace agreement between Valentinian II and Magnus Maximus leading to an accord with Valentinian II and Theodosius I in which Maximus was recognized as Augustus in the West.
+		holder = 159807 # Magnus Maximus
+	}
+	388.8.28 = {
+		holder = 145234 # Valentinian II (Second reign, having been restored by Theodosius I)
+	}
+	392.5.15 = {
+		holder = 145227 # Honorius (Though his "reign" is interrupted by the usurper Eugenius and overshadowed by his father's while Theodosius is alive)
+	}
+	423.8.25 = { # On the death of the Western emperor Honorius, Theodosius II, the last remaining ruler of the Theodosian dynasty, did not immediately announce a successor. In the interregnum, the patrician Castinus elevated Joannes as emperor
+		holder = westernromanemperor0018 # Joannes
+	}
+	425.5.5 = {
+		holder = 145229 # Valentinian III
+	}
+	455.3.16 = {
+		holder = westernromanemperor0020 # Petronius Maximus
+	}
+	455.5.31 = {
+		holder = westernromanemperor0021 # Avitus
+	}
+	# Avitus died in 457, or late in 456, very soon after his deposition, and the Western throne without an emperor. It was thus for the Eastern Roman Emperor to choose the successor, but Marcian could do nothing, as he died on 27 January 457. His successor on the Eastern throne was the general Leo I, who instead decided to rule alone
+	# The Western Empire therefore had no Emperor till the acclamation of Majorian by his armies (perhaps in Spring/Summer 457) and Majorian's formal declaration of his imperial position on 28 December 457 (though he went unrecognized in the East)
+	457.12.28 = {
+		holder = westernromanemperor0022 # Majorian
+	}
+	# Ricimer arrested and deposed Majorian on 2 August 461 - beheading him 5 days later. The throne would remain empty for three months as Ricimer considered options for Majorian's successor
+	461.11.19 = {
+		holder = westernromanemperor0023 # Libius Severus
+	}
+	# After the death of Libius Severus in 465, the Western Empire had no Emperor and would not have one until the appointment of the noble Procopius Anthemius by the Eastern Emperor Leo I
+	467.4.12 = {
+		holder = westernromanemperor0024 # Anthemius
+	}
+	472.7.11 = {
+		holder = westernromanemperor0025 # Olybrius
+	}
+	# Olybrius died shortly thereafter, on 2 November 472, and an interregnum ensued for nearly four months, before Gundobad convinced Glycerius to assume the throne, and proclaimed him as emperor at Ravenna
+	473.3.4 = { # the Fasti vindobonenses, a record of consular years, states that it was on 5 March 473, however, the Paschale campanum, also a consular record, asserts it was on the 3rd - so lets split the difference
+		holder = westernromanemperor0026 # Glycerius
+	}
+	474.6.24 = {
+		holder = westernromanemperor0027 # Julius Nepos
+	}
+	# Though Nepos' successor in Italy, Romulus Augustulus (r. 475–476), is traditionally deemed the last western Roman emperor, Nepos is regarded by some historians as the true last emperor of the west, being the last widely recognised holder of the position
+	475.10.31 = {
+		holder = westernromanemperor0028 # Romulus Augustulus
+	}
+	476.9.4 = { # On 4 September, Odoacer captured Ravenna, killing Orestes' deputy and brother Paulus during the fighting. Romulus was captured and deposed, whereafter Odoacer assumed control of Italy as its first king.
+		holder = 0 # Odoacer sent Romulus' western imperial regalia to emperor Zeno in the east, and swore allegiance to him, ruling without further imperial successors in the west.
+	}
+}
+
 e_first_turkic_khanate = {
 	552.1.1 = {
 		government = tribal_government

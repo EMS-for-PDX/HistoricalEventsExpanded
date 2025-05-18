@@ -204,6 +204,11 @@ dynasty_mardaites = {
 
 
 # Arabic
+dynasty_banu_mudlij = {
+	name = "dynn_Banu_Mudlij"
+	culture = "bedouin"	
+}
+
 dynasty_julanda = {
 	name = "dynn_Julanda"
 	culture = "bedouin"	
@@ -234,8 +239,8 @@ dynasty_azdi = {
 	culture = "levantine"
 }
 
-hee_shukayr = {
-	name = "dynn_Shukayr"
+dynasty_al_khadim = {
+	name = "dynn_al_Khadim"
 	culture = "egyptian"
 }
 
@@ -622,4 +627,58 @@ dynasty_yaglakar = {
 dynasty_adiz = {
 	name = "dynn_Adiz"
 	culture = "uyghur"
+}
+
+
+
+
+# Roman
+dynasty_augustus = {
+	name = "dynn_Augustus"
+	culture = "roman"	
+}
+
+dynasty_nepos = {
+	name = "dynn_Nepos"
+	culture = "roman"
+}
+
+dynasty_anicius = {
+	name = "dynn_Anicius"
+	culture = "roman"
+}
+
+dynasty_procopii = {
+	name = "dynn_Procopii"
+	culture = "roman"
+}
+
+dynasty_libius = {
+	name = "dynn_Libius"
+	culture = "roman"	
+}
+
+dynasty_eparchius = {
+	name = "dynn_Eparchius"
+	culture = "roman"	
+}
+
+dynasty_petronius = {
+	name = "dynn_Petronius"
+	culture = "roman"
+}
+
+dynasty_magnus = {
+	name = "dynn_Magnus"
+	culture = "roman"
+}
+
+dynasty_flavius = {
+	name = "dynn_Flavius"
+	culture = "roman"
+}
+
+dynasty_julius = {
+	name = "dynn_Julius"
+	culture = "roman"
 }

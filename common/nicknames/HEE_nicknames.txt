@@ -43,3 +43,5 @@ nick_diocletian_jovius = {}
 nick_maximian_herculius = {}
 nick_chlorus = {}
 nick_leo_the_butcher = {}
+nick_augustulus = {}
+nick_the_unbearable_greek = {}

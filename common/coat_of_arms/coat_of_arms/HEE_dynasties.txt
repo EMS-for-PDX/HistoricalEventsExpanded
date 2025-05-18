@@ -1132,7 +1132,7 @@ dynasty_al_mudabbir = {
 
 }
 
-hee_shukayr = {
+dynasty_al_khadim = {
 	pattern="pattern_tricolor_bend_02.dds"
 	color1=black
 	color2=yellow
@@ -1419,7 +1419,6 @@ better_wessex_2 = {
 		instance={
 			depth=1.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1429,9 +1428,7 @@ better_wessex_2 = {
 			position={ 0.490000 0.490000 }
 			scale={ 0.730000 0.730000 }
 		}
-
 	}
-
 }
 
 1043302 = { # Lade Dynasty
@@ -1453,7 +1450,6 @@ better_wessex_2 = {
 			scale={ 0.330000 0.330000 }
 			depth=4.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1464,7 +1460,6 @@ better_wessex_2 = {
 			position={ 0.505000 0.625000 }
 			scale={ 0.660000 0.660000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -1476,7 +1471,6 @@ better_wessex_2 = {
 			scale={ 0.590000 0.590000 }
 			depth=5.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1488,7 +1482,6 @@ better_wessex_2 = {
 			scale={ 0.780000 0.780000 }
 			depth=1.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1499,9 +1492,7 @@ better_wessex_2 = {
 			scale={ 0.565000 0.565000 }
 			depth=2.010000
 		}
-
 	}
-
 }
 
 1040004 = { # Hordaland Dynasty
@@ -1519,7 +1510,6 @@ better_wessex_2 = {
 			scale={ 0.840000 0.840000 }
 			rotation=315
 		}
-
 	}
 
 	colored_emblem={
@@ -1531,9 +1521,7 @@ better_wessex_2 = {
 			position={ 0.500000 0.510000 }
 			depth=1.010000
 		}
-
 	}
-
 }
 
 1043304 = { # Kjotve the Rich/Cruel's Dynasty
@@ -1547,7 +1535,6 @@ better_wessex_2 = {
 		instance={
 			scale={ 0.680000 0.680000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -1556,7 +1543,6 @@ better_wessex_2 = {
 		instance={
 			depth=1.010000
 		}
-
 	}
 
 	colored_emblem={
@@ -1566,9 +1552,7 @@ better_wessex_2 = {
 			scale={ 0.430000 0.430000 }
 			depth=2.010000
 		}
-
 	}
-
 }
 
 hee_gaular = {
@@ -1597,7 +1581,6 @@ hee_gaular = {
 		instance={
 			scale={ 0.800000 0.800000 }
 		}
-
 	}
 
 	colored_emblem={
@@ -1608,42 +1591,38 @@ hee_gaular = {
 		instance={
 			scale={ 0.800000 0.800000 }
 		}
-
 	}
-
 }
 
 hee_volkhvs = {
 	pattern="pattern_solid.dds"
-	color1=black
+	color1=red
 	color2=yellow
 	color3=red
-	colored_emblem={
-		color1=yellow
-		color2=white
-		color3=black
-		texture="ce_horse_statant.dds"
-		instance={
-			position={ 0.500000 0.660000 }
-			scale={ 0.700000 0.700000 }
-			depth=1.010000
-		}
-
-	}
-
 	colored_emblem={
 		color1=white
 		color2=white
 		color3=white
-		texture="ce_snake.dds"
+		texture="ce_african_yoruba_snake.dds"
 		instance={
-			position={ 0.500000 0.270000 }
-			scale={ 0.510000 0.510000 }
+			position={ 0.520000 0.440000 }
+			scale={ 0.570000 0.450000 }
+			rotation=232
 		}
-
 	}
 
+	colored_emblem={
+		color1=black
+		color2=white
+		color3=white
+		texture="ce_horse_statant.dds"
+		instance={
+			scale={ 0.960000 0.960000 }
+			depth=1.010000
+		}
+	}
 }
+
 
 
 jeanne_darc = { # Arc, based off the historical du Lys coat of arms
@@ -3585,6 +3564,32 @@ kurdish_al_bawazij = { # For bookmark
 			position={ 0.500000 0.460000 }
 			scale={ 0.580000 0.580000 }
 			depth=2.010000
+		}
+	}
+}
+
+1022148 = { # Dynasty of Lachanodrakon (with dubiously connected descendants)
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	color3=yellow
+	colored_emblem={
+		color1=yellow
+		texture="ce_wreath_circle.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=rgb { 146 17 0 }
+		color3=black
+		texture="ce_wyvern_rising.dds"
+		instance={
+			position={ 0.510000 0.550000 }
+			scale={ 0.570000 0.570000 }
 		}
 	}
 }

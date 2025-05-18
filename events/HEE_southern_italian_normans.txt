@@ -1,14 +1,14 @@
-﻿namespace = HEE_mardavij_uprising
+namespace = HEE_southern_italian_normans
 
-### Spawn Mardavij
-HEE_mardavij_uprising.0001 = {
+### Spawn ibn Hafsun
+HEE_southern_italian_normans.0001 = {
 	scope = none
 	hidden = yes
 
 	immediate = {
 		debug_log = "Spawning Mardavij's Uprising before 1066 start date"
 		debug_log_date = yes
-		spawn_ziyarid_character_effect = yes
+		spawn_southern_italian_normans_character_effect = yes
 		scope:Mardavij = {
 			trigger_event = {
 				id = HEE_mardavij_uprising.0002
@@ -17,7 +17,7 @@ HEE_mardavij_uprising.0001 = {
 	}
 }
 
-HEE_mardavij_uprising.0002 = {
+HEE_southern_italian_normans.0002 = {
 	scope = none
 	hidden = yes
 
@@ -51,7 +51,7 @@ HEE_mardavij_uprising.0002 = {
 	}
 }
 
-HEE_mardavij_uprising.0003 = {
+HEE_southern_italian_normans.0003 = {
 	scope = none
 	hidden = yes
 

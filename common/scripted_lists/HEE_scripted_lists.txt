@@ -1,0 +1,10 @@
+﻿# Vassals
+rulers_for_basils_personal_mission = {
+	base = ruler
+	conditions = {
+		NOT = { has_title = title:e_byzantium } # Don't count yourself
+    	is_landed = yes # Do not want to involve Landless characters
+    	is_independent_ruler = yes # We care about top realm rulers
+    	capital_province = { geographical_region = roman_power_western_projection } # Based in the specified territory
+	}
+}

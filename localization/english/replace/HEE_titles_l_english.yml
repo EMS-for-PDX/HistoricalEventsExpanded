@@ -7,6 +7,10 @@
  e_romania_adj: "Roman"
  e_romania_pre: "Romano"
 
+ e_western_roman_empire_article: "the "
+ e_western_roman_empire: "Western Roman Empire"
+ e_western_roman_empire_adj: "Western Roman"
+
  e_first_turkic_khanate_article: "the "
  e_first_turkic_khanate: "Göktürk Khaganate"
  e_first_turkic_khanate_adj: "Turk"

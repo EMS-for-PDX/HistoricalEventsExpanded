@@ -1053,7 +1053,9 @@ on_become_widowed = {
 	}
 }
 
-HEE_anarchy_minor = {
+# Minor and Major Events Combined
+# Use Peril in Weight Multiplers to increase certain events.
+HEE_anarchy_event_pool = {
 	trigger = {
 		any_owned_story = { has_story = story_anarchy_at_samarra }
 	}
@@ -1071,7 +1073,8 @@ HEE_anarchy_minor = {
 	}
 }
 
-HEE_anarchy_major = {
+# A Million Ways to Die in Arabia
+HEE_anarchy_peril = {
 	trigger = {
 		any_owned_story = { has_story = story_anarchy_at_samarra }
 	}
@@ -1087,7 +1090,7 @@ HEE_anarchy_major = {
 		# 50 = pet_animal.2001 #You have both a dog AND a cat
 		# 50 = pet_animal.2002 #You have both a dog AND a cat. Things don't really work out
 	}
-}
+} 
 
 # On Marriage #
 on_marriage = {

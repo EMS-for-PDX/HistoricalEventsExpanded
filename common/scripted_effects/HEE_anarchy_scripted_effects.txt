@@ -1,0 +1,155 @@
+﻿add_small_peril_effect = {
+    if = {
+        limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+        }
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = 1 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = 1
+			}
+		}
+    }
+    custom_tooltip = anarchy_peril_explanation_tt
+}
+
+add_medium_peril_effect = {
+    if = {
+        limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+        }
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = 3 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = 3
+			}
+		}
+    }
+    custom_tooltip = anarchy_peril_explanation_tt
+}
+
+add_large_peril_effect = {
+	if = {
+		limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+		}
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = 5 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = 5
+			}
+		}
+	}
+	custom_tooltip = anarchy_peril_explanation_tt
+}
+
+decrease_small_peril_effect = {
+	if = {
+		limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+		}
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = -1 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = -1
+			}
+		}
+	}
+	custom_tooltip = anarchy_peril_explanation_tt
+}
+
+decrease_medium_peril_effect = {
+	if = {
+		limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+		}
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = -3 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = -3
+			}
+		}
+	}
+	custom_tooltip = anarchy_peril_explanation_tt
+}
+
+decrease_large_peril_effect = {
+	if = {
+		limit = {
+			any_owned_story = {
+				story_type = story_anarchy_at_samarra
+			}
+		}
+		if = {
+			limit = {	
+				NOT = { has_variable = anarchy_peril_count }
+			}
+			set_variable = {
+				name = anarchy_peril_count
+				value = -5 
+			}
+		}
+		else = {
+			change_variable = {
+				name = anarchy_peril_count
+				add = -5
+			}
+		}
+	}
+	custom_tooltip = anarchy_peril_explanation_tt
+}

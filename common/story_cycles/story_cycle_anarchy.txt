@@ -80,13 +80,16 @@ story_anarchy_at_samarra = {
 		}
 	}
 
-	# Random Event Pool
-	effect_group = { # Minor Event Pool (Could impact the story)
-		days = { 365 600 }
-		chance = 30 # You can probably remove this
+	# Checking Anarchy Peril
+	effect_group = {
+		days = { 30 60 }
 
 		trigger = {
 			exists = story_owner
+			scope:story_owner = { 
+				has_variable = anarchy_peril_count 
+				var:anarchy_peril_count >= 10
+			}
 		}
 
 		first_valid = {
@@ -95,7 +98,7 @@ story_anarchy_at_samarra = {
 				effect = {
 					story_owner = {
 						trigger_event = {
-							on_action = HEE_anarchy_minor
+							on_action = HEE_anarchy_peril
 						}
 					}
 				}
@@ -103,7 +106,8 @@ story_anarchy_at_samarra = {
 		}
 	}
 
-	effect_group = { #Major Event Pool (Could be death)
+	# Random Event Pool
+	effect_group = { # Event Pool (Could impact the story)
 		days = { 365 600 }
 		chance = 30 # You can probably remove this
 
@@ -117,7 +121,7 @@ story_anarchy_at_samarra = {
 				effect = {
 					story_owner = {
 						trigger_event = {
-							on_action = HEE_anarchy_major
+							on_action = HEE_anarchy_event_pool
 						}
 					}
 				}

@@ -243,3 +243,8 @@ house_ughyur_li = {
 	name = "dynn_Li"
 	dynasty = 1045083 # Ädiz clan
 }
+
+house_ragnarson_ivaring = {
+	name = "dynn_Ivaring" # (20084)
+	dynasty = 490
+}

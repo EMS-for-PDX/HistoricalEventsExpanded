@@ -309,3 +309,25 @@ askold0001 = { # https://en.wikipedia.org/wiki/Askold_and_Dir
 		}
 	}
 }
+
+
+Real_Ivar = {
+	name = Imar
+	dynasty = house_british_isles_ivaring
+	religion = norse_pagan
+	culture = norse
+	trait = ambitious
+	trait = viking
+	trait = education_martial_4
+	father = 166506 #Godfrey/Gofraid
+	
+	845.2.7 = {
+		birth = yes
+	}
+	866.1.1 = {
+	}
+	
+	873.1.6 = {
+		death = yes
+	}
+}

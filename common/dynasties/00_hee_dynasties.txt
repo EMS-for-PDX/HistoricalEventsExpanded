@@ -682,3 +682,8 @@ dynasty_julius = {
 	name = "dynn_Julius"
 	culture = "roman"
 }
+
+house_british_isles_ivaring = {
+	name = "dynn_Ivaring"
+	culture = "norse"
+}

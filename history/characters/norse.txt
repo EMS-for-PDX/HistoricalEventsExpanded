@@ -71,7 +71,7 @@
 5789 = {
 	name = "Sihtric_Caech"
 	# AKA: Sihtric Caech
-	dynasty_house = house_british_isles_ivaring
+	dynasty = house_british_isles_ivaring
 	martial = 7
 	diplomacy = 7
 	intrigue = 7
@@ -90,7 +90,7 @@
 5790 = {
 	name = "Olafr_CuarA_n"
 	# AKA: Olaf Cuaran
-	dynasty_house = house_british_isles_ivaring
+	dynasty = house_british_isles_ivaring
 	martial = 7
 	diplomacy = 7
 	intrigue = 7
@@ -402,23 +402,6 @@
 		birth = yes
 	}
 	981.1.1 = {
-		death = yes
-	}
-}
-
-6864 = {
-	name = "Aslaug" #Fictional?
-	dynasty_house = house_british_isles_ivaring # af Ivar
-	female = yes
-	religion = "norse_pagan"
-	culture = norse
-	trait = beauty_good_1
-	father = 163111 #Ivar the Boneless
-	mother = 306011 #Fictional wife of Ivar
-	866.1.1 = {
-		birth = yes
-	}
-	915.1.1 = {
 		death = yes
 	}
 }
@@ -3907,7 +3890,7 @@
 163111 = {
 	name = Ivar # The Boneless
 	dna = 163111_ivar_the_boneless
-	dynasty_house = house_british_isles_ivaring
+	dynasty_house = house_ragnarson_ivaring
 	religion = norse_pagan
 	culture = norse
 	martial = 6
@@ -3933,7 +3916,7 @@
 		}	
 	}
 	866.1.1 = {
-		add_spouse = 306011 #Fictional
+		employer = 163112
 		effect = {
 			add_trait = lifestyle_blademaster
 			add_trait_xp = {
@@ -3994,46 +3977,19 @@
 	}
 }
 
-306011 = { #Fictional wife of Ivar the Boneless
-	name = Freydi_s
-	dna = 306011_freydis
-	female = yes
-	religion = norse_pagan
-	culture = norse
-	trait = beauty_good_2
-	trait = deceitful
-	trait = lustful
-	trait = ambitious
-	trait = education_intrigue_3
-	learning = 8
-	840.1.1 = {
-		birth = yes
-	}
-	875.1.6 = {
-		death = yes
-	}
-}
-
 6814 = {
-	name = "Barid" #Son of the viking Ímar some scholars believe to be Ivar the Boneless
-	dynasty_house = house_british_isles_ivaring
+	name = "Barid"
+	dynasty = house_british_isles_ivaring
 	religion = "norse_pagan"
 	culture = norse
-	father = 163111 #Ivar the Boneless
-	mother = 306011 #Fictional wife of Ivar
+	father = Real_Ivar #Ivar the Boneless
 	trait = gregarious
-	trait = charming
 	trait = arrogant
 	trait = patient
 	trait = education_diplomacy_2
 	trait = beauty_good_1
-	858.1.1 = {
+	838.1.1 = {
 		birth = yes
-	}
-	874.1.1 = {
-		effect = {
-			remove_trait = charming
-		}
 	}
 	881.1.1 = {
 		death = yes
@@ -4041,24 +3997,16 @@
 }
 
 40609 = {
-	name = "SigfroT_" #Son of the viking Ímar some scholars believe to be Ivar the Boneless
-	dynasty_house = house_british_isles_ivaring
+	name = "SigfroT_"
+	dynasty = house_british_isles_ivaring
 	religion = "norse_pagan"
 	culture = norse
-	father = 163111 #Ivar the Boneless
-	mother = 306011 #Fictional wife of Ivar
-
-	trait = bossy
+	father = Real_Ivar #Ivar the Boneless
 	trait = wrathful
 	trait = brave
 	trait = honest
-	862.1.1 = {
+	842.1.1 = {
 		birth = yes
-	}
-	878.1.1 = {
-		effect = {
-			remove_trait = bossy
-		}
 	}
 	888.1.1 = {
 		death = yes
@@ -4066,21 +4014,15 @@
 }
 
 40608 = {
-	name = "Sigtrygg" #Son of the viking Ímar some scholars believe to be Ivar the Boneless
-	dynasty_house = house_british_isles_ivaring
+	name = "Sigtrygg"
+	dynasty = house_british_isles_ivaring
 	religion = "norse_pagan"
 	culture = norse
-	father = 163111 #Ivar the Boneless
-	mother = 306011 #Fictional wife of Ivar
+	father = Real_Ivar #Ivar the Boneless
 	trait = beauty_good_2
-	trait = charming
-	864.1.1 = {
+	trait = gregarious
+	844.1.1 = {
 		birth = yes
-	}
-	880.1.1 = {
-		effect = {
-			remove_trait = charming
-		}
 	}
 	896.1.1 = {
 		death = yes
@@ -4444,11 +4386,6 @@
 	father = 6866
 	830.1.1 = {
 		birth = "830.1.1"
-	}
-	866.1.1 = {
-		effect = {
-			create_betrothal = character:6864 # A daughter of Ivar the Boneless
-		}
 	}
 	880.1.1 = {
 		death = "880.1.1"
@@ -6182,21 +6119,6 @@
 	
 	900.1.1 = {
 		death = "900.1.1"
-	}
-}
-
-168500 = {
-	name = "GuT_friT_" #Fictional? Or the grandson of Ìmair AKA maybe-Ivar
-	dynasty_house = house_british_isles_ivaring
-	religion = "norse_pagan"
-	culture = norse
-	father = 163111 #Ivar the Boneless
-	mother = 306011 #Fictional wife of Ivar
-	867.1.1 = {
-		birth = yes
-	}
-	891.1.1 = {
-		death = yes
 	}
 }
 

@@ -1,4 +1,27 @@
 ﻿# 867
+d_nf_amorian = { # Amorian
+	820.12.25 = { # The date where Michael II ascended as Emperor
+		liege = e_byzantium
+		holder = 70492 # Michael II
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	829.10.2 = {
+		holder = 70491 # Theophilos
+	}
+	842.1.20 = {
+		holder = 70490 # Michael III
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	867.9.24 = {
+		holder = 0
+	}
+}
+
 d_nf_marikonian = { # Marikonian
 	812.1.1 = {
 		liege = e_byzantium

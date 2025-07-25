@@ -187,6 +187,18 @@ rurikid_invasion_region = {
 	}
 }
 
+# Region in the Middle East where Earthquake hit hardest
+1114_marash_earthquake_epicenter_region = {
+	duchies = {
+		# Northern Syria
+		d_edessa d_antioch d_aleppo d_diyarmudar d_sebasteia
+	}
+	
+	counties = {
+		c_upper_khabur c_amida c_tall_basma c_melitene c_tall_hamid c_cilicia c_lycandus c_kaisereia
+	}
+}
+
 max_pecheneg_invasion_region = {
 	duchies = {
 		#Zaporizhia
@@ -257,7 +269,17 @@ kalandozasok_invasion_region = { # Raiding Region
 		#Wallachia (dacia)
 		d_transylvanian_alps d_muntenia d_oltenia
 	}
+}
 
+ziyarid_invasion_region = { # Intended region that the Ziyarids should seek to expand
+	duchies = {
+		# Persia
+		d_isfahan d_kirman d_yazd d_rayy d_hamadan d_fars d_hormuz d_khuzestan d_kermanshah  
+		#Central Daylam
+		d_daylam d_tabaristan
+		#Mesopotamia
+		d_basra d_baghdad d_samarra d_wasit d_kufa
+	}
 }
 
 kingdom_of_wessex_region = { # Area Alfred should reclaim from Guthrum
@@ -304,4 +326,21 @@ custom_western_mediterranean_islands = {
 		#Balearics
 		d_mallorca
 	}
+}
+
+custom_mediterranean_shoreline = { # Then check is_coastal_county = yes
+	duchies = {
+		d_mallorca
+		d_sevilla d_granada d_murcia d_valencia d_barcelona
+		d_languedoc
+		d_provence
+		d_istria d_croatia d_dalmatia d_usora d_ragusa d_duklja d_dyrrachion d_cephalonia
+		d_epirus d_achaia d_krete d_aegean_islands d_athens
+		d_thessaly d_thessalonika d_strymon
+		d_thrace d_ephese d_cibyrrhaeot d_cilicia
+		d_antioch d_lebanon d_cyprus d_urdunn d_palestine d_sinai d_delta d_alexandria
+		d_cyrenaica d_syrte d_tripolitania d_gabes d_tunis d_kroumerie d_bejaia d_alger d_tlemcen d_rif
+	}
+
+	regions = { world_europe_south_italy }
 }

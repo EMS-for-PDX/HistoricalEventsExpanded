@@ -1,7 +1,48 @@
 ﻿l_english:
+reassert_roman_power_west_decision: "Reassert Roman Power in the West"
+reassert_roman_power_west_decision_tooltip: "Begin to restablish Roman authority over the West"
+reassert_roman_power_west_decision_desc: "Not since the reign of Emperor [GetScriptedCharacterByHistoryID( '70508' ).GetFirstNameRegnal] has a Roman Emperor pursued an active policy to restore the Empire's power in the West. However, with our Eastern rivals in decline, perhaps now is the time to turn our attention to the petty barbarian realms to the West who dare to lay claim to our lost Provinces..."
+reassert_roman_power_west_decision_confirm: "Our Empire will be Reunited."
 
 reassert_roman_power_west_decision.completely_control_X_counties_from_the_west: "You must [completely_control|E] at least #bold 45%#! of the [counties|E] within [GetGeographicalRegion('roman_power_western_projection').GetName]"
-reassert_roman_power_west_decision.establish_good_relations_with_western_rulers: "All other [independent|E] [rulers|E] within [GetGeographicalRegion('roman_power_western_projection').GetName] have an [alliance|E] with you ([SCOPE.ScriptValue('reassert_roman_power_west_decision_restored_relations_counter_value')|0]/[SCOPE.ScriptValue('reassert_roman_power_west_decision_foreign_realm_total_value')|0])"
+reassert_roman_power_west_decision.establish_good_relations_with_western_rulers: "All other [independent|E] [rulers|E] within [GetGeographicalRegion('roman_power_western_projection').GetName] have an [alliance|E] with you, are a [tributary|E], or have a positive [relation|E] ([SCOPE.ScriptValue('reassert_roman_power_west_decision_restored_relations_counter_value')|0]/[SCOPE.ScriptValue('reassert_roman_power_west_decision_foreign_realm_total_value')|0])"
+
+islamic_arminiya_decision: "Reassert Islamic Control over Arminiya"
+islamic_arminiya_decision_tooltip: "Restore Caliphal authority over the province of Arminiya - or take it for yourself"
+islamic_arminiya_decision_desc: "Once held firm under the might of the Caliphate, the mountains of Arminyia now simmer with rebellion as local nakharars and petty lords grow ever more daring - emboldened by distance, pride, and the memory of ancient crowns. If peace is to return to these highlands, if the banner of Islam is to fly unshaken, then I must do more than govern — I must subdue. Through arms, alliances, and firm justice, I shall remind remind these lands that Islam is not a guest here, but master."
+islamic_arminiya_decision_confirm: "These rebellious lords shall be brought to heel."
+
+merge_arminiya_vassal: "$BULLET$Every [de_jure|E] [vassal|E] in"
+merge_arminiya_decision_vassal_original: "$merge_arminiya_vassal$ [GetTitleByKey('k_arminiya').GetName]"
+
+merge_arminiya_opinion: "Gains #p 20#! [opinion|E] of #color_white you#! #weak (-1.20/year) ($rightful_king_opinion$)#!"
+
+merge_arminiya_culture: "$BULLET$Every non-[GetTitleByKey('k_arminiya').GetHolder.GetCulture.GetName] [culture|E] in"
+merge_arminiya_culture_tooltip_original: "$merge_arminiya_culture$ [GetTitleByKey('k_armenia').GetName]"
+merge_arminiya_culture_tooltip: "The [cultural_acceptance|E] decreases by #n 25%#!"
+
+cultural_acceptance_merge_arminiya: "Forcibly Put Under Liege"
+
+merge_arminiya_title: "$BULLET$Every [de_jure|E] [duchy|E] in"
+merge_arminiya_decision_tooltip_original: "$merge_arminiya_title$ [GetTitleByKey('k_armenia').GetName]"
+
+merge_arminiya_de_jure_title: "becomes [de_jure|E] [liege|E] of this [duchy|E]"
+merge_arminiya_decision_tooltip_2_original: "[GetTitleByKey('k_arminiya').GetName] $merge_arminiya_de_jure_title$"
+
+mediterranean_foothold_decision: "Establish a Mediterranean Foothold"
+mediterranean_foothold_decision_tooltip: "Begin working to solidify control of Mare Nostrum"
+mediterranean_foothold_decision_desc: "The mightly Roman Empire flourished in part due to their control over the Mediterranean Sea, which they called Mare Nostrum. If we could imitate even a mere fraction of Roman hegemony over the great sea, it would surely allow our realm to prosper and lay the groundwork for future incursions into the heart of Christendom..."
+mediterranean_foothold_decision_confirm: "The Sea is no barrier; it is a path!"
 
 mediterranean_foothold_decision.completely_control_X_counties_in_sicily: "You must [completely_control|E] at least #bold 55%#! of the [counties|E] within [GetGeographicalRegion('custom_sicily').GetName]"
 mediterranean_foothold_decision.completely_control_X_counties_from_the_western_med_islands: "You must [completely_control|E] at least #bold 80%#! of the [counties|E] within [GetGeographicalRegion('custom_western_mediterranean_islands').GetName]"
+
+mediterranean_foothold_decision_enable_raiding_tooltip: "Can [raid|E] overseas, regardless of [government|E] type, for #bold 10#! years."
+mediterranean_foothold_decision_coastal_counties_tooltip: "Every Coastal or Riverside [county|E] within the [region|E] of the [GetGeographicalRegion('custom_mediterranean_shoreline').GetName] will recieve the [GetModifier('flourishing_trade_modifier').GetNameWithTooltip] [modifier|E] for #bold 15#! years."
+
+unify_england_decision: "Unite England"
+unify_england_decision_tooltip: "Unify the scattered Anglo-saxon Kingdoms into a single unified Kingdom"
+unify_england_decision_desc: "For too long the Angle and Saxon people have been content to divide this land up into scattered kingdoms, ones that continue to shed their neighbor's blood over petty conflicts. But it is my hope that one day all the kingdoms will become one - united under one God and one King. The birth of an England, the idea of a single kingdom called England, has to begin here with me."
+unify_england_decision_confirm: "One God. One People. One King."
+
+unify_england_decision_scripted_effect_consolidate_titles_tooltip: "The Heptarchy kingdoms shall be destroyed and their lands consolidated into the [GetTitleByKey('k_england').GetName]"

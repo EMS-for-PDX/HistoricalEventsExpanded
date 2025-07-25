@@ -135,6 +135,9 @@
  k_jeanne_banner_adj: "Jeanne's"
 
  # Noble families
+ d_nf_amorian: "$dynn_Amorios$ Family"
+ d_nf_amorian_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
  d_nf_marikonian: "$dynn_Marikonian$ Family"
  d_nf_marikonian_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
 

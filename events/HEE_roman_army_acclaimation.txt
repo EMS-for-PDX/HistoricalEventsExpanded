@@ -17,7 +17,8 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 	}
 
 	trigger = {
-		scope:attacker.liege = { # This event is inspired by Theophobos and his (likely unwilling) acclaimation as Emperor by his troops following rumors of the Emperor's death at the Battle of Anzen (as well as just general Roman shenanigans)
+		exists = root.liege
+		root.liege = { # This event is inspired by Theophobos and his (likely unwilling) acclaimation as Emperor by his troops following rumors of the Emperor's death at the Battle of Anzen (as well as just general Roman shenanigans)
 			OR = {
 				this = title:e_byzantium.holder
 				this = title:e_roman_empire.holder
@@ -35,7 +36,7 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 	}
 
 	weight_multiplier = {
-        base = 100 # Should happen to only characters who fit the mold in some way - CHANGE TO 0 FOR FINAL
+        base = 10000 # Should happen to only characters who fit the mold in some way - CHANGE TO 0 FOR FINAL
 
 		# Bonuses
         modifier = { # More likely for charismatic leaders
@@ -147,7 +148,7 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 		if = { # Army Acclaimation is a valid form of claim granting
 			limit = {
 				AND = {
-					scope:attacker.liege = { this = title:e_byzantium.holder }
+					liege = { this = title:e_byzantium.holder }
 					NOT = { has_claim_on = title:e_byzantium }
 				}
 			}
@@ -156,7 +157,7 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 		if = { # Army Acclaimation is a valid form of claim granting
 			limit = {
 				AND = {
-					scope:attacker.liege = { this = title:e_roman_empire.holder }
+					liege = { this = title:e_roman_empire.holder }
 					NOT = { has_claim_on = title:e_roman_empire }
 				}
 			}
@@ -168,6 +169,76 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 		name = roman_army_acclaimation.0001.a
 
 		add_prestige = minor_prestige_gain
+
+		duel = {
+			skill = diplomacy
+			value = high_skill_rating
+			# Crit success.
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+					min = -49
+				}
+				desc = roman_army_acclaimation.0001.a.crit_success
+
+				add_prestige = massive_prestige_gain
+				add_character_modifier = inspiring_roman_commander_modifier
+				if = { # Refusal forfits the claim acclaimation provides
+					limit = {
+						has_claim_on = title:e_byzantium
+					}
+					remove_claim = title:e_byzantium
+					add_unpressed_claim = title:e_byzantium
+				}
+				if = { # Refusal forfits the claim acclaimation provides
+					limit = {
+						has_claim_on = title:e_roman_empire
+					}
+					remove_claim = title:e_roman_empire
+					add_unpressed_claim = title:e_roman_empire
+				}
+			}
+			# Success.
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+					min = -49
+				}
+				desc = roman_army_acclaimation.0001.a.success
+				add_prestige = medium_prestige_gain
+				if = { # Refusal forfits the claim acclaimation provides
+					limit = {
+						has_claim_on = title:e_byzantium
+					}
+					remove_claim = title:e_byzantium
+				}
+				if = { # Refusal forfits the claim acclaimation provides
+					limit = {
+						has_claim_on = title:e_roman_empire
+					}
+					remove_claim = title:e_roman_empire
+				}
+			}
+			# Failure.
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2
+					min = -49
+				}
+				desc = roman_army_acclaimation.0001.a.failure
+
+				add_prestige = major_prestige_gain
+				start_war = { # You are thrust into a war
+					casus_belli = claim_cb
+					target = scope:sitting_emperor
+					target_title = title:e_byzantium
+					claimant = root
+				}
+			}
+		}
 		
 		# trigger_event = {
 		#	id = roman_army_acclaimation.0002
@@ -182,6 +253,28 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 		name = roman_army_acclaimation.0001.b
 		
 		# custom_tooltip = 
+
+		add_prestige = massive_prestige_gain
+		add_character_modifier = inspiring_roman_commander_modifier
+
+		if = {
+			limit = { 
+				NOT = {
+					has_trait = comfort_eater 
+				}
+			}	
+			random = { # 
+				chance = 35
+				add_trait = disloyal
+			}
+		}
+
+		start_war = { # You are thrust into a war
+			casus_belli = claim_cb
+			target = scope:sitting_emperor
+			target_title = title:e_byzantium
+			claimant = root
+		}
 
 		ai_chance = {
 			base = 100

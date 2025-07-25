@@ -5514,15 +5514,22 @@
 }
 ## End of Aribonen
 ## Innsbruck
-168308 = {
+168308 = { # Gundachar; Count (or margrave) of Carinthia from around 858 and prefect from 863 - https://en.wikipedia.org/wiki/Gundachar,_Margrave_of_Carinthia
 	name = "Gundakar"
 	dynasty = 100359
 	religion = "catholic"
 	culture = bavarian
+	trait = education_martial_2
+	trait = ambitious # Louis had secretly negotiated with Gundachar, however, and the latter went over with the army to the king's side in return for the appointment to Carinthia with the title of prefect
+	trait = deceitful # While preparing to attack Carloman, he reportedly told his Moravian men that he Saint Emmeram of Regensburg, on whose relics he had sworn fealty to Louis, was holding his weapons down and preventing him from raising his arms and contributing to the fight
+	trait = zealous # Compensation trait for if Gundachar was telling the truth about Saint Emmeram of Regensburg
+	trait = disloyal # He is said to have taken part in other revolts and perjuries (oath breakings)
 	839.1.1 = {
 		birth = "839.1.1"
 	}
-	
+	839.1.1 = { # In 866, Gundachar, again a vassal of Carloman, was involved in the insurrection of Louis the Younger and rebelled against Louis the German, but was defeated and nearly killed
+		trait = wounded_2
+	}
 	869.1.1 = {
 		death = "869.1.1"
 	}

@@ -6,10 +6,15 @@
  HEE_memory_supernova_1006_desc_second_perspective: "You witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on yourself"
  HEE_memory_supernova_1006_desc_third_perspective: "[owner.GetName] witnessed the extraordinary, once in a lifetime appearance of a "new star," which left a great impression on [owner.GetHerHim]"
 
- HEE_memory_earthquake_1202: "[owner.GetName] experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on [owner.GetHerHim]"
- HEE_memory_earthquake_1202_desc: "I experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on me"
- HEE_memory_earthquake_1202_desc_second_perspective: "You experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on yourself"
- HEE_memory_earthquake_1202_desc_third_perspective: "[owner.GetName] experienced a catastrophic earthquake that devestated the region of Palestine and Southern Syria, which left a great impression on [owner.GetHerHim]"
+ HEE_memory_earthquake_1202: "[owner.GetName] experienced a catastrophic earthquake that devestated the regions of Palestine and Southern Syria, which left a great impression on [owner.GetHerHim]"
+ HEE_memory_earthquake_1202_desc: "I experienced a catastrophic earthquake that devestated the regions of Palestine and Southern Syria, which left a great impression on me"
+ HEE_memory_earthquake_1202_desc_second_perspective: "You experienced a catastrophic earthquake that devestated the regions of Palestine and Southern Syria, which left a great impression on yourself"
+ HEE_memory_earthquake_1202_desc_third_perspective: "[owner.GetName] experienced a catastrophic earthquake that devestated the regions of Palestine and Southern Syria, which left a great impression on [owner.GetHerHim]"
+
+ HEE_memory_earthquake_1114: "[owner.GetName] experienced a catastrophic earthquake centered around the city of Marash that devestated the region of Northern Syria, which left a great impression on [owner.GetHerHim]"
+ HEE_memory_earthquake_1114_desc: "I experienced a catastrophic earthquake centered around the city of Marash that devestated the region of Northern Syria"
+ HEE_memory_earthquake_1114_desc_second_perspective: "You experienced a catastrophic earthquake centered around the city of Marash that devestated the region of Northern Syria, which left a great impression on yourself"
+ HEE_memory_earthquake_1114_desc_third_perspective: "[owner.GetName] experienced a catastrophic earthquake centered around the city of Marash that devestated the region of Northern Syria, which left a great impression on [owner.GetHerHim]"
 
 #Character Specific
 
@@ -316,7 +321,7 @@
 
  almuwaffaq_and_turkish_military_friendship_desc: "In February 865, Caliph al-Musta'in and two of the senior Turkish officers, Wasif and Bugha the Younger, fled from Samarra to the old Abbasid capital, Baghdad, where they could count on the support of the city's Tahirid governor, Muhammad ibn Abdallah. The Turkish army in Samarra then selected Abu Ahmad's brother al-Mu'tazz as Caliph, and Abu Ahmad was entrusted with the conduct of operations against al-Musta'in and his supporters. The ensuing siege of Baghdad lasted from February to December 865. In the end, Abu Ahmad and Muhammad ibn Abdallah reached a negotiated settlement, which would see al-Musta'in abdicate. It was most likely during this time that Abu Ahmad consolidated his relationship with the Turkish military, especially with Musa ibn Bugha, who played a crucial role during the siege. Abu Ahmad further solidified these ties when he secured a pardon for Bugha the Younger."
 
-
+ rival_historical_ludwig_rostislav: "Since 855, Rastislav of Moravia has engaged in a bloody challenge to Frankish overlordship in a bid to establish his realm's independence. For more than over a decade, Rostislav has sought to repel Frankish attacks, ally with Ludwig's less than loyal vassals, and curtail the activities of Frankish missionaries in his realm."
 
 
  eudes_and_haesteinn_grudge: "Though he was a young boy, [CHARACTER.GetShortUIName] will never forget that it was [TARGET_CHARACTER.GetShortUIName|U] and his horde of vikings that slew his father at the Battle of Brissarthe - nor will he ever forgive."

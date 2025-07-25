@@ -92,7 +92,7 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 		}
 	}
 
-	option = {
+	option = { # If Boris' relationship with Vladimir is strained, he abdicates in favor of Simeon
 		trigger = {
 			character:70383 = {
 				OR = {
@@ -104,7 +104,6 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 					has_trait = excommunicated
 				}
 			}
-
 		}
 
 		name = HEE_rise_of_simeon.0001.b
@@ -112,34 +111,44 @@ HEE_rise_of_simeon.0001 = { #Boris abdicates
 		custom_tooltip = boris_abdication_to_his_son
 
 		hidden_effect = {
-			add_trait = devoted
-			
-			character:712 = { # Give titles to Simeon
-				create_title_and_vassal_change = {
-					type = granted
-					save_scope_as = change
-					add_claim_on_loss = yes
-				}
-				every_in_list = {
-					list = boris_current_titles
-					change_title_holder_include_vassals = {
-						holder = character:712
-						change = scope:change
-					}
-				}
-				resolve_title_and_vassal_change = scope:change
-
+			character:712 = {
 				if = {
 					limit = {
 						has_trait = devoted
 					}
 					remove_trait = devoted
 				}
-
 				add_character_modifier = imperial_ambitions_modifier
 			}
 
-			set_player_character = character:712 #Simeon
+			set_designated_heir = character:712
+			depose = yes # depose_effect not used for opted abdication
+			add_trait = devoted
+			
+			#character:712 = { # Give titles to Simeon
+			#	create_title_and_vassal_change = {
+			#		type = granted
+			#		save_scope_as = change
+			#		add_claim_on_loss = yes
+			#	}
+			#	every_in_list = {
+			#		list = boris_current_titles
+			#		change_title_holder_include_vassals = {
+			#			holder = character:712
+			#			change = scope:change
+			#		}
+			#	}
+			#	resolve_title_and_vassal_change = scope:change
+
+			#	if = {
+			#		limit = {
+			#			has_trait = devoted
+			#		}
+			#		remove_trait = devoted
+			#	}
+			#}
+
+			# set_player_character = character:712 #Simeon
 		}
 		
 		ai_chance = {

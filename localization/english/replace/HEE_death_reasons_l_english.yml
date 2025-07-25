@@ -1,3 +1,3 @@
 ﻿l_english:
  death_hit_head_on_lintel_of_low_door: "died after hitting [CHARACTER.GetHerHis] head on the lintel of a low door"
- death_impaled_after_refusing_conversion: "impaled after refusing to renounce his faith during the empire-wide pogrom launched by the Byzantine empress-regent Theodora against the Paulicians"
+ death_impaled_after_refusing_conversion: "impaled after refusing to renounce his faith during the empire-wide pogrom launched by the Byzantine empress-regent [GetScriptedCharacterByHistoryID( 'Mamikonian0005' ).GetFirstNameRegnal] against the Paulicians"

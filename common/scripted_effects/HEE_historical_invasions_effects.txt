@@ -1668,26 +1668,26 @@ qarmatian_war_target_evaluation_and_declaration_effect = {
 			}
 		}
 	}
-	if = {
+	if = { # If target is Kingdom or higher, target a chunk of their realm
 		limit = {
 			exists = scope:next_invasion_target
-			NOT = {
-				scope:next_invasion_target = {
-					highest_held_title_tier = tier_empire
-				}
+			scope:next_invasion_target = {
+				highest_held_title_tier >= tier_kingdom
 			}
 		}
 		start_war = {
-			cb = tribal_subjugation_cb
+			cb = major_religious_war
 			target = scope:next_invasion_target
 			target_title = scope:next_invasion_title_target
 		}
 	}
-	if = {
-		limit = {
+	if = { # If target is Duchy or lower, take all their territory outright
+		limit = { 
 			exists = scope:next_invasion_target
-			scope:next_invasion_target = {
-				highest_held_title_tier = tier_empire
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier >= tier_kingdom
+				}
 			}
 		}
 		start_war = {
@@ -3150,5 +3150,200 @@ spawn_ziyarid_starting_troops_effect = {
 		}
 		levies = 2500
 		location = root.location
+	}
+}
+
+ziyarid_war_target_evaluation_and_declaration_effect = {
+	# Set the qarmatian leader as reference point
+	save_scope_as = lead_ziyarid
+
+	# Select a new target
+	if = { # Check if a direct neighbor is a valid war target
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				NOR = {
+					is_allied_to = scope:lead_ziyarid
+					this = scope:lead_ziyarid
+					top_liege = scope:lead_ziyarid
+					current_military_strength > scope:lead_ziyarid.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_ziyarid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = ziyarid_invasion_region
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			limit = {
+				NOR = {
+					is_allied_to = scope:lead_ziyarid
+					this = scope:lead_ziyarid
+					top_liege = scope:lead_ziyarid
+					current_military_strength > scope:lead_ziyarid.current_military_strength
+				}
+				save_temporary_scope_as = truce_check
+				NOT = {
+					scope:lead_ziyarid = {
+						any_truce_target = {
+							this = scope:truce_check
+						}
+					}
+				}
+				any_realm_province = {
+					geographical_region = ziyarid_invasion_region
+				}
+			}
+
+			save_temporary_scope_as = next_invasion_target
+
+			if = {
+				limit = {
+					scope:next_invasion_target = { highest_held_title_tier = tier_empire }
+				}
+
+				scope:lead_ziyarid.primary_title = {
+					random_neighboring_county = {
+						limit = {
+							any_in_de_jure_hierarchy = {
+								tier = tier_kingdom
+							}
+						}
+						random_in_de_jure_hierarchy = {
+							limit = { 
+								tier = tier_duchy
+								target_is_de_facto_liege_or_above = scope:next_invasion_target
+								NOT = { target_is_de_facto_liege_or_above = scope:lead_ziyarid }
+							}
+							kingdom = { save_temporary_scope_as = next_invasion_title_target }
+							debug_log = "scope:lead_ziyarid: scoped random neighboring kingdom"
+						}
+					}
+				}
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { scope:next_invasion_target = { highest_held_title_tier = tier_empire } }
+					}
+					primary_title = {
+						save_temporary_scope_as = next_invasion_title_target
+					}
+				}
+			}
+		}
+	}
+	else_if = { # if no direct neighbors are valid war targets, then check the neighbors of the neighbors
+		limit = {
+			any_neighboring_and_across_water_top_liege_realm_owner = {
+				any_neighboring_and_across_water_top_liege_realm_owner = {
+					NOR = {
+						is_allied_to = scope:lead_ziyarid
+						this = scope:lead_ziyarid
+						top_liege = scope:lead_ziyarid
+						current_military_strength > scope:lead_ziyarid.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_ziyarid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = ziyarid_invasion_region
+					}
+				}
+			}
+		}
+		random_neighboring_and_across_water_top_liege_realm_owner = {
+			random_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = {
+					NOR = {
+						is_allied_to = scope:lead_ziyarid
+						this = scope:lead_ziyarid
+						top_liege = scope:lead_ziyarid
+						current_military_strength > scope:lead_ziyarid.current_military_strength
+						highest_held_title_tier = tier_empire
+					}
+					save_temporary_scope_as = truce_check
+					NOT = {
+						scope:lead_ziyarid = {
+							any_truce_target = {
+								this = scope:truce_check
+							}
+						}
+					}
+					any_realm_province = {
+						geographical_region = ziyarid_invasion_region
+					}
+				}
+				save_temporary_scope_as = next_invasion_target
+				primary_title = {
+					save_temporary_scope_as = next_invasion_title_target
+				}
+			}
+		}
+	}
+	if = { # If target is Kingdom or higher, target a chunk of their realm
+		limit = {
+			exists = scope:next_invasion_target
+			scope:next_invasion_target = {
+				highest_held_title_tier >= tier_kingdom
+			}
+		}
+		start_war = {
+			cb = major_religious_war
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+	if = { # If target is Duchy or lower, take all their territory outright
+		limit = { 
+			exists = scope:next_invasion_target
+			NOT = {
+				scope:next_invasion_target = {
+					highest_held_title_tier >= tier_kingdom
+				}
+			}
+		}
+		start_war = {
+			cb = tribal_subjugation_cb
+			target = scope:next_invasion_target
+			target_title = scope:next_invasion_title_target
+		}
+	}
+}
+
+spawn_ziyarid_reinforcements_effect = {
+	save_scope_as = lead_ziyarid
+
+	spawn_army = {
+		uses_supply = yes
+		inheritable = no
+		name = ziyarid_event_troops
+		men_at_arms = {
+			type = zupin_warrior
+			stacks = 4
+		}
+		men_at_arms = {
+			type = ayyar
+			stacks = 2
+		}
+		men_at_arms = {
+			type = mangonel
+			stacks = 5
+		}
+		levies = 350
+		location = scope:lead_ziyarid.location
 	}
 }

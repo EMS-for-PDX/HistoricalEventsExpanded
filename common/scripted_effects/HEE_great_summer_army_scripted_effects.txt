@@ -74,28 +74,77 @@
 	
 	#Setup event troops.
 	scope:guthrum = {
-		spawn_army = {
-			uses_supply = no
-			inheritable = no
-			name = great_summer_army_event_troops
-			levies = {
-				value = 1950
+		if = {
+			limit = { has_fp1_dlc_trigger = yes }
+			spawn_army = {
+				name = great_summer_army_event_troops
+				levies = {
+					value = 500
+				}
+				men_at_arms = {
+					type = bondi
+					stacks = 5
+				}
+				men_at_arms = {
+					type = vigmen
+					stacks = 3
+				}
+				men_at_arms = {
+					type = huscarl
+					stacks = 2
+				}
+				location = province:688 #The Wash, off the coast of East Anglia
+				inheritable = no
+				uses_supply = no
 			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
+			spawn_army = {
+				name = great_summer_army_event_troops
+				levies = {
+					value = 470
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 3
+				}
+				location = province:688 #The Wash, off the coast of East Anglia
+				inheritable = no
+				uses_supply = no
 			}
-			men_at_arms = {
-				type = huscarl
-				stacks = 5
-			}
-			men_at_arms = {
-				type = mangonel
-				stacks = 5
-			}
-			location = province:688 #The Wash, off the coast of East Anglia
 		}
-		# Suppress startup error false-positive
+		## Otherwise, give him huscarls.
+		else = {
+			spawn_army = {
+				name = great_summer_army_event_troops
+				levies = {
+					value = 700
+				}
+				men_at_arms = {
+					type = bowmen
+					stacks = 5
+				}
+				men_at_arms = {
+					type = huscarl
+					stacks = 3
+				}
+				location = province:688 #The Wash, off the coast of East Anglia
+				inheritable = no
+				uses_supply = no
+			}
+			spawn_army = {
+				name = great_summer_army_event_troops
+				levies = {
+					value = 470
+				}
+				men_at_arms = {
+					type = mangonel
+					stacks = 3
+				}
+				location = province:688 #The Wash, off the coast of East Anglia
+				inheritable = no
+				uses_supply = no
+			}
+		}
+
 		if = {
 			limit = { has_variable = random_location }
 			# Do nothing.

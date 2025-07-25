@@ -213,7 +213,7 @@ hee_karling_867_effect = {
 	scope:charles_the_bald = { # Best way to represent Louis the Stammerer as King of Aquitaine without making him seperate from his father/overlord
 		if = {
 			limit = { has_ep3_dlc_trigger = yes }
-			start_diarchy = co_monarchy
+			try_start_diarchy = co_monarchy
 			set_diarch = scope:louis_the_stammerer
 			set_designated_heir = scope:louis_the_stammerer
 		}
@@ -369,6 +369,13 @@ hee_karling_867_effect = {
 	}
 	
 	character:7814 = { # Ermengarde of Italy
+		remove_claim = scope:e_carolingian_empire
+		remove_claim = scope:k_italy
+		remove_claim = scope:k_east_francia
+		remove_claim = scope:k_france
+	}
+
+	character:7907 = { # Gisela, Daughter of Louis the Pious
 		remove_claim = scope:e_carolingian_empire
 		remove_claim = scope:k_italy
 		remove_claim = scope:k_east_francia
@@ -724,10 +731,11 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
+	## Michael III X & Basil I.
 	character:70490 = {
 		if = {
 			limit = { has_ep3_dlc_trigger = yes }
-			start_diarchy = co_emperorship
+			try_start_diarchy = co_emperorship
 			set_diarch = character:1700
 			set_designated_heir_unsafe = character:1700
 		}
@@ -776,7 +784,17 @@ hee_byzantine_bulgaria_867_effect = {
 		}
 	}
 
-
+	# Cyprus in 867 is a joint holding between the Muslims and Byzantines. I will treat akin to a Republic
+	character:145127 = { # Cyprus
+		if = {
+			limit = { 
+				NOT = {
+					has_government = republic_government
+				}
+			 }
+			change_government = republic_government
+		}
+	}
 
 
 
@@ -1109,8 +1127,8 @@ hee_samarra_relations_867_effect = {
 	character:34014 = {
 		designate_diarch = character:anbari0002
 		# This is a vizierate as well, so start the diarchy manually.
-		start_diarchy = vizierate
-		# Tell Alp that he appointed Hassan so he remembers not to dismiss him.
+		try_start_diarchy = vizierate
+		# Tell al-Mutazz that he appointed Anbaru so he remembers not to dismiss him.
 		set_variable = {
 			name = my_vizier
 			value = character:anbari0002
@@ -1596,9 +1614,14 @@ hee_north_sea_867_effect = {
 	character:168650 = { save_scope_as = guthrum } # https://en.wikipedia.org/wiki/Guthrum
 	
 	character:163112 = { save_scope_as = halfdan } #
+	character:163199 = { save_scope_as = ubbe_ragnarson } #
 
 	character:163112 = { # Halfdan
 		change_government = tribal_government
+	}
+
+	scope:ubbe_ragnarson = { # Lets try and keep the Ragnar sons in the same areas as LAAMPs
+		add_character_flag = laamp_stay_same_kingdom
 	}
 
 	# Adding some prestige to the renowned Sons of Lothbrok
@@ -2242,10 +2265,10 @@ hee_paulicians_867_effect = {
 
 	character:paulician0004 = { save_scope_as = chrysocheir } # https://en.wikipedia.org/wiki/Chrysocheir
 
-
+	# Pauilicians were settled by Melitene in the No Man's Land between the Caliphate and Roman Empire.
 	title:c_satala = {
-		set_county_faith = faith:paulician
-		add_county_modifier = {
+		set_county_faith = faith:paulician # As likely the only substantial population, will make the popular faith match
+		add_county_modifier = { # The starting war is the final push for the Paulicians; give them a nice buff
 			modifier = paulicians_levied_for_war
 			years = 10
 		}
@@ -2257,21 +2280,12 @@ hee_paulicians_867_effect = {
 			years = 10
 		}
 	}
-	title:c_ablastha = {
-		set_county_faith = faith:paulician
-	}
 	title:c_lycandus = {
 		set_county_faith = faith:paulician
 		add_county_modifier = {
 			modifier = paulicians_levied_for_war
 			years = 10
 		}
-	}
-	title:c_melitene = {
-		set_county_faith = faith:paulician
-	}
-	title:c_mesopotamia = {
-		set_county_faith = faith:paulician
 	}
 
 	title:c_brysis = { save_scope_as = c_brysis }

@@ -1,0 +1,110 @@
+﻿l_english:
+
+ #HEE Michael's Murder
+ hee_great_moravia.0001.t: "The Path Forward"
+ hee_great_moravia.0001.desc: "[Rostislav_of_Moravia.GetTitledFirstName] grows ever more reckless, blinded by his distrust of the Franks and his dreams of Moravian independence. But I, Svatopluk, see the cracks widening—our defenses thin, our people weary. [Carloman_of_Bavaria.GetTitledFirstName] has shown strength and cunning, and while he is no friend, he may yet be a shield.\n\nIf I were to reach out to him, quietly, without Rastislav's knowledge… perhaps I could secure protection for my lands—and for myself. Allegiance to Carloman may sting the pride, but pride is cold comfort when the sword is at your throat. If Moravia must bow to survive, better it bow through my hand rather than from pressure from the Frankish boot. I will consider this path, dangerous though it is. There may be risk, but also power, if I play the game well..."
+ hee_great_moravia.0001.a: "I will reach out to the Franks."
+ hee_great_moravia.0001.b: "Moravia needs unity - now more than ever."
+
+ hee_great_moravia.0002.t: "An Offer from the East"
+ hee_great_moravia.0002.desc: "The envoy stood before me, dusty from the road and cautious in his tone—but his message rang clear: Svatopluk of Moravia offers me his fealty. In exchange, he asks only for peace—for his realm to be spared the weight of Frankish arms. It is a bold turn, one that speaks of unrest between him and Rastislav. I had long suspected fissures in Moravian unity, and now it seems they widen. If I accept, I gain a loyal prince in place of a stubborn rebel, and I can drive a wedge between uncle and nephew that may bring Moravia under my sway without spilling further blood. Yet trust is another matter. Svatopluk is ambitious; I see in him a younger version of myself. But if ambition can be guided—if I can keep his loyalty with reward and watchfulness—then perhaps this is the key to ending this conflict on my terms. I shall reply favorably... but cautiously."
+ hee_great_moravia.0002.a: "I shall accept [Svatopluk_I_of_Moravia.GetShortUINamePossessive] terms."
+ hee_great_moravia.0002.b: "Refuse [Svatopluk_I_of_Moravia.GetShortUINamePossessive] terms."
+
+ hee_great_moravia.0003.opening: "To [Svatopluk_I_of_Moravia.GetTitledFirstName],"
+ hee_great_moravia.0003.desc: "Your offer is received and accepted. From this day forth, you are recognized as a loyal subject of the Carolingian Crown. So long as you remain true to your oaths of fealty, no sword of mine shall rise against your lands, nor shall any Frankish hand bring harm to your people. Serve faithfully, and you shall find honor, protection, and reward under my lordship. Let this be the beginning of peace between our realms."
+ hee_great_moravia.0003.a: "A painful but necessary choice..."
+
+ hee_great_moravia.0004.t: "A Familial Betrayal"
+ hee_great_moravia.0004.desc: "Treachery. The word burns upon my tongue like bitter ash. My own blood — [Svatopluk_I_of_Moravia.GetTitledFirstName] — has turned from me, slithering behind my back into the tent of the Frankish jackal [Carloman_of_Bavaria.GetTitledFirstName]. Word has reached me of his secret pact, of oaths sworn not to Moravia, not to me, but to the very man who seeks our subjugation. I can scarcely believe it. After all I entrusted to him—land, men, title—he now dares commend himself and his realm to a foreign king? Rage swells in my chest, hot and unrelenting. This is not mere defiance; it is betrayal of the blackest kind. If he believes this will end the war, he is a fool. There will be no peace built on treachery. Not while I still draw breath."
+ hee_great_moravia.0004.a: "Treachery begets treachery..."
+ hee_great_moravia.0004.b: "[Svatopluk_I_of_Moravia.GetShortUINamePossessive] arrest will be swift!"
+ hee_great_moravia.0004.c: "[Svatopluk_I_of_Moravia.GetShortUINamePossessive] time will come, but not now..."
+
+ hee_great_moravia.0005.opening: "To my dear Nephew,"
+ hee_great_moravia.0005.desc: "You are hereby invited to a banquet at my hall. Let us break bread together as kin and rulers of this proud land. The burdens of leadership weigh heavily on us both, and I would see us speak frankly and feast in peace, as befits our blood. Come without fear, for your place at my table remains yours — so long as your heart remains true."
+ hee_great_moravia.0005.a: ""I will gladly attend.""
+ hee_great_moravia.0005.b: ""It is with great regret I must refuse.""
+
+ hee_great_moravia.0006.t: "A Whispered Warning"
+ hee_great_moravia.0006.desc: "I arrived at my uncle's hall under a grey sky, the scent of roasting meat and spiced wine wafting through the keep as [Rostislav_of_Moravia.GetShortUINamePossessive] men welcomed me with measured smiles. As I rested in my chambers before the feast, a trembling servant slipped in under cloak of shadow, eyes wide with terror. “My lord,” he whispered, "Word of your pact with the Franks has reached your uncle. If you attend the feast, you will not leave alive."\n\nMy blood boils—part rage, part fear. I had come under a banner of peace, summoned by blood and custom, but now - if this servant spoke true - I stand in the lion’s den. I must choose: confront the treachery, flee to safety, or strike first. The bonds of kinship had vanished between us. Now, only survival remained."
+ hee_great_moravia.0006.a: "Perhaps I can lay a trap of my own..."
+ hee_great_moravia.0006.b: "I shall confront [Rostislav_of_Moravia.GetTitledFirstName] directly."
+ hee_great_moravia.0006.c: "Who am I to trust the word of a servant over my own blood!?"
+
+ hee_great_moravia.0007.t: "For the Hawks"
+ hee_great_moravia.0007.desc: "Under the warmth of the afternoon sun, I ordered my men to ready the horses. The servant’s warning echoed in my thoughts—if I remained in this keep, I would not see another sunrise. As we approached the gate, a guard stepped forward, brow furrowed. “Leaving so soon, my lord?” he asked, eyeing our packed gear. I forced a calm smile. “A clear morning like this is too fine to waste indoors. We ride to the hills for hawking. My uncle knows of my fondness for the sport.” The guard hesitated, eyes narrowing as he looked between my men and me. My heart pounded beneath my cloak, but I held his gaze steadily. Seconds passed like hours. At last, he stepped aside. “Godspeed then, my lord.” As we rode beyond the walls, I dared not look back. Whether Rastislav suspects or not, I knew one thing with certainty—our days of pretending peace were over."
+ hee_great_moravia.0007.a: "To the hills!"
+ hee_great_moravia.0007.b: "Make haste to home."
+
+ hee_great_moravia.0008.t: "A Plot Revealed"
+ hee_great_moravia.0008.desc: "The steward's voice was quiet, but his words struck like thunder: “My lord, Svatopluk has departed the keep. He claims he’s gone hawking.” I set down my cup, the wine now bitter on my tongue. Hawking? With the banquet tonight? No. He knows. Somehow, the whelp has learned of my intentions—whether by loose tongue or spying ear, I cannot say. My blood ran hot, not with shame, but with fury that I had been outmaneuvered in my own hall.\n\nNow it would seem the noose tightens not around his neck, but around my own. If I am to survive, I must act swiftly. The time for plots and schemes has passed - now is the time for action. There will be no peace while [Svatopluk_I_of_Moravia.GetFirstName] draws breath."
+ hee_great_moravia.0008.a: "I must take swift action!"
+ hee_great_moravia.0008.b: "I must take deliberate action."
+
+ hee_great_moravia.0009.t: "A Trap is Sprung"
+ hee_great_moravia.0009.desc: "There he is — [Rostislav_of_Moravia.GetFirstName], my uncle, my liege, my would-be murderer — riding into the woods like a hound chasing its prey, not knowing this prey has fangs of its own. I watch from the thickets, my breath shallow, my heart steady. [Rostislav_of_Moravia.GetFirstName] thought himself cunning, sending me an invitation laced with poison and false smiles. But it is I who have drawn him out, I who have baited the trap. He comes with only a handful of men, overconfident, certain I still flee like a frightened hare. The fool. My men crouch beside me, hands on hilts, waiting for my signal. The forest is still, but in moments, it will come alive with the clash of steel and the cries of men. Let this be the hour where Moravia changes hands. No more lies, no more waiting. Tonight, the king becomes the prisoner—or the corpse. Either will do."
+ hee_great_moravia.0009.a: "NOW!"
+
+ hee_great_moravia.0010.t: "Rostislav's Future"
+ hee_great_moravia.0010.desc: "They dragged [Rostislav_of_Moravia.GetFirstName] through the mud—his hands bound, his eyes burning not with fear, but with fury. My uncle, my liege, now kneels before me in chains. How quickly the world turns. The forest still smells of blood and smoke, but here in this moment, all is quiet save for my thoughts. I have won. Rastislav’s ambitions lie shattered, yet his presence still holds weight. What am I to do with him? A cell may keep him silent, but not forgotten. Banishment might let him stir rebellion from afar. Execution—clean, final—carries the stain of kin-slaying. Or perhaps I deliver him to [Carloman_of_Bavaria.GetTitledFirstName], a token of my loyalty and proof that Moravia now speaks with a single voice. I stare down at [Rostislav_of_Moravia.GetFirstName], and I see not a man, but a question—one that demands an answer."
+ hee_great_moravia.0010.a: "My dungeon is fitting enough for the likes of you."
+ hee_great_moravia.0010.b: "You shall make a fine gift to the Franks."
+ hee_great_moravia.0010.c: "Your sentence shall be the same as you gave me: Death."
+
+ hee_great_moravia.0011.t: "An Unexpected Gift"
+ hee_great_moravia.0011.desc: "They brought him in at dusk — mud-streaked, weary, and shackled like a common brigand. [Rostislav_of_Moravia.GetTitledFirstName], the defiant thorn in my side for near a decade, now kneels in silence before my throne. I had not expected this. Svatopluk's gift is both a surprise and a statement. A nephew’s ambition, cloaked in loyalty. Does he seek to flatter me, or to remove a rival before I do? I study Rastislav—his pride still simmering beneath the bruises. Killing him would be justice, some would say, but a dead man cannot teach others the cost of rebellion. Perhaps the dungeons will better serve my purpose. Or perhaps he might be paraded before the court, his fall a lesson to all. Svatopluk plays a bold game… and now I hold its prize."
+ hee_great_moravia.0011.a: "My lord father will deliver judgement."
+ hee_great_moravia.0011.b: "We shall hold a procession in your... honor."
+ hee_great_moravia.0011.c: "My dungeon is fitting enough for the likes of you."
+ hee_great_moravia.0011.d: "Your sentence is simple - Death."
+
+ hee_great_moravia.0012.t: "Judgement"
+ hee_great_moravia.0012.desc: "They dragged him into my hall in chains — [Rostislav_of_Moravia.GetFirstName], the so-called Prince of Moravia, long my adversary and a defier of Frankish order. My son [Carloman_of_Bavaria.GetFirstName] sent him here, a gift from [Svatopluk_I_of_Moravia.GetFirstName], whose loyalties now bend in our favor. The great hall buzzes with voices—Bavarian lords, Frankish nobles, even Slavic envoys—all calling for Rastislav’s death. “Treason,” they say, and they are not wrong. For years he spurned my suzerainty, consorted with the Greeks, and stirred rebellion on my frontier. Yet as I gaze down at this once-proud ruler, now silent and bound, I weigh not just the past but the future. Shall I make an example of him to all who challenge Carolingian might? Or will mercy—public and humbling—speak louder still? The crown rests on my brow, and in this moment, so does the fate of this man."
+ hee_great_moravia.0012.a: "The Lord teaches forgiveness, and thus I forgive."
+ hee_great_moravia.0012.b: "You shall rest with your fellow vermin in my dungeon."
+ hee_great_moravia.0012.c: "The punishment is blinding."
+ hee_great_moravia.0012.d: "Your sentence is simple - Death."
+
+ #Custom Tooltips
+ reach_out_to_carlomann: "You decide to send an envoy to [Carloman_of_Bavaria.GetTitledFirstName] to attempt to open up a dialogue between you."
+ stand_by_rostislav: "Though [Rostislav_of_Moravia.GetTitledFirstName] continues to invite chaos into our land through his defiance, to go against him now only invites further discourse. Moravia needs unity to weather the challenges it faces. "
+
+ accept_svatopluks_terms: "You shall agree to make peace with [Svatopluk_I_of_Moravia.GetTitledFirstName] and offer your protection in exchange for [Svatopluk_I_of_Moravia.GetShortUINamePossessive] acceptance of your lordship over his person and his realm."
+ refuse_svatopluks_terms: "Often times an offer can be too sweet. [Svatopluk_I_of_Moravia.GetTitledFirstName] can not be trusted or controlled, thus his offer can not be accepted."
+
+ rostislav_plans_for_murder: "[Svatopluk_I_of_Moravia.GetShortUINamePossessive] treachery deserves death, and so it shall be. But to publicly take action against him brings with it the chance of open conflict. Perhaps a nice banquet would be a fitting avenue for [Svatopluk_I_of_Moravia.GetTitledFirstName] to recieve his just deserts..."
+ send_men_to_arrest_svatopluk: "I shall send men to arrest [Svatopluk_I_of_Moravia.GetTitledFirstName]. His treachery can not be permitted, but neither can underhanded tactics on my part. Thus it may be best to confront [Svatopluk_I_of_Moravia.GetTitledFirstName] and imprison him for his crimes. Though what will occur if he resists I dare not say..."
+ rostislav_bides_his_time: "Though [Svatopluk_I_of_Moravia.GetShortUINamePossessive] actions are deserving of steep punishment, now is not the time to act. It would be better to wait for the right moment for [Svatopluk_I_of_Moravia.GetTitledFirstName] to recieve his just deserts."
+
+ svatopluk_plans_his_own_trap: "[Rostislav_of_Moravia.GetShortUINamePossessive] trap remains unsprung - at least for now. Thus perhaps there is still time to lay a trap of my own. To act against [Rostislav_of_Moravia.GetTitledFirstName] here in his own keep would be foolhardy, but if I could lure him outside these walls and away from most of his men, perhaps I could turn the tables on my dear uncle."
+ svatopluk_plans_a_direct_confrontation: "The time for secret acts and underhanded deals has passed. The conflicts that divide my uncle and I must be settled - now. Tonight, I will face my uncle and may God be with me when I do."
+ svatopluk_trusts_his_uncle: "Some say family is the only one you can trust in the end. Who would trust the word of a lowly servant over their own flesh and blood? You know in your heart this servant speaks falsely, and there is nothing to fear in the banquet to come."
+
+ svatopluk_lays_a_trap_in_the_hills: "I can not leave things unsettled between my uncle and I. If I make for the hills, perhaps my uncle's temper will exceed his reason and he will follow me into a trap of my making..."
+ svatopluk_heads_home_fast: "I should not press my luck in the heart of my uncle's domain. Best I return to the comforts of my own lands before I plot my next course of action."
+
+ rostislav_gathers_his_men_to_pursue: "You will gather what men you can and ride out to pursue your nephew. [Svatopluk_I_of_Moravia.GetFirstName] can not be allowed to flee back to his domain nor to his new Frankish masters. This conflict between you and [Svatopluk_I_of_Moravia.GetFirstName] ends this day."
+ rostislav_allows_svatopluk_to_escape: "You will not allow yourself to be baited by your nephew. While [Svatopluk_I_of_Moravia.GetFirstName] flees with his tail between his legs, you will call on those truly loyal to the realm and prepare for the now inevitable civil war."
+
+ rostislav_punishment_is_imprisonment: "There is a saying that speaks to the benefit of keeping your enemies close. To have [Rostislav_of_Moravia.GetFirstName] locked away in my dungeon would allow me to keep a close eye on him - and allow me to doll out another sentence should the situation change."
+ rostislav_punishment_is_to_be_sent_to_the_franks: "To hand [Rostislav_of_Moravia.GetFirstName] over to the Franks would serve many functions - It endears me to my new allies by providing them their longtime rival, removes a key rival in Moravia, and ensures I am distanced from any popular outcry that may arise from [Rostislav_of_Moravia.GetShortUINamePossessive] eventual fate."
+ rostislav_punishment_is_death: "It is only fitting that the judgement rendered on my uncle is the same as the one he tried to rendered onto me. Death. Though my judgement will not come clouded in deceit and treachery, but delivered openly and justly. For as the Lord says in Luke: "We are punished justly, for we are receiving the due reward of our deeds.""
+
+ rostislav_punishment_is_to_be_sent_to_ludwig: "It is not for you to deliver justice to [Rostislav_of_Moravia.GetTitledFirstName] - it should fall on your father and liege [Ludwig_the_German.GetTitledFirstName]. Deferring judgement may leave a bitter taste in your mouth, but surely your father will appreciate the sight of his long-standing rival kneeling at his feet bound in chains."
+ rostislav_will_be_paraded_about: "[Rostislav_of_Moravia.GetTitledFirstName] is more than a simple prisoner; he is a trophy, a symbol. As such, it is only right he is treated as such. The former ruler should serve as a reminder to all those who oppose Frankish might that their fate lies in chains. "
+ rostislav_punishment_is_carlomann_dungeon: "[Rostislav_of_Moravia.GetFirstName] will be left to rot in your dungeon. Perhaps in time he will pass from the minds of others - maybe even your own."
+ rostislav_punishment_from_carlomann_is_death: "For over ten years, [Rostislav_of_Moravia.GetFirstName] has acted in defiance of his rightful Frankish masters, and in that time has contributed to the deaths of many good men. As such, it is only just he pay back that debt with his own life."
+
+ ludwig_judgement_freedom: "Forgiveness is a virtue, one I may be mocked or admired for - depending on how the future goes..."
+ ludwig_judgement_imprisonment: "Some say this punishment is too lenient, some say its no decision at all - I pretend it is just right."
+ ludwig_judgement_blinding: "Roman Law instructs us that the proper punishment in the case of treason is blinding - and if it worked for the Romans it will work for us."
+ ludwig_judgement_death: "Simple. Fitting. Lasting."
+
+ hee_great_moravia.all_vassals: "All [vassals|E]"
+ hee_great_moravia.just_vassals: "Just [vassals|E]"
+ hee_great_moravia.kind_hearted_courtiers_and_guests: "Kind-hearted or Just [courtiers|E] and [guests|E]"
+ hee_great_moravia.cold_hearted_courtiers_and_guests: "Cold-hearted [courtiers|E] and [guests|E]"
+ hee_great_moravia.kind_hearted_vassals: "Kind-hearted or Just [vassals|E]"
+ hee_great_moravia.cold_hearted_vassals: "Cold-hearted [vassals|E]"
+

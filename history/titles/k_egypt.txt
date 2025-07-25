@@ -421,8 +421,7 @@ d_alexandria = {
 	780.1.1 = {
 		holder = 0
 	}
-	862.1.1 = { # The rebellion of Jabir ibn al-Walid
-		liege = 0
+	866.1.1 = { # The rebellion of Jabir ibn al-Walid
 		holder = banu_mudlij0002
 	}
 	872.1.1 = {
@@ -500,7 +499,7 @@ c_alexandria = {
 	762.1.1 = {
 		holder = 210023
 	}
-	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+	866.1.1 = { # The rebellion of Jabir ibn al-Walid
 		holder = banu_mudlij0002
 	}
 	872.1.1 = {
@@ -867,7 +866,7 @@ c_al-buhaira = {
 	762.1.1 = {
 		holder = 210009
 	}
-	865.1.1 = {
+	866.3.1 = {
 		liege = "d_alexandria" # A member of the Banu Mudlij's rebellion
 		holder = ibn_alarqat0002 # ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
 	}
@@ -987,7 +986,7 @@ c_al-gharbiya = {
 	762.1.1 = {
 		holder = 210009
 	}
-	865.1.1 = {
+	866.3.1 = {
 		liege = "d_alexandria" # A member of the Banu Mudlij's rebellion
 		holder = ibn_alarqat0002 # ibn al-Arqat; A member of the Banu Mudlij's rebellion around Alexandria against the Abassid governor of Egypt. Took over most of the Delta region
 	}
@@ -1325,7 +1324,7 @@ c_giza = {
 	762.1.1 = {
 		holder = 210023
 	}
-	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+	866.1.1 = { # The rebellion of Jabir ibn al-Walid
 		holder = banu_mudlij0002
 	}
 	866.1.1 = {
@@ -1396,7 +1395,7 @@ c_fayyum = {
 	762.1.1 = {
 		holder = 210023
 	}
-	862.1.1 = { # The rebellion of Jabir ibn al-Walid
+	866.1.1 = { # The rebellion of Jabir ibn al-Walid
 		holder = banu_mudlij0002
 	}
 	866.1.1 = {

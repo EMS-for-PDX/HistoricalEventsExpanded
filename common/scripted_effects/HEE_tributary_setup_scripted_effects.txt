@@ -25,21 +25,125 @@ hee_setup_tributaries_effect = {
 # 867 Tributary Set-up
 hee_867_tributary_setup_effect = {
 
+	title:e_france.holder = { # Emperor Louis the Younger of the Carolingian Empire
+		save_scope_as = suzerain
+		title:k_papal_state.holder = { # The Pope, whose vassalage status is very murky, but will be one to allow Louis to come to Pope's aid
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
 	title:e_byzantium.holder = { # Emperor Michael III of the ERE
 		save_scope_as = suzerain
 		character:145127 = { # Cyprus; A province administered by the ERE but pays taxes to both the ERE and Abbasid Caliphate equally
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
 			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
 			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
 		}
 	}
 
 	title:e_arabia.holder = { # Caliph Al-Mutazz
 		save_scope_as = suzerain
-		character:145127 = { # Cyprus; A province administered by the ERE but pays taxes to both the ERE and Abbasid Caliphate equally
+		title:d_damascus.holder = { # Province of Damascus - largley independent due to the Anarchy
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
-			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
 			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_palestine.holder = { # Province of Palestine - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_homs.holder = { # Province of Homs - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_aleppo.holder = { # Emirate of Aleppo - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_cilicia.holder = { # Emirate of Tarsus - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_diyarmudar.holder = { # Province of Diyarmudar - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_diyarbakr.holder = { # Province of Diyarbakr - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_melitene.holder = { # Emirate of Melitene - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_azerbaijan.holder = { # Province of Azerbaijan - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:k_arminiya.holder = { # Province of Arminiya - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_cyrenaica.holder = { # Province of Cyrenacia - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_kirman.holder = { # Kirman - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:k_khorasan.holder = { # Khorasan - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:k_transoxiana.holder = { # Khorasan - largley independent due to the Anarchy
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
 		}
 	}
 
@@ -48,6 +152,7 @@ hee_867_tributary_setup_effect = {
 		character:187002 = { # King Rostislav of Great Moravia
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
 			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
 		}
 		character:187012 = { # Kocel, ruler of the Principality of Lower Pannonia (Should probably be a direct vassal, but PDX seems to dislike that setup)
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
@@ -76,6 +181,10 @@ hee_867_tributary_setup_effect = {
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
 			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
 		}
+		title:d_bohemia.holder = { # Bohemia was likely under the suzerainity of Moravia during this period
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
 	}
 
 	character:33358 = { # King Aethelred of Wessex
@@ -86,8 +195,58 @@ hee_867_tributary_setup_effect = {
 		}
 	}
 
+	character:163116 = { # Duke Mutimir of Serbia
+		save_scope_as = suzerain
+		title:c_zachlumia.holder = { # Zahumlje
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:c_travunia.holder = { # Trebinje
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
+	character:167855 = { # Duke Domagoj of Croatia
+		save_scope_as = suzerain
+		title:c_vhrbosna.holder = { # Bosnia
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
 }
 
-
+hee_1066_tributary_setup_effect = {
+	character:3040 = { # Alp Arslan
+		save_scope_as = suzerain
+		character:20743 = { # Mirdasids
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:extra_bedouins_0035 = { # Numayrid
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:3822 = { # Uqaylid
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:20738 = { # Uqaylid
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+		character:20722 = { # Rawwadid
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+		}
+	}
+}
 
 

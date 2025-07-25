@@ -84,3 +84,15 @@ war = {
  	attackers = { extra_afghanis_6 }
 	defenders = { 163101 }
 }
+
+war = { # The revolt of Jabir ibn al-Walid which lasts from 866 to 867
+ 	name = "war_867_Jabir_Revolt"
+ 	start_date = 866.1.1
+ 	end_date = 867.8.1
+	targeted_titles = {
+		c_alexandria c_al-buhaira c_fayyum c_giza c_al-gharbiya
+	}
+	casus_belli = independence_faction_war
+ 	attackers = { banu_mudlij0002 ibn_alarqat0002 }
+	defenders = { 163115 }
+}

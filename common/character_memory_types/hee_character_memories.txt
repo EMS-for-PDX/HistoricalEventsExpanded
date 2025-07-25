@@ -28,7 +28,7 @@ HEE_memory_supernova_1006 = {
 }
 
 HEE_memory_earthquake_1202 = {
-	categories = { minor positive } 
+	categories = { major negative death } 
 	icon = "_default.dds"
 	description = {
 		first_valid = {
@@ -45,6 +45,32 @@ HEE_memory_earthquake_1202 = {
 	third_perspective_description = {
 		first_valid = {
 			desc = HEE_memory_earthquake_1202_desc_third_perspective
+		}
+	}
+
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+HEE_memory_earthquake_1114 = {
+	categories = { major negative death } 
+	icon = "_default.dds"
+	description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1114_desc
+		}
+	}
+
+	second_perspective_description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1114_desc_second_perspective
+		}
+	}
+
+	third_perspective_description = {
+		first_valid = {
+			desc = HEE_memory_earthquake_1114_desc_third_perspective
 		}
 	}
 

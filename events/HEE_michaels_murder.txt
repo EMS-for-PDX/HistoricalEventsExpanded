@@ -180,7 +180,16 @@ hee_basil_rise_michael_falls.0002 = { #Michael is murdered by Basil
 			}
 
 			scope:basil = {
-				remove_character_modifier = byzantine_coemperor_modifier
+				if = {
+					limit = { has_character_modifier = byzantine_coemperor_modifier }
+					remove_character_modifier = byzantine_coemperor_modifier
+				}
+				if = {
+					limit = { has_ep3_dlc_trigger = yes }
+					try_start_diarchy = junior_emperorship
+					set_diarch = character:145133
+					set_designated_heir = character:145133
+				}
 			}
 		}
 

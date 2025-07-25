@@ -2315,7 +2315,7 @@ e_kirghiz_khanate = {
 	#867
 	840.1.2 = {
 		holder = 303238		#fictional Uzur Enisey Kyrgyz
-		government = tribal_government
+		government = nomad_government
 	}
 	871.8.19 = {
 		holder = 303239		#fictional Zhyrgal Enisey Kyrgyz
@@ -2342,6 +2342,22 @@ e_mongol_empire = {
 	}
 }
 
+e_great_liao = {
+	# Liao Dynasty
+	1040.1.1 = {
+		holder = 194332
+		government = nomad_government
+	}
+	1055.8.28 = {
+		holder = 194333
+	}
+	1101.2.12 = {
+		holder = 194334
+	}
+	1125.3.26 = {
+		holder = 0
+	}
+}
 
 e_kara_khitai = {
 	1124.1.1 = {
@@ -2944,7 +2960,7 @@ e_latin_empire = {
 k_pechenegs = {
 	#Pechenegs in the Pontic Steppe
 	901.1.1 = {
-		government = tribal_government	#Migration to Hungary.
+		government = nomad_government	#Migration to Hungary.
 		liege = 0
 	}
 	948.1.1 = {
@@ -2967,6 +2983,9 @@ k_pechenegs = {
 	}
 	1066.1.1 = {
 		holder = 20641
+		effect = {
+			set_de_jure_liege_title = title:e_caspian-pontic_steppe
+		}
 	}
 	1091.1.1 = {
 		holder = 0
@@ -4431,6 +4450,12 @@ e_caspian-pontic_steppe = {
 	1016.1.1 = {
 		holder = 0
 	}
+	1066.1.1 = {
+		holder = 806
+	}
+	1178.1.1 = {
+		holder = 228030
+	}
 }
 
 
@@ -5440,7 +5465,7 @@ k_pisa = {
 
 k_magyar = {
 	20.1.1 = {
-		government = tribal_government
+		government = nomad_government
 	}
 	764.1.1 = {
 		holder = 146214
@@ -5746,5 +5771,20 @@ e_uyghur_khanate = { # The Uyghur Khaganate (also Uyghur Empire or Uighur Khagan
 	}
 	840.1.1 = {
 		holder = 0 # Külüg Bagha and 100000 Kyrgyz forces invaded Ordu-Baliq and burned the city. Qasar and Jueluowu were killed by a Kyrgyz leader titled Ā-rè, who would take the title Qaghan. The Uyghur clans fled the region in search of refuge, and though there would be several Uyghur khans, none commanded the prestige and power of a Khaganate
+	}
+}
+
+k_naiman = {
+	1130.1.1 = {
+		holder = naiman_guchugud_5
+		de_jure_liege = e_kara_khitai
+		government = nomad_government
+	}
+	1138.1.1 = {
+		holder = naiman_guchugud_1
+	}
+	1143.1.1 = {
+		liege = 0
+		de_jure_liege = e_mongolia
 	}
 }

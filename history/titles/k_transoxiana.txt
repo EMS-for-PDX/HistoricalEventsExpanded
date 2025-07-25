@@ -2767,7 +2767,7 @@ c_uzboy = {
 	
 	850.1.1 = {
 		liege = k_oghuz_il
-		holder = yigdir0002 # The Igdir Tribe
+		holder = beğdili0002 # The Igdir Tribe; their position is an allusion to those tribe members who live currently in the Balkan velayat of Turkmenistan
 	}
 	1066.1.1 = {
 		holder = 302679	#placeholder Kemal Khori
@@ -2817,9 +2817,8 @@ c_nebit_dag = {
 		government = tribal_government
 	}
 	
-	867.1.1 = {
-		liege = "d_khorezm"
-		holder = 302678 # placeholder Kaytun Khori
+	850.1.1 = {
+		holder = salur0003 # The Salur tribe; their position alludes to their territory within Turkmenistan
 	}
 	1066.1.1 = {
 		holder = 302679	#placeholder Kemal Khori

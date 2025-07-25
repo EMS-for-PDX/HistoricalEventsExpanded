@@ -1,0 +1,1438 @@
+﻿namespace = hee_great_moravia
+
+hee_great_moravia.0001 = { # Svatopluk I of Moravia considers initiating negotiations with Carloman of Bavaria
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0001.t
+	desc = hee_great_moravia.0001.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:Carloman_of_Bavaria
+		animation = schadenfreude
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0001.a
+
+		custom_tooltip = reach_out_to_carlomann
+
+		hidden_effect = {
+
+
+		}
+
+			scope:Carloman_of_Bavaria = {
+				trigger_event = {
+					id = hee_great_moravia.0002
+					days = { 15 35 } #~1 month
+				}
+			}
+
+		stress_impact = {
+			arrogant = minor_stress_impact_gain
+			brave = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+			craven = minor_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0001.b
+		
+		custom_tooltip = stand_by_rostislav #ahistorical option
+
+		stress_impact = {
+			brave = minor_stress_impact_loss
+			craven = minor_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0002 = { # Carloman of Bavaria recieves an envoy from Svatopluk I of Moravia, seeking an end to the hosilities between their realms
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0002.t
+	desc = hee_great_moravia.0002.desc
+	theme = diplomacy # Change
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:Svatopluk_I_of_Moravia
+		animation = schadenfreude
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		#is_at_war = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0002
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0002.a
+
+		custom_tooltip = accept_svatopluks_terms
+
+		scope:Svatopluk_I_of_Moravia = {
+			trigger_event = {
+				id = hee_great_moravia.0003
+				days = { 15 35 } #~1 month
+			}
+		}
+
+		scope:Rostislav_of_Moravia = {
+			trigger_event = {
+				id = hee_great_moravia.0004
+				days = { 15 35 } #~1 month
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0002.b
+		
+		custom_tooltip = refuse_svatopluks_terms #ahistorical option
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0003 = { # Svatopluk recieves word of Carloman's acceptance
+	type = letter_event
+	opening = {
+		desc = hee_great_moravia.0003.opening
+	}
+	desc = hee_great_moravia.0003.desc
+	sender = scope:Carloman_of_Bavaria
+	
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0003.a
+
+		add_truce_both_ways = {
+			character = scope:Carloman_of_Bavaria
+			days = 18250 # 50 years
+			name = carlomann_svatopluk_truce_desc
+		}
+	}
+}
+
+hee_great_moravia.0004 = { # Rostislav of Moravia hears of the secret talks between Svatopluk and Carlomann
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0004.t
+	desc = hee_great_moravia.0004.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = personality_vengeful
+	}
+	right_portrait = {
+		character = scope:Svatopluk_I_of_Moravia
+		animation = schadenfreude
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0004
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0004.a
+
+		custom_tooltip = rostislav_plans_for_murder
+
+		scope:Svatopluk_I_of_Moravia = {
+			trigger_event = {
+				id = hee_great_moravia.0005
+				days = { 4 6 } #~1 week
+			}
+		}
+
+		stress_impact = {
+			honest = medium_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+			arbitrary = minor_stress_impact_loss
+			deceitful = minor_stress_impact_loss
+			craven = minor_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0004.b
+		
+		custom_tooltip = send_men_to_arrest_svatopluk #ahistorical option
+
+		hidden_effect = {
+			duel = {
+				target = scope:Svatopluk_I_of_Moravia
+				skill = prowess
+				10 = {
+					compare_modifier = {
+						value = scope:duel_value
+					}
+					add_dread = major_dread_gain
+					imprison_character_effect = {
+						TARGET = scope:Svatopluk_I_of_Moravia
+						IMPRISONER = root
+					}
+				}
+				10 = {
+					scope:Svatopluk_I_of_Moravia = {
+						#If target is count or higher, start war.
+						if = {
+							limit = {
+								is_landed = yes
+								primary_title.tier > tier_barony
+							}
+							if = {
+								limit = {
+									is_a_faction_member = yes
+									liege = scope:actor
+									joined_faction = {
+										faction_target = scope:actor
+										NOT = { faction_is_type = populist_faction }
+									}
+								}
+								joined_faction = {
+									save_scope_as = retaliating_faction # For loc
+									imprisonment_retribution_start_faction_war_if_valid = yes
+								}
+							}
+							else = {
+								war_for_imprison_effect = yes
+							}
+						}
+						#If target is a baron or unlanded, have them escape.
+						else_if = {
+							limit = { is_landed = yes }
+							depose_effect = { DEPOSER = root }
+						}
+						else = { move_to_pool = yes }
+					}
+				}
+			}
+		}
+
+		stress_impact = {
+			deceitful = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_gain
+			honest = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0004.c
+		
+		custom_tooltip = rostislav_bides_his_time #ahistorical option
+
+		stress_impact = {
+			wrathful = major_stress_impact_gain
+			arrogant = major_stress_impact_gain
+			arbitrary = major_stress_impact_gain
+			calm = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0005 = { # Svatopluk recieves an invite from Rostislav to attend a banquet
+	type = letter_event
+	opening = {
+		desc = hee_great_moravia.0005.opening
+	}
+	desc = hee_great_moravia.0005.desc
+	sender = scope:Rostislav_of_Moravia
+	
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		is_imprisoned = no
+	}
+
+	immediate = {
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0005.a
+
+		scope:Rostislav_of_Moravia = {
+			add_opinion = {
+				target = scope:Svatopluk_I_of_Moravia
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		start_travel_plan = {
+            destination = title:b_brno.title_province
+            return_trip = yes
+            players_use_planner = no # Change later?
+            #companion = scope:companion1
+            #companion = scope:companion2
+            #companion = scope:companion3
+            on_arrival_event = hee_great_moravia.0006
+            on_arrival_destinations = all_but_last
+        }
+	}
+	option = {
+		name = hee_great_moravia.0005.b
+
+		scope:Rostislav_of_Moravia = {
+			add_opinion = {
+				target = scope:Svatopluk_I_of_Moravia
+				modifier = insult_opinion
+				opinion = -20
+			}
+		}
+	}
+}
+
+hee_great_moravia.0006 = { # Svatopluk is warned of Rostislav's impending treachery
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0006.t
+	desc = hee_great_moravia.0006.desc
+	theme = intrigue
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:servant
+		animation = personality_coward
+		hide_info = yes # Random servant who doesnt matter
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0006
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			create_character = {
+				template = servant_character
+				dynasty = none
+				location = scope:Rostislav_of_Moravia.capital_province
+				gender_female_chance = root_soldier_female_chance
+				save_scope_as = servant
+			}
+		}
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0006.a
+
+		custom_tooltip = svatopluk_plans_his_own_trap
+
+		trigger_event = {
+			id = hee_great_moravia.0007
+		}
+
+		stress_impact = {
+			honest = medium_stress_impact_gain
+			forgiving = medium_stress_impact_gain
+			forgiving = minor_stress_impact_gain
+			arbitrary = minor_stress_impact_loss
+			deceitful = minor_stress_impact_loss
+			craven = minor_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0006.b
+		
+		custom_tooltip = svatopluk_plans_a_direct_confrontation #ahistorical option
+
+		stress_impact = {
+			deceitful = medium_stress_impact_gain
+			arbitrary = medium_stress_impact_gain
+			honest = medium_stress_impact_loss
+			diligent = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0006.c
+		
+		custom_tooltip = svatopluk_trusts_his_uncle #ahistorical option
+
+		stress_impact = {
+			wrathful = major_stress_impact_gain
+			arrogant = major_stress_impact_gain
+			arbitrary = major_stress_impact_gain
+			calm = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0007 = { # Svatopluk flees Rostislav's keep by pretending to go hawking
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0007.t
+	desc = hee_great_moravia.0007.desc
+	theme = intrigue
+	override_background = { reference = market_west }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:servant
+		animation = personality_bold
+		outfit_tags = { military_outfit }
+		hide_info = yes # Random guard who doesnt matter
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0007
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+
+		hidden_effect = {
+			create_character = {
+				template = new_warrior_character
+				dynasty = none
+				location = scope:Rostislav_of_Moravia.capital_province
+				gender_female_chance = root_soldier_female_chance
+				save_scope_as = servant
+			}
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0007.a
+
+		custom_tooltip = svatopluk_lays_a_trap_in_the_hills
+
+		scope:Rostislav_of_Moravia = {
+			trigger_event = {
+				id = hee_great_moravia.0008
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0007.b
+		
+		custom_tooltip = svatopluk_heads_home_fast #ahistorical option
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0008 = { # Rostislav hears of Svatopluk's escape
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0008.t
+	desc = hee_great_moravia.0008.desc
+	theme = intrigue
+	override_background = { reference = council_chamber }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:servant
+		animation = personality_bold
+		outfit_tags = { military_outfit }
+		hide_info = yes # Random guard who doesnt matter
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0008
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+
+		hidden_effect = {
+			create_character = {
+				template = new_warrior_character
+				dynasty = none
+				location = scope:Rostislav_of_Moravia.capital_province
+				gender_female_chance = root_soldier_female_chance
+				save_scope_as = servant
+			}
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0008.a
+
+		custom_tooltip = rostislav_gathers_his_men_to_pursue
+
+		scope:Svatopluk_I_of_Moravia = {
+			trigger_event = {
+				id = hee_great_moravia.0009
+			}
+		}
+
+		stress_impact = {
+			wrathful = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+			craven = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0008.b
+		
+		custom_tooltip = rostislav_allows_svatopluk_to_escape #ahistorical option
+
+		stress_impact = {
+			wrathful = major_stress_impact_gain
+			arrogant = major_stress_impact_gain
+			arbitrary = major_stress_impact_gain
+			calm = medium_stress_impact_loss
+			diligent = medium_stress_impact_loss
+			craven = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0009 = { # Svatopluk, pursued by his uncle, considers springing the trap on his uncle
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0009.t
+	desc = hee_great_moravia.0009.desc
+	theme = battle
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = scope:Rostislav_of_Moravia
+		animation = horse_sword_shield
+		camera = camera_event_horse_right_facing_left
+		outfit_tags = { military_outfit }
+	}
+	right_portrait = {
+		character = root
+		animation = horse_surveying
+		camera = camera_event_horse_right
+		outfit_tags = { military_outfit }
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0009
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0009.a
+
+		# custom_tooltip = rostislav_gathers_his_men_to_pursue
+
+			duel = {
+				target = scope:Rostislav_of_Moravia
+				skills = { martial prowess }
+				15 = { # Like history, Rostislav is captured
+					compare_modifier = {
+						value = scope:duel_value
+					}
+					imprison_character_effect = {
+						TARGET = scope:Rostislav_of_Moravia
+						IMPRISONER = root
+					}
+
+					trigger_event = {
+						id = hee_great_moravia.0010
+					}
+
+				}
+				3 = { # In the melee, Rostislav falls
+					scope:Rostislav_of_Moravia = {
+						death = {
+							death_reason = death_battle
+							killer = root
+						}
+					}
+					add_dread = major_dread_gain
+				}
+				2 = { # Somehow, Rostislav turns the tables
+					scope:Rostislav_of_Moravia = {
+						imprison_character_effect = {
+							TARGET = root
+							IMPRISONER = scope:Rostislav_of_Moravia
+						}
+						add_dread = major_dread_gain
+					}
+				}
+			}
+
+		stress_impact = {
+			ambitious = minor_stress_impact_loss
+			brave = minor_stress_impact_loss
+			craven = major_stress_impact_gain
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+hee_great_moravia.0010 = { # Svatopluk, having captured his uncle, considers what to do now with Rostislav
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0010.t
+	desc = hee_great_moravia.0010.desc
+	theme = hostage
+	override_background = { reference = terrain_scope }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+		outfit_tags = { military_outfit }
+	}
+	right_portrait = {
+		character = scope:Rostislav_of_Moravia
+		animation = prisonhouse
+		override_imprisonment_visuals = yes
+		outfit_tags = { military_outfit }
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0010
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+	}
+
+	option = {
+		name = hee_great_moravia.0010.a
+
+		custom_tooltip = rostislav_punishment_is_imprisonment
+
+		scope:Rostislav_of_Moravia = { change_prison_type = dungeon }
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0010.b
+
+		custom_tooltip = rostislav_punishment_is_to_be_sent_to_the_franks
+
+		hidden_effect = {
+			scope:Rostislav_of_Moravia = { release_from_prison = yes }
+		}
+		scope:Carloman_of_Bavaria = {
+			imprison = {
+				target = scope:Rostislav_of_Moravia
+				type = house_arrest
+			}
+			add_opinion = {
+				target = scope:Svatopluk_I_of_Moravia
+				modifier = pleased_opinion
+				opinion = 20
+			}
+		}
+		hidden_effect = {
+			scope:Rostislav_of_Moravia = { change_prison_type = dungeon }
+		}
+
+		scope:Carloman_of_Bavaria = {
+			trigger_event = {
+				id = hee_great_moravia.0011
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0010.c
+
+		custom_tooltip = rostislav_punishment_is_death
+
+		scope:Rostislav_of_Moravia = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		add_dread = major_dread_gain
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0011 = { # Carlomann has Rostislav brought to him as a captive
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0011.t
+	desc = hee_great_moravia.0011.desc
+	theme = hostage
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:Rostislav_of_Moravia
+		animation = prisonhouse
+		override_imprisonment_visuals = yes
+		outfit_tags = { beggar_rags }
+	}
+
+	trigger = {
+		character:187002 = { is_alive = yes } # Rostislav should be alive
+		title:k_moravia.holder = { this = character:187002 } # Rostislav should be King of Great Moravia
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0011
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+
+		character:90107 = { save_scope_as = Ludwig_the_German }
+	}
+
+	option = {
+		name = hee_great_moravia.0011.a
+
+		trigger = {
+			AND = {
+				scope:Ludwig_the_German = { is_alive = yes } # Ludwig should be alive
+				title:k_east_francia.holder = { this = scope:Ludwig_the_German } # Ludwig should be King of East Francia
+				target_is_liege_or_above = scope:Ludwig_the_German # Karlmann should be vassal to his father
+			}
+		}
+
+		custom_tooltip = rostislav_punishment_is_to_be_sent_to_ludwig
+
+		hidden_effect = {
+			scope:Rostislav_of_Moravia = { release_from_prison = yes }
+		}
+		scope:Ludwig_the_German = {
+			imprison = {
+				target = scope:Rostislav_of_Moravia
+				type = house_arrest
+			}
+			add_opinion = {
+				target = scope:Carloman_of_Bavaria
+				modifier = pleased_opinion
+				opinion = 20
+			}
+		}
+		hidden_effect = {
+			scope:Rostislav_of_Moravia = { change_prison_type = dungeon }
+		}
+
+		scope:Ludwig_the_German = {
+			trigger_event = {
+				id = hee_great_moravia.0012
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0011.b
+
+		custom_tooltip = rostislav_will_be_paraded_about
+
+		add_prestige = major_prestige_gain
+
+		every_vassal = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_vassals
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -15
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+					has_trait = cynical
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_courtiers_and_guests
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -15
+			}
+		}
+
+		scope:Carloman_of_Bavaria.culture = {
+			change_cultural_acceptance = {
+				target = scope:Rostislav_of_Moravia.culture
+				value = -1
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0011.c
+
+		custom_tooltip = rostislav_punishment_is_carlomann_dungeon
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = hee_great_moravia.0011.d
+
+		custom_tooltip = rostislav_punishment_from_carlomann_is_death
+
+		scope:Rostislav_of_Moravia = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+
+		add_dread = major_dread_gain
+
+		every_vassal = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_vassals
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -25
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+					has_trait = cynical
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_courtiers_and_guests
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -25
+			}
+		}
+
+		scope:Carloman_of_Bavaria.culture = {
+			change_cultural_acceptance = {
+				target = scope:Rostislav_of_Moravia.culture
+				value = -2
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+hee_great_moravia.0012 = { # King Ludwig recieves a captive Rostislav - and decides his fate
+	type = character_event
+	window = big_event_window
+	title = hee_great_moravia.0012.t
+	desc = hee_great_moravia.0012.desc
+	theme = hostage
+	override_background = { reference = throne_room }
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:Rostislav_of_Moravia
+		animation = prisonhouse
+		override_imprisonment_visuals = yes
+		outfit_tags = { beggar_rags }
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = hee_great_moravia.0012
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+
+		character:42018 = { save_scope_as = Carloman_of_Bavaria }
+		
+		character:187002 = { save_scope_as = Rostislav_of_Moravia }
+
+		character:187003 = { save_scope_as = Svatopluk_I_of_Moravia }
+
+		character:90107 = { save_scope_as = Ludwig_the_German }
+	}
+
+	option = { # Freedom
+		name = hee_great_moravia.0012.a
+
+		custom_tooltip = ludwig_judgement_freedom
+
+		scope:Rostislav_of_Moravia = { 
+			release_from_prison = yes 
+
+			add_opinion = {
+				target = scope:Ludwig_the_German
+				modifier = grateful_opinion
+				opinion = 25
+			}		
+		}
+
+		every_vassal = {
+			custom = hee_great_moravia.all_vassals
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -10
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Imprisonment
+		name = hee_great_moravia.0012.b
+
+		custom_tooltip = ludwig_judgement_imprisonment
+
+		every_vassal = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_vassals
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_courtiers_and_guests
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		scope:Carloman_of_Bavaria.culture = {
+			change_cultural_acceptance = {
+				target = scope:Rostislav_of_Moravia.culture
+				value = -1
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Blinding
+		name = hee_great_moravia.0012.c
+
+		custom_tooltip = ludwig_judgement_blinding
+
+		scope:Rostislav_of_Moravia = { # Blinding not done via normal effects to avoid prison release
+			if = {
+				limit = { scope:actor = { is_ai = no } }
+				add_trait_force_tooltip = blind #This is because we want to show a blinded portrait it prison.1020 for players, then we add the trait in the immediate but we still want a tooltip
+			}
+			else = {
+				add_trait = blind
+			}
+
+			add_character_modifier = {
+				modifier = recently_blinded
+				years = 1
+			}
+
+			random = {
+				chance = 5
+				add_trait = lunatic_1
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						has_trait = craven
+						has_trait = brave
+					}
+				}
+				add_stress = major_stress_impact_gain
+			}
+			else = {
+				stress_impact = {
+					craven = massive_stress_gain
+					brave = medium_stress_impact_gain
+				}
+			}
+
+			if = { # Remove the flag blocking other prison interactions
+				limit = { has_character_flag = is_being_tortured }
+				remove_character_flag = is_being_tortured
+			}
+		}
+
+		add_dread = minor_dread_gain
+
+		every_vassal = {
+			limit = {
+				OR = {
+					has_trait = just
+					ai_rationality >= 0.5
+				}
+			}
+			custom = hee_great_moravia.just_vassals
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Execution
+		name = hee_great_moravia.0012.d
+
+		custom_tooltip = ludwig_judgement_death
+
+		scope:Rostislav_of_Moravia = {
+			death = {
+				death_reason = death_execution
+				killer = root
+			}
+		}
+		add_dread = major_dread_gain
+
+		every_vassal = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_vassals
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -25
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				OR = { 
+					has_trait = compassionate 
+					has_trait = just
+					has_trait = forgiving
+				}
+			}
+			custom = hee_great_moravia.kind_hearted_courtiers_and_guests
+			add_opinion = {
+				target = root
+				modifier = disgusted_opinion
+				opinion = -25
+			}
+		}
+
+		scope:Carloman_of_Bavaria.culture = {
+			change_cultural_acceptance = {
+				target = scope:Rostislav_of_Moravia.culture
+				value = -2
+			}
+		}
+
+		stress_impact = {
+			callous = minor_stress_impact_loss
+			sadistic = minor_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

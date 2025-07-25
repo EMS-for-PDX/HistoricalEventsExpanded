@@ -97,4 +97,12 @@ HEE_mardavij_uprising.0003 = {
 			}
 		}
 	}
+
+	#Launch Story Cycle for Mardavij's Conquests (if AI)
+	if = { 
+		limit = { scope:Mardavij = { is_ai = yes } } # Only AI is governed by Story Cycle
+		scope:Mardavij = {
+			create_story = story_ziyarid_expansion
+		}
+	}
 }

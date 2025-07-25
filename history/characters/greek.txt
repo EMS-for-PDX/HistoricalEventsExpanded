@@ -1137,7 +1137,7 @@
 	trait = intellect_good_1 # was a very intelligent young man with a large range of interests
 	trait = beauty_bad_1 # Constantine's youth had been a sad one due to his unpleasant appearance
 	trait = scholar
-	trait = diplomat # Constantine's youth had been a sad one due to his unpleasant appearance
+	trait = diplomat
 	trait = born_in_the_purple
 	trait = legitimized_bastard # an illegitimate son of Leo VI before an uncanonical fourth marriage
 	father = 1702
@@ -1543,6 +1543,29 @@
 	}
 	1050.1.1 = {
 		add_spouse = 1733
+	}
+	1059.11.23 = {
+		health = 2.5
+		trait = infirm # Already old and unhealthy when he came to power
+	}
+	1065.1.1 = {
+		effect = { # Konstantinos X was an academic, addicted to endless debates about philosophy and theology
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_learning_lifestyle_perk_points = -10
+			add_perk = pedagogy_perk
+			add_perk = open_minded_perk
+			add_perk = apostate_perk
+			add_perk = scientific_perk
+			add_perk = planned_cultivation_perk
+			add_perk = scholarly_circles_perk
+			add_perk = learn_on_the_job_perk
+			add_perk = sanctioned_loopholes_perk
+			add_perk = scholar_perk
+			add_trait = scholar
+			add_piety = 750
+			add_piety_level = 1
+		}
 	}
 	1067.5.22 = {
 		death = {
@@ -9493,7 +9516,6 @@
 	trait = lifestyle_reveler # A more balanced view on the accusations of the debauchery the Makedon sources accuse Michael of
 	trait = lifestyle_hunter # Skylitzes writes of Michael participating in several hunts 
 	trait = education_martial_3 # The impression gained from Arab sources is one of Michael as an active and often successful military commander
-	trait = flexible_leader # Lead wars in Bulgaria, the Peloponnese, Anatolia, and Syria
 	trait = born_in_the_purple
 	father = 70491
 	mother = Mamikonian0005

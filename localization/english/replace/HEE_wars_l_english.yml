@@ -78,6 +78,8 @@
 
  treaty_of_orbe_truce_desc: "\nFollowing the death of the Emperor Lothaire, the sons of the Emperor - Louis II of Italy, Lothaire II of Lotharingia, and Charles of Provence - fought for a short time over the division of their father's land. However this conflict was brought to an end in October 856 at Orbe, where the three brothers reached a final settlement and agreed to make peace with one another. And though Charles has since passed, the remaining brothers continue to keep the peace between them."
 
+ carlomann_svatopluk_truce_desc: "\nSometime around 869, Svatopluk I of Moravia entered into clandestine negotiations with Carloman of Bavaria and agreed to accept Carloman's lordship over his person and his realm. Likely done to avoid another wave of Frankish attacks, this action by Svatopluk was not well recieved by his relative and De Jure liege Rostislav of Moravia."
+
  # Event Troops
  great_summer_army_event_troops: "Great Summer Army"
  

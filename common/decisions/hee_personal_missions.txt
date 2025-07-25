@@ -62,6 +62,7 @@ reassert_roman_power_west_decision = {
                         value >= high_positive_opinion
                     }
                     is_allied_to = root # Roman Ally
+					is_tributary = yes # Roman Tributary
                     has_relation_lover = root # Lover
                     has_relation_friend = root # Friend
                     has_relation_best_friend = root # Best Friend
@@ -79,11 +80,23 @@ reassert_roman_power_west_decision = {
 
 	effect = {
 		save_scope_as = founder
+
 		show_as_tooltip = {
 			reassert_roman_power_west_decision_scripted_effect = yes # HAVE TO MAKE
 		}
 		trigger_event = {
 			id =  reassert_roman_power_west_decision_event.0001 # HAVE TO MAKE
+		}
+		hidden_effect = {
+			reassert_roman_power_west_decision_scripted_effect = yes
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_reasserted_roman_power_in_west # DO WE HAVE TO MAKE THESE?
+			}
+			set_global_variable = {
+				name = flag_reasserted_roman_power_in_west
+				value = root
+			}
 		}
 	}
 
@@ -127,7 +140,7 @@ islamic_arminiya_decision = {
 		NOT = {	#You can only do it once.
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_islamic_arminiya
+				target = flag:flag_islamic_arminiya_established
 			}
 		}
 	}
@@ -157,19 +170,19 @@ islamic_arminiya_decision = {
 	effect = {
 		save_scope_as = founder
 		show_as_tooltip = {
-			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+			islamic_arminiya_decision_scripted_effect = yes # HAVE TO MAKE
 		}
 		trigger_event = {
 			id =  DE_decision_event.0001 # HAVE TO MAKE
 		}
 		hidden_effect = {
-			found_kingdom_of_oman_scripted_effect = yes
+			islamic_arminiya_decision_scripted_effect = yes
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+				target = flag:flag_islamic_arminiya_established # DO WE HAVE TO MAKE THESE?
 			}
 			set_global_variable = {
-				name = flag_founded_kingdom_of_oman
+				name = flag_islamic_arminiya_established
 				value = root
 			}
 		}
@@ -196,7 +209,7 @@ islamic_arminiya_decision = {
 
 mediterranean_foothold_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_destiny_goal.dds"
+		reference = "gfx/interface/illustrations/event_scenes/fp1_ocean.dds"
 	}
 	decision_group_type = major
 	ai_check_interval = 36
@@ -258,19 +271,19 @@ mediterranean_foothold_decision = {
 	effect = {
 		save_scope_as = founder
 		show_as_tooltip = {
-			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+			mediterranean_foothold_decision_scripted_effect = yes # HAVE TO MAKE
 		}
 		trigger_event = {
 			id =  DE_decision_event.0001 # HAVE TO MAKE
 		}
 		hidden_effect = {
-			found_kingdom_of_oman_scripted_effect = yes
+			mediterranean_foothold_decision_scripted_effect = yes
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+				target = flag:flag_aghlabid_foothold_established
 			}
 			set_global_variable = {
-				name = flag_founded_kingdom_of_oman
+				name = flag_aghlabid_foothold_established
 				value = root
 			}
 		}
@@ -294,7 +307,7 @@ mediterranean_foothold_decision = {
 
 #############################################################################
 # Unify England       	   													#
-# Personal Mission for Alfred of Wessex (annd other Anglo-saxon Kings)      #
+# Personal Mission for Alfred of Wessex (and other Anglo-saxon Kings)      #
 #############################################################################
 
 unify_england_decision = {
@@ -309,7 +322,7 @@ unify_england_decision = {
 
 	is_shown = {
 		OR = { # Must be one of the Heptarchy
-			primary_title = title:k_england
+			primary_title = title:k_england # In case the Danelaw decision was taken
 			primary_title = title:k_wessex
 			primary_title = title:k_mercia
 			primary_title = title:k_east_anglia
@@ -355,19 +368,19 @@ unify_england_decision = {
 	effect = {
 		save_scope_as = founder
 		show_as_tooltip = {
-			found_kingdom_of_oman_scripted_effect = yes # HAVE TO MAKE
+			unify_england_decision_scripted_effect = yes
 		}
 		trigger_event = {
 			id =  DE_decision_event.0001 # HAVE TO MAKE
 		}
 		hidden_effect = {
-			found_kingdom_of_oman_scripted_effect = yes
+			unify_england_decision_scripted_effect = yes
 			add_to_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_founded_kingdom_of_oman # DO WE HAVE TO MAKE THESE?
+				target = flag:flag_england_unified
 			}
 			set_global_variable = {
-				name = flag_founded_kingdom_of_oman
+				name = flag_england_unified
 				value = root
 			}
 		}
@@ -410,13 +423,16 @@ form_bulgarian_empire_decision = {
 		has_culture = culture:bulgarian	
 		exists = capital_province
 		capital_province = { geographical_region = custom_south_slavia } #Will not be visible unless you are based in South Slavia.
-		primary_title = title:e_bulgarian_principality
 		NOT = {  #Can only do it once.
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
 				target = flag:form_bulgarian_empire_decision
 			}
-		}			
+		}
+		OR = {
+			has_title = title:k_bulgaria		
+			has_title = title:e_bulgarian_principality
+		}
 	}	
 
 	is_valid = {
@@ -430,21 +446,19 @@ form_bulgarian_empire_decision = {
 		religion = religion:christianity_religion
 		
 		#You must rule Bulgaria
-
-		primary_title = title:e_bulgarian_principality
+		OR = {
+			primary_title = { this = title:e_bulgarian_principality}
+			primary_title = { this = title:k_bulgaria}
+		}
+		
 		completely_controls = title:k_bulgaria
 
 		trigger_if = {
 			limit = { exists = title:e_byzantium }
 			OR = { 
-				title:e_byzantium.holder = { # And they have to actually like you enough to want to invest you.
-					opinion = {
-						target = root
-						value >= high_positive_opinion
-					}
-				}
 				root = { has_strong_usable_hook = title:e_byzantium.holder }	# Or you have a strong hook on them that you can actually use.
 				root = { has_weak_hook = title:e_byzantium.holder }	# Or a regular hook, to be fair, provided you meet the other criteria.
+				title:e_byzantium.holder = { is_tributary = yes } # Establishing military dominance is a viable way (as proven by Simeon of Bulgaria) 
 			}
 		}
 
@@ -459,6 +473,7 @@ form_bulgarian_empire_decision = {
 				}
 				root = { has_strong_usable_hook = faith.religious_head }	# Or you have a strong hook on them that you can actually use.
 				root = { has_weak_hook = faith.religious_head }	# Or a regular hook, to be fair, provided you meet the other criteria.
+				faith.religious_head = { is_tributary = yes }
 			}
 		}
 	}

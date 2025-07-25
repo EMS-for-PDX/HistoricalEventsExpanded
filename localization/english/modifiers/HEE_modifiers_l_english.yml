@@ -1,6 +1,9 @@
 ﻿l_english:
 
  #Special Traits HEE
+ charles_exotic_camels_modifier: "Exotic Camels"
+ charles_exotic_camels_modifier_desc: "This character has received exotic goods and animals — including camels — from a diplomatic delegation."
+
  alfred_annointed_by_the_pope: "Annointed by the Pope"
  alfred_annointed_by_the_pope_desc: "In 853, Alfred is reported by the Anglo-Saxon Chronicle to have been sent to Rome where he was confirmed by Pope Leo IV, who "anointed him as king". Possibly an anticipatory coronation in preparation for his eventual succession to the throne of Wessex, Alfred has nonetheless been recognized by the Holy Father as one of God's representatives on earth."
 
@@ -55,6 +58,15 @@
  armies_engaged_in_the_south_modifier: "Armies engaged in the South"
  armies_engaged_in_the_south_modifier_desc: "Having sent a number of his forces to Southern Italy to garrison key forts, Louis has fewer troops readily at his disposal to call upon"
 
+ inspiring_roman_commander_modifier: "Bringer of Victory"
+ inspiring_roman_commander_modifier_desc: "Having lead their troops to many victories, this character serves as inspiration to all who follow them."
+
+ terror_of_the_tyrrhenian_modifier: "Terror of the Tyrrhenian"
+ terror_of_the_tyrrhenian_modifier_desc: "This character is famed, and feared, for having taken control over the central Mediterranean sea and the trade that flows through it."
+
+
+
+
  ## County ##
  867_ragusan_siege_preparations: "Strengthened Fortifications"
  867_ragusan_siege_preparations_desc: "In anticipation of an Aghlabid attack on their city, the Ragusans strengthened their city's fortifications to the best of their abilities - which has allowed them to endure for far longer than other cities raided by the Muslim corsairs"
@@ -64,6 +76,9 @@
 
  1202_syria_earthquake_tremor_modifier: "Tremors from the 1202 Syrian Earthquake"
  1202_syria_earthquake_tremor_modifier_desc: "The 1202 Syrian Earthquake must have felt like an apocalyptic event for those who experienced it. Striking at about dawn on 20 May 1202 with an epicenter in southwestern Syria, the earthquake is estimated to have killed around 30,000 people while heavily damaging cities and towns across the region - most notably Tyre, Acre and Nablus. And though the quake occured in Palastine, tremors were recorded from Sicily in the west to Azerbaijan in the east and from Constantinople in the north to Aswan in the south. It was these tremors that have shaken the earth, frighting the local populace who view them as a sign that troubled times may be approaching."
+
+ 1114_marash_earthquake_epicenter_modifier: "Aftermath of the 1114 Marash earthquake"
+ 1114_marash_earthquake_epicenter_modifier_desc: "The 1114 Marash Earthquake, named after one of the worst affected cities, was a powerful and destructive seismic event that devastated a wide swath of northern Syria and southeastern Anatolia on November 29, 1114. The quake caused extensive destruction to cities and fortresses as well as lead to a significant loss of life. Chroniclers of the time, both Christian and Muslim, recorded the quake as one of the most severe in living memory, highlighting the deep psychological and political impact it had on local populations and rulers alike. One such chronicler, Matthew of Edessa, records that not one of the 40,000 people living in Marash survived the earthquake. The horrors of the quake were still remembered nearly 100 years after the event, as the event was recounted by the great chronicler Ibn al-Athīr in his chronicle al-Kāmil fit-Tārīkh (The Complete History)."
 
  regional_stronghold_modifier: "Regional Stronghold"
  regional_stronghold_modifier_desc: "This county is a fortified holding that serves as the centerpoint of military operations in the region"
@@ -103,6 +118,9 @@
 
  paulicians_levied_for_war: "Levied for War"
  paulicians_levied_for_war_desc: "In response to the threats against their state, every able-bodied man has been conscripted to fight the enemies of their faith. Though this has greatly increased the amount of available fighting men, it has equally depleted their homes of essential workers and tradesmen."
+
+ flourishing_trade_modifier:0 "Flourishing Trade"
+ flourishing_trade_modifier_desc:0 "This Holding is experiencing a boon of population, wealth and art."
 
  medieval_warm_period: "Medieval Warm Period"
  medieval_warm_period_desc: "The Medieval Warm Period (MWP) was a time of warm climate from about 900 A.D. to 1300 A.D. when global temperatures experienced an unusual temperature rise. The available evidence suggests that at times, some regions experienced temperatures exceeding those recorded during the period between 1960 and 1990. Its effects were evident in Europe where grain crops flourished, alpine tree lines rose, many new cities arose, and the population more than doubled. The Vikings took advantage of the climatic amelioration to colonize Greenland, and wine grapes were grown as far north as England where growing grapes is now not feasible. The temperature increase was not universal, being predominantly recorded in Europe, and had varying effects across different regions of the world."

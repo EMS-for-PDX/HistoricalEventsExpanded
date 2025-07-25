@@ -11,6 +11,8 @@ yearly_global_pulse = {
 		HEE_ibn_Hafsun_uprising
 		HEE_mardavij_uprising
 
+		hee_christianization_of_kievan_rus
+
 		HEE_fairhair_feast
 
 		HEE_titular_title_make_primary
@@ -31,7 +33,7 @@ HEE_carolingian_dissolution = {
 			game_start_date <= 867.1.1
 			NOT = { has_global_variable = carolingian_empire_has_dissolved }
 			exists = title:e_france.holder
-			title:e_france.holder = { realm_size >= 200 } # We want to Empire to be sizable/mostly reunited
+			title:e_france.holder = { realm_size >= 150 } # We want to Empire to be sizable
 			OR = {
 				title:e_france.holder = { has_trait = excommunicated }
 				title:e_france.holder = { legitimacy_level <= 2 }
@@ -720,6 +722,71 @@ HEE_mardavij_uprising = {
 				debug_log = "Attempting to spawn Mardavij within 365 days"
 				trigger_event = {
 					id = HEE_mardavij_uprising.0001
+					days = { 1 365 }
+				}
+			}
+		}
+	}
+}
+
+hee_christianization_of_kievan_rus = { # Christianization of Kievan Rus', inspired by the Conversion of Vladimir the Great as told by the Primary Chronicle
+	effect = {
+		if = {
+			limit = {
+				current_date >= 920.1.1
+				NOT = { has_global_variable = kievan_rus_has_christianized }
+				exists = title:e_russia.holder # Must be a Kievan Rus to Christianize
+				title:e_russia.holder = {
+					faith = { has_doctrine_parameter = unreformed } # Follows an unreformed faith
+				}
+			}
+			debug_log = "Checking for chance to convert the Rus under historical settings"
+
+			random = {
+				chance = hee_generic_appearance_base_chance # Base chance of 1
+				modifier = {
+					add = 9 # 10% Total
+					current_date > 930.1.1
+				}
+				modifier = {
+					add = 10 # 20% Total
+					current_date > 940.1.1
+				}
+				modifier = {
+					add = 10 # 30% Total
+					current_date > 950.1.1
+				}
+				modifier = {
+					add = 10 # 40% Total
+					current_date > 960.1.1
+				}
+				modifier = {
+					add = 10 # 50% Total
+					current_date > 970.1.1
+				}
+				modifier = {
+					add = 10 # 60% Total
+					current_date > 980.1.1
+				}
+				modifier = {
+					add = 10 # 70% Total
+					current_date > 990.1.1
+				}
+				modifier = {
+					add = 10 # 80% Total
+					current_date > 1000.1.1
+				}
+				modifier = {
+					add = 20 # 100% Total
+					current_date >= 1010.1.1
+				}
+				set_global_variable = {
+					name = kievan_rus_has_christianized
+					value = yes
+				}
+				debug_log = "Attempting to to convert the Rus within 365 days"
+				trigger_event = {
+					id = HEE_christianization_of_kievan_rus.0001
 					days = { 1 365 }
 				}
 			}

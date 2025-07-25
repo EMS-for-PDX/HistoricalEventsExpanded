@@ -1337,14 +1337,30 @@ HEE_great_summer_army.0024 = { # The swords of Wessex arrive to Egbert's Stone, 
 
 		spawn_army = {
 			name = event_troop_default_name
-			levies = 2500
+			levies = 2000
 			men_at_arms = {
-				type = huscarl
-				stacks = 5
+				type = light_footmen
+				stacks = 3
 			}
 			men_at_arms = {
 				type = bowmen
-				stacks = 5
+				stacks = 3
+			}
+			men_at_arms = {
+				type = bowmen
+				stacks = 3
+			}
+			men_at_arms = {
+				type = huscarl
+				stacks = 3
+			}
+			men_at_arms = {
+				type = huscarl
+				stacks = 3
+			}
+			men_at_arms = {
+				type = onager
+				stacks = 3
 			}
 			location = province:1562
 			origin = province:1562
@@ -1452,7 +1468,7 @@ HEE_great_summer_army.0025 = { # The King of Wessex gives a speech to his men, b
 
 		add_character_modifier = { # Giga buff Alfred for a short time
 			modifier = alfred_war_buff_modifier
-			years = 1
+			years = 3
 		}
 
 		hidden_effect = {
@@ -1547,7 +1563,9 @@ HEE_great_summer_army.0026 = { # With Alfred's victory, he must now consider the
 	}
 	right_portrait = {
 		character = scope:guthrum
-		animation = prisondungeon
+		animation = prisonhouse
+		override_imprisonment_visuals = yes
+		outfit_tags = { military_outfit }
 	}
 
 	trigger = {
@@ -1559,7 +1577,10 @@ HEE_great_summer_army.0026 = { # With Alfred's victory, he must now consider the
 	}
 
 	immediate = {
-		character:168650 = { save_scope_as = guthrum }	
+		character:168650 = { save_scope_as = guthrum }
+
+		add_prestige_no_experience = major_prestige_gain # Exp is handled by prestige level
+		add_prestige_level = 1
 	}
 
 	option = { # A shared faith will bind us
@@ -1595,7 +1616,7 @@ HEE_great_summer_army.0027 = { # Guthrum's baptism
 	type = character_event
 	title = HEE_great_summer_army.0027.t
 	desc = HEE_great_summer_army.0027.desc
-	theme = learning
+	theme = faith
 	override_background = { reference = bp3_riverside }
 	left_portrait = {
 		character = root
@@ -1617,12 +1638,15 @@ HEE_great_summer_army.0027 = { # Guthrum's baptism
 	immediate = {
 		root.faith = { save_scope_as = alfred_faith }
 
-
 		scope:guthrum = {
 			release_from_prison = yes
 			change_first_name = E_thelstan
 			set_character_faith_with_conversion = scope:alfred_faith
 		}
+
+		add_piety_no_experience = major_piety_gain # Exp is handled by piety level
+		add_piety_level = 1
+
 	}
 
 	option = { # End of the story

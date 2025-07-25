@@ -1,0 +1,447 @@
+reassert_roman_power_west_decision_scripted_effect = {
+    if = {
+        limit = {
+            prestige_level < 3
+        }
+        add_prestige_level = 1
+    }
+    if = {
+        limit = {
+            prestige_level >= 4
+        }
+        add_prestige = { value = massive_prestige_gain }
+    }
+
+    if = {
+        limit = {
+            is_ruler = yes
+            government_allows = administrative
+        }
+        change_influence = {
+            value = massive_influence_gain
+            multiply = 3
+        }
+    }
+
+	if = {
+		limit = {
+			is_valid_for_legitimacy_change = yes
+		}
+        add_legitimacy_effect = { LEGITIMACY = massive_legitimacy_gain }
+    }
+
+    dynasty = { add_dynasty_prestige = massive_dynasty_prestige_value }
+
+    if = {
+        limit = {
+            NOT = {
+                has_character_modifier = event_bonus_to_vassal_accept
+            }
+        }
+        add_character_modifier = event_bonus_to_vassal_accept
+    }
+
+    if = {
+        limit = {
+            NOT = {
+                has_trait = august
+            }
+        }
+        add_trait = august
+    }
+
+    if = {
+        limit = {
+            culture = { has_cultural_parameter = holds_triumphs }
+        }
+        custom_tooltip = {
+            text = free_triumph_tooltip
+            add_character_flag = free_triumph_flag
+        }
+    }
+    gain_legitimizing_legend_seed_tooltip_effect = yes
+    hidden_effect = { legend_seed_great_deed_dynasty_effect = yes }
+    every_vassal = {
+        custom = custom.every_admin_vassal
+        limit = { government_allows = administrative }
+        add_opinion = {
+            target = root
+            modifier = admiration_opinion
+            opinion = 20
+        }
+    }
+}
+
+islamic_arminiya_decision_scripted_effect = {
+    if = {
+        limit = {
+            NOT = {
+                has_trait = holy_warrior
+            }
+        }
+        add_trait = holy_warrior
+    }
+
+	faith = {
+		change_fervor = {
+			value = 10
+			# desc = fervor_gain_holy_bloodline
+		}
+	}
+
+	if = {
+		limit = {
+			is_valid_for_legitimacy_change = yes
+		}
+        add_legitimacy_effect = { LEGITIMACY = massive_legitimacy_gain }
+    }
+
+    if = {
+        limit = {
+            prestige_level < 4
+        }
+        add_prestige_level = 1
+    }
+    if = {
+        limit = {
+            prestige_level >= 5
+        }
+        add_prestige = { value = massive_prestige_gain }
+    }
+
+    
+
+    gain_heroic_legend_seed_tooltip_effect = yes
+    hidden_effect = { legend_seed_great_deed_dynasty_effect = yes }
+
+	if = {
+		limit = {
+			OR = {
+				has_bad_nickname = yes
+				has_any_nickname = no
+			}
+		}
+		give_nickname = nick_sayf_al_dawla
+	}
+
+    merge_arminiya_effect = {
+        PRIMARY = k_arminiya
+        SECONDARY = k_armenia
+        TEXT = original
+    }
+}
+
+merge_arminiya_effect = {
+	title:$PRIMARY$ = {
+		save_scope_as = k_arminiya
+		every_in_de_jure_hierarchy = {
+			custom = merge_arminiya_decision_vassal_$TEXT$
+			limit = {
+				tier < tier_kingdom
+			}
+			holder ?= {
+				if = {
+					limit = {
+						NOR = { 
+							is_in_list = merge_arminiya_list 
+							this = root
+						}
+					}
+					add_opinion = {
+						modifier = rightful_king_opinion
+						target = root
+						opinion = 20
+					}
+					add_to_temporary_list = merge_arminiya_list
+				}
+			}
+			custom_tooltip = merge_arminiya_opinion
+		}
+	}
+	title:$SECONDARY$ = {
+		save_scope_as = k_armenia
+		every_in_de_jure_hierarchy = {
+			custom = merge_arminiya_culture_tooltip_$TEXT$
+			limit = {
+				tier = tier_county
+			}
+			hidden_effect = {
+				culture ?= {
+					if = {
+						limit = {
+							NOR = { 
+								is_in_list = merge_arminiya_list 
+								this = root.culture
+								any_parent_culture_or_above = { this = root.culture }
+							}
+						}
+						change_cultural_acceptance = {
+							target = root.culture
+							value = -25
+							desc = cultural_acceptance_merge_arminiya
+						}
+						add_to_list = merge_arminiya_list
+					}
+				}
+			}
+			custom_tooltip = merge_arminiya_culture_tooltip
+		}
+		every_in_de_jure_hierarchy = {
+			custom = merge_arminiya_decision_tooltip_$TEXT$
+			limit = {
+				tier = tier_duchy
+			}
+			hidden_effect = { set_de_jure_liege_title = title:$PRIMARY$ }
+			custom_tooltip = merge_arminiya_decision_tooltip_2_$TEXT$
+		}
+	}
+    if = { 
+        limit = {
+            exists = title:k_armenia.holder
+        }
+	    destroy_title = title:$SECONDARY$
+    }
+    if = { 
+        limit = {
+            exists = title:k_armenian_principality.holder
+        }
+	    destroy_title = title:k_armenian_principality
+    }
+}
+
+mediterranean_foothold_decision_scripted_effect = {
+	if = {
+		limit = {
+			is_valid_for_legitimacy_change = yes
+		}
+        add_legitimacy_effect = { LEGITIMACY = massive_legitimacy_gain }
+    }
+
+    if = {
+        limit = {
+            prestige_level < 3
+        }
+        add_prestige_level = 1
+    }
+    if = {
+        limit = {
+            prestige_level >= 4
+        }
+        add_prestige = { value = massive_prestige_gain }
+    }
+
+
+    add_character_modifier = {
+        modifier = terror_of_the_tyrrhenian_modifier
+        # years = 20
+    }
+
+    
+    if = {
+        limit = {
+            #DLC check.
+            has_fp1_dlc_trigger = yes
+        }
+        custom_tooltip = mediterranean_foothold_decision_enable_raiding_tooltip
+        hidden_effect = {
+            dynasty = {
+                add_dynasty_modifier = {
+                    modifier = fp1_legacy_of_piracy_modifier
+                    years = 10
+                }
+            }
+        }
+    }
+
+    custom_tooltip = mediterranean_foothold_decision_coastal_counties_tooltip
+    hidden_effect = {
+        every_realm_county = {
+            limit = {
+                OR = {
+                    title_province = { geographical_region = custom_mediterranean_shoreline }
+                    is_coastal_county = yes
+                    is_riverside_county = yes
+                }
+            }
+            add_county_modifier = {
+                modifier = flourishing_trade_modifier
+                years = 15
+            }
+        }
+    }
+
+
+
+}
+
+unify_england_decision_scripted_effect = {
+
+    # If not created already, give Kingdom of England to the Unifier
+    if = {
+        limit = {
+            NOT = {
+                has_title = title:k_england
+            }
+        }
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = change
+        }
+        
+        title:k_england = {
+            change_title_holder = {
+                holder = root
+                change = scope:change
+            }
+        }
+        
+        resolve_title_and_vassal_change = scope:change
+    }
+
+    # If any are held, destroy Heptarchy titles
+    if = {
+        limit = {
+                has_title = title:k_wessex
+        }
+        destroy_title = title:k_wessex	#Make Wessex inalienable.
+    }
+    if = {
+        limit = {
+                has_title = title:k_mercia
+        }
+        destroy_title = title:k_mercia	#Make Mercia inalienable.
+    }
+    if = {
+        limit = {
+                has_title = title:k_east_anglia
+        }
+        destroy_title = title:k_east_anglia	#Make East Angila inalienable.
+    }
+    if = {
+        limit = {
+                has_title = title:k_northumbria
+        }
+        destroy_title = title:k_northumbria	#Make Northumbria inalienable.
+    }
+
+	# Add Nickname
+	set_nickname_effect = { NICKNAME = nick_the_great }
+
+    # Get a nice trait symbolizing your August nature
+    if = {
+        limit = {
+            NOT = {
+                has_trait = august
+            }
+        }
+        add_trait = august
+    }
+
+    # Get some nice Legend stuff
+    gain_legitimizing_legend_seed_tooltip_effect = yes
+    hidden_effect = { legend_seed_great_deed_dynasty_effect = yes }
+	
+	# Prestige
+    if = {
+        limit = {
+            prestige_level < 4
+        }
+        add_prestige_level = 1
+    }
+    if = {
+        limit = {
+            prestige_level >= 5
+        }
+        add_prestige = { value = massive_prestige_gain }
+    }
+
+    # Legitimacy
+	if = {
+		limit = {
+			is_valid_for_legitimacy_change = yes
+		}
+        add_legitimacy_effect = { LEGITIMACY = massive_legitimacy_gain }
+    }
+
+	# Also gain a large amount of dynasty prestige.
+	dynasty = { add_dynasty_prestige = 500 }
+	
+	# Gain Next Level of Crown Authority
+	root = {
+		if = {
+			limit = {
+				has_realm_law = crown_authority_0
+			}
+			add_realm_law_skip_effects = crown_authority_1
+		}
+		else_if = {
+			limit = {
+				has_realm_law = crown_authority_1
+			}
+			add_realm_law_skip_effects = crown_authority_2
+		}
+		else_if = {
+			limit = {
+				has_realm_law = crown_authority_2
+			}
+			add_realm_law_skip_effects = crown_authority_3
+		}
+	}
+	
+    custom_tooltip = unify_england_decision_scripted_effect_consolidate_titles_tooltip
+	hidden_effect = {
+		title:k_wessex = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_duchy }
+				set_de_jure_liege_title = title:k_england
+			}
+		}
+		title:k_mercia = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_duchy }
+				set_de_jure_liege_title = title:k_england
+			}
+		}
+		title:k_east_anglia = {
+			every_in_de_jure_hierarchy = {
+				limit = { tier = tier_duchy }
+				set_de_jure_liege_title = title:k_england
+			}
+		}
+		title:k_northumbria = {
+			every_in_de_jure_hierarchy = {
+				limit = { 
+                    AND = {
+                        tier = tier_duchy
+                        NOT = { this = title:d_lothian }
+                    }
+                }
+				set_de_jure_liege_title = title:k_england
+			}
+		}
+        if = {
+            limit = {
+                completely_controls = title:d_cornwall
+            }
+            title:d_cornwall = {
+                set_de_jure_liege_title = title:k_england
+            }
+        }
+        if = {
+            limit = {
+                completely_controls = title:d_lothian
+            }
+            title:d_lothian = {
+                set_de_jure_liege_title = title:k_england
+            }
+        }
+        if = {
+            limit = {
+                NOT = { completely_controls = title:d_lothian }
+            }
+            title:d_lothian = {
+                set_de_jure_liege_title = title:k_scotland
+            }
+        }
+	}
+}

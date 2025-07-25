@@ -1,0 +1,13 @@
+﻿l_english:
+
+ #HEE Michael's Murder
+ AaS_peril.0001.t: "Scholars vs. Soldiers"
+ AaS_peril.0001.desc: "Religious scholars denounce the Turkish military elite’s control over the caliphate. Do you side with the ulema and risk a mutiny, or continue to appease the Turks?"
+ AaS_peril.0001.a: "The ulama must learn to mind his tongue..."
+ AaS_peril.0001.b: "Perhaps this ulama can see reason."
+ AaS_peril.0001.c: "The ulama speaks true!"
+ AaS_peril.0001.b.crit_success: "The ulama comes to understand your struggle"
+ AaS_peril.0001.b.success: "Your arguments tempers the ulama's rhetoric"
+ AaS_peril.0001.b.failure: "Your arguments only enflames tensions"
+
+ #Custom Tooltips

@@ -827,3 +827,1080 @@ hee_anarchy_at_samarra.9001 = {
 		destroy_title = title:e_arabia
 	}
 }
+
+
+
+### AaS Peril Events ###
+AaS_peril.0001 = { # Prominent religious officials (ulama) condemn outside influence (Turkish) influence on the Caliphate
+	type = character_event
+	title = AaS_peril.0001.t
+	desc = AaS_peril.0001.desc
+	theme = learning
+	override_background = { reference = council_chamber } #
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:religious_official
+		animation = personality_zealous
+	}
+
+	trigger = {
+		has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = AaS_peril.0001
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		create_character = {
+			location = root.capital_province
+			age = { 45 60 }
+			gender = male
+			random_traits_list = { #Personality traits
+				count = 3
+				honest = {}
+				zealous = {}
+				brave = {}
+				calm = {}
+				stubborn = {}
+				just = {}
+			}
+			
+			random_traits_list = {
+				count = 1
+				education_learning_3  = {}
+				education_learning_4  = {}
+				education_learning_5  = {}
+			}
+
+			trait = celibate
+			
+			faith = root.faith
+			culture = root.culture
+			dynasty = none
+
+			diplomacy = {
+				min_template_high_skill
+				max_template_high_skill
+			}
+			learning = {
+				min_template_high_skill
+				max_template_high_skill
+			}
+
+			after_creation = {
+				# Perks
+				add_perk = faithful_perk
+				add_perk = zealous_proselytizer_perk
+				add_perk = religious_icon_perk
+				add_perk = prophet_perk
+				add_perk = clerical_justifications_perk
+				add_perk = church_and_state_perk
+				add_perk = radiant_perk
+				add_perk = defender_of_the_faith_perk
+				add_perk = theologian_perk
+				add_trait = theologian
+
+				# High Piety
+				add_piety = 750
+				add_piety_level = 3
+			}
+			save_scope_as = religious_official
+		}
+	}
+
+	option = { # Condemn the religious official's rhetoric
+		name = AaS_peril.0001.a
+
+		# custom_tooltip = 
+
+		add_piety = medium_piety_loss
+
+		every_vassal = {
+			limit = {
+				has_vassal_stance = zealot
+			}
+			custom = every_zealot_vassal
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -35
+			}
+		}
+
+		every_vassal = {
+			limit = {
+				has_vassal_stance = minority
+			}
+			custom = every_minority_vassal
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Try and temper the religious official's rhetoric
+		name = AaS_peril.0001.b
+		
+		# custom_tooltip =  
+
+		duel = {
+			skills = { diplomacy learning }
+			value = high_skill_rating
+			# Crit success.
+			20 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+					min = -49
+				}
+				desc = AaS_peril.0001.b.crit_success
+				every_vassal = {
+					limit = {
+						has_vassal_stance = zealot
+					}
+					custom = every_zealot_vassal
+					add_opinion = {
+						target = root
+						modifier = impressed_opinion
+						opinion = 15
+					}
+				}
+
+				every_vassal = {
+					limit = {
+						has_vassal_stance = minority
+					}
+					custom = every_minority_vassal
+					add_opinion = {
+						target = root
+						modifier = pleased_opinion
+						opinion = 20
+					}
+				}
+			}
+			# Success.
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+					min = -49
+				}
+				desc = AaS_peril.0001.b.success
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = tournament_events.1310.b.success
+					left_icon = root
+					right_icon = scope:famous_knight
+
+					activity_tournament_change_contestant_score_effect = { SCORE = increase_miniscule }
+				}
+			}
+			# Failure.
+			40 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2
+					min = -49
+				}
+				desc = AaS_peril.0001.b.failure
+				every_vassal = {
+					limit = {
+						has_vassal_stance = zealot
+					}
+					custom = every_zealot_vassal
+					add_opinion = {
+						target = root
+						modifier = disappointed_opinion
+						opinion = -10
+					}
+				}
+
+				every_vassal = {
+					limit = {
+						has_vassal_stance = minority
+					}
+					custom = every_minority_vassal
+					add_opinion = {
+						target = root
+						modifier = insult_opinion
+						opinion = -25
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Support the religious official's rhetoric  
+		name = AaS_peril.0001.c
+		
+		# custom_tooltip =  
+
+		add_piety = medium_piety_gain
+
+		add_courtier = scope:religious_official
+
+		every_vassal = {
+			limit = {
+				has_vassal_stance = zealot
+			}
+			custom = every_zealot_vassal
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		every_vassal = {
+			limit = {
+				has_vassal_stance = minority
+			}
+			custom = every_minority_vassal
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -35
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+AaS_peril.0002 = { # Your Vizier/Spymaster has discovered one of your servants is a spy for your rivals at court.
+	type = character_event
+	title = AaS_peril.0002.t
+	desc = AaS_peril.0002.desc
+	theme = intrigue
+	override_background = { reference = council_chamber } #
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:vizier
+		animation = personality_cynical
+	}
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		# Diarchy checks.
+		has_diarchy_active_parameter = diarchy_is_vizierate
+		NOT = { has_diarchy_active_parameter = vizier_cannot_be_snaked }
+		# Anarchy Check
+		has_character_modifier = anarchy_at_samarra_loss_of_central_authority
+	}
+
+	weight_multiplier = {
+		base = 1
+		
+		# Weight up if your diarch is loyal.
+		modifier = {
+			add = 0.5
+			diarch.diarch_loyalty >= diarch_loyalty_visibly_loyal_threshold
+		}
+		# Weight down if they're disloyal.
+		modifier = {
+			add = -0.5
+			diarch.diarch_loyalty <= diarch_loyalty_visibly_disloyal_threshold
+		}
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = AaS_peril.0002
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		## Nab the vizier for ease of loc.
+		diarch = { save_scope_as = vizier }
+	}
+
+	option = { # Execute the spy
+		name = AaS_peril.0002.a
+
+		add_small_peril_effect = yes 
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Try and feed the spy false info
+		name = AaS_peril.0002.b
+		
+		duel = {
+			skill = intrigue
+			value = medium_skill_rating
+			# Success.
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 2
+					min = -49
+				}
+				desc = AaS_peril.0001.b.success
+				decrease_medium_peril_effect = yes
+			}
+			# Failure.
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -2
+					min = -49
+				}
+				desc = AaS_peril.0001.b.failure
+				add_small_peril_effect = yes
+			}
+		}
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Leave the spy be
+		name = AaS_peril.0002.c
+		
+		decrease_small_peril_effect = yes
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+AaS_peril.0003 = { # Your Vizier/Steward knows the caliphate needs money, and suggests debasing the currency for cash
+	type = character_event
+	title = AaS_peril.0003.t
+	desc = AaS_peril.0003.desc
+	theme = stewardship
+	override_background = { reference = council_chamber } #
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:vizier
+		animation = personality_rational
+	}
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		# Diarchy checks.
+		has_diarchy_active_parameter = diarchy_is_vizierate
+		NOT = { has_diarchy_active_parameter = vizier_cannot_be_snaked }
+		# Anarchy Check
+		has_character_modifier = anarchy_at_samarra_financial_straits
+	}
+
+	weight_multiplier = {
+		base = 1
+		
+		# Weight up if your diarch is loyal.
+		modifier = {
+			add = 0.5
+			diarch.diarch_loyalty >= diarch_loyalty_visibly_loyal_threshold
+		}
+		# Weight down if they're disloyal.
+		modifier = {
+			add = -0.5
+			diarch.diarch_loyalty <= diarch_loyalty_visibly_disloyal_threshold
+		}
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = AaS_peril.0003
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		## Nab the vizier for ease of loc.
+		diarch = { save_scope_as = vizier }
+	}
+
+	option = { # Raise taxes
+		name = stewardship_wealth.1021.a
+		every_sub_realm_county = {
+			custom = stewardship_wealth.1021.a.custom
+			add_county_modifier = {
+				modifier = governance_1021_war_taxes_modifier
+				years = 3
+			}	
+		}
+
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 2
+				ai_compassion = -1
+				ai_honor = 2
+			}
+		}	
+	}
+
+	option = {
+		name = stewardship_wealth.1011.c
+
+		add_stewardship_lifestyle_xp = medium_lifestyle_experience
+
+		duel = {
+			skill = stewardship
+			value = 10
+
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				desc = stewardship_wealth.1011.c.success
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = stewardship_wealth.1011.c.success
+					left_icon = root
+
+					#Add silver coins modifier to realm.
+					every_sub_realm_county = {
+						custom = stewardship_wealth.1011.custom
+						add_county_modifier = {
+							modifier = governance_newly_minted_silver_coins_modifier
+							days = 1825
+						}		
+					}
+
+					#Adds gold to the character's treasury.
+					add_gold = medium_gold_value
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+				}
+				desc = stewardship_wealth.1011.c.failure
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = stewardship_wealth.1011.c.failure
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}		
+
+
+		stress_impact = {
+			generous = medium_stress_impact_gain
+			honest = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_greed = 3
+				ai_honor = -1
+			}
+		}			
+	}
+
+	option = { # Do nothing
+		name = AaS_peril.0003.c
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+scripted_trigger aas_peril_famine_valid_province_trigger = {
+	OR = {
+		has_province_modifier = recently_looted_modifier
+		has_province_modifier = disease_spreading_modifier
+		has_province_modifier = winter_harsh_modifier
+		barony = {
+			exists = holder
+			holder = {
+				has_character_flag = recently_occupied_flag
+			}
+		}
+	}
+	barony = {
+		exists = holder
+		holder = {
+			NOT = {
+				this = root
+			}
+			is_available_ai_adult = yes
+			has_court_event_flag = no
+		}
+	}
+}
+
+AaS_peril.0004 = {
+	type = character_event
+	title = AaS_peril.0004.t
+	desc = AaS_peril.0004.desc
+	theme = stewardship
+	override_background = { reference = council_chamber } #
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:vizier
+		animation = personality_rational
+	}
+
+	cooldown = { years = 10 }
+
+	trigger = {
+		any_realm_province = {
+			aas_peril_famine_valid_province_trigger = yes
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		random_realm_province = {
+			limit = {
+				aas_peril_famine_valid_province_trigger = yes
+			}
+			save_scope_as = 6000_province
+		}
+		scope:6000_province = {
+			barony = {
+				holder = {
+					save_scope_as = 6000_poor
+				}
+			}
+		}
+		if = {
+			limit = {
+				scope:6000_province.county.holder = {
+					NOR = {
+						this = root
+						this = scope:6000_poor
+					}
+				}
+			}
+			scope:6000_province.county.holder = {
+				save_scope_as = 6000_count
+			}
+		}
+	}
+
+	#Option A: send money
+	option = {
+		name = hold_court.6000.a
+		trigger = {
+			trigger_if = {
+				limit = {
+					is_ai = yes
+				}
+				short_term_gold >= medium_gold_value
+			}
+		}
+		pay_short_term_gold = {
+			target = scope:6000_poor
+			gold = medium_gold_value
+		}
+		add_hook = {
+			type = favor_hook
+			target = scope:6000_poor
+		}
+		every_sub_realm_county = {
+			limit = {
+				title_province = { aas_peril_famine_valid_province_trigger = yes }
+			}
+			add_county_modifier = {
+				modifier = invested_in_province_modifier
+				years = 10
+			}
+		}
+		if = {
+			limit = { exists = scope:6000_count }
+			scope:6000_count = {
+				add_opinion = {
+					target = root
+					modifier = grateful_opinion
+					opinion = 20
+				}
+			}
+		}
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 5
+
+			modifier = {
+				gold < 0
+				add = -10
+			}
+			modifier = {
+				short_term_gold >= medium_gold_value
+				add = 5
+			}
+			modifier = {
+				OR = {
+					has_trait = generous
+					has_trait = improvident
+					has_trait = profligate
+				}
+				add = 15
+			}
+		}
+	}
+
+	#Option B: less taxes
+	option = {
+		name = hold_court.6000.b
+		every_sub_realm_county = {
+			limit = {
+				title_province = { aas_peril_famine_valid_province_trigger = yes }
+			}
+			add_county_modifier = {
+				modifier = court_tax_relief_county_modifier
+				years = 10
+			}
+		}
+		if = {
+			limit = { exists = scope:6000_count }
+			scope:6000_count = {
+				add_opinion = {
+					target = root
+					modifier = grateful_opinion
+					opinion = 30
+				}
+			}
+		}
+		add_hook = {
+			type = indebted_hook
+			target = scope:6000_poor
+		}
+		stress_impact = {
+			greedy = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 5
+
+			modifier = {
+				gold < 0
+				add = -5
+			}
+			modifier = {
+				OR = {
+					has_trait = greedy
+					ai_greed >= medium_positive_ai_value
+				}
+				add = -10
+			}
+		}
+	}
+
+	#Option D: they can manage it on their own
+	option = {
+		name = hold_court.6000.d
+		stress_impact = {
+			generous = medium_stress_impact_gain
+			compassionate = medium_stress_impact_gain
+			gregarious = medium_stress_impact_gain
+			just = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 2
+
+			modifier = {
+				has_trait = lazy
+				add = 10
+			}
+			modifier = {
+				OR = {
+					has_trait = just
+					has_trait = generous
+					has_trait = compassionate
+					has_trait = gregarious
+				}
+				add = -5
+			}
+		}
+	}
+}
+
+AaS_peril.0005 = { # You need money - Tax pilgrims undergoing the Umrah/Hajj?
+	type = character_event
+	title = AaS_peril.0003.t
+	desc = AaS_peril.0003.desc
+	theme = stewardship
+	override_background = { reference = council_chamber } #
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:vizier
+		animation = personality_rational
+	}
+
+	trigger = {
+		# Standard checks.
+		is_available_at_peace_adult = yes
+		# Diarchy checks.
+		has_diarchy_active_parameter = diarchy_is_vizierate
+		NOT = { has_diarchy_active_parameter = vizier_cannot_be_snaked }
+		# Anarchy Check
+		has_character_modifier = anarchy_at_samarra_financial_straits
+	}
+
+	weight_multiplier = {
+		base = 1
+		
+		# Weight up if your diarch is loyal.
+		modifier = {
+			add = 0.5
+			diarch.diarch_loyalty >= diarch_loyalty_visibly_loyal_threshold
+		}
+		# Weight down if they're disloyal.
+		modifier = {
+			add = -0.5
+			diarch.diarch_loyalty <= diarch_loyalty_visibly_disloyal_threshold
+		}
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = AaS_peril.0003
+				days = 30 #~1 month
+			}
+		}
+	}
+
+	immediate = {
+		## Nab the vizier for ease of loc.
+		diarch = { save_scope_as = vizier }
+	}
+
+	option = { # Raise taxes
+		name = stewardship_wealth.1021.a
+		every_sub_realm_county = {
+			custom = stewardship_wealth.1021.a.custom
+			add_county_modifier = {
+				modifier = governance_1021_war_taxes_modifier
+				years = 3
+			}	
+		}
+
+		stress_impact = {
+			compassionate = minor_stress_impact_gain
+			generous = minor_stress_impact_gain
+		}
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_greed = 2
+				ai_compassion = -1
+				ai_honor = 2
+			}
+		}	
+	}
+
+	option = {
+		name = stewardship_wealth.1011.c
+
+		add_stewardship_lifestyle_xp = medium_lifestyle_experience
+
+		duel = {
+			skill = stewardship
+			value = 10
+
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3.5
+				}
+				desc = stewardship_wealth.1011.c.success
+				send_interface_toast = {
+					type = event_toast_effect_good
+					title = stewardship_wealth.1011.c.success
+					left_icon = root
+
+					#Add silver coins modifier to realm.
+					every_sub_realm_county = {
+						custom = stewardship_wealth.1011.custom
+						add_county_modifier = {
+							modifier = governance_newly_minted_silver_coins_modifier
+							days = 1825
+						}		
+					}
+
+					#Adds gold to the character's treasury.
+					add_gold = medium_gold_value
+				}
+			}
+			50 = {
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3.5
+				}
+				desc = stewardship_wealth.1011.c.failure
+				send_interface_toast = {
+					type = event_toast_effect_bad
+					title = stewardship_wealth.1011.c.failure
+					left_icon = root
+					
+					add_prestige = medium_prestige_loss
+				}
+			}
+		}		
+
+
+		stress_impact = {
+			generous = medium_stress_impact_gain
+			honest = medium_stress_impact_gain
+		}
+		ai_chance = {
+			base = 50
+			ai_value_modifier = {
+				ai_greed = 3
+				ai_honor = -1
+			}
+		}			
+	}
+
+	option = { # Do nothing
+		name = AaS_peril.0003.c
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+scripted_trigger anarchy_peril_0006_disobedient_subject = {
+	is_available_adult = yes
+	OR = {
+		opinion = {
+			target = root
+			value < 10
+		}
+		AND = {
+			opinion = {
+				target = root
+				value < 30
+			}
+			OR = {
+				has_trait = ambitious
+				has_trait = greedy
+				has_trait = wrathful
+				has_trait = arrogant
+				has_trait = deceitful
+				has_trait = paranoid
+				has_trait = stubborn
+				has_trait = vengeful
+			}
+		}
+	}
+	NOT = {
+		has_trait = content
+	}
+	root = {
+		NOT = {
+			has_hook = prev #Because there's a chance to gain a hook (added in diplomacy_generic_0012_good_outcome_effect)
+		}
+	}
+}
+
+AaS_peril.0006 = { # A prominant commander/council member is demanding better previlages/honors.
+	type = character_event
+	title = diplomacy_generic.0012.t
+	desc = {
+		desc = diplomacy_generic.0012.start.desc
+		random_valid = {
+			triggered_desc = {
+				trigger = { scope:disobedient_subject = { is_normal_councillor = yes } }
+				desc = diplomacy_generic.0012.council.desc
+			}
+			triggered_desc = {
+				trigger = { scope:disobedient_subject = { is_normal_councillor = no } }
+				desc = diplomacy_generic.0012.vassal.desc
+			}
+		}
+		desc = diplomacy_generic.0012.end.desc
+	}
+	theme = diplomacy
+	override_background = {
+		trigger = { scope:disobedient_subject = { is_normal_councillor = yes } }
+		reference = council_chamber
+	}
+	left_portrait = scope:disobedient_subject
+	
+	trigger = {
+		NOT = { has_character_flag = had_event_anarchy_peril_0006 }
+		OR = {
+			any_vassal = {
+				diplomacy_generic_0012_disobedient_subject = yes
+			}
+			any_normal_councillor = {
+				diplomacy_generic_0012_disobedient_subject = yes
+			}
+		}
+	}
+
+	immediate = {
+		add_character_flag = {
+			flag = had_event_anarchy_peril_0006
+			days = 1825
+		}
+		save_scope_as = suppressor
+		#Find all potential troublemakers
+		every_vassal = {
+			limit = { diplomacy_generic_0012_disobedient_subject = yes }
+			add_to_temporary_list = disobedient_subject_options
+		}
+		every_normal_councillor = {
+			limit = { diplomacy_generic_0012_disobedient_subject = yes }
+			add_to_temporary_list = disobedient_subject_options
+		}
+
+		#Pick the troublemaker
+		random_in_list = {
+			list = disobedient_subject_options
+			weight = {
+				base = 1
+				opinion_modifier = {
+					opinion_target = root
+					multiplier = -0.3 #Adds 30 for -100 opinion
+					min = 1
+				}
+				modifier = {
+					add = 10
+					OR = {
+						ai_greed >= medium_positive_greed
+						ai_rationality <= medium_negative_rationality
+						ai_vengefulness >= medium_positive_vengefulness
+					}
+				}
+				modifier = {
+					add = 50
+					is_powerful_vassal = yes
+				}
+			}
+			save_scope_as = disobedient_subject
+
+			hidden_effect = {
+				if = {	
+					limit = {
+						can_set_relation_potential_rival_trigger = { CHARACTER = root }
+					}
+					set_relation_potential_rival = root
+				}
+			}
+		}
+	}
+
+	#Acquiesce
+	option = {
+		name = AaS_peril.0006.a
+		
+		add_dread = medium_dread_loss
+		add_prestige = medium_prestige_loss
+
+		scope:disobedient_subject = { add_prestige = medium_prestige_gain }
+
+
+		stress_impact = {
+			forgiving = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+			craven = minor_stress_impact_gain
+		}
+	}
+
+	#Threat of force
+	option = {
+		name = diplomacy_generic.0012.g
+		flavor = threat_option.tt
+		diplomacy_generic_0012_tooltip_effect = yes
+
+		save_scope_value_as = { name = technique value = flag:threat }
+
+		stress_impact = {
+			forgiving = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+			craven = minor_stress_impact_gain
+		}
+	}
+
+	#Shut up, I'm the king
+	option = {
+		trigger = { dread >= 35 }
+		name = diplomacy_generic.0012.h
+		flavor = diplomacy_generic.0012.tt
+
+		stress_impact = {
+			calm = minor_stress_impact_gain
+			deceitful = minor_stress_impact_gain
+			gregarious = minor_stress_impact_gain
+			shy = minor_stress_impact_gain
+			fickle = minor_stress_impact_gain
+			craven = minor_stress_impact_gain
+		}
+		
+		reverse_add_opinion = {
+			target = scope:disobedient_subject
+			opinion = -5
+			modifier = scared_opinion
+		}
+		add_dread = minor_dread_gain
+	}
+
+	after = {
+
+	}
+}	

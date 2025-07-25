@@ -199,7 +199,7 @@ story_rurikid_expansion = {
 		trigger = { 
 			story_owner = {
 				OR = {
-					current_year >= 1000 # After this, its clear the Rurikids have failed and thus its best to stop story expansion
+					current_year >= 950 # After this, its clear the Rurikids have failed and thus its best to stop story expansion
 					completely_controls_region = rurikid_invasion_region # No need for forced expansion when they reach a great extent
 				}
 			}

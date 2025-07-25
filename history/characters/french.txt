@@ -27175,6 +27175,10 @@
 		effect = {
 			character:90104 = {
 				create_character_memory = { type = charles_diplomacy_with_cordoba }
+				add_character_modifier = { 
+					modifier = charles_exotic_camels_modifier 
+					years = 10
+				}
 			}
 		}
 	}

@@ -5,6 +5,12 @@
 #################################################
 
 ## Character ##
+charles_exotic_camels_modifier = { # Modifier to represent the camels Charles the Bald recieved from Emir Muhammad I of Cordoba
+	icon = goods_positive
+  	monthly_court_grandeur_change_mult = 0.1
+  	court_grandeur_baseline_add = 2
+}
+
 imperial_ambitions_modifier = {
 	icon = prestige_positive
 	monthly_lifestyle_xp_gain_mult = 0.20
@@ -141,7 +147,20 @@ armies_engaged_in_the_south_modifier = {
 	levy_size = -0.2
 }
 
+inspiring_roman_commander_modifier = {
+	icon = prowess_positive
+	maa_damage_mult = 0.05
+	maa_toughness_mult = 0.1
+	county_opinion_add = 10	
+}
 
+terror_of_the_tyrrhenian_modifier = {
+	icon = compass_positive
+
+	naval_movement_speed_mult = 0.1
+	monthly_prestige_gain_mult = 0.05
+	coastal_advantage = 5
+}
 
 
 
@@ -170,6 +189,19 @@ armies_engaged_in_the_south_modifier = {
 	icon = county_modifier_opinion_negative
 	county_opinion_add = -10
 	monthly_county_control_decline_factor = 0.15
+}
+
+1114_marash_earthquake_epicenter_modifier = {
+	icon = county_modifier_development_negative
+	additional_fort_level = -5 # The earthquake caused the thirteen towers of the Edessa city wall and a part of the Harran city wall to collapse
+	defender_holding_advantage = -8
+	build_speed = 0.50
+	levy_size = -0.4
+	garrison_size = -0.4
+	tax_mult = -0.5
+	development_growth_factor = -0.5
+	supply_limit_mult = -0.5
+	travel_danger = 25
 }
 
 regional_stronghold_modifier = {
@@ -273,6 +305,16 @@ paulicians_levied_for_war = { # Modifier to represent negative effect of so many
 	build_speed = 0.50
 	tax_mult = -0.35
 	development_growth_factor = -0.3
+}
+
+flourishing_trade_modifier = { # Modifier for the Establish Mediterranean Foothold decision
+	icon = county_modifier_development_positive
+	supply_limit_mult = 0.3
+	tax_mult = 0.2
+	development_growth_factor = 0.15
+	build_gold_cost = -0.1
+	build_prestige_cost = -0.1
+	county_opinion_add = 10
 }
 
 medieval_warm_period = { # Modifier for Medieval Warm Period

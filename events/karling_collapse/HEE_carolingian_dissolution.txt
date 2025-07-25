@@ -36,12 +36,12 @@ HEE_carolingian_dissolution.999 = {
 			value = yes
 		}
 		
-		if ={
+		if = {
 			limit = { exists = title:d_friuli }
 			title:d_friuli.holder = { save_scope_as = berengar_of_friuli_stand_in }
 		}
 		
-		if ={
+		if = {
 			limit = { exists = title:d_savoie }
 			title:d_savoie.holder = { save_scope_as = rudolph_i_stand_in }
 		}

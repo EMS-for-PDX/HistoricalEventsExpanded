@@ -79,9 +79,11 @@
 	culture = "slovien"
 	father = 187009
 	trait = education_martial_2
-	trait = wrathful
-	trait = deceitful
-	trait = cynical
+	trait = wrathful # Rastislav was "beside himself with rage" when he learned of his nephew's betrayal, and arranged for assassins to strangle Svatopluk at a banquet
+	trait = deceitful # 
+	trait = stubborn # Since 855, stubbornly resisted Frankish vassalage/influence in his realm
+	trait = cynical # In order to increase his maneuverability, Rastislav attempted to curtail the activities of the Frankish missionaries in his realm - turning to Rome, then the Byzantines
+	trait = unyielding_defender # Much of his military exploits were centered around repelling the Franks
 	815.1.1 = {
 		birth = "815.1.1"
 	}
@@ -91,8 +93,41 @@
 	864.1.1 = {
 		religion = "orthodox" # Rastislav turned to the Byzantines for religious support, accepting the missonaries Constantine and Methodius into his realm
 	}
-	869.1.1 = {
-		death = "869.1.1"
+	866.1.1 = {
+		effect = {
+			set_relation_rival = {
+				target = character:90107 # Ludwig the German
+				reason = rival_historical_ludwig_rostislav
+			}
+			# Standard Refunds
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_martial_lifestyle_perk_points = -10
+			# Authority Tree
+			add_perk = serve_the_crown_perk
+			add_perk = a_mans_home_perk
+			add_perk = enduring_hardships_perk
+			add_perk = prepared_conscription_perk
+			add_perk = strict_organization_perk
+			add_perk = hard_rule_perk
+			add_perk = soldiers_of_lesser_fortune_perk
+			add_perk = absolute_control_perk
+			add_perk = overseer_perk
+			add_trait = overseer
+			# Strategist Tree
+			add_perk = bellum_justum_perk
+			add_perk = parthian_tactics_perk
+			add_perk = envelopment_perk
+			add_perk = organized_retreat_perk
+			add_perk = hit_and_run_perk
+		}
+	}
+	870.1.1 = {
+		trait = blind # Rastislav was condemned to death for treason, but Ludwig commuted his punishment to blinding and imprisonment
+		death = { # Rastislav died in prison, though when is unknown
+			death_reason = death_prison
+			killer = 90107 #Ludwig the German
+		}
 	}
 }
 187003 = {
@@ -261,19 +296,26 @@
 	religion = "slavic_pagan"
 	culture = "slovien"
 	father = 273017
-	trait = education_stewardship_3
-	trait = zealous
-	trait = generous
+	trait = education_diplomacy_3 # Pribina's main duty was to gather the groups of Slavs who were fleeing from various directions, and to keep them loyal to the Franks
+	trait = zealous # Pribina undertook to Christianize the local population and built churches in the region
+	trait = generous # made a donation of three hundred homesteads and vineyards on a knee of the river Zala to the monastery of Niederaltaich
 	trait = diligent
-	trait = architect # Pribina undertook to Christianize the local population and built churches in the region. Constructed an extremely well fortified castle that became known as Blatnohrad (Blatnograd)
 	800.1.1 = {
 		birth = "800.1.1"
 	}
 	833.1.1 = { # Having been expelled from his lands by Mojmir, duke of the Moravians, Pribina fled to Ratpot (one of the border lords in East Francia) who presented him to Louis the German who ordered that Pribina be baptized
 		religion = "catholic"
 	}
+	846.1.10 = { # On January 10, 846, at the request of his followers, the king granted Pribina lands near Lake Balaton on the river Zala where he was to rule as Louis the German's faithful dux
+		trait = architect # Pribina undertook to Christianize the local population and built churches in the region. Constructed an extremely well fortified castle that became known as Blatnohrad (Blatnograd)
+		trait = adventurer # Spent time that could be described as a LAAMP, as  recorded in the Conversion of the Bavarians and the Carantanians (a historical work written in 870)
+		trait = unyielding_defender # Served as a frontier bulwark against the Bulgarians and Moravians
+	}
 	861.1.1 = {
-		death = "861.1.1"
+		death = { # died fighting against the Moravians
+			death_reason = death_battle
+			killer = 187002 # Not directly, but as Pribina was killed by Moravians under Rostislav, Rostislav will serve as a stand-in/representation
+		}
 	}
 }
 
@@ -290,6 +332,9 @@
 	trait = content # Did not seem to be a troublesome vassal nor do anything major
 	820.1.1 = { # historian Charles Bowlus believes a birth year around 820. Kocel is first mentioned in his father's escape to Bulgaria (likely sometime after 833 )
 		birth = "820.1.1"
+	}
+	846.1.10 = { # On January 10, 846, at the request of his followers, the king granted Pribina lands near Lake Balaton on the river Zala where he was to rule as Louis the German's faithful dux
+		trait = adventurer_follower # Accompanied his father during his travels as a LAAMP, thus when his father is landed Kocel should recieve the Follower trait
 	}
 	874.1.1 = { # Kocel disappears from sources after 874, and was either dead or removed from his office c. 876, certainly dead by 880
 		death = { # Some historians consider that Kocel can be identified with Frankish military commander Kotzil mentioned in De Administrando Imperio, in which case he was killed in an armed revolt by the Croats most probably in 874 which coincides with Kocel's disappearance from the sources

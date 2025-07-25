@@ -1,0 +1,33 @@
+﻿## Characters for the Byzantine Event Chain - 867 ##
+
+additional_buyids_0001 = { # Abu Mansur Khusrau Firuz / Al-Malik al-Aziz; Buyid prince who served as the governor of Wasit. He was the son of Jalal al-Dawla
+	name = "Abu Mansur"
+	dynasty = 1102201 # Buyid
+	father = 1231074 # Jalal al-Dawla
+	religion = ismaili
+	culture = daylamite
+	1010.1.1 = { # Unknown
+		birth = yes
+	}
+	1049.1.1 = { # died in 1049 at Mayyafariqin
+		death = yes
+	}
+}
+
+additional_buyids_0002 = { # Unnamed daughter of Jalal al-Dawla who married Rashid al-Dawla Mahmud, the Mirdasid emir of Aleppo
+	name = "Zubayda"
+	female = yes
+	dynasty = 1102201 # Buyid
+	father = 1231074 # Jalal al-Dawla
+	religion = ismaili
+	culture = daylamite
+	1031.1.1 = { # Unknown
+		birth = yes
+	}
+	1050.1.1 = {
+		add_spouse = 20743 # Rashid al-Dawla Mahmud, the Mirdasid emir of Aleppo
+	}
+	1090.1.1 = { # Unknown
+		death = yes
+	}
+}

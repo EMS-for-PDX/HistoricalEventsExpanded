@@ -2710,7 +2710,7 @@ john_monk = { # John, a monk of Břevnov
 	name = "Ludmila"
 	female = yes
 	religion = "catholic"
-	culture = "czech"
+	culture = "polabian" # daughter of the Sorbian prince Slavibor
 	1150.1.2 = {
 		birth = "1150.1.2"
 	}
@@ -2723,7 +2723,7 @@ john_monk = { # John, a monk of Břevnov
 	name = "Slavibor"
 	dynasty = 250
 	religion = "slavic_pagan"
-	culture = "czech"
+	culture = "polabian" # Sorbian prince
 	827.1.1 = {
 		birth = "827.1.1"
 	}

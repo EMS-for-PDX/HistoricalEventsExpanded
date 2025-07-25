@@ -33,6 +33,7 @@
 	culture = "levantine"
 	trait = education_learning_2
 	father = 20743
+	mother = additional_buyids_0002 # daughter of the Buyid emir Jalal al-Dawla
 	1053.1.1 = {
 		birth = "1053.1.1"
 	}

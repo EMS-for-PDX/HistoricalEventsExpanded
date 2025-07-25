@@ -59,10 +59,10 @@ c_jend = {
 c_sighnaq = {
 	850.1.1 = {
 		liege = k_oghuz_il
-		holder = yüreğir0002 # The Yüreğir Tribe
+		holder = yıva0002 # The Yıva Tribe
 		government = nomad_government
 	}
-	
+
 	#1066 start
 	1052.1.1 = {
 		liege = 0
@@ -95,7 +95,7 @@ c_sighnaq = {
 c_uzgend_KARA = {
 	850.1.1 = {
 		liege = k_oghuz_il
-		holder = qiniq0002 # The Qiniq clan
+		holder = döğer0002 # The Döğer Tribe; placed close to the ancestors of the Seljuks considering their role as warriors during the Seljuk conquests
 		government = nomad_government
 	}
 	
@@ -494,7 +494,7 @@ c_otrar = {
 c_shavgar = {
 	850.1.1 = {
 		liege = k_oghuz_il
-		holder = yüreğir0002 # The Yüreğir Tribe
+		holder = yıva0002 # The Yıva Tribe
 		government = tribal_government
 	}
 	876.5.22 = {
@@ -1455,7 +1455,7 @@ c_shelji = {
 c_quriltay = {
 	850.1.1 = {
 		liege = k_oghuz_il
-		holder = yüreğir0002 # The Yüreğir Tribe
+		holder = yigdir0002 # The Igdir Tribe
 		government = nomad_government
 	}
 	
@@ -1483,8 +1483,8 @@ c_quriltay = {
 
 c_mushun = {
 	850.1.1 = {
-		liege = 0
-		holder = 74029	#fictional
+		liege = k_oghuz_il
+		holder = bügdüz0002 # Büğdüz (tribe)
 		government = nomad_government
 	}
 	

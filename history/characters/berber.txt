@@ -350,22 +350,30 @@
 	}
 }
 
-20825 = {
+20825 = { # Tamim ibn al-Mu'izz was the fifth ruler of the Zirids in Ifriqiya (1062–1108) - https://www.academia.edu/122378012/Tamim_ibn_al_Mu%CA%BFizz_ibn_Badis
 	name = "Tamim" #Tunis 1062 - 1108
 	dynasty = 595
 	martial = 7
 	diplomacy = 5
 	intrigue = 8
 	stewardship = 5
+	learning = 10 # Recieved an extensive education in classical Arabic lettering while growing up
 	religion = "ashari"
 	culture = baranis
-	trait = greedy
+	trait = generous # served as patron to a number of poets, and attracted many poets, musicians, and other artists from across the Maghreb
+	trait = arrogant # Stand-in for vain as Tamim ibn al-Muʿizz is said to have cared much for his appearance and health
+	trait = lustful # had frequent sexual relations
+	trait = diligent
 	trait = education_martial_3
+	trait = unyielding_defender # Tamim took over from his father al-Mu'izz ibn Badis (1016–1062) at a time when the Zirid realm found itself in a state of disintegration following the invasion of the Banu Hilal
+	trait = beauty_good_2 # Tamim is described as handsome, both his face and sculpture
+	trait = strong # he was well-built
+	trait = hashishiyah # He was an avid drug user
 	father = 20935
 	# 1062.1.1 = { # These are the years of his reign, not his birth year
 	# 	birth = yes
 	# }
-	1046.1.1 = {
+	1031.7.6 = { # Oxford Dictionary of African Biography lists the birthdate around 1031
 		birth = yes
 	}
 	1108.1.1 = {

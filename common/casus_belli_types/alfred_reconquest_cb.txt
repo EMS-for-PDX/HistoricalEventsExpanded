@@ -74,6 +74,16 @@ alfred_reclamation_cb = {
 	
 	on_victory = {
 		scope:attacker = { show_pow_release_message_effect = yes }
+
+		scope:defender = {
+			every_held_title = {
+				limit = {
+					tier < tier_kingdom
+					target_is_de_jure_liege_or_above = title:k_wessex
+				}
+				add_to_list = guthrum_wessex_domain
+			}
+		}
 		
 		# Legitimacy
 		add_legitimacy_attacker_victory_effect = yes
@@ -81,185 +91,81 @@ alfred_reclamation_cb = {
 		#EP2 accolade glory gain for winning against higher ranked enemy
 		scope:attacker = { accolade_attacker_war_end_glory_gain_high_effect = yes }
 
-		# Set land acquisition type to conquest.
-		create_title_and_vassal_change = {
-			type = conquest
-			save_scope_as = change
-			add_claim_on_loss = yes
-		}
-
-		# Transfer landed titles to the attacker.
-		setup_claim_cb = {
-			titles = target_titles
-			attacker = scope:attacker
-			defender = scope:defender
-			claimant = scope:claimant
-			change = scope:change
-		}
-
 		# EP3 Laamp possibility warning
 		scope:defender = { ep3_war_loss_adventurer_tt_effect = yes }
-	
-		every_in_list = {
-			list = target_titles
 
-			#Add elective succession law to k_wessex if it had been removed somehow.
-			every_in_de_jure_hierarchy = {
+		#Add elective succession law to k_wessex if it had been removed somehow.
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_kingdom
+				NOR = {
+					has_title_law_flag = advanced_succession_law
+					has_title_law_flag = elective_succession_law
+				}
+			}
+			add_title_law = saxon_elective_succession_law
+		}
+
+		# Transfer the Kingdom of Wessex back to Alfred along with any holdings Guthrum might have in core Wessex territory
+		scope:attacker = {
+			create_title_and_vassal_change = {
+				type = returned
+				save_scope_as = change
+				add_claim_on_loss = no # We dont want Guthrum to have claims
+			}
+			title:k_wessex = {
+				change_title_holder = {
+					holder = scope:attacker
+					change = scope:change
+				}
+			}
+			every_in_list = {
+				list = guthrum_wessex_domain
+				change_title_holder = {
+					holder = scope:attacker
+					change = scope:change
+				}
+			}
+			resolve_title_and_vassal_change = scope:change	
+		}
+
+		# Grab all vassals in the core Wessex territories to transfer
+		scope:defender = {
+			every_vassal = {
 				limit = {
-					tier = tier_kingdom
-					NOR = {
-						has_title_law_flag = advanced_succession_law
-						has_title_law_flag = elective_succession_law
-					}
-				}
-				add_title_law = saxon_elective_succession_law
-			}
-
-			# Personally seize all duchy titles in Southern England AND duchy titles personally held by the King of England.
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_duchy
-					special_invasion_cb_seize_land_in_region_trigger = {
-						TARGET_REGION = kingdom_of_wessex_region
-						TARGET_KINGDOM = title:k_wessex
-					}
-				}
-				if = {
-					limit = {
-						exists = holder
-						holder = {
-							exists = top_liege
-							top_liege = scope:defender
-
-							# Vassal players in England get to keep their holdings, so they can play as vassals of the new king instead of game-overing.
-							NAND = {
-								NOT = { this = top_liege }
-								is_ai = no
-							}
-						}
-					}
-					custom_description = {
-						text = custom_seize_title_and_below_de_jure
-						subject = scope:attacker
-						object = this
-						change_title_holder = {
-							holder = scope:attacker
-							change = scope:change
-							take_baronies = yes
-						}
-					}
-
-					# Grab the counties that go with the duchies, too.
-					every_in_de_jure_hierarchy = {
-						limit = {
-							tier = tier_county
-							exists = holder
-							holder = {
-								top_liege = scope:defender
-								NOT = { faith = scope:attacker.faith }
-								# Vassal players in England get to keep their holdings, so they can play as vassals of the new king instead of game-overing.
-								NAND = {
-									NOT = { this = top_liege }
-									is_ai = no
-								}
-							}
-						}
-						hidden_effect = {
-							change_title_holder = {
-								holder = scope:attacker
-								change = scope:change
-								take_baronies = yes
-							}
-						}
-						add_to_temporary_list = county_titles_under_transfer
-					}
-				}
-			}
-			# Personally seize every county title in the Southern England AND county titles personally held by the King of England.
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-					special_invasion_cb_seize_land_in_region_trigger = {
-						TARGET_REGION = kingdom_of_wessex_region
-						TARGET_KINGDOM = title:k_wessex
-					}
-					NOT = { is_in_list = county_titles_under_transfer }
-				}
-				if = {
-					limit = {
-						exists = holder
-						holder = {
-							exists = top_liege
-							top_liege = scope:defender
-							NOT = { faith = scope:attacker.faith }
-							# Vassal players in England get to keep their holdings, so they can play as vassals of the new king instead of game-overing.
-							NAND = {
-								NOT = { this = top_liege }
-								is_ai = no
-							}
-						}
-					}
-					custom_description = {
-						text = custom_seize_title
-						subject = scope:attacker
-						object = this
-						change_title_holder = {
-							holder = scope:attacker
-							change = scope:change
-							take_baronies = yes
-						}
-					}
-				}
-			}
-
-			scope:attacker = {
-				create_title_and_vassal_change = {
-					type = returned
-					save_scope_as = change
-					add_claim_on_loss = yes
-				}
-				title:k_wessex = {
-					change_title_holder_include_vassals = {
-						holder = scope:attacker
-						change = scope:change
-					}
-				}
-				resolve_title_and_vassal_change = scope:change	
-			}
-
-			scope:defender = {
-				every_vassal = {
-					limit = {
+					primary_title = {
 						title_capital_county.title_province = { geographical_region = kingdom_of_wessex_region }
 					}
-					add_to_temporary_list = wessex_vassals
+				}
+				add_to_temporary_list = wessex_vassals
+			}
+		}
+
+		# Transfer the appropriate vassals back to Alfred
+		scope:attacker = {
+			create_title_and_vassal_change = {
+				type = granted
+				save_scope_as = change
+				add_claim_on_loss = yes
+			}
+			every_in_list = {
+				list = wessex_vassals
+				change_liege = {
+					liege = scope:attacker
+					change = scope:change
 				}
 			}
-
-			scope:attacker = {
-				create_title_and_vassal_change = {
-					type = granted
-					save_scope_as = change
-					add_claim_on_loss = yes
-				}
-				every_in_list = {
-					list = wessex_vassals
-					change_liege = {
-						liege = scope:attacker
-						change = scope:change
-					}
-				}
-				resolve_title_and_vassal_change = scope:change
-			}
-
+			resolve_title_and_vassal_change = scope:change
 		}
 
 		resolve_title_and_vassal_change = scope:change
-		
+
+		# Give Alfred his (ahistorical) nickname		
 		scope:attacker = { 
 			give_nickname = nick_the_great
 		}
 
+		# Alfred will imprison Guthrum in preperation for Guthrum's conversion to Christianity
 		scope:attacker = {
 			imprison =  {
 				target = scope:defender

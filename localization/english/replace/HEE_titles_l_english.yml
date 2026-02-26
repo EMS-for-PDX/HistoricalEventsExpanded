@@ -53,6 +53,30 @@
  k_alemania_adj: "Alamanni"
  k_alemania_pre: "Alamanno"
 
+ k_wessex: "Wessex"
+ k_wessex_adj: "Wessexian"
+
+ k_northumbria: "Northumbria"
+ k_northumbria_adj: "Northumbrian"
+
+ k_mercia: "Mercia"
+ k_mercia_adj: "Mercian"
+
+ k_east_anglia: "East Anglia"
+ k_east_anglia_adj: "East Anglian"
+
+ k_kent: "Kent"
+ k_kent_adj: "Kentish"
+
+ k_essex: "Essex"
+ k_essex_adj: "Essexian"
+
+ k_bernicia: "Bernicia"
+ k_bernicia_adj: "Bernician"
+
+ k_deira: "Deira"
+ k_deira_adj: "Derian"
+
  k_abkhazia: "Abkhazia"
  k_abkhazia_adj: "Abkhazian"
 
@@ -159,3 +183,12 @@
 
  d_laamp_hastein: "Ravagers of the World"
  d_laamp_hastein_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_laamp_breton_vikings: "Slavers of Léon"
+ d_laamp_breton_vikings_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_laamp_ivar: "Cursed Sons" # Allusion to the curse placed on Ivar that resulted in Ivar's bonelessness
+ d_laamp_ivar_article: "$DEFAULT_TITLE_NAME_ARTICLE$"
+
+ d_laamp_bagsecg: "Sons of Daneland"
+ d_laamp_bagsecg_article: "$DEFAULT_TITLE_NAME_ARTICLE$"

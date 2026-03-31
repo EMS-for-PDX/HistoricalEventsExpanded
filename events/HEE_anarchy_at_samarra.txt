@@ -831,7 +831,7 @@ hee_anarchy_at_samarra.9001 = {
 
 
 ### AaS Peril Events ###
-AaS_peril.0001 = { # Prominent religious officials (ulama) condemn outside influence (Turkish) influence on the Caliphate
+hee_anarchy_at_samarra.7777 = { # Prominent religious officials (ulama) condemn outside influence (Turkish) influence on the Caliphate
 	type = character_event
 	title = AaS_peril.0001.t
 	desc = AaS_peril.0001.desc
@@ -927,7 +927,7 @@ AaS_peril.0001 = { # Prominent religious officials (ulama) condemn outside influ
 
 		# custom_tooltip = 
 
-		add_piety = medium_piety_loss
+		add_piety = medium_piety_loss # Going against the religious establishment comes with piety loss
 
 		every_vassal = {
 			limit = {
@@ -1059,11 +1059,12 @@ AaS_peril.0001 = { # Prominent religious officials (ulama) condemn outside influ
 		
 		# custom_tooltip =  
 
-		add_piety = medium_piety_gain
 
-		add_courtier = scope:religious_official
+		add_legitimacy = minor_legitimacy_gain # The religious establishment strengthens your legitimacy
+		add_piety = medium_piety_gain # Supporting the religious establishment provides prestige
+		add_courtier = scope:religious_official # Let the religious speaker join your court
 
-		every_vassal = {
+		every_vassal = { # Zealots like this option
 			limit = {
 				has_vassal_stance = zealot
 			}
@@ -1071,11 +1072,11 @@ AaS_peril.0001 = { # Prominent religious officials (ulama) condemn outside influ
 			add_opinion = {
 				target = root
 				modifier = pleased_opinion
-				opinion = 10
+				opinion = 15
 			}
 		}
 
-		every_vassal = {
+		every_vassal = { # The minorities dislike this option as they are the ones being condemned
 			limit = {
 				has_vassal_stance = minority
 			}
@@ -1757,7 +1758,7 @@ scripted_trigger anarchy_peril_0006_disobedient_subject = {
 	}
 }
 
-AaS_peril.0006 = { # A prominant commander/council member is demanding better previlages/honors.
+hee_anarchy_at_samarra.7778 = { # A prominant commander/council member is demanding better previlages/honors.
 	type = character_event
 	title = diplomacy_generic.0012.t
 	desc = {

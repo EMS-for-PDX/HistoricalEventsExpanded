@@ -18,3 +18,9 @@
  # Raven Banner
  raven_banner_name: "Raven Banner"
  raven_banner_description: "They say that the three sisters of Ivar and Ubbe, daughters of Ragnar Loðbrok, wove this flag and got it ready in one day. They say, moreover, that in every battle, wherever the flag went before them, if they were to gain the victory there was to be seen, in the center of the signum, a raven, gaily flapping its wings. But if they were going to be defeated, the raven dropped motionless. And this always proved true."
+
+ alfred_book_of_poetry_name: "[ROOT.Char.GetFirstNamePossessiveNoTooltip] Book of Poetry"
+ alfred_book_of_poetry_desc: "According to Asser, in his childhood Alfred won a beautifully decorated book of English poetry, offered as a prize by his mother to the first of her sons able to memorise it."
+
+ boris_pope_armor_name: "[ROOT.Char.GetFirstNamePossessiveNoTooltip] Papal Armor"
+ boris_pope_armor_desc: "After adopting Christianity, Boris faced a revolt from pagan boyars (nobility). According to historical tradition, Boris suppressed this revolt while wearing special armor - often described as having the image of the cross - asked from the Pope as a gift."

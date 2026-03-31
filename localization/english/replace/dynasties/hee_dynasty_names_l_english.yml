@@ -14,15 +14,23 @@
  
  dynn_HEEKhurramites: "Khurramites"
  
- dynn_Baboutzikos: "Baboutzikos"
+ dynn_Baboutzikoi: "Baboutzikoi"
+
+ dynn_Rhabdouchoi: "Rhabdouchoi"
  
  dynn_Peganes: "Peganes"
+
+ dynn_Isauroi: "Isauroi"
+
+ dynn_Marzoukoi: "Marzoukoi"
 
  dynn_Tzifinarites: "Tzifinarites"
  
  dynn_Paspalas: "Paspalas"
 
  dynn_Rendakios: "Rendakios"
+
+ dynn_Guberioi: "Guberioi"
 
  dynn_Alypios: "Alypios"
 
@@ -259,6 +267,12 @@
  dynn_Petronius: "Petronius"
  dynn_Magnus: "Magnus"
  dynn_Julius: "Julius"
+
+ # Mystical Czech tribes
+ dynn_Doudlebove: "Doudlebové"
+ dynn_Charvatci: "Charvátci"
+ dynn_Lucane: "Lučané"
+ dynn_Litomerici: "Litoměřici"
 
 
 

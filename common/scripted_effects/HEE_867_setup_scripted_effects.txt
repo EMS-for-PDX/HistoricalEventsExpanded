@@ -82,6 +82,25 @@ hee_laamp_867_effect = {
 			}
 		}
 	}
+
+	## Olafr (Viking in Leon)
+	character:303404 ?= {
+		if = {
+			limit = {
+				is_alive = yes
+				is_landless_adventurer = yes
+			}
+			add_realm_law_skip_effects = camp_purpose_brigands # Raid, plunder, ravage!
+			if = {
+				limit = {
+					character:303405 = {
+						NOT = { is_courtier_of = character:303404 }
+					}
+				}
+				add_courtier = character:303405
+			}
+		}
+	}
 }
 
 # Karling Collapse
@@ -181,10 +200,6 @@ hee_karling_867_effect = {
 	scope:louis_the_younger = {
 		house = { set_house_head = scope:louis_the_younger }
 	}
-
-	character:31702 = { give_nickname = nick_the_seneschal }
-
-	character:90109 = { give_nickname = nick_the_iron }
 
 	scope:charles_the_bald = {
 		add_opinion = {
@@ -696,6 +711,8 @@ hee_byzantine_bulgaria_867_effect = {
 	title:c_seleucia = { save_scope_as = c_seleucia }
 	title:c_cilicia = { save_scope_as = c_cilicia }
 	title:c_tall_hamid = { save_scope_as = c_tall_hamid }
+	title:c_melitene = { save_scope_as = c_melitene }
+	title:c_theodosiopolis = { save_scope_as = c_theodosiopolis }
 
 	scope:c_caria = {
 		change_development_level = 3
@@ -782,6 +799,10 @@ hee_byzantine_bulgaria_867_effect = {
 			name = ongoing_confrontation
 			value = no
 		}
+	}
+
+	scope:basil_i = {
+		set_relation_ward = character:145133 # Basil's favorite son Konstantinos
 	}
 
 	# Cyprus in 867 is a joint holding between the Muslims and Byzantines. I will treat akin to a Republic
@@ -876,7 +897,7 @@ hee_byzantine_bulgaria_867_effect = {
 	scope:b_ragusa = {
 		add_province_modifier = {
 			modifier = 867_ragusan_siege_preparations
-			years = 1
+			days = 455
 		}
 	}
 
@@ -1078,6 +1099,24 @@ hee_byzantine_bulgaria_867_effect = {
 		add_building = barracks_01
 	}
 
+	scope:c_cilicia = {
+		add_county_modifier = {
+			modifier = influx_of_ghazi_volunteers_modifier
+			days = 2488
+		}
+	}
+	scope:c_melitene = {
+		add_county_modifier = {
+			modifier = influx_of_ghazi_volunteers_modifier
+			days = 2488
+		}
+	}
+	scope:c_theodosiopolis = {
+		add_county_modifier = {
+			modifier = influx_of_ghazi_volunteers_modifier
+			days = 2488
+		}
+	}
 }
 
 
@@ -2273,20 +2312,6 @@ hee_paulicians_867_effect = {
 			years = 10
 		}
 	}
-	title:c_azysia = {
-		set_county_faith = faith:paulician
-		add_county_modifier = {
-			modifier = paulicians_levied_for_war
-			years = 10
-		}
-	}
-	title:c_lycandus = {
-		set_county_faith = faith:paulician
-		add_county_modifier = {
-			modifier = paulicians_levied_for_war
-			years = 10
-		}
-	}
 
 	title:c_brysis = { save_scope_as = c_brysis }
 	title:c_kalliopolis = { save_scope_as = c_kalliopolis }
@@ -2361,6 +2386,167 @@ hee_kievan_rus_867_effect = {
 
 }
 
+hee_china_867_effect = {
+	character:han_3641 = { save_scope_as = emperor_yizong } # Emperor Yizong of Tang - https://en.wikipedia.org/wiki/Emperor_Yizong_of_Tang
+	character:nanzhao_meng_1 = { save_scope_as = meng_shilong  } # The Nanzhao king Meng Shilong - https://en.wikipedia.org/wiki/Nanzhao#Invasion_of_Annan
+	character:han_3310 = { save_scope_as = gao_pian } # Gao Pian - https://en.wikipedia.org/wiki/Gao_Pian
+	character:ly_do_doc_1 = { save_scope_as = ly_do_doc } # Lý Do Độc - https://en.wikipedia.org/wiki/L%C3%BD_Do_%C4%90%E1%BB%99c
+	character:han_3559 = { save_scope_as = empress_huian }
+
+
+	character:han_2952 = { save_scope_as = kang_chengxun } # Kang Chengxun - https://en.wikipedia.org/wiki/Kang_Chengxun
+
+
+		
+	scope:emperor_yizong = {
+		make_concubine = scope:empress_huian
+		make_concubine = character:han_3943 # Emperor Yizong's concubine Consort Wang, mother to Emperor Zhaozong of Tang
+	}
+
+
+	# Modifiers and Control loss to represent the unrest, banditry, and uprisings that were becoming more and more common post 830s
+	every_county_in_region = {
+		region = custom_qiu_fe_uprising
+
+		limit = {
+			NOT = { has_county_modifier = aftermath_of_Qiu_Fu_uprising_modifier }
+		}
+
+		change_county_control = -15
+		add_county_modifier = {
+			modifier = aftermath_of_Qiu_Fu_uprising_modifier
+			days = { 374 755 } # 
+		}
+	}
+
+	every_county_in_region = { # Effects of the Uprising of Kang Quantai in southern Anhui in 858 
+		region = custom_kang_quantai_uprising
+
+		limit = {
+			NOT = { has_county_modifier = aftermath_of_Kang_Quantai_uprising_modifier }
+		}
+
+		change_county_control = -5
+		add_county_modifier = {
+			modifier = aftermath_of_Kang_Quantai_uprising_modifier
+			days = { 220 400 } # 
+		}
+	}
+
+	every_county_in_region = { # The past few decades has been a period of escalating social disorder across the central and southern circuits of Tang China. Primary sources of the period — chiefly the Zizhi Tongjian (資治通鑑, vols. 247–251), Jiu Tang Shu (舊唐書), and Xin Tang Shu (新唐書) — describes the empire as plagued by recurrent banditry, rural uprisings, and local militarization, all of which reflected the erosion of imperial control and administrative integrity (in-game representative as Control).
+		region = custom_tang_unrest_and_banditry_region
+
+		random_list = { # Lets randomize control levels
+			40 = {
+				change_county_control = -33
+			}
+			30 = {
+				change_county_control = -45
+			}
+			20 = {
+				change_county_control = -55
+			}
+			10 = {
+				change_county_control = -66
+			}
+		}
+
+		random = {
+			chance = 35
+			add_county_modifier = county_corruption_bandits_rampant_modifier
+		}
+		random = {
+			chance = 30
+			add_county_modifier = county_corruption_lackluster_administration_modifier
+		}
+		random = {
+			chance = 25
+			add_county_modifier = county_corruption_unsafe_highways_modifier
+		}
+		random = {
+			chance = 20
+			add_county_modifier = county_corruption_inefficient_tax_collection_modifier
+		}
+		random = {
+			chance = 15
+			add_county_modifier = county_corruption_lack_of_sheriffs_modifier
+		}
+		random = {
+			chance = 10
+			add_county_modifier = county_corruption_smuggling_ring_modifier
+		}
+	}
+
+	title:k_viet = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				holder = {
+					OR = {
+						this = scope:gao_pian
+						target_is_liege_or_above = scope:gao_pian
+					}
+				}
+			}
+			change_county_control = -95
+			random_list = { # Lets randomize control levels
+				50 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+				}
+				25 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+					add_county_modifier = county_corruption_bandits_rampant_modifier
+				}
+				15 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+					add_county_modifier = county_corruption_bandits_rampant_modifier
+					add_county_modifier = county_corruption_smuggling_ring_modifier
+				}
+				10 = {
+					#Nothing 
+				}
+			}
+		}
+	}
+	title:d_yongguan = { # Dali briefly captured the important city Yong Prefecture (邕州, in modern Nanning, Guangxi) in 861 so Control should be lower in the region
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				holder = {
+					OR = {
+						this = character:han_2870
+						target_is_liege_or_above = character:han_2870
+					}
+				}
+			}
+			change_county_control = -33
+			random_list = { # Lets randomize control levels
+				30 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+				}
+				30 = {
+					add_county_modifier = county_corruption_bandits_rampant_modifier
+				}
+				25 = {
+					#Nothing 
+				}
+				10 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+					add_county_modifier = county_corruption_bandits_rampant_modifier					
+				}
+				5 = {
+					add_county_modifier = county_corruption_unsafe_highways_modifier
+					add_county_modifier = county_corruption_bandits_rampant_modifier
+					add_county_modifier = county_corruption_smuggling_ring_modifier
+				}
+			}
+		}
+	}
+}
+
+
+
+
 ## Dynasty Changes ##
 
 hee_dynastic_changes_867_effect = {
@@ -2372,6 +2558,7 @@ hee_dynastic_changes_867_effect = {
 	character:34014 = { save_scope_as = abbasid_dynasty }
 	character:73683 = { save_scope_as = umayyad_dynasty }
 	character:163105 = { save_scope_as = prydain_dynasty }
+	character:33358 = { save_scope_as = wessex_dynasty }
 
 	scope:karling_dynasty = {
 		dynasty = {
@@ -2417,9 +2604,15 @@ hee_dynastic_changes_867_effect = {
 
 	scope:prydain_dynasty = {
 		dynasty = {
-			add_dynasty_prestige_level = -1
+			add_dynasty_prestige_level = -2
+			add_dynasty_perk = warfare_legacy_1
+		}
+	}
+
+	scope:wessex_dynasty = {
+		dynasty = {
+			add_dynasty_prestige_level = -2
 			add_dynasty_perk = warfare_legacy_1
 		}
 	}
 }
-

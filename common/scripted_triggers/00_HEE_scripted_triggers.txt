@@ -23,7 +23,7 @@ TestingTriggers = {
 	is_at_war = no
 	prestige > 0
 	gold > 0
-	NOT = { completely_controls_region = custom_hungary }
+	NOT = { completely_controls_region = custom_hungary_minus_syrmia }
 	any_held_title = {
 		this = title:k_hungary
 	}

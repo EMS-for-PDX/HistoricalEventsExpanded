@@ -15,6 +15,8 @@ on_game_start = {
 		hee_girart_de_roussillon_retirement
 		hee_brittany_salomon_peace
 		hee_great_moravia
+		HEE_pang_xun_rebellion
+		HEE_nanzhao_tang_war
 	}
 }
 
@@ -37,6 +39,46 @@ hee_buildings_setup = {
 	events = {
 		HEEBuildings.0001		# Add Buildings
 	}
+}
+
+HEE_nanzhao_tang_war = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+		title:k_dali.holder = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_nanzhao_tang_war.0001
+					days = { 295 455 } # Fall 867 AD
+				}
+			}
+		}
+    }	
+}
+
+HEE_pang_xun_rebellion = {
+    trigger = {
+        game_start_date = 867.1.1
+    }
+    effect = {
+		title:h_china.holder = {
+			if = {
+				limit = {
+					is_alive = yes
+					is_landed = yes
+				}
+				trigger_event = {
+					id = HEE_pang_xun_rebellion.0001
+					days = { 295 355 } # Fall 867 AD
+				}
+			}
+		}
+    }
 }
 
 hee_great_summer_army = {

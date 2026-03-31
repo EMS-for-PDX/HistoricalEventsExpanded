@@ -366,7 +366,7 @@
 	}
 	865.5.4 = { # Ya'qub had captured several relatives of the Zunbil's family after defeating Salih b. al-Nasr, including Zunbil's son
 		effect = {
-			set_relation_nemesis = character:163101 #Ya'qub Saffarid
+			set_relation_grudge = { target = character:163101 reason = yaqub_and_zunbil_grudge } # Ya'qub Saffarid; killed his father and imprisoned him and his sister. Ya'qub likely has few feelings for Firuz and thus a grudge is more appropriate than a rivalry
 			character:163101 = {
 				imprison = {
 					target = character:188712 # Zunbil's son
@@ -399,7 +399,7 @@
 	}
 	865.5.4 = { # Ya'qub had captured several relatives of the Zunbil's family after defeating Salih b. al-Nasr, including Zunbil's son
 		effect = {
-			set_relation_potential_rival = character:163101 #Ya'qub Saffarid
+			set_relation_grudge = { target = character:163101 reason = yaqub_and_zunbil_grudge } # Ya'qub Saffarid; killed his father and imprisoned him and his sister. Ya'qub likely has few feelings for Firuz and thus a grudge is more appropriate than a rivalry
 			character:163101 = {
 				imprison = {
 					target = character:188713 # Zunbil's fictional daughter

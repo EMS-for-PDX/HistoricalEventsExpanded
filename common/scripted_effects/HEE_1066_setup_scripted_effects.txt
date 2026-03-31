@@ -96,7 +96,25 @@ hee_france_1066_effect = {
 	#Color Change for France so it doesnt match Empire of Francia
 	title:k_france = {
 		set_color_from_title = title:c_valois
-	}	
+	}
+
+	character:7757 = { # The regency of Beatrice over her daughter Matilda
+		if = {
+			limit = { has_ep3_dlc_trigger = yes }
+			try_start_diarchy = regency
+			set_diarch = character:7755
+			set_diarchy_swing = 60
+		}
+	}
+
+	character:1182 = { # The regency of Adelaide of Susa over her son Peter
+		if = {
+			limit = { has_ep3_dlc_trigger = yes }
+			try_start_diarchy = regency
+			set_diarch = character:1115
+			set_diarchy_swing = 100
+		}
+	}
 
 }
 

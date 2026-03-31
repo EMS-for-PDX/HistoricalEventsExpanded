@@ -33,6 +33,7 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 	}
 
 	immediate = {
+		root = { save_scope_as = ragusa_leader }
 		title:e_byzantium.holder = { save_scope_as = roman_emperor }
 		title:d_aghlabid_raiders.holder = { save_scope_as = aghlabid_raiders }
 	}
@@ -41,17 +42,50 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 		name = HEE_siege_of_ragusa.0001.a
 		
 		custom_tooltip = reach_out_to_roman_emperor_for_aid
-		
-		title:e_byzantium.holder = {
-			trigger_event = {
-				id = HEE_siege_of_ragusa.0002
-				days = { 7 10 }
+
+		scope:ragusa_leader = {
+			random_courtier_or_guest = {
+				limit = {
+					is_available = yes
+				}
+				save_scope_as = companion1
+			}
+			random_courtier_or_guest = {
+				limit = {
+					this != scope:companion1
+					is_available = yes
+				}
+				save_scope_as = companion2
+			}
+			random_courtier_or_guest = {
+				limit = {
+					NOR = {
+						this = scope:companion1
+						this = scope:companion2
+					}
+					is_available = yes
+				}
+				save_scope_as = companion3
+			}
+			start_travel_plan = {
+				destination = scope:roman_emperor.capital_province
+				companion = scope:companion1
+				companion = scope:companion2
+				companion = scope:companion3
+				on_arrival_event = HEE_siege_of_ragusa.0002
+				on_arrival_destinations = all_but_last
+				return_trip = yes # One way
 			}
 		}
 		
-		# stress_impact = {
-
-		# }
+		stress_impact = {
+			stubborn = medium_stress_impact_gain
+			paranoid = medium_stress_impact_gain
+			arrogant = medium_stress_impact_gain
+			brave = minor_stress_impact_loss
+			diplomat = minor_stress_impact_loss
+			humble = minor_stress_impact_loss
+		}
 		
 		ai_chance = {
 			base = 1000
@@ -63,9 +97,9 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 		
 		custom_tooltip = attempt_to_fend_off_aghlabids_without_aid
 
-		# stress_impact = {
+		stress_impact = {
 
-		# }
+		}
 		
 		ai_chance = {
 			base = 0
@@ -73,7 +107,7 @@ HEE_siege_of_ragusa.0001 = { #Ragusa sends offer to Byz Emperor
 	}
 }
 
-HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
+HEE_siege_of_ragusa.0002 = { # Ragusa petitions the Roman Emperor for aid
 	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0002.t
@@ -81,11 +115,11 @@ HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
 	theme = diplomacy
 	left_portrait = {
 		character = root
-		animation = personality_rational
+		animation = beg
 	}
 	right_portrait = {
-		character = scope:leader_of_ragusa
-		animation = beg
+		character = scope:roman_emperor
+		animation = personality_rational
 	}
 	
 	trigger = {
@@ -110,10 +144,23 @@ HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
 		title:c_ragusa.holder = { save_scope_as = leader_of_ragusa }
 	}
 	
-	option = {
+	option = { # An MP option accounting for a player Ragusan leader and Roman Emperor & an AI-only option for when both individuals are AI
 		name = HEE_siege_of_ragusa.0002.a
+
+		trigger = {
+			OR = {
+				AND = {
+					scope:roman_emperor = { is_ai = no }
+					scope:leader_of_ragusa = { is_ai = no }
+				}
+				AND = {
+					scope:roman_emperor = { is_ai = yes }
+					scope:leader_of_ragusa = { is_ai = yes }
+				}
+			}
+		}
 		
-		custom_tooltip = relieve_the_siege
+		custom_tooltip = ragusa_mp_easter_egg
 		
 		title:e_byzantium.holder = {
 			trigger_event = {
@@ -121,23 +168,229 @@ HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
 			}
 		}
 		
-		# stress_impact = {
-
-		# }
-		
 		ai_chance = {
 			base = 1000
 		}
 	}
 
-	option = {
+	option = { # Offer no incentives
 		name = HEE_siege_of_ragusa.0002.b
+
+		trigger = {
+			AND = {
+				scope:roman_emperor = { is_ai = yes }
+				scope:leader_of_ragusa = { is_ai = no }
+			}
+		}
 		
-		custom_tooltip = provide_no_aid
+		custom_tooltip = ragusa_offer_no_incentives
 
-		# stress_impact = {
-
+        # hidden_effect = {
+            duel = {
+                skill = diplomacy
+                target = scope:roman_emperor
+				20 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = HEE_siege_of_ragusa.0002.b.success
+					scope:roman_emperor = { 
+						trigger_event = {
+							id = HEE_siege_of_ragusa.0004 # Use scripted event for aid
+						}
+					}
+				}
+				80 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					HEE_siege_of_ragusa.0002.b.failure
+					add_prestige = { # Spent political capital
+						value = major_prestige_value
+						multiply = -1.0
+					}
+					scope:roman_emperor = { # The Emperor is insulted you have to beg for aid with nothing to offer in return
+						add_opinion = {
+							target = root
+							modifier = insulted_opinion
+							years = 10
+							opinion = -50
+						}
+					}
+				}
+            }
 		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Offer to convert to Christianity
+		name = HEE_siege_of_ragusa.0002.c
+
+		trigger = {
+			AND = {
+				scope:leader_of_ragusa = { # Ragusa needs to not be Christian
+					AND = {
+						is_ai = no
+						NOT = { has_religion = religion:christianity_religion }
+					}
+				}
+				scope:roman_emperor = { is_ai = yes }
+			}
+		}
+		
+		custom_tooltip = ragusa_offer_conversion_incentive
+
+        # hidden_effect = {
+            duel = {
+                skill = diplomacy
+                target = scope:roman_emperor
+				40 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = HEE_siege_of_ragusa.0002.b.success
+					scope:roman_emperor = { 
+						trigger_event = {
+							id = HEE_siege_of_ragusa.0004 # Use scripted event for aid
+						}
+					}
+				}
+				60 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					desc = HEE_siege_of_ragusa.0002.c.failure
+					add_prestige = { # Spent political capital
+						value = medium_prestige_value
+						multiply = -1.0
+					}
+					scope:roman_emperor = { # The Emperor is disappointed with your offerings
+						add_opinion = {
+							target = root
+							modifier = disappointed_opinion
+							years = 5
+							opinion = -20
+						}
+					}
+				}
+            }
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Historical option: Offer to bend the knee to Roman authority
+		name = HEE_siege_of_ragusa.0002.d
+
+		trigger = {
+			AND = {
+				scope:roman_emperor = { is_ai = yes }
+				scope:leader_of_ragusa = { is_ai = no }
+			}
+		}
+		
+		custom_tooltip = ragusa_offer_vassalage_incentive
+
+        # hidden_effect = {
+            duel = {
+                skill = diplomacy
+                target = scope:roman_emperor
+				75 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = 3.5
+						min = -49
+					}
+					desc = HEE_siege_of_ragusa.0002.b.success
+					send_interface_toast = {
+						type = event_toast_effect_good
+						title = HEE_siege_of_ragusa.0002.b.success
+						left_icon = root
+						right_icon = scope:roman_emperor
+					}
+					scope:roman_emperor = { 
+						trigger_event = {
+							id = HEE_siege_of_ragusa.0004 # Use scripted event for aid
+						}
+					}
+				}
+				25 = {
+					compare_modifier = {
+						value = scope:duel_value
+						multiplier = -3.5
+						min = -49
+					}
+					desc = HEE_siege_of_ragusa.0002.d.failure
+					send_interface_toast = {
+						type = event_toast_effect_bad
+						title = HEE_siege_of_ragusa.0002.d.failure
+						left_icon = root
+						right_icon = scope:roman_emperor
+						add_prestige = { # Spent political capital
+							value = medium_prestige_value
+							multiply = -1.0
+						}
+						scope:roman_emperor = { # The Emperor is disappointed with your offerings
+							add_opinion = {
+								target = root
+								modifier = disappointed_opinion
+								years = 5
+								opinion = -20
+							}
+						}
+					}
+				}
+            }
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Withdraw your petition (for some reason)
+		name = HEE_siege_of_ragusa.0002.e
+		
+		custom_tooltip = ragusa_withdraw_petition
+
+		send_interface_toast = {
+			type = event_toast_effect_bad
+			title = HEE_siege_of_ragusa.0002.d.failure
+			left_icon = root
+			right_icon = scope:roman_emperor
+			add_prestige = { # Spent political capital
+				value = major_prestige_value
+				multiply = -1.0
+			}
+
+			scope:roman_emperor = { # The Emperor is insulted you have wasted their time
+				add_opinion = {
+					target = root
+					modifier = insulted_opinion
+					years = 10
+					opinion = -50
+				}
+			}
+		}
+
+		stress_impact = {
+			diplomat = medium_stress_impact_gain
+			stubborn = medium_stress_impact_gain
+			brave = medium_stress_impact_gain
+		}
 		
 		ai_chance = {
 			base = 0
@@ -145,7 +398,7 @@ HEE_siege_of_ragusa.0002 = { #Ragusa sends offer to Byz Emperor
 	}
 }
 
-HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
+HEE_siege_of_ragusa.0003 = { # The Roman Emperor hears the petition for aid from the Ragusan envoy
 	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0003.t
@@ -179,35 +432,61 @@ HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
 	}
 
 	immediate = {
-		title:d_aegean_islands.holder = { save_scope_as = roman_navy_commander }
-		title:d_aghlabid_raiders.holder = { save_scope_as = aghlabid_raiders }
 		title:c_ragusa.holder = { save_scope_as = leader_of_ragusa }
 	}
 	
 	option = {
 		name = HEE_siege_of_ragusa.0003.a
 		
-		custom_tooltip = send_roman_navy
-		
+		custom_tooltip = relieve_the_siege
+
 		scope:leader_of_ragusa = {
+			add_opinion = {
+				target = scope:roman_emperor
+				opinion = 50
+				modifier = grateful_opinion
+			}
+		}
+
+		every_vassal = { # Roman glory-hound vassals like the idea of expanding Roman influence through war
+			limit = {
+				has_vassal_stance = glory_hound
+			}
+			custom = every_glory_hound_vassal
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 10
+			}
+		}
+
+		scope:leader_of_ragusa = { # End any wars waged against Ragusa by Romans in the Empire (doesnt make sense to provide aid while permitting those wars)
 			every_character_war = {
 				limit = {
-					primary_defender = scope:leader_of_ragusa
-					primary_attacker = scope:aghlabid_raiders
+					primary_attacker = {
+						OR = {
+							this = title:e_byzantium.holder
+							top_liege = { this = title:e_byzantium.holder }
+						}
+					}
 				}
-				add_defender = scope:roman_navy_commander
+				end_war = white_peace
 			}
 		}
 		
-		title:d_aegean_islands.holder = {
+		title:e_byzantium.holder = {
 			trigger_event = {
 				id = HEE_siege_of_ragusa.0004
 			}
 		}
 		
-		# stress_impact = {
-
-		# }
+		stress_impact = {
+			craven = major_stress_impact_gain
+			paranoid = major_stress_impact_gain
+			compassionate = medium_stress_impact_loss
+			ambitious = medium_stress_impact_loss
+			brave = minor_stress_impact_loss
+		}
 		
 		ai_chance = {
 			base = 1000
@@ -217,39 +496,22 @@ HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
 	option = {
 		name = HEE_siege_of_ragusa.0003.b
 		
-		custom_tooltip = send_ragusa_a_shipment_of_supplies
-
-		# stress_impact = {
-
-		# }
-		
-		ai_chance = {
-			base = 0
-		}
-	}
-
-	option = {
-		name = HEE_siege_of_ragusa.0003.c
-		
-		custom_tooltip = send_both_soldiers_and_supplies_to_ragusa
-
-		# stress_impact = {
-
-		# }
-		
-		ai_chance = {
-			base = 0
-		}
-	}
-
-	option = {
-		name = HEE_siege_of_ragusa.0003.d
-		
 		custom_tooltip = provide_no_aid
 
-		# stress_impact = {
+		scope:leader_of_ragusa = {
+			add_opinion = {
+				target = root
+				modifier = disappointed_opinion
+				opinion = -25
+			}
+		}
 
-		# }
+		stress_impact = {
+			craven = major_stress_impact_loss
+			paranoid = major_stress_impact_loss
+			compassionate = medium_stress_impact_gain
+			ambitious = medium_stress_impact_gain
+		}
 		
 		ai_chance = {
 			base = 0
@@ -257,25 +519,25 @@ HEE_siege_of_ragusa.0003 = { #Byz Emperor decides how to respond
 	}
 }
 
-HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
+HEE_siege_of_ragusa.0004 = { # The Roman Emperor decides what aid to provide
 	window = big_event_window
 	type = character_event
 	title = HEE_siege_of_ragusa.0004.t
 	desc = HEE_siege_of_ragusa.0004.desc
-	theme = crown # Change
+	theme = diplomacy
 	left_portrait = {
 		character = root
-		animation = personality_bold
+		animation = personality_rational
 	}
 	right_portrait = {
-		character = scope:roman_emperor
-		animation = personality_rational
+		character = scope:leader_of_ragusa
+		animation = beg
 	}
 	
 	trigger = {
 		is_alive = yes
 		is_landed = yes
-		#is_independent_ruler = yes
+		is_independent_ruler = yes
 		#is_at_war = yes
 		is_imprisoned = no
 	}
@@ -291,52 +553,48 @@ HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
 	}
 
 	immediate = {
-		spawn_army = {
-			uses_supply = no
-			inheritable = no
-			name = roman_navy_troops
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = bowmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = pikemen_unit
-				stacks = 5
-			}
-			men_at_arms = {
-				type = pikemen_unit
-				stacks = 5
-			}
-			men_at_arms = {
-				type = armored_footmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = armored_footmen
-				stacks = 5
-			}
-			men_at_arms = {
-				type = mangonel
-				stacks = 5
-			}
-			location = capital_province
-		}
+		title:d_aegean_islands.holder = { save_scope_as = roman_navy_commander }
+		title:d_aghlabid_raiders.holder = { save_scope_as = aghlabid_raiders }
+		title:c_ragusa.holder = { save_scope_as = leader_of_ragusa }
 	}
 	
-	option = {
+	option = { # Historical: Send the Roman Navy
 		name = HEE_siege_of_ragusa.0004.a
 		
-		custom_tooltip = you_are_ordered_to_relieve_the_siege
-		
-		# title:e_byzantium.holder = {
-			# trigger_event = {
-				# id = HEE_siege_of_ragusa.0005
-			# }
-		# }
+		custom_tooltip = send_roman_navy
+
+		if = {
+			limit = { # Event for player Admirals
+				title:d_aegean_islands.holder = { is_ai = yes }
+			}
+			scope:leader_of_ragusa = {
+				every_character_war = {
+					limit = {
+						primary_defender = scope:leader_of_ragusa
+						primary_attacker = scope:aghlabid_raiders
+					}
+					add_defender = scope:roman_navy_commander
+				}
+			}
+		}
+
+		if = {
+			limit = { # Event for player Admirals
+				title:d_aegean_islands.holder = { is_ai = no }
+			}
+			title:d_aegean_islands.holder = {
+				trigger_event = {
+					id = HEE_siege_of_ragusa.0005
+				}
+			}
+		}
+
+		scope:aghlabid_raiders = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0006
+				days = { 10 20 } 
+			}			
+		}
 		
 		# stress_impact = {
 
@@ -346,9 +604,172 @@ HEE_siege_of_ragusa.0004 = { #Byz Emperor orders his navy to relieve the siege
 			base = 1000
 		}
 	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0004.b
+		
+		custom_tooltip = send_ragusa_a_shipment_of_supplies
+
+		pay_short_term_gold = {
+			target = scope:leader_of_ragusa
+			gold = medium_gold_value
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0004.c
+		
+		custom_tooltip = send_both_soldiers_and_supplies_to_ragusa
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = HEE_siege_of_ragusa.0004.d
+		
+		custom_tooltip = provide_no_aid
+
+		scope:leader_of_ragusa = {
+			add_opinion = {
+				target = root
+				modifier = insult_opinion
+				opinion = -50
+			}
+		}
+
+		stress_impact = {
+			diligent = major_stress_impact_gain
+			generous = major_stress_impact_gain
+			fickle = minor_stress_impact_loss
+			deceitful = minor_stress_impact_loss
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
 }
 
-HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
+HEE_siege_of_ragusa.0005 = { # Player Roman Admiral recieves orders to lift the Siege of Ragusa
+	window = big_event_window
+	type = character_event
+	title = HEE_siege_of_ragusa.0005.t
+	desc = HEE_siege_of_ragusa.0005.desc
+	theme = crown # Change
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:roman_emperor
+		animation = personality_rational
+	}
+	
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = no
+		is_imprisoned = no
+	}
+
+	#Resend
+	on_trigger_fail = {
+		if = {
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0005
+				days = 7 #~1 week
+			}
+		}
+	}
+
+	immediate = {
+
+	}
+	
+	option = { # Join the defense of Ragusa
+		name = HEE_siege_of_ragusa.0005.a
+		
+		custom_tooltip = you_are_ordered_to_relieve_the_siege
+		
+		scope:leader_of_ragusa = {
+			every_character_war = {
+				limit = {
+					primary_defender = scope:leader_of_ragusa
+					primary_attacker = scope:aghlabid_raiders
+				}
+				add_defender = scope:roman_navy_commander
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Resist the Emperor's orders
+		name = HEE_siege_of_ragusa.0005.b
+		
+		custom_tooltip = you_are_ordered_to_relieve_the_siege
+		
+		scope:roman_emperor = {
+			add_opinion = {
+				modifier = rejected_call_to_defensive_war
+				target = scope:roman_navy_commander
+			}
+		}
+		
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0006 = { # Hidden event for Aghlabid raiders to end the war
+	scope = none
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		is_at_war = yes
+		is_imprisoned = no
+	}
+
+	immediate = {
+		scope:aghlabid_raiders = { # On learning of the approach of the Roman Navy from some deserters, the Saracens abandoned the siege and returned to Bari
+			every_character_war = {
+				limit = {
+					primary_defender = scope:leader_of_ragusa
+					primary_attacker = scope:aghlabid_raiders
+				}
+				end_war = defender
+			}		
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0007 = { # Victory at Ragusa trigger
 	scope = none
 	hidden = yes
 
@@ -368,6 +789,9 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 	immediate = {
 		scope:defender = {
 			add_character_flag = ragusa_has_been_defended
+			trigger_event = {
+				id = HEE_siege_of_ragusa.0008
+			}
 		}
 
 		# "Ooryphas' "showing of the flag" had swift results, as the Slavic tribes sent envoys to the Emperor, once more acknowledging his suzerainty"
@@ -382,7 +806,7 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 			title:c_rashka.holder = {
 				add_character_flag = heard_of_ragusa_defense
 				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
+					id = HEE_siege_of_ragusa.0009
 					days = { 7 30 }
 				}
 			}
@@ -391,83 +815,15 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 		if = {
 			limit = {
 				NOT = {
-					title:c_duklja.holder = {
+					title:c_pomorje.holder = {
 						has_character_flag = heard_of_ragusa_defense
 					}
 				}
 			}
-			title:c_duklja.holder = {
+			title:c_pomorje.holder = {
 				add_character_flag = heard_of_ragusa_defense
 				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
-					days = { 7 30 }
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = {
-					title:c_travunia.holder = {
-						has_character_flag = heard_of_ragusa_defense
-					}
-				}
-			}
-			title:c_travunia.holder = {
-				add_character_flag = heard_of_ragusa_defense
-				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
-					days = { 7 30 }
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = {
-					title:c_zachlumia.holder = {
-						has_character_flag = heard_of_ragusa_defense
-					}
-				}
-			}
-			title:c_zachlumia.holder = {
-				add_character_flag = heard_of_ragusa_defense
-				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
-					days = { 7 30 }
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = {
-					title:c_pagania.holder = {
-						has_character_flag = heard_of_ragusa_defense
-					}
-				}
-			}
-			title:c_pagania.holder = {
-				add_character_flag = heard_of_ragusa_defense
-				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
-					days = { 7 30 }
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				NOT = {
-					title:c_rama.holder = {
-						has_character_flag = heard_of_ragusa_defense
-					}
-				}
-			}
-			title:c_rama.holder = {
-				add_character_flag = heard_of_ragusa_defense
-				trigger_event = {
-					id = HEE_siege_of_ragusa.0006
+					id = HEE_siege_of_ragusa.0009
 					days = { 7 30 }
 				}
 			}
@@ -475,11 +831,11 @@ HEE_siege_of_ragusa.0005 = { # Victory at Ragusa trigger
 	}
 }
 
-HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREmperor
+HEE_siege_of_ragusa.0008 = { # Following a victory in the siege, Ragusa decides if they should follow through with their oath to the Roman Emperor
 	window = big_event_window
 	type = character_event
-	title = HEE_siege_of_ragusa.0006.t
-	desc = HEE_siege_of_ragusa.0006.desc
+	title = HEE_siege_of_ragusa.0008.t
+	desc = HEE_siege_of_ragusa.0008.desc
 	theme = faith
 	left_portrait = {
 		character = root
@@ -495,7 +851,7 @@ HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREm
 	}
 
 	option = { # Convert to Orthodoxy
-		name = HEE_siege_of_ragusa.0006.a
+		name = HEE_siege_of_ragusa.0008.a
 		
 		set_character_faith_with_conversion = faith:orthodox
 
@@ -503,7 +859,49 @@ HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREm
 			add_opinion = {
 				target = root
 				modifier = pious_opinion
-				opinion = 25
+				opinion = 10
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Become a tributary to Rome
+		name = HEE_siege_of_ragusa.0008.b
+
+		title:e_byzantium.holder = { # Roman Emperor
+			save_scope_as = suzerain
+			root = { #
+				break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+				tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+				tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+				set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+			}
+		}
+
+		every_character_war = { # End any wars waged by Romans in the Empire against the new tributary
+			limit = {
+				primary_attacker = {
+					OR = {
+						this = title:e_byzantium.holder
+						top_liege = { this = title:e_byzantium.holder }
+					}
+				}
+			}
+			end_war = white_peace
+		}
+
+		scope:roman_emperor = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 20
 			}
 		}
 
@@ -513,6 +911,124 @@ HEE_siege_of_ragusa.0006 = { #Salvic tribes consider swearing fealty to the EREm
 		
 		ai_chance = {
 			base = 1000
+		}
+	}
+
+	option = { # Do nothing
+		name = HEE_siege_of_ragusa.0008.c
+
+		scope:roman_emperor = {
+			add_opinion = {
+				target = root
+				modifier = upset_opinion
+				opinion = -50
+			}
+		}
+
+		if = {
+			limit = { 
+				NOT = { has_trait = disloyal }
+			}
+			random = {
+				chance = 5
+				add_trait = disloyal
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_siege_of_ragusa.0009 = { #Salvic tribes consider swearing fealty to the EREmperor
+	window = big_event_window
+	type = character_event
+	title = HEE_siege_of_ragusa.0009.t
+	desc = HEE_siege_of_ragusa.0009.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+	right_portrait = {
+		character = scope:roman_emperor
+		animation = personality_honorable
+	}
+
+	immediate = {
+		title:e_byzantium.holder = { save_scope_as = roman_emperor }
+	}
+
+	option = { # Convert to Orthodoxy
+		name = HEE_siege_of_ragusa.0009.a
+		
+		set_character_faith_with_conversion = faith:orthodox
+
+		scope:roman_emperor = {
+			add_opinion = {
+				target = root
+				modifier = pious_opinion
+				opinion = 10
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Become a tributary to Rome
+		name = HEE_siege_of_ragusa.0009.b
+
+		title:e_byzantium.holder = { # Roman Emperor
+			save_scope_as = suzerain
+			root = { #
+				break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+				tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+				tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+				set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+			}
+		}
+
+		every_character_war = { # End any wars waged by Romans in the Empire against the new tributary
+			limit = {
+				primary_attacker = {
+					OR = {
+						this = title:e_byzantium.holder
+						top_liege = { this = title:e_byzantium.holder }
+					}
+				}
+			}
+			end_war = white_peace
+		}
+
+		scope:roman_emperor = {
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 20
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Do nothing
+		name = HEE_siege_of_ragusa.0009.c
+		
+		ai_chance = {
+			base = 0
 		}
 	}
 }

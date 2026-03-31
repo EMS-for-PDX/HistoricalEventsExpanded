@@ -5489,7 +5489,7 @@ d_meissen = {
 	1178.1.1 = { change_development_level = 24 }
 	
 	857.1.1 = {
-		holder = 184007 #Duke Radomil
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 		liege = 0
 	}
 	867.1.1 = {
@@ -5580,32 +5580,9 @@ d_meissen = {
 
 
 c_meissen = {
-	720.1.1 = {
-		liege = "d_bohemia"
-		holder = 168345
-	}
-	738.1.1 = {
-		holder = 146174
-	}
-	760.1.1 = {
-		holder = 146175
-	}
-	801.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	830.1.1 = {
-		liege = d_meissen
-	#	holder = 0
-	}
-	
 	857.1.1 = {
-		holder = 184007
+		liege = d_meissen
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	1062.1.1 = {
 		holder = 7060
@@ -5655,32 +5632,9 @@ c_dresden = {
 	1066.1.1 = { change_development_level = 9 }
 	1178.1.1 = { change_development_level = 24 }
 	
-	720.1.1 = {
-		liege = "d_bohemia"
-		holder = 168345
-	}
-	738.1.1 = {
-		holder = 146174
-	}
-	760.1.1 = {
-		holder = 146175
-	}
-	801.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	830.1.1 = {
-		liege = d_meissen
-	#	holder = 0
-	}
-	
 	857.1.1 = {
-		holder = 184007
+		liege = d_meissen
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	1062.1.1 = {
 		holder = 7060
@@ -5732,7 +5686,7 @@ c_wolkenstein = {
 	}
 	857.1.1 = {
 		liege = d_meissen
-		holder = 184007
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	1066.1.1 = {
 		holder = 30335
@@ -5772,32 +5726,9 @@ c_wolkenstein = {
 
 
 c_osterland = {
-	720.1.1 = {
-		liege = "d_bohemia"
-		holder = 168345
-	}
-	738.1.1 = {
-		holder = 146174
-	}
-	760.1.1 = {
-		holder = 146175
-	}
-	801.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	830.1.1 = {
-		liege = d_meissen
-	#	holder = 0
-	}
-	
 	857.1.1 = {
-		holder = 184007
+		liege = d_meissen
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	1062.1.1 = {
 		#holder = 7060
@@ -5844,32 +5775,9 @@ c_osterland = {
 
 
 c_naumburg = {
-	720.1.1 = {
-		liege = "d_bohemia"
-		holder = 168345
-	}
-	738.1.1 = {
-		holder = 146174
-	}
-	760.1.1 = {
-		holder = 146175
-	}
-	801.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	830.1.1 = {
-		liege = d_meissen
-	#	holder = 0
-	}
-	
 	857.1.1 = {
-		holder = 184007
+		liege = d_meissen
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	968.1.1 = {
 		liege = "d_meissen"
@@ -5925,7 +5833,7 @@ c_vogtland = {
 	}
 	857.1.1 = {
 		liege = d_meissen
-		holder = 184007
+		holder = 168344 # Slavibor, Prince of the Sorbians. Moved to be in Sorbian lands and given lands fitting for a ruler of the Sorbians
 	}
 	1066.1.1 = {
 		holder = 30335

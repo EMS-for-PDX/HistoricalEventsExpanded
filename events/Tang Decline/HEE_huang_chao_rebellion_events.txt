@@ -1,0 +1,39 @@
+namespace = HEE_huang_chao_rebellion
+
+HEE_huang_chao_rebellion.0001 = { # Origins of the Rebellions; Spawn Yellow River flood to imitate the severe droughts and floods of the early 870s that caused terrible famine
+	type = character_event
+	hidden = yes
+
+	trigger = {
+        this = title:h_china.holder
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+        any_sub_realm_county = {
+            title_province = { geographical_region = yellow_river_region }
+            NOT = {
+                any_county_situation = { situation_type = natural_disaster_flood }
+            }
+        }
+	}
+
+	#Resend
+
+	immediate = {
+        add_character_flag = sub_realm_flood
+        scope:sub_realm_flood = {
+            root = {
+                random_sub_realm_county = {
+                    limit = {
+                        title_province = { geographical_region = yellow_river_region }
+                        NOT = {
+                            any_county_situation = { situation_type = natural_disaster_flood }
+                        }
+                    }
+                    spawn_flood_in_county_effect = { COUNTY = this }
+                }
+            }
+        }
+        scope:random_flood = { trigger_event = natural_disaster.9902 }
+	}
+}

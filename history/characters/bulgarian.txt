@@ -1589,17 +1589,17 @@
 	dynasty = 8636
 	health = 5.3
 	martial = 7
-	diplomacy = 6
+	diplomacy = 9
 	intrigue = 8
 	stewardship = 10
+	learning = 6
 	religion = "tengri_pagan"
 	culture = "bulgarian"
-	trait = ambitious	#Can't say he didn't aim high in all areas of his life.
-	trait = callous	#Blinded his own son, threatened to blind the others, ruthlessly broke pagan revolts throughout his reign. Rarely mean, but utterly pragmatic.
-	trait = diligent
-	trait = cynical	#Converted for political reasons.
-	trait = education_martial_4
-	trait = diplomat #Maneuvered shifting political alliances between East Francia and the Byzantines, and the Eastern and Western Churches to achieve his goals
+	trait = diligent # Diligently worked to christianize Bulgaria and achieve an independent church
+	trait = stubborn # Continously pushed for his religious agenda even when blocked by Pope and Orthodox clergy
+	trait = vengeful # Attempted to avenge his father's Serbian defeat, ruthlessly suppressed a Bulgarian noble revolt and executed 52 boyars together with their entire families, and blinded his own son when he went back to Paganism
+	trait = cynical	# Converted for political reasons.
+	trait = education_diplomacy_4 # Boris' diplomatic efforts are far more notable and impressive than his military activities (which were largely defeats)
 	father = 70384
 	825.1.1 = {
 		birth = "825.1.1"
@@ -1615,13 +1615,54 @@
 	864.1.1 = {
 		religion = "orthodox"
 		capital = "c_dorostorum"
-		name = "Boris-Michael"
 		effect = {
 			set_relation_potential_rival = character:70383 #Vladimir does not take kindly to Christianity.
 			set_relation_potential_friend = character:712 #Simeon, on the other hand, is born just after/before the conversion, and he has high hopes.
+			# Standard Refunds
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_diplomacy_lifestyle_perk_points = -10
+			# Diplomat Tree
+			add_perk = thoughtful_perk
+			add_perk = ducal_conquest_perk
+			add_perk = forced_vassalage_perk
+			add_perk = adaptive_traditions_perk
+			add_perk = flexible_truces_perk
+			add_perk = defensive_negotiations_perk
+			add_perk = embassies_perk
+			add_perk = accomplished_forger_perk
+			add_perk = diplomat_perk
+			add_trait = diplomat # Maneuvered shifting political alliances between East Francia and the Byzantines, and the Eastern and Western Churches to achieve his goals
+			add_trait = overseer # Not a gallant figure or great strategic mind - but his crushing of the Bulgar revolt lends itself to the Overseer perk
+			# Special Papal armor for Boris
+			create_artifact = {
+				name = boris_pope_armor_name
+				description = boris_pope_armor_desc
+				history = {
+					location = province:2575 #Rome
+					date = 864.1.1
+					actor = character:7853 #Pope Nicholas
+					recipient = character:70382 #Boris I
+					type = given
+				}
+				type = armor_mail
+				visuals = armor
+				rarity = famed
+				wealth = scope:wealth
+				quality = scope:quality		
+				modifier = artifact_negate_prowess_penalty_add_5_modifier # Standard prowess modifier
+				save_scope_as = boris_pope_armor
+			}
+			scope:boris_pope_armor = {
+				add_artifact_modifier = artifact_tolerance_advantage_mod_3_modifier # Armor was worn to purge the Bulgarian pagan nobles
+				add_artifact_modifier = artifact_zealot_vassal_opinion_3_modifier						
+				equip_artifact_to_owner = yes
+			}
 		}
 	}
 	865.6.1 = {
+		effect = { add_character_modifier = boris_guilty_conscious_modifier }
+		add_dread = 100
 		add_character_flag = { # In the summer of 865 a group of Bulgar aristocrats started an open revolt. Boris ruthlessly suppressed it and executed 52 boyars together with their entire families.
 			flag = recent_nation_fracturing_faction_war
 			years = faction_nation_fracturing_war_defeat_cooldown

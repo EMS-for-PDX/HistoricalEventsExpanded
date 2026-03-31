@@ -17,14 +17,30 @@ dynasty_kurramites = {
 	culture = "persian"
 }
 
-dynasty_baboutzikos = {
-	name = "dynn_Baboutzikos"
+dynasty_baboutzikoi = {
+	name = "dynn_Baboutzikoi"
+	culture = "greek"
+	motto = "dynn_Baboutzikoi_motto"
+}
+
+dynasty_rhabdouchoi = {
+	name = "dynn_Rhabdouchoi"
 	culture = "greek"
 }
 
 dynasty_peganes = {
 	name = "dynn_Peganes"
 	culture = "greek"
+}
+
+dynasty_isauroi = {
+	name = "dynn_Isauroi"
+	culture = "greek"
+}
+
+dynasty_marzoukoi = {
+	name = "dynn_Marzoukoi"
+	culture = "greek"	
 }
 
 dynasty_tzifinarites = {
@@ -41,6 +57,12 @@ dynasty_rendakios = {
 	name = "dynn_Rendakios"
 	culture = "greek"
 	motto = "dynn_Rendakios_motto"
+}
+
+dynasty_guberioi = { # The romanized descendants of Kuber
+	name = "dynn_Guberioi"
+	culture = "greek"
+	motto = "dynn_Guberioi_motto"	
 }
 
 dynasty_ioubes = {
@@ -333,6 +355,13 @@ hee_kent = {
 	prefix = "dynnp_of"
 	name = "dynn_Kent"
 	culture = "anglo_saxon"
+}
+
+dynasty_siegfriedian = {
+	prefix = "dynnp_af"
+	name = "dynn_Sigurdr" # The Sigfredian dynasty, named after King Sigfred. Originally, we were going to borrow Bagsecg's dynasty as, (for whatever reason) CK3 has Hårik II of Denmark in-game as Bagsecg's father (character ID 6866). But decoupling CK's Horick II from our Horick II has rended that choice untenable
+	culture = "norse"
+	motto = "dynn_Sigurdr_motto"
 }
 
 dynasty_hornbreaker = {
@@ -686,4 +715,24 @@ dynasty_julius = {
 house_british_isles_ivaring = {
 	name = "dynn_Ivaring"
 	culture = "norse"
+}
+
+dynasty_doudlebove = {
+	name = "dynn_Doudlebove"
+	culture = "czech"
+}
+
+dynasty_charvatci = {
+	name = "dynn_Charvatci"
+	culture = "czech"
+}
+
+dynasty_lucane = {
+	name = "dynn_Lucane"
+	culture = "czech"
+}
+
+dynasty_litomerici = {
+	name = "dynn_Litomerici"
+	culture = "czech"
 }

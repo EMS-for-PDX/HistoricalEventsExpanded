@@ -1,0 +1,44 @@
+﻿# Additional Historical Characters for Han
+
+yizong_concubine_1 = { # Consort Guo (Yizong)
+	name = "Jingru_656C_5112" # Personal name unknown
+	female = yes
+	# dynasty = li_674E_87 # Guo
+	religion = "jingxue"
+	culture = "han"
+	# Of humble origins
+	trait = beauty_good_1 # Considering the beauty of the daughter, lets give the mother a positive beauty trait
+	831.6.9 = { # Unknown
+		birth = yes
+	}
+	859.9.13 = {
+		effect = { # Though Consort Guo became Li Wen's concubine when he was Prince of Yun, we will put it when Li Wen becomes Emperor of China
+			character:han_3641 = { make_concubine = character:yizong_concubine_1 }
+		}
+	}
+	874.1.1 = { # When Emperor Xizong fled Chang'an due to the Huang Chao Rebellion, Consort Guo could not keep up and was left to wander among the common people. Her ultimate fate is unknown
+		death = { death_reason = death_disappearance }
+	}	
+}
+
+yizong_daughter_1 = { # Princess Tongchang/Weiwenyi; 1st daughter of Emperor Yizong of Tang
+	name = "Meiling" # Personal name unknown; suggestions/given names range from Tongchang/Weiwenyi/Meiling
+	female = yes
+	dynasty = li_674E_87 # Li (Tang Dynasty)
+	religion = "jingxue"
+	culture = "han"
+	father = han_3641 # Emperor Yizong of Tang
+	mother = yizong_concubine_1 # Consort Guo (Yizong)
+	# Said to be naturally gentle, elegant, and charming with a beautiful appearance
+	trait = education_diplomacy_4
+	trait = compassionate
+	trait = calm
+	trait = humble
+	trait = beauty_good_3
+	849.7.3 = { # Born on the third day of the seventh month in the third year of the Dazhong era (849)
+		birth = yes
+	}
+	870.8.1 = { # On the eighth month in the eleventh year of the Xiantong era (870)
+		death = { death_reason = death_ill }
+	}
+}

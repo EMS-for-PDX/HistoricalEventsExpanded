@@ -1133,3 +1133,43 @@ pope_response_to_lothaire_866 = {
 		years = memory_default_duration
 	}
 }
+
+usurpation_of_froila = {
+	categories = { negative intrigue }
+	icon = "intrigue.dds"
+	description = {
+		random_valid = { desc = usurpation_of_froila_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = usurpation_of_froila_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = usurpation_of_froila_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}
+
+alfonsu_christmas_coronation = {
+	categories = { positive title major }
+	icon = "title.dds"
+	description = {
+		random_valid = { desc = alfonsu_christmas_coronation_desc }
+	}
+
+	second_perspective_description = {
+		random_valid = { desc = alfonsu_christmas_coronation_desc_second_perspective_1 }
+	}
+
+	third_perspective_description = {
+		random_valid = { desc = alfonsu_christmas_coronation_desc_third_perspective_1 }
+	}
+	
+	duration = {
+		years = memory_default_duration
+	}
+}

@@ -65,7 +65,7 @@ HEE_seljuks.0011 = {
 					holder = global_var:seljuks_founder
 					change = scope:change
 				}
-				set_capital_county = title:c_ghazna
+				set_capital_county = title:c_isfahan
 			}
 		
 			resolve_title_and_vassal_change = scope:change

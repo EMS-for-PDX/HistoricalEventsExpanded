@@ -630,6 +630,51 @@ d_nf_monomachos = { #
 	ai_primary_priority = { add = @never_primary_score }
 }
 
+d_nf_guberioi = { # 
+	color = { 100 100 100 }
+	capital = c_byzantion # The two branches of the family lived in Constantinople and Cappadocia
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_baboutzikoi = { # 
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_nf_martinakios = { # 
+	color = { 100 100 100 }
+	capital = c_byzantion
+
+	definite_form = yes
+	landless = yes
+	ruler_uses_title_name = no
+	always_follows_primary_heir = yes
+	no_automatic_claims = yes
+	noble_family = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
 ### LAAMPs ###
 d_laamp_trpimirovic = { # Trpimir's sons in exile
 	color = { 100 100 100 }
@@ -662,6 +707,48 @@ d_laamp_hanzali = { # Muhammad ibn Wasil
 d_laamp_hastein = { # Hastein
 	color = { 100 100 100 }
 	capital = c_montaigu # Hastein had a base on the island of Noirmoutier
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_breton_vikings = { # fictional placeholder for viking slavers in French Leon
+	color = { 100 100 100 }
+	capital = c_french_leon # 
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_ivar = { # Historical Ivar, one of the commanders of the Great Heathen Army
+	color = { 100 100 100 }
+	capital = c_north_riding # York, HQ for the Great Heathen Army on Game Start
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_bagsecg = { # As HEE removes Bagsecg's lands in Denmark, it is only fitting we give him a LAAMP title and troops to represent Bagsecg's command of the Great Heathen Army that would invade Wessex
+	color = { 100 100 100 }
+	capital = c_north_riding # York, HQ for the Great Heathen Army on Game Start
 
 	definite_form = yes
 	landless = yes

@@ -37,7 +37,7 @@ mediterranean_foothold_decision_confirm: "The Sea is no barrier; it is a path!"
 mediterranean_foothold_decision.completely_control_X_counties_in_sicily: "You must [completely_control|E] at least #bold 55%#! of the [counties|E] within [GetGeographicalRegion('custom_sicily').GetName]"
 mediterranean_foothold_decision.completely_control_X_counties_from_the_western_med_islands: "You must [completely_control|E] at least #bold 80%#! of the [counties|E] within [GetGeographicalRegion('custom_western_mediterranean_islands').GetName]"
 
-mediterranean_foothold_decision_enable_raiding_tooltip: "Can [raid|E] overseas, regardless of [government|E] type, for #bold 10#! years."
+mediterranean_foothold_decision_enable_raiding_tooltip: "You can [raid|E] overseas, regardless of [government|E] type, for #bold 10#! years."
 mediterranean_foothold_decision_coastal_counties_tooltip: "Every Coastal or Riverside [county|E] within the [region|E] of the [GetGeographicalRegion('custom_mediterranean_shoreline').GetName] will recieve the [GetModifier('flourishing_trade_modifier').GetNameWithTooltip] [modifier|E] for #bold 15#! years."
 
 unify_england_decision: "Unite England"
@@ -46,3 +46,8 @@ unify_england_decision_desc: "For too long the Angle and Saxon people have been 
 unify_england_decision_confirm: "One God. One People. One King."
 
 unify_england_decision_scripted_effect_consolidate_titles_tooltip: "The Heptarchy kingdoms shall be destroyed and their lands consolidated into the [GetTitleByKey('k_england').GetName]"
+
+reestablish_an_independent_egypt_decision: "Reestablish an Independent Egypt"
+reestablish_an_independent_egypt_decision_tooltip: "Unify the lands of Egypt under your control"
+reestablish_an_independent_egypt_decision_desc: "Not since the reign of the Pharaohs has the land of Egypt been a political actor in its own right. For centuries it has been a mere passive province subject to a foreign imperial power; but no longer. Under my leadership, Egypt shall once more be free to exert its influence as an independent polity!"
+reestablish_an_independent_egypt_decision_confirm: "Egypt shall prosper once more!"

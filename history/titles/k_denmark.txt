@@ -4,6 +4,53 @@ k_denmark = {
 	1101.1.1 = { change_development_level = 12 }
 	1178.1.1 = { change_development_level = 24 }
 
+	# Pre-Knýtlinga Danish monarchs / Legendary kings of Denmark
+
+	# Chlochilaicus, a a Danish King who lead a raid to France c. 516 according to Gregory of Tours (While Gregory calls him a king of the Danes, the much younger Liber historiae Francorum instead calls him a king of the Goths (rege Gotorum), agreeing with Beowulf)
+
+	# Ongendus (perhaps Angantyr in Danish) was a king of the Danes, reigning c. 710, the first Danish king known from contemporary literature
+
+	730.1.1 = {
+		succession_laws = { scandinavian_elective_succession_law }
+		holder = 168647 # Harald, named as former king in relating 9th-century events, perhaps model for legendary Harald Wartooth. Seems to be character 168647 in CK's history files. A late and unreliable source of Frisian history mentions that their king Redbad II (the last king of the Frisians) in 754 had to flee to "the land of the Danes" where king Harald reigned ("Daniae Regi Heraldi").
+	}
+	770.1.1 = {
+		holder = sigfredian0001 # Sigfred, an eighth century Danish king who is known to have reigned from before 777 to after 798
+	}
+	804.1.1 = {
+		holder = sigfredian0002 # Gudfred; ninth century Danish king who reigned from at least 804 to 810
+	}
+	810.1.1 = {
+		holder = sigfredian0005 # Hemming I (died 812); king in Denmark from 810 until his death
+	}
+	# Following the death of Hemming, Sigifrid, the nephew of King Godofrid, and Anulo, the nephew of Heriold and of the former king, both wished to succeed him. Being unable to agree on who should be king, they raised troops, fought a battle, and were both killed
+	# The party of Anulo won, however, and made his brothers Heriold and Reginfrid their kings.
+	812.1.1 = {
+		holder = 167779 # Harald Klak, co-ruled with his brother Reginfrid. Since co-kingship cant be properly displayed in title histories, I regretfully have to select one ruler and thus will choose Klak as the more notable of the two brothers
+	}
+	813.1.1 = { # Shortly after the exile of Gudfred's sons, they found support from all over the Danish realm, defeated Harald and Ragnfred with relative ease, and expelled them from Denmark. In that way the brothers were elevated as Danish co-rulers. Whether they split the realm into parts or ruled collectively is not known.
+		holder = sigfredian0006 # As with the co-rulers Harald Klak and his brother Reginfrid, I must select one ruler to represent the title holder. I will go with Gudfred's oldest son as he dies soon and Horik can still hold the title later
+	}
+	814.1.1 = { # In the next year, Harald and Ragnfred gathered a force and attacked their rivals. A battle was fought where Ragnfred and the oldest son of Gudfred were both slain.
+		holder = sigfredian0007 # Unnamed son of Gudfred, who will be treasonously overthrown (along with another brother) by Horik and another brother
+	}
+	819.1.1 = { # Circa. 819, there was a rift among Gudfred's sons. Two of them expelled the other two, supposedly through treason.
+		holder = sigfredian0010 # Unnamed brother of Horek who expelled the other brothers and co-ruled the Kingdom alongside Horek
+	}
+	828.1.1 = { # As Horek I's co-ruling brother dissappears from the sources circa. 828, it is likely the other ruling brother died and left Horek as sole ruler of Denmark
+		holder = sigfredian0009 # Horik I; king of the Danes as co-ruler from 813, and sole king from c. 828 until his violent death in 854
+	}
+	854.1.1 = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs. Only one eligible candidate for the kingship remained, a child who was also called Horik
+		holder = sigfredian0020 # Horik II (died after 864), also known as Hårik or, in late sources, Erik Barn (Danish: "Erik the Child"), was King of the Danes from the fall of Horik I in 854 to an unknown date between 864 and 873
+	}
+	870.1.1 = {
+		holder = 0 # During his reign the Danish kingdom showed tendencies of breaking up. After his demise under unknown circumstances, Denmark entered a long period of obscurity, until the rise of the Jelling dynasty in the 10th century.
+	}
+
+
+
+
+
 	917.1.1 = {
 		succession_laws = { scandinavian_elective_succession_law }
 		holder = 101549 # Hardeknud
@@ -247,10 +294,13 @@ c_fyn = {
 		holder = 194003
 	}
 	860.1.1 = {
-		liege = "d_sjaelland"
+		liege = "d_slesvig" # It is not known the extent of the brothers Sigfred and Halfdan's realm, so for a more even distribution of land (and to land Halfdan) I will give this island to Halfdan
 	}
-	860.1.1 = {
-		holder = 163110
+	# The last known ruler of Gudfred's dynasty, Horik II, died sometime after 864. Nine years later, in 873, we encounter two brothers who were co-rulers of the Danish realm, Sigfred and Halfdan.
+	# Based on negotiations with King Louis the German, it is likely that South Jutland was part of their kingdom.
+	# in HEE lore/interpretation of possible history, in the breakdown of central authority of the Danish Kingdom during Horik's reign, the brothers Sigfred and Halfdan are welcomed/return to Southern Jutland and establish themselves as rulers
+	865.1.1 = {
+		holder = 168637 # The likely "more historical" Halfdan, of the brothers Sigfred and Halfdan who were two brothers figured as Kings of the Danes in 873
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -450,40 +500,14 @@ c_skane = {
 		government = tribal_government
 	}
 	860.1.1 = {
-		liege = "d_sjaelland"
+		holder = 163110 # Ragnarssona þáttr states that when his father died, Sigurd inherited Zealand, Scania, Halland, the Danish islands, and Viken
 	}
-	860.1.1 = {
-		holder = 168633
-	}
-	885.1.1 = {
-		holder = 168634
-	}
-	915.1.1 = {
-		holder = 168635
-	}
+	# I see no evidence or theories on why the Akira line would hold this title, thus removed
 	917.1.1 = {
 		liege = "k_denmark"
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
-	}
-	938.1.1 = {
-		holder = 168638
-	}
-	961.1.1 = {
-		holder = 168639
-	}
-	985.1.1 = {
-		holder = 168640
-	}
-	1002.1.1 = {
-		holder = 168641
-	}
-	1025.1.1 = {
-		holder = 168642
-	}
-	1042.1.1 = {
-		holder = 168643
 	}
 	1066.1.1 = {
 		holder = 34156 # Bishop Egino, bishop of Lund 1066-1072
@@ -735,13 +759,12 @@ c_blekinge = {
 
 
 d_jylland = {
-	852.1.1 = {
-		holder = 6866 # H�rik II
+	854.1.1 = {
+		holder = sigfredian0020 # H�rik II
 		government = tribal_government
 	}
-	860.1.1 = {
-		holder = 163113 # Bagsecg
-	}
+	# Bagsecg, though listed as a King of the Danes by the Anglo-saxons, is not mentioned in connection to any specific realm or holdings beyond his leadership of Northmen in the Great Heathen Army
+	# Thus, we consider his title more in reference to his leadership role than any actual lordship over Danish lands and have replaced him with our interpretation of Horik II (rather than CK3's version of CK3 which has... errors)
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
 	}
@@ -818,11 +841,13 @@ c_aarhus = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
+	854.1.1 = {
+		holder = sigfredian0020 # H�rik II
+	}
+	# Bagsecg, though listed as a King of the Danes by the Anglo-saxons, is not mentioned in connection to any specific realm or holdings beyond his leadership of Northmen in the Great Heathen Army
+	# Thus, we consider his title more in reference to his leadership role than any actual lordship over Danish lands and have replaced him with our interpretation of Horik II (rather than CK3's version of CK3 which has... errors)
 	860.1.1 = {
 		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -900,11 +925,13 @@ c_viborg = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
+	854.1.1 = {
+		holder = sigfredian0020 # H�rik II
+	}
+	# Bagsecg, though listed as a King of the Danes by the Anglo-saxons, is not mentioned in connection to any specific realm or holdings beyond his leadership of Northmen in the Great Heathen Army
+	# Thus, we consider his title more in reference to his leadership role than any actual lordship over Danish lands and have replaced him with our interpretation of Horik II (rather than CK3's version of CK3 which has... errors)
 	860.1.1 = {
 		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -979,11 +1006,13 @@ c_ringkobing = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
+	854.1.1 = {
+		holder = sigfredian0020 # H�rik II
+	}
+	# Bagsecg, though listed as a King of the Danes by the Anglo-saxons, is not mentioned in connection to any specific realm or holdings beyond his leadership of Northmen in the Great Heathen Army
+	# Thus, we consider his title more in reference to his leadership role than any actual lordship over Danish lands and have replaced him with our interpretation of Horik II (rather than CK3's version of CK3 which has... errors)
 	860.1.1 = {
 		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -1058,11 +1087,13 @@ c_aalborg = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
+	854.1.1 = {
+		holder = sigfredian0020 # H�rik II
+	}
+	# Bagsecg, though listed as a King of the Danes by the Anglo-saxons, is not mentioned in connection to any specific realm or holdings beyond his leadership of Northmen in the Great Heathen Army
+	# Thus, we consider his title more in reference to his leadership role than any actual lordship over Danish lands and have replaced him with our interpretation of Horik II (rather than CK3's version of CK3 which has... errors)
 	860.1.1 = {
 		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -1133,6 +1164,18 @@ c_aalborg = {
 	}
 }
 
+d_slesvig = { # Representative of the "kingdom" of the brothers the brothers Sigfred and Halfdan
+	# The last known ruler of Gudfred's dynasty, Horik II, died sometime after 864. Nine years later, in 873, we encounter two brothers who were co-rulers of the Danish realm, Sigfred and Halfdan.
+	# Based on negotiations with King Louis the German, it is likely that South Jutland was part of their kingdom.
+	# in HEE lore/interpretation of possible history, in the breakdown of central authority of the Danish Kingdom during Horik's reign, the brothers Sigfred and Halfdan are welcomed/return to Southern Jutland and establish themselves as rulers
+	865.1.1 = {
+		holder = 168633 # The likely "more historical" Sigfred, of the brothers Sigfred and Halfdan who were two brothers figured as Kings of the Danes in 873
+		government = tribal_government
+	}
+	891.9.1 = { # Battle of Leuven (891). In the cataclysmic Battle of Leuven (891), two Danish vikings named Sigfred and Gudfred were reported to have been killed by the East Frankish king Arnulf of Carinthia. This Sigfred may have been the same as the brother Sigfred
+		holder = 0
+	}
+}
 
 c_slesvig = {
 	867.1.1 = {	change_development_level = 3 }
@@ -1144,11 +1187,11 @@ c_slesvig = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
-	860.1.1 = {
-		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
+	# The last known ruler of Gudfred's dynasty, Horik II, died sometime after 864. Nine years later, in 873, we encounter two brothers who were co-rulers of the Danish realm, Sigfred and Halfdan.
+	# Based on negotiations with King Louis the German, it is likely that South Jutland was part of their kingdom.
+	# in HEE lore/interpretation of possible history, in the breakdown of central authority of the Danish Kingdom during Horik's reign, the brothers Sigfred and Halfdan are welcomed/return to Southern Jutland and establish themselves as rulers
+	865.1.1 = {
+		holder = 168633 # The likely "more historical" Sigfred, of the brothers Sigfred and Halfdan who were two brothers figured as Kings of the Danes in 873
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -1203,11 +1246,11 @@ c_vorbasse = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
-	860.1.1 = {
-		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
+	# The last known ruler of Gudfred's dynasty, Horik II, died sometime after 864. Nine years later, in 873, we encounter two brothers who were co-rulers of the Danish realm, Sigfred and Halfdan.
+	# Based on negotiations with King Louis the German, it is likely that South Jutland was part of their kingdom.
+	# in HEE lore/interpretation of possible history, in the breakdown of central authority of the Danish Kingdom during Horik's reign, the brothers Sigfred and Halfdan are welcomed/return to Southern Jutland and establish themselves as rulers
+	865.1.1 = {
+		holder = 168633 # The likely "more historical" Sigfred, of the brothers Sigfred and Halfdan who were two brothers figured as Kings of the Danes in 873
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.
@@ -1290,11 +1333,11 @@ c_ribe = {
 		liege = d_sjaelland
 		government = tribal_government
 	}
-	860.1.1 = {
-		liege = "d_jylland"
-	}
-	860.1.1 = {
-		holder = 163113
+	# The last known ruler of Gudfred's dynasty, Horik II, died sometime after 864. Nine years later, in 873, we encounter two brothers who were co-rulers of the Danish realm, Sigfred and Halfdan.
+	# Based on negotiations with King Louis the German, it is likely that South Jutland was part of their kingdom.
+	# in HEE lore/interpretation of possible history, in the breakdown of central authority of the Danish Kingdom during Horik's reign, the brothers Sigfred and Halfdan are welcomed/return to Southern Jutland and establish themselves as rulers
+	865.1.1 = {
+		holder = 168633 # The likely "more historical" Sigfred, of the brothers Sigfred and Halfdan who were two brothers figured as Kings of the Danes in 873
 	}
 	935.1.1 = {
 		government = feudal_government	#Ahistorical, just for ease of bookmarks.

@@ -1999,19 +1999,26 @@
 	}
 }
 
-232507 = {
+232507 = { # John Axouch; commander-in-chief (megas domestikos) of the Byzantine army during the reign of Emperor John II Komnenos, and during the early part of the reign of his son Manuel I Komnenos 
 	name = "Ioannes"
 	dynasty = 20067
-	martial = 7
-	diplomacy = 7
+	martial = 9
+	diplomacy = 9
 	intrigue = 6
-	stewardship = 6
+	stewardship = 10
+	learning = 8
 	religion = "orthodox"
 	culture = "turkish"
+	trait = forgiving # Axouch also asked the emperor for clemency for Anna, and the two siblings were reconciled, at least to a degree
 	trait = diligent
-	trait = content
+	trait = humble
 	trait = cynical
 	trait = education_martial_3
+	trait = military_engineer # Conducted the siege in taking of Laodicea from the Seljuk Turks in 1119. Lead another siege against the Normans on Corfu
+	trait = unyielding_defender # 
+	trait = loyal # Noted for unusual (at least for the time) loyality to John II
+	trait = administrator # Possibly served as head of the civil administration of the Empire. Regardless, John's handling of domestic affairs freed John II up for military action
+	trait = gallant # The historian Niketas Choniates, born shortly after Axouch's death, noted the "nobility" of John's mind
 	1083.1.1 = {
 		birth = "1083.1.1"
 	}

@@ -565,6 +565,7 @@
 	culture = "roman"
 	trait = education_diplomacy_3
 	father = 70524
+	mother = maximianus0001 # Maximianus' daughter/stepdaughter Theodora
 	295.1.1 = {
 		birth = "295.1.1"
 	}
@@ -740,7 +741,7 @@
 	trait = diligent
 	trait = diplomat
 	trait = scholar
-	trait = poet
+	trait = lifestyle_poet
 	father = 145242
 	255.1.1 = {
 		birth = "255.1.1"
@@ -1159,7 +1160,7 @@
 	trait = gregarious
 	trait = arrogant
 	trait = paranoid # Balbinus suspected Pupienus of using his German bodyguard to supplant him
-	trait = poet # According to Edward Gibbon (drawing upon the narratives of Herodian and the Historia Augusta) Balbinus was a poet of distinguished fame
+	trait = lifestyle_poet # According to Edward Gibbon (drawing upon the narratives of Herodian and the Historia Augusta) Balbinus was a poet of distinguished fame
 	165.1.1 = {
 		birth = "165.1.1"
 	}
@@ -1521,7 +1522,7 @@
 	trait = lifestyle_surveyor
 	trait = lifestyle_traveler # Hadrian was to spend more than half his reign outside Italy
 	trait = lifestyle_hunter # Hadrian was a passionate hunter from a young age
-	trait = poet # Hadrian wrote poetry in both Latin and Greek
+	trait = lifestyle_poet # Hadrian wrote poetry in both Latin and Greek
 	76.1.24 = {
 		birth = "76.1.24"
 	}
@@ -1750,7 +1751,7 @@
 	trait = gregarious
 	trait = sadistic
 	trait = education_stewardship_1
-	trait = poet
+	trait = lifestyle_poet
 	father = 145288
 	37.12.15 = {
 		birth = "37.12.15"

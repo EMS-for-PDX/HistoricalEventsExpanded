@@ -1,0 +1,301 @@
+﻿namespace = HEE_magyars
+
+# Old event name = HEE_turkic_conquerors.3000 
+
+HEE_magyars.0001 = { # Magyar defeat trigger; following a defeat, lets have the Magyar chieftain consider a migration away from the Steppe and into Carpathia
+	scope = none
+	hidden = yes
+
+	trigger = {
+		scope:defender = {
+			# Standard checks
+			is_alive = yes
+			is_landed = yes
+			is_independent_ruler = yes
+
+			# Specific Checks
+			culture = culture:mogyer
+			capital_province = { geographical_region = world_steppe_west }
+			primary_title = title:k_magyar
+		}
+	}
+
+	immediate = {
+		scope:defender = { save_scope_as = magyar_chief }
+
+		scope:attacker = { save_scope_as = winner } # For reference in following event
+			
+		scope:magyar_chief = {
+			add_character_flag = {
+				flag = HEE_did_this_work
+				days = 30
+			}
+			trigger_event = {
+				id = HEE_magyars.0002
+				days = { 1 3 }
+			}
+		}
+	}
+}
+
+HEE_magyars.0002 = { # Magyars Move
+	type = character_event
+	title = HEE_magyars.0002.t
+	desc = HEE_magyars.0002.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_content
+	}
+
+	trigger = {
+		#There must be a suitable Eastern European Mogyer ruler around.
+		#General checks (again)
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+
+		# Specific Checks
+		culture = culture:mogyer
+		capital_province = { geographical_region = world_steppe_west }
+		primary_title = title:k_magyar
+
+		#Pannonia must have a valid ruler to declare war on: someone with at least a duchy-ish sized chunk of the land, and who isn't a fellow Mogyer.
+		any_county_in_region = {
+			region = custom_hungary_minus_syrmia
+			holder = {
+				hungarian_migration_valid_pannonian_target_trigger = { COUNT = 6 }
+			}
+		}
+	}
+
+	#If the event fails, check again in a year or so, till the last available date for the decision has passed.
+	on_trigger_fail = {
+		if = {
+			limit = {
+				current_date <= 910.1.1
+				#Don't just rerun the check forever if an attempt has already been made, of course.
+				NOT = {
+					is_target_in_global_variable_list = {
+						name = unavailable_unique_decisions
+						target = flag:flag_launched_HEE_hungarian_migration
+					}
+				}
+			}
+			trigger_event = {
+				id = HEE_magyars.0002
+				days = { 300 365 }
+			}
+		}
+	}
+
+	immediate = {
+		#Designate a Hungarian attacker.
+		save_scope_as = hungarian_conqueror
+		#... And a Pannonian defender.
+		##Order these by rough size.
+		if = {
+			limit = {
+				any_county_in_region = {
+					region = custom_hungary_minus_syrmia
+					holder = {
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 18 }
+					}
+				}
+			}
+			random_county_in_region = {
+				region = custom_hungary_minus_syrmia
+				limit = {
+					holder = {
+						any_held_county = {
+							title_province = { geographical_region = custom_hungary_minus_syrmia }
+						}
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 18 }
+					}
+				}
+				holder.top_liege = { save_scope_as = pannonian_defender }
+			}
+		}
+		else_if = {
+			limit = {
+				any_county_in_region = {
+					region = custom_hungary_minus_syrmia
+					holder = {
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 12 }
+					}
+				}
+			}
+			random_county_in_region = {
+				region = custom_hungary_minus_syrmia
+				limit = {
+					holder = {
+						any_held_county = {
+							title_province = { geographical_region = custom_hungary_minus_syrmia }
+						}
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 12 }
+					}
+				}
+				holder.top_liege = { save_scope_as = pannonian_defender }
+			}
+		}
+		else_if = {
+			limit = {
+				any_county_in_region = {
+					region = custom_hungary_minus_syrmia
+					holder = {
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 6 }
+					}
+				}
+			}
+			random_county_in_region = {
+				region = custom_hungary_minus_syrmia
+				limit = {
+					holder = {
+						any_held_county = {
+							title_province = { geographical_region = custom_hungary_minus_syrmia }
+						}
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 6 }
+					}
+				}
+				holder.top_liege = { save_scope_as = pannonian_defender }
+			}
+		}
+		##And just a fallback, in case something goes wrong elsewhere.
+		else = {
+			random_county_in_region = {
+				region = custom_hungary_minus_syrmia
+				limit = {
+					holder = {
+						hungarian_migration_valid_pannonian_target_trigger = { COUNT = 6 }
+					}
+				}
+				holder.top_liege = { save_scope_as = pannonian_defender }
+			}
+		}
+	}
+
+	# I WANT THIS
+	option = {
+		name = HEE_magyars.0002.a
+
+		#And sort notifications & setup.
+		scope:hungarian_conqueror = {
+			#Now, declare war using the pre-scripted flow.
+			add_character_flag = undertaking_hungarian_migration
+			start_war = {
+				cb = HEE_hungarian_migration_cb
+				target = scope:pannonian_defender
+				target_title = title:k_hungary
+			}
+		}
+
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_launched_HEE_hungarian_migration
+			}
+		}
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	# OH NOR 
+	option = {
+		name = HEE_magyars.0002.b
+
+		# Nothing!
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+
+HEE_magyars.1000 = { # Following a defeat, the Magyars consider a religious conversion
+	type = character_event
+	title = HEE_turkic_conquerors.3001.t
+	desc = HEE_turkic_conquerors.3001.desc
+	theme = faith
+	left_portrait = {
+		character = root
+		animation = personality_cynical
+	}
+
+	trigger = {
+		not = { religion = religion:christianity_religion }
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	on_trigger_fail = {
+
+	}
+
+	immediate = {
+
+	}
+
+	option = { # Convert to the faith that defeated you
+		name = HEE_turkic_conquerors.3001.a
+		
+		set_character_faith_with_conversion = scope:victorious_faith
+
+		random_owned_story = {
+			limit = {
+				story_type = story_kalandozasok
+			}
+			end_story = yes
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # The Old Ways are best
+		name = HEE_turkic_conquerors.3001.b
+		
+		every_vassal = {
+			limit = {
+				faith = root.faith
+			}
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 25
+			}
+		}
+
+		every_courtier_or_guest = {
+			limit = {
+				faith = root.faith
+			}
+
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 25
+			}
+		}
+
+		# stress_impact = {
+
+		# }
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}

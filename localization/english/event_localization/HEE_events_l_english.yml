@@ -180,7 +180,10 @@
  HEE_ghaznavids.5001.b: "NEED LOCALIZATION"
 
 
-
+ HEE_magyars.0002.t: "A New Path?"
+ HEE_magyars.0002.desc: "Life on the steppe can be harsh at the best of times. My recent defeat at the hands of [winner.GetTitledFirstName] reminds me of that simple fact. Now our people look weak, and many other jealous nomad tribes will seek to persecute us for such weakness. Pechenegs, Khazars, and more may travel from far abroad to harass our confederation.\n\nIn centuries past, whole peoples left this life for the fertile fields and weak kingdoms of Europe. And now I find myself wondering if such path is one for us to take.\n\nTo emulate the success of these nomads of old - to carve out a new home for the $mogyer_collective_noun$ in distant Pannonia - is no simple feat. But while the risk is great the rewards are perhaps even greater. Should I - no, can I - be the one to uproot my people, lead them in crossing the Carpathians, and open a new chapter for all $mogyer_collective_noun$?"
+ HEE_magyars.0002.a: "The Plains of Pannonia shall be our new home."
+ HEE_magyars.0002.b: "The Steppe is our home, and we shall not flee it!"
 
 
 

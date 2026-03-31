@@ -402,24 +402,48 @@ dynasty_tephrice = { # Leaders of the Paulician principality of Tephrike
 
 }
 
-644 = { # Makedons
-	pattern = "pattern_solid.dds"
-	color1 = "red"	
-	color2 = "red"
-	colored_emblem = {
-		texture = "ce_mena_sun.dds"
-		color1 = "yellow"
-		color2 = "yellow"
-		instance = { position = { 0.5 0.5 }  }
+644 = { # Makedons; Inspired by the legend around an eagle marking Basil's future ascent to the Imperial Purple
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.270000 0.270000 }
+			depth=1.010000
+		}
 	}
-	colored_emblem = {
-		texture = "ce_tamgha_roundel_frame.dds"
-		color1 = "yellow"
-		color2 = "red"
-		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 }  }
+
+	colored_emblem={
+		color1=red
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.320000 0.320000 }
+			depth=2.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_byzantine_eagle.dds"
+		instance={
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_chi_rho.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.330000 0.330000 }
+		}
 	}
 }
-
 
 dynasty_azdi = {
 	pattern="pattern_solid.dds"
@@ -1252,11 +1276,11 @@ house_ghaznavid = { # Ghaznavid # EE
 
 640 = { # Kourkouras
 	pattern="pattern_solid.dds"
-	color1=black
+	color1=blue
 	color2=yellow
 	colored_emblem={
-		color1=black
-		color2=yellow
+		color1=blue
+		color2=white
 		texture="ce_border_circle_fimbriated.dds"
 		instance={
 			position={ 0.500000 0.480000 }
@@ -1267,7 +1291,19 @@ house_ghaznavid = { # Ghaznavid # EE
 	}
 
 	colored_emblem={
-		color1=black
+		color1=white
+		color3=blue
+		texture="ce_wreath_circle.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.630000 0.630000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
 		color2=blue
 		texture="ce_block_02.dds"
 		instance={
@@ -1277,20 +1313,8 @@ house_ghaznavid = { # Ghaznavid # EE
 	}
 
 	colored_emblem={
-		color1=yellow
-		color2=black
-		color3=black
-		texture="ce_wolf_head.dds"
-		instance={
-			scale={ 0.440000 0.440000 }
-			rotation=323
-		}
-
-	}
-
-	colored_emblem={
-		color1=red
-		color2=red
+		color1=blue
+		color2=yellow
 		texture="ce_block_02.dds"
 		instance={
 			position={ 0.500000 0.480000 }
@@ -1301,15 +1325,19 @@ house_ghaznavid = { # Ghaznavid # EE
 	}
 
 	colored_emblem={
-		color1=yellow
-		texture="ce_wreath_circle.dds"
+		color1=white
+		color2=blue
+		color3=blue
+		texture="ce_wolf_head.dds"
 		instance={
-			position={ 0.500000 0.480000 }
-			scale={ 0.630000 0.630000 }
-			depth=1.010000
+			scale={ 0.440000 0.440000 }
+			rotation=323
 		}
+
 	}
+
 }
+
 
 
 dynasty_koxes = { # Kourkouras
@@ -2098,31 +2126,41 @@ sulaymanidsoftlemcen = { # Alt colors of the Idrisids considering their close re
 }
 
 dynasty_mosele = {
-	pattern="pattern_checkers_diagonal_01.dds"
-	color1=black
-	color2=red
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=white
 	color3=green
 	colored_emblem={
-		color1=yellow
-		texture="ce_chi_rho.dds"
+		color1=red
+		color2=red
+		color3=yellow
+		texture="ce_eagle_double.dds"
 		instance={
-			scale={ 0.560000 0.560000 }
+			position={ 0.500000 0.550000 }
+			depth=2.010000
 		}
-
 	}
 
 	colored_emblem={
-		color1=black
-		color2=red
-		texture="ce_tamgha_roundel_frame.dds"
+		color1=yellow
+		texture="ce_circle_mask.dds"
 		instance={
-			scale={ 0.580000 0.580000 }
+			position={ 0.500000 0.430000 }
+			scale={ 0.220000 0.220000 }
 			depth=1.010000
 		}
-
 	}
 
+	colored_emblem={
+		color1=red
+		texture="ce_chi_rho.dds"
+		instance={
+			position={ 0.500000 0.430000 }
+			scale={ 0.250000 0.250000 }
+		}
+	}
 }
+
 
 1042182 = { # Yahmad Dynasty
 	pattern="pattern_solid.dds"
@@ -3590,6 +3628,242 @@ kurdish_al_bawazij = { # For bookmark
 		instance={
 			position={ 0.510000 0.550000 }
 			scale={ 0.570000 0.570000 }
+		}
+	}
+}
+
+dynasty_siegfriedian = {
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=black
+		texture="ce_african_yoruba_snake.dds"
+		instance={
+			position={ 0.500000 0.470000 }
+			scale={ -0.820000 0.970000 }
+			rotation=79
+		}
+	}
+}
+
+dynasty_guberioi = {
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=yellow
+	color2=green
+	color3=red
+	colored_emblem={
+		color1=green
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.650000 0.650000 }
+			depth=2.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_wreath_circle.dds"
+		instance={
+			scale={ 0.580000 0.580000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_tamgha_dulo.dds"
+		instance={
+			scale={ 0.470000 0.470000 }
+		}
+	}
+}
+
+dynasty_baboutzikoi = {
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.270000 0.270000 }
+			depth=2.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.240000 0.240000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		color2=yellow
+		texture="ce_cross_greek.dds"
+		instance={
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_chi_rho.dds"
+		instance={
+			scale={ 0.270000 0.270000 }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+random_coa_unused2 = { # Black and red Chi Ro COA
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.460000 0.460000 }
+			depth=2.010000
+		}
+
+		instance={
+			scale={ 0.730000 0.730000 }
+			depth=5.010000
+		}
+
+		instance={
+			scale={ 0.820000 0.820000 }
+			depth=7.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.430000 0.430000 }
+			depth=1.010000
+		}
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_circle_mask.dds"
+		instance={
+			scale={ 0.690000 0.690000 }
+			depth=4.010000
+		}
+
+		instance={
+			scale={ 0.780000 0.780000 }
+			depth=6.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_wreath_circle.dds"
+		instance={
+			scale={ 0.640000 0.640000 }
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_chi_rho.dds"
+		instance={
+			scale={ 0.520000 0.520000 }
+		}
+	}
+}
+
+random_coa_unused1 = { # Sun COA
+	pattern = "pattern_solid.dds"
+	color1 = "red"	
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_mena_sun.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 }  }
+	}
+	colored_emblem = {
+		texture = "ce_tamgha_roundel_frame.dds"
+		color1 = "yellow"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 0.45 0.45 }  }
+	}
+}
+
+coa_title_1279={ # Byzantine flag featuring a cross as described in the Book of Ceremonies
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.680000 0.260000 }
+			scale={ 0.130000 0.130000 }
+		}
+
+		instance={
+			position={ 0.320000 0.260000 }
+			scale={ 0.130000 0.130000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.680000 0.620000 }
+			scale={ 0.130000 0.130000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.320000 0.620000 }
+			scale={ 0.130000 0.130000 }
+			depth=3.010000
+		}
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_cross_pommee.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.740000 0.740000 }
+			depth=4.010000
+		}
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_seal_frame_full.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.630000 0.720000 }
+			depth=5.010000
 		}
 	}
 }

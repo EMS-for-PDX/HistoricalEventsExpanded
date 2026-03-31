@@ -46,23 +46,23 @@ d_nf_marikonian = { # Marikonian
 }
 
 d_nf_mosele = { # Mosele
-	785.1.1 = {
+	777.1.1 = {
 		liege = e_byzantium
-		holder = mosele0001 # Late 8th-century Byzantine general Alexios Mosele
+		holder = mosele0002 # Patrikios Gregory Mousoulakios; strategos (or komes) of the Opsikion
 		government = administrative_government
 		succession_laws = { noble_family_succession_law }
 	}
-	795.1.1 = {
-		holder = mosele0002 # 
+	805.1.1 = {
+		holder = mosele0004 # Fictional/Unknown member of the Mosele Dynasty to connect Alexios Mosele (Caesar) to Alexios Mosele (General)
 	}
 	835.4.21 = {
-		holder = mosele0003 # Byzantine aristocrat and general, chosen by Emperor Theophilos for a time as his heir, betrothed to his daughter Maria and raised to the supreme dignity of Caesar
+		holder = mosele0005 # Byzantine aristocrat and general, chosen by Emperor Theophilos for a time as his heir, betrothed to his daughter Maria and raised to the supreme dignity of Caesar
 	}
 	855.1.1 = {
-		holder = mosele0004 # Brother of Caesar Alexios Mosele who held the high court title of patrikios
+		holder = mosele0006 # Brother of Caesar Alexios Mosele who held the high court title of patrikios
 	}
 	865.1.1 = {
-		holder = mosele0005
+		holder = mosele0007 # Mousilikes, a name linked to a tourmarches of Mesopotamia, strategos of Cephalonia, and strategos of Sicily
 	}
 	867.1.1 = {
 		effect = {
@@ -70,16 +70,16 @@ d_nf_mosele = { # Mosele
 		}
 	}
 	890.1.1 = {
-		holder = mosele0006 # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos
+		holder = mosele0009 # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos
 	}
 	922.4.5 = {
-		holder = mosele0007
+		holder = mosele0010
 	}
 	975.1.1 = {
-		holder = mosele0008
+		holder = mosele0011
 	}
 	990.1.1 = {
-		holder = mosele0009
+		holder = mosele0012
 	}
 	1000.1.1 = {
 		holder = 0
@@ -109,7 +109,7 @@ d_nf_rendakios = { # Rendakios
 		holder = rendakios0006 #
 	}
 	862.1.1 = {
-		holder = rendakios0009 #
+		holder = rendakios0007 #
 	}
 	867.1.1 = {
 		effect = {
@@ -196,5 +196,74 @@ d_nf_monomachos = { # Monomachos
 	}
 	1109.1.1 = {
 		holder = 0 # There are later Monomachos (e.g. John Monomachos (fl. 1304–1324), the brothers George Atouemes Monomachos and Michael Senachereim Monomachos) but until I make those characters (if I do at all) the Dynasty will end here
+	}
+}
+
+d_nf_guberioi = { # Guberioi; Byzantine family perhaps descended from Kuber (a son of the Bolghar Khan Kubrat)
+	810.1.1 = {
+		liege = e_byzantium
+		holder = guberioi0001 # 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	815.4.1 = {
+		holder = guberioi0002 # 
+	}
+	840.1.1 = {
+		holder = guberioi0003 # 
+	}
+	863.1.1 = {
+		holder = guberioi0004 #
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	897.1.1 = {
+		holder = 0 #
+	}
+}
+
+d_nf_baboutzikoi = { # Baboutzikoi; Byzantine family (of perhaps Georgian ancestry) that produced notable names like Konstantinos Baboutzikos
+	810.1.1 = {
+		liege = e_byzantium
+		holder = baboutzikoi0001 # 
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	836.1.1 = {
+		holder = baboutzikoi0002 # 
+	}
+	845.3.6 = {
+		holder = baboutzikoi0004 # 
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	886.1.1 = { # As a conspirator in a plot to overthrow Basil I, the unnamed Baboutzikoi had his estates confiscated and was exiled
+		holder = 0
+	}
+}
+
+d_nf_martinakios = { # Martinakioi; Byzantine family that produced notable names like Empress Theophano Martinakina
+	815.1.1 = {
+		liege = e_byzantium
+		holder = martinakoi0005 # Anastasius, an iconoclast govemment official who ca. 817 was sent to Bonita in Asia Minor and who inflicted physical punishment on St.Theodore theStudite
+		government = administrative_government
+		succession_laws = { noble_family_succession_law }
+	}
+	825.1.1 = {
+		holder = martinakoi0006 # The second member — unless he is the same as Anastasius — is the Martinakes (Christian name not given) whom Theophilus forced to become a monk, and who was evidently a person of some importance
+	}
+	860.1.1 = {
+		holder = 145181 # Constantine, by rank illustris , later promoted to patrician. Father to Empress Theophano, herself "born of imperial blood, from among the Martinakioi of ancient splendor,"
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
 	}
 }

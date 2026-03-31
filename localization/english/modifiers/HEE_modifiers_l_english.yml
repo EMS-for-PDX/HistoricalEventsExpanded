@@ -1,6 +1,18 @@
 ﻿l_english:
 
  #Special Traits HEE
+ influx_of_ghazi_volunteers_modifier: "Influx of Ghazi Volunteers"
+ influx_of_ghazi_volunteers_modifier_desc: "The Arab historian Al-Tabari reports that the news of the deaths of Umar al-Aqta (the Emir of Melitene) and Ali al-Armani (the Governor of Armenia) at the hands of the Romans in late 863 provoked an outpouring of grief across the Muslim world, culminating in riots and looting in several cities. Although private donations and volunteers for the holy war began to gather at the border, the Abbasid central government could not cordinate any offical action because of ongoing internal turmoil in the Abbasid Caliphate - leaving the resources available to the border lords themselves."
+
+ self_appointed_imperial_modifier: "Self-appointed Imperial"
+ self_appointed_imperial_modifier_desc: "In 860 AD, Tang and Nanzhao entered into a diplomatic row over the name of the Nanzhao king Qiulong — as it violated naming taboo for Emperor Yizong's ancestor Emperor Xuanzong (Li Longji). Emperor Yizong thus refused to issue an edict formally bestowing Qiulong his kingly title. Qiulong responded by changing his state's name to Dali, declaring himself emperor (thus declaring himself as an equal to Emperor Yizong), and positioning himself as a regional rival to the Tang."
+ 
+ executed_envoy_modifier: "Executed Diplomatic Envoy"
+ executed_envoy_modifier_desc: "In spite of expected norms, this character executed a diplomatic envoy instead of welcoming them into their home."
+
+ rurik_personal_modifier: "Lawgiver"
+ rurik_personal_modifier_desc: "According to The Russian Primary Chronicle, the people of Novgorod, tired of political strife, invited the Varangians to establish an orderly and just government there. Hence, Rurik came with his two brothers and a large retinue (druzhina) and became ruler of the city and region of Novgorod."
+
  charles_exotic_camels_modifier: "Exotic Camels"
  charles_exotic_camels_modifier_desc: "This character has received exotic goods and animals — including camels — from a diplomatic delegation."
 
@@ -63,6 +75,9 @@
 
  terror_of_the_tyrrhenian_modifier: "Terror of the Tyrrhenian"
  terror_of_the_tyrrhenian_modifier_desc: "This character is famed, and feared, for having taken control over the central Mediterranean sea and the trade that flows through it."
+
+ boris_guilty_conscious_modifier: "Guilty Conscious"
+ boris_guilty_conscious_modifier_desc: "The execution of the sons of the 52 boyars who rebelled against him weigh heavily on Boris' mind and he often wonders about the moral price that his decision will bring."
 
 
 
@@ -127,3 +142,12 @@
 
  little_ice_age: "Little Ice Age"
  little_ice_age_desc: "The Little Ice Age was a period of wide-spread cooling from around 1300 to around 1850 CE when average global temperatures dropped by as much as 2°C (3.6°F), particularly in Europe and North America. While that temperature decrease might not sound like much, for people who lived through it the change was intensely dramatic. The cooling happened in phases, with an initial drop beginning around 1300, and a sharper and more abrupt onset of cold starting in 1570 and lasting for about a hundred and ten years. Much colder winters ensued. Rivers and coastal seas froze, grinding trade and communications to a halt. Crops and livestock withered while downpours spoiled harvests, unleashing widespread hunger and hardship. The severity of this Ice Age varied over the centuries, but all resulted in a sharp deterioration in the overall quality of life for the people of the period."
+
+ aftermath_of_Qiu_Fu_uprising_modifier: "Aftermath of Aiu Fu's Uprising"
+ aftermath_of_Qiu_Fu_uprising_modifier_desc: "In 859 AD, the Tang Empire faced yet another spark of rebellion — this time in Zhejiang, where Qiu Fu, a salt worker turned rebel leader, led a violent uprising against imperial authority. The immediate causes lay in years of economic hardship and administrative corruption: oppressive taxation, grain shortages, and the heavy burden placed on common laborers in the vital but tightly controlled salt industry. Qiu Fu’s followers — drawn largely from impoverished peasants, displaced workers, and local bandits — rose in defiance of local officials, seizing several towns and threatening the stability of the prosperous southeastern coast. Though the uprising was surpressed in 860 by the Tang general Wang Shi, the impact of it continues to be felt to this day."
+
+ aftermath_of_Kang_Quantai_uprising_modifier: "Aftermath of Kang Quantai's Uprising"
+ aftermath_of_Kang_Quantai_uprising_modifier_desc: "In 858 AD, the Tang Empire’s fragile peace was shattered in southern Anhui, where Kang Quantai, an officer of the Xuanshe Circuit, mutinied and expelled the governor Zheng Xun. Years of famine, floods, and ruinous taxation had left the countryside impoverished and desperate. Corrupt officials, unable or unwilling to provide relief, drove many peasants to the brink of starvation. Kang gathered thousands of destitute farmers and laborers under his banner, calling for justice and the end of oppressive rule. His forces seized control of several counties, briefly threatening the Tang government’s authority in the Huainan region before being surpressed by the Tang offical Cui Xuan. Though short-lived, the impact of the uprising continue to be felt to this day."
+
+ hee_xu_prefecture_military_exemption_modifier: "Military Service Exemption"
+ hee_xu_prefecture_military_exemption_modifier_desc: "By Imperial Decree, the men of this prefecture are exempt from military service for a time."

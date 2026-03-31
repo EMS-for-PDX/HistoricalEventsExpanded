@@ -1,13 +1,22 @@
 ﻿l_english:
 
- #HEE Michael's Murder
- AaS_peril.0001.t: "Scholars vs. Soldiers"
- AaS_peril.0001.desc: "Religious scholars denounce the Turkish military elite’s control over the caliphate. Do you side with the ulema and risk a mutiny, or continue to appease the Turks?"
- AaS_peril.0001.a: "The ulama must learn to mind his tongue..."
- AaS_peril.0001.b: "Perhaps this ulama can see reason."
- AaS_peril.0001.c: "The ulama speaks true!"
- AaS_peril.0001.b.crit_success: "The ulama comes to understand your struggle"
- AaS_peril.0001.b.success: "Your arguments tempers the ulama's rhetoric"
- AaS_peril.0001.b.failure: "Your arguments only enflames tensions"
+ #HEE Anarchy at Samarra Peril Events
+ HEE_AaS.0001.t: "Scholars vs. Soldiers"
+ HEE_AaS.0001.desc: "The halls of my court in Samarra echo with more than the usual intrigues today. Word spreads like fire through dry reeds:            Religious scholars denounce the Turkish military elite’s control over the caliphate. Do you side with the ulema and risk a mutiny, or continue to appease the Turks?"
+ HEE_AaS.0001.a: "The ulama must learn to mind his tongue..."
+ HEE_AaS.0001.b: "Perhaps this ulama can see reason."
+ HEE_AaS.0001.c: "The ulama speaks true!"
+ HEE_AaS.0001.b.crit_success: "The ulama comes to understand your struggle"
+ HEE_AaS.0001.b.success: "Your arguments tempers the ulama's rhetoric"
+ HEE_AaS.0001.b.failure: "Your arguments only enflames tensions"
 
  #Custom Tooltips
+
+
+
+
+
+
+ ##Story Cycle Loc
+ story_anarchy_at_samarra: "The Anarchy at Samarra"
+ story_anarchy_at_samarra_desc: "A new era has begun - one where the caliph has become a puppet with its strings in the hands of the powerful court factions or else those strings would finnd themselves around the caliph's neck. Can you escape the twisted web that has entangled the Caliphate? "

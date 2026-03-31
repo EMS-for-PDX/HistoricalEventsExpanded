@@ -2,33 +2,45 @@
 
  nick_restorer_of_the_world: "Restitutor Orbis"
  nick_restorer_of_the_world_desc: "For having reformed the #italic Rēs pūblica#!, [CHARACTER.GetShortUINameNoTooltipNoFormat] is hailed by all citizens of the Empire as Restitutor Orbis - Restorer of the World."
+
  nick_the_rich: "the Rich"
  nick_the_mighty: "the Mighty"
  nick_the_clever: "the Clever"
  nick_the_longsword: "Longsword"
  nick_the_abbot: "the Abbot"
+
  nick_the_seneschal: "the Seneschal"
  nick_the_seneschal_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat]'s service as Seneschal under Emperor Louis the Pious has forever associated the position with his name."
- nick_the_iron: "the Iron"
+
+ nick_iron_arm: "Iron Arm"
  nick_the_armenian: "the Armenian"
  nick_the_scythian: "ho Skythas"
- nick_the_scythian_desc: "Descended from the "western Scythians", an archaizing Byzantine term for the Slavs, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history, one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
+ nick_the_scythian_desc: "Descended from the "western Scythians", an archaizing Byzantine term for the Slavs, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharAreIs(CHARACTER)] unable to live down the shame of [CharYourHerHis(CHARACTER)] foreign heritage, and [CharAreIs(CHARACTER)] made to suffer a slew of cheap ethnic barbs."
  nick_the_slender: "the Slender"
+
  nick_the_bloodshedder_arabic: "al-Saffak"
  nick_the_bloodshedder_arabic_desc: "In 865, with the Anarchy at Samarra having paralyzed the Abbasid central government, [CHARACTER.GetShortUINameNoTooltipNoFormat] rose in a revolt supported by Alid elements in Arabia. This revolt cluminated in the plundering of both Mecca and Medina as well as the killing of so many of the pilgrims who had gathered there for the hajj that [CHARACTER.GetShortUINameNoTooltipNoFormat] was nicknamed al-Saffak, "the Bloodshedder"."
  nick_darc: "d'Arc"
  nick_the_maid: "the Maid"
+
  nick_la_pucelle: "la Pucelle"
  nick_la_pucelle_desc: "Translated as "the Maiden", [CHARACTER.GetShortUINameNoTooltipNoFormat] [CharAreIs(CHARACTER)] considered an icon of virtue, sincerity, and most notably purity."
+
  nick_the_dragon_greek: "ho Drakon"
  nick_the_dragon_greek_desc: "Translated as "the Dragon", [CHARACTER.GetShortUINameNoTooltipNoFormat]'s presence is known to bring with it all the chaos, war, and terror associated with the biblical Dragon of Revelation."
+
  nick_the_bastard_greek: "ho Nothos"
  nick_the_bastard__greek_desc: "Translated as "the Bastard", [CHARACTER.GetShortUINameNoTooltipNoFormat|U] [CharWereWas(CHARACTER)] born outside the boundaries of wedlock, and [CharYouSheHe(CHARACTER)] can't seem to forget it. The rest of the world surely won't."
+
  nick_the_macedonian: "the Macedonian"
  nick_the_macedonian_desc: "From [CharYourHerHis(CHARACTER)] birth to a peasant family in Macedonia to a place of prominence in the imperial court, [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] eponym is a label of [CharYourHerHis(CHARACTER)] history - one [CharYouSheHe(CHARACTER)] take[_s(CHARACTER)] pride in."
+
  nick_the_cretan: "the Cretan"
+ nick_ptaolemes: "Ptaolemes"
+
  nick_plantapilosa: "Plantapilosa"
  nick_plantapilosa_desc: "The nickname Plantapilosa, like that of Guifred the Hairy, comes from the Latin princeps pilitus or "furred prince". It is a reference to the custom of Visigothic princes to wear a fur headdress."
+
  nick_the_calf: "the Calf"
  nick_the_calf_desc: "Due to [CharYourHerHis(CHARACTER)] youth and loyalty to [CharYourHerHis(CHARACTER)] King, [CHARACTER.GetShortUINameNoTooltipNoFormat] has been associated by his detractors with young domesticated cattle."
 
@@ -88,3 +100,16 @@
 
  nick_the_unbearable_greek: "Abastaktos"
  nick_the_unbearable_greek_desc: "Translated as "the Unbearable", [CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] mere presence is said to be a burden on those around [CharYouHerHim(CHARACTER)]"
+
+ nick_the_mild: "the Mild"
+
+ nick_klak: "Klak"
+
+ nick_niketiates: "Niketiates"
+ nick_niketiates_desc: "[CHARACTER.GetShortUINamePossessiveNoTooltipNoFormat|U] nickname comes from [CharYourHerHis(CHARACTER)] birthplace in the village of Niketia near Amastris in Paphlagonia."
+
+ nick_the_mathematician: "the Mathematician"
+ nick_the_mathematician_desc: ""
+
+ nick_kontomytes: "Kontomytes"
+ nick_kontomytes_desc: "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] has adopted the name of [CharYourHerHis(CHARACTER)] wife's family."

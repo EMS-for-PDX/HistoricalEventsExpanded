@@ -8578,7 +8578,7 @@ sicilian0008 = {
 	trait = just # Assizes of Ariano
 	trait = diligent # It is said that Roger did more in his sleep than many did in their waking day
 	trait = cynical # Gathered around him people of all cultures and faith
-	trait = education_diplomacy_4 # Despite his early focus on military ambitions, I think Diplomacy was wielded quite effectively from Roger
+	trait = education_diplomacy_4 # Despite his early focus on military ambitions, I think Diplomacy was wielded quite effectively by Roger
 	trait = administrator
 	trait = august
 

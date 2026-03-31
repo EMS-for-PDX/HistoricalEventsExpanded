@@ -118,22 +118,38 @@
 	}
 }
 
-20662 = {
+20662 = { # legendary ruler of Alania in the 11th century, under whom the Kingdom reached the peak of its power and economic prosperity
 	name = "Durgulel"	#the Great (?)
 	dynasty = 100603	#Oseti"
-	martial = 7
-	diplomacy = 4
+	martial = 8
+	diplomacy = 8
 	intrigue = 5
-	stewardship = 4
+	stewardship = 7
 	learning = 6
 	religion = "orthodox"
 	culture = "alan"
-	trait = chaste
-	trait = ambitious
-	trait = education_learning_3
+	trait = gregarious # Supposedly spent 12 days at the festive tables with Bagrat IV
+	trait = brave # Led several raid against the Muslims Emirates of Transcaucasia (most noteably Ganja)
+	trait = ambitious # His reign was Alania's peak in terms of political influence and economic prosperity
+	trait = humble # 
+	trait = education_martial_4 # For almost a quarter of a century, he and his army played a key role in the development of events not only in the Caucasus, but also in Western Asia and the Middle East.
+	trait = reaver # Led several raid against the Muslims Emirates of Transcaucasia (most noteably Ganja)
+	trait = august # the largest and most influential king of Alanya
 	father = 41592
 	1005.1.1 = {
 		birth = yes
+	}
+	1065.10.1 = {
+		effect = { # Durgulel's prestige and social standing is high from his years of campaigns
+			add_prestige_level = 3
+			add_prestige_no_experience = massive_prestige_gain
+			add_legitimacy = 400
+			add_truce_one_way = {
+				character = character:41600 #Emir of Ganja
+				years = 5
+				name = raids_on_arran_truce_desc
+			}
+		}
 	}
 	1088.1.1 = {
 		death = yes

@@ -1,6 +1,140 @@
 ﻿namespace = roman_army_acclaimation
+# This event is inspired by Theophobos and his (likely unwilling) acclaimation as Emperor by his troops following rumors of the Emperor's death at the Battle of Anzen (as well as just general Roman shenanigans)
 
-roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leader as Emperor
+roman_army_acclaimation.0001 = { # roman_army_acclaimation trigger; looking for a successful Roman military commander to be uplifted by his troops
+	scope = none
+	hidden = yes
+
+	trigger = {
+		NOT = { has_global_variable = roman_commander_acclaimed } # Event should not be firing often
+
+		scope:attacker = {
+			# Standard checks
+			is_alive = yes # Be alive
+			is_landed = yes # Be a landed Theme governor
+			is_independent_ruler = no # We are looking for people to rebel against the Emperor, so must be a vassal
+			is_imprisoned = no # Being in prison is not very inspiring
+
+			# Specific Checks
+			liege = { # Appropriate characters should be subjects of the (true) Roman Emperor
+				OR = {
+					this = title:e_byzantium.holder
+					this = title:e_roman_empire.holder
+				}
+			}
+			NOT = { # Not very inspiring traits
+				OR = {
+					has_trait = craven
+					has_trait = lazy
+				}
+			}
+		}
+	}
+
+	weight_multiplier = {
+        base = 0 # Should happen to only characters who fit the mold in some way
+
+		# Bonuses
+        modifier = { # More likely for charismatic leaders
+            diplomacy >= 14
+            add = 0.25
+        }
+
+        modifier = { # More likely for skilled military leaders
+            martial >= 14
+            add = 0.25
+        }
+
+        modifier = { # More likely for educated military leaders
+			OR = {
+				has_trait = education_martial_4
+				has_trait = education_martial_5
+			}
+            add = 0.25
+        }
+
+        modifier = { # More likely for prestigious characters
+			prestige_level >= 3
+
+            factor = 1.5
+        }
+
+        modifier = { # More likely for imperial claimants
+			OR = {
+				has_claim_on = title:e_byzantium
+				has_claim_on = title:e_roman_empire
+			}
+
+            factor = 1.5
+        }
+
+        modifier = { # More likely for virtuous characters
+			num_virtuous_traits >= 1
+
+            factor = 1.5
+        }
+
+        modifier = { # More likely for.... well, stalwart leaders
+            has_perk = stalwart_leader_perk
+            factor = 1.2
+        }
+
+        modifier = { # More likely for.... well, true rulers
+            has_perk = true_ruler_perk
+            factor = 1.2
+        }
+
+		# Maluses
+        modifier = { # Less likely for uncharismatic characters
+            diplomacy <= 13
+            add = -0.2
+        }
+
+        modifier = { # Less likely for militarily unskilled characters
+            martial <= 13
+            add = -0.2
+        }
+
+        modifier = { # Less likely for unprestigious characters
+            prestige_level <= 2
+            factor = 0.5
+        }
+
+        modifier = { # Less likely for sinful characters
+			num_sinful_traits >= 1	
+			factor = 0.5
+        }
+
+        modifier = { # Less likely for sinful characters
+			piety_level <= 2
+			factor = 0.5
+        }
+
+        modifier = { # Less likely if poor
+            gold < medium_gold_value
+			factor = 0.5
+        }
+    }
+
+	immediate = {
+		set_global_variable = {
+			name = roman_commander_acclaimed
+			value = yes
+			days = { 54000 60000 } # We dont want this happening but for a few times during a playthrough
+		}
+
+		scope:attacker = { save_scope_as = roman_commander }
+
+		scope:defender = { save_scope_as = loser } # For reference in following event
+			
+		scope:roman_commander = {
+			add_character_flag = { flag = acclaimed_roman_commander }
+			trigger_event = { id = roman_army_acclaimation.0002 }
+		}
+	}
+}
+
+roman_army_acclaimation.0002 = { # After a victory, an army acclaims their leader as Emperor
 	window = duel_event
 	type = character_event
 	title = roman_army_acclaimation.0001.t
@@ -35,85 +169,7 @@ roman_army_acclaimation.0001 = { # After a victory, an army acclaims their leade
 		}
 	}
 
-	weight_multiplier = {
-        base = 10000 # Should happen to only characters who fit the mold in some way - CHANGE TO 0 FOR FINAL
 
-		# Bonuses
-        modifier = { # More likely for charismatic leaders
-            diplomacy >= 20
-            add = 0.25
-        }
-
-        modifier = { # More likely for skilled military leaders
-            martial >= 20
-            add = 0.25
-        }
-
-        modifier = { # More likely for educated military leaders
-			OR = {
-				has_trait = education_martial_4
-				has_trait = education_martial_5
-			}
-            add = 0.25
-        }
-
-        modifier = { # More likely for prestigious characters
-			prestige_level >= 4
-
-            factor = 1.5
-        }
-
-        modifier = { # More likely for imperial claimants
-			OR = {
-				has_claim_on = title:e_byzantium
-				has_claim_on = title:e_roman_empire
-			}
-
-            factor = 1.5
-        }
-
-        modifier = { # More likely for virtuous characters
-			num_virtuous_traits >= 1
-
-            factor = 1.5
-        }
-
-        modifier = { # More likely for.... well, stalwart leaders
-            has_perk = stalwart_leader_perk
-            factor = 1.2
-        }
-
-        modifier = { # More likely for.... well, true rulers
-            has_perk = true_ruler_perk
-            factor = 1.2
-        }
-
-		# Maluses
-        modifier = { # Less likely for uncharismatic characters
-            diplomacy <= 10
-            add = -0.2
-        }
-
-        modifier = { # Less likely for militarily unskilled characters
-            martial <= 10
-            add = -0.2
-        }
-
-        modifier = { # Less likely for unprestigious characters
-            prestige_level <= 2
-            factor = 0.5
-        }
-
-        modifier = { # Less likely for sinful characters
-			num_sinful_traits >= 1	
-			factor = 0.5
-        }
-
-        modifier = { # Less likely if poor
-            gold < medium_gold_value
-			factor = 0.5
-        }
-    }
 
 	immediate = {
 		root.liege = { save_scope_as = sitting_emperor }

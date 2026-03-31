@@ -147,6 +147,53 @@ hee_867_tributary_setup_effect = {
 		}
 	}
 
+	title:e_bulgarian_principality.holder = { # Kynaz Boris of Bulgaria
+		save_scope_as = suzerain
+		# The remnants of the Avar Khaganate reside in the Pannonian Plain under Bulgarian suzerainity
+		title:c_bihar.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:c_bekes.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:c_csongrad.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:c_szatmar.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:c_szabolcs.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+		title:d_visegrad.holder = {
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 1 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
 	character:90107 = { # King Ludiwg II of East Francia
 		save_scope_as = suzerain
 		character:187002 = { # King Rostislav of Great Moravia
@@ -216,6 +263,27 @@ hee_867_tributary_setup_effect = {
 		title:c_vhrbosna.holder = { # Bosnia
 			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
 			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
+	title:d_melitene.holder = { # Emir of Melitene
+		save_scope_as = suzerain
+		title:d_paulician_principality.holder = { # The Paulicians, who were settled in the No Mans' Land between the Muslims and Romans near Tephrike by the Emir of Melitene
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 0 }
+			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 0 }
+			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
+		}
+	}
+
+	title:k_lotharingia.holder = { # King Lothaire II of Lotharingia
+		save_scope_as = suzerain
+		title:d_holland.holder = { # Rorik of Dorestad, who enjoyed a notable degree of sovereignity over his territories
+			break_subject_contract_and_establish_tributary_effect = { SUZERAIN = scope:suzerain TRIBUTARY = this }
+			tributary_contract_set_obligation_level = { type = default_tributary_taxes level = 1 } # The Annales Bertiniani records Rorik was permitted to control Dorestad if he faithfully handle the taxes and other matters pertaining to the royal fisc
 			tributary_contract_set_obligation_level = { type = default_tributary_prestige level = 0 }
 			set_vassal_contract_modification_blocked = yes # Lets not make this abusable from game start
 		}

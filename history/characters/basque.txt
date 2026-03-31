@@ -1194,7 +1194,10 @@ qasi.0006 = {
 	culture = basque
 	trait = honest
 	trait = diligent
+	trait = brave
 	trait = education_martial_3
+	trait = populist_leader # thought to have risen to prominence after the defeat of local Frankish partisans at the Battle of Pancorbo in 816, and his rule is usually dated from shortly after the defeat of a Carolingian army in 824. 
+	trait = rough_terrain_expert # Battle of Roncevaux Pass (824) featured a Basque force engaging from the mountains and defeating the Frankish force
 
 	father = 70290 # Íñigo Jiménez
 	mother = 73811 # Óneca
@@ -1214,15 +1217,18 @@ qasi.0006 = {
 	name = "Gartzia" # García (I) Íñiguez, King of Navarra (851-882), Count of Ipuskoa & Navarra (851-882)
 	dna = "70292_king_gartzia"
 	dynasty = iniga # Íñiga Dynasty
-	martial = 5
+	martial = 7
 	diplomacy = 8
-	intrigue = 5
-	stewardship = 6
+	intrigue = 7
+	stewardship = 7
+	learning = 8
 	religion = catholic
 	culture = basque
-	trait = temperate
-	trait = deceitful
-	trait = education_martial_1
+	trait = generous # A key documented internal action was the royal donation of property to the Monastery of San Salvador de Leyre on 21 October 880
+	trait = fickle
+	trait = cynical # Tolerant; Educated in Córdoba, as a guest at the court of the Emir of Córdoba, and flickered between Christian and Muslim allies
+	trait = education_diplomacy_3 # While a martial education could fit considering García's military action, I consider his handling and use of shifting alliances — from Banū Qasī supporter to occasional Asturian collaborator — to be worthy of a diplomatic education (plus martial is overused at points)
+	trait = unyielding_defender # His rule focused on defending the nascent kingdom's independence in the western Pyrenees against incursions from the Umayyad Emirate of Córdoba
 
 	father = 70291 # King Íñigo 'Arista' of Navarra
 	mother = basque0027 # Queen Óneca Galíndez
@@ -1232,6 +1238,9 @@ qasi.0006 = {
 	}
 	826.1.1 = {
 		add_spouse = basque0029 # Urraca ibn Mutarrif
+		effect = { # Educated in the court of Cordoba, it would be highly unlikely he could not speak/read Arabic
+			learn_language_of_culture = culture:andalusian
+		}
 	}
 	851.7.1 = {
 		effect = {
@@ -1239,6 +1248,26 @@ qasi.0006 = {
 				target = character:73818
 				reason = rival_historical
 			}# Musa ibn Musa and García Íñiguez raided the others land constantly
+		}
+	}
+	865.1.1 = {
+		trait = widowed 
+		effect = {
+			# Standard Refunds
+			refund_all_perks = yes
+			remove_all_perk_lifestyle_traits_effect = yes
+			add_diplomacy_lifestyle_perk_points = -10
+			# Diplomat Tree
+			add_perk = thoughtful_perk
+			add_perk = ducal_conquest_perk
+			add_perk = forced_vassalage_perk
+			add_perk = adaptive_traditions_perk
+			add_perk = flexible_truces_perk
+			add_perk = defensive_negotiations_perk
+			add_perk = embassies_perk
+			add_perk = accomplished_forger_perk
+			add_perk = diplomat_perk
+			add_trait = diplomat
 		}
 	}
 	876.1.1 = {
@@ -1275,7 +1304,12 @@ qasi.0006 = {
 		birth = yes
 	}
 	860.1.1 = {
-		employer = 73683 # Emir Muhammad I of Andalusia
+		effect = { # In 860, Emir Muhammad I of Córdoba undertook a punitive expedition into the Kingdom of Pamplona where he defeated Pamplonan forces and captured Fortún Garcés
+			character:73683 = {
+				take_hostage = character:70293
+			}
+			learn_language_of_culture = culture:andalusian # Lets have him learn Arabic during his time in Cordoba
+		}
 		give_nickname = nick_the_one_eyed # This nickname is assigned by Muslim sources
 	}
 	867.1.1 = {

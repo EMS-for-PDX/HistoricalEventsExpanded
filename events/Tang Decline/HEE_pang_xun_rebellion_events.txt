@@ -1,0 +1,416 @@
+namespace = HEE_pang_xun_rebellion
+
+### Spawn Pang Xun
+HEE_pang_xun_rebellion.0001 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		debug_log = "Spawning Pang Xun's Uprising during Fall 867 AD"
+		debug_log_date = yes
+		spawn_pang_xun_character_effect = yes
+		scope:Pang_Xun = {
+			trigger_event = {
+				id = HEE_pang_xun_rebellion.0002
+			}
+		}
+	}
+}
+
+HEE_pang_xun_rebellion.0002 = {
+	scope = none
+	hidden = yes
+
+	immediate = {
+		scope:Pang_Xun = {
+			if = { # Make Pang_Xun a LAAMP
+				limit = {
+					NOT = { is_landed = yes }
+				}
+				create_landless_adventurer_title_effect = {
+					REASON = flag:voluntary
+					FLAVOR_CHAR = scope:Pang_Xun
+				}
+			}
+
+            # Spawn Pang Xun's co-conspirators
+			create_character = { # Xu Ji (許佶)
+                name = "Ji"
+				location = scope:pang_xun_birth_location
+				template = xu_prefecture_officer_template
+				save_scope_as = Xu_Ji
+				dynasty = generate
+			}
+			add_courtier = scope:Xu_Ji
+
+			create_character = { # Zhao Keli (趙可立)
+                name = "Keli"
+				location = scope:pang_xun_birth_location
+				template = xu_prefecture_officer_template
+				save_scope_as = Zhao_Keli
+				dynasty = generate
+			}
+			add_courtier = scope:Zhao_Keli
+
+			create_character = { # Yao Zhou (姚周)
+                name = "Zhou"
+				location = scope:pang_xun_birth_location
+				template = xu_prefecture_officer_template
+				save_scope_as = Yao_Zhou
+				dynasty = generate
+			}
+			add_courtier = scope:Yao_Zhou
+
+			create_character = { # Zhang Xingshi (張行實)
+                name = "Xingshi"
+				location = scope:pang_xun_birth_location
+				template = xu_prefecture_officer_template
+				save_scope_as = Zhang_Xingshi
+				dynasty = generate
+			}
+			add_courtier = scope:Zhang_Xingshi
+
+            # Make Pang Xun a Brigand and start next event
+			if = {
+				limit = {
+					is_alive = yes
+					is_landless_adventurer = yes
+				}
+				add_realm_law_skip_effects = camp_purpose_brigands
+				trigger_event = HEE_pang_xun_rebellion.0003
+			}
+		}
+	}
+}
+
+HEE_pang_xun_rebellion.0003 = {
+	scope = none
+	hidden = yes
+
+	immediate = { # Pang Xun starts his rebellion in Southern China
+		scope:Pang_Xun = {
+			if = { # Ensure Pang Xun isnt landed, then start war
+				limit = {
+					NOT = { is_landed = yes }
+				}
+                spawn_army = {
+                    name = pang_xun_professional_event_troops
+                    men_at_arms = {
+                        type = burenjia
+                        stacks = 5
+                    }
+                    men_at_arms = {
+                        type = zhanmadao_infantry
+                        stacks = 5
+                    }
+                    men_at_arms = {
+                        type = ballista
+                        stacks = 5
+                    }
+                    # Spawn 
+                    location = province:10056 
+                    origin = province:10056 
+                    inheritable = no
+                }
+				start_war = {
+					casus_belli = ep3_laamp_adventurer_kingdom_invasion 
+					target = title:c_xuzhou_1.holder.top_liege
+					target_title = title:c_xuzhou_1.kingdom
+                    target_title = title:c_xuzhou_1
+				}
+			}
+		}
+		title:h_china.holder = { # Notification & Reaction Event
+			trigger_event = HEE_pang_xun_rebellion.0004
+		}
+	}
+}
+
+HEE_pang_xun_rebellion.0004 = {
+    type = character_event
+    window = big_event_window
+	title = HEE_pang_xun_rebellion.0004.t
+	desc = HEE_pang_xun_rebellion.0004.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+	right_portrait = {
+		character = scope:Pang_Xun
+		animation = personality_greedy
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+        any_character_war = {
+            primary_attacker = scope:Pang_Xun
+            primary_defender = root
+        }
+	}
+
+	immediate = {
+        title:h_china.holder = { save_scope_as = chinese_emperor }
+
+		add_stress = medium_stress_impact_gain
+
+		progress_towards_rival_effect = {
+			REASON = rival_plotting_against_me
+			CHARACTER = scope:Pang_Xun
+			OPINION = default_rival_opinion
+		}
+	}
+
+	option = { # Curse the name of Pang Xun
+		name = HEE_pang_xun_rebellion.0004.a
+
+        scope:Pang_Xun = { 
+            trigger_event = {
+                id = HEE_pang_xun_rebellion.0006
+                days = { 5 15 }
+            }
+        }
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Try and bribe Pang Xun with offers of gold and pardons
+		name = HEE_pang_xun_rebellion.0004.b
+		
+		custom_tooltip = try_and_bribe_pang_xun
+
+        if = {
+            limit = { scope:Pang_Xun = { is_ai = no } }
+            scope:Pang_Xun = { 
+                trigger_event = {
+                    id = HEE_pang_xun_rebellion.0006
+                    days = { 5 15 }
+                }
+            }
+        }
+        else = {
+            duel = {
+                skill = diplomacy
+                target = scope:Pang_Xun
+                # hidden_effect = {
+                    50 = {
+                        compare_modifier = {
+                            value = scope:duel_value
+                            multiplier = 3.5
+                            min = -49
+                        }
+                        scope:chinese_emperor = { # Xung Pan turns in his arms and ends the rebellion
+                            every_character_war = {
+                                limit = {
+                                    primary_defender = scope:chinese_emperor
+                                    primary_attacker = scope:Pang_Xun
+                                }
+                                end_war = white_peace
+                            }
+                        }
+                        title:d_xusi = { # Xu Prefecture soldiers are pardoned and return to civilian life. By decree, the Prefecture is not to be called on for military service for a period
+                            every_in_de_jure_hierarchy = {
+                                limit = {
+                                    tier = tier_county
+                                    holder = { target_is_liege_or_above = scope:chinese_emperor }
+                                }
+                                change_county_control = -33
+                                add_county_modifier = { 
+                                    modifier = hee_xu_prefecture_military_exemption_modifier
+                                    years = 5
+                                }
+                            }
+                        }
+                        scope:Pang_Xun = { 
+                            trigger_event = {
+                                id = HEE_pang_xun_rebellion.0005
+                                days = { 5 15 }
+                            }
+                        }
+                    }
+                    50 = {
+                        compare_modifier = {
+                            value = scope:duel_value
+                            multiplier = -3.5
+                            min = -49
+                        }
+                        scope:Pang_Xun = { 
+                            trigger_event = {
+                                id = HEE_pang_xun_rebellion.0006
+                                days = { 5 15 }
+                            }
+                        }
+                    }
+                # }
+            }
+        }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+# Pang Xun reconsiders the Pardon offer and concludes it is a trap
+
+
+
+HEE_pang_xun_rebellion.0006 = { # Pang Xun recruits new soldiers from peasantry and bandits
+    type = character_event
+    window = big_event_window
+	title = HEE_pang_xun_rebellion.0006.t
+	desc = HEE_pang_xun_rebellion.0006.desc
+	theme = war
+	left_portrait = {
+		character = root
+		animation = stress
+	}
+
+	trigger = {
+		is_alive = yes
+        any_character_war = {
+            primary_attacker = scope:Pang_Xun
+            primary_defender = scope:chinese_emperor
+        }
+	}
+
+	immediate = {
+        random_character_war = {
+			save_scope_as = pang_xun_rebellion
+		}
+	}
+
+	option = { # Recruit disgrunted soldiers and bandits
+		name = HEE_pang_xun_rebellion.0006.a
+		
+		custom_tooltip = pang_xun_recruits_bandits
+
+        remove_short_term_gold = {
+            value = gold
+        }
+
+        spawn_army = {
+            name = event_troop_default_name
+            men_at_arms = {
+                type = burenjia
+                stacks = 5
+            }
+            men_at_arms = {
+                type = shenbigong
+                stacks = 5
+            }
+            men_at_arms = {
+                type = tiefutu
+                stacks = 5
+            }
+            men_at_arms = {
+                type = ballista
+                stacks = 5
+            }
+            location = root.location
+            origin = root.location
+            war = scope:pang_xun_rebellion
+            war_keep_on_attacker_victory = yes
+        }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Recruit able-bodied peasants (willing or not)
+		name = HEE_pang_xun_rebellion.0006.b
+		
+		custom_tooltip = pang_xun_recruits_peasants
+
+        add_dread = 35
+
+        spawn_army = {
+            name = event_troop_default_name
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            location = root.location
+            origin = root.location
+            war = scope:pang_xun_rebellion
+            war_keep_on_attacker_victory = yes
+        }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Why not both!
+		name = HEE_pang_xun_rebellion.0006.c
+		
+		custom_tooltip = pang_xun_recruits_both_bandits_and_peasants
+
+        remove_short_term_gold = { value = gold }
+        add_dread = 35
+
+        spawn_army = {
+            name = event_troop_default_name
+            men_at_arms = {
+                type = burenjia
+                stacks = 5
+            }
+            men_at_arms = {
+                type = shenbigong
+                stacks = 5
+            }
+            men_at_arms = {
+                type = tiefutu
+                stacks = 5
+            }
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            men_at_arms = {
+                type = pikemen_militia
+                stacks = 10
+            }
+            men_at_arms = {
+                type = ballista
+                stacks = 5
+            }
+            location = root.location
+            origin = root.location
+            war = scope:pang_xun_rebellion
+            war_keep_on_attacker_victory = yes
+        }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Our current numbers will be sufficent
+		name = HEE_pang_xun_rebellion.0006.d
+		
+        custom_tooltip = pang_xun_recruits_no_one
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

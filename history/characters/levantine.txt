@@ -5879,7 +5879,7 @@
 	trait = diligent
 	
 	# Other Traits
-	trait = poet
+	trait = lifestyle_poet
 
 	830.1.1 = {
 		birth = "830.1.1"
@@ -5988,7 +5988,7 @@
 	
 	#Other Traits
 	trait = desert_warrior # Commander trait suited for his environment
-	trait = poet  # Isa were esteemed for the quality of his Arabic poetry.
+	trait = lifestyle_poet  # Isa were esteemed for the quality of his Arabic poetry.
 
 	820.1.1 = {
 		birth = "820.1.1"
@@ -7555,7 +7555,7 @@
 	trait = cynical # Al-Mu'tadid's cousin and panegyrist, Ibn al-Mu'tazz, claimed that he "contemplated crossing into Byzantine territory and becoming a Christian"
 	
 	#Other Traits
-	trait = poet
+	trait = lifestyle_poet
 
 	841.1.1 = {
 		birth = yes
@@ -8463,7 +8463,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	
 	#Other Traits
 	trait = reaver
-	trait = poet
+	trait = lifestyle_poet
 
 	839.1.1 = {
 		birth = yes
@@ -8699,7 +8699,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	father = 34010
 	mother = abbasid_concubines_1
 	trait = sayyid
-	trait = poet
+	trait = lifestyle_poet
 	trait = arbitrary
 	trait = diligent
 	trait = vengeful
@@ -9569,7 +9569,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 
 	father = 73679 # Sultan Abd al-Rahman I of Andalusia
 	mother = levantine0024 # Hulal
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	757.4.26 = {
 		birth = yes
@@ -9595,7 +9595,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 
 	father = 73680 # Sultan Hisham I of Andalusia
 	mother = levantine0025 # Shokouh
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	770.1.1 = {
 		birth = yes
@@ -9614,13 +9614,13 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	religion = ashari
 	culture = levantine
 	trait = sayyid
-	trait = poet
+	trait = lifestyle_poet
 	trait = lustful
 	trait = education_stewardship_3
 
 	father = 73681 # Sultan al-Hakam I of Andalusia
 	mother = levantine0027 # Heloa
-	trait = child_of_concubine_female
+	trait = child_of_concubine_male
 
 	792.11.1 = {
 		birth = yes
@@ -9651,7 +9651,7 @@ levantine000010 = { #fictional ruler of Banu Kilab, thus will be represented by 
 	trait = callous
 	trait = architect # Muhammad I is credited with some of the work done on the Great Mosque of Cordoba in the 9th century. ordered the construction of a series of fortresses in the border territory known as the Middle Mark.
 	trait = sayyid
-	trait = poet
+	trait = lifestyle_poet
 	trait = education_martial_1
 
 	father = 73682 # Sultan Abd al-Rahman II of Andalusia
@@ -10171,7 +10171,7 @@ levantine0006 = {
 	dynasty = banu_mughit # Banu Mughit Dynasty
 	religion = ashari
 	culture = levantine
-	trait = poet
+	trait = lifestyle_poet
 	trait = education_martial_3
 
 	father = levantine0004 # Abd al-Wahhad ibn Mughit
@@ -10868,7 +10868,7 @@ levantine0044 = {
 	dynasty = 597 # Umayyad Dynasty
 	religion = ashari
 	culture = levantine
-	trait = poet
+	trait = lifestyle_poet
 	trait = sayyid
 
 	father = 73683 # Sultan Muhammad I of Andalusia
@@ -12967,7 +12967,7 @@ abbasid_concubines_3 = { #wife of Al-Mutawakkil
 	religion = mutazila
 	culture = levantine
 	female = yes
-	trait = poet
+	trait = lifestyle_poet
 	trait = infertile #she never got any children it seems, so this seems reasonable 
 	trait = beauty_good_1 
 	830.1.1 = { 

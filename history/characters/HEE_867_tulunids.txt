@@ -299,7 +299,7 @@ mudabbir0002 = { # al-Mudabbir himself - https://en.wikipedia.org/wiki/Abu%27l-H
 	#Other Traits
 	trait = administrator # fiscal administrator 
 	trait = scholar # distinguished man of letters/author of a now lost Kitāb al-Mujālasa wa ’l-mudhākara ("Book of Companionship and Conversation")
-	trait = poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
+	trait = lifestyle_poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
 
 	#sexuality = heterosexual
 	
@@ -348,7 +348,7 @@ mudabbir0003 = { # al-Mudabbir's brother, Abu Ishaq Ibrahim
 	#Other Traits
 	trait = administrator # fiscal administrator 
 	trait = scholar # wrote a book on administration/distinguished man of letters
-	trait = poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
+	trait = lifestyle_poet # esteemed as a poet by Caliph al-Mutawakkil, his friend
 
 	#sexuality = heterosexual
 	

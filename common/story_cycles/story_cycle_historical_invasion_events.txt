@@ -101,7 +101,7 @@ story_seljuk_invasion = {
 				global_var:GhaznavidEmpireTitle.holder = {
 					has_title = title:k_transoxiana
 				}
-				title:k_transoxiana.top_liege = global_var:GhaznavidEmpireTitle.holder
+				title:k_transoxiana.holder.top_liege = global_var:GhaznavidEmpireTitle.holder
 			}
 		}
 
@@ -194,7 +194,11 @@ story_ghaznavid_invasion = {
 		story_owner = {
 			if = {
 				limit = {
-					current_year <= 1040 # After this, it is fine for Ghaznavids to decline in strength
+					NOR = {
+						current_year >= 1040 # After this, it is fine for Ghaznavids to decline in strength
+						completely_controls_region = max_ghaznavid_invasion_region # No need for added strength when they reach a great extent
+						realm_size >= 80 # No need for forced expansion when Ghaznavids reach a great extent
+					}
 					any_child = { # if the Khan has a reasonable heir...
 						is_primary_heir_of = scope:story.story_owner
 					}
@@ -213,7 +217,7 @@ story_ghaznavid_invasion = {
 			scope:new_story_owner = {
 				add_trait = turkish_conqueror
 			}
-			debug_log = "Successfully replaced the Seljuk Khan"
+			debug_log = "Successfully replaced the Ghaznavid Sultan"
 			debug_log_date = yes
 			debug_log_scopes = yes
 		}
@@ -231,6 +235,7 @@ story_ghaznavid_invasion = {
 				NOR = {
 					current_year >= 1040 # After this, it is fine for Ghaznavids to decline in strength
 					completely_controls_region = max_ghaznavid_invasion_region # No need for added strength when they reach a great extent
+					realm_size >= 80 # No need for forced expansion when Ghaznavids reach a great extent
 				}
 				any_held_title = { this = global_var:GhaznavidEmpireTitle }
 			}
@@ -269,6 +274,7 @@ story_ghaznavid_invasion = {
 				NOR = {
 					current_year >= 1040 # After this, it is fine for Ghaznavids to decline in strength
 					completely_controls_region = max_ghaznavid_invasion_region # No need for added strength when they reach a great extent
+					realm_size >= 80 # No need for forced expansion when Ghaznavids reach a great extent
 				}
 				any_held_title = {
 					this = global_var:GhaznavidEmpireTitle
@@ -344,6 +350,7 @@ story_ghaznavid_invasion = {
 				OR = {
 					current_year >= 1040 # After this, it is fine for Ghaznavids to stop story expansion
 					completely_controls_region = max_ghaznavid_invasion_region # No need for forced expansion when Ghaznavids reach a great extent
+					realm_size >= 80 # No need for forced expansion when Ghaznavids reach a great extent 
 				}
 			}
 		}
@@ -591,6 +598,7 @@ story_qarmatian_invasion = {
 				OR = {
 					current_year >= 940 # After this, it is fine for Qarmatians to decline in strength
 					completely_controls_region = max_qarmatian_invasion_region # No need for added strength when they reach a great extent
+					NOT = { faith = faith:qarmatian } # If they arent Qarmatian then stop acting like Qarmatians
 				}
 			}
 		}
@@ -1080,7 +1088,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 	on_setup = {
 		if = {
 			limit = { story_owner.current_military_strength <= 8000 }
-			story_owner = { spawn_hungarian_starting_troops_effect = yes }
+			story_owner = { spawn_magyar_starting_troops_effect = yes }
 		}
 		every_ruler = { # Notify appropriate rulers of the Migration of the Hungarians
 			limit = {
@@ -1147,7 +1155,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				is_at_war = no
 				prestige > 100
 				gold > 50
-				NOT = { completely_controls_region = custom_hungary }
+				NOT = { completely_controls_region = custom_hungary_minus_syrmia }
 				any_held_title = {
 					this = title:k_hungary
 				}
@@ -1162,7 +1170,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 			}
 			effect = {
 				random_county_in_region = {
-					region = custom_hungary
+					region = custom_hungary_minus_syrmia
 					limit = { 
 						NOT = { 
 							county.holder = title:k_hungary.holder 
@@ -1205,7 +1213,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 						}
 					}
 				}
-				debug_log = "The story started a new war for the lead_qarmatians"
+				debug_log = "The story started a new war for the lead_hungarian"
 				debug_log_date = yes
 				story_owner = {
 					save_scope_as = owner
@@ -1217,15 +1225,16 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 
 	#Start a Grand Raid if none is ongoing, AFTER they completely control Hungary
 	effect_group = {
-		days = { 200 300 }
+		days = { 200 400 } # 
 
 		trigger = {
 			story_owner = {
 				is_at_war = no
 				prestige > 0
 				gold > 0
-				realm_size <= 60
-				completely_controls_region = custom_hungary
+				# realm_size <= 60
+				current_military_strength >= 5000 # The Magyars should allow their forces to replenish before raiding again
+				completely_controls_region = custom_hungary_minus_syrmia
 				any_held_title = {
 					this = title:k_hungary
 				}
@@ -1262,10 +1271,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 				prestige > 0
 				gold > 0
 				current_military_strength <= 6000
-				NOR = {
-					current_year >= 975 # After this, it is fine for Magyars to decline in strength
-					#completely_controls_region = max_magyar_invasion_region # No need for added strength when they reach a great extent
-				}
+				current_year <= 975 # After this, it is fine for Magyars to decline in strength
 				any_held_title = {
 					this = title:k_hungary
 				}
@@ -1338,7 +1344,7 @@ story_kalandozasok = { # https://en.wikipedia.org/wiki/Hungarian_invasions_of_Eu
 		trigger = {
 			story_owner = {
 				OR = {
-					current_year >= 975 # After this, it is fine for Qarmatians to decline in strength
+					current_year >= 975 # After this, it is fine for the Magyars to end their era of raiding
 					faith = { religion_tag = christianity_religion } # Raids can stop if Hungarians christianize
 				}
 			}

@@ -20,7 +20,7 @@ d_epirus = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = rendakios0007
 	}
 	1060.1.1 = {
 		holder = 1764
@@ -100,7 +100,7 @@ c_nicopolis = {
 		holder = 145800
 	}
 	866.1.1 = {
-		holder = 145180
+		holder = rendakios0007
 	}
 	#Kontostephanos dynasty
 	1060.1.1 = {
@@ -160,7 +160,7 @@ c_epeiros = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = rendakios0007
 	}
 	1060.1.1 = {
 		holder = 1764
@@ -237,7 +237,7 @@ c_aetolia = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = rendakios0007
 	}
 	#Branas
 	1060.1.1 = {
@@ -286,7 +286,7 @@ c_metzovo = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = rendakios0007
 	}
 	1060.1.1 = {
 		holder = 1764
@@ -393,7 +393,7 @@ d_dyrrachion = {
 				}
 			}
 		}
-		holder = 145124 # Thomas Gerontas
+		holder = rhabdouchoi0001 # Rhabdouchos who served as Strategos of Dyrrhachium in 880
 	}
 	896.1.1 = {
 		holder = 0
@@ -495,7 +495,7 @@ c_dyrrachion = {
 		liege = "e_byzantium"
 	}
 	865.1.1 = {
-		holder = 145124
+		holder = rhabdouchoi0001 # Rhabdouchos who served as Strategos of Dyrrhachium in 880
 	}
 	989.1.1 = {
 		liege = "d_dyrrachion"
@@ -898,8 +898,8 @@ c_avlonas = {
 		holder = 145799
 	}
 	865.1.1 = {
-		liege = "d_bulgaria"
-		holder = bagatur0001
+		holder = rhabdouchoi0001 # Rhabdouchos who served as Strategos of Dyrrhachium in 880
+		liege = e_byzantium
 	}
 	
 	1060.1.1 = {
@@ -978,7 +978,7 @@ d_cephalonia = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = mosele0007 # Mousilikes, a name linked to a tourmarches of Mesopotamia, strategos of Cephalonia, and strategos of Sicily
 	}
 	1060.1.1 = {
 		holder = 1764
@@ -1023,7 +1023,7 @@ c_cephalonia = {
 		holder = 145801
 	}
 	865.1.1 = {
-		holder = 145181
+		holder = mosele0007 # Mousilikes, a name linked to a tourmarches of Mesopotamia, strategos of Cephalonia, and strategos of Sicily
 	}
 	1066.1.1 = {
 		holder = 90092
@@ -1096,7 +1096,7 @@ c_buthrotum = {
 		holder = 145799
 	}
 	865.1.1 = {
-		holder = 145180
+		holder = mosele0007 # Mousilikes, a name linked to a tourmarches of Mesopotamia, strategos of Cephalonia, and strategos of Sicily
 	}
 	1060.1.1 = {
 		holder = 1764

@@ -301,8 +301,8 @@ d_armeniac = {
 	763.1.1 = {
 		holder = 145847
 	}
-	860.1.1 = {
-		holder = 145171
+	865.1.1 = { # The Stratgeos of the Armeniakon at this time was likely a man named Theophylaktos, known from a letter he recieved from Patriarch Photius between May 26, 866, and September 23, 867
+		holder = choirosphaktes0001 # Strategos Theophylaktos has been merged with the unnamed member of the Choirosphaktes family for convenience (and that it is not technically impossible)
 	}
 	1059.12.25 = {
 		holder = 1752
@@ -371,8 +371,8 @@ c_helenopontus = {
 	763.1.1 = {
 		holder = 145847
 	}
-	860.1.1 = {
-		holder = 145171
+	865.1.1 = { # The Stratgeos of the Armeniakon at this time was likely a man named Theophylaktos, known from a letter he recieved from Patriarch Photius between May 26, 866, and September 23, 867
+		holder = choirosphaktes0001 # Strategos Theophylaktos has been merged with the unnamed member of the Choirosphaktes family for convenience (and that it is not technically impossible)
 	}
 	1059.12.25 = {
 		holder = 1752
@@ -537,8 +537,8 @@ c_euchaita = {
 	763.1.1 = {
 		holder = 145847
 	}
-	860.1.1 = {
-		holder = 145171
+	865.1.1 = { # The Stratgeos of the Armeniakon at this time was likely a man named Theophylaktos, known from a letter he recieved from Patriarch Photius between May 26, 866, and September 23, 867
+		holder = choirosphaktes0001 # Strategos Theophylaktos has been merged with the unnamed member of the Choirosphaktes family for convenience (and that it is not technically impossible)
 	}
 	1059.12.25 = {
 		holder = 1752
@@ -617,8 +617,8 @@ c_zela = {
 	763.1.1 = {
 		holder = 145847
 	}
-	860.1.1 = {
-		holder = 145171
+	865.1.1 = { # The Stratgeos of the Armeniakon at this time was likely a man named Theophylaktos, known from a letter he recieved from Patriarch Photius between May 26, 866, and September 23, 867
+		holder = choirosphaktes0001 # Strategos Theophylaktos has been merged with the unnamed member of the Choirosphaktes family for convenience (and that it is not technically impossible)
 	}
 	1059.12.25 = {
 		holder = 1752
@@ -836,13 +836,11 @@ c_azysia = {
 		liege = d_sebasteia
 		holder = 302353	#fictional Gerasimos Kardias
 	}
-	850.1.1 = {
-		holder = paulician0002
-		liege = 0
+	855.1.1 = {
+		holder = 159724
 	}
 	863.9.3 = {
-		holder = paulician0004
-		liege = 0
+		holder = 159725
 	}
 	# 861.6.16 = {
 		# holder = 302355	#fictional Leontios Kardias
@@ -1071,8 +1069,8 @@ d_charsianon = {
 	767.1.1 = {
 		holder = 145823
 	}
-	845.1.1 = {
-		holder = 145144
+	865.1.1 = {
+		holder = 145137 # Unnamed Melissenoi; placed here merely due to the anonymous nature of the Strategos around this period (https://www.degruyterbrill.com/database/pmbz/entry/PMBZ31322/html) and the renown of his dynasty
 	}
 	1066.1.1 = {
 		holder = 20534
@@ -1110,7 +1108,7 @@ c_charsianon = {
 		holder = 145823
 	}
 	845.1.1 = {
-		holder = 145144
+		holder = 145137 # Unnamed Melissenoi; placed here merely due to the anonymous nature of the Strategos around this period (https://www.degruyterbrill.com/database/pmbz/entry/PMBZ31322/html) and the renown of his dynasty
 	}
 	1060.1.1 = {
 		holder = 20534
@@ -1214,7 +1212,7 @@ c_kaisereia = {
 		holder = 145823
 	}
 	845.1.1 = {
-		holder = 145144
+		holder = 145137 # Unnamed Melissenoi; placed here merely due to the anonymous nature of the Strategos around this period (https://www.degruyterbrill.com/database/pmbz/entry/PMBZ31322/html) and the renown of his dynasty
 	}
 	1060.1.1 = {
 		holder = 20534

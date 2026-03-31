@@ -348,37 +348,14 @@
 	female = yes
 	religion = "norse_pagan"
 	culture = norse
-	dynasty = 818
-	father = 6866
-	
-	#Skills
-	diplomacy = 6
-	martial = 8
-	stewardship = 5
-	intrigue = 6
-	learning = 5
-	prowess = 8
-	
-	#Education
-	trait = education_martial_2
-	
-	#Personality Traits
-	trait = brave
-	trait = honest
-	trait = diligent
-	
-	#Other Traits
-	trait = strong
-	
-	sexuality = heterosexual
-	
-	850.1.1 = {
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0020 # King Eirik of Jutland/Horik II
+	trait = strong # Justification for nickname
+	866.1.1 = { # Guesswork is circa. 870, but lets have her born for the startdate
 		birth = yes
 	}
-	867.1.1 = {
+	897.1.1 = { # The couple were only married for three years before Ragnhild became ill and died. So since CK3 has her son's birth in 895 (lets say that happened 1 year into marriage), 3 years would be 897
 		effect = { give_nickname = nick_the_mighty }
-	}
-	910.1.1 = {
 		death = yes
 	}
 }
@@ -736,6 +713,7 @@
 			add_character_flag = do_not_generate_starting_family
 			give_nickname = nick_troublemaker
 			add_gold = 500
+			add_character_modifier = rurik_personal_modifier
 		}
 
 		# Give Viking adventurer some adventuring troops.
@@ -3691,11 +3669,16 @@
 	795.6.6 = {
 		birth = yes
 	}
-	800.1.1 = {
-		trait = wrathful
+	800.1.1 = { # In the Saga, Ragnar is Introduced as a big man, handsome and well-provided with wisdom.
+		trait = ambitious # As the sons grew up to become renowned warriors, Ragnar, not wishing to be outdone, resolved to conquer England with merely two ships.
+		trait = generous # He was good to his men and cruel to his enemies.
+		trait = vengeful # He was good to his men and cruel to his enemies.
 		trait = lifestyle_hunter
-		trait = strong
-		trait = brave
+		trait = strong # According to the Sögubrot, "he was the biggest and fairest of men that human eyes have seen, and he was like his mother in appearance and took after her kin"
+		trait = beauty_good_1 # According to the Sögubrot, "he was the biggest and fairest of men that human eyes have seen, and he was like his mother in appearance and took after her kin"
+		trait = shrewd # well-provided with wisdom
+		trait = brave # Ragnar's first account in the saga was to assemble an army, a fleet of ships, becoming a great warrior and slaying a dragon in the Norse lands of Götaland.
+		trait = reaver
 		trait = viking
 		trait = education_martial_3
 	}
@@ -3729,6 +3712,12 @@
 	trait = patient
 	795.6.6 = {
 		birth = yes
+		effect = {
+			if = {
+				limit = { has_fp1_dlc_trigger = yes }
+				add_trait = shieldmaiden # Lagertha, according to legend, was a Viking ruler and shield-maiden				
+			}
+		}
 	}
 	867.12.1 = {
 		death = yes
@@ -3902,9 +3891,11 @@
 	trait = ambitious
 	trait = callous
 	trait = vengeful
-	trait = one_legged
+	trait = weak # Imo a better trait to reflect the "bonelessness" of Ivar
 	trait = viking
 	trait = education_martial_4
+	trait = shrewd # While the sagas describe Ivar's physical disability, they also emphasise his wisdom, cunning, and mastery of strategy and tactics in battle
+	trait = reaver # Raider
 	sexuality = heterosexual
 	father = 163109 #Ragnarr Lodbrok
 	mother = 6836 #Auslaug
@@ -3942,27 +3933,23 @@
 		effect = {
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
+				levies = 700
+				men_at_arms = {
+					type = huscarl
+					stacks = 3
+				}
+				location = province:1595
+				origin = province:1595
 			}
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
-			}
-			spawn_army = {
-				name = event_troop_default_name
-				levies = 1250
-				location = province:1596
-				origin = province:1689
+				levies = 700
+				men_at_arms = {
+					type = huscarl
+					stacks = 3
+				}
+				location = province:1595
+				origin = province:1595
 			}
 		}
 	}
@@ -3972,7 +3959,7 @@
 		}
 	}
 	
-	873.1.6 = {
+	870.1.1 = { # The Anglo-Saxon chronicler Æthelweard records his death as 870. As HEE seperates the "real" Ivar (Imar) from his Saga portrayal, we will make Ivar's death reflect the Anglo-Saxons' account
 		death = yes
 	}
 }
@@ -4070,25 +4057,41 @@
 		effect = {
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
+				levies = 900
+				men_at_arms = {
+					type = huscarl
+					stacks = 1
+				}
 				location = province:1595
 				origin = province:1595
 			}
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
+				levies = 900
+				men_at_arms = {
+					type = huscarl
+					stacks = 1
+				}
 				location = province:1595
 				origin = province:1595
 			}
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
+				levies = 900
+				men_at_arms = {
+					type = huscarl
+					stacks = 1
+				}
 				location = province:1595
 				origin = province:1595
 			}
 			spawn_army = {
 				name = event_troop_default_name
-				levies = 1250
+				levies = 900
+				men_at_arms = {
+					type = huscarl
+					stacks = 1
+				}
 				location = province:1595
 				origin = province:1595
 			}
@@ -4193,6 +4196,30 @@
 	827.1.1 = {
 		birth = yes
 		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	865.1.1 = {
+		effect = {
+			spawn_army = {
+				name = event_troop_default_name
+				levies = 700
+				men_at_arms = {
+					type = huscarl
+					stacks = 3
+				}
+				location = province:1595
+				origin = province:1595
+			}
+			spawn_army = {
+				name = event_troop_default_name
+				levies = 700
+				men_at_arms = {
+					type = huscarl
+					stacks = 3
+				}
+				location = province:1595
+				origin = province:1595
+			}
+		}
 	}
 	866.11.1 = {
 		employer = 163112
@@ -5303,8 +5330,8 @@
 	father = inger0001
 	mother = martinakoi0012
 	trait = generous # A (likely legendary) Jewish chronicle mentions that Eudokia gave Rabbi Shefatia her earrings and belt as a gift for his two daughters, which are said to have weighed a pound of gold each.
-	trait = stubborn
-	trait = lustful
+	trait = ambitious # The scholar E. Kislinger depicts Eudokia as ambitious and active in her own right
+	trait = lustful # A decade into Basil I's reign, Eudokia became involved with another man, whom the emperor ordered to be tonsured as monk (is this a display of Eudokia's ambition or lustful nature?)
 	trait = education_diplomacy_1
 	trait = beauty_good_3 # Skylitzes writes Eudokia "exceeded all other women of her age in physical elegance, beauty and sobriety"
 	sexuality = bisexual
@@ -5334,7 +5361,7 @@
 	}
 }
 
-167776 = {
+167776 = { # Seemingly Halfdan (fl. 782–807); a leading person among the Danes and the first known Scandinavian to enter Frankish service
 	name = "Halfdan"
 	dynasty = 9552
 	religion = "norse_pagan"
@@ -5344,60 +5371,78 @@
 		birth = "750.1.1"
 	}
 	
-	800.1.1 = {
-		death = "800.1.1"
+	808.1.1 = { # There is no record of Halfdan after 807 and he probably died not long thereafter, possibly already old at the time
+		death = "808.1.1"
 	}
 }
 
-167777 = {
+167777 = { # Harald 'Klak' Halfdansson (c. 785 – c. 852) was a king in Jutland (and possibly other parts of Denmark) around 812–814 and again from 819 to 827
 	name = "Haraldr"
 	dynasty = 9552
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 167776
-	780.1.1 = {
-		birth = "780.1.1"
+	trait = education_martial_2
+	trait = ambitious # Sought to be King of the Danes
+	trait = stubborn # Tried repeatedly to aquire the throne of Denmark
+	trait = deceitful # Suspected by the marcher lords of deceit and treachery. Possibly spread a rumor of a gathering Northmen army in Denmark to push his allies into gathering an army to fight against Denmark
+	trait = impatient # The Vita Hludovici also blames the impatience of Harald in breaking the negotiations.
+	trait = reaver
+	782.1.1 = {
+		birth = "782.1.1"
+		give_nickname = nick_klak
 	}
-	826.1.1 = {
+	826.1.1 = { # An 826 entry of The Royal Annals, reads "At the same time Heriold came with his wife and a great number of Danes and was baptized with his companions at St. Alban's basilica in Mainz."
 		religion = "catholic"
 	}
 	
-	852.1.1 = {
-		death = "852.1.1"
+	852.1.1 = { # The Annales Fuldenses mention in 852: "At length he [Haraldr] became suspect to the leading men of the northern regions and the warders of the Danish march as of doubtful loyalty and a possible treachery, and was therefore killed by them."
+		death = {
+			death_reason = death_execution # Seemingly executed/murdered by the Northern Saxon Magnates
+		}
 	}
 }
 
-167778 = {
+167778 = { # a pretender-king who vied for the Danish throne in 812 - https://en.wikipedia.org/wiki/Anulo
 	name = "Anulo"
 	dynasty = 9552
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 167776
-	782.1.1 = {
-		birth = "783.1.1"
+	780.1.1 = { # Anulo was likely the eldest brother
+		birth = "780.1.1"
 	}
 	
 	812.1.1 = {
-		death = "812.1.1"
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
-167779 = {
+167779 = { # a co-King of Denmark from 812, when Hemming I died, to 813, when he and his brothers were ousted by the sons of a previous king, Gudfred - https://en.wikipedia.org/wiki/Reginfrid
 	name = "Ragnfrid"
 	dynasty = 9552
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 167776
+	trait = education_martial_2
+	trait = ambitious
+	trait = stubborn # Was the only one of his siblings to attempt to regain the Danish Kingdom
+	trait = vengeful
+	trait = reaver
 	786.1.1 = {
 		birth = "786.1.1"
 	}
 	
-	814.1.1 = {
-		death = "814.1.1"
+	814.1.1 = { # After being drove out of Denmark by the sons of Gudfred, Reginfrid tried to regain the kingdom but was killed in an attempted invasion in 814 (as recorded in the Annales regni Francorum)
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
-167780 = {
+167780 = { # Seemingly Hemming Halfdansson - https://en.wikipedia.org/wiki/Hemming_Halfdansson
 	name = "Hemming"
 	dynasty = 9552
 	religion = "norse_pagan"
@@ -5406,19 +5451,28 @@
 	790.1.1 = {
 		birth = "790.1.1"
 	}
-	
-	
-	837.1.1 = {
-		death = "837.1.1"
+	826.1.1 = { # Adam of Bremen placed the baptism of Harald Krak following his deposition. "...he was baptized at Mainz with his wife and brother and a great multitude of Danes.". The brother in question is likely Hemming as Hemming is described as a "Great Christian Leader"
+		religion = "catholic"
+	}
+	837.6.17 = { # The Annales Fuldenses report "The Norsemen came to the island of Walcheren to collect tribute and on 17 June they killed Eggihard, the count of this place, and Hemingr, the son of Halfdan..."
+		death = {
+			death_reason = death_battle
+		}
 	}
 }
 
-167781 = {
+167781 = { # Godfrid Haraldsson; son of the Danish king Harald Klak - https://en.wikipedia.org/wiki/Godfrid_Haraldsson
 	name = "GuT_frith"
 	dynasty = 9552
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 167777
+	trait = education_martial_2
+	trait = greedy
+	trait = brave
+	trait = patient # Waited an entire winter in a stalemate with the army of Charles the Bald
+	trait = reaver
+	trait = viking
 	820.1.1 = {
 		birth = "820.1.1"
 	}
@@ -5426,7 +5480,7 @@
 		religion = "catholic"
 	}
 	
-	856.1.1 = {
+	856.1.1 = { # After the year 855, the sources are silent about this Godfred. He probably died soon afterwards
 		death = "856.1.1"
 	}
 }
@@ -5441,9 +5495,13 @@
 	trait = ambitious
 	trait = cynical
 	trait = stubborn
-	trait = viking
+	trait = reaver
 	820.1.1 = {
 		birth = "820.1.1"
+	}
+	850.1.1 = {
+		trait = adventurer # Spent time that could be described as a LAAMP, for after Rorik had lived in East Francia for several years he collected a not insubstantial force of Danes and began a career of piracy, devastating places near the northern coasts of Lothair's kingdom
+		trait = viking # had a career in piracy
 	}
 	864.1.1 = {
 		religion = catholic
@@ -5461,6 +5519,7 @@
 	father = 167780
 	822.1.1 = {
 		birth = "822.1.1"
+		give_nickname = nick_the_younger # from "Herioldus iunior", how he is named in the Annales Xantenses. Possibly to avoid confusion with Harald Klak
 	}
 	
 	853.1.1 = {
@@ -5541,7 +5600,7 @@
 	}
 }
 
-168319 = {
+168319 = { # Halfdan the Mild
 	name = "Halfdan"
 	dynasty = 499
 	religion = "norse_pagan"
@@ -5554,6 +5613,7 @@
 	trait = reaver # He was a great warrior who often pillaged and gathered great amounts of loot. 
 	760.1.1 = {
 		birth = "760.1.1"
+		give_nickname = nick_the_mild
 	}
 	833.1.1 = {
 		death = {
@@ -5562,7 +5622,7 @@
 	}
 }
 
-168320 = {
+168320 = { # Gudrød the Hunter
 	name = "GuT_rO_T_r"
 	dynasty = 499
 	religion = "norse_pagan"
@@ -5643,13 +5703,14 @@
 	trait = education_martial_3
 	
 	#Personality Traits
-	trait = brave # Lead armies 
+	trait = brave # led armies 
 	trait = just # Heimskringla states Halfdan was a man of Justice who put forth laws and followed them
 	trait = deceitful #  some scholars have suggested that the linkage to the earlier Yngling dynasty of Vestfold was a later invention, created to associate a conquering Halfdan and his son Harald Fairhair with the family glorified in the Ynglingatal, whom he had displaced
 	trait = ambitious # Conquered much land
 
 	820.1.1 = {
 		birth = "820.1.1" # Heimskringla states Halfdan was forty years old when he died
+		give_nickname = nick_the_black
 	}
 	838.1.1 = {
 		add_spouse = gullskjegg0002
@@ -5657,8 +5718,10 @@
 	849.1.1 = {
 		add_spouse = 168649
 	}
-	860.1.1 = {
-		death = "860.1.1" # Harald was but ten years old when he succeeded his father according to the sagas
+	860.1.1 = { # Harald was but ten years old when he succeeded his father according to the sagas
+		death = {  # Heimskringla, Fagrskinna, Ágrip, and Historia Norwegiæ all relate that Halfdan drowned when he fell through the ice at the inlet Røykenvik in the lake Randsfjorden on his return home from Hadeland
+			death_reason = death_drowned
+		}
 	}
 }
 
@@ -5990,11 +6053,21 @@
 	religion = "norse_pagan"
 	culture = "norse"
 	father = 167783
+	trait = education_martial_2
+	trait = greedy # In 864 Rodulf led a band of mercenaries (locarii) into Lotharingia to extract a payment from Lothair II. Attempted to extract tribute from Frisians in 873
+	trait = wrathful # The Annals of Fulda writes that after the Frisians refused Rodulf tribute "he was enraged, and in his pride swore that after all the males had been killed the women and children with all their movable wealth should be taken off into captivity"
+	trait = deceitful # According to the Annales Bertiniani, Rodulf had been plotting acts of treachery against Charles the Bald
+	trait = reaver
 	842.1.1 = {
 		birth = "842.1.1"
 	}
+	860.1.1 = {
+		faith = "catholic" # He was baptised, but under what circumstances is unknown. His uncle Rorik converted sometime before late 861/early 862, and thus we will place Rodulf's conversion around the same time as Rorik's
+	}
 	873.6.1 = {
-		death = "873.6.1"
+		death = { # According to all three annals, Rodulf arrived in northern Frisia in June 873 and attempted to exact tribute from the Frisians. A battle ensued, in which Rodulf was killed and his troops routed.
+			death_reason = death_battle
+		}
 	}
 }
 
@@ -7491,6 +7564,12 @@
 	name = "Olafr"
 	religion = "norse_pagan"
 	culture = "norse"
+	# as a fictional placeholder for viking slavers, his traits should reflect the nature of slavery imo
+	trait = education_martial_2
+	trait = gluttonous
+	trait = arbitrary
+	trait = callous
+	trait = reaver
 	832.1.1 = {
 		birth = yes
 	}

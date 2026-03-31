@@ -1481,6 +1481,33 @@
 			add_character_modifier = alfred_annointed_by_the_pope
 		}	
 	}
+	855.1.1 = {
+		effect = {
+			create_artifact = {
+				name = alfred_book_of_poetry_name
+				description = alfred_book_of_poetry_desc
+				history = {
+					location = province:1544 #Winchester
+					date = 855.1.1
+					actor = character:306023 #Alfred's mother Osburh
+					recipient = character:7627 #Alfred of Wessex
+					type = given
+				}
+				type = miscellaneous
+				visuals = book
+				rarity = masterwork
+				wealth = scope:wealth
+				quality = scope:quality		
+				modifier = artifact_courting_scheme_phase_duration_add_1_modifier
+				save_scope_as = alfred_book_of_poetry
+			}
+			scope:alfred_book_of_poetry = {
+				add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_1_modifier
+				add_artifact_modifier = artifact_monthly_learning_lifestyle_xp_1_modifier						
+				equip_artifact_to_owner = yes
+			}
+		}
+	}
 	859.1.1 = {
 		effect = {
 			set_relation_friend = { reason = friend_generic_history target = character:33358 } # ?helred, brother and king of Wessex

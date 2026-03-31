@@ -5,6 +5,31 @@
 #################################################
 
 ## Character ##
+influx_of_ghazi_volunteers_modifier = { # Al-Tabari reports that the news of the deaths of Umar and Ali al-Armani resulted in private donations and volunteers for the holy war gathering at the border
+	icon = prowess_positive
+	levy_size = 0.5
+	tax_mult = 0.35
+}
+
+self_appointed_imperial_modifier = {
+	icon = prestige_positive
+	monthly_prestige_gain_mult = 0.1
+	legitimacy_gain_mult = -0.1
+}
+
+executed_envoy_modifier = { # Li Shilong modifier for when he executes the Nanzhao envoy
+	icon = dread_negative
+	dread_baseline_add = 20
+	independent_ruler_opinion = -10
+	courtier_and_guest_opinion = -10
+}
+
+rurik_personal_modifier = {
+	icon = county_modifier_control_positive
+  	monthly_county_control_growth_factor = 0.15
+  	county_opinion_add = 10
+}
+
 charles_exotic_camels_modifier = { # Modifier to represent the camels Charles the Bald recieved from Emir Muhammad I of Cordoba
 	icon = goods_positive
   	monthly_court_grandeur_change_mult = 0.1
@@ -160,6 +185,12 @@ terror_of_the_tyrrhenian_modifier = {
 	naval_movement_speed_mult = 0.1
 	monthly_prestige_gain_mult = 0.05
 	coastal_advantage = 5
+}
+
+boris_guilty_conscious_modifier = { # Until the end of his life, Knyaz Boris was haunted by guilt about the harshness of killing the sons of the revolt's leaders and the moral price of his decision in 865
+	icon = stress_negative
+	stress_gain_mult = 0.15
+	stress_loss_mult = -0.1
 }
 
 
@@ -336,6 +367,27 @@ volcanic_winter = { # Modifier for the Samalas Eruption of 1257
 	supply_limit_mult = -0.1
 }
 
+aftermath_of_Qiu_Fu_uprising_modifier = { # Modifier to represent the lingering effects of Qiu Fu's 859-860 rebellion
+	icon = outdoors_negative
+	tax_mult = -0.2
+	development_growth_factor = small_development_growth_loss
+	levy_reinforcement_rate = -0.25
+	travel_danger = 5
+}
+
+aftermath_of_Kang_Quantai_uprising_modifier = { # Modifier to represent the lingering effects of Kang Quantai's 858 rebellion
+	icon = outdoors_negative
+	tax_mult = -0.2
+	development_growth_factor = small_development_growth_loss
+	levy_reinforcement_rate = -0.15
+	travel_danger = 5
+}
+
+hee_xu_prefecture_military_exemption_modifier = {
+	icon = prowess_negative
+	levy_size = -5
+	garrison_size = -5
+}
 
 # testing_water = {
 # 	#stacking = yes

@@ -6830,7 +6830,7 @@
 	}
 }
 
-20259 = {
+20259 = { # Gebhard of Salzburg
 	name = "Gebhard"
 	dynasty = 101695
 	martial = 6
@@ -6840,10 +6840,10 @@
 	learning = 14
 	religion = "catholic"
 	culture = bavarian
-	trait = just
-	trait = gluttonous
+	trait = zealous
+	trait = diligent
 	trait = stubborn # He just didn't give up
-	trait = education_intrigue_1
+	trait = education_diplomacy_3 #  travelled as an ambassador to the Byzantine court at Constantinople and held the office of an Imperial chancellor between 1057 and 1059. Gebhard spent nine years in Swabia and Saxony, trying to win their bishops' support for Pope Gregory VII
 	1030.1.1 = {
 		birth = "1030.1.1"
 	}

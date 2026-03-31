@@ -11,6 +11,9 @@ HEE_historical_artifact_generation.0001	 = {
 		random_ruler = { # Iron Crown
 			limit = {
 				has_title = title:k_italy
+				NOT = {
+					any_artifact = { has_variable = iron_crown }
+				}
 			}
 			if = {
 				limit = { has_dlc_feature = royal_court current_date < 1000.1.1 } #Court artifacts
@@ -20,10 +23,27 @@ HEE_historical_artifact_generation.0001	 = {
 		random_ruler = { # Raven Banner
 			limit = {
 				has_title = title:d_york
+				NOT = {
+					any_artifact = { has_variable = raven_banner }
+				}
 			}
 			if = {
 				limit = { has_dlc_feature = royal_court current_date < 1000.1.1 } #Court artifacts
 				create_artifact_raven_banner_effect = { OWNER = this }
+			}
+		}
+		random_ruler = { # Byzantine Throne of Solomon; crafted during the 830s for Emperor Theophilos by Leon the Mathematician
+			limit = {
+				has_title = title:e_byzantium
+				has_ep3_dlc_trigger = yes
+				current_date >= 835.1.1
+				NOT = {
+					any_artifact = { has_variable = byz_throne_of_solomon }
+				}
+			}
+			if = {
+				limit = { has_dlc_feature = royal_court current_date < 1204.1.1 } #Court artifacts
+				create_artifact_byz_throne_of_solomon_effect = { OWNER = this }
 			}
 		}
 	}

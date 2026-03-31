@@ -1328,7 +1328,7 @@
 	trait = calm
 	trait = brave
 	trait = education_diplomacy_3
-	trait = poet
+	trait = lifestyle_poet
 	father = 240
 	mother = 221
 	1071.10.22 = {

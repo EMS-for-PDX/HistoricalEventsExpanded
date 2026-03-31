@@ -2,18 +2,19 @@
 HEE_ghaznavid_template = {
 	age = 35
 	gender = male
-	martial = 9
-	diplomacy = 7
+	diplomacy = 9
+	martial = 8
 	intrigue = 7
 	stewardship = 7
 	learning = 5
 	prowess = 10
-	faith = faith:ashari
-	culture = culture:turkish
-	trait = education_martial_5
-	trait = arrogant
-	trait = zealous
-	trait = vengeful
+	faith = faith:maturidi # Sunni Islam (Hanafi)
+	culture = culture:karluk # In Sabuktigin's Pandnama, a mirror for princes epistle, he attests that he came from a tribe in Barskhan, therefore he probably belonged to a Karluk tribe
+	# While a lack of hard evidence exists as to Sabuktigin's personality, he is often portrayed as an approachable, forgiving and just ruler
+	trait = education_martial_3
+	trait = gregarious
+	trait = forgiving
+	trait = just
 	trait = ambitious
 	trait = organizer
 	trait = desert_warrior
@@ -21,28 +22,32 @@ HEE_ghaznavid_template = {
 }
 
 HEE_ghaznavid_mahmud_template = {
-	age = 3
+	age = 6
 	gender = male
-	diplomacy = 2
-	martial = 3
+	diplomacy = 4
+	martial = 5
 	stewardship = 2
 	intrigue = 3
-	learning = 2
-	faith = faith:ashari
+	learning = 4
+	faith = faith:maturidi # Sunni Islam (Hanafi)
 	culture = culture:turkish
+	trait = zealous
+	trait = generous
+	trait = just
+	trait = brave
 	trait = rowdy
 	random_traits = no
 }
 
 HEE_ghaznavid_ismail_template = {
-	age = 1
+	age = 2
 	gender = male
 	diplomacy = 2
 	martial = 1
 	stewardship = 1
 	intrigue = 2
 	learning = 2
-	faith = faith:ashari
+	faith = faith:maturidi # Sunni Islam (Hanafi)
 	culture = culture:turkish
 	trait = rowdy
 	random_traits = no
@@ -496,4 +501,97 @@ vushmgir_template = { # Vushmgir; second Ziyarid emir who ruled from 935 until h
 	trait = cautious_leader #
 	trait = lifestyle_hunter # killed by a boar during a hunt in December 967
 	random_traits = no
+}
+
+
+
+
+
+
+
+
+
+#### Chinese Characters ####
+pang_xun_template = { # Pang Xun; leader of a major rebellion, by soldiers from Xu Prefecture, against the rule of Emperor Yizong of the Chinese Tang dynasty, from 868 to 869
+	age = { 36 44 } # Unknown birth, but chosen as leader by the soldiers so likely not a young blood
+	gender = male
+	faith = faith:dhyana # Unclear, but CK3 makes the popular faith of his home county of Xuzhou Dhyana
+	culture = culture:han
+
+	#Skills
+	diplomacy = { 8 12 }
+	martial = { 9 13 }
+	stewardship = { 6 10 }
+	intrigue = { 8 12 }
+	learning = { 2 6 }
+	prowess = { 9 12 }
+
+	trait = education_martial_2 # Martial Education due to being a soldier - but not the worst or best of the soldiers
+	trait = arrogant # the soldiers from Xu Prefecture, particularly since the time of the military governor Wang Zhixing, had become arrogant
+	trait = wrathful # Rebelled when ordered to extend military service an additional year
+	trait = deceitful # 
+	trait = paranoid # When the rebels recieved pardons from the Emperor, they believed the pardons only to be a ruse to lure them into a slaughter and continued their rebellion
+	trait = organizer # served as an assistant to the commander, in charge of food supplies
+	trait = reaver # The mutineers pillaged the armory, seizing weapons, and began their march home; as they went, they pillaged the territory
+	random_traits = no
+}
+
+xu_prefecture_officer_template = { # A template to represent the Xu Prefecture officers Xu Ji (許佶), Zhao Keli (趙可立), Yao Zhou (姚周), and Zhang Xingshi (張行實) who mutined in Fall 867 and uplifted Pang Xun as their leader
+	age = { 25 50 }
+	gender = male
+	faith = faith:dhyana # Same as the popular faith of Xu Prefecture
+	culture = culture:han
+
+	diplomacy = { 0 5 }
+	martial = { 6 9 }
+	stewardship = { 0 6 }
+	intrigue = { 4 8 }
+	learning = { 0 5 }
+	prowess = { 8 12 }
+
+	random_traits_list = {
+		count = 1
+		education_martial_1 = {}
+		education_martial_2 = {}
+		education_martial_3 = {}
+	}
+	random_traits_list = {
+		count = 3
+		brave = {}
+		lustful = {}
+		wrathful = {}
+		arrogant = {}
+		impatient = {}
+		ambitious = {}
+		cynical = {}
+		zealous = {}
+		stubborn = {}
+		sadistic = {}
+		vengeful = {}
+		greedy = {}
+		arbitrary = {}
+		callous = {}
+	}
+	random_traits_list = {
+		count = { 0 1 }
+		lifestyle_blademaster = {}
+		lifestyle_hunter = {}
+		strong = {}
+		scarred = {}
+		irritable = {}
+	}
+	trait = gallowsbait # all had previously been bandits but who had submitted to the government after being given officer commissions
+	after_creation = {
+		#Provide some gallowsbait bandit XP for past actions in banditry
+		add_trait_xp = {
+			trait = gallowsbait
+			track = bandit
+			value = {
+				integer_range = {
+					min = medium_lifestyle_random_xp_low
+					max = medium_lifestyle_random_xp_high
+				}
+			}
+		}
+	}
 }

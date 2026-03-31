@@ -1,5 +1,5 @@
 ### HEE Titles ###
-e_western_roman_empire = { # Due to the existence of a "offical" Roman Empire title, and the jumbled nature of the ERE title history, best to make a seperate title for the Western half of the Roman Empire (Even though the Empire remained unified politically with the spilt being administrative)
+e_western_roman_empire = { # Due to the existence of a "offical" Roman Empire title, and the jumbled nature of the ERE title history, best to make a seperate title for the Western half of the Roman Empire (Even though the Empire remained unified politically with the spilt being merely administrative)
 	286.4.1 = { # Initially Diocletian chose Maximian as his caesar in 285, but spurred by the crisis with Carausius, on 1 April 286, Maximian took the title of Augustus; Due to a latter agreement with Diocletian, Maximian was to govern the western provinces and Diocletian would administer the eastern ones
 		government = feudal_government
 		holder = 145293 # Maximian

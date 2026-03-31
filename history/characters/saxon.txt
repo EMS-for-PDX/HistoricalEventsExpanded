@@ -3778,6 +3778,7 @@ lippe_2 = {
 	religion = "catholic"
 	culture = saxon
 	father = 167768
+	trait = devoted # Abbess of Kloster Kaufungen
 	840.1.1 = {
 		birth = "840.1.1"
 	}	

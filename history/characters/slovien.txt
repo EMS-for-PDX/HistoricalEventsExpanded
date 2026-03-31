@@ -308,7 +308,7 @@
 	}
 	846.1.10 = { # On January 10, 846, at the request of his followers, the king granted Pribina lands near Lake Balaton on the river Zala where he was to rule as Louis the German's faithful dux
 		trait = architect # Pribina undertook to Christianize the local population and built churches in the region. Constructed an extremely well fortified castle that became known as Blatnohrad (Blatnograd)
-		trait = adventurer # Spent time that could be described as a LAAMP, as  recorded in the Conversion of the Bavarians and the Carantanians (a historical work written in 870)
+		trait = adventurer # Spent time that could be described as a LAAMP, as recorded in the Conversion of the Bavarians and the Carantanians (a historical work written in 870)
 		trait = unyielding_defender # Served as a frontier bulwark against the Bulgarians and Moravians
 	}
 	861.1.1 = {

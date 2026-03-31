@@ -123,20 +123,29 @@
 	name = "Adelaide" # Adelaide Ardoinici, Duchess of Piedmonte (1034-1037, 1038-1041 & 1045-1046)
 	female = yes
 	dynasty = 680
-	martial = 5
-	diplomacy = 4
-	intrigue = 5
+	martial = 7
+	diplomacy = 8
+	intrigue = 6
 	stewardship = 7
+	learning = 6
 	religion = "catholic"
 	culture = "cisalpine"
+	trait = generous # Adelaide made many donations to monasteries in the March of Turin. In 1064 she founded the monastery of Santa Maria at Pinerolo.
 	trait = diligent
-	trait = education_stewardship_2
+	trait = vengeful # More than once she waged war on rebels in her territories, burning Lodi and other towns like Asti that had risen against her 
+	trait = brave # Participated in various military campaigns - a marked departure from the traditional gender roles of the era
+	trait = education_stewardship_3
+	trait = diplomat # Adelaide accompanied Henry IV and Bertha to Canossa, where Adelaide acted as mediator, alongside Matilda and Albert Azzo II, Margrave of Milan, among others. She offered to mediate between Henry IV and Matilda of Tuscany
+	trait = beauty_good_2 # Adelaide was described as a beautiful woman with the soul of a lion having learned martial arts as a girl and bore her own arms and armor.  
 
 	father = 10081
 	mother = 167943
 
 	1016.9.1 = {
 		birth = yes
+	}
+	1060.3.1 = {
+		trait = widowed
 	}
 	1091.12.27 = {
 		death = {

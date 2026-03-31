@@ -1,0 +1,152 @@
+﻿## Characters for North Africa - 867 ##
+krok0001 = { # Duke Krok is a legendary figure in Czech history, being the first judge, or duke, of the Czech people. He was also the father of Princess Libuše and her sisters Kazi and Teta. 
+	name = "Krok"
+	# dynasty = 
+	religion = "slavic_pagan"
+	culture = "czech"
+	trait = calm
+	trait = just # described by Cosmas as "a man known for his age, absolutely perfect, rich and worldly in his judgements, and sophisticated."
+	trait = temperate
+	640.1.1 = {
+		birth = yes
+	}
+	715.1.1 = {
+		death = yes
+	}
+}
+
+krok0002 = { # Kazi, daughter of Duke Krok and sister to Queen Libuše
+	name = "Kazi"
+	# dynasty = 
+	female = yes
+	father = krok0001
+	religion = "slavic_pagan"
+	culture = "czech"
+	trait = lifestyle_physician # According to legend was a physician
+	692.1.1 = {
+		birth = yes
+	}
+	735.1.1 = {
+		death = yes
+	}
+}
+
+krok0003 = { # Teta, daughter of Duke Krok and sister to Queen Libuše
+	name = "Teta"
+	female = yes
+	# dynasty = 
+	father = krok0001
+	religion = "slavic_pagan"
+	culture = "czech"
+	trait = witch # According to legend was a magician
+	693.1.1 = {
+		birth = yes
+	}
+	740.1.1 = {
+		death = yes
+	}
+}
+
+krok0004 = { # Queen Libuše, legendary ancestor of the Přemyslid dynasty and the Czech people as a whole. According to legend, she was the youngest but wisest of three sisters, who became queen after their father died; she married a ploughman, Přemysl, with whom she founded the Přemyslid dynasty, and prophesied and founded the city of Prague in the 8th century. 
+	name = "Libuše"
+	female = yes
+	# dynasty = 
+	father = krok0001
+	religion = "slavic_pagan"
+	culture = "czech"
+	learning = 10
+	trait = education_learning_4 # The legend goes that she was the wisest of the three sisters
+	trait = calm
+	trait = diligent
+	trait = humble
+	trait = lifestyle_mystic # According to legend was the wisest of the three sisters
+	694.1.1 = {
+		birth = yes
+	}
+	720.1.1 = {
+		add_spouse = 168345 # Přemysl the Ploughman
+	}
+	745.1.1 = {
+		death = yes
+	}
+}
+
+### The pre-unified Czech tribes ###
+### used to divide Bohemia with names inspired by the Gesta Francorum which names "Zventisla, Witislavi, Heriman, Spoitamor, Moyslan, Goriwei" as the dukes of the Bohemians in 872 ###
+doudlebove0001 = { # a Czech prince living in the 9th century and a participant in the Battle of the Vltava River. Possibly identical to Prince Strojmir, who later rose up against Prince Bořivoj in 883
+	name = "Spytimír"
+	dynasty = dynasty_doudlebove
+	religion = "slavic_pagan"
+	culture = "czech"
+	823.1.1 = {
+		birth = yes
+	}
+	872.4.1 = { # Battle of the Vltava River
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+charvatci0001 = { # Northern Bohemia. a Czech prince living in the 9th century, a participant in the Battle of the Vltava River and a candidate for the father of St. Dobroslava
+	name = "Mojslav"
+	dynasty = dynasty_charvatci
+	religion = "slavic_pagan"
+	culture = "czech"
+	832.1.1 = {
+		birth = yes
+	}
+	872.4.1 = { # Battle of the Vltava River
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+charvatci0002 = { # St. Dobroslava
+	name = "Dobroslava"
+	female = yes
+	dynasty = dynasty_charvatci
+	father = charvatci0001
+	religion = "slavic_pagan"
+	culture = "czech"
+	trait = beauty_good_1
+	864.1.1 = {
+		birth = yes
+	}
+	880.6.25 = {
+		death = { # While traveling to Pamplona for her wedding, she was assaulted by a Moorish party and captured - her limbs were amputated and she was beheaded
+			death_reason = death_execution
+		}
+	}
+}
+
+lucane0001 = { # Zatec
+	name = "Heriman"
+	dynasty = dynasty_lucane
+	religion = "slavic_pagan"
+	culture = "czech"
+	828.1.1 = {
+		birth = yes
+	}
+	872.4.1 = { # Battle of the Vltava River
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+
+litomerici0001 = { # Litomerice
+	name = "Svatoslav"
+	dynasty = dynasty_litomerici
+	religion = "slavic_pagan"
+	culture = "czech"
+	820.1.1 = {
+		birth = yes
+	}
+	872.4.1 = { # Battle of the Vltava River
+		death = {
+			death_reason = death_battle
+		}
+	}
+}

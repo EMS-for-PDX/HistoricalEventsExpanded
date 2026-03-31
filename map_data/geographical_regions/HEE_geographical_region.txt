@@ -344,3 +344,49 @@ custom_mediterranean_shoreline = { # Then check is_coastal_county = yes
 
 	regions = { world_europe_south_italy }
 }
+
+custom_qiu_fe_uprising = { # Region affected by Qiu Fu's 859-860 uprising
+	duchies = {
+		#k_liangzhe
+		d_zhexi d_zhedong
+	}
+}
+
+custom_kang_quantai_uprising = { # Region affected by Kang Quantai's 858 uprising
+	duchies = {
+		#Southern Anhui
+		d_xuanshe
+	}
+}
+
+custom_tang_unrest_and_banditry_region = { # Approx. region that suffered from the onset of unrest and banditry that had appeared in the Huai valley and Henan in the 830s, and spread to the Yangtze valley and the south beginning in 856.
+	duchies = {
+		#k_huainan
+		d_huainan d_huaixi
+		#k_jiangdong
+		d_jiangdong d_xuanshe
+		#k_jiangxi
+		d_jiangxi d_dingjiang d_zhaoxin
+		#k_hunan
+		d_hunan d_lingling
+		#k_shannan (along the Yangtze)
+		d_jingnan d_eyue
+		#k_kuizhou (along the Yangtze)
+		d_wuxi
+		#k_fujian
+		d_weiwu d_pinghai d_jianning
+		#k_lingnan
+		d_lingnan d_huixun d_gaoliang d_qiongguan
+		#k_lingxi
+		d_guiguan d_jingjiang d_rongguan d_yongguan
+		#k_liangzhe
+		d_zhexi d_zhedong
+	}
+}
+
+custom_hungary_minus_syrmia = {
+	duchies = {
+		#Hungary
+		d_visegrad d_somogy d_nyitra d_ungvar d_transcarpathia d_transylvania d_bihar d_temes d_bacs d_gyor
+	}
+}

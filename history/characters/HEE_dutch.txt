@@ -1,0 +1,45 @@
+﻿# Missing Historical Characters for Romans - They dont add much, but "fun" to do (OCD a bitch)
+
+folcwalding0001 = { # Unnamed mother of Radboud of Utrecht. was of Frisian origin and a descendant of the Frisian king Radboud
+	name = "Odrade"
+	female = yes
+	dynasty = 246
+	father = 168625
+	mother = 168623
+	religion = "catholic"
+	culture = "dutch"
+	815.1.1 = { # Unknown
+		birth = yes
+	}
+	866.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+folcwalding0002 = { # Radboud of Utrecht
+	name = "Radboud"
+	dynasty = 246
+	mother = folcwalding0001
+	religion = "catholic"
+	culture = "dutch"
+	# The Vita Radbodi, drawn up in the 960s, describes the Bishop of Utrecht as an ideal prelate, endowed with numerous virtues and who has proven his holiness during his lifetime. I dunno how unbiased this source is but lets go with it
+	trait = education_learning_4
+	trait = compassionate # He was a friend of the distressed who devoted himself with boundless zeal to the practice of mercy
+	trait = zealous
+	trait = temperate # Radbod was very moderate in food, he drank only water, and the whole time he led the bishop's seat, he continued to wear monastic clothes and avoided court life
+	trait = lifestyle_mystic # The Vita Radbodi attributes to Radbod the gift of divine foresight
+	trait = theologian
+	trait = devoted
+	840.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = { # After the deposition of his uncle Radboud continued his studies at the court school of the Western Frankish king Charles the Bald (843- 877), whose chaplain he became
+		employer = 90104 # King Charles the Bald
+		give_council_position = councillor_court_chaplain
+	}
+	917.11.29 = { #  Radboud fell ill on a mission trip in Drenthe and died in Ootmarsum in November 917 before these plans could be executed. His feast day is 29 November
+		death = {
+			death_reason = death_ill
+		}
+	}
+}

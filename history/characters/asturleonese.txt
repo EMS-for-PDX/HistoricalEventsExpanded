@@ -170,12 +170,26 @@
 	848.1.1 = {
 		birth = yes
 		add_character_flag = has_scripted_appearance
+		add_prestige = 1500 # giving prestige to avoid a negative value at start due to declared wars
+	}
+	866.6.25 = {
+		effect = {
+			character:70019 = {
+				create_character_memory = { type = usurpation_of_froila }
+			}
+		}
+	}
+	866.12.25 = {
+		effect = {
+			character:70019 = {
+				create_character_memory = { type = alfonsu_christmas_coronation }
+			}
+		}
 		# Protect from dissolution faction
 		add_character_flag = {
 			flag = recent_nation_fracturing_faction_war
 			years = faction_nation_fracturing_war_defeat_cooldown
 		}
-		add_prestige = 1500 # giving prestige to avoid a negative value at start due to declared wars
 	}
 	868.1.1 = {
 		give_nickname = nick_the_great

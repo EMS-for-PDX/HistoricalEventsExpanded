@@ -5184,6 +5184,9 @@
 	837.1.1 = {
 		birth = "837.1.1"
 	}
+	853.1.1 = {
+		give_nickname = nick_iron_arm # A tradition recounts that, as a young man, he won a fight against a bear, so lets just give him his (non-contemporary) nickname here
+	}
 	861.12.25 = {
 		effect = {
 			set_relation_soulmate = character:90110
@@ -7030,7 +7033,7 @@
 	}
 }
 
-7812 = {
+7812 = { # Reginar Longneck
 	name = "Reginar"
 	# AKA: Renier
 	dynasty = 7198
@@ -7040,7 +7043,11 @@
 	stewardship = 5
 	religion = "catholic"
 	culture = "dutch"
-	trait = education_intrigue_1
+	trait = education_martial_2
+	trait = ambitious 
+	trait = diligent # Was active and involved in the political landscape of Lotharingia
+	trait = stubborn # His lands were confiscated by Zwentibold in 895, but Reginar refused to give them up and entrenched himself at Durfost
+	trait = unyielding_defender # he Annales Hanoniæ name "Rignerius Montensis comes" as the ally of "Francone episcopo Leodiensi" against the Vikings in 870, and in a later undated passage record "Raginerus" fighting "cum Frissonibus in Walacria contra Rollonem"
 	father = 7815
 	mother = 7814
 	850.1.1 = {
@@ -7813,6 +7820,7 @@
 	religion = "catholic"
 	culture = "dutch"
 	father = 168625
+	mother = 168623
 
 	#Skills
 	diplomacy = 8
@@ -8164,7 +8172,7 @@
 	}
 }
 
-168628 = {
+168628 = { # Radboud/Redbad, titled Prince of the Frisians, who fell in battle in 874 while repelling a Viking incursion together with Reginar "Longneck" 
 	name = "Radboud"
 	dynasty = 246
 	religion = "catholic"

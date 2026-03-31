@@ -1310,7 +1310,7 @@ c_aunis = {
 
 d_toulouse = {
 	769.1.1 = {
-		holder = 190514 #Guillaume
+		holder = 168130 #Guillaume
 		liege = k_lotharingia
 	}
 	778.1.1 = {
@@ -1422,7 +1422,7 @@ c_toulouse = {
 	1178.1.1 = { change_development_level = 27 }
 	
 	769.1.1 = {
-		holder = 190514 #Guillaume
+		holder = 168130 #Guillaume
 		liege = d_toulouse
 	}
 	790.1.1 = {
@@ -1524,7 +1524,7 @@ c_toulouse = {
 
 c_quercy = {
 	769.1.1 = {
-		holder = 190514 #Guillaume
+		holder = 168130 #Guillaume
 	}
 	769.1.1 = {
 		liege = k_lotharingia
@@ -3559,7 +3559,7 @@ c_montaigu = {
 		liege = k_france
 	}
 	843.5.24 = {
-		holder = 168039 # Hervé d'Herbauges
+		holder = 168040 # Hervé d'Herbauges
 	}
 	844.1.1 = {
 		holder = 168041 # Ragenold of Neustria

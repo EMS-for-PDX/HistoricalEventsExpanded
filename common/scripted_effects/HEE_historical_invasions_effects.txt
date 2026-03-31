@@ -27,7 +27,7 @@
 		title_province.faith = { add_to_list = seljuk_faith_selection_list }
 	}
 	random_list = {
-		35 = { 
+		35 = { # Seljuk will spawn with ahistorical faith present in the Steppe region
 			# Find a religion in the wider region. weight it up if a county with the culture has that religion
 			random_in_list = {
 				list = seljuk_faith_selection_list
@@ -58,12 +58,12 @@
 				save_scope_as = seljuk_birth_faith
 			}
 		}
-		55 = {
+		55 = { # Seljuk will spawn with with their historical Maturidi faith
 			faith:maturidi = {
 				save_scope_as = seljuk_birth_faith
 			}
 		}
-		5 = {
+		5 = { # Seljuk will spawn with ahistorical Sunni faith present on the map
 			religion:islam_religion = {
 				random_faith = {
 					limit = {
@@ -74,7 +74,7 @@
 				}
 			}
 		}
-		5 = {
+		5 = { # Seljuk will spawn with ahistorical Shia faith present on the map
 			religion:islam_religion = {
 				random_faith = {
 					limit = {
@@ -935,7 +935,7 @@ spawn_ghaznavids_character_effect = {
 }
 
 spawn_ghaznavid_troops_effect = {
-	spawn_army = {
+	spawn_army = { # 3000 troops
 		uses_supply = no
 		inheritable = yes
 		name = seljuk_event_troops
@@ -947,14 +947,10 @@ spawn_ghaznavid_troops_effect = {
 			type = horse_archers
 			stacks = 10
 		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
+		levies = 1000
 		location = capital_province
 	}
-	spawn_army = {
+	spawn_army = { # 3000 troops
 		uses_supply = no
 		inheritable = yes
 		name = seljuk_event_troops
@@ -966,10 +962,10 @@ spawn_ghaznavid_troops_effect = {
 			type = horse_archers
 			stacks = 10
 		}
-		levies = 100
+		levies = 1000
 		location = capital_province
 	}
-	spawn_army = {
+	spawn_army = { # 3000 troops
 		uses_supply = no
 		inheritable = yes
 		name = seljuk_event_troops
@@ -981,10 +977,10 @@ spawn_ghaznavid_troops_effect = {
 			type = horse_archers
 			stacks = 10
 		}
-		levies = 100
+		levies = 1000
 		location = capital_province
 	}
-	spawn_army = {
+	spawn_army = { # 3000 troops
 		uses_supply = no
 		inheritable = yes
 		name = seljuk_event_troops
@@ -996,10 +992,10 @@ spawn_ghaznavid_troops_effect = {
 			type = horse_archers
 			stacks = 10
 		}
-		levies = 100
+		levies = 1000
 		location = capital_province
 	}
-	spawn_army = {
+	spawn_army = { 3000 troops
 		uses_supply = no
 		inheritable = yes
 		name = seljuk_event_troops
@@ -1011,100 +1007,9 @@ spawn_ghaznavid_troops_effect = {
 			type = horse_archers
 			stacks = 10
 		}
-		levies = 100
+		levies = 1000
 		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
-		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
-		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
-		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
-		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		levies = 100
-		location = capital_province
-	}
-	spawn_army = {
-		uses_supply = no
-		inheritable = yes
-		name = seljuk_event_troops
-		men_at_arms = {
-			type = horse_archers
-			stacks = 10
-		}
-		men_at_arms = {
-			type = horse_archers
-			stacks = 20
-		}
-		levies = 100
-		location = capital_province
-	}
-	
+	}	
 }
 
 ghaznavid_war_target_evaluation_and_declaration_effect = {
@@ -2703,7 +2608,7 @@ pecheneg_war_target_evaluation_and_declaration_effect = {
 	}
 }
 
-spawn_hungarian_starting_troops_effect = {
+spawn_magyar_starting_troops_effect = {
 	spawn_army = {
 		uses_supply = no
 		inheritable = yes
@@ -2729,7 +2634,7 @@ spawn_hungarian_starting_troops_effect = {
 	}
 }
 
-spawn_hungarian_reinforcements_effect = {
+spawn_magyar_reinforcements_effect = {
 	spawn_army = {
 		uses_supply = no
 		inheritable = yes
@@ -3345,5 +3250,45 @@ spawn_ziyarid_reinforcements_effect = {
 		}
 		levies = 350
 		location = scope:lead_ziyarid.location
+	}
+}
+
+## Pang Xun ##
+
+spawn_pang_xun_character_effect = {
+	title:c_guizhou_1.title_province = { # Actual birth location is Xu Prefecture, but the birth of his rebellion is Gui Prefecture
+		save_scope_as = pang_xun_birth_location
+	}
+
+	create_character = {
+		name = "Xun"
+		location = scope:pang_xun_birth_location
+		template = pang_xun_template
+		dynasty = none # Pang
+		save_scope_as = Pang_Xun
+	}
+	
+	scope:Pang_Xun = {
+		# Make temporarily immune to disease
+		add_character_flag = {
+			flag = immune_to_disease
+			years = 5
+		}
+		add_gold =  { tiny_gold_max_value_static minor_gold_max_value_static }
+		add_prestige = { tiny_prestige_value minor_prestige_value }
+		add_piety = { tiny_piety_value minor_piety_value }
+		# Lets give the guy some martial perks
+		add_perk = bellum_justum_perk
+		add_perk = parthian_tactics_perk
+		add_perk = envelopment_perk
+		add_perk = organized_retreat_perk
+		add_perk = hit_and_run_perk
+		add_perk = engineered_for_destruction_perk
+		add_perk = living_off_the_land_perk
+		add_perk = sappers_perk
+
+		add_perk = stalwart_leader_perk
+		add_perk = chivalric_dominance_perk
+		add_perk = never_back_down_perk
 	}
 }

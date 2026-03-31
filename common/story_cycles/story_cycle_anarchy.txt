@@ -2,7 +2,29 @@
 
 story_anarchy_at_samarra = {
 	# by EmrysValdr
-	
+
+	visible = yes
+	icon = {
+		trigger = {
+			always = yes
+		}
+		reference = "gfx/interface/icons/regimenttypes/mubarizun.dds"
+	}
+
+	visualization = {
+		decisions = {
+			anarchy_at_samarra_financial_straits_decision
+			anarchy_at_samarra_loss_of_central_authority_decision
+			anarchy_at_samarra_unpaid_soldiery_decision
+		}
+		basic_counter = {
+			variable_name = "anarchy_peril_count"
+			min = 0
+			max = 15
+			label = "PROGRESS_TOWARDS_ASSASSIN_PATH"
+		}
+	}
+
 	on_setup = {
 		story_owner = { # Add Character Modifiers
 			add_character_modifier = anarchy_at_samarra_financial_straits

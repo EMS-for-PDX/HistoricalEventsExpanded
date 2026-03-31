@@ -1,7 +1,5 @@
 ﻿l_english:
 
- dynn_Mardaites_motto: "Every man is the artisan of his own fortune"
-
  # Tlk
  dynn_Knudlings_motto: "Victory will be ours!"
  dynn_Ingving_motto: "Destiny is all"
@@ -9,13 +7,17 @@
  dynn_HA_vi_motto: "Revenge is everything"
 
 
- dynn_Ooryphas_motto: "Though we cannot change the direction of the wind, we may adjust our sails"
+ dynn_Sigurdr_motto: "Deep roots are not reached by the frost"
+
+ dynn_Mardaites_motto: "Every man is the artisan of his own fortune"
  dynn_Tephrice_motto: "The greatest crimes are caused by excess and not by necessity"
  dynn_Skythopoulos_motto: "The impatience for victory will guarantee defeat"
  dynn_Marikonian_motto: "In all good hearts is a spot of darkness, and in all tragedy is a glimmer of light"
  dynn_Mosele_motto: "Though we cannot change the direction of the wind, we may adjust our sails"
  dynn_Gambros_motto: "Honor God, Love your Family, and Protect the Empire"
  dynn_Rendakios_motto: "In a thousand years, the dust from our bones will be gone, but our names will remain"
+ dynn_Guberioi_motto: "Let my Faith be shown through my works"
+ dynn_Baboutzikoi_motto: "Bravery is not a feeling - it is a choice"
 
  # Jeanne d'Arc 
  dynn_du_lys_motto:0 "Consilio firmata dei"

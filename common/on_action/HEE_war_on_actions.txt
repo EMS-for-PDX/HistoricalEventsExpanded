@@ -3,10 +3,10 @@
 		aghlabid_victory_in_sicily
 		hee_louis_bari_victory
 		hee_great_summer_army_victory
+		magyar_migration_consideration
 
 
-
-		# roman_army_acclaimation_victory
+		roman_army_acclaimation_victory
 	}
 }
 
@@ -28,6 +28,12 @@ hee_great_summer_army_victory = {
 	}
 }
 
+magyar_migration_consideration = {
+	events = {
+		HEE_magyars.0001
+	}
+}
+
 
 
 roman_army_acclaimation_victory = {
@@ -45,6 +51,6 @@ on_war_won_defender = {
 
 hee_siege_of_ragusa_victory = {
 	events = {
-		HEE_siege_of_ragusa.0005
+		HEE_siege_of_ragusa.0007
 	}
 }

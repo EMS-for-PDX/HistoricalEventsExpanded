@@ -23,7 +23,7 @@ d_opsikion = {
 		holder = peganes0001
 	}
 	867.1.1 = {
-		holder = skythopoulos0001
+		holder = guberioi0004 # Komes of Opsikion and Logothetes Dromos during the later 9th century. Likely the Logothetes Dromos during this specific time will hold title due to lack of other viable candidates
 		effect = {
 			holder = { # Opsikion was a lower level cavalry Theme
 				create_maa_regiment = {
@@ -107,7 +107,7 @@ c_nikaea = {
 		holder = peganes0001
 	}
 	867.1.1 = {
-		holder = skythopoulos0001
+		holder = guberioi0004 # Komes of Opsikion and Logothetes Dromos during the later 9th century. Likely the Logothetes Dromos during this specific time will hold title due to lack of other viable candidates
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -190,7 +190,7 @@ c_mysia = {
 		holder = peganes0001
 	}
 	867.1.1 = {
-		holder = skythopoulos0001
+		holder = guberioi0004 # Komes of Opsikion and Logothetes Dromos during the later 9th century. Likely the Logothetes Dromos during this specific time will hold title due to lack of other viable candidates
 	}
 	1060.1.1 = {
 		holder = 20527
@@ -690,7 +690,7 @@ d_thracesia = {
 		holder = 145111
 	}
 	867.1.1 = {
-		holder = rendakios0009
+		holder = 145144 # Nikephoros Maleinos; considering his history with putting down a revolt in the theme and the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period seems like a good fit - https://pbe.kcl.ac.uk/data/D56/F99.htm
 		effect = {
 			holder = { # Opsikion was a lower level cavalry Theme
 				create_maa_regiment = {
@@ -803,7 +803,7 @@ c_lydia = {
 		holder = 145111
 	}
 	867.1.1 = {
-		holder = rendakios0009
+		holder = 145144 # Nikephoros Maleinos; considering his history with putting down a revolt in the theme and the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period seems like a good fit - https://pbe.kcl.ac.uk/data/D56/F99.htm
 	}
 	1066.1.1={
 		holder=20526
@@ -900,7 +900,7 @@ c_thyatira = {
 		holder = 145111
 	}
 	867.1.1 = {
-		holder = rendakios0009
+		holder = 145144 # Nikephoros Maleinos; considering his history with putting down a revolt in the theme and the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period seems like a good fit - https://pbe.kcl.ac.uk/data/D56/F99.htm
 	}
 	1066.1.1={
 		holder=20526
@@ -978,7 +978,7 @@ c_hadrianeia = {
 		holder = 145111
 	}
 	867.1.1 = {
-		holder = rendakios0009
+		holder = 145144 # Nikephoros Maleinos; considering his history with putting down a revolt in the theme and the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period seems like a good fit - https://pbe.kcl.ac.uk/data/D56/F99.htm
 	}
 	1066.1.1={
 		holder=20526
@@ -1078,7 +1078,7 @@ c_chonae = {
 		holder = 145111
 	}
 	867.1.1 = {
-		holder = rendakios0009
+		holder = 145144 # Nikephoros Maleinos; considering his history with putting down a revolt in the theme and the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period seems like a good fit - https://pbe.kcl.ac.uk/data/D56/F99.htm
 	}
 	1066.1.1 = {
 		holder = 20489
@@ -1300,6 +1300,12 @@ c_bithynia = {
 
 }
 
+b_nikomedia = {
+	867.1.1 = {
+		holder = 145191
+		effect = { set_capital_barony = yes }
+	}
+}
 
 c_tarsos = {
 	330.1.1 = {

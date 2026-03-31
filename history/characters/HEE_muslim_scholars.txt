@@ -27,7 +27,7 @@ HEE_muslim_scholar_01 = { # https://en.wikipedia.org/wiki/Abbas_ibn_Firnas
 	
 	#Other Traits
 	trait = scholar
-	trait = poet
+	trait = lifestyle_poet
 	
 	sexuality = heterosexual
 	disallow_random_traits = yes

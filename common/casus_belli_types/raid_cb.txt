@@ -220,12 +220,28 @@
 		scope:defender = { accolade_defender_war_end_glory_gain_low_effect = yes }
 
 		scope:attacker = {
-			every_held_title = {
-				
-			}
 			every_vassal = {
-
+				limit = {
+					has_vassal_stance = glory_hound
+				}
+				add_opinion = {
+					target = root
+					modifier = disappointed_opinion
+					opinion = -20
+				}
 			}
+		}
+
+		if = {
+			limit = { 
+				AND = {
+					scope:attacker = { any_owned_story = { has_story = story_kalandozasok } } # Just for Magyar raider storyline
+					scope:attacker = { current_military_strength <= 2000 } # A check to see if the Magyars are militarily weak (ideally via a defeat on the battlefield during this grand raid)
+					scope:defender.faith.religion = religion:christianity_religion
+				}
+			}
+			scope:defender.faith = { save_scope_as = victorious_faith }
+			trigger_event = HEE_magyars.1000 # PLACEHOLDER
 		}
 
 		# Prestige loss for the attacker
@@ -279,9 +295,9 @@
 	attacker_allies_inherit = yes
 	defender_allies_inherit = no
 
-	war_name = GRAND_RAID_WAR_NAME
-	war_name_base = GRAND_RAID_WAR_NAME_BASE
-	cb_name = GRAND_RAID_CB
+	war_name = "GRAND_RAID_WAR_NAME"
+	war_name_base = "GRAND_RAID_WAR_NAME_BASE"
+	cb_name = "GRAND_RAID_CB_NAME"
 
 	interface_priority = 100
 

@@ -493,20 +493,18 @@ Mamikonian0002 = { # https://en.wikipedia.org/wiki/Bardas
 	
 	#Other Traits
 	trait = administrator
-	
-	sexuality = heterosexual
-	disallow_random_traits = yes
-	810.1.1 = {
+
+	810.1.1 = { # Unknown
 		birth = yes
 	}
 	840.1.1 = {
 		add_spouse = HEE_bardas_first_wife
 	}
 	855.1.1 = {
-		add_spouse = HEE_bardas_second_wife
+		add_spouse = guberioi0008 # Theodosia of the Guberini family
 	}
 	862.1.1 = {
-		remove_spouse = HEE_bardas_second_wife
+		remove_spouse = guberioi0008 # repudiated supposedly so Bardas could engage in relations with his daughter-in-law
 	}
 	865.1.1 = {
 		effect = {
@@ -530,19 +528,6 @@ HEE_bardas_first_wife = { # https://en.wikipedia.org/wiki/Bardas#Family
 		birth = yes
 	}
 	850.1.1 = {
-		death = yes
-	}
-}
-
-HEE_bardas_second_wife = { # https://en.wikipedia.org/wiki/Bardas#Family
-	name = "Theodosia"
-	female = yes
-	religion = "orthodox"
-	culture = "greek"
-	825.1.1 = {
-		birth = yes
-	}
-	880.1.1 = {
 		death = yes
 	}
 }
@@ -598,7 +583,7 @@ Mamikonian0008 = { # https://en.wikipedia.org/wiki/Bardas
 }
 
 Mamikonian0009 = { # https://en.wikipedia.org/wiki/Bardas#Family
-	name = "Irene"
+	name = "Eirene"
 	female = yes
 	dynasty = dynasty_marikonian # Fictional
 	father = Mamikonian0002
@@ -713,9 +698,9 @@ Mamikonian0005 = { # Byzantine empress as the wife of Byzantine emperor Theophil
 	
 	# Personality Traits
 	trait = calm # According to Warren Treadgold, Theodora was "sensible and adaptable"
-	trait = zealous # Played a leading role in the restoration of Icons and the end of the second Byzantine Iconoclasm. Shortly after restoring the icons, Theodora ordered the army to either forcefully convert, or execute, the Paulicians of the empire - though perhaps likely a decision taken for political reasons rather than personal religious values
 	trait = brave # Later chronicles, probably fancifully, claimed that Theodora had threatened Boris that she would lead the Byzantine army in person against him if he invaded the empire, and that she had stated that Boris achieving victory over a female head of state would hardly be considered a great achievement
 	trait = diligent # Proved extremely capable of running the Empire as Regent (perhaps even Empress Regnant)
+	trait = cynical # Despite her leading role in the restoration of Icons and the end of the second Byzantine Iconoclasm (as well as the legends around how she was a secret Icon worshipper all along), much of her religious decisions more than likely stem from political reasonings rather than genuine religious ones
 	
 	# Other Traits
 	trait = beauty_good_3 # A wide array of contemporary sources, both Byzantine and foreign, describe Theodora as exceptionally beautiful. The contemporary poet Al-Ghazal, sent as an emissary from the Emirate of Córdoba in 840, wrote that he was unable to take his eyes off of her while she was in the same room, despite Theophilos being astonished at his rudeness, and that "she had captivated him with her black eyes"
@@ -723,7 +708,7 @@ Mamikonian0005 = { # Byzantine empress as the wife of Byzantine emperor Theophil
 	trait = august # The extent of Theodora's power is somewhat debated in modern scholarship. An imperial seal, from the early years of her reign, gives not only Michael but also Theodora and Thekla the title "Emperors of the Romans" and several coins minted during her rule display only Theodora
 	trait = administrator # Theodora proved to be fully capable of governing the empire. Though only in her late twenties, she led well and inspired loyalty, was surrounded by experienced officials, and had no obvious rivals
 
-	807.1.1 = { # Her date of birth is unknown; however, since she was most likely married in 821 to Theophilos, the son of Emperor Michael II, she was probably born around 805–807
+	806.1.1 = { # Her date of birth is unknown; however, since she was most likely married in 821 (or 830 depending on the secondary source) to Theophilos, the son of Emperor Michael II, she was probably born around 805–807
 		birth = yes
 	}
 	830.6.5 = { # Theodora was probably married to Emperor Theophilos in 821. Some chronicles report a bride-seeking event organized by Euphrosyne for Theophilos, during which Theodora was chosen by Theophilos as his bride
@@ -745,7 +730,7 @@ Mamikonian0005 = { # Byzantine empress as the wife of Byzantine emperor Theophil
 	}
 }
 
-Mamikonian0003 = { # https://en.wikipedia.org/wiki/Theoktiste
+Mamikonian0003 = { # Sophia. Daughter of Marinus and Theoktistus and a sister of Empress Theodora. Married to Konstantinos Babutzikos. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ18059/html
 	name = "Sophia"
 	female = yes
 	dynasty = dynasty_marikonian # Fictional
@@ -753,38 +738,23 @@ Mamikonian0003 = { # https://en.wikipedia.org/wiki/Theoktiste
 	culture = "armenian"
 	father = Mamikonian0001
 	mother = Pheronymos0009
-	810.1.1 = {
+	trait = beauty_good_2 # All of Empress Theodora's sisters were, according to Skylitzes, "beautiful and good-looking, falling only a little short of the apogee of virtue"
+	trait = generous
+	trait = temperate
+	trait = humble
+	808.1.1 = {
 		birth = yes
 	}
-	845.3.6 = { # Assuming she became a nun following the execution of her husband Constantine Baboutzikos
-		trait = devoted
+	845.3.6 = {
+		trait = widowed
+		trait = devoted # Assuming she became a nun following the execution of her husband Constantine Baboutzikos
 	}
 	866.1.1 = {
 		death = yes
 	}
 }
 
-baboutzikos0001 = { # magistros Constantine Baboutzikos, husband of Empress Theodora's sister - https://en.wikipedia.org/wiki/42_Martyrs_of_Amorium
-	name = "Konstantinos"
-	dynasty = dynasty_baboutzikos
-	religion = "iconoclast"
-	culture = "greek"
-	trait = zealous
-	805.1.1 = {
-		birth = yes
-	}
-	830.1.1 = {
-		add_spouse = Mamikonian0003
-	}
-	845.3.6 = {
-		death = {
-			death_reason = death_execution
-			killer = 34009 # Caliph al-Wathiq
-		}
-	}
-}
-
-Mamikonian0004 = { # https://en.wikipedia.org/wiki/Theoktiste
+Mamikonian0004 = { # Maria "the Beautiful" (Kalomaria). Daughter of Marinus and Theoktistus and a sister of Empress Theodora. Married the Magistros Arsaber. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ15906/html
 	name = "Maria"
 	female = yes
 	dynasty = dynasty_marikonian # Fictional
@@ -792,7 +762,10 @@ Mamikonian0004 = { # https://en.wikipedia.org/wiki/Theoktiste
 	culture = "armenian"
 	father = Mamikonian0001
 	mother = Pheronymos0009
-	trait = beauty_good_3 
+	trait = beauty_good_3 # All of Empress Theodora's sisters were, according to Skylitzes, "beautiful and good-looking, falling only a little short of the apogee of virtue"
+	trait = honest
+	trait = callous # She is said to have sided with their brother Bardas and Emperor Michael III against her sister, the Empress, and to have participated in the assassination of Theoktistus.
+	trait = chaste
 	812.1.1 = {
 		birth = yes
 	}
@@ -809,22 +782,26 @@ Mamikonian0004 = { # https://en.wikipedia.org/wiki/Theoktiste
 	}
 }
 
-Mamikonian0006 = { # https://en.wikipedia.org/wiki/Theodora_(wife_of_Theophilos)#Background_and_early_life
-	name = "Irene"
+Mamikonian0006 = { # Eirene. Daughter of Marinus and Theoktistus and a sister of Empress Theodora. Married to Patrikios Sergios, an uncle (or brother or no relation at all) of Patriarch Photios. From this marriage came the Magistroi Bardas and Stephanos. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ12546/html
+	name = "Eirene"
 	female = yes
 	dynasty = dynasty_marikonian # Fictional
 	religion = "orthodox"
 	culture = "armenian"
 	father = Mamikonian0001
 	mother = Pheronymos0009
-	813.1.1 = {
+	trait = beauty_good_2 # # All of Empress Theodora's sisters were, according to Skylitzes, "beautiful and good-looking, falling only a little short of the apogee of virtue"
+	trait = forgiving
+	trait = zealous
+	trait = chaste
+	817.1.1 = {
 		birth = yes
 	}
 	834.1.1 = {
 		add_spouse = HEE_theophobos # Unknown who her exact husband was, in interest of coverage, I will have her married twice
 	}
 	845.1.1 = {
-		add_spouse = constantinopoli0001
+		add_spouse = marzoukoi0010 # Sergios (Unknown who *exactly* this is, as identities have differed between Photios' brother or uncle  - if she was married at all! The team would find it strange if she married Photios' maternal uncle considering the (supposed) marriage bond between those families through Arsaber and Maria)
 	}
 	870.1.1 = {
 		death = yes
@@ -992,24 +969,21 @@ amorios0003 = {
 	}
 }
 
-amorios0004 = {
-	name = "Leontia" # Unnamed relative, possibly aunt, of Theophilus who was married to "Elder Martinakes"
+amorios0004 = { # Unknown relative of Theophilus to provide the kinship of the "Elder Martinakes" (described as a distant relative) to the Amorian dynasty
+	name = "Leontia"
 	female = yes
 	dynasty = 8642 # Amorian
 	religion = "iconoclast"
 	culture = "greek"
-	father = amorios0003
-	780.1.1 = {
-		birth = "780.1.1"
+	father = amorios0002
+	758.1.1 = {
+		birth = yes
 	}
-	815.1.1 = {
-		add_spouse = martinakoi0005 # She was married to "Elder Martinakios", who was possibly Anastasios Martinakios
+	785.1.1 = {
+		add_spouse = martinakoi0005
 	}
-	843.3.11 = { # Feast of Orthodoxy
-		religion = "orthodox"
-	}
-	850.1.1 = {
-		death = "850.1.1"
+	821.1.1 = {
+		death = yes
 	}
 }
 
@@ -1073,7 +1047,7 @@ amorios0008 = {
 	}
 }
 
-amorios0009 = { # https://en.wikipedia.org/wiki/Constantine_(son_of_Theophilos)
+amorios0009 = { # https://en.wikipedia.org/wiki/Constantine_(son_of_Theophilos) / https://www.degruyterbrill.com/database/pmbz/entry/PMBZ15084/html
 	name = "Constantine"
 	dynasty = 8642
 	religion = "iconoclast"
@@ -1081,15 +1055,17 @@ amorios0009 = { # https://en.wikipedia.org/wiki/Constantine_(son_of_Theophilos)
 	father = 70491 # Theophilos
 	mother = Mamikonian0005 # Theodora
 	trait = born_in_the_purple
-	831.1.1 = {
+	834.1.1 = { # There is little clarity as to the dates of his birth, coronation and death. Many secondary sources have conflicting interpretations on the existing available primary sources
 		birth = yes
 	}
-	835.1.1 = {
-		death = yes
+	836.1.1 = { # must have died by 836, since in that year Theophilos was recorded as being without a male heir (Constantine's younger brother Michael III would be born in 840)
+		death = { # According to the Theophanes Continuatus, a collection of writings likely penned in the 10th century, Constantine died by drowning in a cistern at the Palace of Blachernae after escaping the care of his nurse
+			death_reason = death_drowned
+		}
 	}
 }
 
-amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
+amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos) / https://www.degruyterbrill.com/database/pmbz/entry/PMBZ18491/html
 	name = "Thekla"
 	female = yes
 	dynasty = 8642
@@ -1097,7 +1073,6 @@ amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
 	culture = "greek"
 	father = 70491
 	mother = Mamikonian0005
-	health = 5.0
 	
 	#Skills
 	diplomacy = 6
@@ -1105,7 +1080,7 @@ amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
 	stewardship = 6
 	intrigue = 8
 	learning = 6
-	prowess = 0
+	prowess = 3
 	
 	#Education
 	trait = education_intrigue_2
@@ -1119,13 +1094,17 @@ amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
 	trait = unwed
 	
 	sexuality = heterosexual
-	
-	disallow_random_traits = yes
 	831.1.1 = {
 		birth = yes
+		trait = born_in_the_purple
+	}
+	856.3.15 = { # shorn as nun on Michael III's orders
+		trait = devoted
 	}
 	863.1.1 = {
-		employer = 70490 # Thekla was released as a nun
+		employer = 70490 # Thekla was released as a nun to allegedly take the role of Basil I's mistress
+		remove_trait = devoted # Released as a nun
+		trait = unwed # So the AI don't marry her off
 	}
 	866.1.1 = {
 		effect = {
@@ -1140,7 +1119,16 @@ amorios0010 = { # https://en.wikipedia.org/wiki/Thekla_(daughter_of_Theophilos)
 			}
 		}
 	}
-	870.1.1 = {
+	863.1.1 = {
+		employer = 70490 # Thekla was released as a nun to allegedly take the role of Basil I's mistress
+		remove_trait = devoted # Released as a nun
+		trait = unwed # So the AI don't marry her off
+	}
+	870.1.1 = { # Later, after Basil III's accession to the throne, she was the mistress of John Neatokomites until she was punished and shorn on Basil's orders
+		remove_trait = unwed # Dont need this trait anymore as she is to be a nun
+		trait = devoted # Shorn as a nun (again)
+	}
+	872.1.1 = { # Unknown. According to the Book of Ceremonies, she was buried in the Gastria monastery (ta Gastria) in the southeastern part of the church in a sarcophagus together with her mother and her sisters Anastasia and Pulcheria
 		death = yes
 	}
 }
@@ -1352,7 +1340,7 @@ Pheronymos0007 = {
 	}
 }
 
-# Bardas was the only one of his brothers to marry and he had seven children whose names and genders aren't known with the possible exception of Theoktiste, mother of empress Theodora, and Sergios Niketiates. Theoktiste may have been a daughter of Bardas and sister of Empress Maria.
+# Bardas was the only one of his brothers to marry and he had seven children whose names and genders aren't known with the possible exception of Theoktiste (mother of empress Theodora) and Sergios Niketiates. Theoktiste may have been a daughter of Bardas and sister of Empress Maria.
 
 Pheronymos0008 = {
 	name = "Ioannes" #
@@ -1449,11 +1437,12 @@ Pheronymos0013 = { # Sergios Niketiates, a relative of Empress Theodora, thought
 	trait = brave
 	798.1.1 = {
 		birth = "798.1.1" # Unknown
+		give_nickname = nick_niketiates
 	}
 	843.3.11 = { # Feast of Orthodoxy
 		trait = saint # In 843, Sergios was instrumental in bringing about the final abandonment of Iconoclasm and the restoration of the veneration of icons, an act for which he is celebrated as a saint by the Eastern Orthodox Church
 	}
-	843.6.28 = { # Sergios died on Crete, where the Byzantine forces were defeated by the Arabs, likely having been left behind when Theoktistos was forced to hurriedly return to Constantinople
+	843.6.28 = { # Sergios died on Crete, where the Byzantine forces were defeated by the Arabs, likely having been left behind when Theoktistos was forced to hurriedly return to Constantinople. Another suggested date is 866, which assumes Sergios continued the failed expedition of the Caesar Bardas to Crete and perished there
 		death = {
 			death_reason = death_battle
 		}
@@ -2016,7 +2005,8 @@ Tourkos0004= {
 	}
 }
 
-# Additional Bryennios Members # 
+### Additional Bryennios Members ###
+# we know too little about the Bryennios family during this period to be able to make any definitive statements, so much of this is conjecture and theories put forth by historians #
 
 Bryennios0001 = { # First known member of Bryennios family and strategos of the Peloponnese, possibly son of Bryennios (son of Bardanes Tourkos) through onomastic studies - https://www.degruyter.com/database/PMBZ/entry/PMBZ19305/html / Possibly the same as https://www.degruyter.com/database/PMBZ/entry/PMBZ12133/html
 	name = "Theoktistos"
@@ -2053,8 +2043,8 @@ Bryennios0002 = { # A monk, brother of a Strategos Bryennios, possibly Theoktist
 	}
 }
 
-Bryennios0003 = { # Patrikios, perhaps identical to Bryennios Strategos of Dalmatia - https://pbe.kcl.ac.uk/data/D19/F68.htm
-	name = "Manuel" # Unknown name
+Bryennios0003 = { # Patrikios, perhaps identical to Bryennios Strategos of Dalmatia - https://pbe.kcl.ac.uk/data/D19/F68.htm / https://www.degruyterbrill.com/database/pmbz/entry/PMBZ12135/html
+	name = "Theodoros" # Unknown name
 	dynasty = 101079
 	religion = "orthodox"
 	culture = "greek" #
@@ -2065,7 +2055,7 @@ Bryennios0003 = { # Patrikios, perhaps identical to Bryennios Strategos of Dalma
 	trait = diligent
 	trait = unyielding_defender
 	818.1.1 = {
-		birth = "812.1.1" # Unknown, adult in 840s based on the seal of the strategos of Dalmatia, Bryennios, that was dated to that period, if we take him to indeed be identical to Bryennios Strategos of Dalmatia
+		birth = yes # Unknown, adult in 840s based on the seal of the strategos of Dalmatia, Bryennios, that was dated to that period, if we take him to indeed be identical to Bryennios Strategos of Dalmatia
 	}
 	867.1.1 = {
 		effect = {
@@ -2081,7 +2071,7 @@ Bryennios0003 = { # Patrikios, perhaps identical to Bryennios Strategos of Dalma
 		}
 	}
 	876.1 = {
-		death = "876.1.1" # Unknown
+		death = yes # Unknown
 	}
 }
 
@@ -2092,10 +2082,10 @@ Bryennios0004= {
 	culture = "greek" #
 	father = Bryennios0003 # 
 	842.1.1 = {
-		birth = "842.1.1" # Unknown, 
+		birth = yes # Unknown
 	}
 	908.1 = {
-		death = "908.1.1" # Unknown
+		death = yes # Unknown
 	}
 }
 
@@ -2105,11 +2095,11 @@ Bryennios0005= {
 	religion = "orthodox"
 	culture = "greek" #
 	father = Bryennios0004 # 
-	867.1.1 = {
-		birth = "867.1.1" # Unknown, 
+	868.1.1 = {
+		birth = yes # Unknown, 
 	}
 	938.1 = {
-		death = "938.1.1" # Unknown
+		death = yes # Unknown
 	}
 }
 
@@ -2202,25 +2192,29 @@ Bryennios0011 = {
 # Additional Monomachos Members # 
 # The family was said to have been ‘ancient’ but did not come to the fore until the 10th and 11th centuries where its most sourced members appear. There are some Byzantine characters in the early 9th-century who share the name Monomachos (such as Patrikios Niketas Monomachos), but it is entirely possibly these instances refer to sobriquets rather to members of the family, though the opposite is also a possibility. #
 # I will be going with the theory that the early mentions of Monomachos are indeed early ancestors of the later members, because it is entirely possible, interweaves several dynasties, and allows players to play the Monomachos Dynasty in 867 #
-Monomachos0001= {
-	name = "Gregorius"  # Nicetas the Patrician's father was probably named Gregory
+Monomachos0001= { # Father of Niketas Monomachos and husband to Anna. lived in Paphlagonia in the second half of the 8th century. may have been a relative of Empress Eirenes - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ13557/html
+	name = "Gregorios" # Gregory; Name only in Synax. Cpl.
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
-	culture = "greek" # 
+	culture = "greek"
+	# According to the sources, the wealthy and pious G. provided for his son's education and had him made a eunuch.
+	trait = generous
+	trait = diligent
+	trait = zealous
 	731.1.1 = {
 		birth = "731.1.1" # Unknown
 	}
 	750.1.1 = {
-		#add_spouse = Rufiusprobianus17 # Unknown date
+		#add_spouse = Rufiusprobianus17 # was married to Anna at an unknown date 
 	}
 	786.1.1 = {
 		death = "786.1.1" # Unknown
 	}
 }
 
-Monomachos0002= { # https://en.wikipedia.org/wiki/Nicetas_the_Patrician - Eunuch official and general from Paphlagonia active at the turn of the 9th century, usually identified with Nikitas Monomachos, possibly the first recorded member of Monomachos family, possibly related to empresses Theodora and Eirene
+Monomachos0002= { # Eunuch official and general from Paphlagonia active at the turn of the 9th century, usually identified with Nikitas Monomachos, possibly the first recorded member of Monomachos family, possibly related to empresses Theodora and Eirene - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ16607/html
 	name = "Niketas" # 
-	dynasty = 636 # Monomachos
+	dynasty = 636 # Probably belonged to the Monomachos family, which is also documented elsewhere, unless it was a personal surname
 	religion = "orthodox"
 	culture = "greek" # 
 	trait = education_learning_4
@@ -2228,12 +2222,12 @@ Monomachos0002= { # https://en.wikipedia.org/wiki/Nicetas_the_Patrician - Eunuch
 	trait = diligent
 	trait = brave
 	trait = humble
-	trait = beardless_eunuch # he was castrated by his parents
 	trait = saint # He is honoured as a saint and a Confessor of the Faith by the Eastern Orthodox Church. His feast day is on 13 October
 	father = Monomachos0001
 	#mother = Rufiusprobianus17
-	761.1.1 = { # Nicetas was born in Paphlagonia in 761/62
+	761.1.1 = { # N. was born around 761/62 in Paphlagonia
 		birth = "761.1.1"
+		trait = beardless_eunuch # His parents had Niketas castrated as a child, perhaps to enable or facilitate a career in government
 	}
 	811.10.1 = {
 		trait = devoted # With the accession of Michael I Rhangabe (r. 811–813) to the throne, Nicetas was at last able to receive tonsure (late 811)
@@ -2243,10 +2237,10 @@ Monomachos0002= { # https://en.wikipedia.org/wiki/Nicetas_the_Patrician - Eunuch
 	}
 }
 
-Monomachos0003= {
-	name = "Theodote" # Empress Theodote, cousin of Theodoros Studite through her mother Anna
+Monomachos0003= { # Empress Theodote, cousin of Theodoros Studite through her mother Anna. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ19150/html
+	name = "Theodote"
 	female = yes
-	dynasty = 636 # Monomachos
+	dynasty = 636 # Monomachos; Made a Monomachos because she is a daughter of Anna (though a relatively common name, same as Niketas Monomachos' mother) and came from a "high-ranking and influential family in Constantinople, which produced numerous high-ranking dignitaries" which can fit the Monomachos
 	religion = "orthodox"
 	culture = "greek" # 
 	father = Monomachos0001
@@ -2278,12 +2272,13 @@ Monomachos0004= {
 }
 
 
-Monomachos0005= {
-	name =  "Ignatios" # Nephew of Niketas Monomachos and brother of another Niketas Monomachos
+Monomachos0005= { # Nephew of Niketas Monomachos and brother of another Niketas Monomachos - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ13788/html
+	name =  "Ignatios"
 	dynasty = 636 # Monomachos
 	religion = "iconoclast"
 	culture = "greek" # 
 	father = Monomachos0004
+	trait = devoted # Monk
 	788.1.1 = {
 		birth = "788.1.1" # Unknown
 	}
@@ -2295,12 +2290,12 @@ Monomachos0005= {
 	}
 }
 
-Monomachos0006= {
-	name =  "Niketas" # Brother of Ignatios and Nephew of Niketas Monomachos
+Monomachos0006= { # Brother of Ignatios and Nephew of Niketas Monomachos - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ16655/html
+	name =  "Niketas"
 	dynasty = 636 # Monomachos
 	religion = "iconoclast"
 	culture = "greek" # 
-	trait = devoted # Succeeded his uncle as abbot of a monastery
+	trait = devoted # Monk, abbot of the Monastery of Asomat following the passing of his uncle.
 	father = Monomachos0004
 	795.1.1 = {
 		birth = "790.1.1" # Unknown
@@ -2313,8 +2308,8 @@ Monomachos0006= {
 	}
 }
 
-Monomachos0007= {
-	name = "Sergios" # Hypatios, cousin of Theodoros Studite through his mother Anna
+Monomachos0007= { # Hypatios, cousin of Theodoros Studite through his mother Anna - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ17865/html
+	name = "Sergios"
 	dynasty = 636 # Monomachos
 	religion = "iconoclast"
 	culture = "greek" # 
@@ -2328,9 +2323,9 @@ Monomachos0007= {
 	}
 }
 
-Monomachos0008= {
-	name = "Eusthatios" # A judge during the reign of Emperor Theophilos
-	dynasty = 636 # Monomachos
+Monomachos0008= { # served during the reign of Emperor Theophilus (829–842) and resided in Oxeia, presumably referring to the district of Constantinople. Commissioned by Theophilus to investigate a widow's lawsuit against Petronas - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ12894/html
+	name = "Eusthatios"
+	dynasty = 636 # Monomachos; Could be an Epithet but will consider it a family name
 	religion = "iconoclast"
 	culture = "greek" # 
 	trait = just
@@ -2346,9 +2341,9 @@ Monomachos0008= {
 	}
 }
 
-Monomachos0009= {
-	name =  "Ignatios" # Iconoclastic bishop of Nicomedia in 846
-	dynasty = 636 # Monomachos
+Monomachos0009= { # Iconoclastic bishop of Nicomedia in 846 - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ13789/html
+	name =  "Ignatios"
+	dynasty = 636 # Monomachos; Though it is possible (if not likely) that Monomachos here is an epithet and not a family name
 	religion = "iconoclast"
 	culture = "greek" # 
 	trait = devoted
@@ -2382,7 +2377,7 @@ Monomachos0010 = {
 	}
 }
 
-Monomachos0011 = { # Representative of an unnamed official in 921
+Monomachos0011 = { # Representative of an unnamed official in 921 - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ27572/html
 	name =  "Theodosius"
 	dynasty = 636 # Monomachos
 	religion = "orthodox" 
@@ -2396,7 +2391,7 @@ Monomachos0011 = { # Representative of an unnamed official in 921
 	}
 }
 
-Monomachos0012 = { # A wealthy merchant who may have married a Doukiana, possibly the Paulus Magistros the envoy in 954
+Monomachos0012 = { # A wealthy merchant who may have married a Doukiana, possibly the Paulus Magistros the envoy in 954 - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ28503/html
 	name = "Paulos"
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
@@ -2453,8 +2448,8 @@ Monomachos0015 = {
 	}
 }
 
-Monomachos0016= {
-	name =  "Konstantinos" # Protospatharios and Protonotarios of the Bucellarioi in late 10th or early 11th century
+Monomachos0016= { # Protospatharios and Protonotarios of the Bucellarioi in late 10th or early 11th century. Could be identical to the Emperor Konstantinos IX. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ26158/html
+	name =  "Konstantinos"
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
 	culture = "greek" # 
@@ -2467,8 +2462,8 @@ Monomachos0016= {
 	}
 }
 
-Monomachos0017= {
-	name = "Pothos" # Protospatharios and judge of the Hippodrome in around 1010-1030
+Monomachos0017= { # Protospatharios and judge of the Hippodrome in around 1010-1030 - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ28898/html
+	name = "Pothos"
 	dynasty = 636 # Monomachos
 	religion = "orthodox"
 	culture = "greek" # 
@@ -2684,16 +2679,50 @@ apostyppes0003 = { # The son of Leon Apostypos, killed during an attempt to flee
 }
 
 ### Mosele Family ###
-mosele0001 = { # Late 8th-century Byzantine general and first known member of the Mosele/Mousele family - https://en.wikipedia.org/wiki/Alexios_Mosele_(general) / https://www.degruyter.com/database/PMBZ/entry/PMBZ11275/html
+# Combining the family with those who bore the surname Mousoulakios due their similiar structure and Armenian origin. Possibly just variants of the same name #
+
+mosele0001 = { # Mousoulakios was the father of Gregorios. The name may perhaps have been the family name, possibly diminutive of an armenian name -  https://pbe.kcl.ac.uk/data/D56/F30.htm
+	name = "Mousoulakios" # Given name unknown as Mousoulakios was likely a nickname or title
+	dynasty = dynasty_mosele # Possibly from the Armenian Krenites/Krinites family
+	religion ="orthodox"
+	culture = "armenian"
+
+	720.1.1 = { # Unknown
+		birth = yes
+	}
+	770.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+mosele0002 = { # Patrikios Gregory Mousoulakios; strategos (or komes) of the Opsikion, but the exact title is not recorded in Theophanes. Supported the overthrow of Eirene by Nikephoros. - https://pbe.kcl.ac.uk/data/D31/F03.htm / https://www.doaks.org/resources/seals/byzantine-seals/BZS.1947.2.121
+	name = "Gregorios"
+	dynasty = dynasty_mosele # Possibly from the Armenian Krenites/Krinites family
+	father = mosele0001
+	religion ="orthodox"
+	culture = "armenian"
+	trait = greedy # his motive for supporting Nikephoros 8 is said to have been greed
+	trait = deceitful # supported the overthrow of the empress Eirene by Nikephoros I; like the others he is strongly criticised in Theophanes because he had received great riches from Eirene and had professed the greatest loyalty to her
+	trait = ambitious 
+	744.1.1 = { # Unknown; Theophanes mentions a certain Gregory Mousoulakios as commander of the Opsikianoi in 777/778 so must have been an adult of good standing by then
+		birth = yes
+	}
+	805.1.1 = { # Unknown; by 802 he was already a patrikios and supported the overthrow of Eirene so was alive at that point, but after this nothing is known
+		death = yes
+	}
+}
+
+mosele0003 = { # Late 8th-century Byzantine general and first known member of the Mosele/Mousele family - https://en.wikipedia.org/wiki/Alexios_Mosele_(general) / https://www.degruyter.com/database/PMBZ/entry/PMBZ11275/html
 	name = "Alexios"
 	dynasty = dynasty_mosele # Possibly from the Armenian Krenites/Krinites family
+	father = mosele0002
 	religion ="orthodox"
 	culture = "armenian"
 	trait = education_martial_4
 	trait = gregarious # Well-liked by the Thematic soldiers
 	trait = brave
 	trait = ambitious # allegedly aspired to be Emperor
-	760.1.1 = { # Unknown
+	761.1.1 = { # Unknown
 		birth = yes
 	}
 	792.1.1 = {
@@ -2705,10 +2734,10 @@ mosele0001 = { # Late 8th-century Byzantine general and first known member of th
 	}
 }
 
-mosele0002 = { # Fictional/Unknown member of the Mosele Dynasty to connect Alexios Mosele (Caesar) to Alexios Mosele (General)
-	name = "Romanos"
+mosele0004 = { # Fictional/Unknown member of the Mosele Dynasty to connect Alexios Mosele (Caesar) to Alexios Mosele (General)
+	name = "Gregorios"
 	dynasty = dynasty_mosele
-	father = mosele0001
+	father = mosele0003
 	religion ="orthodox"
 	culture = "greek"
 	780.1.1 = { # Fictional
@@ -2719,16 +2748,17 @@ mosele0002 = { # Fictional/Unknown member of the Mosele Dynasty to connect Alexi
 	}
 }
 
-mosele0003 = { # Byzantine aristocrat and general, chosen by Emperor Theophilos for a time as his heir, betrothed to his daughter Maria and raised to the supreme dignity of Caesar -https://en.wikipedia.org/wiki/Alexios_Mosele_(Caesar) / https://www.degruyter.com/database/PMBZ/entry/PMBZ11277/html
+mosele0005 = { # Byzantine aristocrat and general, chosen by Emperor Theophilos for a time as his heir, betrothed to his daughter Maria and raised to the supreme dignity of Caesar -https://en.wikipedia.org/wiki/Alexios_Mosele_(Caesar) / https://www.degruyter.com/database/PMBZ/entry/PMBZ11277/html
 	name = "Alexios"
 	dynasty = dynasty_mosele # Possibly from the Armenian Krenites/Krinites family
-	father = mosele0002
+	father = mosele0004
 	religion ="orthodox"
 	culture = "greek"
 	trait = education_martial_4
 	trait = gregarious # Well-liked by the Thematic soldiers
 	trait = brave
 	trait = ambitious # allegedly aspired to be Emperor
+	trait = beauty_good_1 # When called on by the Emperor, he was then a handsome man and in the flower of his age
 	810.1.1 = { # Unknown, first possible mention of Alexios is as the Caesar present on the occasion of a triumph of the Emperor Theophilos in Constantinople, which is usually dated to the year 831
 		birth = yes
 	}
@@ -2740,10 +2770,10 @@ mosele0003 = { # Byzantine aristocrat and general, chosen by Emperor Theophilos 
 	}
 }
 
-mosele0004 = { # Brother of Caesar Alexios Mosele who held the high court title of patrikios - https://www.degruyter.com/database/PMBZ/entry/PMBZ19125/html
+mosele0006 = { # Brother of Caesar Alexios Mosele who held the high court title of patrikios - https://www.degruyter.com/database/PMBZ/entry/PMBZ19125/html
 	name = "Theodosios"
 	dynasty = dynasty_mosele # Possibly from the Armenian Krenites/Krinites family
-	father = mosele0002
+	father = mosele0004 # Brother to Caesar Alexios Mosele
 	religion ="orthodox"
 	culture = "greek"
 	815.1.1 = { # Unknown
@@ -2757,18 +2787,18 @@ mosele0004 = { # Brother of Caesar Alexios Mosele who held the high court title 
 	}
 }
 
-mosele0005 = { # Fictional/Unknown member of the Mosele Dynasty to connect early members of the dynasty to the early 10th century admiral Alexios Mosele
-	name = "Romanos"
+mosele0007 = { # Mousilikes, a name linked to a tourmarches of Mesopotamia, strategos of Cephalonia, and strategos of Sicily.  - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ27584/html / https://www.doaks.org/resources/seals/byzantine-seals/BZS.1955.1.1086
+	name = "Gregorios" # Named for grandfather to follow naming convention of the time period
 	dynasty = dynasty_mosele
-	father = mosele0004 # Unknown if there is a direct link, but considering Caesar Alexios is never recorded as having children with Maria nor remarrying, any descendants must be through Theodosios
+	father = mosele0006 # Considering the rariety of the name, likely the same person and possibly a variant spelling of Mosele, so will cosider them the missing link between generations
 	religion ="orthodox"
 	culture = "greek"
-	trait = education_stewardship_2
-	trait = generous
-	trait = zealous
-	trait = chaste
+	trait = education_martial_3
+	trait = zealous # According to the hagiography of the Patriarch of Constantinople Ignatios, the general (for us Mousilikes) invoked the patriarch during the battle, and he appeared on a white horse in the air before him, advising him to launch his attack towards the right. Mosilikes followed the advice, and won
+	trait = brave # In our history, the general who won the Battle of Caltavuturo
+	trait = callous # The Battle of Caltavuturo saw the Byzantines killing all but seven of the Arabs
 	trait = forder
-	832.1.1 = { # Fictional
+	835.1.1 = { # Unknown
 		birth = yes
 	}
 	867.1.1 = {
@@ -2784,15 +2814,29 @@ mosele0005 = { # Fictional/Unknown member of the Mosele Dynasty to connect early
 			}
 		}
 	}
-	890.1.1 = { # Fictional
+	890.1.1 = { # Unknown
 		death = yes
 	}
 }
 
-mosele0006 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos - https://www.degruyter.com/database/PMBZ/entry/PMBZ22394/html
+mosele0008 = { # Fictional desceased firstborn of Mousilikes to explain the interuption of traditional byzantine naming convention
+	name = "Theodosios" # Named for grandfather to follow naming convention of the time period.
+	dynasty = dynasty_mosele
+	father = mosele0007 # 
+	religion ="orthodox"
+	culture = "greek"
+	865.1.1 = { # Fictional
+		birth = yes
+	}
+	866.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+mosele0009 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos - https://www.degruyter.com/database/PMBZ/entry/PMBZ22394/html
 	name = "Alexios"
 	dynasty = dynasty_mosele
-	father = mosele0005 # Unknown if there is a direct link, but considering Caesar Alexios is never recorded as having children with Maria nor remarrying, any descendants must be through Theodosios
+	father = mosele0007 # Unknown if there is a direct link, but considering Caesar Alexios is never recorded as having children with Maria nor remarrying, any descendants must be through Theodosios
 	religion ="orthodox"
 	culture = "greek"
 	867.1.1 = { # Unknown, but better to have him alive for the start date
@@ -2808,10 +2852,10 @@ mosele0006 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakap
 	}
 }
 
-mosele0007 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakapenos - https://www.degruyter.com/database/PMBZ/entry/PMBZ22394/html
+mosele0010 = { # Magistros. Large landowner in the region of Philomelion in Pisidia, in the Anatolikon region - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ28998/html
 	name = "Romanos"
 	dynasty = dynasty_mosele
-	father = mosele0006 # Unknown if there is a direct link, but considering Caesar Alexios is never recorded as having children with Maria nor remarrying, any descendants must be through Theodosios
+	father = mosele0009 # Considering the confusion around the founding of the Monastery of Mosele, it is likely Romanos is Alexios' sonn who founded the Monastery to honor his recently deceased father
 	mother = lekapenos0008 # This mother of Romanos is not directly named in the sources, but can only be inferred indirectly from the remark that R. was a blood relative, probably a grandson, of the Emperor Romanos I Lakapenos
 	religion ="orthodox"
 	culture = "greek"
@@ -2823,10 +2867,10 @@ mosele0007 = { # Drungarios ton ploïmon (Admiral) under Emperor Romanus I Lakap
 	}
 }
 
-mosele0008 = { # Unnamed child of Romanos Mosele to connect Romanos to his grandchildren
+mosele0011 = { # Unnamed child of Romanos Mosele to connect Romanos to his grandchildren
 	name = "Alexios"
 	dynasty = dynasty_mosele
-	father = mosele0007 
+	father = mosele0010 
 	religion ="orthodox"
 	culture = "greek"
 	935.1.1 = { # Unknown
@@ -2837,10 +2881,10 @@ mosele0008 = { # Unnamed child of Romanos Mosele to connect Romanos to his grand
 	}
 }
 
-mosele0009 = { # Unnamed grandchildren of Romanos who owned huge estates near Philomelion, which they had inherited. These lands were expropriated by Basil II, which caused the grandchildren to sink into relative poverty
+mosele0012 = { # Unnamed grandchildren of Romanos who owned huge estates near Philomelion, which they had inherited. These lands were expropriated by Basil II, which caused the grandchildren to sink into relative poverty
 	name = "Romanos"
 	dynasty = dynasty_mosele
-	father = mosele0008 
+	father = mosele0011 
 	religion ="orthodox"
 	culture = "greek"
 	960.1.1 = { # Unknown
@@ -2851,10 +2895,10 @@ mosele0009 = { # Unnamed grandchildren of Romanos who owned huge estates near Ph
 	}
 }
 
-mosele0010 = { # Unnamed grandchildren of Romanos who owned huge estates near Philomelion, which they had inherited. These lands were expropriated by Basil II, which caused the grandchildren to sink into relative poverty
+mosele0013 = { # Unnamed grandchildren of Romanos who owned huge estates near Philomelion, which they had inherited. These lands were expropriated by Basil II, which caused the grandchildren to sink into relative poverty
 	name = "Theodosios"
 	dynasty = dynasty_mosele
-	father = mosele0008 
+	father = mosele0011 
 	religion ="orthodox"
 	culture = "greek"
 	965.1.1 = { # Unknown
@@ -2929,7 +2973,7 @@ rendakios0004 = {
 }
 
 rendakios0005 = {
-    name = "Theophanes" # Fictional to connect with later Rendakioi
+    name = "Ioannes" # Fictional to connect with later Rendakioi
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
     culture = "greek" #
@@ -2956,8 +3000,8 @@ rendakios0006 = {
     }
 }
 
-rendakios0007 = {
-    name = "Theophanes"# Unnamed member, Basilikos Protospatharios and epi ton oikeiakon sometime between 850 and 900
+rendakios0007 = { # Unnamed member, Basilikos Protospatharios and epi ton oikeiakon sometime between 850 and 900. Merged with Ioannes who was Strategos of Nikopolis in the 9th century - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ25006/html
+    name = "Ioannes"
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
     culture = "greek" #
@@ -2970,8 +3014,8 @@ rendakios0007 = {
     }
 }
 
-rendakios0008 = {
-    name = "Rentakios" # Protobestiaros from Rendakios family in 866, he may have been named Rentakios
+rendakios0008 = { # Protobestiaros from Rendakios family in 866, he may have been named Rentakios
+    name = "Rentakios"
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
     culture = "greek" #
@@ -2985,7 +3029,7 @@ rendakios0008 = {
     }
 }
 
-rendakios0009 = { # Unnamed Father of Patrician Niketas; combining him with the relatively unknown Nikephoros who was strategos of the Thrakesioi sometime during the period - https://pbe.kcl.ac.uk/data/D56/F99.htm
+rendakios0009 = { # Unnamed Father of Patrician Niketas
     name = "Nikephoros" 
     dynasty = dynasty_rendakios # Rendakios/Rentakios
     religion = "orthodox"
@@ -3488,7 +3532,7 @@ lekapenos0008 = { # Unnamed daughter of Emperor Romanos from a suspected first m
 		birth = yes
 	}
 	908.1.1 = {
-		add_spouse = mosele0006
+		add_spouse = mosele0009
 	}
 	945.1.1 = { # Unknown
 		death = yes
@@ -3631,7 +3675,7 @@ katakalon0003 = { # Possibly identical to Leon Katakalites who, in 913, was part
 		birth = yes # Unknown
 	}
 	867.1.1 = {
-		# add_spouse = Photios16 # He married to a relative of Patriarch Photios tobeadded
+		add_spouse = marzoukoi0012 # He married to a relative of Patriarch Photios
 	}
 	920.1.1 = {
 		death = "920.1.1" # Unknown
@@ -3676,8 +3720,8 @@ katakalon0006 = { # imperial koubikoularios in 9th/10th century
 	religion = "orthodox"
 	culture = "greek" 
 	father = katakalon0003 # Connection unknown
-	# mother = Photios16 # Connection unknown tobeadded
-	867.1.1 = {
+	mother = marzoukoi0012 # Connection unknown
+	868.1.1 = {
 		birth = "867.1.1" # Unknown
 	}
 	935.1.1 = {
@@ -3960,6 +4004,52 @@ euforbenos0006 = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+### Argyros Dynasty ###
+argyros0001 = { # daughter of Basil Argyros who was mother to Romanos IV Diogenes
+	name = "Maria" # Name unknown
+	female = yes
+	dynasty = 639 # Argyros
+	father = 41310 # The General Basileios Argyros
+	religion = "orthodox"
+	culture = "greek"
+	1010.1.1 = {
+		birth = "1010.1.1" # Unknown
+	}
+	1060.1.1 = {
+		death = "1125.1.1" # Unknown
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Taronites Dynasty (dynasty_house = house_taronites) ###
 
 
@@ -4048,6 +4138,56 @@ ioubes0005 = { # Possible descendant of Ayyub whose wife is recorded having labo
 
 
 
+aplakes0001 = { # Strategos of Macedonia during the reign of Michael I Rangabe who commanded the Byzantine right flank in the Battle of Versinikia where he perished  ~ https://www.degruyterbrill.com/database/pmbz/entry/PMBZ14336/html
+	name = "Ioannes"
+	dynasty = 1022164 # Aplakes
+	religion = "orthodox"
+	culture = "greek"
+	trait = education_martial_3 # Strategos (Military Commander)
+	trait = brave # By all accounts, Ioannes fought bravely and gave his life on the battlefield
+	trait = honest
+	trait = diligent
+	trait = aggressive_attacker
+	770.1.1 = { # Unknown
+		birth = yes
+	}
+	813.6.22 = { # Perished during the Battle of Versinikia
+		death = {
+			death_reason = death_battle
+			killer = 159123 # Slain by the forces of the Bulgarian Khan Krum
+		}
+	}
+}
+
+aplakes0002 = { # Fictional son of Strategos Ioannes Aplakes to connect PDX's 867 Ioannes Aplakes to his historical ancestor
+	name = "Ioannes"
+	father = aplakes0001
+	dynasty = 1022164 # Aplakes
+	religion = "orthodox"
+	culture = "greek"
+	trait = education_diplomacy_1
+	trait = craven # Lets make him the opposite of his father
+	trait = content
+	trait = chaste
+	800.1.1 = { # Fictional
+		birth = yes
+	}
+	864.1.1 = { # Fictional
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 paspalas0001 = { # Strategos of the Theme of Samos circa. 890, noted for having been captured by Arabs who sieged and captured the island - https://www.degruyter.com/database/PMBZ/entry/PMBZ25935/html
 	name = "Konstantinos"
@@ -4076,72 +4216,6 @@ paspalas0001 = { # Strategos of the Theme of Samos circa. 890, noted for having 
 		}
 	}
 	893.1.1 = { # Unknown what happened to the Strategos following his capture; likely killed
-		death = yes
-	}
-}
-
-
-
-
-constantinopoli0001 = {
-	name = "Sergios"
-	dynasty = dynasty_constantinopoli
-	religion = "orthodox"
-	culture = "greek"
-	# father = *Related to  Patriarch of Constantinople Photios but need to invent relation?*
-	# mother = *Related to  Patriarch of Constantinople Photios but need to invent relation?*
-	812.1.1 = {
-		birth = yes
-	}
-	870.1.1 = {
-		death = yes
-	}
-}
-
-constantinopoli0002 = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
-	name = "Bardas"
-	dynasty = dynasty_constantinopoli
-	religion = "orthodox"
-	culture = "greek"
-	father = constantinopoli0001
-	mother = Mamikonian0006
-	833.1.1 = {
-		birth = yes
-	}
-	858.1.1 = {
-		add_spouse = kontomytes0001
-	}
-	880.1.1 = {
-		death = yes
-	}
-}
-
-constantinopoli0003 = { # https://en.wikipedia.org/wiki/Bardas_Kontomytes
-	name = "Stephen"
-	dynasty = dynasty_constantinopoli
-	religion = "orthodox"
-	culture = "greek"
-	father = constantinopoli0001
-	mother = Mamikonian0006
-	837.1.1 = {
-		birth = yes
-	}
-	895.1.1 = {
-		death = yes
-	}
-}
-
-kontomytes0001 = { # https://en.wikipedia.org/wiki/Constantine_Kontomytes
-	name = "Theodora"
-	female = yes
-	dynasty = 1022168
-	religion = "orthodox"
-	culture = "greek"
-	father = 145190
-	830.1.1 = {
-		birth = yes
-	}
-	895.1.1 = {
 		death = yes
 	}
 }
@@ -4176,10 +4250,10 @@ Mamikonian0007 = { #  brother of the empress Theodora and a successful Roman gen
 	trait = organizer
 	trait = holy_warrior
 
-	816.1.1 = {
+	814.1.1 = { # Unknown; c. 812
 		birth = yes
 	}
-	865.11.11 = {
+	865.11.11 = { # A hagiography, written by a contemporary, claims that Petronas died on the same day as his spiritual father Saint Anthony the Younger, two years and two months after routing the Arab armies at the Battle of Lalakaon
 		death = yes
 	}
 }
@@ -4397,56 +4471,6 @@ arethas_of_caesarea = { # https://en.wikipedia.org/wiki/Arethas_of_Caesarea
 	}
 }
 
-leothemathematician = { # https://en.wikipedia.org/wiki/Leo_the_Mathematician
-	name = "Leo"
-	#dynasty = 0
-	religion = "orthodox"
-	culture = "greek"
-	health = 4.1
-	
-	#Skills
-	diplomacy = 8
-	martial = 5
-	stewardship = 8
-	intrigue = 6
-	learning = 15
-	prowess = 6
-	
-	#Education
-	trait = education_learning_5
-	
-	#Personality Traits
-	trait = diligent
-	trait = cynical
-	trait = content
-	trait = chaste
-	
-	#Other Traits
-	trait = scholar
-	
-	trait = shrewd
-	trait = lifestyle_herbalist
-	trait = lifestyle_physician
-	
-	sexuality = heterosexual
-	disallow_random_traits = yes
-	790.1.1 = {
-		birth = yes
-	}
-	860.1.1 = {
-		employer = 70490
-		effect = {
-			add_trait_xp = {
-				trait = lifestyle_physician
-				value = 100
-			}
-        }
-	}
-	869.1.9 = {
-		death = yes
-	}
-}
-
 baiana0001 = { # Byzantine empress consort as the third wife of Leo VI the Wise - https://en.wikipedia.org/wiki/Eudokia_Ba%C3%AFana
 	name = "Eudokia"
 	female = yes
@@ -4585,18 +4609,19 @@ zaoutzes0005 = { # https://en.wikipedia.org/wiki/Zoe_Zaoutzaina / https://www.de
 	}
 }
 
-### MARTINAKIOS FAMILY ###
+### MARTINAKIOI FAMILY ###
 ### dynasty = 1022160 ###
-martinakoi0001 = { # Melisenna, Eudokia's mother was a fifth generation descendant of him
+## The family's members and history is muddled, many of the members (including their relationship to one another) are theories rather than fact ##
+martinakoi0001 = { # Melisenna, Eudokia's mother was supposedly a fifth generation descendant of him
     name = "Andreas"
     dynasty = 1022160
     religion = "orthodox"
     culture = "greek"
-    699.1.1 = {
-        birth = "699.1.1"
+    640.1.1 = {
+        birth = yes
     }
-    772.1.1 = {
-        death = "772.1.1"
+    695.1.1 = {
+        death = yes
     }
 }
 
@@ -4606,11 +4631,11 @@ martinakoi0002 = {
     religion = "orthodox"
     culture = "greek"
     father = martinakoi0001
-    715.1.1 = {
-        birth = "715.1.1"
+    675.1.1 = {
+        birth = yes
     }
-    805.1.1 = {
-        death = "805.1.1"
+    727.1.1 = {
+        death = yes
     }
 }
 
@@ -4620,11 +4645,11 @@ martinakoi0003 = {
     religion = "orthodox"
     culture = "greek"
     father = martinakoi0002
-    731.1.1 = {
-        birth = "731.1.1"
+    700.1.1 = {
+        birth = yes
     }
-    840.1.1 = {
-        death = "840.1.1"
+    758.1.1 = {
+        death = yes
     }
 }
 
@@ -4634,15 +4659,16 @@ martinakoi0004 = {
     religion = "orthodox"
     culture = "greek"
     father = martinakoi0003
-    748.1.1 = {
-        birth = "748.1.1"
+	mother = amorios0004
+    735.1.1 = {
+        birth = yes
     }
-    810.1.1 = {
-        death = "810.1.1"
+    789.1.1 = {
+        death = yes
     }
 }
 
-martinakoi0005 = { # Father of Inger Martinakios. Anastasios could be the "Elder Martinakios" related by marriage to Theophilos - https://www.degruyter.com/database/PMBZ/entry/PMBZ11400/html
+martinakoi0005 = { # served as a messenger for Emperor Leo V to carry out punishment for Theodore the Confessor. Possibly the father of Inger Martinakios and the "Elder Martinakios" related to Theophilos - https://www.degruyter.com/database/PMBZ/entry/PMBZ11400/html
     name = "Anastasios"
     dynasty = 1022160
     religion = "orthodox"
@@ -4652,32 +4678,31 @@ martinakoi0005 = { # Father of Inger Martinakios. Anastasios could be the "Elder
 	trait = wrathful # Later, according to the vitae, he appears again in Smyrna, where, apparently without motivation, he again punishes Theodoros and Nikolaos with 100 lashes each
 	trait = diligent # personally examines Theodoros for traces of the punishment and when he does not find any, he personally punishes him with 100 heavy lashes.
 	trait = callous # Later, according to the vitae, he appears again in Smyrna, where, apparently without motivation, he again punishes Theodoros and Nikolaos with 100 lashes each
-    775.1.1 = {
-        birth = "775.1.1"
+    765.1.1 = {
+        birth = yes
     }
-	837.1.1 = {
-		trait = devoted # A prophecy predicted that the family of Martinakios would come to rule the Byzantine Empire. In reaction Theophilos forced his kinsman to become a monk and convert his house into a monastery
-	}
-    840.1.1 = {
-        death = "840.1.1" # Died after 821. If he is the "Elder Martinakios", he would still be alive at 837
+    825.1.1 = {
+        death = yes # Died after 821. If he is the "Elder Martinakios", he would still be alive at 837
     }
 }
 
-martinakoi0006 = { # Son of Anastasios Martinakios, possible father of Konstantin and his brother Martinos - https://www.degruyter.com/database/PMBZ/entry/PMBZ13804/html
+martinakoi0006 = { # Son of Anastasios Martinakios, possible father of Konstantin and his brother Martinos. Possibly the "Elder Martinakios" related to Theophilos - https://www.degruyter.com/database/PMBZ/entry/PMBZ13804/html
     name = "Inger"
 	dynasty = 1022160
     religion = iconoclast
     culture = "greek"
     father = martinakoi0005
-    mother = amorios0004
     810.1.1 = {
-        birth = "810.1.1"
+        birth = yes
     }
+	837.1.1 = {
+		trait = devoted # A prophecy predicted that the family of Martinakios would come to rule the Byzantine Empire. In reaction Theophilos forced his kinsman to become a monk and convert his house into a monastery
+	}
 	843.3.11 = { # Feast of Orthodoxy
 		religion = "orthodox"
 	}
     860.1.1 = {
-        death = "860.1.1"
+        death = yes
     }
 }
 
@@ -4693,7 +4718,7 @@ martinakoi0007 = { # Mother of Theophano, who was Leo VI's first wife - https://
 	865.1.1 = {
 		add_spouse = 145181
 	}
-	868.1.1 = { # died shortly after her daughter Theophano was born
+	867.1.1 = { # died shortly after her daughter Theophano was born, while Theophano was an infant
 		death = yes
 	}
 } 
@@ -4706,6 +4731,7 @@ martinakoi0008= { # Byzantine empress by marriage to Leo VI the Wise. She is ven
 	culture = "greek"
 	father = 145181
 	mother = martinakoi0007
+	trait = beauty_good_3 # During the bridal show for Leon VI, Theophano is said to have surpassed all the other candidates in beauty
 	866.1.1 = {
 		birth = yes
 	}
@@ -4719,7 +4745,7 @@ martinakoi0008= { # Byzantine empress by marriage to Leo VI the Wise. She is ven
 	893.1.1 = {
 		trait = devoted
 	}
-	897.11.10 = {
+	897.11.10 = { # Theophano died on November 10th — most likely in 897, although the years 895 and 896 cannot be entirely ruled out
 		trait = saint # Theophano was glorified (canonized a saint) by the Eastern Orthodox Church following her death
 		death = yes
 	}
@@ -4730,7 +4756,8 @@ martinakoi0009 = { # Brother of Theophano's father Konstantin - https://www.degr
 	dynasty = 1022160
     religion = iconoclast
     culture = "greek"
-    father = martinakoi0006
+    father = martinakoi0006 # His father was Inger; his siblings were named Konstantinos and — possibly, though improbably — Eudokia Ingerina
+	trait = zealous # There is a certain probability that M. is identical to the Martinakes who, according to the *Patria*, is said to have founded the Martinakios Monastery during the joint reign of Basil and Michael III
     839.1.1 = { # probably born around the year 839 in Constantinople
         birth = "839.1.1"
     }
@@ -4785,8 +4812,8 @@ martinakoi0012 = {
     religion = iconoclast
     culture = "greek"
     father = martinakoi0011
-    818.1.1 = {
-        birth = "818.1.1" # Unknown, Eudokia is born in 840
+    815.1.1 = {
+        birth = yes # Unknown, Eudokia is born in 840
     }
     835.1.1 = {
         add_spouse = inger0001
@@ -4794,8 +4821,8 @@ martinakoi0012 = {
 	843.3.11 = { # Feast of Orthodoxy
 		religion = "orthodox"
 	}
-    891.1.1 = {
-        death = "891.1.1" # Unknown
+    877.1.1 = {
+        death = yes # Unknown
     }
 }
 
@@ -4944,14 +4971,33 @@ inger0001 = { # https://en.wikipedia.org/wiki/Inger_(senator)
 	}
 }
 
-inger0002 = { # Fictional brother to Eudokia Ingerina as she had several siblings
+inger0002 = { # Fictional sister to Eudokia Ingerina as she had several siblings. Will be married to Rhabdouchos to provide the relationship to Leon VI
+	name = "Sophia"
+	female = yes
+	dynasty = 1022158
+	father = inger0001
+	mother = martinakoi0012
+	religion = "orthodox"
+	culture = "greek"
+	833.1.1 = { # Unknown
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = rhabdouchoi0001
+	}
+	898.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+inger0003 = { # Fictional brother to Eudokia Ingerina as she had several siblings
 	name = "Niklas"
 	dynasty = 1022158
 	father = inger0001
 	mother = martinakoi0012
 	religion = "orthodox"
 	culture = "greek"
-	838.1.1 = {
+	837.1.1 = {
 		birth = yes
 	}
 	900.1.1 = { # Unknown
@@ -4959,14 +5005,14 @@ inger0002 = { # Fictional brother to Eudokia Ingerina as she had several sibling
 	}
 }
 
-inger0003 = { # Fictional brother to Eudokia Ingerina as she had several siblings
+inger0004 = { # Fictional brother to Eudokia Ingerina as she had several siblings
 	name = "Inge"
 	dynasty = 1022158
 	father = inger0001
 	mother = martinakoi0012
 	religion = "orthodox"
 	culture = "greek"
-	845.1.1 = { # Fictional
+	843.1.1 = { # Fictional
 		birth = yes
 	}
 	898.1.1 = { # Fictional
@@ -4981,9 +5027,11 @@ inger0003 = { # Fictional brother to Eudokia Ingerina as she had several sibling
 krateros0001 = { # Unnamed possible member of the Krateros family who was Strategos of the Anatolikon theme circa. 816 - https://www.degruyter.com/database/PMBZ/entry/PMBZ15313/html
 	name = "Leon"
 	dynasty = 101348
-	religion = "orthodox"
+	religion = "iconoclast"
 	culture = "greek"
 	father = 145830
+
+	trait = zealous # Described in the Life of Theodore the Studite as a fervent iconoclast
 
 	775.1.1 = { # Unknown
 		birth = yes
@@ -4993,7 +5041,7 @@ krateros0001 = { # Unnamed possible member of the Krateros family who was Strate
 	}
 }
 
-krateros0002 = { # Fictional
+krateros0002 = { # Fictional; created to link earlier known family members to later known Krateros
 	name = "Niketas"
 	dynasty = 101348
 	religion = "orthodox"
@@ -5204,7 +5252,7 @@ kourkouas0009 = {
 ### Additional Melissenos Family ###
 ### http://constantinople.ehw.gr/Forms/fLemmaBody.aspx?lemmaid=7976 / http://asiaminor.ehw.gr/Forms/fLemmaBodyExtended.aspx?lemmaID=7976 ###
 laloudios0001 = { # unnamed sister of Eudokia (wife of Constantine V) who married Michael Melissenos, the first attested member of the Melissenos family
-	name = "Irene"
+	name = "Eirene"
 	dynasty = 1022264
 	female = yes
 	religion = "iconoclast"
@@ -5237,6 +5285,7 @@ melissenos0001 = { # possibly a member of the Melissenos family who was among th
 		birth = yes
 	}
 	845.3.6 = {
+		trait = saint # One of the 42 Martyrs of Amorium. Venerated as a saint & Christian martyr due to their refusal to convert to Islam and their subsequent execution as the hands of the Muslims
 		death = {
 			death_reason = death_execution
 			killer = 34009 # Caliph al-Wathiq
@@ -5741,7 +5790,7 @@ rhangabe0004 = { # https://en.wikipedia.org/wiki/Michael_I_Rangabe#Family
 
 ### Family of Nasar ###
 nasar0001 = { # held the supreme court position of magistros https://en.wikipedia.org/wiki/Nasar
-	name = "Christopher"
+	name = "Christophoros"
 	dynasty = dynasty_mardaites
 	religion = "orthodox"
 	culture = "assyrian"
@@ -6144,9 +6193,10 @@ skythopoulos0001 = { # Andrew the Scythian; served as Strategos of the Opsikion 
 	trait = education_martial_3
 	trait = diligent # he distinguished himself in the constant war of raids and counter-raids with the Muslim border emirates of Melitene and Tarsus
 	trait = temperate # Possibly incorrectly, Theophanes Continuatus reports that he was dismissed due to accusations of timidity, after failing to follow up on a decisive victory against the emir of Tarsus
+	trait = brave # Genesios notes the bravery of Andreas in his history
 	trait = cynical # was instrumental in the downfall of the Patriarch Photios, who along with his protégé Theodore Santabarenos was accused by Andrew and the magistros Stephen of plotting to overthrow Leo
-	trait = patient
 	trait = cautious_leader # Possibly incorrectly, Theophanes Continuatus reports that he was dismissed due to accusations of timidity, after failing to follow up on a decisive victory against the emir of Tarsus
+	trait = intellect_good_2 # Genesios notes the intellegent nature of Andreas in his history
 	trait = loyal
 	831.1.1 = {
 		birth = yes
@@ -6155,16 +6205,13 @@ skythopoulos0001 = { # Andrew the Scythian; served as Strategos of the Opsikion 
 		culture = "greek"
 		give_nickname = nick_the_scythian
 	}
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 1
-				}
+	867.1.1 = { # Andrew may be identifiable as the man of the same name who commanded the imperial bodyguard, the Hetaireia, when the young Basil I served there during his swift rise from a simple stable groom to high office in the late 850s and early 860s as a protégé of Emperor Michael III
+		employer = 70490 # Michael III
+		effect = { # Andrew's rise to higher office would not happen till Basil's rise, so lets have him as an Imperial bodyguard to start
+			court_position_grant_effect = {
+				EMPLOYER = title:e_byzantium.holder
+				POS = bodyguard
+				CANDIDATE = character:skythopoulos0001
 			}
 		}
 	}
@@ -7025,14 +7072,340 @@ heraclian0001 = { # Tiberius, sometimes enumerated as Tiberius IV, was the son o
 	}
 }
 
+## Isauroi ##
+# Patriarch Photios' great-grandfather's maternal ancestry #
+# Sources confirm the high status afforded to the family starting in perhaps the late 7th century #
+isauroi0001 = { # Patriarch Photios' great-great-grandfather Tarasios. Patrician whose name is known from a mention in the patriarchal register found in the Vindobonensis theol. gr. 302
+	name = "Tarasios"
+	dynasty = dynasty_isauroi #  may have been Isaurian considering the prevaliance of the name Tarasios in the region
+	religion = "orthodox"
+	culture = "greek" # 
+	772.1.1 = { # Unknown
+		birth = yes
+	}
+	833.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+isauroi0002 = { #  
+	name = "Enkrateia"
+	female = yes
+	dynasty = dynasty_isauroi #
+	father = isauroi0001
+	religion = "orthodox"
+	culture = "greek" # 
+	717.1.1 = { # Unknown
+		birth = yes
+	}
+	737.1.1 = {
+		add_spouse = marzoukoi0002 # Patriarch Photios' great-grandfather Gregorios. Father to Patriarch Tarasios
+	}
+	774.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+## Paternal ancestors of the Patriarch Photios. No family name or something of the like to go off of, so Dynasty will be inspired by the nickname given to Photios (Marzouka) ##
+# Patriarch Photios' paternal ancestry & dynasty; including such figures as the Patriarch Tarasios #
+# Sources confirm the high status afforded to the family starting in perhaps the late 7th century #
+marzoukoi0001 = { #  Patriarch Photios' paternal great-great-grandfather Sisinnios. Patrician whose name is known from a mention in the patriarchal register found in the Vindobonensis theol. gr. 302
+	name = "Sisinnios"
+	dynasty = dynasty_marzoukoi # Family may have had a Caucasian origin considering some of the insults levied against Photios (Chazaroprosopos & Marzukas/Marzouka)
+	religion = "orthodox"
+	culture = "greek" # 
+	685.1.1 = { # Unknown
+		birth = yes
+	}
+	742.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0002 = { # Patriarch Photios' great-grandfather Gregorios. Father to Patriarch Tarasios
+	name = "Gregorios" # Name is taken from the Vita Tarasii by Ignatios the Deacon 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0001
+	religion = "orthodox"
+	culture = "greek" # 
+	716.1.1 = { # Unknown
+		birth = yes
+	}
+	737.1.1 = {
+		add_spouse = isauroi0002 # Patriarch Photios' great-grandmother Enkrateia. Mother to Patriarch Tarasios
+	}
+	769.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0003 = { # Patriarch Photios' grand-uncle Sisinnios. Held in captivity by the Franks during the 790s
+	name = "Sisinnios" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0002
+	mother = isauroi0002
+	religion = "orthodox"
+	culture = "greek" # 
+	738.1.1 = { # Unknown
+		birth = yes
+	}
+	799.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Patriarch Tarasios (ID: 145043). Born 740 AD. Grand-uncle to Patriarch Photios
+
+marzoukoi0004 = { # Patriarch Photios' grandfather Zacharias; Consul and jailer of Niketas of Mediko during the reign of Leo V
+	name = "Zacharias" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0002
+	mother = isauroi0002
+	religion = "orthodox"
+	culture = "greek" # 
+	744.1.1 = { # Unknown
+		birth = yes
+	}
+	808.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0005 = { # Patriarch Photios' father Sergios, sometimes considered the same individual as Sergios the Confessor 
+	name = "Sergios" # 
+	dynasty = dynasty_marzoukoi
+	father = marzoukoi0004
+	religion = "orthodox"
+	culture = "greek"
+	trait = honest
+	trait = zealous
+	trait = stubborn
+	792.1.1 = { # Unknown
+		birth = yes
+	}
+	815.1.1 = { # Photios' parents were married around 815 AD
+		add_spouse = morocharzanios0002
+	}
+	822.6.15 = { # Unknown; Died young according to Photios and likely predeceased his son Sergios considering Byzantine naming conventions at that time
+		death = yes
+	}
+}
+
+marzoukoi0006 = { # Patriarch Photios' (likely oldest) brother Zacharias who died young. Nothing is known about him or his existence, but likely to have existed considering Byzantine naming conventions of the time
+	name = "Zacharias" # Following Byzantine naming convention at the time, the first son was named for their paternal grandfather
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0005
+	mother = morocharzanios0002
+	religion = "orthodox"
+	culture = "greek" # 
+	815.1.1 = { # Unknown
+		birth = yes
+	}
+	817.6.1 = { # Unknown; Likely died young due to lack of info on him
+		death = yes
+	}
+}
+
+marzoukoi0007 = { # Patriarch Photios' (likely oldest living) brother Tarasios who was a Patrician. Was a recipient of several letters from Photios
+	name = "Tarasios" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0005
+	mother = morocharzanios0002
+	religion = "orthodox"
+	culture = "greek" # 
+	817.1.1 = { # Unknown
+		birth = yes
+	}
+	875.1.1 = { # Unknown; At least lived till Photios' first exile where he was the subject of several letters from Photios
+		death = yes
+	}
+}
+
+marzoukoi0008 = { # Patriarch Photios' brother Konstantinos who was a Protospatharios
+	name = "Konstantinos" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0005
+	mother = morocharzanios0002
+	religion = "orthodox"
+	culture = "greek" # 
+	819.1.1 = { # Unknown
+		birth = yes
+	}
+	883.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+# Patriarch Photios (ID: 70554). Born 820 AD. 
+
+marzoukoi0009 = { # Patriarch Photios' brother Theodoros. Nothing is known about him though he may have been a member of the clergy
+	name = "Theodoros" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0005
+	mother = morocharzanios0002
+	religion = "orthodox"
+	culture = "greek"
+	trait = devoted # May have been a member of the clergy
+	822.1.1 = { # Unknown
+		birth = yes
+	}
+	881.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0010 = { # Patriarch Photios' brother Sergios. Protospatharios, Patrikios. 
+	name = "Sergios" # 
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0005
+	mother = morocharzanios0002
+	religion = "orthodox"
+	culture = "greek" # 
+	823.1.1 = { # Unknown, though likely sometime around 815-825. Sergios is likely a posthumous child born after the death of his father considering Byzantine children would not be given the name of the father while the father was alive
+		birth = yes
+	}
+	845.1.1 = {
+		add_spouse = Mamikonian0006 # Irene, sister to Empress Theodora. There is confusion to who exactly was the husband of Eirene (if she was married at all). According to the corrupt, but more original version in Theoph. Eirene was given as a wife to the "brother of Eirene, the mother of the patriarch Photios", i.e. an uncle. According to the shortened and slightly altered version in Skylitzes, Eirene was given as a wife to S., the brother of Photius
+	}
+	878.1.1 = { # Unknown. He received instructive letters from Photius, intended to guide him in matters of faith, theology, and morality. Due to their general content, none of these letters offers a basis for a more precise dating; based on their position within Photius's corpus of letters, they would be placed around the 860s to early 870s of the 9th century.
+		death = yes
+	}
+}
+
+marzoukoi0011 = { # Photios mentions having some nephews from his brother Tarasios in a letter he wrote himself
+	name = "Sergios" # In Byzantine tradition, the first-born son is almost always named after the paternal grandfather
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0007 # Photios' brother Tarasios
+	religion = "orthodox"
+	culture = "greek" # 
+	847.1.1 = { # Unknown
+		birth = yes
+	}
+	899.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0012 = { # Photios mentions a niece who died in childbirth in a consolation letter written by Photios to his brother Tarasios during Photios' first exile
+	name = "Eirene" # Name unknown
+	female = yes
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0007 # Photios' brother Tarasios
+	religion = "orthodox"
+	culture = "greek" # 
+	849.1.1 = { # Unknown
+		birth = yes
+	}
+	867.1.1 = {
+		add_spouse = katakalon0003 # Leon Katakalon who was married to a relative of Photios, and since Photios himself had no children it must've been a niece and it is thought to be one of Tarasios' daughters
+	}
+	868.1.1 = { # Unknown; though Photios mentions a niece who died in childbirth in a consolation letter written by Photios to his brother Tarasios during Photios' first exile at the Skepi monastery (during the early years of the reign of Basil I)
+		death = {
+			death_reason = death_childbirth
+		}
+	}
+}
+
+marzoukoi0013 = { # Leon "Ptaolemes"; a guard of Ignatios who is mentioned in the Vita Ignatti as a relative (word used is likely meaning nephew) of Photios
+	name = "Leon" # Leo
+	dynasty = dynasty_marzoukoi #
+	father = marzoukoi0007 # Photios' brother Tarasios
+	religion = "orthodox"
+	culture = "greek" # 
+	851.1.1 = { # Unknown
+		birth = yes
+		give_nickname = nick_ptaolemes
+	}
+	902.1.1 = { # Unknown; nothing is known past the reference to Leon "Ptaolemes" inside the Vita Ignatti
+		death = yes
+	}
+}
+
+# According to the Vita Euthymii, Nikolaos I. Mystikos was a relative (οἰκογενής) of Photius
+
+marzoukoi0014 = { # Bardas Kontomytes. Magistros. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ11881/html
+	name = "Bardas"
+	dynasty = dynasty_marzoukoi
+	religion = "orthodox"
+	culture = "greek"
+	father = marzoukoi0010
+	mother = Mamikonian0006
+	840.1.1 = {
+		birth = yes
+	}
+	858.1.1 = {
+		add_spouse = kontomytes0001
+		give_nickname = nick_kontomytes
+	}
+	880.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+marzoukoi0015 = { Stephanos. Magistros. # https://www.degruyterbrill.com/database/pmbz/entry/PMBZ18300/html
+	name = "Stephanos"
+	dynasty = dynasty_marzoukoi
+	religion = "orthodox"
+	culture = "greek"
+	father = marzoukoi0010
+	mother = Mamikonian0006
+	843.1.1 = { # Unknown
+		birth = yes
+	}
+	895.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+kontomytes0001 = { # https://en.wikipedia.org/wiki/Constantine_Kontomytes
+	name = "Theodora"
+	female = yes
+	dynasty = 1022168
+	religion = "orthodox"
+	culture = "greek"
+	father = 145190
+	837.1.1 = {
+		birth = yes
+	}
+	895.1.1 = {
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Morocharzanios ##
 ## an aristocratic family of Armenian descent whose members include John VII of Constantinople ##
 morocharzanios0001 = { # Pankratios Morocharzanios, member of an aristocratic family of Armenian descent and father to John VII of Constantinople and Arsaber
 	name = "Pankratios"
 	dynasty = 8654 # Morocharzanios
+	father = morocharzanios0005
 	religion = "orthodox"
 	culture = "armenian" # Of Armenian descent
-	775.1.1 = { # Unknown
+	772.1.1 = { # Unknown
 		birth = yes
 	}
 	833.3.11 = { # Unknown
@@ -7040,13 +7413,38 @@ morocharzanios0001 = { # Pankratios Morocharzanios, member of an aristocratic fa
 	}
 }
 
-morocharzanios0002 = { # https://en.wikipedia.org/wiki/Theoktiste / https://en.wikipedia.org/wiki/John_VII_of_Constantinople
+morocharzanios0002 = { # Mother to Patriarch Photios and wife to a Sergos spatharios - From Deconstructing Photios: family relationship and political kinship in middle Byzantium
+	name = "Eirene"
+	female = yes
+	dynasty = 8654 # 
+	father = morocharzanios0001
+	religion = "orthodox" # # According to sources, Photios' parents were openly supportive of Icons and sufferd for it
+	culture = "armenian"
+	trait = zealous # According to sources, Photios' parents were openly supportive of Icons and sufferd for it
+	trait = stubborn
+	795.1.1 = {
+		birth = yes
+	}
+	815.1.1 = { # Photios' parents were married around 815 AD
+		add_spouse = marzoukoi0005
+	}
+	825.1.1 = { # Unknown, though Photios writes that both his mother and father died young
+		death = yes
+	}
+}
+
+morocharzanios0003 = { # Patrikios, Magistros. Married to Maria, a sister of Empress Theodora, a brother of Eirene, and brother-in-law (maybe) of Sergios - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ11687/html / https://pbe.kcl.ac.uk/data/D14/F94.htm
 	name = "Arsaber"
 	dynasty = 8654 # Warren Treadgold identifies Arsaber (husband to Maria) as the same as Arsaber (brother of John VII of Constantinople)
 	father = morocharzanios0001
 	religion = "iconoclast"
-	culture = "greek"
-	807.1.1 = {
+	culture = "armenian"
+	# Skylitzes describes Arsaber as "a person of nobility and courage, outstanding among his contemporaries"
+	trait = education_diplomacy_4
+	trait = calm
+	trait = just
+	trait = brave
+	806.1.1 = {
 		birth = yes
 	}
 	834.1.1 = {
@@ -7060,27 +7458,275 @@ morocharzanios0002 = { # https://en.wikipedia.org/wiki/Theoktiste / https://en.w
 	}
 }
 
-morocharzanios0003 = { # Son of Maria, the sister of Empress Theodora and sister-in-law of Emperor Theophilos. Appointed one of the guardians of the young Constantine VII - https://en.wikipedia.org/wiki/Stephen_(son_of_Kalomaria) / https://www.degruyter.com/database/PMBZ/entry/PMBZ29378/html
+morocharzanios0004 = { # Son of Maria, the sister of Empress Theodora and sister-in-law of Emperor Theophilos. Appointed one of the guardians of the young Constantine VII - https://en.wikipedia.org/wiki/Stephen_(son_of_Kalomaria) / https://www.degruyter.com/database/PMBZ/entry/PMBZ29378/html
 	name = "Stephanos"
 	dynasty = 8654
 	religion = "orthodox"
-	culture = "greek"
-	father = morocharzanios0002
+	culture = "armenian"
+	father = morocharzanios0003
 	mother = Mamikonian0004
 	trait = education_stewardship_3
 	trait = just # Probably served as a judge, because he is said to have "administered justice"
 	trait = diligent
 	trait = temperate
-	845.1.1 = {
+	847.1.1 = { # His first mention in the sources dates to 886, when Leo VI had him and the servant Andreas conduct a treason trial against Theodoros Santabarenos and the (former) Patriarch Photios. Must have been an adult of reasonable standing at this point
 		birth = yes
 	}
-	866.1.1 = {
-		employer = 70490 # Michael III
-	}
 	921.2.8 = {
-		trait = devoted # Accused of having himself designs on the throne, he was exiled to the island of Antigone, where he was forced to become a monk
+		trait = devoted # Accused of having himself designs on the throne, he was exiled to the island of Antigone, where he was forced to become a monk (Note: At that age? He likely is 65+ years old)
 	}
 	922.1.1 = {
+		death = yes
+	}
+}
+
+morocharzanios0005 = { # Unknown father to Pankratios Morocharzanios to connect Leo the Mathematician to his cousin John the Grammarian
+	name = "Ioannes"
+	dynasty = 8654 # Morocharzanios
+	religion = "orthodox"
+	culture = "armenian" # Of Armenian descent
+	750.1.1 = { # Unknown
+		birth = yes
+	}
+	802.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+morocharzanios0006 = { # Unknown father to  John the Grammarian
+	name = "Arsaber"
+	dynasty = 8654 # Morocharzanios
+	father = morocharzanios0005
+	religion = "orthodox"
+	culture = "armenian" # Of Armenian descent
+	774.1.1 = { # Unknown
+		birth = yes
+	}
+	830.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+morocharzanios0007 = { # Byzantine philosopher and logician associated with the Macedonian Renaissance and the end of the Second Byzantine Iconoclasm - https://en.wikipedia.org/wiki/Leo_the_Mathematician
+	name = "Leon"
+	dynasty = 8654 # Morocharzanios # cousin or nephew of the Patriarch of Constantinople John the Grammarian
+	father = morocharzanios0006
+	religion = "orthodox"
+	culture = "armenian"
+	
+	#Skills
+	diplomacy = 10
+	martial = 5
+	stewardship = 8
+	intrigue = 6
+	learning = 15
+	prowess = 6
+	
+	#Education
+	trait = education_learning_5 # has been called a "true Renaissance man" and "the cleverest man in Byzantium in the 9th century"
+	
+	#Personality Traits
+	trait = diligent #  has been credited with a system of beacons (an optical telegraph) stretching across Asia Minor from Cilicia to Constantinople, which gave advance warning of Arab raids, as well as diplomatic communication. Leo also invented several automata, such as trees with moving birds, roaring lions, and a levitating imperial throne
+	trait = cynical # an iconoclast sometimes accused of paganism. Despite this, he delivered a sermon favourable of icons within months of Theophilos' death
+	trait = ambitious # An ambition not for power or authority, but for knowledge. From a young age, his thirst for knowledge took him beyond the limited educational options of the capital as he sought out the most learned people he could find to learn from
+	trait = humble # According to the stories, was not swayed by the Caliph's offer of riches if Leon would come to the Caliphal court as a teacher 
+	
+	#Other Traits
+	trait = scholar # wrote book-length works, poems, and many epigrams, and was also a compiler, who brought together a wide range of philosophical, medical, and astronomic texts
+	
+	trait = intellect_good_3 # I can think of no one more fitting for this trait
+	trait = lifestyle_herbalist 
+	trait = lifestyle_physician # composed his own medical encyclopaedia
+	trait = lifestyle_poet # composed poems
+
+	disallow_random_traits = yes
+	795.1.1 = { # circa. 790
+		birth = yes
+	}
+	840.4.1 = { # The emperor honoured Leo by having John the Grammarian consecrate him metropolitan of Thessalonica, which post he held from the spring of 840 to 843
+		trait = devoted
+		effect = {
+			add_trait_xp = {
+				trait = lifestyle_physician
+				value = 100
+			}
+        }
+	}
+	855.1.1 = { Around 855 AD, Leo was appointed at the head of a newly established Magnaura School by the Caesar Bardas
+		give_nickname = nick_the_philosopher # Also known as the Mathematician
+		employer = 70490
+		effect = {
+			court_position_grant_effect = {
+				EMPLOYER = title:e_byzantium.holder
+				POS = court_tutor
+				CANDIDATE = character:morocharzanios0007
+			}
+		}
+
+	}
+	869.1.10 = { # died after January 9, 869
+		death = yes
+	}
+}
+
+
+
+### Rhabdouchoi Family ###
+##  literally “stick bearer,” the lictor. ##
+# Family of notable individuals such as Ioannes Rhabdouchos and Leon Rhabdouchos #
+rhabdouchoi0001 = { # Unknown Rhabdouchos who served as Strategos of Dyrrhachium in 880. Possibly identical to Leon Rhabdouchos but large time gap between postings (880 & 917 AD) makes this unlikely - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ28945/html
+	name = "Theoktistos"
+	dynasty = dynasty_rhabdouchoi
+	religion = "orthodox"
+	culture = "greek"
+	829.1.1 = { # Unknown
+		birth = yes
+	}
+	850.1.1 = {
+		add_spouse = inger0002
+	}
+	889.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+rhabdouchoi0002 = { # Hypothesized sister of Leon Rhabdouchos who married Leon Choirosphaktes (Herlong, Social Mobility, 274 n. 222) to explain known connection (brother-in-law) between Leon Rhabdouchos and Leon Choirosphaktes
+	name = "Theodora"
+	female = yes
+	dynasty = dynasty_rhabdouchoi
+	father = rhabdouchoi0001
+	mother = inger0002
+	religion = "orthodox"
+	culture = "greek"
+	850.1.1 = {
+		birth = yes
+	}
+	867.1.1 = {
+		add_spouse = 145198 # Leon Choirosphaktes
+	}
+	901.1.1 = {
+		trait = possessed # She suffered from epilepsy. Before his exile, Leo had witnessed and cared for her for six years, so she could only have fallen ill around 901, at a relatively advanced age. For she was already an old woman when Leo was exiled.
+	}
+	915.1.1 = { # Unknown; Lived till at least 907 AD
+		death = yes
+	}	
+}
+
+rhabdouchoi0003 = { # Ioannes Rhabdouchos, saviour of Arethas at his trial in 900 AD
+	name = "Ioannes"
+	dynasty = dynasty_rhabdouchoi
+	father = rhabdouchoi0001
+	mother = inger0002
+	religion = "orthodox"
+	culture = "greek"
+	855.1.1 = { # Unknown
+		birth = yes
+	}
+	912.1.1 = { # Unknown; Lived till at least 900 AD
+		death = yes
+	}	
+}
+
+rhabdouchoi0004 = { # Leon Rhabdouchos, Protospatharios then Magistros. Strategos of Dyrrachion c.917 (and possibly 880) and Logothete of the Drome - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ26554/html
+	name = "Leon"
+	dynasty = dynasty_rhabdouchoi
+	father = rhabdouchoi0001
+	mother = inger0002
+	religion = "orthodox"
+	culture = "greek"
+	860.1.1 = { # Unknown
+		birth = yes
+	}
+	922.1.1 = { # Unknown; Lived till at least 917 AD
+		death = yes
+	}	
+}
+
+
+## BABOUTZIKOI FAMILY ##
+# Baboutzikoi family which may have been of Georgian origin
+baboutzikoi0001 = { # Fictional father of Constantine Baboutzikos to connect Constantine to his relative/possible brother Theodosios Babutzikos
+	name = "Theodoros" # 
+	dynasty = dynasty_baboutzikoi
+	religion = "iconoclast"
+	culture = "georgian" # Family is possibly of Goergian nobility if Konstantinos' identification with the Goergian prince Konstantinos (https://www.degruyterbrill.com/database/pmbz/entry/PMBZ15158/html) is accurate
+	777.1.1 = {
+		birth = yes
+	}
+	836.1.1 = {
+		death = yes
+	}
+}
+
+baboutzikoi0002 = { # magistros Konstantine Baboutzikos, husband of Empress Theodora's sister. A patrikios and a droungarios (presumably the droungarios of the Vigla). One of the 42 Martyrs of Amorium and supposedly the highest in rank of all the martyrs - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ15085/html / https://pbe.kcl.ac.uk/data/D43/F41.htm
+	name = "Konstantinos"
+	dynasty = dynasty_baboutzikoi
+	father = baboutzikoi0001
+	religion = "iconoclast"
+	culture = "greek"
+	trait = zealous
+	trait = brave
+	trait = stubborn # Resisted conversion
+	trait = education_martial_3 # one of the army commanders and patrikioi captured at Amorion
+	trait = unyielding_defender # one of the army commanders and patrikioi captured at Amorion
+	trait = loyal # Loyal to his faith as he persisted in refusing to deny his faith throughout his seven years of imprisonment
+	805.1.1 = {
+		birth = yes
+	}
+	830.1.1 = {
+		add_spouse = Mamikonian0003
+	}
+	843.3.11 = { # Feast of Orthodoxy
+		religion = "orthodox"
+	}
+	845.3.6 = {
+		trait = saint # One of the 42 Martyrs of Amorium. Venerated as a saint & Christian martyr due to their refusal to convert to Islam and their subsequent execution as the hands of the Muslims
+		death = {
+			death_reason = death_execution
+			killer = 34009 # Caliph al-Wathiq
+		}
+	}
+}
+
+baboutzikoi0003 = { # Theodosios Babutzikos; Patrikios & ambassador to Venice and Frankish court between 840-842. Relative (Possibly the brother) of Konstantine Baboutzikos - https://pbe.kcl.ac.uk/data/D77/F68.htm / https://www.degruyterbrill.com/database/pmbz/entry/PMBZ19124/html
+	name = "Theodosios"
+	dynasty = dynasty_baboutzikoi
+	father = baboutzikoi0001 # Exact relationship between Konstantinos & Theodosios is unknown 
+	religion = "iconoclast"
+	culture = "greek"
+	trait = education_diplomacy_3
+	trait = gregarious
+	trait = diligent
+	trait = patient
+	807.1.1 = { # Unknown
+		birth = yes
+	}
+	842.6.25 = { # Died during the second embassy
+		trait = diplomat # Earned as a result of his diplomatic ventures
+		death = yes
+	}
+}
+
+baboutzikoi0004 = { # Unnamed member of the Babutzikos family who participated in the conspiracy of Ioannes Kurkuas in the winter of 885/886 - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ22879/html / Fused with Theodoros (whose family is unknown) who served as strategos of Kibyrrhaioton for convenience- https://www.degruyterbrill.com/database/pmbz/entry/PMBZ29802/html
+	name = "Theodoros" # Unnamed, but given Theodoros to fuse this character with Theodoros, Basilikos Protospatharios and Strategos of Kibyrrhaioton - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ29802/html
+	dynasty = dynasty_baboutzikoi
+	father = baboutzikoi0002 # Relation to other Babutzikos is unknown, so I will attach him to Konstantinos and Sophia because its more interesting
+	mother = Mamikonian0003
+	religion = "iconoclast"
+	culture = "greek"
+	# Assigning specific traits from father and mother cause randomness is bad
+	trait = education_diplomacy_3
+	trait = generous
+	trait = zealous
+	trait = temperate
+	trait = beauty_good_1 # Fictional; inherited from his mother
+	833.1.1 = { # Unknown
+		birth = yes
+	}
+	843.3.11 = { # Feast of Orthodoxy
+		religion = "orthodox"
+	}
+	892.1.1 = { # in the winter of 885/886, following Basil I's discovery of the conspiracy against him, banished the conspirators after a humiliating parade to the forum. Nothing after is known
 		death = yes
 	}
 }
@@ -7088,6 +7734,262 @@ morocharzanios0003 = { # Son of Maria, the sister of Empress Theodora and sister
 
 
 
+
+
+
+
+
+
+### CHOIROSPHAKTES FAMILY ###
+## Notable 9th century Roman family which produced individuals such as Leon Choirosphaktes ##
+# https://www.degruyterbrill.com/database/pmbz/search?query=*&documentTypeFacet=databaseEntry&keywordTypesAndValues=dbPerson~Choirosphaktes%20%28Familienname%29 #
+
+choirosphaktes0001 = { # Unnamed father to Leon Choirosphaktes and Palatinos Choirosphaktes / Fused with Theophylaktos (whose family is unknown) who served as strategos of Armeniakoi for convenience- https://www.degruyterbrill.com/database/pmbz/entry/PMBZ19629/html
+	name = "Theophylaktos" # Unnamed; Named Theophylaktos to fuse this character with the Theophylaktos, strategos of Armeniakoi, who received a letter from Patriarch Photios written between 26 May 866 and 23 Sept
+	dynasty = 101234 # Choirosphaktes
+	religion = "orthodox"
+	culture = "greek"
+	825.1.1 = { # Unknown
+		birth = yes
+	}
+	883.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+choirosphaktes0002 = { # Palatinos Choirosphaktes; a brother of Leon Choirosphaktes, who composed the Anacreontic funerary poem in Palatinos' honor
+	name = "Palatinos" # The name derives from a non-specific title: *Palatinos* (“courtier,” “court dignitary”)
+	dynasty = 101234 # Choirosphaktes
+	father = choirosphaktes0001
+	religion = "orthodox"
+	culture = "greek"
+	850.1.1 = { # Unknown; Since Leon was likely born between 840 and 850, P. was presumably born around the same time. 
+		birth = yes
+	}
+	905.1.1 = { # Unknown; He predeceased his brother Leon, who is last mentioned in the year 913.
+		death = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Guber/Gumer/Guberioi ##
+## A distinguished family whose members resided in both Cappadocia and Constantinople ##
+## Family name perhaps comes from bulgar. Theorizied to be derived from Kubrat's son Kuber (see Rosenquist in: Vita Irenae Chrysobalanton (BHG 952) XXXII note 27 (Lit.)). ##
+dulo0001 = {
+    name = "Kuber" # Son of Kubrat, he first went to Sirmium and then to Macedonia (according to the Miracles of Saint Demetrius) where his descendants become the Guberioi
+    dynasty = 591 # Dulo
+    religion = "tengri_pagan"
+    culture = "bolghar" #
+    father = 159117 # Kubrat
+    622.1.1 = {
+        birth = yes # Is an adult when Kubrat died in 642
+    }
+    695.1.1 = {
+        death = yes # Still alive in 689
+    }
+}
+
+dulo0002 = { # Fictional son of Kuber to connect to later Guberioi members
+    name = "Kubrat" # 
+    dynasty = 591 # Dulo
+    religion = "tengri_pagan"
+    culture = "bolghar" #
+    father = dulo0001
+    675.1.1 = {
+        birth = yes # Fictional
+    }
+    740.1.1 = {
+        death = yes # Fictional
+    }
+}
+
+dulo0003 = { # Fictional son of the fictional Kubrat to connect to later Guberioi members
+    name = "Kuber" # 
+    dynasty = 591 # Dulo
+    religion = "tengri_pagan"
+    culture = "bolghar" #
+    father = dulo0002
+    720.1.1 = {
+        birth = yes # Fictional
+    }
+    777.1.1 = {
+        death = yes # Fictional
+    }
+}
+
+guberioi0001 = { # A Bulgarian Christian convert taken prisoner by the Bulgarians during the capture of Adrianople in 813 and is among those who died as martyrs in Bulgaria under the Bulgarian Khan Omurtag - https://telota.bbaw.de/pmbz/scripts/browse.xql?position=4246
+    name = "Kupergos" # Probably a Bulgarian who converted to Christianity
+    dynasty = dynasty_guberioi # Considering the name relation to Kuber, perhaps an early member of the Guberioi?
+    religion = "orthodox"
+    culture = "bolghar" #
+    father = dulo0003 # The name suggests Bulgarian origin (Kuber)
+	trait = education_martial_2
+	trait = zealous # Died a martyr
+	trait = brave # Was a soldier 
+    766.1.1 = {
+        birth = yes # Probably captured in Adrianople in 813
+    }
+    815.4.1 = { # died as martyrs in Bulgaria under the Bulgarian Khan Omurtag, probably after his accession in March 815, or even under Omurtag's predecessor Ditzeugos
+		death = {
+			death_reason = death_execution
+			killer = 159124 # the Bulgarian Khan Omurtag
+		}
+    }
+}
+
+guberioi0002 = { # Envoy of Michael II to a follower of Thomas the Slav - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ13647/html
+    name = "Gyberin" # Probably more referring to family name than given name
+    dynasty = dynasty_guberioi # Considering his name, it is "conceivable that G. is an early member of the Guber family, who is merely being disparaged here as ἄγροικος (farmer)."
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0001
+	trait = education_diplomacy_3
+	trait = diplomat # Envoy of Michael II to a follower of Thomas the Slav
+    789.1.1 = {
+        birth = yes # Unnknown, but mentioned in 823 so must have been an adult
+    }
+    840.1.1 = {
+        death = yes # Unknown
+    }
+}
+
+guberioi0003 = { # When Eirene of Chrysobalanton (# 1452) came to Constantinople in 855 to seek a bride for Emperor Michael III, she was greeted by members of the family so there is more than one family line or line of descent
+    name = "Guber" # Fictional to represent Constantinople line
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0002
+    811.1.1 = {
+        birth = yes
+    }
+    863.1.1 = {
+        death = yes
+    }
+}
+
+guberioi0004 = { # Komes of Opsikion and Logothetes Dromos during the later 9th century - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ13641/html
+    name = "Theodore" # Unknown; while the family name is known (Guber), the given name is unknown
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0003 # Constantinople line
+    835.1.1 = {
+        birth = yes # Unknown; Made Logothetes des Dromos in 866 so reasonably must have been an adult
+    }
+    897.1.1 = {
+        death = yes # Made Patrician in 886, so must have died after this date
+    }
+}
+
+guberioi0005 = { # When Eirene of Chrysobalanton (# 1452) came to Constantinople in 855 to seek a bride for Emperor Michael III, she was greeted by members of the family so there is more than one member of the Constantinople branch
+    name = "Thekla" #
+	female = yes
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0003 # Constantinople line
+    838.1.1 = {
+        birth = yes # Fictional
+    }
+    904.1.1 = {
+        death = yes # Fictional
+    }
+}
+
+guberioi0006 = { # When Eirene of Chrysobalanton (# 1452) came to Constantinople in 855 to seek a bride for Emperor Michael III, she was greeted by members of the family so there is more than one family line or line of descent
+    name = "Theophylaktos" #
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0003 # Constantinople line
+    840.1.1 = {
+        birth = yes # Fictional
+    }
+    899.1.1 = {
+        death = yes # Fictional
+    }
+}
+
+guberioi0007 = { # Unknownn/Fictional Father to Theodosia and Eirene; member of the Cappadocian branch of the Guberioi
+    name = "Leon" # Fictional to represent Constantinople line
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0002 # Cappadocian Branch
+    812.1.1 = {
+        birth = yes # Fictional
+    }
+    877.1.1 = {
+        death = yes # Fictional
+    }
+}
+
+guberioi0008 = {
+    name = "Theodosia" # Second wife of Bardas, sister of Eirene
+    female = yes
+    dynasty = dynasty_guberioi
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0007 # Cappadocian Branch
+	trait = zealous
+	trait = stubborn
+	trait = chaste
+    836.1.1 = { # Married before Eirene so probably older sister
+        birth = yes
+    }
+    855.1.1 = {
+        add_spouse = Mamikonian0002 # The Ceasar Bardas
+    }
+    862.1.1 = {
+        remove_spouse = Mamikonian0002 # Bardas later repudiated her because she stood in the way of his relationship with his daughter-in-law
+		trait = devoted # Possibly an abbess (according to Papadopulos-Kerameus, see P). If so, happened after her repudiation by Bardas
+    }
+    900.1.1 = {
+        death = yes # Unknown
+    }
+}
+
+guberioi0009 = { # Eirene (from Chrysobalanton); a Byzantine hegumenia and Saint
+    name = "Eirene" #
+    dynasty = dynasty_guberioi # Family name: Guberios; likely a variant of the Guberioi family or name of a branch of the family located in Cappadocia
+    female = yes
+    religion = "orthodox"
+    culture = greek #
+    father = guberioi0007 # Cappadocian Branch
+	trait = education_learning_3
+	trait = generous # She was so impressed by the nuns in the Monastery of Chrysovalantou and their way of life that she freed her slaves and distributed her wealth to the poor
+	trait = temperate # Known for her fasting and days spent eating only apples
+	trait = diligent # Devoted and hard-working
+	trait = humble # served the sisters with great humility and obedience
+	trait = beauty_good_2 # was considered as a prospective bride for the Emperor Michael III (842–867) due to her beauty and virtue
+    838.7.28 = {
+        birth = yes # Born in Cappadocia into a wealthy and distinguished family, probably between 835 and 840 considering she is said to have died at the age of 97 in 935
+    }
+	858.1.1 = { # Having failed to be chosen as Michael III's wife, E. entered the Chrysobalanton Monastery, where, after three years, following the death of the incumbent abbess, she was consecrated deaconess and abbess
+		trait = devoted
+		trait = celibate # Lets not allow the possibility CK3's apptitude for everyone being seduced to apply here
+		trait = lifestyle_mystic # She allegedly possessed the gift of second sight and prophesied, among other things, the murders of Bardas and Emperor Michael III
+	}
+    935.7.28 = {
+        death = yes # Died july 28, at the age of 97
+    }
+}
 
 
 

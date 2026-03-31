@@ -196,11 +196,54 @@ create_artifact_raven_banner_effect = { # Raven Banner
 
 	scope:newly_created_artifact = {
 		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = raven_banner
 		# add_artifact_history = {
 		# 	type = given
 		# 	date = 866.11.1
 		# 	recipient = character:163112
 		# 	location = province:1595
 		# }
+	}
+}
+
+create_artifact_byz_throne_of_solomon_effect = {
+	# Get the character the artifact is being made for.
+	$OWNER$ = { save_scope_as = owner }
+	# Not really used, but if we don't set the scopes we get errors in the feature selection
+	set_artifact_rarity_illustrious = yes
+
+	# Create the artifact
+	create_artifact = {	
+		name = artifact_byz_throne_name
+		description = artifact_byz_throne_description
+		type = throne_special
+		visuals = ep3_throne_of_solomon
+		wealth = scope:wealth
+		quality = scope:quality
+		template = byz_throne_template
+		history = {
+			type = created
+			date = 835.1.1
+			actor = character:morocharzanios0007 # Leo the Mathematician
+			recipient = character:70491 # Emperor Theophilos
+			location = province:496 #Constantinople
+		}
+		modifier = byz_throne_modifier
+		save_scope_as = newly_created_artifact
+		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		set_variable = { name = historical_unique_artifact value = yes }
+		set_variable = byz_throne_of_solomon
+		save_scope_as = epic
+		save_scope_value_as = {
+			name = throne
+			value = yes
+		}
+		add_artifact_title_history = {
+			target = title:e_byzantium
+			date = 835.1.1
+		}
 	}
 }

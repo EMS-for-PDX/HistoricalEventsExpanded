@@ -209,9 +209,18 @@ c_vannes = {
 
 
 c_nantes = {
-	852.1.1 = {
-		holder = 163105
+	841.1.1 = {
+		holder = 168039 # Renaud d'Herbauges
+		liege = k_france
+	}
+	843.5.24 = {
+		holder = additionalguideschi0001 # Lambert II, Frankish Count of Nantes and Prefect of the Breton March between 843 and 851. In name, the county belonged to Amaury, the puppet count installed by Charles the Bald, King of West Francia, but de facto control rested most of the time with Lambert
+	}
+	851.8.22 = { # The Breton victory in the decisive Battle of Jengland led to the absorption of Nantes into Brittany's sphere of influence, though Lambert remained count
 		liege = d_brittany
+	}
+	852.5.1 = {
+		holder = 163105 # In 852, Salomon swore an oath to Charles and became his loyal follower (fidelis); in return, in a manner similar to Erispoe, he was granted Rennes, Nantes, and Retz as a "third" of Brittany to be held from Charles in fee
 	}
 	870.1.1 = {
 		holder = 50009 # Pascweten of Vannes
@@ -397,19 +406,13 @@ c_cornouaille = {
 
 
 c_french_leon = {
-	824.1.1 = {
+	840.1.1 = {
 		holder = 159687 # Guyomarch of Leon
-		liege = 0
+		liege = d_brittany
 	}
 	
-	#Normans "settle" here, go for slave trade
-	857.1.1 = {
-		holder = 303404	#fictional placeholder norse
-		liege = 0
-	}
-	887.1.1 = {
-		holder = 303405	#fictional placeholder norse
-	}
+	#Normans "settle" here, go for slave trade (In HEE, we move the slavers to LAAMPs)
+
 	
 	#Liberated from norman slavers
 	937.1.1 = {

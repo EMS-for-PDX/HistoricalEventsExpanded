@@ -243,7 +243,7 @@ HEE_hildr = { # Hildr Hrólfsdóttir - https://en.wikipedia.org/wiki/Hildr_Hr%C3
 	trait = patient
 	
 	#Other Traits
-	trait = poet # she composed a skaldic stanza (lausavísa), which is one of the few examples of skaldic poetry composed by a woman that have come down to modern day
+	trait = lifestyle_poet # she composed a skaldic stanza (lausavísa), which is one of the few examples of skaldic poetry composed by a woman that have come down to modern day
 	
 	#sexuality = heterosexual
 	

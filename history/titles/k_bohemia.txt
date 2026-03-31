@@ -348,32 +348,13 @@ c_praha = {
 
 
 c_litomerice = {
-	720.1.1 = {
+	# Semi-mythical Czech tribe
+	850.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = litomerici0001
 		government = tribal_government
 	}
-	731.1.1 = {
-		holder = 168346
-	}
-	748.1.1 = {
-		holder = 168347
-	}
-	764.1.1 = {
-		holder = 168348
-	}
-	783.1.1 = {
-		holder = 168349
-	}
-	804.1.1 = {
-		holder = 168350
-	}
-	820.1.1 = {
-		holder = 168351
-	}
-	851.1.1 = {
-		holder = 168344
-	}
+	# Integration into the Přemyslids
 	877.1.1 = {
 		holder = 500
 	}
@@ -460,30 +441,13 @@ c_zatec = {
 	1066.1.1 = { change_development_level = 10 }
 	1178.1.1 = { change_development_level = 24 }
 	
-	720.1.1 = {
+	# Semi-mythical Czech tribe
+	850.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = lucane0001
 		government = tribal_government
 	}
-	745.1.1 = {
-		holder = 168346
-	}
-	783.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	833.1.1 = {
-		holder = 168350
-	}
-	851.1.1 = {
-		#holder = 168351
-		holder = 168344
-	}
+	# Integration into the Přemyslids
 	873.1.1 = {
 		holder = 500
 	}
@@ -608,32 +572,13 @@ c_zatec = {
 
 
 c_plzen = {
-	720.1.1 = {
+	# Semi-mythical Czech tribe
+	850.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = doudlebove0001
 		government = tribal_government
 	}
-	738.1.1 = {
-		holder = 146174
-	}
-	787.1.1 = {
-		holder = 146175
-	}
-	801.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	833.1.1 = {
-		holder = 168350
-	}
-	836.1.1 = {
-		holder = 168352
-	}
+	# Integration into the Přemyslids
 	870.1.1 = {
 		holder = 500
 	}
@@ -716,30 +661,13 @@ c_plzen = {
 
 
 c_doudleby = {
-	720.1.1 = {
+	# Semi-mythical Czech tribe
+	850.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = doudlebove0001
 		government = tribal_government
 	}
-	745.1.1 = {
-		holder = 168346
-	}
-	783.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	833.1.1 = {
-		holder = 168350
-	}
-	851.1.1 = {
-		#holder = 168351
-		holder = 168352
-	}
+	# Integration into the Přemyslids
 	873.1.1 = {
 		holder = 500
 	}
@@ -857,28 +785,13 @@ c_doudleby = {
 
 
 c_boleslav = {
-	720.1.1 = {
+	# Semi-mythical Czech tribe
+	850.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = charvatci0001
+		government = tribal_government
 	}
-	745.1.1 = {
-		holder = 168346
-	}
-	783.1.1 = {
-		holder = 168347
-	}
-	804.1.1 = {
-		holder = 168348
-	}
-	820.1.1 = {
-		holder = 168349
-	}
-	833.1.1 = {
-		holder = 168350
-	}
-	851.1.1 = {
-		holder = 168351
-	}
+	# Integration into the Přemyslids
 	873.1.1 = {
 		holder = 500
 	}
@@ -1130,69 +1043,42 @@ c_hradec = {
 
 
 c_caslav = {
-	720.1.1 = {
+	741.1.1 = {
 		liege = "d_bohemia"
-		holder = 168345
+		holder = 187000
 		government = tribal_government
 	}
-	745.1.1 = {
-		holder = 168346
+	782.1.1 = {
+		holder = 146176
 	}
-	783.1.1 = {
-		holder = 168347
+	801.1.1 = {
+		holder = 146177
 	}
-	804.1.1 = {
-		holder = 168348
+	809.1.1 = {
+		holder = 187001
 	}
-	820.1.1 = {
-		holder = 168349
+	846.8.15 = {
+		holder = 187002
 	}
-	833.1.1 = {
-		holder = 168350
+	867.1.1 = {
+		holder = 168357
 	}
-	851.1.1 = {
-		holder = 168351
+	907.7.4 = {
+		liege = "d_bohemia"
 	}
-	873.1.1 = {
-		holder = 500
-	}
-	894.1.1 = {
-		holder = 502
-	}
-	915.1.1 = {
-		holder = 504
-	}
-	921.1.1 = {
-		holder = 506
+	910.1.1 = {
+		holder = 168358
 	}
 	935.1.1 = {
-		holder = 508
-		government = feudal_government #Ahistorical, just for ease of bookmarks.
+		government = feudal_government	#Ahistorical, just for ease of bookmarks.
 	}
-	972.1.1 = {
-		holder = 510
+	968.1.1 = {
+		holder = 168360
 	}
-	999.1.1 = {
-		holder = 512
+	981.3.18 = {
+		holder = 168363
 	}
-	1004.1.1 = {
-		holder = 514
-	}
-	1012.1.1 = {
-		holder = 516
-	}
-	1033.1.1 = {
-		holder = 514
-	}
-	1034.1.1 = {
-		holder = 516
-	}
-	1035.1.1 = {
-		holder = 518
-	}
-	1055.1.1 = {
-		holder = 520
-	}
+	
 	1061.1.1 = {
 		holder = 522
 	}

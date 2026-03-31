@@ -65,3 +65,70 @@ d_laamp_hastein = { # Hastein's band of roaming Vikings
 		holder = 0
 	}
 }
+
+d_laamp_breton_vikings = { # Olafr af Brest represents the Norse raiders who seized parts of Brittany in the 9th and 10th centuries
+	850.1.1 = { # In the early 840's, the Norse generally were involved in small coastal and river raids throughout the region
+		liege = 0
+		holder = 303404 # Olafr af Brest
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	887.1.1 = { # CK3's death date for Olafr
+		holder = 303405
+	}
+	937.1.1 = { # CK3's date for the liberation of Leon from Norse slavers
+		holder = 0
+	}
+}
+
+d_laamp_ivar = { # Ivar's band in the Great Heathen Army
+	865.9.1 = { # Late 865 AD saw the beginning of the Great Heathen Army's invasion
+		liege = 0
+		holder = 163111
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	870.1.1 = {
+		holder = 0
+	}
+}
+
+d_laamp_bagsecg = { # Bagsecg's portion of the Great Heathen Army that would invade Wessex
+	865.9.1 = { # Late 865 AD saw the beginning of the Great Heathen Army's invasion
+		liege = 0
+		holder = 163113
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	867.1.1 = {
+		effect = {
+			destroy_landless_title_no_dlc_effect = { DATE = 867.1.1 }
+		}
+	}
+	871.1.8 = { # Battle of Ashdown
+		holder = 0
+	}
+}

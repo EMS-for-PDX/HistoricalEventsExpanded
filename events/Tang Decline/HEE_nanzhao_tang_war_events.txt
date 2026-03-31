@@ -1,0 +1,210 @@
+namespace = HEE_nanzhao_tang_war
+
+HEE_nanzhao_tang_war.0001 = { # The Nanzhao King Shilong considers sending an envoy to Chengdu
+    type = character_event
+    window = big_event_window
+	title = HEE_nanzhao_tang_war.0001.t
+	desc = HEE_nanzhao_tang_war.0001.desc
+	theme = diplomacy # Possibly Intrigue?
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:chengdu_governor
+		animation = personality_honorable
+	}
+
+	trigger = {
+        this = title:k_dali.holder
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+
+	immediate = {
+		title:h_china.holder = { save_scope_as = chinese_emperor }
+		title:k_dali.holder = { save_scope_as = shilong }
+		title:c_chengdu.holder = { save_scope_as = chengdu_governor }
+	}
+
+	option = { # Send an envoy
+		name = HEE_nanzhao_tang_war.0001.a
+
+        scope:chengdu_governor = { 
+            trigger_event = {
+                id = HEE_nanzhao_tang_war.0002
+                days = { 70 90 } # Approx. travel time using CK3's travel system
+            }
+        }
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Send an spy as an envoy
+		name = HEE_nanzhao_tang_war.0001.b
+
+        scope:chengdu_governor = { 
+            trigger_event = {
+                id = HEE_nanzhao_tang_war.0002
+                days = { 70 90 } # Approx. travel time using CK3's travel system
+            }
+        }
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Do nothing
+		name = HEE_nanzhao_tang_war.0001.c
+
+		# Nothing
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_nanzhao_tang_war.0002 = { # The Governor of Chengdu recieves the Nanzhao envoy
+    type = character_event
+    window = big_event_window
+	title = HEE_nanzhao_tang_war.0002.t
+	desc = HEE_nanzhao_tang_war.0002.desc
+	theme = diplomacy # Possibly Intrigue?
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+	right_portrait = {
+		character = scope:shilong
+		animation = schadenfreude
+	}
+
+	trigger = {
+		is_alive = yes
+		is_landed = yes
+		is_imprisoned = no
+	}
+
+	#Resend
+
+	immediate = {
+
+	}
+
+	option = { # Welcome the envoy
+		name = HEE_nanzhao_tang_war.0002.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Execute the envoy
+		name = HEE_nanzhao_tang_war.0002.b
+
+		add_dread = 40
+
+        scope:chengdu_governor = { 
+            add_character_modifier = {
+				modifier = executed_envoy_modifier
+				years = 5
+			}
+        }
+
+        scope:shilong = { 
+            trigger_event = {
+                id = HEE_nanzhao_tang_war.0003
+                days = { 60 80 } # Approx. travel time using CK3's travel system (assume a swifter speed)
+            }
+        }
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Refuse the envoy
+		name = HEE_nanzhao_tang_war.0002.c
+
+		add_prestige = -250
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+HEE_nanzhao_tang_war.0003 = { # The Nanzhao King Shilong recieves word of his envoy's execution and considers his response
+    type = character_event
+    window = big_event_window
+	title = HEE_nanzhao_tang_war.0003.t
+	desc = HEE_nanzhao_tang_war.0003.desc
+	theme = diplomacy # Possibly Intrigue?
+
+	left_portrait = {
+		character = root
+		animation = personality_wrathful
+	}
+	right_portrait = {
+		character = scope:chengdu_governor
+		animation = personality_bold
+	}
+
+	trigger = {
+        this = title:k_dali.holder
+		is_alive = yes
+		is_landed = yes
+		is_independent_ruler = yes
+	}
+
+	#Resend
+
+	immediate = {
+
+	}
+
+	option = { # Welcome the envoy
+		name = HEE_nanzhao_tang_war.0003.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = { # Declare war!
+		name = HEE_nanzhao_tang_war.0003.b
+
+        #Declare the war.
+        title:k_dali.holder = {
+            start_war = {
+                casus_belli = invasion_war
+                target = title:k_xichuan.holder
+                target_title = title:k_xichuan
+            }
+        }
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+
+	option = { # Refuse the envoy
+		name = HEE_nanzhao_tang_war.0003.c
+
+		add_prestige = -250
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

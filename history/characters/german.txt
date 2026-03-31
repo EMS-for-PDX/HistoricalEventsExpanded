@@ -217,7 +217,7 @@
 	trait = architect # promoted the rebuilding of Roman cities and the preservation of ancient monuments in Italy
 	trait = overseer
 	trait = lifestyle_reveler
-	trait =	child_of_concubine_female # son of king Theodemir, a Germanic Amali nobleman, and his concubine Ereleuva
+	trait =	child_of_concubine_male # son of king Theodemir, a Germanic Amali nobleman, and his concubine Ereleuva
 	trait = reaver
 	454.1.1 = {
 		birth = yes

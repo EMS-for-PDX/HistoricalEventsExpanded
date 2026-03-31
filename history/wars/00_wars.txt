@@ -154,38 +154,9 @@ war = {
 	defenders = { 163094 }
 }
 
-#Sons of Lothbrok Invasion of East Anglia
-war = {
-	name = "war_867_Lothbrok_Invasion_of_East_Anglia"
-	start_date = 865.1.1
-	end_date = 867.3.21
-	targeted_titles = {
-		d_norfolk
-	}
-	casus_belli = sons_of_lothbrok_invasion_cb
-	attackers = { 163111 }
-	defenders = { 163064 163102 33358 }
-}
+#Sons of Lothbrok Invasion of East Anglia - Historically not a thing. East Angila was conquered by other vikings, which is handled seperately via an HEE story chain
 
-#Sons of Lothbrok Invasion of Lothian
-war = {
-	name = "war_867_Lothbrok_Invasion_of_Lothian"
-	start_date = 865.1.1
-	end_date = 867.3.21
-	targeted_titles = {
-		d_lothian
-		d_galloway
-	}
-	casus_belli = sons_of_lothbrok_invasion_cb
-	attackers = { 163111 }
-	defenders = { 163103 }
-
-	163111 = {
-		865.1.1 = {
-			location = 1596
-		}
-	}
-}
+#Sons of Lothbrok Invasion of Lothian - Did not happen historically. Northumbria largely retained its territories north of river Tees
 
 #Sons of Lothbrok Invasion of Northumberland
 war = {
@@ -197,8 +168,8 @@ war = {
 		d_lancaster
 	}
 	casus_belli = sons_of_lothbrok_invasion_cb
-	attackers = { 163112 163108 }
-	defenders = { 163103 163102 33358 }
+	attackers = { 163112 163108 163119 163110 163111 } # All sons of Ragnar
+	defenders = { 163103 205253 } # The rivals/brothers Aella and Osberht of Northumbria (The other Saxon Kings did not come to the aid of Northumbria) 
 
 	163112 = {
 		865.1.1 = {

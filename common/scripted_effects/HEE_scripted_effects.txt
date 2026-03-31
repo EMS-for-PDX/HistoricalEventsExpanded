@@ -717,7 +717,7 @@ nomadic_migration_effect = {
 						limit = {
 							NAND = {
 								tier = tier_county
-								title_province = { geographical_region = custom_hungary }
+								title_province = { geographical_region = custom_hungary_minus_syrmia }
 							}
 						}
 						change_title_holder = {

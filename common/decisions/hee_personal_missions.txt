@@ -514,3 +514,86 @@ form_bulgarian_empire_decision = {
 		base = 100
 	}
 }
+
+#####################################
+# Reestablish an Independent Egypt	#
+# by EmrysValdr					    # 
+#####################################
+# Technically an ahistorical decision for ibn Tulun as he continously portrayed himself as a subject of the caliph
+# This decision is a reflection of the fact his reign marks a turning point as the country for the first time since the 
+# Pharaohs ceased being a passive province subject to a foreign imperial power, and became once again a political actor in its own right
+
+reestablish_an_independent_egypt_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp3_decision_tax_collector.dds"
+	}
+	decision_group_type = major
+	ai_check_interval = 6
+
+	desc = reestablish_an_independent_egypt_decision_desc 
+	selection_tooltip = reestablish_an_independent_egypt_decision_tooltip 
+
+	is_shown = {
+		this = character:163115
+	}
+
+	is_valid = {
+		#You must have sufficient clout.
+		is_independent_ruler = yes
+		legitimacy_level >= 4
+        prestige_level >= high_prestige_level
+
+		NOT = { has_realm_law = crown_authority_0 }
+
+		# You must rule Egypt
+		primary_title = { this = title:k_egypt }
+		completely_controls_region = ghw_region_egypt
+
+		# Liked by powerful vassals to symbolize control over internal affairs
+		any_vassal = {
+			count >= 4 #Kings need 4
+			is_powerful_vassal = yes
+			opinion = {
+				target = root
+				value >= high_positive_opinion
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_independent_ruler = yes
+		is_at_war = no
+	}
+
+	effect = {
+		remove_character_modifier = anarchy_at_samarra_loss_of_central_authority # PLACEHOLDER
+
+		every_vassal = {
+			limit = {
+				or = {
+					has_vassal_stance = belligerent
+					has_vassal_stance = glory_hound
+				}
+			}
+			add_opinion = {
+				target = root
+				modifier = pleased_opinion
+				opinion = 25
+			}
+		}
+	}
+
+	cost = {
+		prestige = 500
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 1000
+	}
+}

@@ -179,7 +179,7 @@ d_dalmatia = {
 			}
 		}
 	}
-	856.1.1 = {
+	846.1.1 = { # Schlumberger published a seal of Bryenas, the spatharios and strategos of Dalmatia, which he dated into the middle of the nineth cenutry
 		holder = Bryennios0003
 	}
 	923.1.1 = {
@@ -273,7 +273,7 @@ c_zadar = {
 	750.1.1 = {
 		holder = 145849
 	}
-	856.1.1 = {
+	846.1.1 = { # Schlumberger published a seal of Bryenas, the spatharios and strategos of Dalmatia, which he dated into the middle of the nineth cenutry
 		holder = Bryennios0003
 	}
 	1066.1.2 = {
@@ -835,7 +835,7 @@ c_cherso = {
 	750.1.1 = {
 		holder = 145849
 	}
-	856.1.1 = {
+	846.1.1 = { # Schlumberger published a seal of Bryenas, the spatharios and strategos of Dalmatia, which he dated into the middle of the nineth cenutry
 		holder = Bryennios0003
 	}
 	1060.1.1 = {

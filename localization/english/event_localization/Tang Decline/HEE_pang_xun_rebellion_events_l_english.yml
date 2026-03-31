@@ -1,0 +1,24 @@
+﻿l_english:
+ 
+ HEE_pang_xun_rebellion.0004.t:0 "Pang Xun's Rebellion"
+ HEE_pang_xun_rebellion.0004.desc:0 "#bold Treason#!.\n\nWord has reached my court of a [Glossary( 'mutiny', 'PANG_XUN_ORIGINS_GLOSS' )] — swift, violent, and utterly unexpected — that has erupted in Gui Prefecture. Wishing to cease their military service, many of the Prefecture's soldiers have risen against their commander, cutting him down in open defiance of imperial authority. The mutineers now lift up a certain Pang Xun, an officer of middling rank but evidently of great influence, who now rallies the renegades under his leadership.\n\nReports claim the mutineers have plundered the Prefecture’s armory - seizing blades, spears, and armor meant for the Empire’s defense. Having armed themselves, they have begun marching east — toward their homes in Xu Prefecture. The local governors are hesitant to confront such a force alone and now turn to me for strength and guidance."
+ HEE_pang_xun_rebellion.0004.a: "Curse these ill-disciplined dogs!"
+ HEE_pang_xun_rebellion.0004.b: "Promise the promise of pardons will dull their blades?"
+
+ try_and_bribe_pang_xun: "To confront these men on the field would be a costly and reckless course of action. Perhaps it would be simpler to intice the mutineers to lay down their arms and return to their homes with the offer of pardons and military exemptions."
+
+ PANG_XUN_ORIGINS_GLOSS: "#bold Origins of the Pang Xun Rebellion#!: In 864, with the southwestern parts of the Tang empire dealing with frequent Dali attacks, Emperor Yizong issued an edict ordering the recruitment of soldiers from Xu Prefecture to be stationed in southern garrisons to assist in their defense. Pang Xun was among those recruited, and was sent to Gui Prefecture with a promise that the soldiers would be allowed to return home after three years. At the end of the three years, the soldiers were hoping to return home, but the regional governor decided to extend their stay at Gui Prefecture, because the expenses of recruiting new soldiers were considered too high. When this order reached Gui Prefecture, the Xu Prefecture soldiers were incensed and would lead to their eventual mutiny."
+
+ HEE_pang_xun_rebellion.0006.t:0 "A Question of Manpower"
+ HEE_pang_xun_rebellion.0006.desc:0 "You study the ragged lines of your soldiers as they drill in a muddy field below, their numbers meager compared to the vast armies of the Tang. Can such a small force truly enforce its will upon an empire? It is unlikely. Yet the answer to the question of manpower remains elusive.\n\nThere is no shortage of bandits and disgruntled soldiers you could entice with offers of payment and plunder - but why pay when you can just take? This land is filled with able-bodied peasants that could be "persuaded" into service and armed with simple weapons. The rebellion [Glossary( 'needs', 'PANG_XUN_RECRUITMENT_GLOSS' )] men — but at what cost, and from whom?"
+ HEE_pang_xun_rebellion.0006.a: "Bandits, deserters, disgruntled soldiers, we shall welcome them all."
+ HEE_pang_xun_rebellion.0006.b: "The Peasants shall provide for our need - one way or another."
+ HEE_pang_xun_rebellion.0006.c: "Why should we limit our recruitment?"
+ HEE_pang_xun_rebellion.0006.d: "Our current numbers are sufficient."
+
+ pang_xun_recruits_bandits: "What well-respecting swordsman turns down gold? After all, whether it be my gold or imperial gold it all shines the same."
+ pang_xun_recruits_peasants: "With a peasant population as large as the Empire's, surely there will be some abled-bodied men out there willing to join my cause. And for all the others, threats have always seemed to work."
+ pang_xun_recruits_both_bandits_and_peasants: "Why should we limit our outreach to one group? Perhaps the first order for our bandit brothers will be to assist in peasant recruitment..."
+ pang_xun_recruits_no_one: "To welcome others into our ranks would only invite discontent and disorder. If we are too succeed, unity will matter more than numbers."
+
+ PANG_XUN_RECRUITMENT_GLOSS: "#bold Recruitment Methods of Pang Xun#!: During his rebellion, Pang Xun expanded his forces through opportunistic then coercive methods as the mutiny evolved into a large-scale uprising. He initially relied on the soldiers who had mutinied with him in Gui Prefecture, but as he marched toward his home region, he recruited disaffected troops from other garrisons as well as local bandits and outlaw groups who were eager for plunder and protection under a stronger banner.\n\nAs his ambitions grew, Pang Xun increasingly turned to forced conscription, compelling able-bodied peasants in Su Prefecture to join his ranks. These diverse recruitment methods rapidly swelled his army but also produced a force marked by uneven loyalty, poor discipline, and a reliance on intimidation — factors that ultimately contributed to the rebellion’s downfall."

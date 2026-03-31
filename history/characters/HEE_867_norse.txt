@@ -331,3 +331,360 @@ Real_Ivar = {
 		death = yes
 	}
 }
+
+
+# The murky early 8th - 9th century Danish Kings
+sigfredian0001 = { # an eighth century Danish king who is known to have reigned from before 777 to after 798
+	name = "Siegfried"
+	dynasty = dynasty_siegfriedian # The Sigfredian dynasty, named after King Sigfred. Originally, we were going to borrow Bagsecg's  dynasty as, (for whatever reason) CK3 has Hårik II of Denmark in-game as Bagsecg's father (character ID 6866). But decoupling CK's Horick II from our Horick II has rended that choice untenable
+	religion = norse_pagan
+	culture = norse
+	# Poems by the Lombard literati Peter of Pisa and Paulus Diaconus convey a very negative image of Sigfred. Paulus castigated the Danish king as a wild beast who ruled over other wild animals; an uncouth pagan who would nevertheless be unable to stand up against the mighty Frankish ruler.
+	740.1.1 = { # King Sigfred is first mentioned in 777 when the Saxon chief Widukind, leader of the resistance against Charlemagne, fled Saxony
+		birth = yes
+	}
+	804.1.1 = { # Unknown; sometime before 804 AD
+		death = yes
+	}	
+}
+
+sigfredian0002 = { # Gudfred; ninth century Danish king who reigned from at least 804 to 810
+	name = "GuT_friT_" # Gudfred
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0001 # His paternity is unknown but he may have been closely related to Sigfred, who preceded him as king of Denmark c. 770–804
+	religion = norse_pagan
+	culture = norse
+	trait = education_martial_3
+	trait = arrogant # the emperor Charlemagne was seriously worried over "the presumptions and arrogance of the Danish king" as seen from the establishment of a garrison to the north of the Elbe, Esesfelth
+	trait = arbitrary
+	trait = ambitious # According to the contemporary historian Einhard, Gudfred "was stuck-up by such a vain hope that he claimed the lordship over all of Germany; also, he did not see Frisia and Saxony as anything else but his provinces"
+	trait = brave
+	trait = raider # Subjected 
+	trait = lifestyle_hunter # According to details of Gudfred's death given by (the unreliable) Notker of St Gall (c. 883), Gudfred hunted ducks with falcon when he was attacked by his own son who cut him dead with his sword
+	765.1.1 = { # Unknown
+		birth = yes
+	}
+	810.1.1 = { # murdered by one of his housecarls
+		death = {
+			death_reason = death_assassination
+		}
+	}	
+}
+
+sigfredian0003 = { # Unnamed brother of Gudfred & father of Hemming of Denmark (and possibly Reginold, who is named as another nephew of Gudfred)
+	name = "Siegfried" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0001 # Brother to Gudfred
+	religion = norse_pagan
+	culture = norse
+	767.1.1 = { # Unknown; will make him an older brother to help explain more simply why Hemming inherited the Danish throne over Gudfred's sons
+		birth = yes
+	}
+	800.1.1 = { # Unknown; will have him predecease Gudfred's ascension to the Danish throne to explain why Gudfred would ascend as a younger son
+		death = yes
+	}	
+}
+
+sigfredian0004 = { # Possibly fictional/invented Unnamed brother of Gudfred who willm serve as father to Reginold (listed as having died in a campaign against the Obotrites) and Sigfred (competitor for the Danish throne in 812)
+	name = "HA_rik" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0001 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+	772.1.1 = { # Unknown
+		birth = yes
+	}
+	807.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+sigfredian0005 = { # Hemming of Denmark; king in Denmark from 810 until his death
+	name = "Hemming" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0003 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+	788.1.1 = { # Unknown; thought to be late 8th century
+		birth = yes
+	}
+	812.1.1 = { # The entries in Royal Frankish Annals for 812 begin with mention of the situation in Denmark. "Not much later the news arrived that Hemming, king of the Danes had died.
+		death = yes
+	}	
+}
+
+sigfredian0006 = { # Oldest son of Gudfred who died in 814 fighting against the rival claimants Harald and Ragnfred
+	name = "Siegfried" # Unnamed in the historical sources; named taken from his (supposed aka in my geneology) grandfather
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0002 # father was King Gudfred
+	religion = norse_pagan
+	culture = norse
+
+	788.1.1 = { # Unknown
+		birth = yes
+	}
+	814.1.1 = {
+		death = { # Died fighting against the rival claimants Harald Klak and Ragnfred
+			death_reason = death_battle
+			killer = 167777 # Slain by the forces of Harald Klak and Ragnfred
+		}
+	}	
+}
+
+sigfredian0007 = { # Unnamed son of Gudfred
+	name = "Olaf" # Unnamed in the historical sources; P.A. Munch believed that Olaf Geirstad-Alf was a son of Gudfred, whom he identified with Gudrød the Hunter of Vestfold
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0002 # father was King Gudfred
+	religion = norse_pagan
+	culture = norse
+
+	790.1.1 = { # Unknown
+		birth = yes
+	}
+	830.1.1 = { # Two of the sons of Gudfred expelled the other two around 819, supposedly through treason. After which nothing is known about the exiled sons
+		death = yes
+	}
+}
+
+sigfredian0008 = { # Unnamed son of Gudfred
+	name = "Kettil" # Unnamed in the historical sources; Erik Kroman believed that still another brother was Kettil, sometimes said to be the father of Hrolfr the Ganger, better known today as Rollo
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0002 # father was King Gudfred
+	religion = norse_pagan
+	culture = norse
+
+	788.1.1 = { # Unknown
+		birth = yes
+	}
+	822.1.1 = { # Two of the sons of Gudfred expelled the other two around 819, supposedly through treason. After which nothing is known about the exiled sons
+		death = yes
+	}
+}
+
+sigfredian0009 = { # Horik I; king of the Danes as co-ruler from 813, and sole king from c. 828 until his violent death in 854
+	name = "HA_rik" # Horik or Hårik
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0002 # father was King Gudfred
+	religion = norse_pagan
+	culture = norse
+	# 
+	trait = education_diplomacy_3 # His long and eventful reign was marked with constant diplomacy with the Frankish Empire
+	trait = ambitious
+	trait = just # Executed raiders who plundered Frankish lands (though this was likely more self-serving than anything else, as successful and rich warlords threatened Horik's power)
+	trait = deceitful # Horik, who is now mentioned by name for the first time, promised to appear before Louis at Nijmegen in 827 but broke his promise. Renewed hostilities with the Franks, then disavowed any attacks and supposedly executed the raiders
+	trait = cynical # Tolerant of Christianity and seemingly developed a friendly relation to Ansgar, Archbishop of Hamburg and Bremen
+	795.1.1 = {
+		birth = yes
+		give_nickname = nick_the_elder
+	}
+	854.1.1 = {
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+			killer = sigfredian0011 # Slain in battle by the forces of Horik's brother's son Guttorm
+		}
+	}
+}
+
+sigfredian0010 = { # Unnamed son of Gudfred
+	name = "Ragnar" # Unnamed in the historical sources; Henrik Schück assumed that another one was named Ragnar (not to be confused with Ragnar Loðbrok), indicated as the grandfather of Amlaíb Conung in Irish genealogy
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0002 # father was King Gudfred
+	religion = norse_pagan
+	culture = norse
+
+	797.1.1 = { # Unknown
+		birth = yes
+	}
+	828.1.1 = { # It is not known exactly when Horik's brother and co-ruler died, but he is not mentioned after 828
+		death = yes
+	}
+}
+
+sigfredian0011 = { # Horik's brother's son Guttorm, who had been driven into exile by Horik and appeared in 854 to claim the kingdom
+	name = "Guttorm" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0007 # Was the son of Horik's brother. Which one is unknown, but considering the exile I will make it one of the two brothers that were exiled
+	religion = norse_pagan
+	culture = norse
+
+	820.1.1 = { # Unknown
+		birth = yes
+	}
+	854.1.1 = { # A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+			killer = sigfredian0009 # Slain by the forces of Horik I
+		}
+	}
+}
+
+sigfredian0012 = { # Unnamed nephew of Horik I who in 850, partitioned the kingdom into thirds along with Horik I and another of Horik's nephews, ending the unified kingship
+	name = "Hemming" # Unknown
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0010 # Was the son of Horik's brother. Which one is unknown, but considering the partition I will make it the one who retained the kingship alongside Horik and make the nephews brothers
+	religion = norse_pagan
+	culture = norse
+
+	820.1.1 = { # Unknown
+		birth = yes
+	}
+	854.1.1 = {
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+			killer = sigfredian0011 # Slain in battle by the forces of Horik's brother's son Guttorm
+		}
+	}
+}
+
+sigfredian0013 = { # Unnamed nephew of Horik I who in 850, partitioned the kingdom into thirds along with Horik I and another of Horik's nephews, ending the unified kingship
+	name = "HA_rik" # Unknown
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0010 # Was the son of Horik's brother. Which one is unknown, but considering the partition I will make it the one who retained the kingship alongside Horik
+	religion = norse_pagan
+	culture = norse
+
+	820.1.1 = { # Unknown
+		birth = yes
+	}
+	854.1.1 = {
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+			killer = sigfredian0011 # Slain in battle by the forces of Horik's brother's son Guttorm
+		}
+	}
+}
+
+sigfredian0014 = { # One of the two siblings of Hemming of Denmark identified in the Annals
+	name = "Hakon" # Hakon
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0003 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+	780.1.1 = { # Unknown
+		birth = yes
+	}
+	812.1.1 = { # Unknown
+		death = yes
+	}	
+}
+
+sigfredian0015 = { # One of the two siblings of Hemming of Denmark identified in the Annals
+	name = "Angantyr" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0003 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+	782.1.1 = { # Unknown
+		birth = yes
+	}
+	812.1.1 = { # Unknown
+		death = yes
+	}
+}
+
+sigfredian0016 = { # Unnamed brother of Gudfred & father of Hemming of Denmark (and possibly Reginold, who is named as another nephew of Gudfred)
+	name = "Hemming" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0001 # Brother to Gudfred
+	religion = norse_pagan
+	culture = norse
+	767.1.1 = { # Unknown; will make him an older brother to help explain more simply why Hemming inherited the Danish throne over Gudfred's sons
+		birth = yes
+	}
+	800.1.1 = { # Unknown; will have him predecease Gudfred's ascension to the Danish throne to explain why Gudfred would ascend as a younger son
+		death = yes
+	}	
+}
+
+sigfredian0017 = { # Sigfred; competitor for the Danish throne in 812
+	name = "Siegfried" # Unknown
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0004 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+
+	789.1.1 = { # Unknown
+		birth = yes
+	}
+	812.1.1 = {
+		death = { # Died in a bloodly battle against his fellow competitor Anulo (Ale)
+			death_reason = death_battle
+			killer = 167778 # Slain in battle by the forces of Anulo (Ale)
+		}
+	}
+}
+
+sigfredian0018 = { # Reginold; relative of King Gudfred who appears in an 808 entry detailing a campaign of Gudfred against the Obotrites
+	name = "Reginold" #
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0004 # nephew of Gudfred
+	religion = norse_pagan
+	culture = norse
+	790.1.1 = { # Unknown; will make him an older brother to help explain more simply why Hemming inherited the Danish throne over Gudfred's sons
+		birth = yes
+	}
+	808.1.1 = { # Gudfred, during a campaign against the Obodrites, reportedly "made two-thirds of the Obodrites tributary. But he lost the best and most battle-tested of his soldiers. With them he lost Reginold, his brother's son, who was killed at the siege of a town along with a great number of Danish nobles."
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+		}
+	}	
+}
+
+sigfredian0019 = { # Unknown and possibly fictional son of Horik who will serve as the father of Horik II
+	name = "GuT_friT_" # 
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0009 # Horik I
+	religion = norse_pagan
+	culture = norse
+	820.1.1 = { # Given he is hence known as Erik the Child, Horik was likely quite young when he rose to power following the civil war of 854
+		birth = yes
+	}
+	854.1.1 = {
+		death = { # Horik's brother's son Guttorm, who had been driven into exile by Horik, appeared in 854 and claimed the kingdom. A huge battle was fought which lasted for three days. King Horik I "and the other kings" were killed, as were Guttorm and a great many chiefs
+			death_reason = death_battle
+			killer = sigfredian0011 # Slain in battle by the forces of Horik's brother's son Guttorm
+		}
+	}
+}
+
+sigfredian0020 = { # Horik II; King of the Danes from the fall of Horik I in 854 to an unknown date between 864 and 873
+	name = "HA_rik" # also known as Hårik or, in late sources, Erik Barn (Danish: "Erik the Child")
+	dynasty = dynasty_siegfriedian
+	father = sigfredian0019 # Horik II was probably not the son of Horik I, but a close relative, perhaps a nephew or grandson of the old king. Considering the Nordic naming convention of time was to name children after their grandfather, lets go with Horik II as grandson to Horik I 
+	religion = norse_pagan
+	culture = norse
+	# 
+	trait = education_diplomacy_3 # His long and eventful reign was marked with constant diplomacy with the Frankish Empire
+	trait = generous # In 864 Pope Nicholas I received gifts from Horik via the East Frankish king
+	trait = trusting # Horik trusted the advice of a Jarl Hovi, guided by a relative called Burghard, and was persuaded by Ansgar to reopen the ruined church and donated land for a new church at Ribe
+	trait = temperate # Thoughly he began his reign as anti-Christian (seemingly under the advice of the anti-Christian Hovi Jarl), Horik mellowed as his reigned continued and became increasingly tolerant of Chrisitianity
+	trait = content # No accounts of battles or raids lead or sanctioned by Horik II. During his reign the Danish kingdom showed tendencies of breaking up
+	840.1.1 = { # Given he is hence known as Erik the Child, Horik was likely quite young when he rose to power following the civil war of 854
+		birth = yes
+		give_nickname = nick_the_younger
+	}
+	870.1.1 = { # Horik II is not mentioned after 864. In 873 the Franks entertained diplomatic contacts with the kings Sigfred and his brother Halfdan, which implies Horik had either died, been overthrown, or reduced to political irrelevancy
+		death = { # Where did he go? No one knows
+			death_reason = death_disappearance
+		}
+	}
+}
+
+sigfredian0021 = { # a member of the Danish royal family, who lived in the 700's and who was married to Duke Widukind
+	name = "Geva" # Geva or Gheua (the name itself, however, first certified in writing in the late 1200s), perhaps an abbreviation for Gerberga
+	female = yes
+	dynasty = dynasty_siegfriedian # The Sigfredian dynasty, named after King Sigfred. Originally, we were going to borrow Bagsecg's  dynasty as, (for whatever reason) CK3 has Hårik II of Denmark in-game as Bagsecg's father (character ID 6866). But decoupling CK's Horick II from our Horick II has rended that choice untenable
+	father = sigfredian0001 # She was either the daughter of [according to Annales laurissey's maiores] the Danish king Sigfred, or she was the king's sister (according to other sources)
+	religion = norse_pagan
+	culture = norse
+	# Poems by the Lombard literati Peter of Pisa and Paulus Diaconus convey a very negative image of Sigfred. Paulus castigated the Danish king as a wild beast who ruled over other wild animals; an uncouth pagan who would nevertheless be unable to stand up against the mighty Frankish ruler.
+	759.1.1 = { # 
+		birth = yes
+	}
+	775.1.1 = {
+		add_spouse = 33250 # She married the Saxon prince, Duke Widukind, who repeatedly in the 770s and 780s had to seek refuge with the Danes. The marriage has been seen as part of a peace agreement or peace pact between Saxony and Denmark
+	}
+	819.1.1 = {
+		death = yes
+	}	
+}

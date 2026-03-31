@@ -43,12 +43,13 @@
 
  msg_seljuk_invasion_war_invalidated_message: "The war ended inconclusively because the [casus_belli|E] is longer valid\nNobody gains or loses anything"
 
+ HEE_hungarian_migration_cb: "$mogyer_collective_noun$ Migration"
 
  # Grand Raid 
  grand_raid_cb: "Grand Raid"
  GRAND_RAID_WAR_NAME: "Grand Raid on [DEFENDER.GetPrimaryTitle.GetName]"
  GRAND_RAID_WAR_NAME_BASE: "[ATTACKER.GetPrimaryTitle.GetAdjective][DEFENDER.GetPrimaryTitle.GetName]"
- GRAND_RAID_CB: "Grand Raid"
+ GRAND_RAID_CB_NAME: "Grand Raid"
  grand_raid_war_warning_desc: "#X You may only attempt one grand raid every 5 years#!"
  GRAND_RAID_TOOLTIP: "Gold and Prestige are calculated using the defender's realm size"
 
@@ -80,11 +81,22 @@
 
  carlomann_svatopluk_truce_desc: "\nSometime around 869, Svatopluk I of Moravia entered into clandestine negotiations with Carloman of Bavaria and agreed to accept Carloman's lordship over his person and his realm. Likely done to avoid another wave of Frankish attacks, this action by Svatopluk was not well recieved by his relative and De Jure liege Rostislav of Moravia."
 
+ tang_nanzhao_annan_conflicts_truce_desc: "\nBetween 854 and 866 AD, the Tang Empire fought a protracted and destructive war against the Kingdom of Nanzhao over control of Annan (modern northern Vietnam). According to the Zizhi Tongjian (vols. 248–250) and the Old and New Books of Tang, the conflict began when mistreatment of local tribal groups by Tang officals drove many frontier peoples to ally with Nanzhao. Exploiting the disorder, Nanzhao forces invaded Annan in 858 and again in 861, culminating in the capture of the provincial capital of Songping (modern Hanoi) in February 863. The Tang court, alarmed by the loss, dispatched a major counteroffensive under General Gao Pian, who by Fall of 866 successfully expelled the Nanzhao forces and reasserted Chinese rule over the province."
+
+ raids_on_arran_truce_desc: "\nIn the 1060s, the Alans under the leadership of their king Durgulel led several invasions of Arran. The first was in 1062 AD, when the Aland crossed the Darial Pass and carried off more than 20,000 inhabitants of Arran as slaves according to Münejjim Bashi's account. The Alans again crossed the Darial Pass in October 1065 AD, and, allied with the inhabitants of Shakki, raided Arran. At Shamkur they killed more than 200 volunteers for the jihad, and raided even to the very gates of Ganja itself, before moving on to raid the environs of Barda'a. Abu'l-Aswar and his troops preferred to remain within the protection of the walled cities rather than face the raiders in the field, and the Alans reached all the way to the Araxes before turning back north, along with the prisoners they had taken."
+
+
+
+
+
+
+
+
  # Event Troops
  great_summer_army_event_troops: "Great Summer Army"
  
  turkic_event_troops: "Turkic Troops"
- 
+
  raimbaud_event_troops: "Norman Mercenaries"
  
  bailleul_event_troops: "Franco-Norman Heavy Cavalry"
@@ -105,6 +117,8 @@
  kutama_event_troops: "Kutama Tribesmen"
  fatimid_event_troops: "Ismali Zealots"
  pecheneg_event_troops: "Pecheneg Riders"
- magyar_event_troops: "Hungarian Horsemen"
+ magyar_event_troops: "Mogyër Raiders"
 
  ziyarid_event_troops:"Zoroastrian Zealots"
+
+ pang_xun_professional_event_troops: "Xu Prefecture Soldiers"

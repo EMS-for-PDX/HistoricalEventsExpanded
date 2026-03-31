@@ -2,7 +2,7 @@
 	name = "Basileios"
 	dynasty = 644
 	dna = 1700_basileios_makedon
-	martial = 7
+	martial = 8
 	diplomacy = 8
 	intrigue = 10 # Concieved and executed the murder of both Bardas (the emperor Mikhael III's maternal uncle and chief adviser) and the Emperor Mikhael III 
 	stewardship = 8 # In administrative affairs, he conceived a project to rewrite the legal codes of Justinian which, although never finalised, formed the basis for his son's subsequent legislative work
@@ -1606,7 +1606,7 @@
 1734 = {
 	name = "Romanos"
 	dynasty = 632
-	martial = 7
+	martial = 9
 	diplomacy = 5
 	intrigue = 2
 	stewardship = 5
@@ -1618,7 +1618,8 @@
 	trait = impatient # Described as courageous and generous, but also impetuous
 	trait = beauty_good_2 # according to Attaleiates, “The man not only surpassed others in his good qualities but he was also pleasant to look at in all respects.”
 	trait = education_martial_3
-	father = 20525
+	father = 20525 # General Constantine Diogenes
+	mother = argyros0001 # a daughter of Basil Argyros, brother of the emperor Romanos III
 	1030.1.1 = {
 		birth = "1030.1.1"
 	}
@@ -6907,7 +6908,7 @@
 #	trait = fickle
 #	trait = cynical
 #	trait = education_learning_3
-#	trait = poet
+#	trait = lifestyle_poet
 #	trait = devoted
 #	trait = scholar
 #	trait = stuttering
@@ -6970,8 +6971,8 @@
 	972.1.1 = {
 		birth = "972.1.1"
 	}
-	1017.1.1 = {
-		death = "1017.1.1"
+	1023.1.1 = {
+		death = "1023.1.1"
 	}
 }
 
@@ -7078,15 +7079,16 @@
 	}
 }
 
-41316 = { # Nikephoros Phokas the Elder; Domestic of the Schools
+41316 = { # Nikephoros Phokas the Elder; Domestic of the Schools - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ27699/html
 	name = "Nikephoros"
 	dna = "41316_nikephoros_dna"
 	dynasty = 641
-	martial = 8
-	diplomacy = 7
-	intrigue = 6
-	stewardship = 7
-	learning = 6
+	martial = 10
+	diplomacy = 9
+	intrigue = 7
+	stewardship = 8
+	learning = 7
+	prowess = 8
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_martial_4
@@ -9501,11 +9503,11 @@
 	name = "Michael"
 	# AKA: Mikhael 'the Drunkard'
 	dynasty = 8642
-	diplomacy = 8
-	martial = 9
-	intrigue = 3
+	diplomacy = 6
+	martial = 8
+	intrigue = 5
 	stewardship = 8
-	learning = 5
+	learning = 6
 	prowess = 8
 	religion = "orthodox"
 	culture = "greek"
@@ -9520,6 +9522,7 @@
 	father = 70491
 	mother = Mamikonian0005
 	sexuality = heterosexual
+	disallow_random_traits = yes
 	
 	840.1.9 = {
 		birth = "840.1.9"
@@ -10709,7 +10712,9 @@
 70554 = {
 	name = "Photios"
 	# AKA: Photios 'Megale'
-	dynasty = 8649
+	dynasty = dynasty_marzoukoi
+	father = marzoukoi0005
+	mother = morocharzanios0002
 	health = 5.0
 	learning = 10
 	martial = 6
@@ -10784,8 +10789,8 @@
 	trait = deceitful
 	trait = education_learning_3
 	
-	800.1.1 = {
-		birth = "800.1.1"
+	790.1.1 = { # According to most sources, John's birth can be narrowed down to a period of 780 AD - 790 AD
+		birth = "790.1.1"
 		give_nickname = nick_grammatikos
 	}
 	867.1.1 = {
@@ -13351,7 +13356,9 @@
 
 145043 = {
 	name = "Tarasios"
-	dynasty = 8649
+	dynasty = dynasty_marzoukoi
+	father = marzoukoi0002
+	mother = isauroi0002
 	religion = "orthodox"
 	culture = "greek"
 	trait = education_learning_3
@@ -17703,7 +17710,8 @@
 	trait = gregarious
 	trait = temperate
 	trait = calm
-	trait = lifestyle_physician 
+	trait = lifestyle_physician
+	trait = shrewd
 	father = 145134
 	mother = laloudios0001
 	770.1.1 = {
@@ -17729,7 +17737,7 @@
 	}
 }
 
-145137 = { # tourmarches and subsequently duke of Kolonia
+145137 = { # Could be the anonymous Melissenoi who was a participant in the conspiracy to overthrow Theoctistus on November 20, 855. He warned Empress Theodora against intervening on Theoctistus' behalf (though unlikely given his age, likely just a filler Melissenoi) - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ21994/html
 	name = "Kallistos"
 	dynasty = 101399
 	religion = "orthodox"
@@ -17737,19 +17745,6 @@
 	father = 145136
 	840.1.1 = {
 		birth = "840.1.1"
-	}
-	867.1.1 = {
-		effect = {
-			if = {
-				limit = {
-					government_allows = administrative
-				}
-				vassal_contract_set_obligation_level = {
-					type = administrative_themes
-					level = 2
-				}
-			}
-		}
 	}
 	900.1.1 = {
 		death = "900.1.1"
@@ -17908,7 +17903,7 @@
 	}
 }
 
-145147 = { # A soldier who caught Emperor Basil I's attention and was raised to the rank of tourmarches
+145147 = { # A soldier who caught Emperor Basil I's attention and was raised to the rank of tourmarches - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ28805/html
 	name = "Leon" # C.Seleukeia
 	dna = "145147_leon_dna"
 	dynasty = 641
@@ -17917,10 +17912,11 @@
 	diplomacy = 9
 	martial = 7
 	prowess = 9
-	trait = education_martial_3
+	# The source explicitly highlights P.’s physical and character-based qualities ("Phokas... surpassing all his contemporaries in physical vigor and nobility of spirit")
+	trait = education_martial_2
 	trait = brave
 	trait = diligent
-	trait = patient
+	trait = just
 	trait = strong # Distinguishing quality (?)
 	trait = unyielding_defender
 	830.1.1 = {
@@ -18085,12 +18081,12 @@
 	culture = "greek"
 
 	# Skills
-	diplomacy = 7
-	martial = 7
-	stewardship = 6
-	intrigue = 5
-	learning = 5
-	prowess = 6
+	diplomacy = 9
+	martial = 10
+	stewardship = 8
+	intrigue = 7
+	learning = 7
+	prowess = 8
 	
 	# Education
 	trait = education_martial_3
@@ -18334,6 +18330,15 @@
 	840.1.1 = {
 		birth = "840.1.1"
 	}
+	867.1.1 = {
+		effect = {
+			court_position_grant_effect = {
+				EMPLOYER = title:e_byzantium.holder
+				POS = bodyguard
+				CANDIDATE = character:145171
+			}
+		}
+	}
 	900.1.1 = { # In the aftermath of their failed conspiracy against Emperor Basil, Ioannes along with his conspirators were banished and their property confiscated. Nothing more is known
 		death = "900.1.1"
 	}
@@ -18513,6 +18518,9 @@
 	840.1.1 = { # Likely born between 835-845
 		birth = "840.1.1"
 	}
+	867.1.1 = {
+		trait = widowed # Konstantinos' wife Anna died shortly after the birth of their daughter, and K. subsequently raised his daughter with the assistance of a wet nurse.
+	}
 	900.1.1 = {
 		death = "900.1.1"
 	}
@@ -18531,7 +18539,7 @@
 	}
 }
 
-145183 = {
+145183 = { # Seemingly inspired by Leon Kotzes, Basilikos Protospatharios und Strategos von Hellas, whose death is noted in a legible graffiti on the Parthenon in Athens. According to the graffito, he died in the month of August, in the 11th inscription, in the year 848. - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ15594/html
 	name = "Leon" # C.Achaia
 	dynasty = 1022162
 	religion = "orthodox"
@@ -18564,6 +18572,7 @@
 
 145185 = { # Fictional version of Ioannes Aplakes, Patrikios and Strategos of Macedonia who perished in a 813 battle against the Bulgarians? - https://www.degruyter.com/database/PMBZ/entry/PMBZ14336/html
 	name = "Ioannes" # D.Thessalonika/C.Thessalonike
+	father = aplakes0002 # To connect to earlier historical Aplakes members
 	dynasty = 1022164
 	religion = "orthodox"
 	culture = "greek"
@@ -18575,20 +18584,22 @@
 	}
 }
 
-145186 = { # Belonged to the Macedonians who had been deported to the Danube by the Bulgarians after the capture of Adrianople, Leon later returned to Byzantium and eventuially became Hetaireiarches - https://www.degruyter.com/database/PMBZ/entry/PMBZ15615/html
+145186 = { # Belonged to the Macedonians who had been deported to the Danube by the Bulgarians after the capture of Adrianople, Leon later returned to Constantinople and eventuially became Hetaireiarches - https://www.degruyter.com/database/PMBZ/entry/PMBZ15615/html
 	name = "Leon" # C.Thessalia
 	dynasty = 1022165
 	religion = "orthodox"
 	culture = "greek"
+	prowess = 10
 	trait = education_martial_2
 	trait = brave
 	trait = stubborn
 	trait = patient
+	trait = strong # as a very young man, he fought successfully alongside other Macedonians to liberate them from the Bulgarians. Would later became a Hetaireiarch in Constantinople
 	828.1.1 = { # In 837, as a very young man (νεώτερος), he fought successfully with other Macedonians for their liberation from the Bulgarians
 		birth = "828.1.1"
 	}
 	867.1.1 = {
-		employer = 70490 # Michael II; there as Hetaireiarches
+		employer = 70490 # Michael III; in Constantinople as Hetaireiarches
 	}
 	904.1.1 = {
 		death = "904.1.1"
@@ -18729,6 +18740,7 @@
 	trait = zealous # Refused to convert to Islam on the pain of death
 	trait = stubborn # Refused to convert to Islam on the pain of death
 	trait = beardless_eunuch
+	trait = strong # He was physically strong, brave and steadfast in his beliefs
 	805.1.1 = {
 		birth = "805.1.1"
 	}
@@ -18736,6 +18748,7 @@
 		religion = "orthodox"
 	}
 	845.3.6 = {
+		trait = saint # One of the 42 Martyrs of Amorium. Venerated as a saint & Christian martyr due to their refusal to convert to Islam and their subsequent execution as the hands of the Muslims
 		death = {
 			death_reason = death_execution
 			killer = 34009 # Caliph al-Wathiq
@@ -18782,9 +18795,10 @@
 	}
 }
 
-145198 = {
-	name = "Leon" # C.Zeta
+145198 = { # Leon Choirosphaktes; Byzantine official who rose to high office under Emperor Basil I the Macedonian (r. 867–886) and served as an envoy under Emperor Leo VI the Wise (r. 886–912) to Bulgaria and the Abbasid Caliphate - https://www.degruyterbrill.com/database/pmbz/entry/PMBZ26497/html
+	name = "Leon" # Leo
 	dynasty = 101234
+	father = choirosphaktes0001 # To connect him to his brother Palatinos
 	religion = "orthodox"
 	culture = "greek"
 	
@@ -18797,12 +18811,14 @@
 	
 	trait = education_diplomacy_4
 
-	trait = gregarious
-	trait = calm
-	trait = diligent
+	trait = calm # Good trait for a diplomat
+	trait = ambitious # Implicated in the conspiracy and failed coup d'état of the general Constantine Doukas (and possibly involved in the revolt of Andronikos Doukas)
+	trait = diligent # Alongside his letters, Choirosphaktes also composed theological works, hymns, and epigrams
+	trait = cynical # subject of a vehement attack by the bishop Arethas of Caesarea in the latter's work Choirosphaktes or Wizard-hater (Μισογόης), where Leon was accused of being a "Hellene" (a term identical to "pagan")
 	
-	trait = diplomat
+	trait = diplomat # undertook a total of three embassies to the Bulgarians on behalf of Emperor Leo VI 
 	trait = theologian
+	trait = poet
 	
 	847.1.1 = {
 		birth = "847.1.1"
@@ -21497,9 +21513,9 @@
 	}
 }
 
-145861 = {
+145861 = { # Bardanes Tourkos is known to have had a son named Bryennios or Bryenes (fl. 813), and the Bryennioi may have been descended from this man
 	name = "Bryennios"
-	dynasty = 1022310
+	dynasty = 101079 # possibly the first member of the Bryennioi
 	religion = "iconoclast"
 	culture = "greek"
 	father = 145860
@@ -23301,7 +23317,7 @@ eugenios_2 = {
 	culture = "greek"
 	trait = administrator
 	trait = education_stewardship_3
-	trait = poet
+	trait = lifestyle_poet
 	trait = content
 	trait = calm
 	trait = diligent

@@ -2475,6 +2475,7 @@ c_lecce = {
 		holder = 145864 # Markellos
 	}
 	855.1.1 = {
+		liege = d_cephalonia # Contrary to Constantine VII's account, Longobardia was probably initially constituted as a tourma of Cephallenia until it was raised to a full theme
 		holder = 145128 # Isidoros
 	}
 	1065.1.1 = {

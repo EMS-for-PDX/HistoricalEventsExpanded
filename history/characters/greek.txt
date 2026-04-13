@@ -11427,14 +11427,20 @@
 	name = "Ioannes"
 	dynasty = 8658
 	martial = 3
-	diplomacy = 5
+	diplomacy = 12 # # A brilliant speaker, hence his nickname Chrysostom - 'Golden-mouthed'. Ironically was not a great diplomat and offended many with his sermons/speeches
 	intrigue = 3
 	stewardship = 9
+	learning = 12
 	religion = "orthodox"
 	culture = "greek"
+	trait = education_learning_5
+	trait = zealous
+	trait = compassionate
 	trait = just
-	trait = education_learning_4
-	
+	trait = diligent
+	trait = temperate
+	trait = theologian
+	trait = saint
 	349.1.1 = {
 		birth = "349.1.1"
 	}
@@ -11472,12 +11478,21 @@
 	diplomacy = 8
 	intrigue = 6
 	stewardship = 7
+	learning = 12
 	religion = "orthodox"
 	culture = "greek"
-	trait = education_learning_4
-	
+	trait = education_learning_5
+	trait = fickle
+	trait = temperate
+	trait = generous
+	trait = content
+	trait = diligent
+	trait = theologian
+	trait = lifestyle_poet
+	trait = saint
 	329.1.1 = {
 		birth = "329.1.1"
+		give_nickname = nick_the_theologian
 	}
 	389.1.25 = {
 		death = "389.1.25"
